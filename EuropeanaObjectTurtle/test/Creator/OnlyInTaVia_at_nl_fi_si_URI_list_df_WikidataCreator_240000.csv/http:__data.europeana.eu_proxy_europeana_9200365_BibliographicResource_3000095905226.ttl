@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8810313g>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8810313g> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8810313g.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8810313g.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3756"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8810313g/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8810313g>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "242098"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:14.771Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8810313g> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:14.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8810313g> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8810313g>
+	a                   ore:Proxy ;
+	dc:creator          "Benatzky, Ralph (1884-1957). Auteur ou responsable intellectuel", "Varna, Henri (1887-1969). Auteur du texte", "Peter, Rena. Auteur du texte", "Caillavet, Gaston-Arman de (1869-1915). Auteur ou responsable intellectuel", "Merkès, Marcel (1920-2007). Chant", "Kálmán, Emmerich (1882-1953). Auteur ou responsable intellectuel", "Richard, René (1914-....). Auteur ou responsable intellectuel", "Veber, Pierre (1869-1942). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Mauprey, André (1881-1939). Auteur du texte", "Messager, André (1853-1929). Auteur ou responsable intellectuel", "Besnard, Lucien (1872-1955). Auteur ou responsable intellectuel", "Jeanne, René (1887-1969). Auteur du texte", "Vanloo, Albert (1846-1920). Auteur du texte", "Scotto, Vincent (1876-1952). Auteur ou responsable intellectuel", "Dorin, René (1891-1969). Auteur du texte", "Morata, Juan (1899-1977). Auteur ou responsable intellectuel", "Duval, Georges (1847-1919). Auteur du texte" ;
+	dc:date             "1958" ;
+	dc:description      "Comprend : LES AMOURS DE DON JUAN : \u0022Un appel de castagnettes\u0022 / Henri VARNA - MARC-CAB - R. RICHARD et Juan MORATA - VERONIQUE : \u0022Adieu, je pars\u0022 / A. VANLOO-G. DUVAL-A. MESSAGER - MONSIEUR BEAUCAIRE : \u0022La Rose rouge\u0022 / A. RIVOIRE - P. VEBER - A. MESSAGER - VIOLETTES IMPERIALES : \u0022Ce soir mon amour\u0022 / P. ACHARDD - R. JEANNE - Henri VARNA - Vincent SCOTTO - L'AUBERGE DU CHEVAL BLANC : \u0022La Bonne auberge du Cheval blanc\u0022 / Lucien VESNARD - René DORIN - Ralph BENATZKY - VIOLETTES IMPERIALES : \u0022Si tu voyais\u0022 / P. ACHARD - R. JEANNE - H. VARNA - Vincent SCOTTO - LES AMANTS DE VENISE : Tu lui diras / H. VARNA - R. RICHARD - MARC-CAB- Vincent SCOTTO - PRINCESSE CSARDAS : Il est une femme au monde / R. PETER A. MAUPREY-KALMAN ; Duo avec Paulette MERVAL - LES AMOURS DE DON JUAN : \u0022Mon premier amour\u0022 / H. VARNA - MARC-CAB - R. RICHARD - Juan MORATA - LA VEUVE JOYEUSE : \u0022C'est la valse, écoutez)\u0022 / Franz LEHAR - de CAILLAVET et R. de FLERS", "Titre uniforme : [Die lustige Witwe]", "Titre uniforme : [Violettes impériales]", "Titre uniforme : [Les amants de Venise]", "Titre uniforme : [Véronique]", "Titre uniforme : [Die Csárdásfürstin]. Extr. en français", "Titre uniforme : [Véronique]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Monsieur Beaucaire]. Extrait" ;
+	dc:format           "disc"@eng, "1 disque : 33 t ; 25 cm", "Nombre total de vues :  15", "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Odéon OS1175", "http://gallica.bnf.fr/ark:/12148/bpt6k8810313g" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37943064p"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, C-9607" ;
+	dc:title            "LES SUCCES D'OPERETTES DE MARCEL MERKES / Marcel MERKES et accompagnement d'orchestre" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8810313g> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8810313g>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1958" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8810313g> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8810313g>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:54:33.614Z" ;
+	dcterms:modified          "2018-03-26T12:29:40.337Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8810313g> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8810313g> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8810313g.thumbnail.jpg&type=SOUND> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

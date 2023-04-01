@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802421q>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8802421q> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8802421q.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:15.763Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802421q> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8802421q>
+	a                   ore:Proxy ;
+	dc:creator          "Josquin Des Prés (145.-1521). Auteur ou responsable intellectuel", "Reutter, Karl Georg von. Auteur ou responsable intellectuel", "Lassus, Roland de (1532-1594). Auteur ou responsable intellectuel", "Martin, Émile (1914-1989). Auteur ou responsable intellectuel", "Société des Chanteurs de Saint-Eustache (Paris). Interprète" ;
+	dc:date             "1958" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Contient une table des matières" ;
+	dc:format           "multipart/mixed", "Nombre total de vues :  9", "1 disque : 33 t ; 30 cm", "disque microsillon"@fre, "disc"@eng ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8802421q", "Numéro commercial : BAM  LD040" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb377913203"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-3398" ;
+	dc:title            "LIBERA ME : pour voix, tam-tam, cors, trombones et orgue / R. P. Emile Martin ; Les Chanteurs de St Eustache et Ensemble Instrumental (Tam-tam : K. Simonovic ; Orgue : Marie-Louise Girod ; Contralto solo : Paulette Deffay). Motets : \u0022Timor et trémor\u0022 ; \u0022Pulvis et umbra\u0022 / Roland de Lassus. Déploration de Jehan Ockeghem / Josquin des près. DE PROFUNDIS / Georg Eeutter ; Les Chanteurs de St Eustache dir. R. P. Emile Martin" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802421q> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802421q>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "213518"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8802421q/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8802421q>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1958" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802421q> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802421q>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:42.066Z" ;
+	dcterms:modified          "2018-03-26T12:26:33.403Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8802421q> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8802421q.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802421q#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:15.762Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802421q> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802421q.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4353"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2058612/object_maeyaert_19061798>
+	a                   ore:Proxy ;
+	dc:creator          "Claus sluter", "Paul M.R. Maeyaert"@nl ;
+	dc:date             "2007-11-05"@en ;
+	dc:format           "image/jpeg"@en ;
+	dc:identifier       "http://more.locloud.eu/content/pol_mayer/france/PMa_F_025_Dijon.jpg" ;
+	dc:rights           "Paul M.R. Maeyaert;" ;
+	dc:subject          "Cultural heritage|Sculpture"@en, "Cultural heritage"@en, <http://vocab.getty.edu/aat/300008063> ;
+	dc:title            "ref: PMa_F_025_Dijon; Portail de la chapelle"@en ;
+	dcterms:isPartOf    "LoCloud"@en, "Europeana Archaeology"@en ;
+	dcterms:spatial     <http://more.locloud.eu/object/maeyaert/19061798/SP.4>, <http://more.locloud.eu/object/maeyaert/19061798/SP.1>, <http://more.locloud.eu/object/maeyaert/19061798/SP.2>, <http://more.locloud.eu/object/maeyaert/19061798/SP.3> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058612/object_maeyaert_19061798> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058612/object_maeyaert_19061798> .
+
+<https://iiif.europeana.eu/presentation/2058612/object_maeyaert_19061798/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2058612/object_maeyaert_19061798>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146791> ;
+	dc:identifier       "http://more.locloud.eu/object/maeyaert/19061798" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058612/object_maeyaert_19061798> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058612/object_maeyaert_19061798> .
+
+<http://more.locloud.eu/object/maeyaert/19061798/SP.2>
+	a               edm:Place ;
+	skos:prefLabel  "Dijon" .
+
+<http://more.locloud.eu/object/maeyaert/19061798/SP.1>
+	a               edm:Place ;
+	skos:prefLabel  "Chartreuse de Champmol" .
+
+<https://polmayer5.locloudhosting.net/items/show/1918>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2058612/object_maeyaert_19061798#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-26T10:31:38.847999Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058612/object_maeyaert_19061798> .
+
+<http://data.europeana.eu/organization/1482250000004512020>
+	a               foaf:Organization ;
+	skos:prefLabel  "PMR Maeyaert"@en .
+
+<http://vocab.getty.edu/aat/300008063>
+	a               skos:Concept ;
+	skos:altLabel   "heritage buildings"@en, "edificio histórico"@es, "buildings, historic"@en, "edifício histórico"@pt, "historisch gebouw"@nl, "heritage building"@en, "historic building"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300004790> ;
+	skos:note       "Edificio que es significativo desde el punto de vista de la historia de la arquitectura, que incorpora características arquitectónicas importantes o que juega un papel histórico relevante en el desarrollo local cultural o social. Puede o no estar diseñado oficialmente."@es, "Wordt gebruikt voor gebouwen die van belang zijn in de geschiedenis van de architectuur, die belangrijke architectonische elementen bevatten of die een belangrijke historische rol hebben gespeeld in de plaatselijke culturele of sociale ontwikkeling; kan al of niet officieel zijn aangewezen."@nl, "Buildings that are significant in the history of architecture, that incorporate significant architectural features, or that played significant historic roles in local cultural or social development; may or may not be officially designated. For buildings that are abandoned but not considered necessarily historic, use \u0022abandoned buildings.\u0022"@en, "Edifícios significativos na história da arquitetura, que incorporam características arquitetônicas significativas ou que desempenharam papéis históricos significativos no desenvolvimento cultural ou social local; pode ou não ser oficialmente designado. Para edifícios abandonados, mas não considerados necessariamente históricos, use \u0022edifícios abandonados\u0022."@pt ;
+	skos:prefLabel  "edificios históricos"@es, "edifícios históricos"@pt, "historische gebouwen"@nl, "historic buildings"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2058612/object_maeyaert_19061798>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-29T16:35:59.173Z" ;
+	dcterms:modified          "2021-03-26T09:44:12.459Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058612/object_maeyaert_19061798#contentTier>, <http://data.europeana.eu/item/2058612/object_maeyaert_19061798#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058612/object_maeyaert_19061798> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "2058612_Ag_EU_LoCloud_maeyaert" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058612/object_maeyaert_19061798> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fpolmayer5.locloudhosting.net%2Ffiles%2Foriginal%2Fe155ecb8bcbc47913033e93785f9f0d0.jpg&type=IMAGE> .
+
+<https://polmayer5.locloudhosting.net/files/original/e155ecb8bcbc47913033e93785f9f0d0.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2058612/object_maeyaert_19061798/manifest> ;
+	ebucore:fileByteSize    "205830"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "306"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://more.locloud.eu/object/maeyaert/19061798/SP.4>
+	a               edm:Place ;
+	skos:prefLabel  "Bourgogne, Côte-d'Or" .
+
+<http://data.europeana.eu/aggregation/provider/2058612/object_maeyaert_19061798>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058612/object_maeyaert_19061798> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004512020> ;
+	edm:isShownAt      <https://polmayer5.locloudhosting.net/items/show/1918> ;
+	edm:isShownBy      <https://polmayer5.locloudhosting.net/files/original/e155ecb8bcbc47913033e93785f9f0d0.jpg> ;
+	edm:object         <https://polmayer5.locloudhosting.net/files/original/e155ecb8bcbc47913033e93785f9f0d0.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671084> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://more.locloud.eu/object/maeyaert/19061798/SP.3>
+	a               edm:Place ;
+	skos:prefLabel  "France" .
+
+<http://data.europeana.eu/agent/146791>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bnf.fr/ark:/12148/cb12221995f>, <http://d-nb.info/gnd/118797646>, <http://dbpedia.org/resource/Claus_Sluter>, <https://www.freebase.com/m/01xx8>, <http://www.idref.fr/03089591X/id>, <http://vocab.getty.edu/ulan/500009510>, <http://viaf.org/viaf/205833582>, <http://id.loc.gov/authorities/names/n88081267>, <http://viaf.org/viaf/51961366>, <http://id.worldcat.org/fast/1847868>, <http://www.wikidata.org/entity/Q372367>, <https://g.co/kg/m/01xx8>, <http://data.bibliotheken.nl/id/thes/p073201731> ;
+	rdaGr2:dateOfBirth   "1340-01-01" ;
+	rdaGr2:dateOfDeath   "1406-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40710> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/42574> ;
+	skos:altLabel        "Claes de Slutere"@en, "Claus Sluyter"@en, "Claus Celoistre"@en, "Claves de Slutere"@en, "Claus Slustre"@en, "Слютер Клаус"@ru, "Claus Seluster"@en, "Claus Celuister"@en, "Claes Sluter"@en, "Claes Sluter"@nl, "Sluter"@de, "Sluter"@sv, "Klaas Sluter"@en, "Klaas Sluter"@nl, "Claes Sluyter"@en, "Слютер, Клаус"@ru, "Claus de Slutere"@en, "Claux Celoistre"@en, "Claux Slutre"@en ;
+	skos:note            "French artist"@en, "Artista francés"@es, "Бургундский скульптор XIV—XV веков"@ru, "Artiste français"@fr, "Prantsusmaa kunstnik"@et, "Artist francez"@ro, "Flämischer Bildhauer der Gotik und Mitbegründer der burgundischen Kunstschule"@de, "Nederlands beeldhouwer (1340-1406)"@nl, "Artista francès"@ca, "Scultore olandese"@it ;
+	skos:prefLabel       "Клаус Слутер"@bg, "Клаус Слютер"@ru, "Κλάους Σλούτερ"@el, "Claus Sluter"@it, "Claus Sluter"@de, "Claus Sluter"@sv, "Claus Sluter"@pt, "Claus Sluter"@lt, "Claus Sluter"@en, "Claus Sluter"@fr, "Claus Sluter"@hu, "Claus Sluter"@es, "Claus Sluter"@cs, "Claus Sluter"@pl, "Claus Sluter"@da, "Claus Sluter"@nl, "Claus Sluter"@ca .
+
+<http://data.europeana.eu/item/2058612/object_maeyaert_19061798#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-26T10:31:38.847630Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058612/object_maeyaert_19061798> .
+
+<http://data.europeana.eu/item/2058612/object_maeyaert_19061798>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671084>
+	a               foaf:Organization ;
+	skos:prefLabel  "CARARE"@en .

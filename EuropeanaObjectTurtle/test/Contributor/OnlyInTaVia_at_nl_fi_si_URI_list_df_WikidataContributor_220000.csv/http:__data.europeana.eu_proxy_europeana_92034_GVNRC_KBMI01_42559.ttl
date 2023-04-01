@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/KBMI01:42559>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49405"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KBMI01_42559>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:23:48.574Z" ;
+	dcterms:modified          "2018-04-05T16:59:56.069Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_KBMI01_42559> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AKBMI01%3ALBLKBWOUTERS04183%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:29.871Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KBMI01_42559> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_KBMI01_42559>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/KBMI01:42559> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:KBMI01:LBLKBWOUTERS04183&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_KBMI01_42559>
+	a                   ore:Proxy ;
+	dc:contributor      "Hol, Richard" ;
+	dc:creator          "Hol, Richard" ;
+	dc:description      "\u0022De boerengeneraals toegezongen door de Utrechtsche mannenzangvereeniging bij hun bezoek aan Utrecht op vrijdag 10 october 1902, onder leiding van den directeur P.J. Jos: Vranken.\u0022", "Liedregel index: Het hart klopt ons met hoger slagen Holland bij uw dierbare", "Bronvermelding: Uit liedblad met broncode: Lbl KB Wouters 04183; f1v], nummer 1.", "t Hart klopt ons met hooger slagen / Holland, bij uw dierb'ren naam (Het hart klopt ons met hoger slagen / Holland bij uw dierbare naam). Aantal strofen: 3. Wijsaanduiding ontbreekt.", "Opmerking: Referentielied" ;
+	dc:format           "liedtekst" ;
+	dc:identifier       "Lbl KB Wouters 04183", "http://resolver.kb.nl/resolve?urn=urn:gvn:KBMI01:LBLKBWOUTERS04183" ;
+	dc:rights           "Meertens Instituut", "KB/Meertens Instituut"@nl, "KB/Meertens Instituut"@en ;
+	dc:source           "Lbl KB Wouters 04183 (liedtekst), Wouters/Moormann, Meertens Instituut, Amsterdam." ;
+	dc:subject          "Holland"@nl, "vaderlands lied"@nl ;
+	dc:title            "Hollands glorie" ;
+	dc:type             "StillImage" ;
+	dcterms:isPartOf    "KBMI01:LblKBWouters04183", "GVN", "Straatliederen", "KBMI01" ;
+	dcterms:issued      "05-01-2004" ;
+	dcterms:medium      "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KBMI01_42559> .
+
+<http://data.europeana.eu/concept/15>
+	a                skos:Concept ;
+	skos:exactMatch  <http://babelnet.org/rdf/s03103700n>, <http://www.yso.fi/onto/yso/p7177>, <http://id.loc.gov/authorities/genreForms/gf2017026003>, <http://www.wikidata.org/entity/Q602446>, <https://g.co/kg/m/09lgd>, <https://www.freebase.com/m/09lgd>, <http://purl.org/ontology/mo/Lyrics> ;
+	skos:note        "Musiikkikappaleen lyriikka"@fi, "Texte d'une chanson"@fr, "Ομάδα λέξεων που αποτελούν ένα τραγούδι"@el, "Sæt af ord som udgør en sang"@da, "Uppsättning av ord som utgör sång"@sv, "Sprachlicher Teil eines Musikwerkes"@de, "Texto de una canción"@es, "Zaporedje besed, ki tvorijo pesem"@sl, "Tekst van een bijbehorend lied"@nl, "Sequence of words that make up a song"@en, "Slova, která se zpívají při písni"@cs ;
+	skos:prefLabel   "Слова песен"@ru, "Sanoitus"@fi, "Lirica musicale"@it, "Текст на песен"@bg, "Sångtext"@sv, "Lyrik"@da, "Lletra"@ca, "Dalszöveg"@hu, "Besedilo"@sl, "Letra"@es, "Letra"@pt, "Liedtekst"@nl, "Tekst piosenki"@pl, "Liedtext"@de, "Paroles"@fr, "Lyrics"@en, "Στίχος"@el, "Text písně"@cs .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_KBMI01_42559>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/15> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KBMI01_42559> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:KBMI01:LBLKBWOUTERS04183&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22971"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "186"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_KBMI01_42559#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:29.871Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KBMI01_42559> .

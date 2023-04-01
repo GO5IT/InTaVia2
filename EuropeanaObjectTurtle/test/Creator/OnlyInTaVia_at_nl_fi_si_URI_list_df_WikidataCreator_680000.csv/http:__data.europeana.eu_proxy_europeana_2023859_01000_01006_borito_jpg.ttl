@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2023859/01000_01006_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:25.281Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/01000_01006_borito_jpg> .
+
+<http://mek.oszk.hu/01000/01006>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "18350"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/01000_01006_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/01000/01006> ;
+	edm:isShownBy      <http://mek.oszk.hu/01000/01006/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/01000/01006/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://mek.oszk.hu/01000/01006/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/01000_01006_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "7008"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAFAD2"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFE0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/01000_01006_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/01000_01006_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/01000_01006_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:25.280Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/01000_01006_borito_jpg> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/01000_01006_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:29:35.727Z" ;
+	dcterms:modified          "2015-09-14T11:18:17.565Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg#contentTier>, <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/01000_01006_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F01000%2F01006%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/01000_01006_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Mészáros, Atilla (electronic version made by)"@hu, "Kindlevarázs,  (digital editing made by)"@hu, "Pétery, Kristóf (digital editing made by)"@hu, "Szaniszló, Ákos (digital editing made by)"@hu, "Hevele, István (digital editing made by)"@hu, "Petőfi, Sándor (author)"@hu, "Drótos, László (digital editing made by)"@hu ;
+	dc:description      "Subject date: 19. sz."@hu ;
+	dc:format           "RTF", "PDF", "LIT", "PRC", "WORD 6.0", "HTML" ;
+	dc:identifier       "URL http://nbn-resolving.de/?urn:nbn:hu-3015 [Metadata]", "MEK azonosító MEK-01006 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "Petőfi Sándor összes költeményei [Athenaeum, 1921] [http://mek.oszk.hu/09400/09496/]"@hu, "Petőfi Sándor munkái [http://mek.oszk.hu/07400/07497/]"@hu, "Petőfi Sándor: János vitéz [http://mek.oszk.hu/01000/01010/]"@hu, "Petőfi Sándor: Útirajzok [http://mek.oszk.hu/06100/06125/]"@hu, "Illyés Gyula: Petőfi Sándor [http://mek.oszk.hu/00600/00681/]"@hu, "Arany és Petőfi levelezése prózában, versben [http://mek.oszk.hu/06100/06126/]"@hu, "Petőfi Sándor: Ibolyák (kézirat) [http://mek.oszk.hu/01100/01151/]"@hu, "Petőfi Sándor: A hóhér kötele [http://mek.oszk.hu/01000/01009/]"@hu, "Petőfi Sándor összes prózai művei és levelezése [http://mek.oszk.hu/05900/05911/]"@hu, "A magyar irodalom arcképcsarnoka : Petőfi Sándor [http://mek.oszk.hu/01100/01149/html/petofi.htm]"@hu, "Petőfi Sándor összes költeményei [Rovásírással] [http://mek.oszk.hu/04900/04946/]"@hu ;
+	dc:source           "National Széchényi Library - Hungarian Electronic Library"@hu, "Kindlevarázs"@hu, "A PRC verzió forrása."@hu ;
+	dc:subject          "Culture, Arts, Literature"@hu, "Literature, fiction, folktales"@hu, "magyar irodalom"@hu ;
+	dc:title            "Petőfi Sándor összes költeményei:"@hu ;
+	dc:type             "poems"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/01000_01006_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/01000_01006_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/01000_01006_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/2023859/01000_01006_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

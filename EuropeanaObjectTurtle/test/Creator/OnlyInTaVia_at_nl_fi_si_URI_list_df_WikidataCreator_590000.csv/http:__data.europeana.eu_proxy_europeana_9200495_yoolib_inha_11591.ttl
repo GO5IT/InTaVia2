@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_11591#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:30:00.898Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_11591> .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_11591>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_11591> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/11591> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/11001-12000/11538/media/11632/0631_doucet_4RES1394_008/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/11001-12000/11538/media/11632/0631_doucet_4RES1394_008/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_11591>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1572" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_11591> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_11591> .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_11591>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:35:16.436Z" ;
+	dcterms:modified          "2016-09-19T09:08:54.864Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_11591#metadataTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_11591#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_11591> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_11591> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F11001-12000%2F11538%2Fmedia%2F11632%2F0631_doucet_4RES1394_008%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_11591/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.purl.org/yoolib/inha/11591>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://tools.yoolib.net/i/s4/inha/files/11001-12000/11538/media/11632/0631_doucet_4RES1394_008/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_11591/manifest> ;
+	ebucore:fileByteSize    "557438"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "650"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_11591>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_11591>
+	a                   ore:Proxy ;
+	dc:contributor      "Apud Philippum Gallaeum" ;
+	dc:creator          "Zsámboky, János (1531-1584)", "Galle, Philippe (1537-1612)" ;
+	dc:date             "15..", "1572" ;
+	dc:description      "Note : Ouvrage décrivant des monuments et arcs de triomphes à la gloire de Juan d'Autriche, fils de Charles Quint, vainqueur à la bataille de Lépante (1571) opposant l'Italie et l'Espagne aux Ottomans ; Dédicace de l'auteur à Juan d'Autriche (Vienne, sept. 1571)", "Langue du document : Latin", "Note complémentaire : Page de titre ornée d'un motif gravé sur bois ; Lettrines et cul-de-lampe gravés sur bois ; Contient un poème de Hugo Favolius (auteur inconnu) célébrant la victoire contre les Turcs", "Nombre de vues du document : 57", "Lieu de publication : Antverpiae", "Note de contenu : 16 représentations des arcs de triomphes et de leurs ornements, emblèmes et allégories, qui mêlent un merveilleux païen et la mythologie (nous ne savons pas si ces architectures sont fictives, à l'état de projets, ou si elles furent réalisées)", "Date de numérisation : 2009", "1572" ;
+	dc:format           "1 vol. ([37] p.-16 pl.) ; 28 cm" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/11591" ;
+	dc:language         "lat" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "domaine public"@fr, "Institut National d'Histoire de l'Art"@fr ;
+	dc:source           "NUM 4 RES 1394" ;
+	dc:subject          "16e siècle", "Belgique", "Juan d'Autriche (1545-1578)", "Lépante, Bataille de (1571)", "Anvers (Belgique)", "Fêtes" ;
+	dc:title            "Arcus aliquot triumphal. et monimenta victor. classicae, in honor. invictissimi ac illustriss. Jani Austriae, victoris non quieturi. Auctor. Joan. Sambuco. Quibus adjectum est ejusdem argumenti Carmen Heroicum per Hugonem Favolinum", "Arcus aliquot triumphal. et monimenta victor. classicae, in honor. invictissimi ac illustriss. Jani Austriae [...]" ;
+	dc:type             "Livre de fête", "still image", "text", "image" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_11591> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_11591> .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_11591#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:30:00.899Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_11591> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

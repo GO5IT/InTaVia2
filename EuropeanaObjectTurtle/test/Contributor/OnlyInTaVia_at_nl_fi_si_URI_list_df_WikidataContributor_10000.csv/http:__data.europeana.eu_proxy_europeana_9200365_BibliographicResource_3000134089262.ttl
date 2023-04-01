@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k859348n>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:30:34.942Z" ;
+	dcterms:modified          "2018-07-23T15:29:31.536Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n> ;
+	edm:completeness          "7" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k859348n> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k859348n.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k859348n>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "319213"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:15.069Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859348n> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k859348n/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859348n>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k859348n> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k859348n.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k859348n>
+	a                   ore:Proxy ;
+	dc:contributor      "Chateaubriand, François-René de (1768-1848). Auteur ou responsable intellectuel", "Rénal, A.. Auteur ou responsable intellectuel", "Bouflers. Auteur ou responsable intellectuel", "Mialle. Auteur ou responsable intellectuel", "Rainal, A.. Auteur ou responsable intellectuel", "Naudet, A. (17..-18.. ; parolier). Auteur ou responsable intellectuel", "Lambert, A.. Auteur ou responsable intellectuel", "Saint-Albin, H. de. Auteur ou responsable intellectuel", "Richomme, A.. Auteur ou responsable intellectuel", "Festeau, Louis (1793-1869). Auteur ou responsable intellectuel", "Barrière, Alexandre (1792-18..). Auteur ou responsable intellectuel", "Rondeau, B.. Auteur ou responsable intellectuel", "Gensoul, Justin (1781-1848). Auteur ou responsable intellectuel", "Gentil. Auteur ou responsable intellectuel", "Arnaud, J. (18..-19.. ; compositeur). Auteur ou responsable intellectuel", "Lamartine, Alphonse de (1790-1869). Auteur ou responsable intellectuel", "Boucher de Perthes, Jacques (1788-1868). Auteur ou responsable intellectuel", "Leuven, Adolphe de (1800-1884). Auteur ou responsable intellectuel", "De la haye. Auteur ou responsable intellectuel", "Barateau, Émile (1792-1870). Auteur ou responsable intellectuel", "Aumassip. Auteur ou responsable intellectuel", "Brault. Auteur ou responsable intellectuel", "Lesguillon, Mad.e. Auteur ou responsable intellectuel", "Fontenille. Auteur ou responsable intellectuel", "Béranger, De. Auteur ou responsable intellectuel", "Fouinet, Ernest (1799-1845). Auteur ou responsable intellectuel", "Genevois. Auteur ou responsable intellectuel", "Leduc. Auteur ou responsable intellectuel", "Waldor, Mme. Auteur ou responsable intellectuel", "Rénal, Antony. Auteur ou responsable intellectuel", "Poisson, H.T. (17..?-18.. ; parolier). Auteur ou responsable intellectuel", "Leducy, H.. Auteur ou responsable intellectuel", "Barnière, Alexandre. Auteur ou responsable intellectuel", "Saint-James, L.. Auteur ou responsable intellectuel", "Brazier. Auteur ou responsable intellectuel", "Betourné, A.. Auteur ou responsable intellectuel", "Bétourné, A.. Auteur ou responsable intellectuel", "Arnaud, Joseph-François (1832-1878). Auteur ou responsable intellectuel", "Genty. Auteur ou responsable intellectuel", "Bayard, Jean-François-Alfred (1796-1853). Auteur ou responsable intellectuel", "Raynal, Antony. Auteur ou responsable intellectuel" ;
+	dc:creator          "Romagnesi, Antoine (1781-1850). Compositeur" ;
+	dc:description      "Titre uniforme : Romagnesi, Antoine (1781-1850). Compositeur. [Le rêve]" ;
+	dc:format           "Nombre total de vues :  215", "In 4°, 200 p." ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k859348n" ;
+	dc:language         "fre" ;
+	dc:publisher        "chez l'auteur (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43240058c" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VM7-3669 (3)" ;
+	dc:title            "Collection des romances, chansonnettes et nocturnes... [3e] volume" ;
+	dc:type             "Genre musical : romance vocale" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859348n> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k859348n>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k859348n> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k859348n.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4073"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "192"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "125"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859348n#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:15.070Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859348n> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859348n/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k859348n/manifest> ;
+	ebucore:fileByteSize    "85709"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "765"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .

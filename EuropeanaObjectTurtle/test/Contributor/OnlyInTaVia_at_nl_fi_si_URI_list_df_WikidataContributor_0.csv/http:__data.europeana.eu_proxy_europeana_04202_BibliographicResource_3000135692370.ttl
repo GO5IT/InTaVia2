@@ -1,0 +1,173 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135692370#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:13.845Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135692370> .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135692370>
+	a  edm:ProvidedCHO .
+
+<http://sws.geonames.org/2756669/>
+	a               edm:Place ;
+	skos:altLabel   "Dordt", "Doardt"@fy, "Dordrecht"@nl, "Dordrecht"@ro, "Dordrech"@li, "Dordrecht"@pl, "Dordrecht"@id, "ドルトレヒト"@ja, "Dordrecht"@et, "Dordrecht"@es, "Dordrecht"@hu, "Dordrecht"@fr, "Dordrecht"@it, "Dordrecht"@eo, "Dordrecht"@en, "Dordrecht"@af, "Dordrecht"@fi, "Dordrecht"@sv, "Dordrecht"@de, "Dordreque"@pt, "Dort", "Dordracum"@la, "Ντόρντρεχτ"@el ;
+	skos:prefLabel  "Dordrecht" ;
+	wgs84_pos:lat   "51.81" ;
+	wgs84_pos:long  "4.67361" .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135692370>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000062583>, <http://lib.ugent.be/europeana/900000062579>, <http://lib.ugent.be/europeana/900000062581>, <http://lib.ugent.be/europeana/900000062582>, <http://lib.ugent.be/europeana/900000062580> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000062578> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000062578> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135692370>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/40805> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135692370> .
+
+<http://lib.ugent.be/europeana/900000062583>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest> ;
+	ebucore:fileByteSize    "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://lib.ugent.be/europeana/900000062582>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest> ;
+	ebucore:fileByteSize    "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://lib.ugent.be/europeana/900000062581>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest> ;
+	ebucore:fileByteSize    "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000062578>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "10029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "169"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135692370>
+	a                   ore:Proxy ;
+	dc:contributor      "Abraham Rademaker", "Isaac Le Long" ;
+	dc:creator          "Mattheus Brouërius Van Nidek" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000314319" ;
+	dc:language         "nl" ;
+	dc:publisher        "Blussé & zoon" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Kabinet van nederlandsche en kleefsche oudheden" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "6 v. : ill. ; 4°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1770 - 1771" ;
+	dcterms:spatial     <http://sws.geonames.org/2756669/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135692370> .
+
+<http://lib.ugent.be/europeana/900000062580>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest> ;
+	ebucore:fileByteSize    "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135692370>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T06:25:44.247Z" ;
+	dcterms:modified          "2015-12-04T13:50:17.376Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135692370> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135692370> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000062578&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/40805>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q2534646>, <http://www.idref.fr/118437488/id>, <http://d-nb.info/gnd/132345692>, <http://dbpedia.org/resource/Abraham_Rademaker>, <http://id.loc.gov/authorities/names/nr98040393>, <http://id.worldcat.org/fast/1546412>, <http://vocab.getty.edu/ulan/500032675>, <http://data.bibliotheken.nl/id/thes/p07188341X>, <http://viaf.org/viaf/61821865>, <http://openlibrary.org/works/OL2138326A>, <https://www.freebase.com/m/0gg6fnz>, <http://data.bnf.fr/ark:/12148/cb149723826>, <https://g.co/kg/m/0gg6fnz> ;
+	rdaGr2:dateOfBirth   "1677-01-01" ;
+	rdaGr2:dateOfDeath   "1735-01-21" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40561> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "A. Radermaser"@en, "Abraham rademaker"@en, "A. Rademaker (1675-1735)"@nl, "A.  Rademaker"@nl, "A. Rademaker"@en, "A. Rademaker"@nl, "A Rademaker"@nl, "Abraham rademacher"@en, "A. Redemaker"@en ;
+	skos:note            "Nederlands kunstschilder, tekenaar, prentmaker"@nl, "Dutch painter, draughtsman, printmaker (1677-1735)"@en ;
+	skos:prefLabel       "Abraham Rademaker"@it, "Abraham Rademaker"@fr, "Abraham Rademaker"@da, "Abraham Rademaker"@ca, "Abraham Rademaker"@de, "Abraham Rademaker"@sv, "Abraham Rademaker"@pt, "Abraham Rademaker"@sl, "Abraham Rademaker"@en, "Abraham Rademaker"@es, "Abraham Rademaker"@nl .
+
+<http://lib.ugent.be/europeana/900000062579>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135692370/manifest> ;
+	ebucore:fileByteSize    "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://lib.ugent.be/europeana/900000062578>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "15275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135692370#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:13.846Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135692370> .

@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056096160>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://opc4.kb.nl/DB=1/PPN?PPN=31123335X> ;
+	edm:isShownBy      <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:180r> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:180r> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056096160/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/92065/BibliographicResource_1000056096160>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2825> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1787" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056096160> .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:180r>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056096160/manifest> ;
+	ebucore:fileByteSize    "505370"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "952"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92065/BibliographicResource_1000056096160>
+	a                   ore:Proxy ;
+	dc:creator          "Sallieth, Mathias de (1749-1791)", "Jan Kobell (1755/56-1833)" ;
+	dc:date             "1787" ;
+	dc:identifier       "EUROPEANATRAVEL:PPN:31123335X" ;
+	dc:language         "nl", "néerlandais; flamand"@fr, "nederlands"@nl ;
+	dc:subject          "Vilattes, J. de" ;
+	dc:title            "Portret van J. de Vilattes, voormalig kolonel van het Genootschap tot nut der schuttery / door M[athias] de Sallieth (1749-1791) en [Jan] Kobell (1755-1833)"@nl ;
+	dc:type             "handschrift"@nl ;
+	dcterms:extent      "Papier, 1 fol", "104x175 mm" ;
+	dcterms:hasFormat   <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:180r> ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0445>, "Album van Samuel Rudolphus van Nispen (1733-1775) ; fol. 180r", "Algemene Catalogus KB" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056096160> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/2825>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300252927>, <http://www.wikidata.org/entity/Q2393642>, <https://www.freebase.com/m/0gkxy13>, <http://www.yso.fi/onto/yso/p2511>, <http://id.nlm.nih.gov/mesh/D006236>, <https://g.co/kg/m/0gkxy13>, <http://iconclass.org/49L7>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.539>, <http://vocabularies.unesco.org/thesaurus/concept4547> ;
+	skos:note        "Met de hand geschreven tekst"@nl, "Set of features that characterize a person's handwriting"@en, "Schreiben von Hand"@de, "Conjunto de rasgos que caracterizan la escritura de una persona"@es ;
+	skos:prefLabel   "Manuelles Schreiben"@de, "Handstil"@sv, "Håndskrivning"@da, "Grafia"@it, "Handwriting"@en, "Escriptura a mà"@ca, "Käsiala"@fi, "Scris de mână"@ro, "Почерк"@bg, "Почерк"@ru, "Handschrift"@nl, "Käekiri"@et, "Rokraksts"@lv, "Caligrafía"@es, "Escrita à mão"@pt .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056096160#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:44:28.252Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056096160> .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056096160#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:44:28.252Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056096160> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056096160>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:180r&role=thumbnail>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://opc4.kb.nl/DB=1/PPN?PPN=31123335X>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "11007"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056096160>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-04T08:27:56.038Z" ;
+	dcterms:modified          "2014-06-04T08:27:56.038Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160#contentTier>, <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92065/BibliographicResource_1000056096160> ;
+	edm:completeness          "9" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92065_Ag_EU_TEL_a0445_ETravel" ;
+	edm:landingPage           <https://www.europeana.eu/item/92065/BibliographicResource_1000056096160> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3DEuropeanaTravel%3A79L10%3A180r&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

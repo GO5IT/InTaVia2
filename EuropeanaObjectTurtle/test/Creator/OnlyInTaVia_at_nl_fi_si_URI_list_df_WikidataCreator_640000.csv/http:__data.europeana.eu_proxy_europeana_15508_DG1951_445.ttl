@@ -1,0 +1,160 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/15508/DG1951_445>
+	a                   ore:Proxy ;
+	dc:coverage         "Österreich" ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#Rudolf_Jettmar_Künstler_in> ;
+	dc:date             "1899" ;
+	dc:description      "Beschriftung: l.u. \u0022Rud. Jettmar, 99\u0022 (Bleistift)"@de ;
+	dc:identifier       "DG1951/445" ;
+	dc:language         "de" ;
+	dc:publisher        "Albertina, Wien, Österreich"@de ;
+	dc:rights           "Public Domain Mark 1.0"@de ;
+	dc:subject          "Gravur"@de, "engraving"@en, "Druck"@de, "prints"@en ;
+	dc:title            "Nacht"@de ;
+	dc:type             "Druckgraphik"@de ;
+	dcterms:created     "1899" ;
+	dcterms:extent      "Platte: 12,2 x 18,8 cm Darstellung: 10,5 x 17,1 cm (laut Hofstätter)"@de ;
+	dcterms:isPartOf    "Graphische Sammlung"@de ;
+	dcterms:medium      "Radierung; Aquatinta; Kaltnadel"@de ;
+	dcterms:spatial     "Österreich"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DG1951_445> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15508/DG1951_445> .
+
+<http://data.europeana.eu/aggregation/provider/15508/DG1951_445>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15508/DG1951_445> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477257> ;
+	edm:isShownAt      <https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DG1951/445]&showtype=record> ;
+	edm:isShownBy      <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1951_445.jpg&cache=yes> ;
+	edm:object         <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1951_445.jpg&cache=yes&maxwidth=400> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/15508/DG1951_445>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-08-01T11:45:09.117Z" ;
+	dcterms:modified          "2022-09-28T12:10:21.928Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15508/DG1951_445#contentTier>, <http://data.europeana.eu/item/15508/DG1951_445#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15508/DG1951_445> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15508_Ag_AT_Kulturpool_albertina" ;
+	edm:landingPage           <https://www.europeana.eu/item/15508/DG1951_445> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlungenonline.albertina.at%2Fcc%2Fimageproxy.ashx%3Fserver%3Dlocalhost%26port%3D15001%26filename%3Dimages%2FDG1951_445.jpg%26cache%3Dyes%26maxwidth%3D400&type=IMAGE> .
+
+<file:///usr/local/tomcat/webapps/#Rudolf_Jettmar_Künstler_in>
+	a                               edm:Agent ;
+	dc:date                         "um 1936" ;
+	foaf:name                       "Rudolf Jettmar"@de ;
+	rdaGr2:biographicalInformation  "Zawodzie bei Tarnow (Galizien) 1869 - 1939 Wien"@de ;
+	rdaGr2:professionOrOccupation   "Künstler_in" ;
+	skos:prefLabel                  "Rudolf Jettmar (Künstler_in)" .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4296108019>
+	a                       edm:WebResource ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:isPartOf        "Graphische Sammlung"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4296108019> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/15508/DG1951_445>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/73> ;
+	dc:identifier       "DG1951/445" ;
+	dc:language         "deu" ;
+	dc:subject          <http://data.europeana.eu/concept/2538> ;
+	dcterms:spatial     <http://data.europeana.eu/place/73> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1899" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15508/DG1951_445> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DG1951_445> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15508/DG1951_445> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/item/15508/DG1951_445>
+	a  edm:ProvidedCHO .
+
+<https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DG1951/445]&showtype=record>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "311824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/place/73>
+	a               edm:Place ;
+	owl:sameAs      <http://data.bnf.fr/ark:/12148/cb152383744>, <http://babelnet.org/rdf/s00007266n>, <https://g.co/kg/m/0h7x>, <http://zbw.eu/stw/descriptor/16950-4>, <http://vocab.getty.edu/tgn/1000062>, <http://id.ndl.go.jp/auth/ndlna/00568970>, <http://www.wikidata.org/entity/Q40>, <http://id.nlm.nih.gov/mesh/Z01.542.088>, <http://vocabularies.unesco.org/thesaurus/concept890>, <http://www.idref.fr/026359863/id>, <http://id.loc.gov/authorities/names/n79040121>, <https://www.freebase.com/m/0h7x>, <http://id.nlm.nih.gov/mesh/D001317>, <http://data.bnf.fr/ark:/12148/cb11862316m>, <http://www.yso.fi/onto/ysa/Y105294>, <http://datos.bne.es/resource/XX450936>, <http://dbpedia.org/resource/Austria>, <https://sws.geonames.org/2782113/>, <http://viaf.org/viaf/148842731>, <http://www.yso.fi/onto/yso/p105294>, <https://d-nb.info/gnd/4043271-3>, <http://id.worldcat.org/fast/1204901> ;
+	skos:altLabel   "La République d’Autriche"@fr, "Segona República d'Àustria"@ca, "Република Австрия"@bg, "República de Austria"@es, "Republic of Austria"@en, "Österreich"@hr, "Österreich"@en, "República da Áustria"@pt, "Österreich"@sv, "Österreich"@ru, "Δημοκρατία της Αυστρίας"@el, "Republika Austrija"@hr, "Republiek Oostenrijk"@nl, "República Federal d'Àustria"@ca, "Aut."@fr, "Autr."@fr, "Австрийская Республика"@ru, "Republica de Austria"@es, "Ostalriche"@ca, "Republik Österreich"@es, "Republik Österreich"@en, "Republik Österreich"@de, "Austria Vabariik"@et, "Itävallan tasavalta"@fi, "Repubblika tal-Awstrija"@mt, "RÖ"@es, "RÖ"@de, "Rakúska republika"@sk, "AUT"@nl, "AUT"@es, "AUT"@fr, "AUT"@en, "AUT"@de, "Республика Австрия"@ru, "República d'Àustria"@ca, "Austria"@ca, "Republika Austrii"@pl, "AT"@nl, "AT"@es, "AT"@fr, "AT"@en, "AT"@de ;
+	skos:note       "Pajjiż fl-Ewropa Ċentrali"@mt, "Stato dell'Europa centrale, membro dell'Unione europea"@it, "Государство в Западной Европе"@ru, "Država u srednjoj Europi"@hr, "Stat în Europa Centrală"@ro, "Staat in Mitteleuropa"@de, "Riik Kesk-Euroopas"@et, "Štát v strednej Európe"@sk, "Państwo w Europie"@pl, "Valsts Centrāleiropā"@lv, "Et land i Centraleuropa"@da, "Valtio Keski-Euroopassa"@fi, "Förbundsrepublik i Centraleuropa"@sv, "Χώρα της κεντρικής Ευρώπης"@el, "Land in Europa"@nl, "Pays d'Europe centrale"@fr, "Estat sense litoral a l'Europa Central"@ca, "Država v Evropi"@sl, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Stát ve střední Evropě"@cs, "País localizado na Europa Central"@pt, "Държава в Централна Европа"@bg, "País de Europa"@es ;
+	skos:prefLabel  "Austrija"@hr, "Austrija"@lt, "Austrija"@lv, "Rakúsko"@sk, "Avstrija"@sl, "Àustria"@ca, "Autriche"@fr, "Itävalta"@fi, "Austria"@en, "Austria"@it, "Austria"@es, "Austria"@et, "Austria"@eu, "Austria"@pl, "Austria"@ro, "Østrig"@da, "Awstrija"@mt, "Rakousko"@cs, "Österrike"@sv, "An Ostair"@ga, "Австрия"@ru, "Австрия"@bg, "Oostenrijk"@nl, "Áustria"@pt, "Αυστρία"@el, "Österreich"@de, "Ausztria"@hu ;
+	wgs84_pos:lat   "48.0" ;
+	wgs84_pos:long  "14.0" .
+
+<https://iiif.europeana.eu/presentation/15508/DG1951_445/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004477257>
+	a               foaf:Organization ;
+	skos:prefLabel  "Albertina"@en, "Albertina"@de .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1951_445.jpg&cache=yes>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15508/DG1951_445/manifest> ;
+	ebucore:fileByteSize    "172713"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "795"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FDF5E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1951_445.jpg&cache=yes&maxwidth=400>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17518"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "265"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFEBCD"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/15508/DG1951_445#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T13:09:00.908842Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DG1951_445> .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .
+
+<http://data.europeana.eu/item/15508/DG1951_445#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T13:09:00.908652Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DG1951_445> .

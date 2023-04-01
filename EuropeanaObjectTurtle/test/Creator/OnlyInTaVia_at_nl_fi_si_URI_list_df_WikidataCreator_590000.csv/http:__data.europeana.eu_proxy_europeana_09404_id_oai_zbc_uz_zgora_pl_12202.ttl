@@ -1,0 +1,107 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12202>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "25459"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhTzS9>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1871" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzS9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzS9> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzS9>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhTzS9#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:13.363Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzS9> .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhTzS9>
+	a                   ore:Proxy ;
+	dc:creator          "French, W."@pl, "Rubens, Peter Paul (1577-1640)"@pl ;
+	dc:date             "1871"@pl ;
+	dc:description      "staloryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1585"@pl ;
+	dc:publisher        "M. Glücksberg"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "Rubens, Peter Paul (1577-1640) - twórczość"@pl, "French, W."@pl, "malarstwo europejskie - 16-17 w."@pl, "grafika - 19 w."@pl, "staloryt - 19 w."@pl, "malarstwo flamandzkie - 16-17 w."@pl ;
+	dc:title            "Synowie Rubensa"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "18,5 x 11,3 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzS9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzS9> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzS9>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:57:45.724Z" ;
+	dcterms:modified          "2017-11-30T08:57:45.724Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhTzS9#metadataTier>, <http://data.europeana.eu/item/0940424/_nnhTzS9#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhTzS9> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhTzS9> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F12202%2FDC-1585_synowie_rubensa.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhTzS9#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:13.362Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzS9> .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhTzS9>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhTzS9> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12202> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/12202/DC-1585_synowie_rubensa.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/12202/DC-1585_synowie_rubensa.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://zbc.uz.zgora.pl/Content/12202/DC-1585_synowie_rubensa.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhTzS9/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhTzS9/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

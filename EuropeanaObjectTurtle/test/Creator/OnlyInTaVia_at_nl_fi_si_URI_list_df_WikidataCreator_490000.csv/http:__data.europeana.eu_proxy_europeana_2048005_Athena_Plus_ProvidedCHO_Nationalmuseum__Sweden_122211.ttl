@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=122211&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=122211&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=122211&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=122211&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T11:57:37.564Z" ;
+	dcterms:modified          "2017-02-21T15:22:21.714Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> ;
+	edm:completeness          "9" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D122211%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:12.676Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:12.677Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211>
+	a                   ore:Proxy ;
+	dc:creator          "Copy after Roelant Savery"@sv, "Lambert Doomer"@sv ;
+	dc:description      "    Panoramavy över storslaget berglandskap med dalgång och flod; i förgrunden t.v. två vandrare i samspråk, i mitten avbarrade trädstammar och en get uppflugen på ett stenparti."@sv ;
+	dc:format           "Grafit, penna och brunt bläck, akvarellerad på papper. Kantlinje, partiellt, i svart bläck. Helklistrad på sekundärt underlag", "teckning (bildskapande)", <http://partage.vocnet.org/part00881> ;
+	dc:identifier       "(Inv. Nr.: NMH 5/2008)", "122211" ;
+	dc:title            "Berglandskap"@sv ;
+	dc:type             "Teckningar"@sv ;
+	dcterms:created     "Utf. slutet av 1650-talet (?)" ;
+	dcterms:extent      "Mått 36,4 x 27,9 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211>
+	a  edm:ProvidedCHO .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=122211&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211/manifest> ;
+	ebucore:fileByteSize    "255242"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "521"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/agent/123202>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/agent/82853> ;
+	owl:sameAs                     <http://www.idref.fr/144318296/id>, <http://data.bibliotheken.nl/id/thes/p070442967>, <http://id.worldcat.org/fast/1816196>, <http://vocab.getty.edu/ulan/500031031>, <http://dbpedia.org/resource/Lambert_Doomer>, <http://d-nb.info/gnd/118680374>, <http://www.wikidata.org/entity/Q527919>, <https://g.co/kg/m/0cny9wm>, <http://data.bnf.fr/ark:/12148/cb14973031q>, <http://id.loc.gov/authorities/names/nr2002035970>, <http://viaf.org/viaf/95872901>, <https://www.freebase.com/m/0cny9wm> ;
+	rdaGr2:dateOfBirth             "1624-02-11" ;
+	rdaGr2:dateOfDeath             "1700-07-02" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Lambert Harmensz. Doomer"@en, "Lambert Harmensz. Doomer"@nl, "Harmensz. Doomer"@en, "Ламберт Домер"@ru, "Lambert-C. Doomer"@en, "Lambert-C. Doomer"@nl, "Dommer"@en, "Doumer"@en, "L. Domer"@en, "Doomer"@en, "Domer"@en ;
+	skos:note                      "Niederländischer Maler"@de, "Peintre et graveur néerlandais"@fr, "Nederlands kunstschilder"@nl, "Painter from the Northern Netherlands (1624-1700)"@en ;
+	skos:prefLabel                 "Lambert Doomer"@cs, "Lambert Doomer"@de, "Lambert Doomer"@sv, "Lambert Doomer"@pt, "Lambert Doomer"@en, "Lambert Doomer"@it, "Lambert Doomer"@fr, "Lambert Doomer"@es, "Lambert Doomer"@sk, "Lambert Doomer"@sl, "Lambert Doomer"@pl, "Lambert Doomer"@da, "Lambert Doomer"@ca, "Lambert Doomer"@nl, "Домер, Ламберт"@ru .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/123202> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_122211> .

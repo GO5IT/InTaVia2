@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:113118>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51508"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_113118>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_113118#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:56.915Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_113118> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_113118>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:07:03.957Z" ;
+	dcterms:modified          "2018-04-05T18:11:23.929Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_113118> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A113118%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:113118&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "40887"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "110"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/2346>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q29527347>, <http://thesaurus.europeanafashion.eu/thesaurus/10902>, <http://vocab.getty.edu/aat/300189808> ;
+	skos:note        "Objeto tridimensional o bidimensional trabajado usualmente en piedra o barro, de medianas dimensiones que representa a personajes con característica humanas"@es, "Representation of humans, animals, or mythical beasts, in any medium"@en, "Représentation d'êtres vivants (animaux et humains) ou de créatures mythiques"@fr, "Darstellung eines Menschen, Tieres oder einer mythologischen Gestalt in einem Medium"@de ;
+	skos:prefLabel   "Fíor"@ga, "Représentation figurée"@fr, "Figure"@en, "Figura"@cs, "Figura"@es, "Figura"@it, "Φιγούρα"@el, "Figuurvoorstelling"@nl, "Фигурка"@ru, "Figureta"@ca, "Figuur"@et, "Figur"@da, "Figur"@sv, "Figur"@de .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_113118>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2346>, <http://data.europeana.eu/concept/2397> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_113118> .
+
+<http://data.europeana.eu/concept/2397>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2280> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300209285>, <http://babelnet.org/rdf/s00043306n>, <http://thesaurus.europeanafashion.eu/thesaurus/10188>, <https://www.freebase.com/m/01443y>, <http://www.wikidata.org/entity/Q14952>, <http://id.loc.gov/authorities/names/sh85059483>, <https://g.co/kg/m/01443y>, <https://d-nb.info/gnd/4128502-5>, <http://zbw.eu/stw/descriptor/14911-3>, <http://iconclass.org/41D221>, <http://id.ndl.go.jp/auth/ndlna/01199941> ;
+	skos:note        "Alles wat het hoofd bedekt"@nl, "Klädesplagg"@sv, "Способы убранства и покрытия головы"@ru, "Prenda con que se cubre la cabeza"@es, "Elemento de roupa que é usado na cabeça"@pt, "Any covering for the head; element of clothing which is worn on one's head"@en, "Vêtement"@fr, "Obiect de vestimentație care acoperă capul"@ro, "Kleidungs- oder Schmuckstück zur Bedeckung des Kopfes"@de, "Capo di vestiario"@it ;
+	skos:prefLabel   "Kopfbedeckung"@de, "Headgear"@en, "Tocado"@es, "Lligadura"@ca, "Pokrivalo"@sl, "Huvudbonad"@sv, "Nakrycie głowy"@pl, "Pokrývka hlavy"@cs, "Hoofddeksel"@nl, "Galvassega"@lv, "Galvos apdangalas"@lt, "Päähine"@fi, "Acessório de cabeça"@pt, "Buruko"@eu, "Peakate"@et, "Coifură"@ro, "Hovedbeklædning"@da, "Fejfedő"@hu, "Couvre-chef"@fr, "Головной убор"@ru, "Pokrivalo za glavu"@hr, "Copricapo"@it .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_113118#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:56.915Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_113118> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_113118>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:113118> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:113118&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_113118>
+	a                   ore:Proxy ;
+	dc:contributor      "Breitner, George Hendrik" ;
+	dc:creator          "Breitner, George Hendrik" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:113118", "WITS01:113118" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:113118], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "vrouw"@nl, "figuurvoorstelling"@nl, "hoofddeksel"@nl, "straat"@nl, "straatscène"@nl ;
+	dc:title            "Dame op straat" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1872-1923" ;
+	dcterms:isPartOf    "Willem Witsen: Tachtiger in brief en beeld", "WITS01", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_113118> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_113118> .

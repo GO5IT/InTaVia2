@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_BVB01_BDH9985PK>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1604" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_BVB01_BDH9985PK> .
+
+<http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_BVB01_BDH9985PK>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T20:55:15.041Z" ;
+	dcterms:modified          "2018-04-05T16:37:41.934Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ABVB01%3ABDH9985PK%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_BVB01_BDH9985PK>
+	a                   ore:Proxy ;
+	dc:contributor      "Saenredam, Jan Pietersz.", "Bloemaert, Abraham, naar" ;
+	dc:creator          "Saenredam, Jan Pietersz." ;
+	dc:description      "signatuur: onder in prent: A. Bloemaert inve. Joan Saenredam sculp et excudebat etc.", "met dank aan: bruikleen Stichting Lucas van Leyden, legaat Bierens de Haan, 1951", "inscripties: 2 x 2 reg. Lat. vers : Cum sator aeterna...", "vroegere eigenaar: Sachsen, Friedrich August II von; veiling Leipzig (Boerner) 1928/11/15; Bierens de Haan, dr. J.C.J.; Stichting Lucas van Leyden", "uit de serie: De geschiedenis van Adam" ;
+	dc:format           "prent" ;
+	dc:identifier       "BdH 9985 (PK)", "http://resolver.kb.nl/resolve?urn=urn:gvn:BVB01:BDH9985PK" ;
+	dc:rights           "for information contact Museum Boijmans Van Beuningen"@en, "Museum Boijmans Van Beuningen", "voor informatie: Museum Boijmans Van Beuningen"@nl ;
+	dc:source           "BdH 9985 (PK) (prent, gravure; I/I), 16e eeuwse Noord- en Zuid-Nederlandse grafiek, Prentenkabinet Museum Boijmans Van Beuningen" ;
+	dc:title            "Verdrijving uit de hof van Eden" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1604" ;
+	dcterms:extent      "hxb 1: 260 mm x 194 mm; hxb 2: 275 mm x 194 mm" ;
+	dcterms:isPartOf    "16e-eeuwse Noord- en Zuid-Nederlandse grafiek", "GVN", "BVB01" ;
+	dcterms:issued      "01-06-2004" ;
+	dcterms:medium      "gravure; I/I", "text/xml" ;
+	dcterms:temporal    "16e/17e eeuw" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_BVB01_BDH9985PK> .
+
+<http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:38.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_BVB01_BDH9985PK> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://www.geheugenvannederland.nl/?/en/items/BVB01:BDH9985PK>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "53465"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:BVB01:BDH9985PK&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "33425"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "208"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_BVB01_BDH9985PK>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/BVB01:BDH9985PK> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:BVB01:BDH9985PK&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_BVB01_BDH9985PK#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:38.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_BVB01_BDH9985PK> .

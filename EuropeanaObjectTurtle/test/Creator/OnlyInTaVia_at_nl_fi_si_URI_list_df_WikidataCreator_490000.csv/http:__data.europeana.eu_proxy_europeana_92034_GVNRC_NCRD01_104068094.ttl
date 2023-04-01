@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:40.163Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068094> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068094&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4794"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "113"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_104068094>
+	a                   ore:Proxy ;
+	dc:contributor      "Leonard Bramer" ;
+	dc:creator          "Leonard Bramer" ;
+	dc:description      "Vindplaats: Parijs, Musées Nationaux", "Opm. : Litt. : Jane P. Davidson: The witch in northern european art 1470-1750, Freren 1987." ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068094" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[104068094], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "heks"@nl ;
+	dc:title            "Heksenscène" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1630" ;
+	dcterms:isPartOf    "GVN", "NCRD", "NCRD01" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068094> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068094>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:104068094> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068094&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104068094>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:09:57.556Z" ;
+	dcterms:modified          "2018-04-05T17:25:29.344Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_104068094> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A104068094%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/agent/91652>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://viaf.org/viaf/95318957>, <http://datos.bne.es/resource/XX916685>, <http://d-nb.info/gnd/119248980>, <http://ta.sandrart.net/-person-2738>, <http://openlibrary.org/works/OL468608A>, <https://libris.kb.se/vs6899qd0pd1099>, <http://data.bnf.fr/ark:/12148/cb149704673>, <http://id.loc.gov/authorities/names/nr93002225>, <http://data.bibliotheken.nl/id/thes/p084289740>, <http://libris.kb.se/resource/auth/213612>, <http://www.idref.fr/178771538/id>, <http://dbpedia.org/resource/Leonaert_Bramer>, <http://www.wikidata.org/entity/Q979381>, <http://vocab.getty.edu/ulan/500015658>, <https://g.co/kg/m/026gk07>, <http://id.worldcat.org/fast/315705>, <https://www.freebase.com/m/026gk07> ;
+	rdaGr2:dateOfBirth             "1596-12-24" ;
+	rdaGr2:dateOfDeath             "1674-02-01" ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Leonardo delle Notti Bramer"@en, "Bramerv"@en, "Leonaert Bramer"@nl, "Leonaert Bramer"@fr, "Braimer"@en, "Premer"@en, "Leonard Brammer"@en, "Λεονάρντο ντελλα Νόττε"@el, "Leonhardus Bramer"@en, "Leon Brammer"@en, "Bramer"@en, "Leonhardt Braamer"@en, "Leonardo della Notte"@en, "Lenard Bramer"@en, "Bramah &c."@en, "Leonard Braemer"@en, "Leonh. Bræmer"@en, "Leonard Bramah"@en, "Leonardo fiammengo"@en, "Léonard Braemer"@en, "Braamer"@en, "&c. L. Braëmer"@en, "Leendert Bramer"@en, "M. Leonardo"@en, "Brameir"@en, "Leendert Bramert"@en, "Leonardo dalle Notti"@en, "Leonard Bamer"@en, "Leonh. Braamer"@en, "Leonardo da le notti"@en, "Braamers"@en, "L. Braemer"@en, "L. Bramer"@en, "Leonard Bremer"@en, "Leonard Bremen"@en, "Bramere"@en, "Bamer"@en, "Braëmaer"@en, "Braemer"@en, "Lenard Braemer"@en, "Leonhard Bramer"@en, "Leonhard Pramer"@en, "Len. Bramer"@en, "Leonardo delle Notti"@nl, "Leonardo delle Notti"@it, "Leonardo delle Notti"@en, "Leonh. Bramer"@en, "Bramer van Delft"@en, "L. Bremen"@en, "Leonhard Bramet"@en, "Lendert Bramer"@en, "Leo Bramer"@en, "Brammer"@en, "Leonard Braumer"@en, "Leonardo Fiammengo"@en, "Monsù Leonardo"@en, "Msù Leonardo"@en, "L. Bramah"@en, "L. Brammer"@en, "Leonardo Bramer"@en, "Leonard Bramer"@et, "Leonard Bramer"@en, "Brames"@en, "Brahmer"@en, "Pramer"@en, "Braumer"@en, "Braener"@en, "Bremer"@en, "Leonart Bramer"@nl, "Leonart Bramer"@en, "F. Bramer"@en, "Léonard Brammer"@en, "Leonard Brame"@en, "Brame"@en, "L. Braumer"@en, "M. Lionardo"@en, "Leonardo dalle notti"@en, "Léonard Bramer"@en, "Nestelghat"@nl, "Leon. Brammer"@en, "Nestelghat"@en, "Bramah"@en, "Leonard Braamer"@en ;
+	skos:note                      "Pintor neerlandès"@ca, "Peintre néerlandais"@fr, "Pittore e disegnatore olandese"@it, "Nizozemský malíř"@cs, "Holländischer Maler"@de, "Pintor neerlandês"@pt, "Nederlands kunstschilder"@nl, "17th century Dutch artist known primarily for genre, religious, and history paintings (1596-1674)"@en, "Pintor neerlandés"@es, "Ολλανδός ζωγράφος"@el ;
+	skos:prefLabel                 "Λέονερτ Μπράμερ"@el, "Leonard Bramer"@fr, "Leonard Bramer"@sv, "Leonard Bramer"@pt, "Leonard Bramer"@it, "Leonard Bramer"@sk, "Leonard Bramer"@nl, "Leonaert Bramer"@de, "Leonaert Bramer"@lt, "Leonaert Bramer"@en, "Leonaert Bramer"@es, "Leonaert Bramer"@et, "Leonaert Bramer"@cs, "Leonaert Bramer"@sl, "Leonaert Bramer"@pl, "Leonaert Bramer"@da, "Leonaert Bramer"@ca, "Леонард Брамер"@ru .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_104068094>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/91652> ;
+	dc:creator          <http://data.europeana.eu/agent/91652> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1630" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104068094> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068094#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:40.163Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068094> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:104068094>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49607"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

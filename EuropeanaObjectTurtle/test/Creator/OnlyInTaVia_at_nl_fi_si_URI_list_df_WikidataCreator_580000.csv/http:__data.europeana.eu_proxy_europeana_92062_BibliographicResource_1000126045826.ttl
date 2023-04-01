@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126045826#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:52:17.941Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126045826> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4648919>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126045826>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4648919> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/4648919.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/4648919.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126045826/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/92062/BibliographicResource_1000126045826>
+	a                   ore:Proxy ;
+	dc:creator          "Pontius, Paulus" ;
+	dc:description      "Stecher: Pontius, Paulus\u000AVerleger: Enden, Martinus van den (1)\u000ADatierung: 1630 / 1640\u000AVerlagsort: Antwerpen"@de ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/4648919.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Sonstige europäische Königreiche"@de, "Portrait"@en, "Sweden"@en, "Könige"@de, "Porträt"@de, "Schweden"@de, "König"@de ;
+	dc:title            "Gustav II. Adolf, König von Schweden"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:hasFormat   "image/jpeg" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0480> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126045826> .
+
+<http://www.bildarchivaustria.at/Thumbnail/4648919.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92062/BibliographicResource_1000126045826>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126045826> .
+
+<http://www.bildarchivaustria.at/Preview/4648919.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126045826/manifest> ;
+	ebucore:fileByteSize    "1349745"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1315"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126045826>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126045826#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:52:17.941Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126045826> .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126045826>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-04T17:50:49.251Z" ;
+	dcterms:modified          "2015-03-26T17:57:54.415Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826#metadataTier>, <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92062/BibliographicResource_1000126045826> ;
+	edm:completeness          "8" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92062_Ag_EU_TEL_a0480_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92062/BibliographicResource_1000126045826> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F4648919.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .

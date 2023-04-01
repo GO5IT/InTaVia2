@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:38:10.874Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200471/BibliographicResource_3000134111033> .
+
+<http://data.europeana.eu/proxy/provider/9200471/BibliographicResource_3000134111033>
+	a                   ore:Proxy ;
+	dc:contributor      "Gáspár Endre" ;
+	dc:creator          "Franz Grillparzer" ;
+	dc:description      "Gáspár Endre", "In: Az egyetem. - , 1 : 4 (1916), p. 15-23.", "Grillparzer műve részben itt kerül közlésre először magyar nyelven" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "bibKLT00224400" ;
+	dc:language         "hu" ;
+	dc:rights           "Free Access - no-reuse" ;
+	dc:subject          "Egyetemek és főiskolák, folyóiratok, Magyarország -- Debrecen", "Universities and colleges, Periodicals., Hungary -- Debrecen", "Osztrák dráma, fordítások, magyar, 19. század" ;
+	dc:title            "Részlet Grillparzer Ferenc \u0022A toledói zsidónő\u0022 című szomorújátékának negyedik felvonásából" ;
+	dc:type             "Analytic serial"@en ;
+	dcterms:isPartOf    "Az egyetem", <http://data.theeuropeanlibrary.org/Collection/a1187> ;
+	dcterms:issued      "1916" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/hu>, "Debrecen (Hajdú-Bihar megye), , folyóiratok", "Debrecen (Hungary), , Periodicals." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200471/BibliographicResource_3000134111033> .
+
+<http://data.europeana.eu/aggregation/europeana/9200471/BibliographicResource_3000134111033>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-04T13:45:01.599Z" ;
+	dcterms:modified          "2017-08-09T13:40:33.313Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033#metadataTier>, <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033> ;
+	edm:completeness          "8" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "9200471_Ag_TEL_a1187_eCloud_Debrecen" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200471/BibliographicResource_3000134111033> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fdea.lib.unideb.hu%2Fdea%2Fbitstream%2Fhandle%2F2437%2F165706%2Fp_egy_1916_1_04.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200471/BibliographicResource_3000134111033>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/65376> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1916" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200471/BibliographicResource_3000134111033> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516106>
+	a               foaf:Organization ;
+	skos:prefLabel  "The University and National Library of Debrecen"@en .
+
+<https://dea.lib.unideb.hu/dea/bitstream/handle/2437/165706/p_egy_1916_1_04.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21588"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "350"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "233"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://periodicals.lib.unideb.hu/lista.php?c=egy>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "83809"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/65376>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q154438>, <https://www.freebase.com/m/02tr2w>, <http://viaf.org/viaf/12345937>, <http://libris.kb.se/resource/auth/188696>, <http://data.carnegiehall.org/names/1019853>, <http://datos.bne.es/resource/XX958818>, <http://openlibrary.org/works/OL152885A>, <http://id.worldcat.org/fast/44908>, <https://g.co/kg/m/02tr2w>, <http://www.idref.fr/027324516/id>, <http://data.bibliotheken.nl/id/thes/p069034842>, <http://data.cervantesvirtual.com/person/1626>, <http://data.bnf.fr/ark:/12148/cb12155340x>, <http://id.loc.gov/authorities/names/n79125107>, <https://libris.kb.se/b8nqqthv37w5qvn>, <http://nlg.okfn.gr/resource/authority/record109841>, <http://d-nb.info/gnd/118542192>, <http://dbpedia.org/resource/Franz_Grillparzer>, <https://livedata.bibsys.no/authority/90085102>, <http://id.ndl.go.jp/auth/ndlna/00441750>, <http://lod.nl.go.kr/resource/KAC199610883> ;
+	rdaGr2:dateOfBirth   "1791-01-15" ;
+	rdaGr2:dateOfDeath   "1872-01-21" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/80422> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Грильпарцер"@ru, "Franz Seraphicus Grillparzer"@de, "Franz Seraphicus Grillparzer"@fi, "Franz Seraphicus Grillparzer"@pt, "Franz Seraphicus Grillparzer"@en, "Franz Seraphicus Grillparzer"@ro, "Grillparzer"@de, "Grillparzer"@sv, "Grillparzer"@fr, "Grillparzer"@da, "Saphokles, der Istrianer"@de, "Грильпарцер Франц"@ru ;
+	skos:note            "Osztrák író, drámaíró és költő"@hu, "Австрийский поэт и драматург"@ru, "Rakouský dramatik a spisovatel"@cs, "Dramaturg austriacki"@pl, "Österreichischer Dramatiker"@de, "Austrian dramatist and poet (1791-1872)"@en, "Scrittore e drammaturgo austriaco"@it, "Oostenrijks schrijver"@nl, "Østrigsk poet og skribent (1791-1872)"@da, "Österrikisk poet och författare"@sv, "Auteur dramatique et romancier"@fr, "Австрийски поет и драматург"@bg ;
+	skos:prefLabel       "Франц Грильпарцер"@ru, "Franz Grillparzer"@it, "Franz Grillparzer"@de, "Franz Grillparzer"@fi, "Franz Grillparzer"@sv, "Franz Grillparzer"@pt, "Franz Grillparzer"@en, "Franz Grillparzer"@fr, "Franz Grillparzer"@hu, "Franz Grillparzer"@es, "Franz Grillparzer"@cs, "Franz Grillparzer"@sk, "Franz Grillparzer"@sl, "Franz Grillparzer"@ga, "Franz Grillparzer"@pl, "Franz Grillparzer"@da, "Franz Grillparzer"@ro, "Franz Grillparzer"@ca, "Franz Grillparzer"@nl, "Франц Грилпарцер"@bg, "Francis Grillparcers"@lv .
+
+<http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:38:10.874Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200471/BibliographicResource_3000134111033> .
+
+<https://dea.lib.unideb.hu/dea/bitstream/handle/2437/165706/egy_1916_1_04.pdf#page=17>
+	a                      edm:WebResource ;
+	ebucore:fileByteSize   "22143224"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://rightsstatements.org/vocab/InC/1.0/> ;
+	edm:spatialResolution  "-1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/aggregation/provider/9200471/BibliographicResource_3000134111033>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200471/BibliographicResource_3000134111033> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516106> ;
+	edm:isShownAt      <http://periodicals.lib.unideb.hu/lista.php?c=egy> ;
+	edm:isShownBy      <https://dea.lib.unideb.hu/dea/bitstream/handle/2437/165706/egy_1916_1_04.pdf#page=17> ;
+	edm:object         <https://dea.lib.unideb.hu/dea/bitstream/handle/2437/165706/p_egy_1916_1_04.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

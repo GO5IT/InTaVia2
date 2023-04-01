@@ -1,0 +1,129 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000061048000000>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1999" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000061048000000> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:11:27.626Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000061048000000> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/concept/soundgenres/Music>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1423855> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower    <http://data.europeana.eu/concept/soundgenres/Music/Jazz>, <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Non-western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Popular_music>, <http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music> ;
+	skos:note        "All types of music."@en ;
+	skos:prefLabel   "Musik"@de, "Musique"@fr, "Muzyka"@pl, "Music"@en, "Música"@es, "Musica"@it .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000061048000000&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000061048000000>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000061048000000&teca=ICBSA> ;
+	edm:object         <http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000061048000000&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000061048000000&teca=ICBSA>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "85763"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000061048000000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T08:38:47.122Z" ;
+	dcterms:modified          "2016-07-08T12:50:51.473Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000#contentTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000> ;
+	edm:completeness          "10" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.internetculturale.it%2Fjmms%2Fthumbnail%3Ftype%3Dweb%26id%3Doai%253A192.168.10.31%253A22%253ARM0200%253AIT-DDS0000061048000000%26teca%3DICBSA&type=SOUND> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:11:27.626Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000061048000000> .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000061048000000>
+	a           edm:WebResource ;
+	dc:format   "mp3" ;
+	edm:rights  <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000061048000000>
+	a                   ore:Proxy ;
+	dc:contributor      "Alldis, John [direttore d'orchestra]", "Sharpe, Terrance [interprete]", "Levine, James [direttore d'orchestra]", "Ewing, Maria [interprete]", "Collins, Kenneth [interprete]", "The John Alldis Choir [interprete]", "Byers, Alan [interprete]", "Morris, James [interprete]", "New Philharmonia Orchestra <London> [interprete]", "Domingo, Placido <1941> [interprete]", "Goeke, Leo [interprete]", "Duveyrier, Charles [librettista]", "Milnes, Sherrill [interprete]", "Raimondi, Ruggero [interprete]", "Scribe, Eugene Augustin <1791-1861> [librettista]", "Arroyo, Martina <1935> [interprete]", "Van Allen, Richard [interprete]" ;
+	dc:creator          "Verdi, Giuseppe <1813-1901>" ;
+	dc:date             "1999" ;
+	dc:description      "Personaggi e interpreti: Arrigo ; Domingo, Placido. Danieli ; Goeke, Leo. Duchess Elena ; Arroyo, Martina. Giovanni da Procida ; Raimondi, Ruggero. Guido di Monforte ; Milnes, Sherrill. Lord of Bethune ; Sharpe, Terrance. Manfredo ; Byers, Alan. Ninetta ; Ewing, Maria. Roberto ; Morris, James. Tebaldo ; Collins, Kenneth"@it ;
+	dc:format           "3 compact disc (187 min., 14 sec.): 1.4 m./sec (compact disc), Digitale, Stereofonico; 4 3/4 in. (12 cm.) + Libretto" ;
+	dc:identifier       "IT-DDS0000061048000000" ;
+	dc:language         "ita" ;
+	dc:publisher        "New York : BMG CLASSICS, 200." ;
+	dc:subject          <http://dbpedia.org/resource/opera>, "opera", <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "I vespri siciliani : opera in five acts / Music by Giuseppe Verdi ; libretto by Eugene Scribe and Charles Duveyrier ; [interpreti]: Martina Arroyo, Placido Domingo, Sherrill Milnes ... [et al.] ; New PHilharmonia Orchestra ; James Levine, conductor ; John Alkldis Choir ; John Alldis, director" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/544.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000061048000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000061048000000> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/0940425/_nn9v8bn>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/277> ;
+	dc:type             <http://data.europeana.eu/concept/19> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1912" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940425/_nn9v8bn> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940425/_nn9v8bn> .
+
+<http://data.europeana.eu/item/0940425/_nn9v8bn>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/0940425/_nn9v8bn/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<file:///usr/local/tomcat/webapps/#locationOf:nn9v8bn_FBC>
+	a               edm:Place ;
+	skos:prefLabel  "Książnica Pomorska"@pl .
+
+<http://data.europeana.eu/item/0940425/_nn9v8bn#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:40:33.612Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940425/_nn9v8bn> .
+
+<http://data.europeana.eu/organization/1482250000004517565>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zachodniopomorska Biblioteka Cyfrowa \u0022Pomerania\u0022"@pl, "West Pomeranian Digital Library \u0022Pomerania\u0022"@en .
+
+<http://data.europeana.eu/concept/19>
+	a                skos:Concept ;
+	skos:altLabel    "Kiistakirja"@fi, "Broszura"@pl, "Cartilla"@es, "Kiistakirjanen"@fi, "Einblattholzschnitt"@de, "Büchlein"@de, "Pamfletter"@sv, "Lentokirjanen"@fi, "Pamfletti"@fi, "Folhetos"@pt, "Panfleto"@es, "Panfletos"@pt, "Pjece"@da, "Plaquette gothique"@fr, "Hanopis"@cs, "Hanopis"@sk, "Folder"@da, "Libello"@it, "Pliegos sueltos"@es, "Folheto"@pt, "Feuille volante"@fr ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300220572>, <http://d-nb.info/gnd/4154770-6>, <http://id.nlm.nih.gov/mesh/D010174>, <http://iconclass.org/49M322>, <https://g.co/kg/m/01n7c3>, <http://www.wikidata.org/entity/Q190399>, <https://www.freebase.com/m/01n7c3>, <http://id.loc.gov/authorities/names/sh99001703> ;
+	skos:note        "Broschyr, litet häfte"@sv, "Unbound booklet containing text"@en, "Ungebundenes Buch"@de, "Impreso de papel con escasas hojas, que sirve como instrumento divulgativo o publicitario"@es, "Alkalmi, tájékoztató nyomtatvány"@hu, "Meio de divulgação de uma ideia ou marca, feito de papel e de fácil manuseabilidade"@pt, "Fascicule, opuscule, plaquette, livret publiés entre la fin du XVe et la fin du XVIe siècle"@fr ;
+	skos:prefLabel   "Pamflet"@nl, "Pamflet"@ca, "Pamflet"@ro, "Pamflet"@da, "Pamflet"@hr, "Pamflet"@cs, "Pamflet"@sk, "Kirjanen"@fi, "Памфлет"@ru, "Памфлет"@bg, "Panfleto"@pt, "Pamphlet"@en, "Pamphlet"@it, "Pièce gothique"@fr, "Paimfléad (leabhar)"@ga, "Pamfletas"@lt, "Röpirat"@hu, "Druk ulotny"@pl, "Pamflett"@sv, "Pamflett"@et, "Folleto"@es, "Flugschrift"@de, "Φυλλάδιο"@el .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/0940425/_nn9v8bn>
+	a                    ore:Proxy ;
+	dc:contributor       "Ghislanzoni, Antonio"@pl ;
+	dc:creator           "Verdi, Giuseppe"@pl ;
+	dc:date              "1912"@pl ;
+	dc:format            "image/vnd.djvu"@pl ;
+	dc:language          "pl" ;
+	dc:publisher         "Gubrynowicz i Syn"@pl ;
+	dc:rights            "Domena publiczna"@pl ;
+	dc:source            "Br26733"@pl ;
+	dc:subject           "libretto"@pl, "opera"@pl ;
+	dc:title             "Aida : opera w czterech aktach"@pl ;
+	dc:type              "dokument życia społecznego"@pl, "broszura"@pl ;
+	edm:currentLocation  "_FBC" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/0940425/_nn9v8bn> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/0940425/_nn9v8bn> .
+
+<http://data.europeana.eu/aggregation/europeana/0940425/_nn9v8bn>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:20:49.577Z" ;
+	dcterms:modified          "2017-11-30T08:20:49.577Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940425/_nn9v8bn#contentTier>, <http://data.europeana.eu/item/0940425/_nn9v8bn#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940425/_nn9v8bn> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940425_Ag_PL_zbc.ksiaznica.szczecin.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940425/_nn9v8bn> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ffbc.pionier.net.pl%2Fthumbnails%2Fnn9v8bn&type=TEXT> .
+
+<http://fbc.pionier.net.pl/thumbnails/nn9v8bn>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940425/_nn9v8bn/manifest> ;
+	ebucore:fileByteSize    "21460"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/gif" ;
+	ebucore:height          "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "158"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#778899"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/item/0940425/_nn9v8bn#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:40:33.613Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940425/_nn9v8bn> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.ksiaznica.szczecin.pl:26975>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "21180"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/0940425/_nn9v8bn>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940425/_nn9v8bn> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517565> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.ksiaznica.szczecin.pl:26975> ;
+	edm:isShownBy      <http://fbc.pionier.net.pl/thumbnails/nn9v8bn> ;
+	edm:object         <http://fbc.pionier.net.pl/thumbnails/nn9v8bn> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/277>
+	a                skos:Concept ;
+	skos:altLabel    "Либрета"@bg, "Libretto d'opera"@it, "Livret d'opéra"@fr, "Operní libreto"@cs, "Operatekster"@da, "Livret de ballet"@fr, "Ποιητικό κείμενο"@el, "Libretti"@de, "Libretti"@sv, "Libretti"@it, "Λιβρέτο"@el, "Λιμπρέττο"@el, "Λιμπρετίστας"@el, "Libretto"@cs, "Libretto"@pt, "Libretto"@fr, "Libretto"@ca, "Libretto"@es, "Librettos"@pt, "Guion teatral"@es, "Operatext"@sv, "Opernlibretto"@de ;
+	skos:exactMatch  <https://g.co/kg/m/0cngm>, <http://vocab.getty.edu/aat/300026424>, <http://purl.org/ontology/mo/Libretto>, <http://purl.org/bncf/tid/2562>, <http://id.loc.gov/authorities/names/sh85076744>, <http://id.loc.gov/authorities/genreForms/gf2014026909>, <http://d-nb.info/gnd/4035588-3>, <http://www.wikidata.org/entity/Q131084>, <https://www.freebase.com/m/0cngm> ;
+	skos:note        "Text einer Oper, eines Oratoriums, einer Operette, eines Musicals oder einer Kantate"@de, "Laulumusiikkiteoksen teksti"@fi, "Литературная основа большого вокального (и не только) сочинения, светского или духовного характера"@ru, "Literārais pamats laicīgajiem vai reliģiska satura mūzikas darbiem"@lv, "Text used for an extended musical work"@en, "Texto que se canta o se declama en obras musicales"@es, "Texte littéraire, complétant une œuvre musicale (opéra, opérette, etc.)"@fr, "Testo verbale, quasi sempre steso in versi, utilizzato per la composizione di un lavoro musicale"@it, "Tekst dzieła sceniczno-muzycznego"@pl ;
+	skos:prefLabel   "Libretas"@lt, "Libret"@ro, "Libreto"@cs, "Libreto"@et, "Libreto"@es, "Libreto"@pt, "Libreto"@hr, "Libreto"@sk, "Libreto"@sl, "Либрето"@bg, "Librettó"@hu, "Llibret"@ca, "Leabhróg"@ga, "Λιμπρέτο"@el, "Livret"@fr, "Libretto"@nl, "Libretto"@da, "Libretto"@pl, "Libretto"@it, "Libretto"@de, "Libretto"@fi, "Libretto"@sv, "Libretto"@en, "Librets"@lv, "Либретто"@ru .

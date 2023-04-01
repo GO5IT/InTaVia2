@@ -1,0 +1,151 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200143/BibliographicResource_2000069340742>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/18917>, <http://data.europeana.eu/agent/150482> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1846" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069340742> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:48:08.409Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069340742> .
+
+<http://data.europeana.eu/organization/1482250000001710325>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bodleian Libraries, University of Oxford"@en .
+
+<http://data.europeana.eu/proxy/provider/9200143/BibliographicResource_2000069340742>
+	a                    ore:Proxy ;
+	dc:contributor       "Henry Cole", "Allart van Everdingen", "Joseph Cundall", "Charles Whittingham" ;
+	dc:date              "MDCCCXLVI..", "1846" ;
+	dc:description       "McLean,. 93", "The 'M' and 'D' are are made up with I and reverse C.", "Leaves of plates printed on one side only.", "Illustrations: Illustrations", "F.S. i.e. Felix Summerly [pseudonym] = Sir Henry Cole -- McLean.", "Edited by F.S. And illustrated with twenty-four pictures by Aldert Van Everdingen..", "Audience: Juvenile", "Additional imprint details from colophon: C. Whittingham, Chiswick.", "Illustrations: Plates", "Series statement from head of title." ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "013349509" ;
+	dc:language          "en" ;
+	dc:publisher         "Published in Felix Summerly's Home treasury by Joseph Cundall, ... Westminster." ;
+	dc:subject           "Library of Congress Classification: PZ6" ;
+	dc:title             "The Most delectable history of Reynard the fox." ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Reynard the Fox" ;
+	dcterms:extent       "16⁰.", "ill. ;", "vii, [1], 152 p. [23] leaves of plates :" ;
+	dcterms:isPartOf     "Home treasury", <http://data.theeuropeanlibrary.org/Collection/a1007> ;
+	dcterms:spatial      <http://id.loc.gov/vocabulary/countries/uk>, <http://sws.geonames.org/2643743/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069340742> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069340742>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710325> ;
+	edm:isShownAt      <http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013349509&indx=1&recIds=oxfaleph013349509> ;
+	edm:isShownBy      <http://purl.ox.ac.uk/uuid/61b6b85b63794824b9749e8118726686> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/agent/150482>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/31164> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/150485> ;
+	owl:sameAs           <https://g.co/kg/m/03fzhp>, <http://viaf.org/viaf/42110876>, <http://www.wikidata.org/entity/Q539036>, <http://datos.bne.es/resource/XX1542993>, <http://id.loc.gov/authorities/names/nr91028220>, <http://vocab.getty.edu/ulan/500115159>, <http://data.bnf.fr/ark:/12148/cb14959721c>, <http://data.bibliotheken.nl/id/thes/p069628750>, <http://dbpedia.org/resource/Allaert_van_Everdingen>, <http://id.worldcat.org/fast/290762>, <http://www.idref.fr/08589544X/id>, <http://d-nb.info/gnd/12091008X>, <https://www.freebase.com/m/03fzhp> ;
+	rdaGr2:dateOfBirth   "1621-06-18" ;
+	rdaGr2:dateOfDeath   "1675-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40979> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "A. Everdinge"@en, "Albert von Everdingen"@en, "Alar Everdingen"@en, "Allart van Everdingen"@fi, "Allart van Everdingen"@en, "Allard van Everdingen"@en, "A van Everdingen"@en, "Allart van Everding"@en, "Allart van Everdingh"@en, "Everdenghen"@en, "Aldert Van-Everdingen"@en, "Allaert Pietersz. van Everdingen"@nl, "Allaert Pietersz. van Everdingen"@en, "A. Van Everdinghen"@en, "A. van Everdinghe"@en, "H. van Everdingen"@en, "Everding"@en, "Evardingen"@en, "A.v. everdingen"@en, "A. Everdingen"@en, "Ewendinger"@en, "V. everdingen"@en, "Oude Everdingen"@en, "Allaert van Everdingen"@sv, "Everdinghen"@en, "Aldret Van Everdingen"@en, "Ewerdinger"@en, "Albert van Everdingen"@en, "Allaert von Everdingen"@en, "Allart van Everdingenn"@en, "A. van Everdingen"@en, "A.B. Everdingen"@en, "Allert van Everdingen"@en, "Verdingen"@en, "Alaert van everdingen"@en, "Ald. von Everdingen"@en, "Allart Van Everdingen"@en, "Allart Pietersz. van Everdingen"@nl, "Allart Pietersz. van Everdingen"@en, "Everdinga"@en, "Éverdingen"@en, "Allert van everdingen"@en, "Everingen"@en, "Everdengin"@en, "Allart van Everdinge"@en, "Werdingen"@en, "Zoo goed als van Ruisdaal A: van Everdingen"@en, "Van-Everdingen"@en, "Alder Van-Everdingen"@en, "Aldert Pietersz. van Everdingen"@nl, "Allart van Everdengen"@en, "Aldert Pietersz. van Everdingen"@sv, "Aldert Pietersz. van Everdingen"@en, "Everdingen"@en, "Allart Everdingen"@sl, "Allart Everdingen"@en, "A. v. Everdingen"@en, "Everdinge"@en, "Van Everdingen"@es, "Allaert everdingen"@en, "Van Everdingen"@en, "Albert van Ewerdingen"@en, "Everdengen"@en, "Den ouden Everdingh"@en, "Allaer Van Everdingen"@it, "A.V.E. Everdingen"@en, "A.v. Ewerdingen"@en, "Everdingh"@en, "Алларт ван Эвердинген"@ru, "A. Everding"@en, "E. Everding"@en, "Aldert van Everdingen"@nl, "Aldert van Everdingen"@en, "Everdingle"@en, "Alder Van Everdingen"@en, "Allart v. everdingen"@en, "Aldaert van everdingen"@en, "Everdingen allaert van"@en, "Ald. van Everdingen"@en, "Everdigen"@en, "Eaverding"@en, "A. von everdingen"@en, "A. v. everdingen"@en, "Everdingen, Allart van"@sv, "Heverdingen"@en, "Adrien Van-Everdingen"@en, "Everingden"@en, "Eserdinga"@en, "Everdingen allart van"@en, "Everdyngen"@en, "Abber Dingin"@en, "Aldert Pietersz. Van Everdingen"@en, "Everdingin"@en, "Everdingenn"@en, "Эвердинген Алларт ван"@ru, "Allart van Everdingen"@nl, "Allart van Everdengin"@en, "Allart van Everdingen"@da, "Allart van Everdingen"@fr, "Evendingen"@en ;
+	skos:note            "Pintor neerlandès"@ca, "Niederländischer Maler"@de, "Pictor olandez"@ro, "Peintre hollandais"@fr, "Нидерландский живописец-пейзажист (1621-1675)"@ru, "Alankomaalainen maalar"@fi, "Dutch painter (1621-1675)"@en, "Nederlands kunstschilder"@nl, "Pittore olandese"@it, "Pintor neerlandés"@es, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel       "Эвердинген, Алларт ван"@ru, "Allaert van Everdingen"@fr, "Allaert van Everdingen"@fi, "Allaert van Everdingen"@lt, "Allaert van Everdingen"@en, "Allaert van Everdingen"@da, "Allaert van Everdingen"@ca, "Allaert van Everdingen"@nl, "Allart van Everdingen"@de, "Allart van Everdingen"@sv, "Allart van Everdingen"@pt, "Allart van Everdingen"@it, "Allart van Everdingen"@es, "Allart van Everdingen"@cs, "Allart van Everdingen"@sk, "Allart van Everdingen"@sl, "Allart van Everdingen"@pl .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:48:08.411Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069340742> .
+
+<http://sws.geonames.org/2643743/>
+	a               edm:Place ;
+	skos:prefLabel  "London (Herstellung)" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/18917>
+	a                   edm:Agent ;
+	owl:sameAs          <http://www.wikidata.org/entity/Q15485615>, <http://dbpedia.org/resource/Henry_Cole_(illustrator)>, <http://lod.nl.go.kr/resource/KAC200108244>, <http://www.idref.fr/169650820/id>, <https://livedata.bibsys.no/authority/9062929>, <http://data.bibliotheken.nl/id/thes/p186097239>, <http://id.ndl.go.jp/auth/ndlna/01124354>, <https://www.freebase.com/m/03qkh6j>, <http://viaf.org/viaf/69807896>, <http://data.bnf.fr/ark:/12148/cb16142409p>, <http://d-nb.info/gnd/122339932>, <http://id.loc.gov/authorities/names/n97103787>, <https://g.co/kg/m/03qkh6j> ;
+	rdaGr2:dateOfBirth  "1955-01-01" ;
+	skos:note           "Illustrateur"@fr, "American author and illustrator of children's books"@en, "Schrijver uit Canada (1955-)"@nl, "Kanadischer Kinderbuchautor und Schriftsteller"@de ;
+	skos:prefLabel      "Генри Коул"@ru, "Henry Cole"@nl, "Henry Cole"@ca, "Henry Cole"@fr, "Henry Cole"@it, "Henry Cole"@ga, "Henry Cole"@en, "Henry Cole"@sl, "Henry Cole"@de, "Henry Cole"@es .
+
+<http://purl.ox.ac.uk/uuid/61b6b85b63794824b9749e8118726686>
+	a                      edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize   "33993807"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://rightsstatements.org/vocab/InC/1.0/> ;
+	edm:spatialResolution  "150"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069340742>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-03T22:42:04.024Z" ;
+	dcterms:modified          "2014-06-05T16:49:20.397Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742#contentTier>, <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742> ;
+	edm:completeness          "0" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200143_Ag_EU_TEL_a1007_E.Libraries_Oxford" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200143/BibliographicResource_2000069340742> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fpurl.ox.ac.uk%2Fuuid%2F61b6b85b63794824b9749e8118726686&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013349509&indx=1&recIds=oxfaleph013349509>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069340742>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,145 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/2945024/>
+	a               edm:Place ;
+	skos:prefLabel  "Braunschweig (Herstellung)" .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427869>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004465771#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004465771/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://dlib.rsl.ru/viewer/01004465771#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:36.613Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427869> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149427869>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/149589> ;
+	dc:creator          <http://data.europeana.eu/agent/151762> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427869> .
+
+<http://search.rsl.ru/api/description/01004465771/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "72135"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149427869>
+	a                    ore:Proxy ;
+	dc:contributor       "Johann Ladislaus Dussek" ;
+	dc:creator           "Ignaz Josef Pleyel" ;
+	dc:description       "Edition: 2"@en, "2. Aufl." ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "004465771" ;
+	dc:language          "de" ;
+	dc:publisher         "Spehr" ;
+	dc:title             "Vollständige Anweisung das Fortepiano zu spielen nach dem Fr. von Pleyl & Dussek" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Полное руководство по игре на фортепиано" ;
+	dcterms:extent       "46 с." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued       "19--", "[19--]" ;
+	dcterms:spatial      <http://sws.geonames.org/2945024/>, <http://id.loc.gov/vocabulary/countries/ru> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427869> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:36.613Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427869> .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427869>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:05.716Z" ;
+	dcterms:modified          "2016-03-24T08:15:41.611Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427869> ;
+	edm:completeness          "7" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149427869> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004465771%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/149589>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/agent/147071> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/76156>, <http://data.europeana.eu/agent/40401>, <http://data.europeana.eu/agent/53763> ;
+	owl:sameAs           <http://openlibrary.org/works/OL4721077A>, <http://libris.kb.se/resource/auth/184225>, <https://www.freebase.com/m/02tx7h>, <http://viaf.org/viaf/76499932>, <http://d-nb.info/gnd/11867286X>, <http://data.carnegiehall.org/names/1007176>, <http://lod.nl.go.kr/resource/KAC199607670>, <https://libris.kb.se/97mppmht491m9tc>, <http://id.ndl.go.jp/auth/ndlna/001135356>, <http://data.bnf.fr/ark:/12148/cb13893542v>, <http://dbpedia.org/resource/Jan_Ladislav_Dussek>, <http://data.bibliotheken.nl/id/thes/p071699619>, <http://www.wikidata.org/entity/Q357172>, <http://www.idref.fr/086912445/id>, <http://id.worldcat.org/fast/81016>, <http://datos.bne.es/resource/XX870353>, <https://livedata.bibsys.no/authority/98046678>, <https://g.co/kg/m/02tx7h>, <http://id.loc.gov/authorities/names/n81120566> ;
+	rdaGr2:dateOfBirth   "1760-02-12" ;
+	rdaGr2:dateOfDeath   "1812-03-20" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202197> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/41742> ;
+	skos:altLabel        "Jan Vaclav Dusík"@es, "Jan Ladislav Dusek"@it, "Дюссек"@ru, "Dusik"@it, "Dussek"@fr, "Ян Ладислав Дюссек"@ru, "Dussek"@it, "Dussek"@sv, "Johann Ludwig Dušek"@cs, "Johann Ladislas Dusseck"@cs, "Johann Dussek"@it, "Jan Ladislav Dusik"@it, "Jan Ladislav Dusik"@de, "Jan Ladislav Dusik"@fi, "Jan Dussek"@fr, "Jan Dussek"@it, "Jan Ladislaus Dussek"@it, "Johann Ladislaus Dusík"@cs, "Johann Ladislaus Dussek"@ca, "Jan Vaclav Dusik"@es, "Johann Ladislaus Dussek"@es, "Johann Ladislaus Dussek"@fr, "Johann Ladislaus Dussek"@pl, "Johann Ladislaus Dussek"@it, "Jan Vaclav Dusik"@it, "Jan Vaclav Dusik"@en, "Johann Ladislaus Dussek"@de, "Johann Ladislaus Dussek"@en, "Johann Louis Dussek"@ca, "Johann Ludwig Dusík"@cs, "Dussek, Jan Ladislav"@sv, "Jan Václav Dusik"@es, "Jan Ladislav Dussek"@cs, "Jan Ladislav Dussek"@fi, "Wenceslaus Joannes Dusík"@cs, "Jan Ladislav Dušek"@cs, "Jan Václav Dusík"@es, "Jan Václav Dusík"@it, "Jan Václav Dusík"@en, "Jan Ladislav Dusík"@pl, "Jan Ladislav Dusík"@it, "Johann Ludwig Dussek"@pl, "Johann Ludwig Dussek"@it, "Johann Ludwig Dussek"@cs, "Johann Ludwig Dussek"@de, "Václav Jan Dusík"@en, "J. L. Dussec"@cs ;
+	skos:note            "Componist uit Tsjechië (1760-1812)"@nl, "Tjeckisk pianist och kompositör"@sv, "Czech composer and pianist (1760-1812)"@en, "Compositeur et pianiste tchèque"@fr, "Tjekkisk pianist og komponist"@da, "Cumadóir ceoil agus pianódóir Seiceach"@ga, "Compositore e pianista ceco"@it, "Tschechischer Pianist und Komponist"@de, "Český skladatel a klavírista"@cs, "Чешский композитор и пианист"@ru, "Czeski kompozytor i pianista"@pl ;
+	skos:prefLabel       "Ян Дюссек"@ru, "Jans Ladislavs Duseks"@lv, "Jan Ladislav Dusík"@de, "Jan Ladislav Dusík"@fi, "Jan Ladislav Dusík"@cs, "Jan Ladislav Dusík"@sk, "Jan Ladislav Dusík"@da, "Jan Ladislav Dussek"@sl, "Jan Ladislav Dussek"@ga, "Jan Ladislav Dussek"@pl, "Jan Ladislav Dussek"@nl, "Jan Ladislav Dussek"@ca, "Jan Ladislav Dussek"@es, "Jan Ladislav Dussek"@sv, "Jan Ladislav Dussek"@en, "Jan Ladislav Dussek"@it, "Jan Ladislav Dussek"@fr .
+
+<http://data.europeana.eu/agent/151762>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/146848>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/concept/1509> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/137868> ;
+	owl:sameAs           <https://g.co/kg/m/049y1s>, <https://livedata.bibsys.no/authority/90275439>, <http://www.idref.fr/080467334/id>, <http://www.wikidata.org/entity/Q314019>, <https://www.freebase.com/m/049y1s>, <http://dbpedia.org/resource/Ignaz_Pleyel>, <http://data.bibliotheken.nl/id/thes/p07156490X>, <http://id.ndl.go.jp/auth/ndlna/01220418>, <http://viaf.org/viaf/71657816>, <http://data.carnegiehall.org/names/1007797>, <http://d-nb.info/gnd/118792555>, <http://data.cervantesvirtual.com/person/69647>, <http://id.worldcat.org/fast/42804>, <http://datos.bne.es/resource/XX1186980>, <http://openlibrary.org/works/OL4692148A>, <http://id.loc.gov/authorities/names/n79107743>, <http://data.bnf.fr/ark:/12148/cb14785643q> ;
+	rdaGr2:dateOfBirth   "1757-06-18" ;
+	rdaGr2:dateOfDeath   "1831-11-14" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/41488> ;
+	skos:altLabel        "Ignace Joseph Pleyel"@en, "Ignaz pleyel"@fr, "Ignace Joseph Pleyel"@cs, "Ignatz Pleyel"@de, "Pleyel, Ignace Joseph"@sv, "Ignaz Joseph Pleyel"@hu, "Ignace Pleyel"@nl, "Ignace Pleyel"@pt, "Ignace Pleyel"@fr, "Ignace Pleyel"@es, "Ignaz Pleyel"@de, "Ignaz Pleyel"@it, "Ignaz Pleyel"@es, "Ignaz Pleyel"@sl, "Pleyel"@sl, "Joseph Pleyel"@cs, "Ignaz Josef Pleyel"@ca, "Ignaz Josef Pleyel"@ru, "Игнац Йозеф Плейель"@ru, "Ignaz Josef Pleyel"@fr, "Ignaz Josef Pleyel"@pl, "Ignatio Pleyl"@cs, "Ignace Joseph Pleyel"@de, "Ignace Joseph Pleyel"@sv ;
+	skos:note            "Österrikisk tonsättare och pianofabrikant"@sv, "Austrian-born French composer and piano builder"@en, "Compositore e editore austriaco"@it, "Rakouský hudební skladatel a klavírista"@cs, "Compositeur, éditeur de musique et fabricant de pianos d'origine autrichienne naturalisé français"@fr, "Drukzetter uit Oostenrijk (1757-1831)"@nl, "Itävaltalainen säveltäjä ja pianonvalmistaja"@fi, "Österreichischer Komponist, Klavierbauer und Musikverleger"@de ;
+	skos:prefLabel       "Ignaz Pleyel"@hu, "Ignaz Pleyel"@fi, "Ignaz Pleyel"@pt, "Ignaz Pleyel"@en, "Ignaz Pleyel"@ga, "Ignaz Pleyel"@pl, "Ignaz Pleyel"@nl, "Ignaz Pleyel"@ca, "Игнац Плейель"@ru, "Ignace Pleyel"@sv, "Ignace Pleyel"@it, "Ignaz Joseph Pleyel"@cs, "Ignaz Josef Pleyel"@de, "Ignace Joseph Pleyel"@fr, "Ignaz Josef Pleyel"@sl, "Ignaz Josef Pleyel"@da, "Ignace Joseph Pleyel"@es .

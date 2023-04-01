@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038330__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:00:05.427Z" ;
+	dcterms:modified          "2015-09-14T11:54:05.974Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038330%2F1898_Oldal_080_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038330__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/038300/038330>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038330__/manifest> .
+
+<http://keptar.oszk.hu/038300/038330/1898_Oldal_080_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "14686"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038330__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/227> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038330__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.697Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038330__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.697Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038330__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038330__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038330> ;
+	edm:object         <http://keptar.oszk.hu/038300/038330/1898_Oldal_080_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038330__>
+	a                    ore:Proxy ;
+	dc:creator           "Lotz ,  Károly  (painter)"@hu ;
+	dc:description       "A Párisi Nagy Áruház története ... A Terézvárosi Casino Az ingatlan 1884-ben került ki a Fővárosi Közmunkák Tanácsának kezéből. A szeptember 28-án kelt szerződés alapján 78.849 forintért a Fővárosi Casino-épület Rt. vette meg a 350,44 négyszögölnyi területet. Az átíratás csak két évvel később, 1886. október 4-én történt meg, amikor már épület is állt a telken. Itt kapott helyet a Terézvárosi Casino, amelynek leghíresebb nevezetessége a Lotz Károly freskóival díszített nagyterem volt. Az öt- és háromtengelyes, teknőboltozatos díszterem Petschacher Gusztáv tervező legszebb enteriőrje. A nemes arányú architektúra Lotz Károly egyik legszebb freskójának ad keretet. A középső nagy mezőben a mester a főváros apoteózisát örökítette meg békaperspektívában. Középen a főváros allegorikus nőalakja királynői öltözetben trónol, körülötte a művészet, az ipar, a kereskedelem, a bőség és a hír megszemélyesítői foglalnak helyet. A boltcikkelyekre Feszty Árpád a sixtusi kápolna mennyezetének prófétáit utánzó allegorikus alakokat festett, amelyek a szabad művészeteket és különféle foglalkozásokat ábrázolnak. Mindezek fölött Petschacher tervei szerint Eichhorn pompeji stílusú architektúrája fogja egybe a részleteket. Az épület 1909-ig régi pompájában biztosított méltó helyszínt az előkelő báloknak, a Terézvárosi Casino rendezvényeinek. ... Az új Párisi Nagy Áruház ... Az udvari téglafalak helyett vasbetonból készültet terveztek, a lépcső kijjebb került a központi bevilágított térből, növelve annak tágasságát. A Lotz-terem fölé ívelt homlokfalú helyiséget terveztek. ... Végül is az egykori Casino-ból csupán a Paulay utcai pince, a földszinti Csonka-terem és az első emeleti bálterem maradt meg. A Lotz Károly és Feszty Árpád freskóival díszes helyiség ma is az épület ékessége. (Forrás: e-epites.hu)"@hu ;
+	dc:format            "JPEG képállomány \u000A         976x1431 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/038300/038330   [Metadata]" ;
+	dc:relation          "Wikipédia: Lotz Károly [ http://hu.wikipedia.org/wiki/Lotz_K%C3%A1roly]"@hu, "Lotz Terem mennyezete freskókkal [ http://www.owl.hu/owl/3gallery/gownpic2010/2010_26_08q2.htm]"@hu, "Lotz-terem. Legendás rendezvényhelyszín a pesti Belvárosban [ http://www.helyszinonline.hu/blog/2010/02/10/lotz-terem-legendas-rendezvenyhelyszin-a-pesti-belvarosban/]"@hu, "A Párisi Nagy Áruház története - a Divatcsarnok átépítése 2007-2009 [ http://www.e-epites.hu/hirek/a-parisi-nagy-aruhaz-tortenete-a-divatcsarnok-atepitese-2007-2009]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "Fine arts, visual arts"@hu, "allegorikus ábrázolás"@hu, "mennyezet"@hu, "freskó"@hu, "falfestmény"@hu ;
+	dc:title             "Budapest allegoriája"@hu ;
+	dc:type              "painting"@hu, "újságrészlet"@hu ;
+	dcterms:alternative  "Lotz Károly mennyezeti képe a VI-VII. kerületi kör dísztermében"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038330__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038330__> .
+
+<http://data.europeana.eu/concept/227>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q134194>, <http://vocab.getty.edu/aat/300053357>, <http://id.ndl.go.jp/auth/ndlna/00563760>, <https://www.freebase.com/m/02_3k>, <https://g.co/kg/m/02_3k>, <http://www.yso.fi/onto/yso/p1483>, <https://d-nb.info/gnd/4071463-9>, <http://babelnet.org/rdf/s00036480n>, <http://purl.org/bncf/tid/15765> ;
+	skos:note        "Seinamaali tehnika"@et, "Tecnica pittorica"@it, "Maalaustekniikka"@fi, "Technika nástennej maľby zhotovovaná na vlhkej omietke"@sk, "Técnica pictórica de pintura mural"@es, "Tehnică de pictură murală"@ro, "Muralmålning på färsk, ännu fuktig kalkputs"@sv, "Technique particulière de peinture murale dont la réalisation s'opère sur un enduit, avant qu'il ne soit sec"@fr, "Schildertechniek"@nl, "Technique of mural painting executed upon freshly laid lime plaster"@en, "Wandmalereitechnik insbesondere auf frischem Kalkputz"@de, "Malingsteknik"@da, "Technika malarska"@pl, "Tècnica pictòrica de pintura mural"@ca ;
+	skos:prefLabel   "Freska"@hr, "Freska"@sk, "Freska"@sl, "Freska"@cs, "Fresko"@de, "Fresko"@et, "Fresko"@eu, "Fresko"@da, "Al fresco"@sv, "Fresco painting"@en, "Fresco"@pt, "Fresco"@es, "Pintura al fresc"@ca, "Freskomaalaus"@fi, "Fresk"@pl, "Affresco"@it, "Frescoschildertechniek"@nl, "Frescă"@ro, "Стенопис"@bg, "Freascó"@ga, "Νωπογραφία"@el, "Freskó"@hu, "Фреска"@ru, "Fresque"@fr, "Freska"@lt, "Freska"@lv .

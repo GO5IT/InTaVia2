@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/15502/GG_611#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:50:45.519178Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/GG_611> .
+
+<http://data.europeana.eu/aggregation/provider/15502/GG_611>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15502/GG_611> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507755> ;
+	edm:isShownAt      <http://www.khm.at/de/objektdb/detail/232/> ;
+	edm:isShownBy      <http://imageapi.khm.at/images/232/GG_611x.jpg> ;
+	edm:object         <http://imageapi.khm.at/images/232/GG_611x.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://d-nb.info/118658336>
+	a                               edm:Agent ;
+	dc:date                         "1680 datiert" ;
+	dc:identifier                   "http://d-nb.info/118658336" ;
+	foaf:name                       "Nicolaes Berchem"@de ;
+	rdaGr2:biographicalInformation  "1620 Haarlem - 1683 Amsterdam"@de ;
+	rdaGr2:professionOrOccupation   "Künstler/in" ;
+	skos:prefLabel                  "Nicolaes Berchem (Künstler/in)" .
+
+<http://data.europeana.eu/proxy/provider/15502/GG_611>
+	a                   ore:Proxy ;
+	dc:creator          <http://d-nb.info/118658336> ;
+	dc:date             "1680 datiert" ;
+	dc:description      "Beschriftung: Signatur: Bez. rechts unten: N. Berchem. 1680"@de ;
+	dc:identifier       "GG_611" ;
+	dc:language         "de" ;
+	dc:publisher        "Kunsthistorisches Museum Wien, Gemäldegalerie" ;
+	dc:rights           "CC BY-NC-SA 4.0"@de ;
+	dc:subject          "Gemälde"@de, "painting"@en ;
+	dc:title            "Hirten und Herde"@de ;
+	dc:type             "Gemälde"@de ;
+	dcterms:created     "1680 datiert" ;
+	dcterms:extent      "48 × 64,5 cm"@de, "Rahmenmaße: 62 × 78,5 × 9 cm"@de ;
+	dcterms:isPartOf    "Gemäldegalerie"@de ;
+	dcterms:medium      "Leinwand auf Holz maroufliert"@de ;
+	dcterms:spatial     "Holländisch"@de ;
+	dcterms:temporal    "temporal#270583162028" ;
+	edm:europeanaProxy  "false" ;
+	edm:isRelatedTo     "Gemälde"@de ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/GG_611> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15502/GG_611> .
+
+<http://imageapi.khm.at/images/232/GG_611x.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15502/GG_611/manifest> ;
+	ebucore:fileByteSize    "429852"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1157"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1593"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B0C4DE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/15502/GG_611>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/47>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/194> ;
+	skos:exactMatch  <https://d-nb.info/gnd/4037220-0>, <https://www.freebase.com/m/05qdh>, <http://babelnet.org/rdf/s00060201n>, <http://www.wikidata.org/entity/Q11629>, <http://www.yso.fi/onto/yso/p8883>, <http://iconclass.org/48C51>, <http://id.ndl.go.jp/auth/ndlna/00564487>, <http://cv.iptc.org/newscodes/mediatopic/20000035>, <http://vocabularies.unesco.org/thesaurus/concept8418>, <http://purl.org/bncf/tid/3793>, <https://g.co/kg/m/05qdh>, <http://vocab.getty.edu/aat/300054216> ;
+	skos:note        "Umenie tvorby obrazov pomocou farieb"@sk, "Practice of applying paint, pigment, color or other medium to a surface"@en, "Druh výtvarného umění"@cs, "Sztuka plastyczna"@pl, "Κατηγορία εγχειρημάτων Wikimedia"@el, "Artă"@ro, "Kuvataiteen ala"@fi, "Art"@ca, "Prática artística"@pt, "Pratique artistique"@fr, "Arte de la representación gráfica utilizando pigmentos mezclados con otras sustancias aglutinantes"@es, "Klassische Gattung der bildenden Kunst"@de, "Вид изящно изобразително изкуство"@bg, "Kujutava kunsti liik"@et, "Arte che consiste nell'applicare dei pigmenti a un supporto"@it, "Вид изобразительного искусства"@ru, "Konstform"@sv ;
+	skos:prefLabel   "Pittura"@mt, "Pittura"@it, "Maalaustaide"@fi, "Malerei"@de, "Festőművészet"@hu, "Ζωγραφική"@el, "Peinture"@fr, "Margolaritza"@eu, "Art of painting"@en, "Pintura"@pt, "Pintura"@ca, "Slikarstvo"@hr, "Slikarstvo"@sl, "Pintura"@es, "Malarstwo"@pl, "Maalikunst"@et, "Malířství"@cs, "Glezniecība"@lv, "Malerkunst"@da, "Maliarstvo"@sk, "Tapyba"@lt, "Живопис"@bg, "Péintéireacht"@ga, "Pictură"@ro, "Målarkonst"@sv, "Живопись"@ru, "Schilderkunst"@nl .
+
+<http://data.europeana.eu/item/15502/GG_611#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:50:45.519153Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/GG_611> .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270583162028>
+	a                       edm:WebResource ;
+	dc:rights               "CC BY-NC-SA 4.0"@de ;
+	dcterms:isPartOf        "Gemäldegalerie"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270583162028> ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<https://iiif.europeana.eu/presentation/15502/GG_611/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/15502/GG_611>
+	a                   ore:Proxy ;
+	dc:identifier       "GG_611" ;
+	dc:language         "deu" ;
+	dc:subject          <http://data.europeana.eu/concept/47> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15502/GG_611> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/GG_611> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15502/GG_611> .
+
+<http://data.europeana.eu/organization/1482250000004507755>
+	a               foaf:Organization ;
+	skos:prefLabel  "Fine Arts Museum Vienna"@en, "Kunsthistorisches Museum Wien"@de .
+
+<file:///usr/local/tomcat/webapps/temporal#270583162028>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  "Gemäldegalerie"@de ;
+	edm:begin         "1680" ;
+	skos:prefLabel    "1680" .
+
+<http://data.europeana.eu/aggregation/europeana/15502/GG_611>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-07-05T17:48:51.028Z" ;
+	dcterms:modified          "2022-10-25T07:07:10.458Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15502/GG_611#contentTier>, <http://data.europeana.eu/item/15502/GG_611#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15502/GG_611> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15502_Ag_AT_Kulturpool_Khm" ;
+	edm:landingPage           <https://www.europeana.eu/item/15502/GG_611> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimageapi.khm.at%2Fimages%2F232%2FGG_611x.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .
+
+<http://www.khm.at/de/objektdb/detail/232/>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

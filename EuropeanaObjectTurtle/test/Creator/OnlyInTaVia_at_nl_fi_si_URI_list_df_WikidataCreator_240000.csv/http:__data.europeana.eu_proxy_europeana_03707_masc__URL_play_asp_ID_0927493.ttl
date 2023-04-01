@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/concept/1304>
+	a                skos:Concept ;
+	skos:altLabel    "Musique rrom"@fr, "Roma music"@en, "Musik der Roma und Sinti"@de, "Zigenarkapell"@sv, "Roma (musik)"@da, "Romamuziek"@nl, "Цыганская музыка"@ru, "Zigenarmusik"@sv, "Roemeense muziek"@nl, "Muzyka romska"@pl, "Gipsy music"@en, "Gypsy music"@en, "Música romaní"@es, "Musique tsigane"@fr, "Romamusik"@de, "Musik der Sinti und Roma"@de, "Zigeunermusik"@de ;
+	skos:exactMatch  <http://id.loc.gov/authorities/names/sh85058111>, <http://www.wikidata.org/entity/Q1268283>, <https://www.freebase.com/m/01cmnj>, <http://data.bnf.fr/ark:/12148/cb11953378c>, <https://g.co/kg/m/01cmnj>, <http://purl.org/bncf/tid/2292> ;
+	skos:note        "Music of the Romani people"@en ;
+	skos:prefLabel   "Música gitana"@es, "Gypsy"@da, "Musica gitana"@it, "Muzyka cygańska"@pl, "Romska glazba"@hr, "Rómska hudba"@sk, "Muzică romani"@ro, "Romsk musik"@sv, "Musique tzigane"@fr, "Μουσική των Ρομά"@el, "Romska glasba"@sl, "Romská hudba"@cs, "Cigányzene"@hu, "Zigeunermuziek"@nl, "Romani music"@en, "Циганска музика"@bg, "Musik der Roma"@de, "Музыка цыган"@ru .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0927493>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0927493> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:25.910Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0927493> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:25.910Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0927493> .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0927493>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0927493>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1304> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "2009" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0927493> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0927493>
+	a                    ore:Proxy ;
+	dc:contributor       "Ensemble Pipás", "Ensemble Sentimento Gipsy Paganini" ;
+	dc:creator           "Soulard, Isabelle", "Brahms, Johannes", "Kodaly, Zoltan", "Liszt, Franz", "Bihari, János", "Khatchaturian, Aram Illich", "Monti", "Kalman, Emmerich", "Remény, Ede" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0927493" ;
+	dc:publisher         "Paris Cité de la musique ; Arte 2009" ;
+	dc:subject           "MUSIQUE TRADITIONNELLE", "HONGRIE", "TSIGANE", "MUSIQUE TSIGANE" ;
+	dc:title             "Identités hongroises. Tsiganes : csardas" ;
+	dc:type              "moving image" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le 22 novembre 2009" ;
+	dcterms:extent       "2 h 16 min" ;
+	dcterms:hasPart      "La danse du sabre / Aram Khatchaturian, composition. - Cité de la musique ; Arte, 2009", "En mémoire de Pipás / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Plage 20 / Ensemble Sentimento Gipsy Paganini. - Cité de la musique ; Arte, 2009", "Rhapsodie hongroise n°2 / Franz Liszt, composition. - Cité de la musique ; Arte, 2009", "Chanson pour ma mère / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Cinka Panna, Repülj Fecske / Ede Remény. - Cité de la musique ; Arte, 2009", "Suite de chansons hongroises / Anonyme. - Cité de la musique ; Arte, 2009", "Musique pour cymbalum / csárdas de Szatmar / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Csárdas, lent et rapide / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Musique pour cymbalum / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Csárdas / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Mélodies d'opérettes / Imre Kálmán, composition. - Cité de la musique ; Arte, 2009", "Chanson tsigane / Anonyme. - Cité de la musique ; Arte, 2009", "Verbunk / János Bihari. - Cité de la musique ; Arte, 2009", "Kállai Kettös / Zoltán Kodály, composition. - Cité de la musique ; Arte, 2009", "Danses hongroises n°6 et 5 / Johannes Brahms, composition. - Cité de la musique ; Arte, 2009", "Rhapsodie roumaine op.11 n°1 / Georges Enesco, compositeur. - Cité de la musique ; Arte, 2009", "Hallgató / Csárdas lent et rapide / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Gipsy Csárdas / Ensemble Pipás. - Cité de la musique ; Arte, 2009", "Présentation de l'ensemble Pipas / Alain Weber, présentation. - Cité de la musique ; Arte, 2009", "Tüzes csárdas / Anonyme. - Cité de la musique ; Arte, 2009", "Csárdas / Monti, composition. - Cité de la musique ; Arte, 2009" ;
+	dcterms:issued       "2009" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0927493> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0927493>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:29:24.464Z" ;
+	dcterms:modified          "2014-06-27T11:29:24.464Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493#contentTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0927493> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .

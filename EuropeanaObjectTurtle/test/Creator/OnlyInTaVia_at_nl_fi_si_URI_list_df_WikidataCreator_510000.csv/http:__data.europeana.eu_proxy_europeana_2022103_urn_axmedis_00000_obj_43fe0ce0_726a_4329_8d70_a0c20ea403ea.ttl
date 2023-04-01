@@ -1,0 +1,92 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:43fe0ce0-726a-4329-8d70-a0c20ea403ea>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004477361>
+	a               foaf:Organization ;
+	skos:prefLabel  "Associazione Culturale Archibraille"@it, "Archibraille Cultural Association"@en .
+
+<http://data.europeana.eu/proxy/europeana/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "2009" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> .
+
+<http://data.europeana.eu/proxy/provider/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea>
+	a                   ore:Proxy ;
+	dc:contributor      "Giuseppe Nicotra (proof reader)", "Giovanni Bertoni (transcriptor)" ;
+	dc:creator          "Beethoven, Ludwig van" ;
+	dc:description      "Braille music score for piano, Braille manual: New international manual of Braille music notation, Print version braille presentation: na, Published in IT, Notes: Difficult: medium to hard\u000AMusical Era: classical\u000AIt was denominate by the composer Sonata quasi una Fantasia, it was know as Chiaro di Luna (Moonlight Sonata). Dedicated to Giulietta Gucciardi (1801).\u000A1st, 2nd, 3th movements:   \u000A 1. Adagio sostenuto\u000A 2. Allegretto (in Db)\u000A 3. Presto agitato."@en ;
+	dc:format           "bmml"@en ;
+	dc:language         "braille"@en ;
+	dc:publisher        "Giuseppe Nicotra"@en ;
+	dc:rights           "Free distribution"@en ;
+	dc:subject          "Sonatas/Sonatinas"@en ;
+	dc:title            "Sonata for piano n.14 in c#"@en ;
+	dcterms:isPartOf    "op. 27/2"@en ;
+	dcterms:issued      "2009"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> .
+
+<http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:01:34.069Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> .
+
+<http://data.europeana.eu/aggregation/provider/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477361> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:43fe0ce0-726a-4329-8d70-a0c20ea403ea> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea#metadataTier>, <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022103_Ag_EU_ECLAP_ARCHIBRAILLE" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:01:34.069Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea> .
+
+<http://data.europeana.eu/item/2022103/urn_axmedis_00000_obj_43fe0ce0_726a_4329_8d70_a0c20ea403ea>
+	a  edm:ProvidedCHO .

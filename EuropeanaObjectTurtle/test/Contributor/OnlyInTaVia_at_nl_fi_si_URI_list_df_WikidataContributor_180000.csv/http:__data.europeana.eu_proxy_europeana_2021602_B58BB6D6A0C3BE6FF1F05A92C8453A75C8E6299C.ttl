@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004502137>
+	a               foaf:Organization ;
+	skos:prefLabel  "Digitale Bibliotheek voor de Nederlandse Letteren"@nl, "Digital Library for Dutch Literature"@en .
+
+<http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:09.935Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> .
+
+<http://data.europeana.eu/aggregation/europeana/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C#metadataTier>, <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021602_Ag_NL_DigitaleCollectie_DBNL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.dbnl.org%2Ftekst%2F_sep001199401_01%2F_sep001199401_01_tpg.gif&type=TEXT> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:09.937Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> .
+
+<http://data.europeana.eu/agent/59815>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/22565> ;
+	owl:sameAs                     <http://id.loc.gov/authorities/names/n80008225>, <https://www.freebase.com/m/0bvnt7>, <http://viaf.org/viaf/111637181>, <http://www.wikidata.org/entity/Q689279>, <http://d-nb.info/gnd/118574728>, <http://vocab.getty.edu/ulan/500027027>, <http://openlibrary.org/works/OL5275002A>, <https://g.co/kg/m/0bvnt7>, <http://data.bnf.fr/ark:/12148/cb12172941m>, <https://livedata.bibsys.no/authority/90521021>, <http://id.worldcat.org/fast/1443087>, <http://datos.bne.es/resource/XX1316952>, <http://www.idref.fr/030279453/id>, <http://data.bibliotheken.nl/id/thes/p119659050>, <http://dbpedia.org/resource/Lucebert> ;
+	rdaGr2:dateOfBirth             "1924-09-15" ;
+	rdaGr2:dateOfDeath             "1994-05-10" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40980> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/76> ;
+	skos:altLabel                  "L. J. Swaanswijk"@en, "L.J. Swaanswijk"@nl, "Lubertus Jacobus Lucebert"@en, "Lubertus Jacobus Swaanswyk"@en, "Lambertus Zwaanswijk"@en, "Lubertus J. Swaanswijk Lucebert"@en, "Lubertus Jacobus Swaanswijk"@de, "Lubertus Jacobus Swaanswijk"@en, "Lubertus Jacobus Swaanswijk"@nl, "Lucebert Van Libertus Jacobus Swaanswijk"@en, "Lucebert van Swaanswijk"@en, "L. G. Swansweijk"@de ;
+	skos:note                      "Dutch painter (1924-1994)"@en, "Nederlands kunstschilder en dichter"@nl, "Niederländischer Maler, Grafiker und Schriftsteller"@de, "Peintre néerlandais"@fr, "Pintor neerlandés"@es, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel                 "Lucebert"@es, "Lucebert"@de, "Lucebert"@fi, "Lucebert"@sv, "Lucebert"@pt, "Lucebert"@en, "Lucebert"@et, "Lucebert"@sl, "Lucebert"@ga, "Lucebert"@ro, "Lucebert"@da, "Lucebert"@ca, "Lucebert"@nl, "Lucebert"@it, "Lucebert"@fr, "Люсеберт"@ru .
+
+<http://data.europeana.eu/aggregation/provider/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502137> ;
+	edm:isShownAt      <http://www.dbnl.org/titels/titel.php?id=_sep001199401> ;
+	edm:object         <http://www.dbnl.org/tekst/_sep001199401_01/_sep001199401_01_tpg.gif> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/59815> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1994" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://www.dbnl.org/titels/titel.php?id=_sep001199401>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C>
+	a                   ore:Proxy ;
+	dc:contributor      "Gorter, Sadi de", "Korteweg, Anton", "Vegt, Jan van der", "Peire, Marc", "Vanacker, Hans", "Linthorst, Gerdin", "Teeuw, A.", "Geest, Joost de", "Akker, W.J. van den", "Matthijs, Filip", "Willaert, Hendrik", "Dejonge, Huib", "Velthoven, Harry van", "Roeck, Jef de", "Nijhoff, Martinus", "Gyselen, G.", "Lambrecht, Jef", "Ekkers, Remco", "[tijdschrift] Septentrion", "Vandamme, Xavier", "Wester, Rudi", "Boyens, José", "Osstyn, Karel", "Puype, Karel", "Deloof, Jan", "Zwart, Baltus", "Velthoven, Paul van", "Lindert, Juleke van", "Dubois, Pierre H.", "Kelmachter, Hélène", "Daenens, Lieven", "Schouten, Rob", "Vermeulen, Ernst", "Parez, Anne", "Audenaert, Benny", "Claessens, Sanne", "Theissen, S.", "Poorter, Wim de", "Gellings, Paul", "Claus, Hugo", "Buyck, Paul", "Gerlach, Eva", "Cotur, Peter", "Wispelaere, Paul de", "Bruijnen, Yvette", "Hove, Jan van", "Lefèvre, Pascal", "Bak, Saskia", "Abeele, Lieven van den", "Klinkert-Koopmans, Hanneke", "Verdonck, J.", "Depondt, Paul", "Six, Fred", "Dewaele, Urbain", "Salverda, Reinier", "Berendsen, Christiaan", "Himmelreich, Adriaan", "Bracke, Eric", "Ritsema van Eck, Pieter C.", "Delcroix, Maurice", "Lucebert", "Aken, Paul van", "Toorians, Lauran", "Assche, Dirk van", "Verheyen, Jef", "Breedt Bruyn, Martje", "Polling, Kees", "Kouwenaar, Gerrit", "Wildiers, Max", "Beekman, Klaus", "Visscher, Jacques De", "Schwartz, Ineke", "Schouten, Wim", "Ibelings, Hans", "Musschoot, Anne Marie", "Fontainas, Adrienne", "Vincent, Marnix", "Bekaert, Geert", "Vermoortel, Philip", "Martelaere, Patricia de", "Wingen, Ed", "Schouten, Diny", "Opsomer, Françoise", "Durnez, Gaston", "Vandermeersch, Peter", "Platel, Marc", "Geest, Dirk de", "Lanoye, Tom", "Feys, Johan", "Huys, Paul", "Borré, Jos" ;
+	dc:creator          "[tijdschrift] Septentrion" ;
+	dc:date             "2011-05-13" ;
+	dc:identifier       "http://www.dbnl.org/titels/titel.php?id=_sep001199401", "_sep001199401" ;
+	dc:language         "nld" ;
+	dc:rights           "© dbnl" ;
+	dc:title            "Septentrion. Jaargang 23" ;
+	dcterms:created     "1994" ;
+	dcterms:issued      "2011-05-13" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021602/B58BB6D6A0C3BE6FF1F05A92C8453A75C8E6299C> .
+
+<http://www.dbnl.org/tekst/_sep001199401_01/_sep001199401_01_tpg.gif>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "140035"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/gif" ;
+	ebucore:height        "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "454"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F08080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

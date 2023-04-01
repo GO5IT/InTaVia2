@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000044932001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Wellcome Collection"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200579/dm6bkt2u>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/dm6bkt2u> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200579/dm6bkt2u> .
+
+<http://data.europeana.eu/proxy/provider/9200579/dm6bkt2u>
+	a                   ore:Proxy ;
+	dc:description      "Illustration showing water cress, midwife toad and shells - the acquatic plants and wildlife of Surinam, South America. (See L0035344 for description of image in French and Latin.)"@en ;
+	dc:identifier       "b1125967", "dm6bkt2u", "L0035343", "EPB G. O/S F.978" ;
+	dc:rights           "Credit: Wellcome Collection" ;
+	dc:source           "L0035343" ;
+	dc:subject          "Fauna"@en, "Wildlife"@en, "Flora"@en, "Toad"@en ;
+	dc:title            "Aquatic plants & wildlife, Surinam, South America, 1726" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/dm6bkt2u> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200579/dm6bkt2u> .
+
+<http://data.europeana.eu/aggregation/europeana/9200579/dm6bkt2u>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-09T11:55:54.491Z" ;
+	dcterms:modified          "2019-06-09T11:55:54.491Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200579/dm6bkt2u#metadataTier>, <http://data.europeana.eu/item/9200579/dm6bkt2u#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200579/dm6bkt2u> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200579_Ag_UK_WellcomeCollection_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200579/dm6bkt2u> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FL0035343.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE> .
+
+<https://iiif.wellcomecollection.org/image/L0035343.jpg/full/500,/0/default.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "95258"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "656"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.wellcomecollection.org/image/L0035343.jpg/full/512,/0/default.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200579/dm6bkt2u/manifest> ;
+	ebucore:fileByteSize    "99249"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "671"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <https://iiif.wellcomecollection.org/image/L0035343.jpg> .
+
+<https://iiif.wellcomecollection.org/image/L0035343.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level1.json> .
+
+<https://iiif.europeana.eu/presentation/9200579/dm6bkt2u/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200579/dm6bkt2u#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:24:58.197Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/dm6bkt2u> .
+
+<http://data.europeana.eu/item/9200579/dm6bkt2u>
+	a  edm:ProvidedCHO .
+
+<https://wellcomecollection.org/works/dm6bkt2u>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "264902"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/9200579/dm6bkt2u>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200579/dm6bkt2u> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:isShownAt      <https://wellcomecollection.org/works/dm6bkt2u> ;
+	edm:isShownBy      <https://iiif.wellcomecollection.org/image/L0035343.jpg/full/512,/0/default.jpg> ;
+	edm:object         <https://iiif.wellcomecollection.org/image/L0035343.jpg/full/500,/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/9200579/dm6bkt2u#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:24:58.197Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/dm6bkt2u> .

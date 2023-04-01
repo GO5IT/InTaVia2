@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:06.626Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525013609> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525013609/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525013609.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6066"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "165"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525013609>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:36:34.805Z" ;
+	dcterms:modified          "2018-07-23T15:36:26.075Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b525013609> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b525013609.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/f1> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b525013609>
+	a                   ore:Proxy ;
+	dc:contributor      "Mabille, Victor (17..?-18.. ; parolier). Parolier", "Leuven, Adolphe de (1800-1884). Parolier", "Monnier, Étienne (17..-1850). Parolier", "Barateau, Émile (1792-1870). Parolier", "Gourdin, Aimé (18..?-1859). Parolier", "Waldor, Mélanie (1796-1871). Parolier", "Steinberg, Wilhelm (17..?-18.. ; parolier). Parolier", "Lonlay, Eugène de (1815-1886). Parolier", "Segond, Auguste (17..?-18.. ; parolier). Parolier" ;
+	dc:creator          "Donizetti, Gaetano (1797-1848). Compositeur", "Masini, Francesco (1804-1863). Compositeur", "Thys, Alphonse (1807-1879). Compositeur", "Tadolini, Giovanni (1789-1872). Compositeur", "Schubert, Franz (1797-1828). Compositeur", "Berlioz, Hector (1803-1869). Compositeur", "Massé, Victor (1822-1884). Compositeur", "Flotow, Friedrich von (1812-1883). Compositeur", "Boïeldieu, François-Adrien (1775-1834). Compositeur", "Gabussi, Vincenzo (1800-1846). Compositeur", "Morel, Auguste (1809-1881). Compositeur", "Batta, Alexandre (1816-1902). Compositeur" ;
+	dc:date             "1844" ;
+	dc:description      "Titre uniforme : Morel, Auguste (1809-1881). Compositeur. [Éternité d'amour]", "Titre uniforme : Masini, Francesco (1804-1863). Compositeur. [Où va mon âme ?]", "Titre uniforme : Tadolini, Giovanni (1789-1872). Compositeur. [Le souvenir]", "Ancien possesseur : Macnutt, Richard (1935-....). Ancien possesseur", "Titre uniforme : Massé, Victor (1822-1884). Compositeur. [Le renégat de Tanger]", "Comprend : Où va mon âme ? / paroles de Mme. Mélanie Valdor ; musique de F. Masini ; L'anneau sacré / paroles d'Aimé Gourdin ; musique d'Adrien Boieldieu ; Le chasseur danois / paroles de Mr. de Leuven ; musique d'Hector Berlioz ; Éternité d'amour / paroles d'Émile Barateau ; musique d'Auguste Morel ; Le souvenir / paroles de Mr. Auguste Segong ; musique de Tadolini,... ; Marquise et soubrette / paroles de Victor Mabille ; musique de A. Thys ; Ne devinez-vous pas / paroles d'Eugène de Lonlay ; musique d'Alexandre Batta ; Les petits sovoyards / paroles d'Étienne Monnier ; musique de V. Gabussi ; Le renégat ; Divine reine / paroles d'Eugène de Lonlay ; musique de F. de Flotow ; Les yeux noirs et les yeux bleus / paroles d'Étienne Monnier ; musique de Donizetti ; Les lamentations de Kolma / paroles françaises de Wilhelm Steinberg ; musique de François Schubert", "Titre uniforme : Batta, Alexandre (1816-1902). Compositeur. [Ne devinez-vous pas]", "Titre uniforme : Berlioz, Hector (1803-1869). Compositeur. [Le chasseur danois. Basse, piano. H 104A]", "Titre uniforme : Boïeldieu, François-Adrien (1775-1834). Compositeur. [L'anneau sacré]", "Titre uniforme : Flotow, Friedrich von (1812-1883). Compositeur. [Divine reine]", "Titre uniforme : Thys, Alphonse (1807-1879). Compositeur. [Marquise et soubrette]", "Titre uniforme : Gabussi, Vincenzo (1800-1846). Compositeur. [Les petits sovoyards]" ;
+	dc:format           "30 p. : ill. ; 35 cm", "Nombre total de vues :  43" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b525013609" ;
+	dc:language         "fre" ;
+	dc:publisher        "B. Latte (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42282505b" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, GR-VM MACNUTT-192" ;
+	dc:subject          "Duos vocaux acc. de piano -- 19e siècle"@fre, "Romances (musique vocale) -- 19e siècle"@fre, "Mélodies françaises -- 19e siècle"@fre, "Mélodies acc. de piano -- 19e siècle"@fre ;
+	dc:title            "La mélodie, album de chant du Monde musical : romances, mélodies, duettino etc. / Masini, A. Boieldieu, H. Berlioz... [et al.]" ;
+	dc:type             "Genre musical : divers" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525013609> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b525013609>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1844" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525013609> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525013609>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "223670"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525013609>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b525013609> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b525013609.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525013609#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:06.626Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525013609> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525013609/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525013609/manifest> ;
+	ebucore:fileByteSize    "124365"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "654"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .

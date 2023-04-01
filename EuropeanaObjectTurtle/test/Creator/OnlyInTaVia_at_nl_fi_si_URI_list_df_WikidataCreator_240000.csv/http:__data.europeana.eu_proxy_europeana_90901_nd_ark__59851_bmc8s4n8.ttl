@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/90901/nd_ark__59851_bmc8s4n8>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000545751> ;
+	edm:isShownAt      <http://www.cervantesvirtual.com/nd/ark:/59851/bmc8s4n8> ;
+	edm:object         <http://media.cervantesvirtual.com/s3/BVMC_OBRAS/ff5/bfe/9a8/2b1/11d/fac/c70/021/85c/e60/64/portada/Cover.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000545751> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.cervantesvirtual.com/nd/ark:/59851/bmc8s4n8>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "30475"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:49:28.925Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90901/nd_ark__59851_bmc8s4n8> .
+
+<http://data.europeana.eu/organization/1482250000000545751>
+	a               foaf:Organization ;
+	skos:prefLabel  "Foundation Virtual Library Miguel de Cervantes"@en, "Biblioteca Virtual Miguel de Cervantes"@ca, "Biblioteca Virtual Miguel de Cervantes"@es, "Biblioteca Virtual Miguel de Cervantes"@fr, "Biblioteca Virtual Miguel de Cervantes"@it, "Biblioteca Virtual Miguel de Cervantes"@pt, "Biblioteca Virtual Miguel de Cervantes"@sv, "Biblioteca Virtual Miguel de Cervantes"@ru, "Biblioteca Virtual Miguel de Cervantes"@de, "Biblioteca Virtual Miguel de Cervantes"@nl .
+
+<http://media.cervantesvirtual.com/s3/BVMC_OBRAS/ff5/bfe/9a8/2b1/11d/fac/c70/021/85c/e60/64/portada/Cover.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "28593"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "842"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "595"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/90901/nd_ark__59851_bmc8s4n8>
+	a                   ore:Proxy ;
+	dc:contributor      "Wagner, Richard" ;
+	dc:creator          "Liszt, Franz" ;
+	dc:date             "2001" ;
+	dc:format           "audio" ;
+	dc:identifier       "http://www.cervantesvirtual.com/nd/ark:/59851/bmc8s4n8" ;
+	dc:language         "cat" ;
+	dc:subject          "Operes -- Fragments arranjats" ;
+	dc:title            "Muerte de Isolda" ;
+	dc:type             "Sound" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/90901/nd_ark__59851_bmc8s4n8> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:49:28.925Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90901/nd_ark__59851_bmc8s4n8> .
+
+<http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004500668>
+	a               foaf:Organization ;
+	skos:prefLabel  "Virtual Library Miguel de Cervantes"@en .
+
+<http://data.europeana.eu/aggregation/europeana/90901/nd_ark__59851_bmc8s4n8>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-03-28T10:46:33.138Z" ;
+	dcterms:modified          "2014-03-28T10:46:33.138Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8#contentTier>, <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8> ;
+	edm:completeness          "5" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "90901_L_ES_BVMC_Collection_ark_bvmc" ;
+	edm:landingPage           <https://www.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmedia.cervantesvirtual.com%2Fs3%2FBVMC_OBRAS%2Fff5%2Fbfe%2F9a8%2F2b1%2F11d%2Ffac%2Fc70%2F021%2F85c%2Fe60%2F64%2Fportada%2FCover.jpg&type=SOUND> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/europeana/90901/nd_ark__59851_bmc8s4n8>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2001" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90901/nd_ark__59851_bmc8s4n8> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90901/nd_ark__59851_bmc8s4n8> .

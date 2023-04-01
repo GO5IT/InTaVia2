@@ -1,0 +1,152 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200143/BibliographicResource_2000069315585>
+	a                    ore:Proxy ;
+	dc:contributor       "Johann Christoph Gottsched", "Nikolaus Baumann", "Allart van Everdingen" ;
+	dc:date              "1752" ;
+	dc:description       "Low German text appended (p. [1]-93) wtih special t.-p.: Hinrichs van Alkmar, Reynke de Voss ...", "Most of the engravings of A. van Everdingen.", "nach der ausgabe von 1498 ins hochdeutsche übersetzet, und mit einer abhandlung, von dem urheber, wahren alter und grossen werthe dieses gedichtes versehen, von Johann Christoph Gottscheden.", "Illustration on t.-p.", "Illustrations: Illustrations", "Prose paraphrase of the Low German poem formerly attributed to Heinrich von Alkmar.", "Includes Baumann's annotations." ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "012735117" ;
+	dc:language          "gmh", "de" ;
+	dc:publisher         "P. Schenk" ;
+	dc:title             "Reinke de Vos" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Reynard the Fox", "Heinrichs von Alkmar Reineke der Fuchs mit schönen kupfern" ;
+	dcterms:extent       "340, 93 (i.e. 83), [1] p.", "illus.", "28 cm." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1007> ;
+	dcterms:spatial      "Leipzig und Amsterdam", <http://id.loc.gov/vocabulary/countries/gw> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069315585> .
+
+<http://data.europeana.eu/proxy/europeana/9200143/BibliographicResource_2000069315585>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150482>, <http://data.europeana.eu/agent/171684> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1752" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069315585> .
+
+<http://data.europeana.eu/organization/1482250000001710325>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bodleian Libraries, University of Oxford"@en .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:49:18.329Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069315585> .
+
+<http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069315585>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-03T22:13:18.574Z" ;
+	dcterms:modified          "2014-06-05T15:25:39.649Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585#contentTier>, <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585> ;
+	edm:completeness          "0" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200143_Ag_EU_TEL_a1007_E.Libraries_Oxford" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200143/BibliographicResource_2000069315585> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fpurl.ox.ac.uk%2Fuuid%2Ff000595ed03b49eda3a210315c7e5614&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://purl.ox.ac.uk/uuid/f000595ed03b49eda3a210315c7e5614>
+	a                      edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize   "162199870"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://rightsstatements.org/vocab/InC/1.0/> ;
+	edm:spatialResolution  "150"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:49:18.330Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069315585> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/agent/150482>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/31164> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/150485> ;
+	owl:sameAs           <https://g.co/kg/m/03fzhp>, <http://viaf.org/viaf/42110876>, <http://www.wikidata.org/entity/Q539036>, <http://datos.bne.es/resource/XX1542993>, <http://id.loc.gov/authorities/names/nr91028220>, <http://vocab.getty.edu/ulan/500115159>, <http://data.bnf.fr/ark:/12148/cb14959721c>, <http://data.bibliotheken.nl/id/thes/p069628750>, <http://dbpedia.org/resource/Allaert_van_Everdingen>, <http://id.worldcat.org/fast/290762>, <http://www.idref.fr/08589544X/id>, <http://d-nb.info/gnd/12091008X>, <https://www.freebase.com/m/03fzhp> ;
+	rdaGr2:dateOfBirth   "1621-06-18" ;
+	rdaGr2:dateOfDeath   "1675-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40979> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "A. Everdinge"@en, "Albert von Everdingen"@en, "Alar Everdingen"@en, "Allart van Everdingen"@fi, "Allart van Everdingen"@en, "Allard van Everdingen"@en, "A van Everdingen"@en, "Allart van Everding"@en, "Allart van Everdingh"@en, "Everdenghen"@en, "Aldert Van-Everdingen"@en, "Allaert Pietersz. van Everdingen"@nl, "Allaert Pietersz. van Everdingen"@en, "A. Van Everdinghen"@en, "A. van Everdinghe"@en, "H. van Everdingen"@en, "Everding"@en, "Evardingen"@en, "A.v. everdingen"@en, "A. Everdingen"@en, "Ewendinger"@en, "V. everdingen"@en, "Oude Everdingen"@en, "Allaert van Everdingen"@sv, "Everdinghen"@en, "Aldret Van Everdingen"@en, "Ewerdinger"@en, "Albert van Everdingen"@en, "Allaert von Everdingen"@en, "Allart van Everdingenn"@en, "A. van Everdingen"@en, "A.B. Everdingen"@en, "Allert van Everdingen"@en, "Verdingen"@en, "Alaert van everdingen"@en, "Ald. von Everdingen"@en, "Allart Van Everdingen"@en, "Allart Pietersz. van Everdingen"@nl, "Allart Pietersz. van Everdingen"@en, "Everdinga"@en, "Éverdingen"@en, "Allert van everdingen"@en, "Everingen"@en, "Everdengin"@en, "Allart van Everdinge"@en, "Werdingen"@en, "Zoo goed als van Ruisdaal A: van Everdingen"@en, "Van-Everdingen"@en, "Alder Van-Everdingen"@en, "Aldert Pietersz. van Everdingen"@nl, "Allart van Everdengen"@en, "Aldert Pietersz. van Everdingen"@sv, "Aldert Pietersz. van Everdingen"@en, "Everdingen"@en, "Allart Everdingen"@sl, "Allart Everdingen"@en, "A. v. Everdingen"@en, "Everdinge"@en, "Van Everdingen"@es, "Allaert everdingen"@en, "Van Everdingen"@en, "Albert van Ewerdingen"@en, "Everdengen"@en, "Den ouden Everdingh"@en, "Allaer Van Everdingen"@it, "A.V.E. Everdingen"@en, "A.v. Ewerdingen"@en, "Everdingh"@en, "Алларт ван Эвердинген"@ru, "A. Everding"@en, "E. Everding"@en, "Aldert van Everdingen"@nl, "Aldert van Everdingen"@en, "Everdingle"@en, "Alder Van Everdingen"@en, "Allart v. everdingen"@en, "Aldaert van everdingen"@en, "Everdingen allaert van"@en, "Ald. van Everdingen"@en, "Everdigen"@en, "Eaverding"@en, "A. von everdingen"@en, "A. v. everdingen"@en, "Everdingen, Allart van"@sv, "Heverdingen"@en, "Adrien Van-Everdingen"@en, "Everingden"@en, "Eserdinga"@en, "Everdingen allart van"@en, "Everdyngen"@en, "Abber Dingin"@en, "Aldert Pietersz. Van Everdingen"@en, "Everdingin"@en, "Everdingenn"@en, "Эвердинген Алларт ван"@ru, "Allart van Everdingen"@nl, "Allart van Everdengin"@en, "Allart van Everdingen"@da, "Allart van Everdingen"@fr, "Evendingen"@en ;
+	skos:note            "Pintor neerlandès"@ca, "Niederländischer Maler"@de, "Pictor olandez"@ro, "Peintre hollandais"@fr, "Нидерландский живописец-пейзажист (1621-1675)"@ru, "Alankomaalainen maalar"@fi, "Dutch painter (1621-1675)"@en, "Nederlands kunstschilder"@nl, "Pittore olandese"@it, "Pintor neerlandés"@es, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel       "Эвердинген, Алларт ван"@ru, "Allaert van Everdingen"@fr, "Allaert van Everdingen"@fi, "Allaert van Everdingen"@lt, "Allaert van Everdingen"@en, "Allaert van Everdingen"@da, "Allaert van Everdingen"@ca, "Allaert van Everdingen"@nl, "Allart van Everdingen"@de, "Allart van Everdingen"@sv, "Allart van Everdingen"@pt, "Allart van Everdingen"@it, "Allart van Everdingen"@es, "Allart van Everdingen"@cs, "Allart van Everdingen"@sk, "Allart van Everdingen"@sl, "Allart van Everdingen"@pl .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph012735117&indx=1&recIds=oxfaleph012735117>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/171684>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/76> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/171421> ;
+	owl:sameAs                     <https://libris.kb.se/pm1336n75q3p7dd>, <http://data.bnf.fr/ark:/12148/cb12024640q>, <http://vocab.getty.edu/ulan/500318657>, <http://www.idref.fr/027593118/id>, <http://data.bibliotheken.nl/id/thes/p068418329>, <http://data.cervantesvirtual.com/person/1622>, <http://openlibrary.org/works/OL1221848A>, <http://nlg.okfn.gr/resource/authority/record124740>, <https://www.freebase.com/m/01czc_>, <http://www.wikidata.org/entity/Q76442>, <http://id.loc.gov/authorities/names/n81063128>, <http://libris.kb.se/resource/auth/188497>, <http://id.ndl.go.jp/auth/ndlna/00745356>, <http://id.worldcat.org/fast/73993>, <https://g.co/kg/m/01czc_>, <http://viaf.org/viaf/27078865>, <http://d-nb.info/gnd/118541013>, <http://dbpedia.org/resource/Johann_Christoph_Gottsched> ;
+	rdaGr2:dateOfBirth             "1700-02-02" ;
+	rdaGr2:dateOfDeath             "1766-12-12" ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/1444> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2951>, <http://data.europeana.eu/concept/2954>, <http://data.europeana.eu/concept/2966>, <http://data.europeana.eu/concept/2964> ;
+	skos:altLabel                  "Готтшед Иоганн Кристоф"@ru, "Готтшед Иоганн-Кристоф"@ru, "Готтшед И. К."@ru, "Готтшед, Иоганн-Кристоф"@ru, "Готшед Иоганн Кристоф"@ru, "Готтшед, Иоганн Кристоф"@ru, "Gottsched, Johann Christoph"@sv, "Иоганн Готшед"@ru, "Готшед"@ru, "Иоганн Кристоф Готтшед"@ru, "Готшед, Иоганн Кристоф"@ru, "Gottsched"@nl, "Gottsched"@sv, "Gottsched"@da, "Готтшед И."@ru, "Иоганн Кристоф Готчед"@ru, "Иоганн-Кристоф Готтшед"@ru, "Готтшед Иоганн"@ru, "Готтшед, Иоганн"@ru, "Готтшед"@ru, "Иоганн Готтшед"@ru, "Johann Gottsched"@es, "Johann Gottsched"@nl ;
+	skos:note                      "Scrittore e critico letterario tedesco"@it, "Duits schrijver"@nl, "Német író, dramaturg és irodalomtudós"@hu, "Немецкий писатель и деятель культуры, критик, историк литературы и театра, теоретик раннего Просвещения, теоретик немецкого языка и литературы"@ru, "Deutscher Gelehrter, Sprachforscher und Schriftsteller"@de, "German author and critic (1700-1766)"@en, "Tysk poet och författare"@sv, "Německý filozof, spisovatel"@cs, "Tysk poet og skribent (1700-1766)"@da ;
+	skos:prefLabel                 "Иоганн Кристоф Готшед"@ru, "Johann Christoph Gottsched"@pt, "Johann Christoph Gottsched"@en, "Johann Christoph Gottsched"@it, "Johann Christoph Gottsched"@fr, "Johann Christoph Gottsched"@de, "Johann Christoph Gottsched"@fi, "Johann Christoph Gottsched"@sv, "Johann Christoph Gottsched"@hu, "Johann Christoph Gottsched"@es, "Johann Christoph Gottsched"@cs, "Johann Christoph Gottsched"@sl, "Johann Christoph Gottsched"@pl, "Johann Christoph Gottsched"@da, "Johann Christoph Gottsched"@ro, "Johann Christoph Gottsched"@ca, "Johann Christoph Gottsched"@nl, "Йохан Кристоф Готшед"@bg .
+
+<http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069315585>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069315585> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710325> ;
+	edm:isShownAt      <http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph012735117&indx=1&recIds=oxfaleph012735117> ;
+	edm:isShownBy      <http://purl.ox.ac.uk/uuid/f000595ed03b49eda3a210315c7e5614> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:099942526>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49574"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_099942526>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:08:36.432Z" ;
+	dcterms:modified          "2018-04-05T17:25:18.319Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_099942526> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A099942526%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_099942526>
+	a                   ore:Proxy ;
+	dc:contributor      "Jan Wellens de Cock" ;
+	dc:creator          "Jan Wellens de Cock" ;
+	dc:description      "Litt. : Kunst voor de Beeldenstorm Noordnederlandse kunst 1525-1580, 's Gravenhage 1986.", "Vindplaats: Amsterdam, Rijksprentenkabinet" ;
+	dc:format           "houtsnede" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099942526" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[099942526], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Sint Johannes de Evangelist"@nl, "galgenveld"@nl ;
+	dc:title            "Johannes de Evangelist op het eiland Patmos" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "15XX" ;
+	dcterms:extent      "26,7 × 37,8 cm" ;
+	dcterms:isPartOf    "NCRD01", "NCRD", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099942526> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099942526>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:099942526> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099942526&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099942526&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7109"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "103"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:08.598Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099942526> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:08.599Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099942526> .
+
+<http://data.europeana.eu/agent/22116>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/108149>, <http://data.europeana.eu/agent/92163> ;
+	owl:sameAs           <http://dbpedia.org/resource/Jan_Wellens_de_Cock>, <https://www.freebase.com/m/047q750>, <http://data.bnf.fr/ark:/12148/cb16210580d>, <http://www.idref.fr/140416374/id>, <http://viaf.org/viaf/74946978>, <http://vocab.getty.edu/ulan/500115371>, <http://d-nb.info/gnd/129977497>, <https://g.co/kg/m/047q750>, <http://viaf.org/viaf/88518202>, <http://id.loc.gov/authorities/names/no2009076424>, <http://www.wikidata.org/entity/Q1358762> ;
+	rdaGr2:dateOfBirth   "1480-01-01" ;
+	rdaGr2:dateOfDeath   "1527-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40579> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203279> ;
+	skos:altLabel        "Jan Wellensz. de Cock"@en, "Ян де Кок"@ru, "Jan van Leyden"@en, "Jan Wellens De Cock"@en, "Jan Wellens De Cock"@fr, "Jan Wellens De Cock Cock"@en, "Jan de Cock"@de, "Jan de Cock"@en, "Jan de Cock"@nl, "Jan Wellensz de Cock"@de, "Jan Wellens"@en, "Pseudo Jan Wellens de Cock"@de, "Pseudo Jan Wellens de Cock"@en, "Jancok"@en, "Pseudo Jan Wellens de Cock"@nl, "Jan Cock"@en, "Jan van Leyen"@en, "Jan van Leyen"@nl, "Jan De Cock"@en, "Jan De Cock"@fr, "Jan Wellens genaamd de Cock Matthijszoon"@en, "Кок, Ян Велленс де"@ru ;
+	skos:note            "Flämischer Maler"@de, "Фламандский художник"@ru, "Φλαμανδός ζωγράφος και σχεδιαστής"@el, "Nederlands kunstschilder"@nl, "Peintre, père de Hieronymus et de Matthijs Cock"@fr, "Pictor flamand"@ro, "Flemish painter and draftsman of the Northern Renaissance"@en, "Flamand festő"@hu ;
+	skos:prefLabel       "Γιαν Βέλλενς ντε Κοκ"@el, "Ян Велленс де Кок"@ru, "Jan Wellens de Cock"@en, "Jan Wellens de Cock"@fr, "Jan Wellens de Cock"@hu, "Jan Wellens de Cock"@de, "Jan Wellens de Cock"@pt, "Jan Wellens de Cock"@es, "Jan Wellens de Cock"@sl, "Jan Wellens de Cock"@ga, "Jan Wellens de Cock"@pl, "Jan Wellens de Cock"@ro, "Jan Wellens de Cock"@ca, "Jan Wellens de Cock"@nl, "Jan de Cock"@sv, "Jan de Cock"@it, "Jan de Cock"@da .
+
+<http://data.europeana.eu/concept/2854>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4025736-8>, <http://vocab.getty.edu/aat/300041405>, <http://www.wikidata.org/entity/Q18219090> ;
+	skos:note        "Prodotto della tecnica xilografica"@it, "Impresión producida por medio de la técnica xilográfica"@es, "Obraz wykonany w technice drzeworytu"@pl, "Print produced by woodcutting, aka. xylography technique"@en, "Im Holzschnittverfahren erzeugte Grafik"@de, "Print gemaakt door middel van xylografie techniek"@nl, "Estampe produite par la technique de la xylographie"@fr, "Impressió produïda mitjançant la tècnica xilogràfica"@ca ;
+	skos:prefLabel   "Fametszetnyomat"@hu, "Puupiirros"@fi, "Ξυλογραφία"@el, "Drzeworyt"@pl, "Houtsnede"@nl, "Xylografi"@da, "Holzschnitt"@de, "Гравюра на дереве"@ru, "Xylogravure"@fr, "Xilogravura"@pt, "Woodcut print"@en, "Xilografía"@es, "Xilografia"@ca, "Xilografia"@it .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_099942526>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/22116> ;
+	dc:creator          <http://data.europeana.eu/agent/22116> ;
+	dc:format           <http://data.europeana.eu/concept/2854> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099942526> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_099942526> .

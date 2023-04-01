@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040297__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/040200/040297> ;
+	edm:object         <http://keptar.oszk.hu/040200/040297/1899_Oldal_286_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040200_040297__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:23.543Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040297__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040200_040297__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:05:07.706Z" ;
+	dcterms:modified          "2015-09-14T11:55:40.769Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F040200%2F040297%2F1899_Oldal_286_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:23.542Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040297__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_040200_040297__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040200_040297__> .
+
+<http://keptar.oszk.hu/040200/040297>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040200_040297__/manifest> .
+
+<http://keptar.oszk.hu/040200/040297/1899_Oldal_286_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "12274"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_040200_040297__>
+	a                    ore:Proxy ;
+	dc:creator           "Stróbl ,  Alajos  ( szobrász )"@hu, "Schulek ,  Frigyes  ( építész )"@hu ;
+	dc:description       "I. (Szent) István király az első magyar király. Uralkodása alatt a magyar törzsek szövetségéből kialakult fejedelemséget egységes, keresztény magyar királysággá alakította át. Ez 1028-tól az egész Kárpát-medencére kiterjedt. Az általa meghirdetett új politikai irányvonalnak ellenszegülő törzseket (klánokat) fegyverrel vagy békés úton behódoltatta, a lázadásokat leverte. Az ezeréves magyar törvénytár az általa alkotott törvényekkel kezdődik. Az államszervezet kiépítésével párhuzamosan megszervezte a magyar keresztény egyházat, ezért ő és utódai viselhették az apostoli király címet. Magyarországon minden év augusztus 20-án I. István király szentté avatásának napját ünnepeljük. (Forrás: Wikipédia) Szent István király lovasszobra Budapesten a Szentháromság téren található. A szobor felállításának gondolatát 1863-ban gróf Pállfy Móric királyi helytartó vetette fel először. Gyűjtést indítottak, a mozgalom azonban megszakadt. Az állam 1896. VIII.tc.-ben a miniszterelnököt bízta meg a szobor állami költségen történő felállításával. Építész Schulek Frigyes volt. Talpazat 540 cm magas, a lovon ülő bronz főalak 400 cm. Szent István fején a koronával, vállán palásttal, jobb kezében kettős kereszttel, gazdagon feldíszített lovon ül. A talpazatot ovális alaprajzú, áttört mellvédkorlát veszi körül, pillérekkel megszakítva. Az alépítmény négy oldalán domborművek: koronázás, törvényhozás, templomépítés. Bécs hódolata - István uralkodásának kiemelkedő mozzanatai, talpazaton: Isten báránya, balról János és Márk, jobbról: Máté és Lukács evangélista domborműve. Felirat: 'STEPHANUS REX/ 977-1038' A templomépítést ábrázoló domborművön az építész Schulek Frigyest, jobbról balra a második alak - az ásós barát mögött - Stróbl Alajost jeleníti meg. A domborművön Jókai Mór, Benczúr Gyula, valamint Stróbl Alajos édesanyja ismerhető fel. A 'Bécs hódolata' domborművön az István király előtt a földig hajoló alakban Dr. Karl Luger bécsi polgármestert ábrázolta. (Forrás: szoborlap.hu) A Halászbástya Budapest egyik legismertebb műemléke, amely a budai várban, Budapest I. kerületében található. A neoromán kilátóteraszokról látható páratlan budapesti panoráma miatt a legjelentősebb idegenforgalmi látványosságok közé tartozik. A Halászbástya Dunával párhuzamos főhomlokzata mintegy 140 méter hosszúságú, amelyből a déli folyosószárny hossza mintegy 40 méter, az északié 65 méter, míg a díszes középső mellvédfal 35 méter hosszú. Csúcsos süvegű kőtornyai a hét magyar honfoglaló vezért szimbolizálják. A régi budai várfalak helyén a Mátyás-templom átépítésével is megbízott Schulek Frigyes tervei alapján épült 1895 és 1902 között, neoromán stílusban. A neve arra utal, hogy a középkorban a várfalnak ezt a részét a halászok céhe védte. 1947&#8211;48-ban Schulek Frigyes fia, Schulek János vezette a második világháborúban megrongálódott épületegyüttes helyreállítását. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1606x951 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/040200/040297   [Metadata]" ;
+	dc:relation          "Gyöngyi, Stróbl Alajos, Schulek Frigyes: Buda-Dísztér-Szent István szobra [ http://keptar.oszk.hu/037400/037470]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "műemlék"@hu, "ló"@hu, "állatábrázolás"@hu, "tervezet"@hu, "History, local history"@hu, "Fine arts, visual arts"@hu, "emberábrázolás"@hu, "bronzszobrászat"@hu, "uralkodó"@hu, "építmény"@hu, "szobor"@hu, "mészkő"@hu, "István (Magyarország: király), I., Szent (970-1038)"@hu ;
+	dc:title             "Szent István szobra a budavári Halász-bástyán épülő oszlop-csarnokkal"@hu ;
+	dc:type              "building"@hu, "kép"@hu, "újságrészlet"@hu, "statue"@hu ;
+	dcterms:alternative  "Schulek Frigyes és Stróbl Alajos tervezete"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040297__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040297__> .

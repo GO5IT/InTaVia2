@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000091017000000>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000091017000000&teca=ICBSA> ;
+	edm:object         <http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000091017000000&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:12:22.935Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000091017000000> .
+
+<http://data.europeana.eu/concept/soundgenres/Radio_programmes>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1726254>, <http://id.loc.gov/authorities/genreForms/gf2011026506> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note        "Recordings made for radio broadcast."@en ;
+	skos:prefLabel   "Programmi radiofonici"@it, "Programy radiowe"@pl, "Programas de radio"@es, "Radiosendungen"@de, "Émissions de radio"@fr, "Radio programmes"@en .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000091017000000>
+	a                   ore:Proxy ;
+	dc:contributor      "Radiotelevisione della Svizzera Italiana [produttore]", "Radiotelevisione della Svizzera Italiana [donatore]" ;
+	dc:creator          "Croce, Benedetto <1866-1952>" ;
+	dc:date             "1982-2000" ;
+	dc:description      "Parole di presentazione di Arminio Janner ; Il documento presenta la registrazione radiofonica di una lezione di Benedetto Croce sui romanzi, in cui confronta i romanzi storici, i loro soggetti e il loro valore educativo con i romanzi contemporanei"@it ;
+	dc:format           "1 compact disc (13 min, 17 sec.): 1.4 m./sec (compact disc), Elettrica/analogica, Stereofonico; 4 3/4 in. (12 cm.)" ;
+	dc:identifier       "IT-DDS0000091017000000" ;
+	dc:language         "ita" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Radio_programmes> ;
+	dc:title            "Benedetto Croce a Radio Monteceneri : Studio di Campo Marzio, Lugano, 4 Ottobre 1936 / Radiotelevisione Svizzera Italiana ;" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/544.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000091017000000> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000091017000000&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000091017000000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T08:47:52.943Z" ;
+	dcterms:modified          "2016-07-08T13:00:06.698Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000#metadataTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000> ;
+	edm:completeness          "10" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.internetculturale.it%2Fjmms%2Fthumbnail%3Ftype%3Dweb%26id%3Doai%253A192.168.10.31%253A22%253ARM0200%253AIT-DDS0000091017000000%26teca%3DICBSA&type=SOUND> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000091017000000>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000091017000000> .
+
+<http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000091017000000&teca=ICBSA>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "77560"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000091017000000>
+	a           edm:WebResource ;
+	dc:format   "mp3" ;
+	edm:rights  <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000091017000000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:12:22.935Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000091017000000> .

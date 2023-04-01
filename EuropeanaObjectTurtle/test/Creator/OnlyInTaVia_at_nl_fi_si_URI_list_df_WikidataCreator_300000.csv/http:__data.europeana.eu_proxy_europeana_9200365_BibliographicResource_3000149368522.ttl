@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k96193182>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1808" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k96193182> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k96193182>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:34:45.868Z" ;
+	dcterms:modified          "2018-07-23T15:32:17.401Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k96193182> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k96193182.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k96193182/manifest> ;
+	ebucore:fileByteSize    "49106"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "627"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k96193182>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k96193182> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k96193182.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k96193182.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8054"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k96193182/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:50.489Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k96193182> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k96193182/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:50.489Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k96193182> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k96193182>
+	a                   ore:Proxy ;
+	dc:contributor      "Monteverdi, Claudio (1567-1643). Auteur du texte", "Perti, Giacomo Antonio (1661-1756). Auteur du texte", "Porta, Costanzo (1529?-1601). Auteur du texte", "Napoléon Ier (empereur des Français ; 1769-1821). Dédicataire", "Aubert, L. (17..-17..? ; graveur en lettres). Graveur en lettres", "Jommelli, Niccolò (1714-1774). Auteur du texte" ;
+	dc:creator          "Dalayrac, Nicolas (1753-1809). Compositeur", "Piccinni, Niccolò (1728-1800). Compositeur", "Marcello, Benedetto (1686-1739). Compositeur", "Gabussi, Giulio Cesare (1555?-1611). Compositeur", "Martini, Johann Paul Aegidius (1741-1816). Compositeur", "Pugnani, Gaetano (1731-1798). Compositeur", "Jommelli, Niccolò (1714-1774). Compositeur", "Locatelli, Pietro Antonio (1695-1764). Compositeur", "Navarro, Juan (1530?-1580). Compositeur", "Sala, Nicola (1713-1801). Compositeur", "Ortiz, Diego (1510?-1570?). Compositeur", "Gesualdo, Carlo (1560?-1613). Compositeur", "Fenaroli, Fedele (1730-1818). Compositeur", "Corvo, Giovanni Battista. Compositeur", "Cimarosa, Domenico (1749-1801). Compositeur", "Barbieri, Lutio. Compositeur", "Baroni Giamaglia, Filippo. Compositeur", "Plantade, Charles-Henri (1764-1839). Compositeur", "Porpora, Nicola (1686-1768). Compositeur", "Rouget de Lisle, Claude Joseph (1760-1836). Compositeur", "Fiorillo, Federigo (1755-182.?). Compositeur", "Lotti, Antonio (1666-1740). Compositeur", "Porta, Costanzo (1529?-1601). Compositeur", "Marenzio, Luca (1553?-1599). Compositeur", "Ponzio, Pietro (1532-1596). Compositeur", "Palestrina, Giovanni Pierluigi da (1525?-1594). Compositeur", "Monteverdi, Claudio (1567-1643). Compositeur", "Pergolesi, Giovanni Battista (1710-1736). Compositeur", "Ricieri, Giovanni Antonio. Compositeur", "Durante, Francesco (1684-1755). Compositeur", "Stamitz, Johann (1717-1757). Compositeur", "Perti, Giacomo Antonio (1661-1756). Compositeur", "Pacchioni, Antonio Maria. Compositeur", "Bernabei, Giuseppe Antonio (1649?-1732). Compositeur", "Agostini, Paolo (1583?-1629). Compositeur", "Monsigny, Pierre-Alexandre (1729-1817). Compositeur", "Cifra, Antonio (1584-1629). Compositeur", "Tartini, Giuseppe (1692-1770). Compositeur", "Boccherini, Luigi (1743-1805). Compositeur", "Benevoli, Orazio (1605-1672). Compositeur", "Foggia, Francesco (1604-1688). Compositeur", "Animuccia, Giovanni (1514?-1571). Compositeur", "Rota, Andrea (1553?-1597). Compositeur", "Leo, Leonardo (1694-1744). Compositeur", "Caresana, Cristoforo (1640-1709). Compositeur", "Steffani, Agostino (1654-1728). Compositeur", "Zarlino, Gioseffo (1517-1590). Compositeur", "Morales, Cristóbal de (1500?-1553). Compositeur", "Grétry, André-Ernest-Modeste (1741-1813). Compositeur", "Viotti, Giovanni Battista (1755-1824). Compositeur", "Victoria, Tomás Luis de (1548-1611). Compositeur", "Willaert, Adrian (1490?-1562). Compositeur", "Scarlatti, Alessandro (1660-1725). Compositeur", "Choron, Alexandre (1771-1834). Auteur du texte" ;
+	dc:date             "1808" ;
+	dc:description      "Avec mode texte", "Appartient à l’ensemble documentaire : MethMusiq" ;
+	dc:format           "3 vol. (XXVII-[1 bl.]-102-142-42-34-52-71, [2]-73-[1 bl.]-319-[1 bl.]-60-68, [2]-39-[1 bl.]-380-31 p.) ; in-fol.", "Nombre total de vues :  484" ;
+	dc:identifier       "Cotage 163 (Auguste Le Duc)", "http://gallica.bnf.fr/ark:/12148/bpt6k96193182" ;
+	dc:language         "fre" ;
+	dc:publisher        "A Paris au Grand magasin, chez Auguste Le Duc & compie editeurs & mds de musique, rue de Richelieu, no 78, près celle Feydeau. L. Aubert scripsit [1808]" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb429104896", "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb429104896" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VM8-156 (1)" ;
+	dc:title            "Principes de composition des ecoles d'Italie. Tome 1 / adoptés par le Gouvernement français pour servir à l'instruction des elèves des maîtrises de cathédrales. Ouvrage classique formé de la réunion des modèles les plus parfaits en tout genre, enrichi d'un texte méthodique rédigé selon l'enseignement des ecoles les plus célèbres et des ecrivains didactiques les plus estimés. Dédié a S.M. l'Empereur et Roi par Alexandre Choron. Tome premier [-troisième]" ;
+	dc:type             "Sheet Music"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k96193182> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k96193182> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k96193182>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "263882"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

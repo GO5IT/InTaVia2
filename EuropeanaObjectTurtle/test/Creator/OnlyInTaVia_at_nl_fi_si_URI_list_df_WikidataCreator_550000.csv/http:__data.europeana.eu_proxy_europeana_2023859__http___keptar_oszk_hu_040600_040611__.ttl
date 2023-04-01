@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://keptar.oszk.hu/040600/040611/1899_Oldal_363_g_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "14464"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040600_040611__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_040600_040611__>
+	a                    ore:Proxy ;
+	dc:creator           "Barabás ,  Miklós  ( rajzoló )"@hu ;
+	dc:description       "Zichy Antónia Zichy Károly gróf és Batthyány Antónia grófnő leánya, a család hatodik gyermeke. Batthyány Lajos gróf és miniszterelnök felesége, özvegye, Batthyány Elemér gróf édesanyja. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         962x1424 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/040600/040611   [Metadata]" ;
+	dc:relation          "Barabás Miklós rajzaiból : Gróf Károlyi Györgyné, Zichy Karolina grófnő [ http://keptar.oszk.hu/040600/040608]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "Zichy Antónia (1816-1888)"@hu, "History, local history"@hu, "Fine arts, visual arts"@hu, "Batthyány Lajosné (1816-1888)"@hu, "személyt ábrázoló kép"@hu, "grafika"@hu, "nő"@hu ;
+	dc:title             "Barabás Miklós rajzaiból"@hu ;
+	dc:type              "újságrészlet"@hu, "graphics"@hu ;
+	dcterms:alternative  "Gróf Batthyány Lajosné, Zichy Antónia grófnő"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040600_040611__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:44.340Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040600_040611__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_040600_040611__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040600_040611__> .
+
+<http://keptar.oszk.hu/040600/040611>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040600_040611__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:44.341Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040600_040611__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040600_040611__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:06:27.071Z" ;
+	dcterms:modified          "2015-09-14T11:55:55.336Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F040600%2F040611%2F1899_Oldal_363_g_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040600_040611__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040600_040611__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/040600/040611> ;
+	edm:object         <http://keptar.oszk.hu/040600/040611/1899_Oldal_363_g_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .

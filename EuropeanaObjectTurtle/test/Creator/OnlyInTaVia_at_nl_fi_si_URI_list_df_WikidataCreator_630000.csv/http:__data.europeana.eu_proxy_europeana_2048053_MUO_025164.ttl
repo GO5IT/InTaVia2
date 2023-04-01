@@ -1,0 +1,181 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocab.getty.edu/aat/300054033>
+	a               skos:Concept ;
+	skos:altLabel   "gesmeed"@nl, "沖鍛"@zh-hant, "鍛壓"@zh-hant, "鍛煉"@zh-hant, "hot-working"@en, "鍛"@zh-hant, "forged (metal formed)"@en ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300054035> ;
+	skos:note       "藉由加熱及鎚鍛塑形金屬物件。"@zh-hant, "Dar forma a un objeto de metal con calor y martilleo."@es, "Het vormgeven aan metaal door middel van verhitten en hameren."@nl, "Forming the shape of a metal object by heating and hammering."@en ;
+	skos:prefLabel  "forging (metal forming)"@en, "duan zao"@zh-latn-pinyin-x-notone, "鍛造 (金屬成形)"@zh-hant, "smeden (metaalvorming)"@nl, "duàn zào"@zh-latn-pinyin-x-hanyu, "tuan tsao"@zh-latn-wadegile, "forjado (conformación de metales)"@es ;
+	skos:related    <http://vocab.getty.edu/aat/300011057>, <http://vocab.getty.edu/aat/300023137> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_025164/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://athena.muo.hr/?object=detail&id=18967>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "13287"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2048053/MUO_025164#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:23.007Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_025164> .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_025164>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:54:38.137Z" ;
+	dcterms:modified          "2015-11-03T10:54:38.137Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_025164#metadataTier>, <http://data.europeana.eu/item/2048053/MUO_025164#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_025164> ;
+	edm:completeness          "10" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_025164> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D18967&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_025164>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_025164> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=18967> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=18967> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=18967> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_025164>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/place/22677>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/88> ;
+	owl:sameAs        <http://www.idref.fr/029266661/id>, <http://www.wikidata.org/entity/Q1435>, <http://dbpedia.org/resource/Zagreb>, <http://www.yso.fi/onto/yso/p204132>, <http://vocab.getty.edu/tgn/7015558>, <http://viaf.org/viaf/123146146>, <http://www.yso.fi/onto/ysa/Y204132>, <http://libris.kb.se/resource/auth/160693>, <https://sws.geonames.org/3186886/>, <https://www.freebase.com/m/0fhzy>, <https://g.co/kg/m/0fhzy>, <https://libris.kb.se/wt798czf338v16t>, <http://id.ndl.go.jp/auth/ndlna/00628568>, <https://d-nb.info/gnd/4108914-5>, <http://id.loc.gov/authorities/names/n79116205> ;
+	skos:altLabel     "Zagreb, Croatia"@en, "Zagreb"@cs, "Agram"@de, "Agram"@en, "Agram"@hr, "Agram"@it, "Zagrebe"@pt ;
+	skos:note         "Horvátország fővárosa"@hu, "Huvudstad i Kroatien"@sv, "Capital da Croácia"@pt, "Glavno mesto Hrvaške"@sl, "Horvaatia Vabariigi pealinn"@et, "Hlavní město Chorvatska"@cs, "Столица и крупнейший город Хорватии"@ru, "Hauptstadt von Kroatien"@de, "Capitala Croației"@ro, "Hoofdstad van Kroatië"@nl, "Capitale della Croazia"@it, "Capital city of Croatia"@en, "Capital de Croàcia"@ca, "Capital de Croacia"@es, "Столица на Хърватия"@bg, "Capitale de la Croatie"@fr, "Stolica Chorwacji"@pl, "Πρωτεύουσα της Κροατίας"@el, "Belt kapitali tal-Kroazja"@mt, "Kroatian pääkaupunki"@fi, "Glavni grad Hrvatske"@hr, "Hlavné mesto Chorvátska"@sk ;
+	skos:prefLabel    "Zagrebas"@lt, "Ságrab"@ga, "Zagreb"@de, "Zagreb"@fi, "Zagreb"@pt, "Zagreb"@hr, "Zagreb"@fr, "Zagreb"@sl, "Zagreb"@ca, "Zagreb"@sv, "Zagreb"@en, "Zagreb"@es, "Zagreb"@et, "Zagreb"@eu, "Zagreb"@ro, "Zagreb"@da, "Zagreb"@nl, "Загреб"@ru, "Загреб"@bg, "Zagrzeb"@pl, "Zagabria"@it, "Záhřeb"@cs, "Záhreb"@sk, "Zagreba"@lv, "Zágráb"@hu, "Ζάγκρεμπ"@el, "Żagreb"@mt ;
+	wgs84_pos:alt     "158.0" ;
+	wgs84_pos:lat     "45.813057" ;
+	wgs84_pos:long    "15.977222" .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_025164>
+	a                   ore:Proxy ;
+	dc:creator          "Rudolf, Valdec", "Frangeš Mihanović, Robert" ;
+	dc:date             "1906" ;
+	dc:description      "Pačetvorinasta, Na aversu portret J.J. STROSSMYER u okruglom polju uprofilu desno. Portret starijeg muškarca sa stiliziranom kosom podignutom uobliku lovor vijenca. Okrugla površina iza profila ispunjena lisnatim grančicama u plitkom reljefu. Ispodu pačetvorinastom reljefu natpis u tri reda:DR.JOSIP.JURAJ.STROSSMYER BISKUP DJAKOVAČKI. U dnu dolje desno gravirana signatura R. VALDEC. Na reversu u prvom planu na niskom podnožju muški i ženski lik u profilu okrenuti na lijevo.Muškarac u narodnoj nošnji, raskorakui napred ispruženim rukama drži barjak. Iza njega ženski lik u dugoj stiliziranoj haljini s položenim raspelom na lijevom ramenu. Na desno u pet redova natpis: SVE ZA VJERU I ZA DOMOVINU. U dnu desno signatura FRANGEŠ - MIHANOVIĆ." ;
+	dc:format           "7 x 5.6 cm", "image/jpg" ;
+	dc:identifier       "MUO_025164" ;
+	dc:subject          "stalni postav 1995" ;
+	dc:title            "J.J. Strossmyer - sve za vjeru i za domovinu" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Metalwork" ;
+	dcterms:medium      <http://vocab.getty.edu/aat/300010957>, <http://vocab.getty.edu/aat/300054033> ;
+	dcterms:spatial     <http://vocab.getty.edu/tgn/7015558> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_025164> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_025164> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://vocab.getty.edu/tgn/7015558>
+	a               skos:Concept, edm:Place ;
+	skos:altLabel   "Zagabria" ;
+	skos:broader    <http://vocab.getty.edu/tgn/7017312> ;
+	skos:note       "http://vocab.getty.edu/tgn/rev/5000886224" ;
+	skos:prefLabel  "Zagreb" .
+
+<http://athena.muo.hr/api/?semantic=representation&id=18967>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_025164/manifest> ;
+	ebucore:fileByteSize    "15832"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "184"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2048053/MUO_025164#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:23.008Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_025164> .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_025164>
+	a                   ore:Proxy ;
+	dcterms:medium      <http://data.europeana.eu/concept/1769> ;
+	dcterms:spatial     <http://data.europeana.eu/place/88>, <http://data.europeana.eu/place/22677> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1906" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_025164> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_025164> .
+
+<http://data.europeana.eu/concept/1769>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q34095>, <http://id.loc.gov/authorities/names/sh85017093>, <http://babelnet.org/rdf/s00013326n>, <http://nomisma.org/id/ae>, <http://thesaurus.europeanafashion.eu/thesaurus/11085>, <https://www.freebase.com/m/01brf>, <https://g.co/kg/m/01brf>, <http://vocab.getty.edu/aat/300010957>, <http://www.yso.fi/onto/yso/p20227>, <http://data.bnf.fr/ark:/12148/cb11976193v>, <http://id.ndl.go.jp/auth/ndlna/00570282>, <http://purl.org/bncf/tid/40905>, <http://thesaurus.europeanafashion.eu/thesaurus/10556>, <https://d-nb.info/gnd/4146667-6> ;
+	skos:note        "Aliatge de coure i estany"@ca, "Metalliseos"@fi, "Metālu sakausējums, kas pamatā sastāv no vara un alvas"@lv, "Legering med koppar och andra metaller, vanligen tenn"@sv, "Lega di rame e alluminio, nichel, berillio o stagno"@it, "Koperlegering"@nl, "Slitina mědi a cínu"@cs, "Stop miedzi i cyny"@pl, "Metal alloy"@en, "Metallegering"@da, "Alliage de cuivre et d'étain"@fr, "Rézötvözet"@hu, "Liga metálica"@pt, "Legierung aus Kupfer und Zinn"@de, "Aleación metálica de cobre y estaño"@es, "Сплав на мед с калай"@bg, "Cóimhiotal"@ga, "Сплав меди, обычно с оловом в качестве основного легирующего компонента"@ru ;
+	skos:prefLabel   "Brąz"@pl, "Bronca"@hr, "Pronssi"@fi, "Bronce"@es, "Бронза"@ru, "Μπρούντζος"@el, "Brontze"@eu, "Bron"@sl, "Cré-umha"@ga, "Бронз"@bg, "Pronks"@et, "Bronza"@lt, "Bronza"@lv, "Bronzo"@it, "Bronze"@fr, "Bronze"@de, "Bronze"@pt, "Bronze"@ca, "Bronze"@en, "Bronze"@da, "Brons"@sv, "Brons"@nl, "Bronz"@hu, "Bronz"@sk, "Bronz"@cs, "Bronz"@ro ;
+	skos:related     <http://data.europeana.eu/concept/1773>, <http://data.europeana.eu/concept/1770> .
+
+<http://data.europeana.eu/place/88>
+	a               edm:Place ;
+	owl:sameAs      <https://sws.geonames.org/3202326/>, <http://viaf.org/viaf/152376980>, <http://datos.bne.es/resource/XX452923>, <http://zbw.eu/stw/descriptor/18227-3>, <http://data.bnf.fr/ark:/12148/cb12363401c>, <https://g.co/kg/m/01pj7>, <http://vocab.getty.edu/tgn/7006663>, <http://www.yso.fi/onto/yso/p107595>, <http://www.wikidata.org/entity/Q224>, <http://www.idref.fr/154019917/id>, <http://id.nlm.nih.gov/mesh/D017523>, <http://id.worldcat.org/fast/1212674>, <http://vocabularies.unesco.org/thesaurus/concept896>, <https://libris.kb.se/64jlkbvq4b1l6f6>, <http://www.yso.fi/onto/ysa/Y107595>, <http://id.loc.gov/authorities/names/n81035140>, <http://babelnet.org/rdf/s00023880n>, <http://data.bnf.fr/ark:/12148/cb11951317p>, <http://libris.kb.se/resource/auth/151342>, <https://d-nb.info/gnd/4073841-3>, <http://id.ndl.go.jp/auth/ndlna/00567032>, <http://dbpedia.org/resource/Croatia>, <https://www.freebase.com/m/01pj7>, <http://data.bnf.fr/ark:/12148/cb15304388d> ;
+	skos:altLabel   "Hrvatska"@pl, "Republiek Kroatië"@nl, "Хърватска"@bg, "KRO"@da, "Republica de Croacia"@es, "RH"@hr, "RH"@en, "Kroatian tasavalta"@fi, "República da Croácia"@pt, "Republika Chorwacji"@pl, "Република Хърватия"@bg, "Republikken Kroatien"@da, "Repubblika tal-Kroazja"@mt, "Republic of Croatia"@en, "Republiken Kroatien"@sv, "Horvát Köztársaság"@hu, "HR"@nl, "HR"@fr, "HR"@en, "HR"@de, "Republik Kroatien"@de, "HRV"@nl, "HRV"@en, "HRV"@de, "La République de Croatie"@fr, "CRO"@en, "Республика Хорватия"@ru, "Republika Hrvatska"@hr, "Kroatie"@nl, "Repubblica di Croazia"@it, "República de Croacia"@es, "Chorvátska republika"@sk ;
+	skos:note       "Država u Srednjoj Europi"@hr, "Country in Central and Southeastern Europe"@en, "Țară din Europa"@ro, "Stát v jižní Evropě"@cs, "Държава в Югоизточна Европа"@bg, "País d'Europa"@ca, "Republik i Sydøsteuropa"@da, "Staat in Südosteuropa"@de, "Pays d'Europe du sud-est"@fr, "País no sudeste da Europa"@pt, "Pajjiż fl-Ewropa tax-Xlokk"@mt, "Państwo w Europie"@pl, "Állam Délkelet-Európában"@hu, "Land in Zuidoost-Europa"@nl, "Država v Evropi"@sl, "Kagu-Euroopa vabariik"@et, "Valtio Etelä-Euroopassa"@fi, "Χώρα της νοτιοανατολικής Ευρώπης"@el, "Stato dell'Europa centrale, membro dell'Unione Europea"@it, "Štát v južnej Európe"@sk, "Государство в Южной Европе"@ru, "Valsts Eiropas dienvidos"@lv, "País de Europa"@es, "Republik i Sydösteuropa"@sv ;
+	skos:prefLabel  "Croatia"@en, "Hrvatska"@hr, "Kroatien"@de, "Kroatien"@sv, "Kroatien"@da, "Croația"@ro, "Κροατία"@el, "Hrvaška"@sl, "Chorvátsko"@sk, "Kroazja"@mt, "Kroatia"@fi, "Хорватия"@ru, "Хърватия"@bg, "Horvátország"@hu, "Chorwacja"@pl, "Croàcia"@ca, "An Chróit"@ga, "Kroatija"@lt, "Croatie"@fr, "Croazia"@it, "Horvaatia"@et, "Croacia"@es, "Chorvatsko"@cs, "Horvātija"@lv, "Kroazia"@eu, "Croácia"@pt, "Kroatië"@nl ;
+	wgs84_pos:lat   "45.25" ;
+	wgs84_pos:long  "15.466667" .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://vocab.getty.edu/aat/300010957>
+	a               skos:Concept ;
+	skos:altLabel   "copper-tin alloy"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300010942> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300263090>, <http://vocab.getty.edu/aat/300010958>, <http://vocab.getty.edu/aat/300010961>, <http://vocab.getty.edu/aat/300136729>, <http://vocab.getty.edu/aat/300133724>, <http://vocab.getty.edu/aat/300136732>, <http://vocab.getty.edu/aat/300010960>, <http://vocab.getty.edu/aat/300133207>, <http://vocab.getty.edu/aat/300010959> ;
+	skos:note       "Koperlegering die als belangrijkste legeringselement niet nikkel of zink heeft."@nl, "Refers to a broad range of alloys of copper, specifically any non-ferrous alloy of copper, tin, and zinc or other trace metals. Bronze was made before 3,000 BCE -- possibly as early as 10,000 BCE, although its common use in tools and decorative items is dated only in later artifacts. The proportions of copper and tin vary widely, from 70 to 95 percent copper in surviving ancient artifacts. Because of the copper base, bronze may be very malleable and easy to work. By the Middle Ages in Europe, it was recognized that using the metals in certain proportions could yield specific properties. Some modern bronzes contain no tin at all, substituting other metals such as aluminum, manganese, and even zinc. Historically, the term was used interchangeably with \u0022latten.\u0022 U.S. standard bronze is composed of 90% copper, 7% tin and 3% zinc. Ancient bronze alloys sometimes contained up to 14% tin."@en, "意指各種銅的合金，尤指任何非含鐵的銅、錫以及鋅和其他微量金屬的合金。青銅的製成可追溯到西元前三千年之前，最早可能出現於西元前一萬年前，雖然青銅普遍用於各式工具和裝飾性物品，但只有透過後期的手工藝品才能確認其年代。銅和錫的使用比例差異甚大，現存的古老手工藝品中，銅的含量從百分之七十到九十五不等。因為以銅為基底，青銅可能會非常具有延展性且和容易精工細做。到了中古世紀的歐洲，一般公認使用一定比例的各類金屬，可以產生出特定的屬性。部分現代青銅的成分完全不含錫，而是以鋁、鎂，甚或是鋅等的其他金屬來取代。就歷史意義而言，此一詞彙是可以和「黃銅薄片」（latten）交互使用的。美國標準的青銅是由百分之九十的銅、百分之七的錫，以及百分之三的鋅所組合而成。古代的青銅合金有時候含有高達百分之十四的錫。"@zh-hant, "Refere-se a uma ampla gama de ligas de cobre, especificamente qualquer liga não ferrosa de cobre, estanho e zinco ou outros metais vestigiais. O bronze foi fabricado antes de 3.000 aC - possivelmente já em 10.000 aC, embora seu uso comum em ferramentas e itens decorativos seja datado apenas em artefatos posteriores. As proporções de cobre e estanho variam amplamente, de 70 a 95% de cobre nos artefatos antigos sobreviventes. Por causa da base de cobre, o bronze pode ser muito maleável e fácil de trabalhar. Na Idade Média na Europa, reconheceu-se que o uso de metais em certas proporções poderia produzir propriedades específicas. Alguns bronzes modernos não contêm estanho, substituindo outros metais como alumínio, manganês e até zinco. Historicamente, o termo era usado de forma intercambiável com \u0022latten\u0022. O bronze padrão dos EUA é composto por 90% de cobre, 7% de estanho e 3% de zinco. As ligas de bronze antigas às vezes continham até 14% de estanho."@pt, "Aleación de cobre con un elemento principal de la aleación que sea un metal, excepto níquel o zinc."@es ;
+	skos:prefLabel  "qīng tóng"@zh-latn-pinyin-x-hanyu, "qing tong"@zh-latn-pinyin-x-notone, "bronze (metal)"@fr, "bronze (metal)"@en, "bronze"@pt, "bronse"@nn, "bronse"@nb, "ch'ing t'ung"@zh-latn-wadegile, "brons"@nl, "青銅 (金屬)"@zh-hant, "bronce (metal)"@es ;
+	skos:related    <http://vocab.getty.edu/aat/300435161>, <http://vocab.getty.edu/aat/300010946>, <http://vocab.getty.edu/aat/300198675> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

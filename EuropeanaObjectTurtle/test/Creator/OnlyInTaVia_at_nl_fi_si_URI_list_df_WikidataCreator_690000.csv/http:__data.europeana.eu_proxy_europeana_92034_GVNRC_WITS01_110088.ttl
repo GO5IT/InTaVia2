@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110088>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:43.073Z" ;
+	dcterms:modified          "2018-04-05T18:10:58.676Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_110088> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A110088%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110088>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:110088> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110088&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_110088>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2317>, <http://data.europeana.eu/concept/2712> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110088> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110088#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:14.349Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110088> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110088>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110088&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "44372"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "182"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/2317>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.loc.gov/authorities/names/sh97005993>, <https://www.freebase.com/m/01d40f>, <http://babelnet.org/rdf/s00028682n>, <http://vocab.getty.edu/aat/300046159>, <https://g.co/kg/m/01d40f>, <https://d-nb.info/gnd/4114219-6>, <http://www.yso.fi/onto/yso/p20767>, <http://www.wikidata.org/entity/Q200539>, <http://thesaurus.europeanafashion.eu/thesaurus/10005> ;
+	skos:note        "Yksiosainen naisen puku"@fi, "Klädesplagg bestående av kjol och övre livstycke"@sv, "Einteiliges Kleidungsstück aus Oberteil und Rock"@de, "Разновидность верхней одежды"@ru, "Garment for women, children, or infants consisting of a bodice and skirt made in one or more pieces"@en, "Indumentària per a dona"@ca, "Beklædningsgenstand i form af øvre skørt og overdelen"@da, "Kledingstuk waarbij het bovenstuk en de rok als een geheel zijn gemaakt"@nl, "Tipo de indumentária"@pt, "Tipo de indumentaria"@es, "Jednodílný kus dámského svrchního oblečení, zakrývající trup a nohy"@cs, "Vêtement qui couvre le corps d'une seule pièce allant des épaules aux jambes"@fr ;
+	skos:prefLabel   "Dress"@en, "Haljina"@hr, "Vestido"@pt, "Vestido"@es, "Kleita"@lv, "Kjole"@da, "Abito da donna"@it, "Vestit femení"@ca, "Leninki"@fi, "Jurk"@nl, "Klänning"@sv, "Rochie"@ro, "Robe"@fr, "Kleit"@et, "Kleid"@de, "Suknia"@pl, "Soineko"@eu, "Suknelė"@lt, "Šaty"@cs, "Šaty"@sk, "Φόρεμα"@el, "Платье"@ru, "Рокля"@bg ;
+	skos:related     <http://data.europeana.eu/concept/2603>, <http://data.europeana.eu/concept/2196> .
+
+<http://data.europeana.eu/concept/2712>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2381> ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00565233>, <http://iconclass.org/31A5331>, <https://d-nb.info/gnd/4216703-6>, <http://www.wikidata.org/entity/Q105507>, <http://wordnet-rdf.princeton.edu/wn30/04584207-n>, <http://id.loc.gov/authorities/names/sh85146645>, <http://data.bnf.fr/ark:/12148/cb12488517t>, <http://vocab.getty.edu/aat/300046049>, <https://www.freebase.com/m/01hzl4>, <http://id.worldcat.org/fast/1175027>, <https://g.co/kg/m/01hzl4>, <http://www.yso.fi/onto/yso/p11336>, <http://thesaurus.europeanafashion.eu/thesaurus/10186>, <http://wordnet-rdf.princeton.edu/pwn30/04584207-n> ;
+	skos:note        "Acessório que simula cabelo natural"@pt, "Keinotekoinen tukka"@fi, "Włosy umocowane na bazie zakładanej na głowę, w celu imitacji fryzury i skalpu"@pl, "Накладка из чужих волос, надеваемая на голову"@ru, "Coiffure de faux cheveux"@fr, "Head covering mimicking hair"@en, "Cabellera postiza"@es, "Kopfbedeckung"@de ;
+	skos:prefLabel   "Перука"@bg, "Paruka"@cs, "Parukas"@et, "Perücke"@de, "Perika"@hr, "Peruk"@sv, "Paróka"@hu, "Peruka"@pl, "Perruque"@fr, "Paryk"@da, "Perukas"@lt, "Парик"@ru, "Wig"@en, "Parochňa"@sk, "Περούκα"@el, "Pruik"@nl, "Perucă"@ro, "Peluca"@es, "Peruca"@pt, "Perruca"@ca, "Peruukki"@fi, "Ileorde"@eu, "Parrucca"@it .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110088#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:14.349Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110088> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:110088>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49908"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_110088>
+	a                   ore:Proxy ;
+	dc:contributor      "Schwartze, Thérèse" ;
+	dc:creator          "Schwartze, Thérèse" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110088", "WITS01:110088" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:source           "[WITS01:110088], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "vrouwenportret"@nl, "japon"@nl, "pruik"@nl ;
+	dc:title            "Portret van Mevrouw Marie van Eysden-Vink, in de rol van Maria Theresia" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1903-1905" ;
+	dcterms:isPartOf    "Willem Witsen: Tachtiger in brief en beeld", "WITS01", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "olieverf", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110088> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110088> .

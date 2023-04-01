@@ -1,0 +1,130 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<http://data.europeana.eu/item/90402/RP_P_1887_A_11715#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:14:07.562Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1887_A_11715> .
+
+<http://hdl.handle.net/10934/RM0001.collect.91890>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "57487"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_1887_A_11715>
+	a                       ore:Proxy ;
+	dc:contributor          "Chalon, Christina"@nl ;
+	dc:description          "Een boer praat met zijn vrouw terwijl zijn kind naast hem staat en speelt met een zweeptol."@nl ;
+	dc:format               "Chinees papier"@nl, <http://vocab.getty.edu/aat/300183651>, "China paper"@en ;
+	dc:identifier           "http://hdl.handle.net/10934/RM0001.collect.91890", "RP-P-1887-A-11715" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Public Domain", "Publiek Domein" ;
+	dc:subject              <http://iconclass.org/42B74>, <http://iconclass.org/46A14> ;
+	dc:title                "Boer met gezin"@nl ;
+	dc:type                 "etsen"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", "print"@en, <http://vocab.getty.edu/aat/300041273>, "prent"@nl, "etching"@en ;
+	dcterms:created         "1758 - 1808"@nl, "1758 - 1808"@en ;
+	dcterms:extent          "blad hoogte 91 mm"@nl, "blad breedte 71 mm"@nl, "width 71 mm"@en, "height 91 mm"@en ;
+	dcterms:isPartOf        "collectie: prenten" ;
+	dcterms:isReferencedBy  "Collectie Rijksmuseum  1(2), 1(2) aan de hand van aanwezige staten Rijksmuseum" ;
+	dcterms:spatial         "urn:rijksmuseum:thesaurus:RM0001.THESAU.2064", "Leiden" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/RP_P_1887_A_11715> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/RP_P_1887_A_11715> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.11805>
+	a                              edm:Agent ;
+	edm:begin                      "1748" ;
+	edm:end                        "1808-12-13" ;
+	rdaGr2:dateOfBirth             "Amsterdam" ;
+	rdaGr2:dateOfDeath             "Leiden" ;
+	rdaGr2:gender                  "female" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Chalon, Christina"@nl, "Chalon, Christina"@en .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_1887_A_11715>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_1887_A_11715> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_1887_A_11715> .
+
+<http://data.europeana.eu/item/90402/RP_P_1887_A_11715#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:14:07.562Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1887_A_11715> .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_1887_A_11715/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_1887_A_11715>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T15:31:31.886Z" ;
+	dcterms:modified          "2018-03-17T13:31:02.176Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_1887_A_11715#metadataTier>, <http://data.europeana.eu/item/90402/RP_P_1887_A_11715#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_1887_A_11715> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_1887_A_11715> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2Fnikj0vpjUHUVd_Ln3PiDcFAJ1p9pSxFI-_VIfdiMyrtaQk3gm__3Un7zKmK-QnV2ofuLrNVOBjlGUsaEkPSEG4G9bxw%3Ds0&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_1887_A_11715>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_1887_A_11715> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.collect.91890> ;
+	edm:isShownBy      <https://lh3.googleusercontent.com/nikj0vpjUHUVd_Ln3PiDcFAJ1p9pSxFI-_VIfdiMyrtaQk3gm__3Un7zKmK-QnV2ofuLrNVOBjlGUsaEkPSEG4G9bxw=s0> ;
+	edm:object         <https://lh3.googleusercontent.com/nikj0vpjUHUVd_Ln3PiDcFAJ1p9pSxFI-_VIfdiMyrtaQk3gm__3Un7zKmK-QnV2ofuLrNVOBjlGUsaEkPSEG4G9bxw=s0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_1887_A_11715>
+	a  edm:ProvidedCHO .
+
+<https://lh3.googleusercontent.com/nikj0vpjUHUVd_Ln3PiDcFAJ1p9pSxFI-_VIfdiMyrtaQk3gm__3Un7zKmK-QnV2ofuLrNVOBjlGUsaEkPSEG4G9bxw=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Public Domain"@en, "Publiek Domein"@nl ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_1887_A_11715/manifest> ;
+	ebucore:fileByteSize    "975299"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1982"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .

@@ -1,0 +1,158 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200110/BibliographicResource_1000126650794>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/100119> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1703" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126650794> .
+
+<http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5309457665>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "95839"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "1065"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://sws.geonames.org/146669/>
+	a               edm:Place ;
+	skos:prefLabel  "Cyprus"@en .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:48:15.979Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126650794> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126650794>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000021995423> ;
+	edm:hasView        <http://hdl.handle.net/2027/ucm.5309457665> ;
+	edm:isShownAt      <http://books.google.com/books/ucm?vid=UCM5309457665&printsec=frontcover> ;
+	edm:object         <http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5309457665> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://hdl.handle.net/2027/ucm.5309457665>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126650794/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://books.google.com/books/ucm?vid=UCM5309457665&printsec=frontcover>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "59517"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <file:///usr/local/tomcat/webapps/dce8d3ae-6777-43e4-afbb-c3dc4afa7eb9> .
+
+<http://data.europeana.eu/agent/100119>
+	a                    edm:Agent ;
+	owl:sameAs           <urn:uuid:0c2d646b-b125-4a1d-b588-a1b7ca2d363a>, <https://g.co/kg/m/02w3_d9>, <http://d-nb.info/gnd/119068788>, <http://id.loc.gov/authorities/names/n88145261>, <http://www.idref.fr/026811170/id>, <http://dbpedia.org/resource/Olfert_Dapper>, <http://id.worldcat.org/fast/227936>, <http://data.bibliotheken.nl/id/thes/p069968012>, <https://www.freebase.com/m/02w3_d9>, <http://datos.bne.es/resource/XX954381>, <http://openlibrary.org/works/OL230505A>, <http://viaf.org/viaf/100171295>, <https://livedata.bibsys.no/authority/2076185>, <http://kulturarvsdata.se/LSH/agents/43507>, <http://data.bnf.fr/ark:/12148/cb118985941>, <http://vocab.getty.edu/ulan/500484332>, <http://nlg.okfn.gr/resource/authority/record98667>, <http://www.wikidata.org/entity/Q2804625> ;
+	rdaGr2:dateOfBirth   "1636-01-01" ;
+	rdaGr2:dateOfDeath   "1689-12-29" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "O. Dapper"@fi, "O. Dapper"@en, "O. Dapper"@nl, "Olfred Dapper"@de, "Olfred Dapper"@pt, "Olfred Dapper"@en, "Olfred Dapper"@fr, "Olfred Dapper"@es ;
+	skos:note            "Nederlands schrijver (1636-1689)"@nl, "Niederländischer Mediziner, Geograf und Historiker"@de, "Medico, storico e antropologo olandese"@it, "Dutch physician and writer"@en ;
+	skos:prefLabel       "Olfert Dapper"@sv, "Olfert Dapper"@pt, "Olfert Dapper"@en, "Olfert Dapper"@it, "Olfert Dapper"@fr, "Olfert Dapper"@es, "Olfert Dapper"@de, "Olfert Dapper"@fi, "Olfert Dapper"@sl, "Olfert Dapper"@ga, "Olfert Dapper"@ro, "Olfert Dapper"@da, "Olfert Dapper"@ca, "Olfert Dapper"@nl, "Όλφερτ Ντάπερ"@el .
+
+<http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126650794>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-01T10:08:59.354Z" ;
+	dcterms:modified          "2015-02-25T16:28:09.435Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794#metadataTier>, <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "9200110_Ag_EU_TEL_a1010_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200110/BibliographicResource_1000126650794> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3Ducm.5309457665&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:48:15.979Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126650794> .
+
+<https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126650794/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000021995423>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universidad Complutense de Madrid"@es, "Complutense University of Madrid"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/provider/9200110/BibliographicResource_1000126650794>
+	a                   ore:Proxy ;
+	dc:contributor      "Universidad Complutense (Alcalá de Henares),", "George Gallet" ;
+	dc:creator          "Olfert Dapper" ;
+	dc:description      "Illustrations: Illustrations"@en, "Illustrations: Plates"@en, "MTSD 0165.", "traduite du flamd d'O Dapper, M.D.", "Illustrations: Maps"@en, "Otro título en página [1] : Description des isles de l'archipiel. Fronstispicio en página anterior a portada con grabado y título : Les isles de l'Archipiel. Portada impresa en rojo y negro." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "dce8d3ae-6777-43e4-afbb-c3dc4afa7eb9" ;
+	dc:language         "fr" ;
+	dc:publisher        "Chez George Gallet" ;
+	dc:rights           "The digital images and OCR of this work were produced by Google, Inc. (indicated by a watermark on each page in the digital object). Google requests that the images and OCR not be re-hosted, redistributed or used commercially. More information at source library: http://biblioteca.ucm.es/proyectogoogle"@en ;
+	dc:subject          "Libros de viajes." ;
+	dc:title            "Description exacte des isles de l'archipiel, et de quelques autres adjacentes dont les principales sont Chypre, Rhodes, Candie, Samos, Chio, Negrepont, Lemnos, Paros, Delos, Patmos, avec un grand nombre d'autres. Comprennant leurs noms, leurs situation, leurs villes, leurs chateaux... Enrichie de plusieurs cartes des isles, et figures en taille-douce" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "[8], 556, [4] p., [33] h. de grab.:", "il.;", "fol. (36 cm.)" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1010> ;
+	dcterms:issued      "1703" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/ne>, "Islas Egeas, , Descripción y viajes, s.17.", <http://sws.geonames.org/146669/>, "Creta (Grecia), , Descripción y viajes, s.17.", "A Amsterdam" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126650794> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126650794> .

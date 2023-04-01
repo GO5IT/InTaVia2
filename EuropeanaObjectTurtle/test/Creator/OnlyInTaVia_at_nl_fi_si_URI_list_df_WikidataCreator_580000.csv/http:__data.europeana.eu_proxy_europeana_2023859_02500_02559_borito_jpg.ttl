@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2023859/02500_02559_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:28.724Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/02500_02559_borito_jpg> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/02500_02559_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:38:58.064Z" ;
+	dcterms:modified          "2015-09-14T11:19:09.522Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg#metadataTier>, <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/02500_02559_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F02500%2F02559%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/aggregation/provider/2023859/02500_02559_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/02500/02559> ;
+	edm:isShownBy      <http://mek.oszk.hu/02500/02559/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/02500/02559/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://mek.oszk.hu/02500/02559/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/02500_02559_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "6697"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2023859/02500_02559_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:28.724Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/02500_02559_borito_jpg> .
+
+<https://iiif.europeana.eu/presentation/2023859/02500_02559_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/02500_02559_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Gobby Fehér, Gyula (author)"@hu, "Ábrahám, Pál (zeneszerző)"@hu ;
+	dc:description      "Subject date: 20. sz."@hu ;
+	dc:format           "HTML", "WORD 6.0", "RTF", "PDF" ;
+	dc:identifier       "MEK azonosító MEK-02559 [Metadata]", "URL http://nbn-resolving.de/?urn:nbn:hu-4537 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "Gobby Fehér Gyula: Egy zacskó savanyúcukor avagy Az emlékezet feledése [http://mek.oszk.hu/02500/02560/]"@hu ;
+	dc:source           "Kéziratként a szerzőtől."@hu, "National Széchényi Library - Hungarian Electronic Library"@hu ;
+	dc:subject          "Literature, fiction, folktales"@hu, "határontúli magyar irodalom"@hu, "Culture, Arts, Literature"@hu ;
+	dc:title            "Az angyal álma: Zenés dráma három részben"@hu ;
+	dc:type             "plays"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/02500_02559_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/02500_02559_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<http://mek.oszk.hu/02500/02559>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16362"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/02500_02559_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/02500_02559_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/02500_02559_borito_jpg> .

@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:33:44.249Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/3920928e-fb8f-11df-9e4d-523bc2e286e2> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/0eda47e5-4e80-ebb3-ae97-b491fc9bcfef.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/0eda47e5-4e80-ebb3-ae97-b491fc9bcfef.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/3920928e-fb8f-11df-9e4d-523bc2e286e2>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "17061"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1688" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> .
+
+<http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:33:44.249Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://images.memorix.nl/ranh/thumb/640x480/0eda47e5-4e80-ebb3-ae97-b491fc9bcfef.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2/manifest> ;
+	ebucore:fileByteSize    "94413"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "631"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:02:45.705Z" ;
+	dcterms:modified          "2015-03-26T15:02:45.705Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F0eda47e5-4e80-ebb3-ae97-b491fc9bcfef.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2>
+	a                   ore:Proxy ;
+	dc:coverage         "Haarlem"@nl, "Noord-Holland"@nl, "Nederland"@nl, "Grote Houtstraat"@nl ;
+	dc:creator          "Hendriks, Wybrand (1744-1831)"@nl ;
+	dc:date             "1800-00-00/1800-00-00" ;
+	dc:description      "Gegevens cataloguskaartje: Heerenlpgement (Proveniershuis), oostzijde. Aquarel van Wybrand Hendriks, ca.1800 naar kopergravure van Romeyn de Hooghe, 1688. 22x29,5 cm. Dia KB\u000A          aanwezig. Herkomst: geschonken in 1879 door Mr.A.J.Enschedé (als W.Horstink!) DDD: Voorgevel van de voormalige Jorisdoelen aan de Grote Houtstraat. In 1577 trokken de schutters van het\u000A          voetbooggilde in het voormalige Michielsklooster aan de Grote Houtstraat, maar in 1591-1593 werden de kloostergebouwen vervangen door het thans nog aanwezige doelengebouw. De voormalige\u000A          kloostertuinen deden dienst als schietterrein. In 1681 verliet de Sint-Jorisschutterij het gebouw en werd er een herenlogement gevestigd. In de top van de gevel prijkt nog steeds de\u000A          voetboog, het wapen van het Jorisgilde. Het beeld van Sint Joris is verdwenen. Identificatienummer: 53-002194 M"@nl, "C061 53-010 15786"@nl ;
+	dc:identifier       "KNA006002009", "NL-HlmNHA_53002194_M" ;
+	dc:language         "Dutch" ;
+	dc:rights           "Noord-Hollands Archief" ;
+	dc:title            "Kennemerland NL-HlmNHA_53002194_M"@nl, "NL-HlmNHA_53002194_M"@nl, "Gegevens cataloguskaartje: Heerenlpgement (Proveniershuis), oostzijde. Aquarel van Wybrand Hendriks, ca.1800 naar kopergravure van Romeyn de Hooghe, 1688. 22x29,5 cm. Dia KB\u000A          aanwezig. Herkomst: geschonken in 1879 door Mr.A.J.Enschedé (als W.Horstink!) DDD: Voorgevel van de voormalige Jorisdoelen aan de Grote Houtstraat. In 1577 trokken de schutters van het\u000A          voetbooggilde in het voormalige Michielsklooster aan de Grote Houtstraat, maar in 1591-1593 werden de kloostergebouwen vervangen door het thans nog aanwezige doelengebouw. De voormalige\u000A          kloostertuinen deden dienst als schietterrein. In 1681 verliet de Sint-Jorisschutterij het gebouw en werd er een herenlogement gevestigd. In de top van de gevel prijkt nog steeds de\u000A          voetboog, het wapen van het Jorisgilde. Het beeld van Sint Joris is verdwenen. Identificatienummer: 53-002194 M"@nl ;
+	dc:type             "Topografische prenten, tekeningen en foto's"@nl, "Tekening"@nl ;
+	dcterms:spatial     "Noord-Holland", "Grote Houtstraat", "Haarlem", "Nederland" ;
+	dcterms:temporal    "1688" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2> .
+
+<http://data.europeana.eu/item/2021663/memorix_3920928e_fb8f_11df_9e4d_523bc2e286e2>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .

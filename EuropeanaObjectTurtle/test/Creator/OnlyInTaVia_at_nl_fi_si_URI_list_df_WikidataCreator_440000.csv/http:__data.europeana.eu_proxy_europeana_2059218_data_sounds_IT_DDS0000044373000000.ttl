@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000044373000000&teca=ICBSA>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "79133"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000044373000000&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:11:07.245Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000044373000000> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000044373000000>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000044373000000> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000044373000000>
+	a           edm:WebResource ;
+	dc:format   "mp3" ;
+	edm:rights  <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000044373000000>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000044373000000&teca=ICBSA> ;
+	edm:object         <http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000044373000000&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000044373000000>
+	a                   ore:Proxy ;
+	dc:contributor      "Backhaus, Wilhelm <1884-1969> [interprete]" ;
+	dc:creator          "Brahms, Johannes <1833-1897>" ;
+	dc:date             "1900-1950" ;
+	dc:format           "2 dischi (78 gg.): 78 rpm; 12 in. (30 cm.)" ;
+	dc:identifier       "IT-DDS0000044373000000" ;
+	dc:publisher        "[s. l.] : LA VOCE DEL PADRONE" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://id.loc.gov/authorities/performanceMediums/mp2013015550> ;
+	dc:title            "Valzer op. 39 ; Capriccio in si minore op. 76 n. 2 ; Intermezzo in do maggiore op. 119 n. 3 / Brahms ; G. Backhaus, pianoforte" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/536.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000044373000000> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:11:07.245Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000044373000000> .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000044373000000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-24T14:43:58.190Z" ;
+	dcterms:modified          "2016-07-08T12:45:16.204Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000#metadataTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000> ;
+	edm:completeness          "6" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000044373000000> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.internetculturale.it%2Fjmms%2Fthumbnail%3Ftype%3Dweb%26id%3Doai%253A192.168.10.31%253A22%253ARM0200%253AIT-DDS0000044373000000%26teca%3DICBSA&type=SOUND> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .

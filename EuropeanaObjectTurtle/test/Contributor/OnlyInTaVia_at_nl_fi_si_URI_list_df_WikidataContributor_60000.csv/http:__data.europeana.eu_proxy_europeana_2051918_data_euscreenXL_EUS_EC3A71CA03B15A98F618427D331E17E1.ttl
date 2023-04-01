@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://thesaurus.euscreen.eu/EUscreenXL/v1/356>
+	a               skos:Concept ;
+	skos:broader    <http://thesaurus.euscreen.eu/EUscreenXL/v1/351> ;
+	skos:inScheme   <http://thesaurus.euscreen.eu/EUscreenXL/v1/ConceptScheme> ;
+	skos:prefLabel  "szervezett bűnözés"@hu, "Οργανωμένο έγκλημα"@el, "Organiserad brottslighet"@sv, "Crime Organizado"@pt, "Organizuoti nusikaltimai"@lt, "Crima organizata"@ro, "Georganiseerde misdaad"@nl, "Organizirani kriminal"@sl, "Organizovaný zločin"@cs, "Crime organisé"@fr, "Organiseret kriminalitet"@da, "Organized Crime"@en, "Criminalità Organizzata"@it, "Crim organitzat"@ca, "Organisierte Kriminalität"@de .
+
+<http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-02-14T10:31:34.261Z" ;
+	dcterms:modified          "2022-06-23T14:28:03.667Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1#metadataTier>, <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2051918_Ag_EU_EUscreenXLCore_1019" ;
+	edm:landingPage           <https://www.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimages3.noterik.com%2Fdomain%2Feuscreenxl%2Fuser%2Feu_nisv%2Fvideo%2FEUS_EC3A71CA03B15A98F618427D331E17E1%2Fimage.jpg&type=VIDEO> .
+
+<http://www.euscreen.eu/item.html?id=EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1/manifest> ;
+	ebucore:fileByteSize    "4173"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "application/xhtml+xml" .
+
+<http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338645> ;
+	edm:isShownAt      <http://www.euscreen.eu/item.html?id=EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	edm:isShownBy      <http://www.euscreen.eu/item.html?id=EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	edm:object         <http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_EC3A71CA03B15A98F618427D331E17E1/image.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671121> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:35.849903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/organization/1482250000004671121>
+	a               foaf:Organization ;
+	skos:prefLabel  "EUscreen"@en .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:35.849369Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> .
+
+<http://data.europeana.eu/proxy/europeana/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_EC3A71CA03B15A98F618427D331E17E1" ;
+	dcterms:spatial     <http://data.europeana.eu/place/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "2004" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> .
+
+<http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_EC3A71CA03B15A98F618427D331E17E1/image.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "12972"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "456"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "568"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFDAB9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#0000CD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000000338645>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nederlands Instituut voor Beeld & Geluid"@nl, "Netherlands Institute for Sound & Vision"@en .
+
+<http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1>
+	a                    ore:Proxy ;
+	dc:contributor       "Barend, Frits (presentatie, interviewer)", "Dorp, Henk van (presentatie, interviewer)", "Nieuwenhuys, Constant", "Melua, Katie", "Blue Circle (producent)", "Mulder, Jan", "Heuvel, John van den", "Wester, Frits" ;
+	dc:description       "Daily talkshow with Frits Barend and Henk van Dorp. Regular guest is columnist Jan Mulder. The guests in this episode are: - John van den Heuvel, crime journalist; - Constant, artist; - Trudy van der Horst, wife of Constant; - Frits Wester, political reporter. With a performance by Katie Melua."@en, "Original language summary: \u000AActuele dagelijkse talkshow van Frits Barend en Henk van Dorp. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen. Wekelijkse gast is Frits Wester, politiek redacteur 'RTL Nieuws', die het politieke nieuws van de week becommentarieert. Bevat verder de rubrieken 'BVD werkt mee', waarin werkzoekenden een oproep kunnen doen om zo werk te vinden, en 'De oranjetelefoon' waarin bekende gasten telefonisch hun ideale opstelling voor het Nederlands elftal doorgeven. Regelmatig terugkerende telefoongast is Cor van de Capelle, stem des volks. In deze aflevering te gast: - John van den Heuvel, misdaadjournalist; - Constant, kunstenaar; - Trudy van der Horst, echtgenote van Constant; - Frits Wester, politiek verslaggever. Met een OPTREDEN van de zangeres Katie Melua."@nl ;
+	dc:format            "ASPECT RATIO: 4:3", "Stereo", "Colour", "VIDEO" ;
+	dc:identifier        "2374497" ;
+	dc:publisher         "RTL 4" ;
+	dc:rights            "For information on the use of archive material, please contact the Customer Service department of Netherlands Institute for Sound & Vision: info@beeldengeluid.nl." ;
+	dc:subject           <http://thesaurus.euscreen.eu/EUscreenXL/v1/356>, "Society and social issues", "praatprogramma" ;
+	dc:title             "Barend & Van Dorp 26/03/2004"@nl, "Barend & Van Dorp 26/03/2004"@en ;
+	dc:type              "Entertainment and performing arts", "News", "ITEM" ;
+	dcterms:alternative  "SERIES TITLE: Barend & Van Dorp"@en, "Barend & Van Dorp"@nl ;
+	dcterms:created      "2004" ;
+	dcterms:extent       "00:54:22" ;
+	dcterms:isPartOf     <http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_513F04B47411BCDD8C80532EE577FAC4> ;
+	dcterms:issued       "26/03/2004" ;
+	dcterms:spatial      "The Netherlands" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_EC3A71CA03B15A98F618427D331E17E1> .

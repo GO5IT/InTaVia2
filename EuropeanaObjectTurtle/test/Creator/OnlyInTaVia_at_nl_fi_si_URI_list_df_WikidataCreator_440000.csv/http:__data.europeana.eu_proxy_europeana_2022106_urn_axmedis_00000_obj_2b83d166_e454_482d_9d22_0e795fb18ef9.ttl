@@ -1,0 +1,97 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502225> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:2b83d166-e454-482d-9d22-0e795fb18ef9> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:47.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> .
+
+<http://www.eclap.eu/Classification/PerformingArtsType/670>
+	a               skos:Concept ;
+	skos:prefLabel  "Muzyka klasyczna"@pl, "Klassieke Muziek"@nl, "Klasična glasba"@sl, "Musica Classica"@it, "Música clásica"@es, "Música clàssica"@ca, "Classical Music"@en, "Klassisk musik"@da, "Klassische Musik"@de, "Musique classique"@fr, "Κλασσική μουσική"@el, "Komolyzene"@hu, "Música Clássica"@pt .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:47.087Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> .
+
+<http://data.europeana.eu/aggregation/europeana/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9#contentTier>, <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> ;
+	edm:completeness          "0" ;
+	edm:country               "Portugal" ;
+	edm:datasetName           "2022106_Ag_EU_ECLAP_ESMAE-IPP" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> ;
+	edm:language              "pt" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004502225>
+	a               foaf:Organization ;
+	skos:prefLabel  "Porto's Superior School of Music and Performing Arts"@en .
+
+<http://data.europeana.eu/proxy/europeana/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> .
+
+<http://data.europeana.eu/proxy/provider/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9>
+	a                   ore:Proxy ;
+	dc:contributor      "ESMAE"@en ;
+	dc:coverage         "19th century music"@en ;
+	dc:creator          "BRAHMS, Johannes"@en ;
+	dc:date             "2006/11/17"@en ;
+	dc:description      "live recording of Brahms' Piano Trio in H-dur at Teatro Helena Sá e Costa (Porto), HARMOS Festival 2006\u000AFORTVIO; Ingrida RUPAITE (violin)Povilas JACUNSKAS (cello)Indre BAIKSTYTE (piano)  (representing Lithuanian Music and Theatre Academy at HARMOS Festival 2006)"@en ;
+	dc:format           "physical: audio CD; digital: .wma"@en ;
+	dc:publisher        "SA ESMAE-IPP/Phonedition"@en ;
+	dc:rights           "ESMAE"@en ;
+	dc:source           "EMP-AUD-CDHARMOS2006-013"@en ;
+	dc:subject          "Debussy; piano trio; HARMOS Festival"@en ;
+	dc:title            "Piano trio in H-dur, op.8, BRAHMS - 1st mov, Allegro con brio"@en ;
+	dc:type             "audio", <http://www.eclap.eu/Classification/PerformingArtsType/670> ;
+	dcterms:extent      "00:10:42.2" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:2b83d166-e454-482d-9d22-0e795fb18ef9>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_2b83d166_e454_482d_9d22_0e795fb18ef9>
+	a  edm:ProvidedCHO .

@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_007900_007949__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3342>, <http://data.europeana.eu/concept/221> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007949__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007949__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/007900/007949> ;
+	edm:object         <http://keptar.oszk.hu/007900/007949/kepiras_0050_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/007900/007949/kepiras_0050_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4862"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/3342>
+	a                skos:Concept ;
+	skos:altLabel    "Megaresort"@it, "Vakantieresort"@nl, "Domaine de villégiature"@fr, "Tourism resort"@en, "Tourist resort"@en, "Holiday resort"@en, "Vakantieoord"@nl, "Hotel de lazer"@pt, "Resort"@fr, "Resort"@ca, "Resort"@es, "Complejo turistico"@es, "Hotelanlage"@de, "Centro de férias"@pt, "Ваканционно селище"@bg, "Lomakylä"@fi, "Estacion turistica"@es, "Letovisko"@cs, "Hotel-resort"@pt, "Turistické středisko"@cs, "Курортни комплекси"@bg, "Курортен град"@bg, "Курортно селище"@bg ;
+	skos:exactMatch  <https://www.freebase.com/m/02dkrm>, <https://g.co/kg/m/02dkrm>, <http://purl.org/acco/ns#Resort>, <http://www.wikidata.org/entity/Q875157>, <http://www.geonames.org/ontology#S.RSRT>, <http://vocab.getty.edu/aat/300000547>, <http://babelnet.org/rdf/s00044417n>, <https://schema.org/Resort> ;
+	skos:note        "Тип гостиниц"@ru, "Lieu de distraction, de vacances et de tourisme"@fr, "Zařízení určené pro rekreaci"@cs, "Self-contained commercial establishment which attempts to provide for most of a vacationer's wants"@en, "Αυτόνομη εμπορική εγκατάσταση που προσπαθεί να καλύψει τις περισσότερες επιθυμίες των παραθεριστών"@el, "Grande struttura ricettiva turistica"@it, "Touristische Hotelanlage mit weitergehenden Angebot"@de, "Lugar diseñado para las actividades turísticas"@es, "Rentoutumiseen ja virkistäytymiseen tarkoitettu keskus"@fi, "Plats avsedd för semestrande"@sv, "Commercieel complex opgezet voor toerisme en vakantie"@nl ;
+	skos:prefLabel   "Resort"@nl, "Resort"@de, "Resort"@pt, "Resort"@en, "Resort"@it, "Station touristique"@fr, "Kūrorts"@lv, "Odmaralište"@hr, "Ośrodek wypoczynkowy"@pl, "Feriecenter"@da, "Θέρετρο"@el, "Üdülőhely"@hu, "Курорт"@ru, "Курорт"@bg, "Puhkekeskus"@et, "Complejo turístico"@es, "Semesterort"@sv, "Rekreační středisko"@cs, "Complex turístic"@ca, "Lomakeskus"@fi .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007949__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:55.291Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007949__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:55.291Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007949__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007949__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:08:44.935Z" ;
+	dcterms:modified          "2015-09-14T11:29:50.080Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F007900%2F007949%2Fkepiras_0050_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_007900_007949__>
+	a                   ore:Proxy ;
+	dc:creator          "Munkácsy ,  Mihály  (painter)"@hu ;
+	dc:description      "Tengerpart 1890 körül"@hu ;
+	dc:format           "JPEG képállomány \u000A         2417x1709 \u000A         300 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/007900/007949   [Metadata]" ;
+	dc:relation         "Munkácsy Mihály ceruzavázlata. Mozart [ http://keptar.oszk.hu/007900/007948]"@hu, "Malonyay Dezső: A magyar képirás úttörői [ http://mek.oszk.hu/06900/06916/pdf/06916.pdf]"@hu ;
+	dc:source           "Internet Archive"@hu, "OSZK MEK"@hu ;
+	dc:subject          "akvarell"@hu, "üdülőhely"@hu, "Fine arts, visual arts"@hu, "vázlat"@hu, "tengerpart"@hu ;
+	dc:title            "Munkácsy Mihály aquarel vázlata"@hu ;
+	dc:type             "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007949__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007949__> .
+
+<http://keptar.oszk.hu/007900/007949>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007949__/manifest> .
+
+<http://data.europeana.eu/concept/221>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q50030>, <https://g.co/kg/m/018ktp>, <http://data.bnf.fr/ark:/12148/cb119309259>, <https://d-nb.info/gnd/4002511-1>, <http://id.loc.gov/authorities/names/sh85145673>, <http://id.ndl.go.jp/auth/ndlna/00571592>, <http://www.yso.fi/onto/yso/p8596>, <http://vocab.getty.edu/aat/300389895>, <https://www.freebase.com/m/018ktp>, <http://purl.org/bncf/tid/25629> ;
+	skos:note        "Malířská technika využívající barvy rozpustné ve vodě"@cs, "Technika malowania z wykorzystaniem akwareli"@pl, "Practice of applying watercolor to a surface"@en, "Живописная техника"@ru, "Tècnica pictòrica"@ca, "Técnica por la cual se aplica pintura sobre papel o cartulina con colores diluidos en agua"@es, "Tipo de método de pintura usando soluções à base d'água"@pt, "Techniek om met waterverf schilderijen te maken"@nl, "Tehnică prin care se aplică vopsea pe hârtie sau carton cu culori diluate în apă"@ro, "Technique picturale"@fr, "Festészeti technika"@hu, "Malen mit wasserlöslichen, nicht deckenden Farben"@de, "Maalitehnika"@et, "Tecnica pittorica"@it, "Målningsteknik baserad på vattenburen färg"@sv, "Maalaustaiteen tekniikka"@fi, "Gleznošanas tehnika"@lv ;
+	skos:prefLabel   "Aquarelle"@fr, "Aquarelleertechniek"@nl, "Vesivärimaalaus"@fi, "Acuarelă"@ro, "Akvarelė"@lt, "Aquarell"@de, "Acuarela"@es, "Akvarell"@hu, "Akvarell"@sv, "Akvarell"@et, "Aquarel·la"@ca, "Uiscedhath"@ga, "Aguarela"@pt, "Acquerello"@it, "Akvarel"@hr, "Akvarel"@sk, "Akvarel"@sl, "Akvarel"@cs, "Akvarel"@da, "Акварель"@ru, "Акварел"@bg, "Watercolor"@en, "Akuarela"@eu, "Akvarelis"@lv, "Akwarela"@pl, "Υδατογραφία"@el .

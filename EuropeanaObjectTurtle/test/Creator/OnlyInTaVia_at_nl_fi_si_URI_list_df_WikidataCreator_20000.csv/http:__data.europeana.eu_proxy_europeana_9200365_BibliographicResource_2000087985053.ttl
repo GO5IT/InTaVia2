@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T16:23:29.988Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b8455965f> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "28026"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "729"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b8455965f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "619306"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/manifest.json> ;
+	ebucore:fileByteSize    "28026"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "729"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b8455965f>
+	a                   ore:Proxy ;
+	dc:creator          "Dürer, Albrecht (1471-1528). Graveur", "Chelidonius, Benedictus (1460?-1521). Auteur du texte" ;
+	dc:date             "1511" ;
+	dc:format           "Nombre total de vues : 48", "In-fol., sign. A-C : gravures en bois" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b8455965f" ;
+	dc:language         "lat" ;
+	dc:publisher        "Impressum Nurnberge per Albertum Durer, pictorem, anno christiano 1511" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb303863313" ;
+	dc:rights           <http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Estampes et photographie, RESERVE CA-4 (F)-PET FOL" ;
+	dc:subject          "Dürer (Albert). Oeuvre. 1511"@fre, "Marie (sainte ; personnage du Nouveau Testament) -- Dans l'art"@fre ;
+	dc:title            "Epitome in divae Parthenices Mariae historiam / ab Alberto Durero Norico per figuras digestam ; cum versibus annexis Chelidonii" ;
+	dc:type             "still image"@eng, "image fixe"@fre, "image"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b8455965f> .
+
+<http://semium.org/time/15xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Fri Jan 01 01:00:00 CET 1501" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 1600" ;
+	skos:prefLabel    "16th century"@en, "16й век"@ru, "16..", "16de eeuw"@nl, "16e", "16e siècle"@fr, "16??", "16-th"@en, "16th"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b8455965f>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b8455965f" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1511" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b8455965f> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T16:23:29.988Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b8455965f> .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b8455965f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b8455965f> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b8455965f/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b8455965f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T16:23:30.013Z" ;
+	dcterms:modified          "2019-09-02T16:23:30.013Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f#metadataTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f> ;
+	edm:completeness          "8" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b8455965f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b8455965f%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b8455965f>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

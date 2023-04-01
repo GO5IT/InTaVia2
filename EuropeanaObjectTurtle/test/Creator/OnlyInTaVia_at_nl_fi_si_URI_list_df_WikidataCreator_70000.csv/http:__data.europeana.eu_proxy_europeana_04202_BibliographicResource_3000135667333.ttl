@@ -1,0 +1,145 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135667333>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/74699> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1848" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135667333> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135667333#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:17.393Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135667333> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135667333#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:17.394Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135667333> .
+
+<http://lib.ugent.be/europeana/900000218579>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135667333>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000218579> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000218579> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135667333>
+	a                   ore:Proxy ;
+	dc:creator          "Antoine Wiertz" ;
+	dc:description      "Uit: Flandre Libérale, 1848 (?)" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000410944" ;
+	dc:language         "fr" ;
+	dc:publisher        "s.n." ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "De la critique et du salon" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "p. 429-452." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1848" ;
+	dcterms:spatial     <http://sws.geonames.org/2797656/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135667333> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135667333>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T05:42:06.765Z" ;
+	dcterms:modified          "2015-12-04T13:40:42.295Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135667333> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135667333> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000218579&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://sws.geonames.org/2797656/>
+	a               edm:Place ;
+	skos:altLabel   "Europa &gt; West-Europa &gt; België &gt; Vlaanderen &gt; Oost-Vlaanderen (provincie) &gt; Gent" ;
+	skos:prefLabel  "Gent" .
+
+<http://data.europeana.eu/agent/74699>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q352978>, <http://openlibrary.org/works/OL1578802A>, <http://d-nb.info/gnd/122342216>, <http://data.bnf.fr/ark:/12148/cb14976011t>, <http://viaf.org/viaf/29805786>, <http://data.bnf.fr/ark:/12148/cb12652592v>, <http://id.loc.gov/authorities/names/n82107592>, <http://dbpedia.org/resource/Antoine_Wiertz>, <http://id.worldcat.org/fast/97121>, <https://www.freebase.com/m/06w962>, <https://g.co/kg/m/06w962>, <http://data.bibliotheken.nl/id/thes/p068582048>, <http://www.idref.fr/085617512/id>, <http://vocab.getty.edu/ulan/500031572> ;
+	rdaGr2:dateOfBirth   "1806-02-22" ;
+	rdaGr2:dateOfDeath   "1865-06-18" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203088> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203157> ;
+	skos:altLabel        "Wiertz"@nl, "Вирц Антуан-Жозеф"@ru, "Wiertz"@sv, "Wiertz"@en, "Antoine Joseph Wiertz"@es, "Antoine Wiertz"@ca, "Antoine Wiertz"@de, "Antoine Wiertz"@sv, "Antoine Joseph Wiertz"@da, "Antoine Joseph Wiertz"@fr, "Antoine Joseph Wiertz"@cs, "Antoine Joseph Wiertz"@pt, "Antoine Joseph Wiertz"@en, "Antoine Joseph Wiertz"@pl, "Вирц, Антуан"@ru, "Вирц, Антуан-Жозеф"@ru, "Antonie joseph wiertz"@en, "Вирц, Антуан Жозеф"@ru, "Antoine-Joseph Wiertz"@nl, "Антуан Жозеф Вирц"@ru, "Anton Joseph Wiertz"@de, "Wiertz, Antoine Joseph"@sv, "Антуан Вирц"@ru, "Вирц"@ru ;
+	skos:note            "Belgisch kunstschilder"@nl, "Belgischer Maler, Zeichner und Kupferstecher"@de, "Belgia maalikunstnik"@et, "Белгийски художник"@bg, "Belgisk maler"@da, "Péintéir Beilgeach"@ga, "Belgický malíř"@cs, "Peintre belge"@fr, "Belga festő, szobrász és művészettörténész"@hu, "Belgian painter (1806-1865)"@en, "Pittore belga"@it, "Belgialainen taidemaalari"@fi, "Pintor belga"@ca, "Pintor belga"@es, "Pictor belgian"@ro ;
+	skos:prefLabel       "Antoine Wiertz"@it, "Antoine Wiertz"@fi, "Antoine Wiertz"@pt, "Antoine Wiertz"@en, "Antoine Wiertz"@fr, "Antoine Wiertz"@hu, "Antoine Wiertz"@es, "Antoine Wiertz"@et, "Antoine Wiertz"@cs, "Antoine Wiertz"@sl, "Antoine Wiertz"@ga, "Antoine Wiertz"@pl, "Antoine Wiertz"@ro, "Antoine Wiertz"@da, "Antoine Wiertz"@nl, "Антуан-Жозеф Вирц"@ru, "Антоан Вирц"@bg, "Αντουάν Βιέρτς"@el, "Antoine Joseph Wiertz"@de, "Antoine Joseph Wiertz"@sv, "Antoine Joseph Wiertz"@ca .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000218579>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1269"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135667333>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,128 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112058#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:34.098Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112058> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112058>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:112058> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112058&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112058#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:34.098Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112058> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112058>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_112058>
+	a                   ore:Proxy ;
+	dc:contributor      "Toorop, Jan" ;
+	dc:creator          "Toorop, Jan" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:112058", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112058" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:112058], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "boom"@nl, "liggend"@nl, "man"@nl, "gras"@nl, "tennisbaan"@nl, "vrouw"@nl, "kind"@nl, "parklandschap"@nl ;
+	dc:title            "Engels park" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1890" ;
+	dcterms:extent      "40 x 73 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "tempera", "doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112058> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_112058>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3272> ;
+	dcterms:medium      <http://data.europeana.eu/concept/223> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008", "1890" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112058> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/3272>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/3251> ;
+	skos:exactMatch  <https://g.co/kg/m/07gcy>, <https://www.freebase.com/m/07gcy>, <http://babelnet.org/rdf/s00076525n>, <http://www.wikidata.org/entity/Q741118>, <http://www.yso.fi/onto/yso/p28111> ;
+	skos:note        "Campo de juego donde se práctica tenis"@es, "Hřiště určené k hře tenisu"@cs, "Площадка для игры в теннис"@ru, "Boisko do gry w tenisa"@pl, "Venue where the sport of tennis is played"@en, "Locatie waar tennis wordt gespeeld"@nl ;
+	skos:prefLabel   "Tenisový dvorec"@cs, "Teniso kortas"@lt, "Tennisbaan"@nl, "Campo da tennis"@it, "Tennisbana"@sv, "Kort tenisowy"@pl, "Court de tennis"@fr, "Tennis court"@en, "Tennisplatz"@de, "Tennisbane"@da, "Teniško igrišče"@sl, "Теннисный корт"@ru, "Tenniskenttä"@fi, "Pista de tenis"@es, "Campo de ténis"@pt, "Pista de tennis"@ca, "Tenniseväljak"@et, "Тенис корт"@bg ;
+	skos:related     <http://data.europeana.eu/concept/3083> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112058&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "42766"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "95"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/223>
+	a                skos:Concept ;
+	skos:altLabel    "Munaöljytempera"@fi, "Pintura a la témpera"@es, "Tempera su tavola"@it, "Pintura a la tempera"@es, "Tempera"@fi, "Tempera"@sv, "Tempera"@pt, "Tempera"@it, "Tempera"@es, "Темперна"@bg, "Temple de huevo"@es, "Temperaväri"@fi, "Темперная живопись"@ru, "Malba temperou"@cs, "Tempere"@it, "Têmpera a ovo"@pt, "Temperafarbe"@de, "Tempera grassa"@it, "Eitempera"@nl, "Peinture a tempera"@fr, "Tempéra"@fr, "Temperamaleri"@da, "Témpera"@es, "Pintura al tremp"@ca ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q175166>, <http://d-nb.info/gnd/4059425-7>, <http://babelnet.org/rdf/s00063777n>, <http://www.yso.fi/onto/yso/p15601>, <http://vocab.getty.edu/aat/300015062>, <http://id.ndl.go.jp/auth/ndlna/00572853>, <http://purl.org/bncf/tid/27682>, <http://data.bnf.fr/ark:/12148/cb14443066w>, <https://www.freebase.com/m/07mtr>, <https://g.co/kg/m/07mtr>, <http://id.loc.gov/authorities/names/sh85133694> ;
+	skos:note        "Tipus de pintura artística"@ca, "Peinture utilisant un liant à émulsion"@fr, "Malfarbe mit in einer Wasser-Öl-Emulsion gebundenen Pigmenten"@de, "Materiale per la pittura preparato mescolando pigmenti in polvere colorati con un legante formato da un’emulsione in fase acquosa"@it, "Técnica de pintura"@pt, "Rodzaj farby stosowanej w malarstwie, w której jako spoiwo barwników wykorzystuje się emulsję temperową"@pl, "Painting medium consisting of colored pigment mixed with a water-soluble binder medium"@en, "Tipo de pintura soluble al agua utilizado para la pintura al temple"@es, "Malířské médium složené z barevných pigmentů smíchaných s vodou rozpustitelným pojivem"@cs ;
+	skos:prefLabel   "Teampara"@ga, "Tempera"@nl, "Tempera"@ro, "Tempera"@da, "Tempera"@pl, "Tempera"@cs, "Tempera"@et, "Tempera"@en, "Τέμπερα"@el, "Tempera"@de, "Tempera"@fi, "Tempera"@lt, "Tempera"@hr, "Tempera"@lv, "Tempera"@fr, "Tempera"@hu, "Tempera"@sk, "Tempera"@sl, "Tremp"@ca, "Temperamåleri"@sv, "Têmpera"@pt, "Pintura al temple"@es, "Темпера"@ru, "Темпера"@bg, "Pittura a tempera"@it .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112058>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:56.492Z" ;
+	dcterms:modified          "2018-04-05T18:11:15.035Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_112058> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_112058> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A112058%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:112058>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "52337"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

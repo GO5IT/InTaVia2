@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2026012/submission_1989_DM_22399_>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/149688> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1989" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2026012/submission_1989_DM_22399_> .
+
+<http://data.europeana.eu/item/2026012/submission_1989_DM_22399_#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:18.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2026012/submission_1989_DM_22399_> .
+
+<http://archive.aec.at/media/archive/1989/135396/ENT_8921b_AEC_PRX_1989_IO_track_1534228_wavform.png>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2026012/submission_1989_DM_22399_#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:18.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2026012/submission_1989_DM_22399_> .
+
+<http://data.europeana.eu/item/2026012/submission_1989_DM_22399_>
+	a  edm:ProvidedCHO .
+
+<http://archive.aec.at/submission/1989/DM/22399/>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "23134"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2026012/submission_1989_DM_22399_>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_#metadataTier>, <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_> ;
+	edm:completeness          "5" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2026012_Ag_EU_DCA_Kulturpool_ars" ;
+	edm:landingPage           <https://www.europeana.eu/item/2026012/submission_1989_DM_22399_> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Farchive.aec.at%2Fmedia%2Farchive%2F1989%2F135396%2FENT_8921b_AEC_PRX_1989_IO_track_1534228_wavform.png&type=SOUND> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004477343>
+	a               foaf:Organization ;
+	skos:prefLabel  "Ars Electronica"@en .
+
+<http://data.europeana.eu/agent/149688>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/148326>, <http://data.europeana.eu/agent/163592>, <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://www.idref.fr/034373942/id>, <https://livedata.bibsys.no/authority/1038026>, <http://data.bibliotheken.nl/id/thes/p314523693>, <https://libris.kb.se/mkz12z250xc1r3c>, <http://www.wikidata.org/entity/Q241432>, <https://g.co/kg/m/01n4sy2>, <http://data.carnegiehall.org/names/80481>, <http://datos.bne.es/resource/XX1552670>, <http://d-nb.info/gnd/11950006X>, <http://viaf.org/viaf/22116171>, <http://id.loc.gov/authorities/names/n86140591>, <http://libris.kb.se/resource/auth/211415>, <https://www.freebase.com/m/01n4sy2>, <http://dbpedia.org/resource/Kaija_Saariaho>, <http://id.worldcat.org/fast/180700>, <http://data.bnf.fr/ark:/12148/cb139520804> ;
+	rdaGr2:dateOfBirth   "1952-10-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/88008> ;
+	skos:altLabel        "Sāriaho"@lv, "Kaija Laakkonen"@et, "Kaija Saariaho"@lv, "Kaija Laakkonen"@de, "Kaija Laakkonen"@sv, "Kaija Laakkonen"@fi, "Kaija Laakkonen"@en, "Саариахо К."@ru, "Saariaho"@lv, "Saariaho"@de, "Saariaho"@sv, "Kaija Aneli Lākonena"@lv, "Kaija Anneli Saariaho"@et, "Kaija Anneli Saariaho"@es, "Kaija Anneli Saariaho"@ca, "Kaija Anneli Saariaho"@da, "Kaija Anneli Saariaho"@pl, "Kaija Anneli Saariaho"@cs, "Kaija Anneli Saariaho"@de, "Kaija Anneli Saariaho"@sv, "Kaija Anneli Saariaho"@fi, "Kaija Anneli Saariaho"@en, "Кайя Саариахо"@ru, "Kaija Anneli Laakkonen"@lv, "Kaija Anneli Laakkonen"@de, "Kaija Anneli Laakkonen"@sv, "Kaija Anneli Laakkonen"@fi, "Kaija Anneli Laakkonen"@en, "Саариахо"@ru, "Саариахо Кайя"@ru ;
+	skos:note            "Compositrice finlandese"@it, "Compozitoare finlandeză"@ro, "Finnish composer"@en, "Fins componiste"@nl, "Compositora finlandesa"@ca, "Finländsk kompositör"@sv, "Compositora finlandesa"@es, "Compositora finlandesa"@pt, "Compositrice et chef d'orchestre finlandaise"@fr, "Soome helilooja"@et, "Fińska kompozytorka"@pl, "Cumadóir Fionlannach"@ga, "Suomalainen säveltäjä"@fi, "Finnische Komponistin"@de ;
+	skos:prefLabel       "Kaija Sāriaho"@lv, "Kaija Saariaho"@fr, "Kaija Saariaho"@de, "Kaija Saariaho"@sv, "Kaija Saariaho"@fi, "Kaija Saariaho"@lt, "Kaija Saariaho"@en, "Kaija Saariaho"@it, "Kaija Saariaho"@es, "Kaija Saariaho"@et, "Kaija Saariaho"@cs, "Kaija Saariaho"@sl, "Kaija Saariaho"@ga, "Kaija Saariaho"@pl, "Kaija Saariaho"@da, "Kaija Saariaho"@ca, "Kaija Saariaho"@nl, "Саариахо, Кайя"@ru .
+
+<http://data.europeana.eu/aggregation/provider/2026012/submission_1989_DM_22399_>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477343> ;
+	edm:isShownAt      <http://archive.aec.at/submission/1989/DM/22399/> ;
+	edm:object         <http://archive.aec.at/media/archive/1989/135396/ENT_8921b_AEC_PRX_1989_IO_track_1534228_wavform.png> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671094> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671094>
+	a               foaf:Organization ;
+	skos:prefLabel  "Digitising Contemporary Art"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/provider/2026012/submission_1989_DM_22399_>
+	a                   ore:Proxy ;
+	dc:contributor      "Ars Electronica Linz GmbH" ;
+	dc:creator          "Kaija Saariaho"@de ;
+	dc:description      "Computermusik, Golden Nica"@de ;
+	dc:format           "audio/mpeg" ;
+	dc:identifier       "22399_111410" ;
+	dc:language         "en" ;
+	dc:relation         "Kulturpool", <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=94489792798>, <http://www.dca-project.eu/> ;
+	dc:rights           "Kaija Saariaho"@de ;
+	dc:subject          "Computer Music"@de ;
+	dc:title            "I0 / Stilleben"@de ;
+	dcterms:created     "1989" ;
+	dcterms:extent      "00:00:00" ;
+	dcterms:isPartOf    "Prix Ars Electronica" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2026012/submission_1989_DM_22399_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2026012/submission_1989_DM_22399_> .

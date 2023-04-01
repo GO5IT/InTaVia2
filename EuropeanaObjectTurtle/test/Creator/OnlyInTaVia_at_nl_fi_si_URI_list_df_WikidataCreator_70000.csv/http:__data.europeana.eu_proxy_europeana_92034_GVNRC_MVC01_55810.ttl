@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_55810>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:19:20.518Z" ;
+	dcterms:modified          "2018-04-05T17:10:09.205Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_MVC01_55810> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AMVC01%3A55810%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55810&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21796"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "114"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55810#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:38.916Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55810> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_MVC01_55810>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1978" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_55810> .
+
+<http://www.geheugenvannederland.nl/?/en/items/MVC01:55810>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48697"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55810>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/MVC01:55810> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55810&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55810#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:38.916Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55810> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_MVC01_55810>
+	a                   ore:Proxy ;
+	dc:contributor      "Pieck, Anton" ;
+	dc:creator          "Pieck, Anton" ;
+	dc:format           "kleurstaal" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55810" ;
+	dc:rights           "Voor meer informatie: Museum voor Communicatie"@nl, "Museum voor Communicatie", "For more information: Museum voor Communicatie"@en ;
+	dc:source           "[55810], Postzegelontwerpen, postzegels en affiches; Museum voor Communicatie" ;
+	dc:subject          "kleur"@nl ;
+	dc:title            "Kleurstaal voor Europapostzegels Nederland 1978 Stadhuis Haarlem" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1978" ;
+	dcterms:extent      "Geheel: 255 mm × 194 mm" ;
+	dcterms:isPartOf    "MVC01", "Postzegelontwerpen, postzegels en affiches", "GVN" ;
+	dcterms:medium      "image/jpeg", "geschilderd" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_55810> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55810> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55810>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .

@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b74001466/manifest> ;
+	ebucore:fileByteSize    "15179"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "718"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b74001466>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b74001466> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b74001466/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:24.627Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74001466> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74001466>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b74001466> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b74001466.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b74001466>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:25.317Z" ;
+	dcterms:modified          "2018-07-23T15:38:18.108Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b74001466> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b74001466.thumbnail.jpg&type=TEXT> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b74001466.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5736"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "175"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:24.626Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74001466> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b74001466>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "205400"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74001466/f1> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b74001466>
+	a                   ore:Proxy ;
+	dc:contributor      "Hagedorn, Friedrich von (1708-1754). Auteur du texte", "Lessing, Gotthold Ephraim (1729-1781). Auteur du texte", "Bürger, Gottfried August (1747-1794). Auteur du texte" ;
+	dc:creator          "Haydn, Joseph (1732-1809). Compositeur" ;
+	dc:date             "1790-1800" ;
+	dc:description      "Appartient à l’ensemble documentaire : RISM2", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [An einen Geizigen. Hob XXVIIb 22]", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [Herr von Gänsewitz zu seinem Kammerdiener. Hob XXVIIb 4]", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [An den Marull. Hob XXVIIb 5]", "Titre forgé d'après le contenu. - Une seule partie notée (Ut 1) sur laquelle sont indiquées les entrées des autres voix. - Daté d'après Henle. - Mention d'une autre main à l'encre noire, dans le coin supérieur droit : \u0022Joseph Haydn\u0022", "Comprend : Hilar an Narciß v. Hagedorn ; An einen Geizigen v. Lessing ; Auf einen Adelichen Dummkopf - Lessing ; Herr Gänsewitz zu seinem Camerdiener v. Bürger ; An den Marull v. Lessing", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [Hilar an Narziß. Hob XXVIIb 1]", "Appartient à l’ensemble documentaire : RISMMss", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [Auf einen adeligen Dummkopf. Hob XXVIIb 2]", "Présentation musicale : [Partie]" ;
+	dc:format           "1 partition (1 f.) ; 22,5 x 31 cm", "Nombre total de vues :  4" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b74001466" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb41205934z" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Centre technique du livre, Ms.141" ;
+	dc:subject          "Canons (musique vocale) -- 18e siècle -- Parties"@fre ;
+	dc:title            "[5 canons profanes à 3, 4 et 5 voix (Hob XXVIIb 1, 22, 2, 4, 5)] (manuscrit autographe) / Joseph Haydn]" ;
+	dc:type             "musique manuscrite"@fre, "manuscript music"@eng, "Genre musical : canon" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b74001466> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74001466> .

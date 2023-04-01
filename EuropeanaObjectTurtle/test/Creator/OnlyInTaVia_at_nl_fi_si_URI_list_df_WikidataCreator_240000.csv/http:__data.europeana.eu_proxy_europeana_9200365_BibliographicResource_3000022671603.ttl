@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550067029>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550067029> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550067029.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550067029/manifest> ;
+	ebucore:fileByteSize    "26671"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "685"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550067029>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "192962"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550067029.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6273"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "167"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:41.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550067029> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550067029/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/f1> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550067029>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:51.012Z" ;
+	dcterms:modified          "2018-07-23T15:37:49.401Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550067029> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550067029.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:41.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550067029> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550067029>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1816" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550067029> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550067029/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550067029>
+	a                   ore:Proxy ;
+	dc:contributor      "Körner, Theodor (1791-1813). Auteur du texte", "Mayrhofer, Johann (1787-1836). Auteur du texte", "Eschyle (0525?-0456 av. J.-C.). Auteur adapté" ;
+	dc:creator          "Schubert, Franz (1797-1828). Compositeur" ;
+	dc:date             "1816" ;
+	dc:description      "Titre propre pris au départ. - Texte d'Eschyle, extrait des \u0022Euménides\u0022, traduit par Johann Mayrhofer. - À la suite (f. 2 r°), esquisse, abandonnée au bout de 5 mesures et raturée, pour une mise en musique de \u0022Das war ich\u0022 de Theodor Körner, sans rapport avec le lied D 174 composé sur le même texte en 1815. - Ms. autogr. à l'encre : mise au net avec quelques ratures et corrections. - Broché dans une chemise avec titre et authentification de la main d'Eusebius Mandyczewski : \u0022Fragment aus dem Aeschylus. // für eine Singstimme mit Begleitung des Pianoforte. // Originale // von // Franz Schubert. // Juny 1816\u0022 ; au verso : \u0022Die Echtheit dieses Autographs // bestätigt // Eusebius Mandyczewski // Wien, am 8. Juni 1893\u0022. - F. 2 v° inutilisé", "Comprend : Das war ich. Körner", "Titre uniforme : Schubert, Franz (1797-1828). Compositeur. [Das war ich (1816). D deest]", "Titre uniforme : Schubert, Franz (1797-1828). Compositeur. [Fragment aus dem Aeschylus. D 450]" ;
+	dc:format           "2 f. ; 24 x 31,5 cm", "Nombre total de vues :  12" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550067029" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42731910m", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13954737d" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-282" ;
+	dc:subject          "Lieder acc. de piano -- 19e siècle"@fre ;
+	dc:title            "Fragment aus dem Äschylus // Juny 1816 // franz Schubert // M[anu propr]ia (manuscrit autographe)" ;
+	dc:type             "musique manuscrite"@fre, "Genre musical : Lied", "manuscript music"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550067029> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550067029> .

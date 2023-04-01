@@ -1,0 +1,152 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/49357> ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN" ;
+	dc:subject          <http://data.europeana.eu/concept/2834>, <http://data.europeana.eu/concept/2909> ;
+	dc:type             <http://data.europeana.eu/concept/2834>, <http://data.europeana.eu/concept/2909> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=194190&resolution=highImageResolution>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN/manifest> ;
+	ebucore:fileByteSize    "66414"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "239"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "370"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFB6C1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<https://iiif.europeana.eu/presentation/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477410> ;
+	edm:isShownAt      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=194190&viewType=detailView> ;
+	edm:isShownBy      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=194190&resolution=highImageResolution> ;
+	edm:object         <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=194190&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/49357>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/99>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs                     <http://dbpedia.org/resource/Hannah_H%C3%B6ch>, <https://livedata.bibsys.no/authority/90365954>, <https://libris.kb.se/64jmtqpq1n04k7f>, <http://d-nb.info/gnd/118551833>, <http://www.wikidata.org/entity/Q463411>, <http://data.bibliotheken.nl/id/thes/p068512422>, <http://datos.bne.es/resource/XX971518>, <https://g.co/kg/m/04mj04>, <http://id.loc.gov/authorities/names/n50034635>, <http://vocab.getty.edu/ulan/500014841>, <http://data.bnf.fr/ark:/12148/cb11972679q>, <https://www.freebase.com/m/04mj04>, <http://libris.kb.se/resource/auth/351892>, <http://id.ndl.go.jp/auth/ndlna/00916205>, <http://id.worldcat.org/fast/11726>, <http://www.idref.fr/027751007/id>, <http://viaf.org/viaf/112009268>, <http://openlibrary.org/works/OL482449A> ;
+	rdaGr2:dateOfBirth             "1889-11-01" ;
+	rdaGr2:dateOfDeath             "1978-05-31" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/6047> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/3567> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Höch"@es, "Höch"@sv, "Johanne Höch"@en, "Johanne Höch"@nl, "Hannah hoch"@pt, "Hannah Johanne Höch"@en, "Ханна Хёх"@ru, "Hanna Hoha"@lv, "Хех, Ханна"@ru, "H. Hoch"@nl, "H. Hoech"@nl, "Ханна Хех"@ru, "Anna Therese Johanne Höch"@fr, "Hoch"@es, "J. Höch"@nl, "Hannah Höch"@lv, "Hanna Höch"@de, "Hannah Hoech"@en, "Hannah Hoech"@nl, "A. Höch"@nl, "Hannah Hoch"@es, "Hannah Hoch"@en, "Hannah Hoch"@lv, "Hannah Hoch"@it, "Hannah Hoch"@fr, "Hannah Hoch"@nl, "Anna Höch"@en, "Anna Höch"@nl ;
+	skos:note                      "Γερμανίδα καλλιτέχνης"@el, "Artista alemanya (1889-1979)"@ca, "Artistă germană (1889-1979)"@ro, "Saksalainen kuvataiteilija"@fi, "Artista tedesca (1889-1979)"@it, "Германская художница-дадаистка"@ru, "Artista alemana (1889-1978)"@es, "Saksamaa kunstnik (1889-1979)"@et, "Ealaíontóir Gearmánach (1889-1979)"@ga, "Tysk kunstner (1889-1979)"@da, "Deutsche Collagekünstlerin des Dadaismus (1889-1978)"@de, "Tysk konstnär (1889-1979)"@sv, "Duitse Dada-kunstenaar (1889-1979)"@nl, "German artist (1889-1978)"@en, "Artiste allemande (1889-1978)"@fr ;
+	skos:prefLabel                 "Χάνα Χοχ"@el, "Hanna Heha"@lv, "Хёх, Ханна"@ru, "Hannah Höchová"@cs, "Hannah Höch"@it, "Hannah Höch"@de, "Hannah Höch"@fi, "Hannah Höch"@sv, "Hannah Höch"@pt, "Hannah Höch"@en, "Hannah Höch"@fr, "Hannah Höch"@hu, "Hannah Höch"@es, "Hannah Höch"@sl, "Hannah Höch"@ro, "Hannah Höch"@da, "Hannah Höch"@nl, "Hannah Höch"@ca .
+
+<http://data.europeana.eu/aggregation/europeana/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2022-01-19T11:40:37.322Z" ;
+	dcterms:modified          "2022-01-19T11:40:37.322Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN#metadataTier>, <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	edm:completeness          "10" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048431_DDB_Berlinische_Galerie" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlung-online.berlinischegalerie.de%3A443%2FeMP%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D194190%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=194190&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/concept/2909>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/04jjh>, <https://d-nb.info/gnd/4008240-4>, <http://purl.org/bncf/tid/10307>, <http://babelnet.org/rdf/s00050802n>, <http://www.wikidata.org/entity/Q133492>, <http://purl.org/coar/resource_type/c_0857>, <http://id.loc.gov/authorities/names/sh85076220>, <https://www.freebase.com/m/04jjh>, <http://www.yso.fi/onto/yso/p8646> ;
+	skos:note        "Wiadomość pisana zawierająca informacje skierowane od nadawcy do adresata"@pl, "Comunicazione scritta, talvolta di valore letterario, indirizzata da un mittente (persona o ente) a un destinatario (persona o ente)"@it, "Kirjalik sõnum ühelt isikult teis(t)ele"@et, "Geschrift dat aan iemand is gericht, en gesloten en van een adres voorzien wordt verzonden"@nl, "Message expédié à un destinataire"@fr, "Skrivet meddelande som skickas från en part till en annan, under transporten oftast förvarat i ett kuvert"@sv, "Written message from one to another"@en, "Письменное сообщение для передачи от одного субъекта к другому"@ru, "Písaná správa spravidla posielaná poštou"@sk, "Medio de comunicación escrito"@es, "Schriftstück, das Informationen zwischen Personen und anderen Entitäten austauscht"@de, "Mensagem escrita a um destinatário"@pt, "Skriftlig besked sendt fra den ene part til den anden, i transit normalt opbevaret i en kuvert"@da ;
+	skos:prefLabel   "Eskutitz"@eu, "Dopis"@cs, "Vēstule"@lv, "Brev"@sv, "Brev"@da, "Scrisoare"@ro, "Писмо"@bg, "Lettre"@fr, "Επιστολή"@el, "Lettera"@it, "Kiri"@et, "List"@sk, "Levél"@hu, "Litir"@ga, "Carta"@pt, "Carta"@es, "Carta"@ca, "List"@pl, "Kirje"@fi, "Brief"@de, "Brief"@nl, "Letter"@en, "Laiškas"@lt, "Письмо"@ru .
+
+<https://d-nb.info/gnd/118551833>
+	a                   edm:Agent ;
+	owl:sameAs          <http://viaf.org/viaf/112009268>, <http://isni.org/isni/0000000107880811>, <http://dbpedia.org/resource/Hannah_H%C3%B6ch>, <http://id.loc.gov/rwo/agents/n50034635>, <http://www.wikidata.org/entity/Q463411> ;
+	rdaGr2:dateOfBirth  "1889-11-01" ;
+	rdaGr2:dateOfDeath  "1978-05-31" ;
+	skos:altLabel       "Höch, Anna Therese", "Hoech, Hannah", "Höch, Anna Therese Johanne", "Matthies, Hannah", "Höch, Johanne", "Höch, Hanna" ;
+	skos:prefLabel      "Höch, Hannah" .
+
+<http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:53:40.686808Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> .
+
+<http://data.europeana.eu/concept/2834>
+	a                skos:Concept ;
+	skos:altLabel    "Korrespondens"@sv, "Carta"@pt, "Carteggio"@it, "Schriftverkehr"@de, "Correspondance (Littérature)"@fr, "Korespondence; vēstules"@lv, "Επιστολή"@el, "Kirjavahetus"@et, "Intercambio epistolar"@es, "Корреспонденция"@ru, "Briefwisseling"@nl, "Correspondance (litterature)"@fr ;
+	skos:exactMatch  <http://id.nlm.nih.gov/mesh/V01.550>, <http://www.wikidata.org/entity/Q1784733>, <http://g.co/kg/g/1230jl_1>, <http://id.nlm.nih.gov/mesh/D015709>, <http://data.bnf.fr/ark:/12148/cb133187365>, <http://vocab.getty.edu/aat/300026877>, <http://purl.org/bncf/tid/6119>, <http://datos.bne.es/resource/XX526105>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.377>, <http://id.nlm.nih.gov/mesh/D016422>, <http://id.nlm.nih.gov/mesh/V02.355.374>, <http://id.loc.gov/authorities/names/sh99001488>, <http://id.nlm.nih.gov/mesh/V02.625>, <http://d-nb.info/gnd/4180011-4> ;
+	skos:note        "Genere letterario"@it, "Intercambio regular de correo"@es, "Literární žánr"@cs, "Процесс обмена письмами (как лит. жанр см. Q2250271)"@ru, "Literair genre"@nl, "Genre littéraire"@fr, "Kirjallinen kommunikaatio (genre on Q2250271)"@fi, "Literary genre"@en, "Gênero literário"@pt, "Schriftverkehr"@de ;
+	skos:prefLabel   "Correspondència"@ca, "Korespondence"@cs, "Correspondência"@pt, "Correspondentie"@nl, "Αλληλογραφία"@el, "Korrespondance"@da, "Kiri"@et, "Correspondencia"@es, "Sarakste"@lv, "Kirjeenvaihto"@fi, "Korrespondenz"@de, "Corrispondenza"@it, "Correspondence"@en, "Brevväxling"@sv, "Переписка"@ru, "Correspondance"@fr .
+
+<http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:53:40.686434Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> .
+
+<http://data.europeana.eu/organization/1482250000004477410>
+	a               foaf:Organization ;
+	skos:prefLabel  "Berlin Gallery, Museum of Modern Art"@en, "Berlinische Galerie, Landesmuseum für moderne Kunst, Fotografie und Architektur"@de .
+
+<http://www.geonames.org/2950159>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin"@de .
+
+<http://data.europeana.eu/proxy/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN>
+	a                    ore:Proxy ;
+	dc:creator           "Doesburg, Theo van, Absender/in, Korrespondenzpartner (1883-1931)", <https://d-nb.info/gnd/118551833> ;
+	dc:description       "Motiv Inhalt: \u0022Clamart, 17/4 [handschriftlich eingefügt: 1926] / av. Schneider 84 / Liebe Hännchen, / Deinen Brief, bezüglich die Novembergruppe habe ich dankend erhalten. Ich habe mir sofort mit die Leute, welche in Frage Kommen in Verbindung gesetzt und werde dir meine Ansichten mitteilen. /  Die Leute vom stijl, etwa 12, wollen sehr gerne auf diese ausstellung als Gruppe demonstrieren. [1] / Ich habe gerade in Nancy, eine sehr schöne Stijlausstellung arrangiert. Falls die Novembergruppe uns die möglichkeit geben will, eine ähnliche Gruppe-ausstellung (Architectur, Malerei, u.s.w.) in Berlin zu machen, war das sehr nett. Ich könnte dann die Kiste direct von Nancy, via Strassburg weiterbefördern lassen. Bei diese Ausstellung sind auch einige Modellen und ausser Entwürfe, eine Menge Fotos (Vergrösserungen 40 bei 60 cm) Wir brauchen aber kein grosse Saal. / Das ist eine Möglichkeit, die andere ist, dasz die in Frage kommende Maler einige Bilder schicken werden. Ich verstehe nur nicht wie sie in 10 Bilder die ganze Malerische Bewegung in Paris, zeigen wollen! Wenn jeder Künstler (Stijl- und nicht Stijl) 2 Bilder ausstellen will, so kann man doch sehr wenig zeigen. Es gibt hier heute eine Menge Richtungen, welche vertretet werden müssen, will man allerdings das Wichtigste ausstellen. (Kubisten und Postkubisten, Surréalisten, Neo-Plasticisten, Neo-Klassiker und Konstruktivisten, u.s.w.) Puristen. / Falls die Novembergruppe wirklich ein Bild geben wil von alle neue Richtungen in Paris, so werden ich mir gerne damit beschäftigen, die Sache aus zu wählen welche dafür geeignet sind. Ich brauche dann eine schriftlichen Bestätigung. / Da voriges Mahl, die Bilder sehr schlecht gehängt worden sind, würde es nötig sein, dasz ich selbst (jedenfalls wenn De Stijl als geschlossenen Gruppe ausstellen will) nach Berlin komme um die Bilder, Modellen u.s.w., auf zu hängen und zu montieren. / Hoffentlich habe ich mir verständlich genug ausgedrückt. Was Stijl also anbelangt, könnte eine sehr schöne Gesamtdemonstration stattfinden. Die Bilder (wenigen) könnten dann in Zusammenhang mit die Architectur gezeigt werden. / Seien sie bitte so freundlich und schicke mir die Adresse von Wilhelm Schmid, ich werde mir dann sofort mit ihm in verbindung setzen. / Nun habe ich noch eine dringende Bitte an sie, Hännchen. Für etwa 5 Monate bad mir einen Journalisten, MEDINA, um eine Artikel über Ribemont Dessaignes [2], für DIE LITERARISCHE WELT (Rowohlt Verlag, Potsdamerstrasse 123 B, Herausgeber Dr. Willy Haas) [3]. Es war einen intimen Freund Kieslers, ausserdem: Trottel. Wenn den Artikel fertig war, bekam ich Krach mit diesen Herr Médina (aus Wien) und er schrieb mir, ich sollte meinen Artikel unmittelbar nach Herrn Willy Haas, senden. Ich tat also, aber bekam gar keinen Antwort auf meinen beigelegten Brief. Ich schrieb ein, zwei, drei Mahl, aber kein Wort zurück erhalten. Nun scheint mir diese Literarische Welt eine ganz reactionaire Zeitschrift zu sein und Herrn Dr HAAAAAAAAAAAAAAAAAAS genau so einen TROOOOOOOOOOOOOTTTTT EEEEEELLLLLLLL, als sein Pariser Vertreter und Freund vom Kiesler. Von den Artikel habe ich zwar Durchschlag, aber es war auch eine sehr schöne Foto von Ribemont Dessaignes, von Man Ray absichtlich vor diesen Artikel gemacht, dabei. Diese letzte möchte ich so furchtbar gerne zurück haben. Sie ist mir lieber als die dreckige 300 Franks Honorar, welche mir vor den Artikel in Aussssichttt gestellt waren. Du würdest mir nun ein sehr grosses Gefallen tun, wenn du mal selbst nach den Herausgeber, Herrn Dr. Willy HHHAAAASSSS hingehen wollte (wenn Du Zeit hast) und von ihm meinen Artikel, mit das Foto zurück bekommen köntest. Den Artikel, nebst Foto sind am 12 Februar, Récommandé geschickt worden. / Du wirst mir damit einen grossen Gefallen tun, Hännchen. / Kiesler und Frau sind noch immer in Amerika und werden dort wohl noch Lange bleiben, da es Ihnen anscheinend sehr gut geht. Nur schade um die schöne Pariser Wohnung mit Atelier, dasz gesperrt worden ist. / Arp ist schon seit einige Wochen in Paris und war mal bei uns. Wir haben uns sehr liebgewonnen und werden verschiedenes zusammen unternehmen. Hoffentlich hat er mit mir nicht solche schlechte Erfahrungen, wie mit Lissitzky. [4] Aber ich bin keeeene Jude! / Richter war inzwischen auch in Paris. Er ist ganz verbürgerlicht, was man auch an sein G. sieht. Glücklich stehen Nelly und ich nicht allein in unsere Meinung, dasz diese Nummer ganz lehr und sinnlos ist. Jeder denkt hier so darüber. / Liebe Hännchen wir haben uns sehr gefreut über die Karte aus Hannover. Wir sind sehr neugierig nach diese Revue mit Stückenschmidt un Kurt. Hoffentlich sehen wir uns diesen Sommer auf Capri. Capri ist mir durch Tzara empfohlen für meine Heuschnupfen. Sofort wenn wir genügendes Geld haben fahren wir hin. Es ist hier irrsinnig kalt. /  Ihre Katze sieht wunderbar aus [5]. Wir waren sehr froh mit das Foto. Wir haben zwei junge Hunden. Der grossen heist DADA, und der kleine Pierrot. Es ist wircklich unglaublich wieviel Freundschaft man von Tiere hat. Und wie intelligent sie sind. Katzen haben wir auch viele, aber nicht so schöne wie deins. / Wir arbeiten beiden sehr viel. Nelly wird dir noch einige Worten hirunter schreiben. / Herzlichst und freunschaftlichst / Ihr Does / \u000AMein geliebtes Hännerlein, / Al seht oder hört man wenig von einander, doch denke ich viel an dich. Wann kommst du wieder hierher? Komme doch auch nach Capri Wir fahren wieder Juni u. halb Juli. Ich arbeite sehr viel. In aller Eile innigst deiner Nelly -\u0022 / \u000A----------\u000A[1] Das Vorhaben, eine De Stijl-Abteilung in der Novembergruppen-Ausstellung 1926 einzurichten, scheiterte.\u000A[2] Es handelt sich hierbei sehr wahrscheinlich um den unveröffentlichten Artikel Ribemont-Dessaignes und die Tendenzen der neuen Literatur in Frankreich (1926).\u000A[3] Die Literarische Welt wurde von Rowohlt nach dem Vorbild der französischen \u0022nouvelles littéraires\u0022 als Wochenschrift gegründet, die über die neuesten Ereignisse aus der Welt der Literatur, des Theaters und der Kunst berichten sollte.\u000A[4] Dies bezieht sich auf das Zerwürfnis von Hans Arp und El Lissitzky nach der gemeinsamen Produktion der Kunstismen, das durch finanzielle Probleme, die bei der Herstellung auftauchten, sowie durch inhaltliche Differenzen ausgelöst wurde.\u000A[5] Die Katze Ninn wurde mehrfach von ihr gemalt."@de, "Anzahl Teile/Umfang: 2 Blatt"@de, "Erworben aus Mitteln des Senators für Kulturelle Angelegenheiten, Berlin (Creditline)"@de ;
+	dc:format            "Papier, maschinengeschrieben, handgeschrieben (Material/Technik)"@de ;
+	dc:identifier        "BG-HHC K 124/79 (Inventarnummer)", "BG-HHE II 26.6" ;
+	dc:subject           "Nachlass-Hannah-Höch"@de, "Korrespondenz"@de, "2.1.1 an den Nachlasser (pK)"@de, "Brief"@de, "De Stijl"@de, "Frankreich/Clamart"@de, "Novembergruppe"@de ;
+	dc:title             "Brief von Theo van Doesburg an Hannah Höch. Clamart. Briefkopf: \u0022NB DE STIJL [...]\u0022 und handschriftlicher Zusatz von Nelly van Doesburg"@de ;
+	dc:type              "Korrespondenz"@de, "Brief"@de ;
+	dcterms:created      "17.04.1926 (Herstellung)"@zxx ;
+	dcterms:extent       "Blattmaß:  13,3 x 20,9 cm"@zxx ;
+	dcterms:spatial      <http://www.geonames.org/2950159> ;
+	edm:currentLocation  <http://www.geonames.org/2950159> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048431/item_2HNX7FPC3M6T3HXSO2CPNG3OP2OHQAUN> .

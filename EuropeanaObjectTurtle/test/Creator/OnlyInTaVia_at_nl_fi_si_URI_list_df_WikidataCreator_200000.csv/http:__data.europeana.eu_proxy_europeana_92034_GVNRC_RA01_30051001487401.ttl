@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_RA01_30051001487401>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_RA01_30051001487401> .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:59.867Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001487401> .
+
+<http://www.geheugenvannederland.nl/?/en/items/RA01:30051001487401>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51027"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_RA01_30051001487401>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:27:56.025Z" ;
+	dcterms:modified          "2018-04-05T17:38:00.812Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_RA01_30051001487401> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ARA01%3A30051001487401%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_RA01_30051001487401>
+	a                   ore:Proxy ;
+	dc:contributor      "Bakker, Piet", "Doeve, Eppo" ;
+	dc:creator          "Doeve, Eppo" ;
+	dc:format           "brochure" ;
+	dc:identifier       "Bro 1993/13 fol", "http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001487401" ;
+	dc:rights           "voor informatie: ReclameArsenaal"@nl, "ReclameArsenaal", "for information contact ReclameArsenaal"@en ;
+	dc:source           "Bro 1993/13 fol (brochure), 150 jaar Nederlandse reclame, ReclameArsenaal" ;
+	dc:subject          "sterke drank"@nl, "jubilea"@nl ;
+	dc:title            "Kollektion Lucas Bols" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1975-1976" ;
+	dcterms:isPartOf    "GVN", "RA01", "150 jaar Nederlandse reclame" ;
+	dcterms:issued      "22-06-2004" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001487401> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001487401>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/RA01:30051001487401> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001487401&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001487401#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:59.866Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001487401> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001487401&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "28338"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "229"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

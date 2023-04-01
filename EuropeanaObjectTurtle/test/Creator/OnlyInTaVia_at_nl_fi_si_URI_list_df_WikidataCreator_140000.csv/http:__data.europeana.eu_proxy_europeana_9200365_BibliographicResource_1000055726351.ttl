@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b90597924>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "194948"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.847Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b90597924> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b90597924>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:40:38.035Z" ;
+	dcterms:modified          "2018-07-23T15:39:57.576Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b90597924> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b90597924.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b90597924/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.847Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b90597924> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b90597924.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9138"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "168"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/f1> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b90597924>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1610" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b90597924> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b90597924>
+	a                   ore:Proxy ;
+	dc:contributor      "Marot, Clément (1496-1544). Auteur du texte", "Bèze, Théodore de (1519-1605). Auteur du texte" ;
+	dc:creator          "Le Jeune, Claude (1530?-1600). Compositeur" ;
+	dc:date             "1610" ;
+	dc:description      "Comprend : Fol. 3 v° - Vouloir m'est pris (Ps. CI/[C]) - Fol. 4 v° - Seigneur enten ma requeste (Ps. CII/[CI]) - Fol. 5 r° - Sus, loüez Dieu (Ps. CIII/[CII]) - Fol. 5 v° - Sus, sus, mon ame (Ps. CIIII/[CIII]) - Fol. 6 v° - Sus, qu'un chacun de nous (Ps. CV/[CIV]) - Fol. 7 r° - Loüez Dieu car il est benin (Ps. CVI/[CV]) - Fol. 7 v° - Donnez au Seigneur (Ps. CVII/[CVI]) - Fol. 8 r° - Mon coeur est dispos (Ps. CVIII/[CVII]) - Fol. 8 v° - O Dieu mon honneur (Ps. CIX/[CVIII]) - Fol. 9 r° - L'omnipotent à mon Seigneur (Ps. CX/[CIX]) - Fol. 9 v° - Du Seigneur Dieu (Ps. CXI/[CX]) - Fol. 10 r° - O bien heureuse la personne (Ps. CXII/[CXI]) - Fol. 10 v° - Enfans qui le Seigneur (Ps. CXIII/[CXII]) - Fol. 11 r° - Quand Israël hors d'Egypte (Ps. CXIIII/[CXIII]) - Fol. 11 v° - Non point à nous (Ps. CXV/[CXIII]) - Fol. 12 r° - I'ayme mon Dieu (Ps. CXVI/[CXIV]) - Fol. 12 v° - Toutes gens, loüez le Seigneur (Ps. CXVII/[CXVI]) - Fol. 13 r° - Rendez à Dieu (Ps. CXVIII/[CXVII]) - Fol. 13 v° - Bien heureuse est la personne (Ps. CXIX/[CXVIII]) - Fol. 14 v° - Alors qu'affliction (Ps. CXX/[CXIX]) - Fol. 15 v° - Vers les monts j'ay levé (Ps. CXXI/[CXX]) - Fol. 16 r° - Incontinent que j'eus ouy (Ps. CXXII/[CXXI]) - Fol. 16 v° - A toy ô Dieu (Ps. CXXIII/[CXXII]) - Fol. 17 r° - Or peut bien dire (Ps. CXXIIII/[CXXIII]) - Fol. 17 v° - Tout homme qui son esperance (Ps. CXXV/[CXXIV]) - Fol. 18 r° - Alors que de captivité (Ps. CXXVI/[CXXV]) - Fol. 18 v° - On a beau sa maison (Ps. CXXVII/[CXXVI]) - Fol. 19 r° - Bienheureux est quiconques (Ps. CXXVIII/[CXXVII]) - Fol. 19 v° - Des ma jeunesse (Ps. CXXIX/[CXXVIII]) - Fol. 20 r° - Du fons de ma pensée (Ps. CXXX/[CXXIX]) - Fol. 20 v° - Seigneur, je n'ay point (Ps. CXXXI/[CXXX]) - Fol. 21 r° - Vueilles, Seigneur estre recors (Ps. CXXXII/[CXXXI]) - Fol. 21 v° - O combien est plaisant (Ps. CXXXIII/[CXXXII]) - Fol. 22 r° - Or sus, serviteurs (Ps. CXXXIIII/[CXXXIII]) - Fol. 22 v° - Loüez Dieu tout hautement (Ps. CXXXVI/[CXXXV]) - Fol. 23 r° - O Dieu tu cognois (Ps. CXXXIX/[CXXXVIII]) - Fol. 23 v° - O Dieu, donne moy delivrance (Ps. CXL/[CXXXIX]) - Fol. 24 r° - O Seigneur, à toy (Ps. CXLI/[CXL]) - Fol. 24 v° - I'ay de ma voix (Ps. CXLII/[CXLI]) - Fol. 25 r° - Seigneur Dieu (Ps. CXLIII/[CXLII]) - Fol. 25 v° - Loüé soit Dieu (Ps. CXLIIII/[CXLIII]) - Fol. 26 v° - Or soit loüé (Ps. CL) - Fol. 27 v° - Misericorde au pauvre vicieux (Ps. LI/[L]) - Fol. 28 v° - Dieu nous soit doux (Ps. LXVII/[LXVI])", "Appartient à l’ensemble documentaire : Brossard1", "Appartient à l’ensemble documentaire : RISMImp" ;
+	dc:format           "Nombre total de vues :  121", "2 vol. in-4° obl., chacun de 30 ff." ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b90597924" ;
+	dc:language         "fre" ;
+	dc:publisher        "par Pierre Ballard (Paris)" ;
+	dc:relation         "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb431063935", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb431063935" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Fonds du service reproduction, RESVM1-44" ;
+	dc:title            "Troisiesme livre des Pseaumes de David, mis en musique a III parties par Claud .[e] Le Jeune,..." ;
+	dc:type             "Genre musical : psaume" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b90597924> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b90597924/manifest> ;
+	ebucore:fileByteSize    "36717"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "388"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b90597924>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b90597924> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b90597924> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b90597924/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b90597924.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .

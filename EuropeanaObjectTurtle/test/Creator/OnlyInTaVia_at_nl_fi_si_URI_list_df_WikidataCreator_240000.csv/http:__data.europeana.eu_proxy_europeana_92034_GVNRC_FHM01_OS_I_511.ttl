@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:23.968Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_511> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_511>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_511> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_511>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-511> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-511&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-511&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "19341"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_511>
+	a                   ore:Proxy ;
+	dc:contributor      "H.M. Clark", "Frans Hals (?)" ;
+	dc:creator          "Frans Hals (?)" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "OS-I-511", "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-511" ;
+	dc:rights           "for information contact: Frans Hals Museum"@en, "voor informatie: Frans Hals Museum"@nl, "Frans Hals Museum" ;
+	dc:source           "OS-I-511 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van Jacobus Hendricksz Zaffius"@nl, "Portrait of Jacobus Hendricksz Zaffius"@en ;
+	dc:type             "StillImage" ;
+	dcterms:created     "ca. 1611/15" ;
+	dcterms:extent      "paneel: 54,5 x 41 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "GVN", "FHM01" ;
+	dcterms:medium      "olieverf op paneel", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_511> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_511>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:54.689Z" ;
+	dcterms:modified          "2018-04-05T16:45:02.219Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-511%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_511#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:23.968Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_511> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-511>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50771"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/2022717/bnesearch_detalle_bdh0000094212>
+	a                        ore:Proxy ;
+	dc:creator               "Schubert, Franz, 1797-1828" ;
+	dc:date                  "1856" ;
+	dc:description           "Incluye relación de la obras que componen la colección", "Fecha de publicación basada en WWW imslp.org" ;
+	dc:language              "mul", "ger", "fre" ;
+	dc:publisher             "Henry Litolff's Verlag" ;
+	dc:subject               "Lieder" ;
+	dc:title                 "Franz Schubert's  Sämmtliche Lieder, Gesänge u. Balladen [Música notada] :]für eine Singstimme mit Pianoforte-Begleitung.. Band VI" ;
+	dc:type                  "Partituras" ;
+	dcterms:alternative      "[Lieder. Selección]" ;
+	dcterms:isPartOf         "Litolffs Bibliothek Classischer Compositionen" ;
+	dcterms:tableOfContents  "Die Erwartung : op. 116 / Gedicht von Friedr. Schiller ; paroles françaises de Bélanger. Der Sänger : op. 117 / Ballade von Göthe. Geist der Liebe : op. 118 / Gedicht von Kosegarten. Der Abend : op. 118 / Gedicht von Hölty. Tischlied : op. 118 / Gedicht von Göthe. Lob des Tokayers : op. 118 / Gedicht von Baumberg. An die Sonne : op. 118 / Gedicht von Th. Körner. Die Soinnerin : op. 118 / Gedicht von Göthe. Auf dem Strome : op. 119 / Gedicht von Rellstah ; paroles françaises de Bélanger. Viola : op. 122 / Gedicht von Schober ; paroles françaises de Belanger. Zwei Scenen aus dem Schauspiele Lacrimas, op. 124 / von A.W. Schelegel ; paroles françaises de Bélanger. Ein Fräulein schaut von hohen Thurm : op. 126 / Ballade von Kenner. Das Echo : op. 130 / Gedicht von J.F. Castelli. Der Mondabend ; Trinklied ; Klagelied : op. 131. Ossian's Gesänge" ;
+	edm:europeanaProxy       "false" ;
+	edm:type                 "TEXT" ;
+	ore:proxyFor             <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212> ;
+	ore:proxyIn              <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000094212> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000094212&page=1>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "12592"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://bdh-rd.bne.es/pdf.raw?query=id:0000094212&page=1&jpeg=true>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1735427"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "2450"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "3892"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000094212>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000369917> ;
+	edm:isShownAt      <http://bdh-rd.bne.es/viewer.vm?id=0000094212&page=1> ;
+	edm:object         <http://bdh-rd.bne.es/pdf.raw?query=id:0000094212&page=1&jpeg=true> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000094212>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2022717/bnesearch_detalle_bdh0000094212>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1856" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000094212> .
+
+<http://data.europeana.eu/organization/1482250000000369917>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca Nacional de España"@es, "National Library of Spain"@en .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:16.678Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000094212> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:16.679Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000094212> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000094212>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2018-06-18T09:06:48.063Z" ;
+	dcterms:modified          "2018-06-19T14:50:57.308Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212#contentTier>, <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022717_Ag_ES_Hispana_Biblioteca_Nacional" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000094212> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbdh-rd.bne.es%2Fpdf.raw%3Fquery%3Did%3A0000094212%26page%3D1%26jpeg%3Dtrue&type=TEXT> .

@@ -1,0 +1,136 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2022713/oai_rebae_mcu_es_182700/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2022713/oai_rebae_mcu_es_182700>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-07-07T13:36:10.032Z" ;
+	dcterms:modified          "2017-07-07T13:36:10.032Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700#metadataTier>, <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022713_Ag_ES_Hispana_ccbae" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022713/oai_rebae_mcu_es_182700> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.mcu.es%2Fccbae%2Fi18n%2Fcatalogo_imagenes%2Fimagen_id.cmd%3FidImagen%3D4027&type=IMAGE> .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:18:14.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_182700> .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/agent/38899>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/117363> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/38874> ;
+	owl:sameAs           <http://d-nb.info/gnd/139081887>, <http://www.idref.fr/137958668/id>, <http://libris.kb.se/resource/auth/331051>, <http://dbpedia.org/resource/Cornelis_Visscher>, <http://www.wikidata.org/entity/Q542383>, <https://libris.kb.se/hftx38v15sb53lf>, <http://id.worldcat.org/fast/106615>, <http://vocab.getty.edu/ulan/500001547>, <http://id.loc.gov/authorities/names/n82250984>, <http://data.bibliotheken.nl/id/thes/p376258454>, <https://g.co/kg/m/0fpk3w3>, <http://datos.bne.es/resource/XX1520324>, <http://kulturarvsdata.se/LSH/agents/59552>, <http://viaf.org/viaf/67830437>, <https://www.freebase.com/m/0fpk3w3>, <http://ta.sandrart.net/-person-4942> ;
+	rdaGr2:dateOfBirth   "1629-01-01" ;
+	rdaGr2:dateOfDeath   "1658-01-16" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40710> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "C. Vischer"@en, "Vischer"@en, "Cornelis (II) Visscher"@en, "Vischer Cornel. de"@en, "Cornelis Vischer"@en, "C.I. Visscher"@nl, "Visscher"@en, "Corn. de Visscher"@en, "Cornelis de Visscher d.y."@sv, "Wicher"@en, "Cornelis de Visscher"@nl, "Cornelis de Visscher"@sv, "Cornelis de Visscher"@en, "Cornelis, II Visscher"@en, "C. Fisscher"@en, "Cornelis II Visscher"@en, "C. Wischer"@en, "Cornelis Visscher d.y."@sv, "Corn. Visscher"@en, "Cornelis de Visscherus"@en, "C. Wicher"@en, "N. Visscher"@nl, "Cornelius Visscher"@fr, "Cornelius Visscher"@en, "Corneille Wisher"@en, "Visscherus"@en, "Corneille Wischer"@en, "Corneille Visscher"@en, "Cornelis vischer II"@en, "C. de Vischer"@en, "Visser"@nl, "Visser"@en, "C. Visser"@en, "Cornel. de Vischer"@en, "Cornelis Visscher (II)"@nl, "Cornelis Visscher (II)"@en, "C. Visscher"@en, "Cornelius de Visscher"@en, "Cornelius Vischer"@en, "Corneille Wisscher"@en, "Cornelis Visscher II"@en, "Cornelis de Visscher (II)"@nl, "Cornelis de Visscher (II)"@en, "Cornelis de visscher"@en, "Corn. Vischer"@en ;
+	skos:note            "Graveur néerlandais"@fr, "Niederländischer Kupferstecher"@de, "Engraver from the Northern Netherlands (1629-1658)"@en, "Nederlands kunstschilder (1629-1658)"@nl, "Grabador neerlandés"@es, "Incisore olandese"@it, "Голландский гравёр"@ru ;
+	skos:prefLabel       "Виссхер, Корнелис"@ru, "Cornelis Visscher"@es, "Cornelis Visscher"@de, "Cornelis Visscher"@sv, "Cornelis Visscher"@pt, "Cornelis Visscher"@en, "Cornelis Visscher"@hr, "Cornelis Visscher"@it, "Cornelis Visscher"@fr, "Cornelis Visscher"@cs, "Cornelis Visscher"@sk, "Cornelis Visscher"@sl, "Cornelis Visscher"@da, "Cornelis Visscher"@ca, "Cornelis Visscher"@nl .
+
+<http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4027>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2022713/oai_rebae_mcu_es_182700/manifest> ;
+	ebucore:fileByteSize    "271233"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1036"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1140"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:18:14.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_182700> .
+
+<http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_182700>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500792> ;
+	edm:isShownAt      <http://www.mcu.es/ccbae/es/consulta/registro.cmd?id=182700> ;
+	edm:isShownBy      <http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4027> ;
+	edm:object         <http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4027> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.mcu.es/ccbae/es/consulta/registro.cmd?id=182700>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2022713/oai_rebae_mcu_es_182700>
+	a                       ore:Proxy ;
+	dc:creator              "Visscher" ;
+	dc:date                 "1620" ;
+	dc:description          "Grabado.", "AGS. Estado, Legajos, 00634, 517. Acompaña a una explicación en español del plano en hoja aparte.", "Explicación en neerlandés" ;
+	dc:format               "image/jpeg" ;
+	dc:language             "dut" ;
+	dc:rights               "The Public Domain Mark (PDM)" ;
+	dc:title                "Afbeeldinghe der gelegenhent, van de stercke en vermaerde Stadt Wesel, ende haer omliggende plaetsen, mitsgaders hoe den Door... [Material cartográfico]" ;
+	dc:type                 "Mapas" ;
+	dcterms:alternative     "Wesel (Alemania). Mapas generales. 1620", "Título traducido: [Descripción del sitio del fuerte de la villa de Wesel y lugares circunvecinos y de los cuarteles que tiene cerca de ella el Príncipe de Orange y de la manera que el Conde Henrique de Nassau partió a 9 de septiembre 1620...]" ;
+	dcterms:created         "1620" ;
+	dcterms:extent          "1 mapa" ;
+	dcterms:isReferencedBy  "Referencias: Mapas, planos y dibujos (Años 1503-1805). Volumen I : p. 1005" ;
+	dcterms:spatial         "Ámbito geográfico: Abarca las ciudades de Wesel, Büderich, Borch, Birten, Xanten, Luttingen y Diersfordt.", "Alemania-Wesel" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_182700> .
+
+<http://data.europeana.eu/proxy/europeana/2022713/oai_rebae_mcu_es_182700>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/38899> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1620" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_182700> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022713/oai_rebae_mcu_es_182700> .
+
+<http://data.europeana.eu/organization/1482250000004500792>
+	a               foaf:Organization ;
+	skos:prefLabel  "Collective Catalog of the Library Network of the State Archives"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

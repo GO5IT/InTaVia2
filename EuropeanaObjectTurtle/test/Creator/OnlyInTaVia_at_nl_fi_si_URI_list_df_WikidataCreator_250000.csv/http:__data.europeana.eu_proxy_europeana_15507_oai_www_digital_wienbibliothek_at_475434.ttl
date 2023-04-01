@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://www.digital.wienbibliothek.at/id/475434>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://www.digital.wienbibliothek.at/download/webcache/304/475436>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "38637"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "460"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "304"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/15507/oai_www_digital_wienbibliothek_at_475434>
+	a                   ore:Proxy ;
+	dc:identifier       "oai:www.digital.wienbibliothek.at:475434" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1917" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15507/oai_www_digital_wienbibliothek_at_475434> .
+
+<http://kulturpool.at/rest/export/1.0/proxy/wienbib/?id=download/pdf/475434>
+	a                      edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize   "676921"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:spatialResolution  "606"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-02-18T13:58:28.565568Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_475434> .
+
+<http://data.europeana.eu/aggregation/europeana/15507/oai_www_digital_wienbibliothek_at_475434>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-08-28T08:49:00.867Z" ;
+	dcterms:modified          "2022-02-18T13:50:35.470Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434#contentTier>, <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15507_Ag_AT_Kulturpool_wienbib" ;
+	edm:landingPage           <https://www.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.digital.wienbibliothek.at%2Fdownload%2Fwebcache%2F304%2F475436&type=TEXT> .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=545461359186>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:extent          "1 Bogen 48 x 31,5 cm"@de ;
+	dcterms:isPartOf        "Stadtgeschichte und Ereignisse"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=545461359186> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_475434>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517551> ;
+	edm:isShownAt      <https://www.digital.wienbibliothek.at/id/475434> ;
+	edm:isShownBy      <http://kulturpool.at/rest/export/1.0/proxy/wienbib/?id=download/pdf/475434> ;
+	edm:object         <https://www.digital.wienbibliothek.at/download/webcache/304/475436> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004517551>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca de Viena a l'Ajuntament"@ca, "Vienna City Library"@en, "Wienbibliothek im Rathaus"@de .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-02-18T13:58:28.565829Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_475434> .
+
+<http://data.europeana.eu/proxy/provider/15507/oai_www_digital_wienbibliothek_at_475434>
+	a                    ore:Proxy ;
+	dc:date              "1917"@de ;
+	dc:format            "application/pdf" ;
+	dc:identifier        "oai:www.digital.wienbibliothek.at:475434" ;
+	dc:language          "de" ;
+	dc:rights            "Public Domain Mark 1.0"@de ;
+	dc:title             "Sturmidyll 13.6., Der unsterbliche Lump 14.6., Die beiden Seehunde. Ein Märchenspiel 15.6"@de ;
+	dc:type              "poster"@de ;
+	dcterms:created      "1917"@de ;
+	dcterms:extent       "1 Bogen 48 x 31,5 cm"@de ;
+	dcterms:isPartOf     "Stadtgeschichte und Ereignisse"@de ;
+	edm:currentLocation  "Baden <Wien>"@de ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_475434> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_475434> .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .

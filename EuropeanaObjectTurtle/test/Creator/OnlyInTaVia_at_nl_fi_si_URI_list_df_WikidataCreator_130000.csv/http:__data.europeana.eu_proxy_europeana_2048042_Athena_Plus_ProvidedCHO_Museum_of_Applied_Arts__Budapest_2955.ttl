@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gyujtemeny.imm.hu/gyujtemeny/miniatur-kepmas-ismeretlen-ferfi/2955>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "18521"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gyujtemeny.imm.hu/web/nagy/69_1352_SHA_7350.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955/manifest> ;
+	ebucore:fileByteSize    "99411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1024"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "773"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955>
+	a                   ore:Proxy ;
+	dc:creator          "Zincke, Christian Friedrich"@hu ;
+	dc:identifier       "69.1352.1.", "2955" ;
+	dc:title            "Miniatűr képmás - ismeretlen férfi"@hu ;
+	dc:type             "Miniatűr képmás"@hu ;
+	dcterms:created     "1725/1735" ;
+	dcterms:provenance  "Museum of Applied Arts, Budapest" ;
+	dcterms:spatial     "London" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> .
+
+<http://data.europeana.eu/organization/1482250000000737001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Iparművészeti Múzeum"@hu, "Museum of Applied Arts Budapest"@en .
+
+<http://data.europeana.eu/aggregation/provider/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955>
+	a                  ore:Aggregation ;
+	dc:rights          "Museum of Applied Arts, Budapest" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000737001> ;
+	edm:isShownAt      <http://gyujtemeny.imm.hu/gyujtemeny/miniatur-kepmas-ismeretlen-ferfi/2955> ;
+	edm:isShownBy      <http://gyujtemeny.imm.hu/web/nagy/69_1352_SHA_7350.jpg> ;
+	edm:object         <http://gyujtemeny.imm.hu/web/nagy/69_1352_SHA_7350.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-09-01T13:30:40.697Z" ;
+	dcterms:modified          "2017-05-11T09:29:31.442Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955#metadataTier>, <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> ;
+	edm:completeness          "5" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2048042_Ag_EU_AthenaPlus_IMM" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgyujtemeny.imm.hu%2Fweb%2Fnagy%2F69_1352_SHA_7350.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> .
+
+<http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:41:18.136Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> .
+
+<https://iiif.europeana.eu/presentation/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://gyujtemeny.imm.hu/web/kis/69_1352_SHA_7350.jpg>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:41:18.136Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048042/Athena_Plus_ProvidedCHO_Museum_of_Applied_Arts__Budapest_2955> .

@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:29:55.928Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> .
+
+<http://data.europeana.eu/organization/1482250000000790091>
+	a               foaf:Organization ;
+	skos:prefLabel  "International Institute of Social History"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-10-03T12:09:39.458Z" ;
+	dcterms:modified          "2017-04-14T09:58:55.343Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho#metadataTier>, <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2022093_Ag_EU_IALHI_1001_IIISH_DutchLabourMovement" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fhdl.handle.net%2F10622%2F30051000069887%3Flocatt%3Dview%3Alevel3&type=IMAGE> .
+
+<http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho>
+	a  edm:ProvidedCHO .
+
+<http://hdl.handle.net/10622/30051000069887?locatt=view:level3>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho/manifest> ;
+	ebucore:fileByteSize    "13176"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "450"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "281"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<https://iiif.europeana.eu/presentation/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671127>
+	a               foaf:Organization ;
+	skos:prefLabel  "The International Association of Labour History Institutions"@en .
+
+<http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:29:55.929Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> .
+
+<http://data.europeana.eu/organization/1482250000000370531>
+	a               foaf:Organization ;
+	skos:prefLabel  "International Association of Labour History Institutions"@en .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/proxy/provider/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho>
+	a                   ore:Proxy ;
+	dc:creator          "Toorop, Jan,draughtsman." ;
+	dc:identifier       "635491" ;
+	dc:language         "nl" ;
+	dc:publisher        "De Nieuwe Amsterdammer)" ;
+	dc:subject          "Portrait.", "Heijermans, Herman." ;
+	dc:title            "Uit: tweede bijlage van het tweede proefnummer van \u0022De Nieuwe Amsterdammer\u0022 van 12 december 1914" ;
+	dc:type             "Print" ;
+	dcterms:extent      "36.5x22.5 cm." ;
+	dcterms:issued      "1914, 12 december" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> .
+
+<http://data.europeana.eu/aggregation/provider/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022093/10622_5AACE16E_C53F_4F43_B39F_636697D42B13_cho> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000790091> ;
+	edm:isShownAt      <http://hdl.handle.net/10622/5AACE16E-C53F-4F43-B39F-636697D42B13> ;
+	edm:isShownBy      <http://hdl.handle.net/10622/30051000069887?locatt=view:level3> ;
+	edm:object         <http://hdl.handle.net/10622/30051000069887?locatt=view:level3> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000370531> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://hdl.handle.net/10622/5AACE16E-C53F-4F43-B39F-636697D42B13>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "26100"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

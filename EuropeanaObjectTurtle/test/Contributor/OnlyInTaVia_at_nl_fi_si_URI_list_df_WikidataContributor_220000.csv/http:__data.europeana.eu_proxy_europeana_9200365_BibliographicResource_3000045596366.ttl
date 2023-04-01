@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8896591>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "187208"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k8896591>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k8896591> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k8896591/manifest> ;
+	ebucore:fileByteSize    "33201"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "663"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FDF5E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k8896591/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:11.349Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k8896591> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k8896591>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8896591> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8896591.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k8896591/f1> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k8896591>
+	a                   ore:Proxy ;
+	dc:contributor      "Grazie, M. E. della. Auteur du texte", "Reinick, Robert (1805-1852). Auteur du texte", "Redwitz, Oscar von (1823-1891). Auteur du texte", "Hamerling, Robert (1830-1889). Auteur du texte" ;
+	dc:creator          "Fischhof, Robert (18..-19.. ; arrangeur). Compositeur" ;
+	dc:description      "Comprend : Viel Traume ; Ungarisches Hirtenlied ; Diebstahl ; Komm gel mit mir" ;
+	dc:format           "Nombre total de vues :  4", "4 fasc. in-fol." ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8896591" ;
+	dc:language         "fre" ;
+	dc:publisher        "Schuberthaus-Verlag (Leipzig)" ;
+	dc:relation         "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb429890244", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb429890244" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, FOL-VM7-6873 (4)" ;
+	dc:title            "Lieder für eine Singstimme und Klavier..." ;
+	dc:type             "Genre musical : Lied" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k8896591> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8896591.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "166"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FDF5E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k8896591>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:33:36.973Z" ;
+	dcterms:modified          "2018-07-23T15:31:34.418Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591> ;
+	edm:completeness          "8" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k8896591> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8896591.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k8896591#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:11.349Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k8896591> .

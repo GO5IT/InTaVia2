@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_040100_040163__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1890> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040100_040163__> .
+
+<http://data.europeana.eu/concept/1890>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/29> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q12518>, <http://id.ndl.go.jp/auth/ndlna/01058855>, <https://id.erfgoed.net/thesauri/erfgoedtypes/1171>, <https://g.co/kg/m/01fdzj>, <http://purl.org/bncf/tid/16569>, <http://data.bnf.fr/ark:/12148/cb11965217k>, <http://id.loc.gov/authorities/names/sh85136296>, <http://vocab.getty.edu/aat/300004847>, <http://www.yso.fi/onto/yso/p6968>, <http://datos.bne.es/resource/XX527089>, <https://www.freebase.com/m/01fdzj>, <http://www.geonames.org/ontology#S.TOWR>, <https://d-nb.info/gnd/4203577-6>, <http://dbpedia.org/ontology/Tower>, <http://babelnet.org/rdf/s00077766n> ;
+	skos:note        "Ihmisen tekemä korkea rakennelma tai korkea rakennuksen osa"@fi, "Stavba s větší výškou než šířkou"@cs, "Bâtiment de forme verticale"@fr, "Инженерное сооружение, отличающееся значительным преобладанием высоты над стороной или диаметром основания"@ru, "Augsta cilindrveida, piramīdveida, konusveida u. tml. patstāvīga celtne vai celtnes, arī iekārtas, ierīces u. tml. sastāvdaļa"@lv, "Estrutura com altura maior do que a largura"@pt, "Rodzaj budowli"@pl, "Hög byggnad"@sv, "Edificio a sviluppo prevalentemente verticale"@it, "Structure with height greater than width"@en, "Høj bygning"@da, "Structură înaltă cu lățime relativ mică"@ro, "Κτίρια στα οποία το ύψος υπερβαίνει το πλάτος"@el, "Estructura alta, normalmente menos ancha que alta"@es, "Bouwwerk"@nl, "Estructura alta, edifici"@ca, "Bauwerk, dessen Höhe ein Mehrfaches seines Durchmessers beträgt"@de ;
+	skos:prefLabel   "Toren"@nl, "Tårn"@da, "Tour"@fr, "Πύργος"@el, "Turm"@de, "Túr"@ga, "Stolp"@sl, "Torn"@sv, "Torn"@et, "Dorre"@eu, "Bokštas"@lt, "Torni"@fi, "Veža"@sk, "Turn"@ro, "Tornis"@lv, "Věž"@cs, "Башня"@ru, "Кула"@bg, "Tower"@en, "Torony"@hu, "Torre"@pt, "Torre"@ca, "Torre"@it, "Torre"@es, "Toranj"@hr, "Wieża"@pl .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:14.398Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040100_040163__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_040100_040163__>
+	a                    ore:Proxy ;
+	dc:creator           "Petőfi ,  Sándor  ( rajzoló )"@hu ;
+	dc:description       "Nagyszalonta (románul Salonta, korábban Salonta Mare, németül Großsalontha) város Romániában Bihar megyében. Neve a szláv Suleta személynévből ered, amely a Sulimir személynévből származik. A főtéren álló csonka torony Szalonta egykori várának őrtornya. A várat 1620 körül kezdték építeni és 1636-ban már készen volt, mert a törökök ellen vívott Szalonta környéki harcokban már említve volt, ez év október 6-án I. Rákóczi György itt verte meg a törököket, akik Bethlen Istvánt akarták visszaültetni Erdély fejedelmi trónjára. Hajdu lakosai 1631-ben és egy évvel később I. Rákóczi Györgytől több pusztára nyernek adományleveleket. 1658-ban a lakosok a várat és a községet, a törökök közeledtének hírére, II. Rákóczi György fejedelem parancsára lerombolták, nehogy török kézbe kerüljön, és a községből minden jószágokkal elmenekülnek. Várából mára csak a Csonka torony maradt fenn, melyben az Arany János Emlékmúzeum található. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         980x743 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/040100/040163   [Metadata]" ;
+	dc:relation          "A csonka torony Szalontán : Petőfi rajza [ http://keptar.oszk.hu/035200/035263]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "History, local history"@hu, "Travelling, tourism"@hu, "Fine arts, visual arts"@hu, "torony"@hu, "épületkép"@hu, "grafika"@hu, "Architecture, building industry"@hu, "múzeumépület (építészet)"@hu ;
+	dc:title             "A szalontai csonka-torony"@hu ;
+	dc:type              "graphics"@hu, "újságrészlet"@hu, "building"@hu ;
+	dcterms:alternative  "Petőfi Sándor rajza 1847-ből"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040100_040163__> .
+
+<http://keptar.oszk.hu/040100/040163/1899_Oldal_228_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "14025"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040100_040163__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/040100/040163> ;
+	edm:object         <http://keptar.oszk.hu/040100/040163/1899_Oldal_228_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:14.399Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040100_040163__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040100_040163__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/040100/040163>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040100_040163__/manifest> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040100_040163__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:05:02.347Z" ;
+	dcterms:modified          "2015-09-14T11:55:27.078Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_040100_040163__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F040100%2F040163%2F1899_Oldal_228_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .

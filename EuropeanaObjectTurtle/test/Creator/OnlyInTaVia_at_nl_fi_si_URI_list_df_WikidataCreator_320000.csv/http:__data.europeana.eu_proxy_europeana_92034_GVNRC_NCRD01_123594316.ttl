@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_123594316>
+	a                   ore:Proxy ;
+	dc:contributor      "Hans Bol" ;
+	dc:creator          "Hans Bol" ;
+	dc:description      "Vindplaats: Dresden, Staatliche Kunstsammlungen", "Litt. : Dawn of the Golden Age. Northern Netherlandish art 1580-1620. o. red. v. G. Luyten, A. van Suchtelen, e. a. Amsterdam/Zwolle 1993." ;
+	dc:format           "quache op perkament" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123594316" ;
+	dc:rights           "Nationaal Gevangenismuseum", "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum" ;
+	dc:source           "[123594316], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Gravenhage ('s)"@nl, "regeringsgebouw"@nl ;
+	dc:title            "De Hofvijver in Den Haag met feesten in verband met de komst van de Graaf van Leicester" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1586" ;
+	dcterms:extent      "12,5 × 58 cm" ;
+	dcterms:isPartOf    "NCRD01", "NCRD", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123594316> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123594316>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:123594316> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123594316&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:32.078Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123594316> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/agent/4557>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bnf.fr/ark:/12148/cb17010821h>, <http://www.wikidata.org/entity/Q999233>, <http://vocab.getty.edu/ulan/500032961>, <http://viaf.org/viaf/51962465>, <https://g.co/kg/m/0261c64>, <https://www.freebase.com/m/0261c64>, <http://dbpedia.org/resource/Hans_Bol>, <http://id.loc.gov/authorities/names/nr94031016>, <http://ta.sandrart.net/-person-1800>, <http://data.bibliotheken.nl/id/thes/p070326703>, <http://www.idref.fr/112580874/id>, <http://id.worldcat.org/fast/347142>, <http://datos.bne.es/resource/XX1209827>, <http://data.bnf.fr/ark:/12148/cb14970038d>, <http://d-nb.info/gnd/139264973> ;
+	rdaGr2:dateOfBirth   "1534-12-26" ;
+	rdaGr2:dateOfDeath   "1593-11-20" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202754> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Joannes Bol"@en, "Joannes Bol"@nl, "Ганс Боль"@ru, "Johannes Bol"@en, "Johannes Bol"@nl, "John Boll"@en, "Jan Bol"@en, "Nach H Boll"@en, "Bol"@en, "Hons bol"@en, "Hanns Boll"@en, "H. Bol"@en, "Jan. Bol"@en, "J. Bol"@en, "Jean Bol"@en, "Jean Bol"@nl, "L'ancien Hans Bol"@en, "H. Boll"@en, "Den Ouden Hans Bol"@en, "John Bol"@en, "Hans Boll"@en ;
+	skos:note            "Pittore e artista fiammingo"@it, "Фламандский живописец"@ru, "Flämischer Maler und Zeichner"@de, "Φλαμανδός καλλιτέχνης"@el, "Vlaamse kunstschilder"@nl, "Flemish painter and draughtsman (1534-1593)"@en, "Graveur, peintre et dessinateur flamand"@fr ;
+	skos:prefLabel       "Hans Bol"@de, "Hans Bol"@sv, "Hans Bol"@pt, "Hans Bol"@en, "Hans Bol"@it, "Hans Bol"@fr, "Hans Bol"@hu, "Hans Bol"@es, "Hans Bol"@pl, "Hans Bol"@da, "Hans Bol"@ca, "Hans Bol"@nl, "Χανς Μπολ"@el, "Ханс Бол"@ru .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123594316>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:11:48.086Z" ;
+	dcterms:modified          "2018-04-05T17:25:49.469Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_123594316> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A123594316%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_123594316>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/4557> ;
+	dc:creator          <http://data.europeana.eu/agent/4557> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1586" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123594316> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123594316&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2289"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123594316#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:32.078Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123594316> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:123594316>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50892"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:JHM01:03199&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6413"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "173"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_JHM01_03199>
+	a                   ore:Proxy ;
+	dc:contributor      "Liebermann, Max" ;
+	dc:description      "Materiaal: papier & inkt" ;
+	dc:format           "vrije grafiek" ;
+	dc:identifier       "08775", "http://resolver.kb.nl/resolve?urn=urn:gvn:JHM01:03199" ;
+	dc:rights           "collectie Arthur en Jetty Polak; for information contact Joods Historisch Museum"@en, "Joods Historisch Museum Amsterdam", "collectie Arthur en Jetty Polak; voor informatie: Joods Historisch Museum"@nl ;
+	dc:source           "08775 (vrije grafiek, gedrukt; ets; drogenaald), grafiek en drukwerk, Joods Historisch Museum, Amsterdam" ;
+	dc:subject          "Amsterdam"@nl, "jodenbuurt"@nl ;
+	dc:title            "Judengasse" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1908" ;
+	dcterms:extent      "15.2 x 10.5 cm; 26.0 x 22.2 cm" ;
+	dcterms:isPartOf    "JHM01", "Beelden van Joods Nederland, 19e en 20e eeuw", "GVN" ;
+	dcterms:issued      "01-04-2004" ;
+	dcterms:medium      "gedrukt; ets; drogenaald", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_JHM01_03199> .
+
+<http://data.europeana.eu/item/92034/GVNRC_JHM01_03199#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:33.982Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_JHM01_03199> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_JHM01_03199>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1908" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_JHM01_03199> .
+
+<http://www.geheugenvannederland.nl/?/en/items/JHM01:03199>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48706"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_JHM01_03199>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/JHM01:03199> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:JHM01:03199&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_JHM01_03199>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_JHM01_03199#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:33.981Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_JHM01_03199> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_JHM01_03199>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:23:06.801Z" ;
+	dcterms:modified          "2018-04-05T16:59:29.002Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_JHM01_03199> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_JHM01_03199> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AJHM01%3A03199%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .

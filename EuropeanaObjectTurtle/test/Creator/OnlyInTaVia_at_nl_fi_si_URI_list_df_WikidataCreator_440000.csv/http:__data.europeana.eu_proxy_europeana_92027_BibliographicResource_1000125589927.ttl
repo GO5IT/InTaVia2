@@ -1,0 +1,143 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92027/BibliographicResource_1000125589927>
+	a                    ore:Proxy ;
+	dc:creator           "Klein, Johann Adam", "Viehbeck, Karl Ludwig Friedrich" ;
+	dc:description       "Kolorierte Radierung von Adam Klein und Wiesner (welcher?) nach einer Zeichnung von Karl Ludwig Viehbeck. \u000ABlatt 49 des Mappenwerkes \u0022Ansichten von Ob. Oesterreich, Salzburg und Tyrol von Carl Viehbeck\u0022, Wien 1821 (auch bekannt unter dem Titel: \u0022Mahlerische Reise durch die schönsten Alpengegenden des Österreichischen Kaiserstaates.\u0022)"@de ;
+	dc:format            "image/jpeg" ;
+	dc:identifier        "http://www.bildarchivaustria.at/Preview/10008099.jpg" ;
+	dc:rights            "ÖNB" ;
+	dc:source            "Osterreichische Nationalbibliothek" ;
+	dc:subject           "Castle"@en, "Austrian Monarchy"@de, "Tirol"@en, "Tirol"@de, "Burg"@de, "Paintings"@de ;
+	dc:title             "Ruine Ehrenberg bei Reutte"@de ;
+	dc:type              "Druckgrafik" ;
+	dcterms:alternative  "Ruine Ehrenberg bei Reitti"@de, "Die Ruinen Eherenberg bei Reitti"@de ;
+	dcterms:created      "1821" ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a0429> ;
+	dcterms:spatial      <http://sws.geonames.org/2767511/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125589927> .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125589927#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:50:05.218Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125589927> .
+
+<http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125589927>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10008099> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/10008099.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/10008099.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125589927#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:50:05.218Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125589927> .
+
+<http://sws.geonames.org/2767511/>
+	a               edm:Place ;
+	skos:altLabel   "Reutte", "Ројте"@sr, "ریوٹ"@pnb, "Reutte in Tirol", "Reutte in Tirol"@de, "Ройте"@bg, "Ройтте"@uk, "Ройтте"@ru, "Ройтте"@kk ;
+	skos:note       "http://en.wikipedia.org/wiki/Reutte" ;
+	skos:prefLabel  "Reutte" ;
+	wgs84_pos:lat   "47.48333" ;
+	wgs84_pos:long  "10.71667" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/92027/BibliographicResource_1000125589927>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1848> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1821" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125589927> .
+
+<http://www.bildarchivaustria.at/Thumbnail/10008099.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://www.bildarchivaustria.at/Preview/10008099.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125589927/manifest> ;
+	ebucore:fileByteSize    "360848"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "560"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125589927>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/1848>
+	a                skos:Concept ;
+	skos:exactMatch  <http://wordnet-rdf.princeton.edu/wn30/02980441-n>, <http://id.ndl.go.jp/auth/ndlna/00571227>, <http://www.yso.fi/onto/yso/p6790>, <http://babelnet.org/rdf/s00016570n>, <https://d-nb.info/gnd/4009104-1>, <http://iconclass.org/41A12>, <http://datos.bne.es/resource/XX526049>, <http://dbpedia.org/ontology/Castle>, <http://id.loc.gov/authorities/names/sh85020702>, <http://vocab.getty.edu/aat/300006891>, <http://purl.org/bncf/tid/17448>, <http://wordnet-rdf.princeton.edu/wn31/102974554-n>, <http://data.bnf.fr/ark:/12148/cb11931695w>, <https://www.freebase.com/m/0d5gx>, <http://www.geonames.org/ontology#S.CSTL>, <http://www.wikidata.org/entity/Q23413>, <https://g.co/kg/m/0d5gx> ;
+	skos:note        "Struchtúr daingnithe a tógadh sa Mheánaois"@ga, "Tip ta' struttura ffortifikata fl-Ewropa, fl-Asja u fil-Lvant Nofsani matul il-Medjuevu min-nobbiltà"@mt, "Здание жилого и фортификационного предназначения"@ru, "Erődítmény"@hu, "Građevinski objekt sagrađen u svrhu obrane"@hr, "Versterkt kasteel, ook wel burcht genoemd"@nl, "Είδος οχύρωσης"@el, "Geschlossener, bewohnbarer Wehrbau"@de, "Budynek warowny"@pl, "Edificación cercada de murallas, baluartes, fosos y otras fortificaciones"@es, "Demeure seigneuriale fortifiée"@fr, "Eraikin bat edo gehiagoko egitura gotortua, Europa, Asia eta Ekialde Hurbilean kokatua"@eu, "Type of fortified structure built in Europe, Asia and the Middle East during the Middle Ages by nobility"@en, "Zgradba, oblika fortifikacije, značilna za obdobje srednjega veka."@sl, "Tip de fortificație"@ro, "Typ opevněné stavby"@cs, "Fortificação construída na Idade Média pela nobreza"@pt, "Complesso architettonico fortificato tipico del Medioevo"@it, "Estructura fortificada construïda a l'edat mitjana per la noblesa a Europa i a l'Orient Mitjà"@ca ;
+	skos:prefLabel   "Hrad"@sk, "Hrad"@cs, "Pilis"@lt, "Borg"@sv, "Borg"@da, "Burg"@de, "Castle"@en, "Grad"@sl, "Linnus"@et, "Замок"@ru, "Château fort"@fr, "Kastell"@mt, "Castillo"@es, "Utvrda"@hr, "Vár"@hu, "Κάστρο"@el, "Castell"@ca, "Castello"@it, "Viduslaiku pils"@lv, "Burcht"@nl, "Zamek"@pl, "Замък"@bg, "Castelo"@pt, "Linna"@fi, "Gaztelu"@eu, "Caisleán"@ga, "Castel"@ro .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10008099>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125589927/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125589927>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-12T16:22:10.618Z" ;
+	dcterms:modified          "2015-06-15T12:27:33.482Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927#contentTier>, <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92027/BibliographicResource_1000125589927> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92027_Ag_EU_TEL_a0429E.xml" ;
+	edm:landingPage           <https://www.europeana.eu/item/92027/BibliographicResource_1000125589927> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F10008099.jpg&type=IMAGE> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

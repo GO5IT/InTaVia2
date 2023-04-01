@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9059793j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "10288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "180"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9059793j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:40:38.142Z" ;
+	dcterms:modified          "2018-07-23T15:39:57.606Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b9059793j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b9059793j.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9059793j/manifest> ;
+	ebucore:fileByteSize    "14536"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "363"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059793j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b9059793j> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059793j/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b9059793j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9059793j/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.938Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059793j> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b9059793j>
+	a                   ore:Proxy ;
+	dc:creator          "Lassus, Roland de (1532-1594). Compositeur" ;
+	dc:date             "1576" ;
+	dc:description      "Appartient à l’ensemble documentaire : Brossard1", "Présentation musicale : Parties", "Appartient à l’ensemble documentaire : RISMImp", "Comprend : Fol. 2 v° - Parce mihi Domine (à 4 v.) - Fol. 3 v° - Peccavi. Quid faciam (à 4 v.) - Fol. 3 v° - Taedet animarn mearn (à 4 v.) - Fol. 3 v° - Iudica mihi ((secunda pars) ; à 4 v.) - Fol. 5 v° - Nunquid sicut dies hominis ((tertia pars) ; à 4 v.) - Fol. 5 v° - Manus tuae Domine (à 4 v.) - Fol. 6 v° - Nonne sicut lac ((secunda pars) ; à 4 v.) - Fol. 6 v° - Responde mihi (à 4 v.) - Fol. 7 v° - Scribis enim contra me ((secunda pars) ; à 4 v.) - Fol. 7 v° - Homo natus de muliere (à 4 v.) - Fol. 8 r° - Et dignum ducis ((secunda pars) ; à 4 v.) - Fol. 8 v° - Constituisti terminos ejus ((tertia pars) ; 4 v.) - Fol. 9 r° - Quis mihi hoc tribuat (à 4 v.) - Fol. 9 v° - Vocabis me ((secunda pars) ; à 4 v.) - Fol. 10 r° - Spiritus meus attenuabitur (à 4 v.) - Fol. 10 v° - Libera me Domine ((secunda pars) ; à 4 v.) - Fol. 11 r° - Si sustinuero ((tertia pars) ; à 4 v.) - Fol. 11 v° - Pelli meae consumptis (à 4 v.) - Fol. 12 r° - Quare persequimini ((secunda pars) ; à 4 v.) - Fol. 12 v° - Scio enim ((tertia pars) ; à 4 v.) - Fol. 13 r° - Quare de vulva (à 4 v.) - Fol. 13 v° - Dimitte me ergo ((secunda pars) ; à 4 v.) - Fol. 14 r° - Fratres sobrii estote (à 4 v.) - Fol. 14 v° - Cognovi Domine (à 4 v.) - Fol. 15 r° - Veniant mihi ((secunda pars) ; à 4 v.) - Fol. 15 v° - Iniquos odio habui (à 4 v.) - Fol. 16 r° - Declinate a me maligni ((secunda pars) ; à 4 v.) - Fol. 16 v° - Tribulationem et dolorem (à 4 v.) - Fol. 17 r° - Revertere anima mea ((secunda pars) ; à 4 v.) - Fol. 17 v° - Inclina Domine aurem tuam (à 4 v.) - Fol. 18 v° - Deus in nomine tuo (à 4 v.) - Fol. 19 r° - Ecce enim Deus ((secunda pars) ; à 4 v.) - Fol. 19 v° - Laetentur coeli (à 4 v.) - Fol. 20 r° - Tunc exultabunt ((secunda pars) ; à 4 v.) - Fol. 20 v° - In convertendo Dominus (à 8 v.) - Fol. 21 v° - Convertere Domine captivitatem ((secunda pars) ; à 8 v.) - Fol. 22 v° - Confitebor tibi Domine (à 8 v.) - Fol. 23 v° - Levavi oculos meos (à 8 v.)" ;
+	dc:format           "Nombre total de vues :  192", "4 vol. in-4° obl., 140 x 200 mm., 24 ff. chacun" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b9059793j" ;
+	dc:language         "fre" ;
+	dc:publisher        "apud P. Haultinum (Rupellae)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43095681f" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Fonds du service reproduction, RESVM1-32" ;
+	dc:subject          "Motets -- 16e siècle"@fre ;
+	dc:title            "MODVLI. // Quatuor, et octo vocum, // Partim è Quiritationibus Iobi, partim è psalmis // Davidis, et aliis scripturae locis desumpti, // Orlando Lassusio auctore. // // // Rupellae. Apud P. Haultinum // 1576" ;
+	dc:type             "Genre musical : motet" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059793j> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b9059793j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1576" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9059793j> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059793j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.939Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059793j> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9059793j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "198057"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

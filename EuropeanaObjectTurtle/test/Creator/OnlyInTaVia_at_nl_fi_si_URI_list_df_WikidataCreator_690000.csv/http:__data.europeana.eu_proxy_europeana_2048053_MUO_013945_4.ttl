@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_013945_4/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://vocab.getty.edu/aat/300054067>
+	a               skos:Concept ;
+	skos:altLabel   "中空成形"@zh-hant, "moldeo por soplado"@es, "geblazen"@nl, "molding, blow"@en-us, "blow-moulded"@en-gb ;
+	skos:broader    <http://vocab.getty.edu/aat/300053134> ;
+	skos:note       "http://vocab.getty.edu/aat/scopeNote/89954" ;
+	skos:prefLabel  "chui mo fa"@zh-latn-pinyin-x-notone, "blazen (modelleren)"@nl, "puhanje u kalup", "moldeado por inyección de aire"@es, "chuī mó fǎ"@zh-latn-pinyin-x-hanyu, "blow moulding"@en-gb, "吹模法"@zh-hant, "blow molding"@en-us, "ch'ui mo fa"@zh-latn-wadegile .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_013945_4>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_013945_4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=24373> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=24373> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=24373> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_013945_4>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/84> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1965" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_013945_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_013945_4> .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_013945_4>
+	a                   ore:Proxy ;
+	dc:creator          "Wirkkala, Tapio" ;
+	dc:date             "1965" ;
+	dc:description      "Čaša za whiskey valjkastog oblika s jako zadebljanim dnom i konkavno uvijenim oplošjem. S donje strane dna plitko, okruglo udubljenje." ;
+	dc:format           "image/jpg", "6.3 cm" ;
+	dc:identifier       "MUO_013945_4" ;
+	dc:subject          "stalni postav 1995" ;
+	dc:title            "Romantica" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Glass" ;
+	dcterms:medium      "staklo, bezbojno", <http://vocab.getty.edu/aat/300054067> ;
+	dcterms:spatial     "Finska", "Iittala" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_013945_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_013945_4> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_013945_4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:24.099Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_013945_4> .
+
+<http://data.europeana.eu/item/2048053/MUO_013945_4>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2048053/MUO_013945_4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:24.098Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_013945_4> .
+
+<http://athena.muo.hr/api/?semantic=representation&id=24373>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_013945_4/manifest> ;
+	ebucore:fileByteSize    "6070"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "203"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/place/84>
+	a               edm:Place ;
+	owl:sameAs      <http://www.wikidata.org/entity/Q33>, <https://libris.kb.se/1zcfdxqk1s19qp1>, <http://zbw.eu/stw/descriptor/16982-5>, <https://d-nb.info/gnd/18925-X>, <http://viaf.org/viaf/132440532>, <https://g.co/kg/m/02vzc>, <http://id.ndl.go.jp/auth/ndlna/00563226>, <https://livedata.bibsys.no/authority/90149623>, <http://id.loc.gov/authorities/names/n79065711>, <https://sws.geonames.org/660013/>, <https://www.freebase.com/m/02vzc>, <http://www.idref.fr/026437171/id>, <http://datos.bne.es/resource/XX451000>, <http://dbpedia.org/resource/Finland>, <https://d-nb.info/gnd/4017243-0>, <http://vocabularies.unesco.org/thesaurus/concept10480>, <http://babelnet.org/rdf/s00034608n>, <http://vocab.getty.edu/tgn/1000069>, <http://viaf.org/viaf/157831164>, <http://id.nlm.nih.gov/mesh/D005387>, <http://www.yso.fi/onto/ysa/Y94426>, <http://viaf.org/viaf/2759153532459148820002>, <http://data.bnf.fr/ark:/12148/cb15238532r>, <http://libris.kb.se/resource/auth/145067>, <http://id.worldcat.org/fast/1205503>, <http://data.bnf.fr/ark:/12148/cb118684913>, <http://data.bnf.fr/ark:/12148/cb11931409x>, <http://www.idref.fr/027225984/id>, <http://www.yso.fi/onto/yso/p94426> ;
+	skos:altLabel   "Δημοκρατία της Φινλανδίας"@el, "Finl."@fr, "Republik Finnland"@de, "La République de Finlande"@fr, "FI"@nl, "FI"@fr, "Suomen tasavalta"@en, "Suomen tasavalta"@de, "Suomen tasavalta"@fi, "República de Finlàndia"@ca, "Fin."@fr, "República da Finlândia"@pt, "República de Finlandia"@es, "Finnia"@en, "Republic of Finland"@en, "Land of Thousand Lakes"@en, "Република Финландия"@bg, "Krajina tisícich jazier"@sk, "fi"@en, "Finland"@de, "Fínska republika"@sk, "Suomi"@sk, "Suomi"@en, "Suomi"@de, "Suomi"@ru, "Finlandia"@ca, "Republiek Finland"@nl, "Republikken Finland"@da, "Republika Finska"@hr, "FIN"@nl, "FIN"@en, "Суоми"@ru, "Soome Vabariik"@et, "Repubblika tal-Finlandja"@mt, "Republiken Finland"@en, "Republiken Finland"@de, "Republiken Finland"@sv, "Финляндская Республика"@ru, "Šuomi"@en ;
+	skos:note       "Štát v severnej Európe"@sk, "Stat în Europa de Nord"@ro, "Государство в Северной Европе"@ru, "Pays d'Europe du Nord"@fr, "País d'Europa"@ca, "Republik i Nordeuropa"@sv, "Staat in Nordeuropa"@de, "Država u sjeveroistočnoj Europi"@hr, "Państwo w Europie Północnej"@pl, "Land i Nordeuropa"@da, "Pajjiż fit-Tramuntana tal-Ewropa"@mt, "Country in Northern Europe"@en, "Stato dell'Europa settentrionale, membro dell'Unione Europea"@it, "País de Europa"@es, "Χώρα της βόρειας Ευρώπης"@el, "Държава в Северна Европа"@bg, "Állam Észak-Európában"@hu, "Vabariik Põhja-Euroopas"@et, "País na Europa"@pt, "Valsts Ziemeļeiropā"@lv, "Valtio Pohjois-Euroopassa"@fi, "Land in Noord-Europa"@nl, "Stát v severní Evropě"@cs ;
+	skos:prefLabel  "Finland"@sv, "Finland"@en, "Finland"@da, "Finland"@nl, "Soome"@et, "Suomija"@lt, "Finsko"@cs, "Finlândia"@pt, "Finnország"@hu, "Finlanda"@ro, "Finlandia"@it, "Finlandia"@es, "Finlandia"@eu, "Finlandia"@pl, "An Fhionlainn"@ga, "Финландия"@bg, "Φινλανδία"@el, "Somija"@lv, "Fínsko"@sk, "Suomi"@fi, "Finnland"@de, "Finska"@hr, "Finska"@sl, "Finlande"@fr, "Finlàndia"@ca, "Finlandja"@mt, "Финляндия"@ru ;
+	wgs84_pos:lat   "65.0" ;
+	wgs84_pos:long  "27.0" .
+
+<http://athena.muo.hr/?object=detail&id=24373>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "12292"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_013945_4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:45:28.396Z" ;
+	dcterms:modified          "2015-11-03T10:45:28.396Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_013945_4#contentTier>, <http://data.europeana.eu/item/2048053/MUO_013945_4#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_013945_4> ;
+	edm:completeness          "8" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_013945_4> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D24373&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801387t>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:20.173Z" ;
+	dcterms:modified          "2018-03-26T12:26:10.105Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801387t> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801387t.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:41.541Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801387t> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801387t>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801387t> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801387t.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:41.542Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801387t> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801387t/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801387t>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "225622"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801387t.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4013"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801387t>
+	a                   ore:Proxy ;
+	dc:creator          "Giorgetti, Giorgio (1922-....). Baryton (voix)", "Pizarrini, Miriam. Alto (voix)", "Capecchi, Renato (1923-1998). Baryton (voix)", "Tucker, Richard (1913-1975). Ténor", "Di Stasio, Anna (1936?-....). Mezzo-soprano", "Molinari Pradelli, Francesco (1911-1996). Direction d'orchestre", "Pasella, Guido (19..-.... ; artiste lyrique). Basse (voix)", "Pandano, Vittorio (1919-....). Ténor", "Teatro di San Carlo (Naples, Italie). Coro. Interprète", "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Teatro di San Carlo (Naples, Italie). Orchestra. Interprète" ;
+	dc:date             "1960" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Comprend : Acte I : \u0022Questa o quella\u0022 (Duc de Mantoue) - Partite ?... Crudele (Duc, Comtesse Ceprano, Comte Ceprano, Rigoletto, Borsa et Choeur) - Gran nuova ! Gran nuova ! Che avenne ? (Marullo et choeur) - Figlia ! - Mio padre (Duo Rigoletto et Gilda) - Acte 2 : \u0022La ra, la ra\u0022 - Cortigiani, vil razza (Rigoletto) - Acte 3 : \u0022La donna e mobile\u0022 (Duc de Mantoue) - Un di, se ben rammentomi - Bella figlia dell'amore (Gilda, Maddalena, Duc de Mantoue et Rigoletto) - V'ho ingannato\u0022 (Gilda et Rigoletto) / Renato CAPECCHI baryton (Rigoletto) - Richard TUCKER, ténor (Duc de Mantoue) - Giorgio Giorgetti baryton (Marullo) - Vittorio Pandano, ténor (Borsa) - Guido Pasella basse (Comte Ceprano) - Anna di Stasio, mezzo soprano (Comtesse Ceprano) - Gianna d'ANGELO, soprano (Gilda) - Miriam PIRAZZINI - contralto (Maddalena) - Choeur et Orchestre du \u0022Teatro di San Carlo di Napoli\u0022 dir. Francesco MOLINARI-PRADELLI", "Titre uniforme : [Rigoletto]. Choix" ;
+	dc:format           "disque microsillon"@fre, "multipart/mixed", "1 disque : 33 t, stéréo ; 30 cm", "disc"@eng ;
+	dc:identifier       "Numéro commercial : Philips 835050AY", "http://gallica.bnf.fr/ark:/12148/bpt6k8801387t" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37979099d"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-12051" ;
+	dc:title            "RIGOLETTO / Giuseppe VERDI" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801387t> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801387t>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801387t> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801387t> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

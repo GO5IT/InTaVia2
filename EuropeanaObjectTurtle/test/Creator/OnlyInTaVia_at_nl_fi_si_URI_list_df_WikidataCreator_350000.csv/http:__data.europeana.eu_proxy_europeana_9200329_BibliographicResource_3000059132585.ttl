@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:02:49.671Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200329/BibliographicResource_3000059132585> .
+
+<http://data.europeana.eu/proxy/provider/9200329/BibliographicResource_3000059132585>
+	a                   ore:Proxy ;
+	dc:creator          "Henri Pirenne" ;
+	dc:description      "Exemplaire photocopié, l'original est conservé aux Archives de l'ULB.", "Extrait de : Revue historique, t. 53, 1893, pp. 1-32." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "oai:ulbcat:744362" ;
+	dc:language         "fr" ;
+	dc:publisher        "s.n." ;
+	dc:title            "L'origine des constitutions urbaines au moyen âge" ;
+	dc:type             "Analitic monographic"@en ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1185a> ;
+	dcterms:issued      "1893" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200329/BibliographicResource_3000059132585> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200329/BibliographicResource_3000059132585>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/62307> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1893" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200329/BibliographicResource_3000059132585> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200329/BibliographicResource_3000059132585>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-02T08:39:08.045Z" ;
+	dcterms:modified          "2015-09-17T08:21:30.123Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585#contentTier>, <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585> ;
+	edm:completeness          "8" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200329_Ag_EU_TEL_a1185a_ULB_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200329/BibliographicResource_3000059132585> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdigistore.bib.ulb.ac.be%2F2006%2Fa744362_000_f.pdf&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000364483>
+	a               foaf:Organization ;
+	skos:prefLabel  "Université Libre de Bruxelles"@fr, "Free University of Brussels"@en .
+
+<http://digistore.bib.ulb.ac.be/2006/a744362_000_f.pdf>
+	a                      edm:WebResource ;
+	ebucore:fileByteSize   "1555028"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://creativecommons.org/publicdomain/mark/1.0/> ;
+	edm:spatialResolution  "-1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/agent/62307>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/83> ;
+	owl:sameAs                     <http://dbpedia.org/resource/Henri_Pirenne>, <http://id.worldcat.org/fast/15294>, <http://lod.nl.go.kr/resource/KAC199621778>, <http://nlg.okfn.gr/resource/authority/record109152>, <https://www.freebase.com/m/01g5sc>, <http://id.ndl.go.jp/auth/ndlna/00452885>, <https://g.co/kg/m/01g5sc>, <http://www.wikidata.org/entity/Q312501>, <https://livedata.bibsys.no/authority/90118863>, <http://data.bnf.fr/ark:/12148/cb13091606d>, <http://d-nb.info/gnd/118792296>, <http://viaf.org/viaf/44435542>, <http://id.loc.gov/authorities/names/n50044408>, <http://datos.bne.es/resource/XX890040>, <http://data.bibliotheken.nl/id/thes/p069955476>, <http://openlibrary.org/works/OL149505A>, <http://www.idref.fr/027074986/id> ;
+	rdaGr2:dateOfBirth             "1862-12-23" ;
+	rdaGr2:dateOfDeath             "1935-10-24" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/202466> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/79> ;
+	skos:altLabel                  "J.H.O.L.M. Pirenne"@ca, "J.H.O.L.M. Pirenne"@nl, "J.H.O.L.M. Pirenne"@da, "J.H.O.L.M. Pirenne"@ro, "J.H.O.L.M. Pirenne"@pl, "J.H.O.L.M. Pirenne"@ga, "Пиренн Анри"@ru, "J.H.O.L.M. Pirenne"@sl, "J.H.O.L.M. Pirenne"@sk, "J.H.O.L.M. Pirenne"@cs, "J.H.O.L.M. Pirenne"@et, "J.H.O.L.M. Pirenne"@es, "J.H.O.L.M. Pirenne"@hu, "J.H.O.L.M. Pirenne"@fr, "Pirenne"@sv, "J.H.O.L.M. Pirenne"@it, "J.H.O.L.M. Pirenne"@de, "J.H.O.L.M. Pirenne"@sv, "J.H.O.L.M. Pirenne"@fi, "J.H.O.L.M. Pirenne"@pt, "J.H.O.L.M. Pirenne"@en, "J.H.O.L.M. Pirenne"@hr, "Пиренн"@ru, "Pirennes tes"@sv, "Анри Пиренн"@ru, "Jean Henri Otto Lucien Marie Pirenne"@ca, "Jean Henri Otto Lucien Marie Pirenne"@nl, "Jean Henri Otto Lucien Marie Pirenne"@da, "Jean Henri Otto Lucien Marie Pirenne"@ro, "Jean Henri Otto Lucien Marie Pirenne"@pl, "Jean Henri Otto Lucien Marie Pirenne"@ga, "Jean Henri Otto Lucien Marie Pirenne"@sl, "Jean Henri Otto Lucien Marie Pirenne"@sk, "Jean Henri Otto Lucien Marie Pirenne"@cs, "Jean Henri Otto Lucien Marie Pirenne"@et, "Jean Henri Otto Lucien Marie Pirenne"@es, "Jean Henri Otto Lucien Marie Pirenne"@hu, "Jean Henri Otto Lucien Marie Pirenne"@fr, "Jean Henri Otto Lucien Marie Pirenne"@it, "Jean Henri Otto Lucien Marie Pirenne"@hr, "Jean Henri Otto Lucien Marie Pirenne"@de, "Jean Henri Otto Lucien Marie Pirenne"@sv, "Jean Henri Otto Lucien Marie Pirenne"@fi, "Jean Henri Otto Lucien Marie Pirenne"@pt, "Jean Henri Otto Lucien Marie Pirenne"@en, "Henrie Pirenne"@nl ;
+	skos:note                      "Belgisch historicus (1862-1935)"@nl, "Istoric belgian"@ro, "Staraí Beilgeach"@ga, "Storico belga"@it, "Belga történész"@hu, "Belgia ajaloolane"@et, "Belgický historik"@cs, "Historien belge"@fr, "Belgischer Historiker"@de, "Belgian historian (1862-1935)"@en, "Historiador belga"@ca, "Historiador belga"@es, "Historiador belga"@pt ;
+	skos:prefLabel                 "Пиренн, Анри"@ru, "Анри Пирен"@bg, "Henri Pirenne"@fi, "Henri Pirenne"@pt, "Henri Pirenne"@en, "Henri Pirenne"@hr, "Henri Pirenne"@de, "Henri Pirenne"@sv, "Henri Pirenne"@it, "Henri Pirenne"@fr, "Henri Pirenne"@hu, "Henri Pirenne"@es, "Henri Pirenne"@et, "Henri Pirenne"@cs, "Ανρί Πιρέν"@el, "Henri Pirenne"@sk, "Henri Pirenne"@sl, "Henri Pirenne"@ga, "Henri Pirenne"@pl, "Henri Pirenne"@ro, "Henri Pirenne"@da, "Henri Pirenne"@ca, "Henri Pirenne"@nl .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200329/BibliographicResource_3000059132585>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364483> ;
+	edm:isShownBy      <http://digistore.bib.ulb.ac.be/2006/a744362_000_f.pdf> ;
+	edm:object         <http://digistore.bib.ulb.ac.be/2006/a744362_000_f.pdf> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200329/BibliographicResource_3000059132585#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:02:49.670Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200329/BibliographicResource_3000059132585> .

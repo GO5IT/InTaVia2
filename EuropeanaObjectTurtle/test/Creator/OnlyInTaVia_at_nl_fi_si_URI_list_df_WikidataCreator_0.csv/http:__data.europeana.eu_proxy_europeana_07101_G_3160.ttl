@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/07101/G_3160>
+	a                  ore:Aggregation ;
+	dc:rights          "Slovenská národná galéria, SNG" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07101/G_3160> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:isShownAt      <http://www.webumenia.sk/dielo/SVK:SNG.G_3160> ;
+	edm:object         <http://www.webumenia.sk/cedvuweb/image/SVK_SNG.G_3160.jpeg?id=SVK:SNG.G_3160> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.webumenia.sk/cedvuweb/image/SVK_SNG.G_3160.jpeg?id=SVK:SNG.G_3160>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "223517"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "529"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/07101/G_3160>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/07101/G_3160>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/66837> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/G_3160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07101/G_3160> .
+
+<http://data.europeana.eu/proxy/provider/07101/G_3160>
+	a                   ore:Proxy ;
+	dc:creator          "Bloemaert, Abraham", "Bloemaert, Frederick" ;
+	dc:date             "1640/1660" ;
+	dc:format           "engraving"@eng, "rytina"@slk ;
+	dc:identifier       "G 3160" ;
+	dc:subject          "figurative composition"@eng, "figurálna kompozícia"@slk ;
+	dc:title            "Leto" ;
+	dc:type             "DEF", "originál", "Image", "grafika, voľná"@slk ;
+	dcterms:extent      "výška 14.8 cm;šírka 10.5 cm;výška 16.3 cm;šírka 10.8 cm" ;
+	dcterms:medium      "papier, zažltlý"@slk ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/G_3160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07101/G_3160> .
+
+<http://www.webumenia.sk/oai-pmh/getimage/SVK:SNG.G_3160>
+	a  edm:WebResource .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.G_3160>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "34443"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/07101/G_3160#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:18.576Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/G_3160> .
+
+<http://data.europeana.eu/aggregation/europeana/07101/G_3160>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-15T10:06:25.705Z" ;
+	dcterms:modified          "2018-03-12T15:42:14.048Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07101/G_3160#metadataTier>, <http://data.europeana.eu/item/07101/G_3160#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07101/G_3160> ;
+	edm:completeness          "5" ;
+	edm:country               "Slovakia" ;
+	edm:datasetName           "07101_Ag_SK_EuropeanASNG" ;
+	edm:landingPage           <https://www.europeana.eu/item/07101/G_3160> ;
+	edm:language              "sk" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.webumenia.sk%2Fcedvuweb%2Fimage%2FSVK_SNG.G_3160.jpeg%3Fid%3DSVK%3ASNG.G_3160&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/07101/G_3160#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:18.576Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/G_3160> .
+
+<http://data.europeana.eu/agent/66837>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/201> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/37510>, <http://data.europeana.eu/agent/37511>, <http://data.europeana.eu/agent/120628>, <http://data.europeana.eu/agent/161948> ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500007342>, <https://g.co/kg/m/03fz_9>, <http://openlibrary.org/works/OL7235930A>, <http://dbpedia.org/resource/Abraham_Bloemaert>, <http://data.bnf.fr/ark:/12148/cb124188501>, <http://viaf.org/viaf/77114225>, <http://id.worldcat.org/fast/333564>, <http://datos.bne.es/resource/XX1066542>, <http://d-nb.info/gnd/118910906>, <http://ta.sandrart.net/-person-2350>, <http://data.bibliotheken.nl/id/thes/p070044953>, <http://id.loc.gov/authorities/names/nr93052276>, <http://www.wikidata.org/entity/Q329811>, <http://www.idref.fr/033309302/id>, <https://www.freebase.com/m/03fz_9> ;
+	rdaGr2:dateOfBirth   "1565-01-04" ;
+	rdaGr2:dateOfDeath   "1651-01-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40733> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40278> ;
+	skos:altLabel        "Abraham Bloemaart"@hu, "Abraham Blommert den Ouden"@en, "Abraham Blomert"@en, "Blomcart"@en, "Abraham Blommaert den Ouden"@en, "Bloemarert"@en, "Abraham Van Bloemart"@en, "Blovemart"@en, "Bloemaërt"@en, "Ab. Blomart"@en, "Abraham Bloemmert"@en, "Abraham Blumard"@en, "A. Bloemært"@en, "Bloumart"@en, "Abraham Blomhardt"@en, "Abrah. Blomard"@en, "Abraham Blommart"@en, "Abraham Bloamert"@en, "Abraham Bommaert"@en, "Abraham Blommaert"@cs, "Abraham Blommaert"@en, "A. Bloemarh"@en, "Abr. Bloemhart"@en, "Ab. Bloemart"@en, "Abraham Bloemaat"@en, "A. Bloemmart"@en, "Блумарт Авраам"@ru, "A. Bloemar"@en, "Bloemaert abraham"@en, "Blomant"@en, "Bloemars"@en, "Abrah. Blömart"@en, "A. Bloemaard"@en, "Bloemaers"@en, "A. Bloemart"@en, "Abm. Bloemart"@en, "Adam Bloémaert"@en, "Arraham Bloemaert"@en, "Abraham Bloemert"@en, "Blomeart"@en, "Abrah. Bloemaert"@en, "Abraham Blomaer"@en, "Abraham Bloemar"@en, "Abraham van bloemaert"@en, "A. Blommaer"@en, "Den ouden Blommert"@en, "Abraham Blommaerts"@en, "Abraham bloemaert"@es, "Abrah. Bloemert"@en, "Abraham von Bloemaet"@en, "Abraham Blomaert"@en, "Ab. Bloemaert"@en, "Bloemmaert"@en, "Abraham Blomeart"@en, "Blommaert"@en, "Bloëmaert"@en, "Bloémard"@en, "Abr. Bloemaert"@en, "Blomard"@en, "Abraham Bloemaere"@en, "A. Bloemaart"@en, "A. Bloemert"@en, "A. Bloemaert"@en, "Blommart"@en, "Abraham Bloemarth"@en, "Bloemmert"@en, "A. Blomard"@en, "Abr. Blomard"@en, "Abraham Blomart"@en, "Abraham Blomart"@cs, "Blomarte"@en, "Bloomart"@en, "A. Blommert"@en, "A. bloemart"@en, "A. Bloomart"@en, "A. Bloemäart"@en, "Abraham Blummard"@en, "Bloemaart"@en, "Blomart"@en, "A Bloemart"@en, "Abr. Blomardt"@en, "Blomardt"@en, "Bloemaert, Abraham"@sv, "Abraham Blommert"@en, "Abrahame Bloemart"@en, "A. Blomart"@en, "Abr. Blomart"@en, "Bloëmart"@en, "Bloemar"@en, "Blommert"@en, "Abraham Bloemart"@en, "A. Blomert"@en, "Abr. Bloemart"@en, "Abrah. Blomaert"@en, "Braham Bloemaert"@en, "Arblomar"@en, "Blommouth"@en, "Abraham van Bloemaert"@en, "Blomaert"@en, "Van Bloemart"@en, "A. Bloemmaert"@en, "Abr. Blomaert"@en, "Blomert"@en, "A. blomaert"@en, "Bloemart"@en, "Bloemaert"@de, "Bloemaert"@en, "Abrah. Bloemaart"@en, "Bolemaert"@en, "Blumard"@en, "A. Bloemaers"@en, "Блумарт А."@ru, "Abraham Cornelisz. Bloemaert"@nl, "De Blomaert"@en, "Abramo Bloemart"@en, "Ab. Blomaert"@en, "A. Bloomaert"@en, "Den ouden Blommaert"@en, "Bloemant"@en, "Abr. bloemaert"@en, "Abraham blomaert"@en, "Blomaerts"@en, "A. Blomhaert"@en, "Abraham bloemart"@en, "An blomar"@en, "Bloemart. A."@en, "A. Blomaert"@en, "A. Blommaert"@en, "Blommer"@en, "Abraham Bloemaart"@en, "Bloomant"@en, "Abraham Bloemaart"@cs, "Abrm Bloemart"@en, "Блумарт Абрахам"@ru ;
+	skos:note            "Nederländsk målare"@sv, "Pittore olandese"@it, "Holenderski malarz i rytownik"@pl, "Nizozemský malíř"@cs, "Peintre et graveur néerlandais"@fr, "Dutch painter and engraver (1565-1651)"@en, "Нидерландский художник"@ru, "Hollandsk kunstmaler og grafiker med speciale i kobberstik"@da, "Holland festő és rézmetsző"@hu, "Niederländischer Maler"@de, "Nederlands kunstschilder (1564-1651)"@nl ;
+	skos:prefLabel       "Άμπραχαμ Μπλούμερτ"@el, "Abraham Bloemaert"@nl, "Abraham Bloemaert"@ca, "Abraham Bloemaert"@da, "Abraham Bloemaert"@pl, "Abraham Bloemaert"@sl, "Abraham Bloemaert"@sk, "Abraham Bloemaert"@cs, "Abraham Bloemaert"@es, "Abraham Bloemaert"@hu, "Abraham Bloemaert"@it, "Abraham Bloemaert"@en, "Abraham Bloemaert"@lt, "Abraham Bloemaert"@pt, "Abraham Bloemaert"@sv, "Abraham Bloemaert"@de, "Abraham Bloemaert"@fr, "Абрахам Блумарт"@ru .
+
+<http://data.europeana.eu/organization/1482250000000363675>
+	a               foaf:Organization ;
+	skos:prefLabel  "Galeria Nacional Eslovaca"@ca, "Galeria Nacional Eslovaca"@pt, "Σλοβακική Εθνική Πινακοθήκη"@el, "Slovenská národní galerie"@cs, "Slovenská Národná Galéria"@nl, "Slovenská národná galéria"@sk, "Slovak national gallery"@en, "Galleria nazionale slovacca"@it, "Slovāku Nacionālā galerija"@lv, "Szlovák Nemzeti Galéria"@hu, "Национална галерия на Словакия"@bg, "Słowacka Galeria Narodowa"@pl, "Slowakische Nationalgalerie"@de, "Словацкая национальная галерея"@ru, "Galerie nationale slovaque"@fr .

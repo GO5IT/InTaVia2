@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/concept/1899>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.loc.gov/authorities/names/sh85046782>, <http://purl.org/bncf/tid/26879>, <http://d-nb.info/gnd/4016507-3>, <http://vocab.getty.edu/aat/300002526>, <http://datos.bne.es/resource/XX529858>, <https://d-nb.info/gnd/4016507-3>, <http://www.wikidata.org/entity/Q183061>, <http://www.yso.fi/onto/yso/p15728>, <http://iconclass.org/41A31>, <https://g.co/kg/m/01x314>, <https://www.freebase.com/m/01x314> ;
+	skos:note        "Gestalteter, oft repräsentativer Teil der sichtbaren Hülle oder Außenhaut eines Gebäudes"@de, "Exterior side of a building, usually the front but not always"@en, "Parte exterior de un edificio"@es, "Part exterior d'un edifici"@ca, "Główna, efektowna elewacja budynku"@pl, "Εξωτερική όψη ενός κτιρίου"@el, "Face extérieure d’un bâtiment"@fr, "Parete di edificio rivolta all'esterno"@it, "Ēkas ārējā siena, parasti ar galveno ieeju"@lv, "Наружная лицевая сторона здания"@ru, "Voormuur van gebouw"@nl, "Rakennuksen ulkopinta"@fi ;
+	skos:prefLabel   "Fassade"@de, "Fațadă"@ro, "Fasāde"@lv, "Fasadas"@lt, "Aghaidh"@ga, "Façana"@ca, "Fachada"@pt, "Fachada"@es, "Oromzat"@hu, "Facciata"@it, "Façade"@fr, "Façade"@en, "Fasada"@hr, "Fasada"@sl, "Fasada"@pl, "Gevel"@nl, "Fasáda"@sk, "Fasáda"@cs, "Julkisivu"@fi, "Πρόσοψη"@el, "Фасада"@bg, "Фасад"@ru, "Fasad"@sv, "Fatxada"@eu, "Facade"@da, "Fassaad"@et ;
+	skos:related     <http://data.europeana.eu/concept/29> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_106551>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:35.577Z" ;
+	dcterms:modified          "2018-04-05T18:10:47.089Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_106551> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A106551%26role%3Dthumbnail&type=IMAGE> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:106551>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49677"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:106551&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "42169"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "105"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_106551#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:30.546Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_106551> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_106551#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:30.545Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_106551> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_106551>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_106551>
+	a                   ore:Proxy ;
+	dc:contributor      "Breitner, George Hendrik" ;
+	dc:creator          "Breitner, George Hendrik" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:106551", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:106551" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:106551], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "stadsgezicht"@nl, "grachtenhuis"@nl, "gracht"@nl, "stenen brug"@nl, "topografische voorstelling"@nl, "gevel"@nl ;
+	dc:title            "Amsterdam, Rokin" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1872-1923" ;
+	dcterms:isPartOf    "GVN", "WITS01", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_106551> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_106551>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1899> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_106551> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_106551>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_106551> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:106551> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:106551&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

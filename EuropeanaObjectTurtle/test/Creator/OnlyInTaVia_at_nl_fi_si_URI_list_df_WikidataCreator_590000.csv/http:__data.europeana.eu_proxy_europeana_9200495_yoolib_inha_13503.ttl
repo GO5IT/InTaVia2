@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_13503>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:35:41.526Z" ;
+	dcterms:modified          "2016-09-19T09:09:27.963Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_13503#contentTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_13503#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_13503> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_13503> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F13001-14000%2F13450%2Fmedia%2F13718%2F0646_doucet_aumf07c016_0001%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_13503/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13503>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_13503> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/13503> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13450/media/13718/0646_doucet_aumf07c016_0001/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13450/media/13718/0646_doucet_aumf07c016_0001/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13503#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:28:39.926Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13503> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://tools.yoolib.net/i/s4/inha/files/13001-14000/13450/media/13718/0646_doucet_aumf07c016_0001/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_13503/manifest> ;
+	ebucore:fileByteSize    "372361"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "681"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_13503>
+	a                   ore:Proxy ;
+	dc:contributor      "[s.n.]" ;
+	dc:creator          "Hamilton, Gavin (1730-1797)", "Harpignies, Henri-Joseph (1819-1916)", "Guiaud, Jacques (1811-1876)", "Guffens, Godfried-Égide (1823-1901)", "Guillaumet, Gustave (1840-1887)", "Hamilton, William (1730-1803)", "Guillemet, Jean-Baptiste-Antoine (1843-1918)", "Guérin, Pierre-Narcisse (1774-1833)", "Haudebourt-Lescot, Antoinette-Cécile-Hortense (1784-1845)", "Guillemin, Alexandre-Marie (1817-1880)", "Gué, Julien-Michel (1789-1843)", "Haudebourt, Louis-Pierre (1788-1849)", "Hennequin, Philippe-Auguste (1762-1833)", "Gudin, Jean-Antoine-Théodore de (1802-1880)", "Hérault, Charles-Antoine (1644-1718)", "Henriquel-Dupont, Louis-Pierre (1797-1892)", "Guireau, Alexandre", "Guiguet, Jean-Adrien (1860-1937)", "Heilbuth, Ferdinand (1826-1889)", "Guichard, Joseph-Benoît (1806-1880)", "Haseleer, Frans (1804-18??)", "Guet, Charlemagne-Oscar (1801-1871)", "Heim, François-Joseph (1787-1865)", "Helleu, Paul (1859-1927)", "Henner, Jean-Jacques (1829-1905)", "Guillaumin, Armand (1841-1927)", "D'après Hébert, Ernest (1817-1908)" ;
+	dc:description      "Lieu de publication : [S.l.]", "Nombre de vues du document : 576", "Langue du document : Italien", "Partenariats : Document numérisé grâce au mécénat de la Société BIC", "Langue du document : Français", "Note de contenu : Contient un croquis à la mine de plomb, une aquarelle de marine de Théodore de Gudin ; un portrait lithographié de Jean Baptiste Antoine Guillemet accompagné d’un paysage ainsi qu’un portrait de Ferdinand Heilbuth", "Fonds ou documents en rapport : <a href=\u0022http://bibliotheque-numerique.inha.fr/collection/?esa=resetall&esq=creator:THEODORE%20DE%20GUDIN%20AND%20meta:AUOR&navigation=0\u0022 target=\u0022_blank\u0022><b>Originaux des dessins de Jean Antoine Théodore de Gudin</b></a>", "Date de numérisation : 2011" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/13503" ;
+	dc:language         "ita", "fre" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "Institut National d'Histoire de l'Art"@fr, "domaine public"@fr ;
+	dc:source           "Cote de l'original : Carton 16 ; Cote du microfilm : Mfilm bobine 7 (vues 6205-6837)", "NUM AU MF07 C016" ;
+	dc:subject          "17e siècle", "19e siècle", "Correspondance", "18e siècle", "20e siècle" ;
+	dc:title            "Autographes, Carton 16 : Peintres Gud-Her" ;
+	dc:type             "text", "image", "still image", "Recueil de lettres" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_13503> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13503> .
+
+<http://data.europeana.eu/concept/2834>
+	a                skos:Concept ;
+	skos:altLabel    "Korrespondens"@sv, "Carta"@pt, "Carteggio"@it, "Schriftverkehr"@de, "Correspondance (Littérature)"@fr, "Korespondence; vēstules"@lv, "Επιστολή"@el, "Kirjavahetus"@et, "Intercambio epistolar"@es, "Корреспонденция"@ru, "Briefwisseling"@nl, "Correspondance (litterature)"@fr ;
+	skos:exactMatch  <http://id.nlm.nih.gov/mesh/V01.550>, <http://www.wikidata.org/entity/Q1784733>, <http://g.co/kg/g/1230jl_1>, <http://id.nlm.nih.gov/mesh/D015709>, <http://data.bnf.fr/ark:/12148/cb133187365>, <http://vocab.getty.edu/aat/300026877>, <http://purl.org/bncf/tid/6119>, <http://datos.bne.es/resource/XX526105>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.377>, <http://id.nlm.nih.gov/mesh/D016422>, <http://id.nlm.nih.gov/mesh/V02.355.374>, <http://id.loc.gov/authorities/names/sh99001488>, <http://id.nlm.nih.gov/mesh/V02.625>, <http://d-nb.info/gnd/4180011-4> ;
+	skos:note        "Genere letterario"@it, "Intercambio regular de correo"@es, "Literární žánr"@cs, "Процесс обмена письмами (как лит. жанр см. Q2250271)"@ru, "Literair genre"@nl, "Genre littéraire"@fr, "Kirjallinen kommunikaatio (genre on Q2250271)"@fi, "Literary genre"@en, "Gênero literário"@pt, "Schriftverkehr"@de ;
+	skos:prefLabel   "Correspondència"@ca, "Korespondence"@cs, "Correspondência"@pt, "Correspondentie"@nl, "Αλληλογραφία"@el, "Korrespondance"@da, "Kiri"@et, "Correspondencia"@es, "Sarakste"@lv, "Kirjeenvaihto"@fi, "Korrespondenz"@de, "Corrispondenza"@it, "Correspondence"@en, "Brevväxling"@sv, "Переписка"@ru, "Correspondance"@fr .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_13503>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2834> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_13503> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_13503> .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13503>
+	a  edm:ProvidedCHO .
+
+<http://www.purl.org/yoolib/inha/13503>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13503#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:28:39.926Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13503> .

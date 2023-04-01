@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_034700_034779__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1907> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_034700_034779__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_034700_034779__>
+	a                    ore:Proxy ;
+	dc:creator           "Borsos,  József ( építész)"@hu, "Oláh ,  Ferenc  (photographer)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1024x768 \u000A         24 \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/034700/034779   [Metadata]" ;
+	dc:relation          "Oláh Ferenc: Református Ó-templom [ http://keptar.oszk.hu/034800/034869]"@hu ;
+	dc:source            "Inda fotó"@hu ;
+	dc:subject           "ablak"@hu, "Architecture, building industry"@hu, "belső épületrész"@hu, "templom"@hu, "üvegfestmény"@hu, "Religion, church"@hu, "épületkép"@hu, "Fine arts, visual arts"@hu, "History, local history"@hu, "református egyház"@hu ;
+	dc:title             "Református Ó-templom - Festett üveg 1"@hu ;
+	dc:type              "photograph"@hu ;
+	dcterms:alternative  "Festett üveg 1"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034700_034779__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_034700_034779__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:52:28.288Z" ;
+	dcterms:modified          "2015-09-14T11:51:05.767Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F034700%2F034779%2F13663391_a9b303c5812_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:21.981Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034700_034779__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_034700_034779__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/034700/034779/13663391_a9b303c5812_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6278"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://keptar.oszk.hu/034700/034779>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_034700_034779__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034700_034779__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/034700/034779> ;
+	edm:object         <http://keptar.oszk.hu/034700/034779/13663391_a9b303c5812_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/1907>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/41A33>, <http://datos.bne.es/resource/XX527186>, <http://id.ndl.go.jp/auth/ndlna/00567377>, <http://vocab.getty.edu/aat/300002944>, <https://d-nb.info/gnd/4016740-9>, <http://www.wikidata.org/entity/Q35473>, <https://g.co/kg/m/0d4v4>, <http://id.loc.gov/authorities/names/sh85146940>, <http://data.bnf.fr/ark:/12148/cb119470878>, <https://www.freebase.com/m/0d4v4>, <http://purl.org/bncf/tid/15729> ;
+	skos:note        "Konstrukcja zamykająca otwór w ścianie służąca do oświetlenia i przewietrzania pomieszczeń"@pl, "Opening in muur, vaak met een raam erin"@nl, "Opening to admit light or air"@en, "Öppning i vägg, dörr eller tak"@sv, "Apertura trasparente in una parete verticale della muratura"@it, "Abertura transparente ou translúcida"@pt, "Tipo de vano o hueco en un edificio"@es, "Läbipaistava materjaliga kaetud avaus hoone seinas"@et, "Aukko seinässä, ovessa tai katossa"@fi, "Ouverture dans un mur"@fr, "Элемент архитектуры"@ru, "Deschizătură de formă regulată lăsată în peretele unei clădiri"@ro, "Průhledný nebo průsvitný otvor"@cs, "Öffnung in der Wand eines Bauwerkes"@de, "Gune irekia eraikin bateko hormetan"@eu, "Nyílászáró"@hu, "Lysåbning i væg eller tag"@da, "Otvor v pevnom nepriehľadnom povrchu, cez ktorý môže prechádzať svetlo a/alebo vzduch"@sk, "Obertura practicada en una paret per a deixar entrar aire i claror dins un edifici"@ca ;
+	skos:prefLabel   "Fenêtre"@fr, "Ikkuna"@fi, "Finestra"@ca, "Finestra"@it, "Janela"@pt, "Fereastră"@ro, "Window"@en, "Okno"@sk, "Okno"@sl, "Okno"@cs, "Okno"@pl, "Fönster"@sv, "Fuinneog"@ga, "Venster"@nl, "Langas"@lt, "Прозорец"@bg, "Vindue"@da, "Leiho"@eu, "Fenster"@de, "Aken"@et, "Ablak"@hu, "Prozor"@hr, "Παράθυρο"@el, "Окно"@ru, "Ventana"@es, "Logs"@lv ;
+	skos:related     <http://data.europeana.eu/concept/1899> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034700_034779__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:21.981Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034700_034779__> .

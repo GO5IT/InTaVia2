@@ -1,0 +1,170 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<file:///usr/local/tomcat/webapps/#Lokalita:17153>
+	a               edm:Place ;
+	skos:prefLabel  "Česká republika"@cs .
+
+<http://data.europeana.eu/organization/1482250000004502224>
+	a               foaf:Organization ;
+	skos:prefLabel  "ESbírky"@en, "ESbírky"@cs .
+
+<https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_160051/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://www.esbirky.cz/detail/160051>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<file:///usr/local/tomcat/webapps/#PredmetDatText:160051>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "1911"@cs .
+
+<file:///usr/local/tomcat/webapps/#Technika:313201>
+	a               skos:Concept ;
+	skos:prefLabel  "Kovolitectví"@cs .
+
+<http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_160051>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-26T12:39:34.116Z" ;
+	dcterms:modified          "2021-03-24T10:03:51.861Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051#metadataTier>, <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051> ;
+	edm:completeness          "5" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "472_NM_HM_Narodni_muzeum_Historicke_muzeum" ;
+	edm:landingPage           <https://www.europeana.eu/item/472/https___www_esbirky_cz_detail_160051> ;
+	edm:language              "cs" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.esbirky.cz%2Fimg.php%3Fid%3D160053&type=IMAGE> .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutor:160051>
+	a               edm:Agent ;
+	skos:prefLabel  "Stanislav Sucharda"@cs .
+
+<http://data.europeana.eu/organization/1482250000045430001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Historical Museum"@en, "Historické muzeum"@cs .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051>
+	a  edm:ProvidedCHO .
+
+<file:///usr/local/tomcat/webapps/#Datace:294950>
+	a               edm:TimeSpan ;
+	edm:begin       "1901-01-01" ;
+	edm:end         "2000-12-31" ;
+	skos:note       "1938" ;
+	skos:prefLabel  "20. století"@cs .
+
+<file:///usr/local/tomcat/webapps/#Predmet:160051>
+	a               edm:Place ;
+	skos:prefLabel  "Rakousko-Uhersko"@cs .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:43:13.570454Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_160051> .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:43:13.570045Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_160051> .
+
+<http://data.europeana.eu/proxy/europeana/472/https___www_esbirky_cz_detail_160051>
+	a                   ore:Proxy ;
+	dc:identifier       "https://www.esbirky.cz/detail/160051" ;
+	dcterms:medium      <http://data.europeana.eu/concept/1769> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_160051> .
+
+<http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_160051>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045430001> ;
+	edm:isShownAt      <https://www.esbirky.cz/detail/160051> ;
+	edm:isShownBy      <https://www.esbirky.cz/img.php?id=160053> ;
+	edm:object         <https://www.esbirky.cz/img.php?id=160053> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004502224> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<file:///usr/local/tomcat/webapps/#TypSbirky:4759581>
+	a               skos:Concept ;
+	skos:prefLabel  "Tělovýchova a sport"@cs .
+
+<http://data.europeana.eu/concept/1769>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q34095>, <http://id.loc.gov/authorities/names/sh85017093>, <http://babelnet.org/rdf/s00013326n>, <http://nomisma.org/id/ae>, <http://thesaurus.europeanafashion.eu/thesaurus/11085>, <https://www.freebase.com/m/01brf>, <https://g.co/kg/m/01brf>, <http://vocab.getty.edu/aat/300010957>, <http://www.yso.fi/onto/yso/p20227>, <http://data.bnf.fr/ark:/12148/cb11976193v>, <http://id.ndl.go.jp/auth/ndlna/00570282>, <http://purl.org/bncf/tid/40905>, <http://thesaurus.europeanafashion.eu/thesaurus/10556>, <https://d-nb.info/gnd/4146667-6> ;
+	skos:note        "Aliatge de coure i estany"@ca, "Metalliseos"@fi, "Metālu sakausējums, kas pamatā sastāv no vara un alvas"@lv, "Legering med koppar och andra metaller, vanligen tenn"@sv, "Lega di rame e alluminio, nichel, berillio o stagno"@it, "Koperlegering"@nl, "Slitina mědi a cínu"@cs, "Stop miedzi i cyny"@pl, "Metal alloy"@en, "Metallegering"@da, "Alliage de cuivre et d'étain"@fr, "Rézötvözet"@hu, "Liga metálica"@pt, "Legierung aus Kupfer und Zinn"@de, "Aleación metálica de cobre y estaño"@es, "Сплав на мед с калай"@bg, "Cóimhiotal"@ga, "Сплав меди, обычно с оловом в качестве основного легирующего компонента"@ru ;
+	skos:prefLabel   "Brąz"@pl, "Bronca"@hr, "Pronssi"@fi, "Bronce"@es, "Бронза"@ru, "Μπρούντζος"@el, "Brontze"@eu, "Bron"@sl, "Cré-umha"@ga, "Бронз"@bg, "Pronks"@et, "Bronza"@lt, "Bronza"@lv, "Bronzo"@it, "Bronze"@fr, "Bronze"@de, "Bronze"@pt, "Bronze"@ca, "Bronze"@en, "Bronze"@da, "Brons"@sv, "Brons"@nl, "Bronz"@hu, "Bronz"@sk, "Bronz"@cs, "Bronz"@ro ;
+	skos:related     <http://data.europeana.eu/concept/1773>, <http://data.europeana.eu/concept/1770> .
+
+<file:///usr/local/tomcat/webapps/#Material:17389>
+	a               skos:Concept ;
+	skos:prefLabel  "Bronz"@cs .
+
+<https://www.esbirky.cz/img.php?id=160053>
+	a                       edm:WebResource ;
+	dc:description          "13760-123698-h7h_1319_5142.jpg"@cs ;
+	dc:format               "image/jpeg" ;
+	dc:type                 "image" ;
+	dcterms:created         "2012-04-18T21:02:46" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_160051/manifest> ;
+	dcterms:issued          "2012-04-18T00:00:00" ;
+	ebucore:fileByteSize    "270970"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1748"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1485"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/proxy/provider/472/https___www_esbirky_cz_detail_160051>
+	a                   ore:Proxy ;
+	dc:coverage         <file:///usr/local/tomcat/webapps/#Predmet:160051> ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#PredmetAutor:160051> ;
+	dc:date             <file:///usr/local/tomcat/webapps/#PredmetDatText:160051>, "1901-1-1" ;
+	dc:description      "Bronzová plastika." ;
+	dc:format           "Kovolitectví", <file:///usr/local/tomcat/webapps/#Technika:313201> ;
+	dc:identifier       "H7H-1319" ;
+	dc:relation         <file:///usr/local/tomcat/webapps/#TypSbirky:4759581> ;
+	dc:source           "J. Schůtová, H. Havránková, V. Saurová: Signované plastiky a sportovní trofeje, Národní muzeum, Praha 2010" ;
+	dc:title            "Vůdce"@cs ;
+	dcterms:created     "1901-1-1" ;
+	dcterms:extent      "Výška: 77,5, Šířka:, 60, Hloubka: 21,7 cm" ;
+	dcterms:medium      <file:///usr/local/tomcat/webapps/#Material:17389>, "Bronz" ;
+	dcterms:spatial     <file:///usr/local/tomcat/webapps/#Lokalita:17153> ;
+	dcterms:temporal    <file:///usr/local/tomcat/webapps/#Datace:294950> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_160051> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_160051> .
+
+<https://www.esbirky.cz/img.php?id=160054>
+	a                edm:WebResource ;
+	dc:description   "13804-123698-h7h_1319_5141.jpg"@cs ;
+	dc:format        "image/jpeg" ;
+	dc:type          "image" ;
+	dcterms:created  "2012-04-18T21:02:47" ;
+	dcterms:issued   "2012-04-18T00:00:00" ;
+	edm:rights       <http://creativecommons.org/licenses/by/4.0/> .

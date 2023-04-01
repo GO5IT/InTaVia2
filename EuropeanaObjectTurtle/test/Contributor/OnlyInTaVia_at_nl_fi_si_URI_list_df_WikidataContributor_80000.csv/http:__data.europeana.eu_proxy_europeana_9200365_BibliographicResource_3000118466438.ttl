@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1158612j/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k1158612j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1877" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1158612j> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k1158612j>
+	a                   ore:Proxy ;
+	dc:contributor      "Cazalis, Henri (1840-1909). Auteur du texte", "Liszt, Franz (1811-1886). Transcripteur" ;
+	dc:creator          "Saint-Saëns, Camille (1835-1921). Compositeur. Auteur du texte" ;
+	dc:date             "1877" ;
+	dc:description      "Titre uniforme : Saint-Saëns, Camille (1835-1921). Compositeur. Auteur du texte. [Danse macabre. R 171 (Poème symphonique)]. Réduction pour piano" ;
+	dc:format           "21 p. ; 34 cm", "Nombre total de vues :  26" ;
+	dc:identifier       "Cotage D.S. & C.IE 2282", "http://gallica.bnf.fr/ark:/12148/bpt6k1158612j" ;
+	dc:language         "fre" ;
+	dc:publisher        "Durand, Schoenewerk et C.ie (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb432522934", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918545m", "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb432522934" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VM7-9896" ;
+	dc:subject          "Poèmes symphoniques -- 19e siècle -- Réductions pour piano"@fre, "Piano, Musique de -- Arrangements (musique)"@fre, "Orchestre, Musique d' -- 19e siècle -- Réductions pour piano"@fre ;
+	dc:title            "Danse macabre : poëme symphonique / de Camille Sain-Saëns ; transcription pour piano par Franz Liszt" ;
+	dc:type             "Genre musical : poème symphonique" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1158612j> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:11.536Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1158612j> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1158612j/manifest> ;
+	ebucore:fileByteSize    "50059"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "679"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1158612j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "189433"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:11.536Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1158612j> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1158612j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k1158612j> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k1158612j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1158612j/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1158612j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6393"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1158612j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:17:17.515Z" ;
+	dcterms:modified          "2018-07-23T15:12:02.619Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1158612j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k1158612j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k1158612j.thumbnail.jpg&type=TEXT> .

@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/concept/1304>
+	a                skos:Concept ;
+	skos:altLabel    "Musique rrom"@fr, "Roma music"@en, "Musik der Roma und Sinti"@de, "Zigenarkapell"@sv, "Roma (musik)"@da, "Romamuziek"@nl, "Цыганская музыка"@ru, "Zigenarmusik"@sv, "Roemeense muziek"@nl, "Muzyka romska"@pl, "Gipsy music"@en, "Gypsy music"@en, "Música romaní"@es, "Musique tsigane"@fr, "Romamusik"@de, "Musik der Sinti und Roma"@de, "Zigeunermusik"@de ;
+	skos:exactMatch  <http://id.loc.gov/authorities/names/sh85058111>, <http://www.wikidata.org/entity/Q1268283>, <https://www.freebase.com/m/01cmnj>, <http://data.bnf.fr/ark:/12148/cb11953378c>, <https://g.co/kg/m/01cmnj>, <http://purl.org/bncf/tid/2292> ;
+	skos:note        "Music of the Romani people"@en ;
+	skos:prefLabel   "Música gitana"@es, "Gypsy"@da, "Musica gitana"@it, "Muzyka cygańska"@pl, "Romska glazba"@hr, "Rómska hudba"@sk, "Muzică romani"@ro, "Romsk musik"@sv, "Musique tzigane"@fr, "Μουσική των Ρομά"@el, "Romska glasba"@sl, "Romská hudba"@cs, "Cigányzene"@hu, "Zigeunermuziek"@nl, "Romani music"@en, "Циганска музика"@bg, "Musik der Roma"@de, "Музыка цыган"@ru .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0241393>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:42.003Z" ;
+	dcterms:modified          "2014-06-27T11:27:42.003Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393#contentTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:17.558Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241393> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0241393>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0241393>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1304> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "1996" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0241393> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0241393>
+	a                    ore:Proxy ;
+	dc:contributor       "Antal Szalai orchestra", "Szalai, Antal" ;
+	dc:creator           "Monti, Vittorio", "Remenyi, Ede", "Dinicu, Grigoras", "Liszt, Franz", "Brahms, Johannes", "Bihari, János", "Soulard, Isabelle" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0241393" ;
+	dc:publisher         "Paris Cité de la musique 1996" ;
+	dc:subject           "MUSIQUE TSIGANE", "20 EME SIECLE", "CYMBALUM", "HONGRIE", "MUSIQUE TRADITIONNELLE", "19 EME SIECLE" ;
+	dc:title             "La Hongrie, musiques traditionnelles, musiques tsiganes. Musique tsigane. Antal Szalai gipsy orchestra" ;
+	dc:type              "moving image" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le 26 octobre 1996" ;
+	dcterms:extent       "1 h 01 min 46" ;
+	dcterms:hasPart      "Vole mon hirondelle / Ede Reményi, comp. - Cité de la musique, 1996", "Chants de Kuruc / anonyme. - Cité de la musique, 1996", "Danses hongroises n°6 et 5 / Johannes Brahms, comp. - Cité de la musique, 1996", "Verbunkos et danse rapide de 1848 / Janos Bihari, comp. - Cité de la musique, 1996", "Rhapsodie hongroise n°2 / Franz Liszt, comp. - Cité de la musique, 1996", "Danses gitanes de l'Europe de l'est et de l'Europe centrale / anonyme. - Cité de la musique, 1996", "Circus polka / Gerheard Renz, comp. - Cité de la musique, 1996", "Présentation du Antal Szalai gipsy orchestra / Antal Szalai gipsy orchestra. - Cité de la musique, 1996", "Fiery Csardas / anonyme. - Cité de la musique, 1996", "Csardas / Vittorio Monti, comp. - Cité de la musique, 1996", "Hora et le rossignol / Grigoras Dinicu, comp. - Cité de la musique, 1996" ;
+	dcterms:issued       "1996" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241393> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:17.558Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241393> .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241393>
+	a                  ore:Aggregation ;
+	dc:rights          "Video excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241393> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0241393> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

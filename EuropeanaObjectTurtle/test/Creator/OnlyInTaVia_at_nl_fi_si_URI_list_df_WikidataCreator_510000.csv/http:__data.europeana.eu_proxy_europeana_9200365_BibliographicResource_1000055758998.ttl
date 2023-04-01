@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550020564>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:39.661Z" ;
+	dcterms:modified          "2018-07-23T15:37:41.389Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550020564> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550020564.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550020564/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550020564>
+	a                   ore:Proxy ;
+	dc:contributor      "Waldstein, Ferdinand von (1762-1823). Compositeur de l'oeuvre adaptée" ;
+	dc:creator          "Beethoven, Ludwig van (1770-1827). Compositeur" ;
+	dc:date             "1791-1792" ;
+	dc:description      "À la p. de t., 8 lignes de texte surchargées ou grattées, parmi lesquelles on distingue : \u0022composees\u0022 (l. 1) ; \u0022Variations // a quatre Mains pour l\u0022 (l. 3-4). - Titre de la couv. : \u0022Originale // von // Ludwig van Beethoven // geb. 1770 Bon[n] + 1827 in Wien\u0022. - Sur un thème du comte Waldstein. - La version définitive des 5 dernières mesures se trouve à la p. de t.. - Daté d'après Kinsky. - Ratures, corrections et ajouts à l'encre. - Papier réglé à 12 portées de 8 x 268 mm par page (intervalle entre les portées : 8 mm). - Collette à la p. 12 ; la marge supérieure des p. 11-16 est mutilée. - 1re éd. : Bonn : Simrock, 1794 (gravée d'après une copie qui ne comportait pas les corrections et ajouts apportés par Beethoven au présent ms.)", "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [8 variations. Waldstein, Ferdinand. Piano (4 mains). WoO 67. Do majeur]", "Présentation musicale : [Partition]" ;
+	dc:format           "1 partition (16 p.) ; 21 x 31 cm", "Nombre total de vues :  20" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550020564" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb421906233", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb148210640" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-27" ;
+	dc:subject          "Variations (piano, 4 mains) -- 18e siècle -- Partitions"@fre ;
+	dc:title            "Variations // a quatre mains pour le piano forte // Composta dal L. V. Beethoven (manuscrit autographe)" ;
+	dc:type             "manuscript music"@eng, "musique manuscrite"@fre, "Genre musical : variation" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020564> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550020564/manifest> ;
+	ebucore:fileByteSize    "19251"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "348"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550020564>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550020564> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550020564>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "189308"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020564>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550020564> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550020564.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:13.449Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020564> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020564/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550020564.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4983"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "188"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020564#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:13.449Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020564> .

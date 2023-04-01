@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_PR9862>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:11:52.762Z" ;
+	dcterms:modified          "2018-04-05T17:33:44.772Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NOMA01_PR9862> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANOMA01%3APR9862%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:54.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_PR9862> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:54.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_PR9862> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:PR9862&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21886"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "218"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_PR9862>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NOMA01:PR9862> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:PR9862&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NOMA01_PR9862>
+	a                   ore:Proxy ;
+	dc:contributor      "Picart, Bernard" ;
+	dc:creator          "Picart, Bernard" ;
+	dc:format           "prent" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:PR9862" ;
+	dc:rights           "Nederlands Openluchtmuseum", "Voor meer informatie: Nederlands Openluchtmuseum"@nl, "For more information: Nederlands Openluchtmuseum"@en ;
+	dc:source           "[PR.9862], Streekdrachten in Nederland, Nederlands Openluchtmuseum" ;
+	dc:subject          "vrouwenkleding"@nl, "gravure"@nl, "streekdracht"@nl, "Nederland"@nl, "kinderkleding"@nl ;
+	dc:title            "Paysanne de Holande / Andere Hollantsche boerinne, 1703" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1728" ;
+	dcterms:extent      "hoogte: 18.5 cm; breedte: 12.5 cm" ;
+	dcterms:isPartOf    "Streekdrachten in Nederland", "GVN", "NOMA01" ;
+	dcterms:medium      "materiaal geheel: papier (vezelprodukt)", "image/jpeg", "techniek: graveren (drukprocédé)" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_PR9862> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2714>
+	a                skos:Concept ;
+	skos:altLabel    "Frauenkleider"@de, "Sieviešu tērps"@lv, "Dameskleding"@nl, "Женский гардероб"@ru, "Sieviešu garderobe"@lv, "Women's costume"@en ;
+	skos:exactMatch  <http://zbw.eu/stw/descriptor/14902-4>, <http://www.wikidata.org/entity/Q4179400>, <http://g.co/kg/g/121zjpzw>, <http://thesaurus.europeanafashion.eu/thesaurus/10434> ;
+	skos:note        "Kleidung welche primär von Frauen und Mädchen getragen wird"@de, "Odzież noszona przez kobiety i dziewczęta"@pl, "Clothing worn primarily by women and girls"@en ;
+	skos:prefLabel   "Sieviešu apģērbs"@lv, "Vêtement féminin"@fr, "Женская одежда"@ru, "Indumentaria femenina"@es, "Damkläder"@sv, "Frauenkleidung"@de, "Vrouwenkleding"@nl, "Women's clothing"@en, "Odzież damska"@pl .
+
+<http://www.geheugenvannederland.nl/?/en/items/NOMA01:PR9862>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48268"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NOMA01_PR9862>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2538> ;
+	dc:subject          <http://data.europeana.eu/concept/2714>, <http://data.europeana.eu/concept/2252> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1728" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_PR9862> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_PR9862> .
+
+<http://data.europeana.eu/concept/2252>
+	a                skos:Concept ;
+	skos:exactMatch  <http://data.bnf.fr/ark:/12148/cb11936460w>, <http://thesaurus.europeanafashion.eu/thesaurus/10436>, <http://purl.org/bncf/tid/18293>, <https://d-nb.info/gnd/4163828-1>, <http://id.loc.gov/authorities/names/sh85023582>, <http://www.yso.fi/onto/yso/p4303>, <https://www.freebase.com/m/0g9spbj>, <http://www.wikidata.org/entity/Q2471487>, <http://zbw.eu/stw/descriptor/14909-4>, <https://g.co/kg/m/0g9spbj> ;
+	skos:note        "Vêtements destinés aux enfants"@fr, "Clothing worn by children"@en, "Kläder burna av barn"@sv, "Von Kindern getragene Bekleidung"@de ;
+	skos:prefLabel   "Kinderkleidung"@de, "Roupa infantil"@pt, "Lastenvaatteet"@fi, "Odzież dziecięca"@pl, "Barnkläder"@sv, "Indumento da bambino"@it, "Children's clothing"@en, "Kinderkleding"@nl, "Детская одежда"@ru, "Dětský oděv"@cs, "Indumentaria infantil"@es, "Παιδικό ένδυμα"@el, "Gyermekruházat"@hu, "Costume d'enfant"@fr .

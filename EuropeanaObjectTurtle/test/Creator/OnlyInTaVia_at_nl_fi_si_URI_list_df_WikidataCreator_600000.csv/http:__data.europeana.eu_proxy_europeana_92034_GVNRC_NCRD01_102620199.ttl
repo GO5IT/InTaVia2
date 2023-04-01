@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_102620199>
+	a                   ore:Proxy ;
+	dc:contributor      "Pieter van der Werff" ;
+	dc:creator          "Pieter van der Werff" ;
+	dc:description      "Vindplaats: Bergen op Zoom, Gemeentemuseum 'Het Markiezenhof'", "Litt. : De Heerlijke Stad. Catalogus Gemeentemuseum Bergen op Zoom, 1987" ;
+	dc:format           "schilderij (olieverf op doek)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102620199" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[102620199], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Cornets de Groot (Pieter)"@nl, "baljuw"@nl, "Bergen op Zoom"@nl ;
+	dc:title            "Drossaard Pieter Cornets de Groot" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1707" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102620199> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:09.286Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102620199> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102620199&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4603"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "133"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102620199>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:102620199> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102620199&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:09.286Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102620199> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_102620199>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:09:55.827Z" ;
+	dcterms:modified          "2018-04-05T17:25:26.568Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_102620199> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A102620199%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:102620199>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49673"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_102620199>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/125311> ;
+	dc:creator          <http://data.europeana.eu/agent/125311> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1707" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102620199> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_102620199> .
+
+<http://data.europeana.eu/agent/125311>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/106> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/95619> ;
+	owl:sameAs                     <https://www.freebase.com/m/0fq22_6>, <http://vocab.getty.edu/ulan/500019658>, <https://g.co/kg/m/0fq22_6>, <http://data.bnf.fr/ark:/12148/cb14966664v>, <http://viaf.org/viaf/7658532>, <http://www.wikidata.org/entity/Q768520>, <http://id.loc.gov/authorities/names/no2007069880>, <http://dbpedia.org/resource/Pieter_van_der_Werff>, <http://data.bibliotheken.nl/id/thes/p102620393>, <http://www.idref.fr/160122570/id>, <http://d-nb.info/gnd/139103287>, <http://datos.bne.es/resource/XX900521> ;
+	rdaGr2:dateOfBirth             "1665-01-01" ;
+	rdaGr2:dateOfDeath             "1722-09-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40387> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Pierre Vander Verf"@en, "Vanderverft"@en, "Pierre Van der Werff"@en, "Pieter van de Werf"@en, "W. der Werf"@en, "Pieter van der Werf"@en, "V. der Werf"@en, "Pierre Vander Werf"@en, "Pieter vander Werf"@en, "Peter Vander Werf"@en, "Pier Vander Verff"@en, "Le Ch. Vanderverff"@en, "Vander Werfe"@en, "P. van der Werff"@en, "P: van der Werff"@en, "P. Vander Werff"@en, "Pieter Vanderworth"@en, "Pet. Van der Werf"@en, "Pieter van den werff"@en, "P. v. d. Werff"@en, "Peter van der Werf"@en, "Peter Vanderwerf"@en, "Pierre Vander Werff"@en, "P. v. der Verf"@en, "Pieter Van Der Werff"@en, "P.V. Werf"@en, "Peter Wanderwerff"@en, "Pierre van der Verff"@en, "Van Der Werff"@en, "Werff"@en, "Vanderworth"@en, "Pieter Vanderwerf"@en, "Peter V. Werf"@en, "Pierre Vander-Wef"@en, "P. Vander Werf"@en, "P. V. der Werff"@en, "Philipp van der werft"@en, "Pierre Van Der Werf"@en, "P. van der Werf"@en, "P. Vander Verf"@en, "Wander Werf"@en, "Pierre Vanderweerf"@en, "Peter van der Werff"@en, "P. Vanderwerf"@en, "P. Vanderwerff"@en ;
+	skos:note                      "Pintor neerlandès"@ca, "Peintre néerlandais"@fr, "Pintor neerlandês"@pt, "Pittore neerlandese"@it, "Painter from the Northern Netherlands (1665-1722)"@en, "Pintor neerlandés"@es, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel                 "Питер ван дер Верфф"@ru, "Pieter van der Werff"@it, "Pieter van der Werff"@fr, "Pieter van der Werff"@es, "Pieter van der Werff"@de, "Pieter van der Werff"@sv, "Pieter van der Werff"@pt, "Pieter van der Werff"@en, "Pieter van der Werff"@sl, "Pieter van der Werff"@da, "Pieter van der Werff"@ca, "Pieter van der Werff"@nl, "Πίτερ φαν ντερ Βερφ"@el .

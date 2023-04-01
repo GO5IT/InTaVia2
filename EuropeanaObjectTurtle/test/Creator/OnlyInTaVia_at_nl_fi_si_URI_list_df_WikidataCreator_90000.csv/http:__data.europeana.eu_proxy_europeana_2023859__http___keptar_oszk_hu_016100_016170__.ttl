@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_016100_016170__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:22:44.368Z" ;
+	dcterms:modified          "2015-09-14T11:35:36.706Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F016100%2F016170%2F2lajos_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:03.006Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_016100_016170__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_016100_016170__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/016100/016170/2lajos_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6863"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/016100/016170>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_016100_016170__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:03.006Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_016100_016170__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_016100_016170__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/016100/016170> ;
+	edm:object         <http://keptar.oszk.hu/016100/016170/2lajos_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_016100_016170__>
+	a                   ore:Proxy ;
+	dc:creator          ",  ( közreadó)"@hu, "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description      "Olaj vásznon, 1860. A festmény a Magyar Nemzeti Galériában található. II. Lajos a Jagelló-házból való magyar és cseh királyi herceg, II. Ulászló király egyetlen fia, 1508-tól Magyarország és 1509-tól Csehország ifjabb királya, de csak apja halála (1516) után lett tényleges uralkodó. Az 1526-os mohácsi csatából menekülőben veszítette életét. A török hódoltság előtt ő volt az utolsó olyan magyar király, aki az egész középkori Magyar Királyság felett uralkodott. (Forrás: Wikipédia)"@hu ;
+	dc:format           "JPEG képállomány \u000A         920x702 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/016100/016170   [Metadata]" ;
+	dc:relation         "II. Lajos tetemeinek feltalálása [ http://keptar.oszk.hu/006300/006375]"@hu ;
+	dc:source           "Wikipédia"@hu ;
+	dc:subject          "Fine arts, visual arts"@hu, "történelmi esemény ábrázolása"@hu, "halott"@hu, "History, local history"@hu, "jelenetkép"@hu, "Lajos (Magyarország: király), II. (1506-1526)"@hu, "történelmi festmény"@hu, "király"@hu ;
+	dc:title            "II. Lajos holttestének megtalálása Székely Bertalan festményén"@hu ;
+	dc:type             "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_016100_016170__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_016100_016170__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_016100_016170__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_016100_016170__> .

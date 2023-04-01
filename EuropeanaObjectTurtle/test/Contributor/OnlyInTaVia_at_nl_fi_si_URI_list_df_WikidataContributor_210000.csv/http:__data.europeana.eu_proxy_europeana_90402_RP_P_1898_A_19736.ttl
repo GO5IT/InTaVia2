@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_1898_A_19736>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T15:35:58.736Z" ;
+	dcterms:modified          "2018-03-17T13:33:53.720Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_1898_A_19736#metadataTier>, <http://data.europeana.eu/item/90402/RP_P_1898_A_19736#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_1898_A_19736> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_1898_A_19736> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.rijksmuseum.nl%2Fassetimage2.jsp%3Fid%3DRP-P-1898-A-19736&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_1898_A_19736#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:12:13.389Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1898_A_19736> .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_1898_A_19736>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_1898_A_19736> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.collect.77774> ;
+	edm:isShownBy      <https://lh3.ggpht.com/eyIpVmFsHEmR0ou619Wa-L5FGfEIcAza5wpwj_B-_mV73_XUtueZh9P5l9HtnewcDRloWsVcHiJEbw2wtagDDuyFyEoL=s0> ;
+	edm:object         <https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-1898-A-19736> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_1898_A_19736>
+	a  edm:ProvidedCHO .
+
+<http://hdl.handle.net/10934/RM0001.collect.77774>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51254"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-1898-A-19736>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5328536"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "2850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "2202"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_1898_A_19736/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.24122>
+	a                              edm:Agent ;
+	edm:begin                      "1775-09-05" ;
+	edm:end                        "1841-09-15" ;
+	rdaGr2:dateOfBirth             "Rotterdam" ;
+	rdaGr2:dateOfDeath             "Den Haag" ;
+	rdaGr2:professionOrOccupation  "prentmaker" ;
+	skos:prefLabel                 "Bemme, Joannes" .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_1898_A_19736>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2130> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_1898_A_19736> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_1898_A_19736> .
+
+<https://lh3.ggpht.com/eyIpVmFsHEmR0ou619Wa-L5FGfEIcAza5wpwj_B-_mV73_XUtueZh9P5l9HtnewcDRloWsVcHiJEbw2wtagDDuyFyEoL=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Public Domain"@en, "Publiek Domein"@nl ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_1898_A_19736/manifest> ;
+	ebucore:fileByteSize    "970418"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "2202"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_1898_A_19736#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:12:13.390Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1898_A_19736> .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_1898_A_19736>
+	a                   ore:Proxy ;
+	dc:contributor      "Dijk, Philip van"@nl ;
+	dc:coverage         "second quarter 19th century"@en, "tweede kwart 19e eeuw"@nl, "first quarter 19th century"@en, "eerste kwart 19e eeuw"@nl ;
+	dc:description      "Een vrouw staat voor een spiegel en vlecht haar haren. Op de achtergrond komt een bediende met een dienblad waarop een karaaf staat. Links op de voorgrond is een snaarinstrument te zien"@nl ;
+	dc:format           "silk"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.192", "zijde"@nl ;
+	dc:identifier       "http://hdl.handle.net/10934/RM0001.collect.77774", "RP-P-1898-A-19736" ;
+	dc:language         "nl" ;
+	dc:publisher        "Rijksmuseum" ;
+	dc:rights           "Public Domain", "Publiek Domein" ;
+	dc:subject          <http://iconclass.org/31A5111>, <http://iconclass.org/31A56>, <http://iconclass.org/31A51> ;
+	dc:title            "Een vrouw bij haar toilet"@nl ;
+	dc:type             "print"@en, <http://vocab.getty.edu/aat/300041273>, "etching"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", "prent"@nl, "etsen"@nl ;
+	dcterms:created     "1800 - 1841"@nl, "1800 - 1841"@en ;
+	dcterms:extent      "width 75 mm"@en, "zijde breedte 75 mm"@nl, "zijde hoogte 88 mm"@nl, "height 88 mm"@en ;
+	dcterms:isPartOf    "collectie: prenten" ;
+	dcterms:medium      "Schenking van een particulier"@nl, "Private gift"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_1898_A_19736> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/90402/RP_P_1898_A_19736> .
+
+<http://data.europeana.eu/concept/2130>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2080>, <http://data.europeana.eu/concept/1985> ;
+	skos:exactMatch  <https://g.co/kg/m/0dl6q>, <http://vocab.getty.edu/aat/300014072>, <http://zbw.eu/stw/descriptor/14125-3>, <http://purl.org/bncf/tid/25624>, <http://id.nlm.nih.gov/mesh/D05.750.078.875>, <http://id.loc.gov/authorities/names/sh85122543>, <https://d-nb.info/gnd/4054289-0>, <http://babelnet.org/rdf/s00071599n>, <http://www.yso.fi/onto/yso/p17577>, <http://www.wikidata.org/entity/Q37681>, <https://www.freebase.com/m/0dl6q>, <http://vocabularies.unesco.org/thesaurus/concept16321>, <http://data.bnf.fr/ark:/12148/cb11941507q>, <http://datos.bne.es/resource/XX533940>, <http://id.nlm.nih.gov/mesh/D047011>, <http://thesaurus.europeanafashion.eu/thesaurus/10352> ;
+	skos:note        "Přírodní vlákno získávané z kukel bource morušového"@cs, "Fibra proteica obtida a partir dos casulos de bicho-da-seda"@pt, "Kokongtrådar från silkesfjärilens larver"@sv, "Textilipari nyersanyag"@hu, "Fibra textil de origen animal"@es, "Prírodné proteínové vlákno, ktoré môže byť tkané do textílií"@sk, "Fibra tèxtil natural"@ca, "Textielvezel"@nl, "Włókno"@pl, "Fibra proteica di un animale con la quale si possono ottenere tessuti tendenzialmente pregiati"@it, "Silkkiperhosen koteloista tehty kuitu"@fi, "Tierischer Faserstoff aus den Kokons der Seidenraupe"@de, "Fibre textile d'origine animale"@fr, "Fine, lustrous, natural fiber produced by the larvae of various silk moths, especially the species Bombyx mori"@en, "Волокно из кокона гусеницы тутового шелкопряда"@ru ;
+	skos:prefLabel   "Hodváb"@sk, "Šilkas"@lt, "Seda"@ca, "Seda"@es, "Silke"@sv, "Silke"@da, "Silk"@en, "Mătase"@ro, "Zijde"@nl, "Silkki"@fi, "Hedvábí"@cs, "Zeta"@eu, "Коприна"@bg, "Seta"@it, "Zīds"@lv, "Fibra da seda"@pt, "Soie"@fr, "Jedwab"@pl, "Svila"@hr, "Svila"@sl, "Siid"@et, "Síoda"@ga, "Seide"@de, "Selyem"@hu, "Шёлк"@ru, "Μετάξι"@el .

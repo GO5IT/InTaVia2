@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2059204/data_sounds_1076774105>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146880> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1076774105> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1076774105> .
+
+<http://data.europeana.eu/proxy/provider/2059204/data_sounds_1076774105>
+	a                   ore:Proxy ;
+	dc:contributor      "Berliner Philharmonisches Orchester. Leitung: Eugen Jochum" ;
+	dc:creator          "Ludwig van Beethoven" ;
+	dc:format           "Digitalisat von 1 Schellackplatte", "[78 UpM]" ;
+	dc:identifier       "urn:nbn:de:101:1-2015110516028", "Referencenr. 29/20" ;
+	dc:publisher        "Eterna" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "Sinfonie Nr.7 in A-Dur, op. 92 : III. Satz (2): Presto" ;
+	dc:type             "Shellac disc" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1076774105> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076774105> .
+
+<http://d-nb.info/1076774105>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059204/data_sounds_1076774105/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076774105>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059204/data_sounds_1076774105> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000017965230> ;
+	edm:hasView        <http://d-nb.info/1076774105> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:101:1-2015110516028> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2059204/data_sounds_1076774105/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076774105#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:48.904Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076774105> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076774105>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000017965230>
+	a               foaf:Organization ;
+	skos:prefLabel  "Deutsche Nationalbibliothek"@de, "Немецкая национальная библиотека"@ru, "German National Library"@en, "Saksan kansalliskirjasto"@fi, "Německá národní knihovna"@cs, "Vācijas Nacionālā bibliotēka"@lv, "Biblioteca Națională a Germaniei"@ro, "Niemiecka Biblioteka Narodowa"@pl, "Njemačka nacionalna knjižnica"@hr, "Nemecká národná knižnica"@sk, "Biblioteca Nacional da Alemanha"@pt, "Biblioteca nazionale tedesca"@it, "Német Nemzeti Könyvtár"@hu, "Bibliothèque nationale allemande"@fr, "Германска национална библиотека"@bg, "Nemška nacionalna knjižnica"@sl, "Duitse Nationale Bibliotheek"@nl, "Biblioteca Nacional d'Alemanya"@ca, "Εθνική Βιβλιοθήκη της Γερμανίας"@el, "Saksamaa Rahvusraamatukogu"@et, "Deutsche Nationalbibliothek"@da, "Biblioteca Nacional de Alemania"@es, "Deutsche Nationalbibliothek"@sv .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076774105#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:48.904Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076774105> .
+
+<http://data.europeana.eu/agent/146880>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/146848>, <http://data.europeana.eu/agent/24055>, <http://data.europeana.eu/agent/146764>, <http://data.europeana.eu/agent/162617>, <http://data.europeana.eu/agent/147055>, <http://data.europeana.eu/agent/146846> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/146951>, <http://data.europeana.eu/agent/59294>, <http://data.europeana.eu/agent/146848> ;
+	owl:sameAs                     <http://kulturarvsdata.se/LSH/agents/2330>, <http://viaf.org/viaf/32182557>, <https://g.co/kg/m/04k15>, <http://d-nb.info/gnd/118508288>, <http://id.ndl.go.jp/auth/ndlna/00432740>, <http://datos.bne.es/resource/XX826607>, <http://id.worldcat.org/fast/42803>, <https://www.freebase.com/m/04k15>, <http://lod.nl.go.kr/resource/KAC199602027>, <http://vocab.getty.edu/ulan/500339269>, <https://libris.kb.se/fcrtthqz07g9rj7>, <http://data.bibliotheken.nl/id/thes/p068716494>, <http://id.loc.gov/authorities/names/n79107741>, <http://data.bnf.fr/ark:/12148/cb138912954>, <http://libris.kb.se/resource/auth/177119>, <http://openlibrary.org/works/OL127077A>, <https://livedata.bibsys.no/authority/90051084>, <http://dbpedia.org/resource/Ludwig_van_Beethoven>, <http://www.idref.fr/026714329/id>, <http://www.wikidata.org/entity/Q255>, <http://data.carnegiehall.org/names/1005833>, <http://nlg.okfn.gr/resource/authority/record62655>, <http://data.cervantesvirtual.com/person/7335> ;
+	rdaGr2:dateOfBirth             "1770-12-16" ;
+	rdaGr2:dateOfDeath             "1827-03-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/2528> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/80422> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/concept/637>, <http://data.europeana.eu/concept/1618> ;
+	skos:altLabel                  "L. van Betkhoven"@en, "Бетховен"@ru, "Бетховен"@bg, "Louis van Beethoven"@en, "Бетховен, Людвиг ван"@ru, "Людвиг Бетховен"@ru, "Ludwik van Beethoven"@en, "Ludvig van Beethoven"@en, "Ljudvig van Betchoven"@cs, "Лудвиг ван Бетовен"@bg, "Бетовен"@bg, "Beethoven"@et, "Beethoven"@ca, "Beethoven"@it, "Beethoven"@de, "Beethoven"@ru, "Beethoven"@sk, "Beethoven"@en, "L. v. Beethoven"@en, "L. Bethovenas"@en, "Ludwig Van Beethoven"@en, "L. van Beethoven"@ca, "L. van Beethoven"@en, "Lodewijk van Beethoven"@hu ;
+	skos:note                      "Tysk tonsättare och pianist"@sv, "Compositor alemão"@pt, "Compositor alemany"@ca, "Nemecký klasicistický a romantický hudobný skladateľ"@sk, "Γερμανός συνθέτης της ρομαντικής περιόδου και πιανίστας"@el, "Германски композитор и пианист"@bg, "Duits componist"@nl, "Выдающийся немецкий композитор, один из трёх венских классиков"@ru, "German composer (1770–1827)"@en, "Deutscher Komponist (1770–1827)"@de, "Saksa klassitsistlik helilooja ja pianist"@et, "Tysk komponist (1770-1827)"@da, "Niemiecki kompozytor"@pl, "Compositor y pianista alemán"@es, "Compositore e pianista tedesco"@it, "Německý hudební skladatel"@cs, "Compositeur classique et romantique allemand"@fr, "Saksalainen säveltäjä"@fi, "Német klasszicista zeneszerző"@hu ;
+	skos:prefLabel                 "Людвиг ван Бетховен"@ru, "Λούντβιχ βαν Μπετόβεν"@el, "Ludvigs van Bēthovens"@lv, "Лудвиг ван Бетховен"@bg, "Ludwig van Beethoven"@fr, "Ludwig van Beethoven"@de, "Ludwig van Beethoven"@fi, "Ludwig van Beethoven"@pt, "Ludwig van Beethoven"@lt, "Ludwig van Beethoven"@hr, "Ludwig van Beethoven"@hu, "Ludwig van Beethoven"@sk, "Ludwig van Beethoven"@sl, "Ludwig van Beethoven"@ga, "Ludwig van Beethoven"@ca, "Ludwig van Beethoven"@sv, "Ludwig van Beethoven"@mt, "Ludwig van Beethoven"@en, "Ludwig van Beethoven"@it, "Ludwig van Beethoven"@es, "Ludwig van Beethoven"@et, "Ludwig van Beethoven"@cs, "Ludwig van Beethoven"@pl, "Ludwig van Beethoven"@ro, "Ludwig van Beethoven"@da, "Ludwig van Beethoven"@nl .
+
+<http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1076774105>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-01-20T10:33:04.246Z" ;
+	dcterms:modified          "2016-04-11T09:24:11.883Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059204/data_sounds_1076774105#metadataTier>, <http://data.europeana.eu/item/2059204/data_sounds_1076774105#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059204/data_sounds_1076774105> ;
+	edm:completeness          "0" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2059204_Ag_EU_eSOUNDS_1006_BSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059204/data_sounds_1076774105> ;
+	edm:language              "de" .
+
+<http://nbn-resolving.de/urn:nbn:de:101:1-2015110516028>
+	a                edm:WebResource ;
+	dc:format        "audio/wav", "PCM", "24" ;
+	dcterms:created  "2015" ;
+	dcterms:extent   "1", "96 kHz" .

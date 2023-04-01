@@ -1,0 +1,145 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149428824>
+	a                    ore:Proxy ;
+	dc:contributor       "Анри Шарль Литольф", "Theodor Leschetizky" ;
+	dc:creator           "Henry Charles Litolff" ;
+	dc:description       "Neu-Ausg. mit Hinzufügung des Orchesters als 2. Pianoforte von Th. Leschetitzky", "Имеется электронная копия" ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "004467273" ;
+	dc:language          "fr" ;
+	dc:publisher         "Litolff" ;
+	dc:title             "Concerto symphonique Es-dur № 3 (National hollandais) pour piano et orchestre de Henry Litolff. Op. 45" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Симфонический концерт № 3" ;
+	dcterms:extent       "76 с." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued       "[19--]", "19--" ;
+	dcterms:spatial      <http://id.loc.gov/vocabulary/countries/ru>, <http://sws.geonames.org/2945024/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428824> .
+
+<http://sws.geonames.org/2945024/>
+	a               edm:Place ;
+	skos:prefLabel  "Braunschweig (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428824>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:33.346Z" ;
+	dcterms:modified          "2016-03-24T08:15:58.177Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824> ;
+	edm:completeness          "9" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149428824> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004467273%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149428824>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150039> ;
+	dc:creator          <http://data.europeana.eu/agent/72276> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428824> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:26.827Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428824> .
+
+<http://data.europeana.eu/agent/150039>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/82108>, <http://data.europeana.eu/agent/147549>, <http://data.europeana.eu/agent/148613>, <http://data.europeana.eu/concept/247> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/92637> ;
+	owl:sameAs           <http://openlibrary.org/works/OL5710681A>, <http://d-nb.info/gnd/120890143>, <http://data.carnegiehall.org/names/1001811>, <http://data.bnf.fr/ark:/12148/cb14808011p>, <http://viaf.org/viaf/32262032>, <http://datos.bne.es/resource/XX1771062>, <http://dbpedia.org/resource/Theodor_Leschetizky>, <http://data.bibliotheken.nl/id/thes/p167751697>, <https://libris.kb.se/86lnjdls4qdd4fl>, <http://www.idref.fr/110248864/id>, <https://www.freebase.com/m/034whk>, <https://g.co/kg/m/034whk>, <http://www.wikidata.org/entity/Q362340>, <https://livedata.bibsys.no/authority/1492758307543>, <http://libris.kb.se/resource/auth/70944>, <http://id.loc.gov/authorities/names/no88000705>, <http://id.worldcat.org/fast/234537> ;
+	rdaGr2:dateOfBirth   "1830-06-22" ;
+	rdaGr2:dateOfDeath   "1915-11-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/134328> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/2313> ;
+	skos:altLabel        "Theodore Leschetizky"@cs, "Лешетицкий"@ru, "Theodor Leschetitzky"@cs, "Theodor Leschetitzky"@de, "Theodor Leschetitzky"@sv, "Theodor Leschetitzky"@it, "Theodor Hermann Leschetizky"@de, "Theodor Hermann Leschetizky"@pt, "Лешетицкий, Теодор"@ru, "Лешетицкий Теодор"@ru, "Théodore Leschetitzky"@cs, "Teodoras Lešetyckis"@lt, "Theodor Leschetizky"@et, "Theodor Leschetizky"@fi, "Theodor Leschetizky"@fr, "Theodor Leschetizki"@fr, "Theodor Leschetizki"@it, "Leszetycki"@de, "Leszetycki"@it, "Théodore Leschetizky"@cs, "Teodor Leszetycki"@es, "Teodor Leszetycki"@sv, "Teodor Leszetycki"@it, "Leschetizky"@sv, "Theodor Leschetizkv"@fr ;
+	skos:note            "Pianista e compositore polacco"@it, "Pianista i compositor polonès"@ca, "Polsk komponist og pianist"@da, "Polish composer and pianist"@en, "Polsk kompositör och pianist"@sv, "Польский пианист"@ru, "Polnischer Komponist, Pianist und Musikpädagoge"@de, "Polski pianista, kompozytor i pedagog"@pl, "Polský pianista, skladatel a hudební pedagog"@cs, "Pianista, maestro y compositor polaco"@es, "Pianiste, pédagogue et compositeur polonais"@fr, "Pools pianist (1830-1915)"@nl ;
+	skos:prefLabel       "Teodor Leszetycki"@fr, "Teodor Leszetycki"@fi, "Teodor Leszetycki"@lt, "Teodor Leszetycki"@et, "Teodor Leszetycki"@cs, "Teodor Leszetycki"@pl, "Teodor Leszetycki"@da, "Theodor Leschetitzky"@ca, "Theodor Leschetizky"@de, "Theodor Leschetizky"@sv, "Theodor Leschetizky"@pt, "Theodor Leschetizky"@en, "Theodor Leschetizky"@it, "Theodor Leschetizky"@sl, "Theodor Leschetizky"@ga, "Theodor Leschetizky"@nl, "Теодор Лешетицкий"@ru, "Theodor Leschetizki"@es .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:26.826Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428824> .
+
+<http://dlib.rsl.ru/viewer/01004467273#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428824>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004467273#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004467273/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://search.rsl.ru/api/description/01004467273/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "175112"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428824>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/72276>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/agent/150496> ;
+	owl:sameAs           <http://viaf.org/viaf/56796826>, <http://www.idref.fr/080163270/id>, <http://openlibrary.org/works/OL5277027A>, <http://datos.bne.es/resource/XX1316618>, <http://id.loc.gov/authorities/names/n81127923>, <http://data.carnegiehall.org/names/1000864>, <http://data.bibliotheken.nl/id/thes/p096940743>, <https://g.co/kg/m/01vq_w9>, <http://d-nb.info/gnd/11948756X>, <http://dbpedia.org/resource/Henry_Litolff>, <http://www.wikidata.org/entity/Q383853>, <http://nlg.okfn.gr/resource/authority/record218097>, <https://www.freebase.com/m/01vq_w9>, <http://id.worldcat.org/fast/1775129>, <http://data.bnf.fr/ark:/12148/cb13896698g> ;
+	rdaGr2:dateOfBirth   "1818-02-06" ;
+	rdaGr2:dateOfDeath   "1891-08-06" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/177208> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/42636> ;
+	skos:altLabel        "Henry Charles Litolff"@de, "Henry Charles Litolff"@pt, "Henry Charles Litolff"@pl, "Литольф Анри"@ru ;
+	skos:note            "Brits componist (1818-1891)"@nl, "Pianista, compositore ed editore musicale tedesco"@it, "Compositeur, pianiste et chef d'orchestre, éditeur de musique"@fr, "Piano virtuoso, composer and music publisher (1818-1891)"@en, "Englischer Klaviervirtuose, Komponist und Musikverleger"@de ;
+	skos:prefLabel       "Анри Литольф"@ru, "Henry Charles Litolff"@sv, "Henry Charles Litolff"@nl, "Henry Charles Litolff"@ca, "Henry Litolff"@hu, "Henry Litolff"@de, "Henry Litolff"@fi, "Henry Litolff"@pt, "Henry Litolff"@en, "Henry Litolff"@it, "Henry Litolff"@fr, "Henry Litolff"@es, "Henry Litolff"@sl, "Henry Litolff"@pl, "Henry Litolff"@da .

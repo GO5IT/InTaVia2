@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803097s>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:59.857Z" ;
+	dcterms:modified          "2018-03-26T12:26:50.655Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8803097s> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8803097s.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:12.897Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803097s> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8803097s/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803097s>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8803097s> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8803097s.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803097s.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3574"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8803097s>
+	a                   ore:Proxy ;
+	dc:creator          "Schubert, Franz (1797-1828). Compositeur", "Dumont, Jacques (1913-....). Violon", "Pascal, Léon (1899-1969). Alto (instrument)", "Mercier, Monique (19..-.... ; pianiste). Piano", "Salles, Robert (1901-1992). Violoncelle", "Moreau, Henri. Contrebasse" ;
+	dc:date             "1953" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Quintettes. Piano, violon, alto, violoncelle, contrebasse. D 667. La majeur]" ;
+	dc:format           "disc"@eng, "1 disque : 33 t ; 30 cm", "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8803097s", "Numéro commercial : Pathé-Vox DTX139" ;
+	dc:language         "zxx" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38253695r"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-8588" ;
+	dc:subject          "musique instrumentale de chambre" ;
+	dc:title            "Quintette en la majeur, op. 114 / Franz Schubert ; Monique Mercier, p ; Léon Pascal, alto ; Jacques Dumont, vl ; Robert Salles, vlc ; Henri Moreau, cb" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803097s> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8803097s>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1953" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803097s> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803097s>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "209034"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803097s#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:12.896Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803097s> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

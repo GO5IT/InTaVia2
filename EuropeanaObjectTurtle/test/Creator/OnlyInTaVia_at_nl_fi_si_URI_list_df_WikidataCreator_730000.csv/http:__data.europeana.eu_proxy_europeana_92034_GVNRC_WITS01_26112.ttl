@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_26112#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:14.495Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_26112> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_26112>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:07:12.032Z" ;
+	dcterms:modified          "2018-04-05T18:11:35.424Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_26112> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A26112%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_26112>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2682>, <http://data.europeana.eu/concept/1890> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1887", "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_26112> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_26112>
+	a                   ore:Proxy ;
+	dc:contributor      "Witsen, Willem" ;
+	dc:creator          "Witsen, Willem" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:26112", "WITS01:26112" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:source           "[WITS01:26112], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "toren"@nl, "sloep"@nl, "voetganger"@nl, "paraplu"@nl, "ophaalbrug"@nl, "stadsgezicht"@nl, "gracht"@nl ;
+	dc:title            "Montelbaanstoren te Amsterdam" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1887" ;
+	dcterms:extent      "40 x 55 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "doek", "olieverf", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_26112> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/1890>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/29> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q12518>, <http://id.ndl.go.jp/auth/ndlna/01058855>, <https://id.erfgoed.net/thesauri/erfgoedtypes/1171>, <https://g.co/kg/m/01fdzj>, <http://purl.org/bncf/tid/16569>, <http://data.bnf.fr/ark:/12148/cb11965217k>, <http://id.loc.gov/authorities/names/sh85136296>, <http://vocab.getty.edu/aat/300004847>, <http://www.yso.fi/onto/yso/p6968>, <http://datos.bne.es/resource/XX527089>, <https://www.freebase.com/m/01fdzj>, <http://www.geonames.org/ontology#S.TOWR>, <https://d-nb.info/gnd/4203577-6>, <http://dbpedia.org/ontology/Tower>, <http://babelnet.org/rdf/s00077766n> ;
+	skos:note        "Ihmisen tekemä korkea rakennelma tai korkea rakennuksen osa"@fi, "Stavba s větší výškou než šířkou"@cs, "Bâtiment de forme verticale"@fr, "Инженерное сооружение, отличающееся значительным преобладанием высоты над стороной или диаметром основания"@ru, "Augsta cilindrveida, piramīdveida, konusveida u. tml. patstāvīga celtne vai celtnes, arī iekārtas, ierīces u. tml. sastāvdaļa"@lv, "Estrutura com altura maior do que a largura"@pt, "Rodzaj budowli"@pl, "Hög byggnad"@sv, "Edificio a sviluppo prevalentemente verticale"@it, "Structure with height greater than width"@en, "Høj bygning"@da, "Structură înaltă cu lățime relativ mică"@ro, "Κτίρια στα οποία το ύψος υπερβαίνει το πλάτος"@el, "Estructura alta, normalmente menos ancha que alta"@es, "Bouwwerk"@nl, "Estructura alta, edifici"@ca, "Bauwerk, dessen Höhe ein Mehrfaches seines Durchmessers beträgt"@de ;
+	skos:prefLabel   "Toren"@nl, "Tårn"@da, "Tour"@fr, "Πύργος"@el, "Turm"@de, "Túr"@ga, "Stolp"@sl, "Torn"@sv, "Torn"@et, "Dorre"@eu, "Bokštas"@lt, "Torni"@fi, "Veža"@sk, "Turn"@ro, "Tornis"@lv, "Věž"@cs, "Башня"@ru, "Кула"@bg, "Tower"@en, "Torony"@hu, "Torre"@pt, "Torre"@ca, "Torre"@it, "Torre"@es, "Toranj"@hr, "Wieża"@pl .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:26112>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50407"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:26112&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "38066"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "140"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_26112>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2682>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2280> ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p19171>, <http://purl.org/bncf/tid/18150>, <https://g.co/kg/m/0hnnb>, <http://www.wikidata.org/entity/Q41607>, <http://thesaurus.europeanafashion.eu/thesaurus/10149>, <http://vocab.getty.edu/aat/300046227>, <https://www.freebase.com/m/0hnnb>, <http://id.loc.gov/authorities/names/sh2003012083>, <http://purl.obolibrary.org/obo/ENVO_02000052>, <http://www.idref.fr/028031210/id>, <https://d-nb.info/gnd/4224719-6>, <http://id.ndl.go.jp/auth/ndlna/00565083>, <http://data.bnf.fr/ark:/12148/cb11994860r>, <http://iconclass.org/41D2631> ;
+	skos:note        "Gebrauchsgegenstand zum Schutz vor Niederschlag und Sonne"@de, "Αντικείμενο το οποίο χρησιμεύει για την προστασία από τον ήλιο ή τη βροχή"@el, "Předmět sloužící k osobní ochraně před deštěm nebo před slunečním zářením"@cs, "Приспособление от дождя и солнца"@ru, "Baldachim chroniący przed opadami lub słońcem"@pl, "Accessorio"@it, "Dispositif, portable et pliable, permettant de se protéger de la pluie et du soleil"@fr, "Canopy designed to protect against rain or sun"@en ;
+	skos:prefLabel   "Paraplu"@nl, "Umbrella"@en, "Dežnik"@sl, "Зонт"@ru, "Dáždnik"@sk, "Umbrelă"@ro, "Sateenvarjo"@fi, "Kišobran"@hr, "Parapluie"@fr, "Parasol"@pl, "Paraguas"@es, "Skėtis"@lt, "Ernyő"@hu, "Euritako"@eu, "Lietussargs"@lv, "Vihmavari"@et, "Paraply"@sv, "Paraply"@da, "Paraigua"@ca, "Ombrello"@it, "Guarda-chuva"@pt, "Schirm"@de, "Чадър"@bg, "Deštník"@cs, "Ομπρέλα"@el .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_26112>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_26112> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:26112> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:26112&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_26112#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:14.495Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_26112> .

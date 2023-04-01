@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NESA02_A0076_03_>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:17:46.132Z" ;
+	dcterms:modified          "2018-04-05T17:26:56.165Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANESA02%3AA0076%2803%29%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NESA02_A0076_03_>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NESA02_A0076_03_> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0076(03)&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3668"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "99"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.geheugenvannederland.nl/?/en/items/NESA02:A0076(03)>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "45930"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0076_03_>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NESA02:A0076(03)> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0076(03)&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NESA02_A0076_03_>
+	a                   ore:Proxy ;
+	dc:contributor      "Willaerts, Adam" ;
+	dc:creator          "Willaerts, Adam" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0076(03)" ;
+	dc:rights           "For more information: Scheepvaartmuseum"@en, "Scheepvaartmuseum", "Voor meer informatie: Scheepvaartmuseum"@nl ;
+	dc:source           "[A.0076(03)], Objecten uit het Scheepvaartmuseum, Scheepvaartmuseum" ;
+	dc:subject          "schilderij"@nl, "painting"@nl ;
+	dc:title            "Nederlandse koopvaardijschepen in een buitenlandse baai" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1640 - 1650" ;
+	dcterms:isPartOf    "GVN", "NESA02", "Objecten uit het Scheepvaartmuseum" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0076_03_> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:28.688Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0076_03_> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0076_03_#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:28.687Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0076_03_> .

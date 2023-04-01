@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000171778>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000171778>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000369917> ;
+	edm:isShownAt      <http://bdh-rd.bne.es/viewer.vm?id=0000171778&page=1> ;
+	edm:isShownBy      <http://bdh-rd.bne.es/pdf.raw?query=id:0000171778&page=1&jpeg=true> ;
+	edm:object         <http://bdh-rd.bne.es/pdf.raw?query=id:0000171778&page=1&jpeg=true> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<https://iiif.europeana.eu/presentation/2022717/bnesearch_detalle_bdh0000171778/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://bdh-rd.bne.es/pdf.raw?query=id:0000171778&page=1&jpeg=true>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2022717/bnesearch_detalle_bdh0000171778/manifest> ;
+	ebucore:fileByteSize    "1690866"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "3310"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "2129"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000171778>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2018-06-05T13:58:56.944Z" ;
+	dcterms:modified          "2018-06-19T15:11:21.940Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778#metadataTier>, <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022717_Ag_ES_Hispana_Biblioteca_Nacional" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbdh-rd.bne.es%2Fpdf.raw%3Fquery%3Did%3A0000171778%26page%3D1%26jpeg%3Dtrue&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/2022717/bnesearch_detalle_bdh0000171778>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/place/143781> ;
+	dcterms:spatial     <http://data.europeana.eu/place/143781> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1671" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000171778> .
+
+<http://data.europeana.eu/proxy/provider/2022717/bnesearch_detalle_bdh0000171778>
+	a                       ore:Proxy ;
+	dc:creator              "Anónimo holandés, s. XVII", "Hooghe, Romeyn de, 1645-1708" ;
+	dc:date                 "1671" ;
+	dc:description          "La portada está firmada por Romeyn de Hooghe como grabador, el resto carecen de firma y son de diversos grabadores", "Existe otro ejemplar sin el retrato de Clemente X en ER/2046" ;
+	dc:language             "und" ;
+	dc:publisher            "Apud JOANNEM JANSSONIUM à WAESBERGE & Haeredes ELIZEI WEYERSTRAET" ;
+	dc:relation             "Portada e ils. de: Athanasii Kircheri è Soc. Jesu Latium. Id est, nova & parallela latii tum veteris tum novi descriptio. Amstelodami, apud Joannem Janssonium à Waesberge, & Haeredes Elizei Weyerstraet, 1671 (3/16528)" ;
+	dc:subject              "Clemente X, Papa", "Lacio" ;
+	dc:title                "ATHANASII KIRCHERI è Soc. JESU LATIUM... [Material gráfico] : [portada e ilustraciones]" ;
+	dc:type                 "Ilustraciones y Fotos" ;
+	dcterms:alternative     "Athanasii Kircheri è Soc. Jesu Latium id est, nova & parallela Latii tum  veteris tum novi descriptio" ;
+	dcterms:isReferencedBy  "Referencias: Gómez de Liaño. Athanasius Kircher. Madrid, Ediciones Siruela, 1986, pp.126-158" ;
+	dcterms:spatial         "Lacio" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000171778> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:15:09.392Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000171778> .
+
+<http://data.europeana.eu/place/143781>
+	a               edm:Place ;
+	owl:sameAs      <https://g.co/kg/m/04q_g>, <http://www.wikidata.org/entity/Q1282>, <https://libris.kb.se/1zcfd6pk39dt6ww>, <http://viaf.org/viaf/134326412>, <http://d-nb.info/gnd/4074042-0>, <https://sws.geonames.org/3174976/>, <https://www.freebase.com/m/04q_g>, <http://vocab.getty.edu/tgn/7003080>, <http://www.idref.fr/030011043/id>, <http://dbpedia.org/resource/Lazio>, <http://data.bnf.fr/ark:/12148/cb12151514z>, <http://www.yso.fi/onto/yso/p205201> ;
+	skos:altLabel   "Latium"@sv, "IT-62"@de, "Lazio"@de, "Regione Lazio"@it ;
+	skos:note       "Περιφέρεια της Ιταλίας"@el, "Regió de la Itàlia central"@ca, "Регион в Италии"@ru, "Region i mellersta Italien"@sv, "Administrative region of Italy"@en, "Regio in Italië"@nl, "Región v Taliansku"@sk, "Región de Italia central"@es, "Административен регион в Италия"@bg, "Region in Mittelitalien"@de, "Régió Olaszországban"@hu, "Região da Itália"@pt, "Région d'Italie"@fr, "Itālijas reģions"@lv, "Italian hallinnollinen alue"@fi, "Regione italiana a statuto ordinario"@it ;
+	skos:prefLabel  "Lacio"@lv, "Lacjum"@pl, "Lacio"@es, "Lazjo"@mt, "Lacijus"@lt, "Lacij"@hr, "Lacij"@sl, "Laci"@ca, "Лацио"@bg, "Лацио"@ru, "Latium"@fi, "Latium"@de, "Latium"@fr, "Lácio"@pt, "Lazio"@hu, "Lazio"@sk, "Lazio"@ga, "Lazio"@sv, "Lazio"@en, "Lazio"@it, "Lazio"@et, "Lazio"@cs, "Lazio"@ro, "Lazio"@da, "Lazio"@nl, "Λάτιο"@el ;
+	wgs84_pos:alt   "416.0" ;
+	wgs84_pos:lat   "41.9" ;
+	wgs84_pos:long  "12.716666" .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000171778&page=1>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "10811"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000000369917>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca Nacional de España"@es, "National Library of Spain"@en .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000171778#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:15:09.392Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000171778> .

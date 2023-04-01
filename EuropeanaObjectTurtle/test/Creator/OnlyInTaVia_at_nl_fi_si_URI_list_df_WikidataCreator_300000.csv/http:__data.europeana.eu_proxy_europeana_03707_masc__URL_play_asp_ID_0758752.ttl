@@ -1,0 +1,92 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:55.311Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0758752> .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0758752>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0758752>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/271> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0758752> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0758752>
+	a                    ore:Proxy ;
+	dc:contributor       "Orchestre de l'Opéra de Rouen", "Choeur de l'Académie de l'Opéra de Rouen/Haute-Normandie", "Sallaberger, Oswald" ;
+	dc:creator           "Verdi, Giuseppe" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0758752" ;
+	dc:subject           "MUSIQUE SACREE", "19 EME SIECLE", "REQUIEM", "MUSIQUE ROMANTIQUE" ;
+	dc:title             "Musique pure, musique engagée" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le dimanche 20 février 2005 (16h30, salle des concerts)" ;
+	dcterms:extent       "1h 19 min 56 sec" ;
+	dcterms:hasPart      "Messa da Requiem / Giuseppe Verdi ; Oswald Sallaberger, direction ; Choeur de l'Académie de Rouen/Haute-Normandie ; Orchestre de l'Opéra de Rouen/Haute-Normandie ; Valérie Millot, soprano ; Sylvie Brunet, mezzo ; Eric Salha, ténor ; Suren Shahi-Djanyan, basse" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0758752> .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0758752>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0758752> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/concept/271>
+	a                skos:Concept ;
+	skos:altLabel    "Messa da requiem"@it, "Requiem"@en, "Requiem"@es, "Requiem mass"@en, "Requiem Mass"@en, "Requiem (msza)"@pl, "Missa defunctorum"@fr, "Missa defunctorum"@ca, "Missa requiem"@pl, "Messe de requiem"@fr, "Missa pro defunctis"@pl, "Missa pro defunctis"@de, "Missa pro defunctis"@fr, "Msza żałobna"@pl, "Messe des morts"@fr, "Uitvaartmis"@nl, "Messa di requiem"@it ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p19741>, <https://www.freebase.com/m/0197d_>, <http://d-nb.info/gnd/4128596-7>, <https://g.co/kg/m/0197d_>, <http://purl.org/bncf/tid/59902>, <http://www.wikidata.org/entity/Q51616> ;
+	skos:note        "Messa secondo il rito liturgico della Chiesa cattolica celebrata in memoria del defunto"@it, "Missa de difunts de la religió catòlica"@ca, "Mass celebrated for the repose of the soul or souls of one or more deceased persons."@en, "Месса по умершим людям"@ru, "Mässa firad för avlidnas själar"@sv, "Misa de difuntos de la religión católica"@es, "Heilige Messe für Verstorbene"@de, "Heilige mis voor een overledene"@nl, "Katolisen kirkon jumalanpalvelus, jossa rukoillaan edesmenneiden puolesta"@fi, "Messe pour les âmes des défunts"@fr ;
+	skos:prefLabel   "Recviem"@ro, "Ρέκβιεμ"@el, "Rekviēms"@lv, "Rekviem"@cs, "Rekviem"@sl, "Rekviem"@da, "Réquiem"@pt, "Réquiem"@es, "Rekvijem"@hr, "Реквием"@ru, "Реквием"@bg, "Rèquiem"@ca, "Reekviem"@et, "Mass for the dead"@en, "Sielunmessu"@fi, "Requiem"@de, "Requiem"@sv, "Requiem"@lt, "Requiem"@it, "Requiem"@fr, "Requiem"@hu, "Requiem"@pl, "Requiem"@nl .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:55.311Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0758752> .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0758752>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:46.689Z" ;
+	dcterms:modified          "2014-06-27T11:27:46.689Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752#metadataTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0758752>
+	a  edm:ProvidedCHO .

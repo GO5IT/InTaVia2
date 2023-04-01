@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:33.462Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802156w> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8802156w/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802156w.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3697"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4B0082"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802156w>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8802156w> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8802156w.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8802156w>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802156w> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802156w>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "251317"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8802156w>
+	a                   ore:Proxy ;
+	dc:creator          "Wiener Philharmoniker. Orchestre", "Kosnowski, Zenon. Interprète", "Proebstl, Max (1913-1979). Basse (voix)", "Kolecek, Heinz. Interprète", "Veasey, Josephine (1930-....). Mezzo-soprano", "Krause, Tom (1934-2013). Baryton (voix)", "Douglas, Nigel (1929-....). Interprète", "Kuën, Paul (1910-1997). Ténor", "Solti, Georg (1912-1997). Direction d'orchestre", "Gestner, Aron. Interprète", "Kmentt, Waldemar (1929-2015). Ténor", "Hoffman, Grace (1921-2008). Alto (voix)", "Strauss, Richard (1864-1949). Auteur ou responsable intellectuel", "Maikl, Georg. Ténor", "Equiluz, Kurt (1929-....). Ténor", "Wächter, Eberhard (1929-1992). Baryton (voix)", "Nilsson, Birgit (1918-2005). Soprano", "Stolze, Gerhard (1926-1979). Ténor", "Kirschbichler, Theodor. Basse (voix)", "Schwer, Stefan (1902-1990). Interprète" ;
+	dc:date             "19.." ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Contient une table des matières", "Titre uniforme : [Salome. TrV 215]" ;
+	dc:format           "multipart/mixed", "Nombre total de vues :  31", "2 disques : 33 t, stéréo ; 30 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8802156w", "Numéro commercial : DECCA  SET229", "Numéro commercial : DECCA  SET228" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37850376t"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13919887m"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, ABS/62-7" ;
+	dc:title            "Salomé - Opéra en 4 actes / Livret de WILDE et LACHMANN ; Musique de R. STRAUSS ; Birgit NILSSON (soprano) SALOME - GERHARD STOLZE (HEROD : basse) - Grace HOFFMAN (mezzo) HERODIAS - Eberhard WACHTER (baryton) JOKANAAN Waldemar KMENTT (TENOR) NARRABOTH ; THE VIENNA PHILHARMONIC ORCHESTRA ; Dir. Georg SOLTI" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802156w> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:33.461Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802156w> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802156w>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:33.945Z" ;
+	dcterms:modified          "2018-03-26T12:26:28.775Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802156w> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8802156w> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8802156w.thumbnail.jpg&type=SOUND> .

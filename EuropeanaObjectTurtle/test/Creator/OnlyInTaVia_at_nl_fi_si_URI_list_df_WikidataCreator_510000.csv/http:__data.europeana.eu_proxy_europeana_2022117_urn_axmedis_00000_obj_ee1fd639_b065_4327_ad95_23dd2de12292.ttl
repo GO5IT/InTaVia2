@@ -1,0 +1,90 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:ee1fd639-b065-4327-ad95-23dd2de12292>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:ee1fd639-b065-4327-ad95-23dd2de12292> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292>
+	a                   ore:Proxy ;
+	dc:contributor      "Végh Quartet (Orchestra)", "Beethoven, Ludwig van (Compositore)" ;
+	dc:creator          "Beethoven, Ludwig van" ;
+	dc:date             "1952 (recording)" ;
+	dc:description      "Beethoven, Ludwig van da “Quartetto d'archi n° 2 in Mi minore, Op. 59”, registrazione in studio, analogica, Janzer, Georges, Viola,Szabo, Paul, Violoncello,Végh Sandor, Violino,Zoldy Sandor, Violino"@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/b/beethoven/> ;
+	dc:subject          "Chamber music"@it ;
+	dc:title            "Quartetto d'archi in Mi minore op. 59 n. 2 (Rasumovskij) - IV."@it ;
+	dcterms:extent      "00:05:34.6" ;
+	dcterms:isPartOf    "Quartetto d'archi n° 2 in Mi minore, Op. 59"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:06:04.580Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292#contentTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:06:04.580Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_ee1fd639_b065_4327_ad95_23dd2de12292> .

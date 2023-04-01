@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007929__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:08:43.783Z" ;
+	dcterms:modified          "2015-09-14T11:29:49.048Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F007900%2F007929%2Fkepiras_0030_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:53.827Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007929__> .
+
+<http://keptar.oszk.hu/007900/007929/kepiras_0030_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7528"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007929__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_007900_007929__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007929__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_007900_007929__>
+	a                   ore:Proxy ;
+	dc:creator          "Than ,  Mór  (painter)"@hu ;
+	dc:description      "A Tündér Ilona nagy sikere után azt tervezte a művész, hogy megfesti a délibábot, vagy ahogyan az ő fantáziájában élt a magyar alföld levegőjének e tüneménye : megfesti a \u0022Délibáb tündérnek a Naphoz való szerelmét\u0022 és ami még ennél is merészebb ötlet volt : elhatározta, hogy képét el fogja küldeni az 1867-iki párisi világkiállításra. Csakhamar el is készült e csodálatos festmény : a Nap szárnyas táltoson repülő ifjú, fején csillagkoszorúval ; a Délibáb eszményien könnyű, lenge női alak, mely epedve emelkedik fol a hozzá lehajoló Nap-ifjúhoz; Délibáb fátyol-finomságú leple a föld közelében már gyenge köddé foszlik szét s a nagy rónaságot ábrázoló háttér mélyén ott lebeg az igazi délibáb, míg az előtér bokra alatt Szél úrfi szendereg, álmával jelezve a délibáb tüneményének létrejöttéhez szükséges szélcsendet. /Szabó László: Magyar festőművészet, 1916/"@hu ;
+	dc:format           "JPEG képállomány \u000A         2093x1999 \u000A         300 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/007900/007929   [Metadata]" ;
+	dc:relation         "Malonyay Dezső: A magyar képirás úttörői [ http://mek.oszk.hu/06900/06916/pdf/06916.pdf]"@hu, "Thán Mór arcképe [ http://keptar.oszk.hu/007900/007928]"@hu ;
+	dc:source           "Internet Archive"@hu, "OSZK MEK"@hu ;
+	dc:subject          "allegorikus ábrázolás"@hu, "délibáb"@hu, "érzelemábrázolás"@hu, "szél"@hu, "Fine arts, visual arts"@hu, "nap"@hu ;
+	dc:title            "Délibáb szerelme"@hu ;
+	dc:type             "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007929__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:53.826Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007929__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/007900/007929>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007929__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007929__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/007900/007929> ;
+	edm:object         <http://keptar.oszk.hu/007900/007929/kepiras_0030_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007929__>
+	a  edm:ProvidedCHO .

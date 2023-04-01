@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/KONB16:534289657>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "43567"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_534289657>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:04:00.007Z" ;
+	dcterms:modified          "2018-04-05T17:06:05.891Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_KONB16_534289657> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AKONB16%3A534289657%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534289657&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17011"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "106"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_KONB16_534289657>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1820" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_534289657> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534289657>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/KONB16:534289657> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534289657&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:59.205Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534289657> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_KONB16_534289657>
+	a                   ore:Proxy ;
+	dc:contributor      "s.n.", "Scott, John", "Krafft, Johann Peter" ;
+	dc:creator          "Scott, John" ;
+	dc:description      "1 gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534289657" ;
+	dc:rights           "For more information: Koninklijke Bibliotheek"@en, "Koninklijke Bibliotheek", "Voor meer informatie: Koninklijke Bibliotheek"@nl ;
+	dc:source           "[1056 C 5 [21]. - Met: Erkl¨arung der Portraiten der Schlacht bey Leipzig], Plano’s en plakkaten, Koninklijke Bibliotheek" ;
+	dc:title            "Der Sieg bey Leipzig / P. Krafft ; gestochen von J. Scott"@de ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1820" ;
+	dcterms:isPartOf    "Plano’s en plakkaten", "KONB16", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534289657> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:59.205Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534289657> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534289657>
+	a  edm:ProvidedCHO .

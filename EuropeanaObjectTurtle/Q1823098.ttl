@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> .
+
+<http://balat.kikirpa.be/image/thumbnail/M279395.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500/manifest> ;
+	ebucore:fileByteSize    "146367"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "498"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://balat.kikirpa.be/timthumb.php?src=http://balat.kikirpa.be/image/thumbnail/M279395.jpg&q=75&w=250>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000000366931>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijk Instituut voor het Kunstpatrimonium"@nl, "Royal Institute for Cultural Heritage"@en .
+
+<http://balat.kikirpa.be/object/10064447>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "24330"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000366931> ;
+	edm:isShownAt      <http://balat.kikirpa.be/object/10064447> ;
+	edm:isShownBy      <http://balat.kikirpa.be/image/thumbnail/M279395.jpg> ;
+	edm:object         <http://balat.kikirpa.be/image/thumbnail/M279395.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500>
+	a                   ore:Proxy ;
+	dc:creator          "Van Leyden, Aertgen"@fr ;
+	dc:date             " 1524/1524" ;
+	dc:format           "technique de dessin gravure au burin technique d'impression" ;
+	dc:identifier       "AP_10221500", "[KIK-IRPA n° 10064447]" ;
+	dc:rights           "© KIK-IRPA, Brussels (Belgium)" ;
+	dc:subject          "[inv. n° legs Wittert nº 698]"@fr, "personne"@fr, "barbier"@fr, "homme"@fr ;
+	dc:title            "Le barbier"@fr ;
+	dc:type             "image imprimée"@fr, "Peinture[catégorie]"@fr ;
+	dcterms:extent      "largeur: 7.4 cm", "hauteur: 11.5 cm" ;
+	dcterms:medium      "encre"@fr, "papier à imprimer"@fr ;
+	dcterms:provenance  "Photo: Royal Institute for Cultural Heritage (KIK-IRPA), Brussels (Belgium)", "Object: Collections artistiques de l'Université de Liège, Liège. " ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:05:06.195Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-13T21:35:00.532Z" ;
+	dcterms:modified          "2016-01-14T13:29:40.495Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500#metadataTier>, <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "2048001_Ag_EU_AthenaPlus_KIK-IRPA" ;
+	edm:isShownBy             <http://balat.kikirpa.be/image/thumbnail/M279395.jpg> ;
+	edm:landingPage           <https://www.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbalat.kikirpa.be%2Fimage%2Fthumbnail%2FM279395.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:05:06.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10221500> .

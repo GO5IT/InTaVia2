@@ -1,0 +1,158 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/15502/SK_GS_D_15>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-07-05T17:36:42.305Z" ;
+	dcterms:modified          "2022-10-25T07:07:10.458Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15502/SK_GS_D_15#contentTier>, <http://data.europeana.eu/item/15502/SK_GS_D_15#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15502/SK_GS_D_15> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15502_Ag_AT_Kulturpool_Khm" ;
+	edm:landingPage           <https://www.europeana.eu/item/15502/SK_GS_D_15> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimageapi.khm.at%2Fimages%2F98874%2FSK_GS_D_15_6007.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/15502/SK_GS_D_15>
+	a                   ore:Proxy ;
+	dc:creator          <http://d-nb.info/118518771> ;
+	dc:date             "um 1590/1600" ;
+	dc:identifier       "SK_GS_D_15" ;
+	dc:language         "de" ;
+	dc:publisher        "Kunsthistorisches Museum Wien, Geistliche Schatzkammer" ;
+	dc:rights           "CC BY-NC-SA 4.0"@de ;
+	dc:title            "Altärchen mit einem Marienbild nach Federico Barocci"@de ;
+	dc:type             "Andachtsbild"@de, "Reliquiar; Retabelreliquiar"@de ;
+	dcterms:created     "um 1590/1600" ;
+	dcterms:extent      "H. 57 cm, B. 26,5 cm"@de ;
+	dcterms:isPartOf    "Geistliche Schatzkammer"@de ;
+	dcterms:medium      "Eichenholzkern, Nußfurniere, Ebenholzauflagen, Silber, teilweise vergoldet; Öl : Kupfer"@de ;
+	dcterms:spatial     "Augsburg"@de ;
+	dcterms:temporal    "temporal#270584349062" ;
+	edm:europeanaProxy  "false" ;
+	edm:isRelatedTo     "Reliquiar"@de, "Andachtsbild"@de ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/SK_GS_D_15> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15502/SK_GS_D_15> .
+
+<http://d-nb.info/118518771>
+	a                               edm:Agent ;
+	dc:date                         "Anfang 17. Jahrhundert" ;
+	dc:identifier                   "http://d-nb.info/118518771" ;
+	foaf:name                       "Peter Candid"@de ;
+	rdaGr2:biographicalInformation  "um 1548 Brügge - 1628 München"@de ;
+	rdaGr2:professionOrOccupation   "Nach" ;
+	skos:prefLabel                  "Peter Candid (Nach)" .
+
+<http://data.europeana.eu/aggregation/provider/15502/SK_GS_D_15>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15502/SK_GS_D_15> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507755> ;
+	edm:isShownAt      <http://www.khm.at/de/objektdb/detail/98874/> ;
+	edm:isShownBy      <http://imageapi.khm.at/images/98874/SK_GS_D_15_6007.jpg> ;
+	edm:object         <http://imageapi.khm.at/images/98874/SK_GS_D_15_6007.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://www.khm.at/de/objektdb/detail/98874/>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270584349062>
+	a                       edm:WebResource ;
+	dc:rights               "CC BY-NC-SA 4.0"@de ;
+	dcterms:isPartOf        "Geistliche Schatzkammer"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270584349062> ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://imageapi.khm.at/images/98874/SK_GS_D_15_6007.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15502/SK_GS_D_15/manifest> ;
+	ebucore:fileByteSize    "369369"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1713"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "975"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFEBCD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF0F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFDEAD"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/15502/SK_GS_D_15#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:14:03.233154Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/SK_GS_D_15> .
+
+<http://data.europeana.eu/place/12115>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/80> ;
+	owl:sameAs        <http://www.idref.fr/026359804/id>, <http://vocab.getty.edu/tgn/7004324>, <https://sws.geonames.org/6557107/>, <http://dbpedia.org/resource/Augsburg>, <http://nomisma.org/id/augsburg>, <https://g.co/kg/m/09f8q>, <https://www.freebase.com/m/09f8q>, <http://data.bnf.fr/ark:/12148/cb11862310j>, <https://d-nb.info/gnd/4003614-5>, <http://id.loc.gov/authorities/names/n50073906>, <http://www.yso.fi/onto/yso/p504574>, <http://viaf.org/viaf/153139306>, <http://viaf.org/viaf/252184198>, <http://www.wikidata.org/entity/Q2749> ;
+	skos:altLabel     "Augšpurk"@cs, "Augsburg, St"@de, "Аусбург"@ru, "Mixed Imperial City of Augsburg"@en, "Aušpurk"@cs, "Kreisfreie Stadt Augsburg"@en ;
+	skos:note         "Stad in de Duitse deelstaat Beieren"@nl, "Linna Baieris, Saksamaal"@et, "City in Bavaria, Germany"@en, "Kreisfreie Großstadt in Bayern, Deutschland"@de, "Kaupunki Saksassa"@fi, "Город в Баварии, Германия"@ru, "Město v Bavorsku v Německu"@cs, "Ciudad de Alemania"@es, "Stad i Tyskland"@sv, "Ville d'Allemagne"@fr, "By i Tyskland"@da, "Város Németországban"@hu, "Città tedesca"@it, "Miasto w Niemczech"@pl, "Πόλη της Γερμανίας, στην Βαυαρία"@el ;
+	skos:prefLabel    "Augusta"@it, "Άουγκσμπουργκ"@el, "Augsburga"@lv, "Аугсбург"@ru, "Аугсбург"@bg, "Augsburg"@de, "Augsburg"@fi, "Augsburg"@hr, "Augsburg"@hu, "Augsburg"@sk, "Augsburg"@sl, "Augsburg"@ga, "Augsburg"@ca, "Augsburg"@sv, "Augsburg"@en, "Augsburg"@et, "Augsburg"@eu, "Augsburg"@cs, "Augsburg"@pl, "Augsburg"@ro, "Augsburg"@da, "Augsburg"@nl, "Augsburgas"@lt, "Augsburgo"@pt, "Augsburgo"@es, "Augsbourg"@fr ;
+	wgs84_pos:alt     "482.0" ;
+	wgs84_pos:lat     "48.36889" ;
+	wgs84_pos:long    "10.897778" .
+
+<http://data.europeana.eu/item/15502/SK_GS_D_15>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/place/80>
+	a               edm:Place ;
+	owl:sameAs      <http://id.nlm.nih.gov/mesh/D005858>, <http://datos.bne.es/resource/XX450924>, <https://sws.geonames.org/2921044/>, <http://id.worldcat.org/fast/1210272>, <http://id.ndl.go.jp/auth/ndlna/00561571>, <http://babelnet.org/rdf/s00026684n>, <http://data.bnf.fr/ark:/12148/cb12205186t>, <https://g.co/kg/m/0345h>, <http://zbw.eu/stw/descriptor/18012-3>, <http://data.cervantesvirtual.com/person/32785>, <http://id.loc.gov/authorities/names/n80125931>, <http://dbpedia.org/resource/Germany>, <http://vocab.getty.edu/tgn/7000084>, <http://www.idref.fr/030685435/id>, <http://vocabularies.unesco.org/thesaurus/concept904>, <http://data.bnf.fr/ark:/12148/cb11930867z>, <http://www.wikidata.org/entity/Q183>, <http://data.bnf.fr/ark:/12148/cb152996644>, <http://www.yso.fi/onto/yso/p105087>, <http://www.yso.fi/onto/ysa/Y105087>, <http://id.nlm.nih.gov/mesh/Z01.542.315>, <https://d-nb.info/gnd/4011882-4>, <https://www.freebase.com/m/0345h>, <http://viaf.org/viaf/189116956> ;
+	skos:altLabel   "La République fédérale d’Allemagne"@fr, "Дойчланд"@ru, "República Federal de Alemania"@es, "Saksan liittotasavalta"@fi, "ФРГ"@bg, "ФРГ"@ru, "RFG"@ro, "Bundesrepublik Deutschland"@pl, "République fédérale d'Allemagne"@fr, "Bundesrepublik Deutschland"@fr, "Bundesrepublik Deutschland"@it, "Bundesrepublik Deutschland"@en, "Bundesrepublik Deutschland"@fi, "Bundesrepublik Deutschland"@ru, "Bundesrepublik Deutschland"@de, "Republica Federală Germania"@ro, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el, "Német Szövetségi Köztársaság"@hu, "Federal Republic of Germany"@en, "République fédérale allemande"@fr, "GER"@fr, "GER"@it, "GER"@en, "GER"@de, "GFR"@en, "Федерална република Германия"@bg, "Spolková republika Německo"@cs, "DEU"@nl, "SLV"@et, "DEU"@it, "DEU"@de, "Repubblika Federali tal-Ġermanja"@mt, "BR Deutschland"@pl, "Deutschland"@pl, "Deutschland"@fr, "BR Deutschland"@fr, "Deutschland"@it, "Deutschland"@en, "Deutschland"@ru, "BR Deutschland"@it, "BR Deutschland"@en, "BR Deutschland"@de, "Bondsrepubliek Duitsland"@nl, "RFA"@fr, "Repubblica Federale di Germania"@it, "Saksamaa Liitvabariik"@et, "Republica Federal de Alemania"@es, "R. F. A."@fr, "All."@fr, "DE"@nl, "DE"@fr, "DE"@en, "NSR"@cs, "Федеративная Республика Германия"@ru, "Förbundsrepubliken Tyskland"@sv, "SRN"@cs, "Bondsrepubliek"@nl, "BRD"@pl, "Nemecká spolková republika"@sk, "FRG"@de, "BRD"@cs, "BRD"@fr, "BRD"@it, "BRD"@en, "BRD"@de, "de"@fr, "de"@it, "de"@en, "de"@de ;
+	skos:note       "Država v Evropi"@sl, "Państwo w Europie Środkowej"@pl, "Държава в Западна Европа"@bg, "Liittovaltio Keski-Euroopassa"@fi, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Land in West- en Centraal-Europa"@nl, "Stát ve střední Evropě"@cs, "Pays d'Europe"@fr, "Förbundsrepublik i Centraleuropa"@sv, "Bundesstaat in Mitteleuropa"@de, "Europako erdialdeko herrialdea"@eu, "Stato dell'Europa, membro dell'Unione Europea"@it, "Tír i lár na hEorpa"@ga, "País del centre d'Europa"@ca, "Valsts Eiropā"@lv, "Država u srednjoj Europi"@hr, "Государство в Центральной Европе"@ru, "Šalis centrinėje Europoje"@lt, "Țară din Europa Centrală de Vest"@ro, "Ομοσπονδιακή δημοκρατία στην κεντρική Ευρώπη"@el, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Forbundsrepublik i Centraleuropa"@da, "Štát v strednej Európe"@sk, "Riik Kesk-Euroopas"@et, "País da Europa Central"@pt ;
+	skos:prefLabel  "Tyskland"@sv, "Tyskland"@da, "Alemania"@es, "Alemania"@eu, "Vokietija"@lt, "Alemanya"@ca, "Duitsland"@nl, "Germany"@en, "Německo"@cs, "Alemanha"@pt, "Ġermanja"@mt, "Niemcy"@pl, "Германия"@ru, "Германия"@bg, "Nemecko"@sk, "Saksa"@fi, "Saksamaa"@et, "Vācija"@lv, "Γερμανία"@el, "Németország"@hu, "Njemačka"@hr, "Germania"@it, "Germania"@ro, "Deutschland"@de, "Nemčija"@sl, "An Ghearmáin"@ga, "Allemagne"@fr ;
+	wgs84_pos:lat   "51.0" ;
+	wgs84_pos:long  "10.0" .
+
+<http://data.europeana.eu/proxy/europeana/15502/SK_GS_D_15>
+	a                   ore:Proxy ;
+	dc:identifier       "SK_GS_D_15" ;
+	dc:language         "deu" ;
+	dcterms:spatial     <http://data.europeana.eu/place/80>, <http://data.europeana.eu/place/12115> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15502/SK_GS_D_15> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/SK_GS_D_15> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15502/SK_GS_D_15> .
+
+<http://data.europeana.eu/item/15502/SK_GS_D_15#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:14:03.233560Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/SK_GS_D_15> .
+
+<http://data.europeana.eu/organization/1482250000004507755>
+	a               foaf:Organization ;
+	skos:prefLabel  "Fine Arts Museum Vienna"@en, "Kunsthistorisches Museum Wien"@de .
+
+<file:///usr/local/tomcat/webapps/temporal#270584349062>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  "Geistliche Schatzkammer"@de ;
+	edm:begin         "1590" ;
+	edm:end           "1600" ;
+	skos:prefLabel    "1590-1600" .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .
+
+<https://iiif.europeana.eu/presentation/15502/SK_GS_D_15/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

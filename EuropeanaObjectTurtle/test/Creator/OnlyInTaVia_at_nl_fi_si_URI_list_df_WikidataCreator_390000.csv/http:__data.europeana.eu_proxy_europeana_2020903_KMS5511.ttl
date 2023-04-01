@@ -1,0 +1,181 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2020903/KMS5511>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-10-26T13:07:55.931Z" ;
+	dcterms:modified          "2022-11-28T09:14:19.741Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2020903/KMS5511#contentTier>, <http://data.europeana.eu/item/2020903/KMS5511#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2020903/KMS5511> ;
+	edm:completeness          "0" ;
+	edm:country               "Denmark" ;
+	edm:datasetName           "2020903_Museu_NationalGalleryOfDenmark" ;
+	edm:landingPage           <https://www.europeana.eu/item/2020903/KMS5511> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fapi.smk.dk%2Fapi%2Fv1%2Fthumbnail%2F1eeda543-2b01-4378-be09-245cdcd03f59.jpg&type=IMAGE> .
+
+<http://www.wikidata.org/entity/Q1066288>
+	a                skos:Concept ;
+	skos:broader     <http://www.wikidata.org/entity/Q18783400>, <http://www.wikidata.org/entity/Q179700> ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00034406n>, <http://vocab.getty.edu/aat/300312262>, <http://vocab.getty.edu/aat/300047455>, <https://g.co/kg/m/01xmqj>, <https://www.freebase.com/m/01xmqj>, <http://thesaurus.europeanafashion.eu/thesaurus/10903>, <http://www.yso.fi/onto/yso/p26982> ;
+	skos:note        "estátua pequena"@pt, "petit objet figurant quelque chose, souvent une personne"@fr, "small item resembling a person or animal, sometimes part of a larger work"@en, "kleine, stark unterlebensgroße Statue"@de, "niewielka rzeźba przedstawiająca postać ludzką lub zwierzęcą"@pl, "escultura hecha en un formato pequeño."@es, "pieni ihmisaiheinen patsas"@fi, "malý předmět zobrazující osobu nebo postavu"@cs, "beeldje"@nl ;
+	skos:prefLabel   "estatueta"@ca, "estatueta"@pt, "αγαλμάτιο"@el, "Statuette"@de, "tatuetta"@hu, "Kujuke"@et, "статуэтка"@ru, "Figurin"@sv, "estatuilla"@es, "Statuete"@lv, "figurine"@nl, "figurine"@fr, "figurine"@en, "figurină"@ro, "statuette"@da, "Figuriini"@fi, "figurina"@it, "figurka"@pl, "figurka"@cs .
+
+<file:///usr/local/tomcat/webapps/37021_person>
+	a               edm:Agent ;
+	foaf:name       " Ubekendt flamsk ca. 1700" ;
+	rdaGr2:gender   "UNKNOWN" ;
+	skos:prefLabel  "Ubekendt flamsk ca. 1700"@da .
+
+<https://api.smk.dk/api/v1/thumbnail/1eeda543-2b01-4378-be09-245cdcd03f59.jpg>
+	a                       edm:WebResource ;
+	dc:creator              "National Gallery of Denmark" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2020903/KMS5511/manifest> ;
+	ebucore:fileByteSize    "178926"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1212"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2020903/KMS5511>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2020903/KMS5511> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338849> ;
+	edm:isShownAt      <https://open.smk.dk/artwork/image/kms5511> ;
+	edm:isShownBy      <https://api.smk.dk/api/v1/thumbnail/1eeda543-2b01-4378-be09-245cdcd03f59.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<file:///usr/local/tomcat/webapps/#1682%2F1735>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://data.europeana.eu/timespan/18>, <http://data.europeana.eu/timespan/17> ;
+	edm:begin         "1682-01-01" ;
+	edm:end           "1735-12-31" ;
+	skos:prefLabel    "1682/1735"@zxx .
+
+<https://iiif.europeana.eu/presentation/2020903/KMS5511/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2020903/KMS5511#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-11-28T11:05:14.832040Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2020903/KMS5511> .
+
+<http://data.europeana.eu/timespan/17>
+	a               edm:TimeSpan ;
+	edm:begin       "1601-01-01" ;
+	edm:end         "1700-12-31" ;
+	owl:sameAs      <http://data.bnf.fr/ark:/12148/cb120419182>, <http://www.wikidata.org/entity/Q7016>, <http://dbpedia.org/resource/17th_century>, <http://vocab.getty.edu/aat/300404511>, <http://id.nlm.nih.gov/mesh/D049670>, <https://g.co/kg/m/08b2m>, <http://babelnet.org/rdf/s02814624n>, <http://id.nlm.nih.gov/mesh/K01.400.504.750>, <https://www.freebase.com/m/08b2m>, <http://id.loc.gov/authorities/names/sh85120427> ;
+	skos:altLabel   "'600"@it, "17 век"@ru, "1600-tal"@sv, "17:e århundradet"@sv, "17:e seklet"@sv, "History, 17th Century"@en, "XVII Secolo"@it, "Seklu 17"@mt, "Seicento"@it, "Secolo XVII"@it, "17e siècle"@fr, "1600-talet (sekel)"@sv, "1600-talet (århundrade)"@sv, "17º secolo"@it, "17° secolo"@it, "Diciassettesimo secolo"@it, "17th-century"@en ;
+	skos:prefLabel  "Siglo XVII"@es, "1600-luku"@fi, "Século XVII"@pt, "XVII secolo"@it, "17. århundrede"@da, "17. sajand"@et, "17. stoljeće"@hr, "17. gadsimts"@lv, "XVII amžius"@lt, "17. század"@hu, "17ú haois"@ga, "XVII. mendea"@eu, "XVIIe siècle"@fr, "17. stoletje"@sl, "Seklu XVII"@mt, "17. storočie"@sk, "17ος αιώνας"@el, "1600-talet"@sv, "17th century"@en, "XVII wiek"@pl, "17. století"@cs, "17e eeuw"@nl, "Segle XVII"@ca, "17 век"@bg, "XVII век"@ru, "17. Jahrhundert"@de, "Secolul al XVII-lea"@ro .
+
+<https://open.smk.dk/artwork/image/kms5511>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/timespan/18>
+	a               edm:TimeSpan ;
+	edm:begin       "1701-01-01" ;
+	edm:end         "1800-01-01" ;
+	owl:sameAs      <http://id.loc.gov/authorities/names/sh85041401>, <http://vocab.getty.edu/aat/300404512>, <https://www.freebase.com/m/08b33>, <http://babelnet.org/rdf/s02814699n>, <https://g.co/kg/m/08b33>, <http://id.loc.gov/authorities/names/sh2002012474>, <http://id.nlm.nih.gov/mesh/K01.400.504.875>, <http://dbpedia.org/resource/18th_century>, <http://id.nlm.nih.gov/mesh/D049671>, <http://www.wikidata.org/entity/Q7015> ;
+	skos:altLabel   "18e siècle"@fr, "Eighteenth Century"@en, "Secolo XVIII"@it, "Diciottesimo secolo"@it, "1700-talet (århundrade)"@sv, "1700-tallet"@da, "History, 18th Century"@en, "18. évszázad"@hu, "18 век"@ru, "18:e seklet"@sv, "18:e århundradet"@sv, "18º secolo"@it, "1700-tal"@sv, "1700-talet (sekel)"@sv, "1701-1800"@nl, "18 siècle"@fr, "18° secolo"@it, "Settecento"@it, "'700"@it, "18eme siècle"@fr, "Siglo 18"@es, "18th-century"@en, "XVIII Secolo"@it ;
+	skos:prefLabel  "Século XVIII"@pt, "18ú haois"@ga, "18. århundrede"@da, "18. stoletje"@sl, "XVIII amžius"@lt, "1700-luku"@fi, "Siglo XVIII"@es, "18ος αιώνας"@el, "18. gadsimts"@lv, "18. sajand"@et, "18. Jahrhundert"@de, "XVIII век"@ru, "18. století"@cs, "1700-talet"@sv, "18th century"@en, "XVIIIe siècle"@fr, "18e eeuw"@nl, "Secolul al XVIII-lea"@ro, "18. század"@hu, "Segle XVIII"@ca, "18 век"@bg, "18. stoljeće"@hr, "XVIII wiek"@pl, "18. storočie"@sk, "XVIII secolo"@it, "XVIII. mendea"@eu .
+
+<http://data.europeana.eu/proxy/provider/2020903/KMS5511>
+	a                   ore:Proxy ;
+	dc:creator          "37021_person", "4614_person" ;
+	dc:title            "Jupiter Bringing the Hercules Child to the Sleeping Juno"@en ;
+	dc:type             <http://www.wikidata.org/entity/Q1066288> ;
+	dcterms:created     "1682-1735" ;
+	dcterms:medium      <http://www.wikidata.org/entity/Q40861> ;
+	dcterms:spatial     <http://www.wikidata.org/entity/Q671384> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2020903/KMS5511> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2020903/KMS5511> .
+
+<http://data.europeana.eu/item/2020903/KMS5511>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2020903/KMS5511#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-11-28T11:05:14.832062Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2020903/KMS5511> .
+
+<http://data.europeana.eu/organization/1482250000000338849>
+	a               foaf:Organization ;
+	skos:prefLabel  "Statens Museum for Kunst"@da, "National Gallery of Denmark"@en .
+
+<file:///usr/local/tomcat/webapps/4614_person>
+	a                   edm:Agent ;
+	foaf:name           "Jan Claudius de Cock" ;
+	rdaGr2:dateOfBirth  "1667-01-01" ;
+	rdaGr2:dateOfDeath  "1735-01-01" ;
+	rdaGr2:gender       "MALE" ;
+	skos:prefLabel      "Cock, Jan Claudius de"@da .
+
+<http://data.europeana.eu/concept/2347>
+	a                skos:Concept ;
+	skos:altLabel    "Statuetta"@it, "Soldat de plomb"@fr, "Statuetka"@pl, "Figurita"@es, "Statuette"@en, "Statuette"@fr, "Statuette"@nl, "Фигурка"@ru, "Figurinisme"@fr, "Statuetă"@ro, "Soška"@cs, "Figurine"@de, "Αγαλματίδιο"@el, "Beeldje"@nl, "Figurilla"@es, "Posążek"@pl ;
+	skos:exactMatch  <http://thesaurus.europeanafashion.eu/thesaurus/10903>, <http://vocab.getty.edu/aat/300047455>, <https://www.freebase.com/m/01xmqj>, <http://www.yso.fi/onto/yso/p26982>, <https://g.co/kg/m/01xmqj>, <http://babelnet.org/rdf/s00034406n>, <http://vocab.getty.edu/aat/300312262>, <http://www.wikidata.org/entity/Q1066288>, <http://www.wikidata.org/entity/Q16738862> ;
+	skos:note        "Beeldje"@nl, "Niewielka rzeźba przedstawiająca postać ludzką lub zwierzęcą"@pl, "Pieni ihmisaiheinen patsas"@fi, "Malý předmět zobrazující osobu nebo postavu"@cs, "Petit objet figurant quelque chose, souvent une personne"@fr, "Kleine, stark unterlebensgroße Statue"@de, "Escultura hecha en un formato pequeño."@es, "Estátua pequena"@pt, "Small item resembling a person or animal, sometimes part of a larger work"@en ;
+	skos:prefLabel   "Estatuilla"@es, "Figurin"@sv, "Статуэтка"@ru, "Statuette"@de, "Statuete"@lv, "Figurina"@it, "Tatuetta"@hu, "Figuriini"@fi, "Kujuke"@et, "Figurka"@cs, "Figurka"@pl, "Estatueta"@pt, "Estatueta"@ca, "Αγαλμάτιο"@el, "Figurină"@ro, "Figurine"@en, "Figurine"@fr, "Figurine"@nl .
+
+<http://www.wikidata.org/entity/Q40861>
+	a                skos:Concept ;
+	skos:broader     <http://www.wikidata.org/entity/Q47069> ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00053338n>, <http://data.bnf.fr/ark:/12148/cb11976514t>, <https://g.co/kg/m/04tdh>, <https://www.freebase.com/m/04tdh>, <http://vocab.getty.edu/aat/300011443>, <http://thesaurus.europeanafashion.eu/thesaurus/10925>, <http://id.ndl.go.jp/auth/ndlna/00561217>, <http://datos.bne.es/resource/XX532315>, <http://www.yso.fi/onto/yso/p18165>, <http://id.loc.gov/authorities/names/sh85080941>, <https://d-nb.info/gnd/4168954-9>, <http://purl.org/bncf/tid/13244> ;
+	skos:note        "metamorphes Gestein"@de, "hornina"@cs, "metamorf kőzet"@hu, "skała metamorficzna"@pl, "non-foliated metamorphic rock commonly used for sculpture and as a building material"@en, "bergart"@sv, "rocha metamórfica não foliada, comumente usada para escultura e como material de construção"@pt, "roca metamòrfica compacta"@ca, "minerāliezis, kaļķakmens paveids"@lv, "roccia utilizzata nell'edilizia e nella scultura"@it, "gemetamorfoseerd kalksteen, bestaande uit zeer puur calciumcarbonaat"@nl, "roche dérivée du calcaire"@fr, "Vrsta kamena"@hr, "πέτρωμα"@el, "метаморфна скала, изградена от калцит или доломит"@bg, "метаморфическая горная порода, состоящая только из кальцита"@ru, "roca metamórfica calcárea"@es, "kivilaji"@fi, "stenart"@da ;
+	skos:prefLabel   "Marmor"@de, "Marmura"@ro, "μάρμαρο"@el, "marbre"@fr, "marbre"@ca, "marmer"@nl, "мрамор"@ru, "мрамор"@bg, "marmor"@sl, "marmor"@sv, "marmor"@et, "marmor"@da, "haitzurdin"@eu, "marmors"@lv, "marmar"@ga, "mármore"@pt, "marmori"@fi, "marmo"@it, "Marmuras"@lt, "mármol"@es, "marmur"@pl, "marble"@en, "márvány"@hu, "mramor"@hr, "mramor"@sk, "mramor"@cs .
+
+<http://data.europeana.eu/concept/2067>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q40861>, <http://www.yso.fi/onto/yso/p18165>, <https://g.co/kg/m/04tdh>, <http://purl.org/bncf/tid/13244>, <http://data.bnf.fr/ark:/12148/cb11976514t>, <http://id.loc.gov/authorities/names/sh85080941>, <http://babelnet.org/rdf/s00053338n>, <http://thesaurus.europeanafashion.eu/thesaurus/10925>, <http://id.ndl.go.jp/auth/ndlna/00561217>, <https://d-nb.info/gnd/4168954-9>, <http://vocab.getty.edu/aat/300011443>, <https://www.freebase.com/m/04tdh>, <http://datos.bne.es/resource/XX532315> ;
+	skos:note        "Roca metamòrfica compacta"@ca, "Metamorf kőzet"@hu, "Minerāliezis, kaļķakmens paveids"@lv, "Roccia utilizzata nell'edilizia e nella scultura"@it, "Hornina"@cs, "Vrsta kamena"@hr, "Kivilaji"@fi, "Bergart"@sv, "Метаморфна скала, изградена от калцит или доломит"@bg, "Stenart"@da, "Non-foliated metamorphic rock commonly used for sculpture and as a building material"@en, "Metamorphes Gestein"@de, "Skała metamorficzna"@pl, "Roca metamórfica calcárea"@es, "Метаморфическая горная порода, состоящая только из кальцита"@ru, "Roche dérivée du calcaire"@fr, "Πέτρωμα"@el, "Gemetamorfoseerd kalksteen, bestaande uit zeer puur calciumcarbonaat"@nl, "Rocha metamórfica não foliada, comumente usada para escultura e como material de construção"@pt ;
+	skos:prefLabel   "Marmori"@fi, "Marmo"@it, "Marmuras"@lt, "Mármore"@pt, "Marmura"@ro, "Marmor"@de, "Marmor"@sl, "Mramor"@hr, "Mramor"@sk, "Mramor"@cs, "Marmor"@sv, "Marmor"@et, "Marmor"@da, "Marmors"@lv, "Μάρμαρο"@el, "Marbre"@fr, "Marbre"@ca, "Marmur"@pl, "Marmer"@nl, "Marble"@en, "Mármol"@es, "Marmar"@ga, "Haitzurdin"@eu, "Márvány"@hu, "Мрамор"@bg, "Мрамор"@ru .
+
+<http://www.wikidata.org/entity/Q671384>
+	a                           edm:Agent ;
+	owl:sameAs                  <http://id.loc.gov/authorities/names/n79061308>, <http://viaf.org/viaf/256749101>, <https://sws.geonames.org/6949482/>, <https://d-nb.info/gnd/1007582-3>, <http://id.ndl.go.jp/auth/ndlna/00861598>, <http://libris.kb.se/resource/auth/129395>, <http://www.idref.fr/028331699/id>, <http://data.bnf.fr/ark:/12148/cb12018928f>, <http://vocab.getty.edu/ulan/500242788>, <https://www.freebase.com/m/0b12k0>, <https://libris.kb.se/mkz1zxx554mmz1c>, <http://dbpedia.org/resource/National_Gallery_of_Denmark>, <http://datos.bne.es/resource/XX130522>, <https://g.co/kg/m/0b12k0> ;
+	rdaGr2:dateOfEstablishment  "1896-01-01T00:00:00Z" ;
+	skos:altLabel               "Galeria Nacional de Dinamarca"@es, "Royal Museum of Fine Arts"@en, "Statens Museum for Kunst"@cs, "Statens Museum for Kunst"@ca, "Statens Museum for Kunst"@es, "National Gallery of Denmark"@en, "musée royal d'art, Copenhague"@fr, "Kunstmuseum"@en, "Denmark. Statens museum for kunst"@en, "Copenhagen. Statens museum for kunst"@en, "Statens museum for kunst"@en, "SMK"@cs, "SMK"@en, "SMK"@ca, "SMK"@es, "Dansk kunstmuseum"@en ;
+	skos:note                   "museu nacional d'art de Dinamarca"@ca, "Dänische Nationalgalerie in Kopenhagen"@de, "museum in Kopenhagen"@nl, "dánské národní muzeum"@cs, "Tanskan kansallisgalleria"@fi, "kunstmuseum i København"@da, "museo estatal de Dinamarca"@es, "museo d'arte nazionale della Danimarca a Copenaghen"@it, "Art Museum in Copenhagen, Denmark"@en, "Konstmuseum i Köpenhamn"@sv, "museu de arte em Copenhaga"@pt, "musée national d'art, Copenhague"@fr ;
+	skos:prefLabel              "Galería Nacional de Dinamarca"@es, "Valsts mākslas muzejs (Dānija)"@lv, "Museu Nacional de Dinamarca"@ca, "Государственный музей искусств"@ru, "Państwowe Muzeum Sztuki w Kopenhadze"@pl, "Státní muzeum umění"@cs, "Danimarkako Galeria Nazionala"@eu, "Statens Museum for Kunst"@fr, "Statens Museum for Kunst"@de, "Statens Museum for Kunst"@fi, "Statens Museum for Kunst"@sv, "Statens Museum for Kunst"@en, "Museu Nacional de Arte da Dinamarca"@pt, "Statens Museum for Kunst"@it, "Statens Museum for Kunst"@da, "Statens Museum for Kunst"@nl .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://data.europeana.eu/proxy/europeana/2020903/KMS5511>
+	a                   ore:Proxy ;
+	dc:identifier       "KMS5511" ;
+	dc:type             <http://data.europeana.eu/concept/2347> ;
+	dcterms:created     <file:///usr/local/tomcat/webapps/#1682%2F1735> ;
+	dcterms:medium      <http://data.europeana.eu/concept/2067> ;
+	dcterms:spatial     <http://data.europeana.eu/organization/1482250000000338849> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2020903/KMS5511> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2020903/KMS5511> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2020903/KMS5511> .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88000617>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:50:47.792Z" ;
+	dcterms:modified          "2018-03-26T12:25:37.810Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88000617> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88000617.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88000617>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88000617> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88000617.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88000617/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:05.609Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88000617> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:05.609Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88000617> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88000617>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88000617> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88000617>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "246703"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88000617.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4404"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B22222"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF4500"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88000617>
+	a                   ore:Proxy ;
+	dc:creator          "Bayardo, Lito (1905-1986). Auteur ou responsable intellectuel", "Penaloza, G. Goria. Auteur ou responsable intellectuel", "Rozano. Auteur ou responsable intellectuel", "Mores, Mariano (1918-2016). Auteur ou responsable intellectuel", "Matos Rodriguez, Gerardo H.. Auteur ou responsable intellectuel", "Gardel, Carlos (1890-1935). Auteur ou responsable intellectuel", "Sanders, Julio César (1897-1942). Auteur ou responsable intellectuel", "Gade, Jacob (1879-1963). Auteur ou responsable intellectuel", "Dios Filiberto, Juan de. Auteur ou responsable intellectuel", "Greco, Vincente. Auteur ou responsable intellectuel", "Discépolo, Enrique Santos (1901-1951). Auteur ou responsable intellectuel", "Romero, Manuel (1891-1954). Parolier", "Brahms, Johannes (1833-1897). Auteur ou responsable intellectuel", "Canaro, Francisco (1888-1964). Auteur ou responsable intellectuel", "Vedani, César (1906-1979). Auteur ou responsable intellectuel", "Donato, Edgardo (1897-1963). Auteur ou responsable intellectuel", "Villoldo, Enrique (1861-1919). Auteur ou responsable intellectuel", "Pelay, Ivo. Auteur ou responsable intellectuel", "Raven, Carol. Auteur ou responsable intellectuel", "Serrano, Martinez. Auteur ou responsable intellectuel" ;
+	dc:date             "1959" ;
+	dc:description      "Titre uniforme : [El choclo]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Jalousie]", "Titre uniforme : [Adios pampa mia (Tango)]", "Titre uniforme : [La Cumparsita]", "Comprend : ELCCHOCLO / VILLOLDO - CAMINITO / PENALOZA - FILIBERTO - ESTA NOCHE ME EMBORRACHO / DISCEPOLO - CONFESION / DISCEPOLO -AMADORI - JALOUSIE / GADE - DONDE ESTAS, CORAZON / SERRANO - YIRA, YIRA / DISCEPOLO - LA CUMPARSITA / RODRIGUEZ - TOMO Y OBLIGO / GARDEL-ROMERO - ADIOS MUCHACHOS / SANDERS-VEDANI - RAVEN - RODRIGUEZ PENA / GRECO - A MEDIA LUZ / DONATO - ADIOS, PAMPA MIA / CANARO-MORES-PELAY - DUELO CRIOLLO / ROZZANO-BAYARDO", "Titre uniforme : [Adios Muchachos]", "Titre uniforme : [Symphonies. No 1. Op. 68. Do mineur]", "Titre uniforme : [Caminito]" ;
+	dc:format           "Nombre total de vues :  18", "1 disque : 33 t ; 30 cm", "multipart/mixed", "disque microsillon"@fre, "disc"@eng ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88000617", "Numéro commercial : Montilla 26012" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37926249n"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-3828" ;
+	dc:title            "HI-FI TANGOS / l'ORQUESTA MONTILLA dir. Rafael IBARBIA" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88000617> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88000617> .

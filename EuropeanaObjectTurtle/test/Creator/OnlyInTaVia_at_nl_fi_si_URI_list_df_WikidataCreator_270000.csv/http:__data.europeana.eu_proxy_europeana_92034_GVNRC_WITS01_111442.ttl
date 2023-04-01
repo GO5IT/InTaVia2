@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:111442>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49789"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111442&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "39887"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "222"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_111442>
+	a                   ore:Proxy ;
+	dc:contributor      "Breitner, George Hendrik" ;
+	dc:creator          "Breitner, George Hendrik" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:111442", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111442" ;
+	dc:rights           "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Rijksbureau voor Kunsthistorische Documentatie", "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:111442], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "sneeuw"@nl, "winter"@nl, "vrouw"@nl, "sjaal"@nl, "figuurstudie"@nl ;
+	dc:title            "Twee vrouwen op straat" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1872-1923" ;
+	dcterms:isPartOf    "Willem Witsen: Tachtiger in brief en beeld", "WITS01", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111442> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111442#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:01.488Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111442> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_111442>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:51.753Z" ;
+	dcterms:modified          "2018-04-05T18:11:10.191Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_111442> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A111442%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111442>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:111442> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111442&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111442#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:01.487Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111442> .
+
+<http://data.europeana.eu/concept/2572>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2280> ;
+	skos:exactMatch  <http://thesaurus.europeanafashion.eu/thesaurus/10177>, <http://vocab.getty.edu/aat/300046123>, <https://www.freebase.com/m/02h19r>, <http://www.wikidata.org/entity/Q191022>, <http://www.yso.fi/onto/yso/p10457>, <https://g.co/kg/m/02h19r>, <http://babelnet.org/rdf/s00069523n> ;
+	skos:note        "Accessorio di moda"@it, "Complemento de ropa"@es, "Oděvní doplněk"@cs, "Garment of fabric worn around neck or head"@en, "Деталь одежды"@ru, "Complement de roba"@ca, "Pas okrywający szyję"@pl, "Lepoaren inguruan janzten den berogarria, gehienetan artilezkoa eta luzea"@eu, "Accessoire de mode"@fr, "Kleidungsstück"@de ;
+	skos:prefLabel   "Sciarpa"@it, "Cachecol"@pt, "Szalik"@pl, "Šalikas"@lt, "Lepoko-berogarri"@eu, "Šal"@hr, "Écharpe"@fr, "Schal"@de, "Halstørklæde"@da, "Sall"@et, "Bufanda"@ca, "Bufanda"@es, "Šála"@cs, "Scarf"@en, "Eșarfă"@ro, "Huivi"@fi, "Шарф"@ru, "Halsduk"@sv, "Шал"@bg, "Sjaal"@nl .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_111442>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2572> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_111442> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_111442> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111442>
+	a  edm:ProvidedCHO .

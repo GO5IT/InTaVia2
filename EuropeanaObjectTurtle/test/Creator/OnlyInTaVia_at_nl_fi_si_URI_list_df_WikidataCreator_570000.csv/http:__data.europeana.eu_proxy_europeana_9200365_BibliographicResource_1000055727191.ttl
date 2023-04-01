@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b9058647n>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1587" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9058647n> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9058647n.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7437"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9058647n>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b9058647n> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b9058647n.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/f1> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:01.863Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9058647n> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9058647n>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:40:27.693Z" ;
+	dcterms:modified          "2018-07-23T15:39:51.832Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b9058647n> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b9058647n.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:01.864Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9058647n> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9058647n/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9058647n/manifest> ;
+	ebucore:fileByteSize    "22711"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "620"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9058647n/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b9058647n>
+	a                   ore:Proxy ;
+	dc:creator          "Lassus, Roland de (1532-1594). Compositeur" ;
+	dc:date             "1587" ;
+	dc:description      "Présentation musicale : Parties", "Comprend : f. 2 r° et 13 r° - Parce mihi Domine - f. 2 v° et 13 r° - Peccavi, quid faciam (IIa pars) - f. 3 r° et 13 v° - Taedet animam meam - f. 3 v° - Iudica mihi (IIa pars) - f. 4 r° et 13 v° - Nunquid sicut dies hominis (IIIa pars) - f. 4 v° et 14 r° - Manus tuae Domine - f. 5 r° et 14 r° - Nonne sicut lac (IIa pars) - f. 5 v° et 14 v° - Responde mihi - f. 6 r° et 14 v° - Scribis enim (IIa pars) - f. 6 v° et 15 r° - Homo natus de muliere - f. 7 r° - Et dignum ducis (IIa pars) - f. 7 v° - Constituisti terminos (IIIa pars) - f. 8 r° et 15 v° - Quis mihi hoc tribuat - f. 8 v° et 15 v° - Vocabis me (IIa pars) - f. 9 r° et 16 r° - Spiritus meus attenuabitur - f. 9 v° - Libera me Domine (I.a pars) - f. 10 v° et 16 v° - Pelli meae consumptis - f. 11 r° - Quare persequimini (II.a pars) - f. 11 v° et 17 r° - IIIa pars - f. 12 r° et 17 v° - Quare de vulva - f. 12 v° et 17 v° - IIa pars - f. 15 r° - Brevis dies hominis (II.a pars) - f. 16 r° - Dies mei transierunt (II.a pars) - f. 18 r° - Te decet hymnus - f. 19 v° - Domine, quando veneris - f. 20 r° - Peccantem me quotidie", "Appartient à l’ensemble documentaire : RISMImp" ;
+	dc:format           "4 vol. in-4°, 229 x 182 mm., 20 ff. chacun", "Nombre total de vues :  168" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b9058647n" ;
+	dc:language         "fre" ;
+	dc:publisher        "apud Adrianum le Roy, et Robertum Ballard (Lutetiae Parisiorum)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb430956896" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Fonds du service reproduction, RESVM1-35" ;
+	dc:title            "NOVEM QVIRITATIONES DIVI IOB, // BIS QVIDEM, SED DIVERSIS MODIS // lentioríque concentu quaternis vocibus modulantes. // Auctore. // ORLANDO LASSVSSIO. // Adiectis quibusdam ex officio Deffunctorum // Responsorijs. // [Marque de Le Roy et Ballard] // LVTETIAE PARISIORVM. // Apud Adrianum le Roy, et Robertum Ballard, // Regis Typographos sub signo // montis Parnassi. // M. D. LXXXVII. // Cum privilegio Regis ed decennium.//" ;
+	dc:type             "Genre musical : divers" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9058647n> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9058647n> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9058647n>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "200555"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

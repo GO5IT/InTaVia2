@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/07932/diglit_heidhs3820_27>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-10T17:14:34.573Z" ;
+	dcterms:modified          "2018-03-22T10:49:05.513Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07932/diglit_heidhs3820_27#metadataTier>, <http://data.europeana.eu/item/07932/diglit_heidhs3820_27#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07932/diglit_heidhs3820_27> ;
+	edm:completeness          "7" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "07932_L_DE_UniLibHeidelberg_handschriften_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/07932/diglit_heidhs3820_27> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdiglit.ub.uni-heidelberg.de%2Fimage%2Fheidhs3820_27%2F01r.jpg%2Ffull%2Ffull%2F0%2Fdefault.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://diglit.ub.uni-heidelberg.de/image/heidhs3820_27/01r.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/07932/diglit_heidhs3820_27#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:31:04.787Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_heidhs3820_27> .
+
+<http://data.europeana.eu/item/07932/diglit_heidhs3820_27>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/07932/diglit_heidhs3820_27>
+	a                   ore:Proxy ;
+	dc:contributor      "Rickert, Heinrich" ;
+	dc:creator          "Lask, Emil" ;
+	dc:description      "Shelfmark: Universitätsbibliothek Heidelberg, Heid. Hs. 3820,27" ;
+	dc:identifier       "oai:digi.ub.uni-heidelberg.de:21198", "urn:nbn:de:bsz:16-diglit-211982" ;
+	dc:language         "de" ;
+	dc:rights           <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	dc:source           "Universitätsbibliothek Heidelberg" ;
+	dc:title            "Brief von Emil Lask an Heinrich Rickert - 1913-07-27"@de ;
+	dc:type             "Multivolume work"@en, "Text" ;
+	dcterms:created     "1913 Juli 27", "1913-07-27" ;
+	dcterms:isPartOf    "Sammlung35 - Heidelberger Handschriften (Heid. Hs.)"@de, "Handschriften"@de, "diglit_heidhs3820", "Heidelberger historische Bestände — digital: Heidelberger Handschriften (Heid. Hs.)"@de, "Digitalisierung wertvoller Bestände baden-württembergischer Bibliotheken"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_heidhs3820_27> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07932/diglit_heidhs3820_27> .
+
+<http://digi.ub.uni-heidelberg.de/diglit/heidhs3820_27>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "26677"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/07932/diglit_heidhs3820_27>
+	a                  ore:Aggregation ;
+	dc:rights          <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07932/diglit_heidhs3820_27> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:isShownAt      <http://digi.ub.uni-heidelberg.de/diglit/heidhs3820_27> ;
+	edm:isShownBy      <http://diglit.ub.uni-heidelberg.de/image/heidhs3820_27/01r.jpg/full/full/0/default.jpg> ;
+	edm:object         <http://diglit.ub.uni-heidelberg.de/image/heidhs3820_27/01r.jpg/full/full/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://data.europeana.eu/proxy/europeana/07932/diglit_heidhs3820_27>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_heidhs3820_27> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07932/diglit_heidhs3820_27> .
+
+<http://digi.ub.uni-heidelberg.de/diglitData/introimage/heidhs3820_27.jpg>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/07932/diglit_heidhs3820_27#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:31:04.787Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_heidhs3820_27> .
+
+<http://data.europeana.eu/organization/1482250000004516197>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca de la Universitat de Heidelberg"@ca, "Biblioteca de la Universidad de Heidelberg"@es, "Biblioteka Uniwersytecka w Heidelbergu"@pl, "bibliothèque de l'Université d'Heidelberg"@fr, "Heidelberg University Library"@en, "Библиотека университета Гейдельберга"@ru, "Universitätsbibliothek Heidelberg"@de .
+
+<http://diglit.ub.uni-heidelberg.de/image/heidhs3820_27/01r.jpg/full/full/0/default.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpg" ;
+	dcterms:isReferencedBy  <http://digi.ub.uni-heidelberg.de/diglit/iiif/heidhs3820_27/manifest.json> ;
+	ebucore:fileByteSize    "1129341"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2568"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://diglit.ub.uni-heidelberg.de/image/heidhs3820_27/01r.jpg> .

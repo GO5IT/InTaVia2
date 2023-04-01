@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://tools.yoolib.net/i/s4/inha/files/13001-14000/13448/media/13716/0646_doucet_aumf06c014_0001/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_13501/manifest> ;
+	ebucore:fileByteSize    "385196"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "698"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_13501>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:35:41.453Z" ;
+	dcterms:modified          "2016-09-19T09:09:27.876Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_13501#metadataTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_13501#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_13501> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_13501> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F13001-14000%2F13448%2Fmedia%2F13716%2F0646_doucet_aumf06c014_0001%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13501>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_13501> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/13501> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13448/media/13716/0646_doucet_aumf06c014_0001/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13448/media/13716/0646_doucet_aumf06c014_0001/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13501#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:28:39.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13501> .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_13501>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2834> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_13501> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_13501> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_13501>
+	a                   ore:Proxy ;
+	dc:contributor      "[s.n.]" ;
+	dc:creator          "Gérôme, Jean-Léon (1824-1904)", "Geffroy, Edmond (1804-1895)", "Gautier, Armand-Désiré (1825-1894)", "Gérard, Marguerite (1761-1837)", "Gauguin, Paul (1848-1903)", "Galimard, Auguste (1813-1880)", "D'après Gérard, François (1770-1837)", "Gasperi, Raphaël (18??-19??)", "Géricault, Théodore (1791-1824)", "Galloche, Louis (1670-1761)", "Gérard-Seguin, Jean-Alfred (1805-1875)", "Gannel, Georges", "Garson, Victor-René (1796-18??)", "Garneray, Louis (178?-1857)", "Gélibert, Paul-Jean-Pierre (1802-1882)", "Garnier, Étienne-Barthélémy (1759-1849)", "Georget, Henri (18??-1915)", "Gautherot, Pierre (1765?-1825)", "Gavarni (1804-1866)", "Gallait, Louis (1810-1887)", "Gamelin", "Garnier, Antoine (16??-16??)", "D'après Gervex, Henri (1852-1929)" ;
+	dc:description      "Date de numérisation : 2011", "Nombre de vues du document : 560", "Langue du document : Italien", "Partenariats : Document numérisé grâce au mécénat de la Société BIC", "Langue du document : Français", "Fonds ou documents en rapport : <a href=\u0022http://www.purl.org/yoolib/inha/13086\u0022 target=\u0022_blank\u0022><b>Original de la note d'Auguste Galimard concernant la décoration générale du chœur de l'église Saint Laurent</b></a> ; <a href=\u0022http://www.purl.org/yoolib/inha/13087\u0022 target=\u0022_blank\u0022><b>Original du discours prononcé par Pierre Gautherot à la fête donnée au peintre Gros</b></a>", "Lieu de publication : [S.l.]" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/13501" ;
+	dc:language         "ita", "fre" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "domaine public"@fr, "Institut National d'Histoire de l'Art"@fr ;
+	dc:source           "Cote de l'original : Carton 14 ; Cote du microfilm : Mfilm bobine 6 (vues 5133-5687)", "NUM AU MF06 C014" ;
+	dc:subject          "19e siècle", "18e siècle", "20e siècle", "17e siècle", "Correspondance" ;
+	dc:title            "Autographes, Carton 14 : Peintres Gal-Ger" ;
+	dc:type             "image", "Recueil de lettres", "text", "still image" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_13501> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13501> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13501>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_13501/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/2834>
+	a                skos:Concept ;
+	skos:altLabel    "Korrespondens"@sv, "Carta"@pt, "Carteggio"@it, "Schriftverkehr"@de, "Correspondance (Littérature)"@fr, "Korespondence; vēstules"@lv, "Επιστολή"@el, "Kirjavahetus"@et, "Intercambio epistolar"@es, "Корреспонденция"@ru, "Briefwisseling"@nl, "Correspondance (litterature)"@fr ;
+	skos:exactMatch  <http://id.nlm.nih.gov/mesh/V01.550>, <http://www.wikidata.org/entity/Q1784733>, <http://g.co/kg/g/1230jl_1>, <http://id.nlm.nih.gov/mesh/D015709>, <http://data.bnf.fr/ark:/12148/cb133187365>, <http://vocab.getty.edu/aat/300026877>, <http://purl.org/bncf/tid/6119>, <http://datos.bne.es/resource/XX526105>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.377>, <http://id.nlm.nih.gov/mesh/D016422>, <http://id.nlm.nih.gov/mesh/V02.355.374>, <http://id.loc.gov/authorities/names/sh99001488>, <http://id.nlm.nih.gov/mesh/V02.625>, <http://d-nb.info/gnd/4180011-4> ;
+	skos:note        "Genere letterario"@it, "Intercambio regular de correo"@es, "Literární žánr"@cs, "Процесс обмена письмами (как лит. жанр см. Q2250271)"@ru, "Literair genre"@nl, "Genre littéraire"@fr, "Kirjallinen kommunikaatio (genre on Q2250271)"@fi, "Literary genre"@en, "Gênero literário"@pt, "Schriftverkehr"@de ;
+	skos:prefLabel   "Correspondència"@ca, "Korespondence"@cs, "Correspondência"@pt, "Correspondentie"@nl, "Αλληλογραφία"@el, "Korrespondance"@da, "Kiri"@et, "Correspondencia"@es, "Sarakste"@lv, "Kirjeenvaihto"@fi, "Korrespondenz"@de, "Corrispondenza"@it, "Correspondence"@en, "Brevväxling"@sv, "Переписка"@ru, "Correspondance"@fr .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_13501#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:28:39.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_13501> .
+
+<http://www.purl.org/yoolib/inha/13501>
+	a  edm:WebResource .

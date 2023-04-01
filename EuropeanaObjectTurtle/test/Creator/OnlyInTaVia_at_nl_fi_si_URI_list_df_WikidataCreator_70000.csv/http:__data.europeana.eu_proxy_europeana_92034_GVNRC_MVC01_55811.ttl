@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55811#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:39.095Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55811> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_MVC01_55811>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/1959> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1978" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_55811> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55811>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_55811#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:39.096Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55811> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/MVC01:55811>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49201"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55811>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/MVC01:55811> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55811&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_55811>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:19:20.519Z" ;
+	dcterms:modified          "2018-04-05T17:10:09.220Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_MVC01_55811> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AMVC01%3A55811%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_MVC01_55811>
+	a                   ore:Proxy ;
+	dc:contributor      "Pieck, Anton" ;
+	dc:creator          "Pieck, Anton" ;
+	dc:format           "ontwerp" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55811" ;
+	dc:rights           "Voor meer informatie: Museum voor Communicatie"@nl, "For more information: Museum voor Communicatie"@en, "Museum voor Communicatie" ;
+	dc:source           "[55811], Postzegelontwerpen, postzegels en affiches; Museum voor Communicatie" ;
+	dc:subject          "typografie"@nl, "Europapostzegels"@nl ;
+	dc:title            "Ontwerp typografie voor Europapostzegels Nederland 1978 Stadhuis Haarlem" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1978" ;
+	dcterms:extent      "Geheel: 255 mm × 194 mm" ;
+	dcterms:isPartOf    "GVN", "MVC01", "Postzegelontwerpen, postzegels en affiches" ;
+	dcterms:medium      "image/jpeg", "geschilderd" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_55811> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_55811> .
+
+<http://data.europeana.eu/concept/1959>
+	a                skos:Concept ;
+	skos:altLabel    "Diseñar"@es, "Dizájn"@hu, "Проектирование"@ru, "Productdesign"@nl, "Vormgeving"@nl, "Conception"@fr, "Projética"@pt, "Formgivning"@sv, "Ultra-modernité"@fr, "Ultramodernité"@fr, "Designwissenschaftler"@de, "Разработка"@ru, "Industrieel ontwerp"@nl, "Proiectare"@ro, "Designforskning"@sv, "Design"@fi, "Design"@nl, "Kläddesigner"@sv, "Formlära"@sv, "Styling"@en, "Utkast"@sv, "Дизайнер"@ru, "Dizajn"@cs, "Dizajn"@pl, "Stylique"@fr, "Projetismo"@pt, "Suunnittelu"@fi, "Ontwerpwetenschap"@nl, "Taideteollinen muotoilu"@fi, "Desenho industrial"@pt, "Käsityömuotoilu"@fi, "Dizajner"@hr, "Функциональный дизайн"@ru, "Designwissenschaft"@de, "Proiectarea formei"@ro, "Designat"@sv, "Проектиране"@bg ;
+	skos:exactMatch  <http://purl.org/bncf/tid/6078>, <http://cv.iptc.org/newscodes/mediatopic/20000033>, <http://www.wikidata.org/entity/Q82604>, <http://d-nb.info/gnd/4011510-0>, <http://vocab.getty.edu/aat/300054171>, <http://www.yso.fi/onto/yso/p6455>, <http://babelnet.org/rdf/s00026535n>, <https://g.co/kg/m/02cwm>, <http://id.ndl.go.jp/auth/ndlna/00561494>, <http://dewey.info/class/729/>, <https://www.freebase.com/m/02cwm>, <http://datos.bne.es/resource/XX527044>, <http://id.loc.gov/authorities/names/sh85037197> ;
+	skos:note        "Esineen tai muun kohteen käytettävyyden ja muodon suunnittelu ja soveltaminen käytäntöön"@fi, "Crearea unui plan sau convenție pentru construirea unui obiect sau sistem; proces de creare; acțiune creativă și inovatoare"@ro, "Эстетическое проектирование"@ru, "Creación de un plano o convención para la construcción de un objeto o un sistema"@es, "Begrepp som beskriver ett föremåls konstruktion, utseende eller den skapandeprocess som används från idéstadiet till färdig produkt"@sv, "Creació d'un plànol o convenció per a la construcció d'un objecte o sistema"@ca, "Entwurf oder Formgebung"@de, "Nelle scienze applicate, l'attività promossa dal progettista, che è alla base della costruzione/realizzazione di qualsiasi oggetto complesso, sia esso materiale o soltanto concettuale attraverso la stesura di un progetto"@it, "Creation of a plan or convention for the construction of an object or a system; process of creation; act of creativity and innovation"@en, "Atividade que consiste na idealização, criação e desenvolvimento de um produto"@pt, "Création d’un projet en vue de la réalisation et de la production d’un objet (produit, espace, service) ou d’un système"@fr, "Skabelsen af en plan eller konvention for konstruktionen af et objekt eller system"@da, "Dziedzina sztuki"@pl, "Ħolqien ta' pjanta għall-kostruzzjoni ta' oġġett jew sistema; proċess ta' ħolqien u att ta' kreattività u innovazzjoni"@mt ;
+	skos:prefLabel   "Muotoilu"@fi, "Oblikovanje"@sl, "Disain"@et, "Diseño"@es, "Σχεδιασμός"@el, "Dizajn"@sk, "Dizajn"@hr, "Progettazione"@it, "Ontwerp"@nl, "Formatervezés"@hu, "Disseny"@ca, "Дизайн"@bg, "Дизайн"@ru, "Design"@da, "Design"@ro, "Design"@pl, "Design"@cs, "Design"@en, "Design"@sv, "Design"@fr, "Design"@pt, "Design"@de, "Dizainas"@lt, "Disinn"@mt, "Dizains"@lv, "Dearadh"@ga .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:55811&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21708"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "97"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

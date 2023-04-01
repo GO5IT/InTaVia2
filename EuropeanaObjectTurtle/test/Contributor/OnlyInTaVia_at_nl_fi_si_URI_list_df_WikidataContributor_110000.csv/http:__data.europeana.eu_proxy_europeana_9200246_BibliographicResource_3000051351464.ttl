@@ -1,0 +1,129 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:53.722Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351464> .
+
+<http://data.europeana.eu/proxy/europeana/9200246/BibliographicResource_3000051351464>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1683" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351464> .
+
+<http://imagebase.ubvu.vu.nl/u?/krt,3049>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048279>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351464/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/organization/1482250000004517529>
+	a               foaf:Organization ;
+	skos:prefLabel  "VU University Amsterdam Library"@en .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:53.722Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351464> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351464/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351464>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-02T13:31:06.131Z" ;
+	dcterms:modified          "2015-09-14T13:13:59.147Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464#contentTier>, <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200246_Ag_EU_TEL_a1154_Amsterdam_UV_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200246/BibliographicResource_3000051351464> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimagebase.ubvu.vu.nl%2Fvu%2FgetThumb.php%3Fid%3Dkrt%2F3049&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351464>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517529> ;
+	edm:hasView        <http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048279> ;
+	edm:isShownAt      <http://imagebase.ubvu.vu.nl/u?/krt,3049> ;
+	edm:object         <http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3049> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200246/BibliographicResource_3000051351464>
+	a                       ore:Proxy ;
+	dc:contributor          "Hondius, Henricus" ;
+	dc:description          "Rechtsboven: XXXVIII;; Verschenen in: The English atlas volume III ... - Amsterdam : J. Jansonius a Waesberg and S. Swart, 1683;; Origineel is Blad 71 in atlas factice;; Oorspr. uitg.: Amstelodami : apud Henricum Hondium, [1630]", "West boven", "Jaar: 2009;; Opdrachtgever: Universiteitsbibliotheek Vrĳe Universiteit, Amsterdam;; Uitvoering: Pictura, Heiloo;; Locatie origineel: NL, Universiteitsbibliotheek Vrĳe Universiteit, XL.05243.- bl. 71;; Fysieke gegevens: tiff-bestand;; Gedigitaliseerd: december 2009" ;
+	dc:format               "1 kaart, gedigitaliseerd : kopergravure ; 38 x 49 cm" ;
+	dc:identifier           "http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048279" ;
+	dc:language             "la" ;
+	dc:publisher            "Amsterdam : J. Jansonius van Waesberge etc." ;
+	dc:subject              "Nordrhein-Westfalen", "Keulen (bisdom)", "80.4.415.350 Keulen", "80.4.415.350", "81.273.7" ;
+	dc:title                "Coloniensis Archiepiscopatus / [Henricus Hondius]" ;
+	dc:type                 "Cartografisch document" ;
+	dcterms:extent          "ca. 1:550.000" ;
+	dcterms:isPartOf        <http://data.theeuropeanlibrary.org/Collection/a1154>, "Beeldbank cartografisch materiaal" ;
+	dcterms:isReferencedBy  "Koeman-Van der Krogt [2410:1.3]" ;
+	dcterms:issued          "1683" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351464> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351464> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3049>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "47538"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "408"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "599"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .

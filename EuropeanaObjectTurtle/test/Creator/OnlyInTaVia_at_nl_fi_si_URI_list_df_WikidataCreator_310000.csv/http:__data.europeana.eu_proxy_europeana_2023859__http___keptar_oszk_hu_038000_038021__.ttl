@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/038000/038021/1895_Oldal_348_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "14866"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038000_038021__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038000/038021> ;
+	edm:object         <http://keptar.oszk.hu/038000/038021/1895_Oldal_348_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/1877>
+	a                skos:Concept ;
+	skos:exactMatch  <http://cv.iptc.org/newscodes/mediatopic/20000422>, <https://www.freebase.com/m/0166ls>, <https://id.erfgoed.net/thesauri/erfgoedtypes/337>, <http://www.wikidata.org/entity/Q22698>, <http://www.yso.fi/onto/ysa/Y98299>, <https://schema.org/Park>, <http://id.nlm.nih.gov/mesh/J03.925.680>, <http://iconclass.org/43B42>, <http://purl.obolibrary.org/obo/ENVO_00000562>, <http://vocabularies.unesco.org/thesaurus/concept4252>, <http://www.yso.fi/onto/yso/p3227>, <http://vocab.getty.edu/aat/300254248>, <http://id.nlm.nih.gov/mesh/D000068316>, <http://www.geonames.org/ontology#L.PRK>, <https://g.co/kg/m/0166ls>, <http://id.worldcat.org/fast/1053705>, <http://babelnet.org/rdf/s00060690n>, <https://d-nb.info/gnd/4044673-6>, <http://vocab.getty.edu/aat/300008187>, <http://data.bnf.fr/ark:/12148/cb11933025j>, <http://id.loc.gov/authorities/names/sh85098119>, <http://id.ndl.go.jp/auth/ndlna/00566129> ;
+	skos:note        "Openbare ruimte met een permanente recreatieve functie die meestal wordt gekenmerkt door een natuurlijke, historische of landschappelijk aspect"@nl, "Teritoriu verde sub cerul liber destinat odihnei și recreației"@ro, "Īpaši iekārtota, parasti plaša, dekoratīva atpūtas teritorija, dārzs, arī ar dabiskās ainavas iesaistījumu, apstādījumiem, lielu koku grupām, celiņiem, strūklakām, spēļu laukumiem u. tml."@lv, "Espaço aberto para recreação ou conservação"@pt, "Dio grada ili naselja u kojem se nalazi održavano zelenilo"@hr, "Permanently dedicated recreation area, often open to the public and generally characterized by natural, historic, or landscape features"@en, "Gestaltete größere Grünflächen"@de, "Terreno situado en el interior de una población que se destina a prados, jardines y arbolado"@es, "Virkistyskäyttöön tarkoitettu viheralue"@fi, "Ανοιχτός χώρος διατηρημένος στην φυσική του μορφή"@el, "Area protetta o per ricreazione"@it, "Udržovaná zeleň"@cs, "Espai destinat al lleure o destinat a arbrat i jardins"@ca, "Obszar na otwartej przestrzeni służący rozrywce i odpoczynkowi"@pl, "Anläggning med naturlig eller planterad växtlighet"@sv, "Territoire maintenu dans un état naturel ou seminaturel, à des fins conservatoires ou récréatives"@fr, "Предназначенная для отдыха открытая озеленённая территория"@ru, "Åbent rekreativt område"@da ;
+	skos:prefLabel   "Parco"@it, "Páirc"@ga, "Park"@de, "Park"@hr, "Park"@hu, "Park"@sk, "Park"@sl, "Park"@sv, "Park"@en, "Park"@et, "Park"@cs, "Park"@pl, "Park"@da, "Park"@nl, "Parkas"@lt, "Парк"@ru, "Парк"@bg, "Parque"@pt, "Parque"@es, "Parc"@fr, "Parc"@ca, "Parc"@ro, "Parke"@eu, "Puisto"@fi, "Parks"@lv, "Πάρκο"@el .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038000_038021__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:31.562Z" ;
+	dcterms:modified          "2015-09-14T11:53:52.358Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038000%2F038021%2F1895_Oldal_348_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038000_038021__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038000_038021__>
+	a                   ore:Proxy ;
+	dc:creator          "Keleti ,  Gusztáv  (graphicArtist)"@hu ;
+	dc:description      "József főherczeg kis-jenői uradalmából. Az aradmegyei Kis-Jenő faluban van József főherczegnek az az 55 ezer holdas, nagyszerű birtoka, melyet évenként többször meglátogat s ott rendesen az úgy nevezett &#171;vadászkastélyába&#187; száll. A kastély benn van a faluban, s mi sem vonná rá a figyelmet, ha nem a főherczeg tulajdona volna; mert biz azon sem a külsőség, sem a belső berendezés nem mutat fel az egyszerűségnél egyebet, a mennyiben kezdettől fogva csak arra szolgál, hogy a vadászatra, vagy a birtokok megszemlésére leutazó főherczegi ház tagjainak pár napi otthont nyújtson. Azonban a hozzá tartozó természetes park nagyszerűségében ritkítja párját. A kastélytól pár lépésnyire kezdődik a Fehér-Körös jobbpartján elterülő &#171;Háda&#187; nevű erdő, melyben százados fák alkotta sűrűségek, vizlepte lankás helyek váltakoznak a maguk természetes nagyszerűségökben, s csak annyiban nevezhető parknak, hogy szabalyos kocsi-útak szeldelik keresztül-kasúl, és egy kis része a táblák beosztása következtében szabályos szögeket alkot. Elől ugyanis szabályosan kihasított táblákban szilva-, dió-, gesztenye-fák terjesztik szét terebélyes koronáikat az alattuk elterülő zöld pázsit fölött. Ez a gyümölcsös, melynek egyes tábláit is &#171;diós&#187;-nak, &#171;szilvás&#187;-nak, stb. nevezik. A Körös partjától beljebb vannak nagy területen a faiskola-táblák, a konyhakert, a kertészlak. Rézsútos irányban folydogál át a kertnek egy mélyfekvésű részén egy patak. Ez a válasz-határ a régi Háda és az új között. A patakon kis hid vezet keresztül délnek, s ezen áthaladva, útunk már százados fák között kihasított úton vezet be az erdő belsejébe, hol a dúsan tenyésző fák lombkoronái egybeborúlva majdnem lehetetlenné teszik a sűrűségen való áthatolást. Ez a rész kellemes helyet ad az őzeknek, fáczánoknak, nyulaknak és más vadaknak. Őszi időben a távol fekvő somosi erdőből ellátogat ide egy-egy szarvasbika, vadkan, vagy fias kocza is a jó makktermés felfalatozasára; szigorúbb tél éjszakáin pedig nem ritkaság a nádi farkas vonitása sem. A vadász vendégeknek első kiránduló helye a Háda, hol mindenkor biztos zsákmány vár reájok. A jelen számunkban levő kisebbik kép a már leírt patakot ábrázolja a völgyben; jobb oldalon az új Háda széle, baloldalon a kezdődő erdő fái láthatók; a délnyugatnak húzódó völgyben a távolban egy lankás rét, s a Körösparton túl egy dohányos majorba vezető jegenye-fasor vehető ki. Az erdő nagy része még azon időből maradt fenn, mikor a harminczas években Kis-Jenőtől Szintye faluig s azon túl a most már eke alatt álló rész mind erdőség volt; a halhatatlan emlékű József nádor mentette meg ezt a részt egy rész ellenben új ültetés ugyancsak az ő rendeletéből. Van a tölgyes rész egyik tisztásán egy hatalmas tölgyfa, mely nagyszerűen emelkedik ki a többiek közül. Ezt a fát a fenség különös becsben tartja s minden alkalommal megmegnézi, mert ezt atyja sajátkezüleg ültette. Az ilyen fákat az erdészeknek kivágniok nem szabad; így azok mindaddig megmaradnak, míg teljesen elvénülve szél ki nem dönti őket. Fájukból ekkor asztal, szék, vagy pad készül, mely aztán az alcsúthi vagy a kisjenői kastély megbecsült bútordarabjává lesz. A másik képen szintén egy ily elöregedett tölgyfa látható, mint a kiirtott erdő utolsó maradványa. A legelők egyes pontjain is több helyütt láthatunk ilyen facsoportokat, melyek kellemesen szakítják meg a síkság egyhangúságát. Ezen kép már nem a Hádából, hanem a &#171;Korhány&#187; puszta körüli gulyalegelőről való, melynek sík területét ez teszi változatossá. Nyáron e facsoport alá húzódik a rekkenő forróságban a legelő nyáj delelőre, télen pedig jó útmutató ez a hóval borított síkon az utasnak. Másként pedig nevezetes pont ez azért is, mert a székudvari s az &#171;ágyai&#187; erdőkből a &#171;váltóvonal&#187; itt húzódik a vadaknak. A fák közt lesben álló vadász puskája gyakran leterítette a nyájat tizedelő ordast, a mint gyanútlanul arra loholt az éjszaka csendjében. Ily magányos facsoportokat Arad- és Békésmegyében, de főleg Biharban sokat láthatunk azon részeken, a melyeken a régibb időkben erdőségek terűltek el; ezek kiirtásakor csak hirmondóul hagytak meg egy-egy magános fát, vagy facsoportot, hogy regéljenek az elmúlt jó időkről. (Forrás: Vasárnapi Ujság, 1895. szeptember 8.)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1417x957 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/038000/038021   [Metadata]" ;
+	dc:relation         "Wikipédia: Kelety Gusztáv [ http://hu.wikipedia.org/wiki/Kelety_Guszt%C3%A1v]"@hu, "Keleti Gusztáv: Természetes park József főherczeg kis-jenői uradalmában [ http://keptar.oszk.hu/038000/038005]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "erdő"@hu, "tölgy"@hu, "Travelling, tourism"@hu, "lovaskép"@hu, "tájkép"@hu, "természetkép"@hu, "Fine arts, visual arts"@hu, "park"@hu ;
+	dc:title            "Alföldi tölgyes József főherczeg kis-jenői uradalmában"@hu ;
+	dc:type             "graphics"@hu, "újságrészlet"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038000_038021__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:25.226Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038000_038021__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/217>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <http://purl.org/bncf/tid/8602>, <https://www.freebase.com/m/04wkvh>, <https://d-nb.info/gnd/4114355-3>, <http://www.yso.fi/onto/yso/p10069>, <http://id.loc.gov/authorities/names/sh85074426>, <http://vocab.getty.edu/aat/300015636>, <https://g.co/kg/m/04wkvh>, <http://data.bnf.fr/ark:/12148/cb11933059v>, <http://www.wikidata.org/entity/Q191163>, <http://id.ndl.go.jp/auth/ndlna/00563611> ;
+	skos:note        "Maaližanr"@et, "Gènere pictòric"@ca, "Gatunek malarski"@pl, "Género pictórico"@es, "Tema artistico"@it, "Malířský žánr"@cs, "A festészet egyik műfaja"@hu, "Turija ta' pajsaġġi fl-arti"@mt, "Жанр изобразительного искусства"@ru, "Genre indenfor malerkunst"@da, "Depiction of landscapes in art"@en, "Género de pintura"@pt, "Artistiek thema"@nl, "Léiriú tírdhreacha san ealaín"@ga, "Maalaustaiteen suuntaus, joka keskittyy maisemiin"@fi, "Είδος ζωγραφικής με κύρια θεματολογία το φυσικό ή το αστικό τοπίο"@el, "Genre artistique"@fr, "Жанр в изобразителното изкуство"@bg, "Gattung der gegenständlichen Malerei"@de ;
+	skos:prefLabel   "Krajinsko slikarstvo"@sl, "Peizažas"@lt, "Arti pajsaġġistika"@mt, "Landskapsmåleri"@sv, "Pejzaž"@hr, "Ainava"@lv, "Pittura paesaggistica"@it, "Arta peisajului"@ro, "Landskabsmaleri"@da, "Paisaia margolaritza"@eu, "Krajinomaľba"@sk, "Пейзаж"@ru, "Τοπιογραφία"@el, "Malarstwo pejzażowe"@pl, "Pintura de paisagem"@pt, "Landschaftsmalerei"@de, "Landschapschilderkunst"@nl, "Ealaín tírdhreacha"@ga, "Maastikumaal"@et, "Krajinomalba"@cs, "Tájkép"@hu, "Paisatge"@ca, "Paysage"@fr, "Pintura del paisaje"@es, "Landscape art"@en, "Пейзажна живопис"@bg, "Maisemamaalaus"@fi .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:25.227Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038000_038021__> .
+
+<http://keptar.oszk.hu/038000/038021>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038000_038021__/manifest> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038000_038021__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1877>, <http://data.europeana.eu/concept/217> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038000_038021__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038000_038021__> .

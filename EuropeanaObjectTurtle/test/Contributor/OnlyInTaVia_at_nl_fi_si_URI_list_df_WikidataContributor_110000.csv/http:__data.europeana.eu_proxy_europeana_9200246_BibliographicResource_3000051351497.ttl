@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200246/BibliographicResource_3000051351497>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351497> .
+
+<http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048260>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351497/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3052>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "62494"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "409"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:57.540Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351497> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:57.540Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351497> .
+
+<https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351497/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004517529>
+	a               foaf:Organization ;
+	skos:prefLabel  "VU University Amsterdam Library"@en .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351497>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-02T13:30:50.786Z" ;
+	dcterms:modified          "2015-09-14T13:14:00.984Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497#metadataTier>, <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200246_Ag_EU_TEL_a1154_Amsterdam_UV_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200246/BibliographicResource_3000051351497> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimagebase.ubvu.vu.nl%2Fvu%2FgetThumb.php%3Fid%3Dkrt%2F3052&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://imagebase.ubvu.vu.nl/u?/krt,3052>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351497>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517529> ;
+	edm:hasView        <http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048260> ;
+	edm:isShownAt      <http://imagebase.ubvu.vu.nl/u?/krt,3052> ;
+	edm:object         <http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3052> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200246/BibliographicResource_3000051351497>
+	a                       ore:Proxy ;
+	dc:contributor          "Hondius, Henricus" ;
+	dc:description          "Jaar: 2009;; Opdrachtgever: Universiteitsbibliotheek Vrĳe Universiteit, Amsterdam;; Uitvoering: Pictura, Heiloo;; Locatie origineel: NL, Universiteitsbibliotheek Vrĳe Universiteit, XL.05243.- bl. 70;; Fysieke gegevens: tiff-bestand;; Gedigitaliseerd: december 2009", "Het eerst verschenen in: Gerardi Mercatoris et I. Hondii atlas appendix ... - Ambsterdam : bey Johan Jansson, 1636;; Origineel is Blad 70 in atlas factice;; Met inzet van de omgeving van Soest", "Noordoost boven" ;
+	dc:format               "1 kaart, gedigitaliseerd : kopergravure ; 44 x 56 cm" ;
+	dc:identifier           "http://imagebase.ubvu.vu.nl/getobj.php?ppn=330048260" ;
+	dc:language             "la" ;
+	dc:publisher            "Amstelodami : sumptibus Henrici Hondii" ;
+	dc:subject              "81.273.5", "80.4.415.350", "Nordrhein-Westfalen", "80.4.415.350 Mark", "Bergisches Land", "80.4.415.350 Bergisches Land", "Mark (graafschap)" ;
+	dc:title                "Berge ducatus, Marck comitatus / [Henricus Hondius]" ;
+	dc:type                 "Cartografisch document" ;
+	dcterms:extent          "ca. 1:250.000" ;
+	dcterms:isPartOf        <http://data.theeuropeanlibrary.org/Collection/a1154>, "Beeldbank cartografisch materiaal" ;
+	dcterms:isReferencedBy  "Koeman-Van der Krogt [2385:1B.1]" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351497> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351497> .

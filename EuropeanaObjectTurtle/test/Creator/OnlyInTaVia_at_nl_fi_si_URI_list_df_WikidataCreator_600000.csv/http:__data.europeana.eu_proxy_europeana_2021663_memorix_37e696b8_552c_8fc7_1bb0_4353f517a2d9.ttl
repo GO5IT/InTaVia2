@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:59.187Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> .
+
+<https://images.memorix.nl/ranh/thumb/640x480/2d48ddfa-cfb7-bd82-6502-f6b3c6b37172.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9/manifest> ;
+	ebucore:fileByteSize    "70294"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "396"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:59.187Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:00:58.908Z" ;
+	dcterms:modified          "2015-03-26T15:00:58.908Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F2d48ddfa-cfb7-bd82-6502-f6b3c6b37172.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/37e696b8-552c-8fc7-1bb0-4353f517a2d9> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/2d48ddfa-cfb7-bd82-6502-f6b3c6b37172.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/2d48ddfa-cfb7-bd82-6502-f6b3c6b37172.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9>
+	a                   ore:Proxy ;
+	dc:creator          "Lastman, Pieter (1583-1633)"@nl ;
+	dc:date             "1595-00-00/1633-00-00" ;
+	dc:description      "Juda en Tamar [Genesis 38]. <br> Onder een boom zit Tamar op schoot van haar schoonvader Juda. Tamar is vermomd als hoer en draagt een sluier over haar gezicht. In\u000A          haar hand houdt ze de staf vast die ze samen met een ring, een armband en een geitebokje als onderpand van Juda had gekregen in ruil voor gemeenschap. <br> Ets door Pieter Lastman\u000A          naar eigen ontwerptekening; linksboven op de boomstam gemonogrammeerd."@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53009567" ;
+	dc:language         "Dutch" ;
+	dc:title            "Juda en Tamar [Genesis 38]. <br> Onder een boom zit Tamar op schoot van haar schoonvader Juda. Tamar is vermomd als hoer en draagt een sluier over haar gezicht. In haar hand\u000A          houdt ze de staf vast die ze samen met een ring, een armband en een geitebokje als onderpand van Juda had gekregen in ruil voor gemeenschap. <br> Ets door Pieter Lastman naar eigen\u000A          ontwerptekening; linksboven op de boomstam gemonogrammeerd."@nl, "Voorhelm Schneevoogt NL-HlmNHA_1477_53009567"@nl, "NL-HlmNHA_1477_53009567"@nl ;
+	dc:type             "Historieprenten, tekeningen en foto's"@nl, "Grafiek Drukwerk"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_37e696b8_552c_8fc7_1bb0_4353f517a2d9> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/37e696b8-552c-8fc7-1bb0-4353f517a2d9>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16670"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

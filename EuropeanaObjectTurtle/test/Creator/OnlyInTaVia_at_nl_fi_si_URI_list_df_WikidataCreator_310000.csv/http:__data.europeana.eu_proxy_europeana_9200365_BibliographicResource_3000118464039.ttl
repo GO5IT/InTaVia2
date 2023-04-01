@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.258Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8806053j> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8806053j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8806053j> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8806053j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8806053j/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8806053j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:53:15.201Z" ;
+	dcterms:modified          "2018-03-26T12:27:58.545Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8806053j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8806053j.thumbnail.jpg&type=SOUND> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8806053j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4105"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8806053j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "241189"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.257Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8806053j> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8806053j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8806053j> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8806053j>
+	a                   ore:Proxy ;
+	dc:creator          "Opéra national de Paris. Orchestre. Interprète", "Gluck, Christoph Willibald von (1714-1787). Auteur ou responsable intellectuel", "Massenet, Jules (1842-1912). Auteur ou responsable intellectuel", "Cluytens, André (1905-1967). Direction d'orchestre", "Saint-Saëns, Camille (1835-1921). Auteur ou responsable intellectuel", "Gorr, Rita (1926-2012). Mezzo-soprano", "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Wagner, Richard (1813-1883). Auteur ou responsable intellectuel", "Mascagni, Pietro (1863-1945). Auteur ou responsable intellectuel" ;
+	dc:date             "1959" ;
+	dc:description      "Comprend : LOHENGRIN - Acte II - Air d'Ortrude \u0022O dieux de haine\u0022 (en allemand) / Richard WAGNER - TRISTAN ET ISOLDE - Acte III : extrait (en allemand) / Richard WAGNER - WERTHER - Acte III - Scène I : \u0022Air\u0022 des lettres\u0022 (en français) / Jules MASSENET - DON CARLOS - Acte III - Air d'Eboli : \u0022O don fatale\u0022 - LE TROUVERE - Acte II - Air d'Azucena : \u0022Condotta ell'era in ceppi\u0022 (en italien) / Giuseppe VERDI - CAVALLERIA RUSTICANA : \u0022Romance de Santunzza\u0022 : \u0022Voi le sapete\u0022 (en italien) / Pietro MASCAGNI - SAMSON ET DALILA - Acte I : \u0022Printemps qui commence\u0022 Acte II : \u0022Amour ! viens aider ma faiblesse\u0022 / Camille SAINT-SAENS - ORPHEE - Acte III : \u0022J'ai perdu mon Eurydice\u0022 / GLUCK - ALCESTE - Acte I : \u0022Divinités du Styx\u0022 / GLUCK (en français)", "Titre uniforme : [Lohengrin. WWV 75]. Extrait", "Titre uniforme : [Tristan und Isolde. WWV 90]. Extrait", "Titre uniforme : [Il trovatore]. Extrait", "Titre uniforme : [Samson et Dalila. R 288]. Choix", "Titre uniforme : [Alceste. W 44]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Cavalleria rusticana]. Extrait", "Titre uniforme : [Orphée et Eurydice. W 41]. Extrait", "Titre uniforme : [Werther]. Extrait", "Titre uniforme : [Don Carlos (1867)]. Extrait" ;
+	dc:format           "disc"@eng, "multipart/mixed", "disque microsillon"@fre, "1 disque : 33 t ; 30 cm" ;
+	dc:identifier       "Numéro commercial : La voix de son maître FALP615", "http://gallica.bnf.fr/ark:/12148/bpt6k8806053j" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38061474m"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4967" ;
+	dc:title            "RITA GORR - Airs d'opéras / Rita GORR, mezzo-soprano, et l'Orchestre du Théâtre National de l'Opéra dir. André CLUYTENS" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8806053j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8806053j> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

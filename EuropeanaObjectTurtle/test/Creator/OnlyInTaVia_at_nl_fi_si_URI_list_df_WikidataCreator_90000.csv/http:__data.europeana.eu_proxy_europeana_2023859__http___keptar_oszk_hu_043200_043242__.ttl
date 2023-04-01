@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/043200/043242/ORSZ_BPTM_TBM_25_pix_Page_46_Image_0001_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3116"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_043200_043242__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_043200_043242__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_043200_043242__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/043200/043242> ;
+	edm:object         <http://keptar.oszk.hu/043200/043242/ORSZ_BPTM_TBM_25_pix_Page_46_Image_0001_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_043200_043242__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:11:00.336Z" ;
+	dcterms:modified          "2015-09-14T11:57:08.153Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__> ;
+	edm:completeness          "8" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F043200%2F043242%2FORSZ_BPTM_TBM_25_pix_Page_46_Image_0001_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:04.687Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_043200_043242__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:04.686Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_043200_043242__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_043200_043242__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  ( rajzoló )"@hu ;
+	dc:description       "I. (Szent) László Árpád-házi magyar király (1077-1095). (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1014x2986 \u000A         399 \u000A         szürke \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/043200/043242   [Metadata]" ;
+	dc:relation          "Székely Bertalan szénvázlata a Mátyás templom üvegablakához : BTM Kiscelli Múzeuma, ltsz.: 52.41.2445 [ http://keptar.oszk.hu/043200/043241]"@hu, "Szvoboda Dománszky Gabriella: A Mátyás templom dekóruma [ http://epa.oszk.hu/02100/02120/00025/pdf/ORSZ_BPTM_TBM_25_173.pdf]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "templom"@hu, "grafika"@hu, "László (Magyarország: király), I., Szent (1046-1095)"@hu, "díszítés"@hu, "művészi üvegablak"@hu, "uralkodó"@hu, "Fine arts, visual arts"@hu, "vázlat"@hu, "History, local history"@hu ;
+	dc:title             "Székely Bertalan színezett vázlata a Mátyás templom üvegablakához"@hu ;
+	dc:type              "graphics"@hu ;
+	dcterms:alternative  "BTM Kiscelli Múzeuma, Itsz.: 52.41.2537"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_043200_043242__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_043200_043242__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_043200_043242__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/043200/043242>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_043200_043242__/manifest> .

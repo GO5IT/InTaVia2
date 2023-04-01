@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:20.533Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400085z> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b7400085z>
+	a                   ore:Proxy ;
+	dc:contributor      "Mandyczewski, Eusebius (1857-1929). Annotateur", "Elssler, Johann (1769-1843). Copiste" ;
+	dc:creator          "Haydn, Joseph (1732-1809). Compositeur" ;
+	dc:date             "1802" ;
+	dc:description      "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [Missa sancti Nicolai. Hob XXII 6. Sol majeur]. Extrait", "Incipit : Dona nobis pacem", "Appartient à l’ensemble documentaire : RISMMss", "Présentation musicale : [Partition]", "Appartient à l’ensemble documentaire : RISM2", "Titre forgé d'après Hoboken et Eusebius Mandyczewski. - Contient les parties vocales (mes. 47-89) de l'Agnus de la messe de St Nicolas Hob XXII 6. - Les parties instrumentales ainsi que les mes. 90-103 mq.. - Solistes : Ut 1, Ut 3, Ut 4, Fa 4. - Choeur : Ut 1, Ut 3, Ut 4, Fa 4. - Texte et corrections autogr.. - Mention au crayon d'une autre main au haut de la première p. : \u0022Les paroles sont de l'écriture d'Haydn, ainsi que les corrections\u0022. - Note d' Eusebius Mandyczewski sur la pochette. - Daté d'après l'éd. Henle" ;
+	dc:format           "1 partition (1 f.) ; 23 x 32 cm", "Nombre total de vues :  3" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b7400085z" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13913518h", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb41048460b" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Centre technique du livre, Ms. 124" ;
+	dc:subject          "Messes (musique) -- 18e siècle -- Extraits -- Partitions"@fre ;
+	dc:title            "[Dona nobis zur Nicolai Messe] (manuscrit en partie autographe) / Joseph Haydn]" ;
+	dc:type             "musique manuscrite"@fre, "manuscript music"@eng, "Genre musical : messe" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400085z> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400085z/manifest> ;
+	ebucore:fileByteSize    "25973"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "361"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400085z/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400085z.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5732"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "181"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400085z>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b7400085z> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400085z/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b7400085z.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:20.534Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400085z> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400085z>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "191895"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b7400085z>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1802" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400085z> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400085z>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:23.999Z" ;
+	dcterms:modified          "2018-07-23T15:38:17.494Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400085z> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b7400085z> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b7400085z.thumbnail.jpg&type=TEXT> .

@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_9021#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:54.953Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_9021> .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_9021>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_9021> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/9021> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/9001-10000/9021/media/14119/0630_doucet_12d88_02_0007/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/9001-10000/9021/media/14119/0630_doucet_12d88_02_0007/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_9021>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_9021>
+	a                   ore:Proxy ;
+	dc:contributor      "P. Jannet" ;
+	dc:creator          "Montaiglon, Anatole de (1824-1895). Éditeur scientifique", "Testelin, Henri (1616-1695)" ;
+	dc:date             "18..", "1853" ;
+	dc:description      "Date de numérisation : 2004", "Lieu de publication : Paris", "Nombre de vues du document : 286", "Langue du document : Français" ;
+	dc:format           "1 vol. ([2 f.]-276 p.) ; 16 cm" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/9021" ;
+	dc:language         "fre" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "Institut National d'Histoire de l'Art"@fr, "domaine public"@fr ;
+	dc:source           "NUM 12 D 88 (2)" ;
+	dc:subject          "Académie royale de peinture et de sculpture (France)", "19e siècle" ;
+	dc:title            "Mémoires pour servir à l'histoire de l'Académie Royale de peinture et de sculpture [...]. Tome 2", "Mémoires pour servir à l'histoire de l'Académie Royale de peinture et de sculpture, depuis 1648 jusqu'en 1664 : publiés pour la première fois par M. Anatole de Montaiglon, attaché à la conservation des dessins du Louvre. Tome 2" ;
+	dc:type             "text", "Texte imprimé", "image", "still image" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_9021> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_9021> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_9021/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_9021>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1853" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_9021> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_9021> .
+
+<http://www.purl.org/yoolib/inha/9021>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_9021>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:39:51.949Z" ;
+	dcterms:modified          "2016-09-19T09:15:48.527Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_9021#metadataTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_9021#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_9021> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_9021> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F9001-10000%2F9021%2Fmedia%2F14119%2F0630_doucet_12d88_02_0007%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://tools.yoolib.net/i/s4/inha/files/9001-10000/9021/media/14119/0630_doucet_12d88_02_0007/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_9021/manifest> ;
+	ebucore:fileByteSize    "373296"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "553"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_9021#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:54.953Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_9021> .

@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/10280347/>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://sws.geonames.org/2661886/> ;
+	skos:altLabel     "La Real Armería"@es, "Die Königliche Rüstkammer"@de, "Livrustkammaren"@sv, "L'Armeria Reale"@it, "L'Armurerie royale"@fr, "Королевской Оружейной палаты"@ru ;
+	skos:prefLabel    "The Royal Armoury" ;
+	wgs84_pos:lat     "59.32648" ;
+	wgs84_pos:long    "18.0729" .
+
+<http://sws.geonames.org/2661886/>
+	a               edm:Place ;
+	skos:prefLabel  "Kingdom of Sweden (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_67816>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-06-30T14:17:18.034Z" ;
+	dcterms:modified          "2019-11-15T07:11:48.622Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816#metadataTier>, <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> ;
+	edm:completeness          "10" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2064105_Royal_Armoury_Skokloster_Hallwyl" ;
+	edm:landingPage           <https://www.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femuseumplus.lsh.se%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D67816%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816>
+	a  edm:ProvidedCHO .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=67816&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_67816/manifest> ;
+	ebucore:fileByteSize    "110360"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "747"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "530"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_67816>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Livrustkammaren/67816" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> .
+
+<https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_67816/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_67816>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004509050> ;
+	edm:isShownAt      <http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=67816&viewType=detailView> ;
+	edm:isShownBy      <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=67816&resolution=superImageResolution> ;
+	edm:object         <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=67816&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:37:02.173Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=67816&amp;viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004509050>
+	a               foaf:Organization ;
+	skos:prefLabel  "Оружейная палата"@ru, "Kongelig Rustkammer"@da, "Real Armería de Suecia"@es, "Livrustkammaren"@pl, "Livrustkammaren"@sl, "Livrustkammaren"@hu, "Livrustkammaren"@it, "Livrustkammaren"@lt, "Livrustkammaren"@pt, "Livrustkammaren"@sv, "Koninklijk Wapenkamer van Zweden"@nl, "Königliche Rüstkammer"@de, "Cabinet royal des armes"@fr, "Kuninkaallinen asevarasto"@fi, "The Royal Armoury"@en .
+
+<http://data.europeana.eu/proxy/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_67816>
+	a                    ore:Proxy ;
+	dc:contributor       "Ludvig XIV av Frankrike (Tidigare ägare)"@sv, "Karl XI av Sverige (Tidigare ägare)"@sv ;
+	dc:description       "Frankrike 1600-talets mitt. Ingående i franska gåvan till Karl XI 1673, avsedd för häst nr 8, \u0022L´Assuré\u0022. Dubbel bukgjord av rött och gult silke i ett rutmönster. Fyra söljor av järn med söljstycken samt fastsydda balusterformade skinnapplikationer. Applikationerna är röda på den ena sidan och ljusbruna på den andra."@sv ;
+	dc:identifier        "67816", "(Inv. nr. 31203)" ;
+	dc:subject           "Sadeltillbehör (Transportutrustning, Hästutrustning)"@sv ;
+	dc:title             "Bukgjord"@sv ;
+	dc:type              "Bukgjord, \u0022franska gåvan\u0022"@sv, "Gjord"@sv ;
+	dcterms:created      "1670 cirka" ;
+	dcterms:extent       "Vikt: 427 g", "Längd: 1210 mm", "Bredd: 130 mm" ;
+	edm:currentLocation  <http://sws.geonames.org/10280347/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=67816&resolution=highImageResolution>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "43130"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "283"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_67816#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:37:02.172Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_67816> .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=67816&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .

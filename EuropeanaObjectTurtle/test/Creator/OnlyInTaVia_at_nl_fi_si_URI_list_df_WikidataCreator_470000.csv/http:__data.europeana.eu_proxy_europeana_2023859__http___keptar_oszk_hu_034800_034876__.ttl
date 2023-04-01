@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_034800_034876__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:53:47.378Z" ;
+	dcterms:modified          "2015-09-14T11:51:10.628Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F034800%2F034876%2FTemplom_12_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/034800/034876/Templom_12_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3937"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6495ED"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B0C4DE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_034800_034876__>
+	a                    ore:Proxy ;
+	dc:creator           "Oláh ,  Ferenc  (photographer)"@hu, "Borsos,  József ( építész)"@hu ;
+	dc:description       "Susáni templom Hódmezővásárhely - A református templom és lelkészlak terveit Borsos József készítette. Az építéssel Katona Gyula és Strucskó József építőmestereket bízták meg (1910). A templom vasbeton bolthajtással, jellegzetes préstégla díszítéssel készült. A templomkertben látható a második világháború susáni áldozatainak emléktáblája. (Borsos József (1875-1952) Hódmezővásárhely főmérnöke, majd Debrecen főépítésze. Tornyai János és Pásztor János barátja. Debrecenben a krematóriumot, református templomot, stb. építette. Sándy Gyula stílusát folytatva alakította ki jellegzetes téglaépítészetét."@hu ;
+	dc:format            "JPEG képállomány \u000A         1024x1933 \u000A         96 \u000A         24 \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/034800/034876   [Metadata]" ;
+	dc:relation          "Oláh Ferenc: Református Új-templom [ http://keptar.oszk.hu/034800/034865]"@hu ;
+	dc:source            "Inda fotó"@hu ;
+	dc:subject           "református egyház"@hu, "Architecture, building industry"@hu, "Religion, church"@hu, "épületkép"@hu, "templom"@hu, "History, local history"@hu ;
+	dc:title             "Susáni református templom"@hu ;
+	dc:type              "photograph"@hu ;
+	dcterms:alternative  "Templom 12."@hu, "Hmvh 19"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034800_034876__> .
+
+<http://keptar.oszk.hu/034800/034876>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_034800_034876__/manifest> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_034800_034876__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_034800_034876__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:28.327Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034800_034876__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034800_034876__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/034800/034876> ;
+	edm:object         <http://keptar.oszk.hu/034800/034876/Templom_12_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_034800_034876__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:28.327Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_034800_034876__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_034800_034876__>
+	a  edm:ProvidedCHO .

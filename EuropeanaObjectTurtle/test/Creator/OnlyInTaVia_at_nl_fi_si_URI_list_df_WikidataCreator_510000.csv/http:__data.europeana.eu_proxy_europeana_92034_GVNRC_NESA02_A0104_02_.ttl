@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NESA02:A0104(02)>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47393"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NESA02_A0104_02_>
+	a                   ore:Proxy ;
+	dc:contributor      "Backhuysen, Ludolf" ;
+	dc:creator          "Backhuysen, Ludolf" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0104(02)" ;
+	dc:rights           "For more information: Scheepvaartmuseum"@en, "Voor meer informatie: Scheepvaartmuseum"@nl, "Scheepvaartmuseum" ;
+	dc:source           "[A.0104(02)], Objecten uit het Scheepvaartmuseum, Scheepvaartmuseum" ;
+	dc:subject          "painting"@nl, "schilderij"@nl ;
+	dc:title            "De terugkomst van de Hollandia in het Landsdiep bij Huisduinen" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1666 - 1667" ;
+	dcterms:isPartOf    "Objecten uit het Scheepvaartmuseum", "GVN", "NESA02" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0104_02_> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NESA02_A0104_02_>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:17:46.165Z" ;
+	dcterms:modified          "2018-04-05T17:26:56.228Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANESA02%3AA0104%2802%29%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0104_02_>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NESA02:A0104(02)> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0104(02)&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:29.496Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0104_02_> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NESA02_A0104_02_>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NESA02_A0104_02_> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NESA02_A0104_02_#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:29.496Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NESA02_A0104_02_> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NESA02:A0104(02)&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4206"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "107"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

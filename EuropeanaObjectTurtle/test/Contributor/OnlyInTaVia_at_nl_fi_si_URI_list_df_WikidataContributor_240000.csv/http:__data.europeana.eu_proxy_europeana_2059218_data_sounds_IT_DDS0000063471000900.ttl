@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000063471000900>
+	a               edm:WebResource ;
+	dc:format       "mp3" ;
+	dcterms:extent  "00:00:30.000000" ;
+	edm:rights      <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000063471000900>
+	a                    ore:Proxy ;
+	dc:contributor       "Nori, Luigino [interprete]", "Tasso, Torquato <1544-1595>", "Partito Comunista Italiano", "Di Clemente, Sabatino [interprete]" ;
+	dc:creator           "Portelli, Alessandro" ;
+	dc:date              "1972-2003" ;
+	dc:identifier        "IT-DDS0000063471000900" ;
+	dc:language          "ita" ;
+	dc:subject           <http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music>, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings>, <http://data.europeana.eu/concept/soundgenres/soundgenres/Environment_recordings> ;
+	dc:title             "Intervista a Sabatino Di Clemente, Luigino Noni e informatori non identificati ; Torquato Tasso" ;
+	dcterms:alternative  "Torquato Tasso" ;
+	dcterms:extent       "00:03:24.000000" ;
+	dcterms:isPartOf     "Archivio Circolo Gianni Bosio. Fondo Roma e Lazio 97" ;
+	dcterms:medium       <http://metadataregistry.org/concept/show/id/544.html> ;
+	dcterms:provenance   "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000063471000900> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000063471000900>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000063471000900> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Traditional and folk music for voices and/or instruments."@en ;
+	skos:prefLabel  "Música tradicional y popular"@es, "Muzyki tradycyjnej i ludowej"@pl, "Musique traditionnelle et folklorique"@fr, "Musica tradizionale e folk"@it, "Traditional and folk music"@en, "Traditionelle und Volksmusik"@de .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower   <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Oral_histories>, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Language_and_dialect_recordings>, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Spoken_word_performance_recordings> ;
+	skos:note       "Recordings of spoken words."@en ;
+	skos:prefLabel  "Nagranie mowy"@pl, "Grabaciones sonoras de palabras habladas"@es, "Tonaufnahmen von gesprochene Sprache"@de, "Registrazioni di parole parlate"@it, "Spoken word recordings"@en, "Enregistrements sonores des mots parlés"@fr .
+
+<http://data.europeana.eu/concept/soundgenres/soundgenres/Environment_recordings>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower   <http://data.europeana.eu/concept/soundgenres/Environment_recordings/Nature_sounds>, <http://data.europeana.eu/concept/soundgenres/Environment_recordings/Soundscapes> ;
+	skos:note       "Recordings of the natural and built environment."@en ;
+	skos:prefLabel  "Grabaciones sonoras del entorno"@es, "Environment recordings"@en, "Enregistrements sonores de l'environnement"@fr, "Nagrania dźwiękowe środowiska"@pl, "Tonaufnahmen der Umwelt"@de, "Registrazioni sonore dell'ambiente"@it .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:29.577Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000063471000900> .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000063471000900&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:29.576Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000063471000900> .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000063471000900>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000063471000900&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000063471000900>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T08:40:05.523Z" ;
+	dcterms:modified          "2016-07-08T12:51:46.064Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900#contentTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000063471000900> ;
+	edm:language              "it" .

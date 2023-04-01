@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_036600_036668__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/40>, <http://data.europeana.eu/concept/145> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036600_036668__> .
+
+<http://data.europeana.eu/concept/40>
+	a                skos:Concept ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00045963n>, <http://www.wikidata.org/entity/Q178659>, <http://vocabularies.unesco.org/thesaurus/concept8419>, <http://iconclass.org/49M41>, <http://purl.org/bncf/tid/9493>, <http://www.yso.fi/onto/yso/p2738>, <http://data.bnf.fr/ark:/12148/cb11975832b>, <https://d-nb.info/gnd/4123412-1>, <http://vocab.getty.edu/aat/300015578>, <http://id.loc.gov/authorities/names/sh99001255>, <http://vocabularies.unesco.org/thesaurus/concept5671>, <http://id.ndl.go.jp/auth/ndlna/00570222>, <https://g.co/kg/m/01kr8f>, <https://www.freebase.com/m/01kr8f>, <http://purl.org/bncf/tid/7878> ;
+	skos:note        "Element graficzny dodany do tekstu (pisanego/drukowanego)"@pl, "Skildring lavet af kunstner"@da, "Reprezentare fotografică, grafică, picturală adecvată"@ro, "Picture, plate, diagram, plan, chart, map, design, or other graphic image printed with or inserted in the text of a book or other publication as an embellishment or to complement or elucidate the text"@en, "Kirjan tai muun julkaisun tekstiin painettu tai siihen lisätty kuva tai graafinen elementti koristeeksi tai täydentämään tai selventämään tekstiä"@fi, "Représentation graphique ou picturale liée à un texte"@fr, "Interpretació gràfica feta per un artista"@ca, "Druh obrázku"@cs, "Skildring gjord av konstnär"@sv, "Visuele toelichting"@nl, "Рисунок, фотография, гравюра или другое изображение, поясняющее текст"@ru, "Bildliche Darstellung eines Sachverhalts"@de, "Rappresentazione visiva che può avere la forma di un disegno, un dipinto, un fotomontaggio"@it, "Dibujo o imagen que adorna o documenta parte del texto de un libro"@es ;
+	skos:prefLabel   "Ilustración"@es, "Ilustracija"@hr, "Ilustracija"@sl, "Иллюстрация"@ru, "Illusztráció"@hu, "Ilustrazio (diseinu grafikoa)"@eu, "Απεικόνιση"@el, "Ilustrace"@cs, "Ilustracja"@pl, "Iliustracija"@lt, "Illustrazione"@it, "Illustratsioon"@et, "Illustration"@fr, "Illustration"@de, "Illustration"@sv, "Illustration"@en, "Illustration"@da, "Илюстрация"@bg, "Il·lustració"@ca, "Ilustrācija"@lv, "Kuvitus"@fi, "Ilustrácia"@sk, "Ilustrație"@ro, "Ilustração"@pt, "Illustratie"@nl ;
+	skos:related     <http://data.europeana.eu/concept/2947>, <http://data.europeana.eu/concept/2844> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:05.271Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036668__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036600_036668__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:56:27.572Z" ;
+	dcterms:modified          "2015-09-14T11:52:39.080Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F036600%2F036668%2F1895_Oldal_200_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_036600_036668__>
+	a                   ore:Proxy ;
+	dc:creator          "Mucha ,  Alfons  (graphicArtist)"@hu ;
+	dc:description      "&#171;Cora! a kis Cora! a kis modell, a kinek az volt a rögeszméje, hogy apáczának lássa magát lefestve! ... Beteg, mellbajos... És elgondolom magamban, hogy annak a fehér párnának, a melyre a kis kreol leány leejtette barna fejét, talán már fölibe is hajolt valamely apáczának a fehér főkötője, az a nagy főkötő, a melyet ő olyan szépnek talált, széles fehér pillangó-szárnyaival - s egy női hang, olyan gyöngéd, mint az övé, a fehér szárnyak közt suttogva, azt mondotta halkan a kis modellnek, a bágyadt, kimerült és szemét örökre behunyó kis Corának: - Aludjál kis Cora, aludjál csöndesen. És a kis Cora aztán elszenderűlt a szép fehér főkötő lebegő szárnyai alatt, elszenderűlt, hogy álmodjék az ő kedves Pierrejéről, a kit tovább fog keresni a nagy piaczán egy nagyobb falunak, abban a másik világban, a mely még nagyobb s még félelmetesebb, mint a mienk: a végtelenségben! Álmodjál te csak, kis Cora!&#187; (A kis Cora. Elbeszélés. Irta Claretie Gyula. Francziából forditotta Fáy Béla.) (Forrás: Vasárnapi Ujság Regénytára Melléklet, 1895.)"@hu ;
+	dc:format           "JPEG képállomány \u000A         885x1050 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/036600/036668   [Metadata]" ;
+	dc:relation         "Illustration pour Petite Cora de Jules Clarétie [ http://richet.christian.free.fr/mondemod/mondmod.html]"@hu, "Alfons Mucha: A kis Cora [ http://keptar.oszk.hu/036600/036661]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "lány"@hu, "betegség"@hu, "Fine arts, visual arts"@hu, "illusztráció"@hu, "álom"@hu ;
+	dc:title            "A kis Cora"@hu ;
+	dc:type             "graphics"@hu, "újságrészlet"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036668__> .
+
+<http://keptar.oszk.hu/036600/036668/1895_Oldal_200_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17073"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:05.271Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036668__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036600_036668__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/036600/036668>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036600_036668__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036668__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036668__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/036600/036668> ;
+	edm:object         <http://keptar.oszk.hu/036600/036668/1895_Oldal_200_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/145>
+	a                skos:Concept ;
+	skos:exactMatch  <http://dbpedia.org/ontology/Disease>, <https://www.freebase.com/m/027x3>, <http://purl.org/bncf/tid/818>, <http://identifiers.org/doid/DOID:4>, <http://id.ndl.go.jp/auth/ndlna/00571210>, <http://iconclass.org/31A46>, <http://vocab.getty.edu/aat/300055130>, <http://cv.iptc.org/newscodes/mediatopic/20000446>, <http://id.loc.gov/authorities/names/sh85038411>, <http://vocab.getty.edu/aat/300391457>, <http://id.nlm.nih.gov/mesh/D004194>, <http://id.nlm.nih.gov/mesh/C23.550.288>, <http://babelnet.org/rdf/s00027546n>, <https://g.co/kg/m/027x3>, <https://d-nb.info/gnd/4032844-2>, <http://www.wikidata.org/entity/Q12136>, <http://www.yso.fi/onto/yso/p2633>, <http://www.orpha.net/ORDO/Orphanet_377788>, <http://purl.obolibrary.org/obo/DOID_4>, <http://vocabularies.unesco.org/thesaurus/concept8188> ;
+	skos:note        "Condició anormal que afecta el cos d'un organisme"@ca, "Altération de la santé"@fr, "Нарушение нормальной жизнедеятельности организма, возникающее в ответ на действие патогенных факторов"@ru, "Condición anormal que afecta el cuerpo de un organismo"@es, "Μία παθολογική κατάσταση ή μία διαταραχή με χαρακτηριστικά συμπτώματα και σημεία."@el, "Alterazione dello stato fisiologico e psicologico dell'organismo"@it, "Patologický stav těla nebo mysli"@cs, "Condição anormal que afeta negativamente um organismo, distúrbio de um órgão"@pt, "Abnormal condition negatively affecting organisms"@en, "Bidla negattiva fil-kundizzjoni fiżika jew psikoloġika ta' organiżmu"@mt, "Porucha zdravia"@sk, "Funcționare sau condiție nenormală a unui organ sau funcții anatomice, alterare a stării de sănătate"@ro, "Störung der Funktion eines Organs, der Psyche oder des gesamten Organismus"@de, "Funktionshindrande tillstånd som karakteriseras av fysiologisk, psykologisk och/eller social ohälsa"@sv, "Fyysinen tai psyykkinen tila, joka aiheuttaa haittaa tai toiminnanvajavuutta"@fi, "Verstoring van het fysiologisch of psychisch evenwicht van een organisme"@nl, "Invaliderende tilstand karakteriseret ved fysiologisk, psykologisk og / eller social sundhed"@da ;
+	skos:prefLabel   "Болест"@bg, "Bolezen"@sl, "Liga"@lt, "Ziekte"@nl, "Eritasun"@eu, "Choroba"@sk, "Choroba"@pl, "Galar"@ga, "Slimība"@lv, "Bolest"@hr, "Mard"@mt, "Malaltia"@ca, "Doença"@pt, "Malattia"@it, "Sygdom"@da, "Haigus"@et, "Sjukdom"@sv, "Maladie"@fr, "Nemoc"@cs, "Νόσος"@el, "Boală"@ro, "Sairaus"@fi, "Krankheit"@de, "Betegség"@hu, "Болезнь"@ru, "Disease"@en, "Enfermedad"@es .

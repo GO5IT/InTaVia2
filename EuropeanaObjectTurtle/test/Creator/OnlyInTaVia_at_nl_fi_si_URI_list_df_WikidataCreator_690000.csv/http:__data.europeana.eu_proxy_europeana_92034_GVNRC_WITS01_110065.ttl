@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110065#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:12.118Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110065> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110065>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:110065> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110065&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_110065>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2352> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1881", "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110065> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110065>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:42.900Z" ;
+	dcterms:modified          "2018-04-05T18:10:58.457Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_110065> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A110065%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110065>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110065&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "37367"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "136"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:110065>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50511"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_110065>
+	a                   ore:Proxy ;
+	dc:contributor      "Schwartze, Thérèse" ;
+	dc:creator          "Schwartze, Thérèse" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:110065", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110065" ;
+	dc:rights           "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:source           "[WITS01:110065], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "baby"@nl, "koningin"@nl, "bloem"@nl, "vrouwenportret"@nl, "moeder"@nl ;
+	dc:title            "Portret van koningin Emma met kroonprinses Wilhelmina op de arm" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1881" ;
+	dcterms:extent      "141,5 x 99 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "doek", "olieverf", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110065> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110065> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110065#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:12.118Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110065> .
+
+<http://data.europeana.eu/concept/2352>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2281> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q44407651>, <http://thesaurus.europeanafashion.eu/thesaurus/10829> ;
+	skos:note        "Imitation flower, usually of silk or synthetic fabric, used as an ornament on clothing or hats"@en ;
+	skos:prefLabel   "Fiore"@it, "Blume"@de, "Bloem"@nl, "Fleur"@fr, "Blomma"@sv, "Άνθος"@el, "Flower"@en .

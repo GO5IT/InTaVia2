@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004510521>
+	a               foaf:Organization ;
+	skos:prefLabel  "Museum Martena"@nl, "Museum Martena"@fr, "Museum Martena"@en, "Museum Martena"@de .
+
+<http://data.europeana.eu/item/2021619/SCH0198>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2021619/SCH0198>
+	a                   ore:Proxy ;
+	dc:coverage         "Friesland" ;
+	dc:creator          "Harlingen, Pieter Feddes van" ;
+	dc:date             "1623", "1610" ;
+	dc:description      "Portret van Jarich van Botnia (ca. 1505-1583) in een statige mantel en met een familiewapen in de rechterbovenhoek." ;
+	dc:format           "Breedte 99 cm", "Hoogte 119 cm" ;
+	dc:identifier       "SCH0198" ;
+	dc:publisher        "Museum Martena" ;
+	dc:source           "Museum Martena" ;
+	dc:subject          "Botnia, Jarich van" ;
+	dc:title            "Portret van Jarich van Botnia" ;
+	dc:type             "portret", "schilderij" ;
+	dcterms:provenance  "Ottema-Kingma Stichting" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021619/SCH0198> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021619/SCH0198> .
+
+<https://iiif.europeana.eu/presentation/2021619/SCH0198/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://37.74.151.78/oaiserver/images/SCH0198.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021619/SCH0198/manifest> .
+
+<http://data.europeana.eu/item/2021619/SCH0198#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:25.016Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021619/SCH0198> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2021619/SCH0198>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "2014-03-28T14:42:04.805Z" ;
+	dcterms:modified          "2014-03-28T14:42:04.805Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021619/SCH0198#metadataTier>, <http://data.europeana.eu/item/2021619/SCH0198#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021619/SCH0198> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021619_Ag_NL_DigitaleCollectie_Martena" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021619/SCH0198> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2F37.74.151.78%2Foaiserver%2Fimages%2FSCH0198.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc/3.0/nl/> .
+
+<http://data.europeana.eu/aggregation/provider/2021619/SCH0198>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021619/SCH0198> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510521> ;
+	edm:isShownBy      <http://37.74.151.78/oaiserver/images/SCH0198.jpg> ;
+	edm:object         <http://37.74.151.78/oaiserver/images/SCH0198.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc/3.0/nl/> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/item/2021619/SCH0198#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:25.015Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021619/SCH0198> .
+
+<http://data.europeana.eu/proxy/europeana/2021619/SCH0198>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1610", "1623" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021619/SCH0198> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021619/SCH0198> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

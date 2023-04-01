@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_Zweig_MS_23>
+	a                   ore:Proxy ;
+	dc:contributor      "Brahms, Johannes, 1833-1897, composer", "Simrock, Peter Joseph, 1792-1868, music publisher" ;
+	dc:description      "Autograph. ‘Lilienthal 136, Baden-Baden’ (f. 2r); n.d., but endorsed ‘No. 1092. Baden-Baden d. 2/10.65. Brahms’ in another hand (f. 2v). Pencil numbers ‘524/2’ and ‘914’, in sequence with those on Zweig 22, added at foot of f. 1r."@en ;
+	dc:identifier       "Zweig_MS_23" ;
+	dc:language         "German" ;
+	dc:relation         "Zweig MS 23" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://dbpedia.org/page/Musical_notation> ;
+	dc:title            "Johannes Brahms: Letter to Peter Joseph Simrock" ;
+	dcterms:created     "1865" ;
+	dcterms:extent      "1 volume (2 folios)" ;
+	dcterms:isPartOf    <http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Zweig_MS_23> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_23> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23>
+	a  edm:ProvidedCHO .
+
+<http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_23>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_Zweig_MS_23>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/Zweig_MS_23" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1865" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_23> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:12:09.854Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_23> .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_23>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T07:45:55.134Z" ;
+	dcterms:modified          "2020-05-01T15:33:14.380Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23#metadataTier>, <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_Zweig_MS_23> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsounds.bl.uk%2Fresources%2Feuropeana%2Fthumbnails%2FZweigMS23.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_23>
+	a                  ore:Aggregation ;
+	dc:rights          "Public Domain" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_23> ;
+	edm:isShownBy      <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS23.jpg> ;
+	edm:object         <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS23.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS23.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_23/manifest> ;
+	ebucore:fileByteSize    "160136"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "815"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "523"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_23#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:12:09.854Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_23> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .
+
+<https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_23/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

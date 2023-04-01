@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b74002276>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b74002276> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b74002276/manifest> ;
+	ebucore:fileByteSize    "37942"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "405"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b74002276/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:30.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74002276> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b74002276>
+	a                   ore:Proxy ;
+	dc:contributor      "Weisse, Christian Felix (1726-1804). Auteur du texte" ;
+	dc:creator          "Beethoven, Ludwig van (1770-1827). Compositeur" ;
+	dc:date             "1798-1822" ;
+	dc:description      "Incipit : Ich war bei Chloen ganz allein", "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [Der Kuss. Hess 147]", "Ariette. - Texte de Christian Felix Weisse. - Date de composition : 1798 (esquisses), automne - décembre 1822 (version définitive). - Fragment comportant l'équivalent des mes. 22 à 49 de la version définitive, dans une version plus courte (les mes. 14-16 de fragment correspondent aux mes. 35-40 de la version définitive) et comportant de nombreuses différences, surtout dans l'accompagnement. - Nombreuses ratures et corrections de plusieurs encres différentes, parfois au crayon, la plupart du temps repassé à l'encre ; grattages. - Papier réglé à 12 portées de 8 x 250 mm par page (intervalle entre les portées : 7 ou 8 mm). - 1re éd. : Mayence : Schott, 1825" ;
+	dc:format           "2 p. ; 23,5 x 29,5 cm", "Nombre total de vues :  2" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b74002276" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb422593871", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb162249993" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-33" ;
+	dc:subject          "Lieder acc. de piano -- 18e siècle"@fre, "Lieder acc. de piano -- 19e siècle"@fre ;
+	dc:title            "[Der Kuss : fragment] (manuscrit autographe) / Ludwig van Beethoven]" ;
+	dc:type             "Genre musical : Lied", "manuscript music"@eng, "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74002276> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b74002276>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "188503"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/f1> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b74002276>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:27.586Z" ;
+	dcterms:modified          "2018-07-23T15:38:18.806Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b74002276> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b74002276.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:30.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74002276> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b74002276>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b74002276> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b74002276/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b74002276.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b74002276.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6171"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "162"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b74002276>
+	a  edm:ProvidedCHO .

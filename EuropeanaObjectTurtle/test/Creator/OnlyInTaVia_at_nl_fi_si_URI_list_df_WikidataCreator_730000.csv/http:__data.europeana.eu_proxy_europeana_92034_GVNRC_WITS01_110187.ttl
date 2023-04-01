@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110187#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:22.746Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110187> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110187>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:110187> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110187&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_110187>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3222> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1899", "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110187> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110187>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:40.400Z" ;
+	dcterms:modified          "2018-04-05T18:10:59.906Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_110187> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A110187%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110187&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "39312"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:110187>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "52483"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110187#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:22.746Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110187> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110187>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/3222>
+	a                skos:Concept ;
+	skos:altLabel    "Karambolagetisch"@de, "Poolbillardtisch"@de, "Snookertafel"@nl, "Biljarttafel"@nl, "Pool table"@en, "Snookertisch"@de, "Russisches-Billard-Tisch"@de, "Snooker table"@en ;
+	skos:broader     <http://data.europeana.eu/concept/3207> ;
+	skos:exactMatch  <http://wordnet-rdf.princeton.edu/wn30/03982430-n>, <http://www.wikidata.org/entity/Q3500725>, <http://vocab.getty.edu/aat/300039627>, <https://g.co/kg/m/04p0qw>, <https://www.freebase.com/m/04p0qw> ;
+	skos:note        "Mesa sobre la que se practica el juego del billar"@es, "Special table used exclusively for billiards or snooker"@en, "Tafel waarop cuesporten gespeelt worden"@nl, "Teil der Ausrüstung für das Billardspiel"@de ;
+	skos:prefLabel   "Tavolo da biliardo"@it, "Biliardový stôl"@sk, "Masă de biliard"@ro, "Stół bilardowy"@pl, "Бильярдный стол"@ru, "Biljart/snookertafel"@nl, "Biljardbord"@sv, "Billardbord"@da, "Mesa de billar"@es, "Billiard table"@en, "Billardtisch"@de, "Table de billard"@fr .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_110187>
+	a                   ore:Proxy ;
+	dc:contributor      "Tholen, Willem Bastiaan" ;
+	dc:creator          "Tholen, Willem Bastiaan" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110187", "WITS01:110187" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:110187], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "interieur"@nl, "doorkijk"@nl, "biljarttafel"@nl, "open deur"@nl, "liggend"@nl, "genrevoorstelling"@nl, "jager"@nl, "lamp"@nl, "café"@nl, "hond"@nl ;
+	dc:title            "Gelagkamer" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1899" ;
+	dcterms:extent      "30 x 46 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "olieverf", "doek", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110187> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110187> .

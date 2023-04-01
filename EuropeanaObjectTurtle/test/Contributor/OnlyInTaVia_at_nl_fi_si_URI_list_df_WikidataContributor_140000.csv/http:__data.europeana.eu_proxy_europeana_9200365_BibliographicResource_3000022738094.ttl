@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.703Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525018210> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.704Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525018210> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525018210>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "194403"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b525018210>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1853" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525018210> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525018210.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4300"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "162"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/f1> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525018210>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:36:41.109Z" ;
+	dcterms:modified          "2018-07-23T15:36:32.663Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b525018210> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b525018210.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b525018210>
+	a                   ore:Proxy ;
+	dc:contributor      "Fuchs, Peter (1823-18..). Copiste", "Joachim, Joseph (1831-1907). Dédicataire" ;
+	dc:creator          "Schumann, Robert (1810-1856). Compositeur" ;
+	dc:date             "1853" ;
+	dc:description      "Les mots du titre \u0022Clavierauszug (zugleich Dirigirstimme)\u0022 sont de la main de Schumann. - Autres mention au titres : \u0022Op. 131\u0022 (ajout de l'éditeur, au crayon) ; \u0022beim Stich der Solostimme sind statt ⋀ über einzelen Noten > zu setzen\u0022 (instructions pour le graveur). - Partition de la réduction pour violon et piano et parties d'orchestre. - Manuscrit à l'encre noire avec quelques ajouts et corrections à l'encre et au crayon gris ; sur la partition, repères des entrées des instruments de l'orchestre ajoutés au crayon rouge sur les mesures de silence du soliste. - Partition de la réduction pour violon et piano, de la main de Peter Fuchs, et parties d'orchestre, de la main d'un copiste non identifié. - Parties : Violine 1 (7 p.), Violine (6 p.), Viola (6 p.), Violoncell und Contrabass (9 p.), Flöte I (3 p.), Flöte II (3 p.), Hoboe I (3 p.), Hoboe II (3 p.), Clarinette I in B (3 p.), Clarinette II in B (3 p.), Fagott I (3 p.), Fagott II (3 p.), Ventilhorn I in C (2 p.), Ventilhorn II in C (2 p.), Ventiltrompete I in C (2 p.), Ventiltrompete II in C (2 p.), Pauken in C und G (2 p.). - Manuscrit ayant servi à la gravure de l'éd. de Leipzig : F. Kistner, 1854 et portant les cotages 2010 (parties) et 2011 (partition), ajoutés au crayon par l'éditeur à la p. de titre", "Présentation musicale : [Partition et parties]", "Titre uniforme : Schumann, Robert (1810-1856). Compositeur. [Fantaisies. Violon, orchestre. Op. 131. Do majeur]" ;
+	dc:format           "1 partition (29 p.) ; 34 x 27 cm + 17 parties", "Nombre total de vues :  104" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b525018210" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139189311", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb435059353" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-348" ;
+	dc:subject          "Fantaisies (violon et orchestre) -- 19e siècle -- Parties"@fre, "Fantaisies (violon et orchestre) -- 19e siècle -- Réductions solo et piano"@fre ;
+	dc:title            "Phantasie // für // Violine // mit Begleitung des Orchesters // Joseph Joachim // gewidmet // von // R. S. // Clavierauszug // (zugleich Dirigirstimme)" ;
+	dc:type             "manuscript music"@eng, "Genre musical : fantaisie", "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525018210> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525018210>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525018210> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b525018210> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b525018210.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525018210/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525018210/manifest> ;
+	ebucore:fileByteSize    "29402"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "648"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525018210/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-328>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48943"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:17.506Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_328> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_328>
+	a                   ore:Proxy ;
+	dc:contributor      "Jan Verkolje" ;
+	dc:creator          "Jan Verkolje" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-328", "OS-I-328" ;
+	dc:rights           "Frans Hals Museum", "voor informatie: Frans Hals Museum"@nl, "for information contact: Frans Hals Museum"@en ;
+	dc:source           "OS-I-328 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van Evert Doublet als kind"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1687" ;
+	dcterms:extent      "65,7 x 54,2 cm" ;
+	dcterms:isPartOf    "FHM01", "Kunstwerken uit het Frans Hals Museum", "GVN" ;
+	dcterms:medium      "doek ; olieverf", "geschilderd", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_328> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_328>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/31207> ;
+	dc:creator          <http://data.europeana.eu/agent/31207> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1687" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_328> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_328>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-328> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-328&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/31207>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/39083> ;
+	owl:sameAs           <https://www.freebase.com/m/07k55f6>, <http://vocab.getty.edu/ulan/500027617>, <http://id.loc.gov/authorities/names/no2015136300>, <http://d-nb.info/gnd/138807515>, <http://viaf.org/viaf/95431515>, <http://www.wikidata.org/entity/Q120609>, <https://g.co/kg/m/07k55f6>, <http://dbpedia.org/resource/Jan_Verkolje> ;
+	rdaGr2:dateOfBirth   "1650-02-09" ;
+	rdaGr2:dateOfDeath   "1693-05-08" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Johannes Verkolje I"@en, "Verkolje jan"@en, "D'Oude Verkolje"@en, "Den Oude Vercolje"@en, "Jan Verkolje (I)"@nl, "Jan Verkolje (I)"@en, "J. Verkolie"@en, "Jean Verkolie"@en, "Jan Verkolye the Elder"@en, "Johannes, I Verkolje"@en, "J. verkoolje"@en, "Jan, I Verkolje"@en, "Jan (I) Verkolje"@en, "Jan, the elder Verkolye"@en, "Van verkolje"@en, "J. Verkolier"@en, "Verkolje de Oude"@en, "I. Verkolie"@en, "Johannes Verkolje d.ä."@sv, "Jan I Verkolje"@en, "Johannes Verkolje"@de, "Johannes Verkolje"@en, "Jan Verkolje I"@fr, "Jan Verkolje I"@en, "Jean Verkolye"@en, "Jan Verkolje"@nl, "Jan Verkolje"@da, "Jan Verkolie"@en, "Johannes Vercolje"@nl, "Johannes Vercolje"@en, "De Oude Verkolje"@en, "Jean Vercolie"@en, "J. Verkolje"@en, "Verkolje"@en, "Jan Verkolje de Oude"@nl, "Jan Verkolje de Oude"@en, "John Verkolie"@en ;
+	skos:note            "Niederländischer Maler"@de, "Peintre néerlandais"@fr, "Nederlands kunstschilder"@nl, "Pittore olandese"@it, "Painter from the Northern Netherlands (1650-1693)"@en, "Nederlandsk maler"@da ;
+	skos:prefLabel       "Jan, I Verkolje"@pt, "Johannes Verkolje"@da, "Johannes Verkolje"@sv, "Johannes Verkolje"@nl, "Jan Verkolje"@de, "Jan Verkolje"@sl, "Jan Verkolje"@en, "Jan Verkolje"@it, "Jan Verkolje"@pl, "Jan Verkolje"@fr, "Jan Verkolje"@ca, "Jan Verkolje"@es .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_328>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:56.846Z" ;
+	dcterms:modified          "2018-04-05T16:45:01.806Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-328%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:17.506Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_328> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-328&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "23180"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "191"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_328>
+	a  edm:ProvidedCHO .

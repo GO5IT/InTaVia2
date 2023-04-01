@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildarchivaustria.at/Thumbnail/4845781.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126195605>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605> ;
+	edm:dataProvider   "Österreichische Nationalbibliothek - Austrian National Library" ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4845781> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/4845781.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/4845781.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4845781>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126195605#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:57:34.331Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126195605> .
+
+<http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126195605>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-04T19:14:47.312Z" ;
+	dcterms:modified          "2015-03-26T22:21:58.054Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605#contentTier>, <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92062_Ag_EU_TEL_a0480_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92062/BibliographicResource_1000126195605> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F4845781.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92062/BibliographicResource_1000126195605>
+	a                   ore:Proxy ;
+	dc:creator          "Kupelwieser, Leopold", "Neubauer, Friedrich Ludwig" ;
+	dc:description      "Bildnis im Krönungsornat des Heiligen Römischen Reiches. Kolorierter Stich von Friedrich Ludwig Neubauer nach dem Gemälde von Leopold Kupelwieser für den Kaisersaal im Frankfurter Römer 1840"@de ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/4845781.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Habsburg-Lothringen"@de, "Porträt"@de, "Österreich"@de, "Portrait"@en, "Habsburg-Lorraine"@en, "Habsburg"@de, "Archduke"@en, "Erzherzog"@de ;
+	dc:title            "Franz II., römisch-deutscher Kaiser"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:hasFormat   "image/jpeg" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0480> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126195605> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126195605>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126195605/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.bildarchivaustria.at/Preview/4845781.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126195605/manifest> ;
+	ebucore:fileByteSize    "1054076"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1187"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92062/BibliographicResource_1000126195605>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126195605> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126195605> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126195605#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:57:34.331Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126195605> .

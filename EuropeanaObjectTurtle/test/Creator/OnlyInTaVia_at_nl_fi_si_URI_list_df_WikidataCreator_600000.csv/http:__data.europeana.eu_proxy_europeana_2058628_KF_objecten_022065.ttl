@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338555>
+	a               foaf:Organization ;
+	skos:prefLabel  "PCCE (Provincial Centre for Cultural Heritage)"@en .
+
+<http://data.europeana.eu/organization/1482250000004504917>
+	a               foaf:Organization ;
+	skos:prefLabel  "HIPLimburg"@en .
+
+<http://data.europeana.eu/aggregation/provider/2058628/KF_objecten_022065>
+	a                         ore:Aggregation ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058628/KF_objecten_022065> ;
+	edm:dataProvider          <http://data.europeana.eu/organization/1482250000004504917> ;
+	edm:intermediateProvider  <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:isShownAt             <http://www.erfgoedplus.be/details/KF.objecten.022065> ;
+	edm:isShownBy             <http://arnold.erfgoedplus.be/alfresco/guestDownload/direct/workspace/SpacesStore/e0e3991f-2a10-4bff-893a-f14c7cc2db8b/e0e3991f-2a10-4bff-893a-f14c7cc2db8b_LARGE.png> ;
+	edm:object                <http://arnold.erfgoedplus.be/alfresco/guestDownload/direct/workspace/SpacesStore/e0e3991f-2a10-4bff-893a-f14c7cc2db8b/e0e3991f-2a10-4bff-893a-f14c7cc2db8b_LARGE.png> ;
+	edm:provider              <http://data.europeana.eu/organization/1482250000013076075> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://arnold.erfgoedplus.be/alfresco/guestDownload/direct/workspace/SpacesStore/e0e3991f-2a10-4bff-893a-f14c7cc2db8b/e0e3991f-2a10-4bff-893a-f14c7cc2db8b_LARGE.png>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2058628/KF_objecten_022065/manifest> ;
+	ebucore:fileByteSize    "532059"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/png" ;
+	ebucore:height          "843"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2058628/KF_objecten_022065/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.erfgoedplus.be/place/135991#id>
+	a               edm:Place ;
+	skos:altLabel   "Saint-Trond"@nl ;
+	skos:prefLabel  "Sint-Truiden"@nl .
+
+<http://vocab.getty.edu/aat/300026819>
+	a               skos:Concept ;
+	skos:altLabel   "Ansichtskarte"@de, "tarjeta postal fotográfica"@es, "prentbriefkaart"@nl, "prentkaart"@nl, "postcards, picture"@en, "mei shu ming hsin p'ien"@zh-latn-wadegile, "prentbriefkaarten"@nl, "ansichtkaart"@nl, "picture postcard"@en, "tarjeta postal ilustrada"@es, "prentkaarten"@nl, "vykort"@sv, "cartolina illustrata"@it, "carte postale illustrée"@fr ;
+	skos:broader    <http://vocab.getty.edu/aat/300026816> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300192703>, <http://vocab.getty.edu/aat/300264328> ;
+	skos:note       "其中一面有圖像的明信片。"@zh-hant, "Briefkaarten met een picturale afbeelding aan een kant."@nl, "Postcards having a pictorial image on one side, often representations of a place or works of art, upon which a message can be written, then posted."@en, "Tarjetas postales que tienen una imagen pictórica en un lado."@es ;
+	skos:prefLabel  "ansichtkaarten"@nl, "mei shu ming hsin p'ien"@zh-latn-pinyin-x-hanyu, "tarjetas postales ilustradas"@es, "cartes postales illustrées"@fr, "美術明信片"@zh-hant, "picture postcards"@en, "mei shu ming xin pian"@zh-latn-pinyin-x-notone .
+
+<http://data.europeana.eu/aggregation/europeana/2058628/KF_objecten_022065>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-12-07T12:56:12.850Z" ;
+	dcterms:modified          "2020-01-29T12:36:42.580Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058628/KF_objecten_022065#contentTier>, <http://data.europeana.eu/item/2058628/KF_objecten_022065#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058628/KF_objecten_022065> ;
+	edm:completeness          "9" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "2058628_Erfgoedplus_be_Erfgoedregister" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058628/KF_objecten_022065> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Farnold.erfgoedplus.be%2Falfresco%2FguestDownload%2Fdirect%2Fworkspace%2FSpacesStore%2Fe0e3991f-2a10-4bff-893a-f14c7cc2db8b%2Fe0e3991f-2a10-4bff-893a-f14c7cc2db8b_LARGE.png&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000013076075>
+	a               foaf:Organization ;
+	skos:prefLabel  "Heritage plus.be"@en .
+
+<http://data.europeana.eu/item/2058628/KF_objecten_022065>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2058628/KF_objecten_022065#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-01-29T15:08:05.144Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058628/KF_objecten_022065> .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/item/2058628/KF_objecten_022065#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-01-29T15:08:05.144Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058628/KF_objecten_022065> .
+
+<http://data.europeana.eu/proxy/europeana/2058628/KF_objecten_022065>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058628/KF_objecten_022065> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058628/KF_objecten_022065> .
+
+<http://data.europeana.eu/proxy/provider/2058628/KF_objecten_022065>
+	a                    ore:Proxy ;
+	dc:creator           "Thijs, Pieter", "Nels", "Thijs Achille" ;
+	dc:description       "Seminaries"@nl, "Bedrukte briefkaart"@nl, "De toren het aangrenzende deel van de markt, enkele passanten"@nl ;
+	dc:identifier        "KF.objecten.022065" ;
+	dc:title             "Klein Seminarie St-Truiden. Toren XIe eeuw Petit séminaire St-Trond. La tour XIe siècle"@nl ;
+	dc:type              <http://vocab.getty.edu/aat/300026819> ;
+	dcterms:created      "1940-1960" ;
+	dcterms:spatial      "[Sint-Truiden]", "[Brussel]", <http://data.erfgoedplus.be/place/135991#id> ;
+	edm:currentLocation  "Bibliotheek Hasselt Limburg (Hasselt)" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2058628/KF_objecten_022065> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2058628/KF_objecten_022065> .
+
+<http://www.erfgoedplus.be/details/KF.objecten.022065>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

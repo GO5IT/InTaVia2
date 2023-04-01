@@ -1,0 +1,121 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P322N375>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:58:11.794Z" ;
+	dcterms:modified          "2018-04-05T18:03:04.575Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375> ;
+	edm:completeness          "9" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P322N375> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP322N375%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P322N375>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/40258> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1628" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P322N375> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P322N375>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "46565"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N375&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4113"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "102"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:22.516Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N375> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N375>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P322N375> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N375&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P322N375>
+	a                   ore:Proxy ;
+	dc:contributor      "Saenredam, Pieter Jansz. (1597-1665)", "Velde, Jan van de" ;
+	dc:creator          "Velde, Jan van de" ;
+	dc:description      "Onder de prent een vers van 12 regels in 3 kolommen; Hier siet gy Bredero...en dicht by Bredero." ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N375" ;
+	dc:rights           "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl, "Universiteitsbibliotheek Leiden", "For more information: Universiteitsbibliotheek Leiden"@en ;
+	dc:source           "[P322N375], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "[Ruïne van het kasteel Brederode, links op de achtergrond de duinen, op de voorgrond rechts man, vrouw en kind.]" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1628" ;
+	dcterms:extent      "14,0 × 23,4 cm" ;
+	dcterms:isPartOf    "GVN", "UBL01", "Topografie van Nederland" ;
+	dcterms:medium      "ets/kopergravure", "image/jpeg" ;
+	dcterms:spatial     "Santpoort" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N375> .
+
+<http://data.europeana.eu/place/40258>
+	a               edm:Place ;
+	owl:sameAs      <http://viaf.org/viaf/246260712>, <https://g.co/kg/m/0w10k>, <http://d-nb.info/gnd/4343046-6>, <http://dbpedia.org/resource/Velsen>, <http://www.wikidata.org/entity/Q9970>, <https://sws.geonames.org/2745675/>, <https://www.freebase.com/m/0w10k> ;
+	skos:altLabel   "Santpoort"@de ;
+	skos:note       "Gemeente in Noord-Holland"@nl, "Municipality in the Netherlands"@en, "Gemeinde in der niederländischen Provinz Nordholland"@de, "Municipio de los Países Bajos"@es, "Comune olandese"@it, "Commune d'Hollande-Septentrionale, Pays-Bas"@fr, "Ciutat dels Països Baixos"@ca, "Δήμος των Κάτω Χωρών"@el ;
+	skos:prefLabel  "Velsen"@nl, "Velsen"@ro, "Velsen"@da, "Velsen"@pl, "Велзен"@ru, "Φέλσεν"@el, "Velsen"@ga, "Velsen"@es, "Velsen"@hu, "Velsen"@fr, "Velsen"@it, "Velsen"@en, "Velsen"@pt, "Velsen"@fi, "Velsen"@sv, "Velsen"@de, "Velsenas"@lt, "Velsen"@ca ;
+	wgs84_pos:alt   "6.0" ;
+	wgs84_pos:lat   "52.466667" ;
+	wgs84_pos:long  "4.616667" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N375#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:22.517Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N375> .

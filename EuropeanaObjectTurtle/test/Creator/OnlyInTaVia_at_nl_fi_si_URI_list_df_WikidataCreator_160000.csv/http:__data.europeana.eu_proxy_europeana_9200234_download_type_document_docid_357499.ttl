@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357499#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:44:51.949Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357499> .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357499#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:44:51.949Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357499> .
+
+<http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357499>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200234/download_type_document_docid_357499> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:isShownAt      <http://oapen.org/search?identifier=357499> ;
+	edm:isShownBy      <http://oapen.org/download?type=document&docid=357499> ;
+	edm:object         <http://oapen.org/download?type=document&docid=357499> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200234/download_type_document_docid_357499>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-19T14:43:30.217Z" ;
+	dcterms:modified          "2017-02-22T10:53:53.518Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200234/download_type_document_docid_357499#metadataTier>, <http://data.europeana.eu/item/9200234/download_type_document_docid_357499#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200234/download_type_document_docid_357499> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200234_OAPEN_Foundation_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200234/download_type_document_docid_357499> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Foapen.org%2Fdownload%3Ftype%3Ddocument%26docid%3D357499&type=TEXT> .
+
+<http://oapen.org/search?identifier=357499>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004511926>
+	a               foaf:Organization ;
+	skos:prefLabel  "Open Access Publishing in European Networks Foundation"@en .
+
+<http://data.europeana.eu/concept/79>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept/3983>, <https://d-nb.info/gnd/4020517-4>, <http://www.yso.fi/onto/yso/p1780>, <http://vocabularies.unesco.org/thesaurus/concept301>, <http://uri.gbv.de/terminology/bk/15.00>, <http://data.bnf.fr/ark:/12148/cb119344445>, <http://www.yso.fi/onto/ysa/Y95390>, <http://datos.bne.es/resource/XX4346861>, <http://vocabularies.unesco.org/thesaurus/concept302>, <http://zbw.eu/stw/descriptor/15690-2>, <http://id.nlm.nih.gov/mesh/D006664>, <http://www.wikidata.org/entity/Q309>, <http://id.cabi.org/cabt/57756>, <http://purl.org/bncf/tid/1995>, <http://id.loc.gov/authorities/names/sh85061212>, <http://linkeddata.ge.imati.cnr.it/resource/EARTh/89480>, <https://www.freebase.com/m/03g3w>, <http://id.ndl.go.jp/auth/ndlna/00569368>, <http://id.nlm.nih.gov/mesh/K01.400>, <http://id.worldcat.org/fast/958235>, <http://iconclass.org/6>, <https://g.co/kg/m/03g3w> ;
+	skos:note        "Paraplybegrepp för kunskap och studier kring händelser i det förgångna"@sv, "Eventos ocorridos no passado"@pt, "Esdeveniments passats"@ca, "Eventi che succedettero nel passato"@it, "Vergangene Ereignisse und ihre Überlieferung, wie sie von der Geschichtswissenschaft und Geschichtsschreibung betrachtet werden"@de, "Événements passés et leurs traces ou publications, étudiés par diverses branches des sciences humaines de l'histoire"@fr, "Past events and their tracks or records"@en, "Επιστήμη που μελετά ανθρώπινα συμβάντα του παρελθόντος"@el, "Systematisch chronologische verslaglegging van wat lokaal/(inter)nationaal is gebeurd m.b.t. wetenschap of kunst; gewoonlijk incl. verklaring van oorzaak en bron"@nl, "Menneisyyden tutkimus"@fi, "Minulost, jak je připomínána a zkoumána lidmi"@cs, "Прошлые события и их записи"@ru, "Nauka humanistyczna i społeczna"@pl, "Pētniecības nozare, kas ir balstīta uz cilvēces attīstības izzināšanu"@lv, "Múltbeli események összessége"@hu, "Samlebetegnelse for viden og undersøgelser af tidligere begivenheder"@da, "Хуманитарна наука, занимаваща се с изучаването на миналото"@bg, "Sucesos del pasado"@es ;
+	skos:prefLabel   "Ajalugu"@et, "História"@pt, "Storia"@it, "Zgodovina"@sl, "Povijest"@hr, "Vēsture"@lv, "Dějiny"@cs, "Stair"@ga, "Geschichte"@de, "Historia"@fi, "Historia"@sv, "Historia"@es, "Historia"@eu, "Historia"@pl, "Història"@ca, "Histoire"@fr, "Dejiny"@sk, "Ιστορία"@el, "Istorie"@ro, "Storja"@mt, "Historie"@da, "Geschiedenis"@nl, "Istorija"@lt, "History"@en, "История"@ru, "История"@bg, "Történelem"@hu .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://oapen.org/download?type=document&docid=357499>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "19159254"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/pdf" .
+
+<http://data.europeana.eu/proxy/europeana/9200234/download_type_document_docid_357499>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/198> ;
+	dc:subject          <http://data.europeana.eu/concept/79> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200234/download_type_document_docid_357499> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200234/download_type_document_docid_357499> .
+
+<http://semium.org/time/20xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Mon Jan 01 01:00:00 CET 2001" ;
+	edm:end           "Fri Dec 31 01:00:00 CET 2100" ;
+	skos:prefLabel    "21st"@en, "21er siècle"@fr, "21e", "21ste eeuw"@nl, "21..", "21-st"@en, "21й век"@ru, "21??", "21st century"@en .
+
+<http://data.europeana.eu/proxy/provider/9200234/download_type_document_docid_357499>
+	a                   ore:Proxy ;
+	dc:creator          "Erasmus" ;
+	dc:date             "2008" ;
+	dc:description      "Das vorliegende Buch ist der 36. Band der Amsterdamer Erasmi Opera omnia\u000A(ASD V, 6). Es enthalt die Institutio matrimonii christiani, herausgegeben von\u000AA.G. Weiler (Heelsum) und die Vidua christiana, herausgegeben von Maria\u000ACytowskat (Warszawa).\u000ADie beiden Schriften gehoren zum funften 'ordo' im Kanan der Schriften von\u000AErasmus. Die Gliederung in 'ordines' hat Erasmus selbst in seinen Briefen an\u000ABotzheim und Boece fur die Herausgabe seiner Werke aufgestellt (c£ General\u000AIntroduction, ASD I, I, pp. x, xvii-xviii, und C. Reedijk, Tandem bona causa\u000Atriumphat. Zur Geschichte des Gesamtwerkes des Erasmus von Rotterdam. Vortrage\u000Ader Aeneas-Silvius-Stiftung an der Universitat Basel, XVI, Basel/Stuttgart, 1980,\u000Ap. 12 sqq., 21-22).\u000ADie Kommission mochte wiederum all den Bibliotheken danken, die Bucher,\u000APhotokopien, Mikrofilme und bibliographisches Material zur Verfligung gestellt\u000Ahaben.\u000ADer Conseil international pour l'edition des reuvres completes d'Erasme hat den\u000AVerlust von zwei Mitgliedern zu bedauern: Charles Bene (t 19. November 2005)\u000Aund Felix Heinimann (t 23. Januar 2006). Der Conseil und die Mitarbeiter der\u000AErasmusausgabe haben ihrem Rat und ihrer Hilfe sehr vie! zu verdanken. Die Verstorbenen\u000Asind uberdies selbst als Herausgeber in ASD aufgetreten. Professor Bene\u000Awar Vorsitzender der Psalmenkommission, gab die Enarrationes in Psalmos IV, XIV\u000Aund XXII heraus und schrieb auch die 'introduction generale' zu den Psalmkommentaren\u000A(ASD V, 3). Vorsitzender der Adagiakommission war dreissig Jahre lang\u000AProfessor Heinimann; in Zusammenarbeit mit Dr. E. Kienzle hat er drei Adagienbande\u000Aherausgegeben (ASD II, 4-6). Der abschliessende Band ASD II, 9 (Adagiorum\u000ACollectanea) gab er zusammen mit Dr. M. van Poll-van de Lisdonk heraus.\u000AAls dieser Band schon im Druck war, erreichte uns die traurige Nachricht,\u000Adass Maria Cytowska, die Herausgeherin der Vidua christiana, am 14. November\u000A2007 verstorben ist. Professor Cytowska, Mitglied des Conseil von 1979 bis 1995,\u000Ahat 1973 De pronuntiatione und De constructione (ASD I, 4) und 1998, zusammen\u000Amit Dr. M. van Poll-van de Lisdonk, Adagia 501-1000 herausgegeben\u000A(ASD II, 2).\u000ADer Conseil wird den Verstorbenen ein ehrenvolles Gedachtnis hewahren.Prof. Dr. Jan Bloemendal hat die Leitung des Erasmusprojektes am Huygens\u000AInstituut iibernommen und ist Mitglied der Redaktionskommission geworden.\u000AProf. Dr. J. Trapman ist am I. Januar 2007 in Pension gegangen, wird aber Mitglied\u000Ades Conseil international und der Redaktionskommission bleiben." ;
+	dc:identifier       "urn:isbn:9780444531346" ;
+	dc:language         "lat", "ger" ;
+	dc:publisher        "Huygens instituut/Brill" ;
+	dc:rights           "All rights reserved" ;
+	dc:subject          "Humanities::History::Regional & national history::European history", "history", "european history" ;
+	dc:title            "Opera omnia Desiderii Erasmi Roterodami : Ordinis Quinti Tomus Sextus" ;
+	dc:type             "Text" ;
+	dcterms:medium      "application/pdf" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200234/download_type_document_docid_357499> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357499> .
+
+<http://data.europeana.eu/agent/198>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/145446> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/206>, <http://data.europeana.eu/agent/59788> ;
+	owl:sameAs           <http://kulturarvsdata.se/LSH/agents/62465>, <http://dbpedia.org/resource/Erasmus>, <http://openlibrary.org/works/OL53336A>, <http://www.wikidata.org/entity/Q43499>, <http://data.bibliotheken.nl/id/thes/p068551959>, <http://data.cervantesvirtual.com/person/1590>, <https://g.co/kg/m/02rpq>, <http://viaf.org/viaf/87673996>, <http://data.bnf.fr/ark:/12148/cb11886243m>, <https://www.freebase.com/m/02rpq>, <https://libris.kb.se/20dg9h6l0n7mr32>, <http://id.loc.gov/authorities/names/n79055814>, <http://vocab.getty.edu/ulan/500045736>, <https://livedata.bibsys.no/authority/90055357>, <http://libris.kb.se/resource/auth/51858>, <http://lod.nl.go.kr/resource/KAC199608212>, <http://id.ndl.go.jp/auth/ndlna/00438957>, <http://id.worldcat.org/fast/1817492>, <http://d-nb.info/gnd/118530666>, <http://nlg.okfn.gr/resource/authority/record212336>, <urn:uuid:3d57cf71-45af-4e07-a6bd-d83773da9c21>, <http://www.idref.fr/085720372/id>, <http://ta.sandrart.net/-person-557>, <http://datos.bne.es/resource/XX846620> ;
+	rdaGr2:dateOfBirth   "1466-11-06" ;
+	rdaGr2:dateOfDeath   "1536-07-22" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/213830> ;
+	skos:altLabel        "Geert Geertsen"@de, "Desiderius Erasmus Rotterdamus"@cs, "Desiderius Erasmus Roterodamus"@fi, "Desiderius Erasmus Roterodamus"@de, "Desiderius Erasmus Roterodamus"@lv, "Desiderius Erasmus Roterodamus"@fr, "Desiderius Erasmus Roterodamus"@hu, "Desiderius Erasmus Roterodamus"@sl, "Desiderius Erasmus Roterodamus"@ca, "Герхардс Герхард"@ru, "Desiderius Erasmus Roterodamus"@en, "Desiderius Erasmus Roterodamus"@cs, "Desiderius Erasmus Roterodamus"@da, "Desiderius Erasmus Roterodamus"@nl, "Érasme"@cs, "Desidērijs Erasms"@lv, "Gerrit Gerritszoon"@lv, "Herasmus Gerritszoon"@hu, "Gerrit Gerritszoon"@fr, "Gerrit Gerritszoon"@hu, "Gerrit Gerritszoon"@sk, "Gerrit Gerritszoon"@cs, "Gerrit Gerritszoon"@pl, "Gerrit Gerritszoon"@nl, "Erasmus"@pt, "Erasmus"@et, "Erasmus"@cs, "Desiderius Erasmus av Rotterdam"@sv, "Desideri Erasme de Rotterdam"@ca, "Erasmus Von Rotterdam Erasmus"@en, "Desiderius Erasmus"@fi, "Desiderius Erasmus"@de, "Desiderius Erasmus"@pt, "Desiderius Erasmus"@lv, "Desiderius Erasmus"@hr, "Desiderius Erasmus"@fr, "Desiderius Erasmus"@hu, "Desiderius Erasmus"@sl, "Desideri Erasme"@ca, "Desiderius Erasmus"@ca, "Desiderius Erasmus"@sv, "Desiderius Erasmus"@en, "Desiderius Erasmus"@it, "Desiderius Erasmus"@es, "Desiderius Erasmus"@et, "Desiderius Erasmus"@pl, "Desiderius Erasmus"@da, "Desiderius Erasmus"@ro, "Desiderius Erasmus"@nl, "Erasmismo"@pt, "Rotterodamus Erasmus Desiderius"@cs, "Desiderius Erasmus Rotterdamilainen"@fi, "Erasmus Desiderius"@sl, "Erasmus Desiderius"@cs, "Ντεζιντέριους Εράσμους"@el, "Didier Érasme"@fr, "Desiderius erasmus roterodamus"@pt, "Erasmo de Rotterdam"@pt, "Erasmo de Rotterdam"@es, "Erasmus ó Rotterdam"@ga, "Geert Geerts"@de, "Geert Geerts"@sl, "Erasmus fra Rotterdam"@da, "Erasmo da Rotterdam"@cs, "Deziderij Erazem"@sl, "Erasmus Roterodamus"@ca, "Rotterdami Erasmus"@et, "Герхардс, Герхард"@ru, "Desiderius"@cs, "Erasms Roterdāmietis"@lv, "Geert Geertsz"@it, "Έρασμος"@el, "Rotterodamský Erasmus Desiderius"@cs, "Erasmus van Rotterdam"@nl, "Erazem Roterdamski"@sl, "Erasmus Rotterdamus"@sv, "Desiderius Erasmus Roterdamus"@fr, "Desiderius Erasmus Roterdamus"@nl, "Erasms Roterdamietis"@lv, "Desiderius eramus"@pt, "Desidério Erasmo"@pt, "Erasmus von Rotterdam"@lt, "Erasmus von Rotterdam"@en, "Erasmus von Rotterdam"@es, "Erasme"@fr, "Erasme"@ca, "Desiderius Erasmus of Rotterdam"@en, "Erasmus de Rotterdam"@ca, "Didier Erasme"@fr, "Erasmus från Rotterdam"@sv, "Desiderius Erasmus Rotherodamus"@hu, "Erazm z Roterdamu"@pl, "Desiderio Erasmo"@it, "Дезидериус Еразъм Ротердамски"@bg, "Desiderio Erasmo"@es, "Erasmo de Roterdam"@pt, "Erasmo de Roterdam"@es, "Dezidērijs Erasms"@lv, "Erasmus Rotterdam"@en, "Gerhard Gerhardson"@pl, "Герхард Герхардс"@ru, "Erasme de Rotterdam"@fr, "Erasmus Rotterdamský"@sk, "Дезидерий Роттердамский"@ru, "Gerhard Gerhards"@sk, "Gerhard Gerhards"@sl, "Gerhard Gerhards"@es, "Gerhard Gerhards"@cs, "Еразъм"@bg, "Erazmas iš Roterdamo"@lt, "Erasmo"@es, "Erasmo de Roterdã"@pt, "Erasmus of Rotterdam"@en, "Erasms"@lv, "Desiderij Erazem Rotterdamski"@sl ;
+	skos:note            "Nederlands theoloog, filosoof, schrijver en humanist (1466-1536)"@nl, "Nīderlandiešu humānists un teologs"@lv, "Niederländischer Humanist"@de, "Nederländsk humanist"@sv, "Holandský myslitel a kanovník"@cs, "Filósofo, filólogo y teólogo neerlandés"@es, "Teologo, umanista e filosofo olandese"@it, "Крупнейший ученый Северного Возрождения"@ru, "Humanista i teòleg neerlandès"@ca, "Nederlandsk augustinerkorherre, teolog, humanist og latinist"@da, "Écrivain humaniste et théologien néerlandais"@fr, "Hollantilainen filosofi ja teologi"@fi, "Dutch Renaissance humanist, Catholic priest, and theologian"@en, "Niderlandzki humanista"@pl ;
+	skos:prefLabel       "Rotterdami Erasmus"@hu, "Erazmas Roterdamietis"@lt, "Еразъм Ротердамски"@bg, "Erazm z Rotterdamu"@pl, "Erasmus Rotterdamilainen"@fi, "Erasmus von Rotterdam"@de, "Erasme de Rotterdam"@ca, "Erasmus Rotterdamist"@et, "Erasmus Rotterdamský"@cs, "Erazmo Roterdamski"@hr, "Erasmus as Rotterdam"@ga, "Erasmo de Roterdão"@pt, "Erazmus Rotterdamský"@sk, "Érasme"@fr, "Erasmus"@nl, "Erasmus"@en, "Erasmus din Rotterdam"@ro, "Ντεζιντέριους Έρασμος"@el, "Erasmus af Rotterdam"@da, "Эразм Роттердамский"@ru, "Erasmo da Rotterdam"@it, "Erasmo de Róterdam"@es, "Erasmus av Rotterdam"@sv, "Roterdamas Erasms"@lv, "Erazem Rotterdamski"@sl .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357499>
+	a  edm:ProvidedCHO .

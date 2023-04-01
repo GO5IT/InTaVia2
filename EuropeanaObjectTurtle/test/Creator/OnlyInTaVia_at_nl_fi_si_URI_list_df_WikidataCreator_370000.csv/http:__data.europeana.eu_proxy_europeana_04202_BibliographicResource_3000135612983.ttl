@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/2759794/>
+	a               edm:Place ;
+	skos:prefLabel  "Amsterdam (Veröffentlichung)" .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135612983>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T04:36:04.322Z" ;
+	dcterms:modified          "2015-12-04T13:25:54.222Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983> ;
+	edm:completeness          "9" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135612983> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000177853&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135612983>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/168544> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1617" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135612983> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135612983>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135612983#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:04.178Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135612983> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135612983>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000177853> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000177853> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135612983#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:04.177Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135612983> .
+
+<http://lib.ugent.be/europeana/900000177853>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/168544>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://www.freebase.com/m/01t89v>, <http://nlg.okfn.gr/resource/authority/record138059>, <urn:uuid:52318329-2c73-40ef-bd7b-776f221ec9b7>, <https://g.co/kg/m/01t89v>, <https://libris.kb.se/b8nqsbwv5fvlzrf>, <http://data.bibliotheken.nl/id/thes/p068773560>, <http://data.cervantesvirtual.com/person/24789>, <http://www.idref.fr/029112540/id>, <https://livedata.bibsys.no/authority/90774280>, <http://ta.sandrart.net/-person-1616>, <http://dbpedia.org/resource/Gerardus_Vossius>, <http://id.worldcat.org/fast/87713>, <http://d-nb.info/gnd/118805746>, <http://libris.kb.se/resource/auth/228656>, <http://id.loc.gov/authorities/names/n82025254>, <http://data.bnf.fr/ark:/12148/cb12080638f>, <http://viaf.org/viaf/7415128>, <http://datos.bne.es/resource/XX825999>, <http://www.wikidata.org/entity/Q785925>, <http://openlibrary.org/works/OL262756A>, <http://kulturarvsdata.se/LSH/agents/41894> ;
+	rdaGr2:dateOfBirth             "1577-03-01" ;
+	rdaGr2:dateOfDeath             "1649-03-17" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/1840> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2962>, <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Gerardus Vossius"@pt, "Gerardo Giovanni Vossio"@it, "Gerardus Joannes Vossius"@pt, "Gerardus Joannes Vossius"@en, "Gerardus Joannes Vossius"@it, "Gerardus Joannes Vossius"@nl, "Gerhard Johannes Voß"@cs, "Gerhard Johannes Vossius"@de, "Joannes G. Vossius"@cs, "G.J. Vossius"@pt, "G.J. Vossius"@en, "G.J. Vossius"@nl, "Gerrit Jansz. Vos"@nl, "Gerardus Johannes Vossius"@pt, "Gerardus Johannes Vossius"@en, "Gerardus Johannes Vossius"@nl, "Gerrit J. Vos"@cs, "Gerhardus J. Vossius"@cs, "Гергард Иоганн Фосс"@ru, "Gerhard Johan Vossius"@nl, "Gerhard Johan Vossius"@sv, "Gerhard Johan Vossius"@en, "G. Vossius"@nl ;
+	skos:note                      "Yliopisto-opettaja"@fi, "Professore universitario"@it, "Hochschullehrer"@de, "Profesor universitario"@es, "Dutch Protestant theologian, linguist, historian and humanist (1577-1649)"@en, "Nederländsk filolog, teolog och historiker"@sv, "Nederlandse protestantse theoloog, taalkundige, geschiedkundige en humanist (1577-1649)"@nl, "Professeur d'université"@fr, "Universitetslærer"@da ;
+	skos:prefLabel                 "Gerardus Joannes Vossius"@ca, "Герхард Восий"@bg, "Gerardus Johannes Vossius"@it, "Gerardus Johannes Vossius"@de, "Gerhard Johannes Vossius"@pt, "Gerardus Johannes Vossius"@fi, "Gerardus Johannes Vossius"@sv, "Gerardus Johannes Vossius"@fr, "Gerardus Johannes Vossius"@es, "Gerardus Johannes Vossius"@da, "Gerrit Janszoon Vos"@cs, "Фосс, Гергард Иоганн"@ru, "Gerardus Vossius"@en, "Gerardus Vossius"@sl, "Gerardus Vossius"@pl, "Gerardus Vossius"@nl, "Τζεράρντους Βόσιους"@el .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000177853>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9445"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "211"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135612983>
+	a                   ore:Proxy ;
+	dc:contributor      "Gerardus Joannes Vossius" ;
+	dc:creator          "Hugo Grotius" ;
+	dc:description      "Juxta exemplar quoad Lugduni Batavorum", "Preface by Gerardus Joannes Vossius", "scripta ab Hugo Grotio." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000099837" ;
+	dc:language         "la" ;
+	dc:publisher        "excudit Joannes Patius [...]" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:subject          "Catholic Church", "Faustus Socinus", "Atonement, Early works to 1800." ;
+	dc:title            "Defensio fidei catholicae de satisfactione Christi adversus Faustum Socinum Senensem" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "[8], 147 [i.e. 169], [13] p. ; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1617", "anno 1617." ;
+	dcterms:spatial     <http://sws.geonames.org/2759794/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135612983> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135612983> .

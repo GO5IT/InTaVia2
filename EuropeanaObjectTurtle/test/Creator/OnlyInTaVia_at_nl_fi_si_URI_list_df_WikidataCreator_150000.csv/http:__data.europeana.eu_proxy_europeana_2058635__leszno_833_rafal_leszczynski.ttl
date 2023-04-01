@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2058635/_leszno_833_rafal_leszczynski>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T15:44:31.104Z" ;
+	dcterms:modified          "2016-02-22T14:36:48.723Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski#metadataTier>, <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski> ;
+	edm:completeness          "0" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "2058635_Ag_EU_LoCloud_PSNC" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski> ;
+	edm:language              "pl" .
+
+<http://data.europeana.eu/organization/1482250000004510573>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzeum Okręgowe w Lesznie"@pl, "District Museum in Leszno"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/provider/2058635/_leszno_833_rafal_leszczynski>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzeum Okręgowe w Lesznie" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510573> ;
+	edm:isShownAt      <http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/833/rafal_leszczynski.html> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:47:05.200Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_833_rafal_leszczynski> .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/proxy/provider/2058635/_leszno_833_rafal_leszczynski>
+	a                   ore:Proxy ;
+	dc:coverage         "1796,             Polska (51.610298, 16.962908)," ;
+	dc:creator          "Daniel Chodowiecki" ;
+	dc:date             "1796" ;
+	dc:description      "Daniel Chodowiecki (1726-1801), malarz, rytownik i rysownik. W latach 50. poświęcił się malarstwu. Jednak wkrótce zainteresował się akwafortą stając się wziętym ilustratorem książkowym. Zwrócił swymi dziełami uwagę berlińskiej Akademii Umiejętności, która zleciła mu wykonanie ilustracji do wydawanego przez siebie kalendarza. Od tego czasu zaczął otrzymywać liczne zamówienia i zyskał sławę. Stworzył ponad 2 tysiące sztychów, wiele scen rodzajowych z życia mieszczaństwa – zwykle w technice tuszu i piórka, oraz kilka obrazów olejnych." ;
+	dc:language         "pl" ;
+	dc:rights           "Muzeum Okręgowe w Lesznie" ;
+	dc:subject          "Autor: Daniel Chodowiecki;  Państwo: Polska;  Czas powstania: 1796;  Technika/materiał: miedzioryt, papier;  Powiązane wydarzenie: Rafał Leszczyński podczas obrad sejmu;  Przedstawiona osoba: Rafał Leszczyński;  Przedstawione postaci: Zygmunt August Wymiary: wys. 8,6, szer. 5,4 cm;  Numer inwentarza: MLS1254" ;
+	dc:title            "Rafał Leszczyński" ;
+	dc:type             "tematyka historyczna", "grafika" ;
+	dcterms:spatial     "Polska (51.610298, 16.962908)," ;
+	dcterms:temporal    "1796" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058635/_leszno_833_rafal_leszczynski> .
+
+<http://data.europeana.eu/agent/146990>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/216>, <http://data.europeana.eu/concept/107> ;
+	owl:sameAs           <http://www.idref.fr/057078971/id>, <http://d-nb.info/gnd/118520512>, <http://id.loc.gov/authorities/names/n50038187>, <https://www.freebase.com/m/0bycl>, <http://data.bibliotheken.nl/id/thes/p069801819>, <https://libris.kb.se/53hkkddp4drf00n>, <http://viaf.org/viaf/59092320>, <http://datos.bne.es/resource/XX988971>, <http://viaf.org/viaf/311423373>, <http://id.worldcat.org/fast/13027>, <https://g.co/kg/m/0bycl>, <http://www.wikidata.org/entity/Q696720>, <https://livedata.bibsys.no/authority/90176794>, <http://libris.kb.se/resource/auth/181551>, <http://data.bnf.fr/ark:/12148/cb129804342>, <http://vocab.getty.edu/ulan/500014861>, <http://openlibrary.org/works/OL804125A>, <http://dbpedia.org/resource/Daniel_Chodowiecki> ;
+	rdaGr2:dateOfBirth   "1726-10-16" ;
+	rdaGr2:dateOfDeath   "1801-02-07" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/134651> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Ходовецкий, Даниель"@ru, "Daniel Niklaus Chodowiecki"@da, "D. chodowiecky"@en, "Ходовецкий"@ru, "Daniel Niklaus Chodowiecki"@en, "Daniel Mikołaj Chodowiecki"@pl, "Daniel Mikołaj Chodowiecki"@cs, "Dan. Nic. Chodowiecki"@en, "Chodowiecki"@de, "Chodowiecki"@sv, "Chodowiecki"@en, "Dan. Nik. Chodowiecki"@en, "Daniel Nicolaus Chodowiecki"@cs, "Daniel Nicolaus Chodowiecki"@sv, "Daniel Nicolaus Chodowiecki"@en, "Daniel nicol. chodowiecki"@en, "D. N. Chodowiecki"@en, "Chodowiecki d."@en, "Chodowiecki daniel"@en, "Ходовецкий Даниэль"@ru, "Daniel Nikol. Chodowiecki"@en, "Daniel Nikolaus Chodowiecki"@es, "Daniek Nikolaus Chodowiechi"@nl, "Daniel Nikolaus Chodowiecki"@da, "Daniel Nikolaus Chodowiecki"@fr, "Daniek Nikolaus Chodowiechi"@en, "Daniel Nikolaus Chodowiecki"@cs, "Daniel Nikolaus Chodowiecki"@de, "Daniel Nikolaus Chodowiecki"@sv, "Daniel Nikolaus Chodowiecke"@en, "Daniel Chodowiecky"@en, "Chodowiecky"@en, "D. chodowiecki"@en, "Chodowiecki Daniel Nicolaus"@en, "Daniel chodowicki"@en, "Dan Chodowiecki"@en, "D.N. Chodowiecki"@en, "Dan. Chodowiecki"@en, "Dan. nicol. chodowiecki"@en, "D. chodow."@en, "Chodoviecki"@en, "D. Chodowiecki"@en ;
+	skos:note            "Pools kunstschilder (1726-1801)"@nl, "Saksamaa kunstnik"@et, "Artista alemany"@ca, "Peintre allemand"@fr, "Artista alemán"@es, "Artista tedesco"@it, "Polsko-niemiecki malarz i rytownik"@pl, "Deutscher Kupferstecher, Grafiker und Illustrator"@de, "Польский и немецкий художник"@ru, "Artist german"@ro, "German painter and printmaker"@en ;
+	skos:prefLabel       "Даниель Ходовецкий"@ru, "Daniel Nikolaus Chodowiecki"@pt, "Daniel Nikolaus Chodowiecki"@en, "Daniel Nikolaus Chodowiecki"@it, "Daniel Nikolaus Chodowiecki"@sk, "Daniel Nikolaus Chodowiecki"@ca, "Daniel Chodowiecki"@es, "Daniel Chodowiecki"@cs, "Daniel Chodowiecki"@de, "Daniel Chodowiecki"@sv, "Daniel Chodowiecki"@fr, "Daniel Chodowiecki"@sl, "Daniel Chodowiecki"@pl, "Daniel Chodowiecki"@da, "Daniel Chodowiecki"@nl .
+
+<http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/833/rafal_leszczynski.html>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/europeana/2058635/_leszno_833_rafal_leszczynski>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146990> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1796" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058635/_leszno_833_rafal_leszczynski> .
+
+<http://data.europeana.eu/item/2058635/_leszno_833_rafal_leszczynski#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:47:05.200Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_833_rafal_leszczynski> .

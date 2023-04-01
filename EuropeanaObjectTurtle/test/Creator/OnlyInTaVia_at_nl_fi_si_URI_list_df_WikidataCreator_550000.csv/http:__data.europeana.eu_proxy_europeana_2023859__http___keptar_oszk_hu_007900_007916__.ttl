@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007916__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:08:55.930Z" ;
+	dcterms:modified          "2015-09-14T11:29:48.102Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F007900%2F007916%2Fkepiras_0017_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:52.776Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007916__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:52.776Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007916__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_007900_007916__>
+	a                   ore:Proxy ;
+	dc:creator          "Barabás ,  Miklós  (painter)"@hu ;
+	dc:description      "Vásárra menő román család, 1843-44."@hu ;
+	dc:format           "JPEG képállomány \u000A         1680x2191 \u000A         300 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/007900/007916   [Metadata]" ;
+	dc:relation         "Barabás Miklós saját arcképe [ http://keptar.oszk.hu/007900/007914]"@hu, "Malonyay Dezső: A magyar képirás úttörői [ http://mek.oszk.hu/06900/06916/pdf/06916.pdf]"@hu ;
+	dc:source           "OSZK MEK"@hu, "Internet Archive"@hu ;
+	dc:subject          "emberábrázolás"@hu, "csoportkép"@hu, "család"@hu, "vándorlás"@hu, "Fine arts, visual arts"@hu ;
+	dc:title            "Vándor cigányok"@hu ;
+	dc:type             "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007916__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007916__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/007900/007916> ;
+	edm:object         <http://keptar.oszk.hu/007900/007916/kepiras_0017_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007916__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/007900/007916/kepiras_0017_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6663"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_007900_007916__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/128> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007916__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/007900/007916>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007916__/manifest> .
+
+<http://data.europeana.eu/concept/128>
+	a                skos:Concept ;
+	skos:altLabel    "Migratory movement (demography)"@en, "Emigration"@en, "Migrācija"@lv, "Мигранты"@ru, "People flow"@en, "Migracion"@es, "Déplacement de populations"@fr, "Immigration"@en, "Movimientos migratorios"@es, "Μετανάστευση"@el, "Migrations humaines"@fr, "Migranter"@sv, "Migratsioon"@et, "Nationell migration"@sv, "Émigration"@fr, "Migracion humana"@es, "Vandring"@da, "Vándorlás"@hu, "Movimiento migratorio"@es, "Migracija"@lt, "Migraatio"@fi, "Bevölkerungswanderung"@de, "Movimentos migratórios"@pt, "Migración"@es, "Migracja"@pl, "Migratie"@nl, "Миграция рабочей силы"@ru, "Cilvēku migrācija"@lv, "Migrant"@sv, "Migrant"@fr, "Migration"@en, "Migration"@fr ;
+	skos:exactMatch  <http://dewey.info/class/325/>, <http://id.nlm.nih.gov/mesh/I01.240.600.525>, <https://www.freebase.com/m/01gcn2>, <http://id.nlm.nih.gov/mesh/N06.850.505.400.700.525>, <http://www.wikidata.org/entity/Q177626>, <http://www.yso.fi/onto/yso/p6119>, <http://id.nlm.nih.gov/mesh/N01.224.625.525>, <http://vocabularies.unesco.org/thesaurus/concept427>, <http://d-nb.info/gnd/4120730-0>, <http://vocab.getty.edu/aat/300263931>, <http://id.nlm.nih.gov/mesh/D063426>, <https://g.co/kg/m/01gcn2> ;
+	skos:note        "Canvi permanent de residència"@ca, "Movimento di persone da un luogo ad un altro"@it, "Переселение людей из одного региона (государства) в другой"@ru, "Mutarea oamenilor dintr-un loc în altul cu intenția de a rămâne pe o perioadă relativ lungă în noua locație"@ro, "Cambio permanente o temporal del lugar de residencia humano"@es, "Dauerhafter Wohnortwechsel von Menschen"@de, "Väestön siirtyminen toiselle alueelle"@fi, "Zmiana miejsca zamieszkania na stałe lub tymczasowo"@pl, "Személyek tartós lakhelyváltoztatása"@hu, "Movement of people for resettlement"@en, "Μόνιμη αλλαγή κατοικίας ανθρώπων"@el, "Verplaatsing van mensen of groepen van mensen van de ene plaats naar de andere"@nl, "Ilgalaikis žmonių gyvenamosios vietos pasikeitimas"@lt, "Changement permanent de résidence des personnes"@fr, "Cilvēku pastāvīgās dzīves vietas maiņa"@lv ;
+	skos:prefLabel   "Migráció"@hu, "Ανθρώπινη μετανάστευση"@el, "Migración humana"@es, "Migrácia (sociológia)"@sk, "Migrace obyvatel"@cs, "Migracja ludności"@pl, "Migracije"@sl, "Žmonių migracija"@lt, "Migracija"@hr, "Human migration"@en, "Menselijke migratie"@nl, "Ränne"@et, "Migració humana"@ca, "Movimento migratório"@pt, "Iedzīvotāju migrācija"@lv, "Imirce daonna"@ga, "Миграция на населението"@bg, "Migration humaine"@fr, "Mänsklig migration"@sv, "Migrație umană"@ro, "Muuttoliike"@fi, "Миграция населения"@ru, "Migration"@da, "Migration"@de, "Migrazione umana"@it .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007916__>
+	a  edm:ProvidedCHO .

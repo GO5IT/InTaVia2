@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/0940415/_nn8gbSl>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/0940415/_nn8gbSl#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:33:32.903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940415/_nn8gbSl> .
+
+<https://iiif.europeana.eu/presentation/0940415/_nn8gbSl/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/0940415/_nn8gbSl>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940415/_nn8gbSl> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004509122> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:mbc.cyfrowemazowsze.pl:18672> ;
+	edm:isShownBy      <http://mbc.cyfrowemazowsze.pl/Content/18672/index.djvu> ;
+	edm:object         <http://mbc.cyfrowemazowsze.pl/Content/18672/index.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://mbc.cyfrowemazowsze.pl/Content/18672/index.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940415/_nn8gbSl/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://fbc.pionier.net.pl/id/oai:mbc.cyfrowemazowsze.pl:18672>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/0940415/_nn8gbSl>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1916" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940415/_nn8gbSl> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940415/_nn8gbSl> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/proxy/provider/0940415/_nn8gbSl>
+	a                    ore:Proxy ;
+	dc:creator           "Kossak, Wojciech (1856-1942)"@pl ;
+	dc:format            "image/vnd.djvu"@pl ;
+	dc:publisher         "Podwiński Czesław"@pl ;
+	dc:rights            "http://www.msib.pl/dlabibliotekarzy/Prawo%20autorskie/Strony/Problemtykautwor%C3%B3wznajduj%C4%85cychsi%C4%99wdomeniepublicznejorazdzie%C5%82osieroconychwkontek%C5%9Bciefunkcjonowaniabibliotekcyfrowych.aspx Domena publiczna"@pl, "Dla wszystkich bez ograniczeń"@pl ;
+	dc:subject           "Insurekcja warszawska"@pl, "Warszawa - 18 w."@pl, "Powstanie 1794 r. kościuszkowskie"@pl ;
+	dc:title             "Walka w dniu 17 kwietnia pod kościołem św. Krzyża"@pl ;
+	dc:type              "grafika"@pl ;
+	dcterms:extent       "s. 9"@pl ;
+	dcterms:isPartOf     "\u0022Świat\u0022 1916 nr 16 (15 kwietnia)"@pl ;
+	dcterms:issued       "1916"@pl ;
+	dcterms:provenance   "Biblioteka Publiczna m.st. Warszawy - Biblioteka Główna Województwa Mazowieckiego"@pl ;
+	edm:currentLocation  "_FBC" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/0940415/_nn8gbSl> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/0940415/_nn8gbSl> .
+
+<http://data.europeana.eu/aggregation/europeana/0940415/_nn8gbSl>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T09:08:37.287Z" ;
+	dcterms:modified          "2017-11-30T09:08:37.287Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940415/_nn8gbSl#contentTier>, <http://data.europeana.eu/item/0940415/_nn8gbSl#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940415/_nn8gbSl> ;
+	edm:completeness          "6" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940415_Ag_PL_mbc.cyfrowemazowsze.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940415/_nn8gbSl> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmbc.cyfrowemazowsze.pl%2FContent%2F18672%2Findex.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004509122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque Digitalè de Mazovie"@fr, "Mazowiecka Biblioteka Cyfrowa"@pl, "Mazowsze Digital Library"@en .
+
+<http://data.europeana.eu/item/0940415/_nn8gbSl#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:33:32.903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940415/_nn8gbSl> .
+
+<file:///usr/local/tomcat/webapps/#locationOf:nn8gbSl_FBC>
+	a               edm:Place ;
+	skos:prefLabel  "Biblioteka Publiczna m.st. Warszawy - Biblioteka Główna Województwa Mazowieckiego"@pl .

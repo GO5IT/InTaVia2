@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_032900_032988__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032900_032988__> .
+
+<http://keptar.oszk.hu/032900/032988>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032900_032988__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:36.526Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032900_032988__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032900_032988__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/032900/032988> ;
+	edm:object         <http://keptar.oszk.hu/032900/032988/10919759_ca59f3554_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/032900/032988/10919759_ca59f3554_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5017"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#5F9EA0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#778899"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6495ED"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032900_032988__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:49:49.193Z" ;
+	dcterms:modified          "2015-09-14T11:49:24.758Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F032900%2F032988%2F10919759_ca59f3554_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032900_032988__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_032900_032988__>
+	a                   ore:Proxy ;
+	dc:creator          "Donáth ,  Gyula  ( szobrász )"@hu, "Hoffmann ,  Miklós  (photographer)"@hu ;
+	dc:description      "A turulmadár a honfoglaló magyarok totemállata (az Árpád nemzetség állatőse) volt. Az eredetmonda szerint a nemzetség ősanyját, Emesét turul termékenyítette meg, e frigyből született Álmos vezér, aki 850-től uralkodott. A szárnyas lények a világon mindenütt elsősorban az éghez - az isteni szférához - tartoznak, ezért az égi lélek szimbólumai. Így van ez a magyar nép műveltségében is: a kereszténység előtti időkben a táltosok, sámánok lelke is madár képében szállt a túlvilágra megtudni a jövendőt, vagy megküzdeni a rosszindulatú szellemekkel. A sasra emlékeztető madár sok nép emlékeiben fellelhető. A magyarság számára a turul azonban nemcsak népmeséinkben, népművészetünkben, régészeti leleteinken előforduló motívum, hanem eredetmondánk legfőbb alakja, amely a totemhit világába vezet. Ez az ősapa motívum a nemzet létét jelképezi. A turulmadaras leletekből - az úgynevezett sólyomfogak megléte alapján - egyértelműen megállapítható, hogy nem sasról, hanem sólyomról (egyes vélekedések szerint kerecsensólyomról) van szó, ami elsősorban vadász és csak másodsorban ragadozó. A kardot csőrében, vagy karmai közt tartó turul Szent István hagyományainak őrzőjeként az ország védelmére való készséget fejezi ki, a fegyver ugyanis több forrás szerint Szent István kardja. A Budai Vár díszkapuját már 1905 óta őrzi egy bronz turulmadár, amelyet Donáth Gyula készített."@hu ;
+	dc:format           "JPEG képállomány \u000A         1072x1600 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/032900/032988   [Metadata]" ;
+	dc:relation         "dirac3000: Hungarian Eagle [Magyar turul] [ http://keptar.oszk.hu/011700/011769]"@hu ;
+	dc:source           "Inda fotó"@hu ;
+	dc:subject          "History, local history"@hu, "Fine arts, visual arts"@hu, "Budavári Palota"@hu, "állatábrázolás"@hu, "szobor"@hu, "magyar ősvallás"@hu, "magyar őstörténet"@hu ;
+	dc:title            "Kardos madár"@hu ;
+	dc:type             "statue"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032900_032988__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032900_032988__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:36.526Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032900_032988__> .

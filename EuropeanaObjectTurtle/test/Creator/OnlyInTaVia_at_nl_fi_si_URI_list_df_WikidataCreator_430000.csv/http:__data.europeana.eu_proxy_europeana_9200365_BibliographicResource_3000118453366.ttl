@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8808804f/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8808804f>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808804f> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8808804f>
+	a                   ore:Proxy ;
+	dc:creator          "Graves, Geneviève. Voix parlée", "Ledoux, Fernand (1897-1993). Voix parlée", "Nerval, Nathalie (1929-....). Voix parlée", "Aumont, Jean-Pierre (1911-2001). Voix parlée", "Racine, Jean (1639-1699). Auteur du texte", "Hirt, Eléonore (1919-2017). Voix parlée", "Vaneck, Pierre (1931-2010). Voix parlée", "Mauban, Maria (1924-2014). Voix parlée", "Deschamps, Jean (1920-2007). Voix parlée" ;
+	dc:date             "1960" ;
+	dc:description      "Contient une table des matières", "BnF-Partenariats, Collection sonore - Believe", "[Andromaque]" ;
+	dc:format           "disc"@eng, "multipart/mixed", "disque microsillon"@fre, "2 disques : 33 t ; 30 cm", "Nombre total de vues :  14" ;
+	dc:identifier       "Numéro commercial : Encyclopédie sonore  320E834", "Numéro commercial : Encyclopédie sonore  320E835", "http://gallica.bnf.fr/ark:/12148/bpt6k8808804f" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb11968426t"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37870746d"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, B-6057" ;
+	dc:title            "ANDROMAQUE (tragédie) / Jean RACINE ; Jean DESCHAMPS (Oreste) - Pierre VANECK (Pylade) - Jean-Pierre AUMONT (Pyrrhus) - Fernand LEDOUX (Phoenix) - Eléonore HIRT (Andromaque) - Maria MAUBAN (Hermione) - Nathalie NERVAL (Cléone) - Geneviève GRAVE (Céphise) ; Introduction et réalisation de Georges HACQUARD" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808804f> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808804f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "217287"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808804f.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4484"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:38.863Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808804f> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808804f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8808804f> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8808804f.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:38.864Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808804f> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808804f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:54:12.927Z" ;
+	dcterms:modified          "2018-03-26T12:29:04.199Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808804f> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8808804f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8808804f.thumbnail.jpg&type=SOUND> .

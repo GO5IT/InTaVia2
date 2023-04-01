@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE>
+	a  edm:ProvidedCHO .
+
+<http://www.bildindex.de/document/obj20606503>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://www.bildindex.de/bilder/d/mi05457f10>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE/manifest> ;
+	ebucore:fileByteSize    "223988"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B0C4DE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://vocab.getty.edu/aat/300182755>
+	a               skos:Concept ;
+	skos:altLabel   "vleugel (onderdeel van beeldmateriaal)"@nl, "wing (visual work component)"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300233844> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:note       "Delen aan de zijkant of aanhangsels bij een kunstwerk, zoals wordt aangetroffen bij een drieluik."@nl, "Lateral parts or appendages of a work of art, such as those found on a triptych."@en ;
+	skos:prefLabel  "vleugels (onderdelen van beeldmateriaal)"@nl, "wings (visual works components)"@en .
+
+<http://data.europeana.eu/proxy/europeana/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> .
+
+<http://data.europeana.eu/aggregation/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:hasView        <http://www.bildindex.de/bilder/d/mi00748c04>, <http://www.bildindex.de/bilder/d/mi05457f10> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20606503> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/mi00748c03> ;
+	edm:object         <http://www.bildindex.de/bilder/d/mi00748c03> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T11:16:32.952427Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> .
+
+<https://iiif.europeana.eu/presentation/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE>
+	a                   ore:Proxy ;
+	dc:creator          "Orley, Bernard van (Herstellung)" ;
+	dc:subject          "Tafelmalerei"@de, "die Verkündigung: Maria sitzt"@de ;
+	dc:title            "Linker Außenflügel, Innenseite: Verkündigung"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300182755> ;
+	dcterms:created     "um 1520 (Herstellung)"@zxx ;
+	dcterms:spatial     "Güstrow (Standort)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T09:56:08.488Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE#contentTier>, <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	edm:completeness          "6" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Fmi00748c03&type=IMAGE> .
+
+<http://data.europeana.eu/item/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T11:16:32.951967Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE> .
+
+<http://www.bildindex.de/bilder/d/mi00748c03>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE/manifest> ;
+	ebucore:fileByteSize    "281179"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildindex.de/bilder/d/mi00748c04>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_EBFYZL72P2KGJJNVJGTJVBQALXENQ7OE/manifest> ;
+	ebucore:fileByteSize    "272203"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .

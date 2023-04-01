@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_464>
+	a  edm:ProvidedCHO .
+
+<http://www.geheugenvannederland.nl/?/en/items/VGM01:464>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "57153"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_VGM01_464>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2909> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_464> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_464> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_464>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:00:08.592Z" ;
+	dcterms:modified          "2018-04-05T18:04:45.461Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_VGM01_464#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_VGM01_464#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_VGM01_464> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_VGM01_464> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AVGM01%3A464%26role%3Dpage%26count%3D1%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_464>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_VGM01_464> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/VGM01:464> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:464&role=page&count=1&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_464#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:24.129Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_464> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_464#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:24.129Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_464> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_VGM01_464>
+	a                   ore:Proxy ;
+	dc:contributor      "Gogh, Theo van", "Gogh, Vincent van" ;
+	dc:creator          "Gogh, Vincent van" ;
+	dc:format           "letter"@en, "brief" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:464", "b 0412a V/1962" ;
+	dc:rights           "voor informatie: Van Gogh Museum"@nl, "Van Gogh Museum", "for information contact Van Gogh Museum"@en ;
+	dc:source           "b 0412a V/1962 (brief, pen in inkt), Brieven en Documenten, Van Gogh Museum" ;
+	dc:title            "Vincent van Gogh to Theo van Gogh"@en, "Vincent van Gogh aan Theo van Gogh" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "donderdag 2 oktober 1884", "Thursday, 2 October 1884"@en ;
+	dcterms:extent      "21.0 x 27.0 cm" ;
+	dcterms:isPartOf    "GVN", "Brieven en Documenten", "VGM01" ;
+	dcterms:medium      "text/xml", "pen in inkt" ;
+	dcterms:spatial     "Nuenen" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_464> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_464> .
+
+<http://data.europeana.eu/concept/2909>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/04jjh>, <https://d-nb.info/gnd/4008240-4>, <http://purl.org/bncf/tid/10307>, <http://babelnet.org/rdf/s00050802n>, <http://www.wikidata.org/entity/Q133492>, <http://purl.org/coar/resource_type/c_0857>, <http://id.loc.gov/authorities/names/sh85076220>, <https://www.freebase.com/m/04jjh>, <http://www.yso.fi/onto/yso/p8646> ;
+	skos:note        "Wiadomość pisana zawierająca informacje skierowane od nadawcy do adresata"@pl, "Comunicazione scritta, talvolta di valore letterario, indirizzata da un mittente (persona o ente) a un destinatario (persona o ente)"@it, "Kirjalik sõnum ühelt isikult teis(t)ele"@et, "Geschrift dat aan iemand is gericht, en gesloten en van een adres voorzien wordt verzonden"@nl, "Message expédié à un destinataire"@fr, "Skrivet meddelande som skickas från en part till en annan, under transporten oftast förvarat i ett kuvert"@sv, "Written message from one to another"@en, "Письменное сообщение для передачи от одного субъекта к другому"@ru, "Písaná správa spravidla posielaná poštou"@sk, "Medio de comunicación escrito"@es, "Schriftstück, das Informationen zwischen Personen und anderen Entitäten austauscht"@de, "Mensagem escrita a um destinatário"@pt, "Skriftlig besked sendt fra den ene part til den anden, i transit normalt opbevaret i en kuvert"@da ;
+	skos:prefLabel   "Eskutitz"@eu, "Dopis"@cs, "Vēstule"@lv, "Brev"@sv, "Brev"@da, "Scrisoare"@ro, "Писмо"@bg, "Lettre"@fr, "Επιστολή"@el, "Lettera"@it, "Kiri"@et, "List"@sk, "Levél"@hu, "Litir"@ga, "Carta"@pt, "Carta"@es, "Carta"@ca, "List"@pl, "Kirje"@fi, "Brief"@de, "Brief"@nl, "Letter"@en, "Laiškas"@lt, "Письмо"@ru .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:464&role=page&count=1&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "30502"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "116"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

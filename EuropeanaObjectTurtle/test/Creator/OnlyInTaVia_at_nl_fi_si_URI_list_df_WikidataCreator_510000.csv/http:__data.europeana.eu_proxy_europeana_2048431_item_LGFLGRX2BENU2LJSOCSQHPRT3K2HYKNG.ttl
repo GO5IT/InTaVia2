@@ -1,0 +1,134 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG>
+	a                    ore:Proxy ;
+	dc:creator           <https://d-nb.info/gnd/11856045X> ;
+	dc:description       "Sammlung VEBA (Creditline)"@de ;
+	dc:format            "Bronze (Material/Technik)"@de ;
+	dc:identifier        "BG-S 2006/79 (Inventarnummer)" ;
+	dc:rights            "Urheberrechte am Werk erloschen" ;
+	dc:subject           "grün"@de ;
+	dc:title             "Weiblicher Torso"@de ;
+	dc:type              "Skulptur"@de ;
+	dcterms:created      "1936 (Herstellung)"@zxx ;
+	dcterms:extent       "Objektmaß:  118 x 20 x 40 cm"@zxx ;
+	dcterms:spatial      <http://www.geonames.org/2950159> ;
+	edm:currentLocation  <http://www.geonames.org/2950159> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=141354&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<https://iiif.europeana.eu/presentation/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477410> ;
+	edm:isShownAt      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=141354&viewType=detailView> ;
+	edm:isShownBy      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141354&resolution=highImageResolution> ;
+	edm:object         <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141354&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2022-01-19T11:40:37.322Z" ;
+	dcterms:modified          "2022-01-19T11:40:37.322Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG#metadataTier>, <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	edm:completeness          "6" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048431_DDB_Berlinische_Galerie" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlung-online.berlinischegalerie.de%3A443%2FeMP%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D141354%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/agent/12283>
+	a                    edm:Agent ;
+	owl:sameAs           <http://d-nb.info/gnd/11856045X>, <http://www.wikidata.org/entity/Q317919>, <http://dbpedia.org/resource/Ludwig_Kasper>, <https://g.co/kg/m/02rwyvw>, <http://id.loc.gov/authorities/names/no2010003745>, <http://id.worldcat.org/fast/1958461>, <https://www.freebase.com/m/02rwyvw>, <http://www.idref.fr/094248818/id>, <http://data.bnf.fr/ark:/12148/cb171532896>, <http://viaf.org/viaf/52481466>, <http://vocab.getty.edu/ulan/500070039> ;
+	rdaGr2:dateOfBirth   "1893-05-02" ;
+	rdaGr2:dateOfDeath   "1945-08-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/81703> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80978> ;
+	skos:note            "Österreichischer Bildhauer"@de, "Escultor austríac"@ca, "Austrian sculptor"@en, "Dealbhóir Ostarach"@ga, "Austria skulptor"@et, "Escultor austríaco"@es, "Escultor austríaco"@pt, "Sculptor austriac"@ro, "Sculpteur autrichien"@fr, "Scultore austriaco"@it, "Beeldhouwer uit Oostenrijk (1893-1945)"@nl ;
+	skos:prefLabel       "Ludwig Kasper"@es, "Ludwig Kasper"@nl, "Ludwig Kasper"@ca, "Ludwig Kasper"@sv, "Ludwig Kasper"@de, "Ludwig Kasper"@da, "Ludwig Kasper"@fr, "Ludwig Kasper"@it, "Ludwig Kasper"@ga, "Ludwig Kasper"@en, "Ludwig Kasper"@sl, "Ludwig Kasper"@pt .
+
+<https://d-nb.info/gnd/11856045X>
+	a                   edm:Agent ;
+	owl:sameAs          <http://id.loc.gov/rwo/agents/no2010003745>, <http://www.wikidata.org/entity/Q317919>, <http://isni.org/isni/0000000073745442>, <http://viaf.org/viaf/52481466>, <http://dbpedia.org/resource/Ludwig_Kasper> ;
+	rdaGr2:dateOfBirth  "1893" ;
+	rdaGr2:dateOfDeath  "1945" ;
+	skos:prefLabel      "Kasper, Ludwig" .
+
+<http://data.europeana.eu/organization/1482250000004477410>
+	a               foaf:Organization ;
+	skos:prefLabel  "Berlin Gallery, Museum of Modern Art"@en, "Berlinische Galerie, Landesmuseum für moderne Kunst, Fotografie und Architektur"@de .
+
+<http://data.europeana.eu/proxy/europeana/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/12283> ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> .
+
+<http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T12:06:54.099362Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> .
+
+<http://data.europeana.eu/item/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T12:06:54.099188Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG> .
+
+<http://www.geonames.org/2950159>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin"@de .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141354&resolution=highImageResolution>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048431/item_LGFLGRX2BENU2LJSOCSQHPRT3K2HYKNG/manifest> ;
+	ebucore:fileByteSize    "30495"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "370"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "216"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#B0C4DE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .

@@ -1,0 +1,99 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:52.827Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:52.826Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1618> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7#contentTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:0aa0c95b-311b-4d08-aa39-2e5b22edf5c7>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/concept/1618>
+	a                skos:Concept ;
+	skos:altLabel    "Músico de Cámara"@es, "Musico de Cámara"@es, "Komorni ansambel"@sl, "Muzică de cameră"@ro, "Música de camara"@es, "Kamarakoncert"@hu, "Orquestra de câmera"@pt, "Músico de Camara"@es, "Musico de Camara"@es, "Kammarmusiker"@sv, "Hudba komorní"@cs, "Musica de cámara"@es, "Música de câmera"@pt, "Musica de camara"@es, "Kamariorkesterimusiikki"@fi, "Kammarstycke"@sv, "Musiche da camera"@it, "Kammerkonzert"@de, "Komorna zasedba"@sl ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://d-nb.info/gnd/4136998-1>, <http://www.yso.fi/onto/yso/p14380>, <http://www.wikidata.org/entity/Q189201>, <https://g.co/kg/m/0l8gh>, <http://data.bnf.fr/ark:/12148/cb12010572w>, <http://dewey.info/class/785/>, <http://purl.org/bncf/tid/2209>, <http://id.loc.gov/authorities/names/sh85022422>, <http://id.loc.gov/authorities/genreForms/gf2014026704>, <https://www.freebase.com/m/0l8gh>, <http://dewey.info/class/783.1/> ;
+	skos:note        "Társas muzsikálás"@hu, "Instrumentālu vai vokālu skaņdarbu kopums nelielam izpildītāju sastāvam"@lv, "Género de música clásica compuesta para un pequeño grupo de instrumentos"@es, "Muzyka przeznaczona na niewielkie zespoły instrumentalistów"@pl, "Gènere de música clàssica composada per a un petit grup d'instruments"@ca, "Form of classical music composed for a small group of instruments"@en, "Form klassischer Musik, die für eine kleine Gruppe von Instrumenten komponiert wurde"@de, "Genre musical composé pour un petit ensemble de cordes, bois, cuivres ou percussions"@fr, "Музыка, исполняемая небольшим коллективом музыкантов или вокалистов"@ru, "Taidemusiikin tyylilaji"@fi ;
+	skos:prefLabel   "Kammermusik"@da, "Kammermusik"@de, "Chamber music"@en, "Musique de chambre"@fr, "Kamarazene"@hu, "Ceol aireagail"@ga, "Música de cambra"@ca, "Muzică de cameră"@ro, "Kamermuziek"@nl, "Kamermūzika"@lv, "Kammarmusik"@sv, "Musica da camera"@mt, "Musica da camera"@it, "Komorna glazba"@hr, "Komorní hudba"@cs, "Música de cámara"@es, "Kammermuusika"@et, "Muzyka kameralna"@pl, "Kamerinė muzika"@lt, "Kamarimusiikki"@fi, "Камерна музика"@bg, "Камерная музыка"@ru, "Música de câmara"@pt, "Komorna glasba"@sl, "Komorná hudba"@sk, "Μουσική δωματίου"@el .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7>
+	a                   ore:Proxy ;
+	dc:contributor      "Wuhrer, Friedrich (Pianoforte)", "Brahms, Johannes (Compositore)", "Seefried, Irmgard (Soprano)", "Hongen, Elisabeth (Contralto)", "Nordberg, Hermann von (Pianoforte)", "Hotter, Hans (Basso)", "Meyer-Welfing, Hugo (Tenore)" ;
+	dc:creator          "Brahms, Johannes" ;
+	dc:date             "1947 (recording)" ;
+	dc:description      "Brahms, Johannes da “Liebeslieder-Walzer per quartetto vocale con accompagnamento di pianoforte a quattro mani, Op. 52”, registrazione in studio, analogica, Registrazione del 1947."@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/b/brahms/> ;
+	dc:subject          "Musica da camera"@it ;
+	dc:title            "Op. 52 - Valzer n. 4"@it ;
+	dcterms:extent      "00:00:50.0" ;
+	dcterms:isPartOf    "Liebeslieder-Walzer per quartetto vocale con accompagnamento di pianoforte a quattro mani, Op. 52"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_0aa0c95b_311b_4d08_aa39_2e5b22edf5c7> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:0aa0c95b-311b-4d08-aa39-2e5b22edf5c7> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .

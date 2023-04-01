@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_102592195>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:09:55.831Z" ;
+	dcterms:modified          "2018-04-05T17:25:25.619Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195> ;
+	edm:completeness          "9" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_102592195> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A102592195%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_102592195>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/156739> ;
+	dc:creator          <http://data.europeana.eu/agent/156739> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1618" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_102592195> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102592195>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:102592195> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102592195&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:06.734Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102592195> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_102592195>
+	a                   ore:Proxy ;
+	dc:contributor      "Pieter Lastman" ;
+	dc:creator          "Pieter Lastman" ;
+	dc:description      "Litt. : Svetlana Alpers: The Art of Describing. Dutch art in the 17th Century. Chicago, 1983", "Vindplaats: Berlijn, Gemäldegalerie, Staatliche Museen Preussischer Kulturbesitz" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102592195" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[102592195], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Suzanna"@nl ;
+	dc:title            "Susanna en de ouderlingen" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1618" ;
+	dcterms:isPartOf    "NCRD", "GVN", "NCRD01" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102592195> .
+
+<http://data.europeana.eu/agent/156739>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/42427> ;
+	owl:sameAs           <http://data.bnf.fr/ark:/12148/cb14597086p>, <http://www.wikidata.org/entity/Q352864>, <https://g.co/kg/m/07hgdr>, <http://vocab.getty.edu/ulan/500032894>, <http://d-nb.info/gnd/11856997X>, <http://id.worldcat.org/fast/304183>, <http://openlibrary.org/works/OL5221428A>, <http://datos.bne.es/resource/XX1650513>, <http://libris.kb.se/resource/auth/314542>, <http://dbpedia.org/resource/Pieter_Lastman>, <https://www.freebase.com/m/07hgdr>, <http://ta.sandrart.net/-person-2373>, <http://www.idref.fr/085976547/id>, <http://data.bibliotheken.nl/id/thes/p070646333>, <http://id.loc.gov/authorities/names/nr92018116>, <https://libris.kb.se/64jmrc6q184thr9>, <http://viaf.org/viaf/47010928> ;
+	rdaGr2:dateOfBirth   "1583-01-01" ;
+	rdaGr2:dateOfDeath   "1633-04-04" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Pieter Leastman"@en, "Pieter Laistman"@en, "Питер Ластман"@ru, "Ластман П."@ru, "Pieter pietersz lastmann"@en, "Peter Laysman"@en, "Leastman"@en, "Peter Lastmann"@en, "Pieter Pietersz. Lastman"@nl, "Pieter Pietersz. Lastman"@sv, "Pieter Pietersz. Lastman"@en, "P. p. lastmann"@en, "Pieter Pietersz Lastmann"@en, "Laistman"@en, "P. Lasman"@en, "Pieter Pietersz Lastman"@en, "Lasman"@en, "Rembrandts Lehrmeister"@en, "P. Lastman"@en, "Pieter Pietersen"@en, "Pieter lastmann"@en, "P Lastman"@en, "P. Laftman"@en, "Lastman"@nl, "Lastman"@sv, "Lastman"@en, "Ластман"@ru, "Pieter Lastmam"@en, "Pieter Pieterszoon Lastman"@sv, "Pieter Pieterszoon Lastman"@fi, "Den ouden Lastman"@en, "Pierre Lastman"@en, "Ластман Питер"@ru, "Piter Lastmann"@en, "Peter Lastman"@en, "P. Lastmann"@en, "Lastmann"@en, "Pieter Lostman"@en, "J. Lastman"@en, "Pieter Lasman"@nl, "Pieter Lasman"@en, "Lostman"@en ;
+	skos:note            "Painter and engraver from the Northern Netherlands (1583-1633)"@en, "Pintor neerlandês"@pt, "Pittore, incisore e miniaturista olandese"@it, "Peintre néerlandais"@fr, "Nederlands kunstschilder"@nl, "Pintor neerlandès"@ca, "Ολλανδός ζωγράφος"@el, "Pintor neerlandés"@es, "Niederländischer Maler"@de, "Нидерландский живописец"@ru ;
+	skos:prefLabel       "Πίτερ Λάστμαν"@el, "Pieter Lastman"@pt, "Pieter Lastman"@lt, "Pieter Lastman"@en, "Pieter Lastman"@it, "Pieter Lastman"@de, "Pieter Lastman"@fr, "Pieter Lastman"@hu, "Pieter Lastman"@es, "Pieter Lastman"@cs, "Pieter Lastman"@sl, "Pieter Lastman"@pl, "Pieter Lastman"@da, "Pieter Lastman"@ca, "Pieter Lastman"@nl, "Pieter Lastman"@sv, "Pieter Lastman"@fi, "Ластман, Питер"@ru .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:102592195&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4539"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "106"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_102592195#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:06.734Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_102592195> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:102592195>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50540"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

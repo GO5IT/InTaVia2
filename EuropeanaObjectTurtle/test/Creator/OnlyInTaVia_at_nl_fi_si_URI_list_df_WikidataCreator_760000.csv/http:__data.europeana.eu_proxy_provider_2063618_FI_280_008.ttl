@@ -1,0 +1,148 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2063618/FI_280_008>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-10T16:11:10.322Z" ;
+	dcterms:modified          "2018-01-19T13:37:48.800Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2063618/FI_280_008#contentTier>, <http://data.europeana.eu/item/2063618/FI_280_008#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2063618/FI_280_008> ;
+	edm:completeness          "9" ;
+	edm:country               "Finland" ;
+	edm:datasetName           "2063618_EU_280_Finland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2063618/FI_280_008> ;
+	edm:language              "fi" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fy9mdu061mrs7mw6%2FFIN_HeraingHomework_.jpg%3Fraw%3D1&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/2063618/FI_280_008/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://vocab.getty.edu/aat/300033638>
+	a               skos:Concept ;
+	skos:prefLabel  "<pinturas por forma>"@es, "<schilderingen naar vorm>"@nl, "<peintures selon la forme>"@fr, "<paintings by form>"@en, "<Gemälde nach Form>"@de .
+
+<http://vocab.getty.edu/aat/300056513>
+	a               skos:Concept ;
+	skos:altLabel   "classicizing"@en, "classicistisch"@nl ;
+	skos:broader    <http://vocab.getty.edu/aat/300163706> ;
+	skos:note       "http://vocab.getty.edu/aat/rev/5001659092" ;
+	skos:prefLabel  "gǔ diǎn zhǔ yì"@zh-latn-pinyin-x-hanyu, "ku tien chu i"@zh-latn-wadegile, "gu dian zhu yi"@zh-latn-pinyin-x-notone, "classicisme"@nl, "古典主義"@zh-hant, "clasicismo"@es, "classicism"@en ;
+	skos:related    <http://vocab.getty.edu/aat/300108149>, <http://vocab.getty.edu/aat/300021477> .
+
+<http://kokoelmat.fng.fi/app?si=http%3A%2F%2Fkansallisgalleria.fi%2FTeos_F2703282-E5BD-44FE-AD15-0EB18D4CF299&lang=en>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "17439"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://www.dropbox.com/s/y9mdu061mrs7mw6/FIN_HeraingHomework_.jpg?raw=1>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2063618/FI_280_008/manifest> ;
+	ebucore:fileByteSize    "36193099"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "5867"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "6395"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://sws.geonames.org/6956564/>
+	a               edm:Place ;
+	skos:altLabel   "Атэнеум"@be, "Ateneum konstmuseum"@da, "Ateneum konstmuseum"@nb, "Ateneum konstmuseum"@sv, "Ateneum konstmuseum"@nn, "Ateneum konstmuseum"@is, "Musée Ateneum"@fr, "Ատենեում"@hy, "أتينيوم"@ar, "Ateneumin taidemuseo"@fi, "アテネウム美術館"@ja, "Атенеум"@uk, "Атенеум"@ru, "阿黛濃美術館"@zh ;
+	skos:note       "http://en.wikipedia.org/wiki/Ateneum" ;
+	skos:prefLabel  "Ateneum" ;
+	wgs84_pos:lat   "60.17" ;
+	wgs84_pos:long  "24.9442" .
+
+<http://data.europeana.eu/item/2063618/FI_280_008#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.993Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063618/FI_280_008> .
+
+<http://data.europeana.eu/proxy/europeana/2063618/FI_280_008>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1923" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2063618/FI_280_008> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2063618/FI_280_008> .
+
+<http://vocab.getty.edu/aat/300033799>
+	a               skos:Concept ;
+	skos:altLabel   "pintura al óleo (obra visual)"@es, "oils (visual works)"@en, "olieverfschildering"@nl, "huiles (œuvres visuelles)"@fr, "peinture à l'huile (œuvres visuelles)"@fr, "Ölmalerei"@de, "paintings, oil (visual works)"@en, "oil painting (visual work)"@en, "huile (œuvres visuelles)"@fr ;
+	skos:broader    <http://vocab.getty.edu/aat/300033618> ;
+	skos:note       "Künstlerische Arbeit unter Verwendung von Ölfarben."@de, "Trabalhos criativos por meio de pinturas a óleo"@pt, "Obras creativas con pintura al óleo como medio."@es, "Schilderingen in olieverf."@nl, "Creative works in the medium of oil paint."@en ;
+	skos:prefLabel  "pinturas al óleo (obra visual)"@es, "oil paintings (visual works)"@en, "olieverfschilderingen"@nl, "pintura a óleo"@pt, "Ölgemälde"@de, "peintures à l'huile (œuvres visuelles)"@fr .
+
+<http://data.europeana.eu/organization/1482250000004671105>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana 280"@en .
+
+<http://data.europeana.eu/organization/1482250000001351017>
+	a               foaf:Organization ;
+	skos:prefLabel  "Finnish National Gallery"@en .
+
+<http://viaf.org/viaf/96290134>
+	a                   edm:Agent ;
+	owl:sameAs          <http://dbpedia.org/resource/Yrjö_Ollila>, <http://www.wikidata.org/entity/Q14417101>, <http://vocab.getty.edu/ulan/500084464-agent> ;
+	rdaGr2:dateOfBirth  "1887-07-20" ;
+	rdaGr2:dateOfDeath  "1932-11-14" .
+
+<http://data.europeana.eu/aggregation/provider/2063618/FI_280_008>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2063618/FI_280_008> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001351017> ;
+	edm:isShownAt      <http://kokoelmat.fng.fi/app?si=http%3A%2F%2Fkansallisgalleria.fi%2FTeos_F2703282-E5BD-44FE-AD15-0EB18D4CF299&lang=en> ;
+	edm:isShownBy      <https://www.dropbox.com/s/y9mdu061mrs7mw6/FIN_HeraingHomework_.jpg?raw=1> ;
+	edm:object         <https://www.dropbox.com/s/y9mdu061mrs7mw6/FIN_HeraingHomework_.jpg?raw=1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671105> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/proxy/provider/2063618/FI_280_008>
+	a                    ore:Proxy ;
+	dc:creator           <http://viaf.org/viaf/96290134> ;
+	dc:description       "A schoolboy and his mother sitting on a sofa, the mother is holding a book."@en, "Koulupoika ja äiti istumassa sohvalla, äidillä on kirja kädessään."@fi ;
+	dc:language          "Suomi", "English" ;
+	dc:relation          <http://www.wikidata.org/entity/Q20799751> ;
+	dc:subject           <http://vocab.getty.edu/aat/300056513> ;
+	dc:title             "Hearing the Homework"@en, "Läksyn kuulustelu"@fi ;
+	dc:type              <http://vocab.getty.edu/aat/300033638> ;
+	dcterms:created      "1923" ;
+	dcterms:extent       "120 cm x 131 cm" ;
+	dcterms:medium       <http://vocab.getty.edu/aat/300033799> ;
+	dcterms:provenance   "purchase 4.11.1927"@en ;
+	edm:currentLocation  <http://sws.geonames.org/6956564/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2063618/FI_280_008> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2063618/FI_280_008> .
+
+<http://data.europeana.eu/item/2063618/FI_280_008>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <http://www.wikidata.org/entity/Q20799751> .
+
+<http://data.europeana.eu/item/2063618/FI_280_008#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.993Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063618/FI_280_008> .

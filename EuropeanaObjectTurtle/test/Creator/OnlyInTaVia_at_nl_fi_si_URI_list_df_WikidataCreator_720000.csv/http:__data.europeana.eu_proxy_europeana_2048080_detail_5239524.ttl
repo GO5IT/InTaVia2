@@ -1,0 +1,179 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/472/https___www_esbirky_cz_detail_5239524>
+	a                   ore:Proxy ;
+	dc:coverage         <file:///usr/local/tomcat/webapps/#Predmet:5239524> ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#PredmetAutor:5239524>, <file:///usr/local/tomcat/webapps/#PredmetAutorFoto:5239524> ;
+	dc:date             "1801-1-1", <file:///usr/local/tomcat/webapps/#PredmetDatText:5239524> ;
+	dc:description      "Zakoupeno roku 1962 od Františka Sedláka. Drobná skica Riegrovy hlavy byla po malířově smrti nalezena v jeho pařížském ateliéru. Zjištění, že ji malíř podepsal až delší dobu po namalování a že tehdy nebyla ani nalakovaná, ani zarámovaná svědčí o tom, že šlo o pouhou pracovní studii, která neaspirovala na roli portrétu." ;
+	dc:format           <file:///usr/local/tomcat/webapps/#Technika:17433>, "Olejomalba" ;
+	dc:identifier       "H2-67 696" ;
+	dc:relation         <file:///usr/local/tomcat/webapps/#TypSbirky:17116> ;
+	dc:source           "Sršeň, Lubomír: Malované drobné portréty: Sbírka oddělení starších českých dějin Národního muzea, Praha (Národní muzeum) 2013, čís. kat. 219." ;
+	dc:title            "František Ladislav Rieger"@cs ;
+	dcterms:created     "1801-1-1" ;
+	dcterms:extent      "34,8x22 cm, rámeček 42,5x30 cm" ;
+	dcterms:medium      "Plátno", <file:///usr/local/tomcat/webapps/#Material:17238> ;
+	dcterms:spatial     <file:///usr/local/tomcat/webapps/#Lokalita:17193> ;
+	dcterms:temporal    <file:///usr/local/tomcat/webapps/#Datace:294948> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_5239524> .
+
+<https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_5239524/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<file:///usr/local/tomcat/webapps/#Predmet:5239524>
+	a               edm:Place ;
+	skos:prefLabel  "Praha"@cs .
+
+<https://www.esbirky.cz/img.php?id=5239531>
+	a                edm:WebResource ;
+	dc:description   "H2-067.696.s.jpg"@cs ;
+	dc:format        "image/jpeg" ;
+	dc:type          "image" ;
+	dcterms:created  "2014-07-29T15:08:25" ;
+	dcterms:issued   "2014-07-29T00:00:00" ;
+	edm:rights       <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_5239524>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045430001> ;
+	edm:isShownAt      <https://www.esbirky.cz/detail/5239524> ;
+	edm:isShownBy      <https://www.esbirky.cz/img.php?id=5239529> ;
+	edm:object         <https://www.esbirky.cz/img.php?id=5239529> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004502224> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<file:///usr/local/tomcat/webapps/#Technika:17433>
+	a               skos:Concept ;
+	skos:prefLabel  "Olejomalba"@cs .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:38:05.228871Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_5239524> .
+
+<http://data.europeana.eu/organization/1482250000004502224>
+	a               foaf:Organization ;
+	skos:prefLabel  "ESbírky"@en, "ESbírky"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutorFoto:5239524>
+	a               edm:Agent ;
+	skos:prefLabel  "R. Boček"@cs .
+
+<http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_5239524>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-26T12:43:34.499Z" ;
+	dcterms:modified          "2021-03-24T10:03:51.861Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524#metadataTier>, <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524> ;
+	edm:completeness          "10" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "472_NM_HM_Narodni_muzeum_Historicke_muzeum" ;
+	edm:landingPage           <https://www.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524> ;
+	edm:language              "cs" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.esbirky.cz%2Fimg.php%3Fid%3D5239529&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/472/https___www_esbirky_cz_detail_5239524>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/222> ;
+	dc:identifier       "https://www.esbirky.cz/detail/5239524" ;
+	dcterms:medium      <http://data.europeana.eu/concept/2728> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_5239524> .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutor:5239524>
+	a               edm:Agent ;
+	skos:prefLabel  "Václav Brožík"@cs .
+
+<file:///usr/local/tomcat/webapps/#TypSbirky:17116>
+	a               skos:Concept ;
+	skos:prefLabel  "Malířství, kresba a grafika"@cs .
+
+<http://data.europeana.eu/concept/2728>
+	a                skos:Concept ;
+	skos:altLabel    "Linnen"@nl, "Canevas"@fr, "Canvas"@de, "Tela"@it, "Tela"@ca ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00015381n>, <https://www.freebase.com/m/0jmpt>, <http://thesaurus.europeanafashion.eu/thesaurus/10376>, <http://www.wikidata.org/entity/Q4259259>, <https://g.co/kg/m/0jmpt> ;
+	skos:note        "Glat vævede stoffer"@da, "Tessuto con armatura in tela, dalla trama larga e grossolana"@it, "Плотная ткань"@ru, "Tela que serveix de suport per a treballs pictòrics"@ca, "Stevig weefsel van hennep, vlas of katoen"@nl, "Extremely heavy-duty plain-woven fabric"@en, "Druh tkaniny"@cs, "Tela extremadamente resistente utilizada en velas, lonas, mochilas, obras pictóricas..."@es, "Material für Leinwände, Segel und Kleidung"@de, "Pièce de tissu résistante"@fr, "Rodzaj wyjątkowo wytrzymałej, gładkiej tkaniny używanej w malarstwie olejnym"@pl, "Tygmaterial"@sv ;
+	skos:prefLabel   "Холст"@ru, "Kangas"@fi, "Tela"@pt, "Audekls"@lv, "Lõuend"@et, "Lienzo"@es, "Canbhás"@ga, "Toile"@fr, "Kanvas"@sv, "Vászon"@hu, "Leinwand"@de, "Брезент"@bg, "Canovaccio"@it, "Pânză"@ro, "Μουσαμάς"@el, "Canvas"@en, "Canvas"@nl, "Drobė"@lt, "Llenç"@ca, "Platno"@sl, "Lærred"@da, "Plátno"@cs, "Plátno"@sk, "Kanwa"@pl .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000045430001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Historical Museum"@en, "Historické muzeum"@cs .
+
+<https://www.esbirky.cz/detail/5239524>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<file:///usr/local/tomcat/webapps/#PredmetDatText:5239524>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "1897"@cs .
+
+<file:///usr/local/tomcat/webapps/#Datace:294948>
+	a               edm:TimeSpan ;
+	skos:note       "19. stol." ;
+	skos:prefLabel  "19. století"@cs .
+
+<file:///usr/local/tomcat/webapps/#Lokalita:17193>
+	a               edm:Place ;
+	skos:prefLabel  "Hlavní město Praha"@cs .
+
+<https://www.esbirky.cz/img.php?id=5239529>
+	a                       edm:WebResource ;
+	dc:description          "H2-067.696.a.jpg"@cs ;
+	dc:format               "image/jpeg" ;
+	dc:type                 "image" ;
+	dcterms:created         "2014-07-29T15:08:25" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_5239524/manifest> ;
+	dcterms:issued          "2014-07-29T00:00:00" ;
+	ebucore:fileByteSize    "462343"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1793"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1232"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_5239524#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:38:05.228539Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_5239524> .
+
+<http://data.europeana.eu/concept/222>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <https://g.co/kg/m/05nmd>, <http://id.ndl.go.jp/auth/ndlna/00560048>, <http://vocab.getty.edu/aat/300178684>, <http://purl.org/bncf/tid/27936>, <https://www.freebase.com/m/05nmd>, <https://d-nb.info/gnd/4043238-5>, <http://babelnet.org/rdf/s00058757n>, <http://www.wikidata.org/entity/Q174705>, <http://www.yso.fi/onto/yso/p571> ;
+	skos:note        "Technique artistique fondée sur l'utilisation de la peinture à l'huile"@fr, "Konstnärlig målning med oljefärg"@sv, "Technik der künstlerischen Malerei mit Ölfarben"@de, "Kunstnerisk process med oliefarver"@da, "Maalaustekniikka"@fi, "Живописная техника"@ru, "Technika malarska"@pl, "Tecnica pittorica che utilizza pigmenti in polvere mescolati con oli essiccanti"@it, "Técnica de pintura artística"@pt, "Η διαδικασία της ζωγραφικής με χρωστικές ουσίες ανακατεμένες με στεγνωτικό λάδι"@el, "Process of painting with pigments that are bound with a medium of drying oil"@en, "Tècnica pictòrica que utilitza pintura a l'oli"@ca, "Técnica pictórica"@es ;
+	skos:prefLabel   "Péintéireacht ola"@ga, "Oliemaling"@da, "Eļļas glezniecība"@lv, "Olio-pintura"@eu, "Olejomalba"@cs, "Pintura a l'oli"@ca, "Oljemåleri"@sv, "Маслена живопис"@bg, "Schilderen met olieverf"@nl, "Ελαιογραφία"@el, "Peinture à l'huile"@fr, "Pintura al óleo"@es, "Olajfestés"@hu, "Malarstwo olejne"@pl, "Pictură în ulei"@ro, "Oljno slikarstvo"@sl, "Oil painting"@en, "Õlimaal"@et, "Pittura a olio"@it, "Aliejinė tapyba"@lt, "Масляная живопись"@ru, "Öljymaalaus"@fi, "Óleo sobre tela"@pt, "Ölmalerei"@de .
+
+<file:///usr/local/tomcat/webapps/#Material:17238>
+	a               skos:Concept ;
+	skos:prefLabel  "Plátno"@cs .

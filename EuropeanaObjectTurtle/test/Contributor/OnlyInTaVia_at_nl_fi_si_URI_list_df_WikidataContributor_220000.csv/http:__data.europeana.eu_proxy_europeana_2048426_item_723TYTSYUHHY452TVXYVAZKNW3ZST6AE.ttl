@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://goobipr2.uni-weimar.de/viewer/content/PPN672322234/1000/0/00000007.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE/manifest> ;
+	ebucore:fileByteSize    "136498"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1464"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE>
+	a                    ore:Proxy ;
+	dc:contributor       "Rembrandt <Harmensz van Rijn>", "Wurzbach, Alfred von" ;
+	dc:language          "ger" ;
+	dc:publisher         "Stuttgart: Neff" ;
+	dc:source            "Rembrandt-Galerie: eine Auswahl von hundert Gemälden Rembrandts, nach den vorzüglichsten Stichen, Radirungen u. Schwarzkunst-Blättern" ;
+	dc:subject           "Staatliche Hochschule für Baukunst und Bildende Künste Weimar 1946-1951", "Großherzoglich Sächsische Kunstschule zu Weimar 1860-1910" ;
+	dc:title             "Rembrandt-Galerie; Textbd." ;
+	dc:type              "Volume" ;
+	dcterms:isPartOf     <http://www.deutsche-digitale-bibliothek.de/item/T5NX6ABYOTLRCMKGKB5EKFDLMNNGTE7A> ;
+	dcterms:issued       "1886" ;
+	edm:currentLocation  <http://d-nb.info/gnd/4065105-8> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> .
+
+<http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:43.881Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> .
+
+<http://data.europeana.eu/organization/1482250000004477390>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bauhaus University Weimar. University Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1886" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> .
+
+<http://data.europeana.eu/aggregation/europeana/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T16:43:55.948Z" ;
+	dcterms:modified          "2016-02-15T16:43:55.948Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE#contentTier>, <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048426_Ag_DE_DDB_Weimar" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgoobipr2.uni-weimar.de%2Fviewer%2Fcontent%2FPPN672322234%2F1000%2F0%2F00000007.jpg&type=TEXT> .
+
+<http://data.europeana.eu/aggregation/provider/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477390> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-3981017> ;
+	edm:isShownBy      <http://goobipr2.uni-weimar.de/viewer/content/PPN672322234/1000/0/00000007.jpg> ;
+	edm:object         <http://goobipr2.uni-weimar.de/viewer/content/PPN672322234/1000/0/00000007.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-3981017>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:43.882Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_723TYTSYUHHY452TVXYVAZKNW3ZST6AE> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

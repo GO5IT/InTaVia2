@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/15508/DGNF8198>
+	a                   ore:Proxy ;
+	dc:coverage         "Tschechien; Deutschland" ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#Emil_Orlik_Künstler_in> ;
+	dc:date             "1898" ;
+	dc:description      "Beschriftung: l.u. \u0022Probedruck\u0022 (Bleistift)"@de, "Beschriftung: r.u. \u0022Orlik 08\u0022 (Bleistift); in der Platte r.u. \u0022OE\u0022"@de ;
+	dc:identifier       "DGNF8198" ;
+	dc:language         "de" ;
+	dc:publisher        "Albertina, Wien, Österreich"@de ;
+	dc:rights           "Public Domain Mark 1.0"@de ;
+	dc:title            "Frau bei der Näharbeit"@de ;
+	dc:type             "Druckgraphik"@de ;
+	dcterms:created     "1898" ;
+	dcterms:extent      "17,6 x 15,7 cm"@de ;
+	dcterms:isPartOf    "Graphische Sammlung"@de ;
+	dcterms:medium      "Farbholzschnitt"@de ;
+	dcterms:spatial     "Tschechien; Deutschland"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DGNF8198> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15508/DGNF8198> .
+
+<http://data.europeana.eu/proxy/europeana/15508/DGNF8198>
+	a                   ore:Proxy ;
+	dc:identifier       "DGNF8198" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1898" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15508/DGNF8198> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DGNF8198> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15508/DGNF8198> .
+
+<https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DGNF8198]&showtype=record>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "311824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<https://iiif.europeana.eu/presentation/15508/DGNF8198/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DGNF8198.jpg&cache=yes&maxwidth=400>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "50446"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "439"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFEBCD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFACD"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/15508/DGNF8198>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15508/DGNF8198> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477257> ;
+	edm:isShownAt      <https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DGNF8198]&showtype=record> ;
+	edm:isShownBy      <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DGNF8198.jpg&cache=yes> ;
+	edm:object         <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DGNF8198.jpg&cache=yes&maxwidth=400> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<file:///usr/local/tomcat/webapps/#Emil_Orlik_Künstler_in>
+	a                               edm:Agent ;
+	dc:date                         "1897" ;
+	foaf:name                       "Emil Orlik"@de ;
+	rdaGr2:biographicalInformation  "Prag 1870 - 1932 Berlin"@de ;
+	rdaGr2:professionOrOccupation   "Künstler_in" ;
+	skos:prefLabel                  "Emil Orlik (Künstler_in)" .
+
+<http://data.europeana.eu/item/15508/DGNF8198>
+	a  edm:ProvidedCHO .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4295510766>
+	a                       edm:WebResource ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:isPartOf        "Graphische Sammlung"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4295510766> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DGNF8198.jpg&cache=yes>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15508/DGNF8198/manifest> ;
+	ebucore:fileByteSize    "280413"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1093"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FDF5E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/15508/DGNF8198>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-08-01T12:29:44.911Z" ;
+	dcterms:modified          "2022-09-28T12:10:21.928Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15508/DGNF8198#metadataTier>, <http://data.europeana.eu/item/15508/DGNF8198#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15508/DGNF8198> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15508_Ag_AT_Kulturpool_albertina" ;
+	edm:landingPage           <https://www.europeana.eu/item/15508/DGNF8198> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlungenonline.albertina.at%2Fcc%2Fimageproxy.ashx%3Fserver%3Dlocalhost%26port%3D15001%26filename%3Dimages%2FDGNF8198.jpg%26cache%3Dyes%26maxwidth%3D400&type=IMAGE> .
+
+<http://data.europeana.eu/item/15508/DGNF8198#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T15:30:13.341300Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DGNF8198> .
+
+<http://data.europeana.eu/item/15508/DGNF8198#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T15:30:13.341276Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DGNF8198> .
+
+<http://data.europeana.eu/organization/1482250000004477257>
+	a               foaf:Organization ;
+	skos:prefLabel  "Albertina"@en, "Albertina"@de .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .

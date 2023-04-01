@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/15507/oai_www_digital_wienbibliothek_at_284089>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/150896> ;
+	dc:identifier       "oai:www.digital.wienbibliothek.at:284089" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15507/oai_www_digital_wienbibliothek_at_284089> .
+
+<http://data.europeana.eu/proxy/provider/15507/oai_www_digital_wienbibliothek_at_284089>
+	a                   ore:Proxy ;
+	dc:creator          <http://d-nb.info/gnd/118755838> ;
+	dc:date             "[nach 1900]"@de ;
+	dc:description      "(notiert auf handgezogene Notenlinien auf vorgedrucktes Vertragspapier, 4 Verträge zwischen Eduard Strauss und Leopold Kruspel, 1894-1900)"@de ;
+	dc:format           "application/pdf" ;
+	dc:identifier       "oai:www.digital.wienbibliothek.at:284089" ;
+	dc:language         "de" ;
+	dc:rights           "Public Domain Mark 1.0"@de ;
+	dc:title            "von Eduard Strauss. Nach Charles Gounod"@de, "\u0022Frühlingslied\u0022"@de ;
+	dc:type             "Autograph (Musik)"@de, "Autograph (Music)"@en ;
+	dcterms:created     "[nach 1900]"@de ;
+	dcterms:extent      "4 Bl. (4 S.) qu.4°"@de ;
+	dcterms:isPartOf    "Musik"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_284089> .
+
+<http://kulturpool.at/rest/export/1.0/proxy/wienbib/?id=download/pdf/284089>
+	a                      edm:WebResource ;
+	ebucore:fileByteSize   "5082909"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:spatialResolution  "231"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/agent/150896>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/235> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/149151> ;
+	owl:sameAs           <http://d-nb.info/gnd/118755838>, <https://libris.kb.se/1zcfgdvk0g6wsb1>, <http://datos.bne.es/resource/XX1158868>, <https://www.freebase.com/m/03p59n>, <http://www.wikidata.org/entity/Q347030>, <http://data.bibliotheken.nl/id/thes/p073528501>, <http://libris.kb.se/resource/auth/211787>, <http://data.carnegiehall.org/names/25490>, <http://id.worldcat.org/fast/108956>, <http://data.bnf.fr/ark:/12148/cb13900119t>, <http://id.loc.gov/authorities/names/n83021204>, <http://www.idref.fr/080530850/id>, <http://openlibrary.org/works/OL2521762A>, <http://dbpedia.org/resource/Eduard_Strauss>, <http://viaf.org/viaf/69116921>, <https://g.co/kg/m/03p59n> ;
+	rdaGr2:dateOfBirth   "1835-03-15" ;
+	rdaGr2:dateOfDeath   "1916-12-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/80422> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Штраус Эдуард"@ru, "Штраус, Эдуард"@ru, "Eduard Strauss"@cs, "Eduard Strauss"@de, "Eduard Strauss"@it, "Eduard Strauss"@da, "Edouard Strauss"@fr, "Strauss"@sv ;
+	skos:note            "Compositeur autrichien"@fr, "Rakouský hudební skladatel"@cs, "Österrikisk kompositör"@sv, "Compositor austríac"@ca, "Østrigsk komponist og kapelmester"@da, "Austria helilooja"@et, "Componist uit Oostenrijk (1835-1916)"@nl, "Rakúsky dirigent a hudobný skladateľ"@sk, "Austrian composer"@en, "Австрийский композитор"@ru, "Compositor austríaco"@pt, "Compositor austríaco"@es, "Compositore, direttore d'orchestra e arpista austriaco"@it, "Kompozytor austriacki"@pl, "Österreichischer Komponist und Kapellmeister"@de, "Compozitor austriac"@ro ;
+	skos:prefLabel       "Eduard Strauss"@fi, "Eduard Strauss"@sv, "Eduard Strauss"@pt, "Eduard Strauss"@en, "Eduard Strauss"@fr, "Eduard Strauss"@es, "Eduard Strauss"@sk, "Eduard Strauss"@sl, "Eduard Strauss"@pl, "Eduard Strauss"@ca, "Eduard Strauss"@nl, "Eduard Strauß"@de, "Eduard Strauß"@it, "Eduard Strauß"@hu, "Eduard Strauß"@cs, "Eduard Strauß"@da, "Едуард Щраус"@bg, "Eduards Štrauss"@lv, "Έντουαρντ Στράους"@el, "Эдуард Штраус"@ru .
+
+<https://www.digital.wienbibliothek.at/id/284089>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-02-18T14:00:32.761660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_284089> .
+
+<https://www.digital.wienbibliothek.at/download/webcache/304/294725>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9155"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "178"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "304"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_284089>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517551> ;
+	edm:isShownAt      <https://www.digital.wienbibliothek.at/id/284089> ;
+	edm:isShownBy      <http://kulturpool.at/rest/export/1.0/proxy/wienbib/?id=download/pdf/284089> ;
+	edm:object         <https://www.digital.wienbibliothek.at/download/webcache/304/294725> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=575526478490>
+	a                       edm:WebResource ;
+	dc:description          "(notiert auf handgezogene Notenlinien auf vorgedrucktes Vertragspapier, 4 Verträge zwischen Eduard Strauss und Leopold Kruspel, 1894-1900)"@de ;
+	dc:format               "application/pdf" ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:extent          "4 Bl. (4 S.) qu.4°"@de ;
+	dcterms:isPartOf        "Musik"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=575526478490> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-02-18T14:00:32.761283Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15507/oai_www_digital_wienbibliothek_at_284089> .
+
+<http://data.europeana.eu/organization/1482250000004517551>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca de Viena a l'Ajuntament"@ca, "Vienna City Library"@en, "Wienbibliothek im Rathaus"@de .
+
+<http://data.europeana.eu/aggregation/europeana/15507/oai_www_digital_wienbibliothek_at_284089>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-10T14:08:18.834Z" ;
+	dcterms:modified          "2022-02-18T13:50:35.470Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089#contentTier>, <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	edm:completeness          "9" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15507_Ag_AT_Kulturpool_wienbib" ;
+	edm:landingPage           <https://www.europeana.eu/item/15507/oai_www_digital_wienbibliothek_at_284089> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.digital.wienbibliothek.at%2Fdownload%2Fwebcache%2F304%2F294725&type=TEXT> .
+
+<http://d-nb.info/gnd/118755838>
+	a                              edm:Agent ;
+	dc:date                        "[ohne Jahresangabe]" ;
+	dc:identifier                  "http://d-nb.info/gnd/118755838" ;
+	foaf:name                      "Strauss, Eduard"@de ;
+	rdaGr2:dateOfBirth             "1835"@de ;
+	rdaGr2:dateOfDeath             "1916"@de ;
+	rdaGr2:professionOrOccupation  "Komponist" ;
+	skos:prefLabel                 "Strauss, Eduard (Komponist)" .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .

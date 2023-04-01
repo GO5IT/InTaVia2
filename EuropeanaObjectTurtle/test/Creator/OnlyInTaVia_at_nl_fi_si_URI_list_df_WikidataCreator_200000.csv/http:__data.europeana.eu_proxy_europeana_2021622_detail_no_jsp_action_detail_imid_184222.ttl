@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:07:21.802Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021622/detail_no_jsp_action_detail_imid_184222> .
+
+<http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:07:21.803Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021622/detail_no_jsp_action_detail_imid_184222> .
+
+<http://data.europeana.eu/aggregation/provider/2021622/detail_no_jsp_action_detail_imid_184222>
+	a                  ore:Aggregation ;
+	dc:rights          "Nederlands Instituut voor Oorlogsdocumentatie" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001989409> ;
+	edm:isShownAt      <http://www.beeldbankwo2.nl/detail_no.jsp?action=detail&imid=184222> ;
+	edm:object         <http://www.beeldbankwo2.nl/cgi-bin/frsiserver.dll/thumbnail/184222-thumb.jpg?frskey=184222> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2021622/detail_no_jsp_action_detail_imid_184222>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "2014-03-28T14:49:01.149Z" ;
+	dcterms:modified          "2014-03-28T14:49:01.149Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222#metadataTier>, <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021622_Ag_NL_DigitaleCollectie_BBWO2" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.beeldbankwo2.nl%2Fcgi-bin%2Ffrsiserver.dll%2Fthumbnail%2F184222-thumb.jpg%3Ffrskey%3D184222&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2021622/detail_no_jsp_action_detail_imid_184222>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/106> ;
+	dc:creator          <http://data.europeana.eu/agent/158904> ;
+	dc:subject          <http://data.europeana.eu/concept/3286> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021622/detail_no_jsp_action_detail_imid_184222> .
+
+<http://data.europeana.eu/organization/1482250000001989409>
+	a               foaf:Organization ;
+	skos:prefLabel  "Institute for War-, Holocaust- and Genocidestudies"@en .
+
+<http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222>
+	a  edm:ProvidedCHO .
+
+<http://www.beeldbankwo2.nl/detail_no.jsp?action=detail&imid=184222>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/concept/3286>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4079167-1>, <http://id.nlm.nih.gov/mesh/D047789>, <http://www.wikidata.org/entity/Q362>, <https://www.freebase.com/m/081pw>, <http://www.yso.fi/onto/yso/p8900>, <https://g.co/kg/m/081pw>, <http://data.bnf.fr/ark:/12148/cb11996115g>, <http://id.ndl.go.jp/auth/ndlna/00570524>, <http://purl.org/bncf/tid/16826>, <http://babelnet.org/rdf/s00070139n>, <http://libris.kb.se/resource/auth/139432>, <http://lod.nl.go.kr/resource/KSH1998001372>, <http://datos.bne.es/resource/XX526764>, <http://id.loc.gov/authorities/names/sh85148273>, <http://uri.gbv.de/terminology/bk/15.24> ;
+	skos:note        "Vojna v letih 1939–1945"@sl, "Conflicto bélico global en los años de 1939 a 1945"@es, "Oorlog van 1939 tot 1945 tussen asmogendheden en geallieerden"@nl, "Globálny ozbrojený konflikt v rokoch 1939 – 1945"@sk, "Μεγάλος πόλεμος μεταξύ 1939 και 1945"@el, "Karinis konfliktas, trukęs nuo 1939 iki 1945 m."@lt, "Globalni oružani sukob"@hr, "Conflito militar global ocorrido entre 1939 e 1945"@pt, "Conflit armé à l'échelle planétaire, de septembre 1939 à septembre 1945"@fr, "Globāls bruņots konflikts no 1939. līdz 1945. gadam"@lv, "Globální válečný konflikt z let 1939 až 1945"@cs, "Cogadh domhanda ó 1939 go 1945"@ga, "Мировой вооружённый конфликт между агрессивными правонационалистическими странами «оси» и «Антигитлеровской коалицией» их противников (1939—1945)"@ru, "Globalt krig 1939–1945"@sv, "Zweiter global geführter Krieg sämtlicher Großmächte von 1939 bis 1945 mit mehr als 60 Millionen Toten"@de, "Krig mellem 1939–1945"@da, "Vuosina 1939–1945 käyty maailmanlaajuinen sota"@fi, "Gatazka (1939–1945)"@eu, "Secondo conflitto globale (1939–1945)"@it, "Световна война, водена между силите на Съюзниците и силите на Оста (1939–1945)"@bg, "Wojna globalna między Osią i aliantami, trwająca 1939–1945"@pl, "Global war, 1939–1945"@en, "1939–1945 között zajlott globális háború"@hu, "Conflict global între Puterile Axei și Aliați, ce a avut loc între anii 1939–1945"@ro, "Conflicte bèl·lic global que tingué lloc entre els anys 1939 i 1945"@ca ;
+	skos:prefLabel   "Al Doilea Război Mondial"@ro, "It-Tieni Gwerra Dinjija"@mt, "Antrasis pasaulinis karas"@lt, "Andra världskriget"@sv, "Β΄ Παγκόσμιος Πόλεμος"@el, "Druhá světová válka"@cs, "Вторая мировая война"@ru, "Segunda Guerra Mundial"@pt, "Segunda Guerra Mundial"@es, "Seconda guerra mondiale"@it, "Toinen maailmansota"@fi, "Második világháború"@hu, "Drugi svjetski rat"@hr, "Seconde Guerre mondiale"@fr, "Otrais pasaules karš"@lv, "Втора световна война"@bg, "An Dara Cogadh Domhanda"@ga, "Zweiter Weltkrieg"@de, "Tweede Wereldoorlog"@nl, "Segona Guerra Mundial"@ca, "Teine maailmasõda"@et, "Druhá svetová vojna"@sk, "II wojna światowa"@pl, "Druga svetovna vojna"@sl, "World War II"@en, "Bigarren Mundu Gerra"@eu, "2. verdenskrig"@da ;
+	skos:related     <http://data.europeana.eu/concept/3282>, <http://data.europeana.eu/concept/3289>, <http://data.europeana.eu/concept/3305>, <http://data.europeana.eu/concept/83>, <http://data.europeana.eu/concept/3281> .
+
+<http://www.beeldbankwo2.nl/cgi-bin/frsiserver.dll/thumbnail/184222-thumb.jpg?frskey=184222>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "120"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "76"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/agent/158904>
+	a                    edm:Agent ;
+	owl:sameAs           <http://id.loc.gov/authorities/names/n82138136>, <https://www.freebase.com/m/08s4x_>, <https://g.co/kg/m/08s4x_>, <http://dbpedia.org/resource/Eppo_Doeve>, <http://viaf.org/viaf/67819966>, <http://www.idref.fr/137389426/id>, <http://data.bibliotheken.nl/id/thes/p069106606>, <http://openlibrary.org/works/OL1316796A>, <http://id.worldcat.org/fast/1757393>, <http://www.wikidata.org/entity/Q2667761>, <http://vocab.getty.edu/ulan/500135352> ;
+	rdaGr2:dateOfBirth   "1907-07-02" ;
+	rdaGr2:dateOfDeath   "1981-06-11" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Joseph Ferdinand Doeve"@en, "E. Doeve"@nl, "Josef Ferdinand Doeve"@en, "Josef Ferdinand Doeve"@nl, "Jozef Ferdinand Doeve"@en, "Jozef Ferdinand Doeve"@nl ;
+	skos:note            "Nederlands kunstschilder"@nl, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Pintor neerlandés"@es, "Dutch painter (1907-1981)"@en, "Hollandi maalikunstnik"@et, "Maler, Zeichner"@de, "Peintre néerlandais"@fr ;
+	skos:prefLabel       "Eppo Doeve"@et, "Eppo Doeve"@de, "Eppo Doeve"@fi, "Eppo Doeve"@sv, "Eppo Doeve"@pt, "Eppo Doeve"@en, "Eppo Doeve"@it, "Eppo Doeve"@fr, "Eppo Doeve"@es, "Eppo Doeve"@sl, "Eppo Doeve"@ga, "Eppo Doeve"@ro, "Eppo Doeve"@da, "Eppo Doeve"@ca, "Eppo Doeve"@nl .
+
+<http://data.europeana.eu/proxy/provider/2021622/detail_no_jsp_action_detail_imid_184222>
+	a                   ore:Proxy ;
+	dc:coverage         "Nederland" ;
+	dc:creator          "Eppo Doeve" ;
+	dc:date             "30-12-1939" ;
+	dc:description      "`Naar de Schaduwen van Morgen...'" ;
+	dc:identifier       "http://www.beeldbankwo2.nl/detail_no.jsp?action=detail&imid=184222" ;
+	dc:relation         <http://www.beeldbankwo2.nl/cgi-bin/frsiserver.dll/thumbnail/184222-thumb.jpg?frskey=184222> ;
+	dc:subject          "Karikaturen - Zie ook: Cartoons", "Feestdagen", "Tweede Wereldoorlog", "Spotprenten - Zie ook: Karikaturen" ;
+	dc:type             "IMAGE" ;
+	dcterms:provenance  "BBWO2" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021622/detail_no_jsp_action_detail_imid_184222> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021622/detail_no_jsp_action_detail_imid_184222> .

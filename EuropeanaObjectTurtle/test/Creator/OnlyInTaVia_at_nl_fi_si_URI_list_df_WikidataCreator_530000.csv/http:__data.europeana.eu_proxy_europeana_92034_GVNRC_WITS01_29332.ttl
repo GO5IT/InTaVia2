@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_29332>
+	a                   ore:Proxy ;
+	dc:contributor      "Bauer, Marius" ;
+	dc:creator          "Bauer, Marius" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:29332", "WITS01:29332" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:29332], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "berglandschap"@nl, "rots"@nl, "paard"@nl, "koets"@nl, "kasteel"@nl ;
+	dc:title            "In Spanje" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1882-1932" ;
+	dcterms:extent      "30 x 47 cm" ;
+	dcterms:isPartOf    "WITS01", "Willem Witsen: Tachtiger in brief en beeld", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf", "paneel" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_29332> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_29332>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:07:12.619Z" ;
+	dcterms:modified          "2018-04-05T18:11:35.845Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_29332> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A29332%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_29332#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:19.075Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_29332> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_29332>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:29332> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:29332&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/1782>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00562239>, <http://vocabularies.unesco.org/thesaurus/concept4431>, <http://www.yso.fi/onto/yso/p8651>, <http://purl.org/bncf/tid/1585>, <http://vocab.getty.edu/aat/300011692>, <http://babelnet.org/rdf/s00068046n>, <http://www.yso.fi/onto/ysa/Y179821>, <http://id.worldcat.org/fast/1099409>, <http://www.wikidata.org/entity/Q8063>, <https://d-nb.info/gnd/4020734-1>, <https://www.freebase.com/m/01cbzq>, <https://g.co/kg/m/01cbzq>, <http://id.loc.gov/authorities/names/sh85114749>, <http://data.bnf.fr/ark:/12148/cb119327106> ;
+	skos:note        "Fast oorganiskt ämne"@sv, "Assemblage minéral induré d’origine naturelle"@fr, "Naturally occurring solid aggregate of one or more minerals or mineraloids"@en, "Matèria en estat sòlid que forma part de l'escorça terrestre"@ca, "Skupisko minerałów jednorodnych lub różnorodnych"@pl, "Steen in de aardkorst"@nl, "Aggregato naturale di minerali, cristallini e amorfi e roba"@it, "Bloco mineral duro de origem natural"@pt, "Agregado sólido de uno o más minerales"@es, "Natürlich vorkommendes Aggregat"@de, "Materiaali, joka muodostuu mineraaleista"@fi, "Природная совокупность минералов"@ru, "Rôznorodá anorganická prírodnina, zložená z jedného alebo viacerých minerálov"@sk ;
+	skos:prefLabel   "Skała"@pl, "Горная порода"@ru, "Kőzet"@hu, "Kamnina"@sl, "Haitz"@eu, "Kivi"@fi, "Roca"@ca, "Roca"@es, "Carraig"@ga, "Stijena"@hr, "Rots of gesteente"@nl, "Bergart"@sv, "Rocha"@pt, "Piatră"@ro, "Klippe"@da, "Hornina"@sk, "Hornina"@cs, "Roche"@fr, "Uoliena"@lt, "Kivim"@et, "Gestein"@de, "Roccia"@it, "Πέτρωμα"@el, "Iezis"@lv, "Скала"@bg, "Rock"@en ;
+	skos:related     <http://data.europeana.eu/concept/1950> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/3050>
+	a                skos:Concept ;
+	skos:altLabel    "Seitpferd"@de, "Cavalo com alça"@pt, "Cavalo com alcas"@pt, "Side horse"@en, "Paard met bogen"@nl, "Paard"@nl, "Cavalo-de-pau"@pt, "Horse"@en, "Pauschenpferd"@de, "Voltigepaard"@nl ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300211244>, <http://id.loc.gov/authorities/names/sh88001783>, <https://g.co/kg/m/01hj4t>, <https://www.freebase.com/m/01hj4t>, <http://www.wikidata.org/entity/Q840330>, <http://d-nb.info/gnd/4336267-9> ;
+	skos:note        "Turntoestel"@nl, "Гимнастический снаряд"@ru, "Gren inom den manliga artistiska gymnastiken"@sv, "Men's artistic gymnastics apparatus"@en, "Turngerät mit einer dem Pferd ähnlichen Form"@de, "Atrezzo sportivo"@it ;
+	skos:prefLabel   "Cavallo con maniglie"@it, "Cavalo com alças"@pt, "Turnpferd"@de, "Caballo con arcos"@es, "Bygelhäst"@sv, "Koń gimnastyczny"@pl, "Cheval d'arçons"@fr, "Cavall amb arcs"@ca, "Конь"@ru, "Paard voltige"@nl, "Кон с гривни"@bg, "Pommel horse"@en, "Cal cu mânere"@ro, "Bensving"@da, "Ίππος (γυμναστική)"@el, "Konj z ročaji"@sl .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_29332>
+	a  edm:ProvidedCHO .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:29332&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "38288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "96"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_29332>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1848>, <http://data.europeana.eu/concept/3050>, <http://data.europeana.eu/concept/1782> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_29332> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_29332> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_29332#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:19.075Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_29332> .
+
+<http://data.europeana.eu/concept/1848>
+	a                skos:Concept ;
+	skos:exactMatch  <http://wordnet-rdf.princeton.edu/wn30/02980441-n>, <http://id.ndl.go.jp/auth/ndlna/00571227>, <http://www.yso.fi/onto/yso/p6790>, <http://babelnet.org/rdf/s00016570n>, <https://d-nb.info/gnd/4009104-1>, <http://iconclass.org/41A12>, <http://datos.bne.es/resource/XX526049>, <http://dbpedia.org/ontology/Castle>, <http://id.loc.gov/authorities/names/sh85020702>, <http://vocab.getty.edu/aat/300006891>, <http://purl.org/bncf/tid/17448>, <http://wordnet-rdf.princeton.edu/wn31/102974554-n>, <http://data.bnf.fr/ark:/12148/cb11931695w>, <https://www.freebase.com/m/0d5gx>, <http://www.geonames.org/ontology#S.CSTL>, <http://www.wikidata.org/entity/Q23413>, <https://g.co/kg/m/0d5gx> ;
+	skos:note        "Struchtúr daingnithe a tógadh sa Mheánaois"@ga, "Tip ta' struttura ffortifikata fl-Ewropa, fl-Asja u fil-Lvant Nofsani matul il-Medjuevu min-nobbiltà"@mt, "Здание жилого и фортификационного предназначения"@ru, "Erődítmény"@hu, "Građevinski objekt sagrađen u svrhu obrane"@hr, "Versterkt kasteel, ook wel burcht genoemd"@nl, "Είδος οχύρωσης"@el, "Geschlossener, bewohnbarer Wehrbau"@de, "Budynek warowny"@pl, "Edificación cercada de murallas, baluartes, fosos y otras fortificaciones"@es, "Demeure seigneuriale fortifiée"@fr, "Eraikin bat edo gehiagoko egitura gotortua, Europa, Asia eta Ekialde Hurbilean kokatua"@eu, "Type of fortified structure built in Europe, Asia and the Middle East during the Middle Ages by nobility"@en, "Zgradba, oblika fortifikacije, značilna za obdobje srednjega veka."@sl, "Tip de fortificație"@ro, "Typ opevněné stavby"@cs, "Fortificação construída na Idade Média pela nobreza"@pt, "Complesso architettonico fortificato tipico del Medioevo"@it, "Estructura fortificada construïda a l'edat mitjana per la noblesa a Europa i a l'Orient Mitjà"@ca ;
+	skos:prefLabel   "Hrad"@sk, "Hrad"@cs, "Pilis"@lt, "Borg"@sv, "Borg"@da, "Burg"@de, "Castle"@en, "Grad"@sl, "Linnus"@et, "Замок"@ru, "Château fort"@fr, "Kastell"@mt, "Castillo"@es, "Utvrda"@hr, "Vár"@hu, "Κάστρο"@el, "Castell"@ca, "Castello"@it, "Viduslaiku pils"@lv, "Burcht"@nl, "Zamek"@pl, "Замък"@bg, "Castelo"@pt, "Linna"@fi, "Gaztelu"@eu, "Caisleán"@ga, "Castel"@ro .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:29332>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50016"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

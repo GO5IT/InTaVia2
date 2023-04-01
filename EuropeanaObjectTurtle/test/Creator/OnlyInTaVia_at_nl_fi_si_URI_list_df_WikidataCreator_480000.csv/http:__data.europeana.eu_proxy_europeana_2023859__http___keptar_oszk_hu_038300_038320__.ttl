@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038320__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/227> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038320__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038320__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038320> ;
+	edm:object         <http://keptar.oszk.hu/038300/038320/1898_Oldal_075_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/038300/038320>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038320__/manifest> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038320__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038320__>
+	a                    ore:Proxy ;
+	dc:creator           "Lotz ,  Károly  (painter)"@hu ;
+	dc:description       "... A Magyar Nemzeti Múzeum lépcsőházának falképei három főrészből állnak: a Lotz-féle mennyezetdekorációból, a főfalak tetején körbefutó, Than és Lotz együttes munkájaként elkészült frízből, és az oldalfalak monumentális allegorikus figuráiból, melyek Than Mór alkotásai. A két művész a programleírást együtt dolgozta ki és együtt készítette el, s így az tartalmilag elválaszthatatlan, annál inkább eltér és különbözik a formai megvalósítás, kompozíció és stílus tekintetében egyaránt. A mennyezet középső tondóján a Képzelet allegóriája jelenik meg. A négyzetbe zárt tondó sarokképein a szép iránti lelkesedés, az ihletettség, a szemlélődés és a hagyomány allegorikus kompozíciói láthatók. A középső négyzetes mezőt kétoldalt két nagyméretű téglalap alakú képmező veszi körül, a tudományok és művészetek allegorikus figuracsoportjaival. Lotz pontosan megmagyarázta, miért ilyen módon készítette el a mennyezetdekorációt. A Képzelet \u0022az emberi szellem működésének szülőanyja\u0022 került a centrumba, s az őt körülvevő alakok szoros kapcsolatban vannak vele, mint a szellem működésének megtestesítői. A Képzelet lábánál fekvő alvó ifjú azt az álmot jelképezi, amelyből a nemzetnek fel kell ébrednie. A szellem működésének általános megjelenítése kibővül a tudományok és művészetek allegorikus csoportjai révén azok konkrét megfogalmazásával. A mennyezet közepétől induló kompozíció tehát az általánostól az egyre konkrétabban megjelenő, mintegy a központi figurát magyarázó újabb részletelemekkel gazdagítja az egészet. ... (Forrás: Basics Beatrix: A múzeum falképei : Magyar Múzeumok, 3. szám, 2002, 11-13. oldal)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1855x649 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/038300/038320   [Metadata]" ;
+	dc:relation          "Wikipédia: Lotz Károly [ http://hu.wikipedia.org/wiki/Lotz_K%C3%A1roly]"@hu, "Lotz Károly [ http://mmi.elte.hu/szabadbolcseszet/index.php?option=com_tanelem&id_tanelem=678&tip=0]"@hu, "Basics Beatrix: A múzeum falképei [ http://mek.oszk.hu/04100/04108/html/szuletes.htm#1]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "falfestmény"@hu, "romantika"@hu, "allegorikus ábrázolás"@hu, "Fine arts, visual arts"@hu, "allegóriák (művészet)"@hu, "freskó"@hu ;
+	dc:title             "A Művészetek"@hu ;
+	dc:type              "újságrészlet"@hu, "painting"@hu ;
+	dcterms:alternative  "Falfestmény a magyar Nemzeti Múzeumban"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038320__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038320__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:44.346Z" ;
+	dcterms:modified          "2015-09-14T11:54:05.477Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038320%2F1898_Oldal_075_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/concept/227>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q134194>, <http://vocab.getty.edu/aat/300053357>, <http://id.ndl.go.jp/auth/ndlna/00563760>, <https://www.freebase.com/m/02_3k>, <https://g.co/kg/m/02_3k>, <http://www.yso.fi/onto/yso/p1483>, <https://d-nb.info/gnd/4071463-9>, <http://babelnet.org/rdf/s00036480n>, <http://purl.org/bncf/tid/15765> ;
+	skos:note        "Seinamaali tehnika"@et, "Tecnica pittorica"@it, "Maalaustekniikka"@fi, "Technika nástennej maľby zhotovovaná na vlhkej omietke"@sk, "Técnica pictórica de pintura mural"@es, "Tehnică de pictură murală"@ro, "Muralmålning på färsk, ännu fuktig kalkputs"@sv, "Technique particulière de peinture murale dont la réalisation s'opère sur un enduit, avant qu'il ne soit sec"@fr, "Schildertechniek"@nl, "Technique of mural painting executed upon freshly laid lime plaster"@en, "Wandmalereitechnik insbesondere auf frischem Kalkputz"@de, "Malingsteknik"@da, "Technika malarska"@pl, "Tècnica pictòrica de pintura mural"@ca ;
+	skos:prefLabel   "Freska"@hr, "Freska"@sk, "Freska"@sl, "Freska"@cs, "Fresko"@de, "Fresko"@et, "Fresko"@eu, "Fresko"@da, "Al fresco"@sv, "Fresco painting"@en, "Fresco"@pt, "Fresco"@es, "Pintura al fresc"@ca, "Freskomaalaus"@fi, "Fresk"@pl, "Affresco"@it, "Frescoschildertechniek"@nl, "Frescă"@ro, "Стенопис"@bg, "Freascó"@ga, "Νωπογραφία"@el, "Freskó"@hu, "Фреска"@ru, "Fresque"@fr, "Freska"@lt, "Freska"@lv .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:45.966Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038320__> .
+
+<http://keptar.oszk.hu/038300/038320/1898_Oldal_075_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8999"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038320__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:45.966Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038320__> .

@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_KONB16_541538977>
+	a                   ore:Proxy ;
+	dc:contributor      "Mander, Karel van" ;
+	dc:creator          "Mander, Karel van" ;
+	dc:description      "De auteur is Karel van Mander", "Later opgenomen in De Gulden Harpe. Haerlem, 1607, p. 553, waar één strofe is weggelaten , met enkele varianten" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:541538977" ;
+	dc:rights           "Koninklijke Bibliotheek", "For more information: Koninklijke Bibliotheek"@en, "Voor meer informatie: Koninklijke Bibliotheek"@nl ;
+	dc:source           "[1700 D 1 [38]], Plano’s en plakkaten, Koninklijke Bibliotheek" ;
+	dc:title            "History-lied, van den Ouden Tobias. Op de wijse: Venus der minnen Godinnen"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "ca. 1600" ;
+	dcterms:isPartOf    "KONB16", "Plano’s en plakkaten", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_541538977> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_541538977>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:04:27.874Z" ;
+	dcterms:modified          "2018-04-05T17:06:08.455Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_KONB16_541538977> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AKONB16%3A541538977%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/KONB16:541538977>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "44356"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:03.788Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_541538977> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:03.789Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_541538977> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:541538977&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "20771"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "222"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_KONB16_541538977>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_541538977> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_541538977>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_KONB16_541538977> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/KONB16:541538977> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:541538977&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

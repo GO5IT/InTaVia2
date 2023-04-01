@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8800961b/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:17.398Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800961b> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8800961b>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8800961b> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8800961b>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:05.362Z" ;
+	dcterms:modified          "2018-03-26T12:25:59.436Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8800961b> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8800961b.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:17.398Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800961b> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800961b>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8800961b> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8800961b.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8800961b>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "254239"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8800961b>
+	a                   ore:Proxy ;
+	dc:creator          "Cadiou, Michel (1931-2015). Ténor", "Flers, Robert de (1872-1927). Auteur du texte", "Bedex, Henri. Chant", "Chevreux, Raymond (1914-....). Direction d'orchestre", "Dachary, Lina (1922-1999). Soprano", "Caillavet, Gaston-Arman de (1869-1915). Auteur du texte", "Lehár, Franz (1870-1948). Compositeur", "Pernes, Charles. Direction de choeur", "Favey, Josette. Chant", "Pruvost, Jacques (19..-.... ; artiste lyrique). Baryton (voix)", "Boué, Géori (1918-2017). Soprano", "Clément, Willy (1918-1965). Baryton (voix)" ;
+	dc:date             "1959" ;
+	dc:description      "Titre uniforme : [Die lustige Witwe]. Choix (français)", "BnF-Partenariats, Collection sonore - Believe", "Contient une table des matières", "Titre uniforme : [Der Graf von Luxemburg]. Choix (français)" ;
+	dc:format           "1 disque : 33 t ; 30 cm", "Nombre total de vues :  26", "disque microsillon"@fre, "disc"@eng, "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8800961b", "Numéro commercial : Polydor  46110" ;
+	dc:language         "français", "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37990508w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13923630v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139155467"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4735" ;
+	dc:subject          "musique dramatique vocale" ;
+	dc:title            "La veuve joyeuse : version abrégée / Musique de Franz Lehar ; Livret de R. de Flers et G. de Caillavet ; Géori Boué, Willy Clément, Henri Bedex, Lina Dachary, Michel Cadiou, chant ; Choeurs dir. Charles Pernes ; Orchestre dir. Raymond Chevreux ; Choeurs dir. Charles Pernes. Le comte du Luxembourg : version abrégée / Musique de Franz Lehar ; Livret de R. de Flers et G. de Caillavet ; Géori Boué, Willy Clément, Henri Bedex, Josette Favey, Jacques Pruvost, chant ; Choeurs dir. Charles Pernes ; Orchestre dir. Raymond Chevreux" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800961b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800961b> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8800961b.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4210"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF7F50"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

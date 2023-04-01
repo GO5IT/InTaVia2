@@ -1,0 +1,175 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=42076&amp;viewType=detailView>
+	a  edm:WebResource .
+
+<ftp://ftp.emuseumplus.lsh.se/web/hires/M_B/M_B15000-15999/M_B15700-15799/LN_B15762_018642.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_42076/manifest> .
+
+<http://sws.geonames.org/10280347/>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://sws.geonames.org/2661886/> ;
+	skos:altLabel     "La Real Armería"@es, "Die Königliche Rüstkammer"@de, "Livrustkammaren"@sv, "L'Armeria Reale"@it, "L'Armurerie royale"@fr, "Королевской Оружейной палаты"@ru ;
+	skos:prefLabel    "The Royal Armoury" ;
+	wgs84_pos:lat     "59.32648" ;
+	wgs84_pos:long    "18.0729" .
+
+<http://sws.geonames.org/2661886/>
+	a               edm:Place ;
+	skos:prefLabel  "Kingdom of Sweden (Herstellung)" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:15:07.539Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> .
+
+<http://data.europeana.eu/proxy/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_42076>
+	a                    ore:Proxy ;
+	dc:contributor       "Wilhelmina (Mari.V.) af Tibell (Givare)"@sv, "Gustaf Wilhelm af Tibell (Tidigare ägare)"@sv ;
+	dc:creator           "anonym svärdfejare (Tillverkare, , )"@sv ;
+	dc:description       "Fäste av förgyllt, reliefornerat silver. Orneringen gjuten och ciselerad. Knappen urneformig med en lejonmaskaron på ut- och insidan. Nitknapp hög. Handbygeln vinkelformigt böjd och ornerad med reliefornament, mittpartiet slätt. Rak bakre parerstång med vidgad, rundad ytterände, smyckad med tättsittande blad. Yttre parerplåt i form av en uppåtböjd amasonsköld, vars insida är ornerad med bladslingor och profilerade lejonhuvuden. På parerplåtens utsida graverat i spegelvänd skrivstil:\u0022Il Governo al Generale di Brigata Tibell 1803\u0022.\u000A\u000AKavel med rektangulärt tvärsnitt, de fyra sidorna klädda med rutat elfenben, utmed kanterna reliefornerade, förgyllda silverstavar. På kavelns utsida en slät, förgylld, oval silverplatta.\u000A\u000AKlinga rak, tvåeggad, slipad med sexsidigt tvärsnitt. Starka delen blånerad med etsad, förgyllddekor i form av slingor och trofégrupp."@sv ;
+	dc:identifier        "42076", "(Inv. nr. 5428)" ;
+	dc:relation          <https://commons.wikimedia.org/wiki/File:Hedersvärja,_Milano_1803_-_Livrustkammaren_-_18985.tif>, <https://commons.wikimedia.org/wiki/File:Hedersvärja,_fäste_-_Livrustkammaren_-_5324.tif>, <https://commons.wikimedia.org/wiki/File:Hedersvärja,_Milano_1803_-_Livrustkammaren_-_60707.tif> ;
+	dc:subject           "Värjor"@sv ;
+	dc:title             "Hedersvärja, Milano(?) 1803"@sv ;
+	dc:type              "värja"@sv, "hedersvärja Milano?"@sv, <http://vocab.getty.edu/aat/300036926> ;
+	dcterms:created      "1803" ;
+	dcterms:extent       "Bredd: klinga 25 mm", "Vikt: 600 g", "Bredd: 110 mm", "Längd: klinga 680 mm", "Längd: 840 mm" ;
+	dcterms:spatial      "Italien", "Milano (Tillverkningsort)" ;
+	edm:currentLocation  <http://sws.geonames.org/10280347/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> .
+
+<https://commons.wikimedia.org/wiki/File:Hedersvärja,_Milano_1803_-_Livrustkammaren_-_18985.tif>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_42076>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Livrustkammaren/42076" ;
+	dcterms:spatial     <http://data.europeana.eu/place/92> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1803" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> .
+
+<http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_42076>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004509050> ;
+	edm:hasView        <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=42076&resolution=superImageResolution>, <ftp://ftp.emuseumplus.lsh.se/web/hires/M_B/M_B15000-15999/M_B15700-15799/LN_B15762_018642.jpg>, <ftp://ftp.emuseumplus.lsh.se/web/hires/M_T/M_T11000-11999/M_T11600-11699/lm_t11617.jpg> ;
+	edm:isShownAt      <http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=42076&viewType=detailView> ;
+	edm:isShownBy      <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=42076&resolution=highImageResolution> ;
+	edm:object         <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=42076&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<https://commons.wikimedia.org/wiki/File:Hedersvärja,_Milano_1803_-_Livrustkammaren_-_60707.tif>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:15:07.539Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=42076&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_42076/manifest> ;
+	ebucore:fileByteSize    "246989"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "750"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<ftp://ftp.emuseumplus.lsh.se/web/hires/M_T/M_T11000-11999/M_T11600-11699/lm_t11617.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_42076/manifest> .
+
+<https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_42076/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/place/92>
+	a               edm:Place ;
+	owl:sameAs      <https://www.freebase.com/m/03rjj>, <http://lod.nl.go.kr/resource/KAB202014116>, <http://www.yso.fi/onto/ysa/Y105111>, <http://vocab.getty.edu/tgn/1000080>, <https://g.co/kg/m/03rjj>, <http://zbw.eu/stw/descriptor/17039-2>, <http://id.worldcat.org/fast/1204565>, <http://data.bnf.fr/ark:/12148/cb11864655t>, <http://vocabularies.unesco.org/thesaurus/concept910>, <http://www.wikidata.org/entity/Q38>, <http://nomisma.org/id/italy>, <http://www.yso.fi/onto/yso/p105111>, <http://babelnet.org/rdf/s00047705n>, <http://datos.bne.es/resource/XX450723>, <http://viaf.org/viaf/152361066>, <http://www.idref.fr/026389908/id>, <http://dbpedia.org/resource/Italy>, <https://sws.geonames.org/3175395/>, <http://nomisma.org/id/italian_republic>, <http://id.ndl.go.jp/auth/ndlna/00564289>, <http://id.nlm.nih.gov/mesh/D007558>, <https://d-nb.info/gnd/4027833-5>, <http://id.loc.gov/authorities/names/n79021783> ;
+	skos:altLabel   "Republiek Italië"@nl, "Repubblika Taljana"@mt, "Republiken Italien"@sv, "Italian tasavalta"@fi, "La penisola"@it, "La République italienne"@fr, "Italian Republic"@en, "République Italienne"@fr, "Ιταλική Δημοκρατία"@el, "Italienische Republik"@de, "Repubblica italiana"@it, "Ita."@fr, "Ital."@fr, "Talianska republika"@sk, "Itaalia Vabariik"@et, "Republica Italiană"@ro, "Italia"@fr, "Italia"@en, "Република Италия"@bg, "Italia"@sv, "It."@fr, "Republika Italija"@hr, "Italie"@nl, "Bel Paese"@it, "Estat Italià"@ca, "ITA"@nl, "IT"@nl, "IT"@es, "IT"@fr, "IT"@it, "IT"@en, "IT"@de, "ITA"@es, "ITA"@fr, "ITA"@it, "ITA"@en, "ITA"@de, "Repubblica Italiana"@en, "it"@it, "Итальянская Республика"@ru, "República Italiana"@ca, "República Italiana"@es, "Republic of Italy"@en, "Italiaanse Republiek"@nl ;
+	skos:note       "Staat in Südeuropa"@de, "País na Europa"@pt, "Država u južnoj Europi"@hr, "Land in Zuid-Europa"@nl, "Állam Dél-Európában"@hu, "Štát v južnej Európe"@sk, "Estat europeu situat a la Península itàlica"@ca, "Държава в Южна Европа"@bg, "Tír i ndeisceart na hEorpa"@ga, "Država v Evropi"@sl, "Valsts Eiropas dienvidos"@lv, "Europa hegoaldeko Estatu subiranoa"@eu, "État d'Europe du Sud"@fr, "País de Europa"@es, "Šalis pietų Europoje"@lt, "Riik Euroopas"@et, "Χώρα της νότιας Ευρώπης"@el, "Land i Sydeuropa"@da, "Stát v Evropě"@cs, "Valtio Etelä-Euroopassa"@fi, "Country in Southern Europe"@en, "Государство на юге Европы, в центре Средиземноморья"@ru, "Stat în Europa de Sud"@ro, "Państwo w południowej Europie"@pl, "Republik i Sydeuropa"@sv, "Stato dell'Europa centro-meridionale, membro e cofondatore dell'Unione europea"@it, "Pajjiż fl-Ewropa tan-Nofsinhar"@mt ;
+	skos:prefLabel  "Italien"@de, "Italien"@sv, "Italien"@da, "Taliansko"@sk, "Italie"@fr, "Italy"@en, "Italië"@nl, "Itàlia"@ca, "Italija"@hr, "Italija"@lt, "Italija"@sl, "Włochy"@pl, "Olaszország"@hu, "Италия"@ru, "Италия"@bg, "Itália"@pt, "Itālija"@lv, "Italia"@fi, "Italia"@it, "Italia"@es, "Italia"@eu, "Italia"@ro, "Italja"@mt, "An Iodáil"@ga, "Itaalia"@et, "Itálie"@cs, "Ιταλία"@el ;
+	wgs84_pos:lat   "42.5" ;
+	wgs84_pos:long  "12.5" .
+
+<http://semium.org/time/18xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Thu Jan 01 01:00:00 CET 1801" ;
+	edm:end           "Mon Dec 31 00:19:32 CET 1900" ;
+	skos:prefLabel    "19й век"@ru, "19th"@en, "19th century"@en, "19..", "19e", "19e siècle"@fr, "19??", "19de eeuw"@nl, "19-th"@en .
+
+<http://data.europeana.eu/organization/1482250000004509050>
+	a               foaf:Organization ;
+	skos:prefLabel  "Оружейная палата"@ru, "Kongelig Rustkammer"@da, "Real Armería de Suecia"@es, "Livrustkammaren"@pl, "Livrustkammaren"@sl, "Livrustkammaren"@hu, "Livrustkammaren"@it, "Livrustkammaren"@lt, "Livrustkammaren"@pt, "Livrustkammaren"@sv, "Koninklijk Wapenkamer van Zweden"@nl, "Königliche Rüstkammer"@de, "Cabinet royal des armes"@fr, "Kuninkaallinen asevarasto"@fi, "The Royal Armoury"@en .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076>
+	a  edm:ProvidedCHO .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=42076&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=42076&resolution=highImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_42076/manifest> ;
+	ebucore:fileByteSize    "34678"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://vocab.getty.edu/aat/300036926>
+	a          skos:Concept ;
+	skos:note  "Middelen of mechanismen die worden gebruikt voor de verdediging of aanval in gevechten, bij het jagen of in oorlog."@nl, "Implementos o mecanismos usados para defensa o ataque en combates, cacerías, o la guerra."@es, "Implements or mechanisms used for defense or attack in combat, hunting, or war."@en, "在戰鬥、狩獵或戰爭中，用於防衛或攻擊的工具或機械裝置。"@zh-hant, "Gerät oder Mechanismus, genutzt für Verteidigung oder Angriff im Kampf, bei der Jagd oder im Krieg."@de .
+
+<https://commons.wikimedia.org/wiki/File:Hedersvärja,_fäste_-_Livrustkammaren_-_5324.tif>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_42076>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-06-30T14:09:10.153Z" ;
+	dcterms:modified          "2019-11-15T07:11:48.622Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076#metadataTier>, <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> ;
+	edm:completeness          "10" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2064105_Royal_Armoury_Skokloster_Hallwyl" ;
+	edm:landingPage           <https://www.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_42076> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femuseumplus.lsh.se%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D42076%26resolution%3DhighImageResolution&type=IMAGE> .

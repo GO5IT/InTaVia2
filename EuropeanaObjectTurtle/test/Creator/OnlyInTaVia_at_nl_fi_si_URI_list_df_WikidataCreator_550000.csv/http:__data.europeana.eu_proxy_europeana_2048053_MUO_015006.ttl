@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_015006>
+	a                   ore:Proxy ;
+	dc:creator          "Daffinger, Moritz Michael" ;
+	dc:description      "Minijatura u ovalnom kadru, umetnuta u pravokutni okvir s reljefnim ornamentom u obliku snopa od lovorovog lišća i ponavljajućim motivom rozete. \u000APortret mlade žene u polufiguri u naglašenom okretu tijela i glave na desnu stranu. Skladna fizionomija izrazitih svjetlih očiju s kestenjastom kosom, počešljanom na simetričan bidermajerski način s uvojcima na obje strane glave.\u000AOdjevena je u bijelu haljinu sa širokim nabranim rukavima i  bijelim šalom prebačenim preko ramena, a na poprsju se ističe tanka zlatna ogrlica. S desne strane ispod uvojaka vidljiva je biserna naušnica. Djevojka je prikazana u dekorativno rješenom pejzažu, koji je sumarno naznačen. Tamna ploha u donjem dijelu kadra sugerira udaljene brijegove, a plava ploha prošarana bijelim tračcima sugerira oblake i prozračnost otvorenog krajolika." ;
+	dc:format           "image/jpg", "8.3 x 6 cm" ;
+	dc:identifier       "MUO_015006" ;
+	dc:subject          "bidermajer" ;
+	dc:title            "GROFICA SZECHENYI-SELLERN" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Paintings" ;
+	dcterms:medium      "tempera na bjelokosti" ;
+	dcterms:spatial     "Austrija" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_015006> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_015006> .
+
+<http://data.europeana.eu/item/2048053/MUO_015006#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:15.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_015006> .
+
+<http://athena.muo.hr/api/?semantic=representation&id=23135>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_015006/manifest> ;
+	ebucore:fileByteSize    "22274"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "344"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2048053/MUO_015006>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_015006>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_015006> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=23135> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=23135> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=23135> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/place/73>
+	a               edm:Place ;
+	owl:sameAs      <http://data.bnf.fr/ark:/12148/cb152383744>, <http://babelnet.org/rdf/s00007266n>, <https://g.co/kg/m/0h7x>, <http://zbw.eu/stw/descriptor/16950-4>, <http://vocab.getty.edu/tgn/1000062>, <http://id.ndl.go.jp/auth/ndlna/00568970>, <http://www.wikidata.org/entity/Q40>, <http://id.nlm.nih.gov/mesh/Z01.542.088>, <http://vocabularies.unesco.org/thesaurus/concept890>, <http://www.idref.fr/026359863/id>, <http://id.loc.gov/authorities/names/n79040121>, <https://www.freebase.com/m/0h7x>, <http://id.nlm.nih.gov/mesh/D001317>, <http://data.bnf.fr/ark:/12148/cb11862316m>, <http://www.yso.fi/onto/ysa/Y105294>, <http://datos.bne.es/resource/XX450936>, <http://dbpedia.org/resource/Austria>, <https://sws.geonames.org/2782113/>, <http://viaf.org/viaf/148842731>, <http://www.yso.fi/onto/yso/p105294>, <https://d-nb.info/gnd/4043271-3>, <http://id.worldcat.org/fast/1204901> ;
+	skos:altLabel   "La République d’Autriche"@fr, "Segona República d'Àustria"@ca, "Република Австрия"@bg, "República de Austria"@es, "Republic of Austria"@en, "Österreich"@hr, "Österreich"@en, "República da Áustria"@pt, "Österreich"@sv, "Österreich"@ru, "Δημοκρατία της Αυστρίας"@el, "Republika Austrija"@hr, "Republiek Oostenrijk"@nl, "República Federal d'Àustria"@ca, "Aut."@fr, "Autr."@fr, "Австрийская Республика"@ru, "Republica de Austria"@es, "Ostalriche"@ca, "Republik Österreich"@es, "Republik Österreich"@en, "Republik Österreich"@de, "Austria Vabariik"@et, "Itävallan tasavalta"@fi, "Repubblika tal-Awstrija"@mt, "RÖ"@es, "RÖ"@de, "Rakúska republika"@sk, "AUT"@nl, "AUT"@es, "AUT"@fr, "AUT"@en, "AUT"@de, "Республика Австрия"@ru, "República d'Àustria"@ca, "Austria"@ca, "Republika Austrii"@pl, "AT"@nl, "AT"@es, "AT"@fr, "AT"@en, "AT"@de ;
+	skos:note       "Pajjiż fl-Ewropa Ċentrali"@mt, "Stato dell'Europa centrale, membro dell'Unione europea"@it, "Государство в Западной Европе"@ru, "Država u srednjoj Europi"@hr, "Stat în Europa Centrală"@ro, "Staat in Mitteleuropa"@de, "Riik Kesk-Euroopas"@et, "Štát v strednej Európe"@sk, "Państwo w Europie"@pl, "Valsts Centrāleiropā"@lv, "Et land i Centraleuropa"@da, "Valtio Keski-Euroopassa"@fi, "Förbundsrepublik i Centraleuropa"@sv, "Χώρα της κεντρικής Ευρώπης"@el, "Land in Europa"@nl, "Pays d'Europe centrale"@fr, "Estat sense litoral a l'Europa Central"@ca, "Država v Evropi"@sl, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Stát ve střední Evropě"@cs, "País localizado na Europa Central"@pt, "Държава в Централна Европа"@bg, "País de Europa"@es ;
+	skos:prefLabel  "Austrija"@hr, "Austrija"@lt, "Austrija"@lv, "Rakúsko"@sk, "Avstrija"@sl, "Àustria"@ca, "Autriche"@fr, "Itävalta"@fi, "Austria"@en, "Austria"@it, "Austria"@es, "Austria"@et, "Austria"@eu, "Austria"@pl, "Austria"@ro, "Østrig"@da, "Awstrija"@mt, "Rakousko"@cs, "Österrike"@sv, "An Ostair"@ga, "Австрия"@ru, "Австрия"@bg, "Oostenrijk"@nl, "Áustria"@pt, "Αυστρία"@el, "Österreich"@de, "Ausztria"@hu ;
+	wgs84_pos:lat   "48.0" ;
+	wgs84_pos:long  "14.0" .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_015006>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:46:12.175Z" ;
+	dcterms:modified          "2015-11-03T10:46:12.175Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_015006#metadataTier>, <http://data.europeana.eu/item/2048053/MUO_015006#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_015006> ;
+	edm:completeness          "10" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_015006> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D23135&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_015006/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://athena.muo.hr/?object=detail&id=23135>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "13451"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_015006>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/73> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_015006> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_015006> .
+
+<http://data.europeana.eu/item/2048053/MUO_015006#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:15.660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_015006> .

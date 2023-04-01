@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8822304d.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4101"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#87CEEB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#5F9EA0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8822304d/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:05.432Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8822304d> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8822304d>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:57:19.912Z" ;
+	dcterms:modified          "2018-03-26T12:33:35.603Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8822304d> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8822304d.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8822304d>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1962" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8822304d> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8822304d>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8822304d> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8822304d.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:05.432Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8822304d> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8822304d>
+	a                   ore:Proxy ;
+	dc:creator          "Massard, Robert (1925-....). Baryton (voix)", "Slin, Serge. Interprète", "Dumont, E.. Auteur ou responsable intellectuel", "Borel-Clerc (1879-1959). Auteur ou responsable intellectuel", "Verneuil, Michèle. Chant", "Montero, Germaine (1909-2000). Chant", "Martini, Johann Paul Aegidius (1741-1816). Auteur ou responsable intellectuel", "Spahn, Adolf. Auteur ou responsable intellectuel", "Bertal, Marcel (1882-1953). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Ritz, Colette (1932-2007). Chant", "Garnier. Auteur ou responsable intellectuel", "Xanrof, Léon (1867-1953). Auteur ou responsable intellectuel", "Desormes, Louis-César (1840-1898). Auteur ou responsable intellectuel", "Marinier, Paul (1866-1953). Auteur ou responsable intellectuel", "Delormel. Auteur ou responsable intellectuel", "Krier, Georges (1872-1946). Auteur ou responsable intellectuel", "Poncin, Eugène (1860-1940). Auteur ou responsable intellectuel", "Berniaux, Désiré (1869-1960). Auteur ou responsable intellectuel", "Doniat, Aimé (1918-1973). Baryton (voix)", "Clin, Serge. Chant", "Willemetz, Albert (1887-1964). Auteur ou responsable intellectuel", "Christiné, Henri (1867-1941). Auteur ou responsable intellectuel", "Herbel, Émile (1863-1922). Auteur ou responsable intellectuel", "Trébitsch, Alexandre (18..-1937). Auteur ou responsable intellectuel", "Jacques-Charles (1882-1971). Auteur ou responsable intellectuel", "Mac-Nab, Maurice (1856-1889). Auteur ou responsable intellectuel", "Villard, Georges (18..-1927). Auteur ou responsable intellectuel", "Bénech, Ferdinand Louis (1875-1925). Auteur ou responsable intellectuel" ;
+	dc:date             "1962" ;
+	dc:description      "Titre uniforme : [Mes Caresses, sur les motifs de \u0022Gigolette-Fox\u0022]", "Titre uniforme : [Plaisir d'amour]", "Titre uniforme : [La Valse brune]", "Comprend : EN REVENANT DE LA REVUE / DELORMEL - GARNIER et L.C. DESORMES ; Aimé DONIAT ; avec accompagnement d'orchestre - DU GRIS / E. DUMONT et F.L. BENECH ; Germaine MONTERO ; avec accompagnement d'orchestre - VIENS, POUPOULE / TREBITSCH - H. CHRISTINE et A. SPAHN ; Serge CLIN ; avec accompagnement d'orchestre - LA VALSE BRUNE / G. VILARD et G. KRIER ; Michèle VERNEUIL ; avec accompagnement d'orchestre - LE PENDU / MAC NAB ; Aimé DONIAT ; avec accompagnement d'orchestre - LES PETITES BONNES / XANROF ; Germaine MONTERO ; avec accompagnement d'orchestre - MES CARESSES / Albert WILLEMETZ - Jacques CHARLES et Franz LEHAR ; Colette RITZ ; avec accompagnement d'orchestre - LE PRINTEMPS CHANTE / P. MARINIER et E. PONCIN ; Aimé DONIAT ; avec accompagnement d'orchestre - LES 4 Z'ETUDIANTS / XANROF ; Germaine MONTERO ; avec accompagnement d'orchestre - LES MAINS DE FEMME / E. HERBEL et D. BERNIAUX ; Serge CLIN ; avec accompagnement d'orchestre - PLAISIR D'AMOUR / MARTINI ; Aimé DONIAT ; avec accompagnement d'orchestre - UNE NOCE A LA CASCADE / P. MARINIER ; Aimé DONIAT ; avec accompagnement d'orchestre - LE FIACRE / XANROF ; Germaine MONTERO ; avec accompagnement d'orchestre - L'ENCLUME / M. BERTAL et BOREL-CLERC ; Robert MASSARD ; avec accompagnement d'orchestre", "Titre uniforme : [Viens poupoule]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Mes caresses]", "Contient une table des matières", "Titre uniforme : [Le fiacre]" ;
+	dc:format           "multipart/mixed", "1 disque : 33 t ; 30 cm", "disc"@eng, "Nombre total de vues :  18", "disque microsillon"@fre ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8822304d", "Numéro commercial : Vega  V30S919" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13873206r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13864285x"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13870923j"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38046961f"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13859342x"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13859146r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13871758w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13872967n"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13915972w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13872236f"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-12572" ;
+	dc:title            "LE JUKE-BOX DE GRAND-PAPA" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8822304d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8822304d> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8822304d>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "259119"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

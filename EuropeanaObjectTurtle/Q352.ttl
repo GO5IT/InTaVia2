@@ -1,0 +1,89 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/00901/1008586>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/00901/1008586> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/00901/1008586> .
+
+<http://data.europeana.eu/aggregation/provider/00901/1008586>
+	a                  ore:Aggregation ;
+	dc:rights          "Österreichische Mediathek" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/00901/1008586> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/virtuelles-museum/Politische_Propaganda/Politische_Propaganda_der_NS-Zeit/Propaganda_des_Anschlusses/Seite_39_39.htm/zone_doc_id=1001345> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/00901/1008586>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/00901/1008586>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T08:49:06.253Z" ;
+	dcterms:modified          "2014-06-27T08:49:06.253Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/00901/1008586#contentTier>, <http://data.europeana.eu/item/00901/1008586#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/00901/1008586> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "00901_AT_OsterreichischeMediathek_staatsvertrag_oa" ;
+	edm:landingPage           <https://www.europeana.eu/item/00901/1008586> ;
+	edm:language              "de" ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.mediathek.at/virtuelles-museum/Politische_Propaganda/Politische_Propaganda_der_NS-Zeit/Propaganda_des_Anschlusses/Seite_39_39.htm/zone_doc_id=1001345>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50283"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/proxy/provider/00901/1008586>
+	a                   ore:Proxy ;
+	dc:coverage         "20. Jahrhundert" ;
+	dc:creator          "Hitler, Adolf" ;
+	dc:date             "1938-03-12T00:00:00+00:00", "1938 03 12" ;
+	dc:description      "Hitler spricht hier, am Tag des deutschen Einmarsches in Österreich, genau jenen Punkt an, auf den sich nach 1945 die Diskussion über die NS-Zeit zuspitzen ließ: Täter oder Opfer?" ;
+	dc:format           "mp3" ;
+	dc:identifier       "1008586" ;
+	dc:language         "DE" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:source           "Österreichische Mediathek, 99-38007" ;
+	dc:subject          "Erinnerung - Rückblicke - Nationalsozialismus" ;
+	dc:title            "Empfang in Linz, Adolf Hitler" ;
+	dc:type             "audio" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/00901/1008586> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/00901/1008586> .
+
+<http://data.europeana.eu/item/00901/1008586#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:10.608Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/00901/1008586> .
+
+<http://data.europeana.eu/item/00901/1008586#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:10.609Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/00901/1008586> .

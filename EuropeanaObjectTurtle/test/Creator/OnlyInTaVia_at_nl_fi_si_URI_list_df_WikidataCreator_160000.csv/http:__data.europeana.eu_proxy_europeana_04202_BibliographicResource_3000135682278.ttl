@@ -1,0 +1,164 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135682278>
+	a                   ore:Proxy ;
+	dc:creator          "Desiderius Erasmus" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000078152" ;
+	dc:language         "mul" ;
+	dc:publisher        "Jo. Mangoldt" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Ratio seu methodas compendio perveniendi ad veram theologiam" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1786" ;
+	dcterms:spatial     "Pragae" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135682278> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000081056>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9376"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "218"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135682278>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/198> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	dcterms:spatial     <http://data.europeana.eu/place/202066>, <http://data.europeana.eu/place/79> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1786" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135682278> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135682278>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000081056> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000081056> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135682278#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:01.546Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135682278> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135682278>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/place/202066>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/79> ;
+	owl:sameAs        <https://d-nb.info/gnd/4076310-9>, <http://www.yso.fi/onto/yso/p105069>, <http://id.loc.gov/authorities/names/n79055764>, <http://dbpedia.org/resource/Prague>, <http://id.ndl.go.jp/auth/ndlna/00629158>, <http://babelnet.org/rdf/s00024930n>, <https://g.co/kg/m/05ywg>, <http://viaf.org/viaf/29146095207600371602>, <http://pleiades.stoa.org/places/118913/rdf>, <http://www.wikidata.org/entity/Q1085>, <http://www.yso.fi/onto/ysa/Y105069>, <https://www.freebase.com/m/05ywg>, <http://data.bnf.fr/ark:/12148/cb15239961p>, <https://sws.geonames.org/3067696/>, <http://vocab.getty.edu/tgn/7006464>, <http://www.idref.fr/026398702/id> ;
+	skos:altLabel     "Прухонице"@ru, "Столица Чехии"@ru, "Prague"@sl, "Pragae"@hu, "Prague"@es, "Prague"@it, "Prague"@lv, "Prague"@fi, "Prague"@sv, "Праг-Штадт"@ru, "Prahos miestas"@lt, "City of Prague"@en, "Praha"@ca, "Prags"@sv, "Praha"@da, "Praha"@ro, "Praha"@sl, "Praha"@es, "Praha"@hu, "Praha"@it, "Praha"@lv, "Praha"@en, "Praha"@pt, "Praha"@de, "Praha"@sv, "Praha"@ru, "Stovežatá"@sk, "Praag"@it, "Праге"@ru, "Prahos regionas"@lt, "Hlavní město Praha"@sk, "Hlavní město Praha"@cs, "Hlavní město Praha"@en, "Hlavné mesto Praha"@sk, "Prag"@nl, "Prag"@it, "Prag"@lv, "Prag"@fi, "Праг"@ru ;
+	skos:note         "Stolica Czech"@pl, "Glavno mesto Češke"@sl, "Capital de la República Txeca"@ca, "Capital and largest city of the Czech Republic"@en, "Hauptstadt und bevölkerungsreichste Stadt Tschechiens"@de, "Tšehhi Vabariigi pealinn"@et, "Capital da República Checa"@pt, "Capitala Republicii Cehe"@ro, "Glavni grad Češke"@hr, "Столица Чехии"@ru, "Belt kapitali taċ-Ċekja"@mt, "Huvudstad i Tjeckien"@sv, "Tšekin pääkaupunki"@fi, "Regione e capitale della Repubblica Ceca"@it, "Hlavní město Česka, historicky též Československa a Čech"@cs, "Csehország fővárosa"@hu, "Πρωτεύουσα και μεγαλύτερη πόλη της Τσεχίας"@el, "Столица на Чехия"@bg, "Hlavné mesto Česka"@sk, "Capitale de la Tchéquie"@fr, "Hoofdstad van Tsjechië"@nl, "Čehijas galvaspilsēta"@lv, "Capital de la República Checa"@es ;
+	skos:prefLabel    "Praha"@lt, "Praha"@fi, "Praha"@sk, "Praha"@et, "Praha"@cs, "Prág"@ga, "Prága"@hu, "Praag"@nl, "Прага"@ru, "Прага"@bg, "Prāga"@lv, "Πράγα"@el, "Prague"@fr, "Prague"@en, "Prag"@de, "Prag"@hr, "Prag"@sv, "Prag"@da, "Praga"@pt, "Praga"@sl, "Praga"@ca, "Praga"@mt, "Praga"@it, "Praga"@es, "Praga"@eu, "Praga"@pl, "Praga"@ro ;
+	wgs84_pos:alt     "235.0" ;
+	wgs84_pos:lat     "50.0875" ;
+	wgs84_pos:long    "14.421389" .
+
+<http://data.europeana.eu/place/79>
+	a               edm:Place ;
+	owl:sameAs      <https://d-nb.info/gnd/4303381-7>, <http://www.yso.fi/onto/ysa/Y107480>, <http://id.worldcat.org/fast/1256743>, <https://g.co/kg/m/01mjq>, <https://www.freebase.com/m/01mjq>, <http://viaf.org/viaf/137159957>, <http://data.bnf.fr/ark:/12148/cb12004532d>, <http://www.yso.fi/onto/yso/p107480>, <http://data.bnf.fr/ark:/12148/cb119797263>, <http://vocabularies.unesco.org/thesaurus/concept7343>, <http://babelnet.org/rdf/s00024932n>, <http://www.wikidata.org/entity/Q213>, <http://datos.bne.es/resource/XX453741>, <http://id.loc.gov/authorities/names/n90718759>, <http://dbpedia.org/resource/Czech_Republic>, <http://zbw.eu/stw/descriptor/18224-2>, <http://vocab.getty.edu/tgn/1001780>, <http://www.idref.fr/073704040/id>, <http://id.nlm.nih.gov/mesh/D018153>, <https://sws.geonames.org/3077311/>, <http://id.ndl.go.jp/auth/ndlna/00577401> ;
+	skos:altLabel   "Republiken Tjeckien"@sv, "República Txeca"@ca, "Rép. tch."@fr, "Cechia"@it, "Tschechische Republik"@de, "Tshekki"@fi, "Република Чехия"@bg, "Cseh Köztársaság"@hu, "Tshekinmaa"@fi, "Tsekki"@fi, "CZR"@en, "Τσεχική Δημοκρατία"@el, "Bohemia"@es, "Tsjechie"@nl, "CZ"@nl, "CZ"@fr, "Ċekja"@mt, "Chequia"@es, "República Checa"@pt, "Cz"@cs, "Bohémie"@fr, "Cz"@fr, "Cz"@en, "La République tchèque"@fr, "Tjeckiska republiken"@sv, "ČR"@pl, "ČR"@cs, "ČR"@en, "Чешская Республика"@ru, "Česká republika"@pl, "Česká republika"@sk, "Česká republika"@cs, "Česká republika"@en, "République tchèque"@fr, "CZE"@nl, "CZE"@en, "Tšehhi Vabariik"@et, "Republika Czeska"@pl, "Cze"@cs, "Cze"@en, "Czechia"@pl, "Czechia"@en, "Czechia"@de, "Tšekin tasavalta"@fi, "Tshekin tasavalta"@fi, "Tsjechische Republiek"@nl, "Česko"@pl, "Česko"@en, "Tšekinmaa"@fi, "Чешка република"@bg, "Republica Checa"@es ;
+	skos:note       "Tír i lár na hEorpa"@ga, "Állam Közép-Európában"@hu, "Republik i Centraleuropa"@sv, "Valsts Eiropā"@lv, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Pays d’Europe"@fr, "Държава в Централна Европа"@bg, "Государство в Европе"@ru, "Država u srednjoj Europi"@hr, "Country in Central Europe"@en, "Χώρα της κεντρικής Ευρώπης"@el, "País da Europa"@pt, "Staat in Mitteleuropa"@de, "Država v Evropi"@sl, "Valtio Keski-Euroopassa"@fi, "Riik Kesk-Euroopas"@et, "Stato dell'Unione Europea"@it, "Stát ve střední Evropě"@cs, "Państwo w Europie"@pl, "Europako erdialdeko herrialdea"@eu, "Land in Centraal-Europa"@nl, "Štát v strednej Európe"@sk, "Estat d'Europa"@ca, "Țară din Europa"@ro ;
+	skos:prefLabel  "Poblacht na Seice"@ga, "Češka"@hr, "Češka"@sl, "Repubblica Ceca"@it, "Repubblika Ċeka"@mt, "Tsjechië"@nl, "Txekia"@eu, "Czech Republic"@en, "Čekija"@lt, "Τσεχία"@el, "Чехия"@ru, "Чехия"@bg, "Tšehhi"@et, "Tjekkiet"@da, "Tjeckien"@sv, "Tchéquie"@fr, "Czechy"@pl, "Tschechien"@de, "Čehija"@lv, "Csehország"@hu, "Cehia"@ro, "República Checa"@es, "Chéquia"@pt, "Txèquia"@ca, "Tšekki"@fi, "Česko"@sk, "Česko"@cs ;
+	wgs84_pos:lat   "49.5" ;
+	wgs84_pos:long  "16.0" .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135682278>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T06:10:08.445Z" ;
+	dcterms:modified          "2015-12-04T13:46:04.581Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135682278> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135682278> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000081056&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/198>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/145446> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/206>, <http://data.europeana.eu/agent/59788> ;
+	owl:sameAs           <http://kulturarvsdata.se/LSH/agents/62465>, <http://dbpedia.org/resource/Erasmus>, <http://openlibrary.org/works/OL53336A>, <http://www.wikidata.org/entity/Q43499>, <http://data.bibliotheken.nl/id/thes/p068551959>, <http://data.cervantesvirtual.com/person/1590>, <https://g.co/kg/m/02rpq>, <http://viaf.org/viaf/87673996>, <http://data.bnf.fr/ark:/12148/cb11886243m>, <https://www.freebase.com/m/02rpq>, <https://libris.kb.se/20dg9h6l0n7mr32>, <http://id.loc.gov/authorities/names/n79055814>, <http://vocab.getty.edu/ulan/500045736>, <https://livedata.bibsys.no/authority/90055357>, <http://libris.kb.se/resource/auth/51858>, <http://lod.nl.go.kr/resource/KAC199608212>, <http://id.ndl.go.jp/auth/ndlna/00438957>, <http://id.worldcat.org/fast/1817492>, <http://d-nb.info/gnd/118530666>, <http://nlg.okfn.gr/resource/authority/record212336>, <urn:uuid:3d57cf71-45af-4e07-a6bd-d83773da9c21>, <http://www.idref.fr/085720372/id>, <http://ta.sandrart.net/-person-557>, <http://datos.bne.es/resource/XX846620> ;
+	rdaGr2:dateOfBirth   "1466-11-06" ;
+	rdaGr2:dateOfDeath   "1536-07-22" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/213830> ;
+	skos:altLabel        "Geert Geertsen"@de, "Desiderius Erasmus Rotterdamus"@cs, "Desiderius Erasmus Roterodamus"@fi, "Desiderius Erasmus Roterodamus"@de, "Desiderius Erasmus Roterodamus"@lv, "Desiderius Erasmus Roterodamus"@fr, "Desiderius Erasmus Roterodamus"@hu, "Desiderius Erasmus Roterodamus"@sl, "Desiderius Erasmus Roterodamus"@ca, "Герхардс Герхард"@ru, "Desiderius Erasmus Roterodamus"@en, "Desiderius Erasmus Roterodamus"@cs, "Desiderius Erasmus Roterodamus"@da, "Desiderius Erasmus Roterodamus"@nl, "Érasme"@cs, "Desidērijs Erasms"@lv, "Gerrit Gerritszoon"@lv, "Herasmus Gerritszoon"@hu, "Gerrit Gerritszoon"@fr, "Gerrit Gerritszoon"@hu, "Gerrit Gerritszoon"@sk, "Gerrit Gerritszoon"@cs, "Gerrit Gerritszoon"@pl, "Gerrit Gerritszoon"@nl, "Erasmus"@pt, "Erasmus"@et, "Erasmus"@cs, "Desiderius Erasmus av Rotterdam"@sv, "Desideri Erasme de Rotterdam"@ca, "Erasmus Von Rotterdam Erasmus"@en, "Desiderius Erasmus"@fi, "Desiderius Erasmus"@de, "Desiderius Erasmus"@pt, "Desiderius Erasmus"@lv, "Desiderius Erasmus"@hr, "Desiderius Erasmus"@fr, "Desiderius Erasmus"@hu, "Desiderius Erasmus"@sl, "Desideri Erasme"@ca, "Desiderius Erasmus"@ca, "Desiderius Erasmus"@sv, "Desiderius Erasmus"@en, "Desiderius Erasmus"@it, "Desiderius Erasmus"@es, "Desiderius Erasmus"@et, "Desiderius Erasmus"@pl, "Desiderius Erasmus"@da, "Desiderius Erasmus"@ro, "Desiderius Erasmus"@nl, "Erasmismo"@pt, "Rotterodamus Erasmus Desiderius"@cs, "Desiderius Erasmus Rotterdamilainen"@fi, "Erasmus Desiderius"@sl, "Erasmus Desiderius"@cs, "Ντεζιντέριους Εράσμους"@el, "Didier Érasme"@fr, "Desiderius erasmus roterodamus"@pt, "Erasmo de Rotterdam"@pt, "Erasmo de Rotterdam"@es, "Erasmus ó Rotterdam"@ga, "Geert Geerts"@de, "Geert Geerts"@sl, "Erasmus fra Rotterdam"@da, "Erasmo da Rotterdam"@cs, "Deziderij Erazem"@sl, "Erasmus Roterodamus"@ca, "Rotterdami Erasmus"@et, "Герхардс, Герхард"@ru, "Desiderius"@cs, "Erasms Roterdāmietis"@lv, "Geert Geertsz"@it, "Έρασμος"@el, "Rotterodamský Erasmus Desiderius"@cs, "Erasmus van Rotterdam"@nl, "Erazem Roterdamski"@sl, "Erasmus Rotterdamus"@sv, "Desiderius Erasmus Roterdamus"@fr, "Desiderius Erasmus Roterdamus"@nl, "Erasms Roterdamietis"@lv, "Desiderius eramus"@pt, "Desidério Erasmo"@pt, "Erasmus von Rotterdam"@lt, "Erasmus von Rotterdam"@en, "Erasmus von Rotterdam"@es, "Erasme"@fr, "Erasme"@ca, "Desiderius Erasmus of Rotterdam"@en, "Erasmus de Rotterdam"@ca, "Didier Erasme"@fr, "Erasmus från Rotterdam"@sv, "Desiderius Erasmus Rotherodamus"@hu, "Erazm z Roterdamu"@pl, "Desiderio Erasmo"@it, "Дезидериус Еразъм Ротердамски"@bg, "Desiderio Erasmo"@es, "Erasmo de Roterdam"@pt, "Erasmo de Roterdam"@es, "Dezidērijs Erasms"@lv, "Erasmus Rotterdam"@en, "Gerhard Gerhardson"@pl, "Герхард Герхардс"@ru, "Erasme de Rotterdam"@fr, "Erasmus Rotterdamský"@sk, "Дезидерий Роттердамский"@ru, "Gerhard Gerhards"@sk, "Gerhard Gerhards"@sl, "Gerhard Gerhards"@es, "Gerhard Gerhards"@cs, "Еразъм"@bg, "Erazmas iš Roterdamo"@lt, "Erasmo"@es, "Erasmo de Roterdã"@pt, "Erasmus of Rotterdam"@en, "Erasms"@lv, "Desiderij Erazem Rotterdamski"@sl ;
+	skos:note            "Nederlands theoloog, filosoof, schrijver en humanist (1466-1536)"@nl, "Nīderlandiešu humānists un teologs"@lv, "Niederländischer Humanist"@de, "Nederländsk humanist"@sv, "Holandský myslitel a kanovník"@cs, "Filósofo, filólogo y teólogo neerlandés"@es, "Teologo, umanista e filosofo olandese"@it, "Крупнейший ученый Северного Возрождения"@ru, "Humanista i teòleg neerlandès"@ca, "Nederlandsk augustinerkorherre, teolog, humanist og latinist"@da, "Écrivain humaniste et théologien néerlandais"@fr, "Hollantilainen filosofi ja teologi"@fi, "Dutch Renaissance humanist, Catholic priest, and theologian"@en, "Niderlandzki humanista"@pl ;
+	skos:prefLabel       "Rotterdami Erasmus"@hu, "Erazmas Roterdamietis"@lt, "Еразъм Ротердамски"@bg, "Erazm z Rotterdamu"@pl, "Erasmus Rotterdamilainen"@fi, "Erasmus von Rotterdam"@de, "Erasme de Rotterdam"@ca, "Erasmus Rotterdamist"@et, "Erasmus Rotterdamský"@cs, "Erazmo Roterdamski"@hr, "Erasmus as Rotterdam"@ga, "Erasmo de Roterdão"@pt, "Erazmus Rotterdamský"@sk, "Érasme"@fr, "Erasmus"@nl, "Erasmus"@en, "Erasmus din Rotterdam"@ro, "Ντεζιντέριους Έρασμος"@el, "Erasmus af Rotterdam"@da, "Эразм Роттердамский"@ru, "Erasmo da Rotterdam"@it, "Erasmo de Róterdam"@es, "Erasmus av Rotterdam"@sv, "Roterdamas Erasms"@lv, "Erazem Rotterdamski"@sl .
+
+<http://lib.ugent.be/europeana/900000081056>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14756"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135682278#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:01.546Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135682278> .

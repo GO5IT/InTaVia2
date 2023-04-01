@@ -1,0 +1,137 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://digi.ub.uni-heidelberg.de/diglitData/introimage/salXIV9_2.jpg>
+	a  edm:WebResource .
+
+<http://diglit.ub.uni-heidelberg.de/image/salXIV9_2/1r.jpg/full/full/0/default.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpg" ;
+	dcterms:isReferencedBy  <http://digi.ub.uni-heidelberg.de/diglit/iiif/salXIV9_2/manifest.json> ;
+	ebucore:fileByteSize    "1212989"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2810"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1594"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://diglit.ub.uni-heidelberg.de/image/salXIV9_2/1r.jpg> .
+
+<http://data.europeana.eu/concept/2838>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q11086567>, <http://vocab.getty.edu/aat/300117130>, <http://www.yso.fi/onto/yso/p18438> ;
+	skos:note        "Teil eines Objektes, Kunstwerks, das zerstört oder entfernt wurde"@de, "Del av ett objekt som separerats från ursprungsobjektet"@sv, "Portion of an object that is torn, broken off from, or dislocated from its original whole"@en, "Partie d'un objet qui est déchirée, cassée ou disloquée de son tout d'origine"@fr, "Część obiektu oddzielona od pierwotnej całości"@pl ;
+	skos:prefLabel   "Fragmentti"@fi, "Fragmento"@es, "Фрагмент"@ru, "Úlomek"@cs, "Fragment"@sv, "Fragment"@de, "Fragment"@nl, "Fragment"@fr, "Fragment"@pl, "Fragment"@en .
+
+<http://data.europeana.eu/item/07932/diglit_salXIV9_2#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:32:32.427Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_salXIV9_2> .
+
+<http://data.europeana.eu/item/07932/diglit_salXIV9_2#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:32:32.427Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_salXIV9_2> .
+
+<http://data.europeana.eu/aggregation/provider/07932/diglit_salXIV9_2>
+	a                  ore:Aggregation ;
+	dc:rights          <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07932/diglit_salXIV9_2> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:isShownAt      <http://digi.ub.uni-heidelberg.de/diglit/salXIV9_2> ;
+	edm:isShownBy      <http://diglit.ub.uni-heidelberg.de/image/salXIV9_2/1r.jpg/full/full/0/default.jpg> ;
+	edm:object         <http://diglit.ub.uni-heidelberg.de/image/salXIV9_2/1r.jpg/full/full/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://digi.ub.uni-heidelberg.de/diglit/salXIV9_2>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "26423"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004516197>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca de la Universitat de Heidelberg"@ca, "Biblioteca de la Universidad de Heidelberg"@es, "Biblioteka Uniwersytecka w Heidelbergu"@pl, "bibliothèque de l'Université d'Heidelberg"@fr, "Heidelberg University Library"@en, "Библиотека университета Гейдельберга"@ru, "Universitätsbibliothek Heidelberg"@de .
+
+<http://data.europeana.eu/proxy/provider/07932/diglit_salXIV9_2>
+	a                   ore:Proxy ;
+	dc:creator          "Publius Vergilius Maro" ;
+	dc:description      "Shelfmark: Universitätsbibliothek Heidelberg, Cod. Sal. XIV,9 Nr. 2" ;
+	dc:identifier       "oai:digi.ub.uni-heidelberg.de:29821", "urn:nbn:de:bsz:16-diglit-298218" ;
+	dc:language         "la" ;
+	dc:rights           <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	dc:source           "Universitätsbibliothek Heidelberg" ;
+	dc:title            "Aeneis cum commentariis"@la ;
+	dc:type             "Fragment"@en, "Text" ;
+	dcterms:created     "1401", "15. Jh." ;
+	dcterms:isPartOf    "Sammlung29 - Salemer Handschriften"@de, "Digitalisierung wertvoller Bestände baden-württembergischer Bibliotheken"@de, "Handschriften"@de, "Heidelberger historische Bestände — digital: Codices Salemitani"@de ;
+	dcterms:spatial     "Bodenseeraum?"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_salXIV9_2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07932/diglit_salXIV9_2> .
+
+<http://data.europeana.eu/agent/60298>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/145323>, <http://data.europeana.eu/agent/61260> ;
+	owl:sameAs           <http://data.bnf.fr/ark:/12148/cb11887823w>, <http://d-nb.info/gnd/118626574>, <https://livedata.bibsys.no/authority/90056752>, <http://viaf.org/viaf/8069158070687608780002>, <http://dbpedia.org/resource/Virgil>, <https://g.co/kg/m/07yhg>, <http://viaf.org/viaf/2158158792840839040009>, <https://libris.kb.se/zw9cdw8h449v7nq>, <http://vocab.getty.edu/ulan/500337098>, <http://nlg.okfn.gr/resource/authority/record194480>, <http://lod.nl.go.kr/resource/KAC200411097>, <http://libris.kb.se/resource/auth/200505>, <http://www.idref.fr/026674327/id>, <https://www.freebase.com/m/07yhg>, <http://lod.nl.go.kr/resource/KAC199628865>, <http://data.bibliotheken.nl/id/thes/p068890133>, <http://kulturarvsdata.se/LSH/agents/62759>, <http://id.ndl.go.jp/auth/ndlna/00459674>, <http://datos.bne.es/resource/XX874783>, <http://id.loc.gov/authorities/names/n79014062>, <http://data.cervantesvirtual.com/person/61949>, <http://id.worldcat.org/fast/30908>, <http://viaf.org/viaf/2676159248164504870004>, <http://viaf.org/viaf/8194433>, <http://openlibrary.org/works/OL28294A>, <http://iconclass.org/82A(VIRGIL)>, <http://www.wikidata.org/entity/Q1398>, <http://ta.sandrart.net/-person-410> ;
+	rdaGr2:dateOfBirth   "-0069-10-13" ;
+	rdaGr2:dateOfDeath   "-0018-09-19" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/148568> ;
+	skos:altLabel        "P. Virgilio Marone"@it, "Publius Vergilius Maro"@nl, "Publius Vergilius Maro"@ca, "Vergilius"@hu, "Publius Vergilius Maro"@fr, "Publius Vergilius Maro"@it, "Vergilius"@it, "Publius Vergilius Maro"@de, "Publius Vergilius Maro"@pt, "Publius Vergilius Maro"@en, "Virgil"@cs, "P. Wergiliusz Maro"@pl, "Virgilio"@it, "Publi Virgili Maró"@ca, "Publio Virgilio Maron"@es, "Publio Virgilio Marón"@es, "Virgiliu"@ro, "Публий Вергилий Марон"@ru, "Públio Virgílio Maro"@pt, "Swan of Mantua"@en, "Mantuan Swan"@en, "P. V. M."@it, "Publiusz Wergiliusz Maro"@pl, "Públio Virgílio Marão"@pt, "Vergil"@en, "Virgilius"@nl, "Virgilius"@hu, "Vergílio"@pt, "Virgilius"@it ;
+	skos:note            "Ancient Roman poet"@en, "Древноримски поет"@bg, "Poet latin"@ro, "Römischer Dichter"@de, "Poeta romano, autor de la Eneida, las Bucólicas y las Geórgicas"@es, "Poeta romà del període August"@ca, "Poeta rzymski"@pl, "Romeins dichter"@nl, "Αρχαίος Ρωμαίος ποιητής"@el, "Római költő"@hu, "Romersk poet"@sv, "Poète romain"@fr, "Poeta romano clássico, autor de três grandes obras da literatura latina"@pt, "Poeta romano"@it, "Античный римский поэт"@ru ;
+	skos:prefLabel       "Vergilij"@sl, "Virgílio"@pt, "Vergilijus"@lt, "Vergil"@de, "Publio Virgilio Marone"@it, "Vergilius"@fi, "Vergilius"@sv, "Vergilius"@et, "Vergilius"@nl, "Vergílius"@sk, "Virgili"@ca, "Вергилий"@ru, "Вергилий"@bg, "Wergiliusz"@pl, "Virgil"@en, "Veirgil"@ga, "Vergilijs"@lv, "Virġilju"@mt, "Publije Vergilije Maron"@hr, "Virgile"@fr, "Publius Vergilius Maro"@hu, "Publius Vergilius Maro"@cs, "Publius Vergilius Maro"@ro, "Publius Vergilius Maro"@da, "Βιργίλιος"@el, "Virgilio"@es .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/07932/diglit_salXIV9_2>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-10T17:15:24.569Z" ;
+	dcterms:modified          "2018-03-22T10:50:07.183Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07932/diglit_salXIV9_2#metadataTier>, <http://data.europeana.eu/item/07932/diglit_salXIV9_2#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07932/diglit_salXIV9_2> ;
+	edm:completeness          "7" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "07932_L_DE_UniLibHeidelberg_handschriften_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/07932/diglit_salXIV9_2> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdiglit.ub.uni-heidelberg.de%2Fimage%2FsalXIV9_2%2F1r.jpg%2Ffull%2Ffull%2F0%2Fdefault.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://data.europeana.eu/item/07932/diglit_salXIV9_2>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/07932/diglit_salXIV9_2>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/60298> ;
+	dc:type             <http://data.europeana.eu/concept/2838> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1401" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_salXIV9_2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07932/diglit_salXIV9_2> .
+
+<http://diglit.ub.uni-heidelberg.de/image/salXIV9_2/1r.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .

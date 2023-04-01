@@ -1,0 +1,98 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/247> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:40.651Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3#contentTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/concept/247>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://purl.org/bncf/tid/1946>, <http://id.loc.gov/authorities/names/gf2014026976>, <https://d-nb.info/gnd/4043582-9>, <http://cv.iptc.org/newscodes/mediatopic/20000028>, <https://www.freebase.com/m/05lls>, <http://babelnet.org/rdf/s00059107n>, <http://id.loc.gov/authorities/names/sh85094900>, <http://id.ndl.go.jp/auth/ndlna/00564452>, <http://vocab.getty.edu/aat/300054147>, <http://www.wikidata.org/entity/Q1344>, <http://vocabularies.unesco.org/thesaurus/concept5396>, <http://id.loc.gov/authorities/genreForms/gf2014026976>, <http://iconclass.org/48C862>, <http://data.bnf.fr/ark:/12148/cb119367643>, <https://g.co/kg/m/05lls>, <http://dbpedia.org/ontology/Opera> ;
+	skos:note        "Gen muzical si teatral"@ro, "Género de música teatral"@es, "Form av musikteater"@sv, "Gênero artístico teatral"@pt, "Näyttämötaidemuoto"@fi, "Gènere de música teatral"@ca, "Musisk sceneværk"@da, "Artform combining sung text and musical score in a theatrical setting"@en, "Musikalische Gattung des Theaters"@de, "Muziek"@nl, "Sceniczne dzieło muzyczne wokalno-instrumentalne"@pl, "Genere teatrale e musicale in cui l'azione scenica è abbinata alla musica, al balletto e al canto"@it, "Жанр музыкально-драматического искусства"@ru, "Hudebně dramatická forma"@cs, "Muusikaline lavateos"@et, "Vokális-hangszeres drámai színpadi műfaj"@hu, "Μουσική σύνθεση που περιλαμβάνει συγχρόνως και σκηνική δράση"@el, "Hudobno-dramatický žáner"@sk, "Genre musical, théâtre chanté"@fr ;
+	skos:prefLabel   "Ooppera"@fi, "Ooper"@et, "Opera"@lt, "Opera"@lv, "Opera"@hr, "Opera"@hu, "Opera"@sk, "Opera"@sl, "Opera"@sv, "Opera"@en, "Opera"@it, "Opera"@eu, "Opera"@cs, "Opera"@pl, "Opera"@da, "Opera"@nl, "Όπερα"@el, "Опера"@ru, "Опера"@bg, "Opéra"@fr, "Òpera"@ca, "Operă"@ro, "Oper"@de, "Opra"@mt, "Ceoldráma"@ga, "Ópera"@pt, "Ópera"@es .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:51c8634e-1225-4db7-a218-bdd1dde595f3> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:40.651Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:51c8634e-1225-4db7-a218-bdd1dde595f3>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3>
+	a                   ore:Proxy ;
+	dc:contributor      "Raimondi, Gianni (Tenore; Lord Riccardo Percy)", "Mola, Norberto (Maestro del coro)", "Clabassi, Plinio (Basso; Lord Rochefort, fratello di Anna)", "Romani, Felice (Autore del libretto)", "Rumbo, Luigi (Tenore; Signor Hervey, uffiziale del re)", "Callas, Maria (Soprano; Anna Bolena, moglie di Enrico VIII)", "Gavazzeni, Gianandrea (Direttore)", "Donizetti, Gaetano (Compositore)", "Orchestra del Teatro alla Scala di Milano (Orchestra)", "Simionato, Giulietta (Mezzosoprano; Giovanna Seymour, damigella di Anna)", "Coro del Teatro alla Scala di Milano (Coro)", "Carturan, Gabriella (Contralto; Smeton, paggio e musico della regina)", "Rossi Lemeni, Nicola (Basso; Enrico VIII, re d'Inghilterra)" ;
+	dc:creator          "Donizetti, Gaetano" ;
+	dc:date             "1957 (recording)" ;
+	dc:description      "Donizetti, Gaetano da “Anna Bolena”, registrazione dal vivo, analogica, Registrazione dal vivo, Milano, Teatro alla Scala, 14 aprile 1957"@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/d/donizetti/> ;
+	dc:subject          "Opera"@it ;
+	dc:title            "Anna Bolena - Sposa a Percy"@it ;
+	dcterms:extent      "00:01:37.0" ;
+	dcterms:isPartOf    "Anna Bolena"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_51c8634e_1225_4db7_a218_bdd1dde595f3> .

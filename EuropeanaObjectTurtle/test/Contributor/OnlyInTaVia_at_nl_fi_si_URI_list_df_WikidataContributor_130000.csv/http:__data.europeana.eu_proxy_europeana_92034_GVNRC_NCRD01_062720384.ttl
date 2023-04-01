@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_062720384>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:062720384> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:062720384&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:062720384&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6192"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "88"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_062720384>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:06:58.103Z" ;
+	dcterms:modified          "2018-04-05T17:25:02.846Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_062720384> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A062720384%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_062720384>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_062720384> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:08.931Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_062720384> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_062720384>
+	a                   ore:Proxy ;
+	dc:contributor      "Jan van de Velde", "G.J. Thieme" ;
+	dc:creator          "G.J. Thieme" ;
+	dc:description      "Vindplaats: Dordrecht, Museum Van Gijn", "Tekst: Malheureux est l'homme dit Aristotel qui a la charge de plusieurs meres. Slaet hem vrij en spaert plack noch roe eer ick hem elders doe. Ick ben schier ontzint: kant niet verdraghen dat ghy mijn kindt soo hebt geslagen. Naar een gravure van J. van der Velde 1628" ;
+	dc:format           "fotolitho" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:062720384" ;
+	dc:rights           "Nationaal Gevangenismuseum", "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum" ;
+	dc:source           "[062720384], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "roe"@nl, "plak"@nl, "onderwijzer"@nl ;
+	dc:title            "Aritmetica" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "18XX" ;
+	dcterms:extent      "7,9 × 13,2 cm" ;
+	dcterms:isPartOf    "GVN", "NCRD01", "NCRD" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_062720384> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_062720384#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:08.931Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_062720384> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:062720384>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48337"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

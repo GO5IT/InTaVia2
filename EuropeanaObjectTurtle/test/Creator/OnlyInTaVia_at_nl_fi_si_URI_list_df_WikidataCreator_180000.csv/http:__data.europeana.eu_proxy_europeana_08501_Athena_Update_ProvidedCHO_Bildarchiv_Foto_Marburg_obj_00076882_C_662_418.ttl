@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T11:58:50.435383Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<https://iiif.europeana.eu/presentation/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj00076882> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/fmc662418> ;
+	edm:object         <http://www.bildindex.de/bilder/d/fmc662418> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://vocab.getty.edu/aat/300033618>
+	a          skos:Concept ;
+	skos:note  "Úsese para obras únicas en que las imágenes son formadas principalmente por la aplicación directa de pigmentos suspendidos en aceite, agua, yema de huevo, cera fundida u otro líquido, dispuesto en masas de color, sobre una superficie generalmente bidimensional."@es, "Beeldende werken waarin de voorstelling hoofdzakelijk wordt gevormd door het direct aanbrengen van pigment, in de vorm van kleurmassa's, op een over het algemeen tweedimensionaal vlak."@nl, "Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."@en, "Obras únicas nas quais as imagens são formadas principalmente pela aplicação direta de pigmentos suspensos em óleo, água, gema de ovo, cera fundida ou outro líquido, dispostos em massas de cor, sobre uma superfície geralmente bidimensional."@pt, "Individuelles Werk, bei dem die Darstellungen hauptsächlich durch das direkte Auftragen von Farbstoffen gebildet werden, die in Öl, Wasser, Eigelb, geschmolzenem Wachs oder anderer Flüssigkeit aufgelöst sind und bei dem die Farbmasse auf eine meist zweidimensionale Oberfläche aufgetragen wird."@de .
+
+<http://data.europeana.eu/proxy/europeana/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> .
+
+<http://www.bildindex.de/bilder/d/fmc662418>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY/manifest> ;
+	ebucore:fileByteSize    "606929"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1485"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF0F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://d-nb.info/gnd/118607499>
+	a                   edm:Agent ;
+	owl:sameAs          <http://www.wikidata.org/entity/Q44032>, <http://viaf.org/viaf/41850463>, <http://isni.org/isni/0000000120959938>, <http://id.loc.gov/rwo/agents/n50016083>, <http://dbpedia.org/resource/Egon_Schiele> ;
+	rdaGr2:dateOfBirth  "1890-06-12" ;
+	rdaGr2:dateOfDeath  "1918-10-31" ;
+	skos:altLabel       "Schiele, Egon Leo Adolf", "Šile, Ėgon", "Schiele" ;
+	skos:prefLabel      "Schiele, Egon" .
+
+<http://vocab.getty.edu/aat/300015050>
+	a               skos:Concept ;
+	skos:altLabel   "oil paints (paints)"@en, "oils (paints)"@en, "peintures à l'huile (oil paints)"@fr, "oil (paint)"@en, "paint, oil (paint)"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300015029> ;
+	skos:note       "A paint made by grinding pigments with a drying oil such as linseed oil. After 1940 alkyd binders were often added to oil paint to provide faster drying times."@en, "Pintura en la cual el aceite secante es el vehículo para el pigmento."@es, "Een verfstof waarin drogende olie als drager voor het pigment fungeert."@nl ;
+	skos:prefLabel  "Ölgemälde"@de, "pintura al óleo"@es, "peinture à l'huile (oil paint)"@fr, "oil paint (paint)"@en, "olieverf"@nl .
+
+<http://www.bildindex.de/document/obj00076882>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY>
+	a                   ore:Proxy ;
+	dc:creator          <https://d-nb.info/gnd/118607499> ;
+	dc:format           <http://vocab.getty.edu/aat/300015050> ;
+	dc:subject          "Tafelmalerei"@de, "Porträt einer Person (mit Namen) (allein)"@de, "Porträt, Selbstporträt eines Malers"@de ;
+	dc:title            "Selbstbildnis"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300033618> ;
+	dcterms:created     "1911 (Herstellung)"@zxx ;
+	dcterms:extent      "Höhe x Breite: 27,5 x 34 cm"@zxx ;
+	dcterms:spatial     "Wien (Standort)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> .
+
+<http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T11:58:50.434997Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> .
+
+<http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T13:16:54.676Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY#contentTier>, <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_3R2PMG4E4S7ITLHBMPXR2XRJWVH6CVJY> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Ffmc662418&type=IMAGE> .

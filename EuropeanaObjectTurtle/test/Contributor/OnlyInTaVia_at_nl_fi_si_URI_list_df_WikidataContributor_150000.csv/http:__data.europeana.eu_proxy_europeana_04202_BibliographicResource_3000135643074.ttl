@@ -1,0 +1,157 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135643074#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:08.201Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135643074> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135643074#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:08.201Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135643074> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135643074>
+	a                   ore:Proxy ;
+	dc:contributor      "Eduard Gerhardt", "Ludwig Schorn", "Leo von Klenze" ;
+	dc:creator          "Friedrich Wilhelm Thiersch" ;
+	dc:description      "Theil 1 von Fr. Thiersch, L. Schorn, Ed. Gerhardt und Leo von Klenze." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000228479" ;
+	dc:language         "de" ;
+	dc:publisher        "bei Gerhard Fleischer" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Reisen in Italien seit 1822" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1826" ;
+	dcterms:spatial     <http://sws.geonames.org/2879139/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135643074> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://sws.geonames.org/2879139/>
+	a               edm:Place ;
+	skos:prefLabel  "Leipzig (Herstellung)" .
+
+<http://lib.ugent.be/europeana/900000086133>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14690"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135643074>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000086133> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000086133> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/129169>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q96677>, <http://d-nb.info/gnd/116571101>, <http://dbpedia.org/resource/Eduard_Gerhardt>, <https://g.co/kg/m/0gyx6gw>, <http://viaf.org/viaf/96083154>, <https://www.freebase.com/m/0gyx6gw>, <http://vocab.getty.edu/ulan/500059770> ;
+	rdaGr2:dateOfBirth   "1812-01-01" ;
+	rdaGr2:dateOfDeath   "1888-03-06" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/1210> ;
+	skos:note            "Saksamaa kunstnik"@et, "Artista tedesco"@it, "Ealaíontóir Gearmánach"@ga, "German artist (1812-1888)"@en, "Artist german"@ro, "Duits lithograaf (1812-1888)"@nl, "Artista alemán"@es, "Német festő, litográfus"@hu, "Artista alemany"@ca, "Artiste allemand"@fr, "Deutscher Maler und Lithograf"@de ;
+	skos:prefLabel       "Eduard Gerhardt"@ca, "Eduard Gerhardt"@nl, "Eduard Gerhardt"@da, "Eduard Gerhardt"@sl, "Eduard Gerhardt"@es, "Eduard Gerhardt"@hu, "Eduard Gerhardt"@fr, "Eduard Gerhardt"@it, "Eduard Gerhardt"@en, "Eduard Gerhardt"@pt, "Eduard Gerhardt"@sv, "Eduard Gerhardt"@fi, "Eduard Gerhardt"@de .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000086133>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3767"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "214"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135643074>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/160534>, <http://data.europeana.eu/agent/129169> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1826" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135643074> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135643074>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T05:12:25.405Z" ;
+	dcterms:modified          "2015-12-04T13:35:07.790Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135643074> ;
+	edm:completeness          "7" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135643074> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000086133&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/160534>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://id.worldcat.org/fast/74059>, <https://livedata.bibsys.no/authority/1030347>, <http://dbpedia.org/resource/Leo_von_Klenze>, <http://d-nb.info/gnd/118563211>, <http://vocab.getty.edu/ulan/500115569>, <http://viaf.org/viaf/52481510>, <https://www.freebase.com/m/09pqcj>, <https://g.co/kg/m/09pqcj>, <http://nlg.okfn.gr/resource/authority/record222217>, <http://www.wikidata.org/entity/Q60163>, <http://id.loc.gov/authorities/names/n81063500>, <http://openlibrary.org/works/OL688663A>, <http://data.bibliotheken.nl/id/thes/p068433042>, <http://data.bnf.fr/ark:/12148/cb13616364b>, <http://www.idref.fr/067217850/id> ;
+	rdaGr2:dateOfBirth             "1784-02-29" ;
+	rdaGr2:dateOfDeath             "1864-01-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/7450> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/1210> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47>, <http://data.europeana.eu/concept/94> ;
+	skos:altLabel                  "Leo Klenze"@de, "Franz Karl Leo von Klenze"@cs, "Кленце, Лео фон"@ru, "Franz Karl Leopold von Klenze"@sv, "Franz Karl Leopold von Klenze"@pl, "Фон Кленце"@ru, "Leo Von Klenze"@cs, "Leo Von Klenze"@en, "Кленце Лео фон"@ru, "Leo van Klenze"@en, "Лео Кленце"@ru, "Klenze, Leo von"@sv, "Klenze"@en, "Franz Leopold Karl von Klenze"@en, "Leo von Klenze"@pt, "Leo von Klenze"@el, "Кленце, Лео"@ru ;
+	skos:note                      "Německý architekt,  malíř a spisovatel"@cs, "Duits architect"@nl, "Arquitecto alemán"@es, "Германски архитект"@bg, "Német klasszicista műépítész"@hu, "Saksamaa arhitekt"@et, "Deutscher Architekt, Maler und Schriftsteller"@de, "Γερμανός αρχιτέκτονας"@el, "Arquitecte alemany"@ca, "Architetto tedesco"@it, "Architecte allemand"@fr, "German architect (1784-1864)"@en, "Немецкий архитектор, художник и писатель"@ru, "Arhitect german"@ro, "Ailtire Gearmánach"@ga ;
+	skos:prefLabel                 "Лео фон Кленце"@ru, "Леополд фон Кленце"@bg, "Λέο φον Κλέντσε"@el, "Franz Leo von Klenze"@pt, "Leo von Klenze"@it, "Leo von Klenze"@de, "Leo von Klenze"@sv, "Leo von Klenze"@fi, "Leo von Klenze"@en, "Leo von Klenze"@fr, "Leo von Klenze"@hu, "Leo von Klenze"@es, "Leo von Klenze"@et, "Leo von Klenze"@cs, "Leo von Klenze"@sl, "Leo von Klenze"@pl, "Leo von Klenze"@da, "Leo von Klenze"@ca, "Leo von Klenze"@nl .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135643074>
+	a  edm:ProvidedCHO .

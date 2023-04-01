@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/LEMU01:00112040-0>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51634"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_LEMU01_00112040_0>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/LEMU01:00112040-0> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:LEMU01:00112040-0&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:LEMU01:00112040-0&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8212"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "243"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:19.404Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_LEMU01_00112040_0> .
+
+<http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:19.404Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_LEMU01_00112040_0> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_LEMU01_00112040_0>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:08:02.598Z" ;
+	dcterms:modified          "2018-04-05T17:07:30.423Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ALEMU01%3A00112040-0%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_LEMU01_00112040_0>
+	a                   ore:Proxy ;
+	dc:contributor      "Wouw I, Hillebrant Jacobsz van", "Delff, Willem Jacobsz." ;
+	dc:creator          "Delff, Willem Jacobsz." ;
+	dc:description      "Emanvels Van Meteren Historie der Neder-landscher ende haerder Na-buren Oorlogen ende geschiedenissen, Tot Den Iare M. VI.C XII. Nu de laestemael bij hem voor sijne doodt merckelijck verbetert en in, XXXII, boecken voltrocken, Is mede''hier by gevoegt des Autheurs leven. Verrijckt beneffens de Land-Caerte met bij na hondert correcte Conterfeijtsels vande voor treflijcste Personagien in dese Historie verhaelt Alle cierlijck na d''leven ghedaen ende in Coperen platen gesteken. Gedruckt int Jaer ons Heeren. M. DC. XIV. [1614]" ;
+	dc:format           "gegraveerde titelpagina, allegorischevoorstelling" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:LEMU01:00112040-0", "00112040/0" ;
+	dc:rights           "for information contact: Legermuseum"@en, "voor informatie: Legermuseum"@nl, "Legermuseum" ;
+	dc:source           "00112040/0 (gegraveerde titelpagina, allegorischevoorstelling), Het militaire leven, Nederlands Legermuseum, Delft" ;
+	dc:subject          "armharnas"@nl, "vrijheidshoed"@nl, "Bourgondische stormhoed met Hongaars vizier"@nl, "Tachtigjarige oorlog (1568-1648)"@nl, "lans"@nl, "Bourgondische Tijd (14e eeuw-15e eeuw)"@nl, "zwaard"@nl, "Pallas Athena"@nl ;
+	dc:title            "Titelpagina van: Historie der Neder-landscher ende haerder Na-buren Oorlogen ende geschiedenissen, Tot Den Iare M. VI.C XII" ;
+	dc:type             "Stillmage", "image" ;
+	dcterms:created     "1599-1614" ;
+	dcterms:isPartOf    "GVN", "LEMU01", "Het militaire leven", "LEMU01:PAR00112040" ;
+	dcterms:issued      "01-03-2004" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_LEMU01_00112040_0> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_LEMU01_00112040_0>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1916> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_LEMU01_00112040_0> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_LEMU01_00112040_0> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/1916>
+	a                skos:Concept ;
+	skos:exactMatch  <http://data.bnf.fr/ark:/12148/cb11958747d>, <https://d-nb.info/gnd/4053972-6>, <http://www.yso.fi/onto/ysa/Y160684>, <http://purl.org/bncf/tid/19034>, <http://www.yso.fi/onto/yso/p21518>, <http://babelnet.org/rdf/s00011081n>, <https://www.freebase.com/m/06y5r>, <http://vocab.getty.edu/aat/300037048>, <http://iconclass.org/45C13%28SWORD%29>, <http://www.wikidata.org/entity/Q12791>, <http://id.loc.gov/authorities/names/sh85131359>, <https://g.co/kg/m/06y5r> ;
+	skos:note        "Pitkäteräinen ase"@fi, "Arma bianca a lama lunga"@it, "Rodzaj siecznej broni białej"@pl, "Orgaren edota gurdiaren aurre eta atzealdeetan jartzen den makiletako bakoitza"@eu, "Arma blanca de dos talls"@ca, "Bladed weapon"@en, "Hieb- und Stichwaffe"@de, "Wapen"@nl, "Tipo de arma afiada maior que uma faca ou adaga"@pt, "Arme blanche à double tranchant composée d'une lame droite en métal"@fr, "Arma blanca de dos filos"@es, "Tuvcīņas aukstais ierocis, kas paredzēts ciršanai un duršanai"@lv, "Холодное оружие с прямым клинком"@ru, "Szúró- és vágófegyver"@hu, "Våben"@da, "Handvapen att sticka och/eller hugga med"@sv ;
+	skos:prefLabel   "Zwaard"@nl, "Sword"@en, "Espasa"@ca, "Miekka"@fi, "Ezpata"@eu, "Меч"@ru, "Меч"@bg, "Zobens"@lv, "Meč"@sk, "Meč"@sl, "Meč"@cs, "Ξίφος"@el, "Mač"@hr, "Sværd"@da, "Mõõk"@et, "Spadă"@ro, "Claíomh"@ga, "Svärd"@sv, "Kard"@hu, "Espada"@pt, "Espada"@es, "Épée"@fr, "Kalavijas"@lt, "Miecz"@pl, "Schwert"@de, "Spada"@it .

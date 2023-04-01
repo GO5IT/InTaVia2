@@ -1,0 +1,137 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004504843>
+	a               foaf:Organization ;
+	skos:prefLabel  "palais Hallwyl"@fr, "Palacio Museo Hallwyl"@es, "Hallwyl Museum"@en, "Hallwyl Museum"@de, "Hallwyl Museum"@nl, "Hallwylin museo"@fi, "Hallwylska museet"@sv, "Халльвюльский музей"@ru, "Museu Hallwyl"@pt .
+
+<http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004504843> ;
+	edm:isShownAt      <http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=15686&viewType=detailView> ;
+	edm:isShownBy      <http://data.europeana.eu/itemhttp://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=\u002015686&resolution=superImageResolution> ;
+	edm:object         <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=15686&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://sws.geonames.org/2661886/>
+	a               edm:Place ;
+	skos:prefLabel  "Kingdom of Sweden (Herstellung)" .
+
+<http://data.europeana.eu/proxy/provider/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686>
+	a                    ore:Proxy ;
+	dc:creator           "Gerard Edelink (Edelinck) (Konstnär, , )"@sv, "Peter Paul Rubens (Konstnär, av original, )"@sv ;
+	dc:description       "Emottagen av Walther von Hallwyl som arv efter hans föräldrar."@sv ;
+	dc:identifier        "(Inv. nr. XXXIII:B.a.01.)", "15686" ;
+	dc:subject           "Grafik (Konst och konsthantverk)"@sv ;
+	dc:title             "Francois De Medicis, Grand Duc de Toscane"@sv ;
+	dc:type              "Kopparstick"@sv, <http://vocab.getty.edu/aat/300041341> ;
+	dcterms:extent       "Bredd: gravyr 27,5 cm", "Bredd: ram 35 cm", "Höjd: ram 57,5 cm", "Höjd: gravyr 49,7 cm" ;
+	dcterms:spatial      "Holland (Tillverkningsland)" ;
+	edm:currentLocation  <http://sws.geonames.org/10174619/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:28:01.860Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> .
+
+<http://vocab.getty.edu/aat/300041341>
+	a               skos:Concept ;
+	skos:altLabel   "gravures en taille-douce"@fr, "Kupferstiche (Druckgrafik)"@de, "copperplate engravings (visual works)"@en, "chalcograph"@en, "engravings, copper (prints)"@en, "copperplate engraving (visual work)"@en, "grabado en cobre"@es, "kopergravure (prent)"@nl, "copper-engravings (visual works)"@en, "腐蝕銅版"@zh-hant, "gravure sur cuivre"@fr, "chalcographs"@en, "copper engraving (visual work)"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300041340> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:note       "Gravures waarbij de afbeelding is gesneden in een koperen plaat."@nl, "Estampas realizadas por el proceso de grabado en cobre."@es, "以銅版雕刻製成的版畫。"@zh-hant, "Prints made from an engraving in a copper plate."@en, "Druck, der von einer Gravierung auf einer Kupferplatte abgenommen wurde."@de ;
+	skos:prefLabel  "grabados en cobre"@es, "copper engravings (visual works)"@en, "t'ung pan tiao fa"@zh-latn-wadegile, "銅版雕法 (視覺作品)"@zh-hant, "gravures sur cuivre"@fr, "tong ban diao fa"@zh-latn-pinyin-x-notone, "tóng bǎn diāo fǎ"@zh-latn-pinyin-x-hanyu, "Kupferstich (Druckgrafik)"@de, "kopergravures (prenten)"@nl ;
+	skos:related    <http://vocab.getty.edu/aat/300190531> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=\u002015686&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686/manifest> .
+
+<http://data.europeana.eu/proxy/europeana/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Hallwylska museet/15686" ;
+	dc:type             <http://data.europeana.eu/concept/2275> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> .
+
+<http://sws.geonames.org/10174619/>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://sws.geonames.org/2661886/> ;
+	skos:prefLabel    "The Hallwyl Museum"@en, "The Hallwyl Museum" ;
+	wgs84_pos:lat     "59.33315" ;
+	wgs84_pos:long    "18.07462" .
+
+<https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=15686&resolution=highImageResolution>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "54329"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "254"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=15686&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/concept/2275>
+	a                skos:Concept ;
+	skos:altLabel    "Copperplate engraving"@en, "Calcografía"@es, "Estampa calcográfica"@es, "Chalcografie"@nl, "Chalcograph"@en, "Estampacion en hueco"@es, "Estampa calcografica"@es, "Calcografia"@es, "Grabado calcografico"@es, "Grabado calcográfico"@es, "Stampa calcografica"@it, "Estampación en hueco"@es, "Estampado en hueco"@es ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q18887969>, <http://d-nb.info/gnd/4033760-1>, <http://thesaurus.europeanafashion.eu/thesaurus/10785>, <http://vocab.getty.edu/aat/300041341> ;
+	skos:note        "Print from an engraving on copper intended as art or illustrations in books"@en, "Prent geproduceerd als afdruk van een gravure op een koperplaat"@nl, "Odbitka wykonana w technice miedziorytu"@pl, "Estampe produite par la technique de gravure sur cuivre"@fr, "Técnica de impresión"@es, "Kunstdruck oder Buchillustration eines Kupferstichs"@de ;
+	skos:prefLabel   "Гравирование на меди"@ru, "Gravura em cobre"@pt, "Grabado en cobre"@es, "Kopperstik"@da, "Miedzioryt"@pl, "Kupferstich"@de, "Copper engraving print"@en, "Χαλκογραφία"@el, "Chalcographie"@fr, "Calcografia"@ca, "Kopergravure"@nl, "Calcografia"@it .
+
+<http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-06-30T13:56:41.859Z" ;
+	dcterms:modified          "2019-11-15T07:11:48.622Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686#contentTier>, <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> ;
+	edm:completeness          "7" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2064105_Royal_Armoury_Skokloster_Hallwyl" ;
+	edm:landingPage           <https://www.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femuseumplus.lsh.se%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D15686%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:28:01.861Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Hallwylska_museet_15686> .

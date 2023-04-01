@@ -1,0 +1,107 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12136>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "26349"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhTzd6/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzd6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:57:48.056Z" ;
+	dcterms:modified          "2017-11-30T08:57:48.056Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhTzd6#contentTier>, <http://data.europeana.eu/item/0940424/_nnhTzd6#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhTzd6> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhTzd6> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F12136%2FDC-1568_pisarz_publiczny.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhTzd6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:46:29.390Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzd6> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzd6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:46:29.389Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzd6> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhTzd6>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1871" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzd6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzd6> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://zbc.uz.zgora.pl/Content/12136/DC-1568_pisarz_publiczny.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhTzd6/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhTzd6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhTzd6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12136> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/12136/DC-1568_pisarz_publiczny.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/12136/DC-1568_pisarz_publiczny.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzd6>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhTzd6>
+	a                   ore:Proxy ;
+	dc:creator          "Dou, Gerard (1613-1675)"@pl, "Payne, Albert Henry (1812-1902)"@pl, "Dow, Gerard (1613-1675)"@pl ;
+	dc:date             "1871"@pl ;
+	dc:description      "staloryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1568"@pl ;
+	dc:publisher        "M. Glücksberg"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "malarstwo holenderskie - 17 w."@pl, "malarstwo europejskie - 17 w."@pl, "grafika - 19 w."@pl, "Dou, Gerard (1613-1675)"@pl, "staloryt - 19 w."@pl, "Payne, Albert Henry (1812-1902)"@pl, "Holandia - malarstwo - 17 w."@pl, "Dow, Gerard (1613-1675)"@pl, "staloryt"@pl ;
+	dc:title            "Pisarz publiczny"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "15,0 x 12,5 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzd6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzd6> .

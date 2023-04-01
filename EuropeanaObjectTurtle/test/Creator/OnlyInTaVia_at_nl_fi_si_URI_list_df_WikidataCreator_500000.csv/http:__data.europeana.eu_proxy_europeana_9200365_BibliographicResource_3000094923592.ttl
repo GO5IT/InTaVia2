@@ -1,0 +1,138 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b10231934x/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "26577"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "192"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFEBCD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFDAB9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200521/ark__12148_btv1b10231934x>
+	a                   ore:Proxy ;
+	dc:creator          "Atelier royal de Strasbourg (1700). Fonction indéterminée", "Louis XIV (1643-1715 ; Roi de France et de Navarre). Fonction indéterminée" ;
+	dc:description      "Appartient à l’ensemble documentaire : Alsace1", "Appartient à l’ensemble documentaire : BNUStr004", "Appartient à l’ensemble documentaire : BNUStras1" ;
+	dc:format           "Nombre total de vues :  1", "2,31 g. : pièce biface. ; 20 mm", "image/jpeg" ;
+	dc:identifier       "Bibliothèque nationale et universitaire de Strasbourg, ARMOIREI-PLATEAU56(B1)" ;
+	dc:language         "Sans contenu linguistique" ;
+	dc:publisher        "(Strasbourg)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb41933806s"@fr ;
+	dc:rights           "public domain"@en, "domaine public"@fr, <https://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale et universitaire de Strasbourg, ARMOIREI-PLATEAU56(B1)"@fr ;
+	dc:subject          "2 deniers de l'atelier royal de Strasbourg ; Louis XIV"@fr, "Monnaies d'Alsace"@fr, <http://www.wikidata.org/entity/Q4406616>, "Monnaie royale de Strasbourg"@fr ;
+	dc:title            "2 deniers de l'atelier royal de Strasbourg sous Louis XIV ; 1700 ; type au buste du roi de profil au droit et aux trois fleurs de lis couronnées au revers"@fr ;
+	dc:type             "physical object"@en, "image fixe"@fr, "monnaie"@fr, "object"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200521/ark__12148_btv1b10231934x> .
+
+<http://data.europeana.eu/proxy/europeana/9200521/ark__12148_btv1b10231934x>
+	a                   ore:Proxy ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b10231934x" ;
+	dc:type             <http://data.europeana.eu/concept/1908> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/9200521/ark__12148_btv1b10231934x> ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200521/ark__12148_btv1b10231934x> .
+
+<http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-01T11:49:21.642382Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200521/ark__12148_btv1b10231934x> .
+
+<http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-01T11:49:21.641946Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200521/ark__12148_btv1b10231934x> .
+
+<http://data.europeana.eu/aggregation/europeana/9200521/ark__12148_btv1b10231934x>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:51:04.327Z" ;
+	dcterms:modified          "2022-06-01T06:44:23.281Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x#metadataTier>, <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200521_Ag_BnF_Gallica_typedoc_objets" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200521/ark__12148_btv1b10231934x> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b10231934x%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://www.wikidata.org/entity/Q4406616>
+	a                skos:Concept ;
+	skos:altLabel    "Objekt"@de, "предмет"@ru, "objeto material"@es, "předmět"@cs, "objet matériel"@fr, "objeto real"@es, "Ding"@de, "Cosa"@ca, "partially tangible object"@en, "ese"@et, "tárgy"@hu, "objecto"@pt, "élément"@fr, "objeto particular"@es, "voorwerp"@nl, "particular object"@en, "objeto tangible"@es, "element"@en, "objekt"@da, "objekt"@sk, "objekt"@cs, "objekt"@et, "föremål"@sv, "objekt"@sv, "something"@en, "конкретное"@ru, "objet tangible"@fr, "Objectes"@ca, "cose"@it, "chose"@fr, "tangible object"@en, "věc"@cs, "item"@en, "item"@fr, "oggetto"@it, "thing"@en, "quelque chose"@fr, "cosa"@es, "objet"@fr, "cosa"@it, "объект"@ru, "objecte concret"@ca, "concretum"@en, "objeto"@es, "konkrétní předmět"@cs, "existent object"@en, "grej"@sv, "sak"@sv, "něco"@cs, "object (tangible)"@en, "object"@en, "Konkretum"@de, "füüsiline ese"@et, "objeto determinado"@es, "coisa"@pt ;
+	skos:broader     <http://www.wikidata.org/entity/Q33104279>, <http://www.wikidata.org/entity/Q488383>, <http://www.wikidata.org/entity/Q96251598> ;
+	skos:exactMatch  dcterms:PhysicalResource, <https://schema.org/object>, <http://g.co/kg/g/12396twj> ;
+	skos:note        "een concreet begrip of concept"@nl, "etwas mit einer physikalischen Manifestation"@de, "oggetto con una manifestazione fisica"@it, "objeto con un referente físico"@es, "object with a physical referent"@en, "hmotná věc"@cs, "ett objekt som är ett fysiskt existerande föremål"@sv, "objet ayant une manifestation physique"@fr, "enhed"@da, "сущность"@ru, "obiect care prezintă o manifestare fizică"@ro, "entitat tangible"@ca ;
+	skos:prefLabel   "fysiskt objekt"@sv, "konkreettinen olio"@fi, "konkrétní objekt"@cs, "konkrét tárgy"@hu, "concretum"@nl, "konkrēts objekts"@lv, "obiect concret"@ro, "concrete object"@en, "konkret"@pl, "konkretes Objekt"@de, "objeto concreto"@es, "objeto concreto"@pt, "συγκεκριμένο αντικείμενο"@el, "oggetto concreto"@it, "konkreetne objekt"@et, "objecte"@ca, "objet concret"@fr, "конкретный объект"@ru, "konkret objekt"@da, "konkrétny objekt"@sk, "konkretus objektas"@lt ;
+	skos:related     <http://www.wikidata.org/entity/Q18205125> .
+
+<https://gallica.bnf.fr/ark:/12148/btv1b10231934x>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/view3if/ga/ark:/12148/btv1b10231934x/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b10231934x/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "jpg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b10231934x/manifest.json> ;
+	ebucore:fileByteSize    "991701"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1536"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "4096"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFC0CB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/view3if/ga/ark:/12148/btv1b10231934x/f1> .
+
+<http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200521/ark__12148_btv1b10231934x>
+	a                  ore:Aggregation ;
+	dc:rights          <https://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica> ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200521/ark__12148_btv1b10231934x> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <https://gallica.bnf.fr/ark:/12148/btv1b10231934x> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b10231934x/f1/full/full/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b10231934x/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/concept/1908>
+	a                skos:Concept ;
+	skos:altLabel    "Полноценная монета"@ru, "Монеты"@ru, "Fémpénz"@hu, "Kovanice"@hr, "Kovanci"@sl, "Monetos"@lt, "Moneda"@ro, "Monetară"@ro, "Muntgeld"@nl, "Muntstuk"@nl, "Реверс"@bg, "Monezi"@ro, "Effigies"@sv, "Pièces de monnaie"@fr, "Монети"@bg, "Κέρμα"@el, "Kleingeld"@nl, "Monedă naţională"@ro, "Mønter"@da, "Novec"@sl, "Monedă națională"@ro, "Pièce de monnaie"@fr, "Geldstuk"@nl, "Monete"@it, "Monede"@ro, "Münzgeld"@de, "Аверс"@bg, "Монета, деньги"@ru, "Goudstuk"@nl, "Pénzérme"@hu, "Münzen"@de, "Geldmünze"@de, "Geldstück"@de ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p11576>, <http://d-nb.info/gnd/4040629-5>, <http://thesaurus.europeanafashion.eu/thesaurus/10050>, <http://purl.org/bncf/tid/1461>, <http://nomisma.org/id/coin>, <https://www.freebase.com/m/0242l>, <http://data.bnf.fr/ark:/12148/cb13516317n>, <https://g.co/kg/m/0242l>, <http://iconclass.org/46B311>, <http://babelnet.org/rdf/s00020497n>, <http://id.ndl.go.jp/auth/ndlna/01197979>, <http://vocab.getty.edu/aat/300037222>, <http://www.wikidata.org/entity/Q41207>, <http://id.loc.gov/authorities/names/sh85027797> ;
+	skos:note        "Pieza de un material resistente que se emplea como medida de cambio"@es, "Morceau de matériau solide utilisé comme argent dans des transactions"@fr, "Κομμάτι σκληρού συνήθως υλικού με τυποποιημένες διαστάσεις που χρησιμοποιείται ως χρήμα"@el, "Pezzo di un materiale duro prodotto in grandi quantità e usato come strumento di pagamento"@it, "Stuk hard materiaal gebruikt als betaalmiddel"@nl, "Präglat stycke av metall, avsett att användas som betalningsmedel"@sv, "Zahlungsmittel"@de, "Metāla plāksnīte, kas kalpo par naudas vienību"@lv, "Objeto físico, pedaço de metal usado como dinheiro"@pt, "Peça feta d'un material resistent utilitzada com a mesura comuna per al valor material de les coses"@ca, "Metalowy krążek lub wielobok, o określonym wymiarze, wadze i wzorze plastycznym, służący jako środek płatniczy"@pl, "Kus raženého kovu vyráběného ve větších množstvích k usnadnění obchodu"@cs, "Betalingsmiddel"@da, "Rahaväline"@fi, "Кусок твёрдого материала, используемый при обмене и торговле"@ru, "Piece of hard material produced in large quantities to facilitate trade"@en ;
+	skos:prefLabel   "Moeda"@pt, "Munt"@nl, "Münze"@de, "Érme"@hu, "Monēta"@lv, "Νόμισμα"@el, "Moneta"@pl, "Moneta"@it, "Moneta"@lt, "Monnaie"@fr, "Monedă"@ro, "Mynt"@sv, "Minca"@sk, "Kolikko"@fi, "Монета"@ru, "Монета"@bg, "Kovanec"@sl, "Moneda"@es, "Moneda"@ca, "Mønt"@da, "Bonn"@ga, "Coin"@en, "Kovanica"@hr, "Mince"@cs, "Münt"@et .

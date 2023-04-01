@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P326N097>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P326N097> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P326N097&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P326N097>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P326N097> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P326N097&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3975"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "87"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P326N097>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:58:28.442Z" ;
+	dcterms:modified          "2018-04-05T18:03:19.663Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P326N097> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP326N097%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P326N097>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49980"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:02.281Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P326N097> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:02.282Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P326N097> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P326N097>
+	a                   ore:Proxy ;
+	dc:contributor      "Bleyswijck, François van (1671-1746)", "Terwesten, Augustinus (II) (1711-1781)", "Boitet, Reinier" ;
+	dc:creator          "Bleyswijck, François van (1671-1746)" ;
+	dc:description      "cum Privileg.;  Notitie: \u0022In de Luthersche Kerk.\u0022" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P326N097" ;
+	dc:rights           "For more information: Universiteitsbibliotheek Leiden"@en, "Universiteitsbibliotheek Leiden", "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl ;
+	dc:source           "[P326N097], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "[Gedenksteen van Johannes Schelhammer]" ;
+	dc:type             "StillImage" ;
+	dcterms:extent      "30,2 × 18,3 cm" ;
+	dcterms:isPartOf    "UBL01", "Topografie van Nederland", "GVN" ;
+	dcterms:medium      "ets/kopergravure", "image/jpeg" ;
+	dcterms:spatial     "Den Haag" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P326N097> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P326N097> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

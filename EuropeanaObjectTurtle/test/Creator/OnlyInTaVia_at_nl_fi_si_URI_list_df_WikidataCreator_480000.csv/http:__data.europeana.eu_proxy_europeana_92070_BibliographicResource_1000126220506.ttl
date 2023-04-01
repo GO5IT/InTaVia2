@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/92070/BibliographicResource_1000126220506/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220506#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:42.961Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220506> .
+
+<http://data.europeana.eu/aggregation/europeana/92070/BibliographicResource_1000126220506>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-05T19:39:01.957Z" ;
+	dcterms:modified          "2015-03-25T12:27:27.892Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506#metadataTier>, <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92070_Ag_EU_TEL_a0492_AustriaETravel" ;
+	edm:landingPage           <https://www.europeana.eu/item/92070/BibliographicResource_1000126220506> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F12430291.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220506>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220506#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:42.961Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220506> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92070/BibliographicResource_1000126220506>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1846> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92070/BibliographicResource_1000126220506> .
+
+<http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220506>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12430291> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/12430291.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/12430291.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.bildarchivaustria.at/Thumbnail/12430291.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92070/BibliographicResource_1000126220506>
+	a                   ore:Proxy ;
+	dc:creator          "Runk, Ferdinand", "Postl, Karl" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/12430291.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Brücke"@de, "Historic Place"@en, "Historic View"@en, "FKB Vues"@de ;
+	dc:title            "Die Brücke über die Sau bey Laibach. Vue du pont sur la Riviere Sau auprès de Laibach"@de ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0492> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92070/BibliographicResource_1000126220506> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220506> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/concept/1846>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q12280>, <http://babelnet.org/rdf/s00013077n>, <http://zbw.eu/stw/descriptor/19610-6>, <http://iconclass.org/46C112>, <http://id.loc.gov/authorities/names/sh85016829>, <http://purl.obolibrary.org/obo/ENVO_00000075>, <http://datos.bne.es/resource/XX526673>, <https://id.erfgoed.net/thesauri/erfgoedtypes/86>, <http://www.yso.fi/onto/yso/p14830>, <http://id.ndl.go.jp/auth/ndlna/00567253>, <https://schema.org/Bridge>, <https://d-nb.info/gnd/4008408-5>, <http://vocab.getty.edu/aat/300007836>, <http://data.bnf.fr/ark:/12148/cb11932837h>, <http://purl.org/bncf/tid/3942>, <http://www.geonames.org/ontology#S.BDG>, <http://vocabularies.unesco.org/thesaurus/concept4318>, <http://dbpedia.org/ontology/Bridge>, <https://www.freebase.com/m/015kr>, <https://g.co/kg/m/015kr> ;
+	skos:note        "Dopravná stavba spájajúca brehy riek, jazier, morí, strany údolí alebo prekleňujúca prekážky"@sk, "Rakennelma esteen yli"@fi, "Inženiertehniska celtne ceļa pārvadei pār apvidus šķēršļiem"@lv, "Bauwerk, das eine Straße, Bahnstrecke, einen Fluss oder ein anderes Hindernis überspannt und einen Weg darüber bietet"@de, "Oztopo fisiko bat gainditzeko eraikitako egitura"@eu, "Budowla służąca do przeprowadzania drogi komunikacyjnej nad przeszkodą wodną, składająca się z przęseł opartych za pośrednictwem łożysk na podporach (filarach, przyczółkach)"@pl, "Structure qui traverse et procure un passage par-dessus une route, une voie ferrée, un cours d'eau ou un autre obstacle"@fr, "Structură care se întinde și oferă o trecere peste un drum, cale ferată, râu sau alt obstacol"@ro, "Искусственное сооружение, возведённое через реку, озеро, пролив или любое другое физическое препятствие"@ru, "Konstrukcija, ki premošča in omogoča prehod preko ceste, železnice, reke ali druge ovire"@sl, "Estructura que atraviesa y proporciona un paso sobre un camino, vía férrea, río, o algún otro obstáculo"@es, "Τεχνική κατασκευή με την οποία επιτυγχάνεται ζεύξη δύο ή περισσοτέρων σημείων"@el, "Estructura construïda per a salvar un obstacle físic"@ca, "Structure that spans and provides a passage over a road, railway, river, or some other obstacle"@en, "Estrutura arquitetónica"@pt, "Dopravní stavba překonávající fyzické překážky"@cs, "Structuur die doorgang biedt door een weg, spoorlijn, rivier of ander obstakel te overspannen"@nl, "Konstruktion til transport som forbinder to punkter over en forhindring"@da, "Konstruktion som överbryggar och skapar en passage över en väg, järnväg, flod eller annat hinder"@sv, "Građevina"@hr, "Struttura mibnija biex tagħmel tajjeb għal ostaklu fiżiku u li tgħaqqad żewġ postijiet"@mt, "Struttura che si estende e fornisce un passaggio su strada, ferrovia, fiume o qualche altro ostacolo"@it ;
+	skos:prefLabel   "Silta"@fi, "Tiltas"@lt, "Ponte"@pt, "Ponte"@it, "Pod"@ro, "Tilts"@lv, "Bro"@sv, "Bro"@da, "Droichead"@ga, "Híd"@hu, "Brücke"@de, "Γέφυρα"@el, "Pont"@fr, "Pont"@ca, "Pont"@mt, "Brug"@nl, "Most"@hr, "Most"@sk, "Sild"@et, "Most"@sl, "Most"@cs, "Most"@pl, "Puente"@es, "Zubi"@eu, "Bridge"@en, "Мост"@ru, "Мост"@bg .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12430291>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.bildarchivaustria.at/Preview/12430291.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92070/BibliographicResource_1000126220506/manifest> ;
+	ebucore:fileByteSize    "1460711"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1133"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .

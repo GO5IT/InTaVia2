@@ -1,0 +1,99 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d>
+	a                   ore:Proxy ;
+	dc:contributor      "Votto, Antonino (Direttore)", "Zaccaria, Nicola (Basso; Callistene, gran sacerdote di GIove)", "Carbonari, Virgilio (Tenore; Un cristiano)", "Pelizzoni, Rinaldo (Tenore; Felice, governatore di Mitilene)", "Corelli Franco (Tenore; Poliuto, nobile armeno, marito di Paolina)", "Bardari, Giuseppe (Autore del libretto)", "Morresi, Giuesppe (Tenore; Un cristiano)", "Orchestra del Teatro alla Scala di Milano (Orchestra)", "Bastianini, Ettore (Baritono; Severo, proconsole)", "Donizetti, Gaetano (Compositore)", "De Palma, Piero (Tenore; Nearco, capo dei cristiani d'Armenia)", "Coro del Teatro alla Scala di Milano (Coro)", "Callas, Maria (Soprano; Paolina, figlia del governatore)" ;
+	dc:creator          "Donizetti, Gaetano" ;
+	dc:date             "1960 (recording)" ;
+	dc:description      "Donizetti, Gaetano da “Poliuto”, Orchestra del Teatro alla Scala di Milano, registrazione dal vivo, analogica, Severo - baritono - proconsole (Filippo Colini),Felice - basso - governatore di Mitilene (Anafesto Rossi),Paolina - soprano - figlia del governatore (Eugenia Tadolini),Poliuto - tenore - magistrato e sposo di Paolina (Carlo Baucardè),Callistene - basso - gran sacerdote di Giove (Marco Arati),Nearco - tenore - capo dei cristiani d'Armenia (Domenico Ceci),Cori e comparse di cristiani, magistrati, sacerdoti di Giove, popolo armeno, guerrieri romani"@it ;
+	dc:publisher        "EMI Classics"@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/d/donizetti/> ;
+	dc:subject          "Opera"@it ;
+	dc:title            "Poliuto - 07. Oggetto de' miei numi"@it ;
+	dcterms:extent      "00:03:05.1" ;
+	dcterms:isPartOf    "Poliuto"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:661e2554-5fd0-4429-aa6d-4153c941847d> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:661e2554-5fd0-4429-aa6d-4153c941847d>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/concept/247>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://purl.org/bncf/tid/1946>, <http://id.loc.gov/authorities/names/gf2014026976>, <https://d-nb.info/gnd/4043582-9>, <http://cv.iptc.org/newscodes/mediatopic/20000028>, <https://www.freebase.com/m/05lls>, <http://babelnet.org/rdf/s00059107n>, <http://id.loc.gov/authorities/names/sh85094900>, <http://id.ndl.go.jp/auth/ndlna/00564452>, <http://vocab.getty.edu/aat/300054147>, <http://www.wikidata.org/entity/Q1344>, <http://vocabularies.unesco.org/thesaurus/concept5396>, <http://id.loc.gov/authorities/genreForms/gf2014026976>, <http://iconclass.org/48C862>, <http://data.bnf.fr/ark:/12148/cb119367643>, <https://g.co/kg/m/05lls>, <http://dbpedia.org/ontology/Opera> ;
+	skos:note        "Gen muzical si teatral"@ro, "Género de música teatral"@es, "Form av musikteater"@sv, "Gênero artístico teatral"@pt, "Näyttämötaidemuoto"@fi, "Gènere de música teatral"@ca, "Musisk sceneværk"@da, "Artform combining sung text and musical score in a theatrical setting"@en, "Musikalische Gattung des Theaters"@de, "Muziek"@nl, "Sceniczne dzieło muzyczne wokalno-instrumentalne"@pl, "Genere teatrale e musicale in cui l'azione scenica è abbinata alla musica, al balletto e al canto"@it, "Жанр музыкально-драматического искусства"@ru, "Hudebně dramatická forma"@cs, "Muusikaline lavateos"@et, "Vokális-hangszeres drámai színpadi műfaj"@hu, "Μουσική σύνθεση που περιλαμβάνει συγχρόνως και σκηνική δράση"@el, "Hudobno-dramatický žáner"@sk, "Genre musical, théâtre chanté"@fr ;
+	skos:prefLabel   "Ooppera"@fi, "Ooper"@et, "Opera"@lt, "Opera"@lv, "Opera"@hr, "Opera"@hu, "Opera"@sk, "Opera"@sl, "Opera"@sv, "Opera"@en, "Opera"@it, "Opera"@eu, "Opera"@cs, "Opera"@pl, "Opera"@da, "Opera"@nl, "Όπερα"@el, "Опера"@ru, "Опера"@bg, "Opéra"@fr, "Òpera"@ca, "Operă"@ro, "Oper"@de, "Opra"@mt, "Ceoldráma"@ga, "Ópera"@pt, "Ópera"@es .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:15.940Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:15.941Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d#contentTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/247> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_661e2554_5fd0_4429_aa6d_4153c941847d> .

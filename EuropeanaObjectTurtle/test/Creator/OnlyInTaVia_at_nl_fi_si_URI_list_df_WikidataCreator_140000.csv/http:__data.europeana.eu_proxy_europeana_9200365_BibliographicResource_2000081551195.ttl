@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/f1> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52500033x>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:36:10.604Z" ;
+	dcterms:modified          "2018-07-23T15:34:17.106Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b52500033x> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b52500033x.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:39.498Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52500033x> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52500033x>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b52500033x> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b52500033x.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52500033x/manifest> ;
+	ebucore:fileByteSize    "50506"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "392"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52500033x/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b52500033x>
+	a                   ore:Proxy ;
+	dc:contributor      "Marot, Clément (1496-1544). Auteur du texte", "Bèze, Théodore de (1519-1605). Auteur du texte" ;
+	dc:creator          "Le Jeune, Claude (1530?-1600). Compositeur" ;
+	dc:date             "1608" ;
+	dc:description      "[Bible. A.T.. Psaumes (français). 1608]", "Appartient à l’ensemble documentaire : Brossard1", "Comprend : Fol. 3 v° - Misericorde au pauvre vicieux (Ps. LI/[I]) - Fol. 4 v° - Di moy malheureux (Ps. LII/[LI]) - Fol. 5 r° - Le fol malin (Ps. LIII/[LII]) - Fol. 5 v° - O Dieu tout puissant (Ps. LIIII/[LIII]) - Fol. 6 v° - Exauce ô mon Dieu (Ps. LV/[LIIII]) - Fol. 7 r° - Misericorde à moy (Ps. LVI/[LV]) - Fol. 7 v° - Aye pitié de moy (Ps. LVII/[LVI]) - Fol. 8 r° - Entre vous conseillers (Ps. LVIII/[LVII]) - Fol. 8 v° - Mon Dieu l'ennemy (Ps. LIX/[LVIII]) - Fol. 9 v° - O Dieu qui nous as deboutés (Ps. LX/[LXI]) - Fol. 10 r° - Enten à ce que je crie (Ps. LXI/[LX]) - Fol. 10 v° - Mon ame en Dieu (Ps. LXII/[LXI]) - Fol. 11 r° - O Dieu, je n'ay Dieu (Ps. LXIII/[LXII]) - Fol. 11 v° - Enten à ce que je veux dire (Ps. LXIIII/[LXIII]) - Fol. 12 r° - O Dieu la gloire (Ps. LXV/[LXIV]) - Fol. 12 v° - Or sus loüés (Ps. LXVI/[LXV]) - Fol. 13 r° - Dieu nous soit doux (Ps. LXVII/[LXVI]) - Fol. 13 v° - Que Dieu se montre (Ps. LXVIII/[LXVII]) - Fol. 14 v° - Helas ! Seigneur (Ps. LXIX/[LXVIII]) - Fol. 15 v° - O Dieu ou mon espoir (Ps. LXX/[LXIX]) - Fol. 16 r° - I'ay mis en toy (Ps. LXXI/[LXX]) - Fol. 16 v° - Tes jugemens (Ps. LXXII/[LXXI]) - Fol. 17 r° - Si est-ce que Dieu (Ps. LXXIII/[LXXII]) - Fol. 17 v° - D'ou vient Seigneur (Ps. LXXIIII/[LXXIII]) - Fol. 18 r° - O Seigneur loüé sera (Ps. LXXV/[LXXIV]) - Fol. 18 v° - C'est en Iudée (Ps. LXXVI/[LXXV]) - Fol. 19 r° - A Dieu ma voix (Ps. LXXVII/[LXXVI]) - Fol. 19 v° - Sois ententif (Ps. LXXVIII/[LXXVII]) - Fol. 20 v° - Les gens entrés sont (Ps. LXXIX/[LXXVIII]) - Fol. 21 v° - O pasteur d'Israël (Ps. LXXX/[LXXIX]) - Fol. 22 r° - Chantés gayement (Ps. LXXXI/[LXXX]) - Fol. 22 v° - Dieu est assis (Ps. LXXXII/[LXXXIII]) - Fol. 23 r° - Dieu ne soy plus à recoy (Ps. LXXXIII/[LXXXII]) - Fol. 23 v° - O Dieu des armées (Ps. LXXXIIII/[LXXXIII]) - Fol. 24 r° - Avec les tiens (Ps. LXXXV/[LXXXIV]) - Fol. 24 v° - Mon Dieu preste moy (Ps. LXXXVI/[LXXXV]) - Fol. 25 r° - Dieu pour fonder (Ps. LXXXVII/[LXXXVI]) - Fol. 25 v° - O Dieu eternel (Ps. LXXXVIII/[LXXXVII]) - Fol. 26 r° - Du Seigneur les bontés (Ps. LXXXIX/[LXXXVIII]) - Fol. 26 v° - Tu as esté Seigneur (Ps. XC/[LXXXIX]) - Fol. 27 r° - Qui en la garde (Ps. XCI/[XC]) - Fol. 27 v° - O que c'est chose belle (Ps. XCII/[XCI]) - Fol. 28 r° - Dieu est regnant (Ps. XCIII/[XCII]) - Fol. 28 v° - O eternel Dieu (Ps. XCIV/[XCIII]) - Fol. 29 r° - Sus egayon nous (Ps. XCV/[XCIV]) - Fol. 29 v° - Chantez à Dieu chanson (Ps. XCVI/[XCV]) - Fol. 30 r° - L'Eternel est regnant (Ps. XCVII/[XCVI]) - Fol. 30 v° - Chantés à Dieu nouveau cantique (Ps. XCVIII/[XCVII]) - Fol. 31 r° - Or est maintenant (Ps. XCIX/[XCVIII]) - Fol. 31 v° - Vous tous qui la terre (Ps. C/[XCIX])" ;
+	dc:format           "3 vol. in-4° obl., chacun de 32 ff.", "Nombre total de vues :  64" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b52500033x" ;
+	dc:language         "fre" ;
+	dc:publisher        "A Paris, par Pierre Ballard. 1608." ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb120082823", "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb43106392t", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43106392t" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Fonds du service reproduction, RESVM1-43" ;
+	dc:title            "Second livre, contenant cinquante pseaumes de David, mis en musique a III parties par Claud. Le Jeune,..." ;
+	dc:type             "Genre musical : psaume" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52500033x> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b52500033x>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1608" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52500033x> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52500033x.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7802"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "167"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52500033x>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "195897"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52500033x#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:39.497Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52500033x> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52500033x/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

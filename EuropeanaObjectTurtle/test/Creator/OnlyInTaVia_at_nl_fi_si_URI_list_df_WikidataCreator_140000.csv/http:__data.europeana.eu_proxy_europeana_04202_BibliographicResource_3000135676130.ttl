@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135676130>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000179763> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000179763> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135676130>
+	a                   ore:Proxy ;
+	dc:contributor      "Theodorus Jorissen" ;
+	dc:creator          "Constantijn Huygens" ;
+	dc:description      "Publiés pour la première fois, d'après les minutes de l'auteur, précédés d'une introduction par Theod. Jorissen." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000411329" ;
+	dc:language         "fr" ;
+	dc:publisher        "Nijhoff" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Mémoires de Constantin Huygens, Seigneur de Zuylichem, secrétaire et conseiller de Frédéric Henry, Guillaume II et Guillaume III /" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "CIV, 196 p." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1873" ;
+	dcterms:spatial     <http://sws.geonames.org/2747373/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135676130> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135676130#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:43.455Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135676130> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/agent/147162>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/1645> ;
+	owl:sameAs           <https://www.freebase.com/m/0jj7s>, <http://www.idref.fr/030385016/id>, <http://vocab.getty.edu/ulan/500020585>, <http://datos.bne.es/resource/XX5105525>, <https://livedata.bibsys.no/authority/1560455415291>, <https://g.co/kg/m/0jj7s>, <http://dbpedia.org/resource/Constantijn_Huygens>, <http://viaf.org/viaf/12442894>, <http://d-nb.info/gnd/118775391>, <http://www.wikidata.org/entity/Q560746>, <http://id.loc.gov/authorities/names/n50030360>, <http://openlibrary.org/works/OL5081724A>, <http://data.bibliotheken.nl/id/thes/p069146810>, <http://libris.kb.se/resource/auth/222921>, <http://openlibrary.org/works/OL251504A>, <http://data.bnf.fr/ark:/12148/cb130921246>, <http://id.worldcat.org/fast/10113>, <https://libris.kb.se/53hkmxcp2157nvb>, <urn:uuid:69f002da-1994-418d-9cc4-d8d544d64121> ;
+	rdaGr2:dateOfBirth   "1596-09-04" ;
+	rdaGr2:dateOfDeath   "1687-03-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40360> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40360> ;
+	skos:altLabel        "Гейгенс, Константин"@ru, "Constantijn Huigens"@nl, "Гейгенс Константин"@ru, "Гюйгенс, Константин"@ru, "Constantin Huygens de Zuilichem"@es, "Constantin Huygens de Zuilichem"@nl, "Constantijn Huygens heer van Zuilichen"@en, "Constantin Huygens de Zuilichem"@fr, "Constantin Huygens de Zuilichem"@it, "Constantin Huygens de Zuilichem"@en, "Constantin Huygens de Zuilichem"@de, "Constantin Huygens de Zuilichem"@pt, "Constantijn Huijgens"@nl, "Constantijn Huygens the Elder"@en, "Хёйгенс Константин"@ru, "Constantin, I Huygens"@en, "Константин Хейгенс"@ru, "Хейгенс"@ru, "Constantijn Huygens"@fr, "Хейгенс К."@ru, "Константин Хёйгенс"@ru, "Хёйгенс"@ru, "Constantin Huygens"@es, "Хейгенс Константин"@ru, "Constantijn, I Huygens"@en, "Гюйгенс Константин"@ru, "Хейгенс, Константин"@ru, "Хёйгенс, Константин"@ru, "Konstantijn Huygens"@de, "Constantine, I Huygens"@en, "Constantijn Huygens Sr."@nl, "Константин Гейгенс"@ru, "Constantijn, the elder Huygens"@en, "Константин Гюйгенс"@ru, "Хёйгенс К."@ru, "Constantijn, heer van Zuilichen Huygens"@en ;
+	skos:note            "Homme d'État, poète et compositeur néerlandais"@fr, "Niederländischer Dichter, Diplomat und Komponist"@de, "Nederlandse schrijver, dichter en componist (1596-1687)"@nl, "Poeta, compositore e diplomatico olandese"@it, "Нидерландский поэт, учёный и композитор"@ru, "Nederlandsk poet, skribent og komponist"@da, "Dutch writer, poet and composer (1596-1687)"@en, "Nederländsk poet, författare och kompositör"@sv ;
+	skos:prefLabel       "Constantijn Huygens"@de, "Constantijn Huygens"@fi, "Constantijn Huygens"@sv, "Constantijn Huygens"@pt, "Constantijn Huygens"@en, "Константейн Хёйгенс"@ru, "Constantijn Huygens"@it, "Constantijn Huygens"@es, "Constantijn Huygens"@sl, "Constantijn Huygens"@pl, "Constantijn Huygens"@da, "Constantijn Huygens"@ro, "Constantijn Huygens"@ca, "Constantijn Huygens"@nl, "Constantin Huygens"@fr .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://lib.ugent.be/europeana/900000179763>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135676130>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T06:00:46.592Z" ;
+	dcterms:modified          "2015-12-04T13:43:49.114Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130> ;
+	edm:completeness          "10" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135676130> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000179763&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135676130>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135676130#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:43.455Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135676130> .
+
+<http://sws.geonames.org/2747373/>
+	a               edm:Place ;
+	skos:prefLabel  "The Hague (Herstellung)" .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000179763>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2607"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "214"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135676130>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/147162> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1873" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135676130> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135676130> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

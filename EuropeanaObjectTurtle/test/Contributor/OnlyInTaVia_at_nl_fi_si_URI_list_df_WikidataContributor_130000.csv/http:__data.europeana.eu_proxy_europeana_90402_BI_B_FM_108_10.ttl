@@ -1,0 +1,152 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.61245>
+	a                              edm:Agent ;
+	edm:begin                      "1772-06-14" ;
+	edm:end                        "1828" ;
+	rdaGr2:dateOfBirth             "Darmstadt" ;
+	rdaGr2:dateOfDeath             "Bussum" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Portman, Ludwig Gottlieb"@nl, "Portman, Ludwig Gottlieb"@en .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.74269>
+	a                              edm:Agent ;
+	rdaGr2:professionOrOccupation  "publisher"@en ;
+	skos:prefLabel                 "Colnaghi & Co"@nl, "Colnaghi & Co"@en .
+
+<http://data.europeana.eu/aggregation/europeana/90402/BI_B_FM_108_10>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:18:52.561Z" ;
+	dcterms:modified          "2018-03-17T13:04:19.267Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/BI_B_FM_108_10#metadataTier>, <http://data.europeana.eu/item/90402/BI_B_FM_108_10#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/BI_B_FM_108_10> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/BI_B_FM_108_10> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2FZWeJ0xTrhSIad3n4t0Yt_hWofJQfcdW70hHk4qemqrd7dEK6C5PrrxW_-u973w5og4JTBSexHvtxR7Xjw-r6Mx-mTw%3Ds0&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.520365>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "58533"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/90402/BI_B_FM_108_10>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1804", "1829" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/BI_B_FM_108_10> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/BI_B_FM_108_10> .
+
+<http://data.europeana.eu/proxy/provider/90402/BI_B_FM_108_10>
+	a                       ore:Proxy ;
+	dc:contributor          "Pieneman, Jan Willem"@nl, "Bounach, C.F."@nl ;
+	dc:description          "Twee jongedames in Friese klederdracht op het ijs. De een zit in een slee, de andere staat op de schaats. Uit Hindeloopen of een plaats in de buurt. Onderdeel van een gebonden uitgave van de reeks van vierentwintig platen van Nederlandse klederdrachten in het Koninkrijk der Nederlanden aan het begin van de negentiende eeuw door Maaskamp, 1829."@nl ;
+	dc:format               "paper"@en, <http://vocab.getty.edu/aat/300014109>, "papier"@nl ;
+	dc:identifier           "BI-B-FM-108-10", "http://hdl.handle.net/10934/RM0001.COLLECT.520365" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Public Domain", "Publiek Domein" ;
+	dc:subject              <http://iconclass.org/41D3>, "1800 - 1807"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.4734", <http://iconclass.org/43C244>, "Hindeloopen"@nl, <http://iconclass.org/43C243>, <http://iconclass.org/41D2>, "Friesland"@nl ;
+	dc:title                "Herre goe! zel ji so klijd, nu Mokœrum te pikjen? / Hoe nu! zult gij zó gekleed, naar Molqueren Sleeden? / Quoi! avec ces beaux habits, vous allez en traîneau à Molqueren?"@nl, "Friese vrouwen op het ijs"@nl ;
+	dc:type                 "met de hand kleuren"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.28399", "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", "kostuumprent"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.98251", <http://vocab.getty.edu/aat/300041273>, "stippelets"@nl, "prent"@nl, "print"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.27413", "etching"@en, "etsen"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.1356", "boekillustratie"@nl ;
+	dcterms:created         "1829", "1804" ;
+	dcterms:extent          "plaatrand breedte 159 mm"@nl, "plaatrand hoogte 238 mm"@nl, "height 238 mm"@en, "width 159 mm"@en ;
+	dcterms:isPartOf        "collectie: boeken", "collectie: Frederik Muller Historieplaten" ;
+	dcterms:isReferencedBy  "FMH 5580 b/10", "Atlas van Stolk 5888 D" ;
+	dcterms:spatial         "urn:rijksmuseum:thesaurus:RM0001.THESAU.4157", "Londen", "Amsterdam", "urn:rijksmuseum:thesaurus:RM0001.THESAU.17", "urn:rijksmuseum:thesaurus:RM0001.THESAU.41", "Netherlands", "London", "urn:rijksmuseum:thesaurus:RM0001.THESAU.4734", "Friesland", "Nederland" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/BI_B_FM_108_10> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/BI_B_FM_108_10> .
+
+<https://lh3.googleusercontent.com/ZWeJ0xTrhSIad3n4t0Yt_hWofJQfcdW70hHk4qemqrd7dEK6C5PrrxW_-u973w5og4JTBSexHvtxR7Xjw-r6Mx-mTw=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Public Domain"@en, "Publiek Domein"@nl ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/BI_B_FM_108_10/manifest> ;
+	ebucore:fileByteSize    "718070"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1831"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1232"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/90402/BI_B_FM_108_10/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.28777>
+	a                              edm:Agent ;
+	edm:begin                      "1761-06-29" ;
+	edm:end                        "1808-06-01" ;
+	rdaGr2:dateOfBirth             "Amsterdam" ;
+	rdaGr2:dateOfDeath             "Amsterdam" ;
+	rdaGr2:professionOrOccupation  "prentmaker" ;
+	skos:prefLabel                 "Kuyper, Jacques" .
+
+<http://data.europeana.eu/item/90402/BI_B_FM_108_10#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:11:37.268Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/BI_B_FM_108_10> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/90402/BI_B_FM_108_10>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/90402/BI_B_FM_108_10#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:11:37.267Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/BI_B_FM_108_10> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.13492>
+	a                              edm:Agent ;
+	edm:begin                      "1769-09-27" ;
+	edm:end                        "1834-01-31" ;
+	rdaGr2:dateOfBirth             "Vollenhove" ;
+	rdaGr2:dateOfDeath             "Amsterdam" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Maaskamp, Evert"@nl, "Maaskamp, Evert"@en .
+
+<http://data.europeana.eu/aggregation/provider/90402/BI_B_FM_108_10>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/BI_B_FM_108_10> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.520365> ;
+	edm:isShownBy      <https://lh3.googleusercontent.com/ZWeJ0xTrhSIad3n4t0Yt_hWofJQfcdW70hHk4qemqrd7dEK6C5PrrxW_-u973w5og4JTBSexHvtxR7Xjw-r6Mx-mTw=s0> ;
+	edm:object         <https://lh3.googleusercontent.com/ZWeJ0xTrhSIad3n4t0Yt_hWofJQfcdW70hHk4qemqrd7dEK6C5PrrxW_-u973w5og4JTBSexHvtxR7Xjw-r6Mx-mTw=s0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .

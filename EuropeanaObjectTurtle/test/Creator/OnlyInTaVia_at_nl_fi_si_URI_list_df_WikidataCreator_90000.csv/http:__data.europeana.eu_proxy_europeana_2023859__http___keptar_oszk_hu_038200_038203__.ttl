@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038200_038203__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038200_038203__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:38.971Z" ;
+	dcterms:modified          "2015-09-14T11:54:00.314Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038200%2F038203%2F1898_Oldal_009_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:37.971Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038200_038203__> .
+
+<http://keptar.oszk.hu/038200/038203>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038200_038203__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038200_038203__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038200/038203> ;
+	edm:object         <http://keptar.oszk.hu/038200/038203/1898_Oldal_009_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038200_038203__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description       "Ebbe a gazdag szinezetű környezetbe művészileg vannak beillesztve a terem nagy becsű falfestményei, melyeket díszes keretezés választ el a falak mezőinek többi részeitől. Ezek a falfestmények a dísztermet szinte nemzeti történelmi csarnokká teszik. Ragyogó szinezetükkel elénk tárják történelmünk kiváló alakjait. A jobboldali falon levő hatalmas nagy kép a vérszerződést ábrázolja, a mint a hét magyar vezér ősi szokás szerint vért ereszt karjából s így pecsétli meg a magyar alkotmány alapját. Kitűnő jellemzetes alakjai ezek az ősmagyaroknak. Mind megannyi daliás barna férfi azon kori harczosi öltözetben. Ezzel szemközt egy hasonló nagyságú kép I. Ferencz József király megkoronázását tűnteti föl, arczképi hűséggel ábrázolva úgy a királyt, mint a nagyfontosságú szertartásnál jelen volt országnagyokat. Székely Bertalan alkotásai e jeles művek, ki e két falfestményével újabb babért szerzett művészetének. A terem falainak többi nagyobb síkjain történelmünk legnagyobb alakjai láthatók időrendi sorban s hármasával csoportosítva, nevezetesen a három nagy ablak közötti jobb oldalon Szent István. Szent László és Könyves Kálmán, a bal oldalon pedig Zrinyi Miklós, Bethlen Gábor és II. Rákóczy Ferencz. Ezekkel szemközt, a karzat ívei alatt a jobb oldalon Nagy Lajos, Hunyadi János és Mátyás király, a baloldalon Széchenyi István, Kossuth Lajos és Deák Ferencz alakjai csoportosulnak. Ez a négy csoportkép is Székely Bertalan műve s méltó társai a két első nagy képnek. A terem szinezése ma még a frisseség miatt igen élénk, idők multával azonban, ha majd a szinek lassanként megtompulnak, rendkívül finom hatásúvá lesz az idővel elbarnúló padok színeivel együtt. (Forrás: Vasárnapi Ujság, 1898. január 2.) A kép minden szereplője egy-egy valós személy kifejező ábrázolása. Természetesen elgondolkodtató a festmény témájául szolgáló koronázás eseménye is a maga politikai tekervényeivel. Ferenc József már '49 óta a legyőzött Magyarország uralkodója, amikor '67-ben királlyá koronázták. A fejére az az Andrássy Gyula helyezi a koronát miniszterelnökként, akit az ő uralkodása alatt a szabadságharcban betöltött szerepe miatt akasztás általi halálra ítéltek. Az ítélet végrehajtása elől a gróf emigrációba kényszerült, és csak '57-ben tért haza, miután kegyelmet kapott. A másik koronázó személy Simor János hercegprímás. (Forrás: lakatosbotond.hu)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1539x890 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/038200/038203   [Metadata]" ;
+	dc:relation          "Székely Bertalan: I. Ferencz József megkoronáztatása 1867 junius 8-án [ http://keptar.oszk.hu/035800/035875]"@hu, "Lecher Ödön és Székely Bertalan - A kecskeméti városháza épülete [ http://www.lakatosbotond.hu/index.php?cikkek=kecskemet]"@hu, "Wikipédia: Városháza (Kecskemét) [ http://hu.wikipedia.org/wiki/Kecskem%C3%A9ti_V%C3%A1rosh%C3%A1za]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "History, local history"@hu, "jelenetkép"@hu, "historizmus"@hu, "koronázás"@hu, "Fine arts, visual arts"@hu, "falfestmény"@hu, "Ferenc József (Magyarország: király), I. (1830-1916)"@hu, "reprodukció"@hu ;
+	dc:title             "A király koronázása - Székely Bertalan falfestménye a közgyűlési teremben"@hu ;
+	dc:type              "újságrészlet"@hu, "painting"@hu ;
+	dcterms:alternative  "A kecskeméti új városház"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038200_038203__> .
+
+<http://keptar.oszk.hu/038200/038203/1898_Oldal_009_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "12112"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:37.972Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038200_038203__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038200_038203__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038200_038203__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038200_038203__> .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/9200579/kta3vdpc/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000044932001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Wellcome Collection"@en .
+
+<https://iiif.wellcomecollection.org/image/L0014704.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level1.json> .
+
+<https://wellcomecollection.org/works/kta3vdpc>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "263526"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/9200579/kta3vdpc>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-09T11:38:16.255Z" ;
+	dcterms:modified          "2019-06-09T11:38:16.255Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200579/kta3vdpc#metadataTier>, <http://data.europeana.eu/item/9200579/kta3vdpc#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200579/kta3vdpc> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200579_Ag_UK_WellcomeCollection_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200579/kta3vdpc> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FL0014704.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/9200579/kta3vdpc>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/kta3vdpc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200579/kta3vdpc> .
+
+<http://data.europeana.eu/item/9200579/kta3vdpc#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:24:40.180Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/kta3vdpc> .
+
+<https://iiif.wellcomecollection.org/image/L0014704.jpg/full/512,/0/default.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200579/kta3vdpc/manifest> ;
+	ebucore:fileByteSize    "119824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "465"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <https://iiif.wellcomecollection.org/image/L0014704.jpg> .
+
+<http://data.europeana.eu/aggregation/provider/9200579/kta3vdpc>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200579/kta3vdpc> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:isShownAt      <https://wellcomecollection.org/works/kta3vdpc> ;
+	edm:isShownBy      <https://iiif.wellcomecollection.org/image/L0014704.jpg/full/512,/0/default.jpg> ;
+	edm:object         <https://iiif.wellcomecollection.org/image/L0014704.jpg/full/500,/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/9200579/kta3vdpc>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200579/kta3vdpc>
+	a                   ore:Proxy ;
+	dc:description      "Lettering: Largitur natura parens pia tegmina brutis,/ Arboreumq́; genus gemino quoq; cortice velat:/ Solum hominem nudum in luminis abijcit auras,/ Damnat & obstrictum vinclorum nexibus arctis. P.G. 1563 ..."@en ;
+	dc:identifier       "b1184111", "kta3vdpc", "ICV No 7805", "L0014704" ;
+	dc:rights           "Credit: Wellcome Collection" ;
+	dc:source           "L0014704" ;
+	dc:title            "A woman representing Nature gives a baby to a mother; representing man's vulnerable and naked birth. Engraving by P. Galle, 1563." ;
+	dc:type             "Allegorical prints"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/kta3vdpc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200579/kta3vdpc> .
+
+<https://iiif.wellcomecollection.org/image/L0014704.jpg/full/500,/0/default.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "114475"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "454"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200579/kta3vdpc#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:24:40.180Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/kta3vdpc> .

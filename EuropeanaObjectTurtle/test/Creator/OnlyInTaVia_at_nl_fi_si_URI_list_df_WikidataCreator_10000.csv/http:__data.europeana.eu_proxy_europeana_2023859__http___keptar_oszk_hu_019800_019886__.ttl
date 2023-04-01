@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_019800_019886__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019800_019886__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/019800/019886> ;
+	edm:object         <http://keptar.oszk.hu/019800/019886/kerepesi_eotvos_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/1851>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p8507>, <http://purl.org/bncf/tid/849>, <https://d-nb.info/gnd/4018537-0>, <http://www.yso.fi/onto/ysa/Y95306>, <https://g.co/kg/m/0h36z>, <http://datos.bne.es/resource/XX525519>, <http://dbpedia.org/ontology/Cemetery>, <http://id.worldcat.org/fast/850521>, <http://vocab.getty.edu/aat/300266755>, <http://www.geonames.org/ontology#S.CMTY>, <http://id.nlm.nih.gov/mesh/D055699>, <http://www.wikidata.org/entity/Q39614>, <http://id.loc.gov/authorities/names/sh85021756>, <http://id.nlm.nih.gov/mesh/I01.076.201.450.550.150.500>, <http://data.bnf.fr/ark:/12148/cb11938920h>, <http://id.nlm.nih.gov/mesh/J03.150>, <https://schema.org/Cemetery>, <https://www.freebase.com/m/0h36z>, <http://babelnet.org/rdf/s00013984n>, <http://id.ndl.go.jp/auth/ndlna/00560906> ;
+	skos:note        "Lloc on es sepulten els difunts"@ca, "Local de enterro"@pt, "Lieu où l'on enterre les morts"@fr, "Groepering van graven"@nl, "Luogo di sepoltura dei defunti"@it, "Място, където се полагат тленните останки или пепел след кремация на починалите"@bg, "Áit adhlactha"@ga, "Bestattungsort verstorbener Menschen oder Tiere"@de, "Plats för begravning för många döda personer; område med många gravar"@sv, "Místo k uložení zemřelých osob nebo zvířat"@cs, "Miesto určené na pochovávanie mŕtvych"@sk, "Sted for begravelse"@da, "Kraj za pokop mrtvih"@sl, "Место погребения умерших"@ru, "Obszar, gdzie umieszcza się na stałe zwłoki lub prochy"@pl, "Vainajien hautaamista varten historiallisella ajalla suunnitelmallisesti perustettu ja merkitty alue"@fi, "Place of burial"@en, "Τόπος ταφής"@el, "Lugar donde se depositan los restos mortales o cadáveres de los difuntos"@es, "Vieta mirušo apbedīšanai"@lv, "Mjesto ukopa tijela preminulih ljudi"@hr ;
+	skos:prefLabel   "Cmentarz"@pl, "Cimetière"@fr, "Гробище"@bg, "Reilig"@ga, "Cemitério"@pt, "Begraafplaats"@nl, "Кладбище"@ru, "Hautausmaa"@fi, "Kalmistu"@et, "Gravplads"@da, "Begravningsplats"@sv, "Temető"@hu, "Cintorín"@sk, "Cimitir"@ro, "Friedhof"@de, "Hřbitov"@cs, "Hilerri"@eu, "Κοιμητήριο"@el, "Cementerio"@es, "Groblje"@hr, "Cemetery"@en, "Cimitero"@it, "Pokopališče"@sl, "Cementiri"@ca, "Kapinės"@lt, "Kapsēta"@lv .
+
+<http://keptar.oszk.hu/019800/019886>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_019800_019886__/manifest> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_019800_019886__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:28:53.416Z" ;
+	dcterms:modified          "2015-09-14T11:38:39.679Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F019800%2F019886%2Fkerepesi_eotvos_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_019800_019886__>
+	a                   ore:Proxy ;
+	dc:creator          "Varga ,  József  (photographer)"@hu, "Stróbl,  Alajos ( szobrász)"@hu ;
+	dc:description      "Eötvös Loránd, báró fizikus, egyetemi tanár, miniszter, az MTA tagja (l. 1873, r. 1883, ig. 1906). Eötvös József fia. A gravitációs tér kutatója, a rendszeres kísérleti és elméleti fizikai kutatások első hazai nagy művelője, a berlini Akadémia kültagja. Egyetemi tanulmányai folyamán Heidelbergben Kirchhoff, Bunsen és Helmholtz növendéke volt. Doktorátusát is itt szerezte 1870-ben. 1871-ben a pesti egyetemen a fizika magántanára, majd az elméleti fizika helyettes tanára, 1872-től r. tanára. 1878-ban Jedlik Ányos nyugalomba vonulása után a kísérleti fizikai tanszéket vette át. Berendezte a kísérleti fizikai intézetet. 1891&#8211;92-ben az egyetem rektora, 1889&#8211;1905 között az MTA elnöke volt. A 70-es évek elejétől két évtizedig a kapillaritás jelenségével foglalkozott. A felületi feszültségmérésre új módszert dolgozott ki (Eötvös-féle reflexiós módszer). Elméleti úton felismerte a folyadékok különböző hőmérsékleten mért felületi feszültsége és molekulasúlya közötti összefüggést. Ez Eötvös-féle törvényként ismeretes. A gravitáció felé a 80-as évek végén fordult érdeklődése. A gravitációs tér térbeli változásának mérésére megszerkesztette világhírűvé vált ingáját. 1891-ben kezdeményezésére alakult meg az Eötvös Fizikai Társaság elődje, a Mathematikai és Physikai Társulat, melynek elnöke lett. 1894. jún. 10-től 1895. jan. 15-ig vallás- és közoktatásügyi miniszter. 1895-ben létrehozta az édesapjáról elnevezett Eötvös-kollégiumot, amelynek első kurátora volt. Első Eötvös-ingás méréseit 1901-ben végezte a Balaton jegén. 1908-ban Pekár Dezsővel és Fekete Jenővel együtt igazolta, hogy a gravitációs erő 2 × 10&#8211;8 pontossággal független a tömeg anyagi minőségétől. E mérésével elnyerte a göttingeni egyetem Benecke-díját. A tehetetlen és a súlyos tömeg arányosságának ez az igazolása az általános relativitáselmélet kísérleti alapköve. Vizsgálatait a földmágnességre is kiterjesztette, s a mérésekhez műszereket szerkesztett. Felhívta a figyelmet a Coriolis-erő felléptére, majd ki is mutatta s ezzel a Föld forgásának újabb bizonyítékát adta. Vizsgálatok a gravitatio és a mágnesség köréből (Math. Term. tud. Ért., 1888) c. munkájával az MTA nagyjutalmát nyerte el (1890&#8211;96). A Tanácsköztársaság mint a dolgozó társadalom nagy halottját temette el. Nevét viseli 1949-től a budapesti tudományegyetem. A torziós ingás mérésekben használatos egységet róla nevezték el. A hazai turistamozgalomba is bekapcsolódott. Nyolc éven át elnöke volt az akkor alakult Magyar Turista Egyesületnek. (Forrás: Magyar Életrajzi Lexikon)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1704x2272 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/019800/019886   [Metadata]" ;
+	dc:relation         "Szilárd Leó [ http://keptar.oszk.hu/019500/019543]"@hu ;
+	dc:source           "Dr. Varga József honlapja"@hu ;
+	dc:subject          "Fine arts, visual arts"@hu, "Family, human relations"@hu, "temető"@hu, "szobor"@hu, "Eötvös Loránd (1848-1919)"@hu, "sírfelirat"@hu, "síremlék"@hu ;
+	dc:title            "Eötvös Loránd"@hu ;
+	dc:type             "photograph"@hu, "statue"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019800_019886__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:55.426Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019800_019886__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:55.426Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019800_019886__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/019800/019886/kerepesi_eotvos_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5548"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_019800_019886__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1851> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019800_019886__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_019800_019886__> .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_1SS0001929XX_AEAC>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T07:11:05.325Z" ;
+	dcterms:modified          "2022-03-11T11:28:52.536Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC#contentTier>, <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsounds.bl.uk%2Fwaveforms%2FEarly-wildlife-recordings%2F022A-1SS0001929XX-AEACA0.png&type=SOUND> .
+
+<https://sounds.bl.uk/embed/Environment/Early-wildlife-recordings/022M-1SS0001929XX-AEACV0>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059209/data_sounds_1SS0001929XX_AEAC/manifest> ;
+	ebucore:fileByteSize    "3609"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/soundgenres/soundgenres/Environment_recordings/Nature_sounds>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1910814>, <http://id.loc.gov/authorities/genreForms/gf2013025016> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note        "Sounds of nature, including animal and plant sounds and the sounds of the wind, rain, oceans, streams, etc. For ambient sounds see Soundscapes."@en ;
+	skos:prefLabel   "Nature sounds"@en, "Naturgeräusche"@de, "Sonidos de la naturaleza"@es, "Dźwięki przyrody"@pl, "Suoni della natura"@it, "Sons de la nature"@fr .
+
+<https://iiif.europeana.eu/presentation/2059209/data_sounds_1SS0001929XX_AEAC/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_1SS0001929XX_AEAC>
+	a                  ore:Aggregation ;
+	dc:rights          "The British Library Board acknowledges the intellectual property rights of those named as contributors to this recording and the rights of those not identified. Please refer to the library's legal and ethical usage page: https://sounds.bl.uk/Information/Legal-And-Ethical-Usage"@en ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <https://sounds.bl.uk/Environment/Early-wildlife-recordings/022M-1SS0001929XX-AEACV0> ;
+	edm:isShownBy      <https://sounds.bl.uk/embed/Environment/Early-wildlife-recordings/022M-1SS0001929XX-AEACV0> ;
+	edm:object         <https://sounds.bl.uk/waveforms/Early-wildlife-recordings/022A-1SS0001929XX-AEACA0.png> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://sounds.bl.uk/Environment/Early-wildlife-recordings/022M-1SS0001929XX-AEACV0>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_1SS0001929XX_AEAC>
+	a                   ore:Proxy ;
+	dc:contributor      "Koch, Ludwig"@en ;
+	dc:date             "1952" ;
+	dc:description      "Whitethroat song & calls taken from disc 3 of Singing Birds of Laeken (Les Oiseaux Chanteurs de Laeken). Recordings were made by Ludwig Koch using the EMI van which visited two of Belgium's Royal Parks at Laeken and Bouchoult from March to June 1938."@en ;
+	dc:identifier       "1SS0001929XX-AEAC" ;
+	dc:relation         "1SS0001929" ;
+	dc:subject          "Whitethroat"@en, <http://dbpedia.org/page/Wildlife>, "Sylviidae"@en, "Sylvia communis"@en, <http://data.europeana.eu/concept/soundgenres/soundgenres/Environment_recordings/Nature_sounds>, <https://www.wikidata.org/entity/Q26974> ;
+	dc:title            "Whitethroat: song & calls"@en ;
+	dcterms:extent      "0:01:13" ;
+	dcterms:isPartOf    <https://sounds.bl.uk/Environment/Early-wildlife-recordings>, "Les Oiseaux Chanteurs de Laeken", "Early wildlife recordings"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_1SS0001929XX_AEAC> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_1SS0001929XX_AEAC>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/1SS0001929XX-AEAC" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1952" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_1SS0001929XX_AEAC> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-03-11T11:35:48.254909Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_1SS0001929XX_AEAC> .
+
+<https://sounds.bl.uk/waveforms/Early-wildlife-recordings/022A-1SS0001929XX-AEACA0.png>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2059209/data_sounds_1SS0001929XX_AEAC#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-03-11T11:35:48.255151Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_1SS0001929XX_AEAC> .

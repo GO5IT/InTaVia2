@@ -1,0 +1,162 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688>
+	a  edm:ProvidedCHO .
+
+<file:///usr/local/tomcat/webapps/#TypSbirky:17117>
+	a               skos:Concept ;
+	skos:prefLabel  "Sochařství"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutor:6230688>
+	a               edm:Agent ;
+	skos:prefLabel  "Bohuslav Schnirch"@cs .
+
+<http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_6230688>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-21T12:38:58.750Z" ;
+	dcterms:modified          "2021-03-24T10:03:51.861Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688#contentTier>, <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688> ;
+	edm:completeness          "7" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "472_NM_HM_Narodni_muzeum_Historicke_muzeum" ;
+	edm:landingPage           <https://www.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688> ;
+	edm:language              "cs" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.esbirky.cz%2Fimg.php%3Fid%3D6230693&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004502224>
+	a               foaf:Organization ;
+	skos:prefLabel  "ESbírky"@en, "ESbírky"@cs .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:40:50.967503Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_6230688> .
+
+<file:///usr/local/tomcat/webapps/#Material:17290>
+	a               skos:Concept ;
+	skos:prefLabel  "Pískovec"@cs .
+
+<file:///usr/local/tomcat/webapps/#Predmet:6230688>
+	a               edm:Place ;
+	skos:prefLabel  "Praha"@cs .
+
+<http://data.europeana.eu/organization/1482250000045430001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Historical Museum"@en, "Historické muzeum"@cs .
+
+<http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_6230688>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045430001> ;
+	edm:isShownAt      <https://www.esbirky.cz/detail/6230688> ;
+	edm:isShownBy      <https://www.esbirky.cz/img.php?id=6230693> ;
+	edm:object         <https://www.esbirky.cz/img.php?id=6230693> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004502224> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/proxy/europeana/472/https___www_esbirky_cz_detail_6230688>
+	a                   ore:Proxy ;
+	dc:identifier       "https://www.esbirky.cz/detail/6230688" ;
+	dcterms:medium      <http://data.europeana.eu/concept/2121> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_6230688> .
+
+<http://data.europeana.eu/proxy/provider/472/https___www_esbirky_cz_detail_6230688>
+	a                   ore:Proxy ;
+	dc:coverage         <file:///usr/local/tomcat/webapps/#Predmet:6230688> ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#PredmetAutor:6230688> ;
+	dc:date             <file:///usr/local/tomcat/webapps/#PredmetDatText:6230688>, "1801-1-1" ;
+	dc:description      "Akrotérion z tympanonu budovy Národního muzea na Václavském náměstí v Praze" ;
+	dc:identifier       "H2-159565" ;
+	dc:relation         <file:///usr/local/tomcat/webapps/#TypSbirky:17117> ;
+	dc:title            "Gryf, okřídlené bájné zvíře"@cs ;
+	dcterms:created     "1801-1-1" ;
+	dcterms:extent      "v: 133 cm, š: 115 cm" ;
+	dcterms:medium      <file:///usr/local/tomcat/webapps/#Material:17290>, "Pískovec" ;
+	dcterms:spatial     <file:///usr/local/tomcat/webapps/#Lokalita:17193> ;
+	dcterms:temporal    <file:///usr/local/tomcat/webapps/#Datace:294948> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_6230688> .
+
+<https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_6230688/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<file:///usr/local/tomcat/webapps/#Datace:294948>
+	a               edm:TimeSpan ;
+	skos:note       "19. stol." ;
+	skos:prefLabel  "19. století"@cs .
+
+<file:///usr/local/tomcat/webapps/#Lokalita:17193>
+	a               edm:Place ;
+	skos:prefLabel  "Hlavní město Praha"@cs .
+
+<http://data.europeana.eu/concept/2121>
+	a                skos:Concept ;
+	skos:altLabel    "Pedra sorrenca"@ca, "Piedra Mar del Plata"@es ;
+	skos:broader     <http://data.europeana.eu/concept/1789> ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p15288>, <http://babelnet.org/rdf/s00069163n>, <http://d-nb.info/gnd/4127360-6>, <http://data.bnf.fr/ark:/12148/cb11961094h>, <http://purl.org/bncf/tid/28084>, <http://id.ndl.go.jp/auth/ndlna/00569937>, <https://www.freebase.com/m/06xky>, <https://g.co/kg/m/06xky>, <http://thesaurus.europeanafashion.eu/thesaurus/11060>, <http://www.wikidata.org/entity/Q13085>, <http://vocab.getty.edu/aat/300011376>, <http://id.loc.gov/authorities/names/sh85117245> ;
+	skos:note        "Sedimentär bergart"@sv, "Roca sedimentària"@ca, "Ιζηματογενές πέτρωμα"@el, "Kivilaji"@fi, "Sedimentární hornina"@cs, "Roche sédimentaire détritique issue de l’agrégation de grains majoritairement de la taille des sables"@fr, "Hornina sedimentárneho pôvodu"@sk, "Roca sedimentaria"@es, "Rocha Sedimentar"@pt, "Roccia sedimentaria"@it, "Обломочная осадочная горная порода"@ru, "Type of sedimentary rock"@en, "Sedimentgestein"@de ;
+	skos:prefLabel   "Zandsteen"@nl, "Sandsten"@sv, "Peščenjak"@sl, "Sandsten"@da, "Песчаник"@ru, "Hiekkakivi"@fi, "Sandstone"@en, "Piaskowiec"@pl, "Sandstein"@de, "Pješčenjak"@hr, "Smiltainis"@lt, "Grès"@fr, "Pieskovec"@sk, "Liivakivi"@et, "Pískovec"@cs, "Ψαμμίτης"@el, "Пясъчник"@bg, "Arenisca"@es, "Gaineamhchloch"@ga, "Arenito"@pt, "Arenaria"@it, "Homokkő"@hu, "Gres"@ca, "Gresie"@ro, "Smilšakmens"@lv .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_6230688#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:40:50.968131Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_6230688> .
+
+<https://www.esbirky.cz/detail/6230688>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://www.esbirky.cz/img.php?id=6230695>
+	a                edm:WebResource ;
+	dc:description   "H2-159565.jpg"@cs ;
+	dc:format        "image/jpeg" ;
+	dc:type          "image" ;
+	dcterms:created  "2014-09-18T15:02:09" ;
+	dcterms:issued   "2015-03-17T00:00:00" ;
+	edm:rights       <http://creativecommons.org/licenses/by/4.0/> .
+
+<file:///usr/local/tomcat/webapps/#PredmetDatText:6230688>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "1887"@cs .
+
+<https://www.esbirky.cz/img.php?id=6230693>
+	a                       edm:WebResource ;
+	dc:description          "H2-159565b.jpg"@cs ;
+	dc:format               "image/jpeg" ;
+	dc:type                 "image" ;
+	dcterms:created         "2014-09-18T15:02:09" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_6230688/manifest> ;
+	dcterms:issued          "2015-03-17T00:00:00" ;
+	ebucore:fileByteSize    "197020"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "768"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1024"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by/4.0/> .

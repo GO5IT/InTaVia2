@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110203>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:110203> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110203&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_110203>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2388> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008", "1889" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110203> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110203>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_110203>
+	a                   ore:Proxy ;
+	dc:contributor      "Tholen, Willem Bastiaan" ;
+	dc:creator          "Tholen, Willem Bastiaan" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:110203", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110203" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:110203], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "oude vrouw"@nl, "vrouwenportret"@nl, "en face"@nl, "schouderstuk"@nl, "hoed"@nl ;
+	dc:title            "Moeder Maris" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1889" ;
+	dcterms:extent      "41 x 35 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf", "doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110203> .
+
+<http://data.europeana.eu/concept/2388>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2397> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300046106>, <https://d-nb.info/gnd/4160830-6>, <https://www.freebase.com/m/02dl1y>, <http://iconclass.org/41D221%28HAT%29>, <https://g.co/kg/m/02dl1y>, <http://data.bnf.fr/ark:/12148/cb11935470z>, <http://id.loc.gov/authorities/names/sh85059282>, <http://id.ndl.go.jp/auth/ndlna/00560885>, <http://purl.org/bncf/tid/16579>, <http://babelnet.org/rdf/s00017718n>, <http://www.wikidata.org/entity/Q80151>, <http://thesaurus.europeanafashion.eu/thesaurus/10200> ;
+	skos:note        "Peça de roba que es col·loca al cap"@ca, "Головной убор из тульи и полей"@ru, "Prenda de vestir que se coloca en la cabeza; generalmente consta de un ala alrededor de la copa"@es, "Päähine"@fi, "Tvarovaná pokrývka hlavy"@cs, "Huvudbonad"@sv, "Kopfbedeckung"@de, "Shaped head covering, having a brim and a crown, or one of these"@en, "Pokrývka hlavy, vyrobená z plste, súkna, kože, látky alebo slamy rozmanitého tvaru"@sk, "Peça do vestuário que serve para proteger e/ou cobrir a cabeça"@pt, "Couvre-chef, devenu un accessoire de mode que l'on porte sur la tête"@fr, "Type hoofddeksel"@nl, "Copricapo"@it, "Hovedbeklædning"@da, "Liik peakatteid"@et, "Nakrycie głowy, zazwyczaj składające się z główki i ronda"@pl ;
+	skos:prefLabel   "Kapelusz"@pl, "Sombrero"@es, "Pălărie"@ro, "Hat"@en, "Hat"@da, "Cepure"@lv, "Klobúk"@sk, "Καπέλο"@el, "Skrybėlė"@lt, "Barret"@ca, "Kapela"@eu, "Hata"@ga, "Шляпа"@ru, "Hattu"@fi, "Klobouk"@cs, "Hatt"@sv, "Hut"@de, "Hoed"@nl, "Chapeau"@fr, "Chapéu"@pt, "Cappello"@it, "Kalap"@hu, "Kübar"@et, "Šešir"@hr, "Klobuk"@sl, "Шапка"@bg .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110203&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "39291"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "172"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110203#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:23.562Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110203> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110203#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:23.562Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110203> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110203>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:40.314Z" ;
+	dcterms:modified          "2018-04-05T18:11:00.043Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_110203> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_110203> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A110203%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:110203>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "52261"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

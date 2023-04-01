@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:29.881Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400225c> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400225c/manifest> ;
+	ebucore:fileByteSize    "17978"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "380"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400225c/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400225c>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:27.644Z" ;
+	dcterms:modified          "2018-07-23T15:38:18.833Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b7400225c> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b7400225c.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:29.882Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400225c> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400225c>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b7400225c> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400225c/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b7400225c.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b7400225c>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1810" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400225c> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400225c>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "188432"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b7400225c>
+	a                   ore:Proxy ;
+	dc:contributor      "Letronne, Louis René (1790-1842). Dessinateur", "Höfel, Blasius (1792-1863). Graveur" ;
+	dc:creator          "Beethoven, Ludwig van (1770-1827). Compositeur" ;
+	dc:date             "1810" ;
+	dc:description      "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [Polonaises. Orchestre d'harmonie. WoO 21. Ré majeur]", "Titre propre pris au départ. - Titre de la couv., sur une étiquette non autographe : \u0022Originale // von // Ludwig van Beethoven // Polonoise für Orchester // Comp: 1810 // Geb. 17 Dez. 770 + 26 März 827\u0022. - Pas de nomenclature au départ ; nomenclature partielle pour signaler des interversions entre les portées des bassons et clarinettes (p. 2 et 3) et des contrebassons et cors (p. 7 et 8). - Corrections, ratures et ajouts de plusieurs encres différentes. - Papier réglé à 16 portées de 6 x 259 mm par page (intervalle entre les portées : 6,5 mm). - Pagination originale à l'encre. - P. 13-14 inutilisées. - Au verso de la couv. est collée un portrait gravé : \u0022Ludwig van Beethoven / dessiné au crayon par Louis Letronne ; et gravé par Blas. Höfel 1814\u0022", "Présentation musicale : [Partition]" ;
+	dc:format           "Nombre total de vues :  18", "1 partition (12 p.) ; 23,5 x 32 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b7400225c" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14847190p", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42255699w" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-30" ;
+	dc:subject          "Polonaises (orchestre d'harmonie) -- 19e siècle -- Partitions"@fre ;
+	dc:title            "Polonaise // par Beethoven // 1810 // a Baden (manuscrit autographe)" ;
+	dc:type             "Genre musical : polonaise", "manuscript music"@eng, "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400225c> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400225c> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400225c.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4223"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "172"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

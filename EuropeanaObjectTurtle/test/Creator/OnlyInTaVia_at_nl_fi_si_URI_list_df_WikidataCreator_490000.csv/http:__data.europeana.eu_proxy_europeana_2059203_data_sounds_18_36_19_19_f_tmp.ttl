@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2059203/data_sounds_18_36_19_19_f_tmp>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004514750> ;
+	edm:isShownAt      <https://dansklyd.statsbiblioteket.dk/lydoptagelse/?eid=18-36-19-19_f.tmp> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://rdaregistry.info/termList/RDACarrierType/1003>
+	a               skos:Concept ;
+	skos:note       "包括腊筒、线筒等"@zh, "Incluye cilindros de cera, cilindros metálicos, etc."@es, "Comprend les cylindres de cire, cylindres de fil, etc."@fr, "Dazu gehören Wachszylinder, Drahtzylinder usw."@de, "Wax cylinders, wire cylinders, etc., are included."@en, "Inclou cilindres de cera, de filferro, etc."@ca, "Trục lăn sáp, trục lăn dây, v.v..., được bao gồm"@vi ;
+	skos:prefLabel  "audio cylinder"@en, "Phonographenzylinder"@de, "audiocilinder"@nl, "cylindre audio"@fr, "أسطوانة سمعية"@ar, "ljudcylinder"@sv, "cilindro audio"@it, "trục lăn audio"@vi, "cilindre àudio"@ca, "cilindro sonoro"@es, "录音筒"@zh .
+
+<http://data.europeana.eu/proxy/provider/2059203/data_sounds_18_36_19_19_f_tmp>
+	a                   ore:Proxy ;
+	dc:creator          "Leo Fall" ;
+	dc:identifier       "DFM36" ;
+	dc:publisher        "Dansk Fonograf Magasin" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music> ;
+	dc:title            "Dollar-Vals af: \u0022Dollarprinsessen\u0022 (Dollarprinzessin)" ;
+	dcterms:created     "1913" ;
+	dcterms:medium      <http://rdaregistry.info/termList/RDACarrierType/1003> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_18_36_19_19_f_tmp> .
+
+<http://data.europeana.eu/proxy/europeana/2059203/data_sounds_18_36_19_19_f_tmp>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/161561> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1913" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059203/data_sounds_18_36_19_19_f_tmp> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:55:47.187Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_18_36_19_19_f_tmp> .
+
+<https://dansklyd.statsbiblioteket.dk/lydoptagelse/?eid=18-36-19-19_f.tmp>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14130"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:55:47.188Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_18_36_19_19_f_tmp> .
+
+<http://data.europeana.eu/organization/1482250000004514750>
+	a               foaf:Organization ;
+	skos:prefLabel  "State and University Library"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/161561>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://libris.kb.se/resource/auth/247726>, <http://www.idref.fr/158163478/id>, <http://data.bibliotheken.nl/id/thes/p073143367>, <http://id.loc.gov/authorities/names/n84130992>, <https://libris.kb.se/0xbdhprj2nrbh4k>, <http://nlg.okfn.gr/resource/authority/record258270>, <http://datos.bne.es/resource/XX877374>, <http://data.carnegiehall.org/names/1010483>, <http://www.wikidata.org/entity/Q78585>, <http://id.worldcat.org/fast/144312>, <https://g.co/kg/m/0b938j>, <http://d-nb.info/gnd/116396717>, <http://openlibrary.org/works/OL2608695A>, <http://viaf.org/viaf/49407851>, <http://dbpedia.org/resource/Leo_Fall>, <https://www.freebase.com/m/0b938j>, <http://data.bnf.fr/ark:/12148/cb13893775c> ;
+	rdaGr2:dateOfBirth   "1873-02-02" ;
+	rdaGr2:dateOfDeath   "1925-09-16" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202091> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Фалль"@ru, "Фалль Лео"@ru, "Fall"@sv, "Fall"@nl, "Leopold Fall"@cs, "Лео Фалль"@ru ;
+	skos:note            "Østrigsk komponist"@da, "Austria helilooja"@et, "Compositor austríac"@ca, "Compositore austriaco"@it, "Austrian composer"@en, "Австрийский композитор"@ru, "Österreichischer Komponist, Kapellmeister und Vertreter der Operetten-Ära"@de, "Compositor austríaco"@pt, "Osztrák zeneszerző"@hu, "Österrikisk kompositör"@sv, "Rakouský hudební skladatel"@cs, "Compositeur"@fr, "Compozitor austriac"@ro, "Dirigent uit Oostenrijk (1873-1925)"@nl, "Director de orquesta y compositor checoaustriaco de operetas de ascendencia judía"@es ;
+	skos:prefLabel       "Фалль, Лео"@ru, "Leo Fall"@pl, "Leo Fall"@ro, "Leo Fall"@da, "Leo Fall"@nl, "Leo Fall"@ca, "Leo Fall"@es, "Leo Fall"@de, "Leo Fall"@fi, "Leo Fall"@sv, "Leo Fall"@en, "Leo Fall"@it, "Leo Fall"@fr, "Leo Fall"@hu, "Leo Fall"@et, "Leo Fall"@cs, "Leo Fall"@sk, "Leo Fall"@sl, "Leo Fall"@ga .
+
+<http://data.europeana.eu/aggregation/europeana/2059203/data_sounds_18_36_19_19_f_tmp>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T13:50:01.733Z" ;
+	dcterms:modified          "2016-07-08T13:50:01.733Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp#contentTier>, <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp> ;
+	edm:completeness          "0" ;
+	edm:country               "Denmark" ;
+	edm:datasetName           "2059203_Ag_EU_eSOUNDS_1005_Denmark" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059203/data_sounds_18_36_19_19_f_tmp> ;
+	edm:language              "da" .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://opc4.kb.nl/DB=1/PPN?PPN=311319920>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "9499"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056089895>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://opc4.kb.nl/DB=1/PPN?PPN=311319920> ;
+	edm:isShownBy      <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:135F25_5a:013v> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:135F25_5a:013v> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92065/BibliographicResource_1000056089895>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2909> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056089895> .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:135F25_5a:013v&role=thumbnail>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/2909>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/04jjh>, <https://d-nb.info/gnd/4008240-4>, <http://purl.org/bncf/tid/10307>, <http://babelnet.org/rdf/s00050802n>, <http://www.wikidata.org/entity/Q133492>, <http://purl.org/coar/resource_type/c_0857>, <http://id.loc.gov/authorities/names/sh85076220>, <https://www.freebase.com/m/04jjh>, <http://www.yso.fi/onto/yso/p8646> ;
+	skos:note        "Wiadomość pisana zawierająca informacje skierowane od nadawcy do adresata"@pl, "Comunicazione scritta, talvolta di valore letterario, indirizzata da un mittente (persona o ente) a un destinatario (persona o ente)"@it, "Kirjalik sõnum ühelt isikult teis(t)ele"@et, "Geschrift dat aan iemand is gericht, en gesloten en van een adres voorzien wordt verzonden"@nl, "Message expédié à un destinataire"@fr, "Skrivet meddelande som skickas från en part till en annan, under transporten oftast förvarat i ett kuvert"@sv, "Written message from one to another"@en, "Письменное сообщение для передачи от одного субъекта к другому"@ru, "Písaná správa spravidla posielaná poštou"@sk, "Medio de comunicación escrito"@es, "Schriftstück, das Informationen zwischen Personen und anderen Entitäten austauscht"@de, "Mensagem escrita a um destinatário"@pt, "Skriftlig besked sendt fra den ene part til den anden, i transit normalt opbevaret i en kuvert"@da ;
+	skos:prefLabel   "Eskutitz"@eu, "Dopis"@cs, "Vēstule"@lv, "Brev"@sv, "Brev"@da, "Scrisoare"@ro, "Писмо"@bg, "Lettre"@fr, "Επιστολή"@el, "Lettera"@it, "Kiri"@et, "List"@sk, "Levél"@hu, "Litir"@ga, "Carta"@pt, "Carta"@es, "Carta"@ca, "List"@pl, "Kirje"@fi, "Brief"@de, "Brief"@nl, "Letter"@en, "Laiškas"@lt, "Письмо"@ru .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056089895/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056089895>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-04T08:21:57.874Z" ;
+	dcterms:modified          "2014-06-04T08:21:57.874Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895#contentTier>, <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92065_Ag_EU_TEL_a0445_ETravel" ;
+	edm:landingPage           <https://www.europeana.eu/item/92065/BibliographicResource_1000056089895> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3DEuropeanaTravel%3A135F25_5a%3A013v&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056089895>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056089895#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:43:57.788Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056089895> .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056089895#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:43:57.788Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056089895> .
+
+<http://data.europeana.eu/proxy/provider/92065/BibliographicResource_1000056089895>
+	a                   ore:Proxy ;
+	dc:creator          "Johannes Bosboom (1817-1891)" ;
+	dc:date             "[tweede helft 19de eeuw]" ;
+	dc:identifier       "EUROPEANATRAVEL:PPN:311319920" ;
+	dc:language         "nl", "néerlandais; flamand"@fr, "nederlands"@nl ;
+	dc:title            "Brief van Johannes Bosboom (1817-1891)"@nl ;
+	dc:type             "brieven"@nl ;
+	dcterms:extent      "1 brief" ;
+	dcterms:hasFormat   <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:135F25_5a:013v> ;
+	dcterms:isPartOf    "Algemene Catalogus KB", "Autografenalbum van L. Westermann-Heinze ; dl. 5a, fol. 13v", <http://data.theeuropeanlibrary.org/Collection/a0445> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056089895> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056089895> .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:135F25_5a:013v>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056089895/manifest> ;
+	ebucore:fileByteSize    "625776"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2011"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFB6C1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .

@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126076550#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:51:35.608Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126076550> .
+
+<http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126076550>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=5295248> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/5295248.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/5295248.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126076550#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:51:35.608Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126076550> .
+
+<http://data.europeana.eu/proxy/europeana/92062/BibliographicResource_1000126076550>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1628" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126076550> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://www.bildarchivaustria.at/Thumbnail/5295248.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126076550>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126076550>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-04T18:08:29.814Z" ;
+	dcterms:modified          "2015-03-26T18:42:58.196Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550#contentTier>, <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92062_Ag_EU_TEL_a0480_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92062/BibliographicResource_1000126076550> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F5295248.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126076550/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=5295248>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92062/BibliographicResource_1000126076550>
+	a                   ore:Proxy ;
+	dc:creator          "Goos, Pieter", "Akersloot, Willem Outgertsz.", "Venne, Adriaen Pietersz. van de" ;
+	dc:date             "1628" ;
+	dc:description      "Auf Podest mit vorspringendem Mittelteil im Vordergrund des Alltagslebens im Binnenhof von Den Haag: Ganze Figur  stehend (rechter Fuß vorgesetzt), halb von rechts, barhaupt, mit Schnurrbart und Knebelbart; angehobenem gelapptem Spitzenkragen; in knielangem Harnisch; spitzengesäumte Feldbinde um die rechte Schulter, darunter die Medaille des Hosenbandordens an Brustband; gespornte Stulpenstiefel mit seitlichem Schlaufenbesatz; Schwert in der Rechten schräg aufrecht über abgelegten, federngeschmückten Helm, mit der Linken sieben gebündelte Pfeile, darunter ein Bündel von Kordelschnüren mit sieben daran hängenden, zum Teil   bekronten Wappen haltend; Monogramm des Entwerfers auf dem Podest links vorne; unten latein. Widmungslegende und Stecherbezeichnung mit unvollständig getilgter Jahreszahl 1628 in quergestreckter Podestkartusche; unterhalb der Darstellung (späterer) latein. Verlegervermerk. Kupferstich von Willem Outgertsz. Akersloot nach Entwurf von Adriaen Pietersz. van de Venne, verlegt von Pieter Goos."@de ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/5295248.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Sonstige Potentaten"@de, "Count"@en, "Portrait"@en, "Porträt"@de, "Graf"@de, "Grafen"@de, "Nassau"@de ;
+	dc:title            "Friedrich Heinrich, Prinz von Oranien, Graf von Nassau"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:hasFormat   "image/jpeg" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0480> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126076550> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126076550> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://www.bildarchivaustria.at/Preview/5295248.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126076550/manifest> ;
+	ebucore:fileByteSize    "1553859"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1402"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .

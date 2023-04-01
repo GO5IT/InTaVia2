@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056102201#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:44:35.538Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056102201> .
+
+<http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056102201>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-04T08:33:14.871Z" ;
+	dcterms:modified          "2014-06-04T08:33:14.871Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201#metadataTier>, <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92065_Ag_EU_TEL_a0445_ETravel" ;
+	edm:landingPage           <https://www.europeana.eu/item/92065/BibliographicResource_1000056102201> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3DEuropeanaTravel%3A79L10%3A096v&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:096v>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056102201/manifest> ;
+	ebucore:fileByteSize    "716511"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "952"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/2825>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300252927>, <http://www.wikidata.org/entity/Q2393642>, <https://www.freebase.com/m/0gkxy13>, <http://www.yso.fi/onto/yso/p2511>, <http://id.nlm.nih.gov/mesh/D006236>, <https://g.co/kg/m/0gkxy13>, <http://iconclass.org/49L7>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.539>, <http://vocabularies.unesco.org/thesaurus/concept4547> ;
+	skos:note        "Met de hand geschreven tekst"@nl, "Set of features that characterize a person's handwriting"@en, "Schreiben von Hand"@de, "Conjunto de rasgos que caracterizan la escritura de una persona"@es ;
+	skos:prefLabel   "Manuelles Schreiben"@de, "Handstil"@sv, "Håndskrivning"@da, "Grafia"@it, "Handwriting"@en, "Escriptura a mà"@ca, "Käsiala"@fi, "Scris de mână"@ro, "Почерк"@bg, "Почерк"@ru, "Handschrift"@nl, "Käekiri"@et, "Rokraksts"@lv, "Caligrafía"@es, "Escrita à mão"@pt .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056102201>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<https://iiif.europeana.eu/presentation/92065/BibliographicResource_1000056102201/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://opc4.kb.nl/DB=1/PPN?PPN=311232515>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "10731"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92065/BibliographicResource_1000056102201>
+	a                   ore:Proxy ;
+	dc:creator          "Mierevelt, Michiel van (1567-1641)", "Jan Caspar Philips (c.1690-1775)" ;
+	dc:date             "[tussen ca. 1730 en 1775]" ;
+	dc:identifier       "EUROPEANATRAVEL:PPN:311232515" ;
+	dc:language         "néerlandais; flamand"@fr, "nl", "nederlands"@nl ;
+	dc:subject          "Willem I prins van Oranje (1533-1584)" ;
+	dc:title            "Portret van Willem I prins van Oranje (1533-1584) / door J[an] C[asper] Philips (ca. 1690-1775) naar M[ichiel van] Mierevelt (1567-1641)"@nl ;
+	dc:type             "handschrift"@nl ;
+	dcterms:extent      "116x168 mm", "Papier, 1 fol" ;
+	dcterms:hasFormat   <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:096v> ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0445>, "Album van Samuel Rudolphus van Nispen (1733-1775) ; fol. 96v", "Algemene Catalogus KB" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056102201> .
+
+<http://data.europeana.eu/item/92065/BibliographicResource_1000056102201#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:44:35.538Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056102201> .
+
+<http://data.europeana.eu/proxy/europeana/92065/BibliographicResource_1000056102201>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2825> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92065/BibliographicResource_1000056102201> .
+
+<http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:096v&role=thumbnail>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/92065/BibliographicResource_1000056102201>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92065/BibliographicResource_1000056102201> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://opc4.kb.nl/DB=1/PPN?PPN=311232515> ;
+	edm:isShownBy      <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:096v> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=EuropeanaTravel:79L10:096v> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .

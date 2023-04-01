@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:12.084Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031600_031612__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031600_031612__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_031600_031612__>
+	a                    ore:Proxy ;
+	dc:creator           "Izsó ,  Miklós  ( szobrász )"@hu, "Róth,  András Lajos (digitized By)"@hu ;
+	dc:description       "FÁY ANDRÁS (1786-1864.), kora társadalmi, politikai és irodalmi mozgalmainak egyik vezérférfia, Széchenyi reformeszméinek egyik legbuzgóbb apostola, a Kisfaludy Társaság első igazgatója (1837-39.) és mint iró, Kisfaludy iskolájának a legtehetségesebb tagja. Sokoldalu és nagyszámu irodalmi munkálkodásának a legfontosabb termékei: Friss bokréta (1818. Ebben a Különös testa- mentom); Eredeti meséi és aphorizmái (Bécs, 1820.); Ujabb eredeti meséi és aphorizmái (1825.); Kedvcsapongások, 2 köt. (1824.) Tartalma: Víg novellák és a Régi pénzek cz. vígjáték, A két Báthory, historiai szomorujáték (1827.); A Bélteky ház (l. o.); Jávor orvos és szolgája Bakator, regény 2 köt. (1855.); A szutyogfalviak, 2 köt. (1856.); Hulló virágok (1861. - Ebben A mátrai vadászat, vigj., Régi szerelem nem avúl el vigj. stb.). Figyelemre méltó neveléstani munkái: Nőnevelés hazánkban (1841.); A legegyszerübb .... nevelési rendszer (1855.); A Halmay család, 2 köt. (1858.), Oskolai és házi növendék-élet (Pest 1860.) stb."@hu ;
+	dc:format            "JPEG képállomány \u000A         751x970 \u000A         300 \u000A         szürke \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/031600/031612   [Metadata]" ;
+	dc:relation          "Fáy András arczképe és névaláirása [ http://keptar.oszk.hu/031600/031609]"@hu, "Vende Ernő: A magyar irodalomtörténet képekben [ http://mek.oszk.hu/09800/09807/]"@hu ;
+	dc:source            "OSZK MEK"@hu ;
+	dc:subject           "Kisfaludy Társaság"@hu, "író"@hu, "History, local history"@hu, "Fáy András (1786-1864)"@hu, "Fine arts, visual arts"@hu, "History of literature, literary studies"@hu, "Kisfaludy Károly (1788-1830)"@hu, "Izsó Miklós (1831-1875)"@hu, "szobor"@hu, "reformkor"@hu, "magyar irodalom"@hu, "politikus"@hu ;
+	dc:title             "Fáy András mellszobra"@hu ;
+	dc:type              "statue"@hu ;
+	dcterms:alternative  "Izsó Miklóstól, a Pesti Hazai Első Takarékpénztár üléstermében"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031600_031612__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031600_031612__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:46:43.815Z" ;
+	dcterms:modified          "2015-09-14T11:48:22.672Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F031600%2F031612%2Fvende2_13_d_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/031600/031612>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031600_031612__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:12.084Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031600_031612__> .
+
+<http://data.europeana.eu/concept/2966>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p8970>, <http://vocabularies.unesco.org/thesaurus/concept3384>, <http://babelnet.org/rdf/s00007287n>, <http://dbpedia.org/ontology/Writer>, <https://www.freebase.com/m/0cbd2>, <https://d-nb.info/gnd/4053309-8>, <http://data.bnf.fr/ark:/12148/cb11936327s>, <https://g.co/kg/m/0cbd2>, <http://id.ndl.go.jp/auth/ndlna/00573673>, <http://purl.org/bncf/tid/3533>, <http://www.wikidata.org/entity/Q36180>, <https://d-nb.info/gnd/4053311-6> ;
+	skos:note        "Iemand die geschreven werk produceert, meestal van literaire of wetenschappelijke aard"@nl, "Foglalkozás"@hu, "Zientzia edo literatura lanak idazten dituena"@eu, "Oseba, ki piše literarna dela"@sl, "Autor de opere literare"@ro, "Osoba koja korištenjem pisane riječi komunicira ideje"@hr, "Person who uses written words to communicate ideas and to produce works of literature"@en, "Человек, который занимается созданием словесных произведений, предназначенных для общественного потребления"@ru, "Osoba, która pisze utwory literackie"@pl, "Πρόσωπο (είτε επαγγελματίας είτε όχι) που χρησιμοποιεί λέξεις για να μεταδώσει ιδέες"@el, "Persona que utiliza la palabra escrita para comunicar ideas y producir obras literarias"@es, "Person, die literarische Texte verfasst"@de, "Person, der bruger det skrevne ord til kommunikation"@da, "Personne qui rédige des ouvrages littéraires ou scientifiques"@fr, "Henkilö, joka kirjoittaa tai on kirjoittanut kirjoja"@fi, "Persona dedicada a la literatura"@ca, "Duine a scríobhann mar ghairm"@ga, "Človek, ktorý sa profesionálne venuje písaniu, väčšinou kníh"@sk, "Povolání"@cs, "Person som genom det skrivna ordet kommunicerar, sprider idéer och producerar litterära verk"@sv, "Chiunque crei un lavoro scritto"@it, "Pessoa que usa palavras escritas para comunicar ideias"@pt ;
+	skos:prefLabel   "Rašytojas"@lt, "Писател"@bg, "Idazle"@eu, "Schriftsteller"@de, "Skribent"@da, "Escriptor"@ca, "Pisac"@hr, "Writer"@en, "Scríbhneoir"@ga, "Συγγραφέας"@el, "Pisatelj"@sl, "Pisarz"@pl, "Kirjanik"@et, "Scriitor"@ro, "Spisovatel"@cs, "Escritor"@pt, "Escritor"@es, "Писатель"@ru, "Spisovateľ"@sk, "Rakstnieks"@lv, "Écrivain"@fr, "Kirjailija"@fi, "Schrijver"@nl, "Kittieb"@mt, "Författare"@sv, "Scrittore"@it, "Író"@hu .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031600_031612__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/031600/031612> ;
+	edm:object         <http://keptar.oszk.hu/031600/031612/vende2_13_d_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/031600/031612/vende2_13_d_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5758"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_031600_031612__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2966> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031600_031612__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031600_031612__> .

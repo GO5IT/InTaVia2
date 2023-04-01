@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL>
+	a                    ore:Proxy ;
+	dc:creator           <https://d-nb.info/gnd/118590243> ;
+	dc:description       "Erworben aus Haushaltsmitteln der Berlinischen Galerie (Creditline)"@de ;
+	dc:format            "Öl auf Leinwand (Material/Technik)"@de ;
+	dc:identifier        "BG-M 4750/91 (Inventarnummer)" ;
+	dc:rights            "Urheberrechte am Werk erloschen" ;
+	dc:title             "Bildnis des Malers Joachim Rágóczy"@de ;
+	dc:type              "Gemälde"@de ;
+	dcterms:created      "um 1926 (Herstellung)"@zxx ;
+	dcterms:extent       "Rahmenmaß:  ohne"@zxx, "Bildmaß:  45,4 x 37,3 cm Tiefe: 2,3 cm"@zxx ;
+	dcterms:spatial      <http://www.geonames.org/2950159> ;
+	edm:currentLocation  <http://www.geonames.org/2950159> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> .
+
+<http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477410> ;
+	edm:isShownAt      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=141817&viewType=detailView> ;
+	edm:isShownBy      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141817&resolution=highImageResolution> ;
+	edm:object         <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141817&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:54:01.001851Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=141817&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=141817&resolution=highImageResolution>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL/manifest> ;
+	ebucore:fileByteSize    "61924"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "370"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "301"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:54:01.002174Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> .
+
+<http://data.europeana.eu/aggregation/europeana/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2022-01-19T11:40:37.322Z" ;
+	dcterms:modified          "2022-01-19T11:40:37.322Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL#metadataTier>, <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	edm:completeness          "7" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048431_DDB_Berlinische_Galerie" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlung-online.berlinischegalerie.de%3A443%2FeMP%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D141817%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<https://d-nb.info/gnd/118590243>
+	a                   edm:Agent ;
+	owl:sameAs          <http://viaf.org/viaf/49390293>, <http://www.wikidata.org/entity/Q379150>, <http://dbpedia.org/resource/Emil_Orl%C3%ADk>, <http://isni.org/isni/0000000108993252>, <http://id.loc.gov/rwo/agents/n82165925> ;
+	rdaGr2:dateOfBirth  "1870-07-21" ;
+	rdaGr2:dateOfDeath  "1932-09-28" ;
+	skos:altLabel       "Орлик, Эмиль", "Orlik, ...", "Orurikku, Emīru", "Орлік, Эміль" ;
+	skos:prefLabel      "Orlik, Emil" .
+
+<http://data.europeana.eu/agent/53231>
+	a                    edm:Agent ;
+	owl:sameAs           <http://openlibrary.org/works/OL804346A>, <http://dbpedia.org/resource/Emil_Orl%C3%ADk>, <http://data.bibliotheken.nl/id/thes/p068656793>, <http://id.worldcat.org/fast/103461>, <http://vocab.getty.edu/ulan/500005216>, <http://id.loc.gov/authorities/names/n82165925>, <http://id.ndl.go.jp/auth/ndlna/00515354>, <http://www.wikidata.org/entity/Q379150>, <https://www.freebase.com/m/038zms>, <http://data.bnf.fr/ark:/12148/cb13568596v>, <http://viaf.org/viaf/49390293>, <https://g.co/kg/m/038zms>, <http://datos.bne.es/resource/XX1054346>, <http://www.idref.fr/028045890/id>, <http://d-nb.info/gnd/118590243> ;
+	rdaGr2:dateOfBirth   "1870-07-21" ;
+	rdaGr2:dateOfDeath   "1932-09-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202066> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Emil Orlik"@en, "Emil Orlik"@es, "Emil Orlik"@nl, "E. orlik"@en, "E. Orlik"@nl, "Emil orlik"@en, "Orlik"@en ;
+	skos:note            "Tsjechisch kunstschilder"@nl, "Чешский художник"@ru, "Czech photographer, graphic, painter, portrait painter and scenographer (1870-1932)"@en, "Niemiecko-czeski artysta i projektant"@pl, "Pittore, fotografo e artigiano boemo"@it, "Peintre, graveur, lithographe et illustrateur tchécoslovaque"@fr, "Böhmischer Maler, Grafiker und Kunsthandwerker"@de, "Český fotograf, grafik, malíř, portrétista a scénograf"@cs ;
+	skos:prefLabel       "Emil Orlik"@de, "Emil Orlik"@fi, "Emil Orlik"@sv, "Emil Orlik"@pt, "Emil Orlik"@it, "Emil Orlik"@fr, "Emil Orlik"@cs, "Emil Orlik"@ro, "Emil Orlik"@da, "Emil Orlik"@ca, "Emil Orlík"@es, "Emil Orlík"@en, "Emil Orlík"@sk, "Emil Orlík"@sl, "Emil Orlík"@pl, "Emil Orlík"@nl, "Эмиль Орлик"@ru .
+
+<http://data.europeana.eu/organization/1482250000004477410>
+	a               foaf:Organization ;
+	skos:prefLabel  "Berlin Gallery, Museum of Modern Art"@en, "Berlinische Galerie, Landesmuseum für moderne Kunst, Fotografie und Architektur"@de .
+
+<https://iiif.europeana.eu/presentation/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.geonames.org/2950159>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin"@de .
+
+<http://data.europeana.eu/proxy/europeana/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/53231> ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/BAVX325SCKU642Y5WFFG33UD3X72KRFL" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048431/item_BAVX325SCKU642Y5WFFG33UD3X72KRFL> .

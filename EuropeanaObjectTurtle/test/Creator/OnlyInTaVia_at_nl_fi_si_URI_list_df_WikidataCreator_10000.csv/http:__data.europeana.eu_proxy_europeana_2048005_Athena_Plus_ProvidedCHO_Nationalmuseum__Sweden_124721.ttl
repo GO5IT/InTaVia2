@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=124721&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=124721&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=124721&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=124721&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:16.094Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=124721&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721/manifest> ;
+	ebucore:fileByteSize    "193771"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "487"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:16.095Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T11:57:46.397Z" ;
+	dcterms:modified          "2017-02-21T15:22:22.015Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> ;
+	edm:completeness          "6" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D124721%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/31356> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721>
+	a                   ore:Proxy ;
+	dc:creator          "Aertgen van Leyden"@sv ;
+	dc:description      "   "@sv ;
+	dc:format           "Svartkrita på papper", <http://partage.vocnet.org/part00881>, "teckning (bildskapande)" ;
+	dc:identifier       "(Inv. Nr.: NMH 1859/1863)", "124721" ;
+	dc:title            "Illustration till Erasmus Encomium horae"@sv ;
+	dc:type             "Teckningar"@sv ;
+	dcterms:extent      "Mått 28 x 20,5 cm", "Passepartout 55 x 42 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_124721> .
+
+<http://data.europeana.eu/agent/31356>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/31034>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <https://www.freebase.com/m/07s905l>, <http://dbpedia.org/resource/Aertgen_van_Leyden>, <https://g.co/kg/m/07s905l>, <http://ta.sandrart.net/-person-1454>, <http://datos.bne.es/resource/XX5027192>, <http://d-nb.info/gnd/123592623>, <http://www.wikidata.org/entity/Q1823098>, <http://viaf.org/viaf/35367942>, <http://vocab.getty.edu/ulan/500009793>, <http://data.bibliotheken.nl/id/thes/p097568309> ;
+	rdaGr2:dateOfBirth   "1498-01-01" ;
+	rdaGr2:dateOfDeath   "1564-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40578> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40578> ;
+	skos:altLabel        "Aertgen Claessen"@de, "Aertgen Claessen"@sk, "Alaert Claessen"@es, "Alaert Claessen"@nl, "Alaert Claessen"@fr, "Alaert Claessen"@en, "Alaert Claessen"@de, "Aertgen Claesz."@nl, "Aertgen Claesz."@en, "Alaert claesz"@en, "Aertie van Leijden"@en, "Aertgen Claesz. van Leyden"@nl, "Aertje van Leyden"@en, "Aertgen Claesz. van Leyden"@en, "Aert Claesz."@nl, "Aert Claesz."@en, "Master of the Church Sermon"@nl, "Master of the Church Sermon"@en, "Artus van Leyden"@en, "Aertgen Claesz van Leyden"@en, "Arent van Leyden"@en, "Aertgen Van Leyden"@en, "Aertgen Claesz Van Leyden"@en, "Aert Claessen"@es, "Aertgen van Leyden"@es, "Aert Claessen"@nl, "Aert Claessen"@fr, "Aertgen van Leyden"@fr, "Aert Claessoon"@en, "Aert Claessen"@en, "Aertgen van Leyden"@cs, "Aertgen van Leyden"@sv, "Aertgen van Leyden"@sk, "Aert Claessen"@cs, "Aert Claessen"@de, "Aert Claessen"@sk, "Aert Claesz. van Leyden"@nl, "Aert Claesz. van Leyden"@en, "Aertgen van Leiden"@en, "Aertgen Van Leyden Claesz."@en, "Archi Van Leyden"@en, "Aartje van Leiden"@en, "Aernt Claesz."@en, "Claesz."@en, "Aert Claesz"@fr, "Aert Claesz"@en, "Arthus van Leyden"@en, "Aert van Leyden"@nl, "Aert van Leyden"@en, "Aert Claesz van Leyden"@fr, "Meester van de Kerkprediking"@nl, "Meester van de Kerkprediking"@en, "Aert de Volder"@nl, "Aert de Volder"@en, "Aertgen Claeszoon"@en, "Artie van Leijden"@en, "Aert Claesz. (Aertgen van Leyden) ?"@nl, "Aert Claesz. (Aertgen van Leyden) ?"@en, "Артген ван Лейден"@ru, "Aertgen Claessen"@es, "Aertgen Claessen"@nl, "Aertgen Claessen"@fr, "Aertgen Claessen"@en, "Aertgen Claessen"@cs ;
+	skos:note            "Painter (1498-1564)"@en, "Pintor neerlandés"@es, "Pintor neerlandès"@ca, "Ολλανδός ζωγράφος"@el, "Nederlands kunstschilder"@nl, "Pittore neerlandese"@it, "Peintre néerlandais"@fr, "Pintor neerlandês"@pt ;
+	skos:prefLabel       "Aartgens"@pt, "Aartgens"@fr, "Alaert Claessen"@cs, "Лейден, Артген ван"@ru, "Alaert Claessen"@sk, "Aert Claesz."@it, "Aert Claesz."@da, "Aertgen van Leyden"@de, "Aert Claesz"@sv, "Aertgen van Leyden"@en, "Aertgen van Leyden"@sl, "Aertgen van Leyden"@pl, "Aertgen van Leyden"@nl, "Aertgen Claesz. van Leyden"@es, "Aertgen Claesz. van Leyden"@ca, "Έρτχεν Κλες φαν Λέιντεν"@el .

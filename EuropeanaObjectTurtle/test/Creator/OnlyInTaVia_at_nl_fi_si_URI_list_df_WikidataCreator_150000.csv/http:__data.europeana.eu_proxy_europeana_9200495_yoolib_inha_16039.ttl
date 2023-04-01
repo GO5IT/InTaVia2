@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_16039>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:36:24.342Z" ;
+	dcterms:modified          "2016-09-19T09:10:26.063Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_16039#contentTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_16039#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_16039> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_16039> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F15001-16000%2F15986%2Fmedia%2F17119%2F1068_doucet_fest489_005%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_16039#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:30:19.860Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_16039> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_16039/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://tools.yoolib.net/i/s4/inha/files/15001-16000/15986/media/17119/1068_doucet_fest489_005/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_16039/manifest> ;
+	ebucore:fileByteSize    "547083"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "649"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.purl.org/yoolib/inha/16039>
+	a  edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_16039>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_16039>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_16039> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_16039> .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_16039>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_16039> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/16039> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/15001-16000/15986/media/17119/1068_doucet_fest489_005/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/15001-16000/15986/media/17119/1068_doucet_fest489_005/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_16039>
+	a                   ore:Proxy ;
+	dc:contributor      "[Chés Huquier] ; [s.n.]" ;
+	dc:creator          "Oudry, Jean-Baptiste (1686-1755). Illustrateur", "Dusart, Cornelis (1660-1704). Illustrateur", "Huquier, Gabriel (1695-1772). Graveur", "Lajoue, Jacques de (1687-1761). Illustrateur", "Peyrotte, Alexis (1699-1769). Illustrateur", "Pannini, Giovanni Paolo (1691?-1765). Illustrateur", "Aveline, Pierre-Alexandre (1702?-1760). Graveur", "Boucher, François (1703-1770). Illustrateur" ;
+	dc:date             "17.." ;
+	dc:description      "Date de numérisation : 2012", "Lieu de publication : [A Paris] ; [S.l.]", "Note de contenu : Contient un livre de cartouches et des sujets chinois dessinés par Boucher, des scènes de chasse et un livre d'animaux par Oudry, des ornements par Peyrotte, des écrans à main par Lajoue ; Quelques planches ont été faites par Dusart, Paninni ou Aveline", "Note : Reliure en parchemin ; Sur la 3ème de couverture, d’une écriture du XVIIIème siècle, figure un inventaire à la plume des cahiers du recueil avec leurs prix, y compris celui de la reliure", "Nombre de vues du document : 86", "Note complémentaire : Selon le Bénézit, Jean-Baptiste Oudry, élève de Nicolas de Largillière et célèbre peintre animalier, réalisa d'importantes tentures, dont les <i>Chasses de Louis XV</i> ; Devenu directeur artistique de Beauvais, il appela Boucher à travailler à ses côtés", "Fonds ou documents en rapport : Notices sur Oudry p. 150-151, Huquier p. 159-160, Boucher p. 168-169, et Peyrotte p. 192-193, dans Guilmard, <a href=\u0022http://gallica.bnf.fr/ark:/12148/bpt6k6122798r\u0022 target=\u0022_blank\u0022><b>Les maîtres ornemanistes (...)</b></a>", "Fonds ou documents en rapport : Des planches du <i>Livre d'animaux par Jean Baptiste Oudri</i> ont servi d’illustration pour <a href=\u0022http://gallica.bnf.fr/ark:/12148/bpt6k5440698v\u0022 target=\u0022_blank\u0022><b>Choix de fables de La Fontaine, illustrations d'Oudry [...]</b></a>", "Langue du document : Français" ;
+	dc:format           "1 vol. ([80] feuillets de planches gravées sur cuivre) : eau-forte, burin ; 44,2 cm" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/16039" ;
+	dc:language         "fre" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "domaine public"@fr, "Institut National d'Histoire de l'Art"@fr ;
+	dc:source           "NUM FOL EST 489", "Mention manuscrite sur le contre-plat supérieur : <i>Recueil Huquier. Vente Thomas</i>" ;
+	dc:subject          "Écrans à main", "Animaux", "Chinoiseries", "Cartouches (ornements)", "Art rocaille", "18e siècle", "Dans l'art", "Ornements (arts décoratifs)", "France" ;
+	dc:title            "[Ornements divers, 18ème siècle : recueil factice]", "[Ornements divers, 18e siècle]" ;
+	dc:type             "image", "still image", "text", "Recueil d'estampes" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_16039> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_16039> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_16039#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:30:19.859Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_16039> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

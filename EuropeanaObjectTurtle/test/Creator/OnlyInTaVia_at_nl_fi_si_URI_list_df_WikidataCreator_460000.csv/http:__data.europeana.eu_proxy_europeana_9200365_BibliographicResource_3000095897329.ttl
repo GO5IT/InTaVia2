@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8803275w/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803275w>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8803275w> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8803275w.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:37.511Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803275w> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803275w.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4162"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#4169E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4682B4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6A5ACD"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803275w>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:03.133Z" ;
+	dcterms:modified          "2018-03-26T12:26:55.041Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8803275w> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8803275w.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8803275w>
+	a                   ore:Proxy ;
+	dc:creator          "Brooks, L.. Auteur ou responsable intellectuel", "Sears, Edmund Hamilton (1810-1876). Auteur ou responsable intellectuel", "Mohr, Joseph (1792-1848). Auteur ou responsable intellectuel", "Watts. Auteur ou responsable intellectuel", "Wesley. Auteur du texte", "Luther. Auteur ou responsable intellectuel", "Marx. Auteur ou responsable intellectuel", "Gruber, Franz Xaver (1787-1863). Auteur ou responsable intellectuel", "Redner, L. H.. Auteur ou responsable intellectuel", "Hopkins, John H. (1820-1891). Auteur ou responsable intellectuel", "Baron, Paul (19..-19.. ; chef d'orchestre américain). Direction d'orchestre", "Gerda. Auteur ou responsable intellectuel", "Lanza, Mario (1921-1959). Ténor", "Mendelssohn Bartholdy, Felix (1809-1847). Auteur ou responsable intellectuel", "Willis, Richard S. (1819-1900). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "Comprend : THE FIRST NOEL / trad. - O COME, YE FAITHFUL (\u0022Adeste fideles\u0022) / trad. - AWAY IN A MANGER / LUTHER - WE THREE KINGS OF ORIENT ARE / HOPKINS - O LITTLE TOWN OF BETHLEEM / REDNER et BROOKS - SILENT NIGHT / MOHR et GRUBER - DECK THE HALLS (noël gallois) - HARK ! THE HERALD ANGELS SING / MENDELSSOHN et WESLEY - GOD REST YE MERRY, GENTLEMEN / trad. - JOY TO THE WORLD / HANDEL et WATTS - O CHRISTMAS TREE / trad. - I SAW THREE SHIPS / trad. - IT CAME UPON A MIDNIGHT CLEAR / WILLIS et SEARS - GUARDIAN ANGELS / MARX et GERDA", "Contient une table des matières", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "1 disque : 33 t ; 30 cm", "Nombre total de vues :  18", "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : RCA  530255", "http://gallica.bnf.fr/ark:/12148/bpt6k8803275w" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38006636k"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-10438" ;
+	dc:subject          "chanson anglophone" ;
+	dc:title            "LANZA SINGS CHRISTMAS CAROLS / Mario LANZA, T ; avec Choeurs et Orchestre dir. Paul BARON" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803275w> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803275w>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "225911"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:37.511Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803275w> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8803275w>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803275w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803275w> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

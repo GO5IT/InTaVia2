@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b55002575d>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b55002575d> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b55002575d.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b55002575d/manifest> ;
+	ebucore:fileByteSize    "26619"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "359"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:25.118Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b55002575d> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b55002575d>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:46.254Z" ;
+	dcterms:modified          "2018-07-23T15:37:42.954Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b55002575d> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b55002575d.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b55002575d>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "196173"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b55002575d/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b55002575d.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5756"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "182"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b55002575d>
+	a                   ore:Proxy ;
+	dc:creator          "Beethoven, Ludwig van (1770-1827). Compositeur" ;
+	dc:date             "1813-1815" ;
+	dc:description      "Contient des esquisses pour : f. 1 r°, \u0022Fidelio\u0022 (révision de 1814) ; 1er mouvement de la sonate pour violoncelle et piano op. 102, no 2 (?) ; f. 1 v°, début de thème pour un trio avec piano en do majeur, en partition ; f. 2 r°-2 v°, \u0022Meeresstille und Glückliche Fahrt\u0022, op. 112. - Remarques autographes au crayon : f. 1 r°, sur l'instrumentation : \u0022RabenFedern // um eine // mehr im // Verhältniß // von Bratsche // Baßtrombone und Contra Fagott // und zur Verstärkung des // Baßes einführen\u0022 ; f. 1 v° - 2 r°, sur la correction et la copie des symphonies no 7 et 8 : \u0022von den Fagotten an muß // der Copist mit übersehen // die täkte müßen gezählt // werden von der [2 mots illisibles]\u0022 ; \u0022Nb in allen Stimmen den Menuett // in A durchzusehen, weil // bej der repetion [sic] des ersten // themas gefeh[lt worden ist] // von [lacune] // Einige Fehler [lacune] // Ohren angezeigt sind. - // das 2 in allen Stimmen im letzten // Stück wie auch // repetitionen aus dem ersten All.o\u0022. - Fragment d'un carnet d'esquisses probablement constitué de F-Pn Ms. 100, D-BNba Mh 90, F-TOm (sans cote), F-Pn Ms. 90. - Esquisses à l'encre et au crayon. - Date \u0022am 3ten März 1813\u0022 dans la marge supérieure du f. 1 r° ; datation des esquisses d'après Unger et Johnson, Tyson, Winter : 1814-1815. - Lettre \u0022M\u0022, d'une autre main, dans le coin supérieur droit du f. 1 r° : faisait sans doute partie du \u0022Notierungsbuch M\u0022 de la collection Artaria. - Un rectangle d'environ 4 x 11,5 cm a été découpé dans le f. 1. - Papier réglé à 12 portées de 7 x 255 mm par page (intervalle entre les portées : 9 mm)", "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [Fidelio. Op. 72]. Esquisse", "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [Meeresstille und Glückliche Fahrt. Op. 112]. Esquisse" ;
+	dc:format           "2 f. ; 22,5 x 32 cm", "Nombre total de vues :  4" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b55002575d" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb148077790", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139082416", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42461516p" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-100" ;
+	dc:subject          "Esquisses (musique) -- 19e siècle"@fre ;
+	dc:title            "[Esquisses pour Fidelio, op. 72, dans la révision de 1814, pour Meeresstille und Glückliche Fahrt, op. 112 et pour des oeuvres non identifiées] (manuscrit autographe) / Ludwig van Beethoven]" ;
+	dc:type             "musique manuscrite"@fre, "manuscript music"@eng, "Genre musical : divers" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b55002575d> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b55002575d>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b55002575d> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b55002575d/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b55002575d#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:25.117Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b55002575d> .

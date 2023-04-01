@@ -1,0 +1,236 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-OB-81.238>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4240833"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "2778"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "2050"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.84227>
+	a                              edm:Agent ;
+	edm:begin                      "1533-04-24" ;
+	edm:end                        "1584-07-10" ;
+	rdaGr2:dateOfBirth             "Dillenburg" ;
+	rdaGr2:dateOfDeath             "Delft" ;
+	rdaGr2:professionOrOccupation  "stadhouder" ;
+	skos:prefLabel                 "Willem I (prins van Oranje)" .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_81_238>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_OB_81_238> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.460283> ;
+	edm:isShownBy      <https://lh3.ggpht.com/kTubsUIGazJKLTCxWRalCMnynb4AjtpFL9K53ox9lDSEeBiSROLcEc7jGyHpdulOC9ppCmHf4Nd3tGmgZl35fKuzux0=s0> ;
+	edm:object         <https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-OB-81.238> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_81_238#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:24:56.554Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_81_238> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.13228>
+	a                              edm:Agent ;
+	edm:begin                      "1587-11-17" ;
+	edm:end                        "1679-02-05" ;
+	rdaGr2:dateOfBirth             "Keulen" ;
+	rdaGr2:dateOfDeath             "Amsterdam" ;
+	rdaGr2:professionOrOccupation  "dichter" ;
+	skos:prefLabel                 "Vondel, Joost van den" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.94354>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Windhandel van 1720"@nl .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_81_238>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T19:15:14.304Z" ;
+	dcterms:modified          "2018-03-17T14:20:45.559Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_OB_81_238#contentTier>, <http://data.europeana.eu/item/90402/RP_P_OB_81_238#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_OB_81_238> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_OB_81_238> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.rijksmuseum.nl%2Fassetimage2.jsp%3Fid%3DRP-P-OB-81.238&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_81_238#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:24:56.555Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_81_238> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.59648>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Inname van Wesel (1629)"@nl .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_OB_81_238/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_81_238>
+	a  edm:ProvidedCHO .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.17470>
+	a                              edm:Agent ;
+	edm:begin                      "1553-12-13" ;
+	edm:end                        "1610-05-14" ;
+	rdaGr2:dateOfBirth             "Pau" ;
+	rdaGr2:dateOfDeath             "Parijs" ;
+	rdaGr2:professionOrOccupation  "koning" ;
+	skos:prefLabel                 "Hendrik IV (koning van Frankrijk en Navarra)" .
+
+<http://data.europeana.eu/concept/2090>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q11472>, <http://id.ndl.go.jp/auth/ndlna/00564806>, <http://thesaurus.europeanafashion.eu/thesaurus/10574>, <http://vocab.getty.edu/aat/300014109>, <http://id.nlm.nih.gov/mesh/D010209>, <http://www.yso.fi/onto/yso/p8522>, <https://g.co/kg/m/0641k>, <http://babelnet.org/rdf/s00060464n>, <http://vocabularies.unesco.org/thesaurus/concept14922>, <http://zbw.eu/stw/descriptor/14802-1>, <http://iconclass.org/49L641>, <http://data.bnf.fr/ark:/12148/cb11949744d>, <https://www.freebase.com/m/0641k>, <https://d-nb.info/gnd/4044522-7>, <http://purl.org/bncf/tid/1192>, <http://id.loc.gov/authorities/names/sh85097578> ;
+	skos:note        "Matière fabriquée à partir de fibres cellulosiques végétales et animales"@fr, "Materiale igroscopico, costituito da materie prime fibrose"@it, "Волокнистый материал с минеральными добавками"@ru, "Podłoże pisarskie lub malarskie otrzymywane z makulatury, celulozy i włókien innych roślin"@pl, "Tenký, hladký materiál vyrábaný zhutnením vlákna"@sk, "Delgada hoja elaborada con pasta de fibras vegetales"@es, "Folha fina feita com pasta de fibras vegetais"@pt, "Ohut kuiduista tehty materiaali"@fi, "Làmina constituïda per un entramat tridimensional de fibres de cel·lulosa i altres substàncies"@ca, "Materiale man kan skrive og tegne på"@da, "Cellulosabaserat material"@sv, "Thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging"@en, "Werkstoff aus Fasern zum Beschreiben, Bedrucken ud Verpacken"@de, "Tenký, pružný, vláknitý materiál s minerálními přísadami, vyráběný převážně z celulózy, užívaný pro psaní, kreslení, tisk nebo k balení"@cs, "Materiaal waarop kan worden geschreven en getekend en dat kan worden bedrukt door middel van een druktechniek"@nl ;
+	skos:prefLabel   "Paper"@ca, "Paper"@en, "Paper"@eu, "Papir"@hr, "Papir"@sl, "Papir"@da, "Papír"@hu, "Papír"@cs, "Papper"@sv, "Paber"@et, "Papel"@pt, "Papel"@es, "Karta"@mt, "Papier"@fr, "Papier"@de, "Papier"@sk, "Papier"@pl, "Papier"@nl, "Хартия"@bg, "Popierius"@lt, "Carta"@it, "Papīrs"@lv, "Paperi"@fi, "Χαρτί"@el, "Hârtie"@ro, "Бумага"@ru, "Páipéar"@ga .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.84119>
+	a                   edm:Agent ;
+	edm:begin           "1584-01-29" ;
+	edm:end             "1647-03-14" ;
+	rdaGr2:dateOfBirth  "Delft" ;
+	rdaGr2:dateOfDeath  "Den Haag" ;
+	skos:prefLabel      "Frederik Hendrik (prins van Oranje)" .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.84228>
+	a                              edm:Agent ;
+	edm:begin                      "1567-11-13" ;
+	edm:end                        "1625-04-23" ;
+	rdaGr2:dateOfBirth             "Dillenburg" ;
+	rdaGr2:dateOfDeath             "Den Haag" ;
+	rdaGr2:professionOrOccupation  "legeraanvoerder" ;
+	skos:prefLabel                 "Maurits (prins van Oranje)" .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.109832>
+	a                              edm:Agent ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "bookseller"@en ;
+	skos:prefLabel                 "Veer, Pieter van der"@nl, "Veer, Pieter van der"@en .
+
+<https://lh3.ggpht.com/kTubsUIGazJKLTCxWRalCMnynb4AjtpFL9K53ox9lDSEeBiSROLcEc7jGyHpdulOC9ppCmHf4Nd3tGmgZl35fKuzux0=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Publiek Domein"@nl, "Public Domain"@en ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_OB_81_238/manifest> ;
+	ebucore:fileByteSize    "795016"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2778"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "2050"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_OB_81_238>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2090> ;
+	dc:subject          <http://data.europeana.eu/concept/1859> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	dcterms:spatial     <http://data.europeana.eu/place/40387> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1721", "1629" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_OB_81_238> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_81_238> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.59647>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Inname van Den Bosch (1629)"@nl .
+
+<http://data.europeana.eu/place/40387>
+	a               edm:Place ;
+	owl:sameAs      <https://g.co/kg/m/06hdk>, <http://www.wikidata.org/entity/Q34370>, <http://id.ndl.go.jp/auth/ndlna/00947190>, <http://id.loc.gov/authorities/names/n79015636>, <http://vocab.getty.edu/tgn/7006792>, <https://sws.geonames.org/2747891/>, <http://viaf.org/viaf/123139768>, <https://www.freebase.com/m/06hdk>, <http://www.yso.fi/onto/yso/p108651>, <http://dbpedia.org/resource/Rotterdam>, <http://libris.kb.se/resource/auth/158345>, <https://d-nb.info/gnd/4050739-7>, <https://libris.kb.se/mkz1003525ps2cc> ;
+	skos:altLabel   "R'dam"@fr, "R'dam"@de, "R'dam"@en, "Mokum Reisj"@nl, "Rótterdam"@es, "Ρόττερνταμ"@el, "Rotterdan"@pt, "Rotterdam"@es, "Rotterdam"@lv, "Rotterdam"@pt, "Rotterdam"@lt, "Roffa"@nl, "Roffa"@fr, "Roffa"@en, "Rotjeknar"@nl, "Rotterdams kommun"@sv, "Roterdam"@ro, "Rotterdam kommun"@sv, "Roterdam"@pt, "Rotjeknor"@es, "Rotjeknor"@nl, "Rotjeknor"@fr, "Rotjeknor"@en, "Roterdã"@pt, "R'dam"@nl ;
+	skos:note       "Cathair san Ísiltír"@ga, "Ville néerlandaise située en Hollande-Méridionale"@fr, "Cidade na Holanda do Sul, Países Baixos"@pt, "Città dei Paesi Bassi"@it, "Οικισμός στην Ολλανδία"@el, "Ciudad situada al oeste de los Países Bajos"@es, "Město v Nizozemsku"@cs, "Város Hollandiában"@hu, "Zweitgrößte Stadt der Niederlande"@de, "Belt fin-Netherlands"@mt, "Ciutat dels Països Baixos"@ca, "Havenstad in Zuid-Holland, Nederland"@nl, "Kaupunki Etelä-Hollannin provinssissa, Alankomaissa"@fi, "Miasto w Holandii"@pl, "City in South Holland, the Netherlands"@en, "Город и община в провинции Южная Голландия, Нидерланды"@ru, "Stad i Nederländerna"@sv ;
+	skos:prefLabel  "Róterdam"@es, "Ротердам"@bg, "Roterdão"@pt, "Roterdama"@lv, "Roterdamas"@lt, "Rotterdam"@de, "Rotterdam"@fi, "Rotterdam"@hr, "Rotterdam"@fr, "Rotterdam"@hu, "Rotterdam"@sk, "Rotterdam"@sl, "Rotterdam"@ga, "Rotterdam"@ca, "Rotterdam"@sv, "Rotterdam"@mt, "Rotterdam"@en, "Rotterdam"@it, "Rotterdam"@et, "Rotterdam"@cs, "Rotterdam"@eu, "Rotterdam"@pl, "Rotterdam"@ro, "Rotterdam"@da, "Rotterdam"@nl, "Роттердам"@ru, "Ρότερνταμ"@el ;
+	wgs84_pos:lat   "51.9225" ;
+	wgs84_pos:long  "4.47917" .
+
+<http://data.europeana.eu/concept/1859>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/0lf0n>, <http://babelnet.org/rdf/s00023310n>, <http://purl.org/bncf/tid/17946>, <http://www.yso.fi/onto/yso/p20237>, <https://d-nb.info/gnd/4137817-9>, <http://data.bnf.fr/ark:/12148/cb122351702>, <https://id.erfgoed.net/thesauri/erfgoedtypes/2089>, <http://www.wikidata.org/entity/Q309250>, <http://id.loc.gov/authorities/names/sh85033602>, <https://www.freebase.com/m/0lf0n>, <http://iconclass.org/41A51> ;
+	skos:note        "Área cercada, geralmente por um prédio, que é aberta ao céu"@pt, "Espace découvert et clos, faisant partie d’un ensemble de bâtiments"@fr, "Elemento arquitectónico y urbanístico"@es, "Enclosed area, often by a building, that is open to the sky"@en, "Terület"@hu, "In der Architektur ein unter freiem Himmel befindlicher Bereich eines Gebäudes"@de, "Bouw"@nl ;
+	skos:prefLabel   "Patio"@eu, "Dziedziniec"@pl, "Baggård"@da, "Udvar"@hu, "Udvar"@sl, "Hoov"@et, "Clós"@ga, "Borggård"@sv, "Nádvorie"@sk, "Cour d'immeuble"@fr, "Sisäpiha"@fi, "Courtyard"@en, "Corte"@it, "Binnenplaats"@nl, "Cour"@es, "Nádvoří"@cs, "Вътрешен двор"@bg, "Двор-колодец"@ru, "Pátio"@pt, "Hof"@de, "Pati"@ca ;
+	skos:related     <http://data.europeana.eu/concept/29> .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.460283>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "60760"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.22309>
+	a               edm:Place ;
+	skos:prefLabel  "Binnenhof"@nl .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_OB_81_238>
+	a                       ore:Proxy ;
+	dc:contributor          "Vinckboons, David (I)"@nl, "Savery, Salomon"@nl ;
+	dc:description          "Allegorische triomfantelijke intocht van Frederik Hendrik door een triomfpoort in Den Haag. Allegorie ter ere van de veroveringen van Den Bosch en Wesel door Frederik Hendrik in 1629. Triomfoptocht met de door Overwinning gekroonde stadhouder met de vrijheidslans staande in een strijdwagen, de paarden begeleid door de deugden Rechtvaardigheid (Justitia), Kracht (Fortitudo) en Voorzichtigheid (Prudentia). In de lucht de Faam en de Nassausche Heldenhemel met Willem van Oranje, Maurits, de Duitse keizer, de Franse koning Hendrik IV en Johan van Oldenbarnevelt. Op de achtergrond de het Binnenhof en de Hofvijver. Op een blad met een vers in 3 kolommen door Vondel. Vanwege de zogenaamde mantel van Frederik Hendrik opgenomen in de tweede druk van Het Groote Tafereel der Dwaasheid. Behoort tot de groep van gedrukte stukken toegevoegd aan de serie Tafereel der Dwaasheid met spotprenten op de Windhandel of Actiehandel van 1720."@nl ;
+	dc:format               "papier"@nl, <http://vocab.getty.edu/aat/300014109>, "paper"@en ;
+	dc:identifier           "http://hdl.handle.net/10934/RM0001.COLLECT.460283", "RP-P-OB-81.238" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Public Domain", "Publiek Domein" ;
+	dc:subject              "urn:rijksmuseum:thesaurus:RM0001.THESAU.59647", "Hendrik IV (koning van Frankrijk en Navarra)"@nl, "urn:rijksmuseum:people:RM0001.PEOPLE.17470", "1720 - 1720"@nl, "Inname van Wesel (1629)"@nl, "Windhandel van 1720"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.22309", "urn:rijksmuseum:people:RM0001.PEOPLE.84227", "Hofvijver"@nl, "1629 - 1629"@nl, "Frederik Hendrik (prins van Oranje)"@nl, "Maurits (prins van Oranje)"@nl, "urn:rijksmuseum:people:RM0001.PEOPLE.62629", "urn:rijksmuseum:thesaurus:RM0001.THESAU.59648", "Willem I (prins van Oranje)"@nl, "urn:rijksmuseum:people:RM0001.PEOPLE.84228", "urn:rijksmuseum:people:RM0001.PEOPLE.84119", "urn:rijksmuseum:thesaurus:RM0001.THESAU.94354", <http://iconclass.org/43A432>, "Inname van Den Bosch (1629)"@nl, "Oldenbarnevelt, Johan van"@nl, "Binnenhof"@nl ;
+	dc:title                "Zegezang ter eeren van Fredrik Hendrik Prince van Oranje"@nl, "Frederik Hendrik rijdt in triomfwagen Den Haag binnen, 1629"@nl ;
+	dc:type                 "etching"@en, "etsen"@nl, "print"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", "prent"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.97004", <http://vocab.getty.edu/aat/300041273>, "boekdruk"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.236", "propagandaprent"@nl ;
+	dcterms:created         "1629", "1721" ;
+	dcterms:extent          "width 294 mm"@en, "height 392 mm"@en, "blad hoogte 392 mm"@nl, "blad breedte 294 mm"@nl ;
+	dcterms:isPartOf        "collectie: prenten", "collectie: Frederik Muller Historieplaten" ;
+	dcterms:isReferencedBy  "FMH 3693 ", "FMH 1651 ", "Hollstein Dutch 11 copy" ;
+	dcterms:spatial         "Rotterdam", "Noordelijke Nederlanden", "urn:rijksmuseum:thesaurus:RM0001.THESAU.244", "Northern Netherlands", "urn:rijksmuseum:thesaurus:RM0001.THESAU.3671" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/RP_P_OB_81_238> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_81_238> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.62629>
+	a                              edm:Agent ;
+	edm:begin                      "1547-09-14" ;
+	edm:end                        "1619-05-13" ;
+	rdaGr2:dateOfDeath             "Den Haag" ;
+	rdaGr2:professionOrOccupation  "jurist" ;
+	skos:prefLabel                 "Oldenbarnevelt, Johan van" .

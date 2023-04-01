@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/0175BA51-18C-000A2-000001F8-01748BE4" ;
+	dc:language         "deu" ;
+	dc:subject          <http://data.europeana.eu/concept/2913> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:41:34.339366Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:41:34.339628Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4>
+	a                   ore:Proxy ;
+	dc:contributor      "B'nai B'rith <Wien> [Veranstalter]", "Torberg, Friedrich [Verfasser/in und Vortragende/r]", "Torberg, Friedrich [Rezitator/in]", "Österreichische Mediathek [Produzent]" ;
+	dc:coverage         "Israel20. Jahrhundert - 30er Jahre20. Jahrhundert - 40er Jahre20. Jahrhundert - 60er JahreWien, Künstlerhaus [Aufnahmeort]" ;
+	dc:creator          "Torberg, Friedrich [Text]", "Hammerschlag, Peter [Text]", "Kishon, Ephraim [Text]" ;
+	dc:date             "1967.03.11" ;
+	dc:format           "Tonband auf Kern (AEG), Mp3-Audiodatei" ;
+	dc:identifier       "0175BA51-18C-000A2-000001F8-01748BE4" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          "Lyrik"@de, "Literatur"@de, "Unveröffentlichte Eigenaufnahme der Österreichischen Mediathek"@de, "Lesung"@de, <http://data.europeana.eu/concept/soundgenres/Radio_programmes>, "Prosa"@de ;
+	dc:title            "Friedrich Torberg liest Ephraim Kishon, Peter Hammerschlag und aus seinem eigenen Werk"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.oesterreich-am-wort.at/sammlung/idn/238/> ;
+	dcterms:spatial     "Künstlerhaus [Aufnahmeort]"@de, "Wien"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> .
+
+<http://www.mediathek.at/atom/0175BA51-18C-000A2-000001F8-01748BE4>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/2913>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/76> ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00575071>, <http://www.wikidata.org/entity/Q182357>, <https://www.freebase.com/m/0l3kg>, <https://g.co/kg/m/0l3kg>, <http://id.loc.gov/authorities/names/sh85079180>, <https://d-nb.info/gnd/4036774-5>, <http://id.loc.gov/authorities/genreForms/gf2014026422>, <http://data.bnf.fr/ark:/12148/cb119498002>, <http://www.yso.fi/onto/yso/p1365>, <http://purl.org/bncf/tid/3466> ;
+	skos:note        "Litterær genre"@da, "Gen literar liric"@ro, "Genre littéraire"@fr, "Genere letterario che si sviluppò nell'antica grecia basandosi sul racconto soggettivo del poeta"@it, "Lied"@nl, "Skönlitterär huvudgenre"@sv, "Formal type of poetry"@en, "Literárny druh"@sk, "Irodalmi műnem"@hu, "Rodzaj literacki"@pl, "Dichtung in Versform, welche die dritte literarische Gattung neben der Epik und der Dramatik darstellt"@de, "Forma poética que expresa un sentimiento intenso o una profunda reflexión"@es, "Род литературы"@ru ;
+	skos:prefLabel   "Лирика"@bg, "Lüürika"@et, "Filíocht liriciúil"@ga, "Poesía lírica"@es, "Lyrika"@lt, "Lyrika"@sk, "Liryka"@pl, "Líra"@hu, "Poésie lyrique"@fr, "Poesia lirica"@it, "Poesia lírica"@pt, "Poesia lírica"@ca, "Λυρική ποίηση"@el, "Lirika"@hr, "Lirika"@sl, "Lirika"@eu, "Lyriek"@nl, "Lyrická poezie"@cs, "Liriskā dzeja"@lv, "Lyriikka"@fi, "Genul liric"@ro, "Лирическая поэзия"@ru, "Lyric poetry"@en, "Lyrik"@de, "Lyrik"@sv, "Lyrik"@da .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/0175BA51-18C-000A2-000001F8-01748BE4> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/concept/soundgenres/Radio_programmes>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1726254>, <http://id.loc.gov/authorities/genreForms/gf2011026506> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note        "Recordings made for radio broadcast."@en ;
+	skos:prefLabel   "Programmi radiofonici"@it, "Programy radiowe"@pl, "Programas de radio"@es, "Radiosendungen"@de, "Émissions de radio"@fr, "Radio programmes"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-22T10:14:53.229Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4#metadataTier>, <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_0175BA51_18C_000A2_000001F8_01748BE4> ;
+	edm:language              "de" .

@@ -1,0 +1,144 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/bbe01db6-8457-de31-5bd2-b0ebb157059e>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16766"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:37:01.902Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/92>, <http://data.europeana.eu/place/83>, <http://data.europeana.eu/place/106>, <http://data.europeana.eu/place/80> ;
+	dcterms:spatial     <http://data.europeana.eu/place/80>, <http://data.europeana.eu/place/83>, <http://data.europeana.eu/place/92>, <http://data.europeana.eu/place/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:28:26.888Z" ;
+	dcterms:modified          "2015-03-26T15:28:26.888Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F06c184c4-4d7b-279d-d57e-2d5c1f9ef2e1.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/bbe01db6-8457-de31-5bd2-b0ebb157059e> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/06c184c4-4d7b-279d-d57e-2d5c1f9ef2e1.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/06c184c4-4d7b-279d-d57e-2d5c1f9ef2e1.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/place/83>
+	a               edm:Place ;
+	owl:sameAs      <http://www.idref.fr/027224406/id>, <https://d-nb.info/gnd/4055964-6>, <https://sws.geonames.org/2510769/>, <http://www.wikidata.org/entity/Q29>, <http://vocabularies.unesco.org/thesaurus/concept923>, <http://nomisma.org/id/spain>, <http://www.yso.fi/onto/ysa/Y105209>, <http://libris.kb.se/resource/auth/163816>, <https://libris.kb.se/0xbddljj0wdngtx>, <http://id.worldcat.org/fast/1204303>, <http://www.idref.fr/026376296/id>, <http://vocab.getty.edu/tgn/1000095>, <http://datos.bne.es/resource/XX450592>, <http://id.ndl.go.jp/auth/ndlna/00571694>, <http://viaf.org/viaf/133609710>, <http://datos.bne.es/resource/XX109717>, <http://id.loc.gov/authorities/names/n79006971>, <https://www.freebase.com/m/06mkj>, <https://g.co/kg/m/06mkj>, <http://dbpedia.org/resource/Spain>, <http://id.nlm.nih.gov/mesh/D013030>, <http://www.yso.fi/onto/yso/p105209>, <http://data.bnf.fr/ark:/12148/cb118635857>, <http://zbw.eu/stw/descriptor/17161-5>, <http://babelnet.org/rdf/s00031605n>, <http://lod.nl.go.kr/resource/KAB202013690> ;
+	skos:altLabel   "Esp."@fr, "État espagnol"@fr, "Reino de Espanha"@pt, "Koninkrijk Spanje"@nl, "Španělské království"@cs, "Regno di Spagna"@it, "España"@sv, "Королевство Испания"@ru, "Эспанья"@ru, "Spaña"@es, "Španielske kráľovstvo"@sk, "Reino de España"@es, "Estado español"@es, "Renju ta’ Spanja"@mt, "Regatul Spaniei"@ro, "ES"@ca, "Espainiako Erresuma"@eu, "ES"@nl, "ES"@eu, "ES"@es, "ES"@fr, "ES"@en, "ES"@de, "Кралство Испания"@bg, "Regne d'Espanya"@ca, "Royaume d'Espagne"@fr, "Kingdom of Spain"@en, "Reino de España (1975- )"@es, "Βασίλειο της Ισπανίας"@el, "ESP"@ca, "ESP"@nl, "ESP"@eu, "ESP"@es, "ESP"@fr, "ESP"@en, "ESP"@de, "Estat espanyol"@ca, "Königreich Spanien"@de, "Reino da Espanha"@pt ;
+	skos:note       "Pajjiż fl-Ewropa tal-Lbiċ"@mt, "Państwo w Europie Południowej"@pl, "Staat auf der Iberischen Halbinsel"@de, "Valsts Eiropā"@lv, "Konstitutionell monarki i Sydeuropa"@sv, "País del suroeste de Europa"@es, "Държава в Европа"@bg, "Stát v jihozápadní Evropě"@cs, "País europeu"@pt, "Land i Europa"@da, "Valtio Lounais-Euroopassa"@fi, "Krajina v juhozápadnej Európe"@sk, "Država u jugozapadnoj Europi"@hr, "Pays d'Europe"@fr, "Tír in iardheisceart na hEorpa"@ga, "Állam Délnyugat-Európában"@hu, "Europako hego-mendebaldeko estatu burujabe bat"@eu, "Country in southwestern Europe with territories in Africa"@en, "Страна на юго-западе Европы"@ru, "Riik Edela-Euroopas"@et, "Stato dell'Europa sud-occidentale, membro dell'Unione europea"@it, "Land op het Iberisch Schiereiland in het zuidwesten van Europa"@nl, "Stat în Europa de Vest"@ro, "Estat d'Europa"@ca, "Χώρα της νοτιοδυτικής Ευρώπης"@el ;
+	skos:prefLabel  "Španielsko"@sk, "Španija"@sl, "Испания"@ru, "Испания"@bg, "España"@es, "Spānija"@lv, "Hispaania"@et, "Spanja"@mt, "Espainia"@eu, "Spagna"@it, "An Spáinn"@ga, "Spanyolország"@hu, "Espanya"@ca, "Spain"@en, "Hiszpania"@pl, "Spanje"@nl, "Ισπανία"@el, "Španjolska"@hr, "Spanien"@de, "Spanien"@sv, "Spanien"@da, "Espagne"@fr, "Španělsko"@cs, "Espanja"@fi, "Espanha"@pt, "Spania"@ro, "Ispanija"@lt ;
+	wgs84_pos:lat   "40.2" ;
+	wgs84_pos:long  "-3.5" .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e>
+	a                   ore:Proxy ;
+	dc:coverage         "Luzarra"@nl, "Duitsland"@nl, "Spanje"@nl, "Italië"@nl, "Venlo"@nl, "Nederland"@nl, "Kaierswerth"@nl, "Landau"@nl, "Cadiz"@nl ;
+	dc:creator          "Hooghe, Romeyn de (1645-1708)"@nl ;
+	dc:date             "1702-00-00/1702-00-00" ;
+	dc:description      "Slag bij Luzzara, 1702<br> <i>Victorien der Geallieerden op Vrankryk en Spangien. Ao. 1702</i><br> Uitvoerige scène van de veldslag bij Luzarra\u000A          waarbij de geallieerde legers de Franse en Spaanse troepen versloegen. Boven het portret van de Roomse koning Jozef I met aan weerszijden slagen bij Kaiserswerth en Landau. Onderaan het\u000A          portret van prins Eugenius van Savoye met aan weerszijden overwinningen bij Venlo, met plattegrond, en Cadiz, met plattegrond. <br> Ets zonder de tekst in boekdruk."@nl ;
+	dc:identifier       "NL-HlmNHA_53008727_02" ;
+	dc:language         "Dutch" ;
+	dc:title            "Slag bij Luzzara, 1702<br> <i>Victorien der Geallieerden op Vrankryk en Spangien. Ao. 1702</i><br> Uitvoerige scène van de veldslag bij Luzarra waarbij de\u000A          geallieerde legers de Franse en Spaanse troepen versloegen. Boven het portret van de Roomse koning Jozef I met aan weerszijden slagen bij Kaiserswerth en Landau. Onderaan het portret van\u000A          prins Eugenius van Savoye met aan weerszijden overwinningen bij Venlo, met plattegrond, en Cadiz, met plattegrond. <br> Ets zonder de tekst in boekdruk."@nl, "Voorhelm Schneevoogt NL-HlmNHA_53008727_02"@nl, "NL-HlmNHA_53008727_02"@nl ;
+	dc:type             "Grafiek Drukwerk"@nl, "Historieprenten, tekeningen en foto's"@nl ;
+	dcterms:spatial     "Duitsland", "Spanje", "Italië", "Venlo", "Cadiz", "Landau", "Nederland", "Luzarra", "Kaierswerth" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/place/92>
+	a               edm:Place ;
+	owl:sameAs      <https://www.freebase.com/m/03rjj>, <http://lod.nl.go.kr/resource/KAB202014116>, <http://www.yso.fi/onto/ysa/Y105111>, <http://vocab.getty.edu/tgn/1000080>, <https://g.co/kg/m/03rjj>, <http://zbw.eu/stw/descriptor/17039-2>, <http://id.worldcat.org/fast/1204565>, <http://data.bnf.fr/ark:/12148/cb11864655t>, <http://vocabularies.unesco.org/thesaurus/concept910>, <http://www.wikidata.org/entity/Q38>, <http://nomisma.org/id/italy>, <http://www.yso.fi/onto/yso/p105111>, <http://babelnet.org/rdf/s00047705n>, <http://datos.bne.es/resource/XX450723>, <http://viaf.org/viaf/152361066>, <http://www.idref.fr/026389908/id>, <http://dbpedia.org/resource/Italy>, <https://sws.geonames.org/3175395/>, <http://nomisma.org/id/italian_republic>, <http://id.ndl.go.jp/auth/ndlna/00564289>, <http://id.nlm.nih.gov/mesh/D007558>, <https://d-nb.info/gnd/4027833-5>, <http://id.loc.gov/authorities/names/n79021783> ;
+	skos:altLabel   "Republiek Italië"@nl, "Repubblika Taljana"@mt, "Republiken Italien"@sv, "Italian tasavalta"@fi, "La penisola"@it, "La République italienne"@fr, "Italian Republic"@en, "République Italienne"@fr, "Ιταλική Δημοκρατία"@el, "Italienische Republik"@de, "Repubblica italiana"@it, "Ita."@fr, "Ital."@fr, "Talianska republika"@sk, "Itaalia Vabariik"@et, "Republica Italiană"@ro, "Italia"@fr, "Italia"@en, "Република Италия"@bg, "Italia"@sv, "It."@fr, "Republika Italija"@hr, "Italie"@nl, "Bel Paese"@it, "Estat Italià"@ca, "ITA"@nl, "IT"@nl, "IT"@es, "IT"@fr, "IT"@it, "IT"@en, "IT"@de, "ITA"@es, "ITA"@fr, "ITA"@it, "ITA"@en, "ITA"@de, "Repubblica Italiana"@en, "it"@it, "Итальянская Республика"@ru, "República Italiana"@ca, "República Italiana"@es, "Republic of Italy"@en, "Italiaanse Republiek"@nl ;
+	skos:note       "Staat in Südeuropa"@de, "País na Europa"@pt, "Država u južnoj Europi"@hr, "Land in Zuid-Europa"@nl, "Állam Dél-Európában"@hu, "Štát v južnej Európe"@sk, "Estat europeu situat a la Península itàlica"@ca, "Държава в Южна Европа"@bg, "Tír i ndeisceart na hEorpa"@ga, "Država v Evropi"@sl, "Valsts Eiropas dienvidos"@lv, "Europa hegoaldeko Estatu subiranoa"@eu, "État d'Europe du Sud"@fr, "País de Europa"@es, "Šalis pietų Europoje"@lt, "Riik Euroopas"@et, "Χώρα της νότιας Ευρώπης"@el, "Land i Sydeuropa"@da, "Stát v Evropě"@cs, "Valtio Etelä-Euroopassa"@fi, "Country in Southern Europe"@en, "Государство на юге Европы, в центре Средиземноморья"@ru, "Stat în Europa de Sud"@ro, "Państwo w południowej Europie"@pl, "Republik i Sydeuropa"@sv, "Stato dell'Europa centro-meridionale, membro e cofondatore dell'Unione europea"@it, "Pajjiż fl-Ewropa tan-Nofsinhar"@mt ;
+	skos:prefLabel  "Italien"@de, "Italien"@sv, "Italien"@da, "Taliansko"@sk, "Italie"@fr, "Italy"@en, "Italië"@nl, "Itàlia"@ca, "Italija"@hr, "Italija"@lt, "Italija"@sl, "Włochy"@pl, "Olaszország"@hu, "Италия"@ru, "Италия"@bg, "Itália"@pt, "Itālija"@lv, "Italia"@fi, "Italia"@it, "Italia"@es, "Italia"@eu, "Italia"@ro, "Italja"@mt, "An Iodáil"@ga, "Itaalia"@et, "Itálie"@cs, "Ιταλία"@el ;
+	wgs84_pos:lat   "42.5" ;
+	wgs84_pos:long  "12.5" .
+
+<http://data.europeana.eu/place/80>
+	a               edm:Place ;
+	owl:sameAs      <http://id.nlm.nih.gov/mesh/D005858>, <http://datos.bne.es/resource/XX450924>, <https://sws.geonames.org/2921044/>, <http://id.worldcat.org/fast/1210272>, <http://id.ndl.go.jp/auth/ndlna/00561571>, <http://babelnet.org/rdf/s00026684n>, <http://data.bnf.fr/ark:/12148/cb12205186t>, <https://g.co/kg/m/0345h>, <http://zbw.eu/stw/descriptor/18012-3>, <http://data.cervantesvirtual.com/person/32785>, <http://id.loc.gov/authorities/names/n80125931>, <http://dbpedia.org/resource/Germany>, <http://vocab.getty.edu/tgn/7000084>, <http://www.idref.fr/030685435/id>, <http://vocabularies.unesco.org/thesaurus/concept904>, <http://data.bnf.fr/ark:/12148/cb11930867z>, <http://www.wikidata.org/entity/Q183>, <http://data.bnf.fr/ark:/12148/cb152996644>, <http://www.yso.fi/onto/yso/p105087>, <http://www.yso.fi/onto/ysa/Y105087>, <http://id.nlm.nih.gov/mesh/Z01.542.315>, <https://d-nb.info/gnd/4011882-4>, <https://www.freebase.com/m/0345h>, <http://viaf.org/viaf/189116956> ;
+	skos:altLabel   "La République fédérale d’Allemagne"@fr, "Дойчланд"@ru, "República Federal de Alemania"@es, "Saksan liittotasavalta"@fi, "ФРГ"@bg, "ФРГ"@ru, "RFG"@ro, "Bundesrepublik Deutschland"@pl, "République fédérale d'Allemagne"@fr, "Bundesrepublik Deutschland"@fr, "Bundesrepublik Deutschland"@it, "Bundesrepublik Deutschland"@en, "Bundesrepublik Deutschland"@fi, "Bundesrepublik Deutschland"@ru, "Bundesrepublik Deutschland"@de, "Republica Federală Germania"@ro, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el, "Német Szövetségi Köztársaság"@hu, "Federal Republic of Germany"@en, "République fédérale allemande"@fr, "GER"@fr, "GER"@it, "GER"@en, "GER"@de, "GFR"@en, "Федерална република Германия"@bg, "Spolková republika Německo"@cs, "DEU"@nl, "SLV"@et, "DEU"@it, "DEU"@de, "Repubblika Federali tal-Ġermanja"@mt, "BR Deutschland"@pl, "Deutschland"@pl, "Deutschland"@fr, "BR Deutschland"@fr, "Deutschland"@it, "Deutschland"@en, "Deutschland"@ru, "BR Deutschland"@it, "BR Deutschland"@en, "BR Deutschland"@de, "Bondsrepubliek Duitsland"@nl, "RFA"@fr, "Repubblica Federale di Germania"@it, "Saksamaa Liitvabariik"@et, "Republica Federal de Alemania"@es, "R. F. A."@fr, "All."@fr, "DE"@nl, "DE"@fr, "DE"@en, "NSR"@cs, "Федеративная Республика Германия"@ru, "Förbundsrepubliken Tyskland"@sv, "SRN"@cs, "Bondsrepubliek"@nl, "BRD"@pl, "Nemecká spolková republika"@sk, "FRG"@de, "BRD"@cs, "BRD"@fr, "BRD"@it, "BRD"@en, "BRD"@de, "de"@fr, "de"@it, "de"@en, "de"@de ;
+	skos:note       "Država v Evropi"@sl, "Państwo w Europie Środkowej"@pl, "Държава в Западна Европа"@bg, "Liittovaltio Keski-Euroopassa"@fi, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Land in West- en Centraal-Europa"@nl, "Stát ve střední Evropě"@cs, "Pays d'Europe"@fr, "Förbundsrepublik i Centraleuropa"@sv, "Bundesstaat in Mitteleuropa"@de, "Europako erdialdeko herrialdea"@eu, "Stato dell'Europa, membro dell'Unione Europea"@it, "Tír i lár na hEorpa"@ga, "País del centre d'Europa"@ca, "Valsts Eiropā"@lv, "Država u srednjoj Europi"@hr, "Государство в Центральной Европе"@ru, "Šalis centrinėje Europoje"@lt, "Țară din Europa Centrală de Vest"@ro, "Ομοσπονδιακή δημοκρατία στην κεντρική Ευρώπη"@el, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Forbundsrepublik i Centraleuropa"@da, "Štát v strednej Európe"@sk, "Riik Kesk-Euroopas"@et, "País da Europa Central"@pt ;
+	skos:prefLabel  "Tyskland"@sv, "Tyskland"@da, "Alemania"@es, "Alemania"@eu, "Vokietija"@lt, "Alemanya"@ca, "Duitsland"@nl, "Germany"@en, "Německo"@cs, "Alemanha"@pt, "Ġermanja"@mt, "Niemcy"@pl, "Германия"@ru, "Германия"@bg, "Nemecko"@sk, "Saksa"@fi, "Saksamaa"@et, "Vācija"@lv, "Γερμανία"@el, "Németország"@hu, "Njemačka"@hr, "Germania"@it, "Germania"@ro, "Deutschland"@de, "Nemčija"@sl, "An Ghearmáin"@ga, "Allemagne"@fr ;
+	wgs84_pos:lat   "51.0" ;
+	wgs84_pos:long  "10.0" .
+
+<https://images.memorix.nl/ranh/thumb/640x480/06c184c4-4d7b-279d-d57e-2d5c1f9ef2e1.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e/manifest> ;
+	ebucore:fileByteSize    "85085"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "570"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/item/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:37:01.903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_bbe01db6_8457_de31_5bd2_b0ebb157059e> .

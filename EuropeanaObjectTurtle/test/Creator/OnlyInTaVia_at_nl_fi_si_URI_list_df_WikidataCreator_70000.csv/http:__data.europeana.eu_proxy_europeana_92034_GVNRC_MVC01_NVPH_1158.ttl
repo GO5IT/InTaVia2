@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-1158&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "36097"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "201"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_1158>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/MVC01:NVPH-1158> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-1158&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_MVC01_NVPH_1158>
+	a                   ore:Proxy ;
+	dc:contributor      "Joh. Enschedé en Zonen", "Pieck, Anton" ;
+	dc:creator          "Pieck, Anton" ;
+	dc:format           "postzegel" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-1158" ;
+	dc:rights           "Museum voor Communicatie", "Voor meer informatie: Museum voor Communicatie"@nl, "For more information: Museum voor Communicatie"@en ;
+	dc:source           "[NVPH-1158], Postzegelontwerpen, postzegels en affiches; Museum voor Communicatie" ;
+	dc:subject          "CEPT (Conférence Européenne des Administrations des Postes et des Télécommunications)"@nl, "gotiek"@nl, "Haarlem"@nl, "Noord-Holland"@nl, "gebouw"@nl, "Europapostzegels"@nl ;
+	dc:title            "Postzegel Nederland 1978, Europapostzegel, CEPT" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "2 mei 1978" ;
+	dcterms:extent      "Beeldvlak: 33 mm × 22 mm; Geheel: 25 mm × 36 mm" ;
+	dcterms:isPartOf    "GVN", "Postzegelontwerpen, postzegels en affiches", "MVC01" ;
+	dcterms:medium      "rasterdiepdruk", "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_1158> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:23.059Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_1158> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/29>
+	a                skos:Concept ;
+	skos:exactMatch  <http://purl.obolibrary.org/obo/ENVO_00000073>, <http://vocabularies.unesco.org/thesaurus/concept2708>, <https://libris.kb.se/nl021hv61spd5n2>, <http://id.worldcat.org/fast/840962>, <http://data.bnf.fr/ark:/12148/cb133184590>, <http://www.yso.fi/onto/ysa/Y98461>, <http://id.ndl.go.jp/auth/ndlna/00565595>, <https://g.co/kg/m/0cgh4>, <http://babelnet.org/rdf/s00013722n>, <http://www.geonames.org/ontology#S.BLDG>, <http://www.yso.fi/onto/yso/p1786>, <http://purl.org/bncf/tid/775>, <http://www.wikidata.org/entity/Q41176>, <http://zbw.eu/stw/descriptor/18496-4>, <http://vocab.getty.edu/aat/300004792>, <http://dbpedia.org/ontology/Building>, <https://www.freebase.com/m/0cgh4>, <https://d-nb.info/gnd/4156127-2>, <http://id.loc.gov/authorities/names/sh85017769> ;
+	skos:note        "Celtniecības procesā izveidots objekts vai objektu komplekss"@lv, "Construcción inmobiliaria realizada por intervención humana"@es, "Construcție imobiliară cu spații pentru protejarea oamenilor, animalelor sau obiectelor"@ro, "Bauwerk, das Räume einschließt, betreten werden kann und zum Schutz von Menschen, Tieren oder Sachen dient"@de, "Erillinen, kiinteä, omalla sisäänkäynnillä varustettu rakennelma, joka sisältää katettua, yleensä seinien erottamaa tilaa"@fi, "Αρχιτεκτονική κατασκευή, συνήθως με στέγη και τοίχους, που στέκεται μόνιμα σε ένα μέρος"@el, "Bouwwerk met muren en dak"@nl, "Estructura humana amb un sostre i parets que roman més o menys permanentment a un lloc"@ca, "Építmény"@hu, "Katuse, siseruumi ja välispiiretega ehitis"@et, "Тип сооружения, помещение для людей"@ru, "Människoskapad struktur med tak och väggar permanent stående på samma plats"@sv, "Construction immobilière, réalisée par intervention humaine"@fr, "Struttura, tipikament b'saqaf u ħitan, wieqfa pjuttost b'mod permanenti f'post wieħed"@mt, "Stavba s pevnou střechou a stěnami"@cs, "Structure, typically with a roof and walls, standing more or less permanently in one place"@en, "Struktura zbudowana przez człowieka mająca ściany i dach stojąca w określonym miejscu"@pl, "Egitura bat, usuki teilatuz eta hormez osatua, leku batean modu egonkorrean dagoena"@eu, "Costruzione edilizia realizzata dall'uomo"@it, "Tipo de obra arquitetônica"@pt, "Građevina koja se obično sastoji od zidova i krovne konstrukcije"@hr, "Menneskeskabt, fritstående og fast placeret konstruktion - med tag og vægge"@da ;
+	skos:prefLabel   "Bâtiment"@fr, "Building"@en, "Edificio"@it, "Edificio"@es, "Épület"@hu, "Stavba"@sl, "Byggnad"@sv, "Hoone"@et, "Budova"@sk, "Budova"@cs, "Edifici"@ca, "Здание"@ru, "Budynek"@pl, "Gebäude"@de, "Rakennus"@fi, "Bini"@mt, "Foirgneamh"@ga, "Zgrada"@hr, "Eraikin"@eu, "Edifício"@pt, "Clădire"@ro, "Gebouw"@nl, "Κτίριο"@el, "Bygning"@da, "Statinys"@lt, "Сграда"@bg, "Celtne"@lv ;
+	skos:related     <http://data.europeana.eu/concept/1897>, <http://data.europeana.eu/concept/1899>, <http://data.europeana.eu/concept/1907>, <http://data.europeana.eu/concept/1906> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:04:23.058Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_1158> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2535>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2538> ;
+	skos:exactMatch  <https://www.freebase.com/m/068vv>, <http://id.loc.gov/authorities/names/sh85105428>, <http://babelnet.org/rdf/s00063768n>, <https://g.co/kg/m/068vv>, <https://d-nb.info/gnd/4008242-8>, <http://www.wikidata.org/entity/Q37930>, <http://vocab.getty.edu/aat/300037321>, <http://id.ndl.go.jp/auth/ndlna/00574394>, <http://www.yso.fi/onto/yso/p4888>, <http://purl.org/bncf/tid/6569>, <http://data.bnf.fr/ark:/12148/cb119336763>, <http://thesaurus.europeanafashion.eu/thesaurus/10909> ;
+	skos:note        "Comprobante del pago previo de los envíos efectuados por correo en forma de etiqueta"@es, "Пощенски знак"@bg, "Специальный знак почтовой оплаты, выпускаемый и продаваемый национальными почтовыми ведомствами"@ru, "Bestätigung eines postalischen Beförderungsunternehmens über die Zahlung des aufgedruckten Betrages"@de, "Waardepapier voor postverzending"@nl, "Pièce généralement de papier destinée à être collée sur un envoi postal comme preuve du paiement dudit envoi"@fr, "Cenina, která slouží jako doklad o zaplacení poštovního poplatku"@cs, "Carta-valore che serve per l'affrancatura dei servizi di corrispondenza"@it, "Cenina, ktorá slúži ako doklad o zaplatení poštového poplatku"@sk, "Postilähetykseen kiinnitettävä todiste siitä, että lähetyksen postimaksu on maksettu"@fi, "Lille stykke papir med den trykte indhold udgivet af en postvirksomhed der er indsat på en forsendelse og tjener som dokumentation for betaling"@da, "Liten pappersbit med tryckt innehåll utgiven av en postoperatör som klistras på en försändelse och tjänar som bevis på betalning"@sv, "Small piece of paper that is purchased and displayed on an item of mail as evidence of payment of postage"@en ;
+	skos:prefLabel   "Znaczek pocztowy"@pl, "Bolla postali"@mt, "Почтовая марка"@ru, "Postmark"@et, "Sello postal"@es, "Poštovní známka"@cs, "Briefmarke"@de, "Postage stamp"@en, "Francobollo"@it, "Frimärke"@sv, "Pastmarka"@lv, "Selo postal"@pt, "Пощенска марка"@bg, "Stampa poist"@ga, "Zigilu"@eu, "Marcă poștală"@ro, "Postabélyeg"@hu, "Pašto ženklas"@lt, "Poštanska marka"@hr, "Frimærke"@da, "Poštna znamka"@sl, "Poštová známka"@sk, "Γραμματόσημο"@el, "Postimerkki"@fi, "Segell"@ca, "Postzegel"@nl, "Timbre postal"@fr .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_MVC01_NVPH_1158>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2535> ;
+	dc:subject          <http://data.europeana.eu/concept/205>, <http://data.europeana.eu/concept/29> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_NVPH_1158> .
+
+<http://data.europeana.eu/concept/205>
+	a                skos:Concept ;
+	skos:exactMatch  <http://g.co/kg/g/121b6yxq>, <https://g.co/kg/m/03mmhl>, <http://www.yso.fi/onto/yso/p2896>, <http://purl.org/bncf/tid/3836>, <http://datos.bne.es/resource/XX525330>, <https://d-nb.info/gnd/4021656-1>, <http://id.loc.gov/authorities/names/sh85007682>, <http://data.bnf.fr/ark:/12148/cb11930971g>, <https://www.freebase.com/m/03mmhl>, <http://vocab.getty.edu/aat/300020775>, <http://www.wikidata.org/entity/Q46825> ;
+	skos:note        "Estilo artístico"@es, "Style artistique du Moyen Âge"@fr, "Styl w architekturze i innych dziedzinach sztuk plastycznych"@pl, "Style of Medieval art developed in Northern France"@en, "Umelecký štýl v 12. – 15. storočí"@sk, "Az érett középkor művészeti irányzata"@hu, "Umělecký sloh"@cs, "Benämningen på både en stil och en epok i Europas konsthistoria"@sv, "Viduslaiku mākslas stils"@lv, "Estil d'art medieval desenvolupat al nord de França"@ca, "Стиль средневекового искусства"@ru, "Fase della storia dell'arte occidentale che inizia all'incirca alla metà del XII secolo in Francia"@it, "Epoche der europäischen Architektur und Kunst des Mittelalters"@de ;
+	skos:prefLabel   "Gotico"@it, "Gooti stiil"@et, "Gotiek"@nl, "Gotik"@de, "Gotik"@sv, "Gotik"@da, "Art gothique"@fr, "Gotic"@ro, "Estilo gótico"@pt, "Γοτθική τέχνη"@el, "Gótika"@hu, "Ealaín Ghotach"@ga, "Gotiikan taide"@fi, "Gothic art"@en, "Gotyk"@pl, "Arte gótico"@es, "Готика"@ru, "Gotika"@lt, "Gotika"@lv, "Gotika"@hr, "Gotika"@sk, "Gotika"@sl, "Gotika"@cs, "Готика"@bg, "Arte gotikoa"@eu, "Art gòtic"@ca .
+
+<http://www.geheugenvannederland.nl/?/en/items/MVC01:NVPH-1158>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50982"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_NVPH_1158>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:24:53.528Z" ;
+	dcterms:modified          "2018-04-05T17:11:09.850Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_MVC01_NVPH_1158> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AMVC01%3ANVPH-1158%26role%3Dthumbnail&type=IMAGE> .

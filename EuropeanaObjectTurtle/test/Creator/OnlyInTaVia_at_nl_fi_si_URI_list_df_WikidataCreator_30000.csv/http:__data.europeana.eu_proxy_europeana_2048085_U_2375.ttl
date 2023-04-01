@@ -1,0 +1,154 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<file:///usr/local/tomcat/webapps/#Lokalita:17157>
+	a               edm:Place ;
+	skos:prefLabel  "Francie"@cs .
+
+<http://data.europeana.eu/organization/1482250000004513286>
+	a               foaf:Organization ;
+	skos:prefLabel  "Chrudim Regional Museum"@fr, "Chrudim Regional Museum"@en, "Regionální muzeum v Chrudimi"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutor:103315>
+	a               edm:Agent ;
+	skos:prefLabel  "Alfons Mucha"@cs .
+
+<https://www.esbirky.cz/detail/103315>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004502224>
+	a               foaf:Organization ;
+	skos:prefLabel  "ESbírky"@en, "ESbírky"@cs .
+
+<http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-08T10:37:11.674899Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/479/https___www_esbirky_cz_detail_103315> .
+
+<http://data.europeana.eu/aggregation/provider/479/https___www_esbirky_cz_detail_103315>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004513286> ;
+	edm:isShownAt      <https://www.esbirky.cz/detail/103315> ;
+	edm:isShownBy      <https://www.esbirky.cz/img.php?id=9190415> ;
+	edm:object         <https://www.esbirky.cz/img.php?id=9190415> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004502224> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/4.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/479/https___www_esbirky_cz_detail_103315>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-26T12:30:13.139Z" ;
+	dcterms:modified          "2021-03-08T10:37:09.914Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315#contentTier>, <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315> ;
+	edm:completeness          "10" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "479_RMVC_Regionalni_muzeum_v_Chrudimi" ;
+	edm:landingPage           <https://www.europeana.eu/item/479/https___www_esbirky_cz_detail_103315> ;
+	edm:language              "cs" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.esbirky.cz%2Fimg.php%3Fid%3D9190415&type=IMAGE> .
+
+<file:///usr/local/tomcat/webapps/#TypSbirky:17116>
+	a               skos:Concept ;
+	skos:prefLabel  "Malířství, kresba a grafika"@cs .
+
+<https://iiif.europeana.eu/presentation/479/https___www_esbirky_cz_detail_103315/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/479/https___www_esbirky_cz_detail_103315>
+	a                   ore:Proxy ;
+	dc:coverage         <file:///usr/local/tomcat/webapps/#Predmet:103315> ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#PredmetAutor:103315> ;
+	dc:date             "1801-1-1", <file:///usr/local/tomcat/webapps/#PredmetDatText:103315> ;
+	dc:description      "Tento bianko plakát byl zhotoven pro reklamu pivovarů při řece Meuse, ústředním motivem je pololežící žena držící holbu piva, na hlavě má čelenku z květů a také z rostlin, z nichž se vyrábí pivo." ;
+	dc:format           "Barevná litografie", <file:///usr/local/tomcat/webapps/#Technika:17429> ;
+	dc:identifier       "U 2375" ;
+	dc:publisher        <file:///usr/local/tomcat/webapps/#PredmetVydavatel:103315> ;
+	dc:relation         <file:///usr/local/tomcat/webapps/#TypSbirky:17116> ;
+	dc:title            "Bieres de la meuse"@cs ;
+	dcterms:created     "1801-1-1" ;
+	dcterms:extent      "147 x 98 cm" ;
+	dcterms:medium      <file:///usr/local/tomcat/webapps/#Material:17369>, "Papír" ;
+	dcterms:spatial     <file:///usr/local/tomcat/webapps/#Lokalita:17157> ;
+	dcterms:temporal    <file:///usr/local/tomcat/webapps/#Datace:294948> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/479/https___www_esbirky_cz_detail_103315> .
+
+<https://www.esbirky.cz/img.php?id=9190415>
+	a                       edm:WebResource ;
+	dc:description          "7454-114765-2375.jpg"@cs ;
+	dc:format               "image/jpeg" ;
+	dc:type                 "image" ;
+	dcterms:created         "2015-10-27T16:41:37" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/479/https___www_esbirky_cz_detail_103315/manifest> ;
+	dcterms:issued          "2012-04-18T00:00:00" ;
+	ebucore:fileByteSize    "337230"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1483"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc-nd/4.0/> .
+
+<file:///usr/local/tomcat/webapps/#Material:17369>
+	a               skos:Concept ;
+	skos:prefLabel  "Papír"@cs .
+
+<file:///usr/local/tomcat/webapps/#Datace:294948>
+	a               edm:TimeSpan ;
+	skos:note       "19. stol." ;
+	skos:prefLabel  "19. století"@cs .
+
+<http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-08T10:37:11.674598Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/479/https___www_esbirky_cz_detail_103315> .
+
+<http://data.europeana.eu/proxy/europeana/479/https___www_esbirky_cz_detail_103315>
+	a                   ore:Proxy ;
+	dc:identifier       "https://www.esbirky.cz/detail/103315" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/479/https___www_esbirky_cz_detail_103315> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/479/https___www_esbirky_cz_detail_103315> .
+
+<file:///usr/local/tomcat/webapps/#Technika:17429>
+	a               skos:Concept ;
+	skos:prefLabel  "Litografie"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetVydavatel:103315>
+	a               edm:Agent ;
+	skos:prefLabel  "Tisk F. Champenois, Paris"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetDatText:103315>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "1897"@cs .
+
+<file:///usr/local/tomcat/webapps/#Predmet:103315>
+	a               edm:Place ;
+	skos:prefLabel  "Paříž"@cs .

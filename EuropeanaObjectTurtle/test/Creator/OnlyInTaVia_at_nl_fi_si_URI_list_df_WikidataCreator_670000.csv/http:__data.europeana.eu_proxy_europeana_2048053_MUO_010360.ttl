@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_010360/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048053/MUO_010360#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:09.535Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_010360> .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_010360>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:42:44.504Z" ;
+	dcterms:modified          "2015-11-03T10:42:44.504Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_010360#metadataTier>, <http://data.europeana.eu/item/2048053/MUO_010360#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_010360> ;
+	edm:completeness          "9" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_010360> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D11142&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_010360>
+	a                   ore:Proxy ;
+	dc:creator          "Raškaj, Slava" ;
+	dc:date             "1897" ;
+	dc:description      "Okrugao, na niskoj prstenastoj bazi. Cijela ploha pozlaćena i oslikana uljanim bojama: portret djevojke u profilu s knjigom. Uz desni obod cvjetna grančica." ;
+	dc:format           "image/jpg" ;
+	dc:identifier       "MUO_010360" ;
+	dc:title            "dekorativni tanjur" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Ceramics" ;
+	dcterms:medium      <http://vocab.getty.edu/aat/300163214>, "oslikano uljem", "pozlata" ;
+	dcterms:spatial     "Beč (Zagreb)", "Austrija (Hrvatska)" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_010360> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_010360> .
+
+<http://data.europeana.eu/item/2048053/MUO_010360>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_010360>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_010360> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=11142> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=11142> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=11142> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://athena.muo.hr/?object=detail&id=11142>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "13382"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/2757>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2287> ;
+	skos:exactMatch  <https://www.freebase.com/m/022nqj>, <https://d-nb.info/gnd/4062851-6>, <http://id.loc.gov/authorities/names/sh85054932>, <http://nomisma.org/id/gilded>, <http://id.ndl.go.jp/auth/ndlna/00567581>, <http://purl.org/bncf/tid/27137>, <http://thesaurus.europeanafashion.eu/thesaurus/10949>, <http://www.yso.fi/onto/yso/p16930>, <http://vocab.getty.edu/aat/300053789>, <https://g.co/kg/m/022nqj>, <http://www.wikidata.org/entity/Q1334300>, <http://data.bnf.fr/ark:/12148/cb11950688s> ;
+	skos:note        "Covering object with layer of gold"@en, "Objektin päällystäminen kullalla"@fi, "Pokrytí předmětu plátky zlata"@cs, "Rzemiosło artystyczne zajmujące się pokrywaniem podłoża metalami"@pl, "Bedekken met een laagje goud"@nl, "Überziehen metallischer und nichtmetallischer Gegenstände mit Gold, Goldlegierungen und anderen dekorativen Metallschichten"@de, "Técnica decorativa que consiste en aplicar pan de oro sobre una superficie previamente preparada"@es, "Innebär att ett föremål beläggs med ett tunt lager guld"@sv ;
+	skos:prefLabel   "Vergolden"@de, "Vergulden"@nl, "Förgyllning"@sv, "Золочение"@ru, "Kuldamine"@et, "Pozlatitev"@sl, "Daurat"@ca, "Επιχρύσωμα"@el, "Doratura"@it, "Kultaus"@fi, "Zlacení"@cs, "Dorure"@fr, "Pozlata"@hr, "Órú"@ga, "Dorado"@es, "Forgyldning"@da, "Douração"@pt, "Gilding"@en, "Pozłotnictwo"@pl .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://athena.muo.hr/api/?semantic=representation&id=11142>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_010360/manifest> ;
+	ebucore:fileByteSize    "16034"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "297"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://vocab.getty.edu/aat/300163214>
+	a               skos:Concept ;
+	skos:altLabel   "loza color crema"@es, "cream-coloured earthenware"@en-gb, "乳白陶"@zh-hant, "cream-ware"@en, "cream-colored earthenware"@en-us, "crèmekleurig aardewerk"@nl ;
+	skos:broader    <http://vocab.getty.edu/aat/300140803>, <http://vocab.getty.edu/aat/300010666> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300105664>, <http://vocab.getty.edu/aat/300265756>, <http://vocab.getty.edu/aat/300233472> ;
+	skos:note       "http://vocab.getty.edu/aat/rev/5001096072" ;
+	skos:prefLabel  "kamenina", "mǐ sè táo qì"@zh-latn-pinyin-x-hanyu, "mi se t'ao ch'i"@zh-latn-wadegile, "Engels aardewerk"@nl, "米色陶器"@zh-hant, "creamware"@es, "creamware"@en, "mi se tao qi"@zh-latn-pinyin-x-notone .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_010360#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:09.535Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_010360> .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_010360>
+	a                   ore:Proxy ;
+	dcterms:medium      <http://data.europeana.eu/concept/2757> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1897" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_010360> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_010360> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

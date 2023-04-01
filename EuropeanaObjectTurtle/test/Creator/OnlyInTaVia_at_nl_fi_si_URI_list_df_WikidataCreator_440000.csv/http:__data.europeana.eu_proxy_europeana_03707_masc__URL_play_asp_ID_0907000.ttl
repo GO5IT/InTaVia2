@@ -1,0 +1,100 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0907000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:29:21.560Z" ;
+	dcterms:modified          "2014-06-27T11:29:21.560Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000#contentTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0907000>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2009" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0907000> .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0907000>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0907000>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0907000> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:14.548Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0907000> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0907000>
+	a                    ore:Proxy ;
+	dc:creator           "Brahms, Johannes" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0907000" ;
+	dc:publisher         "Paris Cité de la musique 2009" ;
+	dc:subject           "MUSIQUE ROMANTIQUE", "CYCLE DE LIEDER", "19 EME SIECLE", "LIED", "ALLEMAGNE", "MUSIQUE POPULAIRE" ;
+	dc:title             "Le Temps de la danse - Brahms, Liebeslieder Walzer et lieder choisis" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le jeudi 05 février 2009 (20h, salle des concerts)" ;
+	dcterms:extent       "1h 23 min 50 sec" ;
+	dcterms:hasPart      "Wie Melodien zieht es mir op.105 n°1 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Sapphische Ode op. 94 n°4 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Ein kleiner, hübscher Vogel (Liebeslieder-Walzer op. 52) (rappel) / Johannes Brahms ; Ruth Ziesak, soprano ; Stella Doufexis, alto ; Werner Güra, ténor ; Konrad Jarnot, baryton-basse ; Christophe Berner, Camillo Radicke, piano. - Cité de la musique, 2009", "Mädchenlied op. 85 n°3 / Johannes Brahms ; Ruth Ziesak, soprano ; Christophe Berner, piano. - Cité de la musique, 2009", "Mädchenlied op.107 n°5 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Es liebt sich so lieblich im lenze op. 71 n°1 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009", "Vorschneller Schwur op. 95 n°5 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Komm bald op. 97 n°5 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Zum Schluss op. 65 n°15 (pour 4 voix et piano à 4 mains) / Johannes Brahms ; Ruth Ziesak, soprano ; Stella Doufexis, alto ; Werner Güra, ténor ; Konrad Jarnot, baryton-basse ; Christophe Berner, Camillo Radicke, piano. - Cité de la musique, 2009", "Meine Liebe ist grün op. 63 n°5 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009", "Mädchenfluch op. 69 n°9 / Johannes Brahms ; Ruth Ziesak, soprano ; Christophe Berner, piano. - Cité de la musique, 2009", "Die Mainacht op. 43 n°2 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009", "Nachtigall op. 97 n°1 / Johannes Brahms ; Ruth Ziesak, soprano ; Christophe Berner, piano. - Cité de la musique, 2009", "Deutsche Volkslieder WoO33 (extraits) / Johannes Brahms ; Werner Güra, ténor ; Christophe Berner, piano. - Cité de la musique, 2009", "Wenn du nur zuweilen lächelst op. 57 n°2 / Johannes Brahms ; Ruth Ziesak, soprano ; Christophe Berner, piano. - Cité de la musique, 2009", "Das Mädchen spricht op. 107 n°3 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009", "Unbewegte laue luft op. 57 n°8 / Johannes Brahms ; Ruth Ziesak, soprano ; Christophe Berner, piano. - Cité de la musique, 2009", "Liebeslieder-Walzer op. 52 (pour voix et piano à quatre mains) / Johannes Brahms ; Ruth Ziesak, soprano ; Stella Doufexis, alto ; Werner Güra, ténor ; Konrad Jarnot, baryton-basse ; Christophe Berner, Camillo Radicke, piano. - Cité de la musique, 2009", "Wie bist du meine Königin op. 32 n°9 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009", "Im Garten am Seegestade op.70 n°1 / Johannes Brahms ; Stella Doufexis, alto ; Camillo Radicke, piano. - Cité de la musique, 2009", "Dein blaues Auge op. 59 n°8 / Johannes Brahms ; Konrad Jarnot, baryton-basse ; Camillo Radicke, piano. - Cité de la musique, 2009" ;
+	dcterms:issued       "2009" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0907000> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:14.548Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0907000> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0907000>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

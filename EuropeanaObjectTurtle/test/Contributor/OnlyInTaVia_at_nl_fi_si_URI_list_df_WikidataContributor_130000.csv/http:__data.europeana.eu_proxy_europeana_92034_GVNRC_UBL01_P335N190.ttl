@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P335N190>
+	a                   ore:Proxy ;
+	dc:contributor      "Bouttats, Gaspar (I)", "Peeters, Jan (I) (1624-1678)" ;
+	dc:creator          "Bouttats, Gaspar (I)" ;
+	dc:description      "Met tekst. Cum Privilegio" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N190" ;
+	dc:rights           "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl, "Universiteitsbibliotheek Leiden", "For more information: Universiteitsbibliotheek Leiden"@en ;
+	dc:source           "[P335N190], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "Ter Tholen" ;
+	dc:type             "StillImage" ;
+	dcterms:extent      "17,4 × 24,8 cm" ;
+	dcterms:isPartOf    "UBL01", "Topografie van Nederland", "GVN" ;
+	dcterms:medium      "image/jpeg", "ets/kopergravure" ;
+	dcterms:spatial     "Tholen" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N190> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:02.518Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N190> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P335N190>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P335N190> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N190>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P335N190> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N190&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P335N190>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47095"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N190&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4961"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "105"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:02.519Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N190> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P335N190>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:59:17.844Z" ;
+	dcterms:modified          "2018-04-05T18:03:59.839Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N190> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P335N190> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP335N190%26role%3Dthumbnail&type=IMAGE> .

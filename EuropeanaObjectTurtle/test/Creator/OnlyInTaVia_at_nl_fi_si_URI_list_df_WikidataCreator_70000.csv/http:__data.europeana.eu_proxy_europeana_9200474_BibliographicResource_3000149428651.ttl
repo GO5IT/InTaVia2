@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:03.094Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428651> .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428651>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004466878#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004466878/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651>
+	a  edm:ProvidedCHO .
+
+<http://search.rsl.ru/api/description/01004466878/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "144042"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:03.093Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428651> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://dlib.rsl.ru/viewer/01004466878#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://sws.geonames.org/2874225/>
+	a               edm:Place ;
+	skos:prefLabel  "Mainz (Herstellung)" .
+
+<http://data.europeana.eu/agent/164082>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p109732014>, <http://id.worldcat.org/fast/36620>, <http://libris.kb.se/resource/auth/214253>, <https://livedata.bibsys.no/authority/6019213>, <http://data.bnf.fr/ark:/12148/cb13891261t>, <http://www.wikidata.org/entity/Q461296>, <http://id.loc.gov/authorities/names/n79060374>, <http://datos.bne.es/resource/XX1729570>, <http://viaf.org/viaf/69114812>, <https://libris.kb.se/75kmnpsr3gfl600>, <http://dbpedia.org/resource/Antonio_Bazzini>, <https://g.co/kg/m/0czn2k>, <http://data.carnegiehall.org/names/1004235>, <http://d-nb.info/gnd/116097701>, <http://openlibrary.org/works/OL4692854A>, <https://www.freebase.com/m/0czn2k> ;
+	rdaGr2:dateOfBirth   "1818-03-11" ;
+	rdaGr2:dateOfDeath   "1897-02-10" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/150572> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/150741> ;
+	skos:altLabel        "Антонио Баццини"@ru, "Bazzini"@sv, "Bazzini"@es, "Antonio Joseph Bazzini"@cs, "Антонио Бадзини"@ru, "Бадзини, Антонио"@ru ;
+	skos:note            "Italiensk komponist"@da, "Italienischer Komponist und Violinist der Romantik"@de, "Italian violinist, composer and teacher"@en, "Włoski kompozytor i skrzypek"@pl, "Compositore, violinista e docente italiano"@it, "Italiaans componist (1818-1897)"@nl, "Italiensk kompositör"@sv ;
+	skos:prefLabel       "Antonio Bazzini"@cs, "Antonio Bazzini"@de, "Antonio Bazzini"@fi, "Antonio Bazzini"@sv, "Antonio Bazzini"@en, "Antonio Bazzini"@it, "Antonio Bazzini"@fr, "Antonio Bazzini"@es, "Antonio Bazzini"@sl, "Antonio Bazzini"@pl, "Antonio Bazzini"@da, "Antonio Bazzini"@nl, "Antoni Bazzini"@ca, "Баццини, Антонио"@ru .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149428651>
+	a                    ore:Proxy ;
+	dc:contributor       "Антонио Баццини" ;
+	dc:creator           "Antonio Bazzini" ;
+	dc:description       "A. Bazzini", "Имеется электронная копия" ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "004466878" ;
+	dc:language          "fr" ;
+	dc:publisher         "Schott" ;
+	dc:title             "Six morceaux lyriques pour violon avec accompagnement de piano № 3. Le muletier" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "6 лирических отрывков для скрипки с фортепиано" ;
+	dcterms:extent       "13, 6 с." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued       "1860", "[ок. 1860]" ;
+	dcterms:spatial      <http://id.loc.gov/vocabulary/countries/ru>, <http://sws.geonames.org/2874225/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428651> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149428651>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/164082> ;
+	dc:creator          <http://data.europeana.eu/agent/164082> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1860" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428651> .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428651>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:30.727Z" ;
+	dcterms:modified          "2016-03-24T08:15:55.954Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651#contentTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428651> ;
+	edm:completeness          "7" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149428651> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004466878%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

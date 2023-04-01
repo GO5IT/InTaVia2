@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:01.636Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53059254g> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53059254g>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:26.546Z" ;
+	dcterms:modified          "2018-07-23T15:37:19.051Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b53059254g> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b53059254g.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/f1> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53059254g>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b53059254g> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b53059254g.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:01.636Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53059254g> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53059254g/manifest> ;
+	ebucore:fileByteSize    "39277"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "346"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b53059254g>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53059254g> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53059254g/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b53059254g>
+	a                   ore:Proxy ;
+	dc:contributor      "Rousseau, Jean (1644-1699). Auteur adapté" ;
+	dc:creator          "Lully, Jean-Baptiste (1632-1687). Compositeur", "Lambert, Michel (1610?-1696). Compositeur", "Courbois, Philippe. Compositeur", "Du Mont, Henry (1610-1684). Compositeur", "Gaillard (16..-17.. ; maître de musique). Auteur du texte. Copiste", "Du Buisson (16..-1710). Compositeur", "Lalande, Michel Richard de (1657-1726). Compositeur", "Gaillard (16..-17.. ; maître de musique). Compositeur", "M. L.. Compositeur" ;
+	dc:date             "1695-1750" ;
+	dc:description      "Titre uniforme : M. L.. Compositeur. [Ah vous ne voulez pas entendre]", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [Mélanges]. Choix ; arr. pour 2 dessus et basse continue", "Titre uniforme : [Un amant malheureux ennuie]", "Titre uniforme : [Tout ce qu'amour a de plus tendre]", "Titre uniforme : Lalande, Michel Richard de (1657-1726). Compositeur. [Mirtil. S 140. No 2. J'entends la tourterelle]", "Abrégé de la méthode de même titre de Jean Rousseau (1re éd. : Paris : Chr. Ballard, 1683), complété par des exercices ne figurant pas chez Rousseau. - Le manuscrit contient aussi : p. 42-131, \u0022Preludes A 3 Parties\u0022 ; p. 136-262, \u0022Airs Italiens a voix // seul. a 2. et 3. parties\u0022, ainsi que quelques airs et pièces isolées. - Copie de Gaillard (main A) pour les p. [1]-41, 263, 271-273, 278-280 et de plusieurs mains non identifiées : main B p. 42-71, 73-131 et 136-262, main C p. 274-277, main D p. 134-136, main E p. 72, 76, 133. - Daté d'après le contenu : mains A-C, ca 1695, main D, après 1729, main E, ca 1750. - Erreur de pagination : présence de 2 p. 231. Pagination ajoutée à partir de la p. 263. - P. 132, 186, 264 inutilisées. - Rel. veau brun à la Du Seuil", "Comprend : Preludes // A 3 Parties ; Air nouueau de M Courbois de 1729 feurier ; Airs Italiens a voix // seul. a 2. et 3. parties ; Gaillard ; Chanson ; Gaillard ; Autre ; Air Nouveau ; Air de M.r Lambert", "Appartient à l’ensemble documentaire : RISM2", "Appartient à l’ensemble documentaire : RISMMss", "Titre uniforme : Gaillard (16..-17.. ; maître de musique). Compositeur. [Petits oiseaux rassurez-vous]", "Titre uniforme : Lully, Jean-Baptiste (1632-1687). Compositeur. [Ballet de la naissance de Vénus. LWV 27. Dieu des enfers]", "Titre uniforme : [Comme l'hirondelle au printemps]", "Titre uniforme : Lambert, Michel (1610?-1696). Compositeur. [À la fin c'est trop me contraindre]", "Titre uniforme : [Croyez-vous n'être aimable]", "Titre uniforme : Courbois, Philippe. Compositeur. [Bacchus dont j'aime la liqueur]", "Titre uniforme : Gaillard (16..-17.. ; maître de musique). Compositeur. [Douloureux souvenir de ma gloire passée]", "Titre uniforme : [Mon coeur fuyons l'amour]", "Titre uniforme : Du Buisson (16..-1710). Compositeur. [Lorsque Parette était notre amoureuse]" ;
+	dc:format           "Nombre total de vues :  303", "[10]-280 [i.e. 281] p. ; 10,5 x 16,5 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b53059254g" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43550622r" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VMD MS-48" ;
+	dc:subject          "Chansons acc. de basse continue -- 17e siècle"@fre, "Chansons françaises -- 17e siècle"@fre, "Cantates pour soliste profanes (voix aiguë) -- 17e siècle"@fre, "Préludes (violes (2), basse continue) -- 17e siècle -- Parties"@fre ;
+	dc:title            "Methode // claire, certaine et facile, // pour apprendre à chanter la musique. // Le tout expliqué et mis en ordre. // par Monsieur Gaillard // maistre de Musique" ;
+	dc:type             "musique manuscrite"@fre, "Genre musical : divers", "manuscript music"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53059254g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53059254g> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53059254g>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "226561"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53059254g/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53059254g.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7898"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "188"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

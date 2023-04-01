@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135726473>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/59996> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135726473> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000012541>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1269"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135726473#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:28:01.395Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135726473> .
+
+<http://sws.geonames.org/2950159/>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin (Herstellung)" .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135726473>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:17:14.614Z" ;
+	dcterms:modified          "2015-12-04T14:03:57.296Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135726473> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000012541&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135726473>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135726473>
+	a                   ore:Proxy ;
+	dc:creator          "Gotthold Ephraim Lessing" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000142773" ;
+	dc:language         "mul" ;
+	dc:publisher        "Christian Friederich Voss" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Theatralische Bibliothek" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "4 v. in 2 bd.; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1754 - 1758" ;
+	dcterms:spatial     <http://sws.geonames.org/2950159/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135726473> .
+
+<http://lib.ugent.be/europeana/900000012542>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135726473/manifest> ;
+	ebucore:fileByteSize    "14625"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135726473>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135726473> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000012542> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000012541> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000012541> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135726473/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://lib.ugent.be/europeana/900000012541>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14625"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135726473#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:28:01.395Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135726473> .
+
+<http://data.europeana.eu/agent/59996>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p068392427>, <https://livedata.bibsys.no/authority/90051288>, <http://www.wikidata.org/entity/Q34628>, <http://viaf.org/viaf/9849550>, <http://lod.nl.go.kr/resource/KAC199616435>, <http://libris.kb.se/resource/auth/209302>, <http://openlibrary.org/works/OL2745523A>, <http://d-nb.info/gnd/118572121>, <http://datos.bne.es/resource/XX974829>, <http://www.idref.fr/027328457/id>, <http://data.cervantesvirtual.com/person/1722>, <http://id.ndl.go.jp/auth/ndlna/00447463>, <http://id.worldcat.org/fast/47306>, <http://dbpedia.org/resource/Gotthold_Ephraim_Lessing>, <https://g.co/kg/m/0378w>, <http://nlg.okfn.gr/resource/authority/record89821>, <https://libris.kb.se/64jlmg8q1wxqv41>, <https://www.freebase.com/m/0378w>, <http://data.bnf.fr/ark:/12148/cb11912703h>, <http://vocab.getty.edu/ulan/500321397>, <http://id.loc.gov/authorities/names/n79144996> ;
+	rdaGr2:dateOfBirth   "1729-01-22" ;
+	rdaGr2:dateOfDeath   "1781-02-15" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/1649> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/2500> ;
+	skos:altLabel        "Лессинг Готгольд Эфраим"@ru, "Лессинг Готхольд Эфраим"@ru, "Gotthold Ephraïm Lessing"@fr, "Gotholds Lesings"@lv, "Готхольд Лессинг"@ru, "G.E. Lessing"@ca, "G.E. Lessing"@ro, "G.E. Lessing"@fr, "G.E. Lessing"@sv, "Готхолд Лесинг"@bg, "Ephraim Lessing"@de, "Gotthold Ephraim Lessing"@lv, "Лессинг Готфрид Эфраим"@ru, "Готфрид Эфраим Лессинг"@ru, "Лессинг Г."@ru, "Gotthold Lessing"@nl, "Gotthold Lessing"@pl, "Gotthold Lessing"@et, "Gotthold Lessing"@it, "Gotthold Lessing"@sv, "Gotthold Lessing"@fi, "Лессинг, Готгольд Эфраим"@ru, "Лессинг, Готхольд"@ru, "Father of German Literature"@en, "Lesings"@lv, "Г. Е. Лесинг"@bg, "Gotthold E. Lessing"@cs, "Gotthold Efraim Lessing"@sv, "Лессинг Г. Э."@ru, "Gotholdas Efraimas Lesingas"@lt, "G. E. Lessing"@cs, "G. E. Lessing"@de, "Готфрид Лессинг"@ru, "Gotthold lessing"@pt, "Готгольд Эфраим Лессинг"@ru, "Готгольд Лессинг"@ru, "Lessing"@cs, "Lessing"@hu, "Lessing"@de, "Lessing"@sv ;
+	skos:note            "Német drámaíró"@hu, "Escritor alemán"@es, "Escriptor, filòsof i crític de l'art alemany"@ca, "Tysk dramatiker, kritiker och författare"@sv, "Scrittore, filosofo e drammaturgo tedesco"@it, "Auteur dramatique et théoricien de la littérature allemande"@fr, "German writer, philosopher, publicist and art critic"@en, "Německý básník (1729–1781)"@cs, "Duits schrijver"@nl, "Немецкий писатель, драматург"@ru, "Scriitor și filozof german, reprezentant al Iluminismului"@ro, "Γερμανός συγγραφέας, δραματικός ποιητής και κριτικός της τέχνης"@el, "Pisarz niemiecki"@pl, "Deutscher Dichter der Aufklärung"@de ;
+	skos:prefLabel       "Gotholds Efraims Lesings"@lv, "Готхолд Ефраим Лесинг"@bg, "Готхольд Эфраим Лессинг"@ru, "Gotthold Ephraim Lessing"@sk, "Gotthold Ephraim Lessing"@sl, "Gotthold Ephraim Lessing"@pl, "Gotthold Ephraim Lessing"@ro, "Gotthold Ephraim Lessing"@da, "Gotthold Ephraim Lessing"@nl, "Gotthold Ephraim Lessing"@ca, "Gotthold Ephraim Lessing"@en, "Γκότχολντ Εφραίμ Λέσσινγκ"@el, "Gotthold Ephraim Lessing"@de, "Gotthold Ephraim Lessing"@sv, "Gotthold Ephraim Lessing"@fi, "Gotthold Ephraim Lessing"@pt, "Gotthold Ephraim Lessing"@lt, "Gotthold Ephraim Lessing"@hr, "Gotthold Ephraim Lessing"@it, "Gotthold Ephraim Lessing"@fr, "Gotthold Ephraim Lessing"@hu, "Gotthold Ephraim Lessing"@es, "Gotthold Ephraim Lessing"@et, "Gotthold Ephraim Lessing"@cs .

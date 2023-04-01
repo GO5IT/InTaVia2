@@ -1,0 +1,209 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.54861>
+	a                   edm:Agent ;
+	edm:begin           "1748-03-08" ;
+	edm:end             "1806-04-09" ;
+	rdaGr2:dateOfBirth  "Den Haag" ;
+	rdaGr2:dateOfDeath  "Braunschweig" ;
+	skos:prefLabel      "Willem V (prins van Oranje-Nassau)" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.99526>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Aanhouding van prinses Wilhelmina bij Goejanverwellesluis"@nl .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_OB_70_069>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2090> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1807" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_OB_70_069> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_70_069> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.18185>
+	a                              edm:Agent ;
+	edm:begin                      "1711-09-01" ;
+	edm:end                        "1751-10-22" ;
+	rdaGr2:dateOfBirth             "Leeuwarden" ;
+	rdaGr2:dateOfDeath             "Den Haag" ;
+	rdaGr2:professionOrOccupation  "stadhouder" ;
+	skos:prefLabel                 "Willem IV (prins van Oranje-Nassau)" .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_OB_70_069>
+	a                       ore:Proxy ;
+	dc:contributor          "Pieneman, Jan Willem"@nl ;
+	dc:description          "Allegorie op de voorbije achttiende eeuw, 1799. Centraal de staande personificatie van de Godsdienst bij een altaar, De Tijd onthult boven een zuil waarop de belangrijkste gebeurtenissen van de afgelopen eeuw staan. Dit zijn (van boven naar onder): Dood van Willem III (1702); Stadhouderschap opgedragen aan Willem IV (1747); Slag bij de Doggersbank (1781); Aanhouding van prinses Wilhelmina bij Goejanverwellesluis (1787); Prins Frederik gewond in de Slag bij Wervik (1793) en Vertrek van Willem naar Engeland (1795). Rechts wijst de Geschiedenis een jongeling op deze gevallen. Links hangen geniën van de kunsten en wetenschappen penningen van de in deze eeuw opgerichte genootschappen aan een boom. Bij de prent behoort een tekstblad met verklaring en prijslijst van de uitgever."@nl ;
+	dc:format               "papier"@nl, <http://vocab.getty.edu/aat/300014109>, "paper"@en ;
+	dc:identifier           "RP-P-OB-70.069", "http://hdl.handle.net/10934/RM0001.COLLECT.337625" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Publiek Domein", "Public Domain" ;
+	dc:subject              "urn:rijksmuseum:thesaurus:RM0001.THESAU.53990", "Aanhouding van prinses Wilhelmina bij Goejanverwellesluis"@nl, "1700 - 1799"@nl, "urn:rijksmuseum:people:RM0001.PEOPLE.113610", "urn:rijksmuseum:people:RM0001.PEOPLE.6733", "Vertrek van Willem V naar Engeland"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.99526", "Overlijden van stadhouder-koning Willem III"@nl, <http://iconclass.org/11M31>, "Zeeslag bij Doggersbank"@nl, <http://iconclass.org/48C161>, "urn:rijksmuseum:people:RM0001.PEOPLE.18185", "Willem III (prins van Oranje en koning van Engeland, Schotland en Ierland)"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.97943", "Wilhelmina van Pruisen (1751-1820)"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.100995", "Willem V (prins van Oranje-Nassau)"@nl, "Willem IV (prins van Oranje-Nassau)"@nl, "urn:rijksmuseum:people:RM0001.PEOPLE.54861", <http://iconclass.org/23A1> ;
+	dc:title                "Allegorie op de afgelopen achttiende eeuw"@nl, "Achttiende Eeuw"@nl ;
+	dc:type                 "urn:rijksmuseum:thesaurus:RM0001.THESAU.27413", "urn:rijksmuseum:thesaurus:RM0001.THESAU.64676", "urn:rijksmuseum:thesaurus:RM0001.THESAU.2213", "à la poupée"@nl, "met de hand kleuren"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.66314", <http://vocab.getty.edu/aat/300041273>, "stippelets"@nl, "engraving"@en, "graveren (drukprocedé)"@nl, "historieprent"@nl, "prent"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.98251", "print"@en ;
+	dcterms:created         "1807" ;
+	dcterms:extent          "width 463 mm"@en, "height 622 mm"@en, "blad breedte 463 mm"@nl, "blad hoogte 622 mm"@nl ;
+	dcterms:isPartOf        "collectie: prenten" ;
+	dcterms:isReferencedBy  "FMH 5567 b" ;
+	dcterms:spatial         "urn:rijksmuseum:thesaurus:RM0001.THESAU.3196", "Noord-Nederland" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/RP_P_OB_70_069> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_70_069> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.97943>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Overlijden van stadhouder-koning Willem III"@nl .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_70_069#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:23:53.143Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_70_069> .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_OB_70_069/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.100995>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Vertrek van Willem V naar Engeland"@nl .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.113610>
+	a                   edm:Agent ;
+	edm:begin           "1751-08-07" ;
+	edm:end             "1820-06-09" ;
+	rdaGr2:dateOfBirth  "Berlijn" ;
+	rdaGr2:dateOfDeath  "Paleis Het Loo (Apeldoorn)" ;
+	skos:prefLabel      "Wilhelmina van Pruisen (1751-1820)" .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.61260>
+	a                              edm:Agent ;
+	rdaGr2:professionOrOccupation  "publisher"@en ;
+	skos:prefLabel                 "Meyer & Co., P.H."@nl, "Meyer & Co., P.H."@en .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_70_069#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:23:53.144Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_70_069> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.53990>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Zeeslag bij Doggersbank"@nl .
+
+<http://data.europeana.eu/concept/2090>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q11472>, <http://id.ndl.go.jp/auth/ndlna/00564806>, <http://thesaurus.europeanafashion.eu/thesaurus/10574>, <http://vocab.getty.edu/aat/300014109>, <http://id.nlm.nih.gov/mesh/D010209>, <http://www.yso.fi/onto/yso/p8522>, <https://g.co/kg/m/0641k>, <http://babelnet.org/rdf/s00060464n>, <http://vocabularies.unesco.org/thesaurus/concept14922>, <http://zbw.eu/stw/descriptor/14802-1>, <http://iconclass.org/49L641>, <http://data.bnf.fr/ark:/12148/cb11949744d>, <https://www.freebase.com/m/0641k>, <https://d-nb.info/gnd/4044522-7>, <http://purl.org/bncf/tid/1192>, <http://id.loc.gov/authorities/names/sh85097578> ;
+	skos:note        "Matière fabriquée à partir de fibres cellulosiques végétales et animales"@fr, "Materiale igroscopico, costituito da materie prime fibrose"@it, "Волокнистый материал с минеральными добавками"@ru, "Podłoże pisarskie lub malarskie otrzymywane z makulatury, celulozy i włókien innych roślin"@pl, "Tenký, hladký materiál vyrábaný zhutnením vlákna"@sk, "Delgada hoja elaborada con pasta de fibras vegetales"@es, "Folha fina feita com pasta de fibras vegetais"@pt, "Ohut kuiduista tehty materiaali"@fi, "Làmina constituïda per un entramat tridimensional de fibres de cel·lulosa i altres substàncies"@ca, "Materiale man kan skrive og tegne på"@da, "Cellulosabaserat material"@sv, "Thin, flexible material mainly used for writing upon, printing upon, drawing or for packaging"@en, "Werkstoff aus Fasern zum Beschreiben, Bedrucken ud Verpacken"@de, "Tenký, pružný, vláknitý materiál s minerálními přísadami, vyráběný převážně z celulózy, užívaný pro psaní, kreslení, tisk nebo k balení"@cs, "Materiaal waarop kan worden geschreven en getekend en dat kan worden bedrukt door middel van een druktechniek"@nl ;
+	skos:prefLabel   "Paper"@ca, "Paper"@en, "Paper"@eu, "Papir"@hr, "Papir"@sl, "Papir"@da, "Papír"@hu, "Papír"@cs, "Papper"@sv, "Paber"@et, "Papel"@pt, "Papel"@es, "Karta"@mt, "Papier"@fr, "Papier"@de, "Papier"@sk, "Papier"@pl, "Papier"@nl, "Хартия"@bg, "Popierius"@lt, "Carta"@it, "Papīrs"@lv, "Paperi"@fi, "Χαρτί"@el, "Hârtie"@ro, "Бумага"@ru, "Páipéar"@ga .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.61245>
+	a                              edm:Agent ;
+	edm:begin                      "1772-06-14" ;
+	edm:end                        "1828" ;
+	rdaGr2:dateOfBirth             "Darmstadt" ;
+	rdaGr2:dateOfDeath             "Bussum" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Portman, Ludwig Gottlieb"@nl, "Portman, Ludwig Gottlieb"@en .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.116802>
+	a                              edm:Agent ;
+	edm:begin                      "1752-07-10" ;
+	edm:end                        "1820-03-07" ;
+	rdaGr2:dateOfBirth             "Zutphen" ;
+	rdaGr2:dateOfDeath             "Den Bosch" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "advocaat"@nl ;
+	skos:prefLabel                 "Hultman, Carel Gerard"@nl, "Hultman, Carel Gerard"@en .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.6733>
+	a                              edm:Agent ;
+	edm:begin                      "1650-11-14" ;
+	edm:end                        "1702-03-19" ;
+	rdaGr2:dateOfBirth             "Den Haag" ;
+	rdaGr2:dateOfDeath             "Hampton Court Palace" ;
+	rdaGr2:professionOrOccupation  "koning" ;
+	skos:prefLabel                 "Willem III (prins van Oranje en koning van Engeland, Schotland en Ierland)" .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_70_069>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_OB_70_069> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.337625> ;
+	edm:isShownBy      <https://lh3.googleusercontent.com/etSkRgxrs6bIbDam4RQ-_22MnoOMBJwTf9xZloliSCzwSwRn_k1BXeYLjwKMxC_XKITmSTe89G2eznLcJCYSaVoS7ZA=s0> ;
+	edm:object         <https://lh3.googleusercontent.com/etSkRgxrs6bIbDam4RQ-_22MnoOMBJwTf9xZloliSCzwSwRn_k1BXeYLjwKMxC_XKITmSTe89G2eznLcJCYSaVoS7ZA=s0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_70_069>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T18:56:58.875Z" ;
+	dcterms:modified          "2018-03-17T14:17:59.725Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_OB_70_069#contentTier>, <http://data.europeana.eu/item/90402/RP_P_OB_70_069#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_OB_70_069> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_OB_70_069> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh3.googleusercontent.com%2FetSkRgxrs6bIbDam4RQ-_22MnoOMBJwTf9xZloliSCzwSwRn_k1BXeYLjwKMxC_XKITmSTe89G2eznLcJCYSaVoS7ZA%3Ds0&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_70_069>
+	a  edm:ProvidedCHO .
+
+<https://lh3.googleusercontent.com/etSkRgxrs6bIbDam4RQ-_22MnoOMBJwTf9xZloliSCzwSwRn_k1BXeYLjwKMxC_XKITmSTe89G2eznLcJCYSaVoS7ZA=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Publiek Domein"@nl, "Public Domain"@en ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_OB_70_069/manifest> ;
+	ebucore:fileByteSize    "767079"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.337625>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "57369"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

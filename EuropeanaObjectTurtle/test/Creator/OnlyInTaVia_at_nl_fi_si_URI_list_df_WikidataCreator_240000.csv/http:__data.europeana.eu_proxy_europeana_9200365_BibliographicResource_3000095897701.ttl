@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8809409f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:54:23.079Z" ;
+	dcterms:modified          "2018-03-26T12:29:19.844Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8809409f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8809409f.thumbnail.jpg&type=SOUND> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8809409f.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF6347"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8809409f/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8809409f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8809409f> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8809409f.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8809409f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "255501"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8809409f>
+	a                   ore:Proxy ;
+	dc:creator          "Mascagni, Pietro (1863-1945). Auteur ou responsable intellectuel", "Bixio, Cesare Andrea (1898-1978). Auteur ou responsable intellectuel", "Puccini, Giacomo (1858-1924). Auteur ou responsable intellectuel", "Padilla, José (1889-1960). Auteur ou responsable intellectuel", "Offenbach, Jacques (1819-1880). Auteur ou responsable intellectuel", "Di Capua, Eduardo (1864-1917). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Klose, Othmar (1889-19..). Auteur ou responsable intellectuel", "Doelle, Franz (1883-1965). Auteur ou responsable intellectuel", "Ponce, Manuel María (1882-1948). Auteur ou responsable intellectuel", "Kálmán, Emmerich (1882-1953). Auteur ou responsable intellectuel", "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Donato, Edgardo (1897-1963). Auteur ou responsable intellectuel", "Blanc, Léo (18..?-1958). Auteur ou responsable intellectuel", "Strauss, Johann (1825-1899). Auteur ou responsable intellectuel", "Cottrau, Teodoro (1827-1879). Auteur ou responsable intellectuel", "Maier, Kurt. Piano. Direction d'orchestre" ;
+	dc:date             "1961" ;
+	dc:description      "Titre uniforme : [Santa Lucia]", "Titre uniforme : [O sole mio]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Orphée aux Enfers]", "Contient une table des matières", "Titre uniforme : [Cavalleria rusticana]. Adapt.", "Titre uniforme : [El relicario]", "Titre uniforme : [Violetta]", "Titre uniforme : [Die lustige Witwe]. Extr. arr.", "Titre uniforme : [Madama Butterfly]. Adapt.", "Titre uniforme : [Il trovatore]. Adapt.", "Titre uniforme : [Gräfin Mariza]", "Titre uniforme : [Estrellita]", "Titre uniforme : [Les contes d'Hoffmann. Acte 4. Belle nuit, ô nuit d'amour]", "Titre uniforme : [Gräfin Mariza]. Extr.", "Titre uniforme : [Frühlingsstimmen. RV 410]", "Comprend : VIENNE : \u0022LA VEUVE JOYEUSE\u0022 / Franz LEHAR - LA VOIX DU PRINTEMPS / J. STRAUSS - QUAND REFLEURIRONT LES LILAS BLANCS / F. DOELLE - BROADWAY : \u0022CHEEK TO CHEEK\u0022 / Irving BERLIN - AMERIQUE DU SUD : \u0022LA PALOMA\u0022 / YRADIER - RIVIERA FRANCAISE : \u0022BARCAROLLE\u0022 des \u0022CONTES D'HOFFMANN\u0022 / OFFENBACH - FRENCH CANCAN / OFFENBACH - RIVIERA ITALIENNE : \u0022O SOLE MIO\u0022 / di CAPUA - FANTAISIE : sur \u0022LE TROUVERE\u0022 / VERDI - FAITAISIE SUR \u0022CAVALLERIA RUSTICANA\u0022 - FANTAISIE : sur \u0022MADAME BUTTERFLY\u0022 / PUCCINI - ITALIE : \u0022SANTA LUCIA\u0022 / COTTRAU - LOLITA / BIXIO - VIOLETTA / KLOSE - AMERIQUE LATINE : \u0022ESTRELLITA\u0022 / PONCE - RUMBA TAMBA / L. BLANC - A MEDIA LUZ / DONATO - EL RELICARIO / PADILLA - PARIS : \u0022LA VIE EN ROSE\u0022 / LOUIGUY - TIMES SQUARE : \u0022SOUTH PACIFIC\u0022 / RODGERS - DANUBE : \u0022COMTESSE MARITZA\u0022 / KALMAN - JOUE TZIGANE / KALMAN - DANSE TZIGANE / KALMAN" ;
+	dc:format           "multipart/mixed", "1 disque : 33 t ; 30 cm", "Nombre total de vues :  14" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8809409f", "Numéro commercial : Rondo-lette  A33" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139197264"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916735c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13917243v"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38019407c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13972924j"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139641985"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13923630v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13925926x"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138641593"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13920590q"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13867751q"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb140120383"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13859660p"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916018v"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-11351" ;
+	dc:title            "AROUND THE WORLD WITH KURT MAIER / Kurt MAIER et ses Rythmes" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8809409f> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8809409f>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8809409f> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:44.681Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8809409f> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8809409f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:44.682Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8809409f> .

@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b2200192x>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "596695"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b2200192x>
+	a                   ore:Proxy ;
+	dc:creator          "Dessinateur", "Racine, Jean (1639-1699). Auteur du texte. Graveur. Graveur. Graveur. Dessinateur" ;
+	dc:date             "1723" ;
+	dc:description      "Comprend : [Tome I. Bandeau à la Dédicace : lion et licorne entourant les armoiries et la devise du Duc de Glocester.] Honi soit qui mal y pense. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. folio B : la Thébaïde ou les frères ennemis. Tragédie.] Thébaïde. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. du titre de la tragédie Alexandre le grand :] Alexandre. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. du titre de la tragédie Andromaque :] Andromaque. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. du titre de la tragédie Britannicus :] Britannicus. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. du titre de la tragédie Berenice :] Berenice. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome I. Pl. en reg. du titre de la comédie Les Plaideurs :] Les Plaideurs. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Frontispice :] [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Bajazet :] Bajazet. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Mithridate :] Mithridate. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Iphigénie :] Iphigénie. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Phèdre :] Phèdre. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Esther :] Esther. [Cote : Yf 404-405/Microfilm R 122414] ; [Tome II. Pl. en reg. du titre de la tragédie Athalie :] Athalie. [Cote : Yf 404-405/Microfilm R 122414]", "Thème : Littérature", "Illustration" ;
+	dc:format           "14 est. : gravures sur cuivre : Noir et blanc ; 22,5 x 15 cm et moins" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b2200192x" ;
+	dc:language         "fra" ;
+	dc:publisher        "J. Tonson et J. Watts (Londres)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38498170d" ;
+	dc:rights           <http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France" ;
+	dc:subject          "Racine Jean (1639-1699). Oeuvres."@fre, "Scènes"@fre ;
+	dc:title            "[Illustrations de Oeuvres] / Chéron, dess. ; Vertue, dess. Van der Gucht, C. du Bosc et P. Fourdrinier, grav. ; Jean Racine, aut. du texte" ;
+	dc:type             "image"@eng, "still image"@eng, "image fixe"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2200192x> .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b2200192x>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T14:51:15.589Z" ;
+	dcterms:modified          "2019-09-02T14:51:15.589Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x#contentTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b2200192x> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b2200192x%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "54406"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/manifest.json> ;
+	ebucore:fileByteSize    "54406"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T14:51:15.563Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2200192x> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b2200192x>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b2200192x" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1723" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b2200192x> .
+
+<http://semium.org/time/17xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Sat Jan 01 01:00:00 CET 1701" ;
+	edm:end           "Wed Dec 31 01:00:00 CET 1800" ;
+	skos:prefLabel    "18..", "18th"@en, "18de eeuw"@nl, "18??", "18e siècle"@fr, "18-th"@en, "18й век"@ru, "18e", "18th century"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T14:51:15.563Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2200192x> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2200192x>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b2200192x> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b2200192x> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b2200192x/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

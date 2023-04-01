@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000015899>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/65746> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015899> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:45.761Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015899> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015899>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1041073> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1041073> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/agent/65746>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/37320>, <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/202> ;
+	owl:sameAs                     <http://openlibrary.org/works/OL505057A>, <https://g.co/kg/m/02_6mf>, <http://id.worldcat.org/fast/188142>, <http://vocab.getty.edu/ulan/500115355>, <http://libris.kb.se/resource/auth/318502>, <http://d-nb.info/gnd/119233096>, <http://www.idref.fr/031413668/id>, <http://www.wikidata.org/entity/Q314814>, <http://data.bibliotheken.nl/id/thes/p070393583>, <http://viaf.org/viaf/4917729>, <https://libris.kb.se/64jmrhlq0kxgrk9>, <http://kulturarvsdata.se/LSH/agents/5736>, <http://dbpedia.org/resource/Philippe_de_Champaigne>, <https://www.freebase.com/m/02_6mf>, <http://datos.bne.es/resource/XX1068544>, <http://id.loc.gov/authorities/names/n86871334>, <http://data.bnf.fr/ark:/12148/cb12263241w> ;
+	rdaGr2:dateOfBirth             "1602-05-26" ;
+	rdaGr2:dateOfDeath             "1674-08-12" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/203157> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/41488> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Филипп Шампень"@ru, "Ф. де Шампэнь"@ru, "Ph. de Champagne"@en, "P. da Champagne"@en, "Filippo da Champagne"@en, "Filippo di Champagne"@en, "P.D. Champagne"@en, "Phillipe de Champagne"@en, "Филипп де Шампень"@ru, "Philippe Van Champagne"@en, "Felipe Champana"@en, "Филипп де Шампань"@ru, "P. De Champagne"@en, "Philipp champaigne"@en, "Шампень, Филипп де"@ru, "Philip Champaine"@en, "Philippe De Champagne"@en, "Philippe Champagne"@en, "P. Champain"@en, "Шампень Филипп де"@ru, "Champaigne philipp de"@en, "Champagne"@en, "Phil. de Champaigne"@en, "Ph. De Champaane"@en, "Philip Champagne"@en, "Phillippe de Champaigne"@en, "P.-H. Dechampagne"@en, "Philippes de Champagne"@en, "Monsu Sciampagnia"@en, "Philippe de Champagne"@fr, "Philippe de Champagne"@en, "Philippe de Champagne"@cs, "Philippe Van-Champagne"@en, "Philippes van Champagne"@en, "Phillippe De Champagne"@en, "Champagna"@en, "Philippe de Campaigne"@ca, "Philippe de Champeigne"@en, "Phill. de Champagne"@en, "P. H. Champagne"@en, "Philipp de Champagne"@en, "Phillippe de Champagne"@en, "Philippe De Champaigne"@en, "Phillippe de Champagna"@en, "Philip de Champagne"@en, "De Champaigne"@nl, "Шампень, Филипп"@ru, "Ph. Champagne"@en, "Philipe de Champaigne"@pt, "Philippe de Campagne"@en, "Philipe de Champagne"@en, "Champaigne"@en, "Champaigne"@de, "Champaigne"@sv, "Philipp de champaigne"@en, "Monsu Sciambagna"@en, "Champhaire"@en, "Ph. de Campagne"@en, "Chamoaigne"@en, "Phil. de Champagne"@en, "Ph. de Champaigne"@en, "Шампень"@ru, "Philippe de champaigne"@en, "Champain"@en, "Champagno"@en, "P. Champaign"@en, "Filippo Champagne"@en, "Felipe Champaña"@en, "Philippe of Jean-Baptiste De Champaigne"@nl, "P. Champagne"@en, "Ph: de Champagne"@en ;
+	skos:note                      "Prantsusmaa maalikunstnik"@et, "Peintre français"@fr, "Französischer Barockmaler"@de, "Francouzský malíř"@cs, "Pittore francese"@it, "Pintor francés"@es, "Franse Schilder"@nl, "Pictor francez"@ro, "French painter (1602-1674)"@en, "A French Baroque era painter"@fi, "Pintor francès"@ca ;
+	skos:prefLabel                 "Шампань, Филипп де"@ru, "Φιλίπ ντε Σαμπέν"@el, "Philippe de Champaigne"@de, "Philippe de Champaigne"@sv, "Philippe de Champaigne"@fi, "Philippe de Champaigne"@pt, "Philippe de Champaigne"@lt, "Philippe de Champaigne"@en, "Philippe de Champaigne"@it, "Philippe de Champaigne"@fr, "Philippe de Champaigne"@hu, "Philippe de Champaigne"@es, "Philippe de Champaigne"@cs, "Philippe de Champaigne"@sk, "Philippe de Champaigne"@sl, "Philippe de Champaigne"@pl, "Philippe de Champaigne"@ro, "Philippe de Champaigne"@da, "Philippe de Champaigne"@nl, "Philippe de Champaigne"@ca, "Filips de Šampēņs"@lv .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015899>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:12:16.376Z" ;
+	dcterms:modified          "2014-05-27T13:12:16.376Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899#metadataTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000015899> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1041073&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1041073>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:45.761Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015899> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899>
+	a  edm:ProvidedCHO .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1041073>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "35641"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "268"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000015899>
+	a                   ore:Proxy ;
+	dc:contributor      "Johann Friedrich Leonart", "Hubert Loyens", "Philippe de Champaigne", "Franciscus Godin" ;
+	dc:date             "16--?", "s.d." ;
+	dc:identifier       "008368202" ;
+	dc:language         "la" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Hubertum Loyens" ;
+	dc:type             "Monograph"@en, "Still image"@en ;
+	dcterms:extent      "voorstelling: 150 x 127 mm", "plaatrand: 179 x 129 mm.", "Black-and-white ;", "voorstelling met opschrift: 177 x 127 mm" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015899> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015899> .

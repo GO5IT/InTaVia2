@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_46>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/39181> ;
+	dc:creator          <http://data.europeana.eu/agent/39181> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1653" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_46> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_46>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-46> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-46&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:22.900Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_46> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_46>
+	a                   ore:Proxy ;
+	dc:contributor      "Jacques de Claeuw" ;
+	dc:creator          "Jacques de Claeuw" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "OS-I-46", "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-46" ;
+	dc:rights           "for information contact: Frans Hals Museum"@en, "voor informatie: Frans Hals Museum"@nl, "Frans Hals Museum" ;
+	dc:source           "OS-I-46 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Stilleven met vruchten"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1653" ;
+	dcterms:extent      "81,8 x 65 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "FHM01", "GVN" ;
+	dcterms:medium      "geschilderd", "paneel ; olieverf", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_46> .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-46>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47611"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:22.900Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_46> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-46&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22440"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "194"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/agent/39181>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/215> ;
+	owl:sameAs           <http://viaf.org/viaf/95762834>, <http://d-nb.info/gnd/142587990>, <https://www.freebase.com/m/0fq0dj7>, <http://vocab.getty.edu/ulan/500013395>, <https://g.co/kg/m/0fq0dj7>, <http://www.wikidata.org/entity/Q721301>, <http://dbpedia.org/resource/Jacques_de_Claeuw> ;
+	rdaGr2:dateOfBirth   "1623-01-01" ;
+	rdaGr2:dateOfDeath   "1694-11-07" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40802> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40578> ;
+	skos:altLabel        "Jacques Adolphsz. De Claeuw"@en, "Jacques De Claeuw"@en, "Jacques Grief de Claeu"@en, "Jacob de Klauw"@en, "Jacques De Claeu"@en, "Clau"@en, "Jacques De Grief Claeu"@en, "Clauw"@en, "Jacques Grief Claeuw"@en, "Jacques Grief Claeu"@en, "Jacobus de Claeuw"@en, "Jacques de Grief"@en, "Jacques De Grief Claeuw"@en, "Jacques de claew"@en, "Jacques Adolphsz de Claeuw"@de, "Jacques De Claew"@en, "Claeuw"@de, "Claeuw"@en, "Jacques de Claeu"@en, "De Clauw"@en ;
+	skos:note            "Pintor neerlandês"@pt, "Peintre néerlandais"@fr, "Pittore neerlandese"@it, "Pintor neerlandés"@es, "Painter from the Northern Netherlands (1623-1694)"@en, "Nederlands kunstschilder"@nl, "Pintor neerlandès"@ca, "Holländischer Maler"@de ;
+	skos:prefLabel       "Jacques de Claeuw"@ca, "Jacques de Claeuw"@de, "Jacques de Claeuw"@sv, "Jacques de Claeuw"@pt, "Jacques de Claeuw"@sl, "Jacques de Claeuw"@en, "Jacques de Claeuw"@it, "Jacques de Claeuw"@fr, "Jacques de Claeuw"@da, "Jacques de Claeuw"@es, "Jacques de Claeuw"@nl .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_46>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:54.457Z" ;
+	dcterms:modified          "2018-04-05T16:45:02.165Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_46> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-46%26role%3Dthumbnail&type=IMAGE> .

@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038321__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/227> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038321__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.039Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038321__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038321__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038321> ;
+	edm:object         <http://keptar.oszk.hu/038300/038321/1898_Oldal_075_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/038300/038321>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038321__/manifest> .
+
+<http://keptar.oszk.hu/038300/038321/1898_Oldal_075_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.039Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038321__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038321__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:44.408Z" ;
+	dcterms:modified          "2015-09-14T11:54:05.628Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038321%2F1898_Oldal_075_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038321__>
+	a                    ore:Proxy ;
+	dc:creator           "Lotz ,  Károly  (painter)"@hu ;
+	dc:description       "A kereszthajó éjszaki nyujtványának keleti falán van I. Ferencz József király megkoronáztatása a trónoló Madonna, Patrona Hungariae által, úgy a mint egy hasonló koronázás a szepesváraljai hires, régi falfestményen látható. E képen úgy Ferencz József király, mint a királyné arczképe fölismerhető s melletök egyfelől Simor herczegprimás, másfelől Ranolder veszprémi püspök alakja tünik föl. (Forrás: Vasárnapi Ujság, 1893. augusztus 20.)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1431x1102 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/038300/038321   [Metadata]" ;
+	dc:relation          "Freskó a Mátyás templomban [ http://sisiweb.gportal.hu/picview.php?prt=285092&gid=2806173&index=14]"@hu, "Freskó a Mátyás templomban [ http://sisiweb.gportal.hu/picview.php?prt=285092&gid=2806173&index=15]"@hu, "Lotz Károly: Szent István, Kálmán és Nagy Lajos kora [ http://keptar.oszk.hu/025800/025863]"@hu, "Wikipédia: Lotz Károly [ http://hu.wikipedia.org/wiki/Lotz_K%C3%A1roly]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "történelmi festmény"@hu, "falfestmény"@hu, "freskó"@hu, "koronázás"@hu, "történelmi személy"@hu, "uralkodó"@hu, "történelmi korszak"@hu, "historizmus"@hu, "Fine arts, visual arts"@hu ;
+	dc:title             "A királyi pár megkoronáztatása a trónoló madonna által"@hu ;
+	dc:type              "painting"@hu, "újságrészlet"@hu ;
+	dcterms:alternative  "Falfestmény a budavári Mátyás-templomban"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038321__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038321__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/227>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q134194>, <http://vocab.getty.edu/aat/300053357>, <http://id.ndl.go.jp/auth/ndlna/00563760>, <https://www.freebase.com/m/02_3k>, <https://g.co/kg/m/02_3k>, <http://www.yso.fi/onto/yso/p1483>, <https://d-nb.info/gnd/4071463-9>, <http://babelnet.org/rdf/s00036480n>, <http://purl.org/bncf/tid/15765> ;
+	skos:note        "Seinamaali tehnika"@et, "Tecnica pittorica"@it, "Maalaustekniikka"@fi, "Technika nástennej maľby zhotovovaná na vlhkej omietke"@sk, "Técnica pictórica de pintura mural"@es, "Tehnică de pictură murală"@ro, "Muralmålning på färsk, ännu fuktig kalkputs"@sv, "Technique particulière de peinture murale dont la réalisation s'opère sur un enduit, avant qu'il ne soit sec"@fr, "Schildertechniek"@nl, "Technique of mural painting executed upon freshly laid lime plaster"@en, "Wandmalereitechnik insbesondere auf frischem Kalkputz"@de, "Malingsteknik"@da, "Technika malarska"@pl, "Tècnica pictòrica de pintura mural"@ca ;
+	skos:prefLabel   "Freska"@hr, "Freska"@sk, "Freska"@sl, "Freska"@cs, "Fresko"@de, "Fresko"@et, "Fresko"@eu, "Fresko"@da, "Al fresco"@sv, "Fresco painting"@en, "Fresco"@pt, "Fresco"@es, "Pintura al fresc"@ca, "Freskomaalaus"@fi, "Fresk"@pl, "Affresco"@it, "Frescoschildertechniek"@nl, "Frescă"@ro, "Стенопис"@bg, "Freascó"@ga, "Νωπογραφία"@el, "Freskó"@hu, "Фреска"@ru, "Fresque"@fr, "Freska"@lt, "Freska"@lv .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038321__>
+	a  edm:ProvidedCHO .

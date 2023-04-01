@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://37.74.151.78/oaiserver/images/PR0915.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021619/PR0915/manifest> .
+
+<http://data.europeana.eu/item/2021619/PR0915#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:55:47.628Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021619/PR0915> .
+
+<http://data.europeana.eu/organization/1482250000004510521>
+	a               foaf:Organization ;
+	skos:prefLabel  "Museum Martena"@nl, "Museum Martena"@fr, "Museum Martena"@en, "Museum Martena"@de .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<https://iiif.europeana.eu/presentation/2021619/PR0915/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2021619/PR0915>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021619/PR0915> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510521> ;
+	edm:isShownBy      <http://37.74.151.78/oaiserver/images/PR0915.jpg> ;
+	edm:object         <http://37.74.151.78/oaiserver/images/PR0915.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc/3.0/nl/> .
+
+<http://data.europeana.eu/item/2021619/PR0915#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:55:47.628Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021619/PR0915> .
+
+<http://data.europeana.eu/proxy/europeana/2021619/PR0915>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021619/PR0915> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021619/PR0915> .
+
+<http://data.europeana.eu/proxy/provider/2021619/PR0915>
+	a                   ore:Proxy ;
+	dc:coverage         "Friesland" ;
+	dc:creator          "Gelder, Aert de" ;
+	dc:description      "Plaat van portret van Herman Boerhave door Aert de Gelder" ;
+	dc:format           "Hoogte 28 cm", "Breedte 22.5 cm" ;
+	dc:identifier       "PR0915" ;
+	dc:publisher        "Museum Martena" ;
+	dc:source           "Museum Martena" ;
+	dc:subject          "Boerhave, Hermanus" ;
+	dc:title            "No title" ;
+	dc:type             "portret", "prent" ;
+	dcterms:provenance  "Gemeente Franekeradeel" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021619/PR0915> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021619/PR0915> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2021619/PR0915>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "2014-03-28T14:42:02.890Z" ;
+	dcterms:modified          "2014-03-28T14:42:02.890Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021619/PR0915#contentTier>, <http://data.europeana.eu/item/2021619/PR0915#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021619/PR0915> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021619_Ag_NL_DigitaleCollectie_Martena" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021619/PR0915> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2F37.74.151.78%2Foaiserver%2Fimages%2FPR0915.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc/3.0/nl/> .
+
+<http://data.europeana.eu/item/2021619/PR0915>
+	a  edm:ProvidedCHO .

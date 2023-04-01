@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2059204/data_sounds_1069114227>
+	a                   ore:Proxy ;
+	dc:contributor      "Columbia Orchestra" ;
+	dc:creator          "Josef Strauss" ;
+	dc:format           "[160 UpM]", "Digitalisat von 1 Walze mit Deckel [mit Originalverpackung]" ;
+	dc:identifier       "Referencenr. 57096", "urn:nbn:de:101:1-2015060112822" ;
+	dc:publisher        "Columbia Phonograph Company", "Columbia" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "Frauenherz : Mazurka" ;
+	dc:type             "Wax cylinder" ;
+	dcterms:extent      "02:25" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1069114227> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1069114227> .
+
+<http://data.europeana.eu/proxy/europeana/2059204/data_sounds_1069114227>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/149151> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1069114227> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1069114227> .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1069114227>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1069114227>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059204/data_sounds_1069114227> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000017965230> ;
+	edm:hasView        <http://d-nb.info/1069114227> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:101:1-2015060112822> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1069114227>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-07T13:17:50.259Z" ;
+	dcterms:modified          "2016-04-11T09:24:08.696Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059204/data_sounds_1069114227#contentTier>, <http://data.europeana.eu/item/2059204/data_sounds_1069114227#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059204/data_sounds_1069114227> ;
+	edm:completeness          "0" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2059204_Ag_EU_eSOUNDS_1006_BSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059204/data_sounds_1069114227> ;
+	edm:language              "de" .
+
+<http://d-nb.info/1069114227>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059204/data_sounds_1069114227/manifest> .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1069114227#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:15.824Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1069114227> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/agent/149151>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/235> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/150896> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q312941>, <http://data.carnegiehall.org/names/1005345>, <http://viaf.org/viaf/100251784>, <https://g.co/kg/m/02dng1>, <http://dbpedia.org/resource/Josef_Strauss>, <https://www.freebase.com/m/02dng1>, <https://libris.kb.se/xv8bc3qg3n42fs3>, <http://datos.bne.es/resource/XX840806>, <http://data.bnf.fr/ark:/12148/cb139001232>, <http://openlibrary.org/works/OL5296367A>, <http://id.worldcat.org/fast/39071>, <http://libris.kb.se/resource/auth/206354>, <http://id.loc.gov/authorities/names/n79077314>, <http://d-nb.info/gnd/118809555>, <http://data.bibliotheken.nl/id/thes/p070516138>, <http://www.idref.fr/067019277/id>, <http://id.ndl.go.jp/auth/ndlna/00457910> ;
+	rdaGr2:dateOfBirth   "1827-08-20" ;
+	rdaGr2:dateOfDeath   "1870-07-22" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/80422> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Josef Strauss"@es, "Giuseppe Strauss"@cs, "Joseph Strauss"@sl, "Joseph Strauss"@da, "Joseph Strauss"@nl, "Joseph Strauss"@es, "Joseph Strauß"@cs, "Josef Strauß"@cs, "Josef Strauß"@de, "Josef Strauß"@sl, "Josef Strauß"@it, "Josef Strauß"@ca, "Штраус, Йозеф"@ru, "Strauss"@sv, "Josef StrauB"@es, "Штраус Йозеф"@ru ;
+	skos:note            "Compositeur autrichien"@fr, "Austriacki kompozytor"@pl, "Componist uit Oostenrijk (1827-1870)"@nl, "Rakúsky hudobný skladateľ"@sk, "Compositor austríaco"@es, "Compositor austríaco"@pt, "Rakouský hudební skladatel"@cs, "Österreichischer Komponist und Dirigent"@de, "Austria helilooja"@et, "Austrian composer"@en, "Compositore e direttore d'orchestra austriaco"@it, "Österrikisk kompositör"@sv, "Cumadóir Ostarach"@ga, "Compositor austríac"@ca, "Osztrák zeneszerző"@hu, "Compozitor austriac"@ro, "Østrigsk komponist og dirigent"@da ;
+	skos:prefLabel       "Йозеф Щраус"@bg, "Josef Strauß"@es, "Йозеф Штраус"@ru, "Josef Strauss"@it, "Josef Strauss"@de, "Josef Strauss"@sv, "Josef Strauss"@fi, "Josef Strauss"@pt, "Josef Strauss"@en, "Josef Strauss"@fr, "Josef Strauss"@hu, "Josef Strauss"@cs, "Josef Strauss"@sk, "Josef Strauss"@sl, "Josef Strauss"@ga, "Josef Strauss"@pl, "Josef Strauss"@da, "Josef Strauss"@nl, "Josef Strauss"@ca, "Γιόζεφ Στράους"@el .
+
+<http://nbn-resolving.de/urn:nbn:de:101:1-2015060112822>
+	a                edm:WebResource ;
+	dc:format        "audio/wav", "PCM", "24" ;
+	dcterms:created  "2015" ;
+	dcterms:extent   "1", "96 kHz" .
+
+<https://iiif.europeana.eu/presentation/2059204/data_sounds_1069114227/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1069114227#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:15.823Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1069114227> .
+
+<http://data.europeana.eu/organization/1482250000017965230>
+	a               foaf:Organization ;
+	skos:prefLabel  "Deutsche Nationalbibliothek"@de, "Немецкая национальная библиотека"@ru, "German National Library"@en, "Saksan kansalliskirjasto"@fi, "Německá národní knihovna"@cs, "Vācijas Nacionālā bibliotēka"@lv, "Biblioteca Națională a Germaniei"@ro, "Niemiecka Biblioteka Narodowa"@pl, "Njemačka nacionalna knjižnica"@hr, "Nemecká národná knižnica"@sk, "Biblioteca Nacional da Alemanha"@pt, "Biblioteca nazionale tedesca"@it, "Német Nemzeti Könyvtár"@hu, "Bibliothèque nationale allemande"@fr, "Германска национална библиотека"@bg, "Nemška nacionalna knjižnica"@sl, "Duitse Nationale Bibliotheek"@nl, "Biblioteca Nacional d'Alemanya"@ca, "Εθνική Βιβλιοθήκη της Γερμανίας"@el, "Saksamaa Rahvusraamatukogu"@et, "Deutsche Nationalbibliothek"@da, "Biblioteca Nacional de Alemania"@es, "Deutsche Nationalbibliothek"@sv .

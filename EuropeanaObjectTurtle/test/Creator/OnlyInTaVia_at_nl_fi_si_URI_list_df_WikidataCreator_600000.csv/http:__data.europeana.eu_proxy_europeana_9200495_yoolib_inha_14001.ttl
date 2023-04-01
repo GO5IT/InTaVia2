@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_14001>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:35:49.285Z" ;
+	dcterms:modified          "2016-09-19T09:09:38.461Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_14001#contentTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_14001#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_14001> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_14001> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F13001-14000%2F13948%2Fmedia%2F14586%2F0646_doucet_aumf13c025_0001%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_14001/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://www.purl.org/yoolib/inha/14001>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_14001>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2834> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_14001> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_14001> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14001>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2834>
+	a                skos:Concept ;
+	skos:altLabel    "Korrespondens"@sv, "Carta"@pt, "Carteggio"@it, "Schriftverkehr"@de, "Correspondance (Littérature)"@fr, "Korespondence; vēstules"@lv, "Επιστολή"@el, "Kirjavahetus"@et, "Intercambio epistolar"@es, "Корреспонденция"@ru, "Briefwisseling"@nl, "Correspondance (litterature)"@fr ;
+	skos:exactMatch  <http://id.nlm.nih.gov/mesh/V01.550>, <http://www.wikidata.org/entity/Q1784733>, <http://g.co/kg/g/1230jl_1>, <http://id.nlm.nih.gov/mesh/D015709>, <http://data.bnf.fr/ark:/12148/cb133187365>, <http://vocab.getty.edu/aat/300026877>, <http://purl.org/bncf/tid/6119>, <http://datos.bne.es/resource/XX526105>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.377>, <http://id.nlm.nih.gov/mesh/D016422>, <http://id.nlm.nih.gov/mesh/V02.355.374>, <http://id.loc.gov/authorities/names/sh99001488>, <http://id.nlm.nih.gov/mesh/V02.625>, <http://d-nb.info/gnd/4180011-4> ;
+	skos:note        "Genere letterario"@it, "Intercambio regular de correo"@es, "Literární žánr"@cs, "Процесс обмена письмами (как лит. жанр см. Q2250271)"@ru, "Literair genre"@nl, "Genre littéraire"@fr, "Kirjallinen kommunikaatio (genre on Q2250271)"@fi, "Literary genre"@en, "Gênero literário"@pt, "Schriftverkehr"@de ;
+	skos:prefLabel   "Correspondència"@ca, "Korespondence"@cs, "Correspondência"@pt, "Correspondentie"@nl, "Αλληλογραφία"@el, "Korrespondance"@da, "Kiri"@et, "Correspondencia"@es, "Sarakste"@lv, "Kirjeenvaihto"@fi, "Korrespondenz"@de, "Corrispondenza"@it, "Correspondence"@en, "Brevväxling"@sv, "Переписка"@ru, "Correspondance"@fr .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14001#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:53.938Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14001> .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://tools.yoolib.net/i/s4/inha/files/13001-14000/13948/media/14586/0646_doucet_aumf13c025_0001/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_14001/manifest> ;
+	ebucore:fileByteSize    "364050"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "696"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_14001>
+	a                   ore:Proxy ;
+	dc:contributor      "[s.n.]" ;
+	dc:creator          "Ribot, Théodule (1823-1891)", "Restout, Jean-Bernard (1732-1797)", "Regnault, Nicolas-François (1746-1810)", "Rochegrosse, Georges-Antoine (1859-1938)", "Robert-Fleury, Joseph-Nicolas (1797-1890)", "Roux, Louis-François-Prosper (1817-1903)", "Regnault, Jean-Baptiste (1754-1829)", "D'après Rigaud, Hyacinthe (1659-1743)", "Regnart, Lucien-Franc (18??-18??)", "Robert, Gilbert-Camille-Victor (1813-1888)", "Roque, Jean-Jacques (1880-1926)", "Renoir, Auguste (1841-1919)", "Rixens, André (1846-1924)", "D'après Reynolds, Joshua (1723-1792)", "Renaudot, Paul (1871-1920)", "Rousseau, Théodore (1812-1867)", "Renou, Antoine (1731-1806)", "Rivière (18??-18??)", "Redon, Odilon (1840-1916)", "Roll, Alfred-Philippe (1846-1919)", "Redouté, Pierre-Joseph (1759-1840)", "Riesener, Léon (1808-1878)", "Rousseau, Philippe (1816-1887)", "Roqueplan, Camille Joseph Étienne (1803-1855)", "Robert, Léopold-Louis (1794-1835)", "Regamey, Félix-Élie (1844-1907)", "D'après Ricard, Gustave (1823-1873)", "Regnault, Henri (1843-1871)", "Robida, Albert (1848-1926)", "Robert-Fleury, Tony (1837-1912)" ;
+	dc:description      "Lieu de publication : [S.l.]", "Partenariats : Document numérisé grâce au mécénat de la Société BIC", "Nombre de vues du document : 657", "Langue du document : Français", "Note de contenu : Contient un portrait lithographié de P.-J. Redouté ; un dessin politique à la mine de plomb de L. -F. Regnart ; un portrait à la mine de plomb de C. Sundberg par H. -A. -G. Regnault ; une reproduction d’un tableau de H. Rigaud ainsi que 2 croquis à la plume de T. Rousseau", "Langue du document : Italien", "Fonds ou documents en rapport : <a href=\u0022http://www.purl.org/yoolib/inha/13115\u0022 target=\u0022_blank\u0022><b>Original du dessin de Lucien Franc Regnart intitulé Un peu de politique</b></a>", "Fonds ou documents en rapport : <a href=\u0022http://www.purl.org/yoolib/inha/13117\u0022 target=\u0022_blank\u0022><b>Originaux de deux croquis de Théodore Rousseau</b></a>", "Fonds ou documents en rapport : <a href=\u0022http://www.purl.org/yoolib/inha/13116\u0022 target=\u0022_blank\u0022><b>Original du dessin de Henri Regnault : portrait de Christine Sundberg</b></a>", "Langue du document : Anglais", "Date de numérisation : 2011" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/14001" ;
+	dc:language         "eng", "fre", "ita" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "domaine public"@fr, "Institut National d'Histoire de l'Art"@fr ;
+	dc:source           "Cote de l'original : Carton 25 ; Cote du microfilm : Mfilm bobine 13 (vues 10563-11240)", "NUM AU MF13 C025" ;
+	dc:subject          "17e siècle", "Correspondance", "20e siècle", "19e siècle", "18e siècle" ;
+	dc:title            "Autographes, Carton 25 : Peintres Red-Rou" ;
+	dc:type             "image", "Recueil de lettres", "text", "still image" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_14001> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14001> .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14001>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_14001> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/14001> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13948/media/14586/0646_doucet_aumf13c025_0001/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13948/media/14586/0646_doucet_aumf13c025_0001/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14001#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:53.938Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14001> .

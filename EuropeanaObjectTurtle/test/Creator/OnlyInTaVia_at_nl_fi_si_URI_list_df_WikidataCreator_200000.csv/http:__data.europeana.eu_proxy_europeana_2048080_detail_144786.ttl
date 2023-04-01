@@ -1,0 +1,150 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:48:55.088324Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_144786> .
+
+<https://www.esbirky.cz/img.php?id=144788>
+	a                       edm:WebResource ;
+	dc:description          "30042-142475-kneznalibuse_jednanitreti_07.jpg"@cs ;
+	dc:format               "image/jpeg" ;
+	dc:type                 "image" ;
+	dcterms:created         "2012-04-18T20:18:55" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_144786/manifest> ;
+	dcterms:issued          "2012-04-18T00:00:00" ;
+	ebucore:fileByteSize    "583611"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1914"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "2902"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc/4.0/> .
+
+<file:///usr/local/tomcat/webapps/#TypSbirky:17109>
+	a               skos:Concept ;
+	skos:prefLabel  "Hudebniny"@cs .
+
+<http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_144786>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045430001> ;
+	edm:isShownAt      <https://www.esbirky.cz/detail/144786> ;
+	edm:isShownBy      <https://www.esbirky.cz/img.php?id=144788> ;
+	edm:object         <https://www.esbirky.cz/img.php?id=144788> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004502224> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc/4.0/> .
+
+<https://www.esbirky.cz/detail/144786>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004502224>
+	a               foaf:Organization ;
+	skos:prefLabel  "ESbírky"@en, "ESbírky"@cs .
+
+<http://data.europeana.eu/proxy/provider/472/https___www_esbirky_cz_detail_144786>
+	a                   ore:Proxy ;
+	dc:coverage         <file:///usr/local/tomcat/webapps/#Predmet:144786> ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#PredmetAutor:144786> ;
+	dc:date             "1901-1-1", <file:///usr/local/tomcat/webapps/#PredmetDatText:144786> ;
+	dc:format           <file:///usr/local/tomcat/webapps/#Technika:3507675>, "inkoust na linkovaném papíře" ;
+	dc:identifier       "H6Č 1972-28" ;
+	dc:relation         <file:///usr/local/tomcat/webapps/#TypSbirky:17109> ;
+	dc:title            "Kněžna Libuše, operní libreto - jednání třetí"@cs ;
+	dcterms:created     "1901-1-1" ;
+	dcterms:extent      "Výška: 14,5 cm, Šířka: 22,3 cm" ;
+	dcterms:medium      <file:///usr/local/tomcat/webapps/#Material:17369>, "Papír" ;
+	dcterms:spatial     <file:///usr/local/tomcat/webapps/#Lokalita:34958> ;
+	dcterms:temporal    <file:///usr/local/tomcat/webapps/#Datace:294950> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_144786> .
+
+<http://data.europeana.eu/organization/1482250000045430001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Historical Museum"@en, "Historické muzeum"@cs .
+
+<file:///usr/local/tomcat/webapps/#Lokalita:34958>
+	a               edm:Place ;
+	skos:prefLabel  "Bez určení"@cs .
+
+<file:///usr/local/tomcat/webapps/#Datace:294950>
+	a               edm:TimeSpan ;
+	edm:begin       "1901-01-01" ;
+	edm:end         "2000-12-31" ;
+	skos:note       "1938" ;
+	skos:prefLabel  "20. století"@cs .
+
+<file:///usr/local/tomcat/webapps/#PredmetDatText:144786>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "1910 - 1913"@cs .
+
+<file:///usr/local/tomcat/webapps/#Technika:3507675>
+	a               skos:Concept ;
+	skos:prefLabel  "Rukopis"@cs .
+
+<https://iiif.europeana.eu/presentation/472/https___www_esbirky_cz_detail_144786/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/472/https___www_esbirky_cz_detail_144786>
+	a                   ore:Proxy ;
+	dc:identifier       "https://www.esbirky.cz/detail/144786" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_144786> .
+
+<file:///usr/local/tomcat/webapps/#Material:17369>
+	a               skos:Concept ;
+	skos:prefLabel  "Papír"@cs .
+
+<file:///usr/local/tomcat/webapps/#Predmet:144786>
+	a               edm:Place ;
+	skos:prefLabel  "New York, Praha, Boston"@cs .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2021-03-24T10:48:55.087907Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/472/https___www_esbirky_cz_detail_144786> .
+
+<http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786>
+	a  edm:ProvidedCHO .
+
+<file:///usr/local/tomcat/webapps/#PredmetAutor:144786>
+	a               edm:Agent ;
+	skos:prefLabel  "Ema Destinnová"@cs .
+
+<http://data.europeana.eu/aggregation/europeana/472/https___www_esbirky_cz_detail_144786>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-26T12:39:14.662Z" ;
+	dcterms:modified          "2021-03-24T10:03:51.861Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786#contentTier>, <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/472/https___www_esbirky_cz_detail_144786> ;
+	edm:completeness          "5" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "472_NM_HM_Narodni_muzeum_Historicke_muzeum" ;
+	edm:landingPage           <https://www.europeana.eu/item/472/https___www_esbirky_cz_detail_144786> ;
+	edm:language              "cs" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.esbirky.cz%2Fimg.php%3Fid%3D144788&type=IMAGE> .

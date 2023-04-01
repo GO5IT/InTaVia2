@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8808785j/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:36.331Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808785j> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808785j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:54:12.768Z" ;
+	dcterms:modified          "2018-03-26T12:29:03.723Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8808785j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8808785j.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:36.330Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808785j> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8808785j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808785j> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8808785j>
+	a                   ore:Proxy ;
+	dc:creator          "Mistral, Frédéric (1830-1914). Auteur ou responsable intellectuel", "Sylvaire, Jany (1921-....). Chant", "Péguy, Charles (1873-1914). Auteur ou responsable intellectuel", "Rostand, Edmond (1868-1918). Auteur du texte", "Deschamps, Jean (1920-2007). Voix parlée", "Fombeure, Maurice (1906-1981). Auteur ou responsable intellectuel", "Delbousquet, E.. Auteur ou responsable intellectuel", "Verhaeren, Émile (1855-1916). Auteur ou responsable intellectuel", "Azam, René. Chant", "Heredia, José Maria de (1842-1905). Auteur du texte", "Haniotis, Mario. Interprète", "Pourrat, Henri (1887-1959). Auteur ou responsable intellectuel", "Lamartine, Alphonse de (1790-1869). Auteur ou responsable intellectuel", "Lebesgue, Philéas (1869-1958). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Comprend : LE PLUS BEAU PAYS DU MONDE / Ph. LEBESGUE - CE SONT LES DAMES DE PARIS - PRESENTATION DE LA BEAUCE / PEGUY - CARILLON DE VENDOME - LE BATELIER / VERHAEREN - LE P'TIT QUINQUIN - LA CHAMPAGNE - O MAISON DE MON PAYS / PEGUY - EN PASSANT PAR LA LORRAINE - LA BOURGOGNE - FARANDOLE DU RHONE - LE LAC / LAMARTINE - MARCHE DES ROIS - CHANTEZ MAGNARELLES / MISTRAL - BERCEUSE CORSE - DANS LES BOIS DE TOULOUSE - VIEUX AIRS DU PAYS / E. ROSTAND - SE CANTO - ETE / E. DELBOUSQUET - A BORDEAUX VIENT D'ARRIVER - LA VIEILLE MARIE CONTAIT / H. POURRAT - QUE VENEZ-VOUS CHERCHER - SUR LES BORDS DE LA LOIRE - CHATEAUX DE LOIRE / PEGUY - SONT LES FILLES DE LA ROCHELLE - NOSTALGIE / M. FOMBEURE - LA CHANSON DE SURCOUF - MARIS STELLA / HEREDIA - CHANSON NORMANDE" ;
+	dc:format           "disc"@eng, "disque microsillon"@fre, "1 disque : 33 t ; 30 cm", "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8808785j", "Numéro commercial : Encyclopédie sonore 320E824" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37870738s"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-5935" ;
+	dc:title            "Chez nous en France : (chants et poésies) / Madeleine OZERAY, Jean DESCHAMPS, Jany SYLVAIRE ('soprano), René AZAM (ténor), Mario HANIOTIS (basse et les Choeurs ; piano : G. HACQUARD" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808785j> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808785j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808785j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8808785j> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8808785j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808785j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4489"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808785j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "225958"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

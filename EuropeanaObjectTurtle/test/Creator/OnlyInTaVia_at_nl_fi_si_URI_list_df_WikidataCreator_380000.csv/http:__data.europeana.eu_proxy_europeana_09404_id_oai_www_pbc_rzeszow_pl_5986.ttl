@@ -1,0 +1,99 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/0940427/_nnW0cpl>
+	a                   ore:Proxy ;
+	dc:creator          "Malczewski, Jacek (1854-1929)"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:language         "fr", "pl" ;
+	dc:publisher        "s.n."@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Rzeszowie"@pl ;
+	dc:source           "Sygnatura oryginału: G-149"@pl ;
+	dc:subject          "Malczewski, Jacek (1854-1929). Śmierć wygnanki"@pl, "śmierć - w sztuce"@pl, "śmierć"@pl, "litografia polska - 19-20 w."@pl, "zwłoki"@pl, "malarstwo polskie - 19-20 w."@pl ;
+	dc:title            "Śmierć wygnanki = La mort de l’exilée"@pl ;
+	dc:type             "grafika"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnW0cpl> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cpl> .
+
+<http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5986>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "20643"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/0940427/_nnW0cpl#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:48:39.060Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cpl> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940427/_nnW0cpl>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940427/_nnW0cpl> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004512021> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5986> ;
+	edm:isShownBy      <http://www.pbc.rzeszow.pl/Content/5986/G-149.djvu> ;
+	edm:object         <http://www.pbc.rzeszow.pl/Content/5986/G-149.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940427/_nnW0cpl>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/0940427/_nnW0cpl>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:05:58.645Z" ;
+	dcterms:modified          "2017-11-30T08:05:58.645Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940427/_nnW0cpl#contentTier>, <http://data.europeana.eu/item/0940427/_nnW0cpl#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940427/_nnW0cpl> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940427_Ag_PL_www.pbc.rzeszow.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940427/_nnW0cpl> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.pbc.rzeszow.pl%2FContent%2F5986%2FG-149.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/item/0940427/_nnW0cpl#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:48:39.060Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cpl> .
+
+<http://www.pbc.rzeszow.pl/Content/5986/G-149.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940427/_nnW0cpl/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/0940427/_nnW0cpl/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/0940427/_nnW0cpl>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnW0cpl> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940427/_nnW0cpl> .
+
+<http://data.europeana.eu/organization/1482250000004512021>
+	a               foaf:Organization ;
+	skos:prefLabel  "bibliothèque numérique subcarpathique"@fr, "Podkarpacka Biblioteka Cyfrowa"@pl, "Podkarpacka Digital Library"@en .

@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357491>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004511926>
+	a               foaf:Organization ;
+	skos:prefLabel  "Open Access Publishing in European Networks Foundation"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357491>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200234/download_type_document_docid_357491> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:isShownAt      <http://oapen.org/search?identifier=357491> ;
+	edm:isShownBy      <http://oapen.org/download?type=document&docid=357491> ;
+	edm:object         <http://oapen.org/download?type=document&docid=357491> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://oapen.org/download?type=document&docid=357491>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "15714827"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/pdf" .
+
+<http://data.europeana.eu/concept/79>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.eionet.europa.eu/gemet/concept/3983>, <https://d-nb.info/gnd/4020517-4>, <http://www.yso.fi/onto/yso/p1780>, <http://vocabularies.unesco.org/thesaurus/concept301>, <http://uri.gbv.de/terminology/bk/15.00>, <http://data.bnf.fr/ark:/12148/cb119344445>, <http://www.yso.fi/onto/ysa/Y95390>, <http://datos.bne.es/resource/XX4346861>, <http://vocabularies.unesco.org/thesaurus/concept302>, <http://zbw.eu/stw/descriptor/15690-2>, <http://id.nlm.nih.gov/mesh/D006664>, <http://www.wikidata.org/entity/Q309>, <http://id.cabi.org/cabt/57756>, <http://purl.org/bncf/tid/1995>, <http://id.loc.gov/authorities/names/sh85061212>, <http://linkeddata.ge.imati.cnr.it/resource/EARTh/89480>, <https://www.freebase.com/m/03g3w>, <http://id.ndl.go.jp/auth/ndlna/00569368>, <http://id.nlm.nih.gov/mesh/K01.400>, <http://id.worldcat.org/fast/958235>, <http://iconclass.org/6>, <https://g.co/kg/m/03g3w> ;
+	skos:note        "Paraplybegrepp för kunskap och studier kring händelser i det förgångna"@sv, "Eventos ocorridos no passado"@pt, "Esdeveniments passats"@ca, "Eventi che succedettero nel passato"@it, "Vergangene Ereignisse und ihre Überlieferung, wie sie von der Geschichtswissenschaft und Geschichtsschreibung betrachtet werden"@de, "Événements passés et leurs traces ou publications, étudiés par diverses branches des sciences humaines de l'histoire"@fr, "Past events and their tracks or records"@en, "Επιστήμη που μελετά ανθρώπινα συμβάντα του παρελθόντος"@el, "Systematisch chronologische verslaglegging van wat lokaal/(inter)nationaal is gebeurd m.b.t. wetenschap of kunst; gewoonlijk incl. verklaring van oorzaak en bron"@nl, "Menneisyyden tutkimus"@fi, "Minulost, jak je připomínána a zkoumána lidmi"@cs, "Прошлые события и их записи"@ru, "Nauka humanistyczna i społeczna"@pl, "Pētniecības nozare, kas ir balstīta uz cilvēces attīstības izzināšanu"@lv, "Múltbeli események összessége"@hu, "Samlebetegnelse for viden og undersøgelser af tidligere begivenheder"@da, "Хуманитарна наука, занимаваща се с изучаването на миналото"@bg, "Sucesos del pasado"@es ;
+	skos:prefLabel   "Ajalugu"@et, "História"@pt, "Storia"@it, "Zgodovina"@sl, "Povijest"@hr, "Vēsture"@lv, "Dějiny"@cs, "Stair"@ga, "Geschichte"@de, "Historia"@fi, "Historia"@sv, "Historia"@es, "Historia"@eu, "Historia"@pl, "Història"@ca, "Histoire"@fr, "Dejiny"@sk, "Ιστορία"@el, "Istorie"@ro, "Storja"@mt, "Historie"@da, "Geschiedenis"@nl, "Istorija"@lt, "History"@en, "История"@ru, "История"@bg, "Történelem"@hu .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://oapen.org/search?identifier=357491>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/9200234/download_type_document_docid_357491>
+	a                   ore:Proxy ;
+	dc:creator          "Jonge, H.J. de", "Erasmus" ;
+	dc:date             "1983" ;
+	dc:description      "The Apologia respondens ad ea quae Jacobus Lopis Stunica taxauerat in prima\u000Aduntaxat Noui Testamenti aeditione is Erasmus' first apology against the Spaniard\u000AStunica. Erasmus himself classed it under the eighth 'ordo' of his works, that is,\u000Athe 'ordo' of his apologies; see Ep. I to Botzheim, 30 January 1523, p. 4 I, 1. 22,\u000Aand cf. Ep. 2283 to Boece, 15 March 1530, 1. 189. Since the editors of BAS\u000Areserved the seventh 'ordo' ('tomus' in their terminology) for the Paraphrasis in\u000ANouum Testamentum, in accordance with Erasmus' direction in the letter to\u000ABotzheim (Ep. I, p. 41, 1. 8), and the next 'ordo' for the translations from the\u000AChurch Fathers, in accordance with the letter to Boece (Ep. 2283, 1. 155), the\u000Acollected apologies eventually became the ninth 'ordo', not the eighth. In the\u000Apresent edition, the ~rst apology against Stunica is the second volume of the\u000Aninth 'ordo'. Four further apologies against Stunica and that against Carranza\u000Awill form, or form part of, another volume.\u000AInterestingly enough, the first apology against Stunica is the first work of\u000AErasmus whose final authentic redaction turns out not to be contained in an\u000Aedition printed during Erasmus' lifetime, but in BAS. This remarkable fact as\u000Awell as its consequences for the pres~nt edition will be discussed in detail in the\u000AIntroduction, chapter VI.\u000AIn addition to those who, at the request of the editorial board, took charge\u000Aof the supervision of this volume and whose names are recorded on the verso\u000Aof the title-page, M. de Jonge of Leiden has kindly read and criticized the\u000Atypescript.\u000AThe editorial board and the editor of the present volume thank all libraries\u000Awho put books, photostats, microfilms and bibliographical material at theirdisposal. They would also like to thank Mrs Anna de Haas of the NorthHolland\u000APublishing Company for the valuable assistance she has rendered in\u000Aseeing this volume through the press." ;
+	dc:identifier       "urn:isbn:0444866051" ;
+	dc:language         "eng", "lat" ;
+	dc:publisher        "Huygens instituut/Brill" ;
+	dc:rights           "All rights reserved" ;
+	dc:subject          "Humanities::History::Regional & national history::European history", "european history", "history" ;
+	dc:title            "Opera omnia Desiderii Erasmi Roterodami : Ordinis Noni Tomus Secundus" ;
+	dc:type             "Text" ;
+	dcterms:medium      "application/pdf" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200234/download_type_document_docid_357491> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357491> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357491#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:44:50.490Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357491> .
+
+<http://data.europeana.eu/item/9200234/download_type_document_docid_357491#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:44:50.490Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200234/download_type_document_docid_357491> .
+
+<http://data.europeana.eu/agent/198>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/145446> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/206>, <http://data.europeana.eu/agent/59788> ;
+	owl:sameAs           <http://kulturarvsdata.se/LSH/agents/62465>, <http://dbpedia.org/resource/Erasmus>, <http://openlibrary.org/works/OL53336A>, <http://www.wikidata.org/entity/Q43499>, <http://data.bibliotheken.nl/id/thes/p068551959>, <http://data.cervantesvirtual.com/person/1590>, <https://g.co/kg/m/02rpq>, <http://viaf.org/viaf/87673996>, <http://data.bnf.fr/ark:/12148/cb11886243m>, <https://www.freebase.com/m/02rpq>, <https://libris.kb.se/20dg9h6l0n7mr32>, <http://id.loc.gov/authorities/names/n79055814>, <http://vocab.getty.edu/ulan/500045736>, <https://livedata.bibsys.no/authority/90055357>, <http://libris.kb.se/resource/auth/51858>, <http://lod.nl.go.kr/resource/KAC199608212>, <http://id.ndl.go.jp/auth/ndlna/00438957>, <http://id.worldcat.org/fast/1817492>, <http://d-nb.info/gnd/118530666>, <http://nlg.okfn.gr/resource/authority/record212336>, <urn:uuid:3d57cf71-45af-4e07-a6bd-d83773da9c21>, <http://www.idref.fr/085720372/id>, <http://ta.sandrart.net/-person-557>, <http://datos.bne.es/resource/XX846620> ;
+	rdaGr2:dateOfBirth   "1466-11-06" ;
+	rdaGr2:dateOfDeath   "1536-07-22" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/213830> ;
+	skos:altLabel        "Geert Geertsen"@de, "Desiderius Erasmus Rotterdamus"@cs, "Desiderius Erasmus Roterodamus"@fi, "Desiderius Erasmus Roterodamus"@de, "Desiderius Erasmus Roterodamus"@lv, "Desiderius Erasmus Roterodamus"@fr, "Desiderius Erasmus Roterodamus"@hu, "Desiderius Erasmus Roterodamus"@sl, "Desiderius Erasmus Roterodamus"@ca, "Герхардс Герхард"@ru, "Desiderius Erasmus Roterodamus"@en, "Desiderius Erasmus Roterodamus"@cs, "Desiderius Erasmus Roterodamus"@da, "Desiderius Erasmus Roterodamus"@nl, "Érasme"@cs, "Desidērijs Erasms"@lv, "Gerrit Gerritszoon"@lv, "Herasmus Gerritszoon"@hu, "Gerrit Gerritszoon"@fr, "Gerrit Gerritszoon"@hu, "Gerrit Gerritszoon"@sk, "Gerrit Gerritszoon"@cs, "Gerrit Gerritszoon"@pl, "Gerrit Gerritszoon"@nl, "Erasmus"@pt, "Erasmus"@et, "Erasmus"@cs, "Desiderius Erasmus av Rotterdam"@sv, "Desideri Erasme de Rotterdam"@ca, "Erasmus Von Rotterdam Erasmus"@en, "Desiderius Erasmus"@fi, "Desiderius Erasmus"@de, "Desiderius Erasmus"@pt, "Desiderius Erasmus"@lv, "Desiderius Erasmus"@hr, "Desiderius Erasmus"@fr, "Desiderius Erasmus"@hu, "Desiderius Erasmus"@sl, "Desideri Erasme"@ca, "Desiderius Erasmus"@ca, "Desiderius Erasmus"@sv, "Desiderius Erasmus"@en, "Desiderius Erasmus"@it, "Desiderius Erasmus"@es, "Desiderius Erasmus"@et, "Desiderius Erasmus"@pl, "Desiderius Erasmus"@da, "Desiderius Erasmus"@ro, "Desiderius Erasmus"@nl, "Erasmismo"@pt, "Rotterodamus Erasmus Desiderius"@cs, "Desiderius Erasmus Rotterdamilainen"@fi, "Erasmus Desiderius"@sl, "Erasmus Desiderius"@cs, "Ντεζιντέριους Εράσμους"@el, "Didier Érasme"@fr, "Desiderius erasmus roterodamus"@pt, "Erasmo de Rotterdam"@pt, "Erasmo de Rotterdam"@es, "Erasmus ó Rotterdam"@ga, "Geert Geerts"@de, "Geert Geerts"@sl, "Erasmus fra Rotterdam"@da, "Erasmo da Rotterdam"@cs, "Deziderij Erazem"@sl, "Erasmus Roterodamus"@ca, "Rotterdami Erasmus"@et, "Герхардс, Герхард"@ru, "Desiderius"@cs, "Erasms Roterdāmietis"@lv, "Geert Geertsz"@it, "Έρασμος"@el, "Rotterodamský Erasmus Desiderius"@cs, "Erasmus van Rotterdam"@nl, "Erazem Roterdamski"@sl, "Erasmus Rotterdamus"@sv, "Desiderius Erasmus Roterdamus"@fr, "Desiderius Erasmus Roterdamus"@nl, "Erasms Roterdamietis"@lv, "Desiderius eramus"@pt, "Desidério Erasmo"@pt, "Erasmus von Rotterdam"@lt, "Erasmus von Rotterdam"@en, "Erasmus von Rotterdam"@es, "Erasme"@fr, "Erasme"@ca, "Desiderius Erasmus of Rotterdam"@en, "Erasmus de Rotterdam"@ca, "Didier Erasme"@fr, "Erasmus från Rotterdam"@sv, "Desiderius Erasmus Rotherodamus"@hu, "Erazm z Roterdamu"@pl, "Desiderio Erasmo"@it, "Дезидериус Еразъм Ротердамски"@bg, "Desiderio Erasmo"@es, "Erasmo de Roterdam"@pt, "Erasmo de Roterdam"@es, "Dezidērijs Erasms"@lv, "Erasmus Rotterdam"@en, "Gerhard Gerhardson"@pl, "Герхард Герхардс"@ru, "Erasme de Rotterdam"@fr, "Erasmus Rotterdamský"@sk, "Дезидерий Роттердамский"@ru, "Gerhard Gerhards"@sk, "Gerhard Gerhards"@sl, "Gerhard Gerhards"@es, "Gerhard Gerhards"@cs, "Еразъм"@bg, "Erazmas iš Roterdamo"@lt, "Erasmo"@es, "Erasmo de Roterdã"@pt, "Erasmus of Rotterdam"@en, "Erasms"@lv, "Desiderij Erazem Rotterdamski"@sl ;
+	skos:note            "Nederlands theoloog, filosoof, schrijver en humanist (1466-1536)"@nl, "Nīderlandiešu humānists un teologs"@lv, "Niederländischer Humanist"@de, "Nederländsk humanist"@sv, "Holandský myslitel a kanovník"@cs, "Filósofo, filólogo y teólogo neerlandés"@es, "Teologo, umanista e filosofo olandese"@it, "Крупнейший ученый Северного Возрождения"@ru, "Humanista i teòleg neerlandès"@ca, "Nederlandsk augustinerkorherre, teolog, humanist og latinist"@da, "Écrivain humaniste et théologien néerlandais"@fr, "Hollantilainen filosofi ja teologi"@fi, "Dutch Renaissance humanist, Catholic priest, and theologian"@en, "Niderlandzki humanista"@pl ;
+	skos:prefLabel       "Rotterdami Erasmus"@hu, "Erazmas Roterdamietis"@lt, "Еразъм Ротердамски"@bg, "Erazm z Rotterdamu"@pl, "Erasmus Rotterdamilainen"@fi, "Erasmus von Rotterdam"@de, "Erasme de Rotterdam"@ca, "Erasmus Rotterdamist"@et, "Erasmus Rotterdamský"@cs, "Erazmo Roterdamski"@hr, "Erasmus as Rotterdam"@ga, "Erasmo de Roterdão"@pt, "Erazmus Rotterdamský"@sk, "Érasme"@fr, "Erasmus"@nl, "Erasmus"@en, "Erasmus din Rotterdam"@ro, "Ντεζιντέριους Έρασμος"@el, "Erasmus af Rotterdam"@da, "Эразм Роттердамский"@ru, "Erasmo da Rotterdam"@it, "Erasmo de Róterdam"@es, "Erasmus av Rotterdam"@sv, "Roterdamas Erasms"@lv, "Erazem Rotterdamski"@sl .
+
+<http://data.europeana.eu/aggregation/europeana/9200234/download_type_document_docid_357491>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-19T14:43:30.079Z" ;
+	dcterms:modified          "2017-02-22T10:53:53.466Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200234/download_type_document_docid_357491#contentTier>, <http://data.europeana.eu/item/9200234/download_type_document_docid_357491#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200234/download_type_document_docid_357491> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200234_OAPEN_Foundation_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200234/download_type_document_docid_357491> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Foapen.org%2Fdownload%3Ftype%3Ddocument%26docid%3D357491&type=TEXT> .
+
+<http://data.europeana.eu/proxy/europeana/9200234/download_type_document_docid_357491>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/198> ;
+	dc:subject          <http://data.europeana.eu/concept/79> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1983" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200234/download_type_document_docid_357491> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200234/download_type_document_docid_357491> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

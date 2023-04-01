@@ -1,0 +1,93 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366744#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:48.036Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366744> .
+
+<https://nafpaktos.locloudhosting.net/files/original/b060a4c1c8debae9cd608767fc641b5e.pdf>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2522396"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/pdf" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://nafpaktos.locloudhosting.net/items/show/71>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "12041"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/2058622/object_Future_Library_13366744>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058622/object_Future_Library_13366744> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058622/object_Future_Library_13366744> .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366744#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:48.036Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366744> .
+
+<http://data.europeana.eu/organization/1482250000001627001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Future Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366744>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058622/object_Future_Library_13366744> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001627001> ;
+	edm:isShownAt      <http://nafpaktos.locloudhosting.net/items/show/71> ;
+	edm:isShownBy      <https://nafpaktos.locloudhosting.net/files/original/b060a4c1c8debae9cd608767fc641b5e.pdf> ;
+	edm:object         <https://nafpaktos.locloudhosting.net/files/original/b060a4c1c8debae9cd608767fc641b5e.pdf> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2058622/object_Future_Library_13366744>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-11T15:01:15.039Z" ;
+	dcterms:modified          "2016-02-08T12:18:29.726Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058622/object_Future_Library_13366744#contentTier>, <http://data.europeana.eu/item/2058622/object_Future_Library_13366744#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058622/object_Future_Library_13366744> ;
+	edm:completeness          "4" ;
+	edm:country               "Greece" ;
+	edm:datasetName           "2058622_Ag_EU_LoCloud_Future_Library" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058622/object_Future_Library_13366744> ;
+	edm:language              "el" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fnafpaktos.locloudhosting.net%2Ffiles%2Foriginal%2Fb060a4c1c8debae9cd608767fc641b5e.pdf&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/2058622/object_Future_Library_13366744>
+	a                   ore:Proxy ;
+	dc:creator          "Κρίσπης, Φραγκίσκος (μετ.)", "Rossini, Gioacchino, 1792-1868 (συνθ.)", "Feretti, Jacopo 1784-1852", "Ricci, Luigi, 1805-1859 (συνθ.)", "Piave, Francesco Mario, 1810-1876", "Ricci, Federico, 1809-1877 (συνθ.)" ;
+	dc:language         "el" ;
+	dc:publisher        "Τύποις \u0022Φορολογούμενου\u0022" ;
+	dc:subject          "Ξένη λογοτεχνία", "Italian literature", "Literature", "Ιταλικό δράμα (Κωμωδία)", "Collection John Vlahogiannis", "Ιταλική λογοτεχνία", "Συλλογή Γιάννη Βλαχογιάννη", "Italian drama (Comedy)" ;
+	dc:title            "Η στακτιαρού (cenerentola): φανταστικοκωμικόν μελόδραμα εις πράξεις δύο" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058622/object_Future_Library_13366744> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366744> .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366744>
+	a  edm:ProvidedCHO .

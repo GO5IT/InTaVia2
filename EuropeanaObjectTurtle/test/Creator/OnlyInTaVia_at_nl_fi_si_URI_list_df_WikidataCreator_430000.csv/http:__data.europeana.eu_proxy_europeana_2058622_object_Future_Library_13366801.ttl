@@ -1,0 +1,93 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366801>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058622/object_Future_Library_13366801> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001627001> ;
+	edm:isShownAt      <http://nafpaktos.locloudhosting.net/items/show/129> ;
+	edm:isShownBy      <https://nafpaktos.locloudhosting.net/files/original/cea3fce38cfdba6e2047f97fea732dbc.pdf> ;
+	edm:object         <https://nafpaktos.locloudhosting.net/files/original/cea3fce38cfdba6e2047f97fea732dbc.pdf> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366801>
+	a  edm:ProvidedCHO .
+
+<http://nafpaktos.locloudhosting.net/items/show/129>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "12147"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000001627001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Future Library"@en .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366801#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:55.814Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366801> .
+
+<http://data.europeana.eu/proxy/provider/2058622/object_Future_Library_13366801>
+	a                   ore:Proxy ;
+	dc:creator          "Ανδριάς, Γεώργιος Ι. (μετ.)", "Racine, Jean Baptiste, 1639-1699" ;
+	dc:language         "el" ;
+	dc:publisher        "Τύποις Ρενιέρη Πρίντεζη" ;
+	dc:subject          "Γαλλικό δράμα (Τραγωδία)", "Γαλλική λογοτεχνία", "Collection John Vlahogiannis", "French literature", "Συλλογή Γιάννη Βλαχογιάννη", "French drama (Tragedy)" ;
+	dc:title            "Αλέξανδρος ο Μέγας : τραγωδία μετά περιληπτικής διατριβής περί του βίου και των συγγραμμάτων του υπό Αυγήρου" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058622/object_Future_Library_13366801> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366801> .
+
+<http://data.europeana.eu/proxy/europeana/2058622/object_Future_Library_13366801>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058622/object_Future_Library_13366801> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058622/object_Future_Library_13366801> .
+
+<http://data.europeana.eu/aggregation/europeana/2058622/object_Future_Library_13366801>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-11T15:01:21.253Z" ;
+	dcterms:modified          "2016-02-08T12:18:32.477Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058622/object_Future_Library_13366801#metadataTier>, <http://data.europeana.eu/item/2058622/object_Future_Library_13366801#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058622/object_Future_Library_13366801> ;
+	edm:completeness          "5" ;
+	edm:country               "Greece" ;
+	edm:datasetName           "2058622_Ag_EU_LoCloud_Future_Library" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058622/object_Future_Library_13366801> ;
+	edm:language              "el" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fnafpaktos.locloudhosting.net%2Ffiles%2Foriginal%2Fcea3fce38cfdba6e2047f97fea732dbc.pdf&type=IMAGE> .
+
+<https://nafpaktos.locloudhosting.net/files/original/cea3fce38cfdba6e2047f97fea732dbc.pdf>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7446029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/pdf" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/2058622/object_Future_Library_13366801#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:55.814Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058622/object_Future_Library_13366801> .

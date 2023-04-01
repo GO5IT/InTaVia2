@@ -1,0 +1,139 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/15508/DG1931_20>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15508/DG1931_20> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477257> ;
+	edm:isShownAt      <https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DG1931/20]&showtype=record> ;
+	edm:isShownBy      <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1931_20.jpg&cache=yes> ;
+	edm:object         <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1931_20.jpg&cache=yes&maxwidth=400> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/15508/DG1931_20/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4295508304>
+	a                       edm:WebResource ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:isPartOf        "Graphische Sammlung"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4295508304> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[DG1931/20]&showtype=record>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "311824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/item/15508/DG1931_20>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/15508/DG1931_20>
+	a                   ore:Proxy ;
+	dc:coverage         "Tschechien; Deutschland" ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#Emil_Orlik_Künstler_in> ;
+	dc:date             "(ca. 1910 - 1920)" ;
+	dc:description      "Beschriftung: l.u. \u0022Probedruck\u0022 (Bleistift)"@de, "Beschriftung: r.u. \u0022Emil Orlik\u0022 (Bleistift)"@de ;
+	dc:identifier       "DG1931/20" ;
+	dc:language         "de" ;
+	dc:publisher        "Albertina, Wien, Österreich"@de ;
+	dc:rights           "Public Domain Mark 1.0"@de ;
+	dc:title            "Japanisches Fischerboot"@de ;
+	dc:type             "Druckgraphik"@de ;
+	dcterms:created     "(ca. 1910 - 1920)" ;
+	dcterms:extent      "Platte: 29,7 cm x 20,0 cm"@de ;
+	dcterms:isPartOf    "Graphische Sammlung"@de ;
+	dcterms:medium      "Farbradierung; Roulette; Kaltnadel; koloriert"@de ;
+	dcterms:spatial     "Tschechien; Deutschland"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DG1931_20> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15508/DG1931_20> .
+
+<file:///usr/local/tomcat/webapps/#Emil_Orlik_Künstler_in>
+	a                               edm:Agent ;
+	dc:date                         "1897" ;
+	foaf:name                       "Emil Orlik"@de ;
+	rdaGr2:biographicalInformation  "Prag 1870 - 1932 Berlin"@de ;
+	rdaGr2:professionOrOccupation   "Künstler_in" ;
+	skos:prefLabel                  "Emil Orlik (Künstler_in)" .
+
+<http://data.europeana.eu/proxy/europeana/15508/DG1931_20>
+	a                   ore:Proxy ;
+	dc:identifier       "DG1931/20" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15508/DG1931_20> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/DG1931_20> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15508/DG1931_20> .
+
+<http://data.europeana.eu/item/15508/DG1931_20#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T15:29:58.042845Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DG1931_20> .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1931_20.jpg&cache=yes>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15508/DG1931_20/manifest> ;
+	ebucore:fileByteSize    "158059"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/DG1931_20.jpg&cache=yes&maxwidth=400>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "35232"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "557"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF8DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004477257>
+	a               foaf:Organization ;
+	skos:prefLabel  "Albertina"@en, "Albertina"@de .
+
+<http://data.europeana.eu/item/15508/DG1931_20#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T15:29:58.043058Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/DG1931_20> .
+
+<http://data.europeana.eu/aggregation/europeana/15508/DG1931_20>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-08-01T12:27:05.059Z" ;
+	dcterms:modified          "2022-09-28T12:10:21.928Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15508/DG1931_20#metadataTier>, <http://data.europeana.eu/item/15508/DG1931_20#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15508/DG1931_20> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15508_Ag_AT_Kulturpool_albertina" ;
+	edm:landingPage           <https://www.europeana.eu/item/15508/DG1931_20> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlungenonline.albertina.at%2Fcc%2Fimageproxy.ashx%3Fserver%3Dlocalhost%26port%3D15001%26filename%3Dimages%2FDG1931_20.jpg%26cache%3Dyes%26maxwidth%3D400&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .

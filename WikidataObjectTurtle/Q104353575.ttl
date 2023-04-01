@@ -1,0 +1,978 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <http://www.wikidata.org/reference/> .
+@prefix s: <http://www.wikidata.org/entity/statement/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix v: <http://www.wikidata.org/value/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wd:P1006 a wikibase:Property ;
+    rdfs:label "Nationale Thesaurus voor Auteurs ID"@en ;
+    schema1:description "identifier for person names (not: works nor organisations) from the Dutch National Thesaurus for Author names (which also contains non-authors)"@en ;
+    schema1:name "Nationale Thesaurus voor Auteurs ID"@en ;
+    wikibase:claim p:P1006 ;
+    wikibase:directClaim wdt:P1006 ;
+    wikibase:directClaimNormalized wdtn:P1006 ;
+    wikibase:novalue wdno:P1006 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P1006 ;
+    wikibase:qualifierValue pqv:P1006 ;
+    wikibase:qualifierValueNormalized pqn:P1006 ;
+    wikibase:reference pr:P1006 ;
+    wikibase:referenceValue prv:P1006 ;
+    wikibase:referenceValueNormalized prn:P1006 ;
+    wikibase:statementProperty ps:P1006 ;
+    wikibase:statementValue psv:P1006 ;
+    wikibase:statementValueNormalized psn:P1006 ;
+    skos:prefLabel "Nationale Thesaurus voor Auteurs ID"@en .
+
+wd:P18 a wikibase:Property ;
+    rdfs:label "image"@en ;
+    schema1:description "image of relevant illustration of the subject; if available, also use more specific properties (sample: coat of arms image, locator map, flag image, signature image, logo image, collage image)"@en ;
+    schema1:name "image"@en ;
+    wikibase:claim p:P18 ;
+    wikibase:directClaim wdt:P18 ;
+    wikibase:novalue wdno:P18 ;
+    wikibase:propertyType wikibase:CommonsMedia ;
+    wikibase:qualifier pq:P18 ;
+    wikibase:qualifierValue pqv:P18 ;
+    wikibase:reference pr:P18 ;
+    wikibase:referenceValue prv:P18 ;
+    wikibase:statementProperty ps:P18 ;
+    wikibase:statementValue psv:P18 ;
+    skos:prefLabel "image"@en .
+
+wd:P1871 a wikibase:Property ;
+    rdfs:label "CERL Thesaurus ID"@en ;
+    schema1:description "identifier in the Consortium of European Research Libraries Thesaurus"@en ;
+    schema1:name "CERL Thesaurus ID"@en ;
+    wikibase:claim p:P1871 ;
+    wikibase:directClaim wdt:P1871 ;
+    wikibase:directClaimNormalized wdtn:P1871 ;
+    wikibase:novalue wdno:P1871 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P1871 ;
+    wikibase:qualifierValue pqv:P1871 ;
+    wikibase:qualifierValueNormalized pqn:P1871 ;
+    wikibase:reference pr:P1871 ;
+    wikibase:referenceValue prv:P1871 ;
+    wikibase:referenceValueNormalized prn:P1871 ;
+    wikibase:statementProperty ps:P1871 ;
+    wikibase:statementValue psv:P1871 ;
+    wikibase:statementValueNormalized psn:P1871 ;
+    skos:prefLabel "CERL Thesaurus ID"@en .
+
+wd:P21 a wikibase:Property ;
+    rdfs:label "sex or gender"@en ;
+    schema1:description "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"@en ;
+    schema1:name "sex or gender"@en ;
+    wikibase:claim p:P21 ;
+    wikibase:directClaim wdt:P21 ;
+    wikibase:novalue wdno:P21 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P21 ;
+    wikibase:qualifierValue pqv:P21 ;
+    wikibase:reference pr:P21 ;
+    wikibase:referenceValue prv:P21 ;
+    wikibase:statementProperty ps:P21 ;
+    wikibase:statementValue psv:P21 ;
+    skos:prefLabel "sex or gender"@en .
+
+wd:P213 a wikibase:Property ;
+    rdfs:label "ISNI"@en ;
+    schema1:description "International Standard Name Identifier for an identity. Format: 4 blocks of 4 digits separated by a space, first block is 0000"@en ;
+    schema1:name "ISNI"@en ;
+    wikibase:claim p:P213 ;
+    wikibase:directClaim wdt:P213 ;
+    wikibase:directClaimNormalized wdtn:P213 ;
+    wikibase:novalue wdno:P213 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P213 ;
+    wikibase:qualifierValue pqv:P213 ;
+    wikibase:qualifierValueNormalized pqn:P213 ;
+    wikibase:reference pr:P213 ;
+    wikibase:referenceValue prv:P213 ;
+    wikibase:referenceValueNormalized prn:P213 ;
+    wikibase:statementProperty ps:P213 ;
+    wikibase:statementValue psv:P213 ;
+    wikibase:statementValueNormalized psn:P213 ;
+    skos:prefLabel "ISNI"@en .
+
+wd:P214 a wikibase:Property ;
+    rdfs:label "VIAF ID"@en ;
+    schema1:description "identifier for the Virtual International Authority File database [format: up to 22 digits]"@en ;
+    schema1:name "VIAF ID"@en ;
+    wikibase:claim p:P214 ;
+    wikibase:directClaim wdt:P214 ;
+    wikibase:directClaimNormalized wdtn:P214 ;
+    wikibase:novalue wdno:P214 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P214 ;
+    wikibase:qualifierValue pqv:P214 ;
+    wikibase:qualifierValueNormalized pqn:P214 ;
+    wikibase:reference pr:P214 ;
+    wikibase:referenceValue prv:P214 ;
+    wikibase:referenceValueNormalized prn:P214 ;
+    wikibase:statementProperty ps:P214 ;
+    wikibase:statementValue psv:P214 ;
+    wikibase:statementValueNormalized psn:P214 ;
+    skos:prefLabel "VIAF ID"@en .
+
+wd:P227 a wikibase:Property ;
+    rdfs:label "GND ID"@en ;
+    schema1:description "identifier from an international authority file of names, subjects, and organizations (please don't use type n = name, disambiguation) - Deutsche Nationalbibliothek"@en ;
+    schema1:name "GND ID"@en ;
+    wikibase:claim p:P227 ;
+    wikibase:directClaim wdt:P227 ;
+    wikibase:directClaimNormalized wdtn:P227 ;
+    wikibase:novalue wdno:P227 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P227 ;
+    wikibase:qualifierValue pqv:P227 ;
+    wikibase:qualifierValueNormalized pqn:P227 ;
+    wikibase:reference pr:P227 ;
+    wikibase:referenceValue prv:P227 ;
+    wikibase:referenceValueNormalized prn:P227 ;
+    wikibase:statementProperty ps:P227 ;
+    wikibase:statementValue psv:P227 ;
+    wikibase:statementValueNormalized psn:P227 ;
+    skos:prefLabel "GND ID"@en .
+
+wd:P244 a wikibase:Property ;
+    rdfs:label "Library of Congress authority ID"@en ;
+    schema1:description "Library of Congress name authority (persons, families, corporate bodies, events, places, works and expressions) and subject authority identifier [Format: 1-2 specific letters followed by 8-10 digits (see regex). For manifestations, use P1144]"@en ;
+    schema1:name "Library of Congress authority ID"@en ;
+    wikibase:claim p:P244 ;
+    wikibase:directClaim wdt:P244 ;
+    wikibase:directClaimNormalized wdtn:P244 ;
+    wikibase:novalue wdno:P244 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P244 ;
+    wikibase:qualifierValue pqv:P244 ;
+    wikibase:qualifierValueNormalized pqn:P244 ;
+    wikibase:reference pr:P244 ;
+    wikibase:referenceValue prv:P244 ;
+    wikibase:referenceValueNormalized prn:P244 ;
+    wikibase:statementProperty ps:P244 ;
+    wikibase:statementValue psv:P244 ;
+    wikibase:statementValueNormalized psn:P244 ;
+    skos:prefLabel "Library of Congress authority ID"@en .
+
+wd:P248 a wikibase:Property ;
+    rdfs:label "stated in"@en ;
+    schema1:description "to be used in the references field to refer to the information document or database in which a claim is made; for qualifiers use P805; for the type of document in which a claim is made use P3865"@en ;
+    schema1:name "stated in"@en ;
+    wikibase:claim p:P248 ;
+    wikibase:directClaim wdt:P248 ;
+    wikibase:novalue wdno:P248 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P248 ;
+    wikibase:qualifierValue pqv:P248 ;
+    wikibase:reference pr:P248 ;
+    wikibase:referenceValue prv:P248 ;
+    wikibase:statementProperty ps:P248 ;
+    wikibase:statementValue psv:P248 ;
+    skos:prefLabel "stated in"@en .
+
+wd:P31 a wikibase:Property ;
+    rdfs:label "instance of"@en ;
+    schema1:description "that class of which this subject is a particular example and member"@en ;
+    schema1:name "instance of"@en ;
+    wikibase:claim p:P31 ;
+    wikibase:directClaim wdt:P31 ;
+    wikibase:novalue wdno:P31 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P31 ;
+    wikibase:qualifierValue pqv:P31 ;
+    wikibase:reference pr:P31 ;
+    wikibase:referenceValue prv:P31 ;
+    wikibase:statementProperty ps:P31 ;
+    wikibase:statementValue psv:P31 ;
+    skos:prefLabel "instance of"@en .
+
+wd:P569 a wikibase:Property ;
+    rdfs:label "date of birth"@en ;
+    schema1:description "date on which the subject was born"@en ;
+    schema1:name "date of birth"@en ;
+    wikibase:claim p:P569 ;
+    wikibase:directClaim wdt:P569 ;
+    wikibase:novalue wdno:P569 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P569 ;
+    wikibase:qualifierValue pqv:P569 ;
+    wikibase:reference pr:P569 ;
+    wikibase:referenceValue prv:P569 ;
+    wikibase:statementProperty ps:P569 ;
+    wikibase:statementValue psv:P569 ;
+    skos:prefLabel "date of birth"@en .
+
+wd:P570 a wikibase:Property ;
+    rdfs:label "date of death"@en ;
+    schema1:description "date on which the subject died"@en ;
+    schema1:name "date of death"@en ;
+    wikibase:claim p:P570 ;
+    wikibase:directClaim wdt:P570 ;
+    wikibase:novalue wdno:P570 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P570 ;
+    wikibase:qualifierValue pqv:P570 ;
+    wikibase:reference pr:P570 ;
+    wikibase:referenceValue prv:P570 ;
+    wikibase:statementProperty ps:P570 ;
+    wikibase:statementValue psv:P570 ;
+    skos:prefLabel "date of death"@en .
+
+wd:P651 a wikibase:Property ;
+    rdfs:label "Biografisch Portaal van Nederland ID"@en ;
+    schema1:description "identifier at Biografisch Portaal van Nederland"@en ;
+    schema1:name "Biografisch Portaal van Nederland ID"@en ;
+    wikibase:claim p:P651 ;
+    wikibase:directClaim wdt:P651 ;
+    wikibase:directClaimNormalized wdtn:P651 ;
+    wikibase:novalue wdno:P651 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P651 ;
+    wikibase:qualifierValue pqv:P651 ;
+    wikibase:qualifierValueNormalized pqn:P651 ;
+    wikibase:reference pr:P651 ;
+    wikibase:referenceValue prv:P651 ;
+    wikibase:referenceValueNormalized prn:P651 ;
+    wikibase:statementProperty ps:P651 ;
+    wikibase:statementValue psv:P651 ;
+    wikibase:statementValueNormalized psn:P651 ;
+    skos:prefLabel "Biografisch Portaal van Nederland ID"@en .
+
+wd:P734 a wikibase:Property ;
+    rdfs:label "family name"@en ;
+    schema1:description "part of full name of person"@en ;
+    schema1:name "family name"@en ;
+    wikibase:claim p:P734 ;
+    wikibase:directClaim wdt:P734 ;
+    wikibase:novalue wdno:P734 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P734 ;
+    wikibase:qualifierValue pqv:P734 ;
+    wikibase:reference pr:P734 ;
+    wikibase:referenceValue prv:P734 ;
+    wikibase:statementProperty ps:P734 ;
+    wikibase:statementValue psv:P734 ;
+    skos:prefLabel "family name"@en .
+
+wd:P7859 a wikibase:Property ;
+    rdfs:label "WorldCat Identities ID"@en ;
+    schema1:description "entity on WorldCat. Use P243 OCLC control number for books"@en ;
+    schema1:name "WorldCat Identities ID"@en ;
+    wikibase:claim p:P7859 ;
+    wikibase:directClaim wdt:P7859 ;
+    wikibase:directClaimNormalized wdtn:P7859 ;
+    wikibase:novalue wdno:P7859 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P7859 ;
+    wikibase:qualifierValue pqv:P7859 ;
+    wikibase:qualifierValueNormalized pqn:P7859 ;
+    wikibase:reference pr:P7859 ;
+    wikibase:referenceValue prv:P7859 ;
+    wikibase:referenceValueNormalized prn:P7859 ;
+    wikibase:statementProperty ps:P7859 ;
+    wikibase:statementValue psv:P7859 ;
+    wikibase:statementValueNormalized psn:P7859 ;
+    skos:prefLabel "WorldCat Identities ID"@en .
+
+wd:P7902 a wikibase:Property ;
+    rdfs:label "Deutsche Biographie (GND) ID"@en ;
+    schema1:description "GND identifier for an item in the Deutsche Biographie"@en ;
+    schema1:name "Deutsche Biographie (GND) ID"@en ;
+    wikibase:claim p:P7902 ;
+    wikibase:directClaim wdt:P7902 ;
+    wikibase:directClaimNormalized wdtn:P7902 ;
+    wikibase:novalue wdno:P7902 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P7902 ;
+    wikibase:qualifierValue pqv:P7902 ;
+    wikibase:qualifierValueNormalized pqn:P7902 ;
+    wikibase:reference pr:P7902 ;
+    wikibase:referenceValue prv:P7902 ;
+    wikibase:referenceValueNormalized prn:P7902 ;
+    wikibase:statementProperty ps:P7902 ;
+    wikibase:statementValue psv:P7902 ;
+    wikibase:statementValueNormalized psn:P7902 ;
+    skos:prefLabel "Deutsche Biographie (GND) ID"@en .
+
+wd:P813 a wikibase:Property ;
+    rdfs:label "retrieved"@en ;
+    schema1:description "date or point in time that information was retrieved from a database or website (for use in online sources)"@en ;
+    schema1:name "retrieved"@en ;
+    wikibase:claim p:P813 ;
+    wikibase:directClaim wdt:P813 ;
+    wikibase:novalue wdno:P813 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P813 ;
+    wikibase:qualifierValue pqv:P813 ;
+    wikibase:reference pr:P813 ;
+    wikibase:referenceValue prv:P813 ;
+    wikibase:statementProperty ps:P813 ;
+    wikibase:statementValue psv:P813 ;
+    skos:prefLabel "retrieved"@en .
+
+<https://commons.wikimedia.org/wiki/Category:Jacob_Denijs> a schema1:Article ;
+    schema1:about wd:Q104353575 ;
+    schema1:inLanguage "en" ;
+    schema1:isPartOf <https://commons.wikimedia.org/> ;
+    schema1:name "Category:Jacob Denijs"@en .
+
+data:Q104353575 a schema1:Dataset ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    schema1:about wd:Q104353575 ;
+    schema1:dateModified "2021-06-16T15:39:06+00:00"^^xsd:dateTime ;
+    schema1:softwareVersion "1.0.0" ;
+    schema1:version 1442964171 ;
+    wikibase:identifiers 9 ;
+    wikibase:sitelinks 1 ;
+    wikibase:statements 15 .
+
+wd:Q19832964 a wikibase:Item ;
+    rdfs:label "VIAF ID"@en ;
+    schema1:description "identifier for the Virtual International Authority File database"@en ;
+    schema1:name "VIAF ID"@en ;
+    skos:prefLabel "VIAF ID"@en .
+
+wd:Q54919 a wikibase:Item ;
+    rdfs:label "Virtual International Authority File"@en ;
+    schema1:description "OCLC dataset and service that virtually combines multiple name authority files into a single name authority service"@en ;
+    schema1:name "Virtual International Authority File"@en ;
+    skos:prefLabel "Virtual International Authority File"@en .
+
+s:Q104353575-23d93c47-49a7-b490-c92d-362c95a0b9bf a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/Portret%20van%20chirurgijn%20Jacob%20Denijs%20Jacobus%20Denys%20Ordinare%20Stads%20Chirurgyn%2C%20Operateur%20van%20de%20Steen%2C%20Vroed-meester%20en%20Voorleeser%20ter%20Onderwijsing%20van%20de%20Vroed-vrouwe%2C%20binnen%20de%20stad%20Leyden%20%28titel%20op%20object%29%2C%20RP-P-OB-4550.jpg> .
+
+s:Q104353575-47593c99-41b6-ebdc-d476-a20165e5503b a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P21 wd:Q6581097 .
+
+s:Q104353575-5232FB09-898E-4EAA-B1D5-53018AE1C2B2 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P734 wd:Q104614404 .
+
+s:Q104353575-838EABA9-EB0D-4B76-8752-6EA3B11F4170 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P1871 "cnp00999031" ;
+    psn:P1871 <http://thesaurus.cerl.org/record/cnp00999031> .
+
+s:Q104353575-989a0509-49d4-017c-ee7d-b2280f21cfe2 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:Q5 .
+
+s:Q104353575-DB0B8175-6375-40AD-8CF8-3551A5D71C05 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P7902 "102440581" .
+
+s:Q104353575-a40ff456-4272-8fdc-fc73-a3b989813273 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:cd885728bcd86312d3ceee87d3921307cfbe8918 ;
+    ps:P570 "1741-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    psv:P570 v:a6607936ecffa0768f5d48891bdb5fc0 .
+
+s:Q104353575-c4464694-4390-9305-e4f7-e13f6a002278 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:cd885728bcd86312d3ceee87d3921307cfbe8918 ;
+    ps:P569 "1681-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    psv:P569 v:038e89cd1f3fd95c097be45eabc0ff43 .
+
+s:Q104353575-cd6c2d9f-43d3-99c0-ad51-7bf18b19e95a a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P214 "5318905" ;
+    psn:P214 <http://viaf.org/viaf/5318905> .
+
+s:Q104353575-d98bd370-4e3d-2618-6c1a-6d88379523e4 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P651 "27735448" .
+
+s:q104353575-322a933f-4ea6-3215-5ee6-045885f818ed a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:303504e1383f218518941c0b2a5b57f6d0a87128 ;
+    ps:P227 "102440581" ;
+    psn:P227 <https://d-nb.info/gnd/102440581> .
+
+s:q104353575-46834547-4920-5fcd-a368-360297b65243 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:303504e1383f218518941c0b2a5b57f6d0a87128 ;
+    ps:P1006 "229888321" ;
+    psn:P1006 <http://data.bibliotheken.nl/id/thes/p229888321> .
+
+s:q104353575-91e4fca9-43e2-c0e3-a1ca-cbf934bfb49c a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:303504e1383f218518941c0b2a5b57f6d0a87128 ;
+    ps:P213 "0000 0000 1317 8749" .
+
+s:q104353575-b6a3affc-49c9-7d88-3e1d-eb43b6fb8b8c a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:303504e1383f218518941c0b2a5b57f6d0a87128 ;
+    ps:P7859 "lccn-no2017089026" .
+
+s:q104353575-cf8ccb42-4559-5e2a-2ee1-9e0adf5f2a15 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom ref:303504e1383f218518941c0b2a5b57f6d0a87128 ;
+    ps:P244 "no2017089026" ;
+    psn:P244 <http://id.loc.gov/authorities/names/no2017089026> .
+
+p:P1006 a owl:ObjectProperty .
+
+p:P18 a owl:ObjectProperty .
+
+p:P1871 a owl:ObjectProperty .
+
+p:P21 a owl:ObjectProperty .
+
+p:P213 a owl:ObjectProperty .
+
+p:P214 a owl:ObjectProperty .
+
+p:P227 a owl:ObjectProperty .
+
+p:P244 a owl:ObjectProperty .
+
+p:P248 a owl:ObjectProperty .
+
+p:P31 a owl:ObjectProperty .
+
+p:P569 a owl:ObjectProperty .
+
+p:P570 a owl:ObjectProperty .
+
+p:P651 a owl:ObjectProperty .
+
+p:P734 a owl:ObjectProperty .
+
+p:P7859 a owl:ObjectProperty .
+
+p:P7902 a owl:ObjectProperty .
+
+p:P813 a owl:ObjectProperty .
+
+wdtn:P1006 a owl:ObjectProperty .
+
+wdtn:P1871 a owl:ObjectProperty .
+
+wdtn:P213 a owl:ObjectProperty .
+
+wdtn:P214 a owl:ObjectProperty .
+
+wdtn:P227 a owl:ObjectProperty .
+
+wdtn:P244 a owl:ObjectProperty .
+
+wdtn:P651 a owl:ObjectProperty .
+
+wdtn:P7859 a owl:ObjectProperty .
+
+wdtn:P7902 a owl:ObjectProperty .
+
+wdno:P1006 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1006 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P18 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P18 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P1871 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1871 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P21 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P21 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P213 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P213 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P214 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P214 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P227 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P227 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P244 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P244 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P248 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P248 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P31 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P31 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P569 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P569 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P570 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P570 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P651 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P651 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P734 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P734 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P7859 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P7859 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P7902 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P7902 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P813 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P813 ;
+            owl:someValuesFrom owl:Thing ] .
+
+pq:P1006 a owl:DatatypeProperty .
+
+pq:P18 a owl:ObjectProperty .
+
+pq:P1871 a owl:DatatypeProperty .
+
+pq:P21 a owl:ObjectProperty .
+
+pq:P213 a owl:DatatypeProperty .
+
+pq:P214 a owl:DatatypeProperty .
+
+pq:P227 a owl:DatatypeProperty .
+
+pq:P244 a owl:DatatypeProperty .
+
+pq:P248 a owl:ObjectProperty .
+
+pq:P31 a owl:ObjectProperty .
+
+pq:P569 a owl:DatatypeProperty .
+
+pq:P570 a owl:DatatypeProperty .
+
+pq:P651 a owl:DatatypeProperty .
+
+pq:P734 a owl:ObjectProperty .
+
+pq:P7859 a owl:DatatypeProperty .
+
+pq:P7902 a owl:DatatypeProperty .
+
+pq:P813 a owl:DatatypeProperty .
+
+pqn:P1006 a owl:ObjectProperty .
+
+pqn:P1871 a owl:ObjectProperty .
+
+pqn:P213 a owl:ObjectProperty .
+
+pqn:P214 a owl:ObjectProperty .
+
+pqn:P227 a owl:ObjectProperty .
+
+pqn:P244 a owl:ObjectProperty .
+
+pqn:P651 a owl:ObjectProperty .
+
+pqn:P7859 a owl:ObjectProperty .
+
+pqn:P7902 a owl:ObjectProperty .
+
+pqv:P1006 a owl:ObjectProperty .
+
+pqv:P18 a owl:ObjectProperty .
+
+pqv:P1871 a owl:ObjectProperty .
+
+pqv:P21 a owl:ObjectProperty .
+
+pqv:P213 a owl:ObjectProperty .
+
+pqv:P214 a owl:ObjectProperty .
+
+pqv:P227 a owl:ObjectProperty .
+
+pqv:P244 a owl:ObjectProperty .
+
+pqv:P248 a owl:ObjectProperty .
+
+pqv:P31 a owl:ObjectProperty .
+
+pqv:P569 a owl:ObjectProperty .
+
+pqv:P570 a owl:ObjectProperty .
+
+pqv:P651 a owl:ObjectProperty .
+
+pqv:P734 a owl:ObjectProperty .
+
+pqv:P7859 a owl:ObjectProperty .
+
+pqv:P7902 a owl:ObjectProperty .
+
+pqv:P813 a owl:ObjectProperty .
+
+pr:P1006 a owl:DatatypeProperty .
+
+pr:P18 a owl:ObjectProperty .
+
+pr:P1871 a owl:DatatypeProperty .
+
+pr:P21 a owl:ObjectProperty .
+
+pr:P213 a owl:DatatypeProperty .
+
+pr:P214 a owl:DatatypeProperty .
+
+pr:P227 a owl:DatatypeProperty .
+
+pr:P244 a owl:DatatypeProperty .
+
+pr:P248 a owl:ObjectProperty .
+
+pr:P31 a owl:ObjectProperty .
+
+pr:P569 a owl:DatatypeProperty .
+
+pr:P570 a owl:DatatypeProperty .
+
+pr:P651 a owl:DatatypeProperty .
+
+pr:P734 a owl:ObjectProperty .
+
+pr:P7859 a owl:DatatypeProperty .
+
+pr:P7902 a owl:DatatypeProperty .
+
+pr:P813 a owl:DatatypeProperty .
+
+prn:P1006 a owl:ObjectProperty .
+
+prn:P1871 a owl:ObjectProperty .
+
+prn:P213 a owl:ObjectProperty .
+
+prn:P214 a owl:ObjectProperty .
+
+prn:P227 a owl:ObjectProperty .
+
+prn:P244 a owl:ObjectProperty .
+
+prn:P651 a owl:ObjectProperty .
+
+prn:P7859 a owl:ObjectProperty .
+
+prn:P7902 a owl:ObjectProperty .
+
+prv:P1006 a owl:ObjectProperty .
+
+prv:P18 a owl:ObjectProperty .
+
+prv:P1871 a owl:ObjectProperty .
+
+prv:P21 a owl:ObjectProperty .
+
+prv:P213 a owl:ObjectProperty .
+
+prv:P214 a owl:ObjectProperty .
+
+prv:P227 a owl:ObjectProperty .
+
+prv:P244 a owl:ObjectProperty .
+
+prv:P248 a owl:ObjectProperty .
+
+prv:P31 a owl:ObjectProperty .
+
+prv:P569 a owl:ObjectProperty .
+
+prv:P570 a owl:ObjectProperty .
+
+prv:P651 a owl:ObjectProperty .
+
+prv:P734 a owl:ObjectProperty .
+
+prv:P7859 a owl:ObjectProperty .
+
+prv:P7902 a owl:ObjectProperty .
+
+prv:P813 a owl:ObjectProperty .
+
+ps:P1006 a owl:DatatypeProperty .
+
+ps:P18 a owl:ObjectProperty .
+
+ps:P1871 a owl:DatatypeProperty .
+
+ps:P21 a owl:ObjectProperty .
+
+ps:P213 a owl:DatatypeProperty .
+
+ps:P214 a owl:DatatypeProperty .
+
+ps:P227 a owl:DatatypeProperty .
+
+ps:P244 a owl:DatatypeProperty .
+
+ps:P248 a owl:ObjectProperty .
+
+ps:P31 a owl:ObjectProperty .
+
+ps:P569 a owl:DatatypeProperty .
+
+ps:P570 a owl:DatatypeProperty .
+
+ps:P651 a owl:DatatypeProperty .
+
+ps:P734 a owl:ObjectProperty .
+
+ps:P7859 a owl:DatatypeProperty .
+
+ps:P7902 a owl:DatatypeProperty .
+
+ps:P813 a owl:DatatypeProperty .
+
+psn:P1006 a owl:ObjectProperty .
+
+psn:P1871 a owl:ObjectProperty .
+
+psn:P213 a owl:ObjectProperty .
+
+psn:P214 a owl:ObjectProperty .
+
+psn:P227 a owl:ObjectProperty .
+
+psn:P244 a owl:ObjectProperty .
+
+psn:P651 a owl:ObjectProperty .
+
+psn:P7859 a owl:ObjectProperty .
+
+psn:P7902 a owl:ObjectProperty .
+
+psv:P1006 a owl:ObjectProperty .
+
+psv:P18 a owl:ObjectProperty .
+
+psv:P1871 a owl:ObjectProperty .
+
+psv:P21 a owl:ObjectProperty .
+
+psv:P213 a owl:ObjectProperty .
+
+psv:P214 a owl:ObjectProperty .
+
+psv:P227 a owl:ObjectProperty .
+
+psv:P244 a owl:ObjectProperty .
+
+psv:P248 a owl:ObjectProperty .
+
+psv:P31 a owl:ObjectProperty .
+
+psv:P569 a owl:ObjectProperty .
+
+psv:P570 a owl:ObjectProperty .
+
+psv:P651 a owl:ObjectProperty .
+
+psv:P734 a owl:ObjectProperty .
+
+psv:P7859 a owl:ObjectProperty .
+
+psv:P7902 a owl:ObjectProperty .
+
+psv:P813 a owl:ObjectProperty .
+
+v:038e89cd1f3fd95c097be45eabc0ff43 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 9 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1681-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+v:a6607936ecffa0768f5d48891bdb5fc0 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 9 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1741-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+<https://commons.wikimedia.org/> wikibase:wikiGroup "commons" .
+
+wd:Q104353575 a wikibase:Item ;
+    rdfs:label "Jacob Denijs"@en,
+        "Jacob Denijs"@nl ;
+    schema1:name "Jacob Denijs"@en,
+        "Jacob Denijs"@nl ;
+    skos:altLabel "Jacob Denys"@en,
+        "Jacobus Sigismundus Denijs"@en ;
+    skos:prefLabel "Jacob Denijs"@en,
+        "Jacob Denijs"@nl ;
+    p:P1006 s:q104353575-46834547-4920-5fcd-a368-360297b65243 ;
+    p:P18 s:Q104353575-23d93c47-49a7-b490-c92d-362c95a0b9bf ;
+    p:P1871 s:Q104353575-838EABA9-EB0D-4B76-8752-6EA3B11F4170 ;
+    p:P21 s:Q104353575-47593c99-41b6-ebdc-d476-a20165e5503b ;
+    p:P213 s:q104353575-91e4fca9-43e2-c0e3-a1ca-cbf934bfb49c ;
+    p:P214 s:Q104353575-cd6c2d9f-43d3-99c0-ad51-7bf18b19e95a ;
+    p:P227 s:q104353575-322a933f-4ea6-3215-5ee6-045885f818ed ;
+    p:P244 s:q104353575-cf8ccb42-4559-5e2a-2ee1-9e0adf5f2a15 ;
+    p:P31 s:Q104353575-989a0509-49d4-017c-ee7d-b2280f21cfe2 ;
+    p:P569 s:Q104353575-c4464694-4390-9305-e4f7-e13f6a002278 ;
+    p:P570 s:Q104353575-a40ff456-4272-8fdc-fc73-a3b989813273 ;
+    p:P651 s:Q104353575-d98bd370-4e3d-2618-6c1a-6d88379523e4 ;
+    p:P734 s:Q104353575-5232FB09-898E-4EAA-B1D5-53018AE1C2B2 ;
+    p:P7859 s:q104353575-b6a3affc-49c9-7d88-3e1d-eb43b6fb8b8c ;
+    p:P7902 s:Q104353575-DB0B8175-6375-40AD-8CF8-3551A5D71C05 ;
+    wdtn:P1006 <http://data.bibliotheken.nl/id/thes/p229888321> ;
+    wdtn:P1871 <http://thesaurus.cerl.org/record/cnp00999031> ;
+    wdtn:P214 <http://viaf.org/viaf/5318905> ;
+    wdtn:P227 <https://d-nb.info/gnd/102440581> ;
+    wdtn:P244 <http://id.loc.gov/authorities/names/no2017089026> ;
+    wdt:P1006 "229888321" ;
+    wdt:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/Portret%20van%20chirurgijn%20Jacob%20Denijs%20Jacobus%20Denys%20Ordinare%20Stads%20Chirurgyn%2C%20Operateur%20van%20de%20Steen%2C%20Vroed-meester%20en%20Voorleeser%20ter%20Onderwijsing%20van%20de%20Vroed-vrouwe%2C%20binnen%20de%20stad%20Leyden%20%28titel%20op%20object%29%2C%20RP-P-OB-4550.jpg> ;
+    wdt:P1871 "cnp00999031" ;
+    wdt:P21 wd:Q6581097 ;
+    wdt:P213 "0000 0000 1317 8749" ;
+    wdt:P214 "5318905" ;
+    wdt:P227 "102440581" ;
+    wdt:P244 "no2017089026" ;
+    wdt:P31 wd:Q5 ;
+    wdt:P569 "1681-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    wdt:P570 "1741-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    wdt:P651 "27735448" ;
+    wdt:P734 wd:Q104614404 ;
+    wdt:P7859 "lccn-no2017089026" ;
+    wdt:P7902 "102440581" .
+
+wd:Q104614404 a wikibase:Item ;
+    rdfs:label "Denijs"@en ;
+    schema1:description "family name"@en ;
+    schema1:name "Denijs"@en ;
+    skos:prefLabel "Denijs"@en .
+
+wd:Q5 a wikibase:Item ;
+    rdfs:label "human"@en ;
+    schema1:description "common name of Homo sapiens, unique extant species of the genus Homo"@en ;
+    schema1:name "human"@en ;
+    skos:prefLabel "human"@en .
+
+wd:Q6581097 a wikibase:Item ;
+    rdfs:label "male"@en ;
+    schema1:description "to be used in \"sex or gender\" (P21) to indicate that the human subject is a male"@en ;
+    schema1:name "male"@en ;
+    skos:prefLabel "male"@en .
+
+wdt:P1006 a owl:DatatypeProperty .
+
+wdt:P18 a owl:ObjectProperty .
+
+wdt:P1871 a owl:DatatypeProperty .
+
+wdt:P21 a owl:ObjectProperty .
+
+wdt:P213 a owl:DatatypeProperty .
+
+wdt:P214 a owl:DatatypeProperty .
+
+wdt:P227 a owl:DatatypeProperty .
+
+wdt:P244 a owl:DatatypeProperty .
+
+wdt:P248 a owl:ObjectProperty .
+
+wdt:P31 a owl:ObjectProperty .
+
+wdt:P569 a owl:DatatypeProperty .
+
+wdt:P570 a owl:DatatypeProperty .
+
+wdt:P651 a owl:DatatypeProperty .
+
+wdt:P734 a owl:ObjectProperty .
+
+wdt:P7859 a owl:DatatypeProperty .
+
+wdt:P7902 a owl:DatatypeProperty .
+
+wdt:P813 a owl:DatatypeProperty .
+
+ref:cd885728bcd86312d3ceee87d3921307cfbe8918 a wikibase:Reference ;
+    pr:P214 "5318905" ;
+    pr:P248 wd:Q19832964 ;
+    pr:P813 "2020-12-19T00:00:00+00:00"^^xsd:dateTime ;
+    prn:P214 <http://viaf.org/viaf/5318905> ;
+    prv:P813 v:769b3ac6929c02f4fabe219d8d0e31a1 .
+
+v:769b3ac6929c02f4fabe219d8d0e31a1 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 11 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "2020-12-19T00:00:00+00:00"^^xsd:dateTime .
+
+ref:303504e1383f218518941c0b2a5b57f6d0a87128 a wikibase:Reference ;
+    pr:P214 "5318905" ;
+    pr:P248 wd:Q54919 ;
+    pr:P813 "2020-12-19T00:00:00+00:00"^^xsd:dateTime ;
+    prn:P214 <http://viaf.org/viaf/5318905> ;
+    prv:P813 v:769b3ac6929c02f4fabe219d8d0e31a1 .
+

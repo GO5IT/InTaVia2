@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/07101/O_2109>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/07101/O_2109>
+	a                   ore:Proxy ;
+	dc:creator          "Bloemers, Arnoldus" ;
+	dc:date             "1839/1839" ;
+	dc:format           "oil"@eng, "olej"@slk ;
+	dc:identifier       "O 2109" ;
+	dc:subject          "zátišie"@slk ;
+	dc:title            "Still Life with a Pheasant and Fruit"@en, "Zátišie s bažantom a ovocím" ;
+	dc:type             "maliarstvo, obraz závesný"@slk, "originál", "Image", "DEF" ;
+	dcterms:extent      "výška 107.0 cm;šírka 83.0 cm" ;
+	dcterms:medium      "canvas"@eng, "plátno"@slk ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/O_2109> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07101/O_2109> .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.O_2109>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "46970"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/07101/O_2109>
+	a                  ore:Aggregation ;
+	dc:rights          "Slovenská národná galéria, SNG" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07101/O_2109> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:isShownAt      <http://www.webumenia.sk/dielo/SVK:SNG.O_2109> ;
+	edm:isShownBy      <http://www.webumenia.sk/dielo/SVK:SNG.O_2109/stiahnut> ;
+	edm:object         <http://www.webumenia.sk/cedvuweb/image/SVK_SNG.O_2109.jpeg?id=SVK:SNG.O_2109> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/07101/O_2109/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/07101/O_2109#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:11.076Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_2109> .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.O_2109/stiahnut>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/07101/O_2109/manifest> .
+
+<http://data.europeana.eu/concept/2728>
+	a                skos:Concept ;
+	skos:altLabel    "Linnen"@nl, "Canevas"@fr, "Canvas"@de, "Tela"@it, "Tela"@ca ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00015381n>, <https://www.freebase.com/m/0jmpt>, <http://thesaurus.europeanafashion.eu/thesaurus/10376>, <http://www.wikidata.org/entity/Q4259259>, <https://g.co/kg/m/0jmpt> ;
+	skos:note        "Glat vævede stoffer"@da, "Tessuto con armatura in tela, dalla trama larga e grossolana"@it, "Плотная ткань"@ru, "Tela que serveix de suport per a treballs pictòrics"@ca, "Stevig weefsel van hennep, vlas of katoen"@nl, "Extremely heavy-duty plain-woven fabric"@en, "Druh tkaniny"@cs, "Tela extremadamente resistente utilizada en velas, lonas, mochilas, obras pictóricas..."@es, "Material für Leinwände, Segel und Kleidung"@de, "Pièce de tissu résistante"@fr, "Rodzaj wyjątkowo wytrzymałej, gładkiej tkaniny używanej w malarstwie olejnym"@pl, "Tygmaterial"@sv ;
+	skos:prefLabel   "Холст"@ru, "Kangas"@fi, "Tela"@pt, "Audekls"@lv, "Lõuend"@et, "Lienzo"@es, "Canbhás"@ga, "Toile"@fr, "Kanvas"@sv, "Vászon"@hu, "Leinwand"@de, "Брезент"@bg, "Canovaccio"@it, "Pânză"@ro, "Μουσαμάς"@el, "Canvas"@en, "Canvas"@nl, "Drobė"@lt, "Llenç"@ca, "Platno"@sl, "Lærred"@da, "Plátno"@cs, "Plátno"@sk, "Kanwa"@pl .
+
+<http://data.europeana.eu/proxy/europeana/07101/O_2109>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/215> ;
+	dcterms:medium      <http://data.europeana.eu/concept/2728> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/O_2109> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07101/O_2109> .
+
+<http://data.europeana.eu/organization/1482250000000363675>
+	a               foaf:Organization ;
+	skos:prefLabel  "Galeria Nacional Eslovaca"@ca, "Galeria Nacional Eslovaca"@pt, "Σλοβακική Εθνική Πινακοθήκη"@el, "Slovenská národní galerie"@cs, "Slovenská Národná Galéria"@nl, "Slovenská národná galéria"@sk, "Slovak national gallery"@en, "Galleria nazionale slovacca"@it, "Slovāku Nacionālā galerija"@lv, "Szlovák Nemzeti Galéria"@hu, "Национална галерия на Словакия"@bg, "Słowacka Galeria Narodowa"@pl, "Slowakische Nationalgalerie"@de, "Словацкая национальная галерея"@ru, "Galerie nationale slovaque"@fr .
+
+<http://www.webumenia.sk/cedvuweb/image/SVK_SNG.O_2109.jpeg?id=SVK:SNG.O_2109>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "105037"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "610"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.webumenia.sk/oai-pmh/getimage/SVK:SNG.O_2109>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/07101/O_2109#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:11.075Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_2109> .
+
+<http://data.europeana.eu/aggregation/europeana/07101/O_2109>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-15T10:07:28.184Z" ;
+	dcterms:modified          "2018-03-12T15:43:09.491Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07101/O_2109#metadataTier>, <http://data.europeana.eu/item/07101/O_2109#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07101/O_2109> ;
+	edm:completeness          "6" ;
+	edm:country               "Slovakia" ;
+	edm:datasetName           "07101_Ag_SK_EuropeanASNG" ;
+	edm:landingPage           <https://www.europeana.eu/item/07101/O_2109> ;
+	edm:language              "sk" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.webumenia.sk%2Fcedvuweb%2Fimage%2FSVK_SNG.O_2109.jpeg%3Fid%3DSVK%3ASNG.O_2109&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/215>
+	a                skos:Concept ;
+	skos:altLabel    "Stilleven"@da, "Bodegon"@en, "Bodegon"@es, "Vaikelu"@et, "Asetelmamaalaus"@fi, "Naturaleza muerta"@es, "Bodegó"@ca, "Still-Leben"@de, "Naturezas-mortas"@pt, "Natură moartă"@ro, "Still-life"@en, "Natureza morta"@pt, "Natures mortes"@fr, "Nature Morte"@da, "Bodegones"@es, "Bodegón"@en, "Stileben"@sv, "Stilleben"@de, "Stilleben"@fi, "Nature morte"@sv, "Nature morte"@en, "Nature morte"@it, "Still-life art"@en ;
+	skos:broader     <http://data.europeana.eu/concept/218> ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p3655>, <http://vocab.getty.edu/aat/300015638>, <https://www.freebase.com/m/01spzs>, <http://purl.org/bncf/tid/6276>, <http://data.bnf.fr/ark:/12148/cb11932589x>, <http://datos.bne.es/resource/XX529217>, <http://d-nb.info/gnd/4057577-9>, <https://g.co/kg/m/01spzs>, <http://babelnet.org/rdf/s00074289n>, <http://id.ndl.go.jp/auth/ndlna/00570262>, <http://www.wikidata.org/entity/Q170571>, <http://id.loc.gov/authorities/names/sh85128119> ;
+	skos:note        "Genre artistique"@fr, "Género pictórico"@es, "Malířský žánr"@cs, "Malerigenre"@da, "Tipo di rappresentazione pittorica che consiste nel ritrarre oggetti inanimati"@it, "Gemäldegenre"@de, "Maaližanr"@et, "Gatunek w malarstwie"@pl, "Καλλιτεχνικό είδος"@el, "Жанр живописи"@ru, "Genre uit de schilderkunst"@nl, "Art genre mostly showing inanimate objects"@en, "Művészeti műfaj"@hu, "Kuvataiteessa esineistä koostettu sommitelma"@fi, "Gênero artístico"@pt ;
+	skos:prefLabel   "Zátiší"@cs, "Martwa natura"@pl, "Natüürmort"@et, "Csendélet"@hu, "Still life"@en, "Stilleben"@da, "Stilleben"@sv, "Bodegón"@es, "Νεκρή φύση"@el, "Natureza-morta"@pt, "Klusā daba"@lv, "Natura mejta"@mt, "Zátišie"@sk, "Натюрморт"@ru, "Натюрморт"@bg, "Stilleven"@nl, "Stillleben"@de, "Tihožitje"@sl, "Natiurmortas"@lt, "Ábhar neamhbheo"@ga, "Nature morte"@fr, "Natură statică"@ro, "Mrtva priroda"@hr, "Asetelma"@fi, "Natura morta"@it, "Natura morta"@ca .

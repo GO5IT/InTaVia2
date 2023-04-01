@@ -1,0 +1,107 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:11807>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "27244"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/0940424/_nnhTzSt>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhTzSt>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhTzSt> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:11807> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/11807/DC-1558_pracownia_malarza.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/11807/DC-1558_pracownia_malarza.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhTzSt>
+	a                   ore:Proxy ;
+	dc:creator          "French, W."@pl, "Hoogh, Pieter de (1629-1684)"@pl, "Van der Meer, Johannes (1632-1675)"@pl, "Hooch, Pieter de (1629-1684)"@pl, "Vermeer van Delft, Jan (1632-1675)"@pl ;
+	dc:date             "1871"@pl ;
+	dc:description      "staloryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1558"@pl ;
+	dc:publisher        "M. Glücksberg"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "Vermeer van Delft, Jan (1632-1675)"@pl, "malarstwo holenderskie - 17-18 w."@pl, "Hooch, Pieter de (1629-1684)"@pl, "Van der Meer, Johannes (1632-1675)"@pl, "staloryt - 19 w."@pl, "Hoogh, Pieter de (1629-1684) Hoogh"@pl, "staloryt"@pl, "malarstwo marynistyczne - 17-18 w."@pl, "sztuka holenderska - 17-18 w."@pl ;
+	dc:title            "Pracownia malarza = Alegoria malarstwa = W pracowni artysty"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "19,0 x 15,5 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzSt> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzSt> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhTzSt/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhTzSt#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:13.522Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzSt> .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzSt>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:57:45.750Z" ;
+	dcterms:modified          "2017-11-30T08:57:45.750Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhTzSt#metadataTier>, <http://data.europeana.eu/item/0940424/_nnhTzSt#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhTzSt> ;
+	edm:completeness          "6" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhTzSt> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F11807%2FDC-1558_pracownia_malarza.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzSt#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:13.523Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzSt> .
+
+<http://zbc.uz.zgora.pl/Content/11807/DC-1558_pracownia_malarza.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhTzSt/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhTzSt>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1871" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzSt> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzSt> .

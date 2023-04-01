@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88027774/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88027774>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:52.630Z" ;
+	dcterms:modified          "2018-03-26T12:26:41.975Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88027774> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88027774.thumbnail.jpg&type=SOUND> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88027774.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4198"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88027774>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88027774> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:28.249Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88027774> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88027774>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88027774> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88027774.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88027774>
+	a                   ore:Proxy ;
+	dc:creator          "Verzieux, Christiane. Piano", "Hongne, Paul. Basson", "Sennedat, André (1929-....). Basson", "Lalo, Édouard (1823-1892). Auteur ou responsable intellectuel", "Poulenc, Francis (1899-1963). Auteur ou responsable intellectuel", "Poulenc, Francis (1899-1963). Piano", "Beethoven, Ludwig van (1770-1827). Auteur ou responsable intellectuel", "Rimskij-Korsakov, Nikolaj Andreevič (1844-1908). Auteur ou responsable intellectuel", "Prokofʹev, Sergej Sergeevič (1891-1953). Auteur ou responsable intellectuel", "Grandmaison, Gabriel. Interprète", "Rouyer, Roger. Trombone", "Jamet, Pierre (1893-1991). Harpe", "Allain, René (19..-.... ; tromboniste). Interprète", "Galiègue, Marcel (1929-....). Interprète", "Merckel, Henri (1897-1969). Violon", "Opéra national de Paris. Orchestre. Interprète", "Lavaillotte, Lucien (1898-1968). Flûte", "Etienne, François (1901-1970). Clarinette", "Ibert, Jacques (1890-1962). Auteur ou responsable intellectuel", "Thévet, Lucien (1914-2007). Cor", "Händel, Georg Friedrich (1685-1759). Auteur ou responsable intellectuel", "Weber, Carl Maria von (1786-1826). Auteur ou responsable intellectuel", "Beaufort, Raphaël. Piano", "Masson, Gabriel (1911-1975). Trombone", "Marchesini, Gaston. Violoncelle", "Saint-Saëns, Camille (1835-1921). Auteur ou responsable intellectuel", "Delmotte, Roger (1925-....). Trompette", "Allard, Maurice (1923-2004). Basson", "Paganini, Niccolò (1782-1840). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "Contient une table des matières", "Titre uniforme : [Skazka o care Saltane. Acte 3. Polet šmelâ]", "Comprend : 3 EQUALE / Ludwig Van BEETHOVEN ; Gabriel MASSON, René ALLAIN, Marcel GALIEGUES, Roger ROUYER, trombones - SARABANDE / G.F. HAENDEL ; Pierre JAMET, harpe - GRAND DUO CONCERTANT : op. 48 (Rondo) / C.M. Von WEBER ; François ETIENNE, clarinette - et Christiane VERZIEUX, piano - CAPRICES N °13 EN SI BEMOL et 9 EN MI / Nicolo PAGANINI ; Henry MERCKEL, violon - ELEGIE / Francis POULENC ; Lucien THEVET, cor et Francis POULENC, piano - IMPROMPTU / Jacques IBERT ; Roger DELMOTTE, trompette et Raphaël BEAUFORT, piano - NAMOUNA / Edouard LALO - LE VOL DU BOURDON / RIMSKY-KORSAKOV ; Lucien LAVAILLOTTE, flûte et Raphaël BEAUFORT, piano - LE CYGNE / Camille SAINT-SAENS ; Gaston MARCHESINI, violoncelle et Raphaël BEAUFORT, piano - HUMOROUS SCHERZO, Op. 12 N °9 / Serge PROKOFIEV ; Maurice ALLARD, Gabriel GRANDMAISON, Paul HONGNE, André SENNEDAT, bassons", "Titre uniforme : [Le cygne. R 125, no 13]", "Titre uniforme : [24 caprices. Violon. MS 25]. Choix", "Titre uniforme : [Grand duo concertant. Clarinette, piano. J 204. Mi bémol majeur]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Elegischer Gesang. Op. 118]", "Titre uniforme : [Namouna]. Extraits", "Collection : La discothèque idéale" ;
+	dc:format           "1 disque : 33 t ; 30 cm", "disc"@eng, "multipart/mixed", "disque microsillon"@fre, "Nombre total de vues :  17" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88027774", "Numéro commercial : Vega  C30S244" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13917934t"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13913867j"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb380463864"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918518q"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916804c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13908139c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13935936f"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-5599" ;
+	dc:title            "HOMMAGE A FELIX PASSERONE / les solistes de l'Orchestre du Théâtre National de l'Opéra de Paris" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88027774> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88027774#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:28.250Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88027774> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88027774>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "255472"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/2782113/>
+	a               edm:Place ;
+	skos:prefLabel  "Republic of Austria (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_3000095546270>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-13T07:43:03.036Z" ;
+	dcterms:modified          "2015-06-15T12:14:31.066Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270#contentTier>, <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270> ;
+	edm:completeness          "9" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92063_Ag_EU_TEL_a0481_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92063/BibliographicResource_3000095546270> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F%2FBA%2F902%2FB10002954T10002958.jpg&type=IMAGE> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/902/B10002954T10002958.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3717"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "107"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546270>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://iiif.europeana.eu/presentation/92063/BibliographicResource_3000095546270/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546270>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10002954> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv//BA/902/B10002954T10002959.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv//BA/902/B10002954T10002958.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546270#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:26.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546270> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/902/B10002954T10002959.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92063/BibliographicResource_3000095546270/manifest> ;
+	ebucore:fileByteSize    "23318"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "322"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/provider/92063/BibliographicResource_3000095546270>
+	a                   ore:Proxy ;
+	dc:creator          "Pettenkofen, August von" ;
+	dc:description      "'Erster Angriff der Kavallerie vor dem Bürgerlichen Zeughaus am Hof in Wien 1848.' \u000ALithographie von August von Pettenkofen."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv//BA/902/B10002954T10002959.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Politics"@en, "Revolution 1848, European"@en, "Cavalry"@en, "Kavallerie"@de, "Geschichte Wien"@de, "Revolution 1848"@de, "Politik"@de ;
+	dc:title            "Einsatz der Kavallerie gegen Bürger 1848"@de ;
+	dcterms:created     "1848" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0481> ;
+	dcterms:spatial     <http://sws.geonames.org/2761369/>, <http://sws.geonames.org/2782113/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546270> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://sws.geonames.org/2761369/>
+	a               edm:Place ;
+	skos:prefLabel  "Vienna (Herstellung)" .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10002954>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546270#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:26.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546270> .
+
+<http://data.europeana.eu/proxy/europeana/92063/BibliographicResource_3000095546270>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1848" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_3000095546270> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_3000095546270> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

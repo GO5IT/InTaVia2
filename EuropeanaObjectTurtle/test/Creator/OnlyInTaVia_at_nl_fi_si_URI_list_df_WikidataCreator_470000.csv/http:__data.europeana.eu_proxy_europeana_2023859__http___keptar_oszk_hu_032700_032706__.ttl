@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_032700_032706__>
+	a                   ore:Proxy ;
+	dc:creator          "Fadrusz,  János ( szobrász)"@hu, "Rónay ,  Zoltán  (photographer)"@hu ;
+	dc:description      "A kolozsvári Szent Mihály-templom Erdély második legnagyobb alapterületű temploma a brassói Fekete templom után, amely Kolozsvár főterén, a hajdani Nagypiacon helyezkedik el. 76 méteres tornya (a kereszttel együtt 80 méter) a legmagasabb erdélyi templomtorony. Kelemen Lajos szerint \u0022Kolozsvár legrégibb építészeti műemlékei közül nagyságra, korra, történelmi és művészettörténeti jelentőségre övé az elsőség. Művészetében az északmagyarországi stílus hatása ismerhető fel, de sok részletében az erdélyi helyi jegyek mutatkoznak.\u0022 (Forrás: Wikipédia)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1200x1887 \u000A         24 \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/032700/032706   [Metadata]" ;
+	dc:relation         "Rónay Zoltán: Kolozsvár - Mátyás király emlékmű [ http://keptar.oszk.hu/032700/032705]"@hu ;
+	dc:source           "Rónay Zoltán"@hu ;
+	dc:subject          "Religion, church"@hu, "Fine arts, visual arts"@hu, "fafaragás"@hu, "Travelling, tourism"@hu, "Architecture, building industry"@hu, "templom"@hu, "History, local history"@hu, "erdélyi gótika"@hu, "épületkép"@hu, "belső épületrész"@hu, "római katolikus egyház"@hu ;
+	dc:title            "Kolozsvár - Szent Mihály-templom"@hu ;
+	dc:type             "photograph"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032706__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_032700_032706__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2822> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032700_032706__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032706__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/032700/032706> ;
+	edm:object         <http://keptar.oszk.hu/032700/032706/37_Kolozsvar8_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2822>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/59>, <http://data.europeana.eu/concept/2730> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q337907>, <https://www.freebase.com/m/01p9z0>, <http://id.loc.gov/authorities/names/sh85147809>, <http://vocab.getty.edu/aat/300054089>, <https://g.co/kg/m/01p9z0>, <http://www.yso.fi/onto/yso/p5712>, <http://thesaurus.europeanafashion.eu/thesaurus/10947>, <http://purl.org/bncf/tid/27646> ;
+	skos:note        "Forma de treballar la fusta mitjançant una eina de tall"@ca, "Arte dell'intaglio del legno"@it, "Rzemiosło polegające na rzeźbieniu w drewnie"@pl, "Técnica escultórica que consiste en el tallado de maderas u otros materiales"@es, "Bewerken van hout met een snij-instrument"@nl, "Art de la sculpture"@fr, "Technik vorrangig zur Holzbearbeitung"@de, "Form of working wood by means of a cutting tool"@en, "Puun työstäminen"@fi, "Snideri med trä som material"@sv ;
+	skos:prefLabel   "Talla de fusta"@ca, "Houtsnijden"@nl, "Snycerstwo"@pl, "Træskæring"@da, "Entalhe"@pt, "Sculpture sur bois"@fr, "Puunveisto"@fi, "Medžio drožyba"@lt, "Snoíodóireacht adhmaid"@ga, "Ξυλογλυπτική"@el, "Holzschnitzerei"@de, "Rezbarstvo"@sl, "Řezbářství"@cs, "Woodcarving"@en, "Дърворезба"@bg, "Kokgriešana"@lv, "Rezbárstvo"@sk, "Talla de madera"@es, "Резьба по дереву"@ru, "Fafaragás"@hu, "Träsnideri"@sv, "Intaglio del legno"@it ;
+	skos:related     <http://data.europeana.eu/concept/1816> .
+
+<http://keptar.oszk.hu/032700/032706>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032700_032706__/manifest> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032700_032706__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:17.660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032706__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:17.660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032706__> .
+
+<http://keptar.oszk.hu/032700/032706/37_Kolozsvar8_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6304"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032700_032706__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:49:14.483Z" ;
+	dcterms:modified          "2015-09-14T11:49:16.827Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032706__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F032700%2F032706%2F37_Kolozsvar8_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .

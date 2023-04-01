@@ -1,0 +1,150 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008096>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1063488> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1063488> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:11.735Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008096> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000008096>
+	a                   ore:Proxy ;
+	dc:contributor      "Daniel Chodowiecki", "Christian Wilhelm Ernst Dietrich", "Friedrich Reclam" ;
+	dc:date             "1774", "17--?" ;
+	dc:identifier       "008312982" ;
+	dc:language         "de" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Christian Wilhelm Ernst Dietrich" ;
+	dc:type             "Monograph"@en, "Still image"@en ;
+	dcterms:extent      "Black-and-white ;", "voorstelling: 242 x 179 mm", "voorstelling met opschrift: 250 x 179 mm", "plaatrand: 274 x 199 mm." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008096> .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1063488>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:11.735Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008096> .
+
+<http://data.europeana.eu/agent/146990>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/216>, <http://data.europeana.eu/concept/107> ;
+	owl:sameAs           <http://www.idref.fr/057078971/id>, <http://d-nb.info/gnd/118520512>, <http://id.loc.gov/authorities/names/n50038187>, <https://www.freebase.com/m/0bycl>, <http://data.bibliotheken.nl/id/thes/p069801819>, <https://libris.kb.se/53hkkddp4drf00n>, <http://viaf.org/viaf/59092320>, <http://datos.bne.es/resource/XX988971>, <http://viaf.org/viaf/311423373>, <http://id.worldcat.org/fast/13027>, <https://g.co/kg/m/0bycl>, <http://www.wikidata.org/entity/Q696720>, <https://livedata.bibsys.no/authority/90176794>, <http://libris.kb.se/resource/auth/181551>, <http://data.bnf.fr/ark:/12148/cb129804342>, <http://vocab.getty.edu/ulan/500014861>, <http://openlibrary.org/works/OL804125A>, <http://dbpedia.org/resource/Daniel_Chodowiecki> ;
+	rdaGr2:dateOfBirth   "1726-10-16" ;
+	rdaGr2:dateOfDeath   "1801-02-07" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/134651> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Ходовецкий, Даниель"@ru, "Daniel Niklaus Chodowiecki"@da, "D. chodowiecky"@en, "Ходовецкий"@ru, "Daniel Niklaus Chodowiecki"@en, "Daniel Mikołaj Chodowiecki"@pl, "Daniel Mikołaj Chodowiecki"@cs, "Dan. Nic. Chodowiecki"@en, "Chodowiecki"@de, "Chodowiecki"@sv, "Chodowiecki"@en, "Dan. Nik. Chodowiecki"@en, "Daniel Nicolaus Chodowiecki"@cs, "Daniel Nicolaus Chodowiecki"@sv, "Daniel Nicolaus Chodowiecki"@en, "Daniel nicol. chodowiecki"@en, "D. N. Chodowiecki"@en, "Chodowiecki d."@en, "Chodowiecki daniel"@en, "Ходовецкий Даниэль"@ru, "Daniel Nikol. Chodowiecki"@en, "Daniel Nikolaus Chodowiecki"@es, "Daniek Nikolaus Chodowiechi"@nl, "Daniel Nikolaus Chodowiecki"@da, "Daniel Nikolaus Chodowiecki"@fr, "Daniek Nikolaus Chodowiechi"@en, "Daniel Nikolaus Chodowiecki"@cs, "Daniel Nikolaus Chodowiecki"@de, "Daniel Nikolaus Chodowiecki"@sv, "Daniel Nikolaus Chodowiecke"@en, "Daniel Chodowiecky"@en, "Chodowiecky"@en, "D. chodowiecki"@en, "Chodowiecki Daniel Nicolaus"@en, "Daniel chodowicki"@en, "Dan Chodowiecki"@en, "D.N. Chodowiecki"@en, "Dan. Chodowiecki"@en, "Dan. nicol. chodowiecki"@en, "D. chodow."@en, "Chodoviecki"@en, "D. Chodowiecki"@en ;
+	skos:note            "Pools kunstschilder (1726-1801)"@nl, "Saksamaa kunstnik"@et, "Artista alemany"@ca, "Peintre allemand"@fr, "Artista alemán"@es, "Artista tedesco"@it, "Polsko-niemiecki malarz i rytownik"@pl, "Deutscher Kupferstecher, Grafiker und Illustrator"@de, "Польский и немецкий художник"@ru, "Artist german"@ro, "German painter and printmaker"@en ;
+	skos:prefLabel       "Даниель Ходовецкий"@ru, "Daniel Nikolaus Chodowiecki"@pt, "Daniel Nikolaus Chodowiecki"@en, "Daniel Nikolaus Chodowiecki"@it, "Daniel Nikolaus Chodowiecki"@sk, "Daniel Nikolaus Chodowiecki"@ca, "Daniel Chodowiecki"@es, "Daniel Chodowiecki"@cs, "Daniel Chodowiecki"@de, "Daniel Chodowiecki"@sv, "Daniel Chodowiecki"@fr, "Daniel Chodowiecki"@sl, "Daniel Chodowiecki"@pl, "Daniel Chodowiecki"@da, "Daniel Chodowiecki"@nl .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1063488>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22583"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "279"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000008096>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T12:45:14.989Z" ;
+	dcterms:modified          "2014-05-27T12:45:14.989Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096#metadataTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000008096> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1063488&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000008096>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/155395>, <http://data.europeana.eu/agent/146990> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1774" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008096> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000008096> .
+
+<http://data.europeana.eu/agent/155395>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p074798707>, <http://vocab.getty.edu/ulan/500009500>, <http://viaf.org/viaf/69199199>, <http://id.loc.gov/authorities/names/n85327757>, <http://d-nb.info/gnd/118746324>, <http://www.idref.fr/167823116/id>, <http://dbpedia.org/resource/Christian_Wilhelm_Ernst_Dietrich>, <https://g.co/kg/m/06qk14>, <https://www.freebase.com/m/06qk14>, <http://data.bnf.fr/ark:/12148/cb14954188s>, <http://id.worldcat.org/fast/170069>, <http://datos.bne.es/resource/XX858392>, <http://openlibrary.org/works/OL330942A>, <http://www.wikidata.org/entity/Q536581> ;
+	rdaGr2:dateOfBirth   "1712-10-30" ;
+	rdaGr2:dateOfDeath   "1774-04-23" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/275> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/2313> ;
+	skos:altLabel        "Christian Wilhelm Ernst Dietericy"@en, "Chr. wilhelm ernst dietrich"@en, "Hern Dictricci"@en, "Christian Wilhelm Ernst Ditrici"@en, "Dietriechy"@en, "Dictrici"@en, "Dietrik"@en, "Didrichs"@en, "Christianus Dietrich"@en, "Dietry"@en, "CWE Dietrich"@en, "C.E. Dietricy"@en, "Dietrietch"@en, "C. W: E. Dietrich"@en, "Chr. w. a. dietrich"@en, "Christian Wilhelm Ernst Dietrichey"@en, "Dietritchy"@en, "Genannt Dietricy Christian Wilhelm Dietrich"@en, "Christian Wilhelm Ernst Dietrechi"@en, "Christian Wilhelm Ernst Dietricij"@en, "Chr. W. E. Dietrich gen Dietricy"@en, "Christian Wilh. Dietrich"@en, "G. Ernest Dietriccy"@en, "Christian Wilhelm Ernst Dietriechi"@en, "Chretien Guill Ernest Dietricy"@en, "Christian Wilhelm Ernst Dietricey"@en, "Ch. Wilh. Dietricy"@en, "C. W. E. Dietrich. Gen. Dietrici"@en, "Ditriesie"@en, "Dietrtch"@en, "Detriecy"@en, "Diterichs"@en, "Gen. Dietricy C. W. E. Dietrich"@en, "Ch. W. Ernst Diedrichs"@en, "C. W. E. Dietricy"@en, "Dietricht"@en, "C. W. E. Dietericy"@en, "Christian Willhelm Ernst Dieterich"@en, "Dietriech"@en, "Dietrici Ernest"@en, "Diederichs"@en, "Christian Wilhelm Ernst Dietricci"@en, "Christian Wilhelm Ernst Deitricy"@en, "Ernest Dietrichy"@en, "E. Dietricy"@en, "Dietaicy"@en, "Christian Wilh. Ernst Dieterich"@en, "Cristiano Gustavo Ernesto Dietrick"@en, "De Trichi"@en, "E. Ditrici"@en, "Dietrichie"@en, "Chr. W. Ernst Dietrich gen Dietricy"@en, "C. w. e. dietricy"@en, "C.G.E. Diétrici"@en, "C. W. E. Dieterich"@en, "Diétrici"@en, "Christian Wilhelm Ernst Detrichichi"@en, "C.W.E. Diederichs"@en, "Dietrechy"@en, "Chr. Wilh. Ernst Dietricy"@en, "Ditrichs"@en, "Christian wilh. ernst dietrich"@en, "Gen. Dietricy Chr. W. Ernst Dietrich"@en, "Dietrecy"@en, "Christian Wilhelm Ernst Detrichi"@en, "Ch. W. E. Dietrich"@en, "Chr. w. e. dietrici"@en, "Dietrick"@en, "Christian Wilhelm Ernst De Triece"@en, "Diétrich"@en, "Dietrichi"@en, "Dietric"@en, "Chrétien-Guillaume Ernest Dietricy"@en, "Christian W. Ernst Dietericy"@en, "C.M.E. Dietrich"@en, "De Tricy"@en, "C. W. E: Dietrich"@en, "Christian Wilhelm Ernst Dietriccy"@en, "Christian Wilh. Ernst Dietrich gen. Dietricy"@en, "Christ. Dietericy"@en, "Dictrik"@en, "Christian Wilhelm Ernst Detreachey"@en, "Chr. W. E. Dietricy"@en, "C. W. E. Diderich"@en, "Detreachey"@en, "Dietrictchy"@en, "Detricy"@en, "Chétien Guillaume Ernest Diétricy"@en, "Diedrick"@en, "C.W.E. Dietrich"@en, "Jun. C.W.E. Dietrich"@en, "Deitriche"@en, "E. Dietricci"@en, "E. Dietrick"@en, "Dietrichey"@en, "C. W. E. Dietrich gen. Dietricy"@en, "C. W. Dietericy"@en, "C. V. Dietrick"@en, "Ditrici"@en, "C.W.E. Dietericy"@en, "W. dietricy"@en, "Chr. W. E. Dietrich"@en, "C. Dietricy"@en, "De Tretchey"@en, "Detric"@en, "Dietrichs"@en, "C.G.E. Dietrici"@en, "Christian Wilhelm de Dietrich"@fr, "Christian Wilhelm Ernst Detriche"@en, "Genannt Dietricy Chr. Wilh. Ernst Dietrich"@en, "Christian Guillaume Ernest Dietrich"@en, "Christian W. Dietrich"@en, "E. Dietricq"@en, "Deitricy"@en, "Ernest Dietriccy"@en, "Christian Wilhelm Ernest Dietrich"@en, "Christian Wilhelm Ernst Dietreicy"@en, "Par Dietrich dit Dietrici"@en, "Dietrishy"@en, "Christian W. E. Dietrich"@en, "C.W.E. Dietricij"@en, "E.W.E. Dietrich"@en, "C. G. E. Dieterich"@en, "C. W. E. Ditrich"@en, "Christ. Wilh. E. Dietricy"@en, "Diederick"@en, "Deitricht"@en, "Christ. Wilh. Ernst Dietrici"@en, "Dutrich"@en, "Dietrichy"@en, "Chr. dietricy"@en, "Dietricci"@en, "C. W. Dietrich gen. Dietrici"@en, "W. Dieterich"@en, "Christian-Ernest Dietrich"@en, "Christian-Guillaume Ernest Dietrici"@en, "Ditricy"@en, "Ernetz Dietricci"@en, "Chr. w. e. dietrich"@en, "Christian Wilh. Ernst Dietrich"@en, "C. G. Ernest Dietrich"@en, "Christian Wilhelm Ernst, gen. Dietricy Dietrich"@en, "Ernest d'Etricy"@en, "Diettricci"@en, "Detrich"@en, "Ch. Wilhelm Ernst Dietricy"@en, "Dietriy"@en, "C.W.E. Diedrich"@en, "Detrichichi"@en, "G. Ernet Dietricy"@en, "Christian Wilhelm Ernst Dietriecy"@en, "Christian Wilhelm Ernst Dietrecy"@en, "Chr. wilh. ernst dietrich"@en, "Dietriecy"@en, "Christian Wilhelm Ernst Dieterich"@en, "Christian Wilhelm Ernst Dietrichy"@en, "Chr. e. w. dietrich"@en, "Dietrici"@en, "Chr. Dietericy"@en, "Detureichy"@en, "Ou Dietrich C. G. E. Dietricci"@en, "Diethrichs"@en, "Ernest Dietricy"@en, "Dietriech christian wilhelm"@en, "Genannt Dietricy Wilhelm Ernst Dietrich"@en, "Chr. Dietrich gen. Dietrici"@en, "Dietrici christian wilhelm ernst"@en, "Dectrich dit Le Dectrici"@en, "Christian dietricy"@en, "Ch. W. E. Dieterich"@en, "C. W. E. Dieterici"@en, "C. W. E. Dietrici"@en, "Dietrich"@en, "Deictich"@en, "Ditrich"@en, "E.G. Dietrick"@en, "Christ. W. E. Dietericy"@en, "Христиан Вильгельм Эрнст Дитрих"@ru, "Christian Wilhelm Ernst Detreche"@en, "Detricci"@en, "Christian Wilhelm Ernst Detreichi"@en, "Hernetz Dietricci"@en, "De Triece"@en, "Christian Wilh. E. Dietrich"@en, "E. Dietrici"@en, "C. W. Ernst Dieterich"@en, "Ch. W. E. Dietricy"@en, "Christian Wilhelm Ernst Dietaicy"@en, "Christian Wilhelm Dietricy"@en, "Dietrich christ. wilh. ernst"@en, "Christian dietrich gen. dietricy"@en, "C.E.W. Dietrich"@en, "Ditricie"@en, "Dietrieg"@en, "Diedrich"@en, "Dietreicy"@en, "Dietrechi"@en, "Dictricy"@en, "Detriece"@en, "Christian Wilh. Dietericy"@en, "Christ. Wilh. Ernst Dietrich"@en, "Christian Wilhelm Ernst Diederichs"@en, "Christian Wilhelm Ernst Diderch"@en, "C.-E. Dietrich"@en, "Diedrichs"@en, "Chr. W. E. Dietericy"@en, "Christian Wilhelm Ernst Dietrechy"@en, "Christian Wilhelm Ernst Dietrich genannt Dietricy"@en, "Chrétien Guill. Ernest Dietrict"@en, "Cristiano Gustavo Ernest Dietrik"@en, "Dietrycy"@en, "Ernest Dietrick"@en, "Dietricy"@en, "Dietericy Christ."@en, "C.W. Dietrick"@en, "Diederici"@en, "Christian Wilhelm Dieterich"@en, "Ernestre Dietricy"@en, "Dietrech"@en, "Old Dietrich"@en, "Christian Wilhelm Ernst Detrick"@en, "C. dietrici"@en, "Deitrichy"@en, "Detreche"@en, "Ernest Diétricy"@en, "Detrichi"@en, "Christian Wilhelm Ernst De Trieci"@en, "Ch. w. e. dietrich"@en, "Chretien-Guillaume Dietricy"@en, "Dietricey"@en, "Dietricie"@en, "In Dietricis Manier"@en, "C. W. E. Dietrich gen. Ditricy"@en, "W. E. Dietrich gen. Diterici"@en, "C. G. E. Dietrici"@en, "Dietericj"@en, "Dieterichs"@en, "Christian W. E. Dietricy"@en, "G.E. Dietrick"@en, "De Trychy"@en, "Detricie"@en, "C. Dieterich"@en, "Christian Wilhelm Dietrich"@fr, "Christian Wilhelm Dietrich"@en, "Christian Wilhelm Dietrich"@de, "E. dietricquglielmo Ernesto Dietrich"@en, "C. W. E. genannt Dietricy Dietrich"@en, "C. W. E. Dietrich"@en, "Christian Wilhelm Ernst Dietrici"@en, "Detreichi"@en, "Guilh. Diedrich"@en, "W.E. Dieterici"@en, "Dieterici"@en, "Dietriche"@en, "Christ. W. E. Dietricy"@en, "Wilhelm Dietricy"@en, "C. W. E. Diederich"@en, "Ernest Diétrich"@en, "Christian Wilhelm Ernst Dietricht"@en, "Genannt Dietrici Dietrich Christian"@en, "Chr. Ernst Wilhelm Dietricy"@en, "Deitrich"@en, "Chrïetien Guillaume Ernest Dietrich dit Dietricy"@en, "C. W. Dietrich"@en, "Dietrich d.j."@en, "Christ. Wilhelm Ernst Dietricy"@en, "Chr. W. Ernst Dietricy"@en, "Chrétien Guillaume Ernest Diétrich"@en, "Dietrich christian wilhelm"@en, "Christian Wilhelm Ernst Dietrieg"@en, "Ernest Dietriech"@en, "Detricey"@en, "E. Dietriccy"@en, "Detriche"@en, "Dietericy"@en, "Detritchy"@en, "Christian Wilhelm Ernst Detrechi"@en, "C.G.E. Ditrici"@en, "De Triechi"@en, "Diederich"@en, "Chr. Guil. Ern. Dietrich"@en, "C. W. E. Dietrich genannt Dietricy"@en, "Dietriks"@en, "C. Ernest Dietricy"@en, "De Trieci"@en, "Christian Wilhelm Ernst Detriece"@en, "Christ. e. w. dietrich"@en, "Christian Dietrich"@en, "Ch. W. E. Dietericy"@en, "Diétrick"@en, "Ernest Dietrici"@en, "Christian Wilhelm Ernst Dietriech"@en, "Chr. Wilh. Ernst Diderichs"@en, "Christ. W. E. Dietrich"@en, "E. Dietrichi"@en, "C. W. Dietricy"@en, "Diterici"@en, "Detrick"@en, "Dietriechi"@en, "C. Dietrich"@en, "C. e. w. dietrich"@en, "G.E. Diétrick"@en, "Christ. Wilh. Ernst Dietricy"@en, "Chr. W. Dietricy"@en, "Dietricij"@en, "Detriech"@en, "Erneste Dietricy"@en, "Dietriccy"@en, "Christian W. E. Dietericy"@en, "Christian Wilhelm Ernst Dietriche"@en, "Diderichs"@en, "Dieterich"@en, "Christian Wilhelm Ernst Dietricy"@en, "Christian Wilhelm Ernst Dietricy"@sv, "Chr Wilh Ernst Dietrich"@en, "Ernest Diétricci"@en, "G.E. Dietrici"@en, "Diterich"@en, "Christ. Wilh. E. Dietrich"@en, "Christian Wilhelm Ernst Dietrich Genant Dietricy"@en, "Detrechi"@en ;
+	skos:note            "Artista alemany"@ca, "German artist (1712-1774)"@en, "Ealaíontóir Gearmánach"@ga, "Artist german"@ro, "Peintre allemand"@fr, "Tysk professor"@da, "Tysk professor"@sv, "Saksamaa kunstnik"@et, "Duits kunstschilder (1712-1774)"@nl, "Deutscher Maler und Kupferstecher"@de, "Artista alemán"@es, "Artista tedesco"@it, "Professor académico alemão"@pt ;
+	skos:prefLabel       "Дитрих, Христиан Вильгельм Эрнст"@ru, "Christian Wilhelm Ernst Dietrich"@sl, "Christian Wilhelm Ernst Dietrich"@pl, "Christian Wilhelm Ernst Dietrich"@da, "Christian Wilhelm Ernst Dietrich"@ca, "Christian Wilhelm Ernst Dietrich"@nl, "Christian Wilhelm Ernst Dietrich"@de, "Christian Wilhelm Ernst Dietrich"@fi, "Christian Wilhelm Ernst Dietrich"@sv, "Christian Wilhelm Ernst Dietrich"@pt, "Christian Wilhelm Ernst Dietrich"@en, "Christian Wilhelm Ernst Dietrich"@it, "Christian Wilhelm Ernst Dietrich"@fr, "Christian Wilhelm Ernst Dietrich"@hu, "Christian Wilhelm Ernst Dietrich"@es, "Christian Wilhelm Ernst Dietrich"@cs, "Christian Wilhelm Ernst Dietrich"@sk .

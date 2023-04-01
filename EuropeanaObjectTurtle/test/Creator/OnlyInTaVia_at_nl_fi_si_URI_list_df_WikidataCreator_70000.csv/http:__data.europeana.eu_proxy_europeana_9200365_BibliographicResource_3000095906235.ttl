@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88011696>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88011696> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88011696.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88011696.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3840"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#6A5ACD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6495ED"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4682B4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#778899"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:49.134Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88011696> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88011696>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "236776"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88011696>
+	a                   ore:Proxy ;
+	dc:creator          "Petit, Alexandre-Sylvain (1864-1925). Auteur ou responsable intellectuel", "Bizet, Georges (1838-1875). Auteur ou responsable intellectuel", "Ganne, Louis (1862-1923). Auteur ou responsable intellectuel", "Suppé, Franz von (1819-1895). Auteur ou responsable intellectuel", "Dvořák, Antonín (1841-1904). Auteur ou responsable intellectuel", "Dondeyne, Désiré (1921-2015). Direction d'orchestre", "Offenbach, Jacques (1819-1880). Auteur ou responsable intellectuel", "Ketèlbey, Albert William (1875-1959). Auteur ou responsable intellectuel", "Waldteufel, Émile (1837-1915). Auteur ou responsable intellectuel", "Schubert, Franz (1797-1828). Auteur ou responsable intellectuel", "Freed, Fred (1903-1983). Auteur ou responsable intellectuel", "Strauss, Johann (1804-1849). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "Titre uniforme : [Les patineurs. Op. 183]. Adapt.", "Titre uniforme : [Orphée aux Enfers]. Extrait", "Titre uniforme : [Radetzky-Marsch. Op. 228]. Adapt.", "Comprend : MARCHE MILITAIRE / F. SCHUBERT - arr. de D. DONDEYNE - LES PATINEURS / WALDTEUFEL - arr. WHITMANN - CAVALERIE LEGERE (ouverture) / F. Von SUPPE - arr. L. CHIC - FANTAISIE POLKA / arr. D. DONDEYNE - HUMORESQUE / A. DVORAK - arr. F. FORET - FARANDOLE DE L'ARLESIENNE / Georges BIZET - arr. DUREAU - ARC DE TRIOMPHE / Fred FREED - SUR UN MARCHE PERSAN / A.W. KETELBEY - MYRTO POLKA / A.S. PETIT ; soliste ; Pierre SOUFFLET - LA HOUSARDE : valse militaire / Louis GANNE - arr. P. KELSON - RADETZKY-MARCHE / Johann STRAUSS - arr. D. DONDEYNE - QUADRILLE DES BALS DE L'OPERA : extrait de \u0022Orphée aux Enfers\u0022 / OFFENBACH - arr. D. DONDEYNE", "Titre uniforme : [Humoresky. Piano. B 187, no 7. Sol bémol majeur]. Adapt.", "Titre uniforme : [L'Arlésienne (Suites. No 2)]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [In a Persian market]. Adapt.", "Titre uniforme : [Leichte Kavallerie]. Extrait orch." ;
+	dc:format           "multipart/mixed", "disque microsillon"@fre, "1 disque : 33 t ; 30 cm", "disc"@eng ;
+	dc:identifier       "Numéro commercial : Philips P77141L", "http://gallica.bnf.fr/ark:/12148/bpt6k88011696" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37974536p"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-10252" ;
+	dc:title            "MUSIQUE DES GARDIENS DE LA PAIX DE PARIS \u0022CONCERT SUR LA PLACE\u0022 / la MUSIQUE DES GARDIENS DE LA PAIX dir. Désiré DONDEYNE" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88011696> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88011696/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88011696>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88011696> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88011696>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:09.198Z" ;
+	dcterms:modified          "2018-03-26T12:26:05.088Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88011696> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88011696.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88011696#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:49.135Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88011696> .

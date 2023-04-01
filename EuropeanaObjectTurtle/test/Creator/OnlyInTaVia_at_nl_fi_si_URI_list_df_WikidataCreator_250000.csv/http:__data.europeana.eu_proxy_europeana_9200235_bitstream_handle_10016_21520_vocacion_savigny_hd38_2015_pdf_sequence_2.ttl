@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "2015" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> .
+
+<http://data.europeana.eu/aggregation/provider/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:isShownAt      <http://www.doabooks.org/doab?func=search&query=rid:17385> ;
+	edm:object         <http://www.doabooks.org/doab/?func=cover&rid=17385> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004511926> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/4.0/> .
+
+<http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:35:01.556Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> .
+
+<http://data.europeana.eu/organization/1482250000004511926>
+	a               foaf:Organization ;
+	skos:prefLabel  "Open Access Publishing in European Networks Foundation"@en .
+
+<http://www.doabooks.org/doab/?func=cover&rid=17385>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "148495"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1417"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "1004"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-17T15:45:38.469Z" ;
+	dcterms:modified          "2016-09-19T12:15:50.152Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2#contentTier>, <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200235_DOAB_OAPEN_Foundation_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.doabooks.org%2Fdoab%2F%3Ffunc%3Dcover%26rid%3D17385&type=TEXT> .
+
+<http://www.doabooks.org/doab?func=search&query=rid:17385>
+	a  edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://semium.org/time/20xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Mon Jan 01 01:00:00 CET 2001" ;
+	edm:end           "Fri Dec 31 01:00:00 CET 2100" ;
+	skos:prefLabel    "21st"@en, "21er siècle"@fr, "21e", "21ste eeuw"@nl, "21..", "21-st"@en, "21й век"@ru, "21??", "21st century"@en .
+
+<http://data.europeana.eu/proxy/provider/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2>
+	a                   ore:Proxy ;
+	dc:creator          "Savigny, Friedrich Carl von" ;
+	dc:date             "2015" ;
+	dc:identifier       "http://www.doabooks.org/doab?func=search&query=rid:17385", "http://e-archivo.uc3m.es/bitstream/handle/10016/21520/vocacion_savigny_hd38_2015.pdf?sequence=2", "ISBN: 9788489315822" ;
+	dc:language         "spa" ;
+	dc:publisher        "Universidad Carlos III de Madrid. Figuerola Institute of Social Science History" ;
+	dc:rights           <http://creativecommons.org/licenses/by-nc-nd/3.0/legalcode> ;
+	dc:subject          "Código", "Codificación", "Alemania", "Escuela histórica" ;
+	dc:title            "De la vocación de nuestra época para la legislación y la ciencia del Derecho" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> .
+
+<http://data.europeana.eu/item/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:35:01.555Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200235/bitstream_handle_10016_21520_vocacion_savigny_hd38_2015_pdf_sequence_2> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

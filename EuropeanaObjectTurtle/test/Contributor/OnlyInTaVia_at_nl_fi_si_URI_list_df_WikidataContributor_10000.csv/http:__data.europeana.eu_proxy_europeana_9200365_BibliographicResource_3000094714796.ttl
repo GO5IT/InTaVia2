@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525036337.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5549"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "192"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "124"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b525036337>
+	a                   ore:Proxy ;
+	dc:contributor      "Tournier, L.. Auteur du texte", "Bataille, F.. Auteur du texte", "Millevoye, Charles (1782-1816). Auteur du texte", "Hue, Sophie. Auteur du texte", "Gillotin, S. D.. Auteur du texte", "Lamartine, Alphonse de (1790-1869). Auteur du texte", "Panard, Charles-François (1689-1765). Auteur du texte", "Chemin, Claire. Auteur du texte", "Lemonnier. Auteur du texte", "Leconte de Lisle, Charles-Marie (1818-1894). Auteur du texte" ;
+	dc:creator          "Bonnet, Jules (1853-1937). Compositeur", "Boïeldieu, François-Adrien (1775-1834). Compositeur", "Rameau, Jean-Philippe (1683-1764). Compositeur", "Mozart, Wolfgang Amadeus (1756-1791). Compositeur", "Grétry, André-Ernest-Modeste (1741-1813). Compositeur", "Mendelssohn Bartholdy, Felix (1809-1847). Compositeur", "Romagnesi, Antoine (1781-1850). Compositeur", "Himmel, Friedrich Heinrich (1765-1814). Compositeur", "Dangueuger, Adolphe (1855-19..). Compositeur", "Hérold, Ferdinand (1791-1833). Compositeur", "Dezède (1740?-1792). Compositeur" ;
+	dc:date             "1907" ;
+	dc:description      "Comprend : Souvenir d'enfance ; Petite mère ! ; La vengeance ; La fleur ; L'hiver ; La chanson du rouet ; Le pays natal ; Hymne aux Alpes ; Dors enfant, tout dort à la ronde ; L'horloge enseigne la sagesse ; Bonsoir, brillantes étoiles" ;
+	dc:format           "Nombre total de vues :  92", "In-8°, VIII-80 p., fig." ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b525036337" ;
+	dc:language         "fre" ;
+	dc:publisher        "Librairie Hachette et C.ie (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42933691f" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VMC-290" ;
+	dc:subject          "Solfège"@fre ;
+	dc:title            "Premier enseignement musical basé sur la méthode modale chiffrée" ;
+	dc:type             "Genre musical : méthode" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525036337> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525036337/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b525036337>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1907" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525036337> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525036337/manifest> ;
+	ebucore:fileByteSize    "46822"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "725"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525036337>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "201225"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525036337>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:12.438Z" ;
+	dcterms:modified          "2018-07-23T15:37:03.833Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b525036337> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b525036337.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:08.603Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525036337> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:08.603Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525036337> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525036337>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525036337> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b525036337> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525036337/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b525036337.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .

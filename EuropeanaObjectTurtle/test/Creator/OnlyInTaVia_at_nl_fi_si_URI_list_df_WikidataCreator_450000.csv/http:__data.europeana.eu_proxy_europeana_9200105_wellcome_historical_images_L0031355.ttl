@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000044932001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Wellcome Collection"@en .
+
+<https://iiif.wellcomecollection.org/image/L0031355.jpg/full/512,/0/default.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200579/jwp9cfhz/manifest> ;
+	ebucore:fileByteSize    "137482"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "723"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <https://iiif.wellcomecollection.org/image/L0031355.jpg> .
+
+<https://wellcomecollection.org/works/jwp9cfhz>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "264274"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200579/jwp9cfhz>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/jwp9cfhz> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200579/jwp9cfhz> .
+
+<http://data.europeana.eu/item/9200579/jwp9cfhz#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:27:12.989Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/jwp9cfhz> .
+
+<https://iiif.wellcomecollection.org/image/L0031355.jpg/full/500,/0/default.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "130414"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "706"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200579/jwp9cfhz#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:27:12.990Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/jwp9cfhz> .
+
+<http://data.europeana.eu/proxy/provider/9200579/jwp9cfhz>
+	a                   ore:Proxy ;
+	dc:description      "'A Surinam Planter in his Morning Dress'."@en ;
+	dc:identifier       "jwp9cfhz", "b1265792", "EPB 49634/C", "L0031355" ;
+	dc:rights           "Credit: Wellcome Collection" ;
+	dc:source           "L0031355" ;
+	dc:subject          "SLAVERY"@en, "STEDMAN, JOHN GABRIEL 1744-97"@en, "SURINAM"@en, "EPB 49634/C"@en ;
+	dc:title            "Narrative of a five years' expedition. J. Stedman, 1796." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/jwp9cfhz> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200579/jwp9cfhz> .
+
+<http://data.europeana.eu/aggregation/europeana/9200579/jwp9cfhz>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-09T11:22:03.296Z" ;
+	dcterms:modified          "2019-06-09T11:22:03.296Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200579/jwp9cfhz#contentTier>, <http://data.europeana.eu/item/9200579/jwp9cfhz#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200579/jwp9cfhz> ;
+	edm:completeness          "7" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200579_Ag_UK_WellcomeCollection_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200579/jwp9cfhz> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FL0031355.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/9200579/jwp9cfhz>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200579/jwp9cfhz> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:isShownAt      <https://wellcomecollection.org/works/jwp9cfhz> ;
+	edm:isShownBy      <https://iiif.wellcomecollection.org/image/L0031355.jpg/full/512,/0/default.jpg> ;
+	edm:object         <https://iiif.wellcomecollection.org/image/L0031355.jpg/full/500,/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/9200579/jwp9cfhz>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/9200579/jwp9cfhz/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://iiif.wellcomecollection.org/image/L0031355.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level1.json> .

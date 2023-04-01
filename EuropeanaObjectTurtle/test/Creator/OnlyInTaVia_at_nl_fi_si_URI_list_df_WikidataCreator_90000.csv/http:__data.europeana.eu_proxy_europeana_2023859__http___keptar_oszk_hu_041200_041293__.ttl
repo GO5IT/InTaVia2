@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:10.942Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041293__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041293__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/041200/041293> ;
+	edm:object         <http://keptar.oszk.hu/041200/041293/1900bb_Page_086_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_041200_041293__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description       "Egy nagyérdemű festőművészünk, Székely Bertalan műveinek tekintélyes, bár koránsem teljes gyűjteményét látjuk együtt a Nemzeti Szalonban most rendezett kiállításon. Székely művei azok közé a művészi alkotások közé tartoznak, a melyek jelentőségéből az izlés, a művészi fölfogás, a divat változásai mitsem vonhatnak le. Művészetének legbenső lényege, éltető eleme, a nemzeti érzés sugárzik ki belőlük. Vannak festményei, a melyek évtizedek előtt keletkeztek, technikai szempontból magukon hordják koruk jellegét és mégis teljes közvetlenséggel szólnak lelkünkhöz. Alkotójuk kimagasló és jellemző alakja marad mindenkor művészetünk történetének. ... Az egri nők, a hősies hazaszeretetnek ez a pompás ábrázolása, csakhamar legkedveltebb képeink egyikévé lett. ... (Forrás: Vasárnapi Ujság, 1900. márczius 18.) A témát Székely már bécsi tanulmányainak befejezése után kiválasztotta, a nagy festmény elkészülése előtt tíz évvel. Például Karl von Blaas és Johann Till török tárgyú történeti képei egyaránt szolgálhattak. A kompozíció függőleges irányba rendeződött át 1861-re, ez már a végső képi forma. A várfalat a szépiarajzon négyszögletes bástya tagolja, amelyen zászló leng. A küzdők közül kiemelkedik egy hatalmas turbános török harcos felé karddal sújtó monumentális nőalak, aki baljával eleső férjét öleli magához. Az olajvázlaton folthatásban emeli ki Székely a kép fő hősnőjét, aki most már szinte táncos ritmusban lendíti előre kardját, ellenfele pedig már zuhan is hátrafelé. A várfalhoz támasztott létrák és a kapaszkodó törökök elrendezése alkalmaszkodik a főalak mozdulatának ritmusához, amelyet a kép jobb oldalán elhelyezett másik hős védő asszony még erősebben megismétel. (Forrás: Szabó Júlia: A XIX. század festészete Magyarországon)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1324x1710 \u000A         300 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/041200/041293   [Metadata]" ;
+	dc:relation          "Az egri nők az ostromolt vár falán [ http://keptar.oszk.hu/006300/006391]"@hu, "Wikipédia: Székely Bertalan [ http://hu.wikipedia.org/wiki/Sz%C3%A9kely_Bertalan]"@hu, "SZÁZ SZÉP KÉP: Székely Bertalan: Egri nők [ http://mek.oszk.hu/01400/01474/html/index.htm]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "historizmus"@hu, "History, local history"@hu, "történelmi festmény"@hu, "ostromkép"@hu, "hősábrázolás"@hu, "történelmi esemény ábrázolása"@hu, "Fine arts, visual arts"@hu ;
+	dc:title             "Az egri nők"@hu ;
+	dc:type              "újságrészlet"@hu, "esemény"@hu, "painting"@hu ;
+	dcterms:alternative  "Székely Bertalan történeti festményei"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041293__> .
+
+<http://keptar.oszk.hu/041200/041293/1900bb_Page_086_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "15753"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_041200_041293__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041293__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041293__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/041200/041293>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041293__/manifest> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041293__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:07:22.492Z" ;
+	dcterms:modified          "2015-09-14T11:56:23.259Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F041200%2F041293%2F1900bb_Page_086_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041293__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:10.942Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041293__> .

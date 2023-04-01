@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.436Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k1275598> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k1275598/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k1275598>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1645> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k1275598> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k1275598>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:49:42.951Z" ;
+	dcterms:modified          "2018-03-26T12:24:42.794Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598> ;
+	edm:completeness          "9" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k1275598> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k1275598.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k1275598>
+	a                   ore:Proxy ;
+	dc:creator          "Whittaker, D.. Arrangeur", "Société des concerts du Conservatoire (Paris). Orchestre", "Händel, Georg Friedrich (1685-1759). Compositeur", "Weingartner, Felix (1863-1942). Direction d'orchestre" ;
+	dc:date             "193." ;
+	dc:description      "Comprend : Dream music. [Act II], [Ballet] - Ballet music : choix", "Titre uniforme : [Alcina. HWV 34]. Choix ; arr." ;
+	dc:format           "2 disques : 78 t, aig. ; 30 cm", "disc"@eng, "disque pré-lp"@fre, "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k1275598", "Numéro commercial : Columbia LX 918", "CLX 2189, CLX 2190Columbia", "CLX 2191, CLX 2192Columbia" ;
+	dc:language         "zxx" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb382935719"@fr, "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb382935719"@fr ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, SD 78 30-3853" ;
+	dc:subject          "musique instrumentale orchestrale", "musique baroque" ;
+	dc:title            "Alcina : extraits / Haendel, comp. ; D. Whittaker, arr." ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k1275598> .
+
+<http://data.europeana.eu/concept/1645>
+	a                skos:Concept ;
+	skos:altLabel    "Music of the Baroque"@en, "Música barroca"@es, "Baroque"@en, "Baroque period"@en, "Musica barroca"@es, "Baroque era"@en, "Μουσική μπαρόκ"@el, "Musica del Barroco"@es, "Barroc"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://id.loc.gov/authorities/names/sh85088767>, <https://www.freebase.com/m/01fsz>, <http://purl.org/bncf/tid/2572>, <https://g.co/kg/m/01fsz>, <http://www.wikidata.org/entity/Q8361>, <http://data.bnf.fr/ark:/12148/cb16599814s>, <http://id.ndl.go.jp/auth/ndlna/00560532> ;
+	skos:note        "Estilo musical desde el nacimiento de la ópera siglo XVII hasta mediados siglo XVIII"@es, "Periode in der abendländischen Kunstmusik"@de, "Stile musicale fra il XVII e il XVIII secolo"@it, "Genre musical du XVIIIe siècle"@fr, "Μουσικό είδος"@el, "Stil ta’ mużika tal-Punent"@mt, "Muzyka tworzona w okresie baroku"@pl, "Style of Western art music"@en, "Glasbeni stil v času baroka"@sl, "Muziekperiode tussen ca. 1600 en 1750"@nl, "Estil musical"@ca, "Období v dějinách evropské hudby"@cs, "Kaikki 1600-luvulla ja 1700-luvun alkupuolella sävelletty länsimainen taidemusiikki"@fi ;
+	skos:prefLabel   "Baroko muzika"@lt, "Música del Barroco"@es, "Barócach"@ga, "Barokmuziek"@nl, "Música barroca"@pt, "Música barroca"@ca, "Barokkmuusika"@et, "Barokk zene"@hu, "Barockens musik"@sv, "Mużika Barokka"@mt, "Baroque music"@en, "Barokní hudba"@cs, "Musica barocca"@it, "Baroka mūzika"@lv, "Barokmusik"@da, "Baroková hudba"@sk, "Barocul în muzică"@ro, "Музыка эпохи барокко"@ru, "Μπαρόκ μουσική"@el, "Musique baroque"@fr, "Barokna glazba"@hr, "Muzyka barokowa"@pl, "Barockmusik"@de, "Baročna glasba"@sl, "Barokkimusiikki"@fi .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.437Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k1275598> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k1275598>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k1275598> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k1275598> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k1275598.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1275598.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3161"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#006400"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1275598>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "196633"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

@@ -1,0 +1,87 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92097/BibliographicResource_1000126671260>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92097/BibliographicResource_1000126671260> .
+
+<http://data.europeana.eu/aggregation/europeana/92097/BibliographicResource_1000126671260>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-12T09:05:32.139Z" ;
+	dcterms:modified          "2014-12-12T09:05:32.139Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260#contentTier>, <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260> ;
+	edm:completeness          "0" ;
+	edm:country               "Estonia" ;
+	edm:datasetName           "92097_Ag_EU_TEL_a1034_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/92097/BibliographicResource_1000126671260> ;
+	edm:language              "et" .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126671260>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126671260#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:09.591Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126671260> .
+
+<http://data.europeana.eu/organization/1482250000004517433>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Tartu"@en .
+
+<http://hdl.handle.net/10062/14369>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16028"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126671260#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:09.591Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126671260> .
+
+<http://data.europeana.eu/proxy/provider/92097/BibliographicResource_1000126671260>
+	a                   ore:Proxy ;
+	dc:creator          "Mander, Karel van", "Gheyn, Jacob de" ;
+	dc:date             "2009-11-23" ;
+	dc:identifier       "http://hdl.handle.net/10062/14369" ;
+	dc:language         "mul" ;
+	dc:title            "[Joosep]" ;
+	dc:type             "Image" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1034> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126671260> .
+
+<http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126671260>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92097/BibliographicResource_1000126671260> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517433> ;
+	edm:isShownAt      <http://hdl.handle.net/10062/14369> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

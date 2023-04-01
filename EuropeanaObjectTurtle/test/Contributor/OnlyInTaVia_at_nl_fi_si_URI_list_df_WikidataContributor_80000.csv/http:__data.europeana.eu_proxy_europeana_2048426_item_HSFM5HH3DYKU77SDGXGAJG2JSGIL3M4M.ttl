@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2245> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> .
+
+<http://data.europeana.eu/aggregation/provider/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477390> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-4335862> ;
+	edm:isShownBy      <http://goobipr2.uni-weimar.de/viewer/content/PPN679708642/1000/0/00000141.jpg> ;
+	edm:object         <http://goobipr2.uni-weimar.de/viewer/content/PPN679708642/1000/0/00000141.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/aggregation/europeana/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T16:48:58.323Z" ;
+	dcterms:modified          "2016-02-15T16:48:58.323Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M#metadataTier>, <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048426_Ag_DE_DDB_Weimar" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgoobipr2.uni-weimar.de%2Fviewer%2Fcontent%2FPPN679708642%2F1000%2F0%2F00000141.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://goobipr2.uni-weimar.de/viewer/content/PPN679708642/1000/0/00000141.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M/manifest> ;
+	ebucore:fileByteSize    "106642"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1320"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "999"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-4335862>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:30.063Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> .
+
+<http://data.europeana.eu/organization/1482250000004477390>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bauhaus University Weimar. University Library"@en .
+
+<http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2245>
+	a                skos:Concept ;
+	skos:altLabel    "Seção"@pt, "Capitulo de una obra escrita"@es, "Capitulo de un libro"@es, "Capítulo de una obra escrita"@es, "Book section"@en, "Bokkapitel"@sv, "Capítulo de un libro"@es, "Capítol"@ca, "Book chapter"@en, "Grāmatas nodaļa"@lv, "Capítulo de libro"@es, "Chapitre d'un ouvrage"@fr, "Capitulo"@es, "Chapitre d'ouvrage"@fr ;
+	skos:exactMatch  <http://thesaurus.europeanafashion.eu/thesaurus/10848>, <https://citationstyles.org/ontology/type/chapter>, <https://g.co/kg/m/042scs>, <http://vocab.getty.edu/aat/300311699>, <https://schema.org/Chapter>, <http://babelnet.org/rdf/s00182115n>, <https://www.freebase.com/m/042scs>, <http://bibliograph.net/Chapter>, <http://purl.org/spar/fabio/BookChapter>, <http://purl.org/coar/resource_type/c_3248>, <http://www.wikidata.org/entity/Q1980247> ;
+	skos:note        "Část knihy"@cs, "Kirjan tai muunkin tekstin osa"@fi, "Partie d'un texte"@fr, "Jedna z części dzieła literackiego"@pl, "Часть произведения или книги"@ru, "Del af en tekst"@da, "Secció d'una obra escrita"@ca, "Del av texten i en bok"@sv, "Ενότητα ενός βιβλίου"@el, "Suddivisione di un testo"@it, "Größere Einteilung in einer geschriebenen oder gezeichneten Geschichte"@de, "Sección de una obra escrita de cierta longitud"@es, "Section of the text in a book or video game"@en ;
+	skos:prefLabel   "Luku"@fi, "Hoofdstuk"@nl, "Fejezet"@hu, "Глава"@ru, "Capítulo"@es, "Capítulo de livro"@pt, "Chapitre"@fr, "Nodaļa"@lv, "Kapitola"@cs, "Kapitola"@sk, "Capítol literari"@ca, "Caibidil"@ga, "Rozdział"@pl, "Κεφάλαιο"@el, "Kapitel"@de, "Kapitel"@sv, "Kapitel"@da, "Chapter"@en, "Capitolo"@it, "Capitol"@ro, "Poglavje"@sl ;
+	skos:related     <http://data.europeana.eu/concept/6> .
+
+<http://data.europeana.eu/proxy/provider/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M>
+	a                     ore:Proxy ;
+	dc:contributor        "Snyders, Frans" ;
+	dc:language           "ger" ;
+	dc:source             "Die Kaiserliche Gemälde-Galerie in Wien ; Bd. 2" ;
+	dc:title              "Ein Fischmarkt." ;
+	dc:type               "Chapter" ;
+	dcterms:isPartOf      <http://www.deutsche-digitale-bibliothek.de/item/WA6FCPOWMVMIQWQN4BYECPNQ3G4PIRPK> ;
+	edm:currentLocation   <http://d-nb.info/gnd/4065105-8> ;
+	edm:europeanaProxy    "false" ;
+	edm:isNextInSequence  <http://www.deutsche-digitale-bibliothek.de/item/4ORPJRVPA32INN2BUAU7HVEDFMSOUUXV> ;
+	edm:type              "TEXT" ;
+	ore:proxyFor          <http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> ;
+	ore:proxyIn           <http://data.europeana.eu/aggregation/provider/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> .
+
+<http://data.europeana.eu/item/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:30.062Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_HSFM5HH3DYKU77SDGXGAJG2JSGIL3M4M> .

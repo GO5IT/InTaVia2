@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135587733>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000105224> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000105224> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135587733>
+	a                   ore:Proxy ;
+	dc:creator          "John Vanbrugh" ;
+	dc:description      "Written by Mr. Vanbrug." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000381732" ;
+	dc:language         "en" ;
+	dc:publisher        "T. Johnson" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "The provok'd wife a comedy" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "107 p." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1721" ;
+	dcterms:spatial     <http://sws.geonames.org/2643743/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135587733> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://sws.geonames.org/2643743/>
+	a               edm:Place ;
+	skos:prefLabel  "London (Herstellung)" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135587733>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/147362> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1721" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135587733> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000105224>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "214"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/147362>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://libris.kb.se/jgvxzt322x7tsbv>, <https://www.freebase.com/m/0122xn>, <http://data.bibliotheken.nl/id/thes/p068651821>, <http://d-nb.info/gnd/11862606X>, <https://livedata.bibsys.no/authority/90196588>, <http://libris.kb.se/resource/auth/209732>, <http://www.wikidata.org/entity/Q333398>, <http://id.worldcat.org/fast/1801710>, <http://id.loc.gov/authorities/names/n50045023>, <http://viaf.org/viaf/7398042>, <http://openlibrary.org/works/OL1071274A>, <http://data.bnf.fr/ark:/12148/cb11927625z>, <http://www.idref.fr/027176665/id>, <http://dbpedia.org/resource/John_Vanbrugh>, <https://g.co/kg/m/0122xn>, <http://openlibrary.org/works/OL7198475A>, <http://vocab.getty.edu/ulan/500004345> ;
+	rdaGr2:dateOfBirth             "1664-01-24" ;
+	rdaGr2:dateOfDeath             "1726-03-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/177207> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/177208> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/94> ;
+	skos:altLabel                  "John Vanbrough"@en, "John Verbrugh"@en, "Sir John Vanburgh"@en, "Vanbrugh"@de, "Vanbrugh"@sv, "Vanbrugh"@da, "John Van Brugg"@en, "John, Sir Vanbrugh"@en, "Ванбру Джон"@ru, "Ванбру Д."@ru, "Sir John Vanbrugh"@pt, "Sir John Vanbrugh"@en, "Sir John Vanbrugh"@da, "John Vanbrugh Sir"@en ;
+	skos:note                      "Englischer Barock-Architekt und Dramatiker"@de, "Architetto e drammaturgo inglese"@it, "Auteur dramatique et architecte"@fr, "Arquitecto y dramaturgo inglés"@es, "English architect and dramatist"@en, "Brits architect"@nl ;
+	skos:prefLabel                 "John Vanbrugh"@nl, "John Vanbrugh"@ca, "Джон Ванбру"@ru, "John Vanbrugh"@hr, "John Vanbrugh"@de, "John Vanbrugh"@sv, "John Vanbrugh"@fi, "John Vanbrugh"@pt, "John Vanbrugh"@lt, "John Vanbrugh"@en, "John Vanbrugh"@lv, "John Vanbrugh"@it, "John Vanbrugh"@fr, "John Vanbrugh"@hu, "John Vanbrugh"@es, "John Vanbrugh"@et, "John Vanbrugh"@cs, "John Vanbrugh"@sk, "John Vanbrugh"@sl, "John Vanbrugh"@ga, "John Vanbrugh"@pl, "John Vanbrugh"@ro, "John Vanbrugh"@da .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135587733#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:48.578Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135587733> .
+
+<http://lib.ugent.be/europeana/900000105224>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14505"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135587733>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T04:01:58.361Z" ;
+	dcterms:modified          "2015-12-04T13:17:16.267Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135587733> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135587733> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000105224&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135587733#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:48.577Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135587733> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135587733>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

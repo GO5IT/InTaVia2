@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88038430>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:17.939Z" ;
+	dcterms:modified          "2018-03-26T12:27:08.825Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88038430> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88038430.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88038430>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88038430> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88038430.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88038430.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4294"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0E68C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88038430>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1962" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88038430> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:26.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88038430> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88038430/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:26.660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88038430> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88038430>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "276613"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88038430>
+	a                   ore:Proxy ;
+	dc:creator          "Ratti, Eugenia (1933-....). Soprano", "Toscanini, Arturo (1867-1957). Direction d'orchestre", "Saint-Saëns, Camille (1835-1921). Auteur ou responsable intellectuel", "Leinsdorf, Erich (1912-1993). Direction d'orchestre", "Nelli, Herva (1909-1994). Soprano", "Metropolitan opera (New York). Orchestra. Interprète", "Carteri, Rosanna (1930-....). Soprano", "Danco, Suzanne (1911-2000). Soprano", "Siepi, Cesare (1923-2010). Basse (voix)", "Berger, Erna (1900-1990). Soprano", "Monteux, Pierre (1875-1964). Direction d'orchestre", "Peerce, Jan (1904-1984). Ténor", "RCA. New-York. Orchestra. Interprète", "Del Monaco, Mario (1915-1982). Ténor", "Di Stefano, Giuseppe (1921-2008). Ténor", "Mozart, Wolfgang Amadeus (1756-1791). Auteur ou responsable intellectuel", "Albanese, Licia (1913-2014). Soprano", "Erede, Alberto (1908-2001). Direction d'orchestre", "Puccini, Giacomo (1858-1924). Auteur ou responsable intellectuel", "Stevens, Risë (1913-2013). Mezzo-soprano", "Tebaldi, Renata (1922-2004). Soprano", "Vinay, Ramón (1912-1996). Ténor", "Perlea, Ionel (1900-1970). Direction d'orchestre", "Teatro dell'Opera (Rome, Italie). Orchestra. Interprète", "Valletti, Cesare (1921-2000). Ténor", "NBC Symphony Orchestra. Interprète", "Björling, Jussi (1911-1960). Ténor", "Boston symphony orchestra. Interprète", "Wiener Philharmoniker. Orchestre", "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Reiner, Fritz (1888-1963). Direction d'orchestre", "Bizet, Georges (1838-1875). Auteur ou responsable intellectuel", "Berlioz, Hector (1803-1869). Auteur ou responsable intellectuel", "Cellini, Renato (1912-1967). Direction d'orchestre", "Munch, Charles (1891-1968). Direction d'orchestre", "Milanov, Zinka (1906-1989). Soprano", "Poleri, David (1921-1967). Ténor", "Maggio musicale fiorentino. Orchestra. Interprète", "Cleva, Fausto (1902-1971). Direction d'orchestre", "Mascagni, Pietro (1863-1945). Auteur ou responsable intellectuel" ;
+	dc:date             "1962" ;
+	dc:description      "Titre uniforme : [La bohème]. Extrait", "Titre uniforme : [Rigoletto]. Extrait", "Titre uniforme : [La damnation de Faust. H 111]. Extrait", "Titre uniforme : [Don Giovanni. KV 527]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Carmen. GB 9]. Extrait", "Titre uniforme : [La traviata]. Extr.", "Comprend : LA BOHEME : duo Acte I / Giacomo PUCCINI ; Giuseppe di STEFANO, ténor (Rodolphe) et Licia ALBANESE, soprano avec Orchestre RCA Victor dir. Renato CELLINI - RIGOLETTO - duo Acte II / Giuseppe VERDI ; Jan PEERCE, ténor (Le Duc) - Erna BERGER, soprano (Gilda) avec Orchestre RCA Victor dir. Renato CELLINI - SAMSON ET DALILA Duo Acte II / Camille SAINT-SAENS ; Mario del MONACO, ténor (Samson) - Rise STEVENS (Dalila) ; mezzo-soprano, avec l'Orchestre du Metropolitan Opera dir. Faust CLEVA ? - LA TRAVIATA Duo Acte IV / Giuseppe VERDI ; avec Rosanna CARTERI, soprano - Cesare VALLETTI, ténor, avec Orch. de l'Opéra de Rome dir. Pierre MONTEUX - LA DAMNATION DE FAUST Duo 2ème part. / BERLIOZ ; David POLERI, ténor (Faust) - Suzanne DANCO, soprano (Marguerite) avec Orchestre Symphonique de Boston dir. Charles MUNCH - OTHELLO : Duo Acte I / Giuseppe VERDI ; Ramon VINAY, ténor (Othello) Herva NELLI, soprano (Desdémone) et N.B.C. Symphony Orchestra dir. Arturo TOSCANINI - DON JUAN Duo Acte I / MOZART ; Cesare SIEPI, basse (Don Juan) - Eugenia RATTI, soprano (Zerline) avec Orchestre Philharmonique de Vienne dir. Erich LEINSDORF - CARMEN : Duo Acte I / Georges BIZET ; Risë STEVENS, mezzo-soprano (Carmen) - Jan PEERCE, ténor (Don José) et Orchestre RCA Victor dir. Fritz REINER - CAVALLERIA RUSTICANA - Duo / MASCAGNI ; Renata TEBALDI, soprano et Jussi BJOERLING, ténor (Turridu) avec Orchestre du Mai musical Florentin dir. Alberto EREDE - AIDA - Duo final IVème acte / Giuseppe VERDI ; Zenka MILANOV, soprano (Aïda) et Jussi BJOERLING, ténor (Radamès) avec Orchestre de l'Opéra de Rome dir. Jonel PERLEA", "Titre uniforme : [Samson et Dalila. R 288]. Extrait", "Titre uniforme : [Aida]. Extrait", "Titre uniforme : [Otello]. Extrait", "Titre uniforme : [Cavalleria rusticana]. Extrait" ;
+	dc:format           "disc"@eng, "multipart/mixed", "1 disque : 33 t ; 30 cm", "disque microsillon"@fre ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88038430", "Numéro commercial : RCA 430637" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38006574v"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-12516" ;
+	dc:title            "DUOS D'AMOUR A L'OPERA" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88038430> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88038430> .

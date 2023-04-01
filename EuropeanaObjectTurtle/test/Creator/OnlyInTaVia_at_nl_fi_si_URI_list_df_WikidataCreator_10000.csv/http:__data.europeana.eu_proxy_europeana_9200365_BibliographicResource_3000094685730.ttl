@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/manifest.json> ;
+	ebucore:fileByteSize    "23288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "316"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T18:23:25.227Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b10302549r> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b10302549r>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "579526"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "23288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "316"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b10302549r>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b10302549r" ;
+	dc:type             <http://data.europeana.eu/concept/35> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b10302549r> .
+
+<http://data.europeana.eu/concept/35>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4127900-1>, <https://www.freebase.com/m/02csf>, <http://www.wikidata.org/entity/Q93184>, <http://vocab.getty.edu/aat/300033973>, <http://id.loc.gov/authorities/names/sh85039408>, <http://vocabularies.unesco.org/thesaurus/concept4716>, <http://id.nlm.nih.gov/mesh/D020472>, <http://id.ndl.go.jp/auth/ndlna/00561487>, <http://www.yso.fi/onto/yso/p22465>, <https://g.co/kg/m/02csf>, <http://thesaurus.europeanafashion.eu/thesaurus/10307>, <http://babelnet.org/rdf/s00028639n>, <http://cv.iptc.org/newscodes/mediatopic/20000034>, <http://data.bnf.fr/ark:/12148/cb119362234>, <https://schema.org/Drawing>, <http://purl.org/bncf/tid/1062> ;
+	skos:note        "Umělecké dílo"@cs, "Obra de arte visual em meio bidimensional"@pt, "Saothar ealaíne"@ga, "Typ av tvådimensionell bildkonst"@sv, "Kuvataiteen teos"@fi, "Kompozycja linii wykonana w dwóch wymiarach"@pl, "Lavoro artistico bidimensionale"@it, "Arte visual en dos dimensiones"@es, "Visual artwork in two-dimensional medium"@en, "Изображение на плоскости, созданное средствами графики"@ru, "Obra d'art en un medi bidimensional"@ca, "Bildmotiv in vereinfachender Weise mit Linien und Strichen dargestellt"@de, "Type af to-dimensionelle billedkunst"@da, "Surface portant une représentation faite à l’aide d'un matériel d'écriture"@fr ;
+	skos:prefLabel   "Zīmējums"@lv, "Рисунка"@bg, "Risba"@sl, "Joonistus"@et, "Piirustus"@fi, "Rajz"@hu, "Líníocht"@ga, "Tekening"@nl, "Desenho"@pt, "Dessin"@fr, "Dibuix"@ca, "Σχέδιο"@el, "Piešimas"@lt, "Crtež"@hr, "Tegning"@da, "Desen"@ro, "Dibujo"@es, "Zeichnung"@de, "Kresba"@sk, "Kresba"@cs, "Рисунок"@ru, "Teckning"@sv, "Rysunek"@pl, "Marrazki"@eu, "Drawing"@en, "Disegno"@it .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T18:23:25.227Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b10302549r> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b10302549r>
+	a                   ore:Proxy ;
+	dc:creator          "Flamen, Albert (1620?-1669). Dessinateur" ;
+	dc:date             "166." ;
+	dc:description      "Référence bibliographique : Destailleur Paris, t. 1, 39", "Appartient à l’ensemble documentaire : DesDestail" ;
+	dc:format           "Dessin à la plume et encre brune, lavis à l'encre de Chine ; 12,9 x 22,2 cm", "Nombre total de vues : 1" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b10302549r" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb40311515v" ;
+	dc:rights           <http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Estampes et photographie, RESERVE FOL-VE-53 (C)" ;
+	dc:subject          "Paysages -- 17e siècle"@fre, "Paris (France) -- Arrondissement (13e)"@fre, "Seine (France ; cours d'eau)"@fre, "Hôpital de la Salpêtrière (Paris)"@fre ;
+	dc:title            "Veuë de L'ospital du petit arsenacq du Costé des moulins du faulxbourg st victor : [dessin] / [Albert Flamen]" ;
+	dc:type             "image"@eng, "drawing"@eng, "image fixe"@fre, "dessin"@fre, "still image"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b10302549r> .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b10302549r>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b10302549r> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b10302549r/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b10302549r>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T18:23:25.254Z" ;
+	dcterms:modified          "2019-09-02T18:23:25.254Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r#contentTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b10302549r> ;
+	edm:completeness          "9" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b10302549r> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b10302549r%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .

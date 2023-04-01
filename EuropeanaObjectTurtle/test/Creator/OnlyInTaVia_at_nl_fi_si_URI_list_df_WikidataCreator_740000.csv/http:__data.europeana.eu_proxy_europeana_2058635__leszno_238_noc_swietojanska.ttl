@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:16.093Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_238_noc_swietojanska> .
+
+<http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/238/noc_swietojanska.html>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004510573>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzeum Okręgowe w Lesznie"@pl, "District Museum in Leszno"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/2058635/_leszno_238_noc_swietojanska>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzeum Okręgowe w Lesznie" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510573> ;
+	edm:isShownAt      <http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/238/noc_swietojanska.html> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2058635/_leszno_238_noc_swietojanska>
+	a                   ore:Proxy ;
+	dc:coverage         "1904,             Polska (51.610298, 16.962908)," ;
+	dc:creator          "Włodzimierz Tetmajer" ;
+	dc:date             "1904" ;
+	dc:description      "Obraz pochodzi z młodopolskiego najlepszego okresu twórczości Tetmajera. Jest to jedna z nielicznych czy bodaj jedyna jego praca, w której zmysł obserwacji łączy z luministycznym potraktowaniem tematu." ;
+	dc:language         "pl" ;
+	dc:rights           "Muzeum Okręgowe w Lesznie" ;
+	dc:subject          "Autor: Włodzimierz Tetmajer;  Państwo: Polska;  Czas powstania: 1904;  Technika/materiał: olej, płótno;  Temat: Noc świętojańska;  Przedstawione postaci: dzieci, chłopka Wymiary: wys. 92, szer. 148 cm;  Numer inwentarza: MLS1476" ;
+	dc:title            "Noc świętojańska" ;
+	dc:type             "obraz", "scena rodzajowa" ;
+	dcterms:spatial     "Polska (51.610298, 16.962908)," ;
+	dcterms:temporal    "1904" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058635/_leszno_238_noc_swietojanska> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/2058635/_leszno_238_noc_swietojanska>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/52841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1904" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058635/_leszno_238_noc_swietojanska> .
+
+<http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:16.092Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_238_noc_swietojanska> .
+
+<http://data.europeana.eu/agent/52841>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/83> ;
+	owl:sameAs           <http://dbpedia.org/resource/W%C5%82odzimierz_Tetmajer>, <http://openlibrary.org/works/OL735114A>, <http://vocab.getty.edu/ulan/500027691>, <http://data.bnf.fr/ark:/12148/cb11706853r>, <https://www.freebase.com/m/02727c7>, <http://www.wikidata.org/entity/Q353309>, <http://viaf.org/viaf/84037537>, <http://www.idref.fr/167105078/id>, <http://id.loc.gov/authorities/names/n82239748>, <http://d-nb.info/gnd/119542110>, <http://id.worldcat.org/fast/106118>, <https://g.co/kg/m/02727c7>, <http://data.bibliotheken.nl/id/thes/p071349677> ;
+	rdaGr2:dateOfBirth   "1862-12-31" ;
+	rdaGr2:dateOfDeath   "1923-12-26" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/134591> ;
+	skos:altLabel        "Wlodimierz Tetmayer"@en, "Vlodimierz Przerwa-Tetmayer"@en, "Vlodimierz Tetmayer"@en, "Wlodzimierz Tetmajer"@de, "Wlodzimierz Tetmajer"@nl, "Wlodzimierz Przerwa-Tetmajer"@de, "Prezerwa Wlodzimierz Tetmajer"@en, "Влодзимеж Тетмайер"@ru, "Włodzimierz Przerwa-Tetmajer"@de, "Włodzimierz Przerwa-Tetmajer"@en, "Włodzimierz Przerwa-Tetmajer"@pl, "Valdemar Przerwa-Tetmayer"@en, "Wlodzimierz Tetmayer"@en, "Valdemar Tetmayer"@en, "Wlozimierz Przerwa-Tetmayer"@en ;
+	skos:note            "Ealaíontóir Polannach"@ga, "Polnischer Maler und Politiker"@de, "Polski artysta malarz"@pl, "Artist polonez"@ro, "Artista polonès"@ca, "Pools kunstschilder (1862-1923)"@nl, "Poola kunstnik"@et, "Polish artist (1862-1923)"@en, "Artista polaco"@es, "Artiste polonais"@fr ;
+	skos:prefLabel       "Βουοντζίμιες Τετμάγερ"@el, "Włodzimierz Tetmajer"@en, "Włodzimierz Tetmajer"@it, "Włodzimierz Tetmajer"@fr, "Włodzimierz Tetmajer"@es, "Włodzimierz Tetmajer"@de, "Włodzimierz Tetmajer"@sv, "Włodzimierz Tetmajer"@pt, "Włodzimierz Tetmajer"@cs, "Włodzimierz Tetmajer"@sl, "Włodzimierz Tetmajer"@ga, "Włodzimierz Tetmajer"@pl, "Włodzimierz Tetmajer"@da, "Włodzimierz Tetmajer"@ca, "Włodzimierz Tetmajer"@nl, "Тетмайер, Влодзимеж"@ru .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2058635/_leszno_238_noc_swietojanska>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T15:42:40.067Z" ;
+	dcterms:modified          "2016-02-22T14:36:33.411Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska#contentTier>, <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska> ;
+	edm:completeness          "0" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "2058635_Ag_EU_LoCloud_PSNC" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058635/_leszno_238_noc_swietojanska> ;
+	edm:language              "pl" .
+
+<http://data.europeana.eu/item/2058635/_leszno_238_noc_swietojanska>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

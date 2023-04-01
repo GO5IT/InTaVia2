@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/07932/diglit_cpgraec45>
+	a                   ore:Proxy ;
+	dc:creator          "Homer" ;
+	dc:description      "Shelfmark: Universitätsbibliothek Heidelberg, Cod. Pal. graec. 45" ;
+	dc:identifier       "urn:nbn:de:bsz:16-diglit-35948", "oai:digi.ub.uni-heidelberg.de:3594" ;
+	dc:language         "grc" ;
+	dc:rights           <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	dc:source           "Universitätsbibliothek Heidelberg" ;
+	dc:subject          "Bibliotheca Palatina"@de, "Bibliotheca Palatina"@en ;
+	dc:title            "Odysee (u.a.)"@grc ;
+	dc:type             "Text" ;
+	dcterms:created     "14. Jahrhundert", "1300" ;
+	dcterms:isPartOf    "Sammlung34 - Codices Palatini graeci"@de, "Heidelberger historische Bestände — digital: Codices Palatini graeci"@de, "Handschriften"@de, "Bibliotheca Palatina"@de ;
+	dcterms:spatial     "Süditalien (Terra d'Otranto)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_cpgraec45> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07932/diglit_cpgraec45> .
+
+<http://digi.ub.uni-heidelberg.de/diglitData/introimage/cpgraec45.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "76032"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "439"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "320"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://diglit.ub.uni-heidelberg.de/image/cpgraec45/000_A_Vorderdeckel.jpg/full/full/0/default.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpg" ;
+	dcterms:isReferencedBy  <http://digi.ub.uni-heidelberg.de/diglit/iiif/cpgraec45/manifest.json> ;
+	ebucore:fileByteSize    "1154957"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2213"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1539"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://diglit.ub.uni-heidelberg.de/image/cpgraec45/000_A_Vorderdeckel.jpg> .
+
+<http://data.europeana.eu/aggregation/provider/07932/diglit_cpgraec45>
+	a                  ore:Aggregation ;
+	dc:rights          <http://www.ub.uni-heidelberg.de/helios/digi/nutzung/Welcome.html> ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07932/diglit_cpgraec45> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:isShownAt      <http://digi.ub.uni-heidelberg.de/diglit/cpgraec45> ;
+	edm:isShownBy      <http://diglit.ub.uni-heidelberg.de/image/cpgraec45/000_A_Vorderdeckel.jpg/full/full/0/default.jpg> ;
+	edm:object         <http://digi.ub.uni-heidelberg.de/diglitData/introimage/cpgraec45.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516197> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://data.europeana.eu/organization/1482250000004516197>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca de la Universitat de Heidelberg"@ca, "Biblioteca de la Universidad de Heidelberg"@es, "Biblioteka Uniwersytecka w Heidelbergu"@pl, "bibliothèque de l'Université d'Heidelberg"@fr, "Heidelberg University Library"@en, "Библиотека университета Гейдельберга"@ru, "Universitätsbibliothek Heidelberg"@de .
+
+<http://data.europeana.eu/aggregation/europeana/07932/diglit_cpgraec45>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-08-10T17:14:25.885Z" ;
+	dcterms:modified          "2018-03-22T10:48:52.112Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07932/diglit_cpgraec45#contentTier>, <http://data.europeana.eu/item/07932/diglit_cpgraec45#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07932/diglit_cpgraec45> ;
+	edm:completeness          "6" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "07932_L_DE_UniLibHeidelberg_handschriften_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/07932/diglit_cpgraec45> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdigi.ub.uni-heidelberg.de%2FdiglitData%2Fintroimage%2Fcpgraec45.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/3.0/de> .
+
+<http://data.europeana.eu/item/07932/diglit_cpgraec45#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:31:45.552Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_cpgraec45> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://digi.ub.uni-heidelberg.de/diglit/cpgraec45>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "33880"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/timespan/14>
+	a               edm:TimeSpan ;
+	edm:begin       "1301-01-01" ;
+	edm:end         "1400-01-01" ;
+	owl:sameAs      <https://g.co/kg/m/08lmx>, <http://id.loc.gov/authorities/names/sh85051098>, <http://vocab.getty.edu/aat/300404506>, <http://dbpedia.org/resource/14th_century>, <https://www.freebase.com/m/08lmx>, <http://www.wikidata.org/entity/Q7034> ;
+	skos:altLabel   "14th-century"@en, "1300-talet (sekel)"@sv, "14° secolo"@it, "1300-tal"@sv, "Trecento"@it, "14:e århundradet"@sv, "14:e seklet"@sv, "14 век"@ru, "14e siècle"@fr, "Secolo XIV"@it, "1300-talet (århundrade)"@sv, "XIV Secolo"@it ;
+	skos:prefLabel  "Segle XIV"@ca, "14. storočie"@sk, "14ος αιώνας"@el, "XIV secolo"@it, "Secolul al XIV-lea"@ro, "Siglo XIV"@es, "XIV. mendea"@eu, "14. stoljeće"@hr, "1300-talet"@sv, "14ú haois"@ga, "14. század"@hu, "XIV amžius"@lt, "14. stoletje"@sl, "14th century"@en, "XIV wiek"@pl, "14. århundrede"@da, "14 век"@bg, "14. Jahrhundert"@de, "14e eeuw"@nl, "Século XIV"@pt, "XIVe siècle"@fr, "14. století"@cs, "1300-luku"@fi, "XIV век"@ru, "14. sajand"@et, "14. gadsimts"@lv .
+
+<http://diglit.ub.uni-heidelberg.de/image/cpgraec45/000_A_Vorderdeckel.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/07932/diglit_cpgraec45>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/07932/diglit_cpgraec45>
+	a                   ore:Proxy ;
+	dcterms:created     <http://data.europeana.eu/timespan/14> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1300" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07932/diglit_cpgraec45> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07932/diglit_cpgraec45> .
+
+<http://data.europeana.eu/item/07932/diglit_cpgraec45#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:31:45.552Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07932/diglit_cpgraec45> .

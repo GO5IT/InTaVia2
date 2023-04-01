@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56>
+	a                   ore:Proxy ;
+	dc:contributor      "Gramophone Concert Record [Label]", "Girardi, Alexander [Gesang]" ;
+	dc:coverage         "20. Jahrhundert - NullerjahreWien" ;
+	dc:creator          "Pick, Gustav [Komponist/in]" ;
+	dc:date             "1905" ;
+	dc:format           "Schallplatte, Schellack - 25 cm, 78/min, Mp3-Audiodatei" ;
+	dc:identifier       "0D0A0596-281-000DB-00010200-0D097B56" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          "Unterhaltung"@de, "Humor"@de, "Publizierte und vervielfältigte Aufnahme"@de, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings> ;
+	dc:title            "Rum vidi bum"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.oesterreich-am-wort.at/sammlung/idn/8/> ;
+	dcterms:spatial     "Wien"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:41:14.054423Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/0D0A0596-281-000DB-00010200-0D097B56> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:41:14.054791Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> .
+
+<http://www.mediathek.at/atom/0D0A0596-281-000DB-00010200-0D097B56>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-22T10:15:51.734Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56#contentTier>, <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> ;
+	edm:language              "de" .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower   <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Oral_histories>, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Language_and_dialect_recordings>, <http://data.europeana.eu/concept/soundgenres/Spoken_word_recordings/Spoken_word_performance_recordings> ;
+	skos:note       "Recordings of spoken words."@en ;
+	skos:prefLabel  "Nagranie mowy"@pl, "Grabaciones sonoras de palabras habladas"@es, "Tonaufnahmen von gesprochene Sprache"@de, "Registrazioni di parole parlate"@it, "Spoken word recordings"@en, "Enregistrements sonores des mots parlés"@fr .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/0D0A0596-281-000DB-00010200-0D097B56" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1905" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0D0A0596_281_000DB_00010200_0D097B56> .

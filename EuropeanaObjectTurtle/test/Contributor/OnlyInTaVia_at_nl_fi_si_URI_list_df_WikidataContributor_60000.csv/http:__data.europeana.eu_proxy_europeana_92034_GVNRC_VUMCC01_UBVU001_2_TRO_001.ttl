@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:26.930Z" ;
+	dcterms:modified          "2018-04-05T18:10:42.466Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AVUMCC01%3AUBVU001-2-TRO-001%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2538> ;
+	dcterms:medium      <http://data.europeana.eu/concept/2275> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001>
+	a                   ore:Proxy ;
+	dc:contributor      "Munnickhuysen, Johan van", "Plas, David van der" ;
+	dc:creator          "Munnickhuysen, Johan van" ;
+	dc:description      "Met 5 regelig Nederlands onderschrift; Ill.techn.: kopergravure", "[Amsterdam] : Louis Renard" ;
+	dc:format           "prent" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:VUMCC01:UBVU001-2-TRO-001", "PORTRET 2 TRO 001" ;
+	dc:rights           "Vrije Universiteit, Amsterdam", "Voor informatie: Vrije Universiteit, Amsterdam"@nl, "For information contact: Vrije Universiteit, Amsterdam"@en ;
+	dc:source           "PORTRET 2 TRO 001 (kopergravure), Protestantse portretten van Museum Catharijneconvent en Vrije Universiteit, Amsterdam" ;
+	dc:subject          "Tromp, Cornelis"@nl ;
+	dc:title            "Cornelis Tromp (1629-1691)" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "[ca. 1710]" ;
+	dcterms:extent      "39x28 cm" ;
+	dcterms:isPartOf    "VUMCC01", "GVN", "Protestantse portretten van Museum Catharijneconvent en Vrije Universiteit, Amsterdam" ;
+	dcterms:medium      "kopergravure", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:50.838Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:50.838Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/VUMCC01:UBVU001-2-TRO-001> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:VUMCC01:UBVU001-2-TRO-001&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_VUMCC01_UBVU001_2_TRO_001>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:VUMCC01:UBVU001-2-TRO-001&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2833"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "190"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/2275>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4033760-1>, <http://www.wikidata.org/entity/Q18887969>, <http://d-nb.info/gnd/4033760-1>, <http://thesaurus.europeanafashion.eu/thesaurus/10785>, <http://vocab.getty.edu/aat/300041341> ;
+	skos:note        "Print from an engraving on copper intended as art or illustrations in books"@en, "Prent geproduceerd als afdruk van een gravure op een koperplaat"@nl, "Odbitka wykonana w technice miedziorytu"@pl, "Estampe produite par la technique de gravure sur cuivre"@fr, "Técnica de impresión"@es, "Kunstdruck oder Buchillustration eines Kupferstichs"@de ;
+	skos:prefLabel   "Гравирование на меди"@ru, "Gravura em cobre"@pt, "Grabado en cobre"@es, "Kopperstik"@da, "Miedzioryt"@pl, "Kupferstich"@de, "Copper engraving print"@en, "Χαλκογραφία"@el, "Chalcographie"@fr, "Rézmetszet"@hu, "Calcografia"@ca, "Kopergravure"@nl, "Calcografia"@it .
+
+<http://www.geheugenvannederland.nl/?/en/items/VUMCC01:UBVU001-2-TRO-001>
+	a  edm:WebResource .

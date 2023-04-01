@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149437284>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:21:32.859Z" ;
+	dcterms:modified          "2016-03-24T08:18:56.725Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284> ;
+	edm:completeness          "10" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149437284> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004475530%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://search.rsl.ru/api/description/01004475530/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "287737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1038"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "798"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149437284>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004475530#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004475530/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284>
+	a  edm:ProvidedCHO .
+
+<http://dlib.rsl.ru/viewer/01004475530#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:59.640Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149437284> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://data.europeana.eu/agent/147133>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/concept/235> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/151259>, <http://data.europeana.eu/agent/8195> ;
+	owl:sameAs           <http://id.ndl.go.jp/auth/ndlna/00457913>, <http://lod.nl.go.kr/resource/KAC199626691>, <http://nlg.okfn.gr/resource/authority/record110062>, <http://data.bibliotheken.nl/id/thes/p068966156>, <http://d-nb.info/gnd/11861911X>, <https://www.freebase.com/m/0hr3g>, <https://g.co/kg/m/0hr3g>, <http://www.wikidata.org/entity/Q13894>, <http://data.bnf.fr/ark:/12148/cb13983132d>, <http://datos.bne.es/resource/XX843379>, <http://www.idref.fr/079207006/id>, <http://dbpedia.org/resource/Richard_Strauss>, <http://id.loc.gov/authorities/names/n79041680>, <https://livedata.bibsys.no/authority/90052984>, <http://libris.kb.se/resource/auth/227428>, <http://viaf.org/viaf/24796264>, <http://data.carnegiehall.org/names/39889>, <http://id.worldcat.org/fast/33837>, <https://libris.kb.se/dbqsvblx0nvp111>, <http://openlibrary.org/works/OL79641A> ;
+	rdaGr2:dateOfBirth   "1866-06-11" ;
+	rdaGr2:dateOfDeath   "1949-09-08" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/1210> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/13821> ;
+	skos:altLabel        "Р. Штраус"@ru, "Strauss"@es, "Strauss"@en, "Strauss"@ca, "Richard Croix Strauss"@de, "Штраус, Рихард"@ru, "Richard Georg Strauss"@es, "Richard Georg Strauss"@cs, "Richard Georg Strauss"@de, "Richard Georg Strauss"@fi, "Richard Georg Strauss"@pt, "Richard Georg Strauss"@en, "Richard Georg Strauss"@fr, "Richard Georg Strauss"@hu, "Richard Georg Strauss"@ca, "Штраус Р."@ru ;
+	skos:note            "Compositore e direttore d'orchestra tedesco"@it, "Niemiecki kompozytor i dyrygent"@pl, "Německý hudební skladatel"@cs, "Deutscher Komponist"@de, "Γερμανός συνθέτης της ύστερης ρομαντικής περιόδου"@el, "Compositor i director d'orquestra alemany"@ca, "German composer and orchestra director"@en, "Tysk kompositör"@sv, "Vokiečių kompozitorius"@lt, "Немецкий композитор (1864-1949)"@ru, "Compositeur allemand"@fr, "Zeneszerző, karmester"@hu, "Saksalainen säveltäjä"@fi, "Tysk komponist og orkesterleder"@da, "Cumadóir agus stiúrthóir Gearmánach (1864-1949)"@ga, "Compositor y director de orquesta alemán (1864-1949)"@es, "Германски композитор"@bg, "Duits componist (1864-1949)"@nl ;
+	skos:prefLabel       "Richard Strauss"@fr, "Richard Strauss"@de, "Richard Strauss"@fi, "Richard Strauss"@pt, "Richard Strauss"@lt, "Richard Strauss"@hr, "Richard Strauss"@hu, "Richard Strauss"@sk, "Richard Strauss"@sl, "Richard Strauss"@ca, "Richard Strauss"@sv, "Richard Strauss"@en, "Richard Strauss"@it, "Richard Strauss"@es, "Richard Strauss"@et, "Richard Strauss"@cs, "Richard Strauss"@pl, "Richard Strauss"@ro, "Richard Strauss"@da, "Richard Strauss"@nl, "Рихард Штраус"@ru, "Rihards Štrauss"@lv, "Richard Strauß"@ga, "Ρίχαρντ Στράους"@el, "Рихард Щраус"@bg .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:59.639Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149437284> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149437284>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/147133> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149437284> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149437284>
+	a                   ore:Proxy ;
+	dc:creator          "Рихард Штраус" ;
+	dc:description      "Имеется электронная копия", "Muisk von Richard Strauss ; Klavierauszug zu 2 Handen mit Hinzufugung de Gesangstexte und der szenischen Bemerkungen von Otto Singer" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "004475530" ;
+	dc:language         "de" ;
+	dc:publisher        "Adolph Furstner" ;
+	dc:title            "Ariadne auf Naxos zu spielen nach dem \u0022Burger als Edelmann\u0022 : Oper in einem Aufzuge von Hugo von Hofmannsthal : Op. 60" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "186 с." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued      "?" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/ru> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149437284> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149437284> .

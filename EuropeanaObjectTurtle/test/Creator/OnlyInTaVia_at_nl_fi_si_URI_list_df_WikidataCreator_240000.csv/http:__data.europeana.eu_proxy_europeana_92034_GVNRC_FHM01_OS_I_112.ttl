@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-112&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21120"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "93"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_112>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-112> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-112&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:36.736Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_112> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-112>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49424"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_112>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/60436> ;
+	dc:creator          <http://data.europeana.eu/agent/60436> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1633" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_112> .
+
+<http://data.europeana.eu/agent/60436>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/47>, <http://data.europeana.eu/concept/216> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/40019>, <http://data.europeana.eu/agent/40017>, <http://data.europeana.eu/agent/40060>, <http://data.europeana.eu/agent/40020>, <http://data.europeana.eu/agent/13351>, <http://data.europeana.eu/agent/40018> ;
+	owl:sameAs           <https://livedata.bibsys.no/authority/14059807>, <http://vocab.getty.edu/ulan/500027794>, <http://dbpedia.org/resource/Frans_Hals>, <http://nlg.okfn.gr/resource/authority/record197112>, <https://g.co/kg/m/0ch5l>, <http://id.ndl.go.jp/auth/ndlna/00442270>, <http://openlibrary.org/works/OL789021A>, <http://www.idref.fr/027440095/id>, <http://data.bnf.fr/ark:/12148/cb119481079>, <http://libris.kb.se/resource/auth/302654>, <http://kulturarvsdata.se/LSH/agents/12713>, <https://libris.kb.se/xv8chnqg52vl6h4>, <http://viaf.org/viaf/100165653>, <https://livedata.bibsys.no/authority/90501787>, <http://id.worldcat.org/fast/28684>, <http://id.loc.gov/authorities/names/n78091972>, <http://data.bibliotheken.nl/id/thes/p069875383>, <http://datos.bne.es/resource/XX988657>, <http://www.wikidata.org/entity/Q167654>, <https://www.freebase.com/m/0ch5l>, <http://d-nb.info/gnd/118545221> ;
+	rdaGr2:dateOfBirth   "1591-01-01" ;
+	rdaGr2:dateOfDeath   "1666-08-26" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203279> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "F. Hals"@en, "F. Hals"@nl, "Hals frans"@en, "Franc Walls"@en, "Franz Halls"@en, "Fr. Hals"@en, "Franszhalsz"@en, "Franz hals"@pt, "Franz hals"@en, "Frans Khal's"@cs, "Frank Hall"@en, "Fr. Hale"@en, "Frankhalls"@en, "Frans, I Hals"@en, "Frans (I) Hals"@sv, "Frans (I) Hals"@en, "Франц Халс"@bg, "Franck Halls"@en, "Francs Hals"@en, "France Halts"@en, "Frantsz halsz"@en, "F: Hals"@en, "Халс Франс"@ru, "Ouden Hals"@en, "Franz Haltz"@en, "Франс Хальс"@ru, "Francis Hales"@en, "François Hall"@en, "Hals f."@en, "Fran. Halse"@en, "Frans Franchoisz Hals"@en, "Frans Franchoisz Hals"@nl, "Mr. Hales"@en, "Franc Haals"@en, "Franchals"@en, "Franck Hals"@en, "Frans Hals d.ä."@sv, "Frank Halle"@en, "Franc. Halls"@en, "Frans I Hals"@en, "Хальс"@ru, "Franshalce"@en, "Frans Halse"@en, "Frank Halls"@en, "Franz Hals"@fi, "Franz Hals"@de, "Franz Hals"@en, "Franz Hals"@fr, "Frans Hauls"@en, "Halss"@lv, "Hals François"@en, "Fransas Halsas"@lt, "Frans Hasl"@en, "Francis Halls"@en, "Franciscus Hals"@en, "Frantz Hal"@en, "Franç. Hals"@en, "Franakhale"@en, "Frantszhalsz"@en, "Franck Hals."@en, "Frans Khalʹs"@en, "Франц Хальс"@ru, "Frank Hals"@en, "Hals"@sv, "Hals"@en, "Hals"@es, "Hals"@ca, "François Hals"@en, "Franshalls"@en, "Franc. Hall"@en, "F. Hall"@en, "Frans Hals (I)"@en, "Frans Hals (I)"@nl, "F. Hal"@en, "Франс Халс"@ru, "François Haals"@en, "France Hauls"@en, "Fr. Hall"@en, "Халс Ф."@ru, "Frans Hales"@en, "F. Halls"@en, "Frans hals der altere"@en, "Fra. Hales"@en, "Haal"@en, "Francalse"@en, "Franc. Halst"@en, "Frans hals"@lv, "France Halls"@en, "Franc Halls"@en, "Frank Hauls"@en, "Franc-Hals"@en, "Francis Hals"@en, "Frantz Hals"@en, "Fr. Halls"@en, "Гальс, Франс"@ru, "Frank Hal"@en, "Халс, Франс"@ru, "Frans Hals the Elder"@en, "Halls"@en, "Франс Гальс"@ru, "Frans Hall"@en, "Franks Hals"@en, "Franc Hals"@en, "T. Hals"@en, "Francis Halse"@en, "Francois Hals"@en, "Frans d. Ae. Hals"@en, "Frans Hal"@en, "Franshals"@en, "Frans-Halls"@en, "Francesco Half"@en, "Frans Halls"@en, "Гальс Франс"@ru, "Fran. Halls"@en, "Frans Halst"@en, "Francesco Ilals"@en, "Frankals"@en, "Fran. Hals"@en, "Franhalls"@en ;
+	skos:note            "Pittore olandese"@it, "Dutch painter"@en, "Niederländischer Maler"@de, "Pintor neerlandès s. XVI - XVII"@ca, "Фламандский художник"@ru, "Pintor neerlandés"@es, "Malarz holenderski"@pl, "Peintre néerlandais"@fr, "Nederländsk porträttmålare"@sv, "Nederlands kunstschilder uit de Gouden Eeuw"@nl, "Pictor olandez"@ro, "Pintor neerlandês"@pt, "Ολλανδός ζωγράφος"@el, "Nederlandsk portrætmaler"@da, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel       "Франс Халс"@bg, "Franss Halss"@lv, "Франц Халс"@ru, "Frans Hals"@nl, "Frans Hals"@da, "Frans Hals"@ro, "Frans Hals"@pl, "Frans Hals"@cs, "Frans Hals"@et, "Frans Hals"@es, "Frans Hals"@it, "Frans Hals"@en, "Frans Hals"@sv, "Frans Hals"@ca, "Frans Hals"@ga, "Frans Hals"@sl, "Frans Hals"@sk, "Frans Hals"@hu, "Frans Hals"@hr, "Frans Hals"@lt, "Frans Hals"@pt, "Frans Hals"@fi, "Frans Hals"@de, "Frans Hals"@fr, "Φρανς Χαλς"@el .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_112>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:49.037Z" ;
+	dcterms:modified          "2018-04-05T16:45:00.052Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-112%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_112>
+	a                   ore:Proxy ;
+	dc:contributor      "Frans Hals" ;
+	dc:creator          "Frans Hals" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-112", "OS-I-112" ;
+	dc:rights           "voor informatie: Frans Hals Museum"@nl, "Frans Hals Museum", "for information contact: Frans Hals Museum"@en ;
+	dc:source           "OS-I-112 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Meeting of Officers and Sergeants of the Civic Guard of St Adrian (the Cluveniers)"@en, "Vergadering van officieren en onderofficieren van de Cluveniersschutterij"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1633" ;
+	dcterms:extent      "doek: 207 x 337 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "GVN", "FHM01" ;
+	dcterms:medium      "image/jpg", "olieverf op doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_112> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_112#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:36.735Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_112> .

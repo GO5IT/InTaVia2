@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8817289f>
+	a                   ore:Proxy ;
+	dc:creator          "Winkler, Franz. Auteur ou responsable intellectuel", "Bernard, Armand (1893-1968). Direction d'orchestre", "Marnay, Eddy (1920-2003). Auteur ou responsable intellectuel", "Heyral, Marc (1920-1989). Auteur ou responsable intellectuel", "Rovira, Antonio (19..-.... ; chef d'orchestre). Direction d'orchestre", "Godinho, B. P.. Auteur ou responsable intellectuel", "Mendizabal, Ramon. Direction d'orchestre", "Prud'homme, Émile (1913-1974). Direction d'orchestre", "Castellanos, Carlos. Auteur ou responsable intellectuel", "Murena, Tony (1915-1971). Direction d'orchestre", "Fields, Irving (1915-....). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Warner, Eddie (1917-1982). Direction d'orchestre" ;
+	dc:date             "1953" ;
+	dc:description      "Comprend : Jezebel / Eddie Warner et sa musique tropicale - Un chalet dans les pins / Tony Muréna et son quintette - Prélude / Ramon Mendizabal et son orch. - Morena de mi copla / Antonio Rovira et son orch. - Voyage à Cuba / Eddie Warner et sa musique tropicale - Pret'-moi ton tonneau / Emile Prud'homme et son orch. - Le petit tacot de Mexico / Eddie Warner et sa musique tropicale - La veuve joyeuse. Heure exquise / Lehar, comp. ; Armand Bernard et son grand orch.", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "multipart/mixed", "disc"@eng, "1 disque : 33 t ; 25 cm", "disque microsillon"@fre ;
+	dc:identifier       "Numéro commercial : Odéon OS 1005", "http://gallica.bnf.fr/ark:/12148/bpt6k8817289f" ;
+	dc:language         "zxx" ;
+	dc:publisher        "Odéon (France)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38090629q"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, C-11290" ;
+	dc:subject          "variétés instrumentales occidentales" ;
+	dc:title            "Surprise-party. No 2 / Eddie Warner et sa musique tropicale, Tony Muréna et son quintette, Ramon Mendizabal et son orch.... [et al.]" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8817289f> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8817289f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "219270"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8817289f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8817289f> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8817289f.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:15.678Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8817289f> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8817289f/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8817289f.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3761"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8817289f>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1953" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8817289f> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8817289f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:55:56.912Z" ;
+	dcterms:modified          "2018-03-26T12:31:58.912Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8817289f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8817289f.thumbnail.jpg&type=SOUND> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8817289f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:15.679Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8817289f> .

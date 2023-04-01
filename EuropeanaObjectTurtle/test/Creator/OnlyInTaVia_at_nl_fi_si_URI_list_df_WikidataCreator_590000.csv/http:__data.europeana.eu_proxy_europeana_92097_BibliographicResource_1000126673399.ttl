@@ -1,0 +1,100 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92097/BibliographicResource_1000126673399>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-12T09:07:14.992Z" ;
+	dcterms:modified          "2014-12-12T09:07:14.992Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399#contentTier>, <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399> ;
+	edm:completeness          "0" ;
+	edm:country               "Estonia" ;
+	edm:datasetName           "92097_Ag_EU_TEL_a1034_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/92097/BibliographicResource_1000126673399> ;
+	edm:language              "et" .
+
+<http://data.europeana.eu/proxy/europeana/92097/BibliographicResource_1000126673399>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146741> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92097/BibliographicResource_1000126673399> .
+
+<http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126673399>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517433> ;
+	edm:isShownAt      <http://hdl.handle.net/10062/16533> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126673399>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92097/BibliographicResource_1000126673399>
+	a                   ore:Proxy ;
+	dc:creator          "Leonardo da Vinci", "Rubens, Peter Paul", "Edelinck, Gérard" ;
+	dc:date             "2011-02-23" ;
+	dc:identifier       "http://hdl.handle.net/10062/16533" ;
+	dc:language         "mul" ;
+	dc:title            "[Anghiari lahing]" ;
+	dc:type             "Image" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1034> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92097/BibliographicResource_1000126673399> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126673399> .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126673399#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:08.906Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126673399> .
+
+<http://data.europeana.eu/organization/1482250000004517433>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Tartu"@en .
+
+<http://hdl.handle.net/10062/16533>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16218"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/agent/146741>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/62248>, <http://data.europeana.eu/agent/87115>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs                     <http://www.idref.fr/085975915/id>, <http://dbpedia.org/resource/Leonardo_da_Vinci>, <http://id.worldcat.org/fast/33122>, <http://lod.nl.go.kr/resource/KAC199616385>, <http://vocab.getty.edu/ulan/500010879>, <http://ta.sandrart.net/-person-195>, <http://libris.kb.se/resource/auth/207435>, <http://data.bibliotheken.nl/id/thes/p068519451>, <http://viaf.org/viaf/24604287>, <https://g.co/kg/m/04lg6>, <http://openlibrary.org/works/OL54736A>, <https://livedata.bibsys.no/authority/90075047>, <http://data.cervantesvirtual.com/person/2248>, <http://kulturarvsdata.se/LSH/agents/17814>, <http://id.loc.gov/authorities/names/n79034525>, <http://data.bnf.fr/ark:/12148/cb11912491s>, <https://www.freebase.com/m/04lg6>, <http://datos.bne.es/resource/XX971832>, <http://nlg.okfn.gr/resource/authority/record78924>, <http://www.treccani.it/enciclopedia/leonardo-da-vinci-se-la-pittura-e-scienzia_%28I-classici-della-pittura%29/>, <http://www.wikidata.org/entity/Q762>, <https://libris.kb.se/zw9cd5zh025njcf>, <http://id.ndl.go.jp/auth/ndlna/00447394>, <http://d-nb.info/gnd/118640445> ;
+	rdaGr2:dateOfBirth             "1452-04-24" ;
+	rdaGr2:dateOfDeath             "1519-05-12" ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/42996> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/162>, <http://data.europeana.eu/concept/178>, <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Léonardo de Vinci"@en, "Leonardo del Vincio"@en, "Leonardo d'Avinci"@en, "Leonard. da Vinci"@en, "Leonardo del Linc"@en, "Leonardo Vincj"@en, "L. da Vince"@en, "Leonardo da Avinci"@en, "Leonardi da Vinci"@en, "Leonardo de avinçe"@en, "L. Da. Vinci"@en, "Lionardo da Vinci"@en, "Leonhard da Vinci"@en, "Vinci Leonardo da"@en, "Leonardo D'Vinci"@en, "Leonardo De Vinci"@en, "Leonardavinci"@en, "Leonardo Vinci"@en, "Ντα Βίντσι"@el, "Leonardo da vinze"@en, "Leonardo da Vinci"@fr, "Lionardi da Vinci"@en, "Leonard"@en, "L. di Vinci"@en, "Leo. da Vinci"@en, "Leonard da Vinci"@en, "Leo da Vinci"@en, "Leonardi de Vinci"@en, "La Da Vinci"@en, "Lionardo"@en, "Leonardo de Binçi"@en, "Λεονάρντο"@el, "L da Vince"@en, "L.D. Vinci"@en, "De Vinci"@en, "Leonardo di Vinci"@en, "Le da Vinci"@en, "Lionarde da Vinci"@en, "L. da Vinci"@en, "L. da Vinci"@nl, "Leonard Davinci"@en, "Leonard d'Avins"@en, "Leo da. Vinci"@en, "Leonardo de avinze"@en, "Leonardo de Vince"@en, "Leonardo de Binci"@en, "Léonard"@en, "Léonard"@fr, "Leonardi d' Vinci"@en, "Leonardo de albinzi"@en, "Da vinci leonardo"@en, "Leonardo Da Vinci"@en, "Leonardo Da Vinci"@nl, "Lorenzo de abinçi"@en, "L. D. Vinci"@en, "Leonardi"@en, "Lornardi De Vinci"@en, "L da Vinci"@en, "Lion. Da Vinci"@en, "Da Vinci"@en, "Leon da Vinci"@en, "Leonardo di ser Piero da Vinci"@en, "Leonardo di ser Piero da Vinci"@fi, "Leonardo di ser Piero da Vinci"@de, "Leonardo di ser Piero da Vinci"@it, "Leonardo di ser Piero da Vinci"@fr, "Leonardo di ser Piero da Vinci"@hu, "Leonardo di ser Piero da Vinci"@es, "Leonardo di ser Piero da Vinci"@et, "Leonardo di ser Piero da Vinci"@da, "Leonardo di ser Piero da Vinci"@ro, "Leonardo di ser Piero da Vinci"@nl, "Leonardo di Ser Piero da Vinci"@pt, "Leonardo di Ser Piero da Vinci"@en, "Leonardo"@en, "Leonardo"@fr, "Leonardo de Avince"@en, "L. de Pinci"@en, "Leonardi di Vinci"@en, "Leonhardo da Vinci"@en, "Leonardo ser Piero da Vinci"@hu, "Leonhard de Winci"@en, "Leandro da Vinci"@en, "Lieh-ao-na-to"@en, "Lionardo di ser Piero"@de, "Leonardi Devinci"@en, "Leonard Davincy"@en, "Leonardo de a Vince"@en, "L. Davinci"@en, "Leonardo da Vince"@en, "Leonardo Davinci"@en, "Leonhardt Davincé"@en, "Leonardo Vilchi"@en, "Leonhard da Vince"@en, "Da Vinci Leonardo"@en, "Leornardo de Vinci"@en, "Léonard de Vinci"@en, "Léonard de Vinci"@cs, "Leonard de Vincy"@en, "Leonardo di ser Piero"@de, "Leonardo de Vinza"@en, "Vinci"@en, "Leornadi De Vinci"@en, "Leonard da Vincy"@en, "Leonardas da Vinčis"@lt, "L. D'Vinci"@en, "Lunardo da Vinci"@en, "Leon. Da Vinci"@en, "Leonard de Vinci"@en, "Leonard de Vinci"@fr, "Leonard d'Alvins"@en, "Leonardo da Vinchi"@en, "Lionarda da Vinci"@en, "L. Vinci"@en, "Leonardo de Vinci"@en, "Leonhardt Davinçé"@en, "L. De Vinci"@en, "Lonardo d'Avinci"@en, "Leonardo di Vince"@en ;
+	skos:note                      "Italienskt universalgeni"@sv, "Italian Renaissance polymath (1452-1519)"@en, "Italiensk maler, billedhugger, arkitekt, ingeniør, opfinder, botaniker og anatom"@da, "Italský malíř, sochař, architekt, přírodovědec, hudebník, spisovatel, vynálezce a konstruktér"@cs, "Italienischer Maler, Bildhauer, Architekt, Anatom, Ingenieur und Naturphilosoph (1452-1519)"@de, "Italiaanse schilder, architect, ingenieur, uitvinder, ingenieur, filosoof, natuurkundige, anatomist en beeldhouwer"@nl, "Taliansky architekt, hudobník, vynálezca, sochár a maliar"@sk, "Pintor renascentista"@pt, "Home polimàtic del Renaixement italià"@ca, "Olasz/itáliai polihisztor (1452-1519)"@hu, "Ιταλός καλλιτέχνης της Αναγέννησης"@el, "Talijanski slikar, kipar, arhitekt, izumitelj, matematičar, glazbenik"@hr, "Peintre, sculpteur, architecte et ingénieur, théoricien de l'art et chercheur scientifique italien"@fr, "Artista, inventore e scienziato italiano"@it, "Polímata italiano"@es, "Włoski malarz"@pl, "Итальянский художник, учёный, изобретатель, писатель, один из крупнейших представителей искусства Высокого Возрождения"@ru, "Italialainen taidemaalari ja yleisnero"@fi, "Pictor, sculptor, arhitect, muzician, inginer, inventator, anatomist și geolog italian"@ro ;
+	skos:prefLabel                 "Léonard de Vinci"@fr, "Λεονάρντο ντα Βίντσι"@el, "Леонардо да Винчи"@bg, "Леонардо да Винчи"@ru, "Leonardo da Vinci"@mt, "Leonardo da Vinci"@sv, "Leonardo da Vinci"@ca, "Leonardo da Vinci"@ga, "Leonardo da Vinci"@sl, "Leonardo da Vinci"@sk, "Leonardo da Vinci"@hu, "Leonardo da Vinci"@hr, "Leonardo da Vinci"@lt, "Leonardo da Vinci"@pt, "Leonardo da Vinci"@fi, "Leonardo da Vinci"@de, "Leonardo da Vinci"@nl, "Leonardo da Vinci"@ro, "Leonardo da Vinci"@da, "Leonardo da Vinci"@pl, "Leonardo da Vinci"@cs, "Leonardo da Vinci"@et, "Leonardo da Vinci"@es, "Leonardo da Vinci"@it, "Leonardo da Vinci"@en, "Leonardo da Vinči"@lv .
+
+<http://data.europeana.eu/item/92097/BibliographicResource_1000126673399#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:08.907Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92097/BibliographicResource_1000126673399> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

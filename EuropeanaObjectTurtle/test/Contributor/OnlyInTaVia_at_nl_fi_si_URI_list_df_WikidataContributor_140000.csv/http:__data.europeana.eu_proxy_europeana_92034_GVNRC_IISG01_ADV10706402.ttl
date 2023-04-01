@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_IISG01_ADV10706402>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:20:38.978Z" ;
+	dcterms:modified          "2018-04-05T16:56:44.168Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AIISG01%3A30051001242830%26role%3Dpage%26count%3D1%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_IISG01_ADV10706402>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/IISG01:ADV10706402> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:IISG01:30051001242830&role=page&count=1&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/IISG01:ADV10706402>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50251"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:54.521Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_IISG01_ADV10706402> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/agent/31424>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/55358> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p068710771>, <http://vocab.getty.edu/ulan/500192961>, <http://dbpedia.org/resource/Johan_Braakensiek>, <http://viaf.org/viaf/12577695>, <https://www.freebase.com/m/07s636y>, <http://d-nb.info/gnd/174301839>, <https://g.co/kg/m/07s636y>, <http://www.wikidata.org/entity/Q2622549>, <http://www.idref.fr/164376410/id>, <http://data.bnf.fr/ark:/12148/cb14970447g>, <http://id.loc.gov/authorities/names/no2005091216> ;
+	rdaGr2:dateOfBirth   "1858-05-24" ;
+	rdaGr2:dateOfDeath   "1940-02-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Johan Coenraad Braakensiek"@en, "Johan Coenraad Braakensiek"@nl, "Johan Conraad Braakensiek"@en, "Johan Braakensiek"@pt, "Johan Braakensiek"@it, "Johan Braakensiek"@ca, "Joh. Braakensiek"@en, "Joh. Braakensiek"@nl, "J. Braakensiek"@nl, "J.C. Braakensiek"@nl ;
+	skos:note            "Dutch painter (1858-1940)"@en, "Pintor neerlandès"@ca, "Pintor neerlandês"@pt, "Pintor neerlandés"@es, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et, "Nederlands kunstschilder"@nl, "Peintre néerlandais"@fr, "Pittore neerlandese"@it ;
+	skos:prefLabel       "Johan Conraad Braakensiek"@pt, "Johan Conraad Braakensiek"@it, "Johan Conraad Braakensiek"@ca, "Johan Braakensiek"@et, "Johan Braakensiek"@de, "Johan Braakensiek"@fi, "Johan Braakensiek"@sv, "Johan Braakensiek"@en, "Johan Braakensiek"@fr, "Johan Braakensiek"@es, "Johan Braakensiek"@sl, "Johan Braakensiek"@ga, "Johan Braakensiek"@ro, "Johan Braakensiek"@da, "Johan Braakensiek"@nl .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_IISG01_ADV10706402>
+	a                   ore:Proxy ;
+	dc:contributor      "Braakensiek, Johan", "Johan Braakensiek" ;
+	dc:format           "prent" ;
+	dc:identifier       "BG D19/568 (prent), De Nederlandse arbeidersbeweging tot 1918, Internationaal Instituut voor Sociale Geschiedenis, Amsterdam.", "http://resolver.kb.nl/resolve?urn=urn:gvn:IISG01:30051001242830" ;
+	dc:rights           "Object out of copyright; for information contact Internationaal Instituut voor Sociale Geschiedenis, Amsterdam"@en, "Object niet auteursrechterlijk beschermd; voor informatie: Internationaal Instituut voor Sociale Geschiedenis, Amsterdam"@nl, "Internationaal Instituut voor Sociale Geschiedenis, Amsterdam" ;
+	dc:source           "BG D19/568 (prent), De Nederlandse arbeidersbeweging tot 1918, Internationaal Instituut voor Sociale Geschiedenis, Amsterdam." ;
+	dc:subject          "Zuiderzee"@nl, "Inpolderingen"@nl ;
+	dc:title            "De droogmaking van de Zuiderzee" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1918, 16 februari" ;
+	dcterms:extent      "31 x 46,5 cm" ;
+	dcterms:isPartOf    "GVN", "IISG01", "De Nederlandse arbeidersbeweging tot 1918" ;
+	dcterms:issued      "20-12-2002" ;
+	dcterms:medium      "text/xml" ;
+	dcterms:spatial     "Amsterdam" ;
+	dcterms:temporal    "1918" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_IISG01_ADV10706402> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:IISG01:30051001242830&role=page&count=1&role=thumbnail>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:01:54.521Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_IISG01_ADV10706402> .
+
+<http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_IISG01_ADV10706402>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/31424> ;
+	dc:format           <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1918" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_IISG01_ADV10706402> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_IISG01_ADV10706402> .

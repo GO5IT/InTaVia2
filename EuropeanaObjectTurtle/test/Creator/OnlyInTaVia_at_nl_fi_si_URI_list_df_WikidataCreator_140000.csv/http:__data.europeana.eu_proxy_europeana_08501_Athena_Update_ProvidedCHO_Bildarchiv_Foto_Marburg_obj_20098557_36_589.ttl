@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7>
+	a  edm:ProvidedCHO .
+
+<http://www.bildindex.de/bilder/d/fm36589>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7/manifest> ;
+	ebucore:fileByteSize    "241521"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "849"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T11:17:20.894Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7#contentTier>, <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	edm:completeness          "6" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Ffm36589&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T13:23:15.977697Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> .
+
+<http://www.bildindex.de/bilder/d/fm36590>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7/manifest> ;
+	ebucore:fileByteSize    "277671"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "853"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:hasView        <http://www.bildindex.de/bilder/d/fm36590>, <http://www.bildindex.de/bilder/d/fr00216a07> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20098557> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/fm36589> ;
+	edm:object         <http://www.bildindex.de/bilder/d/fm36589> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://vocab.getty.edu/aat/300248835>
+	a               skos:Concept ;
+	skos:altLabel   "kruisbeeld"@nl, "crucifijo"@es, "crocifisso"@it, "crucifix"@nl, "crucifix"@en, "crucifixen"@nl, "cristo (crucifijo)"@es ;
+	skos:broader    <http://vocab.getty.edu/aat/300234093>, <http://vocab.getty.edu/aat/300235443> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300262580>, <http://vocab.getty.edu/aat/300299789> ;
+	skos:note       "Wordt gebruikt voor beeldmateriaal in de vorm van een kruis met de gestalte van de gekruisigde Christus."@nl, "Úsese para obras visuales en la forma de una cruz que tiene la figura de Cristo crucificado."@es, "Visual works in the shape of a cross having the figure of Christ crucified."@en ;
+	skos:prefLabel  "kruisbeelden"@nl, "crucifixes"@en, "crucifijos"@es, "crocifissi"@it, "crucifix"@fr .
+
+<http://www.bildindex.de/bilder/d/fr00216a07>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7/manifest> ;
+	ebucore:fileByteSize    "178649"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF0F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7>
+	a                   ore:Proxy ;
+	dc:creator          "Sluter, Claus (Herstellung) (Bildhauer)" ;
+	dc:description      "Status: Fragment" ;
+	dc:subject          "Skulptur"@de, "die Kreuzigung Christi: der Kreuzestod; Golgatha (Matthäus 27:45-58; Markus 15:33-45; Lukas 23:44-52; Johannes 19:25-38); mit drei Kreuzen"@de ;
+	dc:title            "Kruzifix-Fragment vom Kalvarienberg des Mosesbrunnens"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300248835> ;
+	dcterms:created     "1394/1405 (Herstellung)"@zxx ;
+	dcterms:spatial     "Dijon (Standort)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> .
+
+<http://www.bildindex.de/document/obj20098557>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T13:23:15.977390Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_LNWOVPAO5NH5ATO73YVPWUFMLPSKPSU7> .

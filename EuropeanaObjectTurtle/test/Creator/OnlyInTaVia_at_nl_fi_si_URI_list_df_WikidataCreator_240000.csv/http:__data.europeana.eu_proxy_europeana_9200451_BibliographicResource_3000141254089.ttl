@@ -1,0 +1,134 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://dizbi.hazu.hr/api/?semantic=resource&id=4872>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16232"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "190"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://dizbi.hazu.hr/object/view/4872>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200451/BibliographicResource_3000141254089/manifest> ;
+	ebucore:fileByteSize    "13941"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200451/BibliographicResource_3000141254089>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1891" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200451/BibliographicResource_3000141254089> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200451/BibliographicResource_3000141254089>
+	a                   ore:Proxy ;
+	dc:creator          "Rački, Franjo" ;
+	dc:date             "1891" ;
+	dc:description      "Drugo, prerađeno izdanje kataloga zbirke. Zabilježena su 302 kataloška broja kontinuirane numeracije opetovane unutar navedenih izložbeno-kataloških cjelina. Premda su atribucije sada preciznije, obrada i interpretacija izložaka ne bilježi značajnijih promjena (tehnički opis, i dalje je izostavljen)." ;
+	dc:format           "17 cm" ;
+	dc:identifier       "4872" ;
+	dc:language         "hr" ;
+	dc:publisher        "Jugoslavenska akademija znanosti i umjetnosti" ;
+	dc:subject          "članak", "Zagreb" ;
+	dc:title            "Akademijska galerija Strossmayerova" ;
+	dcterms:isPartOf    "Hemeroteka i katalozi Strossmayerove galerije", <http://data.theeuropeanlibrary.org/Collection/a1167t> ;
+	dcterms:spatial     <http://sws.geonames.org/3186886/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200451/BibliographicResource_3000141254089> .
+
+<https://iiif.europeana.eu/presentation/9200451/BibliographicResource_3000141254089/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:40.545Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200451/BibliographicResource_3000141254089> .
+
+<http://data.europeana.eu/aggregation/europeana/9200451/BibliographicResource_3000141254089>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-30T17:26:05.094Z" ;
+	dcterms:modified          "2015-12-01T11:06:27.358Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089#metadataTier>, <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089> ;
+	edm:completeness          "10" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "9200451_Ag_EU_TEL_a1167t_eCloud_Croatia" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200451/BibliographicResource_3000141254089> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdizbi.hazu.hr%2Fapi%2F%3Fsemantic%3Dresource%26id%3D4872&type=TEXT> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://dizbi.hazu.hr/object/4872>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16889"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:40.544Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200451/BibliographicResource_3000141254089> .
+
+<http://data.europeana.eu/aggregation/provider/9200451/BibliographicResource_3000141254089>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200451/BibliographicResource_3000141254089> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502070> ;
+	edm:hasView        <http://dizbi.hazu.hr/object/view/4872> ;
+	edm:isShownAt      <http://dizbi.hazu.hr/object/4872> ;
+	edm:object         <http://dizbi.hazu.hr/api/?semantic=resource&id=4872> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://sws.geonames.org/3186886/>
+	a               edm:Place ;
+	skos:prefLabel  "Ζάγκρεμπ" .
+
+<http://data.europeana.eu/organization/1482250000004502070>
+	a               foaf:Organization ;
+	skos:prefLabel  "Croatian Academy of Sciences and Arts"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

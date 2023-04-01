@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_296829153>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:296829153> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:296829153&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:296829153&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3569"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "104"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:55.299Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_296829153> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_296829153>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/35934> ;
+	dc:creator          <http://data.europeana.eu/agent/35934> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1806" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_296829153> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:55.299Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_296829153> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:296829153>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47758"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/35934>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/35570> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q2259332>, <https://www.freebase.com/m/0c00hw1>, <http://viaf.org/viaf/1520802>, <http://www.idref.fr/13168213X/id>, <http://vocab.getty.edu/ulan/500029318>, <http://id.worldcat.org/fast/206472>, <http://data.bnf.fr/ark:/12148/cb161952792>, <http://data.bibliotheken.nl/id/thes/p069822301>, <https://g.co/kg/m/0c00hw1>, <http://dbpedia.org/resource/Christiaan_Andriessen>, <http://id.loc.gov/authorities/names/n87125600>, <http://d-nb.info/gnd/136692087> ;
+	rdaGr2:dateOfBirth   "1775-01-01" ;
+	rdaGr2:dateOfDeath   "1846-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:note            "Pintor neerlandés"@es, "Nederlands kunstschilder"@nl, "Pintor neerlandês"@pt, "Pittore neerlandese"@it, "Dessinateur et professeur de dessin, fils de Jurriaan Andriessen"@fr, "Pintor neerlandès"@ca, "Dutch painter (1775-1846)"@en, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel       "Christiaan Andriessen"@nl, "Christiaan Andriessen"@es, "Christiaan Andriessen"@da, "Christiaan Andriessen"@fr, "Christiaan Andriessen"@it, "Christiaan Andriessen"@en, "Christiaan Andriessen"@sl, "Christiaan Andriessen"@pt, "Christiaan Andriessen"@sv, "Christiaan Andriessen"@de, "Christiaan Andriessen"@ca .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_296829153>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:15:40.786Z" ;
+	dcterms:modified          "2018-04-05T17:26:21.910Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_296829153> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A296829153%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_296829153>
+	a                   ore:Proxy ;
+	dc:contributor      "Christiaan Andriessen" ;
+	dc:creator          "Christiaan Andriessen" ;
+	dc:description      "\u002223 Mey voor de tafel stond Fine het meisje van Alting\u0022" ;
+	dc:format           "tekening (potlood, pen en penseel in grijs)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:296829153" ;
+	dc:rights           "Nationaal Gevangenismuseum", "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum" ;
+	dc:source           "[296829153], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "tuchthuis"@nl, "vrouw"@nl ;
+	dc:title            "Het Spin en Werkhuis bezigtigt" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1806" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_296829153> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_296829153> .

@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_052142>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1912" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_052142> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_052142> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_052142/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://athena.muo.hr/api/?semantic=representation&id=171197>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_052142/manifest> ;
+	ebucore:fileByteSize    "10072"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "225"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_052142>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T11:13:56.232Z" ;
+	dcterms:modified          "2015-11-03T11:13:56.232Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_052142#contentTier>, <http://data.europeana.eu/item/2048053/MUO_052142#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_052142> ;
+	edm:completeness          "10" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_052142> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D171197&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_052142#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:04.445Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_052142> .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_052142>
+	a                   ore:Proxy ;
+	dc:creator          "Kraljević, Miroslav" ;
+	dc:date             "1912" ;
+	dc:description      "Crtež tušem na papiru. \u000AGrupa prijatelja u šetnji prikazana je kao frontalni niz od pet figura, koji čine četvorica muškaraca i jedna žena. Iz daljine grupi prilazi još jedan lik koji hita u žurbi, mašući kišobranom. \u000ACrtež je ogoljen na linearnu čistoću kontura, izveden bez sjena i ikakve naznake ambijenta u koji je smješten prizor. Naglašena karikaturalna pretjeranost u prikazu individualnih fizionomija i individualnog ritma hoda." ;
+	dc:format           "image/jpg" ;
+	dc:identifier       "MUO_052142" ;
+	dc:title            "Kraljević u šetnji s prijateljima" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Paintings" ;
+	dcterms:medium      "crtež tušem" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_052142> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_052142> .
+
+<http://data.europeana.eu/item/2048053/MUO_052142#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:48:04.445Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_052142> .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_052142>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_052142> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=171197> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=171197> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=171197> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_052142>
+	a  edm:ProvidedCHO .
+
+<http://athena.muo.hr/?object=detail&id=171197>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "7153"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildindex.de/document/obj20655158>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T08:30:13.532Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB#metadataTier>, <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Fmi06684f08&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:23:01.127849Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> .
+
+<http://data.europeana.eu/aggregation/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20655158> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/mi06684f08> ;
+	edm:object         <http://www.bildindex.de/bilder/d/mi06684f08> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:23:01.127532Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> .
+
+<http://data.europeana.eu/proxy/europeana/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> .
+
+<http://www.bildindex.de/bilder/d/mi06684f08>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB/manifest> ;
+	ebucore:fileByteSize    "250582"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB>
+	a                   ore:Proxy ;
+	dc:creator          <https://d-nb.info/gnd/174280246http://d-nb.info/gnd/118622315> ;
+	dc:subject          "Wandmalerei"@de, "die (nackte) menschliche Figur; Ripa: Corpo humano, männlich"@de, "Hund"@de, "die (nackte) weibliche Figur"@de ;
+	dc:title            "Jünglingsalter"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300033618http://vocab.getty.edu/aat/300264387> ;
+	dcterms:created     "1923 (Herstellung)"@zxx ;
+	dcterms:spatial     <http://vocab.getty.edu/tgn/7005980> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_HSTUCDLYVZEBFJCCQSQXL7OXM7ZFU7GB> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://vocab.getty.edu/tgn/7005980>
+	a               edm:Place ;
+	skos:prefLabel  "Crefeld", "Krefeld" .

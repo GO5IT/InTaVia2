@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-64>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49500"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-64&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "208"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_64>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/42300> ;
+	dc:creator          <http://data.europeana.eu/agent/42300> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_64> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_64>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:55.250Z" ;
+	dcterms:modified          "2018-04-05T16:45:02.642Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-64%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_64>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-64> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-64&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_64>
+	a                   ore:Proxy ;
+	dc:contributor      "Frans Decker" ;
+	dc:creator          "Frans Decker" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "OS-I-64", "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-64" ;
+	dc:rights           "for information contact: Frans Hals Museum"@en, "Frans Hals Museum", "voor informatie: Frans Hals Museum"@nl ;
+	dc:source           "OS-I-64 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van Mattheus Kuyts"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1730 - 1740" ;
+	dcterms:extent      "52 x 39,5 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "FHM01", "GVN" ;
+	dcterms:medium      "doek ; olieverf", "image/jpg", "geschilderd" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_64> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/42300>
+	a                    edm:Agent ;
+	owl:sameAs           <http://viaf.org/viaf/95705212>, <http://dbpedia.org/resource/Frans_Decker>, <https://www.freebase.com/m/0gvrnqx>, <http://vocab.getty.edu/ulan/500004041>, <http://www.wikidata.org/entity/Q5492346>, <https://g.co/kg/m/0gvrnqx> ;
+	rdaGr2:dateOfBirth   "1684-03-17" ;
+	rdaGr2:dateOfDeath   "1751-11-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40710> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "Franciscus Dekker"@en, "F. Dekker"@en, "F. Dekkers"@en, "Francis Decker"@en, "Frans Dekker"@en, "F. Decker"@en, "Frans Arentsz Decker"@en, "François Decker"@en, "Franciscus Decker"@en ;
+	skos:note            "Nederlands kunstschilder (1684-1751)"@nl, "Hollandi maalikunstnik"@et, "Pintor neerlandês"@pt, "Dutch painter (1684-1751)"@en, "Pictor olandez"@ro, "Pittore neerlandese"@it, "Peintre néerlandais"@fr, "Pintor neerlandés"@es, "Pintor neerlandès"@ca ;
+	skos:prefLabel       "Frans Decker"@ca, "Frans Decker"@de, "Frans Decker"@sv, "Frans Decker"@pt, "Frans Decker"@sl, "Frans Decker"@en, "Frans Decker"@it, "Frans Decker"@fr, "Frans Decker"@da, "Frans Decker"@nl, "Frans Decker"@es .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:29.835Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_64> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_64#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:29.836Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_64> .

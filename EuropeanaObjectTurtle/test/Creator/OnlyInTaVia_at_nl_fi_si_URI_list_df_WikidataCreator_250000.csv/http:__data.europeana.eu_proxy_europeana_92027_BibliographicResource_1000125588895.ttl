@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12650054>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125588895>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-12T16:21:26.196Z" ;
+	dcterms:modified          "2015-06-15T12:27:09.994Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895#contentTier>, <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895> ;
+	edm:completeness          "8" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92027_Ag_EU_TEL_a0429E.xml" ;
+	edm:landingPage           <https://www.europeana.eu/item/92027/BibliographicResource_1000125588895> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F12650054.jpg&type=IMAGE> .
+
+<http://www.bildarchivaustria.at/Thumbnail/12650054.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/Preview/12650054.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125588895/manifest> ;
+	ebucore:fileByteSize    "355117"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "530"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125588895>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92027/BibliographicResource_1000125588895>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1820" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125588895> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://sws.geonames.org/2766824/>
+	a               edm:Place ;
+	skos:prefLabel  "Salzburg" .
+
+<http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125588895>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12650054> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/12650054.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/12650054.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92027/BibliographicResource_1000125588895>
+	a                   ore:Proxy ;
+	dc:creator          "Gauermann, Friedrich", "Viehbeck, Karl Ludwig Friedrich" ;
+	dc:description      "Radierung mit topografischen Angaben von Friedrich Gauermann nach Zeichnung von Karl Ludwig Viehbeck"@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/12650054.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Paintings"@de, "Austrian Monarchy"@de ;
+	dc:title            "Die Festung Hohensalzburg"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:created     "1820" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0429> ;
+	dcterms:spatial     "Salzburg: Festung Hohensalzburg", <http://sws.geonames.org/2766824/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92027/BibliographicResource_1000125588895> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125588895> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125588895#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:49:54.714Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125588895> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125588895/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125588895#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:49:54.713Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125588895> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

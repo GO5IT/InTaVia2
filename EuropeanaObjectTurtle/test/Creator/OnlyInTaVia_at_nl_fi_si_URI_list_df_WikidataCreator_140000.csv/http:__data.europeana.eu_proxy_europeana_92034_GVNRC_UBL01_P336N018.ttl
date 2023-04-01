@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/place/40615>
+	a               edm:Place ;
+	owl:sameAs      <http://vocab.getty.edu/tgn/1112016>, <http://d-nb.info/gnd/4549771-0>, <https://sws.geonames.org/2753360/>, <http://www.wikidata.org/entity/Q1653954>, <https://g.co/kg/m/0j23r>, <https://www.freebase.com/m/0j23r>, <http://dbpedia.org/resource/IJsselmonde_(island)> ;
+	skos:altLabel   "Ijsselmonde (eiland)"@nl, "Ijsselmonde"@fr ;
+	skos:note       "Zu Rotterdam gehörende Insel"@de, "Isola dei Paesi Bassi"@it, "Island in the Netherlands"@en, "Eiland"@nl ;
+	skos:prefLabel  "IJsselmonde (isla)"@es, "IJsselmonde (ilha)"@pt, "IJsselmonde"@nl, "IJsselmonde"@fr, "Эйсселмонде"@ru, "IJsselmonde"@it, "IJsselmonde"@en, "IJsselmonde"@de ;
+	wgs84_pos:lat   "51.866665" ;
+	wgs84_pos:long  "4.516667" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P336N018>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:59:31.719Z" ;
+	dcterms:modified          "2018-04-05T18:04:10.073Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P336N018> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP336N018%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P336N018>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/40615> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P336N018> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P336N018>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50350"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P336N018>
+	a                   ore:Proxy ;
+	dc:contributor      "Visscher, Claes Jansz. (II)" ;
+	dc:creator          "Visscher, Claes Jansz. (II)" ;
+	dc:description      "Notitie Bodel Nijenhuis: \u0022Verzam. Bussery - de Barlett.\u0022" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P336N018" ;
+	dc:rights           "Universiteitsbibliotheek Leiden", "For more information: Universiteitsbibliotheek Leiden"@en, "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl ;
+	dc:source           "[P336N018], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "Yselmonde" ;
+	dc:type             "StillImage" ;
+	dcterms:extent      "17,2 × 37,1 cm" ;
+	dcterms:isPartOf    "UBL01", "Topografie van Nederland", "GVN" ;
+	dcterms:medium      "ets/kopergravure", "image/jpeg" ;
+	dcterms:spatial     "IJsselmonde" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P336N018> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P336N018>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P336N018> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P336N018&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:07.807Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P336N018> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P336N018#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:07.807Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P336N018> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P336N018&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2961"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "71"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

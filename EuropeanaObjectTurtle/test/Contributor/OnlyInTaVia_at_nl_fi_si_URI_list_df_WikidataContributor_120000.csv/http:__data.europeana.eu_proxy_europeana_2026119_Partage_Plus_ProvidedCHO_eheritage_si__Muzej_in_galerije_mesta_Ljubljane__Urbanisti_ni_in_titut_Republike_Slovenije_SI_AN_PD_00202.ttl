@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej in galerije mesta Ljubljane" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> ;
+	edm:dataProvider   "eheritage.si, Muzej in galerije mesta Ljubljane, Urbanistični inštitut Republike Slovenije" ;
+	edm:isShownAt      <http://www.eheritage.si/cont/Digital.aspx?ID=SI_AN_PD_00202_RVUDBPFWHONSNRSQLKQA> ;
+	edm:object         <http://www.eheritage.si/ANPDT/00202_RVUDBPFWHONSNRSQLKQA.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671152> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://partage.vocnet.org/part-kue20350948>
+	a               edm:Agent ;
+	skos:prefLabel  "Grohar, Ivan"@en .
+
+<http://www.eheritage.si/ANPDT/00202_RVUDBPFWHONSNRSQLKQA.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "51921"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "235"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6B8E23"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202>
+	a                   ore:Proxy ;
+	dc:contributor      "Grohar, Ivan"@en, <http://partage.vocnet.org/part-kue20350948> ;
+	dc:date             "1908" ;
+	dc:description      "Jesensko sonce; 1908, slog: secesija; avtor: Ivan Grohar; material: slike; predmet hrani: Muzej in galerije mesta Ljubljane; Slovenija"@sl ;
+	dc:format           "slike" ;
+	dc:identifier       "SI_AN_PD_00202" ;
+	dc:language         "sl" ;
+	dc:rights           "Muzej in galerije mesta Ljubljane" ;
+	dc:title            "Jesensko sonce"@sl ;
+	dc:type             "Secesija (slovenski Art Nouveau)"@sl, <http://partage.vocnet.org/part01283> ;
+	dcterms:spatial     "Slovenija" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:36.446Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> .
+
+<http://data.europeana.eu/proxy/europeana/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/114> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1908" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> .
+
+<http://partage.vocnet.org/part01283>
+	a               skos:Concept ;
+	skos:altLabel   "Sesessionismi (Slovenialainen Art Nouveau)"@fi ;
+	skos:broader    <http://partage.vocnet.org/part00353>, <http://partage.vocnet.org/part00349> ;
+	skos:prefLabel  "Secesija (Sloveense Art Nouveau)"@nl, "Secesija (Slowenischer Art Nouveau)"@de, "Secesija (Slovensk Art Nouveau)"@no, "Jugend (Slovensk jugend)"@sv, "Secesija (Art Nouveau slovène)"@fr, "Secesija (Slovenian Art Nouveau)"@en, "Secesija (Slovenian Art Nouveau)"@fi, "Szecesszió (Szlovén Art Nouveau)"@hu, "Secesija (Art Nouveau eslovè)"@ca, "Secesija (Slovenski Art Nouveau)"@hr, "Secesija (słoweńskie Art Nouveau)"@pl, "secese (slovinská secese)"@cs, "Secesija (slovenski Art Nouveau)"@sl, "Secesija (Art Nouveau esloveno)"@es, "Secesija (Art Nouveau slovena)"@it, "Secesija (Art Nouveau slovena)"@pt .
+
+<http://data.europeana.eu/place/114>
+	a               edm:Place ;
+	owl:sameAs      <http://id.loc.gov/authorities/names/n81035365>, <http://www.yso.fi/onto/yso/p107594>, <http://vocab.getty.edu/tgn/7006670>, <http://id.ndl.go.jp/auth/ndlna/00577333>, <http://viaf.org/viaf/141826349>, <https://d-nb.info/gnd/4055302-4>, <http://babelnet.org/rdf/s00067230n>, <http://id.nlm.nih.gov/mesh/D017524>, <https://sws.geonames.org/3190538/>, <http://www.yso.fi/onto/ysa/Y107594>, <http://dbpedia.org/resource/Slovenia>, <https://g.co/kg/m/06t8v>, <https://www.freebase.com/m/06t8v>, <http://zbw.eu/stw/descriptor/18226-5>, <http://www.wikidata.org/entity/Q215>, <http://vocabularies.unesco.org/thesaurus/concept8622> ;
+	skos:altLabel   "Republika Slovenija"@pl, "Carnicola"@es, "Republika Slovenija"@sl, "Republika Slovenija"@en, "Repubblika tas-Slovenja"@mt, "Republika Slovenija"@sv, "Republika Slovenija"@pt, "si"@pl, "si"@es, "República de Eslovenia"@es, "Szlovén Köztársaság"@hu, "si"@en, "si"@pt, "Svn"@pl, "Svn"@es, "Svn"@en, "Svn"@pt, "SI"@nl, "SI"@fr, "Slovenian tasavalta"@fi, "Slovenie"@nl, "Република Словения"@bg, "SVN"@nl, "Slovenija"@pl, "Slovenija"@en, "Slovenija"@sv, "Slovenija"@pt, "Slovinská republika"@sk, "La République de Slovénie"@fr, "Республика Словения"@ru, "Republiken Slovenien"@sv, "Eslovenia"@pt, "Republic of Slovenia"@en, "Slo"@pl, "Slo"@es, "Slo"@en, "Slo"@pt, "Republica de Eslovenia"@es, "Republik Slowenien"@de, "SLO"@en, "SLO"@pt, "Republika Słowenii"@pl, "République de Slovénie"@fr, "República da Eslovênia"@pt, "Republiek Slovenië"@nl, "Eslovênia"@pt ;
+	skos:note       "País na Europa Central"@pt, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Państwo w Europie Środkowej"@pl, "Χώρα στη κεντρική Ευρώπη"@el, "País europeu"@ca, "Valtio Etelä-Euroopassa"@fi, "Država u srednjoj Europi"@hr, "Država v Evropi"@sl, "Land in Europa"@nl, "Állam Közép-Európában"@hu, "Страна в Европе"@ru, "Country in Central Europe"@en, "Държава в Централна Европа"@bg, "Republik i Centraleuropa"@sv, "Stato membro dell'Unione europea"@it, "Štát v strednej Európe"@sk, "Țară din Europa"@ro, "Staat in Mitteleuropa"@de, "Stát v jižní Evropě"@cs, "Pays d'Europe"@fr ;
+	skos:prefLabel  "Slovenien"@sv, "Slovenien"@da, "Slovénie"@fr, "Slovēnija"@lv, "Eslovenia"@es, "Eslovenia"@eu, "Slowenien"@de, "Slovenië"@nl, "Słowenia"@pl, "Szlovénia"@hu, "Slovenija"@hr, "Slovenija"@sl, "An tSlóivéin"@ga, "Slovėnija"@lt, "Slovenja"@mt, "Словения"@ru, "Словения"@bg, "Σλοβενία"@el, "Eslovénia"@pt, "Eslovènia"@ca, "Sloveenia"@et, "Slovinsko"@sk, "Slovinsko"@cs, "Slovenia"@fi, "Slovenia"@en, "Slovenia"@it, "Slovenia"@ro ;
+	wgs84_pos:lat   "46.0" ;
+	wgs84_pos:long  "15.0" .
+
+<http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-30T15:13:44.703Z" ;
+	dcterms:modified          "2014-05-01T08:59:39.001Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202#contentTier>, <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> ;
+	edm:completeness          "8" ;
+	edm:country               "Slovenia" ;
+	edm:datasetName           "2026119_Ag_EU_PartagePlus_1033" ;
+	edm:landingPage           <https://www.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> ;
+	edm:language              "sl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.eheritage.si%2FANPDT%2F00202_RVUDBPFWHONSNRSQLKQA.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:36.445Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2026119/Partage_Plus_ProvidedCHO_eheritage_si__Muzej_in_galerije_mesta_Ljubljane__Urbanisti_ni_in_titut_Republike_Slovenije_SI_AN_PD_00202> .
+
+<http://www.eheritage.si/cont/Digital.aspx?ID=SI_AN_PD_00202_RVUDBPFWHONSNRSQLKQA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671152>
+	a               foaf:Organization ;
+	skos:prefLabel  "Partage Plus"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

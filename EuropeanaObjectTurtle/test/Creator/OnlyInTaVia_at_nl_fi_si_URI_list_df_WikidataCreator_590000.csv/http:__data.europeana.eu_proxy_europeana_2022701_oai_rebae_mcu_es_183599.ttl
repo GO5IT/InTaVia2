@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2022713/oai_rebae_mcu_es_183599/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.mcu.es/ccbae/es/consulta/registro.cmd?id=183599>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:17:59.540Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_183599> .
+
+<http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4979>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2022713/oai_rebae_mcu_es_183599/manifest> ;
+	ebucore:fileByteSize    "112898"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "998"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "756"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2022713/oai_rebae_mcu_es_183599>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022713/oai_rebae_mcu_es_183599> .
+
+<http://data.europeana.eu/proxy/provider/2022713/oai_rebae_mcu_es_183599>
+	a                       ore:Proxy ;
+	dc:creator              "Rubens, Peter Paul, 1577-1640", "Jode, Pieter de, 1606-ca. 1674" ;
+	dc:date                 "16??" ;
+	dc:description          "AGS. Obsequio de Mr. W. Winther, ministro de Suecia en España, 23 de abril de 1955", "Grabado", "Sumario: Busto del Infante Carlos de Austria, de perfil hacia la derecha, con armadura, sobre ella el toisón de oro, lleva esta leyenda: \u0022Carolus austriacus infans Hispaniarum filius Philippi III. Natus anno Chr. 1607. Obiit anno Christi 1632, aetetis 25. Pet Paul Rubenius pixaxit Pet. de iode excudit\u0022" ;
+	dc:format               "image/jpeg" ;
+	dc:language             "spa" ;
+	dc:rights               "The Public Domain Mark (PDM)" ;
+	dc:subject              "Austria, Carlos de , Príncipe de Asturias, 1545-1568-Retratos-Grabado" ;
+	dc:title                "Carlos de Austria, Infante de España [Material gráfico no proyectable]" ;
+	dc:type                 "Ilustraciones y Fotos" ;
+	dcterms:extent          "1 estampa" ;
+	dcterms:isReferencedBy  "Referencias: Sin publicar" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_183599> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_183599>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500792> ;
+	edm:isShownAt      <http://www.mcu.es/ccbae/es/consulta/registro.cmd?id=183599> ;
+	edm:isShownBy      <http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4979> ;
+	edm:object         <http://www.mcu.es/ccbae/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=4979> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:17:59.539Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022713/oai_rebae_mcu_es_183599> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/organization/1482250000004500792>
+	a               foaf:Organization ;
+	skos:prefLabel  "Collective Catalog of the Library Network of the State Archives"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2022713/oai_rebae_mcu_es_183599>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-07-07T13:36:36.037Z" ;
+	dcterms:modified          "2017-07-07T13:36:36.037Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599#metadataTier>, <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022713/oai_rebae_mcu_es_183599> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022713_Ag_ES_Hispana_ccbae" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022713/oai_rebae_mcu_es_183599> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.mcu.es%2Fccbae%2Fi18n%2Fcatalogo_imagenes%2Fimagen_id.cmd%3FidImagen%3D4979&type=IMAGE> .

@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://nbn-resolving.de/urn:nbn:de:101:2-2010020375>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN/manifest> .
+
+<http://d-nb.info/999990012>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> .
+
+<http://data.europeana.eu/aggregation/europeana/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-04-05T13:26:47.992Z" ;
+	dcterms:modified          "2017-11-13T10:41:54.785Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN#contentTier>, <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> ;
+	edm:completeness          "0" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048441_Ag_DE_DDB_NationalBibliothek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> ;
+	edm:language              "de" .
+
+<https://iiif.europeana.eu/presentation/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/proxy/provider/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN>
+	a                   ore:Proxy ;
+	dc:creator          "Stifter, Adalbert" ;
+	dc:identifier       "http://nbn-resolving.de/urn:nbn:de:101:2-2010020375" ;
+	dc:language         "ger" ;
+	dc:publisher        "Amelang" ;
+	dc:subject          "Belletristik"@de, "Deutsche Literatur"@de ;
+	dc:title            "Heidedorf und Weihnachtsabend" ;
+	dc:type             "Monografie"@de ;
+	dcterms:extent      "119 S." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> .
+
+<http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T19:28:57.199Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> .
+
+<http://data.europeana.eu/organization/1482250000017965230>
+	a               foaf:Organization ;
+	skos:prefLabel  "Deutsche Nationalbibliothek"@de, "Немецкая национальная библиотека"@ru, "German National Library"@en, "Saksan kansalliskirjasto"@fi, "Německá národní knihovna"@cs, "Vācijas Nacionālā bibliotēka"@lv, "Biblioteca Națională a Germaniei"@ro, "Niemiecka Biblioteka Narodowa"@pl, "Njemačka nacionalna knjižnica"@hr, "Nemecká národná knižnica"@sk, "Biblioteca Nacional da Alemanha"@pt, "Biblioteca nazionale tedesca"@it, "Német Nemzeti Könyvtár"@hu, "Bibliothèque nationale allemande"@fr, "Германска национална библиотека"@bg, "Nemška nacionalna knjižnica"@sl, "Duitse Nationale Bibliotheek"@nl, "Biblioteca Nacional d'Alemanya"@ca, "Εθνική Βιβλιοθήκη της Γερμανίας"@el, "Saksamaa Rahvusraamatukogu"@et, "Deutsche Nationalbibliothek"@da, "Biblioteca Nacional de Alemania"@es, "Deutsche Nationalbibliothek"@sv .
+
+<http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000017965230> ;
+	edm:hasView        <http://nbn-resolving.de/urn:nbn:de:101:2-2010020375> ;
+	edm:isShownAt      <http://d-nb.info/999990012> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T19:28:57.199Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048441/item_VBPRDMTQHYLP7Y3PPRO6YWJWWSL7KAKN> .

@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://periodicals.lib.unideb.hu/lista.php?c=rege>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "3524676"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200467/BibliographicResource_3000134127051>
+	a                   ore:Proxy ;
+	dc:creator          "Fessler Ignác Aurél" ;
+	dc:description      "In: Regélő. - , 3 : 65 (1835), p. 520.", "Fessler" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "bibKLT00234239" ;
+	dc:language         "hu" ;
+	dc:rights           "Public Domain" ;
+	dc:subject          "Magyar folyóiratok, 19. század, Magyarország -- Budapest", "Magyar irodalom, folyóiratok, 19. század", "Hungarian literature, Periodicals., 19th century", "Hungarian periodicals, 19th century, Hungary -- Budapest" ;
+	dc:title            "Rágalmazás" ;
+	dc:type             "Analitic serial"@en ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1188>, "Regélő" ;
+	dcterms:issued      "1835" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/hu> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200467/BibliographicResource_3000134127051> .
+
+<http://data.europeana.eu/aggregation/europeana/9200467/BibliographicResource_3000134127051>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-01-22T08:35:56.760Z" ;
+	dcterms:modified          "2016-01-22T14:59:58.309Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051#metadataTier>, <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "9200467_Ag_TEL_a1188_eCloud_Debrecen" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200467/BibliographicResource_3000134127051> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdea.lib.unideb.hu%2Fdea%2Fbitstream%2Fhandle%2F2437%2F157272%2Fp_REGE_1835_3_2_065.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200467/BibliographicResource_3000134127051>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/74282> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1835" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200467/BibliographicResource_3000134127051> .
+
+<http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:59:11.675Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200467/BibliographicResource_3000134127051> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://iiif.europeana.eu/presentation/9200467/BibliographicResource_3000134127051/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004516106>
+	a               foaf:Organization ;
+	skos:prefLabel  "The University and National Library of Debrecen"@en .
+
+<http://dea.lib.unideb.hu/dea/bitstream/handle/2437/157272/p_REGE_1835_3_2_065.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "79958"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "350"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "190"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:59:11.675Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200467/BibliographicResource_3000134127051> .
+
+<http://data.europeana.eu/aggregation/provider/9200467/BibliographicResource_3000134127051>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200467/BibliographicResource_3000134127051> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516106> ;
+	edm:isShownAt      <http://periodicals.lib.unideb.hu/lista.php?c=rege> ;
+	edm:isShownBy      <http://dea.lib.unideb.hu/dea/bitstream/handle/2437/157272/REGE_1835_3_2_065.pdf#page=8> ;
+	edm:object         <http://dea.lib.unideb.hu/dea/bitstream/handle/2437/157272/p_REGE_1835_3_2_065.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://dea.lib.unideb.hu/dea/bitstream/handle/2437/157272/REGE_1835_3_2_065.pdf#page=8>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200467/BibliographicResource_3000134127051/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/74282>
+	a                    edm:Agent ;
+	owl:sameAs           <http://dbpedia.org/resource/Ignaz_Aurelius_Fessler>, <http://data.bnf.fr/ark:/12148/cb12215404p>, <http://data.bibliotheken.nl/id/thes/p070244340>, <http://openlibrary.org/works/OL5467874A>, <http://nlg.okfn.gr/resource/authority/record151043>, <http://viaf.org/viaf/12358165>, <http://id.loc.gov/authorities/names/n84225178>, <http://id.worldcat.org/fast/144171>, <https://www.freebase.com/m/06qht4>, <http://www.wikidata.org/entity/Q213765>, <https://g.co/kg/m/06qht4>, <http://d-nb.info/gnd/118532650>, <http://www.idref.fr/03081460X/id> ;
+	rdaGr2:dateOfBirth   "1756-05-18" ;
+	rdaGr2:dateOfDeath   "1839-12-15" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/194808> ;
+	skos:altLabel        "Ignaz Aurel Feßler"@de, "Игнац Фесслер"@ru, "Ignaz Aurel Fessler"@de, "Ignaz Aurelius Fessler"@de, "Ignaz Aurelius Fessler"@sv, "Фесслер Игнац Аврелий"@ru, "Ignace Aurèle Fessler"@fr, "Ignatius Aurelius Fesler"@cs, "Фесслер, Игнац"@ru, "Игнац Аврелий Фесслер"@ru, "Ignácz Aurél Fessler"@cs, "Ignácz Aurél Fessler"@de, "Innocentius"@cs, "Aurelius Fessler"@de, "Innocenz Fessler"@cs, "Innocentius Fessler"@cs ;
+	skos:note            "Hungarian politician and historian (1756-1839)"@en, "(1756–1839) evangélikus püspök"@hu, "Storico e politico ungherese"@it, "Schriftsteller, Geistlicher und Freimaurer"@de, "Hongaars historicus (1756-1839)"@nl, "Polaiteoir agus staraí Ungárach"@ga ;
+	skos:prefLabel       "Ignace Aurélien Fessler"@fr, "Ignace Aurélien Fessler"@ca, "Aurelius Ignaz Fessler"@sv, "Fessler Ignác Aurél"@hu, "Фесслер, Игнац Аврелий"@ru, "Ignaz Aurelius Feßler"@de, "Ignaz Aurelius Feßler"@fi, "Ignaz Aurelius Feßler"@pt, "Ignaz Aurelius Feßler"@cs, "Ignaz Aurelius Feßler"@pl, "Ignaz Aurelius Feßler"@da, "Ignaz Aurelius Fessler"@en, "Ignaz Aurelius Fessler"@it, "Ignaz Aurelius Fessler"@es, "Ignaz Aurelius Fessler"@sl, "Ignaz Aurelius Fessler"@ga, "Ignaz Aurelius Fessler"@nl .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

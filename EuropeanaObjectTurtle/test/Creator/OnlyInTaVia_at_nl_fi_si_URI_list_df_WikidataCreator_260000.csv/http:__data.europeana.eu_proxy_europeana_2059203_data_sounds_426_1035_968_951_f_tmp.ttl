@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2059203/data_sounds_426_1035_968_951_f_tmp>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004514750> ;
+	edm:isShownAt      <https://dansklyd.statsbiblioteket.dk/lydoptagelse/?eid=426-1035-968-951_f.tmp> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://rdaregistry.info/termList/RDACarrierType/1003>
+	a               skos:Concept ;
+	skos:note       "包括腊筒、线筒等"@zh, "Incluye cilindros de cera, cilindros metálicos, etc."@es, "Comprend les cylindres de cire, cylindres de fil, etc."@fr, "Dazu gehören Wachszylinder, Drahtzylinder usw."@de, "Wax cylinders, wire cylinders, etc., are included."@en, "Inclou cilindres de cera, de filferro, etc."@ca, "Trục lăn sáp, trục lăn dây, v.v..., được bao gồm"@vi ;
+	skos:prefLabel  "audio cylinder"@en, "Phonographenzylinder"@de, "audiocilinder"@nl, "cylindre audio"@fr, "أسطوانة سمعية"@ar, "ljudcylinder"@sv, "cilindro audio"@it, "trục lăn audio"@vi, "cilindre àudio"@ca, "cilindro sonoro"@es, "录音筒"@zh .
+
+<http://data.europeana.eu/aggregation/europeana/2059203/data_sounds_426_1035_968_951_f_tmp>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T13:55:56.527Z" ;
+	dcterms:modified          "2016-07-08T13:55:56.527Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp#contentTier>, <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp> ;
+	edm:completeness          "0" ;
+	edm:country               "Denmark" ;
+	edm:datasetName           "2059203_Ag_EU_eSOUNDS_1005_Denmark" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp> ;
+	edm:language              "da" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:56:25.518Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_426_1035_968_951_f_tmp> .
+
+<http://data.europeana.eu/organization/1482250000004514750>
+	a               foaf:Organization ;
+	skos:prefLabel  "State and University Library"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/provider/2059203/data_sounds_426_1035_968_951_f_tmp>
+	a                   ore:Proxy ;
+	dc:contributor      "Ragna Foss (Kristiania)" ;
+	dc:creator          "Gaetano Donizetti" ;
+	dc:identifier       "DFM841" ;
+	dc:publisher        "Dansk Fonograf Magasin" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music> ;
+	dc:title            "Sang af \u0022Regimentets Datter\u0022 (norsk)" ;
+	dcterms:created     "1910" ;
+	dcterms:medium      <http://rdaregistry.info/termList/RDACarrierType/1003> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_426_1035_968_951_f_tmp> .
+
+<http://data.europeana.eu/proxy/europeana/2059203/data_sounds_426_1035_968_951_f_tmp>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146965> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1910" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059203/data_sounds_426_1035_968_951_f_tmp> .
+
+<http://data.europeana.eu/agent/146965>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/253>, <http://data.europeana.eu/agent/34609>, <http://data.europeana.eu/concept/247> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/156513> ;
+	owl:sameAs           <http://viaf.org/viaf/74037336>, <http://d-nb.info/gnd/118526731>, <http://nlg.okfn.gr/resource/authority/record166395>, <http://data.carnegiehall.org/names/1008668>, <https://livedata.bibsys.no/authority/90269216>, <https://g.co/kg/m/09gbf>, <http://lod.nl.go.kr/resource/KAC199607278>, <http://id.worldcat.org/fast/45728>, <http://datos.bne.es/resource/XX995758>, <http://dbpedia.org/resource/Gaetano_Donizetti>, <https://www.freebase.com/m/09gbf>, <http://id.ndl.go.jp/auth/ndlna/00715770>, <http://data.cervantesvirtual.com/person/70269>, <http://id.loc.gov/authorities/names/n79132358>, <http://data.bnf.fr/ark:/12148/cb13893362x>, <http://www.idref.fr/028792297/id>, <https://libris.kb.se/pm134vz70zfk49d>, <http://openlibrary.org/works/OL284141A>, <http://www.wikidata.org/entity/Q101698>, <http://data.bibliotheken.nl/id/thes/p071181520>, <http://libris.kb.se/resource/auth/206767> ;
+	rdaGr2:dateOfBirth   "1797-11-29" ;
+	rdaGr2:dateOfDeath   "1848-04-08" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/150575> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/150575> ;
+	skos:altLabel        "Donizetti"@ro, "Donizetti"@cs, "Donizetti"@et, "Donizetti"@es, "Donizetti"@fr, "Donizetti"@it, "Donizetti"@hr, "Donizetti"@en, "Donizetti"@sv, "Donizetti"@fi, "Donizetti"@pt, "Gaetano Donizetti"@ru, "Доменико Гаэтано Мариа Доницетти"@ru, "Доницети"@bg, "Доницетти Г."@ru, "Доницетти Гаэтано"@ru, "Доницетти"@ru, "Gaetanas Donicetis"@lt, "Доницетти, Гаэтано"@ru, "Domenico Gaetano Maria Donizetti"@ro, "Domenico Gaetano Maria Donizetti"@pl, "Domenico Gaetano Maria Donizetti"@sk, "Domenico Gaetano Maria Donizetti"@cs, "Domenico Gaetano Maria Donizetti"@et, "Domenico Gaetano Maria Donizetti"@it, "Domenico Gaetano Maria Donizetti"@en, "Domenico Gaetano Maria Donizetti"@pt, "Domenico Gaetano Maria Donizetti"@de, "Domenico Gaetano Maria Donizetti"@fi, "Domenico Gaetano Maria Donizetti"@ru, "Donizeti"@pt, "Donizettià"@ca, "Gaëtano Donizetti"@et, "Gaëtano Donizetti"@hu, "Gaëtano Donizetti"@de, "Donizetti"@ca ;
+	skos:note            "Italiaanse componist"@nl, "Itāļu komponists"@lv, "Taliansky hudobný skladateľ"@sk, "Italialainen säveltäjä"@fi, "Itaalia helilooja"@et, "Italiensk kompositör"@sv, "Italský operní skladatel"@cs, "Compositor italià"@ca, "Italiensk komponist"@da, "Итальянский композитор"@ru, "Olasz zeneszerző"@hu, "Ιταλός συνθέτης"@el, "Compositore italiano"@it, "Compositeur italien"@fr, "Compozitor italian"@ro, "Compositor italiano"@es, "Kompozytor włoski"@pl, "Italian opera composer (1797–1848)"@en, "Italienischer Komponist"@de ;
+	skos:prefLabel       "Gaetāno Doniceti"@lv, "Gaetano Donizetti"@lt, "Gaetano Donizetti"@hr, "Gaetano Donizetti"@fr, "Gaetano Donizetti"@de, "Gaetano Donizetti"@fi, "Gaetano Donizetti"@pt, "Gaetano Donizetti"@hu, "Gaetano Donizetti"@sk, "Gaetano Donizetti"@sl, "Gaetano Donizetti"@ga, "Gaetano Donizetti"@ca, "Gaetano Donizetti"@sv, "Gaetano Donizetti"@mt, "Gaetano Donizetti"@en, "Gaetano Donizetti"@it, "Gaetano Donizetti"@es, "Gaetano Donizetti"@et, "Gaetano Donizetti"@cs, "Gaetano Donizetti"@pl, "Gaetano Donizetti"@ro, "Gaetano Donizetti"@da, "Gaetano Donizetti"@nl, "Γκαετάνο Ντονιτσέτι"@el, "Гаэтано Доницетти"@ru, "Гаетано Доницети"@bg .
+
+<http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:56:25.519Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059203/data_sounds_426_1035_968_951_f_tmp> .
+
+<https://dansklyd.statsbiblioteket.dk/lydoptagelse/?eid=426-1035-968-951_f.tmp>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2059203/data_sounds_426_1035_968_951_f_tmp>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

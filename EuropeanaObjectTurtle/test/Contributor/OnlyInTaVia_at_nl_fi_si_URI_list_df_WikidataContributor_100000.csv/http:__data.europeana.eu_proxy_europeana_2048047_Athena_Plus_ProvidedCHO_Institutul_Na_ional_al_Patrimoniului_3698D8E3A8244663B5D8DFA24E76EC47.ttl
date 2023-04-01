@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:21:38.128Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> .
+
+<http://data.europeana.eu/organization/1482250000000992135>
+	a               foaf:Organization ;
+	skos:prefLabel  "Institutul Național Al Patrimoniului"@ro, "National Heritage Institute, Bucharest"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-28T10:46:12.198Z" ;
+	dcterms:modified          "2016-07-18T12:27:35.782Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47#metadataTier>, <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> ;
+	edm:completeness          "10" ;
+	edm:country               "Romania" ;
+	edm:datasetName           "2048047_Ag_EU_AthenaPlus_RomaniaINP" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> ;
+	edm:language              "ro" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fclasate.cimec.ro%2Fmedium%2FARP_6961500_4-28.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://clasate.cimec.ro/detaliu.asp?k=3698D8E3A8244663B5D8DFA24E76EC47>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:21:38.128Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> .
+
+<http://clasate.cimec.ro/medium/ARP_6961500_4-28.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47/manifest> ;
+	ebucore:fileByteSize    "31696"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "178"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "700"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> .
+
+<http://data.europeana.eu/aggregation/provider/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000992135> ;
+	edm:isShownAt      <http://clasate.cimec.ro/detaliu.asp?k=3698D8E3A8244663B5D8DFA24E76EC47> ;
+	edm:isShownBy      <http://clasate.cimec.ro/medium/ARP_6961500_4-28.jpg> ;
+	edm:object         <http://clasate.cimec.ro/medium/ARP_6961500_4-28.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47>
+	a                   ore:Proxy ;
+	dc:contributor      "Klimt, Gustav"@ro ;
+	dc:date             "Cca. 1884" ;
+	dc:description      "overall description: Lucrarea a fost concepută pentru a decora partea superioară a pereților sălii de teatru, sub forma unei frize. Central, în medalion circular, este reprezentată muza Melpomene, muza tragediei, un bust feminin, având inscripția \u0022Melpomene\u0022, medalionul este încadrat de doi îngeri muzicanți. Se remarcă ansamblul compoziției, în care contrastează realismul figurilor cu elemente decorative, geometrice și florale, care întregesc compoziția. Pânza este dominată de un colorit cu nuanțe calde, compusă din bunuri și tonuri de verde, conferind pânzei calități plastice deosebite. Semnat dreapta jos cu galben: G. Klimt"@ro ;
+	dc:format           "ulei pe rips" ;
+	dc:identifier       "3698D8E3A8244663B5D8DFA24E76EC47", "8101 / PFV869" ;
+	dc:title            "Melpomene" ;
+	dc:type             "fine arts", "artă plastică", "Pictură decorativă" ;
+	dcterms:extent      "205" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/item/2048047/Athena_Plus_ProvidedCHO_Institutul_Na_ional_al_Patrimoniului_3698D8E3A8244663B5D8DFA24E76EC47>
+	a  edm:ProvidedCHO .

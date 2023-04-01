@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200143/BibliographicResource_2000069353554>
+	a                   ore:Proxy ;
+	dc:contributor      "Paulus Potter" ;
+	dc:creator          "Wz. T. van. Westrheene" ;
+	dc:date             "1867" ;
+	dc:description      "Illustrations: Genealogical tables", "Includes bibliographical references.", "par T. van Westrheene, Wz.", "Illustrations: Illustrations" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "013579496" ;
+	dc:language         "fr" ;
+	dc:publisher        "M. Nijhoff" ;
+	dc:subject          "Artists, 17th century., Netherlands", "Paulus Potter", "Art, Modern, 17th century.", "Art, Dutch, 17th century.." ;
+	dc:title            "Paulus Potter sa vie et ses œuvres" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "208 p. :", "23 cm.", "ill., geneal. tables ;" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1007> ;
+	dcterms:spatial     <http://sws.geonames.org/2747373/>, <http://id.loc.gov/vocabulary/countries/ne> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069353554> .
+
+<http://data.europeana.eu/organization/1482250000001710325>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bodleian Libraries, University of Oxford"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200143/BibliographicResource_2000069353554>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/61003> ;
+	dc:subject          <http://data.europeana.eu/agent/61003> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1867" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069353554> .
+
+<http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069353554>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-03T22:56:44.763Z" ;
+	dcterms:modified          "2014-06-05T17:06:31.001Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554#metadataTier>, <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554> ;
+	edm:completeness          "0" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200143_Ag_EU_TEL_a1007_E.Libraries_Oxford" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200143/BibliographicResource_2000069353554> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fpurl.ox.ac.uk%2Fuuid%2F51bd4689bb6e4142be4b97864202ecc0&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:47:39.581Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069353554> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:47:39.582Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069353554> .
+
+<http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069353554>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710325> ;
+	edm:isShownAt      <http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013579496&indx=1&recIds=oxfaleph013579496> ;
+	edm:isShownBy      <http://purl.ox.ac.uk/uuid/51bd4689bb6e4142be4b97864202ecc0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/61003>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/217>, <http://data.europeana.eu/agent/13588>, <http://data.europeana.eu/agent/42595> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/42595>, <http://data.europeana.eu/agent/77183> ;
+	owl:sameAs                     <http://www.idref.fr/050463950/id>, <http://viaf.org/viaf/7543698>, <http://datos.bne.es/resource/XX5106473>, <http://d-nb.info/gnd/119209993>, <http://data.bibliotheken.nl/id/thes/p071076778>, <http://data.bnf.fr/ark:/12148/cb14959617v>, <https://www.freebase.com/m/0pw1p>, <http://dbpedia.org/resource/Paulus_Potter>, <http://id.worldcat.org/fast/289450>, <http://www.wikidata.org/entity/Q355406>, <https://livedata.bibsys.no/authority/15016021>, <https://g.co/kg/m/0pw1p>, <http://vocab.getty.edu/ulan/500012008>, <http://data.bnf.fr/ark:/12148/cb13497315p>, <http://id.loc.gov/authorities/names/nr91026025>, <http://datos.bne.es/resource/XX1535056> ;
+	rdaGr2:dateOfBirth             "1625-11-20" ;
+	rdaGr2:dateOfDeath             "1654-01-17" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40767> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "J.P. Potter"@en, "Pl. Potter"@en, "Paulus Potter de Jong"@en, "Paulus Pietersz. Potter"@nl, "P. Potter"@en, "Paulus Pietersz. Potter"@en, "Paolo Potter"@en, "Paul Poter"@en, "Paul de Potter"@en, "Paol Potter"@en, "P. Poetter"@en, "Paulus Pottert"@en, "Copper"@en, "Potter"@en, "Potter"@sv, "Paul potter"@en, "Pouwels Potter"@nl, "Paul-Potter"@en, "Pouwels Potter"@en, "Paulus Porter"@en, "Paul Peter"@en, "R. Potter"@en, "P. potter"@en, "Poter"@en, "Potter paul"@en, "Paulus Potters"@en, "Paulus Pieterszoon Potter"@pl, "Paulus Pûtter"@en, "Paulus Poetter"@en, "Paulus Pieterszoon Potter"@de, "Paulus Pieterszoon Potter"@pt, "Paul Poters"@en, "Potter paulus"@en, "P. Porter"@en, "Поттер Паулюс"@ru, "Paul Potters"@en, "P. Poter"@en, "Paul Potter"@es, "Paul Potter"@fr, "Paul Potter"@de, "Paul Potter"@sv, "Paul Potter"@en, "Paulus de Potter"@en ;
+	skos:note                      "Pittore olandese"@it, "Nyderlandų tapytojas"@lt, "Nizozemský malíř"@cs, "Hollandi maalikunstnik"@et, "Holland festő"@hu, "Peintre hollandais"@fr, "Ολλανδός ζωγράφος"@el, "Pintor neerlandés"@es, "Нидерландский живописец"@ru, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Niederländischer Kunstmaler des Barock"@de, "Kunstschilder uit Republiek der Zeven Verenigde Nederlanden (1625-1654)"@nl, "Dutch painter (1625-1654)"@en, "Holenderski malarz"@pl ;
+	skos:prefLabel                 "Πάουλους Πόττερ"@el, "Paulus Potter"@it, "Paulus Potter"@de, "Paulus Potter"@fi, "Paulus Potter"@sv, "Paulus Potter"@pt, "Paulus Potter"@lt, "Paulus Potter"@en, "Паулюс Поттер"@ru, "Paulus Potter"@fr, "Paulus Potter"@hu, "Paulus Potter"@es, "Paulus Potter"@cs, "Paulus Potter"@sk, "Paulus Potter"@pl, "Paulus Potter"@da, "Paulus Potter"@nl, "Paulus Potter"@ca .
+
+<http://purl.ox.ac.uk/uuid/51bd4689bb6e4142be4b97864202ecc0>
+	a                      edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize   "36201735"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://rightsstatements.org/vocab/InC/1.0/> ;
+	edm:spatialResolution  "150"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://sws.geonames.org/2747373/>
+	a               edm:Place ;
+	skos:prefLabel  "The Hague (Herstellung)" .
+
+<http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013579496&indx=1&recIds=oxfaleph013579496>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069353554>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

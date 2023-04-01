@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:40.289Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068280> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_104068280>
+	a                   ore:Proxy ;
+	dc:contributor      "David Ryckaert" ;
+	dc:creator          "David Ryckaert" ;
+	dc:description      "Litt. : Jane P. Davidson: The witch in northern european art 1470-1750, Freren 1987.", "Vindplaats: Parijs, Musées Nationaux" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068280" ;
+	dc:rights           "Nationaal Gevangenismuseum", "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum" ;
+	dc:source           "[104068280], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "heks"@nl ;
+	dc:title            "Rondedans der monsters" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "16XX" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068280> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068280>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:104068280> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068280&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_104068280>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/10354> ;
+	dc:creator          <http://data.europeana.eu/agent/10354> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104068280> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:104068280>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104068280>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:09:57.546Z" ;
+	dcterms:modified          "2018-04-05T17:25:29.339Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_104068280> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A104068280%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104068280&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5503"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "117"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/agent/10354>
+	a                    edm:Agent ;
+	owl:sameAs           <http://viaf.org/viaf/51863868>, <http://datos.bne.es/resource/XX1574903>, <http://kulturarvsdata.se/LSH/agents/25723>, <https://www.freebase.com/m/02qkb3d>, <http://d-nb.info/gnd/122087267>, <http://dbpedia.org/resource/David_Ryckaert_III>, <http://data.bnf.fr/ark:/12148/cb136076588>, <http://id.worldcat.org/fast/449150>, <http://www.wikidata.org/entity/Q323932>, <http://www.idref.fr/055322603/id>, <https://g.co/kg/m/02qkb3d>, <http://id.loc.gov/authorities/names/nr00019453>, <http://data.bibliotheken.nl/id/thes/p104068310>, <http://ta.sandrart.net/-person-2795>, <http://vocab.getty.edu/ulan/500116871> ;
+	rdaGr2:dateOfBirth   "1612-12-02" ;
+	rdaGr2:dateOfDeath   "1661-11-11" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203279> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203279> ;
+	skos:altLabel        "Ryckeart"@en, "Rychart"@en, "Rykart"@en, "David, III Ryckaert"@en, "Ricaert"@en, "Rycarts"@en, "Ryckaert david iii"@en, "D. Rycaerts"@en, "Rycord"@en, "David Ryckaert d.J."@en, "David Rickaers"@en, "Rykaert"@en, "D. Rykaart"@en, "David Rychaert"@en, "David Reickhart"@en, "Давид Рийкарт"@ru, "David Ryckarts"@en, "Rickards"@en, "David Ryckhardt"@en, "David Ryckaert D. J."@en, "D. Rickarts"@en, "Rykeart"@en, "David Ryckeart"@en, "Rycaerdt"@en, "D. Rycaut"@en, "David Ruycart"@en, "David Rycardt"@en, "III David Ryckaert"@en, "David Ryckart"@en, "D. ryckaert d. jungere"@en, "David Rijckaert d. J."@en, "D. Ryckaerts"@en, "David Rijckaert"@es, "David Rijckaert"@en, "David Rijckaert"@de, "David Ryackaer"@en, "David Rychart"@en, "David Rikaerts"@en, "D. rijckaert III"@en, "D. Ryckhaert"@en, "Drickaers"@en, "David, Der Jüngere Ryckaert"@en, "Riquart"@en, "D. Rycart"@en, "David Wright"@en, "D. Rycaert"@en, "D. Rycarts"@en, "Ryckarts"@en, "David Ricard"@en, "David Rickaert"@en, "D. Ricart"@en, "David Rykhart"@en, "Richard"@en, "David Rycaerdt"@en, "Rykardt"@en, "De Ricart"@en, "Ryckart"@en, "David Rickhart"@en, "David Rikaert"@en, "David (III) Rijckaert"@en, "David III Ryckaert"@fr, "David Ryckaert III."@cs, "David III Ryckaert"@en, "Rycaert"@en, "D. Rycord"@en, "D. Ryckhardt"@en, "D. ryckaert iii"@en, "David Rickarts"@en, "Rijckaert"@en, "D. Reickhart"@en, "Rickaert"@en, "D. Richard"@en, "David Ryckaurt"@en, "David Ryckaert der Jüngere"@en, "Rydcarts"@en, "D. Rickaert"@en, "David Ryckaert the Younger"@es, "David Ryckaert the Younger"@it, "David Ryckaert the Younger"@en, "David Ryckhardts"@en, "Ryckhaert"@en, "David Ryckaert the Younger"@pt, "David Ryckaert the Younger"@de, "David rijkaert"@en, "Rychaert"@en, "David Rykhard"@en, "David Rycaerts"@en, "Rycart"@en, "David Rijckaert mladší"@cs, "D. Ricaert"@en, "Dav. Ryckaert"@en, "D. Ryckaert"@en, "David Richart"@en, "Ryckaeft"@en, "Rykars"@en, "David Rickart"@en, "D. Rykaert"@en, "Ryckaert"@de, "Ryckaert"@en, "David Rycaert"@en, "David III Rijckaert"@en, "David Rydcarts"@en, "David rijckaert"@en, "Rickard"@en, "Ryckhardt"@en, "David, III Rijckaert"@en, "David Ryckaerdt"@en, "David Rycord"@en, "Ryckhart"@en, "D. Reykarts"@en, "Ricart"@en, "D. Rychart"@en, "D. Rykart"@en, "David Rychard"@en, "De Ryker"@en, "Rysart"@en, "D. Reykaert"@en, "David Ryckert"@en, "Young Ryckaert"@en, "David Ricart"@en, "David Ryckaerts"@en, "D. Ryckarts"@en, "Rickart"@en, "David Ryckaert III Der Jüngere"@en, "David Ryckaeft"@en, "David Rijckaert III"@nl, "David Rijckaert III"@en, "Rikaert"@en, "Ruycart"@en, "David rykaert d. j."@en, "D. Ryckart"@en, "David Ryckaert le Jeune"@fr, "David Ryckhaert"@en, "David Rykaert"@en, "R. Ryckart"@en, "Rykhart"@en, "Rykers"@en, "David Rykart"@en, "De Rykaert"@en, "Ricard"@en, "David Richter"@en, "D. Rykhaert"@en, "David Rycart"@en, "David Ryckaert (III)"@nl, "David Ryckaert (III)"@en, "Rickaart"@en, "David Reyckaert"@en, "Dominique Ricart"@en, "David Ricaert"@en, "David Ryckaert"@en ;
+	skos:note            "Pittore fiammingo"@it, "Vlaamse kunstschilder (1612-1661)"@nl, "Flamand festő"@hu, "Flemish painter (1612-1661)"@en, "Peintre flamand"@fr, "Pintor flamenc"@ca, "Flämischer Maler (1612-1661)"@de, "Pintor flamenco"@es, "Vlámský malíř"@cs, "Pintor flamengo"@pt ;
+	skos:prefLabel       "David Ryckaert III."@sk, "David III Ryckaert"@sv, "David Ryckaert III"@pl, "David Ryckaert III"@fr, "David Ryckaert III"@en, "David Ryckaert III"@es, "David Rijckaert III"@pt, "David Ryckaert"@nl, "David Ryckaert"@sl, "David Ryckaert"@cs, "David Ryckaert"@hu, "David Ryckaert"@it, "David Ryckaert"@de, "Рийкарт, Давид"@ru, "David, III Ryckaert"@ca, "David, III Ryckaert"@da .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104068280#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:40.288Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104068280> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

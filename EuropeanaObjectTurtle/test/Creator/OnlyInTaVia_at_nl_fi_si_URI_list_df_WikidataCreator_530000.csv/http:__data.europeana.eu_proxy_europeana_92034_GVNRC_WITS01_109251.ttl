@@ -1,0 +1,153 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109251&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "42987"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4682B4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#5F9EA0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#778899"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109251>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109251#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:23.997Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109251> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109251>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:109251> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109251&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_109251>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3050>, <http://data.europeana.eu/concept/3122>, <http://data.europeana.eu/concept/2502>, <http://data.europeana.eu/concept/1859>, <http://data.europeana.eu/concept/1848>, <http://data.europeana.eu/concept/3139> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_109251> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/3050>
+	a                skos:Concept ;
+	skos:altLabel    "Seitpferd"@de, "Cavalo com alça"@pt, "Cavalo com alcas"@pt, "Side horse"@en, "Paard met bogen"@nl, "Paard"@nl, "Cavalo-de-pau"@pt, "Horse"@en, "Pauschenpferd"@de, "Voltigepaard"@nl ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300211244>, <http://id.loc.gov/authorities/names/sh88001783>, <https://g.co/kg/m/01hj4t>, <https://www.freebase.com/m/01hj4t>, <http://www.wikidata.org/entity/Q840330>, <http://d-nb.info/gnd/4336267-9> ;
+	skos:note        "Turntoestel"@nl, "Гимнастический снаряд"@ru, "Gren inom den manliga artistiska gymnastiken"@sv, "Men's artistic gymnastics apparatus"@en, "Turngerät mit einer dem Pferd ähnlichen Form"@de, "Atrezzo sportivo"@it ;
+	skos:prefLabel   "Cavallo con maniglie"@it, "Cavalo com alças"@pt, "Turnpferd"@de, "Caballo con arcos"@es, "Bygelhäst"@sv, "Koń gimnastyczny"@pl, "Cheval d'arçons"@fr, "Cavall amb arcs"@ca, "Конь"@ru, "Paard voltige"@nl, "Кон с гривни"@bg, "Pommel horse"@en, "Cal cu mânere"@ro, "Bensving"@da, "Ίππος (γυμναστική)"@el, "Konj z ročaji"@sl .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_109251>
+	a                   ore:Proxy ;
+	dc:contributor      "Bauer, Marius" ;
+	dc:creator          "Bauer, Marius" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109251", "WITS01:109251" ;
+	dc:rights           "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:source           "[WITS01:109251], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "bestijgen"@nl, "poort(gebouw)"@nl, "binnenplaats"@nl, "ruiter"@nl, "parasol"@nl, "optocht"@nl, "oosterling"@nl, "kasteel"@nl, "paard"@nl, "stadsgezicht"@nl, "genrevoorstelling"@nl ;
+	dc:title            "Binnenhof van een paleis" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1905-1907" ;
+	dcterms:extent      "39 x 60 cm" ;
+	dcterms:isPartOf    "WITS01", "GVN", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109251> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:109251>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "54045"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/2502>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2682>, <http://data.europeana.eu/concept/2280> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300046218>, <http://thesaurus.europeanafashion.eu/thesaurus/10145>, <https://d-nb.info/gnd/1077994877>, <http://iconclass.org/41D2632>, <http://g.co/kg/g/122fj96c>, <http://www.wikidata.org/entity/Q1762975> ;
+	skos:note        "Předmět sloužící k osobní ochraně před slunečním zářením"@cs, "Objeto para se proteger do sol"@pt, "Gebruiksvoorwerp dat de functie heeft bescherming te bieden tegen de zon"@nl, "Solskydd i form av stort paraply"@sv, "Umbrella used as protection from the sun"@en, "Dispositif permettant de se protéger du soleil"@fr, "Genstand til beskyttelse mod solen"@da, "Ein Schirm, der vor Sonneneinstrahlung schützt"@de, "Accesorio para protegerse del sol"@es ;
+	skos:prefLabel   "Guarda-sol"@pt, "Para-sol"@ca, "Slunečník"@cs, "Itzalkin"@eu, "Sombrilla"@es, "Парасоль"@ru, "Sonnenschirm"@de, "Parasoll"@sv, "Päevavari"@et, "Auringonvarjo"@fi, "Parasol"@nl, "Parasol"@da, "Parasol"@fr, "Parasol"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109251#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:23.998Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109251> .
+
+<http://data.europeana.eu/concept/3122>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/063r3>, <http://www.wikidata.org/entity/Q657449>, <https://www.freebase.com/m/063r3>, <http://id.loc.gov/authorities/names/sh85097741>, <http://vocab.getty.edu/aat/300069283>, <http://www.yso.fi/onto/yso/p11763> ;
+	skos:note        "Georganiseerde trektocht"@nl, "Прохождение войск торжественным маршем с военной техникой или без, также это построение личного состава или техники в дни знаменательных дат"@ru, "Għadd ta' nies jimmarċjaw b'mod organizzat bil-kostumi jew bl-uniformijiet"@mt, "Procession of people"@en, "Procesión de gente"@es, "Prozession von Menschen"@de, "Processó de gent"@ca, "Cortège organisé de personnes souvent costumées, militaires ou manifestants, dans une ville ou sur un itinéraire ayant une valeur symbolique"@fr, "Sprievod ľudí"@sk ;
+	skos:prefLabel   "Optocht"@nl, "Mimohod"@hr, "Desfile"@eu, "Desfile"@es, "Desfile"@pt, "Parade"@en, "Parade"@de, "Felvonulás"@hu, "Parata"@it, "Parata"@mt, "Парад"@bg, "Парад"@ru, "Desfilada"@ca, "Défilé"@fr, "Parad"@sv, "Paradă"@ro, "Parāde"@lv, "Sprievod"@sk, "Průvod"@cs, "Paraad"@et, "Optog"@da, "Paraati"@fi, "Parada"@pl .
+
+<http://data.europeana.eu/concept/3139>
+	a                skos:Concept ;
+	skos:altLabel    "Hesterytter"@da, "Jinete hipico"@es, "Спортивный наездник"@ru, "Sportsrytter"@da, "Ιππέας"@el, "Jātniece"@lv ;
+	skos:broader     <http://data.europeana.eu/concept/3130> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300188602>, <http://g.co/kg/g/121j20lm>, <http://www.wikidata.org/entity/Q2730732> ;
+	skos:note        "Atleta che pratica lo sport dell'equitazione"@it, "Deportista que compite montando a caballo"@es, "Sportovec věnující se jezdectví na koních"@cs, "Person, der dyrker hestesport"@da, "Sportler, der Pferde reitet"@de, "Sportsperson who rides horses"@en, "Πρόσωπο που συμμετέχει σε αθλήματα ιππασίας"@el, "Sportif pratiquant l'équitation"@fr, "Lovassportot űző személy"@hu ;
+	skos:prefLabel   "Jeździec"@pl, "Equestrian"@en, "Jahač"@sl, "Reiter"@de, "Jinete hípico"@es, "Cavaliere"@it, "Călăreț"@ro, "Ryttare"@sv, "Jazdec"@sk, "Genet"@ca, "Ratsastaja"@fi, "Marcach"@ga, "Jezdec"@cs, "Sportlovas"@hu, "Jātnieks"@lv, "Ruiter"@nl, "Наездник"@ru, "Αθλητής ιππασίας"@el, "Ratsanik"@et, "Cavalier"@fr, "Rytter"@da .
+
+<http://data.europeana.eu/concept/1859>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/0lf0n>, <http://babelnet.org/rdf/s00023310n>, <http://purl.org/bncf/tid/17946>, <http://www.yso.fi/onto/yso/p20237>, <https://d-nb.info/gnd/4137817-9>, <http://data.bnf.fr/ark:/12148/cb122351702>, <https://id.erfgoed.net/thesauri/erfgoedtypes/2089>, <http://www.wikidata.org/entity/Q309250>, <http://id.loc.gov/authorities/names/sh85033602>, <https://www.freebase.com/m/0lf0n>, <http://iconclass.org/41A51> ;
+	skos:note        "Área cercada, geralmente por um prédio, que é aberta ao céu"@pt, "Espace découvert et clos, faisant partie d’un ensemble de bâtiments"@fr, "Elemento arquitectónico y urbanístico"@es, "Enclosed area, often by a building, that is open to the sky"@en, "Terület"@hu, "In der Architektur ein unter freiem Himmel befindlicher Bereich eines Gebäudes"@de, "Bouw"@nl ;
+	skos:prefLabel   "Patio"@eu, "Dziedziniec"@pl, "Baggård"@da, "Udvar"@hu, "Udvar"@sl, "Hoov"@et, "Clós"@ga, "Borggård"@sv, "Nádvorie"@sk, "Cour d'immeuble"@fr, "Sisäpiha"@fi, "Courtyard"@en, "Corte"@it, "Binnenplaats"@nl, "Cour"@es, "Nádvoří"@cs, "Вътрешен двор"@bg, "Двор-колодец"@ru, "Pátio"@pt, "Hof"@de, "Pati"@ca ;
+	skos:related     <http://data.europeana.eu/concept/29> .
+
+<http://data.europeana.eu/concept/1848>
+	a                skos:Concept ;
+	skos:exactMatch  <http://wordnet-rdf.princeton.edu/wn30/02980441-n>, <http://id.ndl.go.jp/auth/ndlna/00571227>, <http://www.yso.fi/onto/yso/p6790>, <http://babelnet.org/rdf/s00016570n>, <https://d-nb.info/gnd/4009104-1>, <http://iconclass.org/41A12>, <http://datos.bne.es/resource/XX526049>, <http://dbpedia.org/ontology/Castle>, <http://id.loc.gov/authorities/names/sh85020702>, <http://vocab.getty.edu/aat/300006891>, <http://purl.org/bncf/tid/17448>, <http://wordnet-rdf.princeton.edu/wn31/102974554-n>, <http://data.bnf.fr/ark:/12148/cb11931695w>, <https://www.freebase.com/m/0d5gx>, <http://www.geonames.org/ontology#S.CSTL>, <http://www.wikidata.org/entity/Q23413>, <https://g.co/kg/m/0d5gx> ;
+	skos:note        "Struchtúr daingnithe a tógadh sa Mheánaois"@ga, "Tip ta' struttura ffortifikata fl-Ewropa, fl-Asja u fil-Lvant Nofsani matul il-Medjuevu min-nobbiltà"@mt, "Здание жилого и фортификационного предназначения"@ru, "Erődítmény"@hu, "Građevinski objekt sagrađen u svrhu obrane"@hr, "Versterkt kasteel, ook wel burcht genoemd"@nl, "Είδος οχύρωσης"@el, "Geschlossener, bewohnbarer Wehrbau"@de, "Budynek warowny"@pl, "Edificación cercada de murallas, baluartes, fosos y otras fortificaciones"@es, "Demeure seigneuriale fortifiée"@fr, "Eraikin bat edo gehiagoko egitura gotortua, Europa, Asia eta Ekialde Hurbilean kokatua"@eu, "Type of fortified structure built in Europe, Asia and the Middle East during the Middle Ages by nobility"@en, "Zgradba, oblika fortifikacije, značilna za obdobje srednjega veka."@sl, "Tip de fortificație"@ro, "Typ opevněné stavby"@cs, "Fortificação construída na Idade Média pela nobreza"@pt, "Complesso architettonico fortificato tipico del Medioevo"@it, "Estructura fortificada construïda a l'edat mitjana per la noblesa a Europa i a l'Orient Mitjà"@ca ;
+	skos:prefLabel   "Hrad"@sk, "Hrad"@cs, "Pilis"@lt, "Borg"@sv, "Borg"@da, "Burg"@de, "Castle"@en, "Grad"@sl, "Linnus"@et, "Замок"@ru, "Château fort"@fr, "Kastell"@mt, "Castillo"@es, "Utvrda"@hr, "Vár"@hu, "Κάστρο"@el, "Castell"@ca, "Castello"@it, "Viduslaiku pils"@lv, "Burcht"@nl, "Zamek"@pl, "Замък"@bg, "Castelo"@pt, "Linna"@fi, "Gaztelu"@eu, "Caisleán"@ga, "Castel"@ro .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_109251>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:37.747Z" ;
+	dcterms:modified          "2018-04-05T18:10:50.483Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_109251> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_109251> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A109251%26role%3Dthumbnail&type=IMAGE> .

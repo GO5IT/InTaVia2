@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j>
+	a  edm:ProvidedCHO .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/f1> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1162244j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:18:55.723Z" ;
+	dcterms:modified          "2018-07-23T15:12:36.686Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k1162244j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k1162244j.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1162244j/manifest> ;
+	ebucore:fileByteSize    "37918"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "695"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1162244j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k1162244j> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1162244j/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k1162244j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:07:58.907Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1162244j> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1162244j/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1162244j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5369"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "174"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k1162244j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1162244j> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:07:58.907Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1162244j> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k1162244j>
+	a                   ore:Proxy ;
+	dc:contributor      "Beaumarchais, Eugénie de (1777-1816). Dédicataire" ;
+	dc:creator          "Pleyel, Ignaz (1757-1831). Compositeur" ;
+	dc:date             "1803-1806" ;
+	dc:description      "Présentation musicale : [Parties]", "Appartient à l’ensemble documentaire : RISM2", "Titre uniforme : Pleyel, Ignaz (1757-1831). Compositeur. [Trios. Piano, cordes. B 466. Do majeur]", "Appartient à l’ensemble documentaire : RISMImp", "Titre uniforme : Pleyel, Ignaz (1757-1831). Compositeur. [Trios. Piano, cordes. B 465. Fa majeur]", "Titre uniforme : Pleyel, Ignaz (1757-1831). Compositeur. [Trios. Piano, cordes. B 467. Mi bémol majeur]" ;
+	dc:format           "3 parties (43, 13, 6 p.) ; 4°", "Nombre total de vues :  46" ;
+	dc:identifier       "Cotage 9 (Pleyel)", "http://gallica.bnf.fr/ark:/12148/bpt6k1162244j" ;
+	dc:language         "fre" ;
+	dc:publisher        "À Paris : chez l'auteur, rue Neuve des Petits Champs, n° 1286. Vis-à-vis de la Trésorerie nationale, [entre 1803 et 1806]" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb155823925", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb411578101", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb15582390g", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb15582393h" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Ex-libris ; \u0022Mme la baronne Coppens\u0022. Cachet : \u0022École Boulle. Bibliothèque\u0022, VMA-7615 (3)" ;
+	dc:subject          "Trios avec piano -- 18e siècle -- Parties"@fre ;
+	dc:title            "Douze grandes sonates pour forte-piano avec accompagnement de violon et violoncelle par J. Pleyel... Oeuvre 31. Livraison 1" ;
+	dc:type             "Genre musical :" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1162244j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1162244j> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1162244j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "195644"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

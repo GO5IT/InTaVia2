@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.O_506>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "46528"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/07101/O_506>
+	a                    ore:Proxy ;
+	dc:creator           "Amerling, Friedrich von" ;
+	dc:date              "1832" ;
+	dc:description       "POZN: Štúdia hláv ku skupinovej podobizni.\u000AŠtúdia k obrazu 'Vjazd cisára Františka do Viedne'. Originál v zbierke Belvedere Galerie vo Viedni, Rodina Grófa Majlátha - (Die Familie des Grafen Majláth), inv. č. 1603\u000A\u000ADruhá verzia sa nachádza v zbierke Szepmuveszeti muzeum v Budapešti inv. č. 167.B\u000ALit.: Katarína Beňová: Portrét a portrétisti v Bratislave v rokoch 1815 - 1848, Dizertačná práca FiF UK Bratislava, 2010, s. 177, kat. č. 14-16." ;
+	dc:format            "oil"@eng, "olej"@slk ;
+	dc:identifier        "O 506" ;
+	dc:subject           "figurálna štúdia"@slk ;
+	dc:title             "Gróf Majláth s rodinou (štúdia)", "Count Majláth with Family"@en ;
+	dc:type              "originál", "štúdia", "Image", "maliarstvo, obraz závesný"@slk ;
+	dcterms:alternative  "Štúdia ku skupinovej podobizni" ;
+	dcterms:extent       "výška 51.5 cm;šírka 75.5 cm" ;
+	dcterms:medium       "lepenka"@slk, "cardboard"@eng ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/07101/O_506> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/07101/O_506> .
+
+<http://data.europeana.eu/item/07101/O_506#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:36.021Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_506> .
+
+<http://data.europeana.eu/item/07101/O_506#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:36.022Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_506> .
+
+<http://www.webumenia.sk/cedvuweb/image/SVK_SNG.O_506.jpeg?id=SVK:SNG.O_506>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "290461"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "550"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/07101/O_506>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-15T10:13:27.536Z" ;
+	dcterms:modified          "2018-03-12T15:43:21.498Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07101/O_506#metadataTier>, <http://data.europeana.eu/item/07101/O_506#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07101/O_506> ;
+	edm:completeness          "10" ;
+	edm:country               "Slovakia" ;
+	edm:datasetName           "07101_Ag_SK_EuropeanASNG" ;
+	edm:landingPage           <https://www.europeana.eu/item/07101/O_506> ;
+	edm:language              "sk" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.webumenia.sk%2Fcedvuweb%2Fimage%2FSVK_SNG.O_506.jpeg%3Fid%3DSVK%3ASNG.O_506&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000363675>
+	a               foaf:Organization ;
+	skos:prefLabel  "Galeria Nacional Eslovaca"@ca, "Galeria Nacional Eslovaca"@pt, "Σλοβακική Εθνική Πινακοθήκη"@el, "Slovenská národní galerie"@cs, "Slovenská Národná Galéria"@nl, "Slovenská národná galéria"@sk, "Slovak national gallery"@en, "Galleria nazionale slovacca"@it, "Slovāku Nacionālā galerija"@lv, "Szlovák Nemzeti Galéria"@hu, "Национална галерия на Словакия"@bg, "Słowacka Galeria Narodowa"@pl, "Slowakische Nationalgalerie"@de, "Словацкая национальная галерея"@ru, "Galerie nationale slovaque"@fr .
+
+<http://data.europeana.eu/aggregation/provider/07101/O_506>
+	a                  ore:Aggregation ;
+	dc:rights          "Slovenská národná galéria, SNG" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07101/O_506> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:isShownAt      <http://www.webumenia.sk/dielo/SVK:SNG.O_506> ;
+	edm:object         <http://www.webumenia.sk/cedvuweb/image/SVK_SNG.O_506.jpeg?id=SVK:SNG.O_506> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/1813>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069>, <http://data.europeana.eu/concept/2090> ;
+	skos:exactMatch  <http://g.co/kg/g/120kyzv0>, <https://d-nb.info/gnd/4131382-3>, <http://thesaurus.europeanafashion.eu/thesaurus/10572>, <http://id.loc.gov/authorities/names/sh85097653>, <http://purl.org/bncf/tid/527>, <http://www.wikidata.org/entity/Q389782>, <http://www.yso.fi/onto/yso/p16802>, <http://vocab.getty.edu/aat/300014224>, <http://babelnet.org/rdf/s00015937n> ;
+	skos:note        "Material compuesto de papel"@es, "Heavy-duty paper of various strengths"@en, "Kraftigt papir"@da, "Толстый бумажный материал"@ru, "Material format per diverses capes de paper superposades"@ca, "Papier bestaande uit meerdere lagen"@nl, "Materiale cartaceo particolarmente spesso e pesante, talvolta costituito da uno strato ondulato centrale e due fogli piani laterali"@it, "Druh výrobku z papíroviny, vyznačující se vyšší plošnou hmotností"@cs, "Aus Zellstoff, Holzschliff und Altpapier hergestellter Werkstoff"@de, "Wyrób papierniczy (gramatura: 160–500 g/m²)"@pl, "Karftigt papper"@sv, "Um tipo mais grosso e resistente de papel"@pt, "Types de papier généralement caractérisé par une rigidité, une épaisseur et/ou un grammage relativement élevés"@fr ;
+	skos:prefLabel   "Cartone"@it, "Pahvi"@fi, "Papp"@et, "Kartonas"@lt, "Cairtchlár"@ga, "Papelão"@pt, "Carton"@fr, "Carton"@ro, "Kartong"@sv, "Kartoi"@eu, "Картон"@ru, "Картон"@bg, "Kartons"@lv, "Χαρτόνι"@el, "Lepenka"@cs, "Karton"@nl, "Karton"@de, "Karton"@hr, "Karton"@hu, "Karton"@pl, "Karton"@da, "Cartó"@ca, "Cartón"@es, "Cardboard"@en .
+
+<http://data.europeana.eu/proxy/europeana/07101/O_506>
+	a                   ore:Proxy ;
+	dcterms:medium      <http://data.europeana.eu/concept/1813> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1832" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/O_506> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07101/O_506> .
+
+<http://www.webumenia.sk/oai-pmh/getimage/SVK:SNG.O_506>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/07101/O_506>
+	a  edm:ProvidedCHO .

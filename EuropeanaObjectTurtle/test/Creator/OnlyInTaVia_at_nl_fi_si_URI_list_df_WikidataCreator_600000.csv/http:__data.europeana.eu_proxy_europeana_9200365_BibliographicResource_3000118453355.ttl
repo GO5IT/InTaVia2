@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8813623t>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1956" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8813623t> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8813623t>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "225274"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8813623t>
+	a                   ore:Proxy ;
+	dc:creator          "Monfort, Silvia (1923-1991). Voix parlée", "Schlesser, André. Voix parlée", "Chaumette, Monique (1927-....). Voix parlée", "Wilson, Georges (1921-2010). Voix parlée", "Constant, Laurence. Voix parlée", "Deschamps, Jean (1920-2007). Voix parlée", "Théâtre national populaire. Interprète", "Noiret, Philippe (1930-2006). Voix parlée", "Riquier, Georges (1918-1998). Voix parlée", "Vilar, Jean (1912-1971). Voix parlée", "Dol, Mona (1901-1990). Voix parlée", "Mollien, Roger (1931-2009). Voix parlée", "Corneille, Pierre (1606-1684). Auteur ou responsable intellectuel", "Philipe, Gérard (1922-1959). Voix parlée" ;
+	dc:date             "1956" ;
+	dc:description      "Collection : Vie du théâtre", "Contient une table des matières", "[Le Cid]", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "disque microsillon"@fre, "2 disques : 33 t, mono ; 30 cm", "disc"@eng, "multipart/mixed", "Nombre total de vues :  14" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8813623t", "Numéro commercial : Encyclopédie sonore  320E806", "Numéro commercial : Encyclopédie sonore  320E807" ;
+	dc:publisher        "Hachette (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37870722d"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb11960647d"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, B-9837" ;
+	dc:title            "Le Cid : [tragi-comédie en 5 actes, en vers] / Corneille ; compositeurs non mentionnés, 17e ; Silvia Montfort (Chimène), Mona-Dol (Elvire), Monique Chaumette (l'Infante), Laurence Constant (Leonor)... [et al.], voix ; [orchestre] ; Jean Vilar, dir. scène" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8813623t> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8813623t/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8813623t>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8813623t> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8813623t.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8813623t.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4266"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8813623t>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:55:08.071Z" ;
+	dcterms:modified          "2018-03-26T12:30:45.393Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8813623t> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8813623t.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:32.561Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8813623t> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8813623t#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:32.560Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8813623t> .

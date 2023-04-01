@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/0940437/_nnfbdr5#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:55.582Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940437/_nnfbdr5> .
+
+<http://semium.org/time/16xx_3_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/16xx_2_half> ;
+	edm:begin         "Sun Jan 01 01:00:00 CET 1651" ;
+	edm:end           "Tue Dec 31 01:00:00 CET 1675" ;
+	skos:prefLabel    "3e quart 17e siècle"@fr, "3 quarter of the 17th century"@en, "3-я четверть 17-го века"@ru .
+
+<http://data.europeana.eu/organization/1482250000004514825>
+	a               foaf:Organization ;
+	skos:prefLabel  "Tarnow Digital Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/0940437/_nnfbdr5>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1655" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940437/_nnfbdr5> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940437/_nnfbdr5> .
+
+<http://semium.org/time/16xx_2_half>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://data.europeana.eu/timespan/17> ;
+	edm:begin         "Sun Jan 01 01:00:00 CET 1651" ;
+	edm:end           "Sat Dec 31 01:00:00 CET 1701" ;
+	skos:prefLabel    "17e (fin)"@fr, "Second half of the 17th century"@en, "Вторая половина 17-го века"@ru .
+
+<http://data.europeana.eu/aggregation/europeana/0940437/_nnfbdr5>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T07:10:52.134Z" ;
+	dcterms:modified          "2017-11-30T07:10:52.134Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940437/_nnfbdr5#metadataTier>, <http://data.europeana.eu/item/0940437/_nnfbdr5#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940437/_nnfbdr5> ;
+	edm:completeness          "10" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940437_Ag_PL_dlibra.biblioteka.tarnow.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940437/_nnfbdr5> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdlibra.biblioteka.tarnow.pl%2FContent%2F536%2FSD_321-Marolles_Michel_de-Tableaux_du_Temple_des_Muses.djvu&type=TEXT> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/0940437/_nnfbdr5>
+	a                    ore:Proxy ;
+	dc:contributor       "Bloemaert, Cornelis (1603?-1692). Il."@pl, "Diepenbeeck, Abraham. Il."@pl ;
+	dc:creator           "Marolles, Michel de (1600-1681)"@pl ;
+	dc:date              "1655"@pl ;
+	dc:format            "image/vnd.djvu"@pl ;
+	dc:language          "fr", "la", "el" ;
+	dc:publisher         "Nicolas L'Anglois"@pl ;
+	dc:rights            "Dla wszystkich bez ograniczeń"@pl, "Miejska Biblioteka Publiczna im. J. Słowackiego w Tarnowie"@pl ;
+	dc:source            "MBP Tarnów ; SD 321"@pl ;
+	dc:subject           "ikonografia"@pl, "mitologia grecka"@pl, "mitologia rzymska"@pl ;
+	dc:title             "Tableavx Dv Temple Des Mvses : Tirez Dv Cabinet De Fev Mr. Favereav Connseiller du Roy en sa Cour des Aydes, [et] grauez en Tailles - douces par les meilleurs Maistres de son temps, pour representer les Vertus [...]"@pl ;
+	dc:type              "starodruk"@pl ;
+	dcterms:alternative  "Tableaux du temple des muses tirez du cabinet de feu Mr. Fauereau"@pl, "Temple Des Muses"@pl ;
+	edm:currentLocation  "_FBC" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/0940437/_nnfbdr5> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/0940437/_nnfbdr5> .
+
+<https://iiif.europeana.eu/presentation/0940437/_nnfbdr5/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<file:///usr/local/tomcat/webapps/#locationOf:nnfbdr5_FBC>
+	a               edm:Place ;
+	skos:prefLabel  "Dział Starych Druków MBP"@pl .
+
+<http://fbc.pionier.net.pl/id/oai:dlibra.biblioteka.tarnow.pl:536>
+	a  edm:WebResource .
+
+<http://dlibra.biblioteka.tarnow.pl/Content/536/SD_321-Marolles_Michel_de-Tableaux_du_Temple_des_Muses.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940437/_nnfbdr5/manifest> ;
+	ebucore:fileByteSize    "102771716"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/vnd.djvu" ;
+	ebucore:height          "6453"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "4463"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "RGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940437/_nnfbdr5>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/0940437/_nnfbdr5>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940437/_nnfbdr5> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004514825> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:dlibra.biblioteka.tarnow.pl:536> ;
+	edm:isShownBy      <http://dlibra.biblioteka.tarnow.pl/Content/536/SD_321-Marolles_Michel_de-Tableaux_du_Temple_des_Muses.djvu> ;
+	edm:object         <http://dlibra.biblioteka.tarnow.pl/Content/536/SD_321-Marolles_Michel_de-Tableaux_du_Temple_des_Muses.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940437/_nnfbdr5#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:55.581Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940437/_nnfbdr5> .

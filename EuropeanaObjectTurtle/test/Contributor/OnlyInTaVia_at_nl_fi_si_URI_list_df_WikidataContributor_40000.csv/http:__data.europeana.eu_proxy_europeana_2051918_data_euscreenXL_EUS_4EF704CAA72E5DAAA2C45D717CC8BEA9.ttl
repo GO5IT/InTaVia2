@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.euscreen.eu/item.html?id=EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9/manifest> ;
+	ebucore:fileByteSize    "4535"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "application/xhtml+xml" .
+
+<http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338645> ;
+	edm:isShownAt      <http://www.euscreen.eu/item.html?id=EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	edm:isShownBy      <http://www.euscreen.eu/item.html?id=EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	edm:object         <http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9/image.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671121> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9" ;
+	dcterms:spatial     <http://data.europeana.eu/place/40372>, <http://data.europeana.eu/place/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "2002" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:29:04.397428Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-02-14T10:32:50.472Z" ;
+	dcterms:modified          "2022-06-23T14:28:03.667Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9#contentTier>, <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2051918_Ag_EU_EUscreenXLCore_1019" ;
+	edm:landingPage           <https://www.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimages3.noterik.com%2Fdomain%2Feuscreenxl%2Fuser%2Feu_nisv%2Fvideo%2FEUS_4EF704CAA72E5DAAA2C45D717CC8BEA9%2Fimage.jpg&type=VIDEO> .
+
+<https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://thesaurus.euscreen.eu/EUscreenXL/v1/794>
+	a               skos:Concept ;
+	skos:broader    <http://thesaurus.euscreen.eu/EUscreenXL/v1/772> ;
+	skos:inScheme   <http://thesaurus.euscreen.eu/EUscreenXL/v1/ConceptScheme> ;
+	skos:prefLabel  "Val"@sv, "Elections"@en, "Elections"@fr, "Valg"@da, "Alegeri"@ro, "választás"@hu, "Elezioni"@it, "Rinkimai"@lt, "Eleições"@pt, "Wahlen"@de, "Εκλογές"@el, "Volby"@cs, "Volitve"@sl, "Wybory"@pl, "Eleccions"@ca, "Verkiezingen"@nl .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:29:04.397948Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> .
+
+<http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9>
+	a                    ore:Proxy ;
+	dc:contributor       "Wester, Frits", "Thijn, Ed van", "Deelder, Jules", "Barend, Frits (presentatie, interviewer)", "Dorp, Henk van (presentatie, interviewer)", "Mulder, Jan", "Nijpels, Ed", "Büch, Boudewijn" ;
+	dc:description       "Original language summary: \u000AActuele dagelijkse talkshow van Frits Barend en Henk van Dorp. De Villa BVD-uitzendingen vinden plaats vanaf een speciale locatie en rond een evenement zoals Tweede Kamerverkiezingen of een groot voetbaltoernooi. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen. Deze reeks staat in het teken van de Tweede Kamerverkiezingen van 2002, en wordt live uitgezonden vanuit het Scheveningse Kurhaus. In deze aflevering te gast: - Ed van Thijn, oud-burgemeester Amsterdam, over het besluit van de politieke partijen om tot de verkiezingen van 15 mei 2002 geen campagnes meer te voeren i.v.m. de moord op politicus Pim Fortuyn op 6 mei 2002; - Ed Nijpels, commissaris van de koningin in Friesland; - Jules Deelder, dichter en schrijver; - Boudewijn Büch, schrijver en programmamaker; - Frits Wester, politiek verslaggever."@nl, "Daily talkshow with Frits Barend and Henk van Dorp. Regular guest is columnis Jan Mulder. The theme of this sequence is the election of the Parliament (‘second chamber’) of 2002 and will be broadcast live from the Kurhaus in Scheveningen. In this episode the guests are: - Ed van Thijn, former mayor of Amsterdam, on the decision taken by the political parties to the elections of 15 May 2002 not to run more campaigns concerning the assassination of politician Pim Fortuyn on May 6, 2002 - Ed Nijpels, the Queen’s commissioner in Friesland; - Jules Deelder, poet and writer; - Boudewijn Büch, writer and producer; - Frits Wester, political reporter."@en ;
+	dc:format            "ASPECT RATIO: 4:3", "Stereo", "Colour", "VIDEO" ;
+	dc:identifier        "1381418" ;
+	dc:publisher         "RTL 4" ;
+	dc:rights            "For information on the use of archive material, please contact the Customer Service department of Netherlands Institute for Sound & Vision: info@beeldengeluid.nl." ;
+	dc:subject           "Fortuyn, Pim", "Society and social issues", "politieke partijen", "praatprogramma", "politiek programma", "Tweede Kamer", "verkiezingscampagnes", "verkiezingen", "politieke moorden", "sportprogramma", <http://thesaurus.euscreen.eu/EUscreenXL/v1/794> ;
+	dc:title             "Barend & Van Dorp 08/05/2002"@en, "Barend & Van Dorp 08/05/2002"@nl ;
+	dc:type              "News", "ITEM" ;
+	dcterms:alternative  "Barend & Van Dorp"@nl, "SERIES TITLE: Barend & Van Dorp"@en ;
+	dcterms:created      "2002" ;
+	dcterms:extent       "00:51:05" ;
+	dcterms:isPartOf     <http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_513F04B47411BCDD8C80532EE577FAC4> ;
+	dcterms:issued       "08/05/2002" ;
+	dcterms:spatial      "The Netherlands", "Scheveningen", "Nederland", "Mediapark", "Hilversum" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9> .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/organization/1482250000004671121>
+	a               foaf:Organization ;
+	skos:prefLabel  "EUscreen"@en .
+
+<http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_4EF704CAA72E5DAAA2C45D717CC8BEA9/image.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17590"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "456"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "568"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFDEAD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000000338645>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nederlands Instituut voor Beeld & Geluid"@nl, "Netherlands Institute for Sound & Vision"@en .
+
+<http://data.europeana.eu/place/40372>
+	a               edm:Place ;
+	owl:sameAs      <http://id.loc.gov/authorities/names/n79079036>, <https://d-nb.info/gnd/4120016-0>, <https://g.co/kg/m/0qm4j>, <https://sws.geonames.org/2747599/>, <http://dbpedia.org/resource/Scheveningen>, <http://viaf.org/viaf/131420662>, <http://data.bnf.fr/ark:/12148/cb135756760>, <http://www.wikidata.org/entity/Q837211>, <https://www.freebase.com/m/0qm4j> ;
+	skos:altLabel   "Scheveningen"@fr, "Scheveninghen"@it, "Шевенинген"@ru, "Scheveningue"@fr ;
+	skos:note       "Niederländisches Seebad"@de, "Localité de la commune de La Haye"@fr, "District of The Hague"@en, "Stadsdeel van Den Haag"@nl, "Dzielnica Hagi w Holandii"@pl ;
+	skos:prefLabel  "Scheveningen"@pt, "Scheveningen"@en, "Scheveningen"@it, "Scheveningen"@es, "Scheveningen"@et, "Scheveningen"@cs, "Scheveningen"@eu, "Scheveningen"@sl, "Scheveningen"@pl, "Scheveningen"@da, "Scheveningen"@ro, "Scheveningen"@nl, "Scheveningen"@ca, "Schéveningue"@fr, "Схевенинген"@ru, "Схевенинген"@bg, "Σχέβενινγκεν"@el, "Scheveningen"@de, "Scheveningen"@sv, "Scheveningen"@fi ;
+	wgs84_pos:lat   "52.10806" ;
+	wgs84_pos:long  "4.27306" .

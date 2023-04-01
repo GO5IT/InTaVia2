@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/01684F5C-111-045F3-00000AFC-01675CE6" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-22T10:14:49.253Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6#metadataTier>, <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> ;
+	edm:language              "de" .
+
+<http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:36:58.696220Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:36:58.696624Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/01684F5C-111-045F3-00000AFC-01675CE6> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/concept/soundgenres/Radio_programmes>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1726254>, <http://id.loc.gov/authorities/genreForms/gf2011026506> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note        "Recordings made for radio broadcast."@en ;
+	skos:prefLabel   "Programmi radiofonici"@it, "Programy radiowe"@pl, "Programas de radio"@es, "Radiosendungen"@de, "Émissions de radio"@fr, "Radio programmes"@en .
+
+<http://www.mediathek.at/atom/01684F5C-111-045F3-00000AFC-01675CE6>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6>
+	a                   ore:Proxy ;
+	dc:contributor      "Österreichische Mediathek [Produzent]", "Stürmer, Gretl [Dirigent]", "Wiener Singgemeinschaft [Ensemble]" ;
+	dc:coverage         "20. Jahrhundert - 20er Jahre20. Jahrhundert - 30er Jahre20. Jahrhundert - 40er Jahre20. Jahrhundert - 60er Jahre19. Jahrhundert18. JahrhundertWien, Musikakademie [Aufnahmeort]" ;
+	dc:creator          "Haydn, Joseph [Komponist/in]", "Haschka, Lorenz Leopold [Text]", "Seidl, Johann Gabriel [Text]", "Kernstock, Ottokar [Text]", "Preradovic, Paula [Text]", "Zedlitz, Joseph Christian von [Text]", "Renner, Karl [Text]", "Kienzl, Wilhelm [Komponist/in]", "Mozart, Wolfgang Amadeus [Komponist/in]" ;
+	dc:date             "1967.09.28" ;
+	dc:format           "Tonband auf Kern (AEG), Mp3-Audiodatei" ;
+	dc:identifier       "01684F5C-111-045F3-00000AFC-01675CE6" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          "Politische Musik"@de, "Musik ; E-Musik"@de, "Unveröffentlichte Eigenaufnahme der Österreichischen Mediathek"@de, <http://data.europeana.eu/concept/soundgenres/Radio_programmes> ;
+	dc:title            "Österreichische Hymnen von 1797 bis zur Gegenwart"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.oesterreich-am-wort.at/sammlung/idn/238/> ;
+	dcterms:spatial     "Wien"@de, "Musikakademie [Aufnahmeort]"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_01684F5C_111_045F3_00000AFC_01675CE6>
+	a  edm:ProvidedCHO .

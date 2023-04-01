@@ -1,0 +1,148 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_71_734>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_OB_71_734> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.161533> ;
+	edm:isShownBy      <https://lh6.ggpht.com/vRnjgb7KwJQb6rj7OFLRKb1zQWc5gg5Fx_ushr1zW1f8z40qOfB5L7jOBWUys2SbweZxv25Xa4y4KczGymErKo4EKg=s0> ;
+	edm:object         <https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-OB-71.734> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.51083>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Viering van de Vrede van Munster te Amsterdam"@nl .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.46889>
+	a                              edm:Agent ;
+	edm:begin                      "1748" ;
+	edm:end                        "1817" ;
+	rdaGr2:dateOfBirth             "Parijs" ;
+	rdaGr2:dateOfDeath             "Parijs" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Patas, Charles Emmanuel"@nl, "Patas, Charles Emmanuel"@en .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.161533>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "54350"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_OB_71_734/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<urn:rijksmuseum:thesaurus:RM0001.THESAU.92961>
+	a               edm:Place ;
+	skos:prefLabel  "Voetboogdoelen (Amsterdam)"@nl .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_OB_71_734>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_OB_71_734> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_71_734> .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_OB_71_734>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T18:58:33.207Z" ;
+	dcterms:modified          "2018-03-17T14:18:15.439Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_OB_71_734#metadataTier>, <http://data.europeana.eu/item/90402/RP_P_OB_71_734#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_OB_71_734> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_OB_71_734> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.rijksmuseum.nl%2Fassetimage2.jsp%3Fid%3DRP-P-OB-71.734&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_OB_71_734>
+	a                       ore:Proxy ;
+	dc:contributor          "Helst, Bartholomeus van der"@nl ;
+	dc:coverage             "fourth quarter 18th century"@en, "vierde kwart 18e eeuw"@nl ;
+	dc:description          "De schuttersmaaltijd in de Voetboogdoelen of St. Jorisdoelen te Amsterdam ter viering van het sluiten van de vrede van Munster, 18 juni 1648. Voorgesteld zijn: kapitein Cornelis Jansz Witsen (met de zilveren drinkhoorn), luitenant Johan Oetgens van Waveren (die zijn hand schudt), de vaandrig Jacob Banningh (zittend naast de grote trommel), Dirck Claesz Thoveling en Thomas Hartog (sergeanten), Pieter van Hoorn, Willem Pietersz van der Voort, Adriaen Dirck Sparwer, Hendrick Calaber, Govert van der Mij, Johannes Calaber, Benedictus Schaeck, Jan Maes, Jacob van Diemen, Jan van Ommeren, Isaac Ooyens, Gerrit Pietersz van Anstenraadt, Herman Teunisz de Kluyter, Andries van Anstenraadt, Christoffel Poock, Hendrick Dommer Wz, Paulus Hennekijn, Lambregt van den Bos en Willem (de trommelslager). Op de grote trommel hangt een papier met een gedicht van Jan Vos. Door de openstaande ramen is de gevel van de brouwerij 'het Lam' aan de Singel zichtbaar. Links brengt een vrouw een kalkoenpastei binnen. Op tafel staan tinnen borden, roemers en andere glazen. Rechts staat op de vloer een grote metalen koeler met een wijnvat."@nl ;
+	dc:format               "urn:rijksmuseum:thesaurus:RM0001.THESAU.7077", "chine collé"@nl ;
+	dc:identifier           "RP-P-OB-71.734", "http://hdl.handle.net/10934/RM0001.COLLECT.161533" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Publiek Domein", "Public Domain" ;
+	dc:subject              "urn:rijksmuseum:thesaurus:RM0001.THESAU.51083", "urn:rijksmuseum:thesaurus:RM0001.THESAU.92961", "Voetboogdoelen (Amsterdam)"@nl, "Viering van de Vrede van Munster te Amsterdam"@nl, "1648-06-18 - 1648-06-18"@nl, <http://iconclass.org/43A411>, <http://iconclass.org/45(+26)>, <http://iconclass.org/41C5> ;
+	dc:title                "De schuttersmaaltijd in de Voetboogdoelen of St. Jorisdoelen te Amsterdam ter viering van het sluiten van de vrede van Munster, 18 juni 1648"@nl, "Les Hollandais jurant la Trève de 1609"@nl ;
+	dc:type                 "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", "etsen"@nl, "historisch objectvoorstelling"@nl, "etching"@en, "print"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.96700", "prent"@nl, <http://vocab.getty.edu/aat/300041273> ;
+	dcterms:created         "1790 - 1796"@en, "1790 - 1796"@nl ;
+	dcterms:extent          "height 250 mm"@en, "plaatrand breedte 354 mm"@nl, "width 354 mm"@en, "plaatrand hoogte 250 mm"@nl ;
+	dcterms:isPartOf        "collectie: prenten", "collectie: Frederik Muller Historieplaten" ;
+	dcterms:isReferencedBy  "FMH 1953 Ac" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/RP_P_OB_71_734> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_71_734> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_71_734#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:22:42.755Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_71_734> .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_71_734>
+	a  edm:ProvidedCHO .
+
+<https://lh6.ggpht.com/vRnjgb7KwJQb6rj7OFLRKb1zQWc5gg5Fx_ushr1zW1f8z40qOfB5L7jOBWUys2SbweZxv25Xa4y4KczGymErKo4EKg=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Public Domain"@en, "Publiek Domein"@nl ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_OB_71_734/manifest> ;
+	ebucore:fileByteSize    "1069368"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1794"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-OB-71.734>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2383715"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1794"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/90402/RP_P_OB_71_734#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:22:42.754Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_OB_71_734> .

@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220437>
+	a  edm:ProvidedCHO .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12353288>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220437#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:34.253Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220437> .
+
+<http://data.europeana.eu/aggregation/europeana/92070/BibliographicResource_1000126220437>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-05T19:38:58.953Z" ;
+	dcterms:modified          "2015-03-25T12:27:23.131Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437#metadataTier>, <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92070_Ag_EU_TEL_a0492_AustriaETravel" ;
+	edm:landingPage           <https://www.europeana.eu/item/92070/BibliographicResource_1000126220437> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F12353288.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92070/BibliographicResource_1000126220437/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://www.bildarchivaustria.at/Thumbnail/12353288.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/92070/BibliographicResource_1000126220437#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:34.253Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220437> .
+
+<http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220437>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=12353288> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/12353288.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/12353288.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92070/BibliographicResource_1000126220437>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1839> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92070/BibliographicResource_1000126220437> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/proxy/provider/92070/BibliographicResource_1000126220437>
+	a                   ore:Proxy ;
+	dc:creator          "Alt, Jakob", "Neuhauser, Franz" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/12353288.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Historic View"@en, "Aquädukt"@de, "Historic Place"@en, "FKB Vues"@de ;
+	dc:title            "Ansicht der von den Türken aufgeführten Wasserleitung bey Topletz"@de ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0492> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92070/BibliographicResource_1000126220437> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92070/BibliographicResource_1000126220437> .
+
+<http://data.europeana.eu/concept/1839>
+	a                skos:Concept ;
+	skos:altLabel    "Doccione"@it, "Doccio"@it, "Υδρογέφυρα"@el, "Csatornahíd"@hu, "Gallipuente"@es, "Fistola"@it ;
+	skos:exactMatch  <http://babelnet.org/rdf/s14565475n>, <http://id.loc.gov/authorities/names/sh85006259>, <http://www.wikidata.org/entity/Q474>, <http://d-nb.info/gnd/4002509-3>, <https://g.co/kg/m/0r4kqhn>, <http://www.geonames.org/ontology#H.CNLA>, <http://datos.bne.es/resource/XX524549>, <http://purl.org/bncf/tid/25535>, <https://www.freebase.com/m/0r4kqhn>, <http://vocab.getty.edu/aat/300006165> ;
+	skos:note        "Ouvrage destiné à l'adduction d'eau pour la consommation d'une ville"@fr, "Watergang"@nl, "Opera, più o meno complessa, costruita per trasportare acqua"@it, "Brücken- und Kanalbauwerk zum Transport von Frischwasser"@de, "Водовод для подачи воды из расположенных выше их источников"@ru, "Structure constructed to convey water"@en, "Veden kuljetukseen tehty rakennelma"@fi, "Är en smal sluten eller öppen ledning, som med självfall ska leda ett vattendrag eller en kanal över hinder"@sv, "Sistema para transportar agua"@es, "Ókorban létesített vízvezeték rendszer"@hu, "Estructura per conduir aigua"@ca, "Κατασκευή για την μεταφορά νερού"@el ;
+	skos:prefLabel   "Akvedukts"@lv, "Aqueduc"@fr, "Akvedukt"@sv, "Akvedukt"@et, "Akvadukt"@hr, "Akvadukt"@hu, "Akvadukt"@sk, "Akvadukt"@sl, "Akvadukt"@cs, "Uiscerian"@ga, "Acueducto"@es, "Υδραγωγείο"@el, "Acquedotto"@it, "Aqueduct"@en, "Aqüeducte"@ca, "Akwedukt"@pl, "Aquaduct"@nl, "Акведук"@ru, "Akvedukas"@lt, "Акведукт"@bg, "Aquädukt"@de, "Akvedukti"@fi, "Aqueduto"@pt, "Akvædukt"@da, "Apeduct"@ro .
+
+<http://www.bildarchivaustria.at/Preview/12353288.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92070/BibliographicResource_1000126220437/manifest> ;
+	ebucore:fileByteSize    "1608227"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1219"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .

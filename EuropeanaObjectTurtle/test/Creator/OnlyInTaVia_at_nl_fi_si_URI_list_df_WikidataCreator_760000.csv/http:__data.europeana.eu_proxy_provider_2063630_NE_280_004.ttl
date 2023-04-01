@@ -1,0 +1,179 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2063630/NE_280_004>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-11T09:17:38.976Z" ;
+	dcterms:modified          "2023-02-02T10:50:52.783Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2063630/NE_280_004#contentTier>, <http://data.europeana.eu/item/2063630/NE_280_004#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2063630/NE_280_004> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2063630_EU_280_The_Netherlands" ;
+	edm:landingPage           <https://www.europeana.eu/item/2063630/NE_280_004> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.dropbox.com%2Fs%2F2fqofk92xdh1yns%2F01-Kees-van-Dongen-Het-Blauwe-Hoedje.jpg%3Fraw%3D1&type=IMAGE> .
+
+<http://data.europeana.eu/item/2063630/NE_280_004>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2063630/NE_280_004#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-02-02T10:50:54.773900Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063630/NE_280_004> .
+
+<http://data.europeana.eu/aggregation/provider/2063630/NE_280_004>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2063630/NE_280_004> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004513425> ;
+	edm:isShownBy      <https://www.dropbox.com/s/2fqofk92xdh1yns/01-Kees-van-Dongen-Het-Blauwe-Hoedje.jpg?raw=1> ;
+	edm:object         <https://www.dropbox.com/s/2fqofk92xdh1yns/01-Kees-van-Dongen-Het-Blauwe-Hoedje.jpg?raw=1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671105> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<file:///usr/local/tomcat/webapps/#Singer\u0020Laren>
+	a               edm:Place ;
+	skos:prefLabel  "Singer Laren" ;
+	wgs84_pos:lat   "52.260326" ;
+	wgs84_pos:long  "5.221793" .
+
+<http://vocab.getty.edu/aat/300015637>
+	a               skos:Concept ;
+	skos:altLabel   "retrato"@pt, "retrato"@es, "retrato individual"@es, "retrato de cuerpo entero"@es, "porträtt"@sv, "ritratto"@it, "portret"@nl, "Bildnis (Porträt)"@de, "Bildnisse (Porträts)"@de, "portrait"@en, "Porträts (visuelle Werke)"@de, "portraiture"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300391003>, <http://vocab.getty.edu/aat/300191086> ;
+	skos:note       "Voorstellingen van personen; gebruik 'figuren (voorstellingen)' voor voorstellingen van denkbeeldige of mythologische figuren."@nl, "Representaciones de individuos reales que tienen el propósito de capturar una similitud conocida o supuesta; para representaciones de caracteres ficticios o mitológicos, use \u0022figura (representación)\u0022."@es, "Representações de indivíduos reais com o objetivo de capturar uma semelhança conhecida ou suposta, geralmente incluindo o rosto da pessoa. Para representações que pretendem ser anônimas, ou de personagens fictícios ou mitológicos, consulte \u0022figuras (representações).\u0022"@pt, "Representations of real individuals that are intended to capture a known or supposed likeness, usually including the face of the person. For representations intended to be anonymous, or of fictional or mythological characters, see \u0022figures (representations).\u0022"@en, "Darstellung einer realen Person, die eine bekannte oder vermutete Ähnlichkeit wiedergeben soll, gewöhnlich das Gesicht der Person beinhaltend. Für eine Darstellung, die eine unbekannte oder erfundene oder mythologische Person sein soll, ist \u0022Figur (Darstellung)\u0022 zu verwenden."@de ;
+	skos:prefLabel  "portretten"@nl, "portraits"@en, "retratos"@es, "portrait"@fr, "retratos"@pt, "ritratti"@it, "Porträt (visuelles Werk)"@de .
+
+<https://iiif.europeana.eu/presentation/2063630/NE_280_004/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2063630/NE_280_004#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-02-02T10:50:54.773952Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063630/NE_280_004> .
+
+<http://viaf.org/viaf/56617272>
+	a                   edm:Agent ;
+	edm:hasMet          <http://viaf.org/viaf/5647165139008100560001>, <http://viaf.org/viaf/205754804>, <http://viaf.org/viaf/312455026> ;
+	owl:sameAs          <http://isni.org/isni/0000000121340467>, <http://vocab.getty.edu/ulan/500005833-agent>, <http://data.bnf.fr/ark:/12148/cb119275815#foaf:Person>, <http://www.idref.fr/027437469/id>, <http://id.loc.gov/authorities/names/n50046695>, <http://d-nb.info/gnd/118638858>, <http://www.wikidata.org/entity/Q170345>, <http://datos.bne.es/resource/XX1124739>, <http://dbpedia.org/resource/Kees_van_Dongen>, <http://id.ndl.go.jp/auth/entity/00465705>, <http://data.bibsys.no/data/notrbib/authorityentry/x90580684> ;
+	rdaGr2:dateOfBirth  "1877-01-26" ;
+	rdaGr2:dateOfDeath  "1968-05-28" ;
+	skos:altLabel       "Cornelius T.M. van Dongen", "Cornelis Theodorus Maria Dongen", "Dongen, ... van", "Кеес ван Донген", "Cornelis Theodorus Maria Kees van Dongen", "Cornelis T. M. Van Dongen", "kees van dongen", "کیس فان دنگن", "Κέες φαν Ντόνγκεν", "Dongen", "Кес ван Донген", "Cornelis van Dongen", "Cornelis Theodorus Marie van Dongen", "Kees Van Dongen", "Kes van Dongen", "Կեես վան Դոնգեն", "كيس ڤان دونجين", "Van Dongen", "Cornelius Theodorus Marie Kees van Dongen", "Kees Dongen", "ヴァン ドンゲン", "キース・ヴァン・ドンゲン", "Cpornelius Theodorus Marie Kees van Van Dongen", "Cornelis Theodore Marie van Dongen", "Cornelius Theodorus Marie Dongen", "קס ואן דונגן", "C. van Dongen", "Kees van Dongen", "Cornelis Theodorus Marie van Dongen", "Cornelis Theodorus Maria van Dongen", "キース・ファン ドンゲン", "基斯·梵·鄧肯", "キース ヴァン・ドンゲン", "Cornelis Theodorus Marie Van Dongen", "キース ファン・ドンゲン", "كيس فان دونجن", "Cornélis Theodorus Marie Van Dongen", "Cornelis Theodorus Maria Van Dongen", "キース・ヴァン ドンゲン", "Cornelius T. M. van Dongen", "Kees VanDongen", "קיס ון דונגן", "Cornelis T.M. Van Dongen", "Cornelis Theodore, Marie van Dongen", "Cornelius Theodorus Marie Kees van Dongen", "키스 반 동겐", "Cornelis van Dongen", "... van Dongen", "Cornelius Theodorus Maria van Dongen" ;
+	skos:note           "French painter and printmaker of Dutch birth, 1877-1968" ;
+	skos:prefLabel      "Kees van Dongen"@de-DE, "Kees van Dongen"@fr-CH, "Kees van Dongen"@it-VA, "Kees van Dongen"@pt-PT, "Kees van Dongen"@nl-NL, "Kees van Dongen"@en-US, "Kees van Dongen"@es-ES, "Kees van Dongen"@no-NO, "Kees van Dongen"@cs-CZ, "Kees van Dongen"@ja-JP, "Kees Van Dongen"@fr-FR, "Kees Van Dongen"@ar-LB .
+
+<http://data.europeana.eu/proxy/europeana/2063630/NE_280_004>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/60843> ;
+	dc:identifier       "NE_280_004" ;
+	dc:subject          <http://data.europeana.eu/concept/106> ;
+	dcterms:created     <file:///usr/local/tomcat/webapps/#1937> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1937" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2063630/NE_280_004> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2063630/NE_280_004> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2063630/NE_280_004> .
+
+<http://data.europeana.eu/agent/60843>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/215>, <http://data.europeana.eu/concept/2346>, <http://data.europeana.eu/concept/217> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/41173> ;
+	owl:sameAs                     <http://data.bnf.fr/ark:/12148/cb119275815>, <http://www.idref.fr/027437469/id>, <http://datos.bne.es/resource/XX1124739>, <https://g.co/kg/m/0lb9m>, <http://data.bibliotheken.nl/id/thes/p069379033>, <http://openlibrary.org/works/OL791924A>, <http://id.ndl.go.jp/auth/ndlna/00465705>, <https://d-nb.info/gnd/118638858>, <http://vocab.getty.edu/ulan/500005833>, <http://id.loc.gov/authorities/names/n50046695>, <http://nlg.okfn.gr/resource/authority/record62864>, <https://www.freebase.com/m/0lb9m>, <http://www.wikidata.org/entity/Q170345>, <http://id.worldcat.org/fast/16028>, <http://dbpedia.org/resource/Kees_van_Dongen>, <http://viaf.org/viaf/56617272> ;
+	rdaGr2:dateOfBirth             "1877-01-26" ;
+	rdaGr2:dateOfDeath             "1968-05-28" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40838> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/24298> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/1931>, <http://data.europeana.eu/concept/2947>, <http://data.europeana.eu/concept/1943>, <http://data.europeana.eu/concept/2956>, <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Dongen, Kees van"@sv, "Cornelis Theodorus Maria Van Dongen"@en, "Корнелис ван Донген"@ru, "Ван Донген, Кес ван"@ru, "Cornelis Theodorus Maria van Dongen"@nl, "Cornelis Theodorus Maria van Dongen"@hu, "Cornelis Theodorus Maria van Dongen"@en, "Cornelis Theodorus Maria van Dongen"@pt, "Cornelius van Dongen"@de, "Донген, Кеес"@ru, "Kees Van Dongen"@en, "Cornelis T. M. Van Dongen"@en, "Cornelis Théodorus Marie van Dongen"@nl, "Cornelius Theodorus Marie Dongen"@en, "Cornelis Theodorus Maria Dongen"@en, "C.T.M. van Dongen"@nl, "Cornelis Theodorus Maria (Kees) van Dongen"@nl, "Cornelis Theodorus Maria (Kees) van Dongen"@en, "Донген, Кес ван"@ru, "Кеес Донген"@ru, "Кеес ван Донген"@ru, "Донген Кеес ван"@ru, "Донген"@ru, "Cornelis T.M. Van Dongen"@en, "Cornelius T. M. van Dongen"@en, "Ван Донген, Кеес"@ru, "Kees van dongen"@en, "Van Dongen"@ca, "Van Dongen"@fr, "Van Dongen"@pt, "Kees Dongen"@en, "Cornelius T.M. van Dongen"@en, "Cornelis Theodorus Maria Kees van Dongen"@en, "Cornelius Theodorus Marie Kees van Dongen"@en ;
+	skos:note                      "Peintre néerlandais"@fr, "Hollandi maalikunstnik"@et, "Нидерландский художник"@ru, "Dutch painter (1877-1968)"@en, "Nederländsk-fransk konstnär"@sv, "Pittore olandese"@it, "Pictor olandez"@ro, "Нидерландки художник"@bg, "Holländischer Maler"@de, "Pintor neerlandès"@ca, "Holland festő"@hu, "Nederlands kunstschilder (1877-1968)"@nl ;
+	skos:prefLabel                 "Kees Van Dongen"@hr, "Kees Van Dongen"@eu, "Κέες φαν Ντόνγκεν"@el, "Донген, Кеес ван"@ru, "Кес ван Донген"@bg, "Kees van Dongen"@en, "Kees van Dongen"@de, "Kees van Dongen"@sv, "Kees van Dongen"@fi, "Kees van Dongen"@pt, "Kees van Dongen"@lt, "Kees van Dongen"@it, "Kees van Dongen"@fr, "Kees van Dongen"@hu, "Kees van Dongen"@et, "Kees van Dongen"@sl, "Kees van Dongen"@ga, "Kees van Dongen"@pl, "Kees van Dongen"@ro, "Kees van Dongen"@nl, "Kees van Dongen"@ca .
+
+<http://vocab.getty.edu/aat/300033799>
+	a               skos:Concept ;
+	skos:altLabel   "pintura al óleo (obra visual)"@es, "oils (visual works)"@en, "olieverfschildering"@nl, "huiles (œuvres visuelles)"@fr, "peinture à l'huile (œuvres visuelles)"@fr, "Ölmalerei"@de, "paintings, oil (visual works)"@en, "oil painting (visual work)"@en, "huile (œuvres visuelles)"@fr ;
+	skos:broader    <http://vocab.getty.edu/aat/300033618> ;
+	skos:note       "Künstlerische Arbeit unter Verwendung von Ölfarben."@de, "Trabalhos criativos por meio de pinturas a óleo"@pt, "Obras creativas con pintura al óleo como medio."@es, "Schilderingen in olieverf."@nl, "Creative works in the medium of oil paint."@en ;
+	skos:prefLabel  "pinturas al óleo (obra visual)"@es, "oil paintings (visual works)"@en, "olieverfschilderingen"@nl, "pintura a óleo"@pt, "Ölgemälde"@de, "peintures à l'huile (œuvres visuelles)"@fr .
+
+<http://data.europeana.eu/organization/1482250000004671105>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana 280"@en .
+
+<https://www.dropbox.com/s/2fqofk92xdh1yns/01-Kees-van-Dongen-Het-Blauwe-Hoedje.jpg?raw=1>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2063630/NE_280_004/manifest> ;
+	ebucore:fileByteSize    "4617831"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "4128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "2322"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004513425>
+	a               foaf:Organization ;
+	skos:prefLabel  "Singer Laren"@en .
+
+<http://data.europeana.eu/timespan/20>
+	a               edm:TimeSpan ;
+	edm:begin       "1901-01-01" ;
+	edm:end         "2000-12-31" ;
+	owl:sameAs      <http://id.nlm.nih.gov/mesh/D049673>, <http://id.nlm.nih.gov/mesh/K01.400.504.968>, <http://vocab.getty.edu/aat/300404514>, <http://id.loc.gov/authorities/names/sh2002012476>, <http://id.loc.gov/authorities/names/sh85139020>, <http://www.wikidata.org/entity/Q6927>, <http://dbpedia.org/resource/20th_century>, <https://g.co/kg/m/089_x>, <https://www.freebase.com/m/089_x> ;
+	skos:altLabel   "Periodo 1901-2000"@pt, "Ciclo (1901-2000)"@pt, "Novecento"@it, "Século 20"@pt, "20° secolo"@it, "20:e århundradet"@sv, "20 век"@ru, "1900-talet (sekel)"@sv, "20:e seklet"@sv, "1900-talet (århundrade)"@sv, "The past century"@en, "History, 20th Century"@en, "'900"@it, "Século vinte"@pt, "XX Century"@en, "1900-tal"@sv, "20e siècle"@fr, "Twentieth century"@en, "20th-century"@en ;
+	skos:prefLabel  "XX век"@ru, "XX amžius"@lt, "20. sajand"@et, "XX. mendea"@eu, "20ú haois"@ga, "Segle XX"@ca, "XX secolo"@it, "20. gadsimts"@lv, "20. století"@cs, "XXe siècle"@fr, "Siglo XX"@es, "20. Jahrhundert"@de, "20. storočie"@sk, "1900-luku"@fi, "Secolul al XX-lea"@ro, "20. stoljeće"@hr, "20 век"@bg, "20th century"@en, "20. stoletje"@sl, "20. század"@hu, "Século XX"@pt, "20ός αιώνας"@el, "20e eeuw"@nl, "1900-talet"@sv, "XX wiek"@pl, "20. århundrede"@da .
+
+<http://data.europeana.eu/proxy/provider/2063630/NE_280_004>
+	a                    ore:Proxy ;
+	dc:creator           <http://viaf.org/viaf/56617272> ;
+	dc:description       "Portrait of a young woman, three-quarters to the right, a blue hat with large bows."@en, "Portret van een jonge vrouw, driekwart naar rechts, een blauw hoedje met grote strikken."@nl ;
+	dc:subject           <http://vocab.getty.edu/aat/300025943>, <http://vocab.getty.edu/aat/300015637> ;
+	dc:title             "Het blauwe hoedje"@nl, "The Blue Hat"@en ;
+	dc:type              <http://vocab.getty.edu/aat/300033799> ;
+	dcterms:created      "1937" ;
+	dcterms:extent       "55 x 33" ;
+	dcterms:medium       "Oil on canvas"@en ;
+	dcterms:provenance   "Donated to the museum collection in 1956 by AnnaSinger-Brugh"@en, "Verworven met steun van: Vereniging Rembrandt, D.G. van Beuningen, F.W. Koenigs en/and J.P. van der Schilden 1931"@nl ;
+	edm:currentLocation  "#Singer Laren" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2063630/NE_280_004> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2063630/NE_280_004> .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://vocab.getty.edu/aat/300025943>
+	a               skos:Concept ;
+	skos:altLabel   "vrouw"@nl, "vrouwmensen"@nl, "wijven"@nl, "mujer"@es, "woman (female human)"@en, "women's"@en, "vrouwspersonen"@nl, "mulher"@pt, "human females"@en, "woman's"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300265709>, <http://vocab.getty.edu/aat/300024979> ;
+	skos:note       "Verwijst naar vrouwelijke personen vanaf jonge volwassenheid tot gevorderde leeftijd."@nl, "Refere-se a seres humanos do sexo feminino desde a idade adulta jovem até a velhice."@pt, "Refers to female human beings from young adulthood through old age."@en, "Se refiere a los seres humanos femeninos desde la adultez joven hasta la ancianidad."@es ;
+	skos:prefLabel  "mujeres"@es, "women (female humans)"@en, "mulheres"@pt, "vrouwen"@nl .
+
+<file:///usr/local/tomcat/webapps/#1937>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://data.europeana.eu/timespan/20> ;
+	edm:begin         "1937-01-01" ;
+	edm:end           "1937-12-31" ;
+	skos:prefLabel    "1937"@zxx .

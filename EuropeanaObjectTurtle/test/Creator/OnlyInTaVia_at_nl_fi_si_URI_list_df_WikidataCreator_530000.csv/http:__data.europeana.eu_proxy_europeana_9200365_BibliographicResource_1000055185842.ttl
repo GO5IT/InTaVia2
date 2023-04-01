@@ -1,0 +1,150 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b2300244f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T17:59:20.870Z" ;
+	dcterms:modified          "2019-09-02T17:59:20.870Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f#contentTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f> ;
+	edm:completeness          "8" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b2300244f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b2300244f%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/17xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Sat Jan 01 01:00:00 CET 1701" ;
+	edm:end           "Wed Dec 31 01:00:00 CET 1800" ;
+	skos:prefLabel    "18..", "18th"@en, "18de eeuw"@nl, "18??", "18e siècle"@fr, "18-th"@en, "18й век"@ru, "18e", "18th century"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "73999"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "732"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T17:59:20.844Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2300244f> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T17:59:20.844Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2300244f> .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2300244f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b2300244f> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b2300244f>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b2300244f" ;
+	dc:subject          <http://data.europeana.eu/concept/147> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1719" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b2300244f> .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b2300244f>
+	a                   ore:Proxy ;
+	dc:creator          "Merian, Maria Sibylla (1647-1717). Dessinateur", "Mulder, I.. Graveur", "Stoopendaat, D.. Graveur", "Sluyter, P.. Graveur" ;
+	dc:date             "1719" ;
+	dc:description      "Illustration", "Thème : Sciences de la nature" ;
+	dc:format           "75 est. : coul." ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b2300244f" ;
+	dc:language         "nld" ;
+	dc:publisher        "Joannes Oosterwyk (Amsterdam)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38497303k" ;
+	dc:rights           "conditions spécifiques d'utilisation (sous convention 022)"@fre, "restricted use (convention 022)"@eng ;
+	dc:source           "Bibliothèque nationale de France" ;
+	dc:subject          "Plantes -- Suriname"@fre, "Entomologie"@fre, "Insectes -- Métamorphose -- Suriname"@fre, "Représentations animalières"@fre ;
+	dc:title            "[Illustrations de Veranderingen der Surinaemsche Insecten...] / Maria Sybilla Merian, dess., aut. du texte ; I. Mulder, P. Sluyter, D. Stoopendaat, grav." ;
+	dc:type             "image fixe"@fre, "still image"@eng, "image"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b2300244f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b2300244f> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/concept/147>
+	a                skos:Concept ;
+	skos:altLabel    "Hyönteistutkija"@fi, "Rovartan"@hu, "Hyönteistieteilijä"@fi, "Žužkoslovje"@sl, "Entomologia"@es, "Insectenkunde"@nl, "Entomologi"@fi, "Insectologie"@fr, "Entomologique"@fr, "Entomologie légale"@fr, "Insect biology"@en, "Hyönteistiede"@fi, "Hyönteistutkimus"@fi, "Entomologisch"@nl, "Insect science"@en, "Entomologie"@de, "Entomologico"@es, "Paleoentomologia"@pl, "Entomológico"@pt, "Entomológico"@es ;
+	skos:exactMatch  <http://datos.bne.es/resource/XX527256>, <https://g.co/kg/m/0g4dc>, <https://www.freebase.com/m/0g4dc>, <http://d-nb.info/gnd/4152382-9>, <http://id.loc.gov/authorities/names/sh85044125>, <http://purl.org/bncf/tid/16915>, <http://www.wikidata.org/entity/Q39286>, <http://id.nlm.nih.gov/mesh/H01.158.273.943.409>, <http://vocabularies.unesco.org/thesaurus/concept9990>, <http://vocab.getty.edu/aat/300251856>, <http://www.yso.fi/onto/yso/p16960>, <http://id.nlm.nih.gov/mesh/D004772>, <http://data.bnf.fr/ark:/12148/cb11958162n> ;
+	skos:note        "Scientific study of insects"@en, "Наука, изучающая насекомых"@ru, "Videnskaben om insekter"@da, "Branca della zoologia che studia gli insetti"@it, "Estudio de los insectos"@es, "Vedný odbor zoológie, ktorý sa zaoberá štúdiom hmyzu"@sk, "Science de l'étude des insectes"@fr, "Vetenskapen om insekterna"@sv, "Dział zoologii zajmujący się owadami"@pl, "Obor zoologie"@cs, "Zweig der Zoologie"@de ;
+	skos:prefLabel   "Entomologia"@pl, "Entomologia"@fi, "Entomologia"@pt, "Entomologia"@ca, "Entomologia"@it, "Ентомология"@bg, "Insektenkunde"@de, "Entomológia"@hu, "Entomológia"@sk, "Feithideolaíocht"@ga, "Entomologija"@lt, "Entomologija"@hr, "Entomologija"@sl, "Entomoloġija"@mt, "Εντομολογία"@el, "Entomoloogia"@et, "Entomologie"@nl, "Entomologie"@ro, "Entomologie"@cs, "Entomologie"@fr, "Entomology"@en, "Entomologi"@da, "Entomologi"@sv, "Энтомология"@ru, "Entomoloģija"@lv, "Entomología"@es .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/manifest.json> ;
+	ebucore:fileByteSize    "73999"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "732"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b2300244f/f1> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b2300244f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "660308"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:14.871Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020708> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550020708>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1815" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550020708> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:14.871Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020708> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550020708>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "188904"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550020708>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:41.162Z" ;
+	dcterms:modified          "2018-07-23T15:37:41.662Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550020708> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550020708.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/f1> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550020708/manifest> ;
+	ebucore:fileByteSize    "37709"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550020708/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020708>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550020708> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550020708/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550020708.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550020708.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6808"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550020708>
+	a                   ore:Proxy ;
+	dc:contributor      "Da Ponte, Lorenzo (1749-1838). Auteur adapté", "Beethoven, Ludwig van (1770-1827). Copiste" ;
+	dc:creator          "Mozart, Wolfgang Amadeus (1756-1791). Compositeur" ;
+	dc:date             "1815" ;
+	dc:description      "Présentation musicale : [Partition des voix]", "Titre uniforme : Mozart, Wolfgang Amadeus (1756-1791). Compositeur. [Don Giovanni. KV 527. Acte 1. Finale] (allemand)", "Fragment du finale de l'acte 1 de \u0022Don Giovanni\u0022, dramma giocoso en 2 actes, dans une traduction allemande non identifiée. - Livret italien de Lorenzo Da Ponte. - 1re représentation : Prague, Théâtre national, 29 octobre 1787. - Contient les mes. 558-581 (les mes. 560 et 570 sont dupliquées) ; la suite du même manuscrit est conservée sous les cotes D-Bsb Mus. ms. 15151/20 (4 p., mes. 582-630, ayant appartenu à Charles Gounod, cf. RISM A/II 456015494) et F-Pn W. 6 (7) (2 p., mes. 631-645, relié dans un album d'Auguste Vincent). - Rôles : [Donna Anna (Ut 1)], [Zerlina (Ut 1)], [Donna Elvira (Ut 1)], [Don Ottavio (Ut 4)], [Don Giovanni (Fa 4)], [Leporello (Fa 4)], [Masetto (Fa 4)]. - Les parties de Don Giovanni et Leporello sont interverties aux mes. 563-564. - Daté d'après RISM A/II 456015494. - Papier réglé à 16 portées de 7 x 258 mm par page (intervalle entre les portées : 6 mm)" ;
+	dc:format           "2 p. ; 23,5 x 31 cm", "Nombre total de vues :  2" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550020708" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb16227356w", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42264659m" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-42" ;
+	dc:subject          "Opéras -- 18e siècle -- Extraits -- Partitions des choeurs"@fre ;
+	dc:title            "[Don Giovanni. Acte 1, Finale : fragment / Wolfgang Amadeus Mozart]" ;
+	dc:type             "manuscript music"@eng, "musique manuscrite"@fre, "Genre musical : opéra" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550020708> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550020708> .

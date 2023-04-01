@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2058635/_leszno_158_starzec#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:09.652Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_158_starzec> .
+
+<http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/158/starzec.html>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/2058635/_leszno_158_starzec>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzeum Okręgowe w Lesznie" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058635/_leszno_158_starzec> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510573> ;
+	edm:isShownAt      <http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/158/starzec.html> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2058635/_leszno_158_starzec>
+	a                   ore:Proxy ;
+	dc:coverage         "1871,             Polska (51.610298, 16.962908)," ;
+	dc:creator          "Aleksander Kotsis" ;
+	dc:date             "1871" ;
+	dc:description      "Artysta tworzył sceny rodzajowe z życia wsi Podhala i okolic Krakowa oraz pejzaże i portrety." ;
+	dc:language         "pl" ;
+	dc:rights           "Muzeum Okręgowe w Lesznie" ;
+	dc:subject          "Autor: Aleksander Kotsis;  Państwo: Polska;  Czas powstania: 1871;  Technika/materiał: akwarela, papier;  Przedstawione przedmioty: beczki;  Elementy stroju: kapelusz, łapcie Wymiary: wys. 31, szer. 27 cm;  Numer inwentarza: ML424" ;
+	dc:title            "Starzec" ;
+	dc:type             "scena rodzajowa", "obraz" ;
+	dcterms:spatial     "Polska (51.610298, 16.962908)," ;
+	dcterms:temporal    "1871" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_158_starzec> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058635/_leszno_158_starzec> .
+
+<http://data.europeana.eu/organization/1482250000004510573>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzeum Okręgowe w Lesznie"@pl, "District Museum in Leszno"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/163776>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/217>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <https://www.freebase.com/m/0cs00q>, <http://dbpedia.org/resource/Aleksander_Kotsis>, <http://id.worldcat.org/fast/131093>, <http://vocab.getty.edu/ulan/500119749>, <http://d-nb.info/gnd/119049554>, <http://www.wikidata.org/entity/Q942477>, <https://g.co/kg/m/0cs00q>, <http://viaf.org/viaf/5732459>, <http://id.loc.gov/authorities/names/n84019389> ;
+	rdaGr2:dateOfBirth   "1836-05-30" ;
+	rdaGr2:dateOfDeath   "1877-08-07" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/134591> ;
+	skos:altLabel        "Alexandre Kotsis"@en, "Kotsis"@sv, "Александр Котсис"@ru, "Alexander Kotsis"@en ;
+	skos:note            "Artista polaco"@es, "Polish artist (1836-1877)"@en, "Artista polonès"@ca, "Pools kunstschilder (1836-1877)"@nl, "Ealaíontóir Polannach"@ga, "Peintre polonais"@fr, "Poola kunstnik"@et, "Polnischer Maler"@de, "Artist polonez"@ro, "Polski malarz"@pl ;
+	skos:prefLabel       "Αλεξάντερ Κότσις"@el, "Aleksander Kotsis"@es, "Aleksander Kotsis"@de, "Aleksander Kotsis"@sv, "Aleksander Kotsis"@pt, "Aleksander Kotsis"@en, "Aleksander Kotsis"@it, "Aleksander Kotsis"@fr, "Aleksander Kotsis"@sl, "Aleksander Kotsis"@ga, "Aleksander Kotsis"@pl, "Aleksander Kotsis"@da, "Aleksander Kotsis"@ca, "Aleksander Kotsis"@nl, "Котсис, Александр"@ru .
+
+<http://data.europeana.eu/aggregation/europeana/2058635/_leszno_158_starzec>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T15:42:32.954Z" ;
+	dcterms:modified          "2016-02-22T14:36:28.671Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058635/_leszno_158_starzec#contentTier>, <http://data.europeana.eu/item/2058635/_leszno_158_starzec#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058635/_leszno_158_starzec> ;
+	edm:completeness          "0" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "2058635_Ag_EU_LoCloud_PSNC" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058635/_leszno_158_starzec> ;
+	edm:language              "pl" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/2058635/_leszno_158_starzec>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/proxy/europeana/2058635/_leszno_158_starzec>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/163776> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1871" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_158_starzec> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058635/_leszno_158_starzec> .
+
+<http://data.europeana.eu/item/2058635/_leszno_158_starzec#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:09.653Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_158_starzec> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

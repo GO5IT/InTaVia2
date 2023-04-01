@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/0940427/_nnWTRh6/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:22.528Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh6> .
+
+<http://data.europeana.eu/proxy/europeana/0940427/_nnWTRh6>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1807" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnWTRh6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940427/_nnWTRh6> .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh6>
+	a  edm:ProvidedCHO .
+
+<http://www.pbc.rzeszow.pl/Content/5965/G-131.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940427/_nnWTRh6/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004512021>
+	a               foaf:Organization ;
+	skos:prefLabel  "bibliothèque numérique subcarpathique"@fr, "Podkarpacka Biblioteka Cyfrowa"@pl, "Podkarpacka Digital Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940427/_nnWTRh6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004512021> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5965> ;
+	edm:isShownBy      <http://www.pbc.rzeszow.pl/Content/5965/G-131.djvu> ;
+	edm:object         <http://www.pbc.rzeszow.pl/Content/5965/G-131.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/proxy/provider/0940427/_nnWTRh6>
+	a                   ore:Proxy ;
+	dc:creator          "Grottger, Artur (1837-1867)"@pl ;
+	dc:date             "1807"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:language         "pl", "fr" ;
+	dc:publisher        "nakł. Franciszek Bondy"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Rzeszowie"@pl ;
+	dc:source           "Sygnatura oryginału: G-131"@pl ;
+	dc:subject          "litografia polska - 19 w."@pl, "malarstwo polskie - 19 w."@pl, "Grottger, Artur (1837-1867). Sieroty (Już tylko nędza)"@pl, "dziecko - w sztuce"@pl, "dziecko"@pl, "sieroctwo"@pl ;
+	dc:title            "Sieroty (Już tylko nędza) = Plus rien que la misère"@pl ;
+	dc:type             "grafika"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnWTRh6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh6> .
+
+<http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5965>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "21045"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:22.529Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh6> .
+
+<http://data.europeana.eu/aggregation/europeana/0940427/_nnWTRh6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:06:24.989Z" ;
+	dcterms:modified          "2017-11-30T08:06:24.989Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940427/_nnWTRh6#contentTier>, <http://data.europeana.eu/item/0940427/_nnWTRh6#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940427/_nnWTRh6> ;
+	edm:completeness          "6" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940427_Ag_PL_www.pbc.rzeszow.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940427/_nnWTRh6> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.pbc.rzeszow.pl%2FContent%2F5965%2FG-131.djvu&type=IMAGE> .

@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:44.367Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N060> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P322N060>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:58:06.160Z" ;
+	dcterms:modified          "2018-04-05T18:03:01.583Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P322N060> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP322N060%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N060&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2719"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "115"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:44.367Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N060> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P322N060>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P322N060> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N060>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P322N060> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N060&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P322N060>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49177"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P322N060>
+	a                   ore:Proxy ;
+	dc:contributor      "Daiwaille, Jean Augustin", "Koekkoek, Barend Cornelis (1803-1862)", "Daiwaille, Jean Augustin (1786-1850)" ;
+	dc:creator          "Daiwaille, Jean Augustin (1786-1850)" ;
+	dc:description      "Gezicht op Beek vanuit het Z.O.; Nog acht dergelijke steendrukken, alle naar B.C. Koekkoek en gelithografeerd door J.A. Daiwaille, alle op hetzelfde formaat, n.l. Amsterdam, de Magere Brug, Logement te Beek, Beek vanuit het N., Haarlem, Houtbrug, Middelburg vanuit het Z.O. Muiderslot, Rhenen (20x28,6), Vere vanuit het Z.O." ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P322N060" ;
+	dc:rights           "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl, "For more information: Universiteitsbibliotheek Leiden"@en, "Universiteitsbibliotheek Leiden" ;
+	dc:source           "[P322N060], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "Gezigt op het dorp Beek van het Wieldersche meer te zien (Provincie Gelderland)" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "ca. 1832" ;
+	dcterms:extent      "19,7 × 28,8 cm" ;
+	dcterms:isPartOf    "UBL01", "Topografie van Nederland", "GVN" ;
+	dcterms:medium      "image/jpeg", "steendruk/lithografie" ;
+	dcterms:spatial     "Beek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P322N060> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P322N060> .

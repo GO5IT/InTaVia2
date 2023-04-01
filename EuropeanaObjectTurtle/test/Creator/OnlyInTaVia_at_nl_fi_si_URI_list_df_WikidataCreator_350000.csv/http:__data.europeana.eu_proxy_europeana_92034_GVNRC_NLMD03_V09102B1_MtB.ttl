@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:33.091Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NLMD03_V09102B1_MtB> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB>
+	a  edm:ProvidedCHO .
+
+<http://www.geheugenvannederland.nl/?/en/items/NLMD03:V09102B1-MtB>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50742"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:33.091Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NLMD03_V09102B1_MtB> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NLMD03_V09102B1_MtB>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:02:37.153Z" ;
+	dcterms:modified          "2018-04-05T17:32:42.068Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANLMD03%3AV09102B1-MtB%26role%3Dthumbnail&type=TEXT> .
+
+<http://data.europeana.eu/concept/15>
+	a                skos:Concept ;
+	skos:exactMatch  <http://babelnet.org/rdf/s03103700n>, <http://www.yso.fi/onto/yso/p7177>, <http://id.loc.gov/authorities/genreForms/gf2017026003>, <http://www.wikidata.org/entity/Q602446>, <https://g.co/kg/m/09lgd>, <https://www.freebase.com/m/09lgd>, <http://purl.org/ontology/mo/Lyrics> ;
+	skos:note        "Musiikkikappaleen lyriikka"@fi, "Texte d'une chanson"@fr, "Ομάδα λέξεων που αποτελούν ένα τραγούδι"@el, "Sæt af ord som udgør en sang"@da, "Uppsättning av ord som utgör sång"@sv, "Sprachlicher Teil eines Musikwerkes"@de, "Texto de una canción"@es, "Zaporedje besed, ki tvorijo pesem"@sl, "Tekst van een bijbehorend lied"@nl, "Sequence of words that make up a song"@en, "Slova, která se zpívají při písni"@cs ;
+	skos:prefLabel   "Слова песен"@ru, "Sanoitus"@fi, "Lirica musicale"@it, "Текст на песен"@bg, "Sångtext"@sv, "Lyrik"@da, "Lletra"@ca, "Dalszöveg"@hu, "Besedilo"@sl, "Letra"@es, "Letra"@pt, "Liedtekst"@nl, "Tekst piosenki"@pl, "Liedtext"@de, "Paroles"@fr, "Lyrics"@en, "Στίχος"@el, "Text písně"@cs .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NLMD03_V09102B1_MtB>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NLMD03:V09102B1-MtB> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NLMD03:V09102B1-MtB&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NLMD03:V09102B1-MtB&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "19924"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "124"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NLMD03_V09102B1_MtB>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/15> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NLMD03_V09102B1_MtB> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NLMD03_V09102B1_MtB>
+	a                   ore:Proxy ;
+	dc:contributor      "Vries, Hendrik de" ;
+	dc:creator          "Vries, Hendrik de" ;
+	dc:description      "Brieven, 2 bladen", "Autograaf/typescript: Autograaf", "Materiaalsoort: Handschrift" ;
+	dc:format           "tekst" ;
+	dc:identifier       "V 09102 B 1 MtB", "http://resolver.kb.nl/resolve?urn=urn:gvn:NLMD03:V09102B1-MtB" ;
+	dc:language         "nl" ;
+	dc:rights           "Voor informatie: Letterkundig Museum"@nl, "For information contact: Letterkundig Museum"@en, "Letterkundig Museum" ;
+	dc:source           "V 09102 B 1 MtB, Collectie Menno ter Braak, Letterkundig Museum" ;
+	dc:subject          "Braak, Menno ter"@nl ;
+	dc:title            "Brieven van Hendrik de Vries aan Menno ter Braak" ;
+	dc:type             "Text" ;
+	dcterms:isPartOf    "GVN", "NLMD03", "Collectie Menno ter Braak" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NLMD03_V09102B1_MtB> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NLMD03_V09102B1_MtB> .

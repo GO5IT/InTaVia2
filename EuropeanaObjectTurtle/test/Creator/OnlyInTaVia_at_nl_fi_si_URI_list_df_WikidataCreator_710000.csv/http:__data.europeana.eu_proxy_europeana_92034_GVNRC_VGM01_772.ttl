@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_772>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_772#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:42.998Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_772> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:772&role=page&count=1&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "31559"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "117"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.geheugenvannederland.nl/?/en/items/VGM01:772>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "52111"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_772>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_VGM01_772> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/VGM01:772> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:772&role=page&count=1&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/2909>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/04jjh>, <https://d-nb.info/gnd/4008240-4>, <http://purl.org/bncf/tid/10307>, <http://babelnet.org/rdf/s00050802n>, <http://www.wikidata.org/entity/Q133492>, <http://purl.org/coar/resource_type/c_0857>, <http://id.loc.gov/authorities/names/sh85076220>, <https://www.freebase.com/m/04jjh>, <http://www.yso.fi/onto/yso/p8646> ;
+	skos:note        "Wiadomość pisana zawierająca informacje skierowane od nadawcy do adresata"@pl, "Comunicazione scritta, talvolta di valore letterario, indirizzata da un mittente (persona o ente) a un destinatario (persona o ente)"@it, "Kirjalik sõnum ühelt isikult teis(t)ele"@et, "Geschrift dat aan iemand is gericht, en gesloten en van een adres voorzien wordt verzonden"@nl, "Message expédié à un destinataire"@fr, "Skrivet meddelande som skickas från en part till en annan, under transporten oftast förvarat i ett kuvert"@sv, "Written message from one to another"@en, "Письменное сообщение для передачи от одного субъекта к другому"@ru, "Písaná správa spravidla posielaná poštou"@sk, "Medio de comunicación escrito"@es, "Schriftstück, das Informationen zwischen Personen und anderen Entitäten austauscht"@de, "Mensagem escrita a um destinatário"@pt, "Skriftlig besked sendt fra den ene part til den anden, i transit normalt opbevaret i en kuvert"@da ;
+	skos:prefLabel   "Eskutitz"@eu, "Dopis"@cs, "Vēstule"@lv, "Brev"@sv, "Brev"@da, "Scrisoare"@ro, "Писмо"@bg, "Lettre"@fr, "Επιστολή"@el, "Lettera"@it, "Kiri"@et, "List"@sk, "Levél"@hu, "Litir"@ga, "Carta"@pt, "Carta"@es, "Carta"@ca, "List"@pl, "Kirje"@fi, "Brief"@de, "Brief"@nl, "Letter"@en, "Laiškas"@lt, "Письмо"@ru .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_VGM01_772>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2909> ;
+	dcterms:spatial     <http://data.europeana.eu/place/85>, <http://data.europeana.eu/place/41689> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_772> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_772> .
+
+<http://data.europeana.eu/place/85>
+	a               edm:Place ;
+	owl:sameAs      <http://nomisma.org/id/france>, <http://id.nlm.nih.gov/mesh/D005602>, <http://dbpedia.org/resource/France>, <http://zbw.eu/stw/descriptor/17255-3>, <http://id.loc.gov/authorities/names/n79006404>, <http://id.ndl.go.jp/auth/ndlna/00563689>, <http://www.wikidata.org/entity/Q142>, <http://www.yso.fi/onto/yso/p104968>, <http://vocabularies.unesco.org/thesaurus/concept902>, <https://livedata.bibsys.no/authority/90292000>, <https://d-nb.info/gnd/4018145-5>, <http://vocab.getty.edu/tgn/1000070>, <http://babelnet.org/rdf/s00036202n>, <https://www.freebase.com/m/0f8l9c>, <http://data.bnf.fr/ark:/12148/cb152383070>, <https://g.co/kg/m/0f8l9c>, <http://nomisma.org/id/french_republic>, <http://id.worldcat.org/fast/1204289>, <http://viaf.org/viaf/264091107>, <http://www.idref.fr/026378329/id>, <https://sws.geonames.org/3017382/>, <http://www.yso.fi/onto/ysa/Y104968> ;
+	skos:altLabel   "Frainc"@ga, "Repubblika Franċiża"@mt, "Franse Republiek"@nl, "An Frainc"@ga, "Französische Republik"@de, "França Metropolitana"@ca, "Republika Francji"@pl, "Estat francès"@ca, "Французская Республика"@ru, "Republica Franceză"@ro, "Fr."@fr, "La France"@fr, "La France"@de, "La France"@sv, "La France"@pt, "La France"@en, "República Francesa"@pt, "República Francesa"@es, "República Francesa"@ca, "Republic of France"@en, "FRA"@de, "FRA"@pt, "FRA"@en, "FRA"@fr, "FRA"@hu, "FRA"@ro, "FRA"@nl, "L'Hexagone"@fr, "Fille aînée de l'Église"@fr, "Republiken Frankrike"@sv, "FR"@de, "FR"@sv, "FR"@pt, "FR"@en, "FR"@fr, "FR"@ro, "FR"@nl, "Ranskan tasavalta"@fi, "Γαλλική Δημοκρατία"@el, "Francia Köztársaság"@hu, "The Hexagon"@en, "Республика Франция"@ru, "Republika Francuska"@hr, "Republika Francuska"@pl, "Френска република"@bg, "La République française"@de, "La République française"@fr, "Republica Franța"@ro, "Prancūzijos Respublika"@lt, "RF"@de, "République française"@de, "République française"@sv, "République française"@pt, "République française"@en, "République française"@hr, "République française"@lv, "République française"@fr, "RF"@fr, "República de França"@ca, "Пятая Французская Республика"@ru, "Francouzská republika"@cs, "fr"@de, "fr"@pt, "fr"@en, "fr"@fr, "fr"@ro, "L’Hexagone"@de, "Република Франция"@bg, "Franska republiken"@sv, "French Republic"@en, "Французская республика"@ru, "Fhrainc"@ga, "Pays de Molière"@fr, "ФР"@ru, "Republica Francesa"@es, "Oltralpe"@it, "Francúzska republika"@sk, "France"@sv, "France"@pt, "France"@ca, "Prancuzija"@lt, "Francijas Republika"@lv, "Francuska republika"@hr, "República da França"@pt ;
+	skos:note       "Stat suveran în Europa continentală și mai multe teritorii de peste mări"@ro, "Estat d'Europa constituït per una metròpoli i per territoris d'ultramar"@ca, "Pajjiż fl-Ewropa tal-Punent"@mt, "Państwo w Europie Zachodniej"@pl, "Staat in Westeuropa mit Überseegebieten"@de, "Valtio Länsi-Euroopassa"@fi, "Pays transcontinental au territoire métropolitain en Europe de l'Ouest"@fr, "Χώρα της δυτικής Ευρώπης"@el, "Država u zapadnoj Europi"@hr, "Държава в Западна Европа"@bg, "Štát v Európe"@sk, "Tír san Eoraip"@ga, "Állam Nyugat-Európában"@hu, "Stato dell'Europa occidentale, membro dell'Unione Europea"@it, "Stát v západní Evropě"@cs, "Country in Western Europe"@en, "Государство в Западной Европе"@ru, "De Franse Republiek, een staat in Europa"@nl, "Vakarų Europos šalis"@lt, "Republik i Västeuropa"@sv, "País de Europa Occidental"@es, "Europa mendebaldeko herrialdea"@eu, "Et land i Europa"@da, "País na Europa Ocidental"@pt, "Valsts Eiropā"@lv ;
+	skos:prefLabel  "An Fhrainc"@ga, "Francuska"@hr, "Frankrike"@sv, "Frankrijk"@nl, "Franța"@ro, "Frankreich"@de, "Francie"@cs, "Frankrig"@da, "Francúzsko"@sk, "França"@ca, "França"@pt, "Francia"@es, "Francia"@it, "Francija"@sl, "Francija"@lv, "Франция"@bg, "Франция"@ru, "Franciaország"@hu, "Francja"@pl, "Frantzia"@eu, "France"@en, "France"@fr, "Prancūzija"@lt, "Prantsusmaa"@et, "Γαλλία"@el, "Ranska"@fi, "Franza"@mt ;
+	wgs84_pos:lat   "47.0" ;
+	wgs84_pos:long  "2.0" .
+
+<http://data.europeana.eu/place/41689>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/85> ;
+	owl:sameAs        <https://www.freebase.com/m/0mvkk>, <http://data.bnf.fr/ark:/12148/cb15247382q>, <http://www.wikidata.org/entity/Q221507>, <http://viaf.org/viaf/167559929>, <https://sws.geonames.org/2977214/>, <http://d-nb.info/gnd/4238286-5>, <https://g.co/kg/m/0mvkk>, <http://viaf.org/viaf/149793030>, <http://www.idref.fr/029610699/id>, <http://dare.ht.lu.se/places/44478>, <http://dbpedia.org/resource/Saint-R%C3%A9my-de-Provence> ;
+	skos:altLabel     "St. Rémy de Provence"@de, "St. Remy de Provence"@de, "St-Rémy-de-Provence"@it, "Saint-Remy-de-Provence"@nl, "Saint-Remy-de-Provence"@da, "Saint-Remy-de-Provence"@sl, "Saint-Remy-de-Provence"@es, "Saint-Remy-de-Provence"@de, "Saint-Remy-de-Provence"@sv, "Sant Roumié de Prouvènço"@ca, "Sant Roumié de Prouvènço"@nl, "Sant Roumié de Prouvènço"@pl, "Sant Roumié de Prouvènço"@cs, "Sant Roumié de Prouvènço"@et, "Sant Roumié de Prouvènço"@es, "Sant Roumié de Prouvènço"@fr, "Glanum"@fr, "Sant Roumié de Prouvènço"@it, "Sant Roumié de Prouvènço"@lv, "Sant Roumié de Prouvènço"@hr, "Sant Roumié de Prouvènço"@en, "Sant Roumié de Prouvènço"@lt, "Sant Roumié de Prouvènço"@de, "Sant Roumié de Prouvènço"@pt, "Glanum"@it, "Glanum"@en, "Saint-Remy"@en, "Sant Romieg de Provença"@nl, "Sant Romieg de Provença"@pl, "Saint Remy de Provence"@pl, "Sant Romieg de Provença"@cs, "Sant Romieg de Provença"@et, "Sant Romieg de Provença"@es, "Saint Remy de Provence"@es, "Sant Romieg de Provença"@fr, "Sant Romieg de Provença"@it, "Sant Romieg de Provença"@lv, "Sant Romieg de Provença"@hr, "Sant Romieg de Provença"@en, "Sant Romieg de Provença"@lt, "Sant Romieg de Provença"@de, "Sant Romieg de Provença"@pt, "Saint Remy de Provence"@de, "Saint-Rémy-de-Provence"@ca, "Saint Rémy de Provence"@cs, "Saint-Rémy-de-Provence"@lv, "Saint Rémy de Provence"@de, "Saint Rémy de Provence"@sv, "Saint Rémy de Provence"@pt, "Saint-Rémy"@fr, "Saint-Rémy"@en, "St. Remy in de Provence"@nl ;
+	skos:note         "Kunta Ranskassa"@fi, "Коммуна во Франции"@ru, "Fransk kommun i departementet Bouches-du-Rhône"@sv, "Comune francese"@it, "Γαλλική κοινότητα του νομού των Μπους-ντυ-Ρον"@el, "Obec v departementu Bouches-du-Rhône ve Francii"@cs, "Commune française du département des Bouches-du-Rhône"@fr, "Municipi francès"@ca, "Französische Gemeinde im Département Bouches-du-Rhône"@de, "Gemeente in Frankrijk"@nl, "Község Franciaországban"@hu, "Commune in Bouches-du-Rhône, France"@en, "Miejscowość i gmina we Francji"@pl, "Obec v departemente Bouches-du-Rhône vo Francúzsku"@sk, "Comuna francesa"@es, "Comuna francesa"@pt ;
+	skos:prefLabel    "Sant Romieg de Provença"@ca, "Σαιν-Ρεμί-ντε-Προβάνς"@el, "Senremīdeprovansa"@lv, "Saint-Rémy-de-Provence"@cs, "Saint-Rémy-de-Provence"@sk, "Saint-Rémy-de-Provence"@sl, "Saint-Rémy-de-Provence"@ga, "Saint-Rémy-de-Provence"@pl, "Saint-Rémy-de-Provence"@ro, "Saint-Rémy-de-Provence"@da, "Saint-Rémy-de-Provence"@nl, "Saint-Rémy-de-Provence"@fi, "Saint-Rémy-de-Provence"@pt, "Saint-Rémy-de-Provence"@de, "Saint-Rémy-de-Provence"@sv, "Saint-Rémy-de-Provence"@lt, "Saint-Rémy-de-Provence"@en, "Saint-Rémy-de-Provence"@hr, "Saint-Rémy-de-Provence"@it, "Saint-Rémy-de-Provence"@fr, "Saint-Rémy-de-Provence"@hu, "Saint-Rémy-de-Provence"@es, "Saint-Rémy-de-Provence"@et, "Сен-Реми-де-Прованс"@ru ;
+	wgs84_pos:alt     "60.0" ;
+	wgs84_pos:lat     "43.789444" ;
+	wgs84_pos:long    "4.8316665" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_772>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:00:10.005Z" ;
+	dcterms:modified          "2018-04-05T18:04:47.666Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_VGM01_772#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_VGM01_772#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_VGM01_772> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_VGM01_772> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AVGM01%3A772%26role%3Dpage%26count%3D1%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_772#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:42.998Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_772> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_VGM01_772>
+	a                   ore:Proxy ;
+	dc:contributor      "Gogh, Vincent van", "Gogh, Theo van" ;
+	dc:creator          "Gogh, Vincent van" ;
+	dc:format           "brief", "letter"@en ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:772", "b 0638 V/1962" ;
+	dc:rights           "for information contact Van Gogh Museum"@en, "Van Gogh Museum", "voor informatie: Van Gogh Museum"@nl ;
+	dc:source           "b 0638 V/1962 (brief), Brieven en Documenten, Van Gogh Museum" ;
+	dc:title            "Vincent van Gogh to Theo van Gogh"@en, "Vincent van Gogh aan Theo van Gogh" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "donderdag 9 mei 1889", "Thursday, 9 May 1889"@en ;
+	dcterms:extent      "21.0 x 27.0 cm" ;
+	dcterms:isPartOf    "GVN", "Brieven en Documenten", "VGM01" ;
+	dcterms:medium      "?", "text/xml" ;
+	dcterms:spatial     "Saint-Rémy-de-Provence" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_772> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_772> .

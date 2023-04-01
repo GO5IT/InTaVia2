@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036600_036604__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/036600/036604>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036600_036604__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:00.869Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036604__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_036600_036604__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036600_036604__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036604__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/036600/036604> ;
+	edm:object         <http://keptar.oszk.hu/036600/036604/1895_Oldal_160_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036600_036604__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:56:24.847Z" ;
+	dcterms:modified          "2015-09-14T11:52:35.987Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F036600%2F036604%2F1895_Oldal_160_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_036600_036604__>
+	a                   ore:Proxy ;
+	dc:creator          "Morelli ,  Gusztáv  (photographer)"@hu ;
+	dc:description      "Az ezredévi ünnep történelmi diszmenete. Európában, mai hazánkban való megtelepedésünk ezredik évfordulójának közelgő megünneplése élénken foglalkoztat minden magyar lelket. ... Eddig úgy volt, hogy e páratlan ünneplésnek a nagyszabásúan tervezett országos kiállítás lesz a legragyogóbb részlete. S az e részben lett eddigi előkészületek valóban már is annyit igérnek, hogy előre is igen fényes lapra számíthatunk a kiállítások történetében. De, a mint a nagy idő közeledik, egyre újabb meg újabb eszmék és tervek merülnek föl. melyek közül különösen két nagy menetnek a terve olyan, hogy ha megvalósulnak, eszmében és hatásban szintén diadalmas társai lesznek a kiállításnak. Az egyik terv szerint egy nagyszabású történelmi díszmenet tartatnék, mely jelképes alakokkal és csoportokkal hazánk és nemzetünk ezer éves történetének legfontosabb és legfényesebb mozzanatait tüntetné föl időrend szerint sorozott eleven képekben, egészen a jelen korig terjedőleg. Ennek a szép tervnek a mestere Vágó Pál jeles festőművészünk, ki beható történelnú és művészeti tanul mányok alapján épen oly hazafias érzékkel, mint költői fölfogással válogatta össze tárgyának részleteit, melyeket aztán vázlatilag rajzba is foglalt egy közel 60 méternyi hosszú kartonon. ... (Forrás: Vasárnapi Ujság, 1895. május 19.)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1417x1102 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/036600/036604   [Metadata]" ;
+	dc:relation         "Wikipédia: Vágó Pál [ http://hu.wikipedia.org/wiki/V%C3%A1g%C3%B3_P%C3%A1l]"@hu, "Wikipédia: 1896-os millenniumi ünnepségek [ http://hu.wikipedia.org/wiki/1896-os_millenniumi_%C3%BCnneps%C3%A9gek]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "Vágó Pál (1853-1928)"@hu, "belső épületrész"@hu, "Fine arts, visual arts"@hu, "szoba"@hu, "rendezési terv"@hu, "műterem"@hu, "History, local history"@hu ;
+	dc:title            "Vágó Pál, a mint Strobl műtermében az ezredévi ünnepre tervezett díszmenet vázlatán dolgozik"@hu ;
+	dc:type             "újságrészlet"@hu, "photograph"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036604__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:00.869Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036600_036604__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036600_036604__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/036600/036604/1895_Oldal_160_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16035"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

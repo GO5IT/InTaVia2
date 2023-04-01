@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://d-nb.info/gnd/119310724>
+	a                   edm:Agent ;
+	owl:sameAs          <http://isni.org/isni/0000000109642462>, <http://dbpedia.org/resource/Til_Brugman>, <http://id.loc.gov/rwo/agents/n95112932>, <http://www.wikidata.org/entity/Q533841>, <http://viaf.org/viaf/35263336> ;
+	rdaGr2:dateOfBirth  "1888-09-16" ;
+	rdaGr2:dateOfDeath  "1958-07-24" ;
+	skos:altLabel       "Brugman, Mathilde Maria Petronella" ;
+	skos:prefLabel      "Brugman, Til" .
+
+<http://data.europeana.eu/proxy/europeana/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/98198> ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO" ;
+	dc:type             <http://data.europeana.eu/concept/17> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> .
+
+<http://data.europeana.eu/aggregation/europeana/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2022-01-19T11:40:37.322Z" ;
+	dcterms:modified          "2022-01-19T11:40:37.322Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO#metadataTier>, <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	edm:completeness          "10" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048431_DDB_Berlinische_Galerie" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlung-online.berlinischegalerie.de%3A443%2FeMP%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D209062%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:53:52.629898Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/aggregation/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477410> ;
+	edm:isShownAt      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=209062&viewType=detailView> ;
+	edm:isShownBy      <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=209062&resolution=highImageResolution> ;
+	edm:object         <https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=209062&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO>
+	a                    ore:Proxy ;
+	dc:creator           <https://d-nb.info/gnd/119310724> ;
+	dc:description       "Anzahl Teile/Umfang: 8 Blatt"@de, "Erworben aus Mitteln des Senators für Kulturelle Angelegenheiten, Berlin (Creditline)"@de, "Motiv Inhalt: Mit handschriftlichen Korrekturen und Streichungen im Text.\u000A\u000A\u0022LAGERRAUM Warenhaus DER LIEBE.\u000ABelieben Sie dieses Zirkular aufmerksam zu lesen, bevor es in den Papierkorb zu werfen.!!!!!\u000ALIEBE IN ALLEN PREISLAGEN.\u000ALIEBE FÜR JEDEN GESCHMACK.\u000ALIEBE NATURELL ODER GESCHMINKT.\u000ALIEBE FÜR JEDES ALTER.\u000ALIEBE FÜR JEDEN GLAUBEN.\u000AFreien Zutritt.\u000AKeinen Kaufzwang!!!\u000ALassen Sie sich die Waren vorlegen!\u000AWählen Sie selbst.\u000AFachmännische Bedienung.\u000AUmtauschen innerhalb Monatsfrist.\u000ABei grösserer Abnahme Rabatt.\u000AExtra-Vergünstigungen für Vereine und Gewerkschaften.\u000ABezahlung in Vereinbarung mit dem Käufer.\u000ATag und Nacht geöffnet!\u000ANur keine VERSTELLUNG!\u000AAlle Marken vorhanden ......\u000AAlle Arten bekannt .......\u000AAlle Variationen gleichbewertet ........\u000AKOMMEN SIE SOFORT ....... NOCH HEUTE !!!!!!!!!! Gleich jetzt ......!!!!!\u000A«Ich glaube, dass dieser Text das Richtige trifft,» sagte ich meiner Frau. «Auf dieses Zirkular hin, würde ich sogar selber sofort hinkommen.» Wir schickten die Zirkulare zu Zehntausenden herum, und eröffneten offiziell unsere Lagerräume der Liebe am nächsten Tag offiziell am ersten Mai. Am Eröffnungstage wurden alle aufgeklärte Autoritäten sowie Feuerwehr, medizinischen Fachmänner, Polizei, der Verein Immerzu & Cos., Kirchenvertreter, Jugendverbände, Turnvereine, Krankenpfleger, grössere Hoteliers, Modengeschäfte, Reisevereine, Gesellschaften zur Bekämpfung von Geschlechtskrankheiten, Reichspresidenten, und mehr derartige Institutionen in unseren Lagerräumen der Liebe rundgeführt. Alles von der Empfangshalle bis zur Bodenkammer wurde ihnen gezeigt, vom Salzfass bis zum Auto. Sie waren begeistert und schrieben ihre hohen Namen ins Gästebuch. Beiläufig wiesen wir auf unsere Doktorbullen von der grossen Liebesuniversität in Patchamatak, Mundi OmniHypernaturalis, die eingerahmt im Privatsprechzimmer hingen. Als die grossen Herren sich knixend verabschiedeten, schlossen wir die Fronttüren, der Lagerraum versank in Ruhe, nur die enormen Lichtreklamen auf dem Dache und die automatischen Trompeten an den Ecken des Hauses schleuderten: WOLLEN SIE LIEBE???? in die Welt hinein. Noch vor Mitternacht kam der erste Kunde. Es war höchstderoselbst einer der hohen Herren Stellvertreter der Regierung, die uns im Laufe des Tages besucht hatten. Wir empfingen ihn mit der Selbstverständlichkeit unseres Berufs, und baten ihn, sich ohne Verdrängung äussern zu wollen. Er verlangte höflich, die kleine Stehlampe anzuzünden, statt des hellen Deckenlichts. Sein Wunsch nämlich sei etwas apart ...... Wir versicherten ihm, kein Wunsch käme uns apart vor, aber setzten ihn doch ins Dämmerlicht, um seine Schüchternheit zu beheben. Er wiederholte sein Wunsch sei doch sehr apart ...... er habe nämlich in zartester Jugend einen ausschlaggebenden Eindruck von einem Nachttopf bekommen, und seitdem immer versucht, seine Neigung zu unterdrücken, ständig mit einem Nachttopf zusammen zu leben, wonach es ihm eigentlich gelüste. Er möchte darum einen Nachttopf statt eines Zylinders auf dem Kopf tragen. Dafür brauche er jedoch ausser einem Nachttopf noch unsere spezielle Bescheinung. Der Topf solle obendrein ein bestimmtes Format und eine eigne Farbe haben und das Ohr solle genau auf sein eignes Ohr passen. Wir baten ihn, sich nach Speicher Nr. 9 zu bemühen, wo wir eine grosse Kollektion Nachtgeschirr Gefässe und Behälter aller Art zur Auswahl hätten. Als Nachttopfamateur bewunderte er viele die Exemplare, aber seine Sache fanden wir erst Reihe 28, Fach 109, Nr. 998. Wie ein Magnet zog es ihn hin, er geriet in grosse Begeisterung, streichelte den Topf von innen und von aussen. verschwand mit dem ganzen Kopf darin und küsste dann leidenschaftlich das Topfohr. Als er ihn dann liebevoll und zart auf seinen Kopf gesetzt, verlangte er einen Spiegel, suchte am dunklen Himmel die Andropeia, und fing den Blick ihr zugewandt, Spiegel hinter sich an: \u000AWie schwillt mir der federbusend den Kropf\u000ANach Jahren Sahara finde ich den Topf\u000ASternbestimmtes Los, auf meinem Kopf.\u000AEr schrieb dieses Gedicht auch nachher ins Gästebuch, drückte uns mehrmalen die Hand, bezahlte den Fancypreis für den Topf und das Entgelt für seine Erlaubnisurkunde sie tragen zu dürfen und verliess unser Magasin, zum ersten mal seinen Nachttopf lüftend.\u000AAls in frühester Morgenstunde sich eine alte Dame meldete, stellte ich bereits ein niedliches Nachtgeschirr bereit, aber sie würdigte es mit keinem Blick. Sie war schwerverschleiert und hustete viele Male bevor sie mit ihrem Anliegen herausrückte.\u000A«Speicher 22», sagte meine Frau diskret, und ich führte die Sechzigjährige nach dem Lift. Speicher 22 ist ein ganzes Stockwerk ausschliesslich abgelegter Sachen jeden Kalibers. Oben angekommen bot ich der alten Dame einen Lehnstuhl an, denn die Idee, dass sie endlich erhalten würde, wonach sie sich seit ihrem zehnten Jahre gesehnt, machte sie schwindlich. Dann zog ich mich zurück. Mit echt weiblicher Takt überreichte meine Frau ihr das Begehrte auf einem Samtkissen, ein tadellos erhaltenes Stück, die einfache Reithose eines schlichten Kavalleristen, garantiert aus dem letzten Kriege. Die Dame konnte jedoch nur den ledernen Einsatz brauchen, so trennten meine Frau und ich mit rasender Schnelligkeit den feldgrauen Rest ab und spannten es dann ihrer peinlich genauen Anweisungen gemäss über den Holzrand eines funkelnagelneuen Wc.'s. Dann setzte sie sich mehrmals unverschleiert darauf, und wurde wahrscheinlich noch immer so bei uns sich setzen und sitzen, als wir sie nicht samt Klo umsichtig auf Räder gebracht hätten und sie so via den Lift in ihr Auto abgeführt hätten. Sie winkte uns, in der selben Verfassung im Auto sitzend, viele Male zu und fuhr in einem Zustand der seligsten Verzücktheit nach Hause. Am nächsten Tag erhielten wir einen rührenden Brief ..... die alte Dame fühle sich versteinacht, verzehnsteinacht. Das Entgelt war dementsprechend.\u000ADer alte Herr, der bereits wartete, aber nur mit uns persönlich unterhandlen wollte, suchte sich zwei rosa Gummi-Kinderpopos aus, eins bekleidet und auszukleiden, eins ohne Zubehör. Fürs Bekleidete möchte er entzückendes Unterzeug und verlangte von meiner Frau ausführliche Anweisungen für das Waschen und Bügeln der Höschen von meiner Frau. Es beglückte ihn gerade so was selbst zu machen.\u000ADann kam die Gymnasiastin und schloss sich Speicher 2 mit der Aufschrift Priapapa längere Zeit ein. Wir hatten etwas Schwierigkeiten mit ihr, denn sie behauptete, sie habe einen Beleuchtungskörper verschluckt von unten, aber es stellte sich heraus, dass sie nebenbei an Kleptomanie litt und an einer bestimmten Stelle schon nebstdem fanden wir noch eine Füllfeder, einen Meerettich einen Periskop, einen Gummi-Knüppel, ein Holzbein, der Stab eines Verkehrspolizisten und noch einige Kleinigkeiten versteckt hatte bei ihr vor. Wir machten ihr klar, dass sie bei uns gegen Abonnement nach Herzenslust kleptomanieren könne. Sie abonnierte sich sofort fürs ganze Leben. Es war eine ausgezeichnete Kundin, denn am Tage nach ihren wiederholten Besuchen schickte sie uns alles in bester Ordnung zurück.\u000AUnsere Armbanduhren mit Schachtstiefel-Miniatur gingen glatt weg. Die Abteilung Parfüms lieferte konzentrierte Mensch-Tier und Sachgerüche jeder Art in unglaublichen Quantitäten. Urin verkauften wir Literweise, Zuckerfäkalien wurden nachbestellt, alle mögliche Arten Gummi-Ziegen zogen in Herden aus, der Halbmond war 49 Mal dauernd totalausverkauft, Klaxons und alle Maschine-Unterteile erlebten plötzlich dreifache Preise, Säuglingsflaschen behaupteten sich neben Nägelabschnitten, Hühneraugenreliquien neben Schweissdrusenextrakten.\u000AUnsere Abteilung vergrösserte Wachspräparate Herzen, Nieren, Lungen, worunter kiloschweren Augen, war ständig überbelastet. Jemand verlangte eine hundertfache Vergrösserung eines Krümmels Schnupftabaks seiner Grossmutter, eines Schnurrbarthaares seines Grosspapas, und wir konnten ihn innerhalb dreier Tage bedienen. Manchmal bereits schoben wir am Nachmittag die Gardinen vor die leeren Schaukasten, weil die Nachfrage zu gross gewesen war. Es gab sogar Tage, an welchen die letzthere ingetretenen Kunden sich buchstäblich mit den glücklicheren tämmelten, um ihnen etwas zu entreissen. Glühende Gletscherspalten waren bisweilen für keine guten Worte mehr zu haben und nach einem solchen Getobe mussten wir bisweilen die Stücke vom Boden förmlich auflesen, damit man nicht darauf ausglitt.\u000AEs gab Stunden, dass die Menschen uns unablässig die Hände drückten, gerührt sich bedankten, weil sie endlich ihr Liebesreich gefunden hätten. Ein Herr liess uns beide in Öl malen, weil endlich sein Herz Ruhe gefunden hatte. Er glaubte es nie im Leben erreichen zu können, seinem Wunsche gemäss lieben zu dürfen. Er bat sich nämlich aus, ihm zwei Spiegeleier in Linoleumwachs zu braten, diese dann irgendwo in den Lagerräumen zu verstecken, wo er sie ohne unsere Hilfe suchen sollte. Er irrte auf den Speichern herum, dass es einem weh tat, wurde immer aufgeregter und aufgeregter, bis er, vom Geruch des Fettes geleitet, sie endlich irgendwo vorfand. Dann beschnupperte er ungeduldig die Bratpfanne, überzeugte sich von der Anzahl, der Eier, kratzte einen halben Meter weiter auf dem Boden herum, wie ein Hund von Rasse und ging nachher beseligt von dannen. Ein anderer mietete uns ein Dachzimmerchen ab, wo er sich als Lepraleidender bemalen und hausen möchte. Er begrüsste uns immer mit Rassel und seine Speisen verlangte er durch einen kleinen Schalter gereicht.\u000AWir hatten fast eine Panik als wir gebrauchte Damenkämme und Preservativs konservierte weibliche Lebertränen inserierten. Eine Ministerfrau verlangte einen Floh, dem das Steissbein weggeschossen war und den sie bis zum Lebensende liebreich pflegen könne. Ein älterer Herr liess sich bei uns einen Schornstein auf die Nase bauen worin er obscöne Worte brüllen könnte, ohne dass seine Umgebung es mitanhörte. Ein Admiral verlangte eine Rettungsgürtel aus Damenbinden aus Camelien und eine achtzig Jahre alte Waise bat uns um Ödipuskomplexe aus Papiermaché.\u000AWir erlebten grosse Tage, die Zeit verrann und als unsere Lagerräume 5 Jahre bestanden, machten wir 50 Jahre daraus. Man lebt nun einmal schnell in der Liebe. Wir plakkatierten die Feierlichkeit und unsere Klientele formte ein Festkommittee. Die Rünebergerheide Das Tempelhoferfeld wurde abgemietet. Wir fuhren in Ehrentempo dahin und sassen unterm Ehrenzelt als die Prozession vorbeizog. Voran gingen die alten Herren in Wickeln, Windeln und Babykostümen in geschlossenen Reihen auf Holzpferdchen, flankiert von ungemein strengen Gefängnisswärterinnen, die ihnen Kommisbrot in den zahnlosen Mund stopften. Dann kamen die Witwen in der Hand Palmenzweigen mit Elefantenzähnen, woran Meerrettiche und Karotten wuchsen. Sie zwangen ihre Palmen durch die Lüfte und sangen: Heil Dir im Witwerstand\u000ADaran schlossen sich die Herren mit Wattenbäuschchen in der Handhöhle und Bettkissen vorne angebunden. Sie gingen an Tischbeinen, die rhythmisch auf dem Boden stiessen. Auf einem der vielen hoch angebrachten Podien sass inzwischen ein Herr, der einen Kanarienvogel aus dem Munde hervorholte, dem Tierchen seine Federn glattstrich um es dann wieder genau so auf einer Minute in seinem Munde verschwinden zu lassen. Ein vierzigjähriger Mann, Schwergewicht, versuchte ununterbrochen, sich in ein Kinderstühlchen zu quetschen, wo bei er Blasen blies aus einem Harnrohr (präpariert von unserer Anstalt. Eine Dame auf einem Seelöwen gespiesst, wie Apfelblüte auf Birnenbaum, hielt eine Fahne hoch, worauf unser Attest abgeschrieben war, sie dürfe unbedingt lebenslang mit ihrem Hinterleib im Wasser leben und oben Poirets Kostüme tragen. Weiter gab es noch eine Dame, die rülpste und eine grosse Schar Anbeter lagen ringsherum auf den Knieen, und lauerte auf das Geräusch. Es gab ein Zelt, wo fortwährend transplantiert wurde.\u000A«SIND SIE SCHON BETRANSPLANTIERT» stand auf den Zettel, die man in die Hand gedrückt bekam. Diese Branche ging ausserordentlich gut. Natürlich gab es bei dem Sturmlauf Irrtümer, Leute, die ihre eignen Drüsen wieder zurückeingesetzt kriegten und denen es trotzdem ganz anders wurde, und Leute, denen es trotz Affengedrüse genau so verging wie zuvor.\u000AEs war ein Durcheinander, ein Radau, ein Getobe und Getöse, eine festliche Stimmung, ein gehobenes Gefühl, ein friedliches Ausleben wie noch nie zuvor auf Erden. Jeder sass mit seiner Liebe, wo es ihm passte und genoss seine irdische Existenz. Wir erhielten Telegramme dass man im Yellow-Stone Park, mitte im Ozean, auf dem Himalaya, am Nordpol und in der Sahara ähnliche Feste arrangiert habe, und dass überall die Menschheit, dankbar endlich den Fesseln der irrsinnigsten Auffassungen in der Liebe entkommen zu sein, zum ersten Male vollständig glücklich lebte.\u000AWir sahen uns beglückt an ..... alles unsere Idee, was die Wissenschaft gefunden auch ungehemmt in Wirklichkeit umzusetzen. In unserer Entrücktheit sahen wir darum, nicht, wie das Temepelhoferfeld, genau wie die anderen Festterraine in der Welt, umzingelt wurde. Wir bemerkten es erst als wir ganz eingesponnen waren, und im kindlichem Liebesspiel hatte auch niemand sonst darauf geachtet. Nun fing plötzlich ein wüstes Gekreische an und jeder war mit einemal nur noch darauf bedacht sein Liebesspielzeug zu verbergen ...... zu retten. Denn die hereinbrechende Militäre Horden forderten alle auf, ihre Liebesobjekte sofort abzugeben. Und wenn sie nicht wollten, die verdutzten Menschen, dann gebrauche das Heer Gewalt. Die Mannschaften errichteten Scheiterhaufen, brachen kaputt, was sie in die Hand bekamen, traten mit Füssen, was soeben noch Gegenstand der zartester Liebe gewesen. Sie würgten der Dame das Rülpsen aus dem Leibe und zertrampelten die herumliegenden Drüsen. Elende Schreie flogen hin und her. Die Menschen flehten, schützen ihre Gummi-Popöchen und verkrochen sich mit ihrem Grammphonhorn in die Erde. Posaunen wurden weggerissen, bevor noch die Melodie zu Ende geblasen war, ein Jüngling barg unter seinem hingestreckten Körper ängstlich eine Glatze, die ihm alles in der Welt bedeutete. Das Jammern brachte einen um.\u000ADa schritt ich auf den Kommandanten zu und stammelte:\u000A«Warum, denn das alles?»\u000ADa erkannte ich ihn auf einemal.\u000A«Sie haben doch selber bei uns auch einen Nachttopf ausgesucht!»\u000A«SSSST» sagte er. Er liegt in den Stahlkammern der Bankgesellschaft. Jetzt ist es nicht an der Zeit davon zu reden, «fügte er laut und hochherzig hinzu ...... Hier hoehere Hand .... Völkerbund ..... Friedenspalais ....»\u000A«Wieso?» Ich stöhnte.\u000A«Na, ist doch deutlich!» dröhnte er. Seit Ihre Lagerräume der Liebe eröffnet worden sind ..... Na, wo bleibt denn da die Geburt ,,,,, die alte authentieke gute Geburt? Ich persönlich habe seitdem ich ständig mit meinem Nachttopf zusammen bin, auch keins in die Welt gesetzt. Darum ..... hab ich mich scheiden lassen ..... Trennung keine Kleinigkeit .... geben Versicherung, selber schweres Herz ..... aber höhere Macht ......»\u000A«Aber Sie waren\u000A«Aber, Sie waren doch glücklich? Und alle diese Menschen waren auch glücklich!\u000A«Sehr glücklich gewesen ,,,,, bestreite nicht ...... Aber was geht das dem Staate an,» brüllte er auf einmal wütend. Können wir mit diesem Glück etwa Krieg führen? Wenn jeder wie er will herumspermatiziert, statt Kinder in die Welt zu setzen. Staat will Ovarien .... nicht Okarinen.»\u000AMeine Frau rang die Hände.\u000A«Aber ......» hub sie verzweifelt an .... «wir bereiten doch schon die Kinder vor!!\u000ASie können Kinder zum Krieg kriegen so viel Sie wollen .....»\u000A«Was heisst das» donnerte der Kommandant.\u000A«Wir lassen gleichzeitig in den fünf Weltteilen 1000000 Millionen Zelluloïdkinder zur Welt kommen, wovon sie völkerbundsvertragsgemäss alle weniger 10% abbekommen.»\u000A«Warum haben Sie das nicht direkt gesagt:» fauchte er uns an.\u000A«Aber,» hauchten wir geduckt, «es war als eine kleine Überraschung für den Völkerbund gemeint.»\u000A«Gott Topf noch mal!» fluchte der alte Kommandant, «wenn ich das gewusst!!! Hat vielleicht bereits mein Nachttopf ...... obwohl eingesperrt .... mir die Treue .... gebrochen ....»\u000AEr strich sich über die Augen.\u000ADan donnerte er: «MARSCH ...... ABMARSCH ..... RECHTSUMKEHRT ..... eins zwei ...... eins zwei .....»\u000AMit einemal flogen die Adjudante übers Feld ..... Flugzeuge .... Telegramme ..... Radio ..... alles wurde in Bewegung gebracht ....\u000ADie Schlacht gegen die Liebe wurde abkommandiert da der Völkerbund sich würdigte mit herablassender Geste das Versprechen der Zelluloïdkinder zu akzeptieren.\u0022"@de ;
+	dc:format            "Papier, maschinengeschrieben (Material/Technik)"@de ;
+	dc:identifier        "BG-HHC H 1511/79 (Inventarnummer)", "BG-HHE II 31.54" ;
+	dc:subject           "Typoskript"@de, "Nachlass-Hannah-Höch"@de ;
+	dc:title             "Warenhaus der Liebe. [o. O.]"@de ;
+	dc:type              "Manuskripte"@de, "Typoskript"@de ;
+	dcterms:created      "[um 1931] (Herstellung)"@zxx ;
+	dcterms:spatial      <http://www.geonames.org/2950159> ;
+	edm:currentLocation  <http://www.geonames.org/2950159> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> .
+
+<http://data.europeana.eu/concept/17>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300028569>, <http://id.nlm.nih.gov/mesh/D008373>, <https://www.freebase.com/m/04vf8>, <http://www.wikidata.org/entity/Q87167>, <http://id.ndl.go.jp/auth/ndlna/00571802>, <https://schema.org/Manuscript>, <http://id.nlm.nih.gov/mesh/L01.178.682.608>, <https://d-nb.info/gnd/4126273-6>, <http://id.nlm.nih.gov/mesh/D020486>, <http://purl.org/bncf/tid/1879>, <http://id.loc.gov/authorities/names/sh85080672>, <https://citationstyles.org/ontology/type/manuscript>, <http://purl.org/coar/resource_type/c_0040>, <http://vocabularies.unesco.org/thesaurus/concept8324>, <https://g.co/kg/m/04vf8>, <http://babelnet.org/rdf/s00044453n>, <http://id.loc.gov/ontologies/bibframe/Manuscript>, <http://id.nlm.nih.gov/mesh/V02.630> ;
+	skos:note        "Handgeschriebener Text"@de, "Ručně psaný dokument"@cs, "Document written by hand"@en, "Написанный от руки текст произведения"@ru, "Handgeschreven tekst"@nl, "Besedilo napisano z roko"@sl, "Documento scritto a mano"@it, "Dokument pisan rukom"@hr, "Ar roku rakstīts dokuments"@lv, "Håndskrevent dokument"@da, "Document escrit a mà"@ca, "Documento escrito a mano sobre un soporte flexible"@es, "Dokument skrivet för hand"@sv, "Document écrit à la main"@fr ;
+	skos:prefLabel   "Handskrift"@sv, "Käsikirjoitus"@fi, "Manoscritto"@it, "Lámhscríbhinn"@ga, "Manuscript"@en, "Manuscript"@nl, "Ръкопис"@bg, "Χειρόγραφο"@el, "Rokopis"@sl, "Рукопись"@ru, "Manuscris"@ro, "Kézirat"@hu, "Rokraksts"@lv, "Manuscrito"@pt, "Manuscrito"@es, "Rukopis"@hr, "Rukopis"@sk, "Rukopis"@cs, "Käsikiri"@et, "Manuskript"@de, "Rankraštis"@lt, "Rękopis"@pl, "Håndskrift"@da, "Manuscrit"@fr, "Manuscrit"@ca, "Eskuizkribu"@eu .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=209062&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<https://iiif.europeana.eu/presentation/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/98198>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://www.freebase.com/m/02r9m35>, <http://id.loc.gov/authorities/names/n95112932>, <http://data.bnf.fr/ark:/12148/cb14648626v>, <http://data.bibliotheken.nl/id/thes/p069956685>, <https://g.co/kg/m/02r9m35>, <http://dbpedia.org/resource/Til_Brugman>, <http://openlibrary.org/works/OL425806A>, <http://www.wikidata.org/entity/Q533841>, <http://d-nb.info/gnd/119310724>, <http://id.worldcat.org/fast/365611>, <http://viaf.org/viaf/35263336> ;
+	rdaGr2:dateOfBirth             "1888-09-16" ;
+	rdaGr2:dateOfDeath             "1958-07-24" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40731> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/76> ;
+	skos:altLabel                  "Mathilda Brugman"@nl, "Mathilda Brugman"@pt, "Mathilda Brugman"@en, "Mathilda Maria Petronella"@fr ;
+	skos:note                      "Niederländische Schriftstellerin"@de, "Femme de lettres néerlandaise"@fr, "Escritora, poeta y lingüista holandesa"@es, "Nederlands schrijfster"@nl, "Dutch author, poet and linguist (1888-1958)"@en ;
+	skos:prefLabel                 "Til Brugman"@en, "Til Brugman"@it, "Til Brugman"@fr, "Til Brugman"@es, "Til Brugman"@sl, "Til Brugman"@de, "Til Brugman"@fi, "Til Brugman"@sv, "Til Brugman"@pt, "Til Brugman"@ga, "Til Brugman"@ro, "Til Brugman"@da, "Til Brugman"@ca, "Til Brugman"@nl .
+
+<http://data.europeana.eu/item/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-19T11:53:52.629568Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO> .
+
+<http://data.europeana.eu/organization/1482250000004477410>
+	a               foaf:Organization ;
+	skos:prefLabel  "Berlin Gallery, Museum of Modern Art"@en, "Berlinische Galerie, Landesmuseum für moderne Kunst, Fotografie und Architektur"@de .
+
+<http://www.geonames.org/2950159>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin"@de .
+
+<https://sammlung-online.berlinischegalerie.de:443/eMP/eMuseumPlus?service=ImageAsset&module=collection&objectId=209062&resolution=highImageResolution>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048431/item_MP73JNJ6MWKHHRHRLRYFRTRBZNBPZYDO/manifest> ;
+	ebucore:fileByteSize    "62521"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "370"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "303"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .

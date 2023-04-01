@@ -1,0 +1,96 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502225> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:01136558-5187-48b7-b515-d656d9a26541> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/proxy/provider/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541>
+	a                   ore:Proxy ;
+	dc:contributor      "ESMAE"@en ;
+	dc:creator          "BEETHOVEN, Ludwig van"@en ;
+	dc:date             "2006/11"@en ;
+	dc:description      "Nadja Nevolovitsch, violin; He Zhu, piano (representing Koninklijk Conservatorium Brussel at HARMOS Festival 2006)\u000Arecorded live at Teatro Helena Sá e Costa - Porto - during HARMOS Festival 2006."@en ;
+	dc:format           "physical: audio CD; digital: .wma"@en ;
+	dc:publisher        "SA ESMAE-IPP/Phonedition"@en ;
+	dc:rights           "ESMAE"@en ;
+	dc:source           "EMP-AUD-CDHARMOS2006-002"@en ;
+	dc:subject          "Beethoven; violin;"@en ;
+	dc:title            "BEETHOVEN, Sonata nr.1 op.12 Dmajor - 2nd mov - Allegro con moto"@en ;
+	dc:type             <http://www.eclap.eu/Classification/PerformingArtsType/670>, "audio" ;
+	dcterms:extent      "00:06:24.3" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541>
+	a  edm:ProvidedCHO .
+
+<http://www.eclap.eu/Classification/PerformingArtsType/670>
+	a               skos:Concept ;
+	skos:prefLabel  "Muzyka klasyczna"@pl, "Klassieke Muziek"@nl, "Klasična glasba"@sl, "Musica Classica"@it, "Música clásica"@es, "Música clàssica"@ca, "Classical Music"@en, "Klassisk musik"@da, "Klassische Musik"@de, "Musique classique"@fr, "Κλασσική μουσική"@el, "Komolyzene"@hu, "Música Clássica"@pt .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:01136558-5187-48b7-b515-d656d9a26541>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004502225>
+	a               foaf:Organization ;
+	skos:prefLabel  "Porto's Superior School of Music and Performing Arts"@en .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:05.544Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> .
+
+<http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:45:05.544Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> .
+
+<http://data.europeana.eu/aggregation/europeana/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541#contentTier>, <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> ;
+	edm:completeness          "0" ;
+	edm:country               "Portugal" ;
+	edm:datasetName           "2022106_Ag_EU_ECLAP_ESMAE-IPP" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> ;
+	edm:language              "pt" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022106/urn_axmedis_00000_obj_01136558_5187_48b7_b515_d656d9a26541> .

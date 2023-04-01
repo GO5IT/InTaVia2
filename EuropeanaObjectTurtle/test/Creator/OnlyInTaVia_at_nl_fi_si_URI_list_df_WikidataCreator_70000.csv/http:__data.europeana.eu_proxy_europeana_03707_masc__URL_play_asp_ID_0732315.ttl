@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:46.221Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0732315> .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315>
+	a  edm:ProvidedCHO .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0732315>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0732315>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2004" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0732315> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0732315>
+	a                    ore:Proxy ;
+	dc:contributor       "Ensemble Intercontemporain, Orchestre", "Boulez, Pierre" ;
+	dc:creator           "Webern, Anton" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0732315" ;
+	dc:publisher         "Paris Cité de la musique 2004" ;
+	dc:subject           "20 EME SIECLE-1 ERE MOITIE" ;
+	dc:title             "Le IIIe Reich et la musique : Richard Strauss, l'école de Vienne" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le 16 novembre 2004 (20h, salle des concerts)" ;
+	dcterms:extent       "1h 21 min 32 sec" ;
+	dcterms:hasPart      "Trois Lieder Op.18, pour soprano, clarinette en mi bémol et guitare / Anton Webern ; Christiane Oelze, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Cinq pièces pour orchestre Op. 10 / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Symphonie Op. 21 / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Cinq Lieder spirituels Op.15, pour soprano et ensemble / Anton Webern ; Christiane Oelze, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Quatre Lieder Op. 13, pour soprano et ensemble / Anton Webern ; Valdine Anderson, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Deux Lieder Op. 8, pour soprano et ensemble / Anton Webern ; Valdine Anderson, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Cinq pièces pour orchestre Op. 10 (Rappel) / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Quintette, pour piano et cordes / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Cinq canons sur des textes latins Op. 16 / Anton Webern ; Christiane Oelze, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Quatuor Op.22 / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Concerto Op. 24 / Anton Webern ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Six Lieder Op.14, pour soprano et instruments / Anton Webern ; Valdine Anderson, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004", "Trois textes populaires Op. 17 / Anton Webern ; Christiane Oelze, soprano ; Pierre Boulez, direction ; Ensemble Intercontemporain. - Cité de la musique, 2004" ;
+	dcterms:issued       "2004" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0732315> .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0732315>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:42.567Z" ;
+	dcterms:modified          "2014-06-27T11:27:42.567Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315#metadataTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:46.220Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0732315> .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0732315>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0732315> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0732315> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

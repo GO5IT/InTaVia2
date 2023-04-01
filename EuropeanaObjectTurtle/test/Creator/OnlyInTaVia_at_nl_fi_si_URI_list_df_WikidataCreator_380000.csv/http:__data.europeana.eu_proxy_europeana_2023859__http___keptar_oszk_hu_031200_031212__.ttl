@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:51.551Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031200_031212__> .
+
+<http://keptar.oszk.hu/031200/031212/vende1_67_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3098"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_031200_031212__>
+	a                   ore:Proxy ;
+	dc:creator          "Ferenczy ,  István  ( szobrász )"@hu, "Róth,  András Lajos (digitized By)"@hu ;
+	dc:description      "KÖLCSEY márványszobra Ferenczy István, (szül. Rimaszombatban 1792-ben, elhunyt 1856-ban) kora hírneves szobrászának műve. A szobor Kölcseyt mint irót és szónokot, kora szobrászati irányának megfelelően, görög viseletben, tógában ábrázolja. Balkezében iratcsomót tart, jobbjával, nyugodt, szónoki mozdulatot tesz. Az egész alakot klasszikus nyugalom és méltóság jellemzik."@hu ;
+	dc:format           "JPEG képállomány \u000A         773x1373 \u000A         300 \u000A         szürke \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/031200/031212   [Metadata]" ;
+	dc:relation         "Vende Ernő: A magyar irodalomtörténet képekben [ http://mek.oszk.hu/09800/09807/]"@hu, "Kölcsey Ferencz [ http://keptar.oszk.hu/006100/006148]"@hu ;
+	dc:source           "OSZK MEK"@hu ;
+	dc:subject          "költő"@hu, "History of literature, literary studies"@hu, "Kölcsey Ferenc (1790-1838)"@hu, "politikus"@hu, "szobor"@hu, "nyelvújítás"@hu, "Fine arts, visual arts"@hu ;
+	dc:title            "Kölcsey márványszobra a N. Múzeumban"@hu ;
+	dc:type             "statue"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031200_031212__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:51.551Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031200_031212__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031200_031212__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:45:16.449Z" ;
+	dcterms:modified          "2015-09-14T11:48:00.970Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F031200%2F031212%2Fvende1_67_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031200_031212__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031200_031212__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/031200/031212> ;
+	edm:object         <http://keptar.oszk.hu/031200/031212/vende1_67_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/concept/2954>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2966> ;
+	skos:exactMatch  <https://d-nb.info/gnd/4168391-2>, <http://datos.bne.es/resource/XX533423>, <http://www.wikidata.org/entity/Q49757>, <http://babelnet.org/rdf/s00063196n>, <https://d-nb.info/gnd/4436441-6>, <http://id.ndl.go.jp/auth/ndlna/00571341>, <http://vocab.getty.edu/aat/300025513>, <https://www.freebase.com/m/05z96>, <https://g.co/kg/m/05z96>, <http://vocabularies.unesco.org/thesaurus/concept15267>, <http://data.bnf.fr/ark:/12148/cb11933176q>, <https://d-nb.info/gnd/4246394-4>, <http://purl.org/bncf/tid/5113>, <http://dbpedia.org/ontology/Poet>, <http://id.loc.gov/authorities/names/sh85103733>, <http://www.yso.fi/onto/yso/p3490> ;
+	skos:note        "Artiste disant ou écrivant de la poésie"@fr, "Foglalkozás"@hu, "Pisatelj, ki piše pesmi"@sl, "Forfatter af poesi"@da, "Schriftsteller, der Gedichte schreibt"@de, "Person who writes poetry"@en, "Poesia idazten duena"@eu, "Person som skriver poesi"@sv, "Osoba tworząca i publikująca poezję"@pl, "Literát tvořící verše"@cs, "Persona que escribe poesía"@es, "Pessoa que escreve poesia"@pt, "Umelec pracujúci so slovom, ktorý tvorí básne"@sk, "Scrittore di poesie"@it, "Persoană care scrie și publică poezii"@ro, "Човек, който пише поезия"@bg, "Человек, пишущий стихи"@ru, "Persona, kas raksta dzeju"@lv, "Schrijver van poëzie"@nl, "Luova ja taiteellinen kirjailija, joka kirjoittaa runoja"@fi, "Πρόσωπο που γράφει ποίηση"@el, "Osoba koja piše poeziju"@hr, "Duine a scríobhann filíocht"@ga, "Xi ħadd li jikteb il-poeżiji"@mt, "Persona que escriu poesia"@ca, "Inimene, kes kirjutab ja avaldab luulet"@et ;
+	skos:prefLabel   "Poète ou poétesse"@fr, "Digter"@da, "Básník"@cs, "Básnik"@sk, "Költő"@hu, "Ποιητής"@el, "Dichter"@de, "Dichter"@nl, "Luuletaja"@et, "Pjesnik"@hr, "File"@ga, "Poeta"@pt, "Poeta"@ca, "Poeta"@mt, "Poeta"@it, "Poeta"@es, "Poeta"@eu, "Poeta"@pl, "Poetas"@lt, "Поет"@bg, "Pesnik"@sl, "Poet"@sv, "Poet"@en, "Poet"@ro, "Dzejnieks"@lv, "Поэт"@ru, "Runoilija"@fi .
+
+<http://keptar.oszk.hu/031200/031212>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031200_031212__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_031200_031212__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2954> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031200_031212__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031200_031212__> .

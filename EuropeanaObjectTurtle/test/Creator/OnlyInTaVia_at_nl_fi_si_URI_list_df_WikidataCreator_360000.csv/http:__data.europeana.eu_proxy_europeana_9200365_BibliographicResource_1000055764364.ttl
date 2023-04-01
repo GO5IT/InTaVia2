@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T17:39:27.705Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b6951847q> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/manifest.json> ;
+	ebucore:fileByteSize    "9034"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "148"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1> .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b6951847q>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T17:39:27.732Z" ;
+	dcterms:modified          "2019-09-02T17:39:27.732Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q#metadataTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q> ;
+	edm:completeness          "7" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b6951847q> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b6951847q%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T17:39:27.705Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b6951847q> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b6951847q>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b6951847q> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b6951847q>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b6951847q" ;
+	dc:subject          <http://data.europeana.eu/concept/217> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b6951847q> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b6951847q>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "578273"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/217>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <http://purl.org/bncf/tid/8602>, <https://www.freebase.com/m/04wkvh>, <https://d-nb.info/gnd/4114355-3>, <http://www.yso.fi/onto/yso/p10069>, <http://id.loc.gov/authorities/names/sh85074426>, <http://vocab.getty.edu/aat/300015636>, <https://g.co/kg/m/04wkvh>, <http://data.bnf.fr/ark:/12148/cb11933059v>, <http://www.wikidata.org/entity/Q191163>, <http://id.ndl.go.jp/auth/ndlna/00563611> ;
+	skos:note        "Maaližanr"@et, "Gènere pictòric"@ca, "Gatunek malarski"@pl, "Género pictórico"@es, "Tema artistico"@it, "Malířský žánr"@cs, "A festészet egyik műfaja"@hu, "Turija ta' pajsaġġi fl-arti"@mt, "Жанр изобразительного искусства"@ru, "Genre indenfor malerkunst"@da, "Depiction of landscapes in art"@en, "Género de pintura"@pt, "Artistiek thema"@nl, "Léiriú tírdhreacha san ealaín"@ga, "Maalaustaiteen suuntaus, joka keskittyy maisemiin"@fi, "Είδος ζωγραφικής με κύρια θεματολογία το φυσικό ή το αστικό τοπίο"@el, "Genre artistique"@fr, "Жанр в изобразителното изкуство"@bg, "Gattung der gegenständlichen Malerei"@de ;
+	skos:prefLabel   "Krajinsko slikarstvo"@sl, "Peizažas"@lt, "Arti pajsaġġistika"@mt, "Landskapsmåleri"@sv, "Pejzaž"@hr, "Ainava"@lv, "Pittura paesaggistica"@it, "Arta peisajului"@ro, "Landskabsmaleri"@da, "Paisaia margolaritza"@eu, "Krajinomaľba"@sk, "Пейзаж"@ru, "Τοπιογραφία"@el, "Malarstwo pejzażowe"@pl, "Pintura de paisagem"@pt, "Landschaftsmalerei"@de, "Landschapschilderkunst"@nl, "Ealaín tírdhreacha"@ga, "Maastikumaal"@et, "Krajinomalba"@cs, "Tájkép"@hu, "Paisatge"@ca, "Paysage"@fr, "Pintura del paisaje"@es, "Landscape art"@en, "Пейзажна живопис"@bg, "Maisemamaalaus"@fi .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b6951847q/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9034"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "148"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b6951847q>
+	a                   ore:Proxy ;
+	dc:creator          "Seghers, Hercules (1590?-1638?). Graveur" ;
+	dc:date             "161.-1538" ;
+	dc:description      "Référence bibliographique : Haverkamp-Begemann, 31 d", "Référence bibliographique : Springer, 35 d" ;
+	dc:format           "1 est. : eau-forte peinte et pointe sèche ; 82 x 310", "Nombre total de vues : 1" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b6951847q" ;
+	dc:publisher        "[s.n.][s.n.]" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42167976k", "Appartient à : [Recueil. Oeuvre d'Hercule Seghers. Oeuvre de Réserve] ; 10", "Notice de recueil : http://catalogue.bnf.fr/ark:/12148/cb40343415p" ;
+	dc:rights           <http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Estampes et photographie, RESERVE CB-49-BOITE ECU" ;
+	dc:subject          "Paysages -- 17e siècle"@fre, "Vallées"@fre, "Moulins à vent"@fre, "Paysage"@fre ;
+	dc:title            "[Paysage aux moulins à vent] : [estampe] / [H. Seghers]" ;
+	dc:type             "still image"@eng, "estampe"@fre, "engraving"@eng, "image fixe"@fre, "image"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b6951847q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b6951847q> .

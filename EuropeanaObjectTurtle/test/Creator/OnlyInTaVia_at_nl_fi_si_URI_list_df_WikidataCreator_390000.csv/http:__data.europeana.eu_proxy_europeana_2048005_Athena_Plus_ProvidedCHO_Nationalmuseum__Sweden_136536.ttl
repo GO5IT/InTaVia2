@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:20:40.584Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536>
+	a  edm:ProvidedCHO .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=136536&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/33744> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=136536&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536/manifest> ;
+	ebucore:fileByteSize    "130495"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "362"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T12:03:22.692Z" ;
+	dcterms:modified          "2017-02-21T15:22:32.537Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> ;
+	edm:completeness          "7" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D136536%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536>
+	a                   ore:Proxy ;
+	dc:contributor      "Wiros fonden (Source of Funding)"@sv ;
+	dc:creator          "Jan Harmensz Muller"@sv ;
+	dc:description      "   Påskrift: Muller [verso, penna och brunt bläck upptill t.v.] "@sv ;
+	dc:format           <http://partage.vocnet.org/part00881>, "Penna och brunt bläck, svartkrita på papper", "teckning (bildskapande)" ;
+	dc:identifier       "136536", "(Inv. Nr.: NMH 2/2012)" ;
+	dc:title            "Bacchus och Ariadne"@sv ;
+	dc:type             "teckningar"@sv, "Frihandsteckningar (Teckningar)"@sv, <http://partage.vocnet.org/part00047> ;
+	dcterms:created     "Utf. slutet av 1590-talet" ;
+	dcterms:extent      "Passepartout 55 x 42 cm", "Mått 23,3 x 12 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> .
+
+<http://partage.vocnet.org/part00047>
+	a               skos:Concept ;
+	skos:altLabel   "Handzeichnung"@de, "rajzok"@hu, "dibuixos (obres visuals)"@ca, "dibujos (obras visuales)"@es, "rysunki"@pl, "teckningar"@sv, "desenhos"@pt, "disegno (obra visiva)"@it, "tegninger"@no, "crteži"@hr, "dessins (oeuvres visuelles)"@fr, "drawing (visual work)"@en, "tekening (visueel werk)"@nl, "kresby"@cs ;
+	skos:broader    <http://partage.vocnet.org/>, <http://partage.vocnet.org/part01377>, <http://partage.vocnet.org/part00039> ;
+	skos:narrower   <http://partage.vocnet.org/part00560>, <http://partage.vocnet.org/part01284>, <http://partage.vocnet.org/part01330>, <http://partage.vocnet.org/part00948>, <http://partage.vocnet.org/part00415> ;
+	skos:prefLabel  "crtež"@hr, "drawings (visual works)"@en, "desenho"@pt, "tekeningen"@nl, "dibuix (obra visual)"@ca, "piirustukset"@fi, "risbe"@sl, "kresba"@cs, "Zeichnung (visuelles Werk)"@de, "tegning (verk)"@no, "rajz"@hu, "disegni"@it, "rysunek"@pl, "teckning"@sv, "dibujo (obra visual)"@es, "dessin (oeuvre visuelle)"@fr .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=136536&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=136536&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=136536&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:20:40.583Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_136536/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/agent/33744>
+	a                    edm:Agent ;
+	owl:sameAs           <http://d-nb.info/gnd/121463486>, <http://vocab.getty.edu/ulan/500015311>, <http://data.bnf.fr/ark:/12148/cb148030255>, <http://data.bnf.fr/ark:/12148/cb14917972h>, <http://www.wikidata.org/entity/Q2725591>, <http://www.idref.fr/033001510/id>, <http://datos.bne.es/resource/XX1307317>, <http://dbpedia.org/resource/Jan_Harmensz._Muller>, <https://www.freebase.com/m/0b6d4dc>, <http://data.bibliotheken.nl/id/thes/p074984047>, <http://viaf.org/viaf/7652023>, <http://id.worldcat.org/fast/440125>, <https://g.co/kg/m/0b6d4dc>, <http://ta.sandrart.net/-person-2551>, <http://id.loc.gov/authorities/names/no99078810> ;
+	rdaGr2:dateOfBirth   "1571-07-01" ;
+	rdaGr2:dateOfDeath   "1628-04-18" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Jan Muller"@en, "Jan Muller"@nl, "Muller"@en, "Jan Harmensz Muller"@en, "Jean Muller"@en, "Jan Muller (1571-1628)"@en, "Jan Muller (1571-1628)"@nl, "Joannes Harmensz. Muller"@en, "Joannes Harmensz. Muller"@nl, "Joannes Harmansz Müller"@en, "Jan Harmensz. Muller"@nl, "Jan muller"@en, "Joannes Muller"@en, "Joannes Muller"@nl, "Jan Harmensz Müller"@nl, "Jan Harmensz Müller"@en, "Jan Harmenszoon Muller"@de ;
+	skos:note            "Flämischer Kupferstecher und Maler"@de, "Nederlands kunstschilder"@nl, "Dessinateur et graveur hollandais"@fr, "Disegnatore ed incisore olandese"@it, "Nizozemský malíř"@cs, "Painter and printmaker from the Northern Netherlands (1571-1628)"@en ;
+	skos:prefLabel       "Jan Muller"@pt, "Jan Harmensz. Muller"@de, "Jan Harmensz. Muller"@en, "Jan Harmensz. Muller"@cs, "Jan Harmensz. Muller"@sl, "Jan Harmensz Muller"@sv, "Jan Harmensz Muller"@fr, "Jan Harmensz Muller"@es, "Jan Harmensz Muller"@da, "Jan Harmensz Muller"@ca, "Jan Harmensz Muller"@nl, "Jan Harmensz von Müller"@it, "Joannes Muller"@sk .

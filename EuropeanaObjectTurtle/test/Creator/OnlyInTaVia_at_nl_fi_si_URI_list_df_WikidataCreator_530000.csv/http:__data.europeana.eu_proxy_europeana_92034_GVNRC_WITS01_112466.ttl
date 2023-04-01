@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112466#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:06.785Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112466> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112466>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:58.936Z" ;
+	dcterms:modified          "2018-04-05T18:11:19.095Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_112466> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A112466%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_112466>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3139>, <http://data.europeana.eu/concept/2695> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112466> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112466>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:112466> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112466&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112466>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_112466>
+	a                   ore:Proxy ;
+	dc:contributor      "Bauer, Marius" ;
+	dc:creator          "Bauer, Marius" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:112466", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112466" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:112466], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "hond"@nl, "ruiter"@nl, "straat"@nl, "deur"@nl, "sluier"@nl, "vrouw"@nl, "ezel"@nl, "stadsgezicht"@nl, "voetganger"@nl ;
+	dc:title            "Straatje te Cairouan" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1882-1918" ;
+	dcterms:extent      "79 x 98 cm" ;
+	dcterms:isPartOf    "GVN", "Willem Witsen: Tachtiger in brief en beeld", "WITS01" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "doek", "olieverf", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112466> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112466> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112466&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "37285"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "118"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/3139>
+	a                skos:Concept ;
+	skos:altLabel    "Hesterytter"@da, "Jinete hipico"@es, "Спортивный наездник"@ru, "Sportsrytter"@da, "Ιππέας"@el, "Jātniece"@lv ;
+	skos:broader     <http://data.europeana.eu/concept/3130> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300188602>, <http://g.co/kg/g/121j20lm>, <http://www.wikidata.org/entity/Q2730732> ;
+	skos:note        "Atleta che pratica lo sport dell'equitazione"@it, "Deportista que compite montando a caballo"@es, "Sportovec věnující se jezdectví na koních"@cs, "Person, der dyrker hestesport"@da, "Sportler, der Pferde reitet"@de, "Sportsperson who rides horses"@en, "Πρόσωπο που συμμετέχει σε αθλήματα ιππασίας"@el, "Sportif pratiquant l'équitation"@fr, "Lovassportot űző személy"@hu ;
+	skos:prefLabel   "Jeździec"@pl, "Equestrian"@en, "Jahač"@sl, "Reiter"@de, "Jinete hípico"@es, "Cavaliere"@it, "Călăreț"@ro, "Ryttare"@sv, "Jazdec"@sk, "Genet"@ca, "Ratsastaja"@fi, "Marcach"@ga, "Jezdec"@cs, "Sportlovas"@hu, "Jātnieks"@lv, "Ruiter"@nl, "Наездник"@ru, "Αθλητής ιππασίας"@el, "Ratsanik"@et, "Cavalier"@fr, "Rytter"@da .
+
+<http://data.europeana.eu/concept/2695>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2397>, <http://data.europeana.eu/concept/2395> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q6497446>, <http://vocab.getty.edu/aat/300046128>, <http://www.yso.fi/onto/yso/p25707>, <https://d-nb.info/gnd/4195493-2>, <http://id.loc.gov/authorities/names/sh85142543>, <https://g.co/kg/m/0hzy2>, <http://thesaurus.europeanafashion.eu/thesaurus/10210>, <http://iconclass.org/41D2211>, <https://www.freebase.com/m/0hzy2> ;
+	skos:note        "Vêtement couvrant la tête et parfois le visage"@fr, "Una stoffa sottile o rada che, pur coprendo e nascondendo, lascia intravedere ciò che sta sotto"@it, "Одежда, покрывающая голову, и иногда – лицо"@ru, "Ohut liinamainen vaatekappale"@fi, "Una peça de roba majoritàriament femenina que serveix per cobrir-se els cabells i part del cap"@ca, "Um tecido ou peça de vestuário, utilizado quase exclusivamente por mulheres de diferentes culturas"@pt, "Articol de îmbrăcăminte sau pânză agățată care este destinat să acopere o parte a capului sau a feței sau un obiect cu o semnificație"@ro, "Klädesplagg"@sv, "Een dunne doek die gebruikt wordt om het gezicht of een ander lichaamsdeel te bedekken"@nl, "Any lightweight covering for the head or face or both"@en, "Kopfbedeckung aus leichtem Gewebe"@de, "Tela usada para cubrirse la cabeza y parte o la totalidad del rostro"@es ;
+	skos:prefLabel   "Velo"@it, "Velo"@es, "Sluier"@nl, "Véu"@pt, "Huntu"@fi, "Fátyol"@hu, "Veil"@en, "Воал"@bg, "Vel"@ca, "Slør"@da, "Văl"@ro, "Woalka"@pl, "Caille"@ga, "Belo"@eu, "Voile"@fr, "Plīvurs"@lv, "Вуаль"@ru, "Πέπλο"@el, "Slöja"@sv, "Schleier"@de, "Závoj"@cs, "Loor"@et .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112466#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:06.784Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112466> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:112466>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "53780"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

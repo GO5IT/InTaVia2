@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://d-nb.info/gnd/4031207-0>
+	a               skos:Concept ;
+	skos:altLabel   "Spitzenklöppeln" ;
+	skos:prefLabel  "Klöppeln" .
+
+<http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119>
+	a  edm:ProvidedCHO .
+
+<http://sws.geonames.org/2657896/>
+	a               edm:Place ;
+	skos:prefLabel  "Zürich" .
+
+<http://d-nb.info/gnd/4122164-3>
+	a               skos:Concept ;
+	skos:prefLabel  "Gemälde" .
+
+<http://www.recherche-portal.ch/zbz/action/search.do?vid=ZAD&fn=search&vl%28freeText0%29=ebi01_prod010102912>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "3636"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200166/BibliographicResource_3000117229119>
+	a                   ore:Proxy ;
+	dc:contributor      "Nicolaes Maes" ;
+	dc:description      "\u0022356. P.Z.\u0022 -- Rückseite unten links, Titelinformationen wurden der Rückseite entnommen", "1 Photochrom 26,9 x 20,9 cm", "par N. Maes", "Gemälde-Reproduktion: \u0022Dösende Frau / Old Woman Dozing / Dame âgée assoupie\u0022 von Nicolaes Maes um 1656, befindet sich noch heute Royal Museums of Fine Arts of Belgium" ;
+	dc:identifier       "oai:opac.nebis.ch:EBI01-010102912" ;
+	dc:publisher        "Photochrom Zürich" ;
+	dc:subject          "Schlaf", "sh85015758", "sh85073803", <http://d-nb.info/gnd/4035439-8>, "Gemälde", "sh85096661", <http://d-nb.info/gnd/4031207-0>, "Lesen", <http://d-nb.info/gnd/4052580-6>, "Klöppeln", "sh85123396", <http://d-nb.info/gnd/4122164-3> ;
+	dc:title            "La songeuse Musée Royal de Bruxelles" ;
+	dc:type             "Monograph"@en ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1062> ;
+	dcterms:issued      "[zwischen 1901 und 1911]", "1901? - 1911?" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/sz>, <http://sws.geonames.org/2657896/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200166/BibliographicResource_3000117229119> .
+
+<http://d-nb.info/gnd/4035439-8>
+	a               skos:Concept ;
+	skos:prefLabel  "Lesen" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200166/BibliographicResource_3000117229119>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-12T09:09:35.067Z" ;
+	dcterms:modified          "2014-12-12T09:09:35.067Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119#contentTier>, <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119> ;
+	edm:completeness          "10" ;
+	edm:country               "Switzerland" ;
+	edm:datasetName           "9200166_Ag_EU_TEL_a1062_Eu_Libraries_Zurich" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200166/BibliographicResource_3000117229119> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fopac.nebis.ch%2Fthumb_zb%2F16%2F410000356_004900216_tn_004900217.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/9200166/BibliographicResource_3000117229119>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150474> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200166/BibliographicResource_3000117229119> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:07:56.894Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200166/BibliographicResource_3000117229119> .
+
+<http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:07:56.894Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200166/BibliographicResource_3000117229119> .
+
+<http://data.europeana.eu/agent/150474>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/82853>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://dbpedia.org/resource/Nicolaes_Maes>, <http://kulturarvsdata.se/LSH/agents/19086>, <https://g.co/kg/m/03fvwq>, <http://vocab.getty.edu/ulan/500015747>, <https://www.freebase.com/m/03fvwq>, <http://data.bnf.fr/ark:/12148/cb145473525>, <http://www.idref.fr/191787930/id>, <http://id.worldcat.org/fast/1832159>, <http://datos.bne.es/resource/XX5311260>, <http://data.bibliotheken.nl/id/thes/p104705566>, <http://www.wikidata.org/entity/Q505150>, <http://viaf.org/viaf/32870511>, <http://d-nb.info/gnd/122131924>, <http://id.loc.gov/authorities/names/nr00014357> ;
+	rdaGr2:dateOfBirth   "1634-01-01" ;
+	rdaGr2:dateOfDeath   "1693-12-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40802> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Maes nicolaes"@en, "Nich.s maas"@en, "Nicolas Maes"@en, "Nicolas Maas"@ca, "Nicolas Maas"@en, "Маес, Николас"@ru, "Николас Маес"@ru, "Maes nikolaes"@en, "Nicolaas Maes"@nl, "Nicolaas Maes"@en, "Nicholaes Maes"@en, "Nicolaas Maas"@en, "Mayes"@en, "Nikolas maes"@en, "N. Mass"@en, "Nicolaus Maer"@en, "N Maas"@en, "De Maas"@en, "Nic. Maes"@en, "Nikolaes maes"@en, "N. Maus"@en, "Nicolas Maaes"@en, "Николас Мас"@ru, "Masse"@en, "Nicholas Maes"@en, "Nic. maes"@en, "Nicolaus Maes"@en, "Nicolaes Maas"@es, "Nicolaas maes"@en, "Nicolaes Maes"@fr, "Nicolaes Maas"@nl, "Nicolaas maas"@en, "Nicolaes Maas"@sv, "Nicolaes Maas"@en, "N. Maes"@en, "N. Maas"@en, "Nicholaes maes"@en, "Maes"@en, "Maes"@sv, "Maas"@en, "Nic. Maas"@en, "Nicolaes mals"@en, "C. Maes"@en, "Nikolaas Maas"@en, "Nie. maes"@en, "Nicol. maes"@en, "Nikolas Maes"@de, "Nikolas Maes"@en, "Nicholas Maas"@en, "N. maes"@en, "Nikolaus Maes"@en, "Nich. Maes"@en, "Nich. Maas"@en, "Maaes"@en, "Nicolaus maes"@en ;
+	skos:note            "Dutch painter (1634-1693)"@en, "Péintéir Ollannach"@ga, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et, "Pintor neerlandès"@ca, "Pintor holandês"@pt, "Nizozemský malíř"@cs, "Pittore olandese"@it, "Holland festő"@hu, "Nederlands kunstschilder"@nl, "Holländischer Maler"@de, "Pintor neerlandés"@es, "Peintre hollandais"@fr ;
+	skos:prefLabel       "Николас Мас"@bg, "Nicolaes Maes"@fi, "Nicolaes Maes"@sv, "Nicolaes Maes"@pt, "Nicolaes Maes"@lt, "Nicolaes Maes"@en, "Nicolaes Maes"@de, "Nicolaes Maes"@it, "Nicolaes Maes"@hu, "Nicolaes Maes"@es, "Nicolaes Maes"@cs, "Nicolaes Maes"@sl, "Nicolaes Maes"@ga, "Nicolaes Maes"@pl, "Nicolaes Maes"@da, "Nicolaes Maes"@nl, "Nicolas Maes"@fr, "Nicolas Maes"@ca, "Мас, Николас"@ru, "Νικολάες Μάες"@el .
+
+<http://data.europeana.eu/organization/1482250000004500800>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque centrale de Zurich"@fr, "Zentralbibliothek Zürich"@nl, "Zentralbibliothek Zürich"@de, "Κεντρική Βιβλιοθήκη της Ζυρίχης"@el, "Biblioteca Central de Zurique"@pt, "Biblioteca Central de Zuric"@ca, "Biblioteca Centrale di Zurigo"@it, "Biblioteca Central de Zúrich"@es, "Central Library of Zurich"@en .
+
+<http://opac.nebis.ch/thumb_zb/16/410000356_004900216_tn_004900217.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "34670"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "116"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200166/BibliographicResource_3000117229119>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200166/BibliographicResource_3000117229119> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500800> ;
+	edm:isShownAt      <http://www.recherche-portal.ch/zbz/action/search.do?vid=ZAD&fn=search&vl%28freeText0%29=ebi01_prod010102912> ;
+	edm:object         <http://opac.nebis.ch/thumb_zb/16/410000356_004900216_tn_004900217.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://d-nb.info/gnd/4052580-6>
+	a               skos:Concept ;
+	skos:prefLabel  "Schlaf" .

@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b9059784k>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1668" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9059784k> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b9059784k>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:40:37.975Z" ;
+	dcterms:modified          "2018-07-23T15:39:54.810Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b9059784k> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b9059784k.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9059784k/manifest> ;
+	ebucore:fileByteSize    "58131"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "686"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9059784k.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8357"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "171"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059784k>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b9059784k> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b9059784k.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059784k/f1> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b9059784k/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.083Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059784k> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:22.083Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059784k> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b9059784k>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "193974"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b9059784k>
+	a                   ore:Proxy ;
+	dc:creator          "Du Mont, Henry (1610-1684). Compositeur" ;
+	dc:date             "1668" ;
+	dc:description      "Comprend : Dialogus angeli et peccatoris (T. A. vel C. S.) - Miserere mei Domine quoniam (T. A. vel C. S.) - Dialogus : Peccator, Anima (2 T. vel C. S.) - Dialogus Virgini (T. A. vel C. S.) - Dialogus inter sponsum et sponsam - O salutaris (C. S. vel T. A.) - Ego enim accepi (T. A. vel C. S.) - Dialogus (B. T. vel C.) - Memorare ô piissima (B. T. vel S. et viol. si placet) - Tota pulchra es (2 S. vel 2 T.) - Quis mihi det (C. S. vel T. A.) - Quam pulchra es (C. S. vel T. A.) - Paratum cor meum (S. vel 2 A.) - Dialogus sponsae cum sponso coelesti (B. S. vel A.) - Gloriosissima Maria (2 S. vel 2 A.) - Ave verum Corpus (B. S. vel A.) - Domine in virtute tua (C. S. vel T. A.) - Non amo te (C. S. vel T. et Contra T.) - O dulcedo amoris (T. A. vel C. S. et viol. si placet) - Benedicam Dominum (2 Des. ou 2 Tailles [dessus de viole ajoutée]) - Dignare Domine (C. S. vel T. A.) - Quemadmodum desiderat (S. S. vel T. A.) - Veni Creator Spiritus (Hymnus ; C. S. vel T. A) - Iste confessor (Hymnus ; C. S. vel T. A.) - Symphonia - Caecilia famula (Antienne ; B. C. et viol. si placet) - Allemande - Panis angelicus (voce sola cum viol. si placet) - Panis angelicus (voce sola cum viol. si placet) - O fideles ! miseremini (voce sola S. vel A.) - Domine non secundum (voce sola, C. vel T.) - O aeternae misericors (voce sola, C. vel T.) - Allemande en tablature d'orgue", "Appartient à l’ensemble documentaire : RISMImp", "Présentation musicale : [Parties]" ;
+	dc:format           "3 parties ; in-4" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b9059784k" ;
+	dc:language         "fre" ;
+	dc:publisher        "A Paris, par Robert Ballard, seul imprimeur du Roy, pour la musique, ruë S. Jean de Beauvais, au Mont Parnasse. M.DC.LXVIII. Avec privilege de Sa Majesté." ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42967972k", "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb42967972k" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Fonds du service reproduction, RESVM1-96" ;
+	dc:subject          "Motets -- 17e siècle"@fre ;
+	dc:title            "Motets a deux voix, avec la basse-continue . De Mr H. Du Mont, abbé de Silly, & maistre de la musique de la Chapelle du Roy." ;
+	dc:type             "Genre musical : motet" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b9059784k> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b9059784k> .

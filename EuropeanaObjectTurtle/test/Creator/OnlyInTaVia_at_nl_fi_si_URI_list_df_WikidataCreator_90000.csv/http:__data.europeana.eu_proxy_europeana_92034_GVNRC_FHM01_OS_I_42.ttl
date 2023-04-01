@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_42>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/118917> ;
+	dc:creator          <http://data.europeana.eu/agent/118917> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1695" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_42> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_42>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-42> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-42&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:22.588Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_42> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T13:59:22.588Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_42> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-42&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "19951"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "216"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/118917>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://dbpedia.org/resource/Bernardus_van_Schijndel>, <http://viaf.org/viaf/95768427>, <https://g.co/kg/m/09gp0mm>, <http://vocab.getty.edu/ulan/500014268>, <https://www.freebase.com/m/09gp0mm>, <http://www.wikidata.org/entity/Q4894000> ;
+	rdaGr2:dateOfBirth             "1647-01-01" ;
+	rdaGr2:dateOfDeath             "1709-05-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40205> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40710> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Van Schendel"@en, "Van-Schendel"@en, "Schindel"@en, "B. v. Schyndel"@en, "Schyndael"@en, "B: van Schyndel"@en, "Bernardus van Schyndal"@en, "B. Schyndale"@en, "Bernard Scheyndel"@en, "Bernard Schendel"@en, "B. Schgadel"@en, "Bernardus van Schendel"@en, "B. Schendel"@en, "Barend Schendel"@en, "Schyndal"@en, "Nchyndaal"@en, "B. Schynoils"@en, "Schendel"@en, "B. v. Schijndel"@en, "Bernardus Van Schijndel"@en, "B. Schyndel"@en, "B. Schyndael"@en, "Bernardus Van Schendel"@en, "Scheyndel"@en, "Schendal"@en, "B. Schyndaal"@en, "B. Schyndal"@en, "B. Scandael"@en, "Bernard Schyndal"@en ;
+	skos:note                      "Pittore neerlandese"@it, "Dutch Golden Age painter (1647-1709)"@en, "Pintor neerlandês"@pt, "Peintre néerlandais"@fr, "Pintor neerlandès"@ca, "Nederlands kunstschilder (1647-1709)"@nl, "Pintor neerlandés"@es ;
+	skos:prefLabel                 "Bernardus van Schijndel"@de, "Bernardus van Schijndel"@sl, "Bernardus van Schijndel"@en, "Bernardus van Schijndel"@nl, "Bernardus Van Schendel"@ca, "Bernardus Van Schendel"@sv, "Bernardus Van Schendel"@it, "Bernardus Van Schendel"@da, "Bernardus van Schendel"@pt, "Bernardus van Schendel"@fr, "Bernardus van Schendel"@es .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-42>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48096"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_42>
+	a                   ore:Proxy ;
+	dc:contributor      "Bernardus van Schijndel" ;
+	dc:creator          "Bernardus van Schijndel" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-42", "OS-I-42" ;
+	dc:rights           "Frans Hals Museum", "voor informatie: Frans Hals Museum"@nl, "for information contact: Frans Hals Museum"@en ;
+	dc:source           "OS-I-42 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van een onbekende man"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1695" ;
+	dcterms:extent      "38 x 29 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "GVN", "FHM01" ;
+	dcterms:medium      "geschilderd", "paneel ; olieverf", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_42> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_42>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:54.384Z" ;
+	dcterms:modified          "2018-04-05T16:45:02.157Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_42> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-42%26role%3Dthumbnail&type=IMAGE> .

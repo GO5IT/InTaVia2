@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:53:20.808Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427209> .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427209>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004464999#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004464999/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:53:20.808Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427209> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://search.rsl.ru/api/description/01004464999/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "277600"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://sws.geonames.org/2879139/>
+	a               edm:Place ;
+	skos:prefLabel  "Leipzig (Herstellung)" .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149427209>
+	a                        ore:Proxy ;
+	dc:creator               "Sigismund Thalberg" ;
+	dc:description           "Имеется электронная копия", "Sigismund Thalberg" ;
+	dc:format                "Printed"@en ;
+	dc:identifier            "004464999" ;
+	dc:language              "de" ;
+	dc:publisher             "Breitkopf & Härtel" ;
+	dc:title                 "Pianoforte-Werke zu zwei Händen - Bd. 3" ;
+	dc:type                  "Monograph"@en ;
+	dcterms:alternative      "Произведения для фортепиано в 2 руки" ;
+	dcterms:extent           "100 с." ;
+	dcterms:isPartOf         <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued           "19--", "[18--]" ;
+	dcterms:spatial          <http://id.loc.gov/vocabulary/countries/ru>, <http://sws.geonames.org/2879139/> ;
+	dcterms:tableOfContents  "Op.60 : Barcarole A moll; Op. 63 : Grosse Phantasie über J. Rossini's \u0022Barbier von Sevilla\u0022 C dur; Op. 64 : Les capricieuses : Walzer As dur; Op. 65: Tarantelle C moll; Op.66: Introduction und Variationen über die Barcarole aus G. Donizetti's \u0022Liebestrank\u0022 As dur; Arie der Amazily aus G. Spontini's \u0022Ferdinand Cortez\u0022 : Transcription; Zweite Phantasie über G. Donizetti's \u0022Lucrezia Borgia\u0022; Auf Flügeln des Gesanges" ;
+	edm:europeanaProxy       "false" ;
+	edm:type                 "TEXT" ;
+	ore:proxyFor             <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209> ;
+	ore:proxyIn              <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427209> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149427209>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/149349> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427209> .
+
+<http://data.europeana.eu/agent/149349>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/agent/150496>, <http://data.europeana.eu/concept/235> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q347871>, <http://datos.bne.es/resource/XX1425988>, <http://id.loc.gov/authorities/names/n85212620>, <http://data.bnf.fr/ark:/12148/cb147942756>, <http://dbpedia.org/resource/Sigismond_Thalberg>, <http://libris.kb.se/resource/auth/218925>, <http://id.worldcat.org/fast/169767>, <http://data.bibliotheken.nl/id/thes/p097391492>, <http://www.idref.fr/080734464/id>, <http://openlibrary.org/works/OL6305817A>, <https://www.freebase.com/m/02m47g>, <https://g.co/kg/m/02m47g>, <http://viaf.org/viaf/29796476>, <http://d-nb.info/gnd/11729781X>, <https://libris.kb.se/zw9cflqh2qrt4tf>, <http://data.carnegiehall.org/names/1000462>, <http://id.ndl.go.jp/auth/ndlna/01036822> ;
+	rdaGr2:dateOfBirth   "1812-01-08" ;
+	rdaGr2:dateOfDeath   "1871-04-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/214486> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/143622> ;
+	skos:altLabel        "Sigismond Thalberg"@cs, "Sigismond Thalberg"@de, "Sigismond Thalberg"@it, "Sigismond Thalberg"@fr, "Sigismond Thalberg"@nl, "Sigismond Thalberg"@es, "Sigismund Thalberg"@fi, "Sigismund Thalberg"@en, "Thalberg"@sv, "Thalberg"@fr, "Thalberg"@ro, "Тальберг Сигизмунд"@ru, "Sigismondo Thalberg"@it ;
+	skos:note            "Pianist uit Oostenrijk (1812-1871)"@nl, "Pianista e compositore austriaco"@it, "Østrigsk komponist og pianist"@da, "Rakouský klavírista a hudební skladatel"@cs, "Swiss composer and pianist (1812-1871)"@en, "Pianiste et compositeur suisse"@fr, "Österrikisk kompositör och pianist"@sv, "Österreichischer Komponist und Pianist"@de, "Austriacki pianista i kompozytor"@pl ;
+	skos:prefLabel       "Sigismond Thalberg"@pt, "Sigismond Thalberg"@sl, "Sigismond Thalberg"@en, "Sigismond Thalberg"@fi, "Сигизмунд Талберг"@bg, "Sigismund Thalberg"@it, "Sigismund Thalberg"@fr, "Sigismund Thalberg"@de, "Sigismund Thalberg"@sv, "Sigismund Thalberg"@es, "Sigismund Thalberg"@cs, "Sigismund Thalberg"@pl, "Sigismund Thalberg"@da, "Sigismund Thalberg"@ro, "Sigismund Thalberg"@nl, "Sigismund Thalberg"@ca, "Сигизмунд Тальберг"@ru .
+
+<http://dlib.rsl.ru/viewer/01004464999#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427209>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:16:54.144Z" ;
+	dcterms:modified          "2016-03-24T08:15:24.607Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209#contentTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427209> ;
+	edm:completeness          "6" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149427209> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004464999%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .

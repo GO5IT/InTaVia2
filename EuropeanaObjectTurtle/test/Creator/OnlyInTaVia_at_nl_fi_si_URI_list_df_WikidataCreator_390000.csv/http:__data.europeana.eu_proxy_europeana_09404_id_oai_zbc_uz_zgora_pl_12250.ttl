@@ -1,0 +1,107 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhTbwS>
+	a                   ore:Proxy ;
+	dc:creator          "Heawood, T."@pl, "Both, Jan (1610-1652)"@pl ;
+	dc:date             "1872"@pl ;
+	dc:description      "staloryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1592"@pl ;
+	dc:publisher        "M. Glücksberg"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "grafika - 19 w."@pl, "malarstwo holenderskie - 17 w."@pl, "Both, Jan (1610-1652) - twórczość"@pl, "Holandia - malarstwo - 17 w."@pl, "malarstwo europejskie - 17 w."@pl, "Heawood, T."@pl, "staloryt - 19 w."@pl ;
+	dc:title            "Wieczór"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "12,5 x 16,5 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTbwS> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhTbwS> .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhTbwS>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:57:12.221Z" ;
+	dcterms:modified          "2017-11-30T08:57:12.221Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhTbwS#metadataTier>, <http://data.europeana.eu/item/0940424/_nnhTbwS#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhTbwS> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhTbwS> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F12250%2FDC-1592_wieczor.djvu&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhTbwS/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhTbwS>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhTbwS> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12250> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/12250/DC-1592_wieczor.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/12250/DC-1592_wieczor.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhTbwS#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:49:34.494Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTbwS> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12250>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "25573"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhTbwS>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1872" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTbwS> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhTbwS> .
+
+<http://data.europeana.eu/item/0940424/_nnhTbwS>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://zbc.uz.zgora.pl/Content/12250/DC-1592_wieczor.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhTbwS/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940424/_nnhTbwS#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:49:34.493Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTbwS> .

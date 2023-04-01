@@ -1,0 +1,156 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/90402/RP_P_1910_3077#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:17:32.918Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1910_3077> .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_P_1910_3077>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_P_1910_3077> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.108715> ;
+	edm:isShownBy      <https://lh6.ggpht.com/BjEPiuxbR3_8zHeRrLkTRSGr6r5F-0qzM_CbgoIyW-JiU-JPPBPgO7RQufqlQBVAm4aPiqsoCQ6T4dgP76aR7s7XEC60=s0> ;
+	edm:object         <https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-1910-3077> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<https://www.rijksmuseum.nl/assetimage2.jsp?id=RP-P-1910-3077>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2987904"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "1819"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/90402/RP_P_1910_3077/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://lh6.ggpht.com/BjEPiuxbR3_8zHeRrLkTRSGr6r5F-0qzM_CbgoIyW-JiU-JPPBPgO7RQufqlQBVAm4aPiqsoCQ6T4dgP76aR7s7XEC60=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Publiek Domein"@nl, "Public Domain"@en ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_P_1910_3077/manifest> ;
+	ebucore:fileByteSize    "1198541"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1819"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.32593>
+	a                              edm:Agent ;
+	edm:begin                      "1782" ;
+	edm:end                        "1844-04-13" ;
+	rdaGr2:dateOfBirth             "Brussel" ;
+	rdaGr2:dateOfDeath             "Brussel" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "print maker"@en ;
+	skos:prefLabel                 "Faber, Frédéric Théodore"@nl, "Faber, Frédéric Théodore"@en .
+
+<http://data.europeana.eu/item/90402/RP_P_1910_3077>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_P_1910_3077>
+	a                       ore:Proxy ;
+	dc:contributor          "Theaulon, Etienne"@nl, "Ommeganck, Balthasar Paul"@nl ;
+	dc:description          "Twee landschappen op één blad. Boven: een berglandschap met een gezicht op een kasteel en op de voorgrond een herder met zijn kudde in ondiep water. Onder: een stier, met een touw vastgezet aan een boom."@nl ;
+	dc:format               "urn:rijksmuseum:thesaurus:RM0001.THESAU.7077", "chine collé"@nl ;
+	dc:identifier           "http://hdl.handle.net/10934/RM0001.COLLECT.108715", "RP-P-1910-3077" ;
+	dc:language             "nl" ;
+	dc:publisher            "Rijksmuseum" ;
+	dc:rights               "Publiek Domein", "Public Domain" ;
+	dc:subject              <http://iconclass.org/47I21> ;
+	dc:title                "Landschap en stier"@nl ;
+	dc:type                 "etching"@en, "etsen"@nl, "print"@en, "urn:rijksmuseum:thesaurus:RM0001.THESAU.27272", <http://vocab.getty.edu/aat/300041273>, "prent"@nl ;
+	dcterms:created         "1807" ;
+	dcterms:extent          "plaatrand breedte 181 mm"@nl, "height 252 mm"@en, "width 181 mm"@en, "plaatrand hoogte 252 mm"@nl ;
+	dcterms:isPartOf        "collectie: prenten" ;
+	dcterms:isReferencedBy  "Hippert&Linnig 29 ", "Hippert&Linnig 28 " ;
+	dcterms:spatial         "Brussel", "urn:rijksmuseum:thesaurus:RM0001.THESAU.253", "Frankrijk", "France", "urn:rijksmuseum:thesaurus:RM0001.THESAU.3700", "Brussels", "Antwerpen", "Antwerp", "urn:rijksmuseum:thesaurus:RM0001.THESAU.4622" ;
+	edm:europeanaProxy      "false" ;
+	edm:type                "IMAGE" ;
+	ore:proxyFor            <http://data.europeana.eu/item/90402/RP_P_1910_3077> ;
+	ore:proxyIn             <http://data.europeana.eu/aggregation/provider/90402/RP_P_1910_3077> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_P_1910_3077>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T15:57:50.654Z" ;
+	dcterms:modified          "2018-03-17T13:40:08.941Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_P_1910_3077#metadataTier>, <http://data.europeana.eu/item/90402/RP_P_1910_3077#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_P_1910_3077> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_P_1910_3077> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.rijksmuseum.nl%2Fassetimage2.jsp%3Fid%3DRP-P-1910-3077&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_P_1910_3077>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	dcterms:spatial     <http://data.europeana.eu/place/85> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1807" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_P_1910_3077> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_P_1910_3077> .
+
+<http://data.europeana.eu/place/85>
+	a               edm:Place ;
+	owl:sameAs      <http://nomisma.org/id/france>, <http://id.nlm.nih.gov/mesh/D005602>, <http://dbpedia.org/resource/France>, <http://zbw.eu/stw/descriptor/17255-3>, <http://id.loc.gov/authorities/names/n79006404>, <http://id.ndl.go.jp/auth/ndlna/00563689>, <http://www.wikidata.org/entity/Q142>, <http://www.yso.fi/onto/yso/p104968>, <http://vocabularies.unesco.org/thesaurus/concept902>, <https://livedata.bibsys.no/authority/90292000>, <https://d-nb.info/gnd/4018145-5>, <http://vocab.getty.edu/tgn/1000070>, <http://babelnet.org/rdf/s00036202n>, <https://www.freebase.com/m/0f8l9c>, <http://data.bnf.fr/ark:/12148/cb152383070>, <https://g.co/kg/m/0f8l9c>, <http://nomisma.org/id/french_republic>, <http://id.worldcat.org/fast/1204289>, <http://viaf.org/viaf/264091107>, <http://www.idref.fr/026378329/id>, <https://sws.geonames.org/3017382/>, <http://www.yso.fi/onto/ysa/Y104968> ;
+	skos:altLabel   "Frainc"@ga, "Repubblika Franċiża"@mt, "Franse Republiek"@nl, "An Frainc"@ga, "Französische Republik"@de, "França Metropolitana"@ca, "Republika Francji"@pl, "Estat francès"@ca, "Французская Республика"@ru, "Republica Franceză"@ro, "Fr."@fr, "La France"@fr, "La France"@de, "La France"@sv, "La France"@pt, "La France"@en, "República Francesa"@pt, "República Francesa"@es, "República Francesa"@ca, "Republic of France"@en, "FRA"@de, "FRA"@pt, "FRA"@en, "FRA"@fr, "FRA"@hu, "FRA"@ro, "FRA"@nl, "L'Hexagone"@fr, "Fille aînée de l'Église"@fr, "Republiken Frankrike"@sv, "FR"@de, "FR"@sv, "FR"@pt, "FR"@en, "FR"@fr, "FR"@ro, "FR"@nl, "Ranskan tasavalta"@fi, "Γαλλική Δημοκρατία"@el, "Francia Köztársaság"@hu, "The Hexagon"@en, "Республика Франция"@ru, "Republika Francuska"@hr, "Republika Francuska"@pl, "Френска република"@bg, "La République française"@de, "La République française"@fr, "Republica Franța"@ro, "Prancūzijos Respublika"@lt, "RF"@de, "République française"@de, "République française"@sv, "République française"@pt, "République française"@en, "République française"@hr, "République française"@lv, "République française"@fr, "RF"@fr, "República de França"@ca, "Пятая Французская Республика"@ru, "Francouzská republika"@cs, "fr"@de, "fr"@pt, "fr"@en, "fr"@fr, "fr"@ro, "L’Hexagone"@de, "Република Франция"@bg, "Franska republiken"@sv, "French Republic"@en, "Французская республика"@ru, "Fhrainc"@ga, "Pays de Molière"@fr, "ФР"@ru, "Republica Francesa"@es, "Oltralpe"@it, "Francúzska republika"@sk, "France"@sv, "France"@pt, "France"@ca, "Prancuzija"@lt, "Francijas Republika"@lv, "Francuska republika"@hr, "República da França"@pt ;
+	skos:note       "Stat suveran în Europa continentală și mai multe teritorii de peste mări"@ro, "Estat d'Europa constituït per una metròpoli i per territoris d'ultramar"@ca, "Pajjiż fl-Ewropa tal-Punent"@mt, "Państwo w Europie Zachodniej"@pl, "Staat in Westeuropa mit Überseegebieten"@de, "Valtio Länsi-Euroopassa"@fi, "Pays transcontinental au territoire métropolitain en Europe de l'Ouest"@fr, "Χώρα της δυτικής Ευρώπης"@el, "Država u zapadnoj Europi"@hr, "Държава в Западна Европа"@bg, "Štát v Európe"@sk, "Tír san Eoraip"@ga, "Állam Nyugat-Európában"@hu, "Stato dell'Europa occidentale, membro dell'Unione Europea"@it, "Stát v západní Evropě"@cs, "Country in Western Europe"@en, "Государство в Западной Европе"@ru, "De Franse Republiek, een staat in Europa"@nl, "Vakarų Europos šalis"@lt, "Republik i Västeuropa"@sv, "País de Europa Occidental"@es, "Europa mendebaldeko herrialdea"@eu, "Et land i Europa"@da, "País na Europa Ocidental"@pt, "Valsts Eiropā"@lv ;
+	skos:prefLabel  "An Fhrainc"@ga, "Francuska"@hr, "Frankrike"@sv, "Frankrijk"@nl, "Franța"@ro, "Frankreich"@de, "Francie"@cs, "Frankrig"@da, "Francúzsko"@sk, "França"@ca, "França"@pt, "Francia"@es, "Francia"@it, "Francija"@sl, "Francija"@lv, "Франция"@bg, "Франция"@ru, "Franciaország"@hu, "Francja"@pl, "Frantzia"@eu, "France"@en, "France"@fr, "Prancūzija"@lt, "Prantsusmaa"@et, "Γαλλία"@el, "Ranska"@fi, "Franza"@mt ;
+	wgs84_pos:lat   "47.0" ;
+	wgs84_pos:long  "2.0" .
+
+<http://data.europeana.eu/item/90402/RP_P_1910_3077#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:17:32.918Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_P_1910_3077> .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.108715>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50862"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

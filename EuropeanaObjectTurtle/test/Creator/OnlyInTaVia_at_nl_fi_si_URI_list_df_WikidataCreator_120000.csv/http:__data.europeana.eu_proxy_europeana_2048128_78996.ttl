@@ -1,0 +1,135 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2048128/78996>
+	a                   ore:Proxy ;
+	dc:contributor      "Karinthy Frigyes, a fordítást átnézte, bevezetéssel ellátta", "Karinthy Emília, angol eredetiből fordította" ;
+	dc:creator          "Charles Dickens" ;
+	dc:identifier       "Inventory number A-I/1280/a" ;
+	dc:language         "magyar" ;
+	dc:publisher        "Gutenberg Könyvkiadó Vállalat" ;
+	dc:rights           "rights reserved - free access"@en, "Katona József Gimnázium Kecskemét", "PDM", "Ingyenes hozzáférés"@hu ;
+	dc:source           "Katona József Gimnázium", "Kecskemét" ;
+	dc:subject          "regény"@hu, "angol irodalom"@hu ;
+	dc:title            "Kis Dorrit I."@hu ;
+	dc:type             "szöveg" ;
+	dcterms:extent      "14 x 20 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048128/78996> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048128/78996> .
+
+<http://data.europeana.eu/aggregation/europeana/2048128/78996>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-03-15T19:31:47.443Z" ;
+	dcterms:modified          "2023-01-11T13:40:17.552Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048128/78996#contentTier>, <http://data.europeana.eu/item/2048128/78996#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048128/78996> ;
+	edm:completeness          "5" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2048128_Ag_HU_MaNDA_OAI" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048128/78996> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fmandadb.hu%2Fmandadb%2Fwebimage%2F7%2F3%2F4%2F8%2F7%2Fwimage%2Fbeolvasas0001.jpg&type=TEXT> .
+
+<http://data.europeana.eu/proxy/europeana/2048128/78996>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/59904> ;
+	dc:identifier       "78996" ;
+	dc:language         "hun" ;
+	dc:subject          <http://data.europeana.eu/concept/2842> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048128/78996> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048128/78996> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048128/78996> .
+
+<https://mandadb.hu/mandadb/webimage/7/3/4/8/7/wimage/beolvasas0001.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1312809"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1498"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "1093"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#006400"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B8860B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#9ACD32"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000003772998>
+	a               foaf:Organization ;
+	skos:prefLabel  "Forum Hungaricum Non-profit Ltd."@en .
+
+<http://data.europeana.eu/item/2048128/78996#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-01-12T05:41:22.387701Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048128/78996> .
+
+<http://data.europeana.eu/concept/2842>
+	a                skos:Concept ;
+	skos:altLabel    "Romancé"@fr, "Novels"@en, "Genre romanesque"@fr, "Romanesque"@fr ;
+	skos:exactMatch  <https://g.co/kg/m/05hgj>, <http://id.loc.gov/authorities/genreForms/gf2015026020>, <http://purl.org/bncf/tid/3572>, <http://babelnet.org/rdf/s00058201n>, <http://id.worldcat.org/fast/1921742>, <http://www.wikidata.org/entity/Q8261>, <https://www.freebase.com/m/05hgj>, <http://vocabularies.unesco.org/thesaurus/concept10809>, <http://d-nb.info/gnd/4050479-7>, <http://vocab.getty.edu/aat/300202580>, <http://data.bnf.fr/ark:/12148/cb11940505s>, <http://dbpedia.org/ontology/Novel> ;
+	skos:note        "Laaja proosamuotoinen, sepitteellinen kirjallinen teos"@fi, "Gènere literari"@ca, "Литературный жанр"@ru, "Literair genre"@nl, "Langform der schriftlich fixierten Erzählung"@de, "Genre littéraire caractérisé essentiellement par une narration fictionnelle"@fr, "Oblika literarnega besedila"@sl, "Gatunek literatury pięknej, utwór narracyjny"@pl, "Obra literaria en prosa"@es, "Irodalmi műfaj"@hu, "Prozas žanrs"@lv, "Neveršovaný epický literárny žáner"@sk, "Prozaický epický literární žánr"@cs, "Narrative text, normally of a substantial length and in the form of prose describing a fictional and sequential story"@en, "Litterær genre, lang skønlitterær form"@da, "Specie literară"@ro, "Längre berättande text, vanligtvis prosa bestående av en sammanhängande fiktiv berättelse"@sv, "Genere della narrativa in prosa"@it, "Gênero literário"@pt, "Ilukirjandusliku proosa suurvorm"@et, "Είδος μακρυσκελούς πεζής εξιστόρησης που περιγράφει μυθοπλασία σε μορφή διαδοχικής ιστορίας"@el ;
+	skos:prefLabel   "Roman"@de, "Roman"@hr, "Roman"@fr, "Roman"@sl, "Roman"@sv, "Roman"@ro, "Roman"@da, "Roman"@nl, "Romaani"@fi, "Powieść"@pl, "Romāns"@lv, "Μυθιστόρημα"@el, "Romanas"@lt, "Rumanz"@mt, "Román"@sk, "Román"@cs, "Úrscéal"@ga, "Regény"@hu, "Novel·la"@ca, "Romanzo"@it, "Novela"@es, "Novel"@en, "Romaan"@et, "Роман"@bg, "Роман"@ru, "Romance"@pt .
+
+<http://data.europeana.eu/organization/1482250000004506288>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kecskeméti Katona József Gimnázium"@hu, "Kecskemét Katona József Secondary Grammar School"@en .
+
+<http://data.europeana.eu/agent/59904>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/24733> ;
+	owl:sameAs           <http://www.idref.fr/026831198/id>, <http://id.ndl.go.jp/auth/ndlna/00437850>, <http://viaf.org/viaf/91912703>, <http://openlibrary.org/works/OL24638A>, <http://id.loc.gov/authorities/names/no2012115982>, <http://data.bibliotheken.nl/id/thes/p068342853>, <http://kulturarvsdata.se/LSH/agents/6216>, <https://libris.kb.se/42gjjgtn110l7gz>, <https://livedata.bibsys.no/authority/90051428>, <http://www.wikidata.org/entity/Q5686>, <http://nlg.okfn.gr/resource/authority/record60575>, <http://id.loc.gov/authorities/names/n78087607>, <http://viaf.org/viaf/88666393>, <http://data.carnegiehall.org/names/1023074>, <http://lod.nl.go.kr/resource/KAC199607080>, <http://d-nb.info/gnd/118525239>, <http://data.cervantesvirtual.com/person/1351>, <https://g.co/kg/m/01v9724>, <https://www.freebase.com/m/01v9724>, <http://id.worldcat.org/fast/28294>, <http://vocab.getty.edu/ulan/500106117>, <http://libris.kb.se/resource/auth/183770>, <http://datos.bne.es/resource/XX1633131>, <http://dbpedia.org/resource/Charles_Dickens>, <http://data.bnf.fr/ark:/12148/cb119001186> ;
+	rdaGr2:dateOfBirth   "1812-02-07" ;
+	rdaGr2:dateOfDeath   "1870-06-09" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/176909> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/184948> ;
+	skos:altLabel        "Диккенс Чарльз"@ru, "Dickens"@en, "Τσαρλς Ντίκενς"@el, "Charles Dickens"@pl, "Carlo Dickens"@it, "Charles Dickens"@lv, "C.Dickens"@it, "C.Dickens"@en, "C.Dickens"@de, "C.Dickens"@ru, "C.Dickens"@bg, "Dickens, Charles"@fr, "Charles John Huffam Dickens"@nl, "Charles John Huffam Dickens"@ro, "Charles John Huffam Dickens"@da, "Charles John Huffam Dickens"@pl, "Charles John Huffam Dickens"@sk, "Charles John Huffam Dickens"@cs, "Charles John Huffam Dickens"@et, "Charles John Huffam Dickens"@es, "Charles John Huffam Dickens"@hu, "Charles John Huffam Dickens"@fr, "Charles John Huffam Dickens"@it, "Charles John Huffam Dickens"@de, "Charles John Huffam Dickens"@sv, "Charles John Huffam Dickens"@fi, "Charles John Huffam Dickens"@pt, "Charles John Huffam Dickens"@en, "Чарльз Джон Хаффем Диккенс"@ru, "Boz"@pl, "Boz"@fr, "Boz"@en, "Boz"@de ;
+	skos:note            "Englantilainen kirjailija"@fi, "Английский писатель"@ru, "Engelse schrijver en sociale criticus"@nl, "Angielski powieściopisarz"@pl, "Angol író"@hu, "Escritor inglés (1812-1870)"@es, "Englischer Schriftsteller"@de, "English writer and social critic (1812–1870)"@en, "Anglický spisovateľ"@sk, "Άγγλος μυθιστοριογράφος"@el, "Английски писател"@bg, "Engelsk författare och samhällskritiker"@sv, "Angleški pisatelj"@sl, "Engelsk forfatter (1812-1870)"@da, "Scrittore, giornalista e reporter di viaggio britannico"@it, "Escritor britânico"@pt, "Anglický spisovatel"@cs, "Scriitor englez"@ro, "Romancier, dramaturge et journaliste anglais"@fr, "Escriptor anglès"@ca ;
+	skos:prefLabel       "Čārlzs Dikenss"@lv, "Κάρολος Ντίκενς"@el, "Karol Dickens"@pl, "Чарлз Дикенс"@bg, "Charles Dickens"@fi, "Charles Dickens"@pt, "Charles Dickens"@lt, "Charles Dickens"@hr, "Charles Dickens"@hu, "Charles Dickens"@sk, "Charles Dickens"@sl, "Charles Dickens"@ga, "Charles Dickens"@ca, "Charles Dickens"@sv, "Charles Dickens"@mt, "Charles Dickens"@en, "Charles Dickens"@it, "Charles Dickens"@es, "Charles Dickens"@et, "Charles Dickens"@cs, "Charles Dickens"@ro, "Charles Dickens"@da, "Charles Dickens"@nl, "Charles Dickens"@fr, "Charles Dickens"@de, "Чарльз Диккенс"@ru .
+
+<https://mandadb.hu/tetel/78996/Kis_Dorrit_I>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2048128/78996>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2048128/78996>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048128/78996> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004506288> ;
+	edm:isShownAt      <https://mandadb.hu/tetel/78996/Kis_Dorrit_I> ;
+	edm:isShownBy      <https://mandadb.hu/common/file-servlet/document/242145/default/doc_url/bin_78996.pdf> ;
+	edm:object         <https://mandadb.hu/mandadb/webimage/7/3/4/8/7/wimage/beolvasas0001.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000003772998> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://mandadb.hu/common/file-servlet/document/242145/default/doc_url/bin_78996.pdf>
+	a                      edm:WebResource ;
+	dc:format              "pdf" ;
+	dc:rights              "rights reserved - free access"@hu, "Ingyenes hozzáférés"@hu, "Katona József Gimnázium Kecskemét", "PDM" ;
+	ebucore:fileByteSize   "825484"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:spatialResolution  "96"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/item/2048128/78996#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-01-12T05:41:22.387413Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048128/78996> .

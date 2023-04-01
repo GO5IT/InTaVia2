@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200579/sqdd9zhx>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200579/sqdd9zhx> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:isShownAt      <https://wellcomecollection.org/works/sqdd9zhx> ;
+	edm:isShownBy      <https://iiif.wellcomecollection.org/image/L0035341.jpg/full/512,/0/default.jpg> ;
+	edm:object         <https://iiif.wellcomecollection.org/image/L0035341.jpg/full/500,/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/item/9200579/sqdd9zhx>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000044932001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Wellcome Collection"@en .
+
+<http://data.europeana.eu/proxy/provider/9200579/sqdd9zhx>
+	a                   ore:Proxy ;
+	dc:description      "Illustration showing jasmine, snake, caterpillar, pupa and butterfly - plants and wildlife of Surinam, South America. (See L0035342 for description of image in French and Latin.)"@en ;
+	dc:identifier       "sqdd9zhx", "EPB G. O/S F.978", "L0035341", "b1125967" ;
+	dc:rights           "Credit: Wellcome Collection" ;
+	dc:source           "L0035341" ;
+	dc:subject          "Butterfly"@en, "Insect"@en, "Wildlife"@en, "Caterpillar"@en, "Fauna"@en, "Snake"@en, "Flora"@en ;
+	dc:title            "Plants and wildlife, Surinam, South America, 1726" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/sqdd9zhx> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200579/sqdd9zhx> .
+
+<http://data.europeana.eu/aggregation/europeana/9200579/sqdd9zhx>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-09T12:07:21.934Z" ;
+	dcterms:modified          "2019-06-09T12:07:21.934Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200579/sqdd9zhx#contentTier>, <http://data.europeana.eu/item/9200579/sqdd9zhx#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200579/sqdd9zhx> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200579_Ag_UK_WellcomeCollection_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200579/sqdd9zhx> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FL0035341.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/9200579/sqdd9zhx#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:28:31.480Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/sqdd9zhx> .
+
+<http://data.europeana.eu/item/9200579/sqdd9zhx#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:28:31.480Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/sqdd9zhx> .
+
+<https://iiif.europeana.eu/presentation/9200579/sqdd9zhx/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://wellcomecollection.org/works/sqdd9zhx>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "266324"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200579/sqdd9zhx>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/sqdd9zhx> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200579/sqdd9zhx> .
+
+<https://iiif.wellcomecollection.org/image/L0035341.jpg/full/500,/0/default.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "106227"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "672"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.wellcomecollection.org/image/L0035341.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level1.json> .
+
+<https://iiif.wellcomecollection.org/image/L0035341.jpg/full/512,/0/default.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200579/sqdd9zhx/manifest> ;
+	ebucore:fileByteSize    "111560"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "689"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <https://iiif.wellcomecollection.org/image/L0035341.jpg> .

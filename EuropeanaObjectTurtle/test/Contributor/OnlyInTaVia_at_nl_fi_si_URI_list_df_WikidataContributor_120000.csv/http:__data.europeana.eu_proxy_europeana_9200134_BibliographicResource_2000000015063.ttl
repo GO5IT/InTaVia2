@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:08.058Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015063> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:08.058Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015063> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015063>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:08:06.571Z" ;
+	dcterms:modified          "2014-05-27T13:08:06.571Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063#metadataTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000015063> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1048221&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015063>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1048221> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1048221> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1048221>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000015063>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/121899>, <http://data.europeana.eu/agent/55933> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015063> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000015063>
+	a                   ore:Proxy ;
+	dc:contributor      "Joannes Meyssens", "Jan", "Cornelis Meyssens" ;
+	dc:date             "s.d.", "16--?" ;
+	dc:identifier       "008383995" ;
+	dc:language         "fr" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Jean I" ;
+	dc:type             "Analitic monographic"@en, "Still image"@en ;
+	dcterms:extent      "Colour ;", "voorstelling met opschrift: 164 x 119 mm", "Black-and-white", "plaatrand: 175 x 120 mm.", "voorstelling: 139 x 115 mm" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/BibliographicResource/null>, <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015063> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015063> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1048221>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "30200"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "297"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/55933>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p074576321>, <http://dbpedia.org/resource/Jan_of_Jen%C5%A1tejn>, <http://id.worldcat.org/fast/1427074>, <https://www.freebase.com/m/0gsl29>, <http://d-nb.info/gnd/11877624X>, <http://www.wikidata.org/entity/Q468193>, <http://data.bnf.fr/ark:/12148/cb13895635b>, <http://id.loc.gov/authorities/names/n00093345>, <https://g.co/kg/m/0gsl29>, <http://viaf.org/viaf/88990550> ;
+	rdaGr2:dateOfBirth   "1348-01-01" ;
+	rdaGr2:dateOfDeath   "1400-06-26" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202066> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/143433> ;
+	skos:altLabel        "Johann von Genzenstein"@de, "Jan z Jenštejna"@de, "Jan of Jenstejn"@en ;
+	skos:note            "Priester uit Tsjechië (1348-1400)"@nl, "Arcivescovo cattolico"@it, "Pražský arcibiskup"@cs, "Bischof von Meißen, Erzbischof von Prag, Patriarch von Alexandrien, Kanzler des Königs Wenzel IV."@de, "Archevêque de Prague"@fr, "Archbishop of Prague"@en ;
+	skos:prefLabel       "Jan od Jenštejna"@hr, "Jan of Jenštejn"@it, "Jan of Jenštejn"@en, "Jan"@sl, "Ян II из Енштейна"@ru, "Jan z Jenštejna"@fr, "Jan z Jenštejna"@cs, "Jan z Jenštejna"@pl, "Johann von Jenstein"@de, "Jan of Jenštejn"@es, "Jan of Jenštejn"@nl .
+
+<http://data.europeana.eu/agent/121899>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://data.bnf.fr/ark:/12148/cb14978267g>, <http://ta.sandrart.net/-person-4396>, <http://www.wikidata.org/entity/Q1992959>, <http://vocab.getty.edu/ulan/500040896>, <http://data.bibliotheken.nl/id/thes/p186085338>, <http://datos.bne.es/resource/XX1517355>, <https://www.freebase.com/m/0bx_hj6>, <http://id.loc.gov/authorities/names/no2009153912>, <http://viaf.org/viaf/32271194>, <http://d-nb.info/gnd/122071247>, <http://www.idref.fr/124315070/id>, <https://g.co/kg/m/0bx_hj6>, <http://dbpedia.org/resource/Joannes_Meyssens>, <http://id.worldcat.org/fast/1959325> ;
+	rdaGr2:dateOfBirth             "1612-01-01" ;
+	rdaGr2:dateOfDeath             "1670-01-01" ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/203279> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Jan Meyssens"@en, "Jan Meyssens"@fr, "Jean Meyssens"@en, "Jean Meyssens"@it, "Jean Meyssens"@fr, "Joannes Meyssens"@it, "Joannes Meyssens"@es, "Johannes Meyssens"@en, "Jan Meijssens"@en ;
+	skos:note                      "Φλαμανδός ζωγράφος μπαρόκ"@el, "Flemish Baroque painter, engraver, and printer (1612-1670)"@en, "Flämischer Barockmaler, Kupferstecher, Drucker und Kunsthändler"@de, "Nederlands kunstschilder"@nl, "Pittore, incisore, disegnatore , mercante d'arte e editore fiammingo"@it ;
+	skos:prefLabel                 "Γιαν Μέισσενς"@el, "Joannes Meyssens"@sv, "Joannes Meyssens"@en, "Joannes Meyssens"@fr, "Joannes Meyssens"@da, "Joannes Meyssens"@nl, "Jan Meyssens"@de, "Jan Meyssens"@it, "Jan Meyssens"@es, "Johannes Meyssens"@ca, "Johannes Meyssens"@pt .

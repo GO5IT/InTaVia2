@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88043069.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3877"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4B0082"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88043069>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:36.689Z" ;
+	dcterms:modified          "2018-03-26T12:27:21.681Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88043069> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88043069.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88043069>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88043069> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88043069.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88043069/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:29.590Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88043069> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88043069>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "229426"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88043069>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1954" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88043069> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88043069>
+	a                   ore:Proxy ;
+	dc:creator          "Strauss, Johann (1825-1899). Auteur ou responsable intellectuel", "DeVol, Frank (1911-1999). Direction d'orchestre", "Kálmán, Emmerich (1882-1953). Auteur ou responsable intellectuel", "Ivanovici, Iosif (1845?-1902). Auteur ou responsable intellectuel", "Sieczynski, Rudolf (1879-1952). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel" ;
+	dc:date             "1954" ;
+	dc:description      "Titre uniforme : [Du und Du. RV 367]", "Titre uniforme : [Wien, du Stadt meiner Träume]", "Titre uniforme : [Schatz-Walzer. RV 418]", "Titre uniforme : [Tausend und eine Nacht. RV 346]", "Titre uniforme : [Valurile Dunarii]", "Titre uniforme : [Gold und Silber. Op. 79]", "Titre uniforme : [Die lustige Witwe]. Extr.", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "disc"@eng, "1 disque : 33 t ; 25 cm", "Nombre total de vues :  12", "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88043069", "Numéro commercial : Capitol H98" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37798166j"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, C-11217" ;
+	dc:title            "Rêves de Vienne / R. Sieczynski. Les vagues du Danube / Ivanovici. La veuve joyeuse / Franz Lehar. DU UND DU / Johann Strauss. TREASURE WALTZ / Johann Strauss. SARI WALTZES / Kalman. Les mille et une nuits opus 346 / Johann Strauss. L'or et l'argent / Franz Lehar ; Frank De Vol et son orchestre" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88043069> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88043069#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:29.591Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88043069> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

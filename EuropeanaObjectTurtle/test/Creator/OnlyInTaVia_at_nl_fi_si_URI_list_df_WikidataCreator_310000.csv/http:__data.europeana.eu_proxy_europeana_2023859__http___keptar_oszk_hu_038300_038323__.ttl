@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038323__>
+	a                   ore:Proxy ;
+	dc:creator          "Morelli ,  Gusztáv  (photographer)"@hu ;
+	dc:description      "Lotz Károly (Bad Homburg vor der Höhe,Hessen tartomány, 1833. december 16. - Budapest, 1904. október 13.) magyar festőművész, a XIX. századi akadémikus magyar falfestészet jelentős képviselője. Német apa és magyar anya fiaként nyolcadik gyermekként született, a pesti piaristák iskolájában tanult. A szabadságharc eseményeit (1848) rögzíti helyszín, esemény tekintetében pontos akvarelleken. 1852-ben Bécsben kezdte festészeti tanulmányait. 1857-ben segédkezett a bécsi görögkeleti templom falképeinél. Az 1860-as évek elejétől Magyarországon fest, az évtized közepétől ismertté válik. 1868-ban jelenik meg az \u0022Arany Album\u0022, melyben Arany János verseinek illusztrációiként Lotz Károly és Than Mór fényképezett rajzai szerepelnek. 1881-ben Hunyadi János halála című festményével Ipolyi Arnold püspök díját nyeri el. 1885-től a Mintarajz-tanoda, majd a nők számára létesült Festészeti Tanoda tanára. 1896-ban a Szent István-rend kiskeresztjével tüntetik ki Munkácsy Mihállyal és Benczúr Gyulával együtt. Több utat tesz Németországban, egy ideig Salzburgban tartózkodik. Halálakor Berzeviczy Albert kultuszminiszter a \u0022nemzet halottjának\u0022 nyilvánítja. Október 15-én a Műcsarnokban ravatalozzák fel. (Forrás: Wikipédia)"@hu ;
+	dc:format           "JPEG képállomány \u000A         982x1348 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/038300/038323   [Metadata]" ;
+	dc:relation         "Lotz Károly [ http://keptar.oszk.hu/019700/019712]"@hu, "Wikipédia: Lotz Károly [ http://hu.wikipedia.org/wiki/Lotz_K%C3%A1roly]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "belső épületrész"@hu, "Fine arts, visual arts"@hu, "műterem"@hu, "Lotz Károly (1833-1904)"@hu, "szoba"@hu, "festőművész"@hu ;
+	dc:title            "Lotz Károly műterme"@hu ;
+	dc:type             "épületrész"@hu, "újságrészlet"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038323__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.198Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038323__> .
+
+<http://keptar.oszk.hu/038300/038323>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038323__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038323__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038323> ;
+	edm:object         <http://keptar.oszk.hu/038300/038323/1898_Oldal_076_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038323__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:44.515Z" ;
+	dcterms:modified          "2015-09-14T11:54:05.640Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038323%2F1898_Oldal_076_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/038300/038323/1898_Oldal_076_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17046"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038323__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038323__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038323__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:46.198Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038323__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038323__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

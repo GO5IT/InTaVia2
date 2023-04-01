@@ -1,0 +1,96 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076764584#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:33.343Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076764584> .
+
+<http://nbn-resolving.de/urn:nbn:de:101:1-2015110514988>
+	a                edm:WebResource ;
+	dc:format        "audio/wav", "PCM", "24" ;
+	dcterms:created  "2015" ;
+	dcterms:extent   "1", "96 kHz" .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076764584>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2059204/data_sounds_1076764584>
+	a                   ore:Proxy ;
+	dc:contributor      "Wiener Philharmonisches Quartett. Franz Samohyl. Siegfried Rumpold. August Pioro. Emmanuel Brabec" ;
+	dc:creator          "Ludwig van Beethoven (1770-1827)" ;
+	dc:format           "[78 UpM]", "Digitalisat von 1 Schellackplatte" ;
+	dc:identifier       "Referencenr. 29/39", "urn:nbn:de:101:1-2015110514988" ;
+	dc:publisher        "Eterna" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "Streich-Quartett Nr. 6 in B-Dur, op. 18 : II. Satz (2). Adagio ma non troppo" ;
+	dc:type             "Shellac disc" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1076764584> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076764584> .
+
+<http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076764584>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059204/data_sounds_1076764584> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000017965230> ;
+	edm:hasView        <http://d-nb.info/1076764584> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:101:1-2015110514988> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2059204/data_sounds_1076764584/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://d-nb.info/1076764584>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059204/data_sounds_1076764584/manifest> .
+
+<http://data.europeana.eu/proxy/europeana/2059204/data_sounds_1076764584>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059204/data_sounds_1076764584> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1076764584> .
+
+<http://data.europeana.eu/organization/1482250000017965230>
+	a               foaf:Organization ;
+	skos:prefLabel  "Deutsche Nationalbibliothek"@de, "Немецкая национальная библиотека"@ru, "German National Library"@en, "Saksan kansalliskirjasto"@fi, "Německá národní knihovna"@cs, "Vācijas Nacionālā bibliotēka"@lv, "Biblioteca Națională a Germaniei"@ro, "Niemiecka Biblioteka Narodowa"@pl, "Njemačka nacionalna knjižnica"@hr, "Nemecká národná knižnica"@sk, "Biblioteca Nacional da Alemanha"@pt, "Biblioteca nazionale tedesca"@it, "Német Nemzeti Könyvtár"@hu, "Bibliothèque nationale allemande"@fr, "Германска национална библиотека"@bg, "Nemška nacionalna knjižnica"@sl, "Duitse Nationale Bibliotheek"@nl, "Biblioteca Nacional d'Alemanya"@ca, "Εθνική Βιβλιοθήκη της Γερμανίας"@el, "Saksamaa Rahvusraamatukogu"@et, "Deutsche Nationalbibliothek"@da, "Biblioteca Nacional de Alemania"@es, "Deutsche Nationalbibliothek"@sv .
+
+<http://data.europeana.eu/item/2059204/data_sounds_1076764584#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:59:33.342Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059204/data_sounds_1076764584> .
+
+<http://data.europeana.eu/aggregation/europeana/2059204/data_sounds_1076764584>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-01-20T10:32:59.321Z" ;
+	dcterms:modified          "2016-04-11T09:24:10.259Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059204/data_sounds_1076764584#contentTier>, <http://data.europeana.eu/item/2059204/data_sounds_1076764584#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059204/data_sounds_1076764584> ;
+	edm:completeness          "0" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2059204_Ag_EU_eSOUNDS_1006_BSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059204/data_sounds_1076764584> ;
+	edm:language              "de" .

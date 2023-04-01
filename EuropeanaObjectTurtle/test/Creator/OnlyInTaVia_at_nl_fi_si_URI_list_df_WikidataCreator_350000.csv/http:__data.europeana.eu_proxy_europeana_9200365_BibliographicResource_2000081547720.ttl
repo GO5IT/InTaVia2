@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/f1> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:56.101Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53009761w> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53009761w>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:24.333Z" ;
+	dcterms:modified          "2018-07-23T15:37:18.419Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b53009761w> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b53009761w.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53009761w>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b53009761w> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b53009761w.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53009761w>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "209353"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53009761w.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7444"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "166"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53009761w/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53009761w/manifest> ;
+	ebucore:fileByteSize    "46625"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "654"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b53009761w>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53009761w> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53009761w/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b53009761w>
+	a                   ore:Proxy ;
+	dc:contributor      "Abbaye Notre-Dame et Sainte-Clotilde de Pentemont. Éditeur scientifique" ;
+	dc:creator          "Crame, Révérend (16..-17..). Compositeur", "Du Mont, Henry (1610-1684). Compositeur" ;
+	dc:date             "1700-1790" ;
+	dc:description      "Titre uniforme : Crame, Révérend (16..-17..). Compositeur. [Messe. 6e ton]", "Comprend : Les Kyrie, le Gloria in excelsis qui ne sont p[oint] de n. ordre ; Autre Kyrie du révérent père Crame", "\u0022Trait, Domine non secundum\u0022, p. 152 ; \u0022Messe en action de grâce\u0022 (\u0022introite du 4e ton\u0022 (Benedic anima mea ps Benedic anima mea) ; \u0022Trai\u0022 (Prope est Dominus) ; \u0022Communion\u0022 (Miserationum Domini)), p. 154 ; \u0022Messe de sainte Clotilde\u0022 (\u0022introït du 3e ton\u0022 (Cognovi Domine) ; \u0022Alleluia V Specie tua\u0022 ; \u0022communion\u0022 (Simile est regnum)), p. 158 ; \u0022Messe de Ste Catherine du 8e ton chantée pour la première fois en l'année 1776.\u0022 (Introït\u0022 (Dilexisti justiam) ; \u0022Communion du 6e ton\u0022 (Diffusa est)), p. 160 ; \u0022Messe d'action de grace\u0022 ( [introït] (Benedic anima mea) ; \u0022Alleluia V. Fortitudo mea\u0022 ; \u0022Communion\u0022 (Miserationum Domine)), p. 162", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [Messe en plain-chant. 1er ton]", "[Graduel]", "Propre des saints : \u00228 décembre, la Conception de la B. Vierge Marie\u0022, p. 49 ; \u00222 février la Purification de la B. Vierge Marie\u0022 (propre de la messe ; \u0022Alleluia V. Adorabo ad templum\u0022), p. 52 ; \u002225 mars, l'Annonciation de la B. Vierge Marie\u0022, p. 52 ; \u002224 juin, la Nativité de st Jean Baptiste\u0022, p. 61 ; \u002229 juin, la fête des SS apôtres Pierre et Paul\u0022, p. 63 ; \u00222 juillet, la fête de la Visitation de la B. Vierge Marie\u0022 (\u0022Introite du 1er ton\u0022 (Gaudeamus omnes in Domino psaum. Eructavit cor meum) ; \u0022Graduel du 5e ton\u0022 (Propter veritatem) ; \u0022Alleluia V. Ave stillans melle\u0022 ; \u0022offertoire du 2e ton\u0022 (Felix namque es) ; \u0022communion du 1er ton\u0022), p. 66 ; \u002216 juillet, la fête de notre B. père saint Etienne\u0022 (commun des abbés), p. 72 ; \u002215 d'aout l'Assomption de la B. Vierge\u0022 (\u0022Alleluia V. Hodie Maria\u0022 ; offertoire ; communion), p. 74 ; \u0022Le 20 aoust, la fête de notre St père Bernard docteur\u0022 ([introït] ; \u0022Graduel 2e ton\u0022 (Domine praevenisti V. Vitam petiit) ; \u0022Alleluia V. Charitate vulneratus\u0022 ; \u0022Offertoire du 6e ton\u0022 (Desiderium animae) ; \u0022Communion du 1er ton\u0022 (Amen dico vobis quod vos)), p. 75 ; \u0022Premier novembre, fête de tous les saints\u0022 (\u0022Introite du 1er ton\u0022 ; \u0022Graduel du 1er ton\u0022 ; \u0022Offertoire du 3e ton\u0022 (Mirabilis Deus in sanctis) ; \u0022Communion du 1er ton\u0022 (Gaudete justi in Domino)), p. 79 ; \u002221 novembre, fête de la Présentation de la B.V. Marie\u0022 (Alleluia V. Post partum virgo), p. 82. - \u0022Messe votive du Saint Esprit\u0022, p. 84", "Titre propre pris au départ. - Réunit : Propre du temps : \u002225 décembre, la Nativité de Notre Seigneur messe de la nuit\u0022, p. 1 ; \u002225 décembre, la Nativité de Notre Seigneur la 3e messe\u0022, p. 3 ; \u0022La messe de l'Épiphanie de Notre Seigneur\u0022, p. 6 ; \u0022Antiennes pour le mercredi des cendres\u0022 (\u0022Exurge Domine ps. Deus auribus nostris\u0022 ; \u0022Exaudi nos Domine\u0022 ; \u0022Inter vestibulum et altare\u0022 ; \u0022Immuntemur habitu\u0022), p. 9 ; \u0022Le jeudy saint la Cène de Notre Seigneur\u0022, p. 11 ; \u0022Feria sexta Parasceve\u0022, p. 14 ; \u0022Sabbato sancto\u0022, p. 27 ; \u0022Dominica Resurrectionis\u0022, p. 33 ; \u0022Ascensionis Domini\u0022, p. 37 ; \u0022Dominica Pentecostes\u0022, p. 39 ; \u0022In festo SS Trinitatis, p. 42 \u0022In festo Corporis Christi\u0022, p. 45", "Messes en plain-chant musical : \u0022Les Kyrie, Gloria, Credo, Sanctus et Agnus Dei qui ne sont p[oint] de n. ordre\u0022 (Messe du 1er ton de H. Du Mont), p. 133 ; \u0022Autre Kyrie du révérent père Crame\u0022 (messe du 6e ton), p. 138", "\u0022Les tons des Gloria Patri pour les introït des messes\u0022, p. 88. - \u0022Messe pour la commémoration des fidèles défunts\u0022, p. 91 \u0022La messe pour un defunt non prêtre le tout comme à la messe précédente excepté ce graduele du 1er ton\u0022 (Si ambulem in medio)), p. 96 ; \u0022Les anniversaires comme le jour de l'enterrement pour le commun des fidelle et graduelle\u0022 (Requiem aeternam V. Animae eorum in bonis), p. 97 ; \u0022Les kyrie, Gloria, Credo, Sanctus et Agnus Dei pour les fêtes de sermont\u0022 (Ordinaire IV ; Credo I), p. 99 ; \u0022Pour les messes solennelles des fidèles defunt\u0022 (Kyrie ; Sanctus ; Agnus Dei pour le jour des morts ou de l'enterrement), p. 106", "Titres et textes en écriture cursive. - Plusieurs indications de renvoi. - Indication des différentes parties de la messe et de l'office en tête de chaque partie chantée. - Portées de quatre lignes tracées à l'encre rouge et notation carrée à l'encre noire. - Clé Ut 1; Fa 4. - Pagination à l'encre jusqu'à la p. 160 puis au crayon. - A la fin, 13 p. non paginées de portées vierges. - Deuxième main à partir de la p. 154. - Insertion entre les p. 108 à 133, 149 et 250 des antiennes de l'office de tierce et d'hymnes pour le propre du temps et le propre des saints (voir notice analytique)", "Appartient à l’ensemble documentaire : Liturg." ;
+	dc:format           "Nombre total de vues :  175", "163 p. ; 26 x 19 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b53009761w" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb421270768", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb16177094g" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES-2330" ;
+	dc:title            "Graduel à l'usage des dames Bernardines de l'abbaye royale de // Panthemont" ;
+	dc:type             "manuscript music"@eng, "musique manuscrite"@fre, "Genre musical : graduel" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53009761w> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:56.100Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53009761w> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53009761w>
+	a  edm:ProvidedCHO .

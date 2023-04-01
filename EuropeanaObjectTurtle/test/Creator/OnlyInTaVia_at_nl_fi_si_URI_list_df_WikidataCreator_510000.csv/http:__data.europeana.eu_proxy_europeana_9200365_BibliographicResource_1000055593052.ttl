@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b72003116>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "185799"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b72003116.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4674"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "169"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b72003116/manifest> ;
+	ebucore:fileByteSize    "24723"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "388"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:35.499Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b72003116> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b72003116>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:13.244Z" ;
+	dcterms:modified          "2018-07-23T15:38:09.922Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b72003116> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b72003116.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b72003116/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/f1> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b72003116>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b72003116> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b72003116>
+	a                   ore:Proxy ;
+	dc:creator          "Beethoven, Ludwig van (1770-1827). Compositeur" ;
+	dc:date             "1804-1807" ;
+	dc:description      "Titre uniforme : Beethoven, Ludwig van (1770-1827). Compositeur. [Sonates. Piano. Op. 57. Fa mineur]", "Titre propre pris au départ. - Mention au crayon, d'une autre main, au verso du f. de garde : \u0022La Pasionata\u0022. - Date de composition : 1804-1805. - Daté d'après Kinsky. - Corrections et ratures. - Papier réglé à 12 portées de 7 x 257 mm par page (intervalle entre les portées : 8 ou 9 mm). - Pagination ajoutée. - P. 43-44 inutilisées. - Partie supérieure droite des p. 1-2 rognée. - Partie supérieure des p. 19-20 coupée et remplacée par une collette d'une autre main imitant l'écriture de Beethoven. - Nombreuses taches d'eau : d'après une note de Paul Bigot (et non de Baillot fils comme indiqué) collée au verso de la couv., le manuscrit aurait été endommagé par la pluie pendant un voyage du compositeur. - Cartonnage recouvert de papier à la colle gris, gardes en papier dominoté. - On a joint l'article de René Baillot, \u0022Un manuscrit de Beethoven\u0022 (Le Ménestrel, n° 2568, 18 juillet 1880, p. 261-262), un temps collé sur le f. de garde (cf. note de Paul Brunold, 6 février 1941, collée sur l'article). - Manuscrit ayant servi à la gravure et portant le cotage 521 au bas du f. 1 r°. - 1re éd. : Vienne : Bureau des arts et d'industrie, 1807" ;
+	dc:format           "44 p. ; 22 x 30,5 cm + 1 f.", "Nombre total de vues :  52" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b72003116" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb41301457f", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139082238" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-20" ;
+	dc:subject          "Sonates (piano) -- 19e siècle"@fre ;
+	dc:title            "Sonata (manuscrit autographe)" ;
+	dc:type             "musique manuscrite"@fre, "Genre musical : sonate", "manuscript music"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b72003116> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b72003116>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b72003116> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b72003116/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b72003116.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b72003116#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:35.500Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b72003116> .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808382x.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4114"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808382x>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:54:07.953Z" ;
+	dcterms:modified          "2018-03-26T12:28:49.893Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8808382x> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8808382x.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808382x>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8808382x> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8808382x.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8808382x>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "248993"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8808382x>
+	a                   ore:Proxy ;
+	dc:creator          "Taccani, Sandro (1915-19..). Auteur ou responsable intellectuel", "Mascheroni, Angelo (1855-1905). Auteur ou responsable intellectuel", "Baron, Paul. Auteur ou responsable intellectuel", "Panzeri, Mario. Auteur ou responsable intellectuel", "Cahan, Jacques. Direction d'orchestre", "Benatzky, Ralph (1884-1957). Auteur ou responsable intellectuel", "Young, Victor (1900-1956). Auteur ou responsable intellectuel", "Moutet, Jo (1926-2002). Direction d'orchestre", "Barcellini, Frank (1920-2012). Auteur ou responsable intellectuel", "Fuller, Jacques. Auteur ou responsable intellectuel", "Chiboust, Noël (1909-1994). Direction d'orchestre", "Sullavan, Jerry. Auteur ou responsable intellectuel", "Di Lazzaro, Eldo (1902-1968). Auteur ou responsable intellectuel", "Friedhofer, Hugo (1901-1981). Auteur ou responsable intellectuel", "Barczi, Tibor (1899-....). Auteur ou responsable intellectuel", "Framel. Auteur ou responsable intellectuel", "Marini, Marino (1924-1997). Auteur ou responsable intellectuel", "Pourcel, Franck (1913-2000). Direction d'orchestre", "Jouvin, Georges (1923-2016). Trompette. Direction d'orchestre", "Jo L'auvergnat. Direction d'orchestre" ;
+	dc:date             "1957" ;
+	dc:description      "Titre uniforme : [Chella lla]", "Comprend : Maman la plus belle du monde - Pour faire une Jam - Le ranch de Maria - Tu n'as pas très bon caractère - Pour toi chante ma guitare - Tango de la rose - Le facteur de santa-Cruz - Le tour du monde - L\u0022ombre sous la mer - Ay ! mourir pour toi - Oh ! la ! la ! - Quand elle danse - Qu'avez-vous fait de mon amour - Pour être un jour aimé de toi - Sophia - Rhum et coca-cola", "BnF-Partenariats, Collection sonore - Believe", "Contient une table des matières", "Titre uniforme : [Casetta in Canada = Le Ranch de Maria]", "Titre uniforme : [Casetta in Canada = Le ranch de Maria]", "Titre uniforme : [Rum and coca-cola]", "Titre uniforme : [Le Facteur de Santa Cruz]", "Titre uniforme : [Rum and coca cola]", "Titre uniforme : [Around the world in 80 days]", "Titre uniforme : [Maman, la plus belle du Monde]" ;
+	dc:format           "Nombre total de vues :  20", "disc"@eng, "1 disque : 33 t ; 30 cm", "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8808382x", "Numéro commercial : La voix de son maître  FELP164S" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138714760"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138657470"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138678739"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13873261w"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38062104v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13865653n"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138713950"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138570778"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138570716"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-2146" ;
+	dc:title            "DANSES DE PARIS N °5 / les Orchestres de : Noël CHIBOUST - Georges JOUVIN - Jacque CAHAN - Franck POURCEL - Jo l'AUVERGNAT et Jo MOUTET" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808382x> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8808382x/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8808382x>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1957" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8808382x> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:42.903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808382x> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8808382x#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:42.903Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8808382x> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

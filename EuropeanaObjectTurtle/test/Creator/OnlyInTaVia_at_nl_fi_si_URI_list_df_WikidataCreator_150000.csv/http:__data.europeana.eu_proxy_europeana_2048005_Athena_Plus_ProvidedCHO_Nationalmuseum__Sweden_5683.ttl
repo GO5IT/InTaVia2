@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:44.031Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683>
+	a  edm:ProvidedCHO .
+
+<http://partage.vocnet.org/part00063>
+	a               skos:Concept ;
+	skos:altLabel   "Glasware"@de ;
+	skos:prefLabel  "cristalleria"@ca, "oggetti di vetro"@it, "glasservis"@sv, "glassware"@en, "stakleni predmeti"@hr, "glaswerk"@nl, "lasiesineet"@fi, "objetos de vidro"@pt, "cristalería"@es, "glasstøy"@no, "stekleno posodje"@sl, "Glaswaren"@de, "verrerie"@fr, "szkło"@pl, "sklo"@cs, "üveg"@hu .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:44.032Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=5683&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=5683&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=5683&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-19T15:16:31.422Z" ;
+	dcterms:modified          "2017-02-21T15:26:24.828Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> ;
+	edm:completeness          "5" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D5683%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/agent/30621>
+	a                    edm:Agent ;
+	owl:sameAs           <http://d-nb.info/gnd/118881701>, <http://data.bibliotheken.nl/id/thes/p299374580>, <http://www.idref.fr/055333419/id>, <http://vocab.getty.edu/ulan/500080302>, <https://g.co/kg/m/06_vfxx>, <http://www.wikidata.org/entity/Q87024>, <http://id.worldcat.org/fast/245465>, <http://id.loc.gov/authorities/names/nr89001845>, <http://data.bnf.fr/ark:/12148/cb136089241>, <https://www.freebase.com/m/06_vfxx>, <http://dbpedia.org/resource/Dagobert_Peche>, <http://viaf.org/viaf/35254506>, <http://openlibrary.org/works/OL6197699A> ;
+	rdaGr2:dateOfBirth   "1887-04-03" ;
+	rdaGr2:dateOfDeath   "1923-04-16" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/82921> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80688> ;
+	skos:note            "Österreichischer Künstler"@de, "Artiste autrichien"@fr, "Rakouský architekt"@cs, "Architect uit Oostenrijk (1887-1923)"@nl, "Austrian architect and artist (1887-1923)"@en, "Австрийский художник, участник Венских мастерских"@ru ;
+	skos:prefLabel       "Дагоберт Пехе"@ru, "Dagobert Peche"@de, "Dagobert Peche"@fi, "Dagobert Peche"@sv, "Dagobert Peche"@pt, "Dagobert Peche"@en, "Dagobert Peche"@it, "Dagobert Peche"@fr, "Dagobert Peche"@hu, "Dagobert Peche"@es, "Dagobert Peche"@cs, "Dagobert Peche"@sl, "Dagobert Peche"@ga, "Dagobert Peche"@da, "Dagobert Peche"@ca, "Dagobert Peche"@nl .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=5683&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683/manifest> ;
+	ebucore:fileByteSize    "114800"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "472"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=5683&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683>
+	a                   ore:Proxy ;
+	dc:creator          "Wiener Werkstätte (Production)"@sv, "Dagobert Peche"@sv, "Josef Hoffman (Design)"@sv ;
+	dc:description      "  Märkt: WW"@sv ;
+	dc:identifier       "5683", "(Inv. Nr.: NMK 86/1979)" ;
+	dc:title            "Likörglas"@sv ;
+	dc:type             "Glas (Konsthtv, konstind, ind.design)"@sv, "glasservis"@sv, <http://partage.vocnet.org/part00063> ;
+	dcterms:created     "Tillv. 1917" ;
+	dcterms:extent      "Mått 8,9 x 6,6 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/30621> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_5683> .

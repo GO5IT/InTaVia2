@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000014667000000&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:52.573Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000014667000000> .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000014667000000>
+	a           edm:WebResource ;
+	dc:format   "mp3" ;
+	edm:rights  <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:52.573Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000014667000000> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000014667000000>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1992" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000014667000000> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000014667000000&teca=ICBSA>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "97799"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000014667000000>
+	a                   ore:Proxy ;
+	dc:contributor      "Hell, Josef [interprete]", "Ottensamer, Ernst [interprete]", "Wallisch, Leonhard [interprete]", "Pecha, Peter [interprete]", "Wachter, Peter [interprete]", "Iberer, Gerhard [interprete]", "Keuschnig, Rainer [interprete]" ;
+	dc:creator          "Schmidt, Franz <1874-1939>" ;
+	dc:date             "1992" ;
+	dc:description      "Personaggi e interpreti: clarinetto ; Ottensamer, Ernst. pianoforte ; Keuschnig, Rainer. viola ; Pecha, Peter. violino ; Hell, Josef. violino ; Wachter, Peter. violoncello ; Iberer, Gerhard"@it ;
+	dc:format           "1 compact disc (78 min., 03 sec. ) : 1.4 m./sec, Digitale (CD), Stereofonico ; 4 3/4 in. (12 cm.) + Biografia del compositore/autore + Informazioni storiche sulla musica/sul testo" ;
+	dc:identifier       "IT-DDS0000014667000000" ;
+	dc:publisher        "Munchen : ORFEO INTERNATIONAL MUSIC" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://id.loc.gov/authorities/performanceMediums/mp2013015098>, <http://id.loc.gov/authorities/performanceMediums/mp2013015550> ;
+	dc:title            "Quintett No. 1 G-Dur ; Quintett No. 2 B-Dur / Franz Schmidt ; Rainer Keuschnig ; Josef Hell ; Ernst Ottensamer ; Peter Wachter ; Peter Wachter... (et al.)" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/544.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000014667000000> .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000014667000000>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000014667000000&teca=ICBSA> ;
+	edm:object         <http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000014667000000&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000014667000000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T08:27:14.930Z" ;
+	dcterms:modified          "2016-07-08T12:40:03.847Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000#contentTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000> ;
+	edm:completeness          "10" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000014667000000> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.internetculturale.it%2Fjmms%2Fthumbnail%3Ftype%3Dweb%26id%3Doai%253A192.168.10.31%253A22%253ARM0200%253AIT-DDS0000014667000000%26teca%3DICBSA&type=SOUND> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

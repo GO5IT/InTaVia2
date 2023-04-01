@@ -1,0 +1,105 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_879>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:00:12.607Z" ;
+	dcterms:modified          "2018-04-05T18:04:48.522Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_VGM01_879#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_VGM01_879#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_VGM01_879> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_VGM01_879> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AVGM01%3A879%26role%3Dpage%26count%3D1%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_VGM01_879>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_879> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_879> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_879#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:53.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_879> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:879&role=page&count=1&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "25483"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "96"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_VGM01_879>
+	a                   ore:Proxy ;
+	dc:contributor      "Gogh, Willemien van", "Gogh, Vincent van" ;
+	dc:creator          "Gogh, Vincent van" ;
+	dc:description      "Ink faded. Foxing along the folds.", "1: Portrait of Marie Ginoux (‘The Arlésienne’); 2: Sketch after Pierre Puvis de Chavannes, Inter artes et naturam (Between art and nature)", "1: Portret van Marie Ginoux (‘De Arlésienne’) (F - / JH 1896); 2: Schets naar Pierre Puvis de Chavannes, Inter artes et naturam (Tussen kunst en natuur) (F - / JH -)", "Inkt verbleekt. Foxing langs vouwen." ;
+	dc:format           "letter with letter sketch"@en, "brief met briefschets" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:879", "b 0722 V/1962" ;
+	dc:rights           "Van Gogh Museum", "voor informatie: Van Gogh Museum"@nl, "for information contact Van Gogh Museum"@en ;
+	dc:source           "b 0722 V/1962 (brief met briefschets, pen in inkt), Brieven en Documenten, Van Gogh Museum" ;
+	dc:title            "Vincent van Gogh to Willemien van Gogh (with 2 letter sketches)"@en, "Vincent van Gogh aan Willemien van Gogh (met 2 briefschetsen)" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "donderdag 5 juni 1890", "Thursday, 5 June 1890"@en ;
+	dcterms:extent      "21.8 x 34.2 cm" ;
+	dcterms:isPartOf    "Brieven en Documenten", "GVN", "VGM01" ;
+	dcterms:medium      "pen in inkt", "text/xml" ;
+	dcterms:spatial     "Auvers-sur-Oise" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_879> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_879> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_879>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_879#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:53.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_879> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_879>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_VGM01_879> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/VGM01:879> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:879&role=page&count=1&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/VGM01:879>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "54402"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

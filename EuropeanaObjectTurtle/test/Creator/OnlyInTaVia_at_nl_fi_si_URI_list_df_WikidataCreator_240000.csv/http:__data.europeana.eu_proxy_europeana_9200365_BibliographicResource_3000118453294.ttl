@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8804066j>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "239415"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8804066j>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1962" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8804066j> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8804066j/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8804066j>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8804066j> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8804066j.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8804066j>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:30.800Z" ;
+	dcterms:modified          "2018-03-26T12:27:13.798Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8804066j> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8804066j.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:02.244Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8804066j> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8804066j.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4454"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F0E68C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:02.243Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8804066j> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8804066j>
+	a                   ore:Proxy ;
+	dc:creator          "Mallabrera, André (1934-2017). Ténor", "Delorme, Hugues (1868-1942). Auteur ou responsable intellectuel", "Doniat, Aimé (1918-1973). Baryton (voix)", "Betti, Freda (1924-1979). Mezzo-soprano", "Broissin, Nicole. Soprano", "Orchestre symphonique de Paris. Interprète", "Schubert, Franz (1797-1828). Auteur ou responsable intellectuel", "Dachary, Lina (1922-1999). Soprano", "Louvois, Colette. Chant", "Rey, Gaston (1904-1978). Chant", "Etcheverry, Jésus (1911-1988). Direction d'orchestre" ;
+	dc:date             "1962" ;
+	dc:description      "Contient une table des matières", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "disc"@eng, "Nombre total de vues :  27", "2 disques : 33 t, mono ; 30 cm", "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Vega  V30M951", "Numéro commercial : Vega  V30M950", "http://gallica.bnf.fr/ark:/12148/bpt6k8804066j" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38046842w"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, B-14184" ;
+	dc:title            "CHANSON D'AMOUR - Extraits / Livret d'Hugues DELORME et Léon ABRIC - Musique de Franz SCHUBERT ; Aimé DONIAT (Franz SCHUBERT) ; Lina DACHARY (Annette) ; Colette LOUVOIS (Jeannette) ; Freda BETTI (Nanette) ; André MALLABRERA (le Baron Franz) ; Gaston REY (M. Muhl) ; Nicole BROISSIN (Carlina) et l'Orchestre Symphonique dir. Jesus ETCHEVERRY" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8804066j> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8804066j> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

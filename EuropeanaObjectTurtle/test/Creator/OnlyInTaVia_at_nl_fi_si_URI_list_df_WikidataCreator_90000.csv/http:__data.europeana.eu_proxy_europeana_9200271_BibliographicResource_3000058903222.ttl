@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200271/BibliographicResource_3000058903222>
+	a                   ore:Proxy ;
+	dc:creator          "Franklin, Benjamin" ;
+	dc:description      "Shelf Mark - E.B.06(73)Ame", "Call Number - 0002236" ;
+	dc:identifier       "http://images.is.ed.ac.uk/luna/servlet/detail/UoEgal~5~5~63672~103826" ;
+	dc:rights           "© The University of Edinburgh" ;
+	dc:subject          "Centre for Research Collections/Main Library", "Archives", "Maps & Atlases" ;
+	dc:title            "Maritime Observations, 1786" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1203> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200271/BibliographicResource_3000058903222> .
+
+<http://data.europeana.eu/aggregation/europeana/9200271/BibliographicResource_3000058903222>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-01T13:40:05.061Z" ;
+	dcterms:modified          "2015-09-14T13:24:15.113Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222#contentTier>, <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222> ;
+	edm:completeness          "7" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200271_Ag_EU_TEL_eCloud_a1203_Edinburgh" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200271/BibliographicResource_3000058903222> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimages.is.ed.ac.uk%2FMediaManager%2Fsrvr%3Fmediafile%3D%2FSize3%2FUoEgal-5-NA%2F1025%2F0002236c.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by/3.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200271/BibliographicResource_3000058903222>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/146777> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200271/BibliographicResource_3000058903222> .
+
+<http://images.is.ed.ac.uk/luna/servlet/detail/UoEgal~5~5~63672~103826>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "155724"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/licenses/by/3.0/> .
+
+<http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:30.427Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200271/BibliographicResource_3000058903222> .
+
+<http://data.europeana.eu/aggregation/provider/9200271/BibliographicResource_3000058903222>
+	a                  ore:Aggregation ;
+	dc:rights          "© The University of Edinburgh" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000366875> ;
+	edm:isShownAt      <http://images.is.ed.ac.uk/luna/servlet/detail/UoEgal~5~5~63672~103826> ;
+	edm:isShownBy      <http://images.is.ed.ac.uk/MediaManager/srvr?mediafile=/Size3/UoEgal-5-NA/1025/0002236c.jpg> ;
+	edm:object         <http://images.is.ed.ac.uk/MediaManager/srvr?mediafile=/Size3/UoEgal-5-NA/1025/0002236c.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/licenses/by/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://images.is.ed.ac.uk/MediaManager/srvr?mediafile=/Size3/UoEgal-5-NA/1025/0002236c.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200271/BibliographicResource_3000058903222/manifest> ;
+	ebucore:fileByteSize    "106238"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "484"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "768"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/licenses/by/3.0/> .
+
+<http://data.europeana.eu/agent/146777>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://lod.nl.go.kr/resource/KAC199609215>, <http://id.worldcat.org/fast/34115>, <https://g.co/kg/m/019fz>, <https://www.freebase.com/m/019fz>, <http://data.bibliotheken.nl/id/thes/p18484505X>, <http://data.bnf.fr/ark:/12148/cb119034658>, <http://vocab.getty.edu/ulan/500331804>, <urn:uuid:051fe606-1868-48e4-bad6-6cf9be90da7b>, <http://openlibrary.org/works/OL26170A>, <http://data.carnegiehall.org/names/1002571>, <https://libris.kb.se/vs684dgd5n51046>, <http://dbpedia.org/resource/Benjamin_Franklin>, <http://libris.kb.se/resource/auth/54072>, <http://data.bibliotheken.nl/id/thes/p06836010X>, <http://www.wikidata.org/entity/Q34969>, <http://id.loc.gov/authorities/names/n79043402>, <http://viaf.org/viaf/56609913>, <http://nlg.okfn.gr/resource/authority/record69541>, <http://id.ndl.go.jp/auth/ndlna/00440037>, <http://datos.bne.es/resource/XX877138>, <http://www.idref.fr/026873478/id>, <https://livedata.bibsys.no/authority/90052017>, <http://d-nb.info/gnd/118534912> ;
+	rdaGr2:dateOfBirth             "1706-01-17" ;
+	rdaGr2:dateOfDeath             "1790-04-17" ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/161> ;
+	skos:altLabel                  "Ben Franklin"@ro, "Ben Franklin"@pl, "Ben Franklin"@es, "Ben Franklin"@hu, "Ben Franklin"@fr, "Ben Franklin"@en, "Ben Franklin"@sv, "Ben Franklin"@pt, "Вениамин Франклин"@ru, "Franklins"@lv, "Βενιαμίν Φρανκλίνος"@el, "Bendžaminas Franklinas"@lt, "Франклин, Бенджамин"@ru, "Silence Dogood"@fr, "Silence Dogood"@en, "Silence Dogood"@de, "Benjamin Franklin"@lv, "Dame Silence Dogood"@fr, "Franklin"@lv, "Franklin"@en, "Franklin"@sv, "Poor Richard"@fr, "Μπέντζαμιν Φράνκλιν"@el, "Poor Richard"@en, "The First American"@en, "Franklin, Benjamin"@fr, "Бен Франклин"@bg, "Beniamino Franklin"@it, "Richard Saunders"@fr, "Richard Saunders"@de, "Франклин, Вениамин"@ru, "Франклин Б."@ru, "Франклин Бенджамин"@ru, "Polly Baker"@de ;
+	skos:note                      "Amerikanischer Drucker, Verleger, Schriftsteller, Naturwissenschaftler, Erfinder und Staatsmann"@de, "Americký politik"@cs, "Polímata estatunidenc (1706-1790)"@ca, "Amerikaans schrijver"@nl, "Американский политический деятель, дипломат, учёный, изобретатель, журналист, издатель, масон"@ru, "Autor, político, inventor e cientista norte-americano"@pt, "Político, científico e inventor estadounidense"@es, "Père fondateur des États-Unis d'Amérique, politicien, écrivain, philosophe, physicien, publiciste et imprimeur américain"@fr, "Amerikāņu valstsvīrs un izgudrotājs"@lv, "Americký nakladateľ, novinár, autor, filantrop, abolicionista, úradník, vedec, diplomat, vynálezca a objaviteľ"@sk, "American author, printer, political theorist, politician, postmaster, scientist, inventor, civic activist, statesman, diplomat, Founding Father (1706-1790)"@en, "Politician, autor, om de științe, inventator, activist civic, diplomat, jurnalist și mason american"@ro, "Scienziato e politico statunitense"@it, "Αμερικανός πολιτικός, φυσικός, φιλόσοφος και εκδότης"@el, "Amerikai diplomata, feltaláló, író, polgári demokrata politikus, természettudós, filozófus, nyomdász"@hu, "Yhdysvaltalainen tieteilijä, diplomaatti ja kirjailija"@fi, "Amerykański polityk, uczony i filozof"@pl ;
+	skos:prefLabel                 "Βενιαμίν Φραγκλίνος"@el, "Bendžamins Franklins"@lv, "Benjamin Franklin"@fr, "Benjamin Franklin"@de, "Benjamin Franklin"@fi, "Benjamin Franklin"@pt, "Benjamin Franklin"@lt, "Benjamin Franklin"@hr, "Benjamin Franklin"@hu, "Benjamin Franklin"@sk, "Benjamin Franklin"@sl, "Benjamin Franklin"@ga, "Benjamin Franklin"@ca, "Benjamin Franklin"@sv, "Benjamin Franklin"@en, "Benjamin Franklin"@it, "Benjamin Franklin"@es, "Benjamin Franklin"@et, "Benjamin Franklin"@cs, "Benjamin Franklin"@pl, "Benjamin Franklin"@ro, "Benjamin Franklin"@da, "Benjamin Franklin"@nl, "Бенджамин Франклин"@ru, "Бенджамин Франклин"@bg .
+
+<https://iiif.europeana.eu/presentation/9200271/BibliographicResource_3000058903222/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200271/BibliographicResource_3000058903222#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:40:30.426Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200271/BibliographicResource_3000058903222> .
+
+<http://data.europeana.eu/organization/1482250000000366875>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Edinburgh"@en .

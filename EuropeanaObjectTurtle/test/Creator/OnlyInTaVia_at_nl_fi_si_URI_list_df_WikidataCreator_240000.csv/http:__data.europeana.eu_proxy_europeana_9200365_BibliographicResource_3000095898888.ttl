@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803641g>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:13.392Z" ;
+	dcterms:modified          "2018-03-26T12:27:04.186Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8803641g> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8803641g.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:45.870Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803641g> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803641g>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8803641g> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8803641g.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803641g.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4301"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#90EE90"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B0C4DE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803641g>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "258715"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8803641g>
+	a                   ore:Proxy ;
+	dc:creator          "Clin, Serge. Chant", "Sylvaire, Jany (1921-....). Chant", "Dachary, Lina (1922-1999). Soprano", "Doniat, Aimé (1918-1973). Baryton (voix)", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Clément, Willy (1918-1965). Baryton (voix)", "Dassary, André (1912-1987). Chant", "Offenbach, Jacques (1819-1880). Auteur ou responsable intellectuel", "Bredy, Rosine. Chant", "Messager, André (1853-1929). Auteur ou responsable intellectuel", "Lecocq, Charles (1832-1918). Auteur ou responsable intellectuel", "Broissin, Nicole. Soprano" ;
+	dc:date             "1961" ;
+	dc:description      "Titre uniforme : [Die lustige Witwe]", "Titre uniforme : [Le jour et la nuit]. Extrait", "Titre uniforme : [Le petit duc]. Extrait", "Titre uniforme : [Véronique]. Extrait", "Titre uniforme : [Monsieur Beaucaire]. Extrait", "Titre uniforme : [La vie parisienne]. Extr. voc.", "Contient une table des matières", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [La Périchole]. Extr. voc.", "Comprend : VERONIQUE - duetto de l'âne / MESSAGER ; Lina DACHARY et Aimé DONIAT - LA VIE PARISIENNE : Duo de la Gantière et du Brésilien / Jacques OFFENBACH ; Jany SYLVAIRE et Aimé DONIAT - LA FILLE DU TAMBOUR-MAJOR : \u0022Tenez, tenez...\u0022 / J. OFFENBACH ; Jany SYLVAIRE et Aimé DONIAT - LE JOUR ET LA NUIT : \u0022Nous sommes deux amoureux\u0022 / LECOCQ ; Jany SYLVAIRE et Aimé DONIAT - MONSIEUR BEAUCAIRE : \u0022Vous demandez une rose\u0022 / MESSAGER ; Lina DACHARY et Willy CLEMENT - LE PETIT DUC : \u0022C'est pourtant bien doux\u0022 / LECOCQ ; Jany SYLVAIRE et Aimé DONIAT - LA GRANDE DUCHESSE DE GEROLSTEIN : \u0022C'est un fameux régiment\u0022 / OFFENBACH ; Jany SYLVAIRE et Aimé DONIAT - LE PAYS DU SOURIRE : \u0022Prendre le thé à deux\u0022 / Franz LEHAR ; Nicole BROISSIN et André DASSARY - LA PERICHOLE : \u0022Le conquérant dit à la jeune indienne...\u0022 / Jacques OFFENBACH ; Jany SYLVAIRE et Aimé DONIAT - LA FILLE DE MADAME ANGOT : Duo politique / Ch. LECOCQ ; Jany SYLVAIRE et Aimé DONIAT - LA GRANDE DUCHESSE DE GEROLSTEIN : \u0022Voilà ce qu'a dit mon ami...\u0022 / OFFENBACH ; Jany SYLVAIRE et Aimé DONIAT - LA VEUVE JOYEUSE : \u0022Heure exquise...\u0022 / Franz LEHAR ; Nicole BROISSIN et Aimé DONIAT - LA PETITE MARIEE : Duo de l'enlèvement / Ch. LECOCQ ; Jany SYLVAIRE et Aimé DONIAT - LE PAYS DU SOURIRE : \u0022Mon amour et ton amour\u0022 / Franz LEHAR ; Rosine BREDY et Serge CLIN - VERONIQUE : \u0022Duo de l'escarpolette\u0022 / André MESSAGER ; Lina DACHARY et Willy CLEMENT", "Titre uniforme : [La fille du tambour-major]. Extr.", "Titre uniforme : [La fille de Madame Angot]. Extrait", "Titre uniforme : [La grande-duchesse de Gérolstein]. Extrait", "Titre uniforme : [Das Land des Lächelns]. Choix en français" ;
+	dc:format           "disque microsillon"@fre, "disc"@eng, "1 disque : 33 t ; 30 cm", "Nombre total de vues :  19", "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Vega  V30PO873", "http://gallica.bnf.fr/ark:/12148/bpt6k8803641g" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13945651q"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb380469247"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139291736"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139167372"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916727r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139167461"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139167252"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916248b"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13923630v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13937202p"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13998810f"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13864656f"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-11522" ;
+	dc:title            "QUINZE DUOS D'OPERETTES CELEBRES" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803641g> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:45.872Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803641g> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8803641g/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8803641g>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803641g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803641g> .

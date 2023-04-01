@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200459/oai_digitool_bibnat_ro_534311>
+	a                   ore:Proxy ;
+	dc:coverage         "CH" ;
+	dc:creator          "Erasmus,Desiderius1469-1536" ;
+	dc:date             "1530" ;
+	dc:description      "118 p. 8°", "Göllner, 372", "Letrine ornate" ;
+	dc:identifier       "oai:digitool.bibnat.ro:534311" ;
+	dc:language         "lat" ;
+	dc:publisher        "Basileae In officina Frobeniana" ;
+	dc:title            "Utilissima consultatio de bello Turcis inferendo, et obiter enarratus psalmus XXVIII" ;
+	dc:type             "Text tipărit" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_534311> .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:47.264Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_534311> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_534311>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004671147> ;
+	edm:isShownAt      <http://85.120.202.16:1801/webclient/DeliveryManager?pid=534311&custom_att_2=simple_viewer> ;
+	edm:object         <http://digitool.bibnat.ro:1801/webclient/DeliveryManager?pid=534838> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671147> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200459/oai_digitool_bibnat_ro_534311>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-11T10:14:12.890Z" ;
+	dcterms:modified          "2016-11-11T10:14:12.890Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311#contentTier>, <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311> ;
+	edm:completeness          "7" ;
+	edm:country               "Romania" ;
+	edm:datasetName           "9200459_Bibliophile_NLRomania" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311> ;
+	edm:language              "ro" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdigitool.bibnat.ro%3A1801%2Fwebclient%2FDeliveryManager%3Fpid%3D534838&type=IMAGE> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004671147>
+	a               foaf:Organization ;
+	skos:prefLabel  "Narodna knjižnica Romunije"@sl, "Национальная библиотека Румынии"@ru, "Biblioteca Nacional da Roménia"@pt, "Rumänische Nationalbibliothek"@de, "Национална библиотека на Румъния"@bg, "bibliothèque nationale de Roumanie"@fr, "Nationale Bibliotheek van Roemenië"@nl, "Εθνική Βιβλιοθήκη της Ρουμανίας"@el, "Romanian kansalliskirjasto"@fi, "Biblioteka Narodowa Rumunii"@pl, "Román Nemzeti Könyvtár"@hu, "National Library of Romania"@en, "Biblioteca Națională a României"@ro, "Biblioteca nacional de Romania"@ca, "Biblioteca nacional de Rumania"@es .
+
+<http://digitool.bibnat.ro:1801/webclient/DeliveryManager?pid=534838>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "131050"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1002"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "685"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:57:47.263Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_534311> .
+
+<http://85.120.202.16:1801/webclient/DeliveryManager?pid=534311&custom_att_2=simple_viewer>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200459/oai_digitool_bibnat_ro_534311>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/78> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1530" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_534311> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200459/oai_digitool_bibnat_ro_534311> .
+
+<http://data.europeana.eu/place/78>
+	a               edm:Place ;
+	owl:sameAs      <http://dbpedia.org/resource/Switzerland>, <https://libris.kb.se/nl0229c6538hjvc>, <http://www.wikidata.org/entity/Q39>, <https://sws.geonames.org/2658434/>, <http://www.yso.fi/onto/ysa/Y105295>, <https://d-nb.info/gnd/4053881-3>, <https://www.freebase.com/m/06mzp>, <http://www.idref.fr/026438658/id>, <http://id.nlm.nih.gov/mesh/D013557>, <http://vocabularies.unesco.org/thesaurus/concept924>, <http://viaf.org/viaf/159363991>, <http://viaf.org/viaf/154323889>, <http://id.loc.gov/authorities/names/n79062978>, <http://babelnet.org/rdf/s00069666n>, <http://data.bnf.fr/ark:/12148/cb11933332n>, <https://g.co/kg/m/06mzp>, <http://vocab.getty.edu/tgn/7011731>, <http://id.worldcat.org/fast/1205401>, <http://datos.bne.es/resource/XX451423>, <http://data.bnf.fr/ark:/12148/cb11868612h>, <http://zbw.eu/stw/descriptor/16972-1>, <http://id.ndl.go.jp/auth/ndlna/00871917>, <http://www.yso.fi/onto/yso/p105295> ;
+	skos:altLabel   "Elvezia"@it, "Confederazione Svizzera"@it, "Swiss Confederation"@en, "Confederazione Svizzera"@pl, "Confédération helvétique"@fr, "Confederació Suïssa"@ca, "SUI"@de, "SUI"@fr, "SUI"@en, "SUI"@it, "SUI"@es, "Švicarska Konfederacija"@hr, "CH"@de, "CH"@pt, "CH"@bg, "CH"@lt, "CH"@lv, "CH"@hr, "CH"@fr, "CH"@hu, "CH"@sk, "CH"@sl, "CH"@ga, "CH"@ca, "CH"@el, "CH"@en, "CH"@it, "CH"@es, "CH"@et, "CH"@cs, "CH"@eu, "CH"@pl, "CH"@da, "CH"@ro, "CH"@nl, "Confoederatio Helvetica"@de, "Confoederatio Helvetica"@en, "Confoederatio Helvetica"@it, "Šveitsi Konföderatsioon"@et, "Конфедерация Швейцария"@bg, "Zwitserse Confederatie"@nl, "Helvétie"@fr, "Schweizerische Eidgenossenschaft"@de, "Schweizerische Eidgenossenschaft"@lt, "Schweizerische Eidgenossenschaft"@pl, "Swiss"@en, "Confederação Suíça"@pt, "Confederația Elvețiană"@ro, "Šveicarijos Konfederacija"@lt, "Suissa"@ca, "Confédération suisse"@fr, "Confédération suisse"@pl, "Konfederazzjoni Żvizzera"@mt, "Suisse"@ru, "Suisse"@en, "CHE"@de, "CHE"@fr, "Confederaziun svizra"@pl, "CHE"@en, "CHE"@it, "CHE"@es, "CHE"@nl, "Helveetsia"@et, "L-Iżvizzera"@mt, "Svejts"@da, "Švajčiarska konfederácia"@sk, "Schweiz"@ru, "Schweiz"@en, "Schweiz"@pl, "Zwitsers Eedgenootschap"@nl, "Confederación Helvética"@es, "Svizzera"@ru, "Svizzera"@en, "Svizzera"@pl, "Швейцарская Конфедерация"@ru, "Confederazione Elvetica"@it, "Confederació Helvètica"@ca, "Confederación Suiza"@es, "Ελβετική Συνομοσπονδία"@el, "Eidgenossenschaft"@de, "La Confédération suisse"@fr, "Zwitserse Bondsstaat"@nl, "Konfederacja Szwajcarska"@pl, "Sveitsin valaliitto"@fi ;
+	skos:note       "Государство в Центральной Европе"@ru, "Valtio Keski-Euroopassa"@fi, "Държава в Западна Европа"@bg, "Stát ve střední Evropě"@cs, "Állam Közép-Európában"@hu, "Mažiausia pasaulyje federacinė valstybė įsikūrusi Vidurio Europoje"@lt, "Stat i Centraleuropa"@da, "Förbundsrepublik i Centraleuropa"@sv, "Country in Central Europe"@en, "Estat alpí sense accés al mar localitzat a l'Europa central"@ca, "Land in Europa"@nl, "Państwo w Europie Zachodniej"@pl, "Riik Kesk-Euroopas"@et, "Štát v strednej Európe"@sk, "País de Europa Central"@es, "Stato dell'Europa centrale"@it, "Valsts Eiropā"@lv, "Država u srednjoj Europi"@hr, "Stat în Europa Centrală"@ro, "Χώρα της δυτικοκεντρικής Ευρώπης"@el, "País na Europa Central"@pt, "Staat in Mitteleuropa"@de, "Pays d'Europe centrale"@fr, "Pajjiż fl-Ewropa Ċentrali"@mt ;
+	skos:prefLabel  "Svájc"@hu, "Switzerland"@en, "Svizzera"@it, "Šveicarija"@lt, "Sveitsi"@fi, "Zwitserland"@nl, "Švica"@sl, "Suíça"@pt, "Elveția"@ro, "Suiza"@es, "Švajčiarsko"@sk, "Švicarska"@hr, "An Eilvéis"@ga, "Швейцария"@bg, "Швейцария"@ru, "Schweiz"@da, "Schweiz"@sv, "Schweiz"@de, "Żvizzera"@mt, "Szwajcaria"@pl, "Suitza"@eu, "Suisse"@fr, "Suïssa"@ca, "Šveits"@et, "Švýcarsko"@cs, "Šveice"@lv, "Ελβετία"@el ;
+	wgs84_pos:lat   "46.79856" ;
+	wgs84_pos:long  "8.231973" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

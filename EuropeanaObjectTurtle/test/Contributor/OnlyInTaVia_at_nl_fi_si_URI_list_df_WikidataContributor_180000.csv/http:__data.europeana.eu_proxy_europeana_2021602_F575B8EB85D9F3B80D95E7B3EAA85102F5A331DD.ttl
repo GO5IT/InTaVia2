@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.dbnl.org/titels/titel.php?id=_gid001198401>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/74127>, <http://data.europeana.eu/agent/59815>, <http://data.europeana.eu/agent/83350> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1984" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> .
+
+<http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:35.100Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> .
+
+<http://data.europeana.eu/organization/1482250000004502137>
+	a               foaf:Organization ;
+	skos:prefLabel  "Digitale Bibliotheek voor de Nederlandse Letteren"@nl, "Digital Library for Dutch Literature"@en .
+
+<http://data.europeana.eu/aggregation/provider/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502137> ;
+	edm:isShownAt      <http://www.dbnl.org/titels/titel.php?id=_gid001198401> ;
+	edm:object         <http://www.dbnl.org/tekst/_gid001198401_01/_gid001198401_01_tpg.gif> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD#metadataTier>, <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021602_Ag_NL_DigitaleCollectie_DBNL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.dbnl.org%2Ftekst%2F_gid001198401_01%2F_gid001198401_01_tpg.gif&type=TEXT> .
+
+<http://www.dbnl.org/tekst/_gid001198401_01/_gid001198401_01_tpg.gif>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "157456"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/gif" ;
+	ebucore:height        "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "437"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD>
+	a                   ore:Proxy ;
+	dc:contributor      "Krol, Gerrit", "Boheemen-Saaf, Christel van", "Mutsaers, Charlotte", "Tinbergen, Jan", "Sijmons, Rob", "Ombre, Ellen", "Weststeijn, Willem G.", "Heck, Paul van", "Vree, Freddy de", "Brands, M.C.", "Bos, H.J.M.", "Hart, H.J. 't", "Groenewegen, Marjan", "Siegel, Klaus", "Wolfswinkel, Rolf", "Dunk, H.W. von der", "Bezemer, J.W.", "Drs. P", "Benthem van den Bergh, G. van", "Dister, Jules", "Klant, Jan J.", "Mulisch, Harry", "Kossmann, E.H.", "Haasse, Hella S.", "Swaan, Abram de", "Siebelink, Jan", "Visser, Carolijn", "Borgers, Gerrit", "Asperen, G.M. van", "Freudenthal, Hans", "Berge, H.C. ten", "Fuchs, Rudi", "Kuijper, Jan", "Lakeman, Pieter", "Juliard, Siem", "Ferron, Louis", "Kneepkens, Manuel", "Liagre Böhl, Herman de", "Casimir, H.B.G.", "Blok, Anton", "Herzberg, Judith", "Maaren, Nelleke van", "Burg, Fenna van den", "Muijzenberg, Otto van den", "Langeveld, S.V.", "Krabbé, Tim", "Syatauw, J.J.G.", "Guépin, J.P.", "Vlek, Hans", "Enschedé, Ch.", "Ras, J.J.", "Steenmeijer, Maarten", "Seuren, Pieter A.M.", "Zilversmidt, Beate", "Sweens, Evert", "Arion, Frank Martinus", "Ekkers, Remco", "Mostertman, Louis J.", "Sperna Weiland, J.", "Sijpersma, Pieter", "Demmers, Marga", "Witvliet, Leendert", "Schippers, K.", "Kopland, Rutger", "Durlacher, G.L.", "Ritsema, Beatrijs", "Balk-Smit Duyzentkunst, Frida", "Pen, J.", "Claus, Hugo", "Toorn, Willem van", "Truijens, Aleid", "Goedegebuure, Jaap", "Riera, Carme", "Baaren, Theo van", "Reilingh, Wim", "Hillenius, Dick", "Idema, Wilt", "Heesterman, J.C.", "Wes, M.A.", "Lange, Herman de", "Buddingh', C.", "Fàbregas, Xavier", "Krevelen, Laurens van", "Ree, Hans", "Hofland, H.J.A.", "Dijkink, G.", "Kuiper-Weijhenke, Th.", "[tijdschrift] Gids, De", "Hüsken, Frans", "Kouwenaar, Gerrit", "Samkalden, I.", "Goudsblom, Johan", "Meijer, Berthe", "Jans, Hugh", "Lechner, Jan", "Kusters, Wiel", "Evenhuis, J.R.", "Lammers, A.", "Bank, Jan", "Voeten, Bert", "Vermeyden, Paula", "Groot, S.R. de", "Budé, Frans", "Pleij, Herman", "Bastelaere, Dirk van", "Beurskens, Huub", "Poll, K.L.", "Hofman, Eva", "Braasem, W.A.", "Mastny, Vojtech", "Fontaine, P.F.M.", "Lucebert", "Bosscher, Ph.M.", "Baudet, H.", "Wagner, G.A.", "Widemann, Reinold", "Froe, A. de", "Polak, Johan B.W.", "Resink, G.J.", "Lafour, L.", "Hertzberger, Herman", "Jong, J.P. de", "Berghuis, Hans", "Hart, Maarten 't", "Holtzappel, C.J.G.", "Kam, Flip de", "Kelk, C.J.", "Wesseling, H.L.", "Verrips-Roukens, Kitty", "Büch, Boudewijn", "May, Lizzy Sara", "Janssen Perio, E.M.", "Kok, A.C.M. de", "Spoor, André", "Kuitenbrouwer, Frank", "Lammers, Han", "Dasberg, Lea", "Lehning, Arthur", "Dorrestijn, Hans", "Elburg, Jan G.", "Friedman, Carl", "Waarsenburg, Hans van de", "Korzec, Michel", "Komrij, Gerrit", "Wellenstein, E.P.", "Blokker, Jan", "Kousbroek, Rudy", "Snelders, H.A.M.", "Duyn, Roel van", "Portnoy, Ethel", "Carvalho, José Rentes de", "Frenkel, F.E.", "Gaay Fortman, B. de", "Schuttevâer, H.", "Etty, Elsbeth", "Flinterman, Henk", "Constandse, A.L.", "Nijs, Bob de", "Gunsteren, H.R. van", "Staal, Frits", "Tellegen, Toon", "Vinkenoog, Simon", "Juffermans, Jan", "Dekking, Frits", "Komen, A." ;
+	dc:creator          "[tijdschrift] Gids, De" ;
+	dc:date             "2011-10-25" ;
+	dc:identifier       "http://www.dbnl.org/titels/titel.php?id=_gid001198401", "_gid001198401" ;
+	dc:language         "nld" ;
+	dc:rights           "© dbnl" ;
+	dc:title            "De Gids. Jaargang 147" ;
+	dcterms:created     "1984" ;
+	dcterms:issued      "2011-10-25" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> .
+
+<http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:35.097Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/59815>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/22565> ;
+	owl:sameAs                     <http://id.loc.gov/authorities/names/n80008225>, <https://www.freebase.com/m/0bvnt7>, <http://viaf.org/viaf/111637181>, <http://www.wikidata.org/entity/Q689279>, <http://d-nb.info/gnd/118574728>, <http://vocab.getty.edu/ulan/500027027>, <http://openlibrary.org/works/OL5275002A>, <https://g.co/kg/m/0bvnt7>, <http://data.bnf.fr/ark:/12148/cb12172941m>, <https://livedata.bibsys.no/authority/90521021>, <http://id.worldcat.org/fast/1443087>, <http://datos.bne.es/resource/XX1316952>, <http://www.idref.fr/030279453/id>, <http://data.bibliotheken.nl/id/thes/p119659050>, <http://dbpedia.org/resource/Lucebert> ;
+	rdaGr2:dateOfBirth             "1924-09-15" ;
+	rdaGr2:dateOfDeath             "1994-05-10" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40980> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/76> ;
+	skos:altLabel                  "L. J. Swaanswijk"@en, "L.J. Swaanswijk"@nl, "Lubertus Jacobus Lucebert"@en, "Lubertus Jacobus Swaanswyk"@en, "Lambertus Zwaanswijk"@en, "Lubertus J. Swaanswijk Lucebert"@en, "Lubertus Jacobus Swaanswijk"@de, "Lubertus Jacobus Swaanswijk"@en, "Lubertus Jacobus Swaanswijk"@nl, "Lucebert Van Libertus Jacobus Swaanswijk"@en, "Lucebert van Swaanswijk"@en, "L. G. Swansweijk"@de ;
+	skos:note                      "Dutch painter (1924-1994)"@en, "Nederlands kunstschilder en dichter"@nl, "Niederländischer Maler, Grafiker und Schriftsteller"@de, "Peintre néerlandais"@fr, "Pintor neerlandés"@es, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel                 "Lucebert"@es, "Lucebert"@de, "Lucebert"@fi, "Lucebert"@sv, "Lucebert"@pt, "Lucebert"@en, "Lucebert"@et, "Lucebert"@sl, "Lucebert"@ga, "Lucebert"@ro, "Lucebert"@da, "Lucebert"@ca, "Lucebert"@nl, "Lucebert"@it, "Lucebert"@fr, "Люсеберт"@ru .
+
+<http://data.europeana.eu/agent/74127>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q232400>, <http://id.loc.gov/authorities/names/n50019099>, <http://datos.bne.es/resource/XX1074638>, <http://nlg.okfn.gr/resource/authority/record263119>, <http://id.ndl.go.jp/auth/ndlna/001277773>, <http://id.worldcat.org/fast/1774509>, <https://libris.kb.se/c9prtsdw56xw88r>, <http://viaf.org/viaf/59103039>, <http://libris.kb.se/resource/auth/240777>, <http://d-nb.info/gnd/11911240X>, <http://data.bnf.fr/ark:/12148/cb12055790d>, <http://openlibrary.org/works/OL4834754A>, <https://g.co/kg/m/06my_y>, <http://www.idref.fr/028796071/id>, <https://www.freebase.com/m/06my_y>, <http://dbpedia.org/resource/Hella_Haasse>, <http://data.bibliotheken.nl/id/thes/p068230656> ;
+	rdaGr2:dateOfBirth   "1918-02-02" ;
+	rdaGr2:dateOfDeath   "2011-09-29" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Hella S. Haasse"@de, "Hella S. Haasse"@fi, "Hella S. Haasse"@es, "Hella S.Haasse"@nl, "Hélène Serafia Haasse"@et, "Hélène Serafia Haasse"@cs, "Haasse"@nl, "Haasse"@de, "Haasse"@fr, "Hella Haasse"@da, "Hella Haasse"@pl, "Hella Haasse"@cs, "Hella Haasse"@sv, "Hella Haasse"@hr, "Hella Haasse"@fr, "Helene Serafia Haasse"@en, "Helene Serafia Haasse"@et, "C. J. van der Sevensterre"@nl, "Хелла Хаассе"@ru, "Haasse, Hella S."@sv, "C.J. van der Sevensterre"@nl, "Hella Serafia Lelyveldt-Haasse"@cs, "Hélène Serafia Haasse1 Microsoft Way, Redmond"@en, "Hella Serafia Haasse"@da, "Hella Serafia Haasse"@ro, "Hella S Haasse"@es, "Hella Serafia Haasse"@de, "Hella Serafia Haasse"@fi, "Hella Serafia Haasse"@es, "Hella S. Haasse"@nl ;
+	skos:note            "Escritora neerlandesa"@es, "Spisovatelka"@cs, "Nederlandsk skribent"@da, "Dutch writer (1918-2011)"@en, "Escriptora neerlandesa"@ca, "Nederländsk författare"@sv, "Scriitoare olandeză"@ro, "Scrittrice olandese"@it, "Niederländische Schriftstellerin"@de, "Hollandi kirjanik"@et, "Nederlands schrijfster"@nl, "Écrivaine néerlandaise"@fr ;
+	skos:prefLabel       "Hella Haasse"@de, "Hella Haasse"@fi, "Hella Haasse"@pt, "Hella Haasse"@en, "Hella Haasse"@it, "Hella Haasse"@es, "Hella Haasse"@et, "Hella Haasse"@sl, "Hella Haasse"@ga, "Hella Haasse"@ro, "Hella Haasse"@ca, "Hella Haasse"@nl, "Хаассе, Хелла"@ru, "Hella S. Haasse"@fr, "Hella S. Haasse"@sv, "Hella S. Haasse"@hr, "Hella S. Haasse"@cs, "Hella S. Haasse"@pl, "Hella S. Haasse"@da .
+
+<http://data.europeana.eu/agent/83350>
+	a                    edm:Agent ;
+	owl:sameAs           <https://livedata.bibsys.no/authority/90579296>, <http://id.loc.gov/authorities/names/n79032059>, <http://libris.kb.se/resource/auth/241151>, <http://data.bnf.fr/ark:/12148/cb12053437n>, <http://dbpedia.org/resource/Maarten_%27t_Hart>, <http://www.wikidata.org/entity/Q1882308>, <http://lod.nl.go.kr/resource/KAC201814384>, <http://viaf.org/viaf/110200982>, <http://data.bibliotheken.nl/id/thes/p068436548>, <https://g.co/kg/m/0c1chd>, <https://www.freebase.com/m/0c1chd>, <http://openlibrary.org/works/OL3175595A>, <http://d-nb.info/gnd/118963686>, <http://id.worldcat.org/fast/32845>, <https://libris.kb.se/tr57989c318xx6c>, <http://www.idref.fr/028766040/id>, <http://datos.bne.es/resource/XX1588643> ;
+	rdaGr2:dateOfBirth   "1944-11-25" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40542> ;
+	skos:altLabel        "Martin Hart"@pt, "Martin Hart"@en, "Martin Hart"@nl, "Hart, Maarten 't"@sv, "Martin hart"@nl, "Maarten 't Hart"@sv, "Maarten ´t Hart"@nl, "Maarten ’t Hart"@nl, "De schrijver Maarten 't Hart"@nl, "Maarten Biesheuvel"@cs ;
+	skos:note            "Dutch writer (1944)"@en, "Écrivain néerlandais (1944)"@fr, "Escriptor neerlandès"@ca, "Escritor neerlandés (1944)"@es, "Nederlands auteur (1944)"@nl, "Niederländischer Schriftsteller (1944)"@de ;
+	skos:prefLabel       "Maarten ’t Hart"@de, "Maarten ’t Hart"@sv, "Maarten ’t Hart"@pt, "Martin Hart"@cs, "Maarten 't Hart"@fi, "Maarten 't Hart"@en, "Maarten 't Hart"@it, "Maarten 't Hart"@fr, "Maarten 't Hart"@es, "Maarten 't Hart"@sl, "Maarten 't Hart"@ga, "Maarten 't Hart"@pl, "Maarten 't Hart"@ro, "Maarten 't Hart"@da, "Maarten 't Hart"@ca, "Maarten 't Hart"@nl .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/item/2021602/F575B8EB85D9F3B80D95E7B3EAA85102F5A331DD>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

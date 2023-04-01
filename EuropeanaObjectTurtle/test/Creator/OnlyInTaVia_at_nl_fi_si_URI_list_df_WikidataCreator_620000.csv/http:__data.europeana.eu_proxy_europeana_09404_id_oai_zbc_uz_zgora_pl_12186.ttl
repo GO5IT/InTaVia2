@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://zbc.uz.zgora.pl/Content/12186/G_I_1672.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhTzcV/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzcV>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:57:45.945Z" ;
+	dcterms:modified          "2017-11-30T08:57:45.945Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhTzcV#contentTier>, <http://data.europeana.eu/item/0940424/_nnhTzcV#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhTzcV> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhTzcV> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F12186%2FG_I_1672.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://semium.org/time/18xx_4_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/18xx_2_half> ;
+	edm:begin         "Sat Jan 01 01:00:00 CET 1876" ;
+	edm:end           "Mon Dec 31 00:19:32 CET 1900" ;
+	skos:prefLabel    "4e quart 19e siècle"@fr, "4 quarter of the 19th century"@en, "4-я четверть 19-го века"@ru .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12186>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "28593"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/0940424/_nnhTzcV#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:15.137Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzcV> .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhTzcV>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1888" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzcV> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhTzcV> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzcV#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:50:15.137Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzcV> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhTzcV/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhTzcV>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhTzcV> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:12186> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/12186/G_I_1672.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/12186/G_I_1672.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940424/_nnhTzcV>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhTzcV>
+	a                   ore:Proxy ;
+	dc:contributor      "Leipzig: F. A. Brockhaus"@pl ;
+	dc:creator          "Van Rijn, Rembrandt Harmensz (1606-1669)"@pl, "Rembrandt, Harmenszoon van Rijn (1606-1669)"@pl, "Rembrandt, Harmensz van Rijn (1606-1669)"@pl, "Unger, William"@pl ;
+	dc:date             "1888"@pl ;
+	dc:description      "akwaforta"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1645"@pl ;
+	dc:publisher        "Hannover: Kunstverein"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "Unger, William - twórczość"@pl, "Rembrandt Harmenszoon van Rijn (malarz holenderski ; 1606-1669)"@pl, "Biblia - Nowy Testament - Noli me tangere=Nie zatrzymuj mnie"@pl, "malarstwo europejskie - 17 w."@pl, "Biblia - Nowy Testament - Zmartwychwstanie"@pl, "Jezus Chrystus"@pl, "Holandia - malarstwo - 17 w."@pl, "Rembrandt, Harmensz van Rijn (1606-1669) - twórczość"@pl, "akwaforta - 19 w."@pl, "grafika - 19 w."@pl, "Van Rijn, Rembrandt Harmensz (1606-1669) - twórczość"@pl, "malarstwo holenderskie - 17 w."@pl, "postacie biblijne - Maria Magdalena"@pl, "Ewangelia wg św. Jana - 20;17"@pl ;
+	dc:title            "Noli me tangere"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "14,5 x 17,8 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhTzcV> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhTzcV> .

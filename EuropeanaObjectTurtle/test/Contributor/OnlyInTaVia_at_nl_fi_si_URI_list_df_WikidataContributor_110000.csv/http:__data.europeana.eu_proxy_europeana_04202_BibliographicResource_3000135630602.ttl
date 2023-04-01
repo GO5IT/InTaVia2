@@ -1,0 +1,150 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135630602>
+	a                   ore:Proxy ;
+	dc:contributor      "Henri De Caisne" ;
+	dc:creator          "Louis Joseph Alvin" ;
+	dc:description      "Par L. Alvin." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000317832" ;
+	dc:language         "fr" ;
+	dc:publisher        "Hayez" ;
+	dc:relation         "// Extr. des: Bulletins de l'Académie royale de Belgique. - 21, no 10" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Notice biographique sur le peintre bruxellois Henri De Caisne" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "104 p. ; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1854" ;
+	dcterms:spatial     <http://sws.geonames.org/2800866/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135630602> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135630602>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T04:57:31.552Z" ;
+	dcterms:modified          "2015-12-04T13:31:24.256Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135630602> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000096843&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135630602>
+	a  edm:ProvidedCHO .
+
+<http://sws.geonames.org/2800866/>
+	a               edm:Place ;
+	skos:prefLabel  "Brussels (Herstellung)" .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000096843>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "753"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "193"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135630602>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000096843> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000096843> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135630602>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/42162> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1854" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135630602> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135630602> .
+
+<http://data.europeana.eu/agent/42162>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/59946>, <http://data.europeana.eu/agent/66964>, <http://data.europeana.eu/agent/16> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/60754> ;
+	owl:sameAs           <http://id.loc.gov/authorities/names/nr2001038291>, <http://data.bnf.fr/ark:/12148/cb14965682j>, <https://g.co/kg/m/0gtxvw8>, <http://viaf.org/viaf/22412184>, <http://www.idref.fr/155073303/id>, <http://vocab.getty.edu/ulan/500125204>, <https://www.freebase.com/m/0gtxvw8>, <http://www.wikidata.org/entity/Q3132241>, <http://id.worldcat.org/fast/1570633>, <http://dbpedia.org/resource/Henri_Decaisne>, <http://datos.bne.es/resource/XX5014425>, <http://d-nb.info/gnd/174198817> ;
+	rdaGr2:dateOfBirth   "1799-01-27" ;
+	rdaGr2:dateOfDeath   "1852-10-17" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203157> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/41488> ;
+	skos:altLabel        "Henri De Caisne"@en, "Henri Decaisne"@pt, "Henri Decaisne"@it, "Henri Decaisne"@fr, "Henri Decaisne"@ca, "HenriDe Caisne"@sv, "Henri de Caisne"@en ;
+	skos:note            "Pictor belgian"@ro, "Kunstschilder uit België (1799-1852)"@nl, "Pittore belga"@it, "Peintre belge"@fr, "Péintéir Beilgeach"@ga, "Pintor belga"@pt, "Pintor belga"@ca, "Pintor belga"@es, "Belgian painter (1799-1852)"@en, "Belgischer Maler"@de, "Belgia maalikunstnik"@et ;
+	skos:prefLabel       "Декен, Анри"@ru, "Henri Decaisne"@es, "Henri Decaisne"@de, "Henri Decaisne"@fi, "Henri Decaisne"@sv, "Henri Decaisne"@en, "Henri Decaisne"@et, "Henri Decaisne"@sl, "Henri Decaisne"@ga, "Henri Decaisne"@ro, "Henri Decaisne"@da, "Henri Decaisne"@nl, "Henri de Caisne"@pt, "Henri de Caisne"@it, "Henri de Caisne"@fr, "Henri de Caisne"@ca .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://lib.ugent.be/europeana/900000096843>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14685"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135630602#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:32.400Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135630602> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135630602#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:32.400Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135630602> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

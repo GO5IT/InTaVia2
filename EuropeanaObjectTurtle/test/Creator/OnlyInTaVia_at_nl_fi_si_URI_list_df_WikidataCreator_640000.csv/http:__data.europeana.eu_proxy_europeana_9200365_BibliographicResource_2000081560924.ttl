@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:51.475Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129388v> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k129388v>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k129388v> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k129388v>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "197823"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k129388v/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k129388v.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4933"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k129388v>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:50:17.788Z" ;
+	dcterms:modified          "2018-03-26T12:25:13.963Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v> ;
+	edm:completeness          "9" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k129388v> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k129388v.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k129388v>
+	a                   ore:Proxy ;
+	dc:creator          "Sulzer, Salomon (1804-1890). Compositeur" ;
+	dc:date             "191." ;
+	dc:description      "Contient une table des matières", "Yiddish" ;
+	dc:format           "disque pré-lp"@fre, "disc"@eng, "Nombre total de vues :  4", "multipart/mixed", "1 disque : 90 t, saphir ; 29 cm" ;
+	dc:identifier       "Numéro commercial : Pathé [saphir]  38408 (n° de face). 38409 (n° de face)", "14547BC, 23440RPathé [saphir]", "http://gallica.bnf.fr/ark:/12148/bpt6k129388v" ;
+	dc:language         "yid" ;
+	dc:publisher        "[Etablissements Pathé Frères] (Autriche-Hongrie)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42439675s"@fr, "Titre d'ensemble : [Archives de la Parole]. Don Pathé aux Archives de la Parole, Musée de la Parole et du Geste] : [1911-1937?]"@fr, "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb42535309c"@fr ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, AP-747" ;
+	dc:subject          "musique sacrée", "musique vocale avec choeur" ;
+	dc:title            "[Archives de la Parole]. , Haschiweinu ; Towlehodos [i.e. Tov L'Hodot] / Obercantor [Jos.] Basser, chant solo ; accompagnement d'un choeur" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129388v> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129388v>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k129388v> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k129388v.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129388v#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:51.474Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129388v> .

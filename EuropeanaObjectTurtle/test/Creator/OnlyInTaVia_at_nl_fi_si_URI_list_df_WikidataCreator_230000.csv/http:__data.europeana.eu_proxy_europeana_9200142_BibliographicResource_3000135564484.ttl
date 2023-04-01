@@ -1,0 +1,150 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:47:00.973Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200142/BibliographicResource_3000135564484> .
+
+<http://sws.geonames.org/2784804/>
+	a               edm:Place ;
+	skos:altLabel   "Europa &gt; West-Europa &gt; België &gt; Vlaanderen &gt; West-Vlaanderen (provincie) &gt; Veurne" ;
+	skos:prefLabel  "Veurne" .
+
+<http://data.europeana.eu/proxy/europeana/9200142/BibliographicResource_3000135564484>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/96750> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1917" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200142/BibliographicResource_3000135564484> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200142/BibliographicResource_3000135564484>
+	a                   ore:Proxy ;
+	dc:contributor      "S. K. V. H. - S. U. C. W" ;
+	dc:creator          "Filip De Pillecyn" ;
+	dc:description      "Een brochure met interessante informatie voor soldaten", "De Hoogeschooluitbreiding op de voorlinie", "door Filip De Pillecyn.", "Onder de hooge bescherming van Zijne Excellentie den Heer Minister van Oorlog" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "001661644" ;
+	dc:language         "nl" ;
+	dc:publisher        "M. Ghyssaert-Deleye" ;
+	dc:rights           "Reproductierecht Universiteitsbibliotheek Gent", "CC BY-SA (4.0)" ;
+	dc:subject          "World War, 1914-1918, Military Personnel -- Belgian", "Flemish movement", "World War, 1914-1918, Moral and ethical aspects" ;
+	dc:title            "Practische Wenken bij het schrijven van onze Moedertaal" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "27 p.; ill." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1057> ;
+	dcterms:issued      "1917" ;
+	dcterms:spatial     <http://sws.geonames.org/2784804/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200142/BibliographicResource_3000135564484> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200142/BibliographicResource_3000135564484>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T09:17:20.456Z" ;
+	dcterms:modified          "2016-03-02T08:30:05.160Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484#metadataTier>, <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484> ;
+	edm:completeness          "10" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200142_Ag_EU_TEL_a1057_E.Libraries_Ghent" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200142/BibliographicResource_3000135564484> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fadore.ugent.be%2FOpenURL%2Fresolve%3Fsvc_id%3Dmedium%26url_ver%3DZ39.88-2004%26rft_id%3Darchive.ugent.be%3AA20B27AA-C59B-11E1-9988-0DD9AAF23FF7%3A1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/4.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:47:00.973Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200142/BibliographicResource_3000135564484> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484>
+	a  edm:ProvidedCHO .
+
+<http://adore.ugent.be/OpenURL/resolve?svc_id=medium&url_ver=Z39.88-2004&rft_id=archive.ugent.be:A20B27AA-C59B-11E1-9988-0DD9AAF23FF7:1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "72142"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "399"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/licenses/by-sa/4.0/> .
+
+<http://data.europeana.eu/agent/96750>
+	a                    edm:Agent ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q2768181>, <http://d-nb.info/gnd/119097095>, <http://id.worldcat.org/fast/312162>, <https://www.freebase.com/m/02qgn2l>, <http://dbpedia.org/resource/Filip_De_Pillecyn>, <http://id.loc.gov/authorities/names/n92106356>, <http://www.idref.fr/028094352/id>, <http://data.bibliotheken.nl/id/thes/p068852924>, <http://openlibrary.org/works/OL151465A>, <https://g.co/kg/m/02qgn2l>, <http://viaf.org/viaf/9857106>, <http://data.bnf.fr/ark:/12148/cb119997700> ;
+	rdaGr2:dateOfBirth   "1891-03-25" ;
+	rdaGr2:dateOfDeath   "1962-08-07" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202970> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203002> ;
+	skos:altLabel        "Филип де Пиллецин"@ru, "Пиллесейн, Филип де"@ru, "Filip de Pillecyn"@nl ;
+	skos:note            "Belgisch schrijver"@nl, "Belgischer Politiker"@de, "Político belga"@es, "Scríbhneoir"@ga, "Writer (1891-1962)"@en, "Писатель"@ru, "Politico belga"@it, "Politicien belge"@fr ;
+	skos:prefLabel       "Филип Де Пиллесейн"@ru, "Filip De Pillecyn"@en, "Filip De Pillecyn"@it, "Filip De Pillecyn"@fr, "Filip De Pillecyn"@es, "Filip De Pillecyn"@cs, "Filip De Pillecyn"@sl, "Filip De Pillecyn"@ga, "Filip De Pillecyn"@pl, "Filip De Pillecyn"@ro, "Filip De Pillecyn"@da, "Filip De Pillecyn"@ca, "Filip De Pillecyn"@nl, "Filip De Pillecyn"@hu, "Filip De Pillecyn"@de, "Filip De Pillecyn"@sv, "Filip De Pillecyn"@fi, "Filip De Pillecyn"@pt .
+
+<http://data.europeana.eu/aggregation/provider/9200142/BibliographicResource_3000135564484>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200142/BibliographicResource_3000135564484> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://adore.ugent.be/OpenURL/app?type=carousel&id=archive.ugent.be:A20B27AA-C59B-11E1-9988-0DD9AAF23FF7> ;
+	edm:object         <http://adore.ugent.be/OpenURL/resolve?svc_id=medium&url_ver=Z39.88-2004&rft_id=archive.ugent.be:A20B27AA-C59B-11E1-9988-0DD9AAF23FF7:1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/4.0/> .
+
+<http://adore.ugent.be/OpenURL/app?type=carousel&id=archive.ugent.be:A20B27AA-C59B-11E1-9988-0DD9AAF23FF7>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "1840"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/licenses/by-sa/4.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

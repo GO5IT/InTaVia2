@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:33.154Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123599148> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:33.155Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123599148> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123599148&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5348"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "110"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:123599148>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50020"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_123599148>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/33777> ;
+	dc:creator          <http://data.europeana.eu/agent/33777> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1619" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123599148> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123599148>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:11:48.277Z" ;
+	dcterms:modified          "2018-04-05T17:25:49.607Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_123599148> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A123599148%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123599148>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:123599148> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123599148&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/33777>
+	a                    edm:Agent ;
+	owl:sameAs           <http://viaf.org/viaf/95742175>, <http://www.wikidata.org/entity/Q2862503>, <http://vocab.getty.edu/ulan/500010019>, <http://dbpedia.org/resource/Jan_Tengnagel>, <http://d-nb.info/gnd/130871494>, <https://g.co/kg/m/0b6f5gr>, <http://viaf.org/viaf/121885133>, <https://www.freebase.com/m/0b6f5gr> ;
+	rdaGr2:dateOfBirth   "1584-01-01" ;
+	rdaGr2:dateOfDeath   "1631-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "J. Tengnagel"@en, "Tengnagel"@en, "Tinghnagel"@en ;
+	skos:note            "Nederlands kunstschilder (1584-1631)"@nl, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et, "Pintor neerlandés"@es, "Peintre néerlandais"@fr, "Dutch painter (1584-1631)"@en, "Pintor neerlandês"@pt, "Pittore neerlandese"@it ;
+	skos:prefLabel       "Jan Tengnagel"@nl, "Jan Tengnagel"@es, "Jan Tengnagel"@da, "Jan Tengnagel"@fr, "Jan Tengnagel"@it, "Jan Tengnagel"@en, "Jan Tengnagel"@sl, "Jan Tengnagel"@pt, "Jan Tengnagel"@sv, "Jan Tengnagel"@de, "Jan Tengnagel"@ca .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_123599148>
+	a                   ore:Proxy ;
+	dc:contributor      "Jan Tengnagel" ;
+	dc:creator          "Jan Tengnagel" ;
+	dc:description      "Vindplaats: 's Gravenhage, prive collectie", "Litt. : Dawn of the Golden Age. Northern Netherlandish art 1580-1620. o. red. v. G. Luyten, A. van Suchtelen, e. a. Amsterdam/Zwolle 1993." ;
+	dc:format           "schilderij (doek)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123599148" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[123599148], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "oordeel van Cambyses"@nl ;
+	dc:title            "Het oordeel van Cambyses" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1619" ;
+	dcterms:extent      "111 × 151 cm" ;
+	dcterms:isPartOf    "GVN", "NCRD01", "NCRD" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123599148> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123599148> .

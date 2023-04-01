@@ -1,0 +1,99 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh9>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940427/_nnWTRh9> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004512021> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5966> ;
+	edm:isShownBy      <http://www.pbc.rzeszow.pl/Content/5966/G-136.djvu> ;
+	edm:object         <http://www.pbc.rzeszow.pl/Content/5966/G-136.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5966>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "19578"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/0940427/_nnWTRh9>
+	a                   ore:Proxy ;
+	dc:creator          "Malczewski, Jacek (1854-1929)"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:language         "it" ;
+	dc:publisher        "s.n."@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Rzeszowie"@pl ;
+	dc:source           "Sygnatura oryginału: G-136"@pl ;
+	dc:subject          "malarstwo polskie - 19-20 w."@pl, "litografia polska - 19-20 w."@pl, "Malczewski, Jacek (1854-1929). Allegro"@pl ;
+	dc:title            "Allegro"@pl ;
+	dc:type             "grafika"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnWTRh9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh9> .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh9>
+	a  edm:ProvidedCHO .
+
+<http://www.pbc.rzeszow.pl/Content/5966/G-136.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940427/_nnWTRh9/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/0940427/_nnWTRh9>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:06:24.964Z" ;
+	dcterms:modified          "2017-11-30T08:06:24.964Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940427/_nnWTRh9#metadataTier>, <http://data.europeana.eu/item/0940427/_nnWTRh9#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940427/_nnWTRh9> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940427_Ag_PL_www.pbc.rzeszow.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940427/_nnWTRh9> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.pbc.rzeszow.pl%2FContent%2F5966%2FG-136.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/0940427/_nnWTRh9>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnWTRh9> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940427/_nnWTRh9> .
+
+<https://iiif.europeana.eu/presentation/0940427/_nnWTRh9/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh9#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:22.658Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh9> .
+
+<http://data.europeana.eu/item/0940427/_nnWTRh9#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:22.657Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnWTRh9> .
+
+<http://data.europeana.eu/organization/1482250000004512021>
+	a               foaf:Organization ;
+	skos:prefLabel  "bibliothèque numérique subcarpathique"@fr, "Podkarpacka Biblioteka Cyfrowa"@pl, "Podkarpacka Digital Library"@en .

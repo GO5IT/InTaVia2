@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO>
+	a                   ore:Proxy ;
+	dc:creator          "Vermeer, Jan (2) (Herstellung), 1628-1691" ;
+	dc:format           <http://vocab.getty.edu/aat/300014078> ;
+	dc:subject          "Tafelmalerei"@de, "Namen von Städten und Dörfern (mit Namen)"@de, "Windmühle"@de, "Hafen"@de ;
+	dc:title            "Ansicht von Haarlem"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300033618> ;
+	dcterms:created     "1650/1691 (Herstellung)"@zxx ;
+	dcterms:extent      "Höhe x Breite: 38,5 x 64,5 cm"@zxx ;
+	dcterms:spatial     <http://vocab.getty.edu/tgn/7004445> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> .
+
+<http://www.bildindex.de/document/obj20669070>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20669070> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/mi07450f06> ;
+	edm:object         <http://www.bildindex.de/bilder/d/mi07450f06> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/proxy/europeana/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO" ;
+	dc:subject          <http://data.europeana.eu/concept/1866> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> .
+
+<http://data.europeana.eu/concept/1866>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/03htg>, <http://www.geonames.org/ontology#H.HBR>, <http://vocabularies.unesco.org/thesaurus/concept11740>, <http://purl.obolibrary.org/obo/ENVO_00000463>, <http://vocab.getty.edu/aat/300008678>, <http://iconclass.org/46C223>, <https://www.freebase.com/m/03htg>, <http://www.wikidata.org/entity/Q283202> ;
+	skos:note        "En plats som erbjuder naturligt skydd för fartyg och båtar"@sv, "Massa d'aigua protegida on poden atracar els vaixells"@ca, "Port côtier naturel"@fr, "Osłonięty zbiornik wodny, w którym można cumować statki, łodzie i barki"@pl, "Sheltered body of water where ships, boats, and barges can be docked"@en, "Beschut liggende inlaten van water die bescherming tegen wind en zee bieden en voldoende diepte hebben zodat schepen voor anker kunnen gaan"@nl, "Art von Bucht"@de, "Место, куда плывут корабли для за- и/или разгрузки"@ru, "Et sted der giver naturlig eller menneskeskabt beskyttelse til skibe og både"@da, "Corp de apă adăpostit unde pot fi andocate nave, bărci și șlepuri"@ro, "Cuerpo de agua protegido donde se atracan embarcaciones"@es, "Corpo idrico riparato in cui possono essere ancorate navi, barche e chiatte"@it ;
+	skos:prefLabel   "Hafen"@de, "Porto"@it, "Naturhamn"@sv, "Refugio marítimo"@es, "Port"@ro, "Гавань"@ru, "Havre"@fr, "Havn"@da, "Abra"@pt, "Cuan"@ga, "Refugi marítim"@ca, "Przystań"@pl, "Luonnonsatama"@fi, "Havens"@nl, "Looduslik sadam"@et, "Portu natural"@eu, "Harbor"@en .
+
+<http://vocab.getty.edu/aat/300033618>
+	a          skos:Concept ;
+	skos:note  "Úsese para obras únicas en que las imágenes son formadas principalmente por la aplicación directa de pigmentos suspendidos en aceite, agua, yema de huevo, cera fundida u otro líquido, dispuesto en masas de color, sobre una superficie generalmente bidimensional."@es, "Beeldende werken waarin de voorstelling hoofdzakelijk wordt gevormd door het direct aanbrengen van pigment, in de vorm van kleurmassa's, op een over het algemeen tweedimensionaal vlak."@nl, "Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."@en, "Obras únicas nas quais as imagens são formadas principalmente pela aplicação direta de pigmentos suspensos em óleo, água, gema de ovo, cera fundida ou outro líquido, dispostos em massas de cor, sobre uma superfície geralmente bidimensional."@pt, "Individuelles Werk, bei dem die Darstellungen hauptsächlich durch das direkte Auftragen von Farbstoffen gebildet werden, die in Öl, Wasser, Eigelb, geschmolzenem Wachs oder anderer Flüssigkeit aufgelöst sind und bei dem die Farbmasse auf eine meist zweidimensionale Oberfläche aufgetragen wird."@de .
+
+<http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T10:18:06.213Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO#contentTier>, <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Fmi07450f06&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T15:22:47.615149Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> .
+
+<http://vocab.getty.edu/aat/300014078>
+	a               skos:Concept ;
+	skos:altLabel   "doek"@nl, "canvass"@en, "Canvas"@de, "kanvas"@nl, "lona"@es, "lienzo"@es ;
+	skos:broader    <http://vocab.getty.edu/aat/300231565> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300380376>, <http://vocab.getty.edu/aat/300238097>, <http://vocab.getty.edu/aat/300417727>, <http://vocab.getty.edu/aat/300014076>, <http://vocab.getty.edu/aat/300417728>, <http://vocab.getty.edu/aat/300014079> ;
+	skos:note       "Closely woven textile made in various weights, usually of flax, hemp, jute, or cotton, used especially for sails, tarpaulins, awnings, upholstery, bags, and as a support for oil painting."@en, "Úsese para un textil a telar apretado fabricado en diferentes pesos, habitualmente de flax, cáñamo, yute o algodón, utilizado fundamentalmente para confeccionar velas de barco, tela encerada, toldos, tapicería de muebles y como base para la pintura al óleo. Se utiliza también para trama tipo enrejado hecha de material similar, utilizada como base para bordados de aguja."@es, "Dichtgeweven stof in verschillende gewichten; wordt meestal gemaakt van vlas, hennep, jute of katoen en vooral gebruikt voor zeilen, dekkleden en stoffering en als ondergrond voor olieverfschilderijen. Het wordt ook gebruikt voor rasterachtig gaas dat van soortgelijke materialen is gemaakt en wordt gebruikt als ondergrond voor borduurwerk."@nl ;
+	skos:prefLabel  "Leinwand"@de, "canvas (textile material)"@en, "toile (matériau textile)"@fr, "duk"@sv, "lerret"@nb, "lerret"@nn, "canvas"@nl, "tela (material textil)"@es, "tela (materiale tessile)"@it ;
+	skos:related    <http://vocab.getty.edu/aat/300410350> .
+
+<http://vocab.getty.edu/tgn/7004445>
+	a               edm:Place ;
+	skos:prefLabel  "Münster" .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://www.bildindex.de/bilder/d/mi07450f06>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO/manifest> ;
+	ebucore:fileByteSize    "216263"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF0F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T15:22:47.614879Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_AYIPOENZAXR5EJQTZW6WKZ2O3FR7FTAO> .

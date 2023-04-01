@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/032700/032705/37_Kolozsvar2_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5727"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_032700_032705__>
+	a                   ore:Proxy ;
+	dc:creator          "Fadrusz,  János ( szobrász)"@hu, "Rónay ,  Zoltán  (photographer)"@hu ;
+	dc:description      "A Mátyás király emlékmű Fadrusz János leghíresebb alkotása, pályájának csúcspontja és megkoronázása. Az emlékmű ma is uralja Kolozsvár főterét, ahol a magyar többségét elveszített város egyik jelképévé vált. ... Az emlékmű mellékalakjai a fekete sereg vezérei, balról Magyar Balázs és Kinizsi Pál, jobbról Báthory István és Szapolyai István. A mellékalakok megdöntött zászlórúdjai mintegy a háromszög szárait képezik és összekapcsolják őket a főalakkal de egyúttal ki is emelik azt. A mű mellékalakjaiban a uralkodó előtti hódolat és győzelmi pátosz ölt testet, melyet Kinizsi Pálnak a tér közönsége felé kiáltó, zászlót tartó alakja fejez ki legjobban. Mellette Magyar Balázs szétvetett lábakkal áll felnézve a királyra. Szapolyai István karját széttárva szemléli a győzelmi zászlókat, míg Báthory István jobb kezében felemeli, baljában meghajtja a zászlót. A királyon és három mellékalakon is vértek hangsúlyozzák ki, hogy a győztes csata most ért véget, csak Szapolyai visel harci öltözék helyett vállra vetett köpenyt. Az emlékmű talapzatát stilizált várfok adja, melyre a magyar címert vésték, felette pedig a Mátyás király felirat állt. A talapzatot Pákey Lajos, a város főépítésze tervezte. (Forrás: Wikipédia)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1800x1200 \u000A         72 \u000A         24 \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/032700/032705   [Metadata]" ;
+	dc:relation         "Rónay Zoltán: Kolozsvár - a Házsongárdi temető [ http://keptar.oszk.hu/032500/032552]"@hu ;
+	dc:source           "Rónay Zoltán"@hu ;
+	dc:subject          "History, local history"@hu, "Hunyadi Mátyás (1443-1490)"@hu, "Fine arts, visual arts"@hu, "Travelling, tourism"@hu, "szobor"@hu ;
+	dc:title            "Kolozsvár - Mátyás király emlékmű"@hu ;
+	dc:type             "photograph"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032705__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:17.585Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032705__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_032700_032705__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032700_032705__> .
+
+<http://keptar.oszk.hu/032700/032705>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032700_032705__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032705__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/032700/032705> ;
+	edm:object         <http://keptar.oszk.hu/032700/032705/37_Kolozsvar2_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_032700_032705__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:17.585Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_032700_032705__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_032700_032705__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:49:14.432Z" ;
+	dcterms:modified          "2015-09-14T11:49:16.810Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_032700_032705__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F032700%2F032705%2F37_Kolozsvar2_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .

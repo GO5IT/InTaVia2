@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/concept/soundgenres/Music>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1423855> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower    <http://data.europeana.eu/concept/soundgenres/Music/Jazz>, <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Non-western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Popular_music>, <http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music> ;
+	skos:note        "All types of music."@en ;
+	skos:prefLabel   "Musik"@de, "Musique"@fr, "Muzyka"@pl, "Music"@en, "Música"@es, "Musica"@it .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000037120000100>
+	a               edm:WebResource ;
+	dc:format       "mp3" ;
+	dcterms:extent  "00:00:30.000000" ;
+	edm:rights      <http://www.europeana.eu/portal/rights/rr-f/> .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000037120000100&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000037120000100>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000037120000100&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000037120000100>
+	a                   ore:Proxy ;
+	dc:contributor      "Benatzky, Ralph <1884-1957> [autore]" ;
+	dc:creator          "Orchestra Ferruzzi" ;
+	dc:date             "1900-1950" ;
+	dc:identifier       "IT-DDS0000037120000100" ;
+	dc:language         "ger" ;
+	dc:publisher        "Italia : COLUMBIA" ;
+	dc:subject          "Pop music", <http://dbpedia.org/resource/Pop_music>, <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "Sie Kommen zum tee" ;
+	dcterms:extent      "00:03:27.000000" ;
+	dcterms:isPartOf    "Sie Kommen zum tee" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/536.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000037120000100> .
+
+<http://data.europeana.eu/concept/3462>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocabularies.unesco.org/thesaurus/concept6477>, <http://babelnet.org/rdf/s00063557n>, <https://www.freebase.com/m/064t9>, <http://www.yso.fi/onto/ysa/Y98194>, <http://www.wikidata.org/entity/Q37073>, <http://service.ddex.net/dd/DD-AVS-001/dd/ddex_Pop>, <https://d-nb.info/gnd/4046781-8>, <http://data.bnf.fr/ark:/12148/cb11957141f>, <https://g.co/kg/m/064t9>, <http://www.yso.fi/onto/yso/p2969>, <http://purl.org/bncf/tid/2201> ;
+	skos:note        "Жанр музыки"@ru, "Genre musical populaire"@fr, "Gatunek muzyczny"@pl, "Genre of music"@en, "Gênero de música"@pt, "Hudobný žáner"@sk, "Gènere musical popular"@ca, "Populārās mūzikas žanrs, kas parasti tiek attiecināts uz komerciāli ierakstītu mūziku un tā pārsvarā ir orientēta uz jaunatnes auditoriju"@lv, "Genere di musica popolare"@it, "Musikgenre"@da, "Musikgenre"@de, "Género de música popular que se originó en su forma moderna a finales de la década de 1950, derivado del rock and roll"@es, "Žanr popularne glazbe nastao kasnih 1950-ih godina"@hr, "Musiikin tyylilaji"@fi, "Είδος δημοφιλούς μουσικής"@el, "Populärmusikgenre som i modern form uppstod under sent 1950-tal ur rockmusiken"@sv, "Gen de muzică"@ro, "Muziekstijl"@nl, "Hudební žánr"@cs ;
+	skos:prefLabel   "Ποπ μουσική"@el, "Popmūzika"@lv, "Popmusiikki"@fi, "Mużika pop"@mt, "Popmuziek"@nl, "Popzene"@hu, "Pop glasba"@sl, "Muzyka pop"@pl, "Pop music"@en, "Pop music"@cs, "Popmusik"@de, "Popmusik"@sv, "Popmusik"@da, "Música pop"@pt, "Поп музика"@bg, "Pop"@fr, "Pop"@hr, "Pop"@sk, "Pop"@ca, "Pop"@es, "Popmuzika"@lt, "Pop"@eu, "Pop"@ro, "Popmuusika"@et, "Musica pop"@it, "Popcheol"@ga, "Поп-музыка"@ru ;
+	skos:related     <http://data.europeana.eu/concept/1643> .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000037120000100>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:14:04.165Z" ;
+	dcterms:modified          "2016-07-08T12:42:01.919Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100#contentTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100> ;
+	edm:language              "it" .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000037120000100>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3462> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000037120000100> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:58.215Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000037120000100> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:10:58.216Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000037120000100> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000037120000100>
+	a  edm:ProvidedCHO .

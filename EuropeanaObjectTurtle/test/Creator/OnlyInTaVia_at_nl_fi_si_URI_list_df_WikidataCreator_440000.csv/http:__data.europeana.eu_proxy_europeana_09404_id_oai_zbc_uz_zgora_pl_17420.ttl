@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:17420>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "26675"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhv789>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhv789> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:17420> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/17420/DC-2361_G_I_266.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/17420/DC-2361_G_I_266.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhv789>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhv789> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhv789> .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhv789>
+	a                   ore:Proxy ;
+	dc:creator          "Weiss, David"@pl, "Ender, Johann"@pl ;
+	dc:date             "1840 - 1860"@pl ;
+	dc:description      "portret Marii Stuart"@pl, "staloryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-2361"@pl ;
+	dc:language         "de" ;
+	dc:publisher        "Wien"@pl ;
+	dc:relation         "Sammlung Ogoleit"@pl, "Kolekcja Wilhelma Ogoleita"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "Teatr - Niemcy - 19 w."@pl, "Schiller, Friedrich (1759-1805)"@pl, "Ogoleit, Wilhelm (kolekcjoner i księgarz ; 1869-1953)"@pl, "Maria Stuart, królowa Szkocji (1542-1567)"@pl, "literatura niemiecka - historia - 19 w."@pl, "grafika - 19 w."@pl ;
+	dc:title            "Marie Stuart"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "14 x 10 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhv789> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhv789> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhv789#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:48:12.072Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhv789> .
+
+<http://zbc.uz.zgora.pl/Content/17420/DC-2361_G_I_266.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhv789/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhv789/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhv789>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T09:01:16.588Z" ;
+	dcterms:modified          "2017-11-30T09:01:16.588Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhv789#metadataTier>, <http://data.europeana.eu/item/0940424/_nnhv789#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhv789> ;
+	edm:completeness          "6" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhv789> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F17420%2FDC-2361_G_I_266.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/item/0940424/_nnhv789>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/0940424/_nnhv789#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:48:12.071Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhv789> .

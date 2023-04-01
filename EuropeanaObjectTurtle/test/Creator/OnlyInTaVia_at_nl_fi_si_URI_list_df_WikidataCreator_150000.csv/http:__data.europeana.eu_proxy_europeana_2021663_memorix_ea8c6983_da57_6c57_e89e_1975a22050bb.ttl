@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/ea8c6983-da57-6c57-e89e-1975a22050bb> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/55a9a363-7285-938a-6cfb-e4318734103e.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/55a9a363-7285-938a-6cfb-e4318734103e.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:35:26.600Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:35:26.600Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> .
+
+<https://images.memorix.nl/ranh/thumb/640x480/55a9a363-7285-938a-6cfb-e4318734103e.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb/manifest> ;
+	ebucore:fileByteSize    "65769"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "380"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:37:27.888Z" ;
+	dcterms:modified          "2015-03-26T15:37:27.888Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F55a9a363-7285-938a-6cfb-e4318734103e.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb>
+	a                   ore:Proxy ;
+	dc:creator          "Holsteyn, Cornelis (1618-1658), toegeschreven aan"@nl ;
+	dc:date             "1633-00-00/1666-00-00" ;
+	dc:description      "Het kind Jupiter wordt gevoed door de geit Amalthea. <br> In een landschap houdt een sater de geit Amalthea vast aan de achterpoten. Het kind Jupiter drinkt melk uit\u000A          een van de uiers. Een tweede sater bespeelt een fluit. Rechts in de achtergrond voorstelling van de dronken Bachus of Silenus, die door saters wordt gedragen. <br> Ets toegeschreven\u000A          aan Cornelis Holsteyn."@nl, "<i>Wat suycker soete vreught sien ik hier int verschiet. Gants broek was ik daer bij ik wist van droefs niet</i>"@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53008652" ;
+	dc:language         "Dutch" ;
+	dc:title            "NL-HlmNHA_1477_53008652"@nl, "Voorhelm Schneevoogt NL-HlmNHA_1477_53008652"@nl, "Het kind Jupiter wordt gevoed door de geit Amalthea. <br> In een landschap houdt een sater de geit Amalthea vast aan de achterpoten. Het kind Jupiter drinkt melk uit een van\u000A          de uiers. Een tweede sater bespeelt een fluit. Rechts in de achtergrond voorstelling van de dronken Bachus of Silenus, die door saters wordt gedragen. <br> Ets toegeschreven aan\u000A          Cornelis Holsteyn."@nl ;
+	dc:type             "Historieprenten, tekeningen en foto's"@nl, "Grafiek Drukwerk"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/ea8c6983-da57-6c57-e89e-1975a22050bb>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16626"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_ea8c6983_da57_6c57_e89e_1975a22050bb> .

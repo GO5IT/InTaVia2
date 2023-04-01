@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14004#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:54.465Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14004> .
+
+<http://tools.yoolib.net/i/s4/inha/files/13001-14000/13951/media/14589/0646_doucet_aumf15c028_0001/WID800/HEI900.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200495/yoolib_inha_14004/manifest> ;
+	ebucore:fileByteSize    "305797"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "692"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_14004>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-13T14:35:49.276Z" ;
+	dcterms:modified          "2016-09-19T09:09:38.472Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200495/yoolib_inha_14004#metadataTier>, <http://data.europeana.eu/item/9200495/yoolib_inha_14004#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200495/yoolib_inha_14004> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200495_Ag_BnF_inha" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200495/yoolib_inha_14004> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Ftools.yoolib.net%2Fi%2Fs4%2Finha%2Ffiles%2F13001-14000%2F13951%2Fmedia%2F14589%2F0646_doucet_aumf15c028_0001%2FWID800%2FHEI900.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://www.purl.org/yoolib/inha/14004>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200495/yoolib_inha_14004>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2834> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_14004> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200495/yoolib_inha_14004> .
+
+<https://iiif.europeana.eu/presentation/9200495/yoolib_inha_14004/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14004>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200495/yoolib_inha_14004> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500700> ;
+	edm:isShownAt      <http://www.purl.org/yoolib/inha/14004> ;
+	edm:isShownBy      <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13951/media/14589/0646_doucet_aumf15c028_0001/WID800/HEI900.jpg> ;
+	edm:object         <http://tools.yoolib.net/i/s4/inha/files/13001-14000/13951/media/14589/0646_doucet_aumf15c028_0001/WID800/HEI900.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2834>
+	a                skos:Concept ;
+	skos:altLabel    "Korrespondens"@sv, "Carta"@pt, "Carteggio"@it, "Schriftverkehr"@de, "Correspondance (Littérature)"@fr, "Korespondence; vēstules"@lv, "Επιστολή"@el, "Kirjavahetus"@et, "Intercambio epistolar"@es, "Корреспонденция"@ru, "Briefwisseling"@nl, "Correspondance (litterature)"@fr ;
+	skos:exactMatch  <http://id.nlm.nih.gov/mesh/V01.550>, <http://www.wikidata.org/entity/Q1784733>, <http://g.co/kg/g/1230jl_1>, <http://id.nlm.nih.gov/mesh/D015709>, <http://data.bnf.fr/ark:/12148/cb133187365>, <http://vocab.getty.edu/aat/300026877>, <http://purl.org/bncf/tid/6119>, <http://datos.bne.es/resource/XX526105>, <http://id.nlm.nih.gov/mesh/L01.559.423.906.377>, <http://id.nlm.nih.gov/mesh/D016422>, <http://id.nlm.nih.gov/mesh/V02.355.374>, <http://id.loc.gov/authorities/names/sh99001488>, <http://id.nlm.nih.gov/mesh/V02.625>, <http://d-nb.info/gnd/4180011-4> ;
+	skos:note        "Genere letterario"@it, "Intercambio regular de correo"@es, "Literární žánr"@cs, "Процесс обмена письмами (как лит. жанр см. Q2250271)"@ru, "Literair genre"@nl, "Genre littéraire"@fr, "Kirjallinen kommunikaatio (genre on Q2250271)"@fi, "Literary genre"@en, "Gênero literário"@pt, "Schriftverkehr"@de ;
+	skos:prefLabel   "Correspondència"@ca, "Korespondence"@cs, "Correspondência"@pt, "Correspondentie"@nl, "Αλληλογραφία"@el, "Korrespondance"@da, "Kiri"@et, "Correspondencia"@es, "Sarakste"@lv, "Kirjeenvaihto"@fi, "Korrespondenz"@de, "Corrispondenza"@it, "Correspondence"@en, "Brevväxling"@sv, "Переписка"@ru, "Correspondance"@fr .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14004>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004500700>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Institute for Art History Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200495/yoolib_inha_14004>
+	a                   ore:Proxy ;
+	dc:contributor      "[s.n.]" ;
+	dc:creator          "Vernet, Carle (1758-1836)", "Viardot, Léon (1805-1900)", "Vallotton, Félix (1865-1925)", "Van Beers, Jan (1852-1927)", "Veyrassat, Jules-Jacques (1828-1893)", "Vauchelet, Théophile-Auguste (1802-1873)", "Verdier, Marcel Antoine (1817-1856)", "Vernet, Joseph (1714-1789)", "Valenciennes, Pierre-Henri de (1750-1819)", "Vien, Céleste (1788-1843)", "Van Robais, Abraham (1698-1779)", "Vien, Joseph-Marie (1716-1809)", "Valade, Jean (1710-1787)", "Van Bree, Matthijs (1773-1839)", "Maldere, Raoul van (1875-1924?)", "Vestier, Antoine (1740-1824)", "Vernet, Horace (1789-1863)", "Viel, Jean-Louis (17??-18??)", "Spaendonck, Cornelis van (1756-1840)", "Vibert, Jehan Georges (1840-1902)" ;
+	dc:description      "Date de numérisation : 2011", "Lieu de publication : [S.l.]", "Langue du document : Français", "Nombre de vues du document : 347", "Partenariats : Document numérisé grâce au mécénat de la Société BIC", "Fonds ou documents en rapport : <a href=\u0022http://www.purl.org/yoolib/inha/13123\u0022 target=\u0022_blank\u0022><b>Original du dessin représentant Horace Vernet</b></a>", "Note de contenu : Contient un dessin au crayon et 5 portraits lithographiés en noir et blanc représentant Horace Vernet ; un portrait de Joseph Vernet gravé par Langlois et dessiné par A. Guilleminot" ;
+	dc:identifier       "http://www.purl.org/yoolib/inha/14004" ;
+	dc:language         "fre" ;
+	dc:publisher        "Bibliothèque de l'Institut National d'Histoire de l'Art, collections Jacques Doucet" ;
+	dc:rights           "domaine public"@fr, "Institut National d'Histoire de l'Art"@fr ;
+	dc:source           "Cote de l'original : Carton 28 ; Cote du microfilm : Mfilm bobine 15 (vues 12241-12596)", "NUM AU MF15 C028" ;
+	dc:subject          "19e siècle", "Correspondance", "17e siècle", "18e siècle", "20e siècle" ;
+	dc:title            "Autographes, Carton 28 : Peintres Val-Vie" ;
+	dc:type             "Recueil de lettres", "image", "text", "still image" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200495/yoolib_inha_14004> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14004> .
+
+<http://data.europeana.eu/item/9200495/yoolib_inha_14004#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:29:54.465Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200495/yoolib_inha_14004> .

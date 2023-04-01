@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:24.284Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_75_310> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-75-310&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17217"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "108"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_75_310>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-75-310> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-75-310&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_75_310>
+	a                   ore:Proxy ;
+	dc:contributor      "Cornelis Beelt" ;
+	dc:creator          "Cornelis Beelt" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-75-310", "OS-75-310" ;
+	dc:rights           "Frans Hals Museum", "voor informatie: Frans Hals Museum"@nl, "for information contact: Frans Hals Museum"@en ;
+	dc:source           "OS-75-310 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "IJsvermaak op een bevroren plas"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1800 - 1899" ;
+	dcterms:extent      "31 x 40 cm" ;
+	dcterms:isPartOf    "GVN", "Kunstwerken uit het Frans Hals Museum", "FHM01" ;
+	dcterms:medium      "image/jpg", "geschilderd", "paneel ; olieverf" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_75_310> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_75_310>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/45364> ;
+	dc:creator          <http://data.europeana.eu/agent/45364> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_75_310> .
+
+<http://data.europeana.eu/agent/45364>
+	a                    edm:Agent ;
+	owl:sameAs           <http://dbpedia.org/resource/Cornelis_Beelt>, <https://g.co/kg/m/0hq_6jv>, <https://www.freebase.com/m/0hq_6jv>, <http://viaf.org/viaf/17166437>, <http://www.wikidata.org/entity/Q327395>, <http://vocab.getty.edu/ulan/500010540>, <http://id.loc.gov/authorities/names/nr2003020065>, <http://d-nb.info/gnd/138827753> ;
+	rdaGr2:dateOfBirth   "1640-01-01" ;
+	rdaGr2:dateOfDeath   "1702-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40387> ;
+	skos:altLabel        "K. Beeld"@en, "K. Beelt"@en, "Beelt"@en, "Beelt"@de, "Cornelis Beelt van Haerlem"@en ;
+	skos:note            "Pintor neerlandés"@es, "Pittore neerlandese"@it, "Painter from the Northern Netherlands (1640-1702)"@en, "Pintor neerlandês"@pt, "Nederlands kunstschilder"@nl, "Ολλανδός ζωγράφος"@el, "Peintre néerlandais"@fr, "Niederländischer Maler"@de, "Pintor neerlandès"@ca ;
+	skos:prefLabel       "Cornelis Beelt"@es, "Cornelis Beelt"@nl, "Cornelis Beelt"@ca, "Κορνέλις Μπέιλτ"@el, "Cornelis Beelt"@fr, "Cornelis Beelt"@it, "Cornelis Beelt"@en, "Cornelis Beelt"@sl, "Cornelis Beelt"@pt, "Cornelis Beelt"@sv, "Cornelis Beelt"@de, "Cornelis Beelt"@da .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-75-310>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48464"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_75_310>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:52.262Z" ;
+	dcterms:modified          "2018-04-05T16:44:58.440Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-75-310%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_75_310#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:24.284Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_75_310> .

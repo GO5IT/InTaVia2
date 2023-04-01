@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/041200/041264/1900bb_Page_074_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "11664"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_041200_041264__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041264__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041264__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041264__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/041200/041264> ;
+	edm:object         <http://keptar.oszk.hu/041200/041264/1900bb_Page_074_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041264__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:07:21.354Z" ;
+	dcterms:modified          "2015-09-14T11:56:22.003Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F041200%2F041264%2F1900bb_Page_074_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:09.273Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041264__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_041200_041264__>
+	a                   ore:Proxy ;
+	dc:creator          "Wagner ,  Sándor  (painter)"@hu ;
+	dc:description      "Liezen-Mayer Sándor, Liezenmayer (Győr, 1839. jan. 24. - München, 1898. febr. 19.): festő. Bécsben C. Rahlnál, majd 1857-ben Münchenben tanult, ahol Piloty modorában festette romantikus szemléletű, jól felépített történeti műveit. Harmonikus kolorizmusa, kiegyensúlyozott képalkotása miatt festményei és a Faust-ciklushoz, Schiller Haramiáihoz, a Das Lied von der Glockéhoz készített illusztrációi sok sikert arattak. 1870-ben Ferenc József arcképének megfestésére meghívást kapott Bécsbe. 1880-83 között a stuttgarti ak. ig.-ja volt, majd visszatért Münchenbe, ahol a festőisk. tanára lett. Sok magyar tanítványa volt. - Legismertebb képei: Magyarországi Szt. Erzsébet (e kép két, lényeges részeiben azonos példányban készült, egyik az MNG ben, másik az esztergomi Keresztény Múz.-ban); Erzsébet királynő aláírja Stuart Mária halálos ítéletét; Mária Terézia egy koldusasszony gyermekét táplálja (1867); Venus és Tannhäuser (MNG); Faust és Margit (MNG). - Irod. Benkő G.: L. S. (Bp., 1932); Dénes T.: L. S. (Győr, 1932); Csányi Károly: L. S. emlékezete (Győr, 1940). (Forrás: Magyar Életrajzi Lexikon 1000-1990) Liezen-Mayer Sándor a legtökéletesebb mintaképe volt a magyar gavallér-embernek. Ennek a tulajdonságainak köszönhette, hogy szeretetre méltó modora, őszintesége csakhamar olyan nagy körét teremte meg tisztelőinek, a milyennel más művész alig dicsekedhetett. Ez a szeretet egyszer azután hangosabban is megnyilatkozott, mert alig sikerült a stuttgarti festészeti iskolának őt 1887-ben igazgatójáúl magához csábítani, már 1889 őszén a müncheni \u0022Komponier-Verein\u0022 művész-egyesület, melynek azelőtt Liezen-Mayer egyik oszlopa volt, utána indította honfitársát Wagner Sándort egy nagyszerű üdvözlő levéllel, melynek czímlapját a híres Seitz Ottó rajzolta, s egyúttal azzal a titkos megbizatással, hogy a mennyire csak tudja, beszélje reá Liezen-Mayert a visszatérésre. Ezt az iratot mintegy 250 müncheni művész írta alá, a kiknek köréből nemcsak a művész hiányzott, hanem a legkedvesebb kolléga is. Liezen-Mayert nem kellett sokáig biztatni; pár hónap múlva csakugyan ott hagyta Stuttgartot, a honnan két legelső magyar tanítványát: Spányik Kornélt és Herzl Kornélt is magával hozta Münchenbe. Ezek sem tudtak elválni a szeretetre méltó embertől. (Forrás: Vasárnapi Ujság, 1900. márczius 4.)"@hu ;
+	dc:format           "JPEG képállomány \u000A         771x1150 \u000A         300 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/041200/041264   [Metadata]" ;
+	dc:relation         "Liezen-Mayer Sándor arcképe [ http://keptar.oszk.hu/007900/007933/]"@hu, "Kieselbach Galéria: Liezen-Mayer Sándor [ http://www.kieselbach.hu/muvesz/liezen-mayer-sandor_737]"@hu, "Wikipédia : Liezen-Mayer Sándor [ http://hu.wikipedia.org/wiki/Liezen-Mayer_S%C3%A1ndor]"@hu, "TerminArtors : Liezen-Mayer, Sándor - Hungarian artist [ http://www.terminartors.com/artistprofile/Liezen-Mayer_Sandor]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "portré"@hu, "Liezen-Mayer Sándor (1839-1898)"@hu, "festőművész"@hu, "Fine arts, visual arts"@hu ;
+	dc:title            "Liezen-Mayer Sándor"@hu ;
+	dc:type             "újságrészlet"@hu, "portrait"@hu, "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041264__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:09.273Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041264__> .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041264__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/041200/041264>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041264__/manifest> .

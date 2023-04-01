@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000175057&page=1>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "10623"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:50.170Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000175057> .
+
+<http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000175057>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000369917> ;
+	edm:isShownAt      <http://bdh-rd.bne.es/viewer.vm?id=0000175057&page=1> ;
+	edm:object         <http://bdh-rd.bne.es/pdf.raw?query=id:0000175057&page=1&jpeg=true> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:50.170Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000175057> .
+
+<http://bdh-rd.bne.es/pdf.raw?query=id:0000175057&page=1&jpeg=true>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "255139"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1286"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "1848"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/proxy/provider/2022717/bnesearch_detalle_bdh0000175057>
+	a                   ore:Proxy ;
+	dc:creator          "Verdi, Giuseppe, 1813-1901" ;
+	dc:description      "Archivo personal de José Mardones" ;
+	dc:language         "spa" ;
+	dc:title            "Don Carlo : romanza di basso" ;
+	dc:type             "Partituras" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000175057> .
+
+<http://data.europeana.eu/proxy/europeana/2022717/bnesearch_detalle_bdh0000175057>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000175057> .
+
+<http://data.europeana.eu/organization/1482250000000369917>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca Nacional de España"@es, "National Library of Spain"@en .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000175057>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000175057>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2018-06-05T13:59:33.334Z" ;
+	dcterms:modified          "2018-06-19T15:11:57.026Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057#metadataTier>, <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057> ;
+	edm:completeness          "6" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022717_Ag_ES_Hispana_Biblioteca_Nacional" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbdh-rd.bne.es%2Fpdf.raw%3Fquery%3Did%3A0000175057%26page%3D1%26jpeg%3Dtrue&type=TEXT> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000175057>
+	a  edm:ProvidedCHO .

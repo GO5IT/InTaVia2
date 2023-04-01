@@ -1,0 +1,144 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<http://data.europeana.eu/aggregation/provider/90402/RP_F_00_7624>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/RP_F_00_7624> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.551055> ;
+	edm:isShownBy      <https://lh6.ggpht.com/qbBaeTBiAZ1DtBrOH9ajvwHXYzfc5eGAbEQG3lOFLaCuaC5I5RuKu6JTEiuod-yVDFyt287hYxoQO_bRhD8jvopt6UI=s0> ;
+	edm:object         <https://lh6.ggpht.com/qbBaeTBiAZ1DtBrOH9ajvwHXYzfc5eGAbEQG3lOFLaCuaC5I5RuKu6JTEiuod-yVDFyt287hYxoQO_bRhD8jvopt6UI=s0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_F_00_7624#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:10:58.237Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_F_00_7624> .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.16728>
+	a                              edm:Agent ;
+	edm:begin                      "1804-03-01" ;
+	edm:end                        "1877-04-18" ;
+	rdaGr2:dateOfBirth             "Beieren" ;
+	rdaGr2:dateOfDeath             "München" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "fotograaf"@nl ;
+	skos:prefLabel                 "Hanfstaengl, Franz"@nl, "Hanfstaengl, Franz"@en .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.84119>
+	a                   edm:Agent ;
+	edm:begin           "1584-01-29" ;
+	edm:end             "1647-03-14" ;
+	rdaGr2:dateOfBirth  "Delft" ;
+	rdaGr2:dateOfDeath  "Den Haag" ;
+	skos:prefLabel      "Frederik Hendrik (prins van Oranje)" .
+
+<https://iiif.europeana.eu/presentation/90402/RP_F_00_7624/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://lh6.ggpht.com/qbBaeTBiAZ1DtBrOH9ajvwHXYzfc5eGAbEQG3lOFLaCuaC5I5RuKu6JTEiuod-yVDFyt287hYxoQO_bRhD8jvopt6UI=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Publiek Domein"@nl, "Public Domain"@en ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/RP_F_00_7624/manifest> ;
+	ebucore:fileByteSize    "421619"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "2500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1704"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/48>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300046300>, <http://id.cabi.org/cabt/89399>, <http://id.nlm.nih.gov/mesh/V02.697>, <http://www.yso.fi/onto/ysa/Y100000>, <http://datos.bne.es/resource/XX5169059>, <http://eurovoc.europa.eu/c_cdec6719>, <http://id.loc.gov/authorities/genreForms/gf2017027249>, <https://g.co/kg/m/068jd>, <http://data.bnf.fr/ark:/12148/cb12010336g>, <http://id.loc.gov/authorities/names/sh85101195>, <https://www.freebase.com/m/068jd>, <http://www.wikidata.org/entity/Q125191>, <http://iconclass.org/48C614>, <http://thesaurus.europeanafashion.eu/thesaurus/10460>, <https://schema.org/Photograph>, <http://babelnet.org/rdf/s00032381n>, <http://id.worldcat.org/fast/1061684>, <http://zbw.eu/stw/descriptor/14046-6>, <http://www.yso.fi/onto/yso/p2699>, <http://id.nlm.nih.gov/mesh/D059036>, <http://www.idref.fr/028224248/id>, <http://vocabularies.unesco.org/thesaurus/concept11166> ;
+	skos:note        "Imagem criada pela luz atingindo uma superfície fotossensível"@pt, "Obrázek vytvořený světlem dopadajícím na světlosenzitivní povrch"@cs, "Obraz utworzony przez światło padające na materiał światłoczuły"@pl, "Imagen creada por un fotógrafo"@es, "Abbild der Realität, welches durch auftreffendes Licht auf eine lichtempfindliche Oberfläche erzeugt wurde"@de, "Kameralla otettu liikkumaton kuva jostakin kohteesta"@fi, "Двуизмерно изображение"@bg, "Met camera of ander apparaat gemaakte afbeelding en gereproduceerd als plaatje gewoonlijk op een gevoelige ondergrond en gevormd door chemische lichtactie of stralingsenergie"@nl, "Immagine creata dall'impressione della luce su un supporto fotosensibile"@it, "Billede skabt af lyset, der falder på en lysfølsom overflade"@da, "Image créée par un photographe"@fr, "Image created by light falling on a light-sensitive surface"@en, "Изображение, полученное в результате фотографического процесса"@ru, "Optikai úton, fényérzékeny anyagra készített, vegyi eljárással rögzített (negatív) kép"@hu, "Bild skapad genom att låta ljus falla på en ljuskänslig yta"@sv ;
+	skos:prefLabel   "Fotografi"@sv, "Fotografi"@da, "Argazkilaritza"@eu, "Fotografija"@lt, "Fotografija"@hr, "Fotografija"@sl, "Fotografija"@mt, "Fotografie"@de, "Fotografie"@cs, "Fotografie"@ro, "Снимка"@bg, "Photographie"@fr, "Fénykép"@hu, "Valokuva"@fi, "Фотография"@ru, "Photograph"@en, "Fotoattēls"@lv, "Foto"@it, "Foto"@et, "Foto"@nl, "Φωτογραφία"@el, "Fotografia"@pt, "Fotografia"@ca, "Fotografia"@pl, "Fotografía"@es, "Grianghraf"@ga, "Fotograf"@sk .
+
+<http://data.europeana.eu/aggregation/europeana/90402/RP_F_00_7624>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T14:35:15.011Z" ;
+	dcterms:modified          "2018-03-17T13:16:20.310Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/RP_F_00_7624#metadataTier>, <http://data.europeana.eu/item/90402/RP_F_00_7624#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/RP_F_00_7624> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/RP_F_00_7624> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh6.ggpht.com%2FqbBaeTBiAZ1DtBrOH9ajvwHXYzfc5eGAbEQG3lOFLaCuaC5I5RuKu6JTEiuod-yVDFyt287hYxoQO_bRhD8jvopt6UI%3Ds0&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/90402/RP_F_00_7624>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/90402/RP_F_00_7624>
+	a                   ore:Proxy ;
+	dc:contributor      "Mierevelt, Michiel Jansz. van"@nl ;
+	dc:description      "Portret van Frederik Hendrik. In een geornamenteerd kader zijn naam en titel in het Duits."@nl ;
+	dc:format           "karton"@nl, <http://vocab.getty.edu/aat/300014190>, "urn:rijksmuseum:thesaurus:RM0001.THESAU.380", "photographic paper"@en, "fotopapier"@nl ;
+	dc:identifier       "http://hdl.handle.net/10934/RM0001.COLLECT.551055", "RP-F-00-7624" ;
+	dc:language         "nl" ;
+	dc:publisher        "Rijksmuseum" ;
+	dc:rights           "Public Domain", "Publiek Domein" ;
+	dc:subject          "urn:rijksmuseum:people:RM0001.PEOPLE.84119", "Frederik Hendrik (prins van Oranje)"@nl ;
+	dc:title            "Portret van Frederik Hendrik, prins van Oranje"@nl ;
+	dc:type             "foto"@nl, "photograph"@en, "fotografie"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.2384", "urn:rijksmuseum:thesaurus:RM0001.THESAU.132" ;
+	dcterms:created     "1852 - 1877"@en, "1852 - 1877"@nl ;
+	dcterms:extent      "foto hoogte 370 mm"@nl, "height 561 mm"@en, "width 289 mm"@en, "karton hoogte 561 mm"@nl, "height 370 mm"@en, "width 402 mm"@en, "karton breedte 402 mm"@nl, "foto breedte 289 mm"@nl ;
+	dcterms:isPartOf    "collectie: prenten", "collectie: Oranjeportretten" ;
+	dcterms:spatial     "urn:rijksmuseum:thesaurus:RM0001.THESAU.32044", "München" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_F_00_7624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/90402/RP_F_00_7624> .
+
+<http://data.europeana.eu/concept/1813>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2069>, <http://data.europeana.eu/concept/2090> ;
+	skos:exactMatch  <http://g.co/kg/g/120kyzv0>, <https://d-nb.info/gnd/4131382-3>, <http://thesaurus.europeanafashion.eu/thesaurus/10572>, <http://id.loc.gov/authorities/names/sh85097653>, <http://purl.org/bncf/tid/527>, <http://www.wikidata.org/entity/Q389782>, <http://www.yso.fi/onto/yso/p16802>, <http://vocab.getty.edu/aat/300014224>, <http://babelnet.org/rdf/s00015937n> ;
+	skos:note        "Material compuesto de papel"@es, "Heavy-duty paper of various strengths"@en, "Kraftigt papir"@da, "Толстый бумажный материал"@ru, "Material format per diverses capes de paper superposades"@ca, "Papier bestaande uit meerdere lagen"@nl, "Materiale cartaceo particolarmente spesso e pesante, talvolta costituito da uno strato ondulato centrale e due fogli piani laterali"@it, "Druh výrobku z papíroviny, vyznačující se vyšší plošnou hmotností"@cs, "Aus Zellstoff, Holzschliff und Altpapier hergestellter Werkstoff"@de, "Wyrób papierniczy (gramatura: 160–500 g/m²)"@pl, "Karftigt papper"@sv, "Um tipo mais grosso e resistente de papel"@pt, "Types de papier généralement caractérisé par une rigidité, une épaisseur et/ou un grammage relativement élevés"@fr ;
+	skos:prefLabel   "Cartone"@it, "Pahvi"@fi, "Papp"@et, "Kartonas"@lt, "Cairtchlár"@ga, "Papelão"@pt, "Carton"@fr, "Carton"@ro, "Kartong"@sv, "Kartoi"@eu, "Картон"@ru, "Картон"@bg, "Kartons"@lv, "Χαρτόνι"@el, "Lepenka"@cs, "Karton"@nl, "Karton"@de, "Karton"@hr, "Karton"@hu, "Karton"@pl, "Karton"@da, "Cartó"@ca, "Cartón"@es, "Cardboard"@en .
+
+<http://data.europeana.eu/item/90402/RP_F_00_7624#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:10:58.237Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/RP_F_00_7624> .
+
+<http://data.europeana.eu/proxy/europeana/90402/RP_F_00_7624>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/1813> ;
+	dc:type             <http://data.europeana.eu/concept/48> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/RP_F_00_7624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/RP_F_00_7624> .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.551055>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49869"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

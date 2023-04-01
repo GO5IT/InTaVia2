@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88036380>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:13.280Z" ;
+	dcterms:modified          "2018-03-26T12:27:04.148Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88036380> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88036380.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:45.173Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88036380> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88036380>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88036380> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88036380.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88036380.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4243"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#87CEEB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#90EE90"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:45.172Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88036380> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88036380>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "239159"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88036380>
+	a                   ore:Proxy ;
+	dc:creator          "Busser, Henri (1872-1973). Auteur ou responsable intellectuel", "Franck, César (1822-1890). Auteur ou responsable intellectuel", "Bizet, Georges (1838-1875). Auteur ou responsable intellectuel", "Mohr, Joseph (1792-1848). Auteur ou responsable intellectuel", "Gruber, Franz Xaver (1787-1863). Auteur ou responsable intellectuel", "Nerval, Gérard de (1808-1855). Auteur ou responsable intellectuel", "Dassary, André (1912-1987). Chant", "Daudet, Alphonse (1840-1897). Auteur du texte", "Holmès, Augusta (1847-1903). Auteur ou responsable intellectuel", "Gounod, Charles (1818-1893). Auteur ou responsable intellectuel", "Cariven, Marcel (1894-1979). Direction d'orchestre", "Delcasso. Auteur ou responsable intellectuel", "Adam, Adolphe (1803-1856). Auteur ou responsable intellectuel" ;
+	dc:date             "1961" ;
+	dc:description      "Comprend : AVE MARIA / BACH et GOUNOD - NOTRE PERE QUI ETES AUX CIEUX / Henri BUSSER - AGNUS DEI / Georges BIZET - PANIS ANGELICUS / César FRANCK - LA LEGENDE DE SAINT-NICOLAS / Gérard de NERVAL arr. de Marcel CARIVEN - MARCHE DES ROIS / Alphonse DAUDET et Georges BIZET - MINUIT CHRETIENS / Adolphe ADAM - TROIS ANGES / Augusta HOLMES - VENITE ADOREMUS / arrgt Max GOETTI - VENEZ, DIVIN MESSIE / arr. de Max GOETTI - IL EST NE, LE DIVIN ENFANT / arrgt Max GOETTI - BELLE NUIT, SAINTE NUIT / F. GRUBER et Abbé MOHR - MON BEAU SAPIN / DELCASSO", "Titre uniforme : [Minuit chrétiens]", "Contient une table des matières", "Titre uniforme : [Agnus Dei]", "Titre uniforme : [Stille Nacht]", "Titre uniforme : [L'Arlésienne. GB 30]. Extrait", "Titre uniforme : [Ave Maria. Voix, piano. CG 89e]. Adapt.", "Titre uniforme : [Noël]", "Titre uniforme : [Stille Nacht, heilige nacht]. En français", "Titre uniforme : [Panis angelicus. CFF 209]", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "disque microsillon"@fre, "multipart/mixed", "Nombre total de vues :  17", "1 disque : 33 t ; 30 cm", "disc"@eng ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88036380", "Numéro commercial : Vega  V30S867" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13907670n"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139126203"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13862328w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13908591k"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13866379r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13979680w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13912253z"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb147158712"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb380469189"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-11519" ;
+	dc:title            "CHANTS RELIGIEUX / André DASSARY, avec Orchestre et Choeurs dir. Marcel CARIVEN" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88036380> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88036380/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88036380>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88036380> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88036380> .

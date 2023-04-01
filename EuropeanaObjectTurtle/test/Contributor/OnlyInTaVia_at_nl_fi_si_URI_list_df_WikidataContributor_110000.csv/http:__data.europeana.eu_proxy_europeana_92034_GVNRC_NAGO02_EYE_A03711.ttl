@@ -1,0 +1,121 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NAGO02_EYE_A03711>
+	a                   ore:Proxy ;
+	dc:contributor      "Henri Pieck", "Sovkino" ;
+	dc:creator          "Sovkino" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NAGO02:EYE-A03711" ;
+	dc:rights           "Voor meer informatie: EYE Film Instituut Ned."@nl, "EYE Film Instituut Ned.", "For more information: EYE Film Instituut Ned."@en ;
+	dc:source           "[A03711], Nederlandse Affiches, EYE Film Instituut Ned." ;
+	dc:subject          "Sovjetunie"@nl ;
+	dc:title            "10 dagen die de wereld deden wankelen" ;
+	dc:type             "StillImage" ;
+	dcterms:isPartOf    "Nederlandse Affiches", "NAGO02", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	dcterms:temporal    "1928" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NAGO02_EYE_A03711> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NAGO02_EYE_A03711>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/12397> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1928" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NAGO02_EYE_A03711> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NAGO02_EYE_A03711>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:41:57.015Z" ;
+	dcterms:modified          "2018-04-05T17:13:27.074Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANAGO02%3AEYE-A03711%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/NAGO02:EYE-A03711>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48027"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NAGO02:EYE-A03711&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "40897"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "256"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B22222"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/12397>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/75572> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q442228>, <http://vocab.getty.edu/ulan/500179854>, <http://viaf.org/viaf/40170808>, <http://d-nb.info/gnd/118594265>, <https://www.freebase.com/m/02ryjr5>, <http://data.bibliotheken.nl/id/thes/p068518552>, <http://id.loc.gov/authorities/names/n83165534>, <http://data.bnf.fr/ark:/12148/cb149230759>, <http://www.idref.fr/129327441/id>, <https://g.co/kg/m/02ryjr5>, <http://dbpedia.org/resource/Henri_Pieck> ;
+	rdaGr2:dateOfBirth   "1895-04-19" ;
+	rdaGr2:dateOfDeath   "1972-01-12" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40360> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40360> ;
+	skos:altLabel        "Henri Christiaan Pieck"@en, "Henri Christiaan Pieck"@nl, "H.C. Pieck"@en, "H.C. Pieck"@nl, "H.C. dhr. Pieck"@nl, "H. Pieck"@nl, "Dhr. H.C. Pieck"@nl, "Henri C. Pieck"@nl, "Henri Pieck"@nl, "Генри Кристиан Пик"@ru, "Han Pieck"@de, "Han Pieck"@fi, "Han Pieck"@sv, "Han Pieck"@pt, "Han Pieck"@en, "Han Pieck"@it, "Han Pieck"@fr, "Han Pieck"@es, "Han Pieck"@sl, "Han Pieck"@da, "Han Pieck"@ca, "Henri dhr. Pieck"@nl ;
+	skos:note            "Peintre néerlandais"@fr, "Hollandi maalikunstnik"@et, "Pintor neerlandés"@es, "Nederlands kunstschilder"@nl, "Pictor olandez"@ro, "Pintor neerlandès"@ca, "Dutch painter (1895-1972)"@en, "Niederländischer Theologe, Friedensaktivist, Publizist"@de ;
+	skos:prefLabel       "Han Pieck"@et, "Han Pieck"@ga, "Han Pieck"@ro, "Han Pieck"@nl, "Henri Pieck"@hu, "Henri Pieck"@fi, "Henri Pieck"@sv, "Henri Pieck"@pt, "Henri Pieck"@en, "Henri Pieck"@it, "Henri Pieck"@fr, "Henri Pieck"@es, "Henri Pieck"@sl, "Henri Pieck"@da, "Henri Pieck"@ca, "Пик, Генри Кристиан"@ru, "Henri Christiaan Pieck"@de .
+
+<http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:04.010Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NAGO02_EYE_A03711> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NAGO02_EYE_A03711>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NAGO02:EYE-A03711> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NAGO02:EYE-A03711&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NAGO02_EYE_A03711#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:04.011Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NAGO02_EYE_A03711> .

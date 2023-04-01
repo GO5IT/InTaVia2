@@ -1,0 +1,157 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T15:02:24.128Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b90055366> .
+
+<http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b90055366>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b90055366> ;
+	edm:isShownBy      <http://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1/full/512,/0/native.jpg> ;
+	edm:object         <https://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1/full/512,/0/native.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b90055366>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-09-02T15:02:24.158Z" ;
+	dcterms:modified          "2019-09-02T15:02:24.158Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366#contentTier>, <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200518_Ag_BnF_Gallica_typedoc_images" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200518/ark__12148_btv1b90055366> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fgallica.bnf.fr%2Fiiif%2Fark%3A%2F12148%2Fbtv1b90055366%2Ff1%2Ffull%2F512%2C%2F0%2Fnative.jpg&type=IMAGE> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/manifest.json> ;
+	ebucore:fileByteSize    "84020"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "762"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <http://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1> .
+
+<http://data.europeana.eu/concept/3499>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/3500> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300132466>, <http://id.nlm.nih.gov/mesh/D000085926>, <http://cv.iptc.org/newscodes/mediatopic/20000564>, <http://id.ndl.go.jp/auth/ndlna/01057087>, <http://id.nlm.nih.gov/mesh/I03.883.694>, <http://www.yso.fi/onto/yso/p3917>, <http://data.bnf.fr/ark:/12148/cb13318422n>, <http://id.loc.gov/authorities/names/sh85136255>, <http://www.wikidata.org/entity/Q49389>, <http://iconclass.org/46C54>, <http://babelnet.org/rdf/s00077747n>, <http://g.co/kg/g/120yrv6h>, <http://vocabularies.unesco.org/thesaurus/concept370>, <http://id.worldcat.org/fast/1153142>, <http://zbw.eu/stw/descriptor/13644-5>, <https://d-nb.info/gnd/4018406-7>, <http://purl.org/bncf/tid/613> ;
+	skos:note        "Viagem a lazer ou negócios"@pt, "Matkustaminen lomailu- ja virkistäytymistarkoituksessa"@fi, "Skup odnosa i pojava koje proizlaze iz putovanja i boravka posjetitelja nekog mjesta"@hr, "Idegenforgalmi iparág"@hu, "Complesso delle manifestazioni e delle organizzazioni relative a viaggi e soggiorni compiuti a scopo ricreativo o di istruzione"@it, "Ceļojumi ārpus pastāvīgās dzīvesvietas ar nolūku iepazīt dabas un kultūras objektus"@lv, "Überbegriff für Reisen, die Reisebranche und das Gastgewerbe und die Freizeitwirtschaft"@de, "Resor för fritids- och nöjesändamål"@sv, "Cestování pro rekreační nebo volnočasové účely"@cs, "Travel for pleasure or business"@en, "Reizen met recreatieve of zakelijke doeleinden"@nl, "Viatjar per lleure"@ca, "Conjunto de fenómenos relacionados con el desplazamiento temporal de las personas"@es, "Podróżowanie w celach rekreacyjnych"@pl, "Călătorie în scop de recreere sau afaceri"@ro, "Voyage par loisir ou par plaisir"@fr, "Путешествие для отдыха, бизнеса и досуга"@ru, "Cestovanie pre rekreačné alebo voľnočasové účely"@sk ;
+	skos:prefLabel   "Turistika"@sk, "Turistika"@cs, "Tourism"@en, "Tourisme"@fr, "Turizam"@hr, "Matkailu"@fi, "Turasóireacht"@ga, "Turizem"@sl, "Tourismus"@de, "Toerisme"@nl, "Turizmas"@lt, "Туризъм"@bg, "Tūrisms"@lv, "Turismo"@pt, "Turismo"@it, "Turismo"@es, "Turismo"@eu, "Turism"@sv, "Turism"@et, "Туризм"@ru, "Turism"@ro, "Turizmus"@hu, "Turystyka"@pl, "Turisme"@ca, "Turisme"@da, "Τουρισμός"@el .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://semium.org/time/18xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Thu Jan 01 01:00:00 CET 1801" ;
+	edm:end           "Mon Dec 31 00:19:32 CET 1900" ;
+	skos:prefLabel    "19й век"@ru, "19th"@en, "19th century"@en, "19..", "19e", "19e siècle"@fr, "19??", "19de eeuw"@nl, "19-th"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b90055366/f1/full/512,/0/native.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "84020"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "762"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-09-02T15:02:24.129Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b90055366> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b90055366>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "582254"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200518/ark__12148_btv1b90055366>
+	a                   ore:Proxy ;
+	dc:creator          "Mucha, Alphonse (1860-1939). Illustrateur" ;
+	dc:date             "1895" ;
+	dc:description      "Affiche", "Appartient à l’ensemble documentaire : MidiPyren1" ;
+	dc:format           "1 est. : lithographie, coul. ; 105 x 75 cm", "Nombre total de vues : 1" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b90055366" ;
+	dc:publisher        "Imp. Camis (Paris)", "[s.n.]" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb402714280" ;
+	dc:rights           <http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse/10)-ROUL" ;
+	dc:subject          "Transports ferroviaires"@fre, "Chemins de fer"@fre, "Bagnères-de-Luchon (Haute-Garonne)"@fre, "Tourisme"@fre ;
+	dc:title            "Chemins de fer d'Orléans et du Midi [...]. Luchon, la reine des Pyrénées, casino, établissement thermal, saison du 1er juin au 1er ooctobre : [affiche] / [attribuée à Mucha] [?]" ;
+	dc:type             "estampe"@fre, "image fixe"@fre, "still image"@eng, "engraving"@eng, "image"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200518/ark__12148_btv1b90055366> .
+
+<http://data.europeana.eu/proxy/europeana/9200518/ark__12148_btv1b90055366>
+	a                   ore:Proxy ;
+	dc:identifier       "ark:/12148/btv1b90055366" ;
+	dc:subject          <http://data.europeana.eu/concept/3499> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1895" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200518/ark__12148_btv1b90055366> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200518/ark__12148_btv1b90055366> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

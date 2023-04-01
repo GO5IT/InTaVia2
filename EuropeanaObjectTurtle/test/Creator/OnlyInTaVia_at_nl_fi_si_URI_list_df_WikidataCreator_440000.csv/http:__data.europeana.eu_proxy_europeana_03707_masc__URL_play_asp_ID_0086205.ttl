@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:03.862Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0086205> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0086205>
+	a                    ore:Proxy ;
+	dc:contributor       "Heisser, Jean-François", "Jude, Marie-Josèphe" ;
+	dc:creator           "Brahms, Johannes" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0086205" ;
+	dc:publisher         "Paris Cité de la musique 2002" ;
+	dc:subject           "19 EME SIECLE", "MUSIQUE ROMANTIQUE" ;
+	dc:title             "La Transcription : week-end piano" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le samedi 14 décembre 2002 (19h, amphithéâtre)" ;
+	dcterms:extent       "54 min 29 sec" ;
+	dcterms:hasPart      "Sonate pour deux pianos Op.34 bis / Johannes Brahms ; Jean-François Heisser, piano ; Marie-Josèphe Jude, piano. - Cité de la musique, 2002", "Variations sur un thème de Haydn Op.56b / Johannes Brahms ; Jean-François Heisser, piano ; Marie-Josèphe Jude, piano. - Cité de la musique, 2002" ;
+	dcterms:issued       "2002" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0086205> .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0086205>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:13.956Z" ;
+	dcterms:modified          "2014-06-27T11:27:13.956Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205#contentTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0086205>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2002" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0086205> .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0086205>
+	a  edm:WebResource .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:03.862Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0086205> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0086205>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0086205> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0086205> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .

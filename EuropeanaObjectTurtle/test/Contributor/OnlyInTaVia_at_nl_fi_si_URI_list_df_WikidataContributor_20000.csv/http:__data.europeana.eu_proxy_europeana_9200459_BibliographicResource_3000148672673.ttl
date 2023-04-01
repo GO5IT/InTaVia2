@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://digitool.bibnat.ro:1801/webclient/DeliveryManager?pid=831697>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/9200459/oai_digitool_bibnat_ro_679112>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-11T10:14:15.069Z" ;
+	dcterms:modified          "2016-11-11T10:14:15.069Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112#metadataTier>, <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112> ;
+	edm:completeness          "10" ;
+	edm:country               "Romania" ;
+	edm:datasetName           "9200459_Bibliophile_NLRomania" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112> ;
+	edm:language              "ro" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdigitool.bibnat.ro%3A1801%2Fwebclient%2FDeliveryManager%3Fpid%3D831697&type=IMAGE> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:03.748Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_679112> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671147>
+	a               foaf:Organization ;
+	skos:prefLabel  "Narodna knjižnica Romunije"@sl, "Национальная библиотека Румынии"@ru, "Biblioteca Nacional da Roménia"@pt, "Rumänische Nationalbibliothek"@de, "Национална библиотека на Румъния"@bg, "bibliothèque nationale de Roumanie"@fr, "Nationale Bibliotheek van Roemenië"@nl, "Εθνική Βιβλιοθήκη της Ρουμανίας"@el, "Romanian kansalliskirjasto"@fi, "Biblioteka Narodowa Rumunii"@pl, "Román Nemzeti Könyvtár"@hu, "National Library of Romania"@en, "Biblioteca Națională a României"@ro, "Biblioteca nacional de Romania"@ca, "Biblioteca nacional de Rumania"@es .
+
+<http://85.120.202.16:1801/webclient/DeliveryManager?pid=679112&custom_att_2=simple_viewer>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_679112>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004671147> ;
+	edm:isShownAt      <http://85.120.202.16:1801/webclient/DeliveryManager?pid=679112&custom_att_2=simple_viewer> ;
+	edm:object         <http://digitool.bibnat.ro:1801/webclient/DeliveryManager?pid=831697> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671147> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200459/oai_digitool_bibnat_ro_679112>
+	a                   ore:Proxy ;
+	dc:creator          "Goethe,Johann Wolfgang von", "Hanfstängl,Franzfoto.", "RambergArthur vonil." ;
+	dc:date             "1878" ;
+	dc:description      "[2] f., 67 p., 8 pl. foto. 26 cm", "3 Auflage", "Tiparită cu caractere gotice", "Ornamentică: frontispicii, viniete, letrine roşii ornate. Pe cele opt planşe, sunt aplicate fotografii sepia, realizate de Franz Hanfstängl după picturile în ulei ale baronului Arthur von Ramberg, intitulate: \u0022Die beiden Alten\u0022, \u0022Die Auswanderer\u0022, \u0022Beim Dachbar\u0022, \u0022Unter'm Birnbaum\u0022, \u0022Die Wöchnerin\u0022, \u0022Am Brunnen\u0022, \u0022Heimkehr\u0022. Atât paginile cu text, cât şi planşele sunt încadrate în chenar dublu de culoare roşie", "Pe f. de tit., tipar negru şi roşu", "Corpul cărţii este structurat în 9 caiete de câte 4 file fiecare, cu excepţia ultimului caiet care are 2 file" ;
+	dc:identifier       "oai:digitool.bibnat.ro:679112" ;
+	dc:language         "ger" ;
+	dc:publisher        "Berlin G. Grote'sche Verlagsbuchhandlung" ;
+	dc:title            "Goethe's Hermann und Dorothea" ;
+	dc:type             "Text tipărit" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_679112> .
+
+<http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:58:03.749Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200459/oai_digitool_bibnat_ro_679112> .
+
+<http://data.europeana.eu/proxy/europeana/9200459/oai_digitool_bibnat_ro_679112>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1878" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200459/oai_digitool_bibnat_ro_679112> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200459/oai_digitool_bibnat_ro_679112> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

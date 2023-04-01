@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_104085770>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/151831> ;
+	dc:creator          <http://data.europeana.eu/agent/151831> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1588" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104085770> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:104085770>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49445"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:41.322Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104085770> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104085770>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:104085770> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104085770&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_104085770>
+	a                   ore:Proxy ;
+	dc:contributor      "Gillis van Coninxloo" ;
+	dc:creator          "Gillis van Coninxloo" ;
+	dc:description      "Vindplaats: Dresden, Staatliche Gemäldegalerie" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104085770" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[104085770], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "oordeel van Midas"@nl ;
+	dc:title            "Het oordeel van Midas" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1588" ;
+	dcterms:isPartOf    "GVN", "NCRD01", "NCRD" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104085770> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:104085770&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3601"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "77"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:41.322Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_104085770> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_104085770>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:09:57.568Z" ;
+	dcterms:modified          "2018-04-05T17:25:29.400Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_104085770> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_104085770> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A104085770%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/agent/151831>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/158618>, <http://data.europeana.eu/concept/217> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/40975> ;
+	owl:sameAs           <http://www.idref.fr/068775172/id>, <http://data.bnf.fr/ark:/12148/cb16530010s>, <http://vocab.getty.edu/ulan/500115379>, <http://dbpedia.org/resource/Gillis_van_Coninxloo>, <https://www.freebase.com/m/04c90p>, <http://datos.bne.es/resource/XX1579813>, <https://g.co/kg/m/04c90p>, <http://viaf.org/viaf/908268>, <http://id.loc.gov/authorities/names/nr2001019326>, <http://ta.sandrart.net/-person-1444>, <http://www.wikidata.org/entity/Q525646>, <http://d-nb.info/gnd/122948564>, <http://id.worldcat.org/fast/463471>, <http://data.bibliotheken.nl/id/thes/p104085886> ;
+	rdaGr2:dateOfBirth   "1544-02-03" ;
+	rdaGr2:dateOfDeath   "1607-01-04" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203279> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Coninxloo"@de, "Gillis van Koningsloo"@en, "Gillis II van Coninxloo"@fr, "Gillis van Conixloe"@en, "Gillis Van Koningsloo"@en, "Gillis van Coninxlo"@en, "Конингсло"@ru, "Конингсло, Эгидиюс"@ru, "Gillis van Conincxloo (II)"@en, "Gillis van, III Coninxloo"@en, "Gillis Van Coninxloo"@en, "Gillis van 's Conings Loo"@en, "Конингсло Гиллис ван"@ru, "Gillis van Kooninghsloo"@en, "Gillis van III Coninxloo"@en, "Конингсло Эгидиюс"@ru, "Gillis van Koninxlo"@en, "Gillis van Connicxloo"@en, "Gillis van Koninckloo"@en, "Gillis van Coningsloo"@en, "Конингсло, Гиллис ван"@ru, "Gilles van Coninxloo"@en, "Гиллис Конингсло"@ru, "Gillis van Coninxloo II"@nl, "Gillis van Coninxloo II"@fr, "Эгидиюс Конингсло"@ru, "Gillis van Coninxloo II"@en, "Gillis III van Coninxloo"@en, "Gillis van Coninxloo III"@fr, "Gillis van Coninxloo III"@en, "Gillis van Koningsloo (II)"@en, "Конингсло, Гиллис"@ru ;
+	skos:note            "Pintor flamenc"@ca, "Pintor flamenco"@es, "Peintre flamand"@fr, "Φλαμανδός ζωγράφος"@el, "Pintor flamengo"@pt, "Vlaamse kunstschilder (1544-1607)"@nl, "Pittore fiammingo"@it, "Nizozemský malíř krajinář"@cs, "Nederländsk landskapsmålare"@sv, "Niederländischer Maler"@de, "Flemish painter"@en ;
+	skos:prefLabel       "Χίλλις φαν Κόνινξλοο"@el, "Gillis van, III Coninxloo"@da, "Гиллис ван Конингсло"@ru, "Gillis van Coninxloo"@hu, "Gillis van Coninxloo"@de, "Gillis van Coninxloo"@sv, "Gillis van Coninxloo"@pt, "Gillis van Coninxloo"@en, "Gillis van Coninxloo"@it, "Gillis van Coninxloo"@fr, "Gillis van Coninxloo"@es, "Gillis van Coninxloo"@cs, "Gillis van Coninxloo"@sl, "Gillis van Coninxloo"@pl, "Gillis van Coninxloo"@nl, "Gillis van Coninxloo"@ca .

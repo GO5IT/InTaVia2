@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k129452v>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "200276"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k129452v/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129452v>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k129452v> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k129452v.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k129452v>
+	a                   ore:Proxy ;
+	dc:creator          "Topelius, Zacharias (1818-1898). Auteur du texte", "Pacius, Fredrik (1809-1891). Compositeur", "Melartin, Erkki Gustav (1875-1937). Compositeur" ;
+	dc:date             "19.." ;
+	dc:description      "Contient une table des matières", "Suédois de Finlande" ;
+	dc:format           "1 disque : 90 t, saphir ; 29 cm", "Nombre total de vues :  4", "disque pré-lp"@fre, "disc"@eng, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Paté  27063 (n° de face). 27065 (n° de face)", "43716GR, 44206GRPathé [saphir]", "http://gallica.bnf.fr/ark:/12148/bpt6k129452v" ;
+	dc:language         "swe" ;
+	dc:publisher        "[Etablissements Pathé Frères] (Moscou)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42441234c"@fr, "Titre d'ensemble : [Archives de la Parole]. Don Pathé aux Archives de la Parole, Musée de la Parole et du Geste] : [1911-1937?]"@fr, "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb42535309c"@fr ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, AP-872" ;
+	dc:title            "[Archives de la Parole]. , Rosa Rorans / [Erkki Gustav Melartin, comp.] ; Constance Neumann, chant. O Hellas barn / [Friedrich Pacius, comp.] ; [Zacharias Topelinksen, aut.] ; Constance Neumann, chant" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129452v> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k129452v>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2018-03-26T12:25:16.150Z" ;
+	dcterms:modified          "2018-03-26T12:25:16.150Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k129452v> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k129452v.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:00.296Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129452v> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k129452v.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4892"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:00.296Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k129452v> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k129452v>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k129452v> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k129452v> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .

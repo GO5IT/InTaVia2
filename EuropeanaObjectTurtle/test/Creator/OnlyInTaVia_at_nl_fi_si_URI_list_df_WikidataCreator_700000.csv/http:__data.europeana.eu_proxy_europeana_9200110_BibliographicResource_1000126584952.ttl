@@ -1,0 +1,175 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:45:24.884Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126584952> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <file:///usr/local/tomcat/webapps/2ebf94bf-1eb1-41ab-81bd-2d21a9a06b79> .
+
+<http://hdl.handle.net/2027/ucm.5323784590>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126584952/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:45:24.883Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126584952> .
+
+<http://data.europeana.eu/proxy/provider/9200110/BibliographicResource_1000126584952>
+	a                   ore:Proxy ;
+	dc:contributor      "N. de Launay", "C. P. Marillier" ;
+	dc:creator          "Torquato Tasso" ;
+	dc:description      "Illustrations: Plates"@en, "di Torquato Tasso ; tomo primo." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "2ebf94bf-1eb1-41ab-81bd-2d21a9a06b79" ;
+	dc:language         "it" ;
+	dc:publisher        "s.n." ;
+	dc:rights           "The digital images and OCR of this work were produced by Google, Inc. (indicated by a watermark on each page in the digital object). Google requests that the images and OCR not be re-hosted, redistributed or used commercially. More information at source library: http://biblioteca.ucm.es/proyectogoogle"@en ;
+	dc:title            "La Gerusalemme liberata" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "[4], 3 p., [1] en bl., ix-xij, 249 p., [1] h. de lám. ;", "18o." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1010> ;
+	dcterms:issued      "1783" ;
+	dcterms:spatial     "Londra", <http://id.loc.gov/vocabulary/countries/uk> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126584952> .
+
+<http://books.google.com/books/ucm?vid=UCM5323784590&printsec=frontcover>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "34622"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126584952>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-01T09:58:21.349Z" ;
+	dcterms:modified          "2015-02-25T16:17:50.192Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952#contentTier>, <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952> ;
+	edm:completeness          "6" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "9200110_Ag_EU_TEL_a1010_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200110/BibliographicResource_1000126584952> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3Ducm.5323784590&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200110/BibliographicResource_1000126584952>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/60451> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	dcterms:spatial     <http://data.europeana.eu/place/177208>, <http://data.europeana.eu/place/86> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1783" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126584952> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/60451>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/70>, <http://data.europeana.eu/concept/201> ;
+	owl:sameAs           <http://openlibrary.org/works/OL33406A>, <http://data.carnegiehall.org/names/1020342>, <http://id.worldcat.org/fast/39722>, <http://www.idref.fr/027155471/id>, <http://ta.sandrart.net/-person-3496>, <http://www.wikidata.org/entity/Q168962>, <http://id.ndl.go.jp/auth/ndlna/00458354>, <http://d-nb.info/gnd/118620916>, <https://libris.kb.se/tr5780bc20m9xf5>, <https://livedata.bibsys.no/authority/90215644>, <http://vocab.getty.edu/ulan/500326795>, <https://g.co/kg/m/0cxp_>, <http://id.loc.gov/authorities/names/n79082132>, <http://kulturarvsdata.se/LSH/agents/50106>, <http://datos.bne.es/resource/XX913568>, <http://lod.nl.go.kr/resource/KAC201504009>, <https://www.freebase.com/m/0cxp_>, <http://viaf.org/viaf/4936996>, <http://data.bibliotheken.nl/id/thes/p068470444>, <http://libris.kb.se/resource/auth/206981>, <http://data.bnf.fr/ark:/12148/cb119260670>, <http://dbpedia.org/resource/Torquato_Tasso>, <http://nlg.okfn.gr/resource/authority/record111507> ;
+	rdaGr2:dateOfBirth   "1544-03-21" ;
+	rdaGr2:dateOfDeath   "1595-04-25" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/148273> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/143433> ;
+	skos:altLabel        "Torquato Tasso"@fr, "Тассо Т."@ru, "Тассо, Торквато"@ru, "Τορκουάτο Τάσο"@el, "Торквато, Тассо"@ru, "Тассо Торквато"@ru, "Torcuato Tasso"@en, "Torcuato Tasso"@es, "Торкуато Тасо"@bg, "Tasso"@sv, "Tasso"@pt, "Тассо"@ru ;
+	skos:note            "Italský básník"@cs, "Poète italien"@fr, "Italialainen runoilija"@fi, "Итальянский поэт"@ru, "Itáliai költő"@hu, "Poeta italiano"@es, "Poeta, scrittore e drammaturgo italiano (1544-1595)"@it, "Italian poet (1544-1595)"@en, "Itaalia luuletaja"@et, "Włoski poeta"@pl, "Italienischer Dichter (1544–1595)"@de, "Poet italian"@ro, "Italiensk diktare"@sv, "Italiaans schrijver"@nl, "Taliansky básnik"@sk, "Poeta italià"@ca ;
+	skos:prefLabel       "Torquato Tasso"@fi, "Torquato Tasso"@sv, "Torquato Tasso"@pt, "Torquato Tasso"@en, "Torquato Tasso"@de, "Torquato Tasso"@hr, "Torquato Tasso"@it, "Torquato Tasso"@hu, "Torquato Tasso"@es, "Torquato Tasso"@et, "Torquato Tasso"@cs, "Torquato Tasso"@sk, "Torquato Tasso"@pl, "Torquato Tasso"@ro, "Torquato Tasso"@da, "Torquato Tasso"@ca, "Torquato Tasso"@nl, "Le Tasse"@fr, "Торквато Тассо"@ru, "Torkvato Taso"@lv, "Τορκουάτο Τάσσο"@el, "Торквато Тасо"@bg .
+
+<https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126584952/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/place/86>
+	a               edm:Place ;
+	owl:sameAs      <http://datos.bne.es/resource/XX4575384>, <http://data.bnf.fr/ark:/12148/cb11931584z>, <http://www.yso.fi/onto/yso/p104990>, <https://sws.geonames.org/2635167/>, <http://vocabularies.unesco.org/thesaurus/concept925>, <http://www.idref.fr/026488515/id>, <http://lod.nl.go.kr/resource/KAB201914457>, <https://d-nb.info/gnd/4022153-2>, <http://id.loc.gov/authorities/names/n79023147>, <http://data.bnf.fr/ark:/12148/cb15238574p>, <http://nomisma.org/id/united_kingdom>, <http://id.nlm.nih.gov/mesh/D006113>, <http://data.bnf.fr/ark:/12148/cb11872746v>, <http://libris.kb.se/resource/auth/164342>, <http://zbw.eu/stw/descriptor/17374-2>, <http://dbpedia.org/resource/United_Kingdom>, <http://nlg.okfn.gr/resource/authority/record239558>, <http://id.worldcat.org/fast/1204623>, <http://id.ndl.go.jp/auth/ndlna/00871900>, <http://babelnet.org/rdf/s00013173n>, <http://viaf.org/viaf/127756949>, <http://www.yso.fi/onto/ysa/Y104990>, <http://vocab.getty.edu/tgn/7008591>, <http://id.nlm.nih.gov/mesh/Z01.542.363>, <http://www.wikidata.org/entity/Q145>, <https://libris.kb.se/jgvxx4n24nx12bv>, <https://g.co/kg/m/07ssc>, <https://livedata.bibsys.no/authority/90055024>, <https://www.freebase.com/m/07ssc> ;
+	skos:altLabel   "VB"@hr, "Reialme Unit de la Gran Bretanya i Irlanda del Nord"@ca, "U.K."@de, "U.K."@en, "Det Forenede Kongerige"@da, "Spojené kráľovstvo Veľkej Británie a Severného Írska"@sk, "Royaume-Uni de Grande-Bretagne et d’Irlande du Nord"@fr, "Renju Unit tal-Gran Brittanja u l-Irlanda ta’ Fuq"@mt, "Inglaterra"@es, "GBR"@ro, "GBR"@nl, "GB"@de, "GB"@sv, "GB"@fi, "Ríocht Aontaithe"@ga, "GB"@pt, "An RA"@ga, "GBR"@de, "GBR"@sv, "GBR"@pt, "GBR"@en, "GBR"@it, "GBR"@fr, "GBR"@es, "GB"@en, "GB"@hr, "GB"@it, "GB"@fr, "GB"@es, "GB"@nl, "Le Royaume-Uni de Grande-Bretagne et d’Irlande du Nord"@fr, "Британия"@ru, "Британия"@bg, "Royaume Uni"@fr, "Regatul Unit al Marii Britanii și al Irlandei de Nord"@ro, "Stor-Britannien och Nordirland"@sv, "Regno Unito di Gran Bretagna e Irlanda del Nord"@it, "G. B."@en, "G. B."@de, "UK"@hu, "UK"@es, "UK"@ro, "UK"@nl, "UK"@ca, "G.B."@de, "G.B."@en, "Británie"@cs, "UK"@de, "UK"@sv, "UK"@fi, "UK"@en, "UK"@hr, "UK"@it, "UK"@fr, "R.-U."@fr, "Združeno kraljestvo Velike Britanije in Severne Irske"@sl, "V.K."@nl, "Stor-Britannien"@sv, "Обединеното кралство"@bg, "Regne Unit De La Gran Bretanya I Irlanda Del Nord"@ca, "Verenigd Konkrijk"@nl, "The UK"@en, "Verenigde Koningrijk"@nl, "U K"@de, "U K"@en, "G. B. R."@de, "Storbritannien och Nordirland"@sv, "G B R"@de, "G B R"@en, "Reino Unido da Grã-Bretanha e Irlanda do Norte"@pt, "The United Kingdom of Great Britain and Northern Ireland"@en, "Verenigd Koninkrijk van Groot-Brittannië en Noord-Ierland"@nl, "Grande-Bretagne"@fr, "Обединено кралство Великобритания и Северна Ирландия"@bg, "Stor-Britannien och Nord-Irland"@sv, "G.B.R."@de, "G.B.R."@en, "R.U."@fr, "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej"@pl, "Туманный Альбион"@ru, "G B"@de, "G B"@en, "Gran Bretagna"@it, "Verenigd Koninkrijk van Groot-Brittannie en Noord-Ierland"@nl, "Storbritanien"@da, "Reino Unido de Gran Bretaña e Irlanda del Norte"@es, "Großbritannien"@de, "Spojené království Velké Británie a Severního Irska"@cs, "Royaume-uni"@fr, "United Kingdom of England, Scotland and Wales"@nl, "Iso-Britannia"@fi, "Velika Britanija"@hr, "Vereinigte Königreich"@de, "Reialme Unit"@ca, "JK"@lt, "Vereinigtes Königreich Großbritannien und Nordirland"@de, "Соединённое Королевство"@ru, "Britain"@en, "Great Britain"@en, "U. K."@de, "U. K."@en, "Ühendkuningriik"@et, "Ríocht Aontaithe na Breataine Móire agus Thuaisceart Éireann"@ga, "RU"@ca, "United Kingdom"@fi, "United Kingdom"@da, "United Kingdom"@nl, "United Kingdom"@ca, "VK"@nl, "Britannia"@fi, "Y Deyrnas Unedig"@nl, "Velká Británie"@cs, "Förenade kungariket"@sv, "Reino Unido de la Gran Bretaña e Irlanda del Norte"@es, "Nagy-Britannia és Észak-Írország Egyesült Királysága"@hu, "Stora Britannien"@sv, "United Kingdom of Great Britain and Northern Ireland"@en, "United Kingdom of Great Britain and Northern Ireland"@nl, "Gran Bretaña"@es, "Nagy-Britannia"@hu, "Great Britain and Northern Ireland"@en, "Ujedinjeno Kraljevstvo Velike Britanije i Sjeverne Irske"@hr, "Förenade konungariket Storbritannien och Nordirland"@sv, "Соединённое Королевство Великобритании и Северной Ирландии"@ru ;
+	skos:note       "Pajjiż fl-Ewropa tal-Punent"@mt, "Nação insular na Europa Ocidental"@pt, "Saarivaltio Länsi-Euroopassa"@fi, "Ostrovní stát v Evropě"@cs, "Государство в Европе"@ru, "Szigetállam Nyugat-Európában"@hu, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Tír san Eoraip"@ga, "Ostrovný štát v západnej Európe"@sk, "Country in north-west Europe"@en, "País en el noroeste de Europa"@es, "Land bestående af England, Wales, Skotland og Nordirland"@da, "Ανεξάρτητο κράτος στην Ευρώπη"@el, "Valsts Rietumeiropā"@lv, "Stato dell'Europa nord-occidentale"@it, "Stat suveran în Insulele Britanice, în largul coastei de nord-vest a Europei continentale"@ro, "Konstitutionell monarki i Västeuropa"@sv, "Otočna država u sjeverozapadnoj Europi"@hr, "Estat insular sobirà localitzat al nord-oest d'Europa"@ca, "Valstybė Vakarų Europoje"@lt, "Държава в Западна Европа"@bg, "Inselstaat in Westeuropa"@de, "Eilandstaat in Europa"@nl ;
+	skos:prefLabel  "Reino Unido"@es, "Reino Unido"@pt, "Yhdistynyt kuningaskunta"@fi, "Renju Unit"@mt, "Združeno kraljestvo"@sl, "Spojené království"@cs, "Storbritannien"@da, "Storbritannien"@sv, "Suurbritannia"@et, "Vereinigtes Königreich"@de, "United Kingdom"@en, "Ujedinjeno Kraljevstvo"@hr, "Spojené kráľovstvo"@sk, "Egyesült Királyság"@hu, "Wielka Brytania"@pl, "Regno Unito"@it, "Erresuma Batua"@eu, "Apvienotā Karaliste"@lv, "An Ríocht Aontaithe"@ga, "Regne Unit"@ca, "Jungtinė Karalystė"@lt, "Regatul Unit"@ro, "Ηνωμένο Βασίλειο"@el, "Verenigd Koninkrijk"@nl, "Royaume-Uni"@fr, "Великобритания"@bg, "Великобритания"@ru ;
+	wgs84_pos:lat   "54.6" ;
+	wgs84_pos:long  "-2.0" .
+
+<http://data.europeana.eu/place/177208>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/86> ;
+	owl:sameAs        <https://d-nb.info/gnd/4074335-4>, <http://dbpedia.org/resource/London>, <http://id.nlm.nih.gov/mesh/D008131>, <https://g.co/kg/m/04jpl>, <http://viaf.org/viaf/261467287>, <http://www.yso.fi/onto/ysa/Y104995>, <http://id.worldcat.org/fast/1204271>, <http://zbw.eu/stw/descriptor/30103-0>, <http://data.ordnancesurvey.co.uk/id/4000000074813508>, <https://sws.geonames.org/2643743/>, <http://id.loc.gov/authorities/names/n79005665>, <http://www.idref.fr/027922669/id>, <http://babelnet.org/rdf/s00013179n>, <http://id.ndl.go.jp/auth/ndlna/00629494>, <http://nlg.okfn.gr/resource/authority/record7885>, <http://www.yso.fi/onto/yso/p104995>, <http://dare.ht.lu.se/places/1888>, <https://www.freebase.com/m/04jpl>, <http://datos.bne.es/resource/XX450868>, <http://www.wikidata.org/entity/Q84>, <http://data.bnf.fr/ark:/12148/cb119861367>, <http://vocab.getty.edu/tgn/7011781>, <http://nomisma.org/id/london> ;
+	skos:altLabel     "Londen, Engeland"@nl, "London, United Kingdom"@en, "Londres, UK"@pt, "Londres (Inglaterra)"@es, "Londres, Inglaterra"@pt, "Londres (Reino Unido)"@es, "Londres, Reino Unido"@pt, "Londen, Verenigd Koninkrijk"@nl, "London"@fr, "London"@eu, "London UK"@en, "London, UK"@en, "Londen, VK"@nl, "Londres, GBR"@pt, "London U.K."@en, "Doirelondain"@ga, "London, England"@en ;
+	skos:note         "Capitala Regatului Unit al Marii Britanii și al Irlandei de Nord"@ro, "Suurbritannia ja Põhja-Iiri Ühendkuningriigi kui ka Inglismaa pealinn"@et, "Glavni grad Engleske i Ujedinjenog Kraljevstva"@hr, "Az Egyesült Királyság fővárosa"@hu, "Capital del Reino de Inglaterra y capital del Reino Unido"@es, "Hlavní město Anglie a Spojeného království"@cs, "Glavno mesto Združenega kraljestva"@sl, "Πρωτεύουσα του Ηνωμένου Βασιλείου"@el, "Erresuma Batuko hiriburua"@eu, "Príomhchathair Shasana"@ga, "Huvudstad i Storbritannien"@sv, "Yhdistyneen kuningaskunnan ja Englannin pääkaupunki"@fi, "Capital da Inglaterra e do Reino Unido"@pt, "Hoofdstad van Engeland en het Verenigd Koninkrijk"@nl, "Capital del Regne Unit"@ca, "Столица и крупнейший город Соединённого Королевства Великобритании и Северной Ирландии"@ru, "Anglijas un Apvienotās Karalistes galvaspilsēta"@lv, "Столица на Англия и на Обединеното кралство Великобритания и Северна Ирландия"@bg, "Capitale du Royaume-Uni"@fr, "Capitale del Regno Unito e dell’Inghilterra"@it, "Hlavné mesto Spojeného kráľovstva"@sk, "Hauptstadt und bevölkerungsreichste Stadt des Vereinigten Königreichs"@de, "Hovedstaden i England"@da, "Stolica Wielkiej Brytanii"@pl, "Capital and largest city of the United Kingdom"@en ;
+	skos:prefLabel    "Λονδίνο"@el, "Londres"@pt, "Londres"@fr, "Londres"@ca, "Londres"@es, "Londres"@eu, "Londain"@ga, "Londyn"@pl, "Londonas"@lt, "Londona"@lv, "Londýn"@sk, "Londýn"@cs, "Лондон"@ru, "London"@de, "Lontoo"@fi, "Лондон"@bg, "London"@hr, "London"@hu, "London"@sl, "London"@sv, "London"@en, "London"@et, "London"@da, "Londen"@nl, "Londra"@mt, "Londra"@it, "Londra"@ro ;
+	wgs84_pos:alt     "36.0" ;
+	wgs84_pos:lat     "51.50722" ;
+	wgs84_pos:long    "-0.1275" .
+
+<http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5323784590>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "62017"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "1225"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000021995423>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universidad Complutense de Madrid"@es, "Complutense University of Madrid"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126584952>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126584952> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000021995423> ;
+	edm:hasView        <http://hdl.handle.net/2027/ucm.5323784590> ;
+	edm:isShownAt      <http://books.google.com/books/ucm?vid=UCM5323784590&printsec=frontcover> ;
+	edm:object         <http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5323784590> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

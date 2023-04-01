@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildarchivaustria.at/Preview/8183423.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126145722/manifest> ;
+	ebucore:fileByteSize    "1513696"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1244"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126145722/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126145722>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126145722>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722> ;
+	edm:dataProvider   "Österreichische Nationalbibliothek - Austrian National Library" ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=8183423> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/8183423.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Thumbnail/8183423.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126145722>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-04T18:47:32.763Z" ;
+	dcterms:modified          "2015-03-26T20:25:15.521Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722#contentTier>, <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92062_Ag_EU_TEL_a0480_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92062/BibliographicResource_1000126145722> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FThumbnail%2F8183423.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92062/BibliographicResource_1000126145722>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126145722> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126145722#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:53:55.417Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126145722> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=8183423>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://www.bildarchivaustria.at/Thumbnail/8183423.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1945"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "95"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92062/BibliographicResource_1000126145722>
+	a                   ore:Proxy ;
+	dc:creator          "Picart, Bernard" ;
+	dc:description      "Stecher: Picart, Bernard"@de ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/8183423.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Irrlehrer"@de, "Reformator"@de, "Theologie"@de, "Porträt"@de, "Portrait"@en, "Geistlicher"@de, "Geistliche"@de ;
+	dc:title            "Hus, Johannes"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:hasFormat   "image/jpeg" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0480> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126145722> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126145722> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126145722#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:53:55.418Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126145722> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .

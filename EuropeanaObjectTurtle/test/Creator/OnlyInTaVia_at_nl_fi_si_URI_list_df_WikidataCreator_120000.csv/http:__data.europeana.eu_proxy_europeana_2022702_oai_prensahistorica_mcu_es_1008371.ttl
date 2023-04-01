@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2022702/oai_prensahistorica_mcu_es_1008371>
+	a                  ore:Aggregation ;
+	dc:rights          "Creative Commons 3.0 - http://creativecommons.org/licenses/by-nc-nd/3.0/" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500665> ;
+	edm:isShownAt      <http://prensahistorica.mcu.es/es/catalogo_imagenes/grupo.cmd?path=1000146879> ;
+	edm:object         <http://prensahistorica.mcu.es/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=1000940314> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T12:30:42.658Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022702/oai_prensahistorica_mcu_es_1008371> .
+
+<http://data.europeana.eu/aggregation/europeana/2022702/oai_prensahistorica_mcu_es_1008371>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-03-01T12:02:16.293Z" ;
+	dcterms:modified          "2014-03-05T12:03:01.992Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371#contentTier>, <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371> ;
+	edm:completeness          "7" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022702c_Ag_ES_Hispana_esebvph2" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fprensahistorica.mcu.es%2Fi18n%2Fcatalogo_imagenes%2Fimagen_id.cmd%3FidImagen%3D1000940314&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-nd/3.0/> .
+
+<http://prensahistorica.mcu.es/es/catalogo_imagenes/grupo.cmd?path=1000146879>
+	a  edm:WebResource .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://prensahistorica.mcu.es/i18n/catalogo_imagenes/imagen_id.cmd?idImagen=1000940314>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "301841"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "2283"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "1599"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2022702/oai_prensahistorica_mcu_es_1008371>
+	a                   ore:Proxy ;
+	dc:creator          "Griffith, D. W. (1875-1948)", "Dickens, Charles (1812-1870)", "Eisenstein, Sergei M. (1898-1948)", "Millán, Juan Antonio P." ;
+	dc:date             "1994" ;
+	dc:description      "Copia digital. Madrid: Subdirección General de Coordinación Bibliotecaria, 2011" ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "oai:prensahistorica.mcu.es:1008371" ;
+	dc:language         "spa" ;
+	dc:subject          "Cine-Historia", "Guiones cinematográficos", "Literatura inglesa" ;
+	dc:title            "Dickens en imágenes" ;
+	dc:type             "Capítulos de Libros" ;
+	dcterms:isPartOf    "En: Clij : Cuadernos de Literatura Infantil y Juvenil. - Barcelona : Editorial Fontalba, S. A., 1988- = ISSN 0214-4123. - n. 66 (nov. 1994), p. 64-72" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022702/oai_prensahistorica_mcu_es_1008371> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004500665>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca Virtual de Prensa Histórica"@es, "Virtual Library of Historical Press"@en .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2022702/oai_prensahistorica_mcu_es_1008371>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1994" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022702/oai_prensahistorica_mcu_es_1008371> .
+
+<http://data.europeana.eu/item/2022702/oai_prensahistorica_mcu_es_1008371#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T12:30:42.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022702/oai_prensahistorica_mcu_es_1008371> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

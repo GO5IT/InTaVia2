@@ -1,0 +1,156 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126640468>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000021995423> ;
+	edm:hasView        <http://hdl.handle.net/2027/ucm.5329106692> ;
+	edm:isShownAt      <http://books.google.com/books/ucm?vid=UCM5329106692&printsec=frontcover> ;
+	edm:object         <http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5329106692> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://hdl.handle.net/2027/ucm.5329106692>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126640468/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <file:///usr/local/tomcat/webapps/68f352d6-1044-4929-89f3-2c0fc8219a2c> .
+
+<http://books.google.com/books/ucm?vid=UCM5329106692&printsec=frontcover>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "58246"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5329106692>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "184969"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "917"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200110/BibliographicResource_1000126640468>
+	a                   ore:Proxy ;
+	dc:contributor      "Albrecht von Haller", "J. Wandelaar", "Jacob de Wetstein", "Real Colegio de Cirugía de San Carlos (Madrid),", "Frans van Mieris" ;
+	dc:creator          "Hermann Boerhaave" ;
+	dc:description      "Illustrations: Illustrations"@en, "ab Alberto ab Haller ... ; tomus primus" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "68f352d6-1044-4929-89f3-2c0fc8219a2c" ;
+	dc:language         "la" ;
+	dc:publisher        "sumptibus Jacobi a Wetstein" ;
+	dc:rights           "The digital images and OCR of this work were produced by Google, Inc. (indicated by a watermark on each page in the digital object). Google requests that the images and OCR not be re-hosted, redistributed or used commercially. More information at source library: http://biblioteca.ucm.es/proyectogoogle"@en ;
+	dc:subject          "Medicine, Early works to 1800.", "Medicina, Obras anteriores a 1800." ;
+	dc:title            "Hermanni Boerhaave ... Methodus studii medici, emaculata, & accessionibus locupletata" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "4º", "[16], 1-572, [1] h. de grab., [3] h. de grab. pleg. ;" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1010> ;
+	dcterms:issued      "1751" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/ne>, "Amstelaedami" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126640468> .
+
+<http://data.europeana.eu/agent/171327>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://www.wikidata.org/entity/Q123225>, <http://data.bibliotheken.nl/id/thes/p068351372>, <http://openlibrary.org/works/OL347509A>, <http://id.loc.gov/authorities/names/n50018444>, <https://www.freebase.com/m/01_l3g>, <http://dbpedia.org/resource/Albrecht_von_Haller>, <http://datos.bne.es/resource/XX880040>, <https://libris.kb.se/1zcfhj1k127rqxq>, <http://viaf.org/viaf/49234879>, <http://id.worldcat.org/fast/5872>, <http://www.idref.fr/028090462/id>, <http://data.bnf.fr/ark:/12148/cb11999468m>, <http://id.ndl.go.jp/auth/ndlna/00745346>, <https://g.co/kg/m/01_l3g>, <http://d-nb.info/gnd/118545140>, <http://openlibrary.org/works/OL6188261A>, <http://nlg.okfn.gr/resource/authority/record139555>, <https://livedata.bibsys.no/authority/90267280>, <http://libris.kb.se/resource/auth/242537> ;
+	rdaGr2:dateOfBirth             "1708-10-16" ;
+	rdaGr2:dateOfDeath             "1777-12-12" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/213876> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/213876> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2949>, <http://data.europeana.eu/concept/137>, <http://data.europeana.eu/concept/2954>, <http://data.europeana.eu/concept/162>, <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Авбрехт фон Халер"@bg, "Albert de Haller"@fr, "Albert de Haller"@cs, "Галлер, Альбрехт"@ru, "Albert de Haller"@en, "Альбрехт Галлер"@ru, "Viktor Albrecht Haller"@de, "Albert von Haller"@en, "Haller, Albrecht von"@sv, "Albrecht Haller"@en, "Халер"@bg, "Albertus von Haller"@de, "Albertus von Haller"@en, "Von Haller"@es, "Victor Albrecht von Haller"@es, "Haller"@es, "Haller"@fr, "Haller"@it, "Haller"@en, "Haller"@de, "Haller"@sv, "Haller"@ru, "Haller"@bg, "Albrecht Viktor Haller"@de ;
+	skos:note                      "Medico e poeta svizzero"@it, "Médico e escritor suíço"@pt, "Swiss anatomist, physiologist, naturalist and poet (1708-1777)"@en, "Schweizare läkare och författare"@sv, "Médico, escritor y botánico suizo"@es, "Escriptor i metge suís"@ca, "Medic elvețian și scriitor"@ro, "Schweizer Mediziner und Dichter"@de, "Svájci orvos és író"@hu, "Écrivain et médecin suisse"@fr, "Szwajcar lekarz i pisarz"@pl, "Zwitser arts en schrijver (1708-1777)"@nl, "Sveitsiläinen lääkäri ja kirjailija"@fi, "Шведский анатом, физиолог, естествоиспытатель и поэт"@ru, "Schweizisk doktor og forfatter"@da, "Švýcarský anatom, fyziolog, botanik a básník"@cs ;
+	skos:prefLabel                 "Албрехт фон Халер"@bg, "Άλμπρεχτ φον Χάλερ"@el, "Albrecht von Haller"@fi, "Albrecht von Haller"@pt, "Albrecht von Haller"@en, "Albrecht von Haller"@hr, "Albrecht von Haller"@de, "Albrecht von Haller"@sv, "Albrecht von Haller"@it, "Albrecht von Haller"@fr, "Albrecht von Haller"@hu, "Albrecht von Haller"@es, "Albrecht von Haller"@cs, "Albrecht von Haller"@sl, "Albrecht von Haller"@ga, "Albrecht von Haller"@pl, "Albrecht von Haller"@da, "Albrecht von Haller"@ro, "Albrecht von Haller"@nl, "Albrecht von Haller"@ca, "Альбрехт фон Галлер"@ru .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200110/BibliographicResource_1000126640468>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/171327> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1751" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126640468> .
+
+<http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126640468>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-01T10:07:11.617Z" ;
+	dcterms:modified          "2015-02-25T16:26:37.363Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468#metadataTier>, <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468> ;
+	edm:completeness          "7" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "9200110_Ag_EU_TEL_a1010_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200110/BibliographicResource_1000126640468> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3Ducm.5329106692&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:47:47.192Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126640468> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126640468#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:47:47.192Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126640468> .
+
+<https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126640468/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000021995423>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universidad Complutense de Madrid"@es, "Complutense University of Madrid"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

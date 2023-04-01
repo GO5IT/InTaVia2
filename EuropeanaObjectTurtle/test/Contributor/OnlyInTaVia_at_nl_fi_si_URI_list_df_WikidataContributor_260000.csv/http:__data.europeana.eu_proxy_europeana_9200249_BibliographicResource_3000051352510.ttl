@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352510>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517529> ;
+	edm:isShownAt      <http://imagebase.ubvu.vu.nl/getobj.php?ppn=322476593> ;
+	edm:object         <http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=prt/1529> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:33.847Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352510> .
+
+<http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=prt/1529>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "42367"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "599"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "407"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510>
+	a  edm:ProvidedCHO .
+
+<http://imagebase.ubvu.vu.nl/getobj.php?ppn=322476593>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/organization/1482250000004517529>
+	a               foaf:Organization ;
+	skos:prefLabel  "VU University Amsterdam Library"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200249/BibliographicResource_3000051352510>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-02T13:31:28.614Z" ;
+	dcterms:modified          "2016-02-12T08:40:32.402Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510#contentTier>, <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200249_Ag_EU_TEL_a1155_Amsterdam_UV_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200249/BibliographicResource_3000051352510> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimagebase.ubvu.vu.nl%2Fvu%2FgetThumb.php%3Fid%3Dprt%2F1529&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200249/BibliographicResource_3000051352510>
+	a                   ore:Proxy ;
+	dc:contributor      "Heinsius, Daniel (auteur gedicht)", "Delff, Willem Jacobsz (Graveur);; Mierevelt, Michiel Janszoon (Illustrator)" ;
+	dc:description      "Aet. 27;; Met 6 regelig Latĳns vers van Daniel Heinsius;; Ill.techn.: kopergravure", "Jaar: 2009;; Opdrachtgever: Universiteitsbibliotheek Vrĳe Universiteit, Amsterdam;; Uitvoering: Karmac Microfilm Systems, Lelystad;; Locatie origineel: NL, Universiteitsbibliotheek Vrĳe Universiteit, PORTRET 1 HUY 001;; Fysieke gegevens: tiff-bestand;; Gedigitaliseerd: september 2009" ;
+	dc:format           "gedigitaliseerd portret ; 23x15 cm" ;
+	dc:identifier       "http://imagebase.ubvu.vu.nl/getobj.php?ppn=322476593" ;
+	dc:language         "la" ;
+	dc:publisher        "S.l. : s.n." ;
+	dc:subject          "Huygens, Constantijn" ;
+	dc:title            "Constantĳn Huygens (1596-1687)" ;
+	dc:type             "Afbeelding" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1155>, "Beeldbank portretten" ;
+	dcterms:issued      "1625" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352510> .
+
+<http://data.europeana.eu/proxy/europeana/9200249/BibliographicResource_3000051352510>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1625" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200249/BibliographicResource_3000051352510> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352510#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:33.846Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352510> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

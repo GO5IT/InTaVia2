@@ -1,0 +1,155 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126601725/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:46:50.848Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126601725> .
+
+<http://books.google.com/books/ucm?vid=UCM5326756383&printsec=frontcover>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "40575"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:46:50.848Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126601725> .
+
+<http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126601725>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000021995423> ;
+	edm:hasView        <http://hdl.handle.net/2027/ucm.5326756383> ;
+	edm:isShownAt      <http://books.google.com/books/ucm?vid=UCM5326756383&printsec=frontcover> ;
+	edm:object         <http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5326756383> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://hdl.handle.net/2027/ucm.5326756383>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126601725/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126601725>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-01T10:01:07.936Z" ;
+	dcterms:modified          "2015-02-25T16:20:45.666Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725#contentTier>, <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "9200110_Ag_EU_TEL_a1010_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200110/BibliographicResource_1000126601725> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3Ducm.5326756383&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <file:///usr/local/tomcat/webapps/f00bfd12-a8ba-4b82-8757-8788cf0e2562> .
+
+<http://data.europeana.eu/proxy/europeana/9200110/BibliographicResource_1000126601725>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/42455> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1557" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126601725> .
+
+<http://data.europeana.eu/agent/42455>
+	a                    edm:Agent ;
+	owl:sameAs           <urn:uuid:44198a4f-cc78-4e3a-82af-e99884100bf8>, <http://openlibrary.org/works/OL2527966A>, <http://www.idref.fr/030431263/id>, <http://id.worldcat.org/fast/196947>, <http://www.wikidata.org/entity/Q1866375>, <http://data.bnf.fr/ark:/12148/cb12184675s>, <http://d-nb.info/gnd/123414253>, <http://datos.bne.es/resource/XX1414041>, <http://nlg.okfn.gr/resource/authority/record141324>, <http://vocab.getty.edu/ulan/500009741>, <https://www.freebase.com/m/0gwzgkf>, <http://viaf.org/viaf/46804951>, <http://dbpedia.org/resource/Hubert_Goltzius>, <http://data.bibliotheken.nl/id/thes/p067797954>, <http://ta.sandrart.net/-person-1096>, <https://g.co/kg/m/0gwzgkf>, <http://id.loc.gov/authorities/names/n86074427>, <https://livedata.bibsys.no/authority/2080849> ;
+	rdaGr2:dateOfBirth   "1526-11-09" ;
+	rdaGr2:dateOfDeath   "1583-03-24" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40255> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203160> ;
+	skos:altLabel        "Hubert Gholtz"@fr, "Hubrecht Goltz Goltzius"@en, "Christian Neuter"@cs, "Hubrecht Goltz"@fr, "Hubrecht Goltz"@de, "Hubrecht Goltz"@en, "Golzius"@en, "Huberto Goltzio"@cs, "Hubert Goltzius"@nl, "Hubertus Goltzius"@fr, "Hubert Goltz"@en, "Hubertus Goltzius"@en, "Hubertus Goltz"@cs, "Hubertus Golzius"@en, "Hubrecht Goltzius der Jüngere"@de, "Hubert Goltz"@cs, "Hubert Goltius"@en, "Hubertus Gholtz von Wirtzburg"@cs, "Hubert Golfs"@fr, "Goltzius"@en, "Hubert Golzius"@en, "Huberto Goltz"@fr ;
+	skos:note            "Schrijver uit Zuidelijke Nederlanden (1526-1583)"@nl, "Nizozemský malíř, rytec, vydavatel"@cs, "Painter from the Southern Netherlands (1526-1583)"@en, "Pittore, numismatico e antiquario fiammingo"@it, "Peintre et graveur néerlandais"@fr, "Niederländischer Humanist, Numismatiker, Drucker, Kupferstecher und Maler"@de ;
+	skos:prefLabel       "Hubertus Goltzius"@pt, "Hubertus Goltzius"@nl, "Гольциус, Хубрехт"@ru, "Hubert Goltzius"@de, "Hubert Goltzius"@sv, "Hubert Goltzius"@fi, "Hubert Goltzius"@mt, "Hubert Goltzius"@lt, "Hubert Goltzius"@en, "Hubert Goltzius"@lv, "Hubert Goltzius"@hr, "Hubert Goltzius"@fr, "Hubert Goltzius"@hu, "Hubert Goltzius"@es, "Hubert Goltzius"@et, "Hubert Goltzius"@cs, "Hubert Goltzius"@sk, "Hubert Goltzius"@sl, "Hubert Goltzius"@ga, "Hubert Goltzius"@pl, "Hubert Goltzius"@ro, "Hubert Goltzius"@da, "Hubert Goltzius"@ca, "Hubert Goltz"@it .
+
+<http://data.europeana.eu/proxy/provider/9200110/BibliographicResource_1000126601725>
+	a                   ore:Proxy ;
+	dc:contributor      "Colegio Imperial (Jesuitas),", "Gillis Coppens van Diest" ;
+	dc:creator          "Hubert Goltzius" ;
+	dc:description      "per Hubertum Goltz...", "CCBE. S. XVI,. G, 1142." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "f00bfd12-a8ba-4b82-8757-8788cf0e2562" ;
+	dc:language         "la" ;
+	dc:publisher        "in officina Aegidij Copenij Diesthenij" ;
+	dc:rights           "The digital images and OCR of this work were produced by Google, Inc. (indicated by a watermark on each page in the digital object). Google requests that the images and OCR not be re-hosted, redistributed or used commercially. More information at source library: http://biblioteca.ucm.es/proyectogoogle"@en ;
+	dc:subject          "Monedas, Obras anteriores a 1800." ;
+	dc:title            "Viuae omnium fere Imperatorum imagines, C. Iulio Caes. vsque ad Carolum V. et Ferdinandum eius fratrem ex antiquis veterum numismatis ... fideliter adumbratae, necnon eorundem vitae ... delineatae .." ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "176 h. :", "Fol.", "il. ;" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1010> ;
+	dcterms:issued      "1557" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/be>, "Antuerp." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126601725> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126601725> .
+
+<http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5326756383>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "273319"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1971"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000021995423>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universidad Complutense de Madrid"@es, "Complutense University of Madrid"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

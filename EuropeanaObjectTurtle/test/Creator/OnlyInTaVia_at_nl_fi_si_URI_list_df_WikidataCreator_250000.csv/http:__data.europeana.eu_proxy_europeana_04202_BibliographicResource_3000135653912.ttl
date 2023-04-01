@@ -1,0 +1,165 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135653912#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:43.819Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135653912> .
+
+<http://lib.ugent.be/europeana/900000146169>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135653912/manifest> ;
+	ebucore:fileByteSize    "14699"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135653912>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/145470> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1839" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135653912> .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135653912/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135653912>
+	a                   ore:Proxy ;
+	dc:contributor      "Charles Guenoux" ;
+	dc:creator          "Friedrich Carl von Savigny" ;
+	dc:description      "traduite de l'allemand sur la dernière édition, et prédédée d'une notice sur l'auteur, par M. Charles Guenoux." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000209093" ;
+	dc:language         "fr" ;
+	dc:publisher        "Charles Hingray" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "Histoire du droit romain au moyen-age" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "4 v. in 3 bdn. ; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1839" ;
+	dcterms:spatial     <http://sws.geonames.org/2988507/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135653912> .
+
+<http://data.europeana.eu/agent/145470>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p068384807>, <https://libris.kb.se/wt7bfs2f3r93m7c>, <http://d-nb.info/gnd/118605909>, <http://dbpedia.org/resource/Friedrich_Carl_von_Savigny>, <http://id.ndl.go.jp/auth/ndlna/00455384>, <http://id.worldcat.org/fast/40291>, <http://viaf.org/viaf/76377829>, <http://data.cervantesvirtual.com/person/2415>, <http://libris.kb.se/resource/auth/280483>, <https://g.co/kg/m/018rff>, <http://id.loc.gov/authorities/names/n79086356>, <http://nlg.okfn.gr/resource/authority/record234875>, <https://www.freebase.com/m/018rff>, <https://livedata.bibsys.no/authority/90500642>, <http://www.wikidata.org/entity/Q76892>, <http://datos.bne.es/resource/XX1113903>, <http://openlibrary.org/works/OL129330A>, <http://www.idref.fr/031601375/id>, <http://data.bnf.fr/ark:/12148/cb12278447x> ;
+	rdaGr2:dateOfBirth   "1779-02-21" ;
+	rdaGr2:dateOfDeath   "1861-10-25" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/2139> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Karl von Savigny"@cs, "Karl von Savigny"@en, "Frīdrihs Karls fon Savinjī"@lv, "Savigny"@lt, "Savigny"@lv, "Fryderyk Karol von Savigny"@pl, "Friedrich Karl von Savigny"@nl, "Friedrich Karl von Savigny"@da, "Friedrich Karl von Savigny"@pl, "Friedrich Karl von Savigny"@cs, "Friedrich Karl von Savigny"@de, "Friedrich Karl von Savigny"@sv, "Friedrich Karl von Savigny"@en, "Friedrich Karl von Savigny"@it, "Savinjī"@lv, "Savigny, Friedrich Karl von"@sv, "Karl Friedrich Savigny"@en, "Savinji"@lt, "Карл Савини"@bg, "Friedrich Carl von Savigny"@es, "Friedrich Carl von Savigny"@lv, "Carl von Savigny"@cs, "Friedrich karl von savigny"@pt, "Von Savigny"@nl, "Von Savigny"@cs, "Von Savigny"@sv, "F. C. von Savigny"@sv, "Савиньи, Фридрих Карл фон"@ru ;
+	skos:note            "Jurista alemany"@ca, "Niemiecki prawnik"@pl, "Немецкий правовед и историк права"@ru, "Juriste allemand"@fr, "Dlí-eolaí Gearmánach"@ga, "Saksamaa jurist"@et, "Jurist, preußischer Rechtsgelehrter und Rechtshistoriker"@de, "Duits jurist (1779-1861)"@nl, "German jurist (1779-1861)"@en, "Německý právník"@cs, "Jurista alemán"@es, "Jurist german"@ro, "Giurista, filosofo e politico tedesco"@it ;
+	skos:prefLabel       "Frīdrihs Kārlis fon Savinjī"@lv, "Friedrich Karl von Savigny"@es, "Friedrich Karl von Savigny"@ca, "Фридрих Карл фон Савиньи"@ru, "Фридрих Карл фон Савини"@bg, "Friedrich Carl von Savigny"@en, "Friedrich Carl von Savigny"@de, "Friedrich Carl von Savigny"@fi, "Friedrich Carl von Savigny"@sv, "Friedrich Carl von Savigny"@pt, "Friedrich Carl von Savigny"@mt, "Friedrich Carl von Savigny"@lt, "Friedrich Carl von Savigny"@it, "Friedrich Carl von Savigny"@fr, "Friedrich Carl von Savigny"@hu, "Friedrich Carl von Savigny"@cs, "Friedrich Carl von Savigny"@sl, "Friedrich Carl von Savigny"@pl, "Friedrich Carl von Savigny"@ro, "Friedrich Carl von Savigny"@da, "Friedrich Carl von Savigny"@nl .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135653912>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T05:24:45.789Z" ;
+	dcterms:modified          "2015-12-04T13:37:47.681Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912> ;
+	edm:completeness          "8" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135653912> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000146168&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135653912>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://lib.ugent.be/europeana/900000146170>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135653912/manifest> ;
+	ebucore:fileByteSize    "14699"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135653912#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:25:43.819Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135653912> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000146168>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4098"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "210"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135653912>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135653912> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000146170>, <http://lib.ugent.be/europeana/900000146169> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000146168> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000146168> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://sws.geonames.org/2988507/>
+	a               edm:Place ;
+	skos:prefLabel  "Paris (Herstellung)" .
+
+<http://lib.ugent.be/europeana/900000146168>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14699"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

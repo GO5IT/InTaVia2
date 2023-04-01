@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_099860430>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:08:35.885Z" ;
+	dcterms:modified          "2018-04-05T17:25:17.597Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_099860430> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A099860430%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:099860430>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50990"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_099860430>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/123202> ;
+	dc:creator          <http://data.europeana.eu/agent/123202> ;
+	dc:subject          <http://data.europeana.eu/concept/1891> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1670" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_099860430> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/1891>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/862139>, <https://www.freebase.com/m/021yby>, <http://babelnet.org/rdf/s00019329n>, <http://g.co/kg/g/113qbc1zb>, <http://www.yso.fi/onto/yso/p21466>, <https://schema.org/CityHall>, <https://g.co/kg/m/021yby>, <http://iconclass.org/44B233>, <http://id.loc.gov/authorities/names/sh85026266>, <http://www.wikidata.org/entity/Q25550691>, <http://vocab.getty.edu/aat/300122210> ;
+	skos:note        "Bâtiment servant de siège à un gouvernement local"@fr, "Budynek użyteczności publicznej, zwykle tradycyjna siedziba samorządowych władz miejskich"@pl, "Administrationsbygning for byen, kommunen eller en anden form for kommune"@da, "Sitz der Kommunalverwaltung"@de, "Chief administrative building of a municipality"@en, "Το κύριο διοικητικό κτίριο ενός δήμου"@el, "Települések központi kormányzati épülete a világ bármely pontján"@hu, "Здание городского управления"@ru, "Veřejná budova obce nebo města, obvykle správní sídlo"@cs, "Sede administrativa principal de un gobierno local (genérico)"@es, "Verejná budova obce alebo mesta, zvyčajne správne sídlo"@sk, "Edificio sede dell'amministrazione locale"@it, "Administrativ huvudbyggnad i en kommun"@sv, "Edifício sede de um município"@pt ;
+	skos:prefLabel   "Hôtel de ville"@fr, "Városháza"@hu, "Kunnantalo"@fi, "Gemeindehaus"@de, "Kommunhus"@sv, "Udaletxe"@eu, "Seu del govern local"@ca, "Mestna hiša"@sl, "Δημαρχείο"@el, "Rådhus"@da, "Primărie"@ro, "Gemeentehuis"@nl, "Halla baile"@ga, "Obecný dom"@sk, "Pilsētas dome"@lv, "Town hall"@en, "Ratusz"@pl, "Casa consistorial"@es, "Vallamaja"@et, "Дом общины"@ru, "Câmara municipal"@pt, "Obecní dům"@cs, "Palazzo comunale"@it .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:04.140Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099860430> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_099860430>
+	a                   ore:Proxy ;
+	dc:contributor      "Lambert Doomer" ;
+	dc:creator          "Lambert Doomer" ;
+	dc:description      "Litt. : W. F. H. Oldewelt: Amsterdams oudste raadhuis, in: Jaarboek Amstelodamum 28 (1931) p. 23; R. E. Kistemaker: Het middeleeuwse stadhuis, in: Ons Amsterdam 40, nr.9 (1988), p. 200", "Vindplaats: Amsterdam, Gemeentearchief" ;
+	dc:format           "tekening (pen en bruine inkt, bruin en grijs gewassen)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099860430" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[099860430], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "schandpaal"@nl, "Amsterdam"@nl, "gemeentehuis"@nl ;
+	dc:title            "Kaak aan het oude stadhuis van Amsterdam" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1670" ;
+	dcterms:extent      "23 × 31 cm" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099860430> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:04.141Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099860430> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_099860430>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_099860430> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:099860430> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099860430&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/123202>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/agent/82853> ;
+	owl:sameAs                     <http://www.idref.fr/144318296/id>, <http://data.bibliotheken.nl/id/thes/p070442967>, <http://id.worldcat.org/fast/1816196>, <http://vocab.getty.edu/ulan/500031031>, <http://dbpedia.org/resource/Lambert_Doomer>, <http://d-nb.info/gnd/118680374>, <http://www.wikidata.org/entity/Q527919>, <https://g.co/kg/m/0cny9wm>, <http://data.bnf.fr/ark:/12148/cb14973031q>, <http://id.loc.gov/authorities/names/nr2002035970>, <http://viaf.org/viaf/95872901>, <https://www.freebase.com/m/0cny9wm> ;
+	rdaGr2:dateOfBirth             "1624-02-11" ;
+	rdaGr2:dateOfDeath             "1700-07-02" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Lambert Harmensz. Doomer"@en, "Lambert Harmensz. Doomer"@nl, "Harmensz. Doomer"@en, "Ламберт Домер"@ru, "Lambert-C. Doomer"@en, "Lambert-C. Doomer"@nl, "Dommer"@en, "Doumer"@en, "L. Domer"@en, "Doomer"@en, "Domer"@en ;
+	skos:note                      "Niederländischer Maler"@de, "Peintre et graveur néerlandais"@fr, "Nederlands kunstschilder"@nl, "Painter from the Northern Netherlands (1624-1700)"@en ;
+	skos:prefLabel                 "Lambert Doomer"@cs, "Lambert Doomer"@de, "Lambert Doomer"@sv, "Lambert Doomer"@pt, "Lambert Doomer"@en, "Lambert Doomer"@it, "Lambert Doomer"@fr, "Lambert Doomer"@es, "Lambert Doomer"@sk, "Lambert Doomer"@sl, "Lambert Doomer"@pl, "Lambert Doomer"@da, "Lambert Doomer"@ca, "Lambert Doomer"@nl, "Домер, Ламберт"@ru .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:099860430&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5518"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "121"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

@@ -1,0 +1,138 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053687>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000006320>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:hasView        <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053697>, <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053692> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053687> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1053687> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1053687>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "28383"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "285"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053697>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200134/BibliographicResource_2000000006320/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000006320>
+	a                   ore:Proxy ;
+	dc:contributor      "Marius Ambrosius Capello", "Abraham van Diepenbeeck" ;
+	dc:date             "16--?", "s.d." ;
+	dc:identifier       "008251891" ;
+	dc:language         "la" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "D. Marius Ambrosius Capellus" ;
+	dc:type             "Monograph"@en, "Still image"@en ;
+	dcterms:extent      "voorstelling: 149 x 119 mm", "Black-and-white ;", "voorstelling met opschrift: 171 x 119 mm", "plaatrand: 172 x 121 mm." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000006320> .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053692>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200134/BibliographicResource_2000000006320/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:36.174Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000006320> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:36.173Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000006320> .
+
+<http://data.europeana.eu/agent/153278>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/113189> ;
+	owl:sameAs                     <https://g.co/kg/m/059dgv>, <http://ta.sandrart.net/-person-2806>, <http://www.idref.fr/147107504/id>, <http://data.bnf.fr/ark:/12148/cb14802084f>, <http://vocab.getty.edu/ulan/500024425>, <http://id.loc.gov/authorities/names/n82059515>, <https://www.freebase.com/m/059dgv>, <http://viaf.org/viaf/24866132>, <http://d-nb.info/gnd/12214516X>, <http://www.wikidata.org/entity/Q330854>, <http://id.worldcat.org/fast/91495>, <http://dbpedia.org/resource/Abraham_van_Diepenbeeck>, <http://datos.bne.es/resource/XX907310> ;
+	rdaGr2:dateOfBirth             "1596-05-09" ;
+	rdaGr2:dateOfDeath             "1675-09-01" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40358> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/203279> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Diepenback"@en, "Abraham van diepenbeeke"@en, "Dicpinbekc"@en, "Abraham Jansz. van Diepenbach"@en, "Piepenbeck"@en, "Diepembek"@en, "Abraham Dieppenbeck"@en, "Diepenbéke"@en, "Abraham Jansz. van Dussenbeck"@en, "Dietenbeck"@en, "Abr. Diebenbeck"@en, "Abramo van Diepenbecck"@nl, "Abraham van Diepenbeeck"@da, "Abraham Jansz. van Diepenbecke"@en, "Abramo van Diepenbecck"@en, "Abraham Jansz. van Dehenbach"@en, "Abraham Van Diepenbeeck"@cs, "Dehenbach"@en, "Abraham Van Diepenbeeck"@en, "Abr. Diepenbeek"@en, "Diepembech"@en, "Abraham Van Diepembeke"@en, "Abrah. v. Diepenbek"@en, "Depenbeke"@en, "Abr. Diöbenbeck"@en, "Abraham Van Diepenbeek"@en, "Diepinbiek"@en, "Abraham van Diepenbeek"@nl, "Abraham van Diepenbeek"@fr, "Abraham van Diepenbeek"@sv, "Abraham van Diepenbeek"@en, "Abraham Jansz. Van Diepenbeeck"@en, "Abraham van Diepenbeke"@cs, "Abraham van Diepenbeke"@en, "Абрахам ван Дипенбек"@ru, "Abraham v. Diepenboeck"@en, "Abraham Jansz. van Depenbeke"@en, "A. Diepembek"@en, "Van Diepenbeek"@en, "Abraham Jansz. van Dipembeck"@en, "Depenbech"@en, "A. van diepenbeeck"@en, "A. Diepenbeck"@en, "Abraham Jansz. van Diepenback"@en, "Abraham Jansz. van Diepeubeck"@en, "Abraham Jansz. van Dippenbeck"@en, "A. Van Diebenbeek"@en, "Diefenbeck"@en, "Diepenbeék"@en, "Diépernbeke"@en, "Abraham diepenbeeck"@en, "A. Diepenbeeck"@en, "Abaham Diepenbeck"@en, "Abraham Jansz. van Diepinbiek"@en, "Abraham à Diepenbeke"@en, "Ab. Diepenbeck"@en, "Abraham von Diepenbeck"@cs, "Abraham von Diepenbeck"@en, "Abrah. v. diepenbeeck"@en, "Abraham Jansz. van Depenbech"@en, "Dipenbeek"@en, "Abrah. Van Diepenbeeck"@en, "Diepinbeek"@en, "Dipembeck"@en, "A. Van Diepenbeke"@en, "Abraham Jansz. van Diepenbeke"@en, "Diepenbek"@en, "Abraham Diepenbeèk"@en, "Diebenböck"@en, "Diepenbecke"@en, "Abraham Diepenpeck"@en, "Scolare del Vandich Diepenbech"@en, "Diepenbeek, Abraham van"@sv, "Abr. van Diepenbeek"@en, "Abraham Diepenbek"@en, "Abraham van Diepenbecke"@nl, "Abraham van Diepenbecke"@en, "A. Dipenbeck"@en, "Abr. Diepenbeck"@en, "Dieppenbeck"@en, "Дипенбек, Абрахам ван"@ru, "Abraham Jansz van Diepenbeeck"@en, "Abraham van Diepenbek"@en, "Dieppenbek"@en, "Diepenbeke"@en, "Abraham Van Diapenbeck"@en, "Diepinbeck"@en, "Abraham van Diependael"@cs, "Dieppenbeek"@en, "Abraham Jansz. van Dieppenbeck"@en, "A. van Diepenbeek"@en, "Diepeubeck"@en, "Abraham Jansz. van Diepenbeek"@en, "Abraham van Diepenbeck"@fr, "Abraham van Diepenbeck"@en, "Abraham Jansz. van Depenbeck"@en, "Dibenbeck"@en, "Deepenbech"@en, "Abraham Jansz. van Deepenbech"@en, "Abramo van Diepenbeke"@nl, "Piepenbeek"@en, "Abramo van Diepenbeke"@en, "A. Diepenpeck"@en, "Abraham van Diepembeck"@en, "Abraham Jansz. van Diepenbek"@en, "Абрахам Ван Дипенбек"@ru, "Dippenbeck"@en, "Abraham Van Diepenbéke"@en, "Abraham v. diepenbeeck"@en, "Diepembeck"@en, "Abraham van Diepenboeck"@en, "Diespinbek"@en, "Diepembec"@en, "Dussenbeck"@en, "Diepenbroek"@en, "Diepenbach"@en, "Dipenbeck"@en, "Diepenbeck"@en, "Diepenbeeck"@de, "Diepenbeeck"@en, "Abraham Vandiepenbeeck"@en, "Die-Pin-Bec"@en, "Dupenback"@en, "Diebenbeck"@en, "A. v. diepenbeeck"@en, "Abraham Diepenbeck"@en, "Dicpenbeeck"@en, "Diépenbeck"@en, "Diepenbeek"@en, "Abrahamus a Dipenbeke"@cs, "Abraham van Dieppenbeck"@en, "Abraham Dieppenbaeck"@en, "Depenbeck"@en, "Abram van Diependael"@sv, "A. Dieppenbaeck"@en, "Deepenbeck"@en, "A. Diepenbeek"@en, "Dicpenbeck"@en, "Abraham Jansz. van Dupenbeck"@en, "A. Diepenbeke"@en, "Abraham Jansz. van Diepenbeeck"@nl, "Abraham Diepenbeeke"@en, "Abraham Jansz. van Diepenbeeck"@en, "Abraham Diepenbeeke"@de, "Abraham Diepenbeke"@en, "Diépembeck"@en, "Abraham Jansz. van Dupenback"@en, "Dupenbeck"@en, "Ab. Diepenbeek"@en, "Abraham von Diepenbeek"@sv, "Van Diepenbeeck"@es, "Van Diepenbeeck"@en, "Abraham Jansz. van Diepenbeck"@en, "Dippenback"@en, "Abraham Van Diépenbeck"@en, "Diepenbech"@en, "Diepembeke"@en ;
+	skos:note                      "Peintre néerlandais"@fr, "Péintéir"@ga, "Painter (1596-1675)"@en, "Pintor i il·lustrador flamenc"@ca, "Pittore"@it, "Flamandzki malarz"@pl, "Фламандский художник и график"@ru, "Niederländischer Maler"@de, "Ολλανδός ζωγράφος, σχεδιαστής και χαράκτης"@el, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel                 "Abraham Jansz. van Diepenbeeck"@da, "Abraham Jansz. van Diepenbeeck"@sk, "Abraham Jansz. van Diepenbeeck"@cs, "Abraham van Diepenbeke"@hu, "Abraham van Diepenbeeck"@ga, "Abraham van Diepenbeeck"@sl, "Abraham van Diepenbeeck"@es, "Abraham van Diepenbeeck"@it, "Abraham van Diepenbeeck"@en, "Abraham van Diepenbeeck"@pt, "Abraham van Diepenbeeck"@sv, "Abraham van Diepenbeeck"@fi, "Abraham van Diepenbeeck"@de, "Abraham van Diepenbeeck"@fr, "Abraham van Diepenbeeck"@nl, "Abraham van Diepenbeeck"@ca, "Abraham van Diepenbeeck"@ro, "Abraham van Diepenbeeck"@pl, "Ван Дипенбек, Абрахам"@ru, "Άμπραχαμ φαν Ντιέπενμπεϊκ"@el .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000006320>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/153278> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000006320> .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000006320>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T12:36:07.628Z" ;
+	dcterms:modified          "2014-05-27T12:36:07.628Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320#contentTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000006320> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000006320> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1053687&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/9200134/BibliographicResource_2000000006320/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

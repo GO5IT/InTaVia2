@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624>
+	a  edm:ProvidedCHO .
+
+<http://www.geheugenvannederland.nl/?/en/items/KONB16:534306624>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "43017"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:59.599Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534306624> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_534306624>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:03:59.986Z" ;
+	dcterms:modified          "2018-04-05T17:06:05.896Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_KONB16_534306624> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AKONB16%3A534306624%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:59.599Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534306624> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534306624&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "27470"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "187"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534306624>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/KONB16:534306624> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534306624&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_KONB16_534306624>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_KONB16_534306624> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_KONB16_534306624>
+	a                   ore:Proxy ;
+	dc:contributor      "Lelie, Adriaan de", "s.n." ;
+	dc:creator          "Lelie, Adriaan de" ;
+	dc:description      "1 gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:KONB16:534306624" ;
+	dc:rights           "Koninklijke Bibliotheek", "For more information: Koninklijke Bibliotheek"@en, "Voor meer informatie: Koninklijke Bibliotheek"@nl ;
+	dc:source           "[1056 C 5 [24]. - in kleuren], Plano’s en plakkaten, Koninklijke Bibliotheek" ;
+	dc:title            "[Allegorie bij de dood van Paus Pius VI] / A. de Lel ; J. Kuyper inv. et del. L. Portman sculps"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "ca. 1804" ;
+	dcterms:isPartOf    "Plano’s en plakkaten", "KONB16", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_KONB16_534306624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_KONB16_534306624> .

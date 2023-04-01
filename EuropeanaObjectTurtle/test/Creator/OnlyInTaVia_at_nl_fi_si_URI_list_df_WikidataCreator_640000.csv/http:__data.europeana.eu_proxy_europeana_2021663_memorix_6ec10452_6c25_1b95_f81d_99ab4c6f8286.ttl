@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286>
+	a  edm:ProvidedCHO .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/6ec10452-6c25-1b95-f81d-99ab4c6f8286>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16317"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://images.memorix.nl/ranh/thumb/640x480/0a491e7d-7c1a-8233-9ea5-7c863b4767d5.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286/manifest> ;
+	ebucore:fileByteSize    "87029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "599"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/75> ;
+	dcterms:spatial     <http://data.europeana.eu/place/75> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/6ec10452-6c25-1b95-f81d-99ab4c6f8286> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/0a491e7d-7c1a-8233-9ea5-7c863b4767d5.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/0a491e7d-7c1a-8233-9ea5-7c863b4767d5.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:25:22.822Z" ;
+	dcterms:modified          "2015-03-26T15:25:22.822Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F0a491e7d-7c1a-8233-9ea5-7c863b4767d5.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/place/75>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/agent/174116> ;
+	owl:sameAs        <http://id.ndl.go.jp/auth/ndlna/00560624>, <http://www.yso.fi/onto/yso/p105206>, <https://d-nb.info/gnd/4005406-8>, <http://www.wikidata.org/entity/Q31>, <http://viaf.org/viaf/144248059>, <http://data.bnf.fr/ark:/12148/cb15238382r>, <http://id.worldcat.org/fast/1210278>, <https://www.freebase.com/m/0154j>, <http://id.nlm.nih.gov/mesh/D001530>, <https://libris.kb.se/xv8b9nqg4r1hd2b>, <http://id.loc.gov/authorities/names/n80126041>, <https://g.co/kg/m/0154j>, <http://www.idref.fr/026360608/id>, <http://libris.kb.se/resource/auth/140654>, <http://dbpedia.org/resource/Belgium>, <http://vocabularies.unesco.org/thesaurus/concept893>, <http://babelnet.org/rdf/s00009714n>, <http://vocab.getty.edu/tgn/1000063>, <https://livedata.bibsys.no/authority/90066653>, <http://zbw.eu/stw/descriptor/17201-5>, <https://sws.geonames.org/2802361/>, <http://www.yso.fi/onto/ysa/Y105206>, <http://nlg.okfn.gr/resource/authority/record2020> ;
+	skos:altLabel     "Belgian kuningaskunta"@fi, "Кралство Белгия"@bg, "België"@ca, "België"@da, "België"@en, "Reino de Belgica"@es, "Estat belga"@ca, "Kingdom of Belgium"@en, "Bélgica"@ca, "Reino de Bélgica"@es, "Renju tal-Belġju"@mt, "BEL"@nl, "BEL"@en, "BEL"@de, "Belg."@fr, "Belgenland"@nl, "Królestwo Belgii"@pl, "Regno del Belgio"@it, "Königreich Belgien"@en, "Königreich Belgien"@de, "Regne de Bèlgica"@ca, "Королевство Бельгия"@ru, "Belgické kráľovstvo"@sk, "Belgie"@nl, "Belgien"@en, "Belgique"@da, "Belgique"@en, "Belgique"@ru, "Belgica"@es, "Koninkrijk België"@nl, "Koninkrijk België"@da, "Koninkrijk België"@en, "BE"@nl, "Royaume de Belgique"@da, "BE"@es, "BE"@fr, "Royaume de Belgique"@fr, "BE"@en, "BE"@de, "Royaume de Belgique"@en, "Kraljevina Belgija"@hr, "be"@nl, "Βασίλειο του Βελγίου"@el, "Kongeriget Belgien"@da, "be"@fr, "be"@en ;
+	skos:note         "Государство в Западной Европе"@ru, "País d'Europa"@ca, "Държава в Западна Европа"@bg, "Stát v Evropě"@cs, "Χώρα της δυτικής Ευρώπης"@el, "Stato dell'Europa occidentale, membro dell'Unione europea"@it, "País de Europa occidental"@es, "Država u zapadnoj Europi"@hr, "État d'Europe occidentale"@fr, "Állam Nyugat-Európában"@hu, "Konstitutionell monarki i Västeuropa"@sv, "Pajjiż fl-Ewropa tal-Punent"@mt, "Stat în Europa de Vest"@ro, "Federale staat in West-Europa"@nl, "Štát v Europe"@sk, "Et land i Europa"@da, "Państwo w Europie"@pl, "País da Europa"@pt, "Föderaler Staat in Westeuropa"@de, "Valsts Eiropā"@lv, "Valtio Länsi-Euroopassa"@fi, "Country in western Europe"@en ;
+	skos:prefLabel    "Belgicko"@sk, "Bélgica"@pt, "Bélgica"@es, "Beļģija"@lv, "Bèlgica"@ca, "Belgie"@cs, "Belgium"@hu, "Belgium"@en, "Belgien"@de, "Belgien"@sv, "Belgien"@da, "België"@nl, "Белгия"@bg, "Belgika"@eu, "Belgija"@hr, "Belgia"@fi, "An Bheilg"@ga, "Belgia"@et, "Belgia"@pl, "Belgia"@ro, "Belgija"@lt, "Belgija"@sl, "Belġju"@mt, "Βέλγιο"@el, "Belgio"@it, "Belgique"@fr, "Бельгия"@ru ;
+	wgs84_pos:lat     "50.64111" ;
+	wgs84_pos:long    "4.6680555" .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286>
+	a                   ore:Proxy ;
+	dc:coverage         "België"@nl, "Oosterweel"@nl ;
+	dc:creator          "Hooghe, Romeyn de (1645-1708)"@nl ;
+	dc:date             "1670-00-00/1699-00-00" ;
+	dc:description      "De gevechten voor het dorpje Oosterweel buiten Antwerpen. De calvinisten onder leiding van Jan van Marnix worden verslagen door de troepen van de hertog van Aremberg en\u000A          Philips van Lanoy. In het midden onderaan een cartouche nog zonder de tekst."@nl, "Slag bij Oosterweel, 13 maart 1567. <br> Ets, voor de tekst in het cartouche."@nl ;
+	dc:identifier       "NL-HlmNHA_53009015" ;
+	dc:language         "Dutch" ;
+	dc:title            "NL-HlmNHA_53009015"@nl, "Voorhelm Schneevoogt NL-HlmNHA_53009015"@nl, "Slag bij Oosterweel, 13 maart 1567. <br> Ets, voor de tekst in het cartouche."@nl ;
+	dc:type             "Grafiek Drukwerk"@nl, "Historieprenten, tekeningen en foto's"@nl ;
+	dcterms:spatial     "België", "Oosterweel" ;
+	dcterms:temporal    "1567-03-13" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> .
+
+<http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:36:55.464Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/item/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:36:55.464Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_6ec10452_6c25_1b95_f81d_99ab4c6f8286> .

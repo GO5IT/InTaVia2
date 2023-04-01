@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2023859/04300_04350_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/04300_04350_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:01.666Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/04300_04350_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/04300_04350_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:01.665Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/04300_04350_borito_jpg> .
+
+<http://mek.oszk.hu/04300/04350>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16878"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/04300_04350_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/04300_04350_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:43:57.513Z" ;
+	dcterms:modified          "2015-09-14T11:20:05.958Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg#contentTier>, <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/04300_04350_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F04300%2F04350%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/04300_04350_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/04300_04350_borito_jpg> .
+
+<http://mek.oszk.hu/04300/04350/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/04300_04350_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "3188"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#008B8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#0000CD"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4169E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#008080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/04300_04350_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Vigny, Alfred de (author)"@hu, "Nerval, Gérard de (author)"@hu, "Musset, Alfred de (author)"@hu, "Molnár, Éva (proofreader)"@hu, "Lamartine, Alphonse de (author)"@hu ;
+	dc:description      "Subject date: 19. sz."@hu ;
+	dc:format           "RTF", "HTML", "WORD 6.0", "PDF" ;
+	dc:identifier       "URL http://nbn-resolving.de/?urn:nbn:hu-6637 [Metadata]", "MEK azonosító MEK-04350 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "A Montmorency-i szerelmesek [http://mek.oszk.hu/02400/02476/]"@hu ;
+	dc:source           "CD-n a kiadótól."@hu, "Interpopulart Kiadó"@hu, "National Széchényi Library - Hungarian Electronic Library"@hu ;
+	dc:subject          "francia irodalom"@hu, "Literature, fiction, folktales"@hu, "Culture, Arts, Literature"@hu ;
+	dc:title            "Költői elmélkedések: Antológia"@hu ;
+	dc:type             "poems"@hu, "anthology"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/04300_04350_borito_jpg> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/04300_04350_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/04300_04350_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/04300/04350> ;
+	edm:isShownBy      <http://mek.oszk.hu/04300/04350/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/04300/04350/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .

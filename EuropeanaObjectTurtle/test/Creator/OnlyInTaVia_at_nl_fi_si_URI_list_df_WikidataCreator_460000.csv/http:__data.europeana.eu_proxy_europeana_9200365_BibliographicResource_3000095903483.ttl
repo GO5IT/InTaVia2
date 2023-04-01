@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801672d.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3927"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801672d/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801672d>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:26.169Z" ;
+	dcterms:modified          "2018-03-26T12:26:19.605Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801672d> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801672d.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801672d>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801672d> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801672d.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801672d>
+	a                   ore:Proxy ;
+	dc:creator          "Strauss, Johann (1804-1849). Auteur ou responsable intellectuel", "Strauss, Johann (1825-1899). Auteur ou responsable intellectuel", "Boskovsky, Willi (1909-1991). Direction d'orchestre", "Strauss, Josef (1827-1870). Auteur ou responsable intellectuel", "Ziehrer, Carl Michael (1843-1922). Auteur ou responsable intellectuel", "Wiener Philharmoniker. Orchestre" ;
+	dc:date             "1962" ;
+	dc:description      "Titre uniforme : [Jokey-Polka. Op. 278]", "Titre uniforme : [Kaiser-Walzer. RV 437]", "Titre uniforme : [Fächer-Polonaise. Op. 525]", "Titre uniforme : [Tausend und eine Nacht. RV 346]", "Titre uniforme : [Fledermaus-Quadrille. RV 363]", "Titre uniforme : [Napoleon-Marsch. RV 156]", "Comprend : FEUERFEST POLKA OP. 269 / Joseph STRAUSS - KAISER WALTZ Op. 437 / Johann STRAUSS - JOKEY POLKA Op. 278 / Joseph STRAUSS - WO DIE ZITRONEN BLUHN WALTZ : op. 364 / Johann STRAUSS - NAPOLEON MARCH Op. 156 / Johann STRAUSS - FACHERPOLONAISE / C.M. ZIEHRER - LORELEY-RHEINKLANGE WALTZ Op. 154 / Johann STRAUSS jr. - FLEDERMAUS QUADRILIE Op. 363 / Johann STRAUSS - TAUSEND UND EINE NACHT WALTZ Op. 346 / Johann STRAUSS", "Titre uniforme : [Wo die Zitronen blüh'n. RV 364]", "Titre uniforme : [Loreley-Rhein-Klänge. Op. 154]", "Titre uniforme : [Feuerfest. Op. 269]", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "disc"@eng, "multipart/mixed", "1 disque : 33 t, stéréo ; 30 cm", "disque microsillon"@fre ;
+	dc:identifier       "Numéro commercial : DECCA SXL2288", "http://gallica.bnf.fr/ark:/12148/bpt6k8801672d" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37851423r"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-13464" ;
+	dc:title            "THOUSAND AND ONE NIGHTS / le Vienna Philharmonic Orchestra dir. Willi BOSKOWSKY" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801672d> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801672d>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "232126"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801672d>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1962" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801672d> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:36.007Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801672d> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801672d#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:36.006Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801672d> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

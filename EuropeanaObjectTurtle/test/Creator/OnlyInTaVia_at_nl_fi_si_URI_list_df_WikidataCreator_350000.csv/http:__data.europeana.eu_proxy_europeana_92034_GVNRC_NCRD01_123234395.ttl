@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123234395>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:123234395> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123234395&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123234395>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:11:57.409Z" ;
+	dcterms:modified          "2018-04-05T17:25:48.720Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395> ;
+	edm:completeness          "9" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_123234395> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A123234395%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:22.974Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123234395> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123234395&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6472"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "104"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:123234395>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49043"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/agent/150489>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/161720>, <http://data.europeana.eu/agent/163754>, <http://data.europeana.eu/concept/201>, <http://data.europeana.eu/agent/76823> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p06889015X>, <https://g.co/kg/m/03fzzx>, <http://d-nb.info/gnd/118540610>, <https://www.freebase.com/m/03fzzx>, <http://vocab.getty.edu/ulan/500023327>, <http://id.worldcat.org/fast/11658>, <http://libris.kb.se/resource/auth/210429>, <http://dbpedia.org/resource/Hendrick_Goltzius>, <http://kulturarvsdata.se/LSH/agents/11592>, <http://www.idref.fr/031506682/id>, <https://libris.kb.se/rp35623943pkf6n>, <http://datos.bne.es/resource/XX895006>, <http://ta.sandrart.net/-person-1004>, <http://data.bnf.fr/ark:/12148/cb122708353>, <http://openlibrary.org/works/OL560560A>, <http://viaf.org/viaf/19737376>, <http://id.loc.gov/authorities/names/n50034471>, <http://www.wikidata.org/entity/Q165367>, <http://datos.bne.es/resource/XX1780987> ;
+	rdaGr2:dateOfBirth   "1558-02-01" ;
+	rdaGr2:dateOfDeath   "1617-01-01" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "H. Golzius"@en, "Hendrik Goltzius"@nl, "Goltzious"@en, "Golscius"@en, "Heinrich Goltzius"@en, "Gottius"@en, "Golsio"@en, "Henry Goltzius"@en, "Henricus Goltzius"@en, "Henricus Goltzius"@cs, "Henricus Goltzius"@nl, "Enrico Golsio"@en, "Golcius"@en, "Goltzius"@en, "Hinrich Goltzius"@en, "Golzus"@en, "Gholtius"@en, "Hendrik Golzius"@en, "Goltzeus"@en, "H. Goltzins"@en, "Henricus Goltius"@en, "Golsjus"@en, "H. Golsius"@en, "Golshes"@en, "Golsi"@en, "Hendrik van goltzius"@en, "Henri Goltz"@en, "Хендрик Гольциус"@ru, "Hendrick Goltius"@en, "Hendrick Goltius"@nl, "Hendr. Goltzius"@en, "Heinrich Golzius"@en, "Goltzenis"@en, "Henri Goltzius"@en, "Hendrik Gols"@en, "Hendrik Gols"@nl, "H. Gottzius"@en, "Hendricus Goltzius"@en, "Hendricus Goltzius"@nl, "Golz"@en, "Hinr. Golzius"@en, "Hendrik Goltius"@en, "Hendrik Goltius"@nl, "Hendrik Goltz"@en, "Hendrik Goltz"@fr, "Hendrik Goltz"@nl, "Hinrich Golzius"@en, "Henr. Goltzius"@en, "Hendrick Gousius"@en, "Hendrick Goltzius"@en, "Gattius"@en, "H. Goltzius"@en, "H. Goltzius"@nl, "Hendrick Goltzius"@fr, "Hendrick Golcius"@en, "Henrik Goltzius"@en, "Hendrick Golzious"@en, "Heinrick Goltzius"@en, "Heinrick Goltzius"@cs, "Golzius"@en, "Hendrik Goltsius"@en, "Galtius"@en, "Hinr. Goltzius"@en, "Golsus"@en, "Henry Goltius"@en, "Hendrick Goltz"@en, "Hendrick Goltz"@cs, "Hendrick Goltz"@nl, "Hendrick Gols"@en, "Hendrick Gols"@nl, "Guetius"@en, "H. Gotzius"@en, "Goltzio"@en, "Henr. Goltius"@en, "Henrico Goltzius"@en, "Goltius"@en, "Henry Gottius"@en, "Henri Goltius"@en, "Goltizus"@en, "Hendrik Golsius"@en, "Goltino"@en, "Arrigo Golsio"@en, "Golzious"@en, "Golztius"@en, "Gousius"@en, "Hendrick Golzius"@en, "Hendrick Golzius"@nl, "Goltzino"@en, "Goltzino"@cs, "Heinr. Goltzius"@en, "Henrik Golzius"@en, "Henrik Golzius"@nl, "Goltizius"@en, "H. Goltsius"@en, "Hin. Golzius"@en, "Goulchius"@en, "Goetsiers"@en, "Golzes"@en, "Goltsius"@en, "Hendrick Goltsius"@en, "Hendrick Goltino"@en, "Golzi"@en, "Goltzenes"@en, "Alb. Goltzio"@en, "H. Goltius"@en, "Hendrick Golthius"@en, "The Dutch Proteus"@en, "H. Goldius"@en, "Hendrick van Bracht"@en, "Hendrick van Bracht"@nl, "Gendrik Golʹt︠s︡ius"@en, "Goltzer"@en, "Golsius"@en, "Goltio"@en, "Hendrick Golsius"@en, "Colchis"@en ;
+	skos:note            "Németalföldi festő, grafikus, nyomdász"@hu, "Pittore e incisore olandese"@it, "Niederländischer Maler und Kupferstecher"@de, "Peintre et graveur néerlandais"@fr, "Ολλανδός χαράκτης και ζωγράφος"@el, "Nederlands kunstschilder"@nl, "Painter and engraver from the Northern Netherlands (1558-1617)"@en ;
+	skos:prefLabel       "Hendrik Goltzius"@pl, "Hendrik Goltzius"@cs, "Hendrik Goltzius"@hu, "Hendrik Goltzius"@fr, "Hendrik Goltzius"@en, "Hendrik Goltzius"@pt, "Hendrik Goltzius"@fi, "Hendrick Goltzius"@ca, "Hendrick Goltzius"@nl, "Hendrick Goltzius"@da, "Hendrick Goltzius"@sk, "Hendrick Goltzius"@es, "Hendrick Goltzius"@it, "Hendrick Goltzius"@lt, "Hendrick Goltzius"@sv, "Hendrick Goltzius"@de, "Гольциус, Хендрик"@ru, "Χέντρικ Χόλτσιους"@el .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_123234395>
+	a                   ore:Proxy ;
+	dc:contributor      "Hendrik Goltzius" ;
+	dc:creator          "Hendrik Goltzius" ;
+	dc:description      "Litt. : Kent, en versint eer datje mint. Vrijen en trouwen 1500-1800. O. red. v. P. van Boheemen, e. a. Zwolle 1989", "Vindplaats: Leiden, Prentenkabinet der Rijksuniversiteit" ;
+	dc:format           "gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:123234395" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[123234395], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "huwelijksvoltrekking"@nl ;
+	dc:title            "Het huwelijk uit geldzucht" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "15XX" ;
+	dcterms:extent      "23,4 × 16,2 cm" ;
+	dcterms:isPartOf    "NCRD01", "NCRD", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123234395> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_123234395>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150489> ;
+	dc:creator          <http://data.europeana.eu/agent/150489> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_123234395> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_123234395#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:22.974Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_123234395> .

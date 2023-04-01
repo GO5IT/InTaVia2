@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_029851>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/114> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1891" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_029851> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_029851> .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_029851>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_029851> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=27167> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=27167> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=27167> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_029851>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:58:04.724Z" ;
+	dcterms:modified          "2015-11-03T10:58:04.724Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_029851#metadataTier>, <http://data.europeana.eu/item/2048053/MUO_029851#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_029851> ;
+	edm:completeness          "5" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_029851> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D27167&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://athena.muo.hr/api/?semantic=representation&id=27167>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_029851/manifest> ;
+	ebucore:fileByteSize    "30333"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "386"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2048053/MUO_029851>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2048053/MUO_029851#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:47:57.201Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_029851> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_029851>
+	a                   ore:Proxy ;
+	dc:creator          "Grohar, Ivan" ;
+	dc:date             "1891" ;
+	dc:format           "27 x 19 cm", "image/jpg" ;
+	dc:identifier       "MUO_029851" ;
+	dc:title            "Studija stopala" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Paintings" ;
+	dcterms:medium      "olovka na papiru" ;
+	dcterms:spatial     "Slovenija" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_029851> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_029851> .
+
+<http://data.europeana.eu/place/114>
+	a               edm:Place ;
+	owl:sameAs      <http://dewey.info/class/2--4973/>, <http://id.loc.gov/authorities/names/n81035365>, <http://www.yso.fi/onto/yso/p107594>, <http://vocab.getty.edu/tgn/7006670>, <http://id.ndl.go.jp/auth/ndlna/00577333>, <http://viaf.org/viaf/141826349>, <http://babelnet.org/rdf/s00067230n>, <http://id.nlm.nih.gov/mesh/D017524>, <https://sws.geonames.org/3190538/>, <http://www.yso.fi/onto/ysa/Y107594>, <http://dbpedia.org/resource/Slovenia>, <http://d-nb.info/gnd/4055302-4>, <https://g.co/kg/m/06t8v>, <https://www.freebase.com/m/06t8v>, <http://zbw.eu/stw/descriptor/18226-5>, <http://www.wikidata.org/entity/Q215>, <http://vocabularies.unesco.org/thesaurus/concept8622> ;
+	skos:altLabel   "Republika Slovenija"@pl, "Carnicola"@es, "Republika Slovenija"@sl, "Republika Slovenija"@en, "Repubblika tas-Slovenja"@mt, "Republika Slovenija"@sv, "Republika Slovenija"@pt, "si"@pl, "si"@es, "República de Eslovenia"@es, "Szlovén Köztársaság"@hu, "si"@en, "si"@pt, "Svn"@pl, "Svn"@es, "Svn"@en, "Svn"@pt, "SI"@nl, "SI"@fr, "Slovenian tasavalta"@fi, "Slovenie"@nl, "Република Словения"@bg, "SVN"@nl, "Slovenija"@pl, "Slovenija"@en, "Slovenija"@sv, "Slovenija"@pt, "La République de Slovénie"@fr, "Республика Словения"@ru, "Republiken Slovenien"@sv, "Eslovenia"@pt, "Republic of Slovenia"@en, "Slo"@pl, "Slo"@es, "Slo"@en, "Slo"@pt, "Republica de Eslovenia"@es, "Republik Slowenien"@de, "SLO"@en, "SLO"@pt, "Republika Słowenii"@pl, "République de Slovénie"@fr, "República da Eslovênia"@pt, "Republiek Slovenië"@nl, "Eslovênia"@pt ;
+	skos:note       "País na Europa Central"@pt, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Państwo w Europie Środkowej"@pl, "País europeu"@ca, "Valtio Etelä-Euroopassa"@fi, "Država u srednjoj Europi"@hr, "Država v Evropi"@sl, "Land in Europa"@nl, "Állam Közép-Európában"@hu, "Страна в Европе"@ru, "Country in Central Europe"@en, "Държава в Централна Европа"@bg, "Republik i Centraleuropa"@sv, "Stato membro dell'Unione europea"@it, "Štát v strednej Európe"@sk, "Țară din Europa"@ro, "Χώρα"@el, "Staat in Mitteleuropa"@de, "Stát v jižní Evropě"@cs, "Pays d'Europe"@fr ;
+	skos:prefLabel  "Slovenien"@sv, "Slovenien"@da, "Slovénie"@fr, "Slovēnija"@lv, "Eslovenia"@es, "Slowenien"@de, "Slovenië"@nl, "Słowenia"@pl, "Szlovénia"@hu, "Slovenija"@hr, "Slovenija"@sl, "An tSlóivéin"@ga, "Slovėnija"@lt, "Slovenja"@mt, "Словения"@ru, "Словения"@bg, "Σλοβενία"@el, "Eslovénia"@pt, "Eslovènia"@ca, "Sloveenia"@et, "Slovinsko"@sk, "Slovinsko"@cs, "Slovenia"@fi, "Slovenia"@en, "Slovenia"@it, "Slovenia"@ro ;
+	wgs84_pos:lat   "46.0" ;
+	wgs84_pos:long  "15.0" .
+
+<http://athena.muo.hr/?object=detail&id=27167>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "11831"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_029851/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048053/MUO_029851#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:47:57.201Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_029851> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

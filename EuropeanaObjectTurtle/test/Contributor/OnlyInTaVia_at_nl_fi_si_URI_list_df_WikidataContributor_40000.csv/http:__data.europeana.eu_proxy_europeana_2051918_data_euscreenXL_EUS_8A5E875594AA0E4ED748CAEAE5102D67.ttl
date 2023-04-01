@@ -1,0 +1,139 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_8A5E875594AA0E4ED748CAEAE5102D67/image.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "31620"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "456"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "568"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFE0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-02-14T10:31:46.773Z" ;
+	dcterms:modified          "2022-06-23T14:28:03.667Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67#contentTier>, <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2051918_Ag_EU_EUscreenXLCore_1019" ;
+	edm:landingPage           <https://www.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimages3.noterik.com%2Fdomain%2Feuscreenxl%2Fuser%2Feu_nisv%2Fvideo%2FEUS_8A5E875594AA0E4ED748CAEAE5102D67%2Fimage.jpg&type=VIDEO> .
+
+<http://www.euscreen.eu/item.html?id=EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67/manifest> ;
+	ebucore:fileByteSize    "4433"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "application/xhtml+xml" .
+
+<http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338645> ;
+	edm:isShownAt      <http://www.euscreen.eu/item.html?id=EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	edm:isShownBy      <http://www.euscreen.eu/item.html?id=EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	edm:object         <http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_8A5E875594AA0E4ED748CAEAE5102D67/image.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671121> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:55.943431Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a  edm:ProvidedCHO .
+
+<http://thesaurus.euscreen.eu/EUscreenXL/v1/772>
+	a               skos:Concept ;
+	skos:inScheme   <http://thesaurus.euscreen.eu/EUscreenXL/v1/ConceptScheme> ;
+	skos:prefLabel  "Politique"@fr, "Politik"@da, "Polityka"@pl, "Politik"@sv, "Politik"@de, "Política"@ca, "Política"@pt, "Politiek"@nl, "Πολιτική"@el, "politika"@hu, "Politica"@ro, "Politica"@it, "Politika"@sl, "Politika"@cs, "Politics"@en, "Politika"@lt .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:55.943948Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/organization/1482250000004671121>
+	a               foaf:Organization ;
+	skos:prefLabel  "EUscreen"@en .
+
+<http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a                    ore:Proxy ;
+	dc:contributor       "Broek, Hans van den", "Ornstein, Karel (verslaggever)", "Thijn, Ed van", "Voûte-Droste, Hella", "Simons, Sylvana", "Geraedts, Roel (verslaggever)", "Glas, Betty (verslaggever)", "De Dijk", "Schuurhof, Sandra (verslaggever)", "Heymans, Jos (verslaggever)", "Büch, Boudewijn", "Mulder, Jan", "Chabot, Bart", "Wester, Frits", "Wiegel, Hans", "Jong, Marc de (verslaggever)", "Hemmen, Roelof (verslaggever)", "Balkenende, Jan Peter" ;
+	dc:description       "Original language summary: \u000AActuele dagelijkse talkshow van Frits Barend en Henk van Dorp. De Villa BVD-uitzendingen vinden plaats vanaf een speciale locatie en rond een evenement zoals Tweede Kamerverkiezingen of een groot voetbaltoernooi. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen. Deze reeks staat in het teken van de Tweede Kamerverkiezingen van 2002, en wordt live uitgezonden vanuit het Scheveningse Kurhaus. Deze extra lange aflevering is geheel gewijd aan de uitslagen van de Tweede Kamerverkiezingen die deze dag gehouden zijn. De uitzending wordt afgewisseld met speciale edities van het 'RTL-nieuws' gepresenteerd door Rick Nieman. Te gast zijn: - Ed van Thijn, Eerste Kamerlid PvdA; - Hans van den Broek, politicus CDA; - Bart Chabot, schrijver en dichter; - Boudewijn Büch, schrijver en programmamaker; - Frits Wester, politiek verslaggever; - Hans Wiegel, politicus VVD; - Sylvana Simons, tv-presentatrice; - Jan Peter Balkenende, lijsttrekker CDA (videoverbinding); - Hella Voûte-Droste, kandidaat Kamerlid VVD; - Clif Linger, PvdA-stemmer. Met optredens van popgroep De Dijk."@nl, "Daily talkshow with Frits Barend and Henk van Dorp. Regular guest is columnist Jan Mulder. The guests in this episode are: - Ed van Thijn, member of the parliament PvdA; - Hans van den Broek, politician CDA; - Bart Chabot, writer and poet; - Boudewijn Büch, writer and producer; - Frits Wester, political reporter; - Hans Wiegel, politician VVD; - Sylvana Simons, tv presenter; - Jan Peter Balkenende, frontrunner CDA (video connection); - Hella Voûte-Droste, candidate member of parliament VVD; - Clif Linger, PvdA-tuner. With a performance by De Dijk."@en, "Extended description:\u000A20:35:00 STEMGEDRAG De gasten en presentatoren vertellen op wie zij vandaag gestemd hebben. * 20:37:05 + 20:52:06 + 22:59:45 + 21:10:39 + 21:24:23 + 21:41:50 + 22:00:29 + 22:23:16 + 23:09:32 + 23:22:39 + 23:32:29 + 23:41:01 + 23:49:57 DE RTL VERKIEZINGSAVOND Presentator Rick Nieman presenteert samen met presentatrice Suzan Bosman en politiek verslaggever Frits Wester een speciale editie van het 'RTL-nieuws'. Gedurende de hele uitzending schakelt Nieman over naar verslaggevers die live verslag doen over de sfeer op de verschillende locaties waar politieke partijen de verkiezingsuitslagen afwachten. Bosman bespreekt de officiële exit polls. Frits Wester becommentarieert de exit polls, verkiezingsuitslagen en de toespraken van de lijsttrekkers. Minister Zalm is bereid Hans Dijkstal op te volgen. Jan Marijnissen heeft gezegd mee te willen regeren als het CDA dat voorstelt. * 20:40:38 VERKIEZINGSCAMPAGNE 2002 Impressie van de verkiezingscampagnes van de verschillende politieke partijen en de gebeurtenissen in aanloop naar de Kamerverkiezingen, waaronder de moord op LPF-lijsttrekker Pim Fortuyn op 6 mei 2002. * 20:47:56 + 21:10:06 + 23:17:14 BOUDEWIJN BÜCH Schrijver en programmamaker Boudewijn Büch bespreekt de roman 'Biefstuk, sla moord en doodslag in Amsterdam' van LPF-politicus Peter Langendam. Verder geeft hij zijn mening over de verkiezingsuitslag en over Balkenende, \u0022de trouvaille van de Nederlandse politiek\u0022. Volgens Büch staat Balkenende in de Nederlandse antirevolutionaire traditie van Da Costa en Bilderdijk. * 20:51:07 + 20:55:12 + 21:08:14 + 21:37:12 + 22:59:44 + 23:14:02 + 23:15:37 + 23:18:58 HANS VAN DEN BROEK CDA-politicus Hans van den Broek vergelijkt politicus Jan Peter Balkenende met PvdA-lijsttrekker Ad Melkert. Van den Broek geeft zijn mening over de \u0022ruk naar rechts\u0022 die de kiezers hebben gemaakt. Hij noemt de enige 'linkse' zetelwinst bij de SP een verdienste van Jan Marijnissen. De uitslag wijst volgens hem naar verandering, vernieuwing en toekomstgerichtheid. Van den Broek noemt het dilemma dat fractievoorzitter Balkenende heeft: de fractie verlaten en premier worden of de fractie blijven leiden. Van der Broek wil de wens van de kiezers respecteren en een eind maken aan een gesloten politieke cultuur, waarin alles wordt voorbesproken. Balkenende is voor een kort regeerakkoord. Van der Broek is voor een stevig debat en ruimte voor de oppositie. * 20:53:19 + 21:06:56 + 21:38:53 + 22:11:39 + 22:29:51 + 22:56:27 + 23:14:32 + 00:11:11 ED VAN THIJN Ed van Thijn, Eerste Kamerlid PvdA, reageert op het zetelverlies van zijn partij. Hij verwacht veel van nieuweling in het CDA Jan Peter Balkenende, die het nieuwe kabinet zal gaan formeren. Van Thijn belicht de grimmige draai die de verkiezingen hebben gekregen na de moord op LPF-lijsttrekker Pim Fortuyn. Van Thijn is overtuigd dat Ad Melkert niet deze avond zijn vertrek aan te kondigen. Van Thijn is geëmotioneerd door de speech van Melkert. Hij vindt het aftreden van Ad Melkert een persoonlijk drama. Van Thijn weigert te bevestigen dat Willem Vermeent de nieuwe fractievoorzitter wordt. Van Thijn vindt dat de kabinetsinformateur wijsheid en ervaring moet hebben. Van Thijn vindt dat de PvdA opgeschud moet worden en goed moet bekijken welke partijleden de 22 zetels gaan invullen. Op de vraag van Jan Mulder of de halvering van de PvdA ook betekent dat de partij inhoudelijk op gaat splitsen. Van Thijn geeft aan dat er een crisis is in het instituut, volgens hem stemmen mensen niet meer op partijen, maar op personen. \u0022Voor de kiezer telt gisteren niet\u0022. * 20:58:37 + 22:00:55 BART CHABOT Schrijver en dichter Bart Chabot vindt \u0022rock-'n-roll van de Dijk leuker dan politiek\u0022. Chabot is net als de kiezer klaar met Paars. * 21:01:18 Verslaggever Roel Geraedts doet verslag vanuit Brasserie Dudok in Den Haag bij het CDA. Hij interviewt Maxime Verhagen en Theo Meijer. * 21:09:09 + 23:16:18 FRITS WESTER Politiek verslaggever Frits Wester geeft zijn mening over de betrouwbaarheid van de exit polls. Hij interpreteert de verkiezingsuitslag als een massaal weglopen van de Paarse coalitie die Nederland acht jaar heeft bestuurd. Wester vindt dat Balkenende een vernieuwingsslag maken met dit kabinet, met een linkse oppositie die meedoet in het debat. Wester vindt dat Dijkstal voor zijn verantwoordelijkheden wegloopt als hij niet aanwezig is bij het lijsttrekkersdebat is later deze avond. * 21:10:41 Verslaggever Karel Ornstein is in Paradiso in Amsterdam, waar de PvdA-leden gezamenlijk wachten op de verkiezingsuitslagen. De PvdA leden zijn * 21:12:31 MAT HERBEN Verslaggever Roelof Hemmen doet verslag van de bijeenkomst van LPF-leden in Hotel des Indes in Den Haag. Hij interviewt LPF-woordvoerder Mat Herben, die de partijen uit het Paarse kabinet en de media beschuldigt van een gezamenlijk offensief o.l.v. premier Wim Kok tegen de LPF. De openlijke steun van Frits Barend en Henk van Dorp aan Paars hebben volgens Herben de LPF twee tot drie zetels gekost. * 21:13:00 LPF Sfeerimpressie van de voorbereidingen voor de bijeenkomst van de LPF in Hotel des Indes in Den Haag, gemaakt door verslaggever Marc de Jong. * 21:28:08 AT YOUR SERVICE Zanger Gerard Joling zingt het nummer 'At your service' als eerbetoon aan Pim Fortuyn in Hotel des Indes. * 21:30:34 + 21:41:18 + 22:10:07+ 22:24:40 HANS WIEGEL VVD-politicus Hans Wiegel geeft zijn mening over de verkiezingsuitslag. Hij belicht de hoge opkomst en de hommages die de kiezers aan Pim Fortuyn hebben gebracht door veelvuldig op hem te stemmen. Verder bestempelt Wiegel het gedrag van premier Wim Kok vlak voor de verkiezingen als \u0022partijpolitiek\u0022. Hij filosofeert over mogelijke coalities: CDA, LPF en VVD is een optie, een combinatie van CDA, VVD en PvdA wijst hij af als vertegenwoordiging van het oude regime. Wiegel vindt het opmerkelijk dat Dijkstal niet aanwezig zal zijn bij het lijsttrekkersdebat later deze avond en bij de fractievergadering de volgende dag. * 21:49:18 + 23:35:48 + 00:22:09 DE DIJK Optredens van De Dijk: 'Wakker in een vreemde wereld', 'Ga in mijn schoenen staan' en 'Hou me vast'. * 21:44:51 + 22:23:16 + 23:43:00 Verslaggever Jos Heymans doet live verslag vanuit het VVD-hoofdkwartier in het Omniversum in Den Haag. Hij interviewt minister van Defensie Frank de Grave over zijn verwachtingen. Hij interviewt partijvoorzitter B. Eenhoorn over het zetelverlies. Hij interviewt Kamerlid Henk Kamp over de toekomst van de VVD in de Kamer. Hans Dijkstal kondigt aan dat hij niet bij de fractievergadering zal zijn een dag later. * 22:02:51 Verslaggeefster Julia Wouters doet verslag vanuit NEMO in Amsterdam bij D66. D66 steunt Thom de Graaf ondanks het verlies nog steeds als partijleider. Interview van verslaggever Rick Konijnebelt met D66-lijsttrekker Thom de Graaf. \u0022Paars was over\u0022. * Verslaggever... in de Melkweg in Amsterdam bij de SP. Jan Marijnissen geeft aan dat hij bereid is mee te regeren als de SP gevraagd wordt. * 22:03:35 Bijdrage van Rick Konijnebelt over D66 en bijdrage over de late sluiting van stembus op domplein in Utrecht. * 22:06:48 Toespraak van VVD-lijsttrekker Hans Dijkstal, waarin hij zijn hoop uit dat er een einde komt aan de sfeer van bedreigingen in Nederland en dat er zo snel mogelijk een stabiel landsbestuur komt. * 22:12:54 JAN PETER BALKENENDE Overwinningstoespraak van CDA-lijsttrekker Jan Peter Balkenende. Hij noemt respect, naastenliefde en verantwoordelijkheid als trefwoorden voor een geloofwaardige politiek in Nederland. Hij wil verantwoordelijkheid nemen in een nieuwe regering. * 22:31:21 AD MELKERT Toespraak van PvdA-lijsttrekker Ad Melkert waarin hij wijst op de fundamentele inzet van de sociaaldemocraten om altijd te werken aan de waarden van democratie en geweldloosheid. Melkert memoreert de dood van Pim Fortuyn en van de overleden Ab Harrewijn Groenlinks Hij noemt het onrechtvaardig dat de reputatie, overtuiging en bindend vermogen in twijfel zijn getrokken. Hij roept op tot respect voor elkaar, voor het vrije woord en respect voor ieders inzet in onze democratie. De PvdA past bescheidenheid, zij moet zich opmaken voor oppositie. Melkert kondigt zijn vertrek aan als fractievoorzitter van de PvdA. * 22:42:08 WIM KOK Aansluitend neemt premier Wim Kok het woord. Hij memoreert Fortuyn en Harrewijn. Hij beschouwt het als een persoonlijke nederlaag dat de PvdA de vertrouwensbreuk met de kiezer niet heeft kunnen herstellen. Kok vindt het onterecht dat Melkert aftreedt na de storm van onheuse aantijgingen die hij na de moord op Fortuyn over zich heen heeft gekregen. * 22:49:25 MAT HERBEN Toespraak van LPF-woordvoerder Mat Herben. * 23:01:47 + 24:01:12 SYLVANA SIMONS Tv-presentatrice Sylvana Simons vindt dat de ontoegankelijkheid van de politiek gedeeltelijk ligt aan het feit dat Nederlandse burgers hun eigen verantwoordelijkheid ontlopen. Zij voelt voor minister Willem Vermeent als nieuwe partijleider. Simons vindt het vanzelfsprekend dat het in de politiek om personen gaat, omdat je je persoonlijkheid mee naar je werk neemt. * 23:09:44 JAN PETER BALKENENDE Fractievoorzitter Jan Peter Balkenende geeft via een live videoverbinding een reactie op de verkiezingsuitslag. Hij vindt het logisch dat de informateur voor het nieuwe kabinet uit het CDA afkomstig is. * 23:22:43 Bijdrage van verslaggeefster Sandra Schuurhof over de partijbijeenkomst van Leefbaar Nederland, dat Pim Fortuyn in februari 2002 aan de kant heeft gezet als lijsttrekker. Oprichters Jan Nagel, Broos Schnetz en Willem van Kooten stappen uit het partijbestuur na het teleurstellende verkiezingsresultaat van twee zetels. Interviews met: lijsttrekker Fred Teeven, partijlid Henk Westbroek en Jan Nagel. * 23:41:05 GROEN LINKS Verslaggeefster Betty Glas doet verslag vanuit Den Haag bij Groenlinks. Toespraak van Paul Rosenmöller. Rosenmöller sluit een regeringsdeelname van Groenlinks niet uit als het CDA besluit linksom te gaan. * 23:43:44 Bijdrage van Daphne Lammers over het afscheid van Dijkstal en de eventuele opvolger Gerrit Zalm. Met interviews met Dijkstal en Zalm. * 23:50:02 Reportage van verslaggever Karel Ornstein over de impact van het aftreden van lijsttrekker Ad Melkert op de PvdA-leden. Interviews hierover met Kamerlid Wouter Bos, Dick Benschop, Tineke Netelenbos en Jan Pronk, die geen van allen een uitspraak willen doen over de nieuwe fractievoorzitter en partijleider. * 23:45:45 + 23:52:49 HELLA VOÛTE Kandidaat Kamerlid voor de VVD Hella Voûte schat in dat Dijkstal wel bij het fractieoverleg is de dag na vandaag. Voûtes favoriete opvolger van Dijkstal als partijleider is Gerrit Zalm. Dit baseert zij op Zalms populariteit onder ondernemers. Volgens Voûte is de politiek veramerikaniseert, een politicus die het goed doet op tv wint stemmen. * 00:14:00 CLIF LINGER Kiezer Clif Linger heeft persoonlijk afscheid genomen van Pim Fortuyn door naar de kerk te gaan waar hij opgebaard lag. Hij is het er mee eens dat personen de verkiezingen bepalen. * 00:29:45 TERUGBLIK OP DE VERKIEZINGSCAMPAGNES" ;
+	dc:format            "ASPECT RATIO: 4:3", "Stereo", "Colour", "VIDEO" ;
+	dc:identifier        "1381498" ;
+	dc:publisher         "RTL 4" ;
+	dc:rights            "For information on the use of archive material, please contact the Customer Service department of Netherlands Institute for Sound & Vision: info@beeldengeluid.nl." ;
+	dc:subject           "Fortuyn, Pim", "politiek programma", "praatprogramma", "sportprogramma", "verkiezingen", <http://thesaurus.euscreen.eu/EUscreenXL/v1/772>, "VVD", "Paarse coalitie", "proza", "verkiezingscampagnes", "RTL Nieuws", "LPF", "Society and social issues", "Tweede Kamer", "kabinetsformaties", "CDA", "PvdA" ;
+	dc:title             "Barend & Van Dorp 15/05/2002"@nl, "Barend & Van Dorp 15/05/2002"@en ;
+	dc:type              "ITEM", "News" ;
+	dcterms:alternative  "SERIES TITLE: Barend & Van Dorp"@en, "Barend & Van Dorp"@nl ;
+	dcterms:created      "2002" ;
+	dcterms:extent       "03:09:59" ;
+	dcterms:isPartOf     <http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_513F04B47411BCDD8C80532EE577FAC4> ;
+	dcterms:issued       "15/05/2002" ;
+	dcterms:spatial      "Nederland", "Scheveningen", "The Netherlands" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> .
+
+<http://data.europeana.eu/proxy/europeana/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_8A5E875594AA0E4ED748CAEAE5102D67" ;
+	dcterms:spatial     <http://data.europeana.eu/place/106>, <http://data.europeana.eu/place/40372> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "2002" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_8A5E875594AA0E4ED748CAEAE5102D67> .
+
+<http://data.europeana.eu/organization/1482250000000338645>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nederlands Instituut voor Beeld & Geluid"@nl, "Netherlands Institute for Sound & Vision"@en .
+
+<http://data.europeana.eu/place/40372>
+	a               edm:Place ;
+	owl:sameAs      <http://id.loc.gov/authorities/names/n79079036>, <https://d-nb.info/gnd/4120016-0>, <https://g.co/kg/m/0qm4j>, <https://sws.geonames.org/2747599/>, <http://dbpedia.org/resource/Scheveningen>, <http://viaf.org/viaf/131420662>, <http://data.bnf.fr/ark:/12148/cb135756760>, <http://www.wikidata.org/entity/Q837211>, <https://www.freebase.com/m/0qm4j> ;
+	skos:altLabel   "Scheveningen"@fr, "Scheveninghen"@it, "Шевенинген"@ru, "Scheveningue"@fr ;
+	skos:note       "Niederländisches Seebad"@de, "Localité de la commune de La Haye"@fr, "District of The Hague"@en, "Stadsdeel van Den Haag"@nl, "Dzielnica Hagi w Holandii"@pl ;
+	skos:prefLabel  "Scheveningen"@pt, "Scheveningen"@en, "Scheveningen"@it, "Scheveningen"@es, "Scheveningen"@et, "Scheveningen"@cs, "Scheveningen"@eu, "Scheveningen"@sl, "Scheveningen"@pl, "Scheveningen"@da, "Scheveningen"@ro, "Scheveningen"@nl, "Scheveningen"@ca, "Schéveningue"@fr, "Схевенинген"@ru, "Схевенинген"@bg, "Σχέβενινγκεν"@el, "Scheveningen"@de, "Scheveningen"@sv, "Scheveningen"@fi ;
+	wgs84_pos:lat   "52.10806" ;
+	wgs84_pos:long  "4.27306" .

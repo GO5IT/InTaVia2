@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228696#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:03:40.046Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228696> .
+
+<http://mek.oszk.hu/03300/03309/mp3/>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92006/BibliographicResource_1000095228696/manifest> ;
+	ebucore:fileByteSize    "8372"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://mek.oszk.hu/03300/03309>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "17316"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228696>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228696>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/03300/03309> ;
+	edm:isShownBy      <http://mek.oszk.hu/03300/03309/mp3/> ;
+	edm:object         <http://mek.oszk.hu/03300/03309/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92006/BibliographicResource_1000095228696>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-30T09:35:52.993Z" ;
+	dcterms:modified          "2017-07-31T07:23:08.425Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696#contentTier>, <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "92006_Ag_EU_TEL_a0107_TEL_OSZK_HEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92006/BibliographicResource_1000095228696> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F03300%2F03309%2Fborito.jpg&type=SOUND> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92006/BibliographicResource_1000095228696>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/73963> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92006/BibliographicResource_1000095228696> .
+
+<http://data.europeana.eu/organization/1482250000000365285>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/agent/73963>
+	a                    edm:Agent ;
+	owl:sameAs           <http://datos.bne.es/resource/XX1194665>, <https://libris.kb.se/zw9cgqnh2fvk21m>, <http://id.loc.gov/authorities/names/n50023539>, <http://libris.kb.se/resource/auth/249465>, <http://openlibrary.org/works/OL160077A>, <https://www.freebase.com/m/06kmj1>, <http://id.ndl.go.jp/auth/ndlna/00551374>, <http://data.bnf.fr/ark:/12148/cb12029046b>, <http://openlibrary.org/works/OL4497787A>, <http://data.bibliotheken.nl/id/thes/p06980740X>, <http://www.idref.fr/028459083/id>, <https://g.co/kg/m/06kmj1>, <https://livedata.bibsys.no/authority/90554369>, <http://dbpedia.org/resource/J%C3%A1nos_Arany>, <http://www.wikidata.org/entity/Q316556>, <http://id.worldcat.org/fast/7711>, <http://d-nb.info/gnd/118645536>, <http://viaf.org/viaf/95251869> ;
+	rdaGr2:dateOfBirth   "1817-03-02" ;
+	rdaGr2:dateOfDeath   "1882-10-22" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/39131> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/153779> ;
+	skos:altLabel        "Янош Арани"@bg, "Arany János"@pt, "Arany János"@ro, "Arany Janos"@pt, "Arany Janos"@ro, "Janos Arany"@es, "Janos Arany"@de, "Janos Arany"@sv, "Janos Arany"@fi, "Janos Arany"@pt, "Janos Arany"@en, "Janos Arany"@it, "Janos Arany"@pl, "Janos Arany"@ro, "Janos Arany"@nl, "Арань Янош"@ru, "Jan Arany"@pl, "Ioan Arany"@ro, "Arany"@sv, "János Arany"@es ;
+	skos:note            "Poète hongrois"@fr, "Hongaars taalkundige (1817-1882)"@nl, "Scriitor maghiar"@ro, "Poeta ungherese"@it, "Венгерский поэт, журналист, писатель и переводчик"@ru, "Magyar költő, műfordító, az MTA tagja és főtitkára"@hu, "Унгарски поет и преводач"@bg, "Jornalista, escritor, poeta e tradutor húngaro"@pt, "Hungarian poet, journalist, writer and translator"@en, "Poeta węgierski"@pl, "Escritor húngaro"@es, "Escriptor hongarès"@ca, "Maďarský spisovatel"@cs, "Ungarischer Dichter"@de ;
+	skos:prefLabel       "Янош Аран"@bg, "Янош Арань"@ru, "János Arany"@pt, "János Arany"@en, "János Arany"@hr, "János Arany"@it, "János Arany"@de, "János Arany"@sv, "János Arany"@fi, "János Arany"@fr, "János Arany"@et, "János Arany"@cs, "János Arany"@sl, "János Arany"@ga, "János Arany"@pl, "János Arany"@da, "János Arany"@ro, "János Arany"@ca, "János Arany"@nl, "Arany János"@hu, "Juan Arany"@es .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://mek.oszk.hu/03300/03309/borito.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4900"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DAA520"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#9ACD32"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B8860B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228696#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:03:40.045Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228696> .
+
+<https://iiif.europeana.eu/presentation/92006/BibliographicResource_1000095228696/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/92006/BibliographicResource_1000095228696>
+	a                   ore:Proxy ;
+	dc:contributor      "Drótos László", "Virágh Tibor", "Góczán Andrea", "Parai Sándor" ;
+	dc:creator          "Arany János" ;
+	dc:description      "Tartalom ◊ Toldi ◊ Toldi estéje ◊ Daliás idők (Toldi szerelmének első dolgozata) ◊ Daliás idők (Második dolgozat) ◊ A földrengés ◊ Toldi szerelme ◊ Glossarium Toldi szerelméhez", "Ismertető Mint trilógia korántsem egységes műalkotás: három önálló része nemcsak különböző korszak jelentősen eltérő produkciója, de tulajdonképpen műfajilag sem áll egymáshoz közel. Az először keletkezett Toldi népies elbeszélő költemény. Hőse a \u0022legkisebb fiú\u0022 lovag lesz, középkor legmesésebb idejében, de megmarad egyszerű, naívan \u0022nép fi\u0022-nak is, aki gyöngéden rajong az anyjáért, aki egyszerre félelmetes természeti erő és meghatóan kedves kamasz, aki farkast, bikát, idegen lovagot könnyűszerrel és fölényesen legyőz, de patriarkális bensőségekkel szalonnázik szolgájával, szíven üti a bánatos özvegy sorsa, és aki csak a nagy király hűséges katonája akar lenni, sem vagyon, sem birtok, sem rang nem nyűgözi. A Toldi csodálatos, egyszerűségében is hallatlanul művészi nyelve, stílusa, kompozíciója ma már archaikus. A mű \u0022homéroszi\u0022 derűje, főhősének realista és romantikus vonásokból kikevert vonzó figurája felejthetetlen. Maga Arany is legjobb művének tartotta. Egyúttal ez a mű a legismertebb, legnépszerűbb Arany-költemény is, olvasóinak köre cseperedő gyermekektől az esztétikai ínyencekig tart. Modernebb, áttételesebb, nehezebben megközelíthető a mindössze két évvel később keletkezett Toldi estéje. Látszólag epikus történet ez is, az \u0022első Toldi\u0022 főhősének aggkorát, utolsó nagy küzdelmét és halálát beszéli el, valójában inkább egyetlen hatalmas lírai költeménynek, elégiának tekinthető. A balladai drámaiság és epikus részletező kedv találkozik a műben. A Toldi szerelme nem egységes, nem harmonikus alkotás; évtizedek alatt nyomot hagyott rajta Arany költői szemléletének alakulása. Toldi és Piroska szerelmi történetét, vétségüket és megrázó vergődésüket a modern lélekrajz eszközével ábrázolja, s elmélyíti a tragikus megoldásig. Forrás: Legeza Ilona könyvismertetői http://legeza.oszk.hu" ;
+	dc:format           "MP3", "40 kbs, 18:21 h" ;
+	dc:identifier       "http://mek.oszk.hu/03300/03309" ;
+	dc:language         "hu" ;
+	dc:relation         "Benedek Elek: Toldi Miklós - Arany János műve nyomán (http://mek.oszk.hu/00200/00233/)", "A magyar irodalom arcképcsarnoka : Arany János (http://mek.oszk.hu/01100/01149/html/arany.htm)", "Ilosvai Selymes Péter: Toldi Miklós históriája (http://mek.oszk.hu/00600/00673/)", "Arany János: Toldi szerelme (http://mek.oszk.hu/05600/05607/)", "Arany János összes költeményei (http://mek.oszk.hu/00500/00597/)" ;
+	dc:source           "Magyar Vakok és Gyengénlátók Országos Szövetsége (PARTNER0035)" ;
+	dc:subject          "magyar irodalom", "hangoskönyv", "19. sz." ;
+	dc:title            "Magyar Vakok és Gyengénlátók Országos Szövetségének hangoskönyvtára", "217.", "A Toldi-trilógia", "MVGYOSZ hangoskönyvek", "Toldi-trilógia" ;
+	dc:type             "Sound recording"@en, "Text"@en, "hangfelvétel", "elbeszélő költemény" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0107> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92006/BibliographicResource_1000095228696> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228696> .

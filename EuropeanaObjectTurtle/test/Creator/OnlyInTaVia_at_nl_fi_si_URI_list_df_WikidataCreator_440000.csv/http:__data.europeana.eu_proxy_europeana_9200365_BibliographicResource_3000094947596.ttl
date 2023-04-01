@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:27.534Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801013g> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801013g/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:27.534Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801013g> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801013g>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801013g> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801013g.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801013g.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3944"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801013g>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "232674"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801013g>
+	a                   ore:Proxy ;
+	dc:creator          "Schumann, Robert (1810-1856). Auteur ou responsable intellectuel", "Brahms, Johannes (1833-1897). Auteur ou responsable intellectuel", "Dragon, Carmen (1914-1984). Direction d'orchestre", "Grieg, Edvard (1843-1907). Auteur ou responsable intellectuel", "Humperdinck, Engelbert (1854-1921). Auteur ou responsable intellectuel", "Schubert, Franz (1797-1828). Auteur ou responsable intellectuel", "Hollywood Bowl orchestra. Interprète", "Massenet, Jules (1842-1912). Auteur ou responsable intellectuel", "Fibich, Zdenĕk (1850-1900). Auteur ou responsable intellectuel", "Debussy, Claude (1862-1918). Auteur ou responsable intellectuel", "Wagner, Richard (1813-1883). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "Titre uniforme : [Hänsel und Gretel]. Extrait", "Comprend : Nocturne : de \u0022Suite lyrique\u0022 / Grieg - Elégie : de \u0022Les Erynnies\u0022 / Jules Massenet ; arr. Dragon - Poème / Fibich ; arr. Dragon - Prière de Hansel et Gretel / Humperdinck - TRAUMEREI de \u0022Kinderscenen\u0022 / R. Schumann - Méditation de \u0022Thaïs\u0022 - Jules Massenet - Sérénade / F. Schubert ; arr. Dragon - Rêverie / Claude Debussy ; arr. Dragon - Romance à l'étoile de Tannhauser / Richard Wagner ; arr. Dragon - Berceuse / Johannes Brahms ; arr. Dragon", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Les Érinnyes]", "Titre uniforme : [Thaïs. Acte 2. Méditation]", "Titre uniforme : [Rêverie. FL 76]. Adapt.", "Titre uniforme : [Wiegenlied. Op. 49, no 4]. Adapt.", "Titre uniforme : [Tannhäuser. WWV 70 (1845)]. Adapt.", "Titre uniforme : [Poëm]. Adapt.", "Titre uniforme : [Träumerei. Op. 15, no 7]. Adapt. orch." ;
+	dc:format           "1 disque : 33 t, stéréo ; 30 cm", "disque microsillon"@fre, "disc"@eng, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Capitol SP8363", "http://gallica.bnf.fr/ark:/12148/bpt6k8801013g" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37798439g"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-5781" ;
+	dc:title            "Nocturne / The Hollywood Bowl Symphony Orchestra dir. Carmen Dragon" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801013g> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801013g>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:06.499Z" ;
+	dcterms:modified          "2018-03-26T12:26:02.531Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801013g> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801013g.thumbnail.jpg&type=SOUND> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801013g>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801013g> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801013g> .

@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8805320w>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1957" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805320w> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805320w>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "243297"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:06.067Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805320w> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805320w.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#90EE90"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#87CEEB"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8805320w>
+	a                   ore:Proxy ;
+	dc:creator          "Straus, Oscar (1870-1954). Auteur ou responsable intellectuel", "Benatzky, Ralph (1884-1957). Auteur ou responsable intellectuel", "Gilbert, Robert (1899-1978). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Romberg, Sigmund (1887-1951). Auteur ou responsable intellectuel", "Spoliansky, Mischa (1898-1985). Auteur ou responsable intellectuel", "Dassary, André (1912-1987). Chant", "Profes, Anton (1896-1976). Auteur ou responsable intellectuel", "Messager, André (1853-1929). Auteur ou responsable intellectuel", "Friml, Rudolf (1879-1972). Auteur ou responsable intellectuel" ;
+	dc:date             "1957" ;
+	dc:description      "Contient une table des matières", "Titre uniforme : [The desert song (Opérette)]. Extrait", "Titre uniforme : [Frasquita]. Choix en français", "Titre uniforme : [Die lustige Witwe]", "Titre uniforme : [Paganini]. Extr. en français", "Titre uniforme : [Rose Marie (Comédie musicale)]. Extr.", "Titre uniforme : [Ein Walzertraum]. Choix", "Titre uniforme : [Coups de roulis]. Extr.", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Das Land des Lächelns]. Extr.", "Titre uniforme : [La Chanson d'une nuit. Extrait : Cette nuit mon amour]", "Comprend : ROSE-MARIE - REVE DE VALSE - LA CHANSON D'UNE NUIT - COUPS DE ROULIS - L'AUBERGE DU CHEVAL BLANC - LE CHANT DU DESERT - VALSE DE VIENNE - LE PAYS DU SOURIRE - FRASQUITA - PAGANINI - LA VEUVE JOYEUSE" ;
+	dc:format           "1 disque : 33 t ; 30 cm", "Nombre total de vues :  18", "disque microsillon"@fre, "multipart/mixed", "disc"@eng ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8805320w", "Numéro commercial : Vega  V30M751" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139155436"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13923630v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139291736"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38046785w"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13915547k"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13919616j"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13916246n"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139122758"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13970040t"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13870941g"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-2095" ;
+	dc:title            "15 AIRS D'OPERETTES... JAMAIS OUBLIEES / André DASSARY avec l'orchestre de Marcel CARIVEN" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805320w> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805320w>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:53:00.294Z" ;
+	dcterms:modified          "2018-03-26T12:27:38.502Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8805320w> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8805320w.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:06.067Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805320w> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805320w>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805320w> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8805320w> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8805320w.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8805320w/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

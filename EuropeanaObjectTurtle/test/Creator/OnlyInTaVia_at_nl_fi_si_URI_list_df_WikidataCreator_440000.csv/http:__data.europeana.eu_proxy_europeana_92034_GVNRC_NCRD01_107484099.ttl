@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_107484099>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/60404> ;
+	dc:creator          <http://data.europeana.eu/agent/60404> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_107484099> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:107484099>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49370"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_107484099>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:10:43.111Z" ;
+	dcterms:modified          "2018-04-05T17:25:34.629Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099> ;
+	edm:completeness          "9" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_107484099> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A107484099%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:50.478Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_107484099> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_107484099>
+	a                   ore:Proxy ;
+	dc:contributor      "Johannes Vermeer" ;
+	dc:creator          "Johannes Vermeer" ;
+	dc:description      "Vindplaats: Dresden, Gemäldegalerie Alter Meister", "Litt. : Christopher Braider: Refiguring the real. Picture and modernity in word and image. 1400-1700. Princeton, 1993" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:107484099" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[107484099], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "koppelen"@nl ;
+	dc:title            "De koppelaarster" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "16XX" ;
+	dcterms:isPartOf    "NCRD01", "NCRD", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_107484099> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_107484099>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:107484099> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:107484099&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/60404>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/202> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/50455>, <http://data.europeana.eu/agent/91652>, <http://data.europeana.eu/agent/64355>, <http://data.europeana.eu/agent/150202> ;
+	owl:sameAs                     <https://livedata.bibsys.no/authority/90170004>, <https://libris.kb.se/vs68521d1gmzgzs>, <http://data.bnf.fr/ark:/12148/cb11940023b>, <http://data.bibliotheken.nl/id/thes/p068676581>, <http://vocab.getty.edu/ulan/500032927>, <http://nlg.okfn.gr/resource/authority/record67540>, <http://www.wikidata.org/entity/Q41264>, <http://id.loc.gov/authorities/names/n79006488>, <http://datos.bne.es/resource/XX914312>, <http://dbpedia.org/resource/Johannes_Vermeer>, <http://id.worldcat.org/fast/30117>, <http://viaf.org/viaf/51961439>, <http://www.idref.fr/027336336/id>, <http://lod.nl.go.kr/resource/KAC201719233>, <https://g.co/kg/m/0bw2x>, <http://libris.kb.se/resource/auth/99582>, <https://www.freebase.com/m/0bw2x>, <http://d-nb.info/gnd/118626590>, <http://openlibrary.org/works/OL134473A>, <http://id.ndl.go.jp/auth/ndlna/00459685> ;
+	rdaGr2:dateOfBirth             "1632-10-01" ;
+	rdaGr2:dateOfDeath             "1675-12-15" ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Jan Vermeer"@da, "Jan Vermeer"@ro, "Jan Vermeer"@ca, "Johannes Vermeer van Delft"@es, "Johannes Vermeer van Delft"@et, "Johannes Vermeer van Delft"@cs, "Jan van der Meer"@pt, "Jan van der Meer"@en, "Jan Van der Meer"@en, "Βερμέερ"@el, "Vermērs"@lv, "Jan Vermeer de Delft"@en, "Johanas Vermejeris"@lt, "Ĭokhannes Vermer"@en, "Вермеер"@bg, "Ver meer"@en, "Johannes van Delft Vermeer"@en, "J. vander Meer van Delft"@en, "Vermeer de Delft"@fr, "Vermeer de Delft"@es, "Vermeer de Delft"@ca, "De Delfsche vander Meer"@en, "Вермер, Ян"@ru, "Jan der meer"@en, "Jan Van der Meer van Delft"@en, "De Delfet Vander-Meer"@en, "Jan Reyniersz Vermeer van Delft"@en, "Johan Vermeer"@lt, "Vermer"@fr, "Vermer"@es, "Vermer"@pl, "J. Vermeer of Delft"@en, "Vander Meer de Delft"@en, "Jan van delft"@pt, "Ян Вермер"@ru, "Van der Meer"@en, "Johannes van Delft"@pt, "Vermejeris Delftietis"@lt, "Вермер Ян"@ru, "Γιαν Βερμέερ"@el, "De Delfze van der Meer"@en, "De Delfsche van der Meer"@en, "Van der, of Delft Meer"@en, "De Delftsche van der Meer"@en, "Vermeer of haarlem"@en, "Jan Vermeer Delft"@en, "De Delft Vander Méer"@en, "Jan van der meer der altere"@en, "Vermeer van Delft"@lt, "Vermeer van Delft"@en, "Vermeer van Delft"@hu, "Vermeer van Delft"@et, "Of Delft Van der Meer"@en, "Вермер Я."@ru, "Joannis ver Meer"@de, "Jan Vermeer of Delft"@en, "Vandermeer de Delft"@en, "Janas Vermejeris"@lt, "Jan vermeer of haarlem"@en, "Vermeer"@sv, "Vermeer"@de, "Vermeer"@pt, "Vermeer"@hr, "Vermeer"@fr, "Vermeer"@hu, "Vermeer"@es, "Vermeer"@pl, "Vermeer"@ro, "Vermeer"@ca, "Vander Meer van Delft"@en, "Вермеер ван Делфт"@bg, "Йоханес Вермеер ван Делфт"@bg, "Van der Meer de Delft"@en, "Of Delft V. der Meer"@en, "Йоханес Вермеер"@bg, "Jan van Der Meer"@en, "Jans Vermērs van Delfts"@lv, "Johanesas Vermejeris"@lt, "De Meere"@en, "Johannes Schwartz"@en, "Ян Вермеер"@bg, "Delftsche Vermeer"@en, "Johanness Vermērs"@lv, "Γιοχάννες Βερμέερ"@el, "V. D. Meer"@en, "Johannes Vermeer"@sv, "Johannes Vermeer"@de, "Joannis van der Meer"@de, "Johannes Vermeer"@lt, "Johannes Vermeer"@lv, "Johannes Vermeer"@it, "Johannes Vermeer"@hu, "Johannes Vermeer"@cs, "Johannes Vermeer"@sl, "Johannes Vermeer"@pl, "Johannes Vermeer"@ca, "Ĭokhannes Vermer Delftskiĭ"@en, "Delfter Vermeer"@en, "Delfsche van der Meer"@en, "Jan Vermeer van Delft"@fi, "Jan Vermeer van Delft"@de, "Jan Vermeer van Delft"@en, "Jan Vermeer van Delft"@hr, "Jan Vermeer van Delft"@fr, "Jan Vermeer van Delft"@es, "Jan Vermeer van Delft"@et, "Jan Vermeer van Delft"@cs, "Jan Vermeer van Delft"@sk, "Jan Vermeer van Delft"@pl, "Jan Vermeer van Delft"@ro, "Вермеер Ян"@ru, "Вермеер Делфтский, Ян"@ru, "Johannes van der Meer"@it, "Johannes van der Meer"@es, "Der Delftsche v. d. Neer"@en, "Vermeer van van Delft"@en, "Johannes Vermeer van Delft"@en, "Jan Vermeer"@fi, "Jan Vermeer"@pt, "Jan Vermeer"@en, "Jan Vermeer"@hr, "Jan Vermeer"@fr, "Jan Vermeer"@hu, "Jan Vermeer"@es, "Jan Vermeer"@et ;
+	skos:note                      "Голландский художник"@ru, "Ολλανδός ζωγράφος"@el, "Nederlands kunstschilder"@nl, "Hollandi maalikunstnik"@et, "Pintor neerlandés del segle XVII"@ca, "Nederlandsk kunstmaler (1632-1675)"@da, "Pittur Olandiż"@mt, "Pintor neerlandés del siglo XVII"@es, "Malarz niderlandzki"@pl, "Hollantilainen taidemaalari"@fi, "Nederländsk målare"@sv, "Barokní malíř"@cs, "Pictor olandez"@ro, "Dutch painter (1632-1675)"@en, "Pittore olandese"@it, "Peintre néerlandais"@fr, "Holländischer Maler"@de ;
+	skos:prefLabel                 "Jan Vermeer"@sk, "Jan Vermeer"@lt, "Jan Vermeer"@de, "Jans Vermērs"@lv, "Γιοχάνες Βερμέερ"@el, "Johannes Vermeer"@nl, "Johannes Vermeer"@da, "Johannes Vermeer"@ro, "Johannes Vermeer"@et, "Johannes Vermeer"@es, "Johannes Vermeer"@en, "Johannes Vermeer"@ga, "Johannes Vermeer"@hr, "Johannes Vermeer"@pt, "Johannes Vermeer"@fi, "Johannes Vermeer"@fr, "Jan Vermeer van Delft"@sl, "Jan Vermeer van Delft"@hu, "Ян Вермеер"@ru, "Йоханес Вермер"@bg, "Jan Vermeer"@pl, "Jan Vermeer"@cs, "Jan Vermeer"@it, "Johannes Vermeer de Delft"@ca, "Jan Vermeer"@mt, "Jan Vermeer"@sv .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:107484099&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5993"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "136"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:50.477Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_107484099> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_107484099>
+	a  edm:ProvidedCHO .

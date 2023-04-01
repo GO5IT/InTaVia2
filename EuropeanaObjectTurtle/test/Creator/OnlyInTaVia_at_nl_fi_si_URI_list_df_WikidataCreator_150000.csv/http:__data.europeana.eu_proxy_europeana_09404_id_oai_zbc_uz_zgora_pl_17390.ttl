@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnh4lVr/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/0940424/_nnh4lVr>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnh4lVr>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1775" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnh4lVr> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnh4lVr> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnh4lVr>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnh4lVr> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:17390> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/17390/DC-2373_G_I_278.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/17390/DC-2373_G_I_278.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://zbc.uz.zgora.pl/Content/17390/DC-2373_G_I_278.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnh4lVr/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://semium.org/time/17xx_4_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/17xx_2_half> ;
+	edm:begin         "Mon Jan 01 01:00:00 CET 1776" ;
+	edm:end           "Wed Dec 31 01:00:00 CET 1800" ;
+	skos:prefLabel    "4e quart 18e siècle"@fr, "4 quarter of the 18th century"@en, "4-я четверть 18-го века"@ru .
+
+<http://data.europeana.eu/item/0940424/_nnh4lVr#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:47:08.615Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnh4lVr> .
+
+<http://data.europeana.eu/item/0940424/_nnh4lVr#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:47:08.615Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnh4lVr> .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnh4lVr>
+	a                   ore:Proxy ;
+	dc:creator          "Chodowiecki, Daniel (1726-1801)"@pl, "Berger, Daniel"@pl ;
+	dc:date             "1775"@pl ;
+	dc:description      "miedzioryt"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-2373"@pl ;
+	dc:language         "de" ;
+	dc:publisher        "Berlin"@pl ;
+	dc:relation         "Kolekcja Wilhelma Ogoleita"@pl, "Sammlung Ogoleit"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "okres burzy i naporu"@pl, "grafika - 18 w."@pl, "Goethe, Johann Wolfgang von (1749-1832)"@pl, "niemieckie utwory literackie"@pl, "miłość romantyczna"@pl, "Ogoleit, Wilhelm (kolekcjoner i księgarz ; 1869-1953)"@pl, "preromantyzm"@pl, "literatura niemiecka - 18 w."@pl, "Sturm und Drang"@pl, "Cierpienia młodego Wertera"@pl, "powieść epistolarna - 18 w."@pl ;
+	dc:title            "Dwa przedstawienia: Portret Lotty i Lotta krojąca chleb dla swego rodzeństwa"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "12,7 x 7,9 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnh4lVr> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnh4lVr> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:17390>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "27906"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnh4lVr>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:52:49.013Z" ;
+	dcterms:modified          "2017-11-30T08:52:49.013Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnh4lVr#metadataTier>, <http://data.europeana.eu/item/0940424/_nnh4lVr#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnh4lVr> ;
+	edm:completeness          "7" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnh4lVr> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F17390%2FDC-2373_G_I_278.djvu&type=IMAGE> .

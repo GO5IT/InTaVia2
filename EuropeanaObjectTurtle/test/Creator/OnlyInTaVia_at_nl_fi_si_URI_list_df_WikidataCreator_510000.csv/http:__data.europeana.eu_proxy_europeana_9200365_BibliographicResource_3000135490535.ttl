@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8805018s>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805018s> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:17.556Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805018s> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805018s>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "253372"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805018s>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:54.149Z" ;
+	dcterms:modified          "2018-03-26T12:27:32.027Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8805018s> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8805018s.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:17.556Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805018s> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805018s>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8805018s> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8805018s.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8805018s/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805018s.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3711"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#4B0082"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8805018s>
+	a                   ore:Proxy ;
+	dc:creator          "Philharmonia chorus (Londres). Interprète", "Vickers, Jon (1926-2015). Ténor", "Beethoven, Ludwig van (1770-1827). Auteur ou responsable intellectuel", "Berry, Walter (1929-2000). Baryton-basse", "Pitz, Wilhelm (1897-1973). Direction de choeur", "Frick, Gottlob (1906-1994). Basse (voix)", "Philharmonia orchestra (Londres). Interprète", "Klemperer, Otto (1885-1973). Direction d'orchestre", "Unger, Gerhard (1916-2011). Ténor", "Wolansky, Raymond (1926-....). Baryton (voix)", "Hallstein, Ingeborg (1933-....). Soprano", "Wehofschitz, Kurt (1923-....). Ténor", "Crass, Franz (1928-2012). Basse (voix)" ;
+	dc:date             "19.." ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Fidelio. Op. 72]. Intégrale" ;
+	dc:format           "multipart/mixed", "3 disques : 33 t, stéréo ; 30 cm", "disque microsillon"@fre, "disc"@eng, "Nombre total de vues :  37" ;
+	dc:identifier       "Numéro commercial : Columbia SAXF242", "Numéro commercial : Columbia SAXF241", "http://gallica.bnf.fr/ark:/12148/bpt6k8805018s", "Numéro commercial : Columbia SAXF240" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37834046m"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, ABS/62-15" ;
+	dc:title            "FIDELIO - Opera en 2 actes / Livret de SONNLEITHNER et TREITSCHKE ; Musique de BEETHOVEN ; Jon Vickers (tenor) FLORESTAN - Christa LUDWIG (mezzo) LEONORE - Franz GRASS (basse) DON FERNANDO - Walter BERRY (basse) DON PIZARRO - Gottlob FRICK (basse) ROCCO - Ingeborg HALLSTEIN (soprano) MARZELINNE - Gerhard UNGER - (tenor) JAQUINO - Kurt WEHOFSCHITZ et Raymond WOLANSKY (prisonniers) ; PHILHARMONIA ORCHESTRA et Choeurs ; Chef des Choeurs : Wilhelm PITZ ; Dir. Otto KLEMPERER" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805018s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805018s> .

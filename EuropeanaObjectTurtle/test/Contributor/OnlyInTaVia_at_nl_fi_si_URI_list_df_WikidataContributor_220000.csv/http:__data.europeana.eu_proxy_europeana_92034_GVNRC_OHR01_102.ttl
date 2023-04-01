@@ -1,0 +1,118 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_OHR01_102>
+	a                   ore:Proxy ;
+	dc:contributor      "Nooms, Reinier" ;
+	dc:description      "Op het schilderij staat de scheepvaart op het IJ voor Amsterdam afgebeeld. Verschillende kleine en grote schepen varen op het water voor de stad.", "Schilder ook bekend als: Reinier Zeeman" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0102" ;
+	dc:rights           "Nederlands Scheepvaart Museum; For information contact Koninklijke Bibliotheek"@en, "Koninklijke Bibliotheek", "Nederlands Scheepvaart Museum; Voor informatie: Koninklijke Bibliotheek"@nl ;
+	dc:source           "102 (schilderij), De Nederlandse Oostzeehandel in de periode 1600-1850, Nederlands Scheepvaart Museum, Amsterdam" ;
+	dc:subject          "Amsterdam"@nl, "Handel"@nl, "Geografie"@nl ;
+	dc:title            "Scheepvaart op het IJ voor Amsterdam" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1661" ;
+	dcterms:extent      "76 x 180 x 6,5 cm (lijst), 61 x 166 cm (binnenmaat)" ;
+	dcterms:isPartOf    "GVN", "Directie der Oostersche Handel en Reederijen", "OHR01" ;
+	dcterms:issued      "13-10-2003" ;
+	dcterms:medium      "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_OHR01_102> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_102> .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_102>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_102>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_OHR01_102> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/OHR01:102> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0102&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/151>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300054388>, <http://uri.gbv.de/terminology/bk/74>, <https://www.freebase.com/m/034ns>, <http://id.nlm.nih.gov/mesh/D005843>, <http://id.nlm.nih.gov/mesh/H01.277.500>, <http://www.idref.fr/027534499/id>, <http://cv.iptc.org/newscodes/mediatopic/20000746>, <http://iconclass.org/49I>, <http://www.yso.fi/onto/yso/p601>, <http://id.loc.gov/authorities/names/sh00005919>, <http://babelnet.org/rdf/s00040163n>, <http://lod.nl.go.kr/resource/KSH1998012041>, <https://d-nb.info/gnd/4020216-1>, <https://g.co/kg/m/034ns>, <http://id.ndl.go.jp/auth/ndlna/00573070>, <http://www.wikidata.org/entity/Q1071>, <http://purl.org/bncf/tid/1323>, <http://vocabularies.unesco.org/thesaurus/concept172> ;
+	skos:note        "Studiul terenurilor, caracteristicilor, locuitorilor și fenomenelor Pământului"@ro, "Scienza che ha per oggetto lo studio, la descrizione e la rappresentazione della Terra. Geo: terra, grafia: descrizione"@it, "Ciencia que estudia la superficie terrestre, las sociedades y los territorios"@es, "Wissenschaft, die sich mit der räumlichen Struktur und Entwicklung der Erdoberfläche befasst"@de, "Комплекс наук, изучающих географическую оболочку Земли"@ru, "Science étudiant la surface terrestre, les sociétés qui l'habitent et les territoires, paysages, lieux ou régions qui la constituent"@fr, "Ciència que estudia el territori, habitants i fenòmens de la Terra"@ca, "Studie zemí, rysů, obyvatel a zemských jevů a jiných bytostí"@cs, "Maata tutkiva tieteenala"@fi, "Nauka badająca powłokę ziemską, jej zróżnicowanie przestrzenne pod względem przyrodniczym i społeczno-gospodarczym, a także powiązania pomiędzy środowiskiem przyrodniczym a działalnością społeczeństw ludzkich"@pl, "Videnskab der omhandler jordens overflades rumlige struktur og udvikling"@da, "Επιστήμη η οποία με βάση την φυσική και πολιτισμική ιστορία μελετάει την επιφάνεια της Γης"@el, "A földrajzi burokban lezajló természeti és társadalmi folyamatok által kialakított rendszerek elrendeződéseivel és törvényszerűségeivel foglalkozó földtudomány"@hu, "Vetenskap som beskriver hur jordytan ser ut"@sv, "Наука, изучаваща пространственото разположение и измененията на природно-териториалните комплекси на планета Земя"@bg, "Teadus sellest, kus miski Maa peal on"@et, "Ciência que estuda o conjunto de fenómenos naturais e humanos da superfície da Terra"@pt, "Science that studies the terrestrial surface, the societies that inhabit it and the territories, landscapes, places or regions that form it when interacting with each other"@en ;
+	skos:prefLabel   "Ġeografija"@mt, "Γεωγραφία"@el, "Aardrijkskunde"@nl, "Geograafia"@et, "Földrajztudomány"@hu, "Maantiede"@fi, "Geografi"@sv, "Geografi"@da, "Geography"@en, "Tíreolaíocht"@ga, "Geographie"@de, "Géographie"@fr, "География"@ru, "География"@bg, "Geografía"@es, "Geografie"@cs, "Geografie"@ro, "Ģeogrāfija"@lv, "Geografia"@sk, "Geografia"@ca, "Geografia"@it, "Geografia"@eu, "Geografia"@pl, "Geografia"@pt, "Geografija"@lt, "Geografija"@hr, "Geografija"@sl .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0102&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "14727"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "62"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_102#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:06.525Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_102> .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_102#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:06.525Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_102> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_OHR01_102>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:21:49.486Z" ;
+	dcterms:modified          "2018-04-05T17:35:10.311Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_OHR01_102#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_OHR01_102#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_OHR01_102> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_OHR01_102> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AOHR01%3A0102%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_OHR01_102>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/151> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1661" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_OHR01_102> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_OHR01_102> .
+
+<http://www.geheugenvannederland.nl/?/en/items/OHR01:102>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47306"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

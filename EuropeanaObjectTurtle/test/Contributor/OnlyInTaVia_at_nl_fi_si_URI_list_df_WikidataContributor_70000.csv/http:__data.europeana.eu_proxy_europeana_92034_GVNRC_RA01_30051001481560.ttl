@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001481560&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "30124"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "212"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:12.917Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001481560> .
+
+<http://www.geheugenvannederland.nl/?/en/items/RA01:30051001481560>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49915"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:12.918Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001481560> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001481560>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/RA01:30051001481560> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001481560&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_RA01_30051001481560>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/49> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_RA01_30051001481560> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/49>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2847> ;
+	skos:exactMatch  <http://data.bnf.fr/ark:/12148/cb119409485>, <https://d-nb.info/gnd/4046198-1>, <https://www.freebase.com/m/01n5jq>, <http://thesaurus.europeanafashion.eu/thesaurus/10459>, <http://id.ndl.go.jp/auth/ndlna/00569172>, <http://www.yso.fi/onto/yso/p18786>, <http://purl.org/bncf/tid/3022>, <http://vocab.getty.edu/aat/300027221>, <http://iconclass.org/46B353>, <http://id.loc.gov/authorities/names/sh99001723>, <http://id.nlm.nih.gov/mesh/L01.178.820.090.703>, <http://iconclass.org/44B522>, <http://id.loc.gov/authorities/genreForms/gf2014026152>, <http://id.nlm.nih.gov/mesh/D019519>, <https://g.co/kg/m/01n5jq>, <http://babelnet.org/rdf/s15173511n>, <http://id.nlm.nih.gov/mesh/V02.355.500>, <http://datos.bne.es/resource/XX5162666>, <http://id.loc.gov/authorities/names/sh85105523>, <http://id.nlm.nih.gov/mesh/D057175>, <https://schema.org/Poster>, <http://www.wikidata.org/entity/Q429785> ;
+	skos:note        "Разновидность прикладной печатной графики, наборно-шрифтовое или художественно-иллюстративное листовое крупноформатное печатное тиражное издание"@ru, "Bedrukt papier bevestigd aan muur of andere oppervlakten"@nl, "Trykt stykke papir beregnet til ophængning på vertikal overflade"@da, "Type of graphic advertisement"@en, "Teadet, reklaami või propagandat vahendav kunstipärane müürileht"@et, "Support de publicité ou de propagande destiné à être vue dans la rue et les lieux publics"@fr, "Uma folha de papel impresso destinada a ser fixada em uma parede ou outra superfície vertical"@pt, "Làmina de paper, cartó o en un altre material, que serveix per anunciar o donar informació sobre alguna cosa"@ca, "Qualsiasi pezzo di carta stampata progettato per essere fissato ad una parete o superficie verticale"@it, "Soporte de publicidad que consiste en una lámina de papel, cartón u otro material"@es, "Rozměrný list papíru"@cs, "Vyvesené alebo nalepené verejné oznámenie s veľkými rozmermi"@sk, "Jegliche Art von bedrucktem Papier, das an einer Mauer und anderen Oberflächen befestigt wird"@de ;
+	skos:prefLabel   "Juliste"@fi, "Plakát"@hu, "Plakát"@cs, "Affisch"@sv, "Cartel"@es, "Afiša"@lt, "Affiche"@fr, "Cartaz"@pt, "Plakāts"@lv, "Manifesto"@it, "Poster"@nl, "Poster"@en, "Poster"@ro, "Плакат"@ru, "Плакат"@bg, "Kartel"@eu, "Plakat"@hr, "Plakat"@de, "Plakat"@sl, "Plakat"@et, "Plakat"@pl, "Plakat"@da, "Plagát"@sk, "Póstaer"@ga, "Cartell"@ca, "Αφίσα"@el .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_RA01_30051001481560>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:27:50.719Z" ;
+	dcterms:modified          "2018-04-05T17:37:56.207Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_RA01_30051001481560> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ARA01%3A30051001481560%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_RA01_30051001481560>
+	a                   ore:Proxy ;
+	dc:contributor      "Doeve, Eppo" ;
+	dc:format           "affiche" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:RA01:30051001481560", "66-00785" ;
+	dc:rights           "voor informatie: ReclameArsenaal"@nl, "ReclameArsenaal", "for information contact ReclameArsenaal"@en ;
+	dc:source           "66-00785 (affiche), 150 jaar Nederlandse reclame, ReclameArsenaal" ;
+	dc:subject          "woninginrichting"@nl ;
+	dc:title            "Wij kiezen slijtvast boucle Verto variant kamerbreed.Mothproofed for life Mitin non-toxic." ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1966-1967" ;
+	dcterms:extent      "1180 x 830 mm" ;
+	dcterms:isPartOf    "GVN", "RA01", "150 jaar Nederlandse reclame" ;
+	dcterms:issued      "22-06-2004" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_RA01_30051001481560> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_RA01_30051001481560> .

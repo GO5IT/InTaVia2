@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88026467>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88026467> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88026467.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88026467>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "235570"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:02.164Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88026467> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88026467/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88026467>
+	a                   ore:Proxy ;
+	dc:creator          "Escalaïs, Léon (1859-1940). Ténor", "Massenet, Jules (1842-1912). Auteur ou responsable intellectuel", "Rossini, Gioachino (1792-1868). Auteur ou responsable intellectuel", "Flégier, Ange (1846-1927). Auteur ou responsable intellectuel", "Saint-Saëns, Camille (1835-1921). Auteur ou responsable intellectuel", "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Luppi, Oreste (1870-1962). Basse (voix)", "Gounod, Charles (1818-1893). Auteur ou responsable intellectuel", "Magini-Coletti, Antonio (1855-1912). Baryton (voix)", "Meyerbeer, Giacomo (1791-1864). Auteur ou responsable intellectuel" ;
+	dc:date             "1959" ;
+	dc:description      "Titre uniforme : [Jérusalem]. Extrait en français", "Titre uniforme : [Robert le Diable]. Extrait", "Titre uniforme : [L'Africaine]. Extrait", "Titre uniforme : [Samson et Dalila. R 288]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Comprend : JERUSALEM. Je veux encore entendre / VERDI - LE TROUVERE. O toi mon seul espoir / VERDI - LE TROUVERE. Supplice infâme / VERDI - LA JUIVE. Dieu m'éclaire / HALEVY - SAMSON ET DALILA. Arrêtez, ô mes frères / SAINT-SAENS - L'AFRICAINE. O Paradis / MEYERBEER - ROBERT LE DIABLE. Sicilienne / MEYERBEER - POLYEUCTE. Stances / GOUNOD - LE MAGE. Ah, parais / MASSENET - OTHELLO. Dieu, tu pouvais m'infliger / VERDI - GUILLAUME TELL. Troncar suoi di / ROSSINI ; avec MAGINI-Coletti, LUPPI - GUILLAUME TELL. La gloria infiammi / ROSSINI ; avecMAGINI-Coletti, LUPPI - GUILLAUME TELL. Asile héréditaire / ROSSINI - STANCES : mélodie / FLEGIER", "Titre uniforme : [Il trovatore]. Extrait en français", "Titre uniforme : [Otello]. Extr. en français", "Titre uniforme : [Guillaume Tell]. Extrait en italien" ;
+	dc:format           "disc"@eng, "multipart/mixed", "disque microsillon"@fre, "1 disque : 33 t ; 30 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k88026467", "Numéro commercial : Odéon ODX145" ;
+	dc:language         "ita" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37942869c"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4455" ;
+	dc:subject          "musique dramatique vocale", "musique vocale soliste" ;
+	dc:title            "LE LIVRE D'OR DU CHANT : ESCALAIS : 1859-1940 / ESCALAIS, ténor" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88026467> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88026467>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88026467> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88026467.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3863"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88026467>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:49.481Z" ;
+	dcterms:modified          "2018-03-26T12:26:38.871Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88026467> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88026467.thumbnail.jpg&type=SOUND> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88026467#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:02.159Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88026467> .

@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	dcterms:medium      <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> .
+
+<http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-07T15:47:23.592Z" ;
+	dcterms:modified          "2014-10-07T15:47:23.592Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487#metadataTier>, <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021633_Ag_NL_DigitaleCollectie_hertogenbosch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdenbosch.hosting.deventit.net%2FHttpHandler%2Ficoon.ico%3Ffile%3D21347573&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-sa/3.0/nl/> .
+
+<https://iiif.europeana.eu/presentation/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004514711> ;
+	edm:isShownAt      <http://denbosch.hosting.deventit.net/AtlantisPubliek/detail.aspx?xmldescid=15089487> ;
+	edm:isShownBy      <http://denbosch.hosting.deventit.net/HttpHandler/icoon.ico?file=21347573> ;
+	edm:object         <http://denbosch.hosting.deventit.net/HttpHandler/icoon.ico?file=21347573> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/nl/> .
+
+<http://denbosch.hosting.deventit.net/HttpHandler/icoon.ico?file=21347573>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487/manifest> ;
+	ebucore:fileByteSize    "277365"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "479"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "700"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://denbosch.hosting.deventit.net/AtlantisPubliek/detail.aspx?xmldescid=15089487>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "15807"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004514711>
+	a               foaf:Organization ;
+	skos:prefLabel  "City Archives' s-Hertogenbosch"@en .
+
+<http://data.europeana.eu/proxy/provider/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487>
+	a                   ore:Proxy ;
+	dc:creator          "Bouttats, G"@nl, "Peeters, Jan"@nl ;
+	dc:date             "31/12/1673" ;
+	dc:description      "In afbeelding: in banderol middenboven"@nl, "Crevecoeur"@nl, "Nederland"@nl ;
+	dc:identifier       "0000630"@nl ;
+	dc:language         "nl" ;
+	dc:publisher        <http://www.stadsarchief.nl/>, "Stadsarchief 's-Hertogenbosch"@nl ;
+	dc:subject          "Belegeringen"@nl, "Vestingwerken"@nl, "Exterieur"@nl, "Forten"@nl ;
+	dc:title            "Gezicht op het door de Fransen bij hun vertrek in brand geschoten Fort Crèvecoeur."@nl ;
+	dc:type             "Scan (digitale reproductie)", "Prent" ;
+	dcterms:extent      "prent" ;
+	dcterms:hasFormat   <http://denbosch.hosting.deventit.net/HttpHandler/icoon.ico?icoonfromxmlbeschr=15089487> ;
+	dcterms:medium      "Prent", "Scan (digitale reproductie)" ;
+	dcterms:spatial     "Engelen"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:12:52.210Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> .
+
+<http://data.europeana.eu/item/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:12:52.210Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021633/AtlantisPubliek_detail_aspx_xmldescid_15089487> .

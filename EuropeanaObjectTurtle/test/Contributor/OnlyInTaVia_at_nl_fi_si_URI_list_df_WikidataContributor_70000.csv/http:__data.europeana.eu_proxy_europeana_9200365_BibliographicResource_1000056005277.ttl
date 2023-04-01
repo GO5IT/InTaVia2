@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s>
+	a  edm:ProvidedCHO .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400087s>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "189117"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:20.706Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400087s> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:20.705Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400087s> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400087s>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:23.948Z" ;
+	dcterms:modified          "2018-07-23T15:38:17.445Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b7400087s> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b7400087s.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400087s/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b7400087s.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4870"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "176"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b7400087s>
+	a                   ore:Proxy ;
+	dc:contributor      "Mandyczewski, Eusebius (1857-1929). Annotateur" ;
+	dc:creator          "Haydn, Joseph (1732-1809). Compositeur" ;
+	dc:date             "1767-1768" ;
+	dc:description      "Appartient à l’ensemble documentaire : RISMMss", "Présentation musicale : [Partition]", "Titre propre pris au départ. - Contient le 3e mouvement du 69e divertimento et une note d'Eusebius Mandyczewski sur le f. joint. - Baryton, vla, vlc. - Daté d'après l'éd. Henle. - F. 1 r° et 2 v° blancs", "Titre uniforme : Haydn, Joseph (1732-1809). Compositeur. [Trios. Baryton, alto, violoncelle. Hob XI 69. Ré majeur]. Extrait", "Appartient à l’ensemble documentaire : RISM2" ;
+	dc:format           "1 partition (1 f. double) ; 31 x 22 cm + 1 f.", "Nombre total de vues :  6" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b7400087s" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb411060216", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb155672602" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Centre technique du livre, Ms.126-126A" ;
+	dc:subject          "Trios à cordes (baryton (viole), alto, violoncelle) -- 18e siècle -- Extraits -- Partitions"@fre ;
+	dc:title            "Finale // von dem // 69ten Divert: (manuscrit autographe)" ;
+	dc:type             "Genre musical : divertissement", "musique manuscrite"@fre, "manuscript music"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400087s> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b7400087s>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b7400087s> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b7400087s/manifest> ;
+	ebucore:fileByteSize    "43370"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "707"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b7400087s>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b7400087s> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b7400087s> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b7400087s/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b7400087s.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .

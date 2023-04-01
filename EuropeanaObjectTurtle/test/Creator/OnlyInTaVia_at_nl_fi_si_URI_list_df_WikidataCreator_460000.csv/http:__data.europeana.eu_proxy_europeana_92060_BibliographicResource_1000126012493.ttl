@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012493>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=1209312> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv/3/B1209312T1209316.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv/3/B1209312T1209315.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92060/BibliographicResource_1000126012493>
+	a                   ore:Proxy ;
+	dc:creator          "Kriehuber, Josef" ;
+	dc:description      "Bildnis (Brust, halb links). Faksimile des Namenszuges. Mit Jahreszahl."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv/3/B1209312T1209316.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Culture"@en, "Kultur"@de ;
+	dc:title            "Bildnis Josef Lanner (1801 - 1843)"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0478> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012493> .
+
+<http://www.bildarchivaustria.at/Bildarchiv/3/B1209312T1209316.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012493/manifest> ;
+	ebucore:fileByteSize    "11046"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "246"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFC0CB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92060/BibliographicResource_1000126012493>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012493> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012493/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012493>
+	a  edm:ProvidedCHO .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=1209312>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012493#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:12:04.511Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012493> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012493#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:12:04.511Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012493> .
+
+<http://www.bildarchivaustria.at/Bildarchiv/3/B1209312T1209315.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2133"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "82"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFC0CB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012493>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-02T08:57:09.343Z" ;
+	dcterms:modified          "2019-04-02T08:57:09.343Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493#contentTier>, <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92060/BibliographicResource_1000126012493> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92060_Ag_EU_TEL_a0478_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92060/BibliographicResource_1000126012493> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F3%2FB1209312T1209315.jpg&type=IMAGE> .

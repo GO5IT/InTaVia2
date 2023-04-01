@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.pbc.rzeszow.pl/Content/5987/G-157.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940427/_nnW0cwh/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/0940427/_nnW0cwh/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/0940427/_nnW0cwh>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T08:05:58.780Z" ;
+	dcterms:modified          "2017-11-30T08:05:58.780Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940427/_nnW0cwh#contentTier>, <http://data.europeana.eu/item/0940427/_nnW0cwh#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940427/_nnW0cwh> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940427_Ag_PL_www.pbc.rzeszow.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940427/_nnW0cwh> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.pbc.rzeszow.pl%2FContent%2F5987%2FG-157.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004512021>
+	a               foaf:Organization ;
+	skos:prefLabel  "bibliothèque numérique subcarpathique"@fr, "Podkarpacka Biblioteka Cyfrowa"@pl, "Podkarpacka Digital Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/0940427/_nnW0cwh>
+	a                   ore:Proxy ;
+	dc:creator          "Matejko, Jan (1838-1893)"@pl ;
+	dc:date             "1907"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:language         "pl" ;
+	dc:publisher        "Heliograwura i Druk. „Zorza”"@pl, "Tow. Przyj. Sztuk Piękn."@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Rzeszowie"@pl ;
+	dc:source           "Sygnatura oryginału: G-157"@pl ;
+	dc:subject          "Stefan Batory (król Polski ; 1533-1586)"@pl, "malarstwo polskie - 19 w."@pl, "Stefan Batory (król Polski ; 1533-1586) - w sztuce"@pl, "Matejko, Jan (1838-1893). Batory pod Pskowem"@pl ;
+	dc:title            "Stefan Batory"@pl ;
+	dc:type             "grafika"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnW0cwh> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cwh> .
+
+<http://data.europeana.eu/item/0940427/_nnW0cwh#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:48:39.449Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cwh> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/aggregation/provider/0940427/_nnW0cwh>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940427/_nnW0cwh> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004512021> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5987> ;
+	edm:isShownBy      <http://www.pbc.rzeszow.pl/Content/5987/G-157.djvu> ;
+	edm:object         <http://www.pbc.rzeszow.pl/Content/5987/G-157.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/0940427/_nnW0cwh#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:48:39.449Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940427/_nnW0cwh> .
+
+<http://fbc.pionier.net.pl/id/oai:www.pbc.rzeszow.pl:5987>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "20589"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/0940427/_nnW0cwh>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/0940427/_nnW0cwh>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1907" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940427/_nnW0cwh> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940427/_nnW0cwh> .

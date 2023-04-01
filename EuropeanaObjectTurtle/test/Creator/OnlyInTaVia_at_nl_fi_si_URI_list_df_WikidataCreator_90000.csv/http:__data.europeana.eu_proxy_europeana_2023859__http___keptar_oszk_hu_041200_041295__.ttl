@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041295__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:11.069Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041295__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041295__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/041200/041295> ;
+	edm:object         <http://keptar.oszk.hu/041200/041295/1900bb_Page_087_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/041200/041295/1900bb_Page_087_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "11801"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_041200_041295__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041295__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:11.069Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041295__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041295__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:07:22.514Z" ;
+	dcterms:modified          "2015-09-14T11:56:24.312Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F041200%2F041295%2F1900bb_Page_087_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_041200_041295__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description       "Egy nagyérdemű festőművészünk, Székely Bertalan műveinek tekintélyes, bár koránsem teljes gyűjteményét látjuk együtt a Nemzeti Szalonban most rendezett kiállításon. Székely művei azok közé a művészi alkotások közé tartoznak, a melyek jelentőségéből az izlés, a művészi fölfogás, a divat változásai mitsem vonhatnak le. Művészetének legbenső lényege, éltető eleme, a nemzeti érzés sugárzik ki belőlük. Vannak festményei, a melyek évtizedek előtt keletkeztek, technikai szempontból magukon hordják koruk jellegét és mégis teljes közvetlenséggel szólnak lelkünkhöz. Alkotójuk kimagasló és jellemző alakja marad mindenkor művészetünk történetének. ... V. László képében főleg a festői finomságot csodáljuk. A világításban való ellentét, a nagybátyja mellett árnyékban ülő szerencsétlen fiatal király gyönyörűen megrajzolt alakja, míg a fényesen megvilágított teremben lenge leányok csábító táncza látszik, az elrendezés, a mesteri jellemzés, egyaránt megragadják figyelmünket. ... (Forrás: Vasárnapi Ujság, 1900. márczius 18.) V. László (Komárom, 1440. február 22. - Prága, 1457. november 23.) vagy más néven Utószülött László, csehül Ladislav Pohrobek, németül Ladislaus Postumus, horvátul: Ladislav V. Posmrtni, magyar, horvát és cseh király, Ausztria hercege, 1453-tól Ausztria első főhercege. A Habsburg-ház második uralkodója Magyarországon, és az egyetlen Habsburg-házi magyar király, aki Magyarországon született. A Habsburg-ház alberti (senior) ágának utolsó férfi tagja volt. (Forrás: Wikipédia) Cillei Ulrik gróf (kb. 1406 - 1456. november 9.) magyar főúr. ... Albert király alatt cseh helytartó volt. Halála után az özvegy Erzsébet pártjára állott, aki az ő tanácsára oroztatta el a Szent Koronát. Amikor Erzsébet fiát, V. Lászlót királlyá koronázták, Cillei tartotta a csecsemő feje fölé a koronát. A bekövetkezett polgárharcban Erzsébet pártján küzdött, a kőszegi békében Ulászlóhoz pártolt, majd a bécsújhelyi békekötés során III. Frigyes császár pártjára állt. 1443-ban igényt tartott a II. Tvrtko bosnyák király halálakor megüresedett trónra, de nem sikerült elnyernie, főleg Hunyadi János miatt, aki nem akarta a hatalmas urat a szomszédos trónon látni. Ezzel kezdődött Cillei gyűlölete a Hunyadi-ház irányában. 1452-ben átvette az V. László király feletti gyámságot. A Hunyadiak elleni fondorlatait a többszörös és ünnepélyes kibékülésük dacára is folytatta. 1456-ban a futtaki országgyűlésen az ország helytartójává választották, ekkor ismét kibékült a Hunyadiakkal, de titokban továbbra is ellenük dolgozott. Az országgyűlés után a királlyal Nándorfehérvárra indult, ahol Hunyadi László barátai megölték. Vele kihalt a Cillei család. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1771x1021 \u000A         300 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/041200/041295   [Metadata]" ;
+	dc:relation          "Wikipédia: V. László magyar király [ http://hu.wikipedia.org/wiki/V._L%C3%A1szl%C3%B3_magyar_kir%C3%A1ly]"@hu, "Képzőművészet Magyarországon: V. László és Cillei Ulrik [ http://www.hung-art.hu/frames.html?/magyar/s/szekely/muvek/1/5_laszlo.html]"@hu, "Wikipédia: Cillei Ulrik [ http://hu.wikipedia.org/wiki/Cillei_Ulrik]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "historizmus"@hu, "History, local history"@hu, "király"@hu, "jelenetkép"@hu, "Fine arts, visual arts"@hu, "László (Magyarország: király), V. (1440-1457)"@hu, "történelmi festmény"@hu ;
+	dc:title             "V. László és Czilley"@hu ;
+	dc:type              "újságrészlet"@hu, "painting"@hu ;
+	dcterms:alternative  "Székely Bertalan történeti festményei"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041295__> .
+
+<http://keptar.oszk.hu/041200/041295>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041295__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041295__>
+	a  edm:ProvidedCHO .

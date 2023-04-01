@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/VGM01:b1507>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "54143"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_b1507>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:00:15.688Z" ;
+	dcterms:modified          "2018-04-05T18:04:49.459Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_VGM01_b1507> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AVGM01%3Ab1507%26role%3Dpage%26count%3D1%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:05.644Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_b1507> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_VGM01_b1507>
+	a                   ore:Proxy ;
+	dc:contributor      "Gogh, Vincent van", "Gemeentebestuur Nuenen" ;
+	dc:format           "document"@en, "document" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:b1507", "b 1507 V/1962" ;
+	dc:rights           "voor informatie: Van Gogh Museum"@nl, "for information contact Van Gogh Museum"@en, "Van Gogh Museum" ;
+	dc:source           "b 1507 V/1962 (document), Brieven en Documenten, Van Gogh Museum" ;
+	dc:subject          "Gogh, Vincent van"@nl ;
+	dc:title            "Getuigschrift Vincent van Gogh voor verandering van woonplaats", "Change of residence certificate of Vincent van Gogh"@en ;
+	dc:type             "StillImage" ;
+	dcterms:created     "23 November 1885"@en, "23 november 1885" ;
+	dcterms:extent      "21.2 x 34.2 cm" ;
+	dcterms:isPartOf    "GVN", "Brieven en Documenten", "VGM01" ;
+	dcterms:medium      "text/xml", "?" ;
+	dcterms:spatial     "Nuenen" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_b1507> .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_b1507>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/VGM01:b1507> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:b1507&role=page&count=1&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:05.643Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_VGM01_b1507> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_VGM01_b1507>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_VGM01_b1507> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_VGM01_b1507> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:VGM01:b1507&role=page&count=1&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "30432"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "93"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

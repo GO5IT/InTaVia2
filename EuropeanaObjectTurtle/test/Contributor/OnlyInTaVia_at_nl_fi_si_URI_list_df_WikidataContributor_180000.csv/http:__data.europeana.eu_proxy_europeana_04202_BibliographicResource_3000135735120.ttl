@@ -1,0 +1,170 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://lib.ugent.be/europeana/900000130961>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135735120/manifest> ;
+	ebucore:fileByteSize    "14640"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://lib.ugent.be/europeana/900000130960>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14640"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135735120>
+	a                        ore:Proxy ;
+	dc:contributor           "Euagrius", "Eusebius Caesariensis", "Theodoretus Cyrensis", "Sozomenus", "Louis Cousin", "Socrates" ;
+	dc:description           "traduite par monsieur Cousin [...]." ;
+	dc:format                "Printed"@en ;
+	dc:identifier            "000079900" ;
+	dc:language              "fr" ;
+	dc:publisher             "en la boutique de Pierre Rocolet. Chez Damien Foucault" ;
+	dc:rights                "Rights Reserved - Free Access" ;
+	dc:title                 "Histoire de l'Eglise" ;
+	dc:type                  "Monograph"@en ;
+	dcterms:extent           "4 v." ;
+	dcterms:isPartOf         <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued           "1675 - 1676" ;
+	dcterms:spatial          "A Paris" ;
+	dcterms:tableOfContents  "4. Histoire de l'eglise, ecrite par Theodoret, par Evangre [...]", "3. Histoire de l'eglise, ecrite par Sozomene [...]", "1. Histoire de l'eglise, ecrite par Eusebe, evêque de Césarée [...]", "2. Histoire de l'eglise, ecrite par Socrate [...]" ;
+	edm:europeanaProxy       "false" ;
+	edm:type                 "TEXT" ;
+	ore:proxyFor             <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120> ;
+	ore:proxyIn              <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135735120> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135735120>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/168027>, <http://data.europeana.eu/agent/14715>, <http://data.europeana.eu/agent/169>, <http://data.europeana.eu/agent/167649> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135735120> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135735120>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000130961> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000130960> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000130960> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000130960>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "15111"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "163"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135735120#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:18.457Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135735120> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135735120>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:36:44.332Z" ;
+	dcterms:modified          "2015-12-04T14:07:03.739Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135735120> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135735120> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000130960&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135735120>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135735120/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/agent/168027>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://g.co/kg/m/035drh>, <http://viaf.org/viaf/89079841>, <http://d-nb.info/gnd/118798162>, <http://www.idref.fr/02824902X/id>, <http://viaf.org/viaf/337145857075222922007>, <http://libris.kb.se/resource/auth/198350>, <http://data.bibliotheken.nl/id/thes/p069729697>, <http://www.wikidata.org/entity/Q354350>, <https://libris.kb.se/42gjk01n5l7ns70>, <http://viaf.org/viaf/100270902>, <http://datos.bne.es/resource/XX1443304>, <http://id.loc.gov/authorities/names/n84076239>, <http://id.worldcat.org/fast/1848683>, <https://livedata.bibsys.no/authority/90301783>, <http://data.bnf.fr/ark:/12148/cb120123913>, <http://openlibrary.org/works/OL1253351A>, <http://viaf.org/viaf/43149542581100300306>, <https://www.freebase.com/m/035drh>, <http://dbpedia.org/resource/Sozomen>, <http://ta.sandrart.net/-person-2215>, <http://viaf.org/viaf/305409681> ;
+	rdaGr2:dateOfBirth             "0400-01-01" ;
+	rdaGr2:dateOfDeath             "0450-01-01" ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Hermias Salamanes Sozomenos"@sv, "Salamanes Hermies Sozomen"@ca, "Sozomen"@fr, "Sozomen"@sv, "Sozomen"@pt, "Hermias Sozomenus"@en, "Hermias Sozomenus"@cs, "Sozomenus"@ca, "Σαλαμίνιος Ερμείας Σωζομενός"@el, "Sozomenus Salaminius Hermias"@cs, "Sozomenus"@de, "Sozomene"@fr, "Sozomene"@cs, "Salamini Hermies Sozomen"@ca, "Ermia Sozomeno"@it, "Salaminius Hermias Sozomenus"@cs, "Salminius Hermias Sozomenus"@sv, "Sozomenos"@es, "Hérmias Sozomenus"@pt, "Sozomenos"@fi, "Von Gaza Sozomenos"@cs, "Salamanes Hermias Sozomenos"@cs, "Constantinopolitanus Sozomenus"@cs, "Von Konstantinopel Sozomenos"@cs, "Hermiasz Sozomen"@cs, "Hermas Sozomeno"@pt, "Scholastikos Sozomenos"@cs, "Von Bethelia Sozomenos"@cs, "Gazaeus Sozomenus"@cs, "Σωζομενός"@cs, "Эрмий Созомен"@ru ;
+	skos:note                      "Византийский адвокат, раннехристианский писатель-историк"@ru, "Spätantiker Kirchenhistoriker"@de, "Kreikkalainen kirkkohistorian kirjoittaja 400-luvulla jaa."@fi, "Schrijver (0400-0450)"@nl, "Historien chrétien"@fr, "Storico della chiesa cristiana"@it, "Byzantský historik"@cs, "Byzantine historian"@en ;
+	skos:prefLabel                 "Szozomenosz"@hu, "Sozomène"@fr, "Sozomen"@en, "Sozomen"@sl, "Sozomen"@ca, "Σωζομενός"@el, "Sozemenós"@cs, "Sozomeno"@it, "Sozomeno"@pt, "Sozomeno"@es, "Sozomenus"@fi, "Sozomenus"@nl, "Созомен"@ru, "Созомен"@bg, "Sozomenos"@de, "Sozomenos"@sv, "Sozomenos"@sk, "Sozomenos"@pl, "Sozomenos"@ro .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135735120#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:18.457Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135735120> .
+
+<http://data.europeana.eu/agent/169>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/181> ;
+	owl:sameAs           <http://viaf.org/viaf/153147905262479092118>, <http://viaf.org/viaf/410152138657010982092>, <http://viaf.org/viaf/553158790509838850800>, <https://g.co/kg/m/06mrq>, <http://id.ndl.go.jp/auth/ndlna/00621489>, <http://viaf.org/viaf/79151776831518012952>, <https://libris.kb.se/fcrtvm4z2cxtlj3>, <http://id.worldcat.org/fast/35600>, <http://dbpedia.org/resource/Socrates>, <http://vocab.getty.edu/ulan/500260248>, <http://viaf.org/viaf/260147905253679092124>, <http://data.bnf.fr/ark:/12148/cb12013325j>, <http://ta.sandrart.net/-person-491>, <http://d-nb.info/gnd/118615270>, <https://livedata.bibsys.no/authority/90066833>, <http://viaf.org/viaf/781144647701334922457>, <http://kulturarvsdata.se/LSH/agents/64698>, <http://lod.nl.go.kr/resource/KAC201620129>, <http://datos.bne.es/resource/XX902568>, <http://www.wikidata.org/entity/Q913>, <http://openlibrary.org/works/OL2673831A>, <http://data.bibliotheken.nl/id/thes/p068862210>, <http://data.cervantesvirtual.com/person/1865>, <https://www.freebase.com/m/06mrq>, <http://www.idref.fr/028260929/id>, <http://viaf.org/viaf/312147905271179092140>, <http://dewey.info/class/183/>, <http://nlg.okfn.gr/resource/authority/record45727>, <http://libris.kb.se/resource/auth/207179>, <http://id.loc.gov/authorities/names/n79055329>, <http://viaf.org/viaf/88039167> ;
+	rdaGr2:dateOfBirth   "-0468-01-01" ;
+	rdaGr2:dateOfDeath   "-0398-02-10" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/84257> ;
+	skos:altLabel        "Sócrates de Atenas"@es, "Sokrat"@cs, "Socrates de Atenas"@es, "Socrates (filosoof)"@nl, "Sokrates"@cs, "Sokrates"@en, "Socrates"@es ;
+	skos:note            "Φιλόσοφος της Αρχαίας Ελλάδος (-470/-399)"@el, "Filozof grecki"@pl, "Een klassiek Grieks Atheense filosoof"@nl, "Ókori görög filozófus"@hu, "Filosofo ateniese. considerato uno dei più importanti esponenti della tradizione filosofica occidentale"@it, "Starogrécky filozof"@sk, "Philosophe de la Grèce antique"@fr, "Filósofo da Grécia Antiga"@pt, "Klassisk grekisk filosof"@sv, "Antiikin kreikkalainen filosofi"@fi, "Filosof grec"@ro, "Griechischer Philosoph"@de, "Classical Greek Athenian philosopher (c. 470 – 399 BC)"@en, "Filósofo griego clásico ateniense"@es, "Древнегреческий философ из Афинского полиса"@ru, "Filòsof grec"@ca, "Klasický řecký filosof"@cs ;
+	skos:prefLabel       "Sócrates"@pt, "Sócrates"@es, "Sócraitéas"@ga, "Σωκράτης"@el, "Sokratas"@lt, "Sokrats"@lv, "Sòcrates"@ca, "Sokrates"@de, "Sokrates"@fi, "Sokrates"@sk, "Sokrates"@sv, "Sokrates"@et, "Sokrates"@pl, "Sokrates"@da, "Sokrat"@hr, "Sokrat"@sl, "Socrate"@fr, "Socrate"@it, "Socrate"@ro, "Сократ"@ru, "Сократ"@bg, "Szókratész"@hu, "Socrates"@en, "Socrates"@nl, "Sókratés"@cs .
+
+<http://data.europeana.eu/agent/167649>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://livedata.bibsys.no/authority/90605452>, <http://data.cervantesvirtual.com/person/34076>, <http://nlg.okfn.gr/resource/authority/record18385>, <http://viaf.org/viaf/4929593>, <http://data.bnf.fr/ark:/12148/cb11902007r>, <https://www.freebase.com/m/02rv0>, <http://viaf.org/viaf/29403098>, <http://data.cervantesvirtual.com/person/67750>, <http://www.wikidata.org/entity/Q142999>, <https://libris.kb.se/gdsvvst0314g3kj>, <http://libris.kb.se/resource/auth/184350>, <http://ta.sandrart.net/-person-477>, <http://datos.bne.es/resource/XX1065081>, <http://www.idref.fr/088843734/id>, <http://viaf.org/viaf/359144647702333193184>, <http://kulturarvsdata.se/LSH/agents/64372>, <http://d-nb.info/gnd/118531425>, <https://g.co/kg/m/02rv0>, <http://data.cervantesvirtual.com/person/38409>, <http://g.co/kg/g/1229kzgm>, <http://data.cervantesvirtual.com/person/20075>, <http://id.loc.gov/authorities/names/n79150225>, <http://id.worldcat.org/fast/1817708>, <http://id.ndl.go.jp/auth/ndlna/00439047>, <http://data.cervantesvirtual.com/person/64147>, <http://dbpedia.org/resource/Eusebius>, <http://data.bibliotheken.nl/id/thes/p068596642>, <http://openlibrary.org/works/OL2409562A> ;
+	rdaGr2:dateOfBirth             "0265-01-01" ;
+	rdaGr2:dateOfDeath             "0339-05-01" ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/1926>, <http://data.europeana.eu/concept/2966>, <http://data.europeana.eu/concept/2962> ;
+	skos:altLabel                  "Eusebius von Cäsarea"@cs, "Ευσέβιος"@el, "Eusebius Pamfilius"@cs, "Euzebiusz Pamfil"@pl, "Eusebius Pamphilus"@cs, "Eusebius of Caesarea"@cs, "Eusebios, žák Pamfilův"@cs, "Eusebius"@en, "Eusebios Pamphilou"@pl, "Εύσέβιος"@el, "Eusebius Pamphili"@cs, "Eusebius Pamphili"@en, "Eusebius Caesariensis"@cs, "Eusebios Caesarejský"@cs, "Caesarejský biskup Eusebius Pamphili"@cs ;
+	skos:note                      "Rimski škof, teolog, zgodovinar in svetovalec cesarja Konstantina I."@sl, "Greek Christian scholar, c.260-c.340"@en, "Évêque et auteur chrétien des IIIe-IVe siècles"@fr, "Schrijver (0265-0340)"@nl, "Римский историк"@ru, "Keresztény történetíró"@hu, "Vescovo e scrittore greco antico"@it, "Řecký církevní historik a biskup v Kaisareji"@cs, "Antiikin kreikkalainen piispa ja historioitsija"@fi, "Biskup Cezarei, historyk, pisarz wczesnochrześcijański,"@pl, "Escritor grecocristiano del siglo IV"@es, "Escriptor grecocristià del segle IV"@ca, "Spätantiker Theologe und Kirchenhistoriker"@de ;
+	skos:prefLabel                 "Cēzarejas Eisebijs"@lv, "Eusèbe de Césarée"@fr, "Eusebios z Kaisareie"@cs, "Eusebios z Kaisareie"@sk, "Evzebij Cezarejski"@sl, "Euzebiusz z Cezarei"@pl, "Eusebios av Caesarea"@sv, "Eusébio de Cesareia"@pt, "Eusebius of Caesarea"@en, "Euzebije Cezarejski"@hr, "Eusebios Kesarealainen"@fi, "Eusebios"@et, "Kaiszareiai Euszebiosz"@hu, "Евсевий Кесарийский"@ru, "Eusebio de Cesarea"@es, "Eusebius af Cæsarea"@da, "Eusebius van Caesarea"@nl, "Eusebi de Cesarea"@ca, "Eusebiu din Cezareea"@ro, "Eusebius von Caesarea"@de, "Eusebio di Cesarea"@it, "Ευσέβιος ο Καισαρείας"@el, "Евсевий Кесарийски"@bg .
+
+<http://data.europeana.eu/agent/14715>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q3840054>, <http://viaf.org/viaf/3614148209331100460003>, <https://g.co/kg/m/03c34l6>, <http://vocab.getty.edu/ulan/500020264>, <http://ta.sandrart.net/-person-2880>, <http://viaf.org/viaf/95805719>, <http://id.loc.gov/authorities/names/no2016163750>, <https://www.freebase.com/m/03c34l6>, <http://dbpedia.org/resource/Luigi_Primo> ;
+	rdaGr2:dateOfBirth   "1606-01-01" ;
+	rdaGr2:dateOfDeath   "1667-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202680> ;
+	skos:altLabel        "Luigi Primo Gentile"@en, "Ludovico Primo"@it, "Luigi Gentile fiammengo"@en, "Louis Cousin Gentile"@en, "Luigi Gentile"@es, "Luigi Gentile"@cs, "Luigi Gentile"@en, "Dit le Gentil L. Primo"@en, "Luigi Gentile"@it, "Lodewijk Cousin"@it, "Aloygio Gentile"@it, "Luigi Gentiel"@en, "Aloisio Primo"@it, "Guise Zentili"@en, "Jentil"@en, "Gentil"@en, "Luigi Primo"@es, "Gentili"@en, "Primo Gentil"@en, "Gentile"@en, "Louis Cousin"@nl, "Louis Cousin"@it, "Louis Cousin"@cs, "Louis Cousin"@en, "L. Gentile"@en, "Λουί Κουζέν|Gentile"@el, "Louis Gentiel"@en, "Xentil"@en, "Ludovicus Gentile"@en ;
+	skos:note            "Peintre néerlandais"@fr, "Flämischer Maler (1606-1667)"@de, "Pintor neerlandês"@pt, "Flemish painter (1606-1667)"@en, "Nederlands kunstschilder (1606-1667)"@nl, "Φλαμανδός ζωγράφος"@el, "Pintor neerlandés"@es, "Vlámský barokní malíř"@cs, "Pintor neerlandès"@ca, "Pittore fiammingo"@it ;
+	skos:prefLabel       "Luigi Primo"@cs, "Luigi Primo"@de, "Luigi Primo"@sv, "Luigi Primo"@pt, "Luigi Primo"@en, "Luigi Primo"@it, "Luigi Primo"@fr, "Luigi Primo"@sl, "Luigi Primo"@da, "Luigi Primo"@ca, "Luigi Primo"@nl, "Λουίτζι Πρίμο"@el, "Louis Cousin"@es .

@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525029494.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6534"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "186"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b525029494>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525029494> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b525029494>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "214411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b525029494>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:00.274Z" ;
+	dcterms:modified          "2018-07-23T15:36:51.910Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b525029494> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b525029494.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:10.963Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525029494> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525029494/manifest> ;
+	ebucore:fileByteSize    "30815"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "353"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:10.963Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525029494> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b525029494>
+	a                   ore:Proxy ;
+	dc:contributor      "Buval (15..-16.. ; copiste). Copiste", "Marguerite d'Angoulême (reine de Navarre ; 1492-1549). Auteur du texte", "Du Perron, Jacques (1556-1618). Auteur du texte" ;
+	dc:creator          "Le Jeune, Claude (1530?-1600). Compositeur", "Goussu (15..-15.. ; compositeur). Compositeur", "Mauduit, Jacques (1557-1627). Compositeur", "Du Caurroy, Eustache (1549-1609). Compositeur", "La Caissagne (15..-15..? ; compositeur). Compositeur", "Michel, Charles (15..-15..? ; compositeur). Compositeur", "Launoy, De (15..-15..? ; compositeur). Compositeur" ;
+	dc:date             "1610-1630" ;
+	dc:description      "Incipit : Le long des eaux où se bagne", "Incipit : Ne veuille donc Seigneur mesurer nos offences", "Incipit : Sy doncques tu me veux secourir", "Incipit : Ha les haultes vertus de ton bras invincible", "Incipit : Si l'amoureux flambeau jour et nuict", "Incipit : Amour vien ranimer ces esprits", "Incipit : Prince la France te veult", "Incipit : Ayant faict de mes pleurs", "Contient : \u0022Belle flamme a l'envy\u0022, \u0022Berger quelle adventure estrange\u0022 et \u0022Amour vien ranimer ces esprits\u0022, de Claude Le Jeune ; \u0022Puis-je mieux choisir pour accroistre\u0022, \u0022Si je t'aime plus que moy mesme\u0022, \u0022Si l'amoureux flambeau jour et nuict\u0022, \u0022Prince la France te veult\u0022 et \u0022Le long des eaux où se bagne\u0022 d'Eustache Du Caurroy ; \u0022Ne veuille donc Seigneur mesurer nos offences\u0022 et \u0022Ha les haultes vertus de ton bras invincible\u0022 de De Launoy ; \u0022Quand l'infidelle usoit envers moy\u0022 de Goussu (texte de Jacques Davy Du Perron) ; \u0022Ayant faict de mes pleurs\u0022 et \u0022Sy doncques tu me veux secourir\u0022 de La Caissagne ; \u0022Maudict soit le petit chien\u0022 de Charles Michel (texte de Marguerite de Navarre) ; \u0022Sus debout paresseux amoureux\u0022 de Jacques Mauduit. - Partie : dessus. - Sign. et paraphe du copiste à la fin", "Incipit : Puis-je mieux choisir pour accroistre", "Incipit : Sus debout paresseux amoureux", "Incipit : Quand l'infidelle usoit envers moy", "Appartient à l’ensemble documentaire : RISMMss", "Incipit : Berger quelle adventure estrange", "Incipit : Si je t'aime plus que moy mesme", "Incipit : Belle flamme a l'envy", "Incipit : Maudict soit le petit chien", "Présentation musicale : Partie", "Appartient à l’ensemble documentaire : RISM2" ;
+	dc:format           "Nombre total de vues :  52", "1 partie (25 f.) ; 9 x 13 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b525029494" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb421456745" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VMF-73 (7)" ;
+	dc:title            "[Recueil d'airs et de chansons / Claude Le Jeune, Eustache Du Caurroy, Jacques Mauduit, et al.]" ;
+	dc:type             "musique manuscrite"@fre, "manuscript music"@eng, "Genre musical : air" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525029494> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b525029494/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b525029494>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b525029494> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b525029494/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b525029494.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b525029494>
+	a  edm:ProvidedCHO .

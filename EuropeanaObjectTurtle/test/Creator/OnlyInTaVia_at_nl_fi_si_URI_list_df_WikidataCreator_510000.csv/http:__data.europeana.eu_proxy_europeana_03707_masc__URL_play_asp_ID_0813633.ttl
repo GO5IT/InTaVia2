@@ -1,0 +1,101 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0813633>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2007" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0813633> .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0813633>
+	a  edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:51:32.578Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0813633> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:51:32.577Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0813633> .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0813633>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0813633> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0813633>
+	a                    ore:Proxy ;
+	dc:contributor       "Concerto Köln", "Equilbey, Laurence", "Choeur de chambre Accentus" ;
+	dc:creator           "Beethoven, Ludwig van" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0813633" ;
+	dc:publisher         "Paris Cité de la musique 2007" ;
+	dc:subject           "CHOEUR", "19 EME SIECLE" ;
+	dc:title             "3eme biennale d'art vocal" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la cité de la musique le mardi 22 mai 2007 (20h, salle des concerts)" ;
+	dcterms:extent       "1h 9 min 29 sec" ;
+	dcterms:hasPart      "Allegretto ma non troppo quasi andante con moto, extrait de la \u0022Fantaisie pour piano, choeur et orchestre Op.80\u0022 (Rappel) / Ludwig van Beethoven ; Accentus ; Alexander Melnikov, pianoforte ; Hilde Haraldsen Sveen, soprano ; Hélène Moulin, alto ; Jean-François Chiama, ténor ; Jochen Kupfer, basse ; Concerto Köln ; laurence Equilbey, direction. - Cité de la musique, 2007", "Elegischer Gesang op.118 / Ludwig van Beethoven ; Accentus ; Concerto Köln ; laurence Equilbey, direction. - Cité de la musique, 2007", "Meeres Stille und glückliche Fahrt Op.112 / Ludwig van Beethoven ; Johann Wolfgang von Goethe, texte ; Accentus ; Concerto Köln ; laurence Equilbey, direction. - Cité de la musique, 2007", "Kantate auf den Tod Kaiser Josephs II / Ludwig van Beethoven ; Severin Anton Averdonk, texte ; Accentus ; Concerto Köln ; laurence Equilbey, direction ; Hilde Haraldsen Sveen, soprano ; Hélène Moulin, alto ; Jean-François Chiama, ténor ; Jochen Kupfer, basse. - Cité de la musique, 2007", "Fantaisie pour piano, choeur et orchestre Op.80 / Ludwig van Beethoven ; Accentus ; Alexander Melnikov, pianoforte ; Hilde Haraldsen Sveen, soprano ; Hélène Moulin, alto ; Jean-François Chiama, ténor ; Jochen Kupfer, basse ; Concerto Köln ; laurence Equilbey, direction. - Cité de la musique, 2007" ;
+	dcterms:issued       "2007" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0813633> .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0813633>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:55.533Z" ;
+	dcterms:modified          "2014-06-27T11:27:55.533Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633#metadataTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0813633> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

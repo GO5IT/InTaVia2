@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8803039b/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803039b>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:58.674Z" ;
+	dcterms:modified          "2018-03-26T12:26:49.710Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8803039b> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8803039b.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8803039b>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1952" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803039b> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:07.866Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803039b> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803039b>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8803039b> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8803039b.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:07.866Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803039b> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8803039b>
+	a                   ore:Proxy ;
+	dc:creator          "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Donizetti, Gaetano (1797-1848). Auteur ou responsable intellectuel", "Puccini, Giacomo (1858-1924). Auteur ou responsable intellectuel", "Conley, Eugene (1908-1981). Ténor", "Gounod, Charles (1818-1893). Auteur ou responsable intellectuel", "Bizet, Georges (1838-1875). Auteur ou responsable intellectuel", "Flotow, Friedrich von (1812-1883). Auteur ou responsable intellectuel" ;
+	dc:date             "1952" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Faust. CG 4]. Extrait", "Titre uniforme : [La favorite]. Extrait en italien", "Titre uniforme : [Martha]. Extrait en italien", "Titre uniforme : [Carmen. GB 9]. Extrait en anglais", "Titre uniforme : [Tosca]. Extrait", "Titre uniforme : [Rigoletto]. Choix" ;
+	dc:format           "multipart/mixed", "disque microsillon"@fre, "disc"@eng, "1 disque : 33 t ; 30 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8803039b", "Numéro commercial : DECCA LXT2514" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37847221r"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-8121" ;
+	dc:title            "LA TOSCA ; Recondita armonia ; TOSCA : E Lucevan le stelle ; La bohème : Che gelida manina / PUCCINI ; New Symphony Orchestra dir. Royalton KISCH. CARMEN : Flower song / Bizet. TURANDOT : Non Piangere / PUCCINI ; New Symphony Orchestra dir. A. EREDE. RIGOLETTO : Questa o quella. RIGOLETTO' : La donna e mobile / VERDI. LA FAVORITA : Spirto gentil / DONIZETTI ; New Symphony Orchestra dir. Royalton KISCH. FAUST : Salut, demeure chaste et pure / GOUNOD ; New Symphony Orchestra dir. Alberto EREDE. MARTA : \u0022M'Appari tut'amor\u0022 / FLOTOW ; New symphony Orchestra dir. R. KISCH ; Eugene CONLEY" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803039b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803039b> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803039b.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4077"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DAA520"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF8C00"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803039b>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "238664"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

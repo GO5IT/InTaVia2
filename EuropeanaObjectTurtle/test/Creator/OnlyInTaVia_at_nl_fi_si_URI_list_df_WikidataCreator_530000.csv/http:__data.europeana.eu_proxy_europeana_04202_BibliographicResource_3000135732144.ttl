@@ -1,0 +1,147 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135732144>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/228> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1872" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135732144> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135732144>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000215646> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000215646> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135732144#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:22.214Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135732144> .
+
+<http://lib.ugent.be/europeana/900000215646>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14811"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000215646>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "13680"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "202"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#1E90FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#008B8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#20B2AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#4682B4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135732144>
+	a                   ore:Proxy ;
+	dc:contributor      "Marc Anthony Lower" ;
+	dc:creator          "Margaret Cavendish" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000337219" ;
+	dc:language         "en" ;
+	dc:publisher        "John Russel Smith" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "The lives of William Cavendishe, duke of Newcastle, and of his wife, Margaret duchess of Newcastle" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "8° ; XLIV, 310 p." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1872" ;
+	dcterms:spatial     <http://sws.geonames.org/2643743/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135732144> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135732144>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:29:59.705Z" ;
+	dcterms:modified          "2015-12-04T14:06:04.351Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135732144> ;
+	edm:completeness          "7" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135732144> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000215646&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/228>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://www.freebase.com/m/0y8pb>, <http://id.ndl.go.jp/auth/ndlna/00744530>, <http://viaf.org/viaf/29597878>, <http://kulturarvsdata.se/LSH/agents/66734>, <https://livedata.bibsys.no/authority/90635260>, <http://libris.kb.se/resource/auth/205432>, <http://dbpedia.org/resource/Margaret_Cavendish,_Duchess_of_Newcastle-upon-Tyne>, <http://id.worldcat.org/fast/120454>, <http://datos.bne.es/resource/XX5444434>, <https://g.co/kg/m/0y8pb>, <http://d-nb.info/gnd/118866230>, <http://data.bibliotheken.nl/id/thes/p071057293>, <http://id.loc.gov/authorities/names/n83206596>, <urn:uuid:97adc9a7-e04a-4315-8bee-a68df5e037ef>, <https://libris.kb.se/64jlmbzq184w0tt>, <http://www.idref.fr/029150280/id>, <http://data.bnf.fr/ark:/12148/cb12293271f>, <http://www.wikidata.org/entity/Q242640>, <http://openlibrary.org/works/OL114329A> ;
+	rdaGr2:dateOfBirth             "1623-01-01" ;
+	rdaGr2:dateOfDeath             "1673-12-15" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/177852> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/10>, <http://data.europeana.eu/concept/76> ;
+	skos:altLabel                  "Кавендиш, Маргарет"@ru, "Margaret Cavendishová, vévodkyně z Newcastle"@cs, "Margaret Lucas Cavendish"@fi, "Margaret Cavendish"@en, "Margaret Cavendish"@ca, "Кэвендиш Маргарет"@ru, "Margaret Cavendish Newcastle"@de, "Margaret Cavendish Newcastle"@sv, "Margret Cavendish"@sv, "Margaret Cavendish Newcastle"@fi, "Margaret Cavendish Newcastle"@pt, "Margaret Cavendish Newcastle"@en, "Margaret Cavendish Newcastle"@it, "Margaret Cavendish Newcastle"@fr, "Margaret Cavendish Newcastle"@es, "Margaret Cavendish Newcastle"@pl, "Margaret Cavendish Newcastle"@nl, "Маргарет Кэвендиш"@ru, "Margaret Cavendish, Duchess of Newcastle"@en, "Margaret Lucas"@fi, "Margaret Lucas"@en, "Cavendish"@sv ;
+	skos:note                      "Aristocrate anglaise, femme de lettres et de science"@fr, "English aristocrat, prolific writer, and scientist"@en, "Scrittrice e filosofa inglese"@it, "Escritora y científica"@es, "Engelsk författare. Född Margaret Lucas"@sv, "Brits filosoof"@nl, "Cientifica i escriptora anglesa, duquessa de Newcastle"@ca, "Anglická šlechtična a spisovatelka"@cs, "Englische Adelige und Schriftstellerin"@de ;
+	skos:prefLabel                 "Margaret Cavendish"@de, "Margaret Cavendish"@sv, "Margaret Cavendish"@fi, "Margaret Cavendish"@it, "Margaret Cavendish"@fr, "Margaret Cavendish"@es, "Margaret Cavendish"@sl, "Margaret Cavendish"@pl, "Margaret Cavendish"@ro, "Margaret Cavendish"@nl, "Margaret Cavendish, Duquessa de Newcastle-upon-Tyne"@ca, "Margaret Cavendish Newcastle"@da, "Margaret Cavendishová"@cs, "Margaret Cavendish, Duquesa de Newcastle-upon-Tyne"@pt, "Кэвендиш, Маргарет"@ru, "Margaret Cavendish, Duchess of Newcastle-upon-Tyne"@hu, "Margaret Cavendish, Duchess of Newcastle-upon-Tyne"@en .
+
+<http://sws.geonames.org/2643743/>
+	a               edm:Place ;
+	skos:prefLabel  "London (Herstellung)" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135732144#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:22.214Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135732144> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135732144>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

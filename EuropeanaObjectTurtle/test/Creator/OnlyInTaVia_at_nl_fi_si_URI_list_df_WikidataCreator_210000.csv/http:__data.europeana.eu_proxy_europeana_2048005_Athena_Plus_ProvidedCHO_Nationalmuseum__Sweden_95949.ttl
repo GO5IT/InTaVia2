@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=95949&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/157395> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:38.451Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://partage.vocnet.org/part00047>
+	a               skos:Concept ;
+	skos:altLabel   "Handzeichnung"@de, "rajzok"@hu, "dibuixos (obres visuals)"@ca, "dibujos (obras visuales)"@es, "rysunki"@pl, "teckningar"@sv, "desenhos"@pt, "disegno (obra visiva)"@it, "tegninger"@no, "crteži"@hr, "dessins (oeuvres visuelles)"@fr, "drawing (visual work)"@en, "tekening (visueel werk)"@nl, "kresby"@cs ;
+	skos:broader    <http://partage.vocnet.org/>, <http://partage.vocnet.org/part01377>, <http://partage.vocnet.org/part00039> ;
+	skos:narrower   <http://partage.vocnet.org/part00560>, <http://partage.vocnet.org/part01284>, <http://partage.vocnet.org/part01330>, <http://partage.vocnet.org/part00948>, <http://partage.vocnet.org/part00415> ;
+	skos:prefLabel  "crtež"@hr, "drawings (visual works)"@en, "desenho"@pt, "tekeningen"@nl, "dibuix (obra visual)"@ca, "piirustukset"@fi, "risbe"@sl, "kresba"@cs, "Zeichnung (visuelles Werk)"@de, "tegning (verk)"@no, "rajz"@hu, "disegni"@it, "rysunek"@pl, "teckning"@sv, "dibujo (obra visual)"@es, "dessin (oeuvre visuelle)"@fr .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95949&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949/manifest> ;
+	ebucore:fileByteSize    "293893"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "587"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "910"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=95949&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95949&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95949&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949>
+	a  edm:ProvidedCHO .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T13:57:35.320Z" ;
+	dcterms:modified          "2017-02-21T15:28:49.651Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> ;
+	edm:completeness          "5" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D95949%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:38.451Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949>
+	a                   ore:Proxy ;
+	dc:creator          "Esaias van de Velde"@sv ;
+	dc:description      "   "@sv ;
+	dc:format           "Svartkrita på papper", <http://partage.vocnet.org/part00881>, "teckning (bildskapande)" ;
+	dc:identifier       "(Inv. Nr.: NMH 2164/1863)", "95949" ;
+	dc:title            "Flodlandskap"@sv ;
+	dc:type             "teckningar"@sv, "Frihandsteckningar (Teckningar)"@sv, <http://partage.vocnet.org/part00047> ;
+	dcterms:extent      "Mått 20 x 30,8 cm", "Passepartout 42 x 55 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95949> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/agent/157395>
+	a                    edm:Agent ;
+	owl:sameAs           <http://id.worldcat.org/fast/139984>, <http://id.loc.gov/authorities/names/n84218225>, <http://dbpedia.org/resource/Esaias_van_de_Velde>, <http://data.bnf.fr/ark:/12148/cb14966552k>, <https://www.freebase.com/m/07xpxd>, <http://datos.bne.es/resource/XX1507186>, <http://vocab.getty.edu/ulan/500016084>, <https://g.co/kg/m/07xpxd>, <http://data.bibliotheken.nl/id/thes/p070116539>, <http://data.bnf.fr/ark:/12148/cb11975153c>, <http://kulturarvsdata.se/LSH/agents/29539>, <http://www.wikidata.org/entity/Q467361>, <http://d-nb.info/gnd/120640945>, <http://ta.sandrart.net/-person-2637>, <http://viaf.org/viaf/37752819> ;
+	rdaGr2:dateOfBirth   "1587-05-17" ;
+	rdaGr2:dateOfDeath   "1630-11-18" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40360> ;
+	skos:altLabel        "Esijas van velde"@en, "Esijas van de Velde"@en, "Ez. Vandevelde"@en, "Isaac van der Velden"@en, "Isaias von der Velden"@en, "Es. v. der Velden"@en, "Jsajas van de Velde"@en, "Esyas van de Velde"@en, "Isias vande Velde"@en, "E. von der Velde"@en, "Isaïe vanden Welde"@en, "Esias Vandeveldt"@en, "E. van de Velde"@nl, "E. van de Velde"@en, "Вельде Эсайас ван де"@ru, "Велде, Эсайас ван де"@ru, "Esaias Van den Velde"@en, "Esaias v.d. Velden"@en, "Esaias von der Velden"@en, "E. Vandeveldt"@en, "E. Vandervelde"@en, "Es. V. de Velde"@en, "Jesaias vande Velde"@en, "Es. Van Velde"@en, "Esaias vande Velde"@en, "Elias von der Velden"@en, "Ysaye Van Develde"@en, "Isaias vande Velde"@en, "Isaie - Vande Velde"@en, "Isaac Vandevelde"@en, "E. Van de Velde"@en, "Esaias van der Velden"@en, "Esais Van de Velde"@en, "Esaie Vandesvelde"@en, "Esias van Velden"@en, "Essaias Vanderelde"@en, "Esaie Van de Velde"@en, "Isaye Vanden Welde"@en, "Esias van der Velden"@en, "Esaias Van De Velde"@en, "Esaias van de Velde"@fr, "E. v. d. Velden"@en, "Esaijas v. d. velde"@en, "E.v.d. Velden"@en, "Esaias Vande Velde"@en, "Ez. V. Velde"@en, "Ezias V. de Velde"@en, "Isaie Van-De-Velde"@en, "Esaias V. de Velde"@en, "Isaje vande Velde"@en, "Esais Vandevelde"@en, "Isaie Vanden Velden"@en, "E. Vandevelde"@en, "E.v.d. Velden besten Zeit"@en, "Esaias van de Velde the Elder"@en, "Esaias van den Velden"@en, "Ezais van de Velde"@en, "Ysaye Van de Velde"@en, "Esa. Vandervelde"@en, "Esaias, Holl. Vandevelde"@en, "E. Vanderveldt"@en, "Jesias van de Velde"@en, "Isaias van de Velde"@en, "Elias v. d. Velde"@en, "Esaias v. d. Velden"@en, "Esaias van de Velde I"@fr, "Esaias van de Velde I"@en, "Isaïe Van den Velde"@en, "Esayas van de Velde"@en, "Esaias Vandeveldt"@en, "Esaias Vandevelde"@en, "Essaias van der Velde"@en, "Esaias Van De I Velde"@en, "Esysas van de Velde"@en, "Esaias v. d. Velde"@en, "E. Vandenveldt"@en, "Jesias vander Velde"@en, "Isaac VAn den Welde"@en, "Esaias I van de Velde"@fr, "Esaias I van de Velde"@en, "Isaïe Vandevelde"@en, "Esaijas van de velde"@en, "Isaië Vanden Velde"@en, "Essaias v.d. Velde"@en, "Εσάιας φαν ντεν Φέλντε"@el, "Isaie Van de Velde"@en, "Esaias van den Velde"@nl, "Esaias van den Velde"@en, "Is. Van de Veld"@en, "Josias van der Velde"@nl, "Josias van der Velde"@en, "Esaias van der velde"@en, "Isaye Vandevelde"@en, "Jesajas von der Velden"@en, "Is. Van den Velde"@en, "Isaï Vandevelde"@en, "Esias van de Velde"@en, "E. V. Velde"@en, "Van der, esajas velde"@en, "Esayes van de Velde"@en, "Esaye Vanden Velden"@en, "Elias van de Velde"@en, "Esias van der Velde"@en, "E. v. d. Velde"@en, "Esaye Vandevelde"@en, "I. van der Velde"@en, "Essayes Vanderveltden"@en, "Esaias van der Welde"@en, "Esaïas van de Velden"@en, "E. van Velde"@en, "Esaias vanden Velde"@en, "E. van de velde"@en, "Esaias van der Velde"@nl, "Esaias van der Velde"@en, "E. van de Velden"@en, "Isaac Vanden-veld"@en, "Ysack van Velde"@en, "Esajas v. d. velde"@en, "Elias vande Velde"@en, "Isaie Vanden Welde"@en, "Esaie Vande Velde"@en, "Esajas van der Velden"@en, "Esaias Vandervelde"@en, "Isaias van Velde"@en, "E. Vande Velde"@en, "Jesaias van dr Velde"@en, "Es. v. Velde"@en, "Isaias van der Velde"@en, "Esaias van de, I Velde"@en, "E. van der Velden"@en, "Esias Vandevelde"@en, "Esyns vande Velde"@en, "E. V. de Velde"@en, "E. vande Velden"@en, "Is. Vandevelden"@en, "Isaias van den Velde"@en, "Esayas vander Velden"@en, "Isaiah Vandeveld"@en, "Velde"@en, "E.v.d. Felden"@en, "Esias V.D. Velde"@en, "Ezias vande Velde"@en, "Osias van der Velde"@nl, "Efaye Vandevelde"@en, "E. van der Velde"@en, "Elias V. de Velde"@en, "Osias van der Velde"@en, "E. von der Velden"@en, "Isaias v. d. Felden"@en, "Esajas van de Velde"@en, "Es. v. d. Velden"@en, "E van de Velde"@en ;
+	skos:note            "Pintor neerlandès"@ca, "Dutch landscape painter (1587-1630)"@en, "Nizozemský malíř - krajinář"@cs, "Pintor neerlandés"@es, "Hollandi maalikunstnik"@et, "Holländischer Maler, Zeichner und Radierer"@de, "Pictor olandez"@ro, "Nederländsk konstnär"@sv, "Pittore e incisore olandese"@it, "Ολλανδός ζωγράφος"@el, "Peintre néerlandais"@fr, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel       "Esaias van den Velde"@sk, "Esaias van de, I Velde"@da, "Эсайас ван де Вельде"@ru, "Εσάιας φαν ντε Φέλντε"@el, "Esaias Van de Velde l'Ancien"@fr, "Esaias van de Velde"@nl, "Esaias van de Velde"@ca, "Esaias van de Velde"@pl, "Esaias van de Velde"@sl, "Esaias van de Velde"@cs, "Esaias van de Velde"@es, "Esaias van de Velde"@de, "Esaias van de Velde"@it, "Esaias van de Velde"@en, "Esaias van de Velde"@lt, "Esaias van de Velde"@pt, "Esaias van de Velde"@sv .

@@ -1,0 +1,134 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:46.652Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010924> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1080398>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "25626"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "263"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000010924>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:01:44.612Z" ;
+	dcterms:modified          "2014-05-27T13:01:44.612Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924#contentTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000010924> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1080398&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000010924>
+	a                   ore:Proxy ;
+	dc:contributor      "Abraham Janssens", "Justus Lipsius", "Joseph Maes", "Pieter de Jode" ;
+	dc:date             "s.d.", "18--? - 19--?" ;
+	dc:identifier       "008378990" ;
+	dc:language         "la" ;
+	dc:subject          "Portraits", "Portretten" ;
+	dc:title            "Justo Lipsio" ;
+	dc:type             "Still image"@en, "Monograph"@en ;
+	dcterms:extent      "voorstelling met opschrift: 311 x 231 mm.", "voorstelling: 275 x 231 mm", "Black-and-white ;" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010924> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000010924>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/167783>, <http://data.europeana.eu/agent/153267> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000010924> .
+
+<http://data.europeana.eu/agent/167783>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://www.wikidata.org/entity/Q315871>, <https://libris.kb.se/gdsvwm705sb86b6>, <http://data.bnf.fr/ark:/12148/cb12036983h>, <http://id.loc.gov/authorities/names/n50051738>, <http://openlibrary.org/works/OL51201A>, <http://libris.kb.se/resource/auth/206310>, <http://www.idref.fr/028557883/id>, <http://id.ndl.go.jp/auth/ndlna/00621004>, <http://id.worldcat.org/fast/17532>, <http://datos.bne.es/resource/XX1121813>, <http://datos.bne.es/resource/XX1501901>, <urn:uuid:80f23510-f8a9-4ef8-84af-a21ee01e4b5a>, <https://g.co/kg/m/01wddk>, <http://d-nb.info/gnd/11857342X>, <https://livedata.bibsys.no/authority/90197338>, <http://ta.sandrart.net/-person-1528>, <http://nlg.okfn.gr/resource/authority/record70577>, <http://dbpedia.org/resource/Justus_Lipsius>, <https://www.freebase.com/m/01wddk>, <http://data.cervantesvirtual.com/person/59978>, <http://data.bibliotheken.nl/id/thes/p068426488>, <http://kulturarvsdata.se/LSH/agents/49355>, <http://vocab.getty.edu/ulan/500321549>, <http://viaf.org/viaf/51706656> ;
+	rdaGr2:dateOfBirth             "1547-10-28" ;
+	rdaGr2:dateOfDeath             "1606-03-23" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/202642> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/202815> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2970>, <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Justo Lípsio"@pt, "Joost Lips"@cs, "Joost Lips"@pt, "Joost Lips"@en, "Joost Lips"@fr, "Joost Lips"@nl, "J. Lipsius"@en, "J. Lipsius"@nl, "Juste Lise"@cs, "Липсий"@ru, "Joest Lips"@es, "Joest Lips"@cs, "Joest Lips"@de, "Joest Lips"@pt, "Joest Lips"@en, "Just Lipsiuß"@cs, "Lipsius"@sv, "Juste Lipse"@sv, "Juste Lipse"@it, "J. Lips"@nl, "Just Lipsiusz"@cs, "Justus Lipsius"@es, "Justus Lipsius"@it, "Justus Lipsius"@fr, "Юст Липсий"@ru ;
+	skos:note                      "Fllämischer Rechtsphilosoph und Philologe"@de, "Flemish philologist, philosopher and legal scholar (1547-1606)"@en, "Vlámský filosof"@cs, "Flamländsk filolog, historiker och filosof"@sv, "Flamandzki filolog klasyczny"@pl, "Flamand filológus, filozófus és jogtudós"@hu, "Фламандский филолог, философ и правовед16 века"@ru, "Vlaams filosoof"@nl, "Filosofo, umanista e filologo fiammingo"@it, "Flaamilainen kielentutkija ja humanisti"@fi ;
+	skos:prefLabel                 "Justus Lipsius"@sv, "Justus Lipsius"@fi, "Justus Lipsius"@pt, "Justus Lipsius"@en, "Justus Lipsius"@hu, "Justus Lipsius"@de, "Justus Lipsius"@cs, "Justus Lipsius"@sl, "Justus Lipsius"@ga, "Justus Lipsius"@pl, "Justus Lipsius"@da, "Justus Lipsius"@nl, "Justus Lipsius"@ca, "Justo Lipsio"@es, "Giusto Lipsio"@it, "Липсий, Юст"@ru, "Juste Lipse"@fr .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010924>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1080398> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1080398> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010924#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:46.652Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010924> .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1080398>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/153267>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p273440829>, <https://www.freebase.com/m/0593ly>, <http://vocab.getty.edu/ulan/500033089>, <http://id.worldcat.org/fast/1949695>, <http://datos.bne.es/resource/XX5091023>, <http://d-nb.info/gnd/122723856>, <http://ta.sandrart.net/-person-2338>, <https://g.co/kg/m/0593ly>, <http://id.loc.gov/authorities/names/no2011004118>, <http://viaf.org/viaf/95885342>, <http://dbpedia.org/resource/Abraham_Janssens>, <http://www.wikidata.org/entity/Q330139>, <http://www.idref.fr/164268707/id> ;
+	rdaGr2:dateOfBirth   "1575-01-01" ;
+	rdaGr2:dateOfDeath   "1632-01-25" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203279> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203279> ;
+	skos:altLabel        "Jansens d'Anvers"@en, "A. Jausens"@en, "Abraham Jansène"@en, "Janssens"@en, "Abraham, the Elder Janssens"@en, "Abraham Janssens I von Nuyssn"@en, "A. Janssen"@en, "Abraham Jensens"@en, "Ab. Janssens"@en, "Abraham I Janssens van Nuyssen"@en, "Abr. Jansen"@en, "A. Jansen"@en, "Abraham Jansen"@en, "Abraham Janssens"@es, "Abraham Janssens"@nl, "Abraham Janssens"@fr, "Abraham Janssens"@it, "Abraham Janssens"@en, "Abr. Janssens"@en, "Άμπραχαμ Γιάνσσεν, Άμπραχαμ Γιάνσσενς φαν Νόισσεν"@el, "Abraham, I Janssens"@en, "Abraham (der Ältere) Janssens"@de, "Abraham Janssens"@de, "Abraham I Janssens"@en, "Abraham Janssens the Elder"@en, "A. Jansens"@en, "A. Janssens"@en, "Янсенс"@ru, "Ab. Janssen"@en, "Abraham I Janssens Van Nuyssen"@pl, "Abraham I Janssens Van Nuyssen"@cs, "Abraham I Janssens Van Nuyssen"@en, "Abraham Janssens van Nuyssen"@hu, "Abraham Janssen"@fr, "Abraham Janssens van Nuyssen"@fr, "A. Janson"@en, "Abraham Janssens van Nuyssen"@en, "Abrah. Janssens"@en, "Abraham, I Janssens van Nuyssen"@en, "Abraham Janssen"@en, "Janssens van Nuyssen"@de, "Ab. Jansens"@en, "Abr. Janssen"@en, "Abraham janssens"@es, "Nuyssen"@de, "Abraham Janssen van Nuyssen"@en, "Янсенс Абрахам"@ru, "Абрахам Янсенс"@ru, "Habraham Jean Sence"@en, "Abraham Jansens"@en, "Abraham Janssens I"@de ;
+	skos:note            "Vlámský malíř (1575–1632)"@cs, "Flämischer Maler"@de, "Pintor flamenc"@ca, "Pittore fiammingo"@it, "Flemish painter"@en, "Pintor flamengo"@pt, "Фламандский художник"@ru, "Vlaams kunstschilder"@nl, "Pintor flamenco"@es, "Peintre flamand"@fr, "Flamländsk målare"@sv, "Flamand festő"@hu, "Flamandzki malarz"@pl, "Φλαμανδός ζωγράφος"@el ;
+	skos:prefLabel       "Abraham I Janssens"@ca, "Abraham Janssens van Nuyssen"@de, "Abraham Janssens"@hu, "Abraham Janssens"@sv, "Abraham Janssens"@pt, "Abraham Janssens"@cs, "Abraham Janssens"@pl, "Abraham Janssens"@da, "Abraham Janssens I"@en, "Abraham Janssens I"@it, "Abraham Janssens I"@fr, "Abraham Janssens I"@es, "Abraham Janssens I"@nl, "Άμπραχαμ Γιάνσσενς"@el, "Янсенс, Абрахам"@ru .

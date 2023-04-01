@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801690b>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801690b> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801690b.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801690b>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:26.642Z" ;
+	dcterms:modified          "2018-03-26T12:26:19.979Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801690b> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801690b.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:39.388Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801690b> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801690b>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "248061"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801690b>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1962" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801690b> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801690b.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4707"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#ADFF2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0E68C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:39.388Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801690b> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801690b/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801690b>
+	a                   ore:Proxy ;
+	dc:creator          "Otto, Lisa (1919-2013). Soprano", "Schubert, Franz (1797-1828). Auteur ou responsable intellectuel", "Arndt, Günther (1907-1976). Direction de choeur", "Bizet, Georges (1838-1875). Auteur ou responsable intellectuel", "Gounod, Charles (1818-1893). Auteur ou responsable intellectuel", "Grobe, Donald (1929-1986). Ténor", "Haendel Chor. Berlin. Choeur mixte", "Händel, Georg Friedrich (1685-1759). Auteur ou responsable intellectuel", "Giordani, Giuseppe (1751-1798). Compositeur présumé", "Beethoven, Ludwig van (1770-1827). Auteur ou responsable intellectuel", "Rundfunk-Sinfonieorchester (Berlin). Interprète", "Bruckner, Anton (1824-1896). Auteur ou responsable intellectuel", "Schnabel, J.. Auteur ou responsable intellectuel", "Mozart, Wolfgang Amadeus (1756-1791). Auteur ou responsable intellectuel" ;
+	dc:date             "1962" ;
+	dc:description      "Contient une table des matières", "Titre uniforme : [Messiah. HWV 56. No 39. Hallelujah]", "Titre uniforme : [Agnus Dei]", "Titre uniforme : [Ave verum corpus. KV 618]", "Titre uniforme : [Dank sei dir, Herr]", "Titre uniforme : [Messiah. HWV 56]. Extrait", "Titre uniforme : [Caro mio ben]", "Titre uniforme : [Ave Maria. Choeur à 7 voix. WAB 6]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Ave Maria. D 839]. Arr.", "Titre uniforme : [Die Ehre Gottes aus der Natur. Op. 48, no 4]", "Titre uniforme : [Ave Maria. Voix, piano. CG 89e]. Adapt.", "Titre uniforme : [Vesperae solennes de confessore. KV 339]" ;
+	dc:format           "1 disque : 33 t, stéréo ; 30 cm", "disque microsillon"@fre, "Nombre total de vues :  17", "multipart/mixed", "disc"@eng ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8801690b", "Numéro commercial : Deutsche Grammophon  SLPEM136366" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb147158712"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13920755r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13908208c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138625095"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13915094q"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13911195c"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13935263d"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139126203"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13915318f"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13913106d"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37854415v"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14786865t"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-13583" ;
+	dc:title            "ALLELUIA... ALLELUIA : AIRS ET CHOEURS RELIGIEUX CELEBRES / LISA OTTO - DONALD GROBE" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801690b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801690b> .

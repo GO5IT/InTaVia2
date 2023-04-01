@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-242&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "21941"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "178"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:50.758Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_242> .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-242>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49385"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_242>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-I-242> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-242&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/42491>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://viaf.org/viaf/5798194>, <http://vocab.getty.edu/ulan/500011085>, <http://www.wikidata.org/entity/Q616083>, <http://id.loc.gov/authorities/names/no2015029695>, <http://dbpedia.org/resource/Adriaan_de_Lelie>, <https://www.freebase.com/m/0gx2606>, <http://data.bnf.fr/ark:/12148/cb14908220c>, <http://d-nb.info/gnd/121830187>, <http://data.bibliotheken.nl/id/thes/p12423822X>, <https://g.co/kg/m/0gx2606>, <http://www.idref.fr/185107656/id>, <http://id.worldcat.org/fast/1957006> ;
+	rdaGr2:dateOfBirth   "1755-05-19" ;
+	rdaGr2:dateOfDeath   "1820-11-30" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40300> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "A de Lely"@en, "Lely"@en, "A. de Lely"@en, "De Lely"@en, "De Lelij"@en, "De Lelie"@en, "Adrieande lelie"@en, "De Lelie d'Amsterdam"@en, "De Liley"@en, "De Lelie of Amsterdam"@en, "Adriaan De Lelie"@en, "A de Lelie"@en, "Lelie"@en, "Adriaen de Lelie"@en, "A.D. Lelie"@nl ;
+	skos:note            "Pictor olandez"@ro, "Nederlands kunstschilder"@nl, "Peintre néerlandais"@fr, "Hollandi maalikunstnik"@et, "Dutch painter (1755-1820)"@en, "Pintor neerlandès"@ca, "Pintor neerlandês"@pt, "Pintor neerlandés"@es, "Pittore neerlandese"@it ;
+	skos:prefLabel       "Adriaan de Lelie"@da, "Adriaan de Lelie"@de, "Adriaan de Lelie"@sv, "Adriaan de Lelie"@pt, "Adriaan de Lelie"@sl, "Adriaan de Lelie"@en, "Adriaan de Lelie"@it, "Adriaan de Lelie"@fr, "Adriaan de Lelie"@ca, "Adriaan de Lelie"@nl, "Adriaan de Lelie"@es, "Де Лели, Адриан"@ru .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_242>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:53.731Z" ;
+	dcterms:modified          "2018-04-05T16:45:01.088Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-I-242%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:50.759Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_242> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_I_242>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/42491> ;
+	dc:creator          <http://data.europeana.eu/agent/42491> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1810" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_I_242> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_I_242>
+	a                   ore:Proxy ;
+	dc:contributor      "Adriaan de Lelie" ;
+	dc:creator          "Adriaan de Lelie" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-I-242", "OS-I-242" ;
+	dc:rights           "for information contact: Frans Hals Museum"@en, "Frans Hals Museum", "voor informatie: Frans Hals Museum"@nl ;
+	dc:source           "OS-I-242 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van Wybrand Hendriks"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1810" ;
+	dcterms:extent      "30,5 x 25 cm", "incl. lijst: 44,5 x 39,3 x 7 cm" ;
+	dcterms:isPartOf    "GVN", "Kunstwerken uit het Frans Hals Museum", "FHM01" ;
+	dcterms:medium      "geschilderd", "paneel ; olieverf", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_I_242> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_I_242> .

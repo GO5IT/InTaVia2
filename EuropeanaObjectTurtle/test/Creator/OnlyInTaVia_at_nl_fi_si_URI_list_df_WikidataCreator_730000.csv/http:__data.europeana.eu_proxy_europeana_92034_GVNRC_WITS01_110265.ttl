@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110265>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:40.891Z" ;
+	dcterms:modified          "2018-04-05T18:11:00.517Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_110265> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A110265%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110265>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:110265> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110265&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_110265>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2477>, <http://data.europeana.eu/concept/2552> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008", "1927" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_110265> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_110265>
+	a                   ore:Proxy ;
+	dc:contributor      "Tholen, Willem Bastiaan" ;
+	dc:creator          "Tholen, Willem Bastiaan" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:110265", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110265" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:110265], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "ring"@nl, "heupstuk"@nl, "jas met vest"@nl, "mansportret"@nl, "naar links"@nl, "stoel"@nl, "zittend"@nl, "stropdas"@nl, "sigaar"@nl ;
+	dc:title            "Portret van Ph. Mees" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1927" ;
+	dcterms:isPartOf    "Willem Witsen: Tachtiger in brief en beeld", "WITS01", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf", "doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_110265> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110265> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110265#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:27.697Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110265> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:110265&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "37842"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "179"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:110265>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49647"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110265>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_110265#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:27.697Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_110265> .
+
+<http://data.europeana.eu/concept/2477>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2280>, <http://data.europeana.eu/concept/2478> ;
+	skos:exactMatch  <https://www.freebase.com/m/01rkbr>, <http://id.worldcat.org/fast/1035381>, <http://id.loc.gov/authorities/names/sh85090570>, <http://purl.org/bncf/tid/60407>, <http://data.bnf.fr/ark:/12148/cb11994692t>, <http://babelnet.org/rdf/s00057149n>, <http://thesaurus.europeanafashion.eu/thesaurus/10229>, <http://id.ndl.go.jp/auth/ndlna/00568072>, <https://g.co/kg/m/01rkbr>, <http://www.wikidata.org/entity/Q44416>, <http://www.yso.fi/onto/ysa/Y100897>, <http://www.yso.fi/onto/yso/p20356>, <http://vocab.getty.edu/aat/300210068>, <https://d-nb.info/gnd/4165544-8>, <http://datos.bne.es/resource/XX527840> ;
+	skos:note        "Bande de tissu passée autour du cou, sous le col d'une chemise"@fr, "Ukrasni odjevni predmet"@hr, "Аксессуар для ношения на шее"@ru, "Complement de la camisa"@ca, "Clothing item, traditionally worn by boys and men with dress shirt"@en, "Item de vestuário, tradicionalmente usado por meninos e homens com camisa social"@pt, "Element odzieży noszony na szyi"@pl, "Accessorio di abbigliamento"@it, "Dekoratiivne rõivaese, mida kantakse kaela ümber"@et, "Smalt bånd af stof bundet rundt om flipperne slidt til jakke eller dragt"@da, "Modni dodatek"@sl, "Smalt band av tyg knutet runt skjortkragen som bärs till kavaj eller kostym"@sv, "Modeartikel"@de, "Mode-artikel bij overhemd"@nl, "Část oděvu"@cs, "Complemento de la camisa"@es ;
+	skos:prefLabel   "Cravate"@fr, "Gravata"@pt, "Cravată"@ro, "Cravatta"@it, "Вратовръзка"@bg, "Γραβάτα"@el, "Necktie"@en, "Slips"@sv, "Slips"@da, "Kaklasaite"@lv, "Kaklaraištis"@lt, "Carbhat"@ga, "Gorbata"@eu, "Stropdas"@nl, "Галстук"@ru, "Lips"@et, "Nyakkendő"@hu, "Krawatte"@de, "Krawat"@pl, "Solmio"@fi, "Kravata"@hr, "Kravata"@sk, "Kravata"@sl, "Kravata"@cs, "Corbata"@ca, "Corbata"@es .
+
+<http://data.europeana.eu/concept/2552>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p10788>, <http://data.bnf.fr/ark:/12148/cb11948388p>, <http://www.wikidata.org/entity/Q46847>, <http://iconclass.org/41D2664>, <http://purl.org/bncf/tid/25632>, <https://d-nb.info/gnd/4178181-8>, <https://g.co/kg/m/09l0j_>, <http://thesaurus.europeanafashion.eu/thesaurus/10165>, <https://www.freebase.com/m/09l0j_>, <http://id.loc.gov/authorities/names/sh85114133>, <http://vocab.getty.edu/aat/300046012>, <http://babelnet.org/rdf/s00008287n>, <http://datos.bne.es/resource/XX537728> ;
+	skos:note        "Gioiello portato al dito"@it, "Smykke"@da, "Sormeen puettava rengas"@fi, "Tipo de adorno de joyería"@es, "Circular band worn as a type of ornamental jewellery around the finger"@en, "Parure annulaire, portée au doigt"@fr, "Schmuck"@de, "Предмет, носимый на пальце"@ru, "Rodzaj biżuterii w kształcie małej obręczy nakładanej na palec ręki"@pl, "Sieraad"@nl, "Kroužek, zpravidla kovový, nošený na prstu ruky, často osazovaný kameny"@cs ;
+	skos:prefLabel   "Fingerring"@sv, "Sõrmus"@et, "Кольцо"@ru, "Inel"@ro, "Пръстен"@bg, "Ring"@de, "Ring"@en, "Ring"@da, "Ring"@nl, "Pierścień"@pl, "Gyűrű"@hu, "Žiedas"@lt, "Prsteň"@sk, "Eraztun"@eu, "Gredzens"@lv, "Anello"@it, "Bague"@fr, "Sormus"@fi, "Anillo"@es, "Anel"@pt, "Fáinne"@ga, "Δακτυλίδι"@el, "Prsten"@hr, "Anell"@ca, "Prsten"@cs .

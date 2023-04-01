@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2063619/CZR_280_009/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2063619/CZR_280_009>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <http://www.wikidata.org/entity/Q22976979> .
+
+<https://www.dropbox.com/s/apjgem6f3zwg5n3/Czech_Republic_The_Sleepwalker_A001271.tif?raw=1>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2063619/CZR_280_009/manifest> ;
+	ebucore:fileByteSize    "71935901"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/tiff" ;
+	ebucore:height          "6472"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "3701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2063619/CZR_280_009>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2063619/CZR_280_009> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516073> ;
+	edm:hasView        <https://www.dropbox.com/s/apjgem6f3zwg5n3/Czech_Republic_The_Sleepwalker_A001271.tif?raw=1> ;
+	edm:isShownBy      <https://www.dropbox.com/s/u9ywrajtjf01aie/Czech_Republic_The_Sleepwalker_A001271.jpg?raw=1> ;
+	edm:object         <https://www.dropbox.com/s/u9ywrajtjf01aie/Czech_Republic_The_Sleepwalker_A001271.jpg?raw=1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671105> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516073>
+	a               foaf:Organization ;
+	skos:prefLabel  "The Moravian Gallery in Brno"@en .
+
+<https://www.dropbox.com/s/u9ywrajtjf01aie/Czech_Republic_The_Sleepwalker_A001271.jpg?raw=1>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2063619/CZR_280_009/manifest> ;
+	ebucore:fileByteSize    "23698255"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "6472"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "3701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/organization/1482250000004671105>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana 280"@en .
+
+<http://data.europeana.eu/item/2063619/CZR_280_009#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.361Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063619/CZR_280_009> .
+
+<file:///usr/local/tomcat/webapps/#CZR_280_place3>
+	a               edm:Place ;
+	skos:prefLabel  "The Moravian Gallery in Brno" ;
+	wgs84_pos:lat   "49.196053" ;
+	wgs84_pos:long  "16.604048" .
+
+<http://data.europeana.eu/proxy/europeana/2063619/CZR_280_009>
+	a                   ore:Proxy ;
+	dcterms:medium      <http://data.europeana.eu/concept/222> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1925" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2063619/CZR_280_009> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2063619/CZR_280_009> .
+
+<http://data.europeana.eu/proxy/provider/2063619/CZR_280_009>
+	a                    ore:Proxy ;
+	dc:creator           "Štyrský, Jindřich" ;
+	dc:description       "The suppressing of the subject component in favour of a refined system of colour tones of plans of a flat rhythm places the work with trends corresponding to the original artistic formulation of poetism, known as artificialism. It draws on constructivism and surrealism, anticipating lyrical abstraction."@en, "Potlačením námětové složky ve prospěch rafinované prostorové soustavy barevných oktáv plošně rytmizovaných plánů se dílo řadí k tendencím odpovídajícím zcela původní malířské formulaci poetismu tzv., artificialismu. Ukotvením se pohybuje mezi konstruktivismem a surrealismem jako předzvěst lyrické abstrakce."@cs ;
+	dc:language          "English", "Čeština" ;
+	dc:relation          <http://www.wikidata.org/entity/Q22976979> ;
+	dc:title             "Náměsíčná"@cs ;
+	dc:type              <http://www.iconclass.org//0>, <http://vocab.getty.edu/aat/300033638> ;
+	dcterms:alternative  "Sleepwalker"@en ;
+	dcterms:created      "1925" ;
+	dcterms:extent       "60,3 x 30,8 cm" ;
+	dcterms:medium       <http://vocab.getty.edu/aat/300178684> ;
+	dcterms:provenance   "Purchase in 1965" ;
+	edm:currentLocation  <file:///usr/local/tomcat/webapps/#CZR_280_place3> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2063619/CZR_280_009> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2063619/CZR_280_009> .
+
+<http://data.europeana.eu/item/2063619/CZR_280_009#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.361Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063619/CZR_280_009> .
+
+<http://data.europeana.eu/aggregation/europeana/2063619/CZR_280_009>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-03-10T13:12:35.214Z" ;
+	dcterms:modified          "2017-09-29T11:55:15.146Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2063619/CZR_280_009#contentTier>, <http://data.europeana.eu/item/2063619/CZR_280_009#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2063619/CZR_280_009> ;
+	edm:completeness          "10" ;
+	edm:country               "Czech Republic" ;
+	edm:datasetName           "2063619_EU_280_Czech_Republic" ;
+	edm:landingPage           <https://www.europeana.eu/item/2063619/CZR_280_009> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fu9ywrajtjf01aie%2FCzech_Republic_The_Sleepwalker_A001271.jpg%3Fraw%3D1&type=IMAGE> .
+
+<http://data.europeana.eu/concept/222>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <https://g.co/kg/m/05nmd>, <http://id.ndl.go.jp/auth/ndlna/00560048>, <http://vocab.getty.edu/aat/300178684>, <http://purl.org/bncf/tid/27936>, <https://www.freebase.com/m/05nmd>, <https://d-nb.info/gnd/4043238-5>, <http://babelnet.org/rdf/s00058757n>, <http://www.wikidata.org/entity/Q174705>, <http://www.yso.fi/onto/yso/p571> ;
+	skos:note        "Technique artistique fondée sur l'utilisation de la peinture à l'huile"@fr, "Konstnärlig målning med oljefärg"@sv, "Technik der künstlerischen Malerei mit Ölfarben"@de, "Kunstnerisk process med oliefarver"@da, "Maalaustekniikka"@fi, "Живописная техника"@ru, "Technika malarska"@pl, "Tecnica pittorica che utilizza pigmenti in polvere mescolati con oli essiccanti"@it, "Técnica de pintura artística"@pt, "Η διαδικασία της ζωγραφικής με χρωστικές ουσίες ανακατεμένες με στεγνωτικό λάδι"@el, "Process of painting with pigments that are bound with a medium of drying oil"@en, "Tècnica pictòrica que utilitza pintura a l'oli"@ca, "Técnica pictórica"@es ;
+	skos:prefLabel   "Péintéireacht ola"@ga, "Oliemaling"@da, "Eļļas glezniecība"@lv, "Olio-pintura"@eu, "Olejomalba"@cs, "Pintura a l'oli"@ca, "Oljemåleri"@sv, "Маслена живопис"@bg, "Schilderen met olieverf"@nl, "Ελαιογραφία"@el, "Peinture à l'huile"@fr, "Pintura al óleo"@es, "Olajfestés"@hu, "Malarstwo olejne"@pl, "Pictură în ulei"@ro, "Oljno slikarstvo"@sl, "Oil painting"@en, "Õlimaal"@et, "Pittura a olio"@it, "Aliejinė tapyba"@lt, "Масляная живопись"@ru, "Öljymaalaus"@fi, "Óleo sobre tela"@pt, "Ölmalerei"@de .
+
+<http://vocab.getty.edu/aat/300178684>
+	a               skos:Concept ;
+	skos:altLabel   "painting, oil (technique)"@en, "oil-painting (technique)"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300053343> ;
+	skos:note       "Arte o práctica de producir obras de creación con óleo, es decir, pigmento suspendido en aceites vegetales que se secan. Proviene al menos de la Edad Media europea y fue ampliamente adoptada para la pintura de caballete en el siglo XV."@es, "Het maken van kunstwerken met olieverf."@nl, "The art or practice of producing creative works in oil paint, which is pigment suspended in vegetal drying oils. It dates from at least the Middle Ages in Europe, and was widely adopted for easel painting by the fifteenth century."@en ;
+	skos:prefLabel  "schilderen met olieverf"@nl, "pintura al óleo (técnica)"@es, "oil painting (technique)"@en .

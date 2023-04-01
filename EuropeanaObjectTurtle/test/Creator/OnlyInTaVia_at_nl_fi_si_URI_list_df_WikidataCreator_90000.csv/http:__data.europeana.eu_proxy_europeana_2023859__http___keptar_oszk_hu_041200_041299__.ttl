@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://keptar.oszk.hu/041200/041299>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041299__/manifest> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:11.287Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041299__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_041200_041299__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041299__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041299__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/041200/041299> ;
+	edm:object         <http://keptar.oszk.hu/041200/041299/1900bb_Page_087_f_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_041200_041299__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:07:22.588Z" ;
+	dcterms:modified          "2015-09-14T11:56:24.317Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F041200%2F041299%2F1900bb_Page_087_f_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_041200_041299__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_041200_041299__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description       "Egy nagyérdemű festőművészünk, Székely Bertalan műveinek tekintélyes, bár koránsem teljes gyűjteményét látjuk együtt a Nemzeti Szalonban most rendezett kiállításon. Székely művei azok közé a művészi alkotások közé tartoznak, a melyek jelentőségéből az izlés, a művészi fölfogás, a divat változásai mitsem vonhatnak le. Művészetének legbenső lényege, éltető eleme, a nemzeti érzés sugárzik ki belőlük. Vannak festményei, a melyek évtizedek előtt keletkeztek, technikai szempontból magukon hordják koruk jellegét és mégis teljes közvetlenséggel szólnak lelkünkhöz. Alkotójuk kimagasló és jellemző alakja marad mindenkor művészetünk történetének. ... Következő festménye, Dobozi Mihály és hitvese, a legismertebb és legnépszorűbb képek egyike, a melynek méltán nagy hatása volt. De Székely megkapóbban, nagyobb művészi valószerűséggel ábrázolja a csöndesebb, mélyebb, inkább elégiái érzéseket, mint az indulatok, a düh kitöréseit. (Forrás: Vasárnapi Ujság, 1900. márczius 18.) Dobozi Mihály - a korabeli írások adatai szerint nagy valószínűséggel a fejérmegyei Dobozra (ma Alcsútdoboz) való egytelkes nemes katona volt, aki részt vett a maróti csatában. A róla szóló történetet többek között az Istvánfi-krónika, Verancsics Antal maróti-csata legendája is feldolgozta, s ő volt az, akit Székely Bertalan és Madarász Viktor is megfestett. 1526 után, mikor a török a Vértesben, s annak környékén is megjelent, a környék népe a török elleni védelem céljából egy tó közelében Herégynél (Héreg?) és Marótnál (Pusztamarót), - az érseki birtokon - gyűlt össze, azonban ezt a tábort a török bevette, és az ellenállókat kardélre hányta. A magyarok szeptember derekán megerősítették táborukat árkokkal és szekerekkel, így kívánták védeni asszonyaikat, gyermekeiket, vagyonukat. A törökre több ízben rátörtek, és annak súlyos veszteségeket okoztak. Itt küzdött a török ellen Dobozi Mihály is. A török hatezer janicsár, több ezer lovas és nagyszámú ágyú bevetésével, hatalmas veszteségek árán foglalta el ezt a tábort. Foglyokat azonban nem sikerült ejtenie, mert a tábor egy része elmenekült, másik része elesett a csatában. Dobozi Mihály a tábor elestekor kivágta magát, feleségét lovára kapva menekült. Amikor az üldöző csapat már majdnem beérte, a hű asszony könyörgésére, hogy ne kerüljön ellenség kezére, s becsületét mentse, leszúrta feleségét, maga pedig utolsó leheletéig harcolt a török ellen. A magyarok vesztesége e ellenállásnál a mohácsihoz volt mérhető, mert vagy húszezer ember maradt holtan a csatatéren, de a török veszteségei is nagyobbak voltak a mohácsi veszteségnél. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1531x1338 \u000A         300 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/041200/041299   [Metadata]" ;
+	dc:relation          "Képzőművészet Magyarországon: Székely Bertalan: Festmények 1870 előtt [ http://www.hung-art.hu/frames.html?/magyar/s/szekely/muvek/1/index.html]"@hu, "Wikipédia: Dobozi Mihály [ http://hu.wikipedia.org/wiki/Dobozi_Mih%C3%A1ly]"@hu, "Madarász Viktor: Dobozi és hitvese [ http://hu.wikipedia.org/wiki/F%C3%A1jl:Madar%C3%A1sz,_Viktor_-_Dobozi_and_his_Spouse_%281868%29.jpg]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "történelmi festmény"@hu, "jelenetkép"@hu, "történelmi esemény ábrázolása"@hu, "History, local history"@hu, "Fine arts, visual arts"@hu, "historizmus"@hu, "Dobozi Mihály (1530 körül)"@hu ;
+	dc:title             "Dobozi és hitvese"@hu ;
+	dc:type              "painting"@hu, "újságrészlet"@hu ;
+	dcterms:alternative  "Székely Bertalan történeti festményei"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041299__> .
+
+<http://keptar.oszk.hu/041200/041299/1900bb_Page_087_f_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16581"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_041200_041299__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:11.287Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_041200_041299__> .

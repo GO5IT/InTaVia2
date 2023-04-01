@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:08.072Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000012064> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=810497>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "50234"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "277"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:08.072Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000012064> .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000012064>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=810497> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=810497> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000012064>
+	a                   ore:Proxy ;
+	dc:contributor      "W. van Swanenburgh", "Abraham Bloemaert" ;
+	dc:date             "16--? - 17--?", "s.d." ;
+	dc:description      "Portret van man met bovenaan links en rechts twee vrouwelijke personificaties van respectievelijk de schilderkunst en letteren." ;
+	dc:identifier       "007522499" ;
+	dc:language         "la" ;
+	dc:relation         "illustratie uit: Amsterdam: van Esveldt, 1764" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Abrahamus Bloemaert" ;
+	dc:type             "Still image"@en, "Monograph"@en ;
+	dcterms:extent      "voorstelling: 215 x 154 mm.", "Black-and-white ;" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000012064> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=810497>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000012064>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/66837> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000012064> .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000012064>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:03:34.899Z" ;
+	dcterms:modified          "2014-05-27T13:03:34.899Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064#contentTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064> ;
+	edm:completeness          "8" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000012064> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D810497&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000012064>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/66837>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/201> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/37510>, <http://data.europeana.eu/agent/37511>, <http://data.europeana.eu/agent/120628>, <http://data.europeana.eu/agent/161948> ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500007342>, <https://g.co/kg/m/03fz_9>, <http://openlibrary.org/works/OL7235930A>, <http://dbpedia.org/resource/Abraham_Bloemaert>, <http://data.bnf.fr/ark:/12148/cb124188501>, <http://viaf.org/viaf/77114225>, <http://id.worldcat.org/fast/333564>, <http://datos.bne.es/resource/XX1066542>, <http://d-nb.info/gnd/118910906>, <http://ta.sandrart.net/-person-2350>, <http://data.bibliotheken.nl/id/thes/p070044953>, <http://id.loc.gov/authorities/names/nr93052276>, <http://www.wikidata.org/entity/Q329811>, <http://www.idref.fr/033309302/id>, <https://www.freebase.com/m/03fz_9> ;
+	rdaGr2:dateOfBirth   "1565-01-04" ;
+	rdaGr2:dateOfDeath   "1651-01-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40733> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40278> ;
+	skos:altLabel        "Abraham Bloemaart"@hu, "Abraham Blommert den Ouden"@en, "Abraham Blomert"@en, "Blomcart"@en, "Abraham Blommaert den Ouden"@en, "Bloemarert"@en, "Abraham Van Bloemart"@en, "Blovemart"@en, "Bloemaërt"@en, "Ab. Blomart"@en, "Abraham Bloemmert"@en, "Abraham Blumard"@en, "A. Bloemært"@en, "Bloumart"@en, "Abraham Blomhardt"@en, "Abrah. Blomard"@en, "Abraham Blommart"@en, "Abraham Bloamert"@en, "Abraham Bommaert"@en, "Abraham Blommaert"@cs, "Abraham Blommaert"@en, "A. Bloemarh"@en, "Abr. Bloemhart"@en, "Ab. Bloemart"@en, "Abraham Bloemaat"@en, "A. Bloemmart"@en, "Блумарт Авраам"@ru, "A. Bloemar"@en, "Bloemaert abraham"@en, "Blomant"@en, "Bloemars"@en, "Abrah. Blömart"@en, "A. Bloemaard"@en, "Bloemaers"@en, "A. Bloemart"@en, "Abm. Bloemart"@en, "Adam Bloémaert"@en, "Arraham Bloemaert"@en, "Abraham Bloemert"@en, "Blomeart"@en, "Abrah. Bloemaert"@en, "Abraham Blomaer"@en, "Abraham Bloemar"@en, "Abraham van bloemaert"@en, "A. Blommaer"@en, "Den ouden Blommert"@en, "Abraham Blommaerts"@en, "Abraham bloemaert"@es, "Abrah. Bloemert"@en, "Abraham von Bloemaet"@en, "Abraham Blomaert"@en, "Ab. Bloemaert"@en, "Bloemmaert"@en, "Abraham Blomeart"@en, "Blommaert"@en, "Bloëmaert"@en, "Bloémard"@en, "Abr. Bloemaert"@en, "Blomard"@en, "Abraham Bloemaere"@en, "A. Bloemaart"@en, "A. Bloemert"@en, "A. Bloemaert"@en, "Blommart"@en, "Abraham Bloemarth"@en, "Bloemmert"@en, "A. Blomard"@en, "Abr. Blomard"@en, "Abraham Blomart"@en, "Abraham Blomart"@cs, "Blomarte"@en, "Bloomart"@en, "A. Blommert"@en, "A. bloemart"@en, "A. Bloomart"@en, "A. Bloemäart"@en, "Abraham Blummard"@en, "Bloemaart"@en, "Blomart"@en, "A Bloemart"@en, "Abr. Blomardt"@en, "Blomardt"@en, "Bloemaert, Abraham"@sv, "Abraham Blommert"@en, "Abrahame Bloemart"@en, "A. Blomart"@en, "Abr. Blomart"@en, "Bloëmart"@en, "Bloemar"@en, "Blommert"@en, "Abraham Bloemart"@en, "A. Blomert"@en, "Abr. Bloemart"@en, "Abrah. Blomaert"@en, "Braham Bloemaert"@en, "Arblomar"@en, "Blommouth"@en, "Abraham van Bloemaert"@en, "Blomaert"@en, "Van Bloemart"@en, "A. Bloemmaert"@en, "Abr. Blomaert"@en, "Blomert"@en, "A. blomaert"@en, "Bloemart"@en, "Bloemaert"@de, "Bloemaert"@en, "Abrah. Bloemaart"@en, "Bolemaert"@en, "Blumard"@en, "A. Bloemaers"@en, "Блумарт А."@ru, "Abraham Cornelisz. Bloemaert"@nl, "De Blomaert"@en, "Abramo Bloemart"@en, "Ab. Blomaert"@en, "A. Bloomaert"@en, "Den ouden Blommaert"@en, "Bloemant"@en, "Abr. bloemaert"@en, "Abraham blomaert"@en, "Blomaerts"@en, "A. Blomhaert"@en, "Abraham bloemart"@en, "An blomar"@en, "Bloemart. A."@en, "A. Blomaert"@en, "A. Blommaert"@en, "Blommer"@en, "Abraham Bloemaart"@en, "Bloomant"@en, "Abraham Bloemaart"@cs, "Abrm Bloemart"@en, "Блумарт Абрахам"@ru ;
+	skos:note            "Nederländsk målare"@sv, "Pittore olandese"@it, "Holenderski malarz i rytownik"@pl, "Nizozemský malíř"@cs, "Peintre et graveur néerlandais"@fr, "Dutch painter and engraver (1565-1651)"@en, "Нидерландский художник"@ru, "Hollandsk kunstmaler og grafiker med speciale i kobberstik"@da, "Holland festő és rézmetsző"@hu, "Niederländischer Maler"@de, "Nederlands kunstschilder (1564-1651)"@nl ;
+	skos:prefLabel       "Άμπραχαμ Μπλούμερτ"@el, "Abraham Bloemaert"@nl, "Abraham Bloemaert"@ca, "Abraham Bloemaert"@da, "Abraham Bloemaert"@pl, "Abraham Bloemaert"@sl, "Abraham Bloemaert"@sk, "Abraham Bloemaert"@cs, "Abraham Bloemaert"@es, "Abraham Bloemaert"@hu, "Abraham Bloemaert"@it, "Abraham Bloemaert"@en, "Abraham Bloemaert"@lt, "Abraham Bloemaert"@pt, "Abraham Bloemaert"@sv, "Abraham Bloemaert"@de, "Abraham Bloemaert"@fr, "Абрахам Блумарт"@ru .

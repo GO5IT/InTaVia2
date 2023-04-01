@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_057787441>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:06:46.125Z" ;
+	dcterms:modified          "2018-04-05T17:24:59.074Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_057787441> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A057787441%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:057787441>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49392"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_057787441>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/146835> ;
+	dc:creator          <http://data.europeana.eu/agent/146835> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_057787441> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057787441&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4219"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:31.566Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057787441> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_057787441>
+	a                   ore:Proxy ;
+	dc:contributor      "Hendrick Avercamp" ;
+	dc:creator          "Hendrick Avercamp" ;
+	dc:description      "Vindplaats: Otterloo, Museum Kroller Muller" ;
+	dc:format           "schilderij (paneel)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057787441" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[057787441], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "galgenveld"@nl ;
+	dc:title            "Winterlandschap met galgenveld" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "16XX" ;
+	dcterms:extent      "32 × 48 cm" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057787441> .
+
+<http://data.europeana.eu/agent/146835>
+	a                    edm:Agent ;
+	owl:sameAs           <http://d-nb.info/gnd/118960903>, <http://viaf.org/viaf/76587203>, <http://id.worldcat.org/fast/171945>, <http://www.idref.fr/061690228/id>, <http://data.bibliotheken.nl/id/thes/p068824491>, <https://www.freebase.com/m/03ncj>, <http://dbpedia.org/resource/Hendrick_Avercamp>, <http://data.bnf.fr/ark:/12148/cb14966499z>, <http://id.loc.gov/authorities/names/n86816096>, <http://vocab.getty.edu/ulan/500030575>, <http://www.wikidata.org/entity/Q212593>, <https://g.co/kg/m/03ncj> ;
+	rdaGr2:dateOfBirth   "1585-01-27" ;
+	rdaGr2:dateOfDeath   "1634-05-15" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40610> ;
+	skos:altLabel        "Avercamp"@lv, "Hendrick Averkamp"@sv, "Aver Kamp"@en, "Avercamp"@en, "Avercamp"@sv, "Henricus de Stom"@nl, "Henricus de Stom"@en, "De Stom Avercamp"@en, "A. Averkamp"@en, "Hendrick Barentsz. Avercamp"@nl, "Hendrick Barentsz. Avercamp"@en, "Van Kampen"@en, "Hendrick Berentsz. de Stom van Kampen Avercamp"@en, "Hendrick Stom van Campen"@en, "De stomme van Campen"@en, "Аверкамп Х."@ru, "V. Campen"@en, "Averkamps"@lv, "Averscamp"@en, "Stom"@en, "De Stom van Campen"@en, "Bygenaamd de Stomme van Campen A. Averkamp"@en, "Kampin"@en, "De Stomme van Kampen (ο βωβός του Κάμπεν)"@el, "Von Campen"@en, "Hendric avercamp"@en, "Hendrick Stomme van Campen"@en, "Stom tot Campen"@en, "Stommen van Campen"@en, "Vander Stom"@en, "De Stumma"@en, "Havercamp"@en, "Den Stomme van Kampen"@en, "Hendrick van Avercamp"@fr, "Hendrick van Avercamp"@sv, "Dit le Muet de Campen Averkamp"@en, "Hendrik van avercamp"@en, "Muet de Kampen"@fr, "Nick-named Stommé van Campen Henry Avercamp"@en, "Hendrick de Stom tot Campen"@en, "De Stom tot Campen"@en, "Stomme van Kampen"@en, "De Stomme van Campen H. Averkamp"@en, "Havercamp de Stomme"@en, "De Stom"@en, "Hendrik van Averkamp"@en, "Аверкамп"@ru, "De Stomme van Campen"@nl, "De Stomme van Campen"@en, "Kampen Le Muet"@en, "Hendrick averkamp"@en, "Hendrick van avercamp"@en, "Stomme van Campe"@en, "Bygenaamd de stomme van Kempen H. Averkamp"@en, "Аверкамп Хендрик"@ru, "H. Averkamp"@en, "Hendrick van Campen"@en, "Averkamp"@en, "De Stumme"@en, "Hendrik Avercamp"@nl, "Stomme van Campen"@en, "Hendrik Avercamp"@en, "Hendrik averkamp"@en, "V. Kampen"@en, "H. Avercamp"@en, "Averckamp"@en, "Hendrik van Avercamp"@en, "Bij genaamd de stomme van Kampen Averkamp"@en, "Hendrick Avercamp"@lv, "Stom van Campen"@en, "Hendrick Berentsz. de Stomme van Kampen Avercamp"@en, "De Stom van Kampen"@en, "Hendrick Vander Stom"@en, "De Stomme"@en, "De Stomme van Kampen"@nl, "De Stomme van Kampen"@en, "Genaamd de stomme van Kampe Averkamp"@en, "Stomme Van Kampen Avercamp"@en, "Hendrick Stom tot Campen"@en, "Hendrick Berentsz. Avercamp"@nl, "Hendrick Berentsz. Avercamp"@en, "Avercamp hendrik v."@en, "Stomme"@en, "Hendrik avercamp"@en, "Hendrick Averkamp"@nl, "Van Campen"@en ;
+	skos:note            "Ολλανδός ζωγράφος"@el, "Németalföldi festő"@hu, "Нидерландский живописец"@ru, "Pintor neerlandès"@ca, "Pintor neerlandés"@es, "Pintor neerlandês"@pt, "Pittore olandese"@it, "Peintre néerlandais"@fr, "Painter from the Northern Netherlands (1585-1634)"@en, "Nederlands kunstschilder"@nl, "Niederländischer Maler"@de ;
+	skos:prefLabel       "Хендрик Аверкамп"@ru, "Хендрик Аверкамп"@bg, "Hendriks Averkamps"@lv, "Χέντρικ Άφερκαμπ"@el, "Hendrick Avercamp"@en, "Hendrick Avercamp"@de, "Hendrick Avercamp"@fi, "Hendrick Avercamp"@sv, "Hendrick Avercamp"@pt, "Hendrick Avercamp"@lt, "Hendrick Avercamp"@it, "Hendrick Avercamp"@fr, "Hendrick Avercamp"@hu, "Hendrick Avercamp"@es, "Hendrick Avercamp"@cs, "Hendrick Avercamp"@sl, "Hendrick Avercamp"@pl, "Hendrick Avercamp"@da, "Hendrick Avercamp"@ca, "Hendrick Avercamp"@nl .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:31.566Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057787441> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057787441>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057787441> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:057787441> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057787441&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

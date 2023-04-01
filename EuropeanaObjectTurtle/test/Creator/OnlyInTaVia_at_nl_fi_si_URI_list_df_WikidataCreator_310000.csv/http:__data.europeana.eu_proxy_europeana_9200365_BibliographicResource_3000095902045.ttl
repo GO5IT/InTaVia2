@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805891p>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8805891p> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8805891p.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805891p>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:53:12.605Z" ;
+	dcterms:modified          "2018-03-26T12:27:52.093Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8805891p> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8805891p.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805891p.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3971"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:58.833Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805891p> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8805891p>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "227647"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:58.832Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805891p> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8805891p>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8805891p> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8805891p/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8805891p>
+	a                   ore:Proxy ;
+	dc:creator          "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Wagner, Richard (1813-1883). Auteur ou responsable intellectuel", "Philharmonia orchestra (Londres). Interprète", "Ludwig, Leopold (1908-1979). Direction d'orchestre", "Nilsson, Birgit (1918-2005). Soprano" ;
+	dc:date             "1959" ;
+	dc:description      "Titre uniforme : [Tannhäuser. WWV 70 (1845)]. Extrait", "Titre uniforme : [Der fliegende Holländer. WWV 63]. Extrait", "Titre uniforme : [Un ballo in maschera]. Extrait", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [La forza del destino]. Extr.", "Titre uniforme : [Lohengrin. WWV 75]. Extrait", "Comprend : Le vaisseau fantôme : Acte II : \u0022Ballade de Senta : h-o-ho-he\u0022 - TANNHAUSER - Acte II. Entrée d'Elisabeth : \u0022Dich, teure Halle\u0022 - LOHENGRIN - Acte II : Rêve d'Elsa : \u0022Einam in trüben Tagen\u0022 - Tristan et Isolde : Acte III Mort d'Isolde : \u0022Mild und leise wie er lächelt\u0022 / Richard WAGNER - Le Bal masqué : Acte II : Ma dall'arido : \u0022Ecco l'Orrido campo\u0022 - La force du destin : Acte IV. \u0022Pace, Pace, mio Dio\u0022 - Aida : Acte I. l'Insana Parole : \u0022Rittorna vincitor !\u0022 ; Acte III. O Patria mia : \u0022Qui Radames verra !\u0022 / Giuseppe VERDI ; Chanté en italien, par Birgit NILSSON, soprano, avec The Philharmonia Orchestra dir. Leopold LUDWIG", "Titre uniforme : [Tristan und Isolde. WWV 90]. Extrait", "Titre uniforme : [Aida]. Choix" ;
+	dc:format           "disque microsillon"@fre, "multipart/mixed", "disc"@eng, "1 disque : 33 t ; 30 cm + AVEC notice" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8805891p", "Numéro commercial : Columbia FCX741" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37830518s"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4542" ;
+	dc:title            "Airs d'opéras interprétés par Birgit Nilsson" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8805891p> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8805891p> .

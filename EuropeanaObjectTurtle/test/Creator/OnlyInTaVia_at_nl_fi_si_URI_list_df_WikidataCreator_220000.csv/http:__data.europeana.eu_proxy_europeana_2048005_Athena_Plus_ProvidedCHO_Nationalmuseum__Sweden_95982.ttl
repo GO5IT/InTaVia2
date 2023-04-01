@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/75262> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:39.790Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:39.790Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T13:57:35.921Z" ;
+	dcterms:modified          "2017-02-21T15:28:49.793Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982#contentTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> ;
+	edm:completeness          "5" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D95982%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/agent/75262>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/82853>, <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/agent/158302> ;
+	owl:sameAs                     <http://www.wikidata.org/entity/Q374039>, <http://vocab.getty.edu/ulan/500013764>, <http://kulturarvsdata.se/LSH/agents/3730>, <http://viaf.org/viaf/12575331>, <https://www.freebase.com/m/072zsf>, <http://dbpedia.org/resource/Ferdinand_Bol>, <http://data.bibliotheken.nl/id/thes/p069110360>, <https://g.co/kg/m/072zsf>, <http://d-nb.info/gnd/118659278>, <http://id.loc.gov/authorities/names/n96089084>, <http://id.worldcat.org/fast/380569>, <http://datos.bne.es/resource/XX1533038>, <http://data.bnf.fr/ark:/12148/cb14959707t>, <http://www.idref.fr/050534998/id> ;
+	rdaGr2:dateOfBirth             "1616-06-24" ;
+	rdaGr2:dateOfDeath             "1680-07-24" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40802> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Fradinand Bol"@en, "F. Boll"@en, "F. Bols"@en, "Bol ferdinand"@en, "Боль Фердинанд"@ru, "Ferdinand Bool"@en, "Ferdinand Bull"@en, "Frances Bolls"@en, "Ferd. bool"@en, "Boll"@en, "Ferdin. Boll"@en, "Боль Ф."@ru, "Bol"@en, "Bol"@sv, "François Bool"@en, "J. Boll"@en, "Ferdinand Boll"@nl, "Ferdinand Boll"@hu, "Ferdinand Boll"@en, "Fer. Bol"@en, "Ferdinandus Boll"@en, "Ferd. Bol"@en, "Ferdinando Bool"@en, "Pol"@en, "Ferd. bol"@en, "F. bol"@en, "Pool"@en, "Ferdinand Ball"@en, "Ferdinand Pool"@en, "Бол, Фердинанд"@ru, "Ferdinandus Bol"@nl, "Бол Фердинанд"@ru, "Ferdinandus Bol"@hu, "Ferdinandus Bol"@en, "F.Bol"@en, "Ferd Bole"@en, "F. Ball"@en, "Ferdinand Pol"@en, "F: Bol"@en, "Ferdinand Boel"@nl, "Ferdinand Boel"@hu, "Mre. De Ferd. Bol."@en, "T. Bol"@en, "Ferd. Boll"@en, "Francis Ball"@en, "Ferdinand Boel"@en, "Ferdinand Balle"@en, "Fr. Bol"@en, "Фердинанд Боль"@ru, "P. Bol"@en, "F. Bol"@nl, "F. Bol"@en, "Fradi[nand] Bol"@en, "Ferdinand-Bol"@en, "Ferdinand Bole"@en, "Ferdinard Boll"@en ;
+	skos:note                      "Hollandi maalikunstnik"@et, "Nederlands kunstschilder"@nl, "Holland festő és rézmetsző a holland aranykorban"@hu, "Pintor neerlandés"@es, "Dutch painter (1616-1680)"@en, "Ολλανδός ζωγράφος"@el, "Pictor olandez"@ro, "Holenderski malarz"@pl, "Pintor neerlandès"@ca, "Hollantilainen taidemaalari"@fi, "Peintre hollandais"@fr, "Nizozemský malíř a rytec"@cs, "Pittore olandese"@it, "Niederländischer Maler"@de ;
+	skos:prefLabel                 "Ferdinand Bol"@it, "Ferdinand Bol"@de, "Ferdinand Bol"@fi, "Ferdinand Bol"@sv, "Ferdinand Bol"@pt, "Ferdinand Bol"@lt, "Ferdinand Bol"@en, "Ferdinand Bol"@fr, "Ferdinand Bol"@hu, "Ferdinand Bol"@es, "Ferdinand Bol"@cs, "Ferdinand Bol"@sk, "Ferdinand Bol"@sl, "Ferdinand Bol"@pl, "Ferdinand Bol"@ro, "Ferdinand Bol"@da, "Ferdinand Bol"@nl, "Ferdinand Bol"@ca, "Φέρντιναντ Μπολ"@el, "Фердинанд Бол"@ru .
+
+<http://partage.vocnet.org/part00047>
+	a               skos:Concept ;
+	skos:altLabel   "Handzeichnung"@de, "rajzok"@hu, "dibuixos (obres visuals)"@ca, "dibujos (obras visuales)"@es, "rysunki"@pl, "teckningar"@sv, "desenhos"@pt, "disegno (obra visiva)"@it, "tegninger"@no, "crteži"@hr, "dessins (oeuvres visuelles)"@fr, "drawing (visual work)"@en, "tekening (visueel werk)"@nl, "kresby"@cs ;
+	skos:broader    <http://partage.vocnet.org/>, <http://partage.vocnet.org/part01377>, <http://partage.vocnet.org/part00039> ;
+	skos:narrower   <http://partage.vocnet.org/part00560>, <http://partage.vocnet.org/part01284>, <http://partage.vocnet.org/part01330>, <http://partage.vocnet.org/part00948>, <http://partage.vocnet.org/part00415> ;
+	skos:prefLabel  "crtež"@hr, "drawings (visual works)"@en, "desenho"@pt, "tekeningen"@nl, "dibuix (obra visual)"@ca, "piirustukset"@fi, "risbe"@sl, "kresba"@cs, "Zeichnung (visuelles Werk)"@de, "tegning (verk)"@no, "rajz"@hu, "disegni"@it, "rysunek"@pl, "teckning"@sv, "dibujo (obra visual)"@es, "dessin (oeuvre visuelle)"@fr .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982>
+	a                   ore:Proxy ;
+	dc:creator          "Ferdinand Bol"@sv ;
+	dc:description      "   "@sv ;
+	dc:format           <http://partage.vocnet.org/part00881>, "teckning (bildskapande)", "Pennteckning i brunt på papper" ;
+	dc:identifier       "(Inv. Nr.: NMH 2030/1863)", "95982" ;
+	dc:title            "Två män i samtal"@sv ;
+	dc:type             "teckningar"@sv, <http://partage.vocnet.org/part00047>, "Frihandsteckningar (Teckningar)"@sv ;
+	dcterms:extent      "Passepartout 55 x 42 cm", "Mått 22 x 18,7 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95982&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982/manifest> ;
+	ebucore:fileByteSize    "174690"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "580"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_95982> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=95982&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95982&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=95982&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=95982&viewType=detailView>
+	a  edm:WebResource .

@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:06:01.060Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88066593> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:06:01.061Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88066593> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88066593>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88066593> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593>
+	a  edm:ProvidedCHO .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88066593.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4515"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DB7093"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88066593>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:53:28.093Z" ;
+	dcterms:modified          "2018-03-26T12:28:13.483Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88066593> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88066593.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88066593>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88066593> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88066593.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88066593/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88066593>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "229230"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88066593>
+	a                   ore:Proxy ;
+	dc:creator          "Ady, Endre (1877-1919). Auteur ou responsable intellectuel", "Waelrant, V. H.. Auteur ou responsable intellectuel", "Garreau, André. Direction d'orchestre", "Romero, Mateo (1575?-1647). Auteur ou responsable intellectuel", "Baïlac, Geneviève (1922-....). Auteur ou responsable intellectuel", "Vega, Lope de (1562-1635). Auteur ou responsable intellectuel", "Garreau, A.. Auteur ou responsable intellectuel", "Josquin Des Prés (145.-1521). Auteur ou responsable intellectuel", "Du Caurroy, Eustache (1549-1609). Auteur ou responsable intellectuel", "Lassus, Roland de (1532-1594). Auteur ou responsable intellectuel", "Remacha, Fernando (1898-1984). Auteur ou responsable intellectuel", "Kodály, Zoltán (1882-1967). Auteur ou responsable intellectuel", "García Lorca, Federico (1898-1936). Auteur ou responsable intellectuel", "Rimonte, Pedro (1565-1627). Auteur ou responsable intellectuel", "Ronsard, Pierre de (1524-1585). Auteur du texte" ;
+	dc:date             "1960" ;
+	dc:description      "BnF-Partenariats, Collection sonore - Believe", "Contient une table des matières", "Comprend : Hongrie - TÚRÓT ESZIK A CIGÁNY / Zoltán Kodály - AKIK MINDIG ELKÉSNEK / Ady Endre et Zoltán Kodály - MÁTRAI KÉPEK / Zoltán Kodály - France - MEANDRES / G. Bailac ; A. Garreau - Espagne - A IRENE GARCIA CRIADA / Federico Garcia Lorca et F. Remacha - RIBERENOS / Federico Garcia Lorca ; F. Remacha - Belgique - MADRIGAL \u0022AUX MUSICIENS\u0022 / V. H. Waelrant - Pays-Bas - TU SOLUS QUI FACIS MIRABELLA / Josquin des Près - Espagne - MADRE, LA MI MADRE / Lope de Vega et P. Rimonte - MANANICAS FLORIDAS / Lope de Vega - ENTRE DOS MANSOS ARROYOS / Lope de Vega et Pateo Romero - France - Deliette, Mignonette / Ronsard et Du Caurroy - Belgique - ECCHO / Roland de Lassus - Algérie - ABQA AALA KHIR / Léo Louis Barbes", "Enregistrement : (France) Paris, Studio Barclay, 00-08-1957" ;
+	dc:format           "Nombre total de vues :  19", "disc"@eng, "disque microsillon"@fre, "multipart/mixed", "1 disque : 33 t ; 30 cm" ;
+	dc:identifier       "Numéro commercial : Barclay  86046", "http://gallica.bnf.fr/ark:/12148/bpt6k88066593" ;
+	dc:language         "français", "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37783901r"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-10285" ;
+	dc:title            "6 pays : 15 chansons / La Baraka, du mouvement \u0022A Coeur Joie\u0022, choeur ; André Garreau, chef de choeur" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88066593> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88066593> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

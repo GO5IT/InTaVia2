@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88025991>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1958" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88025991> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88025991>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:48.606Z" ;
+	dcterms:modified          "2018-03-26T12:26:37.625Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88025991> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88025991.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:51.429Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88025991> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88025991/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88025991>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88025991> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88025991.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88025991>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "261283"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:51.430Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88025991> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88025991>
+	a                   ore:Proxy ;
+	dc:creator          "Macfarren, George Alexander (1813-1887). Auteur ou responsable intellectuel", "Martini, Johann Paul Aegidius (1741-1816). Auteur ou responsable intellectuel", "Josephson, E.. Auteur ou responsable intellectuel", "Dehmel, Richard (1863-1920). Auteur du texte", "Jonson, Ben (1573?-1637). Auteur ou responsable intellectuel", "Mendelssohn Bartholdy, Felix (1809-1847). Auteur ou responsable intellectuel", "Grieg, Edvard (1843-1907). Auteur ou responsable intellectuel", "Fröding, Gustaf (1860-1911). Auteur du texte", "Florian, Jean-Pierre Claris de (1755-1794). Auteur ou responsable intellectuel", "Wolf, Hugo (1860-1903). Auteur ou responsable intellectuel", "Heyse, Paul (1830-1914). Auteur ou responsable intellectuel", "Čajkovskij, Petr Ilʹič (1840-1893). Auteur ou responsable intellectuel", "Goethe, Johann Wolfgang von (1749-1832). Auteur du texte", "Sibelius, Jean (1865-1957). Auteur ou responsable intellectuel", "Holstein, F. von. Auteur ou responsable intellectuel", "Bjørnson, Bjørnstjerne (1832-1910). Auteur du texte", "Hahn, Reynaldo (1874-1947). Auteur ou responsable intellectuel", "Geibel, Emanuel (1815-1884). Auteur du texte", "Schwarzkopf, Elisabeth (1915-2006). Soprano", "Strauss, Richard (1864-1949). Auteur ou responsable intellectuel", "Heyduk. Auteur ou responsable intellectuel", "Dvořák, Antonín (1841-1904). Auteur ou responsable intellectuel", "Jensen, Adolf (1837-1879). Auteur ou responsable intellectuel", "Moore, Gerald (1899-1987). Piano" ;
+	dc:date             "1958" ;
+	dc:description      "Comprend : DRINK TO ME ONLY / (Ben JONSON - trad. arrt QUILTER) (en anglais) - Plaisir d'amour / (FLORIAN - J.P. MARTINI) (en français) - AUF FLUGELN DES GESANGES ; Op. 34 N °2 / (HEINE - F. MENDELSSOHN) (en allemand) - SONGS MY MOTHER TAUGHT ME / (HEYDUK - MACFARREN - A. DVORAK) (en anglais) - Si mes vers avaient des ailes / (V. HUGO - R. HAHN) (en français) - NUR WER DIE SEHNSUCHT KENNT, op. 6, N °6 / (GOETHE - P.I. TCHAIKOWSKY) (en allemand) - MURMELNDES LUFTCHEN, Op. 21 N °/ (HEYSE - JENSEN) (en allemand) / Elisabeth SCHWARTZKOPF, soprano accompagnée au piano par Gerald MOORE - ICH LIEBE DICH, op. 5 N °5 / (ANDERSEN - Von HOLSTEIN - E. GRIEG) (en allemand) - FARMYARD SONG, Op. 61 N °3 / (BJOERNSON - MACFARREN - E. GRIEG) (en anglais) - SCHILF, SCHILF, SAULSE, op. 36, N °4 / (FRODING - SIBELIUS) (en allemand) - SCHWARZE ROSEN, op. 36, N °1 / (JOSEPHSON - J. SIBELIUS) (en allemand) - WIEGENLIED : op. 41N °1 / (DEHMEL - Richard STRAUSS) (en allemand) - IN DEM SCHATTEN / (HEYSE - GEIBEL - H. WOLF) (en allemand) - O DU LIEBS ANGELI / (chant folklorique suisse - arrt GUND) (en allemand) - GSATZLI / (Chant folklorique suisse - arrt GUND) (en allemand)", "Titre uniforme : [Net, tolʹko tot, kto znal. ČS 216]", "Titre uniforme : [Als die alte Mutter. B 104, no 4]", "Titre uniforme : [In dem Schatten meiner Locken]", "Titre uniforme : [Lok. Op. 61, no 3]. Anglais", "Titre uniforme : [Si mes vers avaient des ailes]", "Titre uniforme : [Säv, säv, susa. Op. 36, no 4]", "Titre uniforme : [Plaisir d'amour]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Wiegenlied. TrV 195, no 1]", "Titre uniforme : [Auf Flügeln des Gesanges. Op. 34, no 2]" ;
+	dc:format           "1 disque : 33 t ; 30 cm + AVEC notice", "disc"@eng, "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Columbia FCX664", "http://gallica.bnf.fr/ark:/12148/bpt6k88025991" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb378304818"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4133" ;
+	dc:title            "Mélodies de toujours / Elisabeth SCHWARTZKOPF, soprano, accompagnée par Gerald MOORE, pianiste" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88025991> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88025991> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88025991.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3894"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

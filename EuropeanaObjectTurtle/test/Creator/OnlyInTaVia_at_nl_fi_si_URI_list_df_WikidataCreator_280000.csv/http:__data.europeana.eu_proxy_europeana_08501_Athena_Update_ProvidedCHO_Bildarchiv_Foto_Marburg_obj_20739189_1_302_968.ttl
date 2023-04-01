@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T09:26:26.219Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG#contentTier>, <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Ffm1302968&type=IMAGE> .
+
+<https://d-nb.info/gnd/118801171>
+	a                   edm:Agent ;
+	owl:sameAs          <http://dbpedia.org/resource/Pietro_Tacca>, <http://www.wikidata.org/entity/Q1350673>, <http://id.loc.gov/rwo/agents/n83206118>, <http://viaf.org/viaf/3267128>, <https://d-nb.info/gnd/1217097074>, <http://isni.org/isni/0000000080831824> ;
+	rdaGr2:dateOfBirth  "1577" ;
+	rdaGr2:dateOfDeath  "1640" ;
+	skos:prefLabel      "Tacca, Pietro" .
+
+<http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG>
+	a  edm:ProvidedCHO .
+
+<http://vocab.getty.edu/aat/300047606>
+	a               skos:Concept ;
+	skos:altLabel   "Reiterdenkmal"@de, "equestrian monuments"@en, "ruiterstandbeeld"@nl, "monuments, equestrian"@en, "Reiterstandbilder"@de, "escultura ecuestre"@es, "retrato ecuestre"@es, "statues, equestrian"@en, "statua equestre"@it, "equestrian statue"@en, "Reiterdenkmäler"@de ;
+	skos:broader    <http://vocab.getty.edu/aat/300047600> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:note       "Skulpturengruppe, die aus Pferd und Reiter besteht."@de, "Beeldengroepen bestaande uit een ruiter te paard."@nl, "Grupos escultóricos consistentes en un caballo y su jinete."@es, "Gruppi scultorei composti da un cavallo e un fantino."@it, "Sculptural groups consisting of a horse and rider."@en ;
+	skos:prefLabel  "equestrian statues"@en, "statue equestri"@it, "ruiterstandbeelden"@nl, "esculturas ecuestres"@es, "Reiterstandbild"@de .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/proxy/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG>
+	a                   ore:Proxy ;
+	dc:creator          "Giambologna (Herstellung), 1524-1608", <https://d-nb.info/gnd/118801171> ;
+	dc:subject          "Personen, deren Name bekannt ist (mit Namen)"@de, "Skulptur"@de ;
+	dc:title            "Reiterstandbild Philipps III."@de ;
+	dc:type             <http://vocab.getty.edu/aat/300047606> ;
+	dcterms:created     "1613 (Herstellung)"@zxx ;
+	dcterms:spatial     "Madrid, Plaza Mayor (Standort)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> .
+
+<http://data.europeana.eu/agent/157828>
+	a                    edm:Agent ;
+	owl:sameAs           <https://g.co/kg/m/085d8y>, <http://openlibrary.org/works/OL5889649A>, <http://vocab.getty.edu/ulan/500007371>, <http://data.bnf.fr/ark:/12148/cb14935862v>, <https://www.freebase.com/m/085d8y>, <http://dbpedia.org/resource/Pietro_Tacca>, <http://www.idref.fr/093178670/id>, <http://d-nb.info/gnd/118801171>, <http://data.bibliotheken.nl/id/thes/p071332332>, <http://id.worldcat.org/fast/120387>, <http://viaf.org/viaf/3267128>, <http://www.wikidata.org/entity/Q1350673>, <http://datos.bne.es/resource/XX1161325>, <http://id.loc.gov/authorities/names/n83206118> ;
+	rdaGr2:dateOfBirth   "1577-09-16" ;
+	rdaGr2:dateOfDeath   "1640-10-26" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/150546> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/150743> ;
+	skos:altLabel        "Tacca"@sv, "Pietro Tacca"@en ;
+	skos:note            "Olasz szobrász"@hu, "Artist italian"@ro, "Italian artist (1577-1640)"@en, "Artista italiano"@es, "Italiaans beeldhouwer (1577-1640)"@nl, "Scultore italiano"@it, "Escultor italiano"@pt, "Italienischer Architekt, Bildhauer und Bronzegießer"@de, "Sculpteur italien"@fr, "Ealaíontóir Iodálach"@ga, "Itaalia kunstnik"@et, "Италянский скульптор и архитектор"@ru, "Artista italià"@ca ;
+	skos:prefLabel       "Pietro Tacca"@fi, "Pietro Tacca"@sv, "Pietro Tacca"@pt, "Pietro Tacca"@en, "Pietro Tacca"@it, "Pietro Tacca"@fr, "Pietro Tacca"@hu, "Pietro Tacca"@de, "Pietro Tacca"@es, "Pietro Tacca"@cs, "Pietro Tacca"@sk, "Pietro Tacca"@sl, "Pietro Tacca"@ga, "Pietro Tacca"@pl, "Pietro Tacca"@ro, "Pietro Tacca"@da, "Pietro Tacca"@nl, "Pietro Tacca"@ca, "Такка, Пьетро"@ru .
+
+<http://www.bildindex.de/document/obj20739189>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:20:31.007878Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> .
+
+<http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:20:31.008220Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> .
+
+<http://data.europeana.eu/proxy/europeana/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/157828> ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> .
+
+<http://data.europeana.eu/aggregation/provider/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20739189> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/fm1302968> ;
+	edm:object         <http://www.bildindex.de/bilder/d/fm1302968> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://www.bildindex.de/bilder/d/fm1302968>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_OYT7UWPYLIW47SHCTSHU7D2HUP5IWMVG/manifest> ;
+	ebucore:fileByteSize    "285532"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1212"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .

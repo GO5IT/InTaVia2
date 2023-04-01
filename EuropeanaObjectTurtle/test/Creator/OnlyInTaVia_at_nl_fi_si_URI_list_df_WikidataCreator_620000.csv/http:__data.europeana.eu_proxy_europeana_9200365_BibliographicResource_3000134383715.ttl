@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802031q>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8802031q> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8802031q.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:16.286Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802031q> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8802031q>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802031q> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802031q>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "295593"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8802031q.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3806"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8802031q>
+	a                   ore:Proxy ;
+	dc:creator          "Welitsch, Ljuba (1913-1996). Soprano", "Wächter, Eberhard (1929-1992). Baryton (voix)", "Kuën, Paul (1910-1997). Ténor", "Friedrich, Karl (1905-1981). Ténor", "Unger, Gerhard (1916-2011). Ténor", "Gedda, Nicolai (1925-2017). Ténor", "Karajan, Herbert von (1908-1989). Direction d'orchestre", "Pröglhof, Harald (1924-....). Basse (voix)", "Strauss, Richard (1864-1949). Auteur ou responsable intellectuel", "Stich-Randall, Teresa (1927-2007). Soprano", "Felbermayer, Anny (1927-2014). Soprano", "Majkut, Erich (1907-1976). Ténor", "Meyer, Kerstin (1928-....). Mezzo-soprano", "Philharmonia orchestra (Londres). Interprète", "Ludwig, Christa (1928-....). Mezzo-soprano", "Bierbach, Franz (1911-1985). Basse (voix)", "Schwarzkopf, Elisabeth (1915-2006). Soprano", "Edelmann, Otto (1917-2003). Basse (voix)" ;
+	dc:date             "19.." ;
+	dc:description      "Contient une table des matières", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Der Rosenkavalier. TrV 227 (Opéra)]" ;
+	dc:format           "Nombre total de vues :  68", "disc"@eng, "multipart/mixed", "Disques : 33 t ; 30 cm", "disque microsillon"@fre ;
+	dc:identifier       "Numéro commercial : Columbia  FCX751", "Numéro commercial : Columbia  FCX753", "Numéro commercial : Columbia  FCX750", "http://gallica.bnf.fr/ark:/12148/bpt6k8802031q", "Numéro commercial : Columbia  FCX752" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13919894w"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb378305252"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, AB/58-15" ;
+	dc:title            "Le chevalier à la rose - Opera en 3 actes / Musique de Richard STRAUSS ; Livret de HOFFMANNSTHAL ; E. SCHWARZKOPF : LA MARECHALE PRINCESSE DE WERDENBERG - Otto EDELMANN : LE BARON OCHS DE LERCHENAU - Christa LUDWIG : OCTAVE - Ebernhard WACHTER : MONSIEUR DE FANIMAL - Teresa STICH-RANDALL : SOPHIE - Ljuba WELITSCH : DEMOISELLE MARIANNE LEITMETZERIN - Paul KUEN : VALZACCHI - Kerstin MEYER : ANNIMA - Franz BIERBACH : UN EXEMPT - Erich MAJKUT : l'INTENDANT DE LA MARECHALE - Gerhard UNGER : L'INTENDANT DE FANIMAL - Harald PROGLHOE : UN NOTAIRE - Karl FRIEDRICH : UN AUBERGISTE - Nicolai GEDDA : UN CHANTEUR ; THE PHILHARMONIA ORCHESTRA ; Dir. Herbert VON KARAJAN" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802031q> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8802031q>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:31.916Z" ;
+	dcterms:modified          "2018-03-26T12:26:25.530Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8802031q> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8802031q.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8802031q/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8802031q#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:16.287Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8802031q> .

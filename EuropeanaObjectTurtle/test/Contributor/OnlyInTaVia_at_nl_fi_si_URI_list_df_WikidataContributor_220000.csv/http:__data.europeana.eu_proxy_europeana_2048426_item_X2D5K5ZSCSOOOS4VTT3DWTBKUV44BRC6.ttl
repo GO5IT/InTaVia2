@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:51.005Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> .
+
+<http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-604886>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004477390>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bauhaus University Weimar. University Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477390> ;
+	edm:isShownAt      <http://nbn-resolving.de/urn:nbn:de:gbv:wim2-g-604886> ;
+	edm:isShownBy      <http://goobipr2.uni-weimar.de/viewer/content/PPN655737456/1000/0/00000007.jpg> ;
+	edm:object         <http://goobipr2.uni-weimar.de/viewer/content/PPN655737456/1000/0/00000007.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<https://iiif.europeana.eu/presentation/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://goobipr2.uni-weimar.de/viewer/content/PPN655737456/1000/0/00000007.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6/manifest> ;
+	ebucore:fileByteSize    "158984"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1435"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFC0CB"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6>
+	a                    ore:Proxy ;
+	dc:contributor       "Rilke, Rainer Maria" ;
+	dc:language          "ger" ;
+	dc:publisher         "Bielefeld [u.a.]: Velhagen & Klasing" ;
+	dc:subject           "Worpswede / Künstlerkolonie / Mackensen, Fritz <Künstler> / Modersohn, Otto / Overbeck, Fritz <Künstler> / Am Ende, Hans / Vogeler, Heinrich <Künstler> / Malerei", "Staatliche Hochschule für Baukunst und Bildende Künste Weimar 1942-1945", "Staatliche Hochschule für Baukunst und Bildende Künste Weimar 1946-1951", "Großherzoglich Sächsische Kunstschule zu Weimar 1860-1910" ;
+	dc:title             "Worpswede: Fritz Mackensen, Otto Modersohn, Fritz Overbeck, Hans am Ende, Heinrich Vogeler" ;
+	dc:type              "Monograph" ;
+	dcterms:issued       "1903" ;
+	edm:currentLocation  <http://d-nb.info/gnd/4065105-8> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> .
+
+<http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:19:51.006Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> .
+
+<http://data.europeana.eu/agent/60239>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/109> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/27276>, <http://data.europeana.eu/agent/149409> ;
+	owl:sameAs           <http://d-nb.info/gnd/118601024>, <http://www.wikidata.org/entity/Q76483>, <http://vocab.getty.edu/ulan/500324890>, <https://www.freebase.com/m/06l0f>, <http://libris.kb.se/resource/auth/212118>, <http://data.bnf.fr/ark:/12148/cb130916261>, <http://data.bibliotheken.nl/id/thes/p068455577>, <http://id.ndl.go.jp/auth/ndlna/00454239>, <http://id.loc.gov/authorities/names/n79042183>, <http://lod.nl.go.kr/resource/KAC199623067>, <http://nlg.okfn.gr/resource/authority/record69611>, <http://dbpedia.org/resource/Rainer_Maria_Rilke>, <https://g.co/kg/m/06l0f>, <https://libris.kb.se/20dghf8l1jtc1s5>, <http://datos.bne.es/resource/XX1147462>, <http://openlibrary.org/works/OL673325A>, <http://www.idref.fr/027100596/id>, <http://data.cervantesvirtual.com/person/14957>, <https://livedata.bibsys.no/authority/90053126>, <http://viaf.org/viaf/46897170>, <http://id.worldcat.org/fast/33946>, <http://data.carnegiehall.org/names/1019959> ;
+	rdaGr2:dateOfBirth   "1875-12-04" ;
+	rdaGr2:dateOfDeath   "1926-12-29" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202066> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/213390> ;
+	skos:altLabel        "Rainier Maria Rilke"@sv, "Rainŏ Maria Rilkʻe"@en, "Rainer Maria Rilke"@lt, "R M Rilke"@es, "Рильке"@ru, "R. M. Rilke"@cs, "R. M. Rilke"@es, "Rainer Karl Wilhelm Johann Josef Maria Rilke"@en, "Rainer María Rilke"@es, "René Karl Wilhelm Johann Josef Maria Rilke"@ro, "René Karl Wilhelm Johann Josef Maria Rilke"@pl, "René Karl Wilhelm Johann Josef Maria Rilke"@cs, "Rilke, Rainer Maria"@es, "René Karl Wilhelm Johann Josef Maria Rilke"@fr, "René Karl Wilhelm Johann Josef Maria Rilke"@en, "Rilke, Rainer Maria"@sv, "René Karl Wilhelm Johann Josef Maria Rilke"@de, "Rainer Maria Rielke"@en, "Рильке Райнер Мария"@ru, "Рильке Р."@ru, "Rene Karl Wilhelm Johann Josef Maria Rilke"@en, "Rilke"@ca, "Rilke"@nl, "Rilke"@cs, "Rilke"@es, "Rilke"@fr, "Rilkean"@it, "Rilke"@hr, "Rilke"@lv, "Rilke"@sv, "Rilke"@fi, "Rilke"@pt, "Li-erh-kʻo"@en, "R M. Rilke"@es, "Rene Rilke"@en, "Reiner Maria Rilke"@it, "Reiner Marie Rilke"@en, "René Maria Cäsar Rilke"@en, "René Rilke"@pl, "René Rilke"@it, "René Rilke"@en, "René Rilke"@de, "Rainer Mariyah Rilḳeh"@en, "Рене Карл Вильгельм Иоганн Йозеф Мария Рильке"@ru, "Райнер Рильке"@ru, "Рильке Р. М."@ru, "Рилке"@bg, "Rilke Rainer Maria"@es, "Rainer Rilke"@it, "Рильке, Райнер"@ru ;
+	skos:note            "Австрийский поэт"@ru, "Scriitor austriac"@ro, "Austrian poet and writer (1875-1926)"@en, "Tyskspråkig lyriker som betraktas som en av det tyska språkets främsta poeter"@sv, "Austrų poetas"@lt, "Itävaltalainen runoilija"@fi, "Poeta austríac"@ca, "Duits schrijver"@nl, "File agus scríbhneoir Ostarach"@ga, "Avstrijski pesnik in pisatelj"@sl, "Poeta austríaco"@es, "Scrittore, poeta e drammaturgo austriaco"@it, "Rakouský básník a spisovatel"@cs, "Écrivain autrichien"@fr, "Österreichischer Lyriker, Erzähler, Übersetzer und Romancier (1875–1926)"@de, "Poeta austriacki"@pl ;
+	skos:prefLabel       "Rainers Marija Rilke"@lv, "Райнер Мария Рильке"@ru, "Rainer Maria Rilke"@fr, "Rainer Maria Rilke"@de, "Rainer Maria Rilke"@fi, "Rainer Maria Rilke"@pt, "Rainer Maria Rilke"@hr, "Rainer Maria Rilke"@hu, "Rainer Maria Rilke"@sk, "Rainer Maria Rilke"@sl, "Rainer Maria Rilke"@ga, "Rainer Maria Rilke"@ca, "Rainer Maria Rilke"@sv, "Rainer Maria Rilke"@en, "Rainer Maria Rilke"@it, "Rainer Maria Rilke"@es, "Rainer Maria Rilke"@et, "Rainer Maria Rilke"@cs, "Rainer Maria Rilke"@pl, "Rainer Maria Rilke"@ro, "Rainer Maria Rilke"@da, "Rainer Maria Rilke"@nl, "Райнер Мария Рилке"@bg, "Raineris Marija Rilkė"@lt, "Ράινερ Μαρία Ρίλκε"@el .
+
+<http://data.europeana.eu/aggregation/europeana/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T16:57:55.488Z" ;
+	dcterms:modified          "2016-02-15T16:57:55.488Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6#contentTier>, <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> ;
+	edm:completeness          "7" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2048426_Ag_DE_DDB_Weimar" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgoobipr2.uni-weimar.de%2Fviewer%2Fcontent%2FPPN655737456%2F1000%2F0%2F00000007.jpg&type=TEXT> .
+
+<http://data.europeana.eu/proxy/europeana/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/60239> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1903" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048426/item_X2D5K5ZSCSOOOS4VTT3DWTBKUV44BRC6> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

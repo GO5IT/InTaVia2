@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/59904> ;
+	dc:type             <http://data.europeana.eu/concept/2847> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> .
+
+<http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:55:08.138Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> .
+
+<http://data.europeana.eu/aggregation/provider/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004503491> ;
+	edm:isShownAt      <http://pprn.infoteca.it/bw5net/opac.aspx?web=PGDB&OPAC=Ranieri&IDS=42964> ;
+	edm:isShownBy      <http://pprn.infoteca.it/bw5net/ThumbJpeg.ashx?WEBIDS=PGDB42964> ;
+	edm:object         <http://pprn.infoteca.it/bw5net/ThumbJpeg.ashx?WEBIDS=PGDB42964> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-05T09:22:15.363Z" ;
+	dcterms:modified          "2016-02-29T16:38:27.222Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964#metadataTier>, <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> ;
+	edm:completeness          "9" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2058606_Ag_EU_LoCloud_FRS" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fpprn.infoteca.it%2Fbw5net%2FThumbJpeg.ashx%3FWEBIDS%3DPGDB42964&type=TEXT> .
+
+<http://data.europeana.eu/organization/1482250000004503491>
+	a               foaf:Organization ;
+	skos:prefLabel  "Ranieri di Sorbello Foundation"@en .
+
+<http://pprn.infoteca.it/bw5net/opac.aspx?web=PGDB&OPAC=Ranieri&IDS=42964>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/concept/2847>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/ysa/Y103836>, <http://iconclass.org/49M3>, <https://www.freebase.com/m/02rwcfs>, <http://vocab.getty.edu/aat/300404588>, <http://www.yso.fi/onto/yso/p7528>, <https://d-nb.info/gnd/4013134-8>, <https://g.co/kg/m/02rwcfs>, <http://www.wikidata.org/entity/Q1261026>, <http://id.loc.gov/authorities/names/sh85106766>, <http://zbw.eu/stw/descriptor/14812-5>, <http://babelnet.org/rdf/s00323788n>, <http://id.worldcat.org/fast/1076668> ;
+	skos:note        "Tištěný dokument dostupný ve větším počtu exemplářů"@cs, "Печатная работа на бумажном носителе (книга, журнал, газета и т. п.)"@ru, "Printed material produced by printers or publishers"@en, "Materiale stampato, prodotto da editori o stampatori"@it, "Inprimatzaileek edo argitaratzaileek inprimatu duten materiala"@eu, "Material impresso produzido por gráficas ou editoras"@pt, "Document produit par des imprimeurs et éditeurs"@fr, "Material impreso producido por impresores y editores"@es, "Klassische gedruckte Informationsquellen wie Zeitschriften, Zeitungen, Bücher usw."@de ;
+	skos:prefLabel   "Impreso"@es, "Печатно издание"@bg, "Tryksag"@da, "Nyomtatott kiadvány"@hu, "Iespieddarbs"@lv, "Drukwerk"@nl, "Mídia impressa"@pt, "Painotuote"@fi, "Testo a stampa"@it, "Imprès"@ca, "Druckerzeugnis"@de, "Tiskovni material"@sl, "Material inprimatu"@eu, "Printed matter"@en, "Trükis"@et, "Tiskovina"@cs, "Έντυπο υλικό"@el, "Печатное издание"@ru, "Trycksak"@sv, "Imprimé"@fr .
+
+<http://pprn.infoteca.it/bw5net/opac.aspx?web=PGDB&OPAC=Ranieri&IDS=42964&Pixels=0>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/59904>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/24733> ;
+	owl:sameAs           <http://www.idref.fr/026831198/id>, <http://id.ndl.go.jp/auth/ndlna/00437850>, <http://viaf.org/viaf/91912703>, <http://openlibrary.org/works/OL24638A>, <http://id.loc.gov/authorities/names/no2012115982>, <http://data.bibliotheken.nl/id/thes/p068342853>, <http://kulturarvsdata.se/LSH/agents/6216>, <https://libris.kb.se/42gjjgtn110l7gz>, <https://livedata.bibsys.no/authority/90051428>, <http://www.wikidata.org/entity/Q5686>, <http://nlg.okfn.gr/resource/authority/record60575>, <http://id.loc.gov/authorities/names/n78087607>, <http://viaf.org/viaf/88666393>, <http://data.carnegiehall.org/names/1023074>, <http://lod.nl.go.kr/resource/KAC199607080>, <http://d-nb.info/gnd/118525239>, <http://data.cervantesvirtual.com/person/1351>, <https://g.co/kg/m/01v9724>, <https://www.freebase.com/m/01v9724>, <http://id.worldcat.org/fast/28294>, <http://vocab.getty.edu/ulan/500106117>, <http://libris.kb.se/resource/auth/183770>, <http://datos.bne.es/resource/XX1633131>, <http://dbpedia.org/resource/Charles_Dickens>, <http://data.bnf.fr/ark:/12148/cb119001186> ;
+	rdaGr2:dateOfBirth   "1812-02-07" ;
+	rdaGr2:dateOfDeath   "1870-06-09" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/176909> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/184948> ;
+	skos:altLabel        "Диккенс Чарльз"@ru, "Dickens"@en, "Τσαρλς Ντίκενς"@el, "Charles Dickens"@pl, "Carlo Dickens"@it, "Charles Dickens"@lv, "C.Dickens"@it, "C.Dickens"@en, "C.Dickens"@de, "C.Dickens"@ru, "C.Dickens"@bg, "Dickens, Charles"@fr, "Charles John Huffam Dickens"@nl, "Charles John Huffam Dickens"@ro, "Charles John Huffam Dickens"@da, "Charles John Huffam Dickens"@pl, "Charles John Huffam Dickens"@sk, "Charles John Huffam Dickens"@cs, "Charles John Huffam Dickens"@et, "Charles John Huffam Dickens"@es, "Charles John Huffam Dickens"@hu, "Charles John Huffam Dickens"@fr, "Charles John Huffam Dickens"@it, "Charles John Huffam Dickens"@de, "Charles John Huffam Dickens"@sv, "Charles John Huffam Dickens"@fi, "Charles John Huffam Dickens"@pt, "Charles John Huffam Dickens"@en, "Чарльз Джон Хаффем Диккенс"@ru, "Boz"@pl, "Boz"@fr, "Boz"@en, "Boz"@de ;
+	skos:note            "Englantilainen kirjailija"@fi, "Английский писатель"@ru, "Engelse schrijver en sociale criticus"@nl, "Angielski powieściopisarz"@pl, "Angol író"@hu, "Escritor inglés (1812-1870)"@es, "Englischer Schriftsteller"@de, "English writer and social critic (1812–1870)"@en, "Anglický spisovateľ"@sk, "Άγγλος μυθιστοριογράφος"@el, "Английски писател"@bg, "Engelsk författare och samhällskritiker"@sv, "Angleški pisatelj"@sl, "Engelsk forfatter (1812-1870)"@da, "Scrittore, giornalista e reporter di viaggio britannico"@it, "Escritor britânico"@pt, "Anglický spisovatel"@cs, "Scriitor englez"@ro, "Romancier, dramaturge et journaliste anglais"@fr, "Escriptor anglès"@ca ;
+	skos:prefLabel       "Čārlzs Dikenss"@lv, "Κάρολος Ντίκενς"@el, "Karol Dickens"@pl, "Чарлз Дикенс"@bg, "Charles Dickens"@fi, "Charles Dickens"@pt, "Charles Dickens"@lt, "Charles Dickens"@hr, "Charles Dickens"@hu, "Charles Dickens"@sk, "Charles Dickens"@sl, "Charles Dickens"@ga, "Charles Dickens"@ca, "Charles Dickens"@sv, "Charles Dickens"@mt, "Charles Dickens"@en, "Charles Dickens"@it, "Charles Dickens"@es, "Charles Dickens"@et, "Charles Dickens"@cs, "Charles Dickens"@ro, "Charles Dickens"@da, "Charles Dickens"@nl, "Charles Dickens"@fr, "Charles Dickens"@de, "Чарльз Диккенс"@ru .
+
+<https://iiif.europeana.eu/presentation/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:55:08.139Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> .
+
+<http://pprn.infoteca.it/bw5net/ThumbJpeg.ashx?WEBIDS=PGDB42964>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964/manifest> .
+
+<http://data.europeana.eu/proxy/provider/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964>
+	a                   ore:Proxy ;
+	dc:creator          "Dickens, Charles" ;
+	dc:description      "(Gadshill edition). - POSSEDUTO: 1-7, 14-15, 19-22, 25, 33. - Giovanile. - v. 1: The posthumous papers of the. - Pickwick club. - v. 1. - XXII, 488 p.. - v. 2: The posthumous papers of the. - Pickwick club. - v. 2. - VIII, 480 p.. - v. 3: The adventures of Oliver Twist. - X, 509 p.. - v. 4: The life and adventures of. - Nicholas Nickleby. - v. 1. - XXV, 504 p.. - v. 5: The life and adventures of. - Nicholas Nickleby. - v. 2. - IX, 497 p.. - v. 6: The life and adventures of Martin. - Chuzzlewit. - v. 1. - XX, 505 p.. - v. 7: The life and adventures of Martin. - Chuzzlewit. - v. 2. - VIII, 509 p.. - v. 14: The personal history of David. - Copperfield. - v. 1. - XVII, 527 p.. - v. 15: The personal history of David. - Copperfield. - v. 2. - VIII, 534 p.. - v. 19: Little Dorrit. - v. 1. - XVIII, 537 p.. - v. 20: Little Dorrit. - v. 2. - VIII, 500 p.. - v. 21: A tale of two cities. - XIX, 441 p.. - v. 22: Great expectations. - XI, 568 p.. - v. 25: Hard times. - XIX, 444 p.. - v. 33: The mistery of Edwin Drood ; and. - Master Humphrey's clock. - XII, 449 p.. - . -" ;
+	dc:identifier       "42964" ;
+	dc:language         "other" ;
+	dc:title            "The works" ;
+	dc:type             "Materiale a stampa", "Materiale testuale" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058606/bw5net_opac_aspx_web_PGDB_OPAC_Ranieri_IDS_42964> .

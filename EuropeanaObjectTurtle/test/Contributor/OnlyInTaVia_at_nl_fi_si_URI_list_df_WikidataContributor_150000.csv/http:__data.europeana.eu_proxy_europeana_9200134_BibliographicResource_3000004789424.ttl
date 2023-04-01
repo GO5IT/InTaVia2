@@ -1,0 +1,138 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:52.191Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_3000004789424> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_3000004789424>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:14:43.398Z" ;
+	dcterms:modified          "2014-05-27T13:14:43.398Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424#contentTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_3000004789424> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1692052&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_3000004789424>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1692052> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1692052> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_3000004789424>
+	a                   ore:Proxy ;
+	dc:contributor      "Louis Gallait", "Willem Philip van der Veken" ;
+	dc:date             "18--?", "1884" ;
+	dc:identifier       "008509343" ;
+	dc:language         "fr" ;
+	dc:subject          "Portraits", "Portretten" ;
+	dc:title            "Louis Gallait" ;
+	dc:type             "Still image"@en, "Monograph"@en ;
+	dcterms:extent      "voorstelling met opschrift: 201 x 153 mm", "plaatrand: 228 x 162 mm.", "Black-and-white ;", "voorstelling: 186 x 153 mm" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_3000004789424> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1692052>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8737"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "285"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1692052>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/158090>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/59373>, <http://data.europeana.eu/agent/38350>, <http://data.europeana.eu/agent/25802>, <http://data.europeana.eu/concept/106> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/113189>, <http://data.europeana.eu/agent/52942>, <http://data.europeana.eu/agent/150851> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q538173>, <https://g.co/kg/m/089yz5>, <http://data.bibliotheken.nl/id/thes/p073177741>, <http://www.idref.fr/029424941/id>, <http://vocab.getty.edu/ulan/500018878>, <http://data.bnf.fr/ark:/12148/cb12105505x>, <http://dbpedia.org/resource/Louis_Gallait>, <http://d-nb.info/gnd/119005247>, <http://viaf.org/viaf/54417831>, <https://www.freebase.com/m/089yz5>, <http://id.worldcat.org/fast/247639>, <http://id.loc.gov/authorities/names/nr89003537> ;
+	rdaGr2:dateOfBirth   "1810-03-10" ;
+	rdaGr2:dateOfDeath   "1887-11-20" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202479> ;
+	skos:altLabel        "Innocent louis gallait"@en, "Louis Galait"@en, "Gallaits"@en, "Luis Gallait"@de, "Louis-Joseph Gallait"@en, "Gallait"@de, "Gallait"@sv, "Gallait"@en, "Gallait"@nl, "Louis Pallait"@en, "L. Gallait"@en ;
+	skos:note            "Belgisk maler"@da, "Peintre belge"@fr, "Belgian painter (1810-1887)"@en, "Pittore belga"@it, "Belgischer Maler"@de, "Belgia maalikunstnik"@et, "Belgisch kunstschilder"@nl, "Pictor belgian"@ro, "Pintor belga"@ca, "Pintor belga"@es, "Péintéir Beilgeach"@ga ;
+	skos:prefLabel       "Louis Gallait"@es, "Louis Gallait"@de, "Louis Gallait"@fi, "Louis Gallait"@sv, "Louis Gallait"@pt, "Louis Gallait"@en, "Louis Gallait"@it, "Louis Gallait"@fr, "Louis Gallait"@et, "Louis Gallait"@sl, "Louis Gallait"@ga, "Louis Gallait"@ro, "Louis Gallait"@da, "Louis Gallait"@ca, "Louis Gallait"@nl, "Галлэ, Луи"@ru .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_3000004789424>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/158090> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1884" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_3000004789424> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_3000004789424#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:52.190Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_3000004789424> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

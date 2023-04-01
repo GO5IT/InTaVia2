@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_Zweig_MS_46>
+	a                   ore:Proxy ;
+	dc:contributor      "Kreutzer, Conradin, 1780-1849, composer" ;
+	dc:description      "Incomplete, comprises 22 bars on 2 pages, on either side of a single leaf, numbered ‘2’ at top right of recto. Autograph full score. Written in ink on systems of 12 staves. Not from the beginning of the work, so lacking title, tempo direction and key- and time-signatures, but headed, in another hand ‘No. 26. Handschrift v. Conradin Kreutzer’ (upper margin of recto). The Rossini theme, ‘Di tanti palpiti’ from Tancredi , is identified against its [first] appearance, on solo oboe, with ‘Thema aus Tancred’ (bar 6, recto). Scoring apparently for flute, 2 oboes, 2 clarinets, bassoon, 2 horns, trumpets, timpani and strings. Number from Hinterberger catalogue IX added in pencil at foot of recto. This leaf is part of what appears to be an orchestral fantasia on the Rossini theme and to be unpublished in any form. Rossini’s Tancredi was first performed in Venice in February 1813 and was quickly taken up in other cities; it was performed in Darmstadt in 1816 and Stuttgart the following year, and was first given in Vienna in Italian in December 1816 and in German in March 1818. Kreutzer held posts in Stuttgart (1812-16), Donaueschingen (1818-22) and Vienna (from 1822)."@en ;
+	dc:identifier       "Zweig_MS_46" ;
+	dc:language         "German" ;
+	dc:relation         "Zweig MS 46" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://dbpedia.org/page/Musical_notation> ;
+	dc:title            "Conradin Kreutzer: Extract from an orchestral work featuring a theme from Rossini’s opera Tancredi" ;
+	dcterms:created     "1st quarter of the 19th century" ;
+	dcterms:extent      "1 volume (1 folio)" ;
+	dcterms:isPartOf    <http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Zweig_MS_46> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_46> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:52:54.946Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_46> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_46/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS46.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_46/manifest> ;
+	ebucore:fileByteSize    "340420"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "813"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1057"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_46>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_Zweig_MS_46>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/Zweig_MS_46" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_46> .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_46>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T08:24:44.458Z" ;
+	dcterms:modified          "2020-05-01T15:33:14.380Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46#metadataTier>, <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_Zweig_MS_46> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsounds.bl.uk%2Fresources%2Feuropeana%2Fthumbnails%2FZweigMS46.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_46>
+	a                  ore:Aggregation ;
+	dc:rights          "Public Domain" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_46> ;
+	edm:isShownBy      <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS46.jpg> ;
+	edm:object         <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS46.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_46#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:52:54.947Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_46> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .

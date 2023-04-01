@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.euscreen.eu/item.html?id=EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503/manifest> ;
+	ebucore:fileByteSize    "4301"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "application/xhtml+xml" .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_4FB7EABB61A361640981FCD4E82F1503" ;
+	dc:subject          <http://data.europeana.eu/concept/2164>, <http://data.europeana.eu/concept/2977> ;
+	dcterms:spatial     <http://data.europeana.eu/place/106> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "2002" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> .
+
+<http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338645> ;
+	edm:isShownAt      <http://www.euscreen.eu/item.html?id=EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	edm:isShownBy      <http://www.euscreen.eu/item.html?id=EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	edm:object         <http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_4FB7EABB61A361640981FCD4E82F1503/image.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671121> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-02-14T10:31:15.395Z" ;
+	dcterms:modified          "2022-06-23T14:28:03.667Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503#metadataTier>, <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2051918_Ag_EU_EUscreenXLCore_1019" ;
+	edm:landingPage           <https://www.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimages3.noterik.com%2Fdomain%2Feuscreenxl%2Fuser%2Feu_nisv%2Fvideo%2FEUS_4FB7EABB61A361640981FCD4E82F1503%2Fimage.jpg&type=VIDEO> .
+
+<http://thesaurus.euscreen.eu/EUscreenXL/v1/987>
+	a               skos:Concept ;
+	skos:broader    <http://thesaurus.euscreen.eu/EUscreenXL/v1/924> ;
+	skos:inScheme   <http://thesaurus.euscreen.eu/EUscreenXL/v1/ConceptScheme> ;
+	skos:prefLabel  "Ποδόσφαιρο"@el, "Fußball"@de, "Futbolas"@lt, "Fotboll"@sv, "Fotbal, kopaná"@cs, "Futebol"@pt, "Calcio"@it, "labdarúgás"@hu, "Fotbal"@ro, "Voetbal"@nl, "Piłka nożna"@pl, "Fodbold"@da, "Futbol"@ca, "Football"@fr, "Football"@en .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:27.960575Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> .
+
+<http://images3.noterik.com/domain/euscreenxl/user/eu_nisv/video/EUS_4FB7EABB61A361640981FCD4E82F1503/image.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "24194"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "456"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "568"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFA07A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B22222"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/place/106>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/106> ;
+	owl:sameAs        <http://www.idref.fr/034191089/id>, <https://g.co/kg/m/049nq>, <https://sws.geonames.org/2750405/>, <http://data.bnf.fr/ark:/12148/cb12497447f>, <http://dbpedia.org/resource/Kingdom_of_the_Netherlands>, <http://nomisma.org/id/kingdom_of_the_netherlands>, <http://www.wikidata.org/entity/Q29999>, <http://viaf.org/viaf/122686887>, <https://www.freebase.com/m/049nq> ;
+	skos:altLabel     "Renju tal-Pajjiżi Baxxi"@mt, "Nederland"@nl, "Nederland"@pl, "An Ollainn"@ga, "Țările de Jos"@ro, "Βασίλειο της Ολλανδίας"@el, "Paises Bajos"@es, "Tarile de Jos"@ro, "Países Baixos"@pt, "Reino de Los Paises Bajos"@es, "NED"@nl, "An Ísiltír"@ga, "Królestwo Niderlandów"@pl, "Netherlands"@ro, "Netherlands"@en, "Netherlands"@mt, "The Netherlands"@en, "Paesi Bassi"@it, "NL"@nl, "NL"@pl, "NL"@es, "NL"@fr, "NL"@it, "NL"@en, "NL"@de, "Regatul Ţărilor de Jos"@ro, "Holanda"@pt, "Hollandia"@hu, "Royaume des Pays Bas"@fr, "Нидерланды"@ru, "Ţările de Jos"@ro, "Kungariket Nederländerna"@sv, "Niderlandy"@pl, "Niederlande"@de, "Olanda"@mt, "Holandsko"@sk, "Koninkrijk der Nederlanden"@da, "Koninkrijk der Nederlanden"@pl, "Koninkrijk der Nederlanden"@es, "Pajjiżi Baxxi"@mt, "Pays-Bas"@fr, "Голландия"@ru ;
+	skos:note         "Består av Aruba, Curaçao, Nederländerna och Sint Maarten"@sv, "Federació formada per Aruba, Curaçao, Sint Maarten i els mateixos Països Baixos"@ca, "Estado soberano que compreende Aruba, Curaçao, Países Baixos e São Martinho"@pt, "Stato sovrano dell'Unione Europea con territori in Europa e nei Caraibi"@it, "Valtioliitto Euroopassa ja Karibialla"@fi, "Ανεξάρτητο κράτος που αποτελείται από την Αρούμπα, Κουρακάο, Άγιο Μαρτίνο, και τις Κάτω Χώρες"@el, "Stat sovran fl-Ewropa tal-Punent u fil-Karibew"@mt, "Soevereine staat bestaande uit Aruba, Curaçao, Nederland en Sint Maarten"@nl, "Составное суверенное государство; с 16 марта 1815, в Западной Европе и Карибском бассейне"@ru, "Kongeriget Nederlandene bestående af Aruba, Curaçao, Nederlandene og Sint Maarten"@da, "Sovereign state, constitutional monarchy"@en, "Stat în Europa de Vest"@ro, "Pays d'Europe occidentale"@fr, "Państwo w Europie Zachodniej"@pl, "Staat in Europa und der Karibik, der aus vier Landesteilen besteht"@de, "Stát sestávající z evropského Nizozemska a ostrovů v Karibiku"@cs, "Държава в Европа и Карибите"@bg, "Estado federado miembro de la Unión Europea y formado por Aruba, Curazao, Sint Maarten y los Países Bajos"@es, "Állam Nyugat-Európában és a Karib-térségben"@hu ;
+	skos:prefLabel    "Koninkrijk der Nederlanden"@nl, "Alankomaiden kuningaskunta"@fi, "Konungariket Nederländerna"@sv, "Madalmaade Kuningriik"@et, "Royaume des Pays-Bas"@fr, "Kingdom of the Netherlands"@en, "Regno dei Paesi Bassi"@it, "Reino de los Países Bajos"@es, "Kongeriget Nederlandene"@da, "Nyderlandai"@lt, "Βασίλειο των Κάτω Χωρών"@el, "Holandské kráľovstvo"@sk, "Королевство Нидерландов"@ru, "Кралство Нидерландия"@bg, "Regatul Țărilor de Jos"@ro, "Ríocht na hÍsiltíre"@ga, "Regne dels Països Baixos"@ca, "Königreich der Niederlande"@de, "Holandia"@pl, "Reino dos Países Baixos"@pt, "Nizozemské království"@cs, "Renju tan-Netherlands"@mt, "Nīderlandes Karaliste"@lv, "Kraljevina Nizozemska"@hr, "Kraljevina Nizozemska"@sl, "Holland Királyság"@hu ;
+	wgs84_pos:lat     "52.366665" ;
+	wgs84_pos:long    "4.883333" .
+
+<http://data.europeana.eu/organization/1482250000004671121>
+	a               foaf:Organization ;
+	skos:prefLabel  "EUscreen"@en .
+
+<http://data.europeana.eu/proxy/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503>
+	a                    ore:Proxy ;
+	dc:contributor       "Barend, Frits (presentatie, interviewer)", "Koeman, Ronald", "Blue Circle (producent)", "Büch, Boudewijn", "Mulder, Jan", "Verbaan, Georgina", "Dorp, Henk van (presentatie, interviewer)" ;
+	dc:description       "Original language summary: \u000AActuele dagelijkse talkshow van Frits Barend en Henk van Dorp. Vaste gast is columnist Jan Mulder. De gasten zitten gezamenlijk aan tafel en reageren op elkaars gespreksonderwerpen. Parlementair verslaggever Frits Wester bespreekt wekelijks het politieke nieuws, en Stem des Volks Cor van de Capelle geeft regelmatig telefonisch zijn mening. In deze aflevering zijn te gast: - Ronald Koeman, trainer Ajax; - Henk Scheermeijer, oud-geheim agent en schrijver; - Boudewijn Büch, schrijver en programmamaker. Met een OPTREDEN van zangeres Georgina Verbaan. [Dit is de laatste uitzending met Boudewijn Büch als sidekick. Hij overlijdt drie dagen later, op 23 november 2002, aan een hartstilstand.]"@nl, "Extended description:\u000A22:33:08 NIEUWS VAN DE DAG De gasten en presentatoren vertellen wat hun nieuws van de dag is. * 22:39:28 FRED TEEVEN IN MARINIERSLOOP Filmpje over de deelname van Kamerlid voor Leefbaar Nederland Fred Teeven aan de mariniersloop in Rotterdam eerder deze dag. Hij finisht bij de laatste acht. * 22:40:38 + 23:26:58 RONALD KOEMAN Ajaxtrainer Ronald Koeman geeft commentaar op de vriendschappelijke wedstrijd Duitsland-Nederland van eerder deze avond en op zijn contact met bondscoach Dick Advocaat. Koeman vertelt zijn nieuwe leven als trainer. Ajax is beter gaan spelen doordat hij een spelersgroep geformeerd heeft die zelf initiatief neemt. Mulder stelt dat een groot elftal tot stand komt door een groot speler en hij vraagt zich af of Rafael van der Vaart deze rol kan vervullen bij Ajax. Koeman gaat in op de plannen met Van der Vaart en de andere Ajacieden, onder wie Jari Litmanen. Koeman verwacht dat voetballer Jean-Charles Kifu aan het eind van het seizoen vertrekt bij Ajax. De linksbenige Dejan Stefanovic staat op het lijstje als zijn opvolger. * 23:01:19 + 23:28:59 HENK SCHEERMEIJER Oud-geheim agent en tegenwoordig adviseur Henk Scheermeijer doet een boekje open over spioneren. Scheermeijer heeft gespioneerd voor de inlichtingendienst buitenland (IDB). Spioneren heeft volgens hem niets te maken met James Bond, al krijgt een Nederlandse spion ?speelgoed? mee dat zo in de film kan; hij toont een balpen die ook een schietpen is. Van Dorp gaat in op kamervragen die zijn gesteld naar aanleiding van de inhoud van Scheermeijers boek 'De memoires van een spion', over de aanval op de Euromast beraamd door Palestijnse terroristen die verijdeld zou zijn. Scheermeijer vertelt verder over zijn ontmoeting met premier Joop den Uil in 1973. Deze trok Scheermeijers informatie in twijfel over de precieze datum van de komende olieboycot in 1973. * 23:12:48 OPTREDEN Georgina Verbaan zingt 'Easier said than done' van haar cd 'Sugar Spider'. * 23:16:46 BOUDEWIJN BÜCH In de jaren 50 ontstaat een nieuw literair genre: boeken van mensen die beweren dat ze in een concentratiekamp geïnterneerd zijn geweest. Als voorbeeld bespreekt Boudewijn Büch 'Brokstukken' van Binjamin Wilkomirski. Die beschrijft de periode tot zijn vierde jaar, waarin hij de meest vreselijke martelingen in een concentratiekamp zou hebben ondergaan. Het boek blijkt totale onzin te bevatten waar de hele literaire wereld ingetuind is. Büch doet de gevolgen van deze geschiedenis uit de doeken.", "Daily talkshow with Frits Barend and Henk van Dorp. Regular guest is columnist Jan Mulder. The guests in this episode are: - Ronald Koeman, trainer Ajax; - Henk Scheermeijer, former secret agent and writer; - Boudewijn Büch, writer and producer. With a performance by Georgina Verbaan. [This is the last broadcast with Boudewijn Büch as sidekick. He died three days later, on 23 november 2002, because of a heart attack.]"@en ;
+	dc:format            "ASPECT RATIO: 4:3", "VIDEO", "Colour", "Stereo" ;
+	dc:identifier        "3849965" ;
+	dc:publisher         "RTL 4" ;
+	dc:rights            "For information on the use of archive material, please contact the Customer Service department of Netherlands Institute for Sound & Vision: info@beeldengeluid.nl." ;
+	dc:subject           "praatprogramma", "IDB", "Society and social issues", "voetbal", "trainers", <http://thesaurus.euscreen.eu/EUscreenXL/v1/987>, "spionage", "Ajax", "literatuur", "inlichtingendiensten", "Teeven, Fred", "non-fictie" ;
+	dc:title             "Barend & Van Dorp 20/11/2002"@en, "Barend & Van Dorp 20/11/2002"@nl ;
+	dc:type              "ITEM", "News", "Entertainment and performing arts" ;
+	dcterms:alternative  "SERIES TITLE: Barend & Van Dorp"@en, "Barend & Van Dorp"@nl ;
+	dcterms:created      "2002" ;
+	dcterms:extent       "00:49:47" ;
+	dcterms:isPartOf     <http://mint-projects.image.ntua.gr/data/euscreenXL/EUS_513F04B47411BCDD8C80532EE577FAC4> ;
+	dcterms:issued       "20/11/2002" ;
+	dcterms:spatial      "The Netherlands" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> .
+
+<http://data.europeana.eu/item/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-23T14:28:27.961016Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2051918/data_euscreenXL_EUS_4FB7EABB61A361640981FCD4E82F1503> .
+
+<http://data.europeana.eu/concept/2977>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4018968-5>, <http://vocab.getty.edu/aat/300222801>, <http://id.loc.gov/authorities/names/sh85123840>, <http://babelnet.org/rdf/s00006547n>, <http://www.yso.fi/onto/ysa/Y95607>, <http://www.wikidata.org/entity/Q2736>, <http://zbw.eu/stw/descriptor/15643-4>, <http://id.ndl.go.jp/auth/ndlna/00570050>, <http://data.bnf.fr/ark:/12148/cb119314286>, <http://www.yso.fi/onto/yso/p6409>, <http://id.worldcat.org/fast/1122119>, <http://purl.org/bncf/tid/725>, <http://id.nlm.nih.gov/mesh/I03.450.642.845.800>, <https://www.freebase.com/m/02vx4>, <https://g.co/kg/m/02vx4>, <http://id.nlm.nih.gov/mesh/D012916> ;
+	skos:note        "Sportdiscipline"@nl, "Joukkuepallopeli"@fi, "Taldekako kirol bat, hamaikana jokalariko bi talderen artean baloi esferiko batekin jokatua"@eu, "Sport that is practiced between two teams of eleven players"@en, "Lagsport som går ut på att förpassa bollen i motståndarlagets mål"@sv, "Deporte que se practica entre dos equipos de once jugadores"@es, "Fodboldsporten"@da, "Ballsportart zweier Mannschaften mit je elf Spielern"@de, "Sport di squadra giocato con un pallone su un campo di gioco rettangolare, con due porte, da due squadre composte da 11 giocatori"@it, "Komandu sporta veids, kurā divas komandas sacenšas, lai ar kāju palīdzību iesietu bumbu pretinieka vārtos"@lv, "Sport de echipă"@ro, "Sport, w którym dwa zespoły (po 11 zawodników) próbują strzelić piłkę do bramki przeciwnika"@pl, "Spórt foirne"@ga, "Sport collectif où deux équipes s'affrontent pour mettre le ballon dans le but adverse"@fr, "Labdajáték"@hu, "Desporto coletivo"@pt, "Командный вид спорта с мячом"@ru, "Kolektivní míčová hra, ve které se týmy o 11 hráčích snaží kopnout míč do soupeřovy branky"@cs, "Kolektívna loptová hra"@sk, "Esport col·lectiu"@ca, "Отборен спорт"@bg, "Ομαδικό άθλημα"@el ;
+	skos:prefLabel   "Football"@fr, "Labdarúgás"@hu, "Piłka nożna"@pl, "Futbols"@lv, "Calcio"@it, "Fotboll"@sv, "Jalkapallo"@fi, "Jalgpall"@et, "Futebol"@pt, "Futbolas"@lt, "Fútbol"@es, "Fodbold"@da, "Sacar"@ga, "Ποδόσφαιρο"@el, "Association football"@en, "Fotbal"@cs, "Fotbal"@ro, "Voetbal"@nl, "Futbol"@ca, "Futbol"@mt, "Futbol"@eu, "Fußball"@de, "Futbal"@sk, "Футбол"@ru, "Футбол"@bg, "Nogomet"@hr, "Nogomet"@sl ;
+	skos:related     <http://data.europeana.eu/concept/3135> .
+
+<http://data.europeana.eu/concept/2164>
+	a                skos:Concept ;
+	skos:altLabel    "Scarpa da tennis"@it, "Sportsko"@sv, "Paire de tennis"@fr, "Bamba"@ca, "Basket"@fr, "Deportivas"@es, "Gymschoen"@nl, "Champión"@es, "Trainers"@en, "Tenis"@es, "Sportschuh"@de, "Sneaker"@it, "Champion"@es, "Playeras"@es, "Sportschoenen"@nl, "Sneakers"@en, "Sneakers"@fr, "Pepegi"@pl, "Zapatillas de deporte"@es, "Sabata esportiva"@ca, "Kets"@et, "Zapato deportivo"@es, "Sabatilla d'atletisme"@ca, "Sabatilles esportives"@ca, "Sports shoe"@en, "Zapatilla ciclismo"@es, "Tennis"@fr, "Scarpe da ginnastica"@it, "Zapatillas deportivas"@es, "Zapatos deportivos"@es, "Championes"@es ;
+	skos:exactMatch  <http://d-nb.info/gnd/4056418-6>, <https://g.co/kg/m/027k4k>, <http://www.yso.fi/onto/yso/p16820>, <http://www.wikidata.org/entity/Q815554>, <https://www.freebase.com/m/027k4k>, <http://thesaurus.europeanafashion.eu/thesaurus/10254>, <http://id.ndl.go.jp/auth/ndlna/01162708>, <http://vocab.getty.edu/aat/300225924> ;
+	skos:note        "Type of shoe"@en, "Art von Schuh"@de, "Sko som används för både träning och fritid"@sv, "Tipo di scarpa"@it, "Tipo de indumentaria deportiva destinada a los pies"@es, "Edzőcipő (vagy sportcipő)"@hu, "Type de chaussure"@fr, "Sportschoen, m.n. zo'n schoen die men niet bij het sporten maar als modeartikel draagt"@nl, "Спортивная обувь, предназначенная для бега и занятий спортом"@ru ;
+	skos:prefLabel   "Кроссовки"@ru, "Маратонки"@bg, "Chaussure de sport"@fr, "Tenisówki"@pl, "Turnschuh"@de, "Tênis"@pt, "Ketsid"@et, "Edzőcipő"@hu, "Athletic shoe"@en, "Αθλητικά παπούτσια"@el, "Sneaker"@nl, "Calzado deportivo"@es, "Sabatilla esportiva"@ca, "Športni copati"@sl, "Sportskor"@sv, "Scarpa da ginnastica"@it, "Urheilukenkä"@fi .
+
+<http://data.europeana.eu/organization/1482250000000338645>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nederlands Instituut voor Beeld & Geluid"@nl, "Netherlands Institute for Sound & Vision"@en .

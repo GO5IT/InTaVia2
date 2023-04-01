@@ -1,0 +1,1170 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix data: <https://www.wikidata.org/wiki/Special:EntityData/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix pqn: <http://www.wikidata.org/prop/qualifier/value-normalized/> .
+@prefix pqv: <http://www.wikidata.org/prop/qualifier/value/> .
+@prefix pr: <http://www.wikidata.org/prop/reference/> .
+@prefix prn: <http://www.wikidata.org/prop/reference/value-normalized/> .
+@prefix prv: <http://www.wikidata.org/prop/reference/value/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix psn: <http://www.wikidata.org/prop/statement/value-normalized/> .
+@prefix psv: <http://www.wikidata.org/prop/statement/value/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix s: <http://www.wikidata.org/entity/statement/> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix v: <http://www.wikidata.org/value/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdno: <http://www.wikidata.org/prop/novalue/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wdtn: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wd:P1038 a wikibase:Property ;
+    rdfs:label "relative"@en ;
+    schema1:description "family member (qualify with \"type of kinship\", P1039; for direct family member please use specific property)"@en ;
+    schema1:name "relative"@en ;
+    wikibase:claim p:P1038 ;
+    wikibase:directClaim wdt:P1038 ;
+    wikibase:novalue wdno:P1038 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P1038 ;
+    wikibase:qualifierValue pqv:P1038 ;
+    wikibase:reference pr:P1038 ;
+    wikibase:referenceValue prv:P1038 ;
+    wikibase:statementProperty ps:P1038 ;
+    wikibase:statementValue psv:P1038 ;
+    skos:prefLabel "relative"@en .
+
+wd:P1039 a wikibase:Property ;
+    rdfs:label "kinship to subject"@en ;
+    schema1:description "qualifier of \"relative\" (P1038) to indicate less usual family relationships (ancestor, son-in-law, adoptions, etc). Indicate how the qualificator item is related to the main item."@en ;
+    schema1:name "kinship to subject"@en ;
+    wikibase:claim p:P1039 ;
+    wikibase:directClaim wdt:P1039 ;
+    wikibase:novalue wdno:P1039 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P1039 ;
+    wikibase:qualifierValue pqv:P1039 ;
+    wikibase:reference pr:P1039 ;
+    wikibase:referenceValue prv:P1039 ;
+    wikibase:statementProperty ps:P1039 ;
+    wikibase:statementValue psv:P1039 ;
+    skos:prefLabel "kinship to subject"@en .
+
+wd:P106 a wikibase:Property ;
+    rdfs:label "occupation"@en ;
+    schema1:description "occupation of a person; see also \"field of work\" (Property:P101), \"position held\" (Property:P39)"@en ;
+    schema1:name "occupation"@en ;
+    wikibase:claim p:P106 ;
+    wikibase:directClaim wdt:P106 ;
+    wikibase:novalue wdno:P106 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P106 ;
+    wikibase:qualifierValue pqv:P106 ;
+    wikibase:reference pr:P106 ;
+    wikibase:referenceValue prv:P106 ;
+    wikibase:statementProperty ps:P106 ;
+    wikibase:statementValue psv:P106 ;
+    skos:prefLabel "occupation"@en .
+
+wd:P1365 a wikibase:Property ;
+    rdfs:label "replaces"@en ;
+    schema1:description "person, state or item replaced. Use \"structure replaces\" (P1398) for structures. Use \"follows\" (P155) if the previous item was not replaced or predecessor and successor are identical"@en ;
+    schema1:name "replaces"@en ;
+    wikibase:claim p:P1365 ;
+    wikibase:directClaim wdt:P1365 ;
+    wikibase:novalue wdno:P1365 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P1365 ;
+    wikibase:qualifierValue pqv:P1365 ;
+    wikibase:reference pr:P1365 ;
+    wikibase:referenceValue prv:P1365 ;
+    wikibase:statementProperty ps:P1365 ;
+    wikibase:statementValue psv:P1365 ;
+    skos:prefLabel "replaces"@en .
+
+wd:P1366 a wikibase:Property ;
+    rdfs:label "replaced by"@en ;
+    schema1:description "other person or item which continues the item by replacing it in its role. Use P156 (\"followed by\") if the item is not replaced nor identical, but adds to the series (e.g. books in a series)."@en ;
+    schema1:name "replaced by"@en ;
+    wikibase:claim p:P1366 ;
+    wikibase:directClaim wdt:P1366 ;
+    wikibase:novalue wdno:P1366 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P1366 ;
+    wikibase:qualifierValue pqv:P1366 ;
+    wikibase:reference pr:P1366 ;
+    wikibase:referenceValue prv:P1366 ;
+    wikibase:statementProperty ps:P1366 ;
+    wikibase:statementValue psv:P1366 ;
+    skos:prefLabel "replaced by"@en .
+
+wd:P19 a wikibase:Property ;
+    rdfs:label "place of birth"@en ;
+    schema1:description "most specific known (e.g. city instead of country, or hospital instead of city) birth location of a person, animal or fictional character"@en ;
+    schema1:name "place of birth"@en ;
+    wikibase:claim p:P19 ;
+    wikibase:directClaim wdt:P19 ;
+    wikibase:novalue wdno:P19 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P19 ;
+    wikibase:qualifierValue pqv:P19 ;
+    wikibase:reference pr:P19 ;
+    wikibase:referenceValue prv:P19 ;
+    wikibase:statementProperty ps:P19 ;
+    wikibase:statementValue psv:P19 ;
+    skos:prefLabel "place of birth"@en .
+
+wd:P20 a wikibase:Property ;
+    rdfs:label "place of death"@en ;
+    schema1:description "most specific known (e.g. city instead of country, or hospital instead of city) death location of a person, animal or fictional character"@en ;
+    schema1:name "place of death"@en ;
+    wikibase:claim p:P20 ;
+    wikibase:directClaim wdt:P20 ;
+    wikibase:novalue wdno:P20 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P20 ;
+    wikibase:qualifierValue pqv:P20 ;
+    wikibase:reference pr:P20 ;
+    wikibase:referenceValue prv:P20 ;
+    wikibase:statementProperty ps:P20 ;
+    wikibase:statementValue psv:P20 ;
+    skos:prefLabel "place of death"@en .
+
+wd:P21 a wikibase:Property ;
+    rdfs:label "sex or gender"@en ;
+    schema1:description "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"@en ;
+    schema1:name "sex or gender"@en ;
+    wikibase:claim p:P21 ;
+    wikibase:directClaim wdt:P21 ;
+    wikibase:novalue wdno:P21 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P21 ;
+    wikibase:qualifierValue pqv:P21 ;
+    wikibase:reference pr:P21 ;
+    wikibase:referenceValue prv:P21 ;
+    wikibase:statementProperty ps:P21 ;
+    wikibase:statementValue psv:P21 ;
+    skos:prefLabel "sex or gender"@en .
+
+wd:P22 a wikibase:Property ;
+    rdfs:label "father"@en ;
+    schema1:description "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"@en ;
+    schema1:name "father"@en ;
+    wikibase:claim p:P22 ;
+    wikibase:directClaim wdt:P22 ;
+    wikibase:novalue wdno:P22 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P22 ;
+    wikibase:qualifierValue pqv:P22 ;
+    wikibase:reference pr:P22 ;
+    wikibase:referenceValue prv:P22 ;
+    wikibase:statementProperty ps:P22 ;
+    wikibase:statementValue psv:P22 ;
+    skos:prefLabel "father"@en .
+
+wd:P25 a wikibase:Property ;
+    rdfs:label "mother"@en ;
+    schema1:description "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"@en ;
+    schema1:name "mother"@en ;
+    wikibase:claim p:P25 ;
+    wikibase:directClaim wdt:P25 ;
+    wikibase:novalue wdno:P25 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P25 ;
+    wikibase:qualifierValue pqv:P25 ;
+    wikibase:reference pr:P25 ;
+    wikibase:referenceValue prv:P25 ;
+    wikibase:statementProperty ps:P25 ;
+    wikibase:statementValue psv:P25 ;
+    skos:prefLabel "mother"@en .
+
+wd:P26 a wikibase:Property ;
+    rdfs:label "spouse"@en ;
+    schema1:description "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"unmarried partner\" (P451) for non-married companions"@en ;
+    schema1:name "spouse"@en ;
+    wikibase:claim p:P26 ;
+    wikibase:directClaim wdt:P26 ;
+    wikibase:novalue wdno:P26 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P26 ;
+    wikibase:qualifierValue pqv:P26 ;
+    wikibase:reference pr:P26 ;
+    wikibase:referenceValue prv:P26 ;
+    wikibase:statementProperty ps:P26 ;
+    wikibase:statementValue psv:P26 ;
+    skos:prefLabel "spouse"@en .
+
+wd:P2600 a wikibase:Property ;
+    rdfs:label "Geni.com profile ID"@en ;
+    schema1:description "profile on the Geni.com genealogy website"@en ;
+    schema1:name "Geni.com profile ID"@en ;
+    wikibase:claim p:P2600 ;
+    wikibase:directClaim wdt:P2600 ;
+    wikibase:directClaimNormalized wdtn:P2600 ;
+    wikibase:novalue wdno:P2600 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P2600 ;
+    wikibase:qualifierValue pqv:P2600 ;
+    wikibase:qualifierValueNormalized pqn:P2600 ;
+    wikibase:reference pr:P2600 ;
+    wikibase:referenceValue prv:P2600 ;
+    wikibase:referenceValueNormalized prn:P2600 ;
+    wikibase:statementProperty ps:P2600 ;
+    wikibase:statementValue psv:P2600 ;
+    wikibase:statementValueNormalized psn:P2600 ;
+    skos:prefLabel "Geni.com profile ID"@en .
+
+wd:P31 a wikibase:Property ;
+    rdfs:label "instance of"@en ;
+    schema1:description "that class of which this subject is a particular example and member"@en ;
+    schema1:name "instance of"@en ;
+    wikibase:claim p:P31 ;
+    wikibase:directClaim wdt:P31 ;
+    wikibase:novalue wdno:P31 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P31 ;
+    wikibase:qualifierValue pqv:P31 ;
+    wikibase:reference pr:P31 ;
+    wikibase:referenceValue prv:P31 ;
+    wikibase:statementProperty ps:P31 ;
+    wikibase:statementValue psv:P31 ;
+    skos:prefLabel "instance of"@en .
+
+wd:P3373 a wikibase:Property ;
+    rdfs:label "sibling"@en ;
+    schema1:description "the subject and the object have the same parents (brother, sister, etc.); use \"relative\" (P1038) for siblings-in-law (brother-in-law, sister-in-law, etc.) and step-siblings (step-brothers, step-sisters, etc.)"@en ;
+    schema1:name "sibling"@en ;
+    wikibase:claim p:P3373 ;
+    wikibase:directClaim wdt:P3373 ;
+    wikibase:novalue wdno:P3373 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P3373 ;
+    wikibase:qualifierValue pqv:P3373 ;
+    wikibase:reference pr:P3373 ;
+    wikibase:referenceValue prv:P3373 ;
+    wikibase:statementProperty ps:P3373 ;
+    wikibase:statementValue psv:P3373 ;
+    skos:prefLabel "sibling"@en .
+
+wd:P39 a wikibase:Property ;
+    rdfs:label "position held"@en ;
+    schema1:description "subject currently or formerly holds the object position or public office"@en ;
+    schema1:name "position held"@en ;
+    wikibase:claim p:P39 ;
+    wikibase:directClaim wdt:P39 ;
+    wikibase:novalue wdno:P39 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P39 ;
+    wikibase:qualifierValue pqv:P39 ;
+    wikibase:reference pr:P39 ;
+    wikibase:referenceValue prv:P39 ;
+    wikibase:statementProperty ps:P39 ;
+    wikibase:statementValue psv:P39 ;
+    skos:prefLabel "position held"@en .
+
+wd:P410 a wikibase:Property ;
+    rdfs:label "military rank"@en ;
+    schema1:description "military rank achieved by a person (should usually have a \"start time\" qualifier), or military rank associated with a position"@en ;
+    schema1:name "military rank"@en ;
+    wikibase:claim p:P410 ;
+    wikibase:directClaim wdt:P410 ;
+    wikibase:novalue wdno:P410 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P410 ;
+    wikibase:qualifierValue pqv:P410 ;
+    wikibase:reference pr:P410 ;
+    wikibase:referenceValue prv:P410 ;
+    wikibase:statementProperty ps:P410 ;
+    wikibase:statementValue psv:P410 ;
+    skos:prefLabel "military rank"@en .
+
+wd:P569 a wikibase:Property ;
+    rdfs:label "date of birth"@en ;
+    schema1:description "date on which the subject was born"@en ;
+    schema1:name "date of birth"@en ;
+    wikibase:claim p:P569 ;
+    wikibase:directClaim wdt:P569 ;
+    wikibase:novalue wdno:P569 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P569 ;
+    wikibase:qualifierValue pqv:P569 ;
+    wikibase:reference pr:P569 ;
+    wikibase:referenceValue prv:P569 ;
+    wikibase:statementProperty ps:P569 ;
+    wikibase:statementValue psv:P569 ;
+    skos:prefLabel "date of birth"@en .
+
+wd:P570 a wikibase:Property ;
+    rdfs:label "date of death"@en ;
+    schema1:description "date on which the subject died"@en ;
+    schema1:name "date of death"@en ;
+    wikibase:claim p:P570 ;
+    wikibase:directClaim wdt:P570 ;
+    wikibase:novalue wdno:P570 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P570 ;
+    wikibase:qualifierValue pqv:P570 ;
+    wikibase:reference pr:P570 ;
+    wikibase:referenceValue prv:P570 ;
+    wikibase:statementProperty ps:P570 ;
+    wikibase:statementValue psv:P570 ;
+    skos:prefLabel "date of death"@en .
+
+wd:P580 a wikibase:Property ;
+    rdfs:label "start time"@en ;
+    schema1:description "time a time period starts"@en ;
+    schema1:name "start time"@en ;
+    wikibase:claim p:P580 ;
+    wikibase:directClaim wdt:P580 ;
+    wikibase:novalue wdno:P580 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P580 ;
+    wikibase:qualifierValue pqv:P580 ;
+    wikibase:reference pr:P580 ;
+    wikibase:referenceValue prv:P580 ;
+    wikibase:statementProperty ps:P580 ;
+    wikibase:statementValue psv:P580 ;
+    skos:prefLabel "start time"@en .
+
+wd:P582 a wikibase:Property ;
+    rdfs:label "end time"@en ;
+    schema1:description "time a time period ends"@en ;
+    schema1:name "end time"@en ;
+    wikibase:claim p:P582 ;
+    wikibase:directClaim wdt:P582 ;
+    wikibase:novalue wdno:P582 ;
+    wikibase:propertyType wikibase:Time ;
+    wikibase:qualifier pq:P582 ;
+    wikibase:qualifierValue pqv:P582 ;
+    wikibase:reference pr:P582 ;
+    wikibase:referenceValue prv:P582 ;
+    wikibase:statementProperty ps:P582 ;
+    wikibase:statementValue psv:P582 ;
+    skos:prefLabel "end time"@en .
+
+wd:P651 a wikibase:Property ;
+    rdfs:label "Biografisch Portaal van Nederland ID"@en ;
+    schema1:description "identifier at Biografisch Portaal van Nederland"@en ;
+    schema1:name "Biografisch Portaal van Nederland ID"@en ;
+    wikibase:claim p:P651 ;
+    wikibase:directClaim wdt:P651 ;
+    wikibase:directClaimNormalized wdtn:P651 ;
+    wikibase:novalue wdno:P651 ;
+    wikibase:propertyType wikibase:ExternalId ;
+    wikibase:qualifier pq:P651 ;
+    wikibase:qualifierValue pqv:P651 ;
+    wikibase:qualifierValueNormalized pqn:P651 ;
+    wikibase:reference pr:P651 ;
+    wikibase:referenceValue prv:P651 ;
+    wikibase:referenceValueNormalized prn:P651 ;
+    wikibase:statementProperty ps:P651 ;
+    wikibase:statementValue psv:P651 ;
+    wikibase:statementValueNormalized psn:P651 ;
+    skos:prefLabel "Biografisch Portaal van Nederland ID"@en .
+
+wd:P735 a wikibase:Property ;
+    rdfs:label "given name"@en ;
+    schema1:description "first name or another given name of this person; values used with the property should not link disambiguations nor family names"@en ;
+    schema1:name "given name"@en ;
+    wikibase:claim p:P735 ;
+    wikibase:directClaim wdt:P735 ;
+    wikibase:novalue wdno:P735 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier pq:P735 ;
+    wikibase:qualifierValue pqv:P735 ;
+    wikibase:reference pr:P735 ;
+    wikibase:referenceValue prv:P735 ;
+    wikibase:statementProperty ps:P735 ;
+    wikibase:statementValue psv:P735 ;
+    skos:prefLabel "given name"@en .
+
+<https://fr.wikipedia.org/wiki/Carel_Emilius_Henry_de_Cheusses> a schema1:Article ;
+    schema1:about wd:Q104177085 ;
+    schema1:inLanguage "fr" ;
+    schema1:isPartOf <https://fr.wikipedia.org/> ;
+    schema1:name "Carel Emilius Henry de Cheusses"@fr .
+
+data:Q104177085 a schema1:Dataset ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    schema1:about wd:Q104177085 ;
+    schema1:dateModified "2022-04-04T06:42:18+00:00"^^xsd:dateTime ;
+    schema1:softwareVersion "1.0.0" ;
+    schema1:version 1610419213 ;
+    wikibase:identifiers 2 ;
+    wikibase:sitelinks 1 ;
+    wikibase:statements 20 .
+
+wd:Q21553330 a wikibase:Item ;
+    rdfs:label "Hendrik Temminck"@en ;
+    schema1:name "Hendrik Temminck"@en ;
+    skos:prefLabel "Hendrik Temminck"@en .
+
+s:Q104177085-05e3ada7-4030-b6e6-afa4-5982d370556b a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P570 "1734-02-01T00:00:00+00:00"^^xsd:dateTime ;
+    psv:P570 v:91ee2fa81e5f200c1dbee5563db03430 .
+
+s:Q104177085-1b3ce92d-4dec-f6db-a794-8ac4310470e9 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P31 wd:Q5 .
+
+s:Q104177085-21a8a98b-4062-07b6-a413-565330ff67c3 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P19 wd:Q1748 .
+
+s:Q104177085-2343592b-4484-89b8-7b53-b51ec637fd29 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    pq:P1039 wd:Q9238344 ;
+    ps:P1038 wd:Q172965 .
+
+s:Q104177085-2c434a9a-4eaa-2bd0-0020-d42a7e0e85fa a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    pq:P1039 wd:Q9238344 ;
+    ps:P1038 wd:Q3159095 .
+
+s:Q104177085-3253995c-4619-e5f8-a86a-3fd6615e923d a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P735 wd:Q18670193 .
+
+s:Q104177085-34d29cf4-4b9c-4da7-359d-5892078043d5 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P21 wd:Q6581097 .
+
+s:Q104177085-3e0508df-4eb8-a8e9-4f19-20965b6b27d1 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P106 wd:Q47064 .
+
+s:Q104177085-5a5f5d8c-43ec-377b-4927-f4d522aec62a a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P569 "1702-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    psv:P569 v:490056b6ea8ee77b17f590411cc6f789 .
+
+s:Q104177085-663e47bb-4d5c-1b27-adb2-d7cd46dcfee7 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P22 wd:Q12316527 .
+
+s:Q104177085-69600546-4b1b-3e3e-38ff-dd2b014b8e88 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P26 wd:Q2358795 .
+
+s:Q104177085-83c6bd96-493c-0df4-8488-0be25b229b32 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P410 wd:Q19100 .
+
+s:Q104177085-914ABE44-E55F-438A-9E68-32652D86DBB8 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P2600 "6000000013638647976" .
+
+s:Q104177085-9bbf5668-420b-9618-3f37-e0ccfc44828b a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P25 wd:Q107904269 .
+
+s:Q104177085-a24b268d-4477-f329-96f7-d31ea09d96a7 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    pq:P1365 wd:Q21553330 ;
+    pq:P1366 wd:Q2642703 ;
+    pq:P580 "1728-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    pq:P582 "1734-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    pqv:P580 v:6fa8d6e73b2129620c5ae85d562c86e7 ;
+    pqv:P582 v:08cc9a28614bdc0a9072819a8930cc05 ;
+    ps:P39 wd:Q21517401 .
+
+s:Q104177085-a93cc41f-4573-f628-227d-f17764a93d31 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P3373 wd:Q12313105 .
+
+s:Q104177085-d202153c-40d5-2e1e-7666-c8e71c1f97c4 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P20 wd:Q3001 .
+
+s:Q104177085-d2803cbb-4b2a-fe47-8e1a-2ce782447a89 a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P3373 wd:Q2642703 .
+
+s:Q104177085-e6030e46-4068-203d-be93-47eb027667da a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P106 wd:Q17765219 .
+
+s:Q104177085-fabcebd6-46fb-0b05-46fe-417c48c22d3c a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    ps:P651 "65937055" .
+
+p:P1038 a owl:ObjectProperty .
+
+p:P1039 a owl:ObjectProperty .
+
+p:P106 a owl:ObjectProperty .
+
+p:P1365 a owl:ObjectProperty .
+
+p:P1366 a owl:ObjectProperty .
+
+p:P19 a owl:ObjectProperty .
+
+p:P20 a owl:ObjectProperty .
+
+p:P21 a owl:ObjectProperty .
+
+p:P22 a owl:ObjectProperty .
+
+p:P25 a owl:ObjectProperty .
+
+p:P26 a owl:ObjectProperty .
+
+p:P2600 a owl:ObjectProperty .
+
+p:P31 a owl:ObjectProperty .
+
+p:P3373 a owl:ObjectProperty .
+
+p:P39 a owl:ObjectProperty .
+
+p:P410 a owl:ObjectProperty .
+
+p:P569 a owl:ObjectProperty .
+
+p:P570 a owl:ObjectProperty .
+
+p:P580 a owl:ObjectProperty .
+
+p:P582 a owl:ObjectProperty .
+
+p:P651 a owl:ObjectProperty .
+
+p:P735 a owl:ObjectProperty .
+
+wdtn:P2600 a owl:ObjectProperty .
+
+wdtn:P651 a owl:ObjectProperty .
+
+wdno:P1038 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1038 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P1039 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1039 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P106 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P106 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P1365 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1365 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P1366 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P1366 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P19 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P19 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P20 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P20 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P21 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P21 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P22 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P22 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P25 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P25 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P26 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P26 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P2600 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P2600 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P31 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P31 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P3373 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P3373 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P39 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P39 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P410 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P410 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P569 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P569 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P570 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P570 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P580 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P580 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P582 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P582 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P651 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P651 ;
+            owl:someValuesFrom owl:Thing ] .
+
+wdno:P735 a owl:Class ;
+    owl:complementOf [ a owl:Restriction ;
+            owl:onProperty wdt:P735 ;
+            owl:someValuesFrom owl:Thing ] .
+
+pq:P1038 a owl:ObjectProperty .
+
+pq:P1039 a owl:ObjectProperty .
+
+pq:P106 a owl:ObjectProperty .
+
+pq:P1365 a owl:ObjectProperty .
+
+pq:P1366 a owl:ObjectProperty .
+
+pq:P19 a owl:ObjectProperty .
+
+pq:P20 a owl:ObjectProperty .
+
+pq:P21 a owl:ObjectProperty .
+
+pq:P22 a owl:ObjectProperty .
+
+pq:P25 a owl:ObjectProperty .
+
+pq:P26 a owl:ObjectProperty .
+
+pq:P2600 a owl:DatatypeProperty .
+
+pq:P31 a owl:ObjectProperty .
+
+pq:P3373 a owl:ObjectProperty .
+
+pq:P39 a owl:ObjectProperty .
+
+pq:P410 a owl:ObjectProperty .
+
+pq:P569 a owl:DatatypeProperty .
+
+pq:P570 a owl:DatatypeProperty .
+
+pq:P580 a owl:DatatypeProperty .
+
+pq:P582 a owl:DatatypeProperty .
+
+pq:P651 a owl:DatatypeProperty .
+
+pq:P735 a owl:ObjectProperty .
+
+pqn:P2600 a owl:ObjectProperty .
+
+pqn:P651 a owl:ObjectProperty .
+
+pqv:P1038 a owl:ObjectProperty .
+
+pqv:P1039 a owl:ObjectProperty .
+
+pqv:P106 a owl:ObjectProperty .
+
+pqv:P1365 a owl:ObjectProperty .
+
+pqv:P1366 a owl:ObjectProperty .
+
+pqv:P19 a owl:ObjectProperty .
+
+pqv:P20 a owl:ObjectProperty .
+
+pqv:P21 a owl:ObjectProperty .
+
+pqv:P22 a owl:ObjectProperty .
+
+pqv:P25 a owl:ObjectProperty .
+
+pqv:P26 a owl:ObjectProperty .
+
+pqv:P2600 a owl:ObjectProperty .
+
+pqv:P31 a owl:ObjectProperty .
+
+pqv:P3373 a owl:ObjectProperty .
+
+pqv:P39 a owl:ObjectProperty .
+
+pqv:P410 a owl:ObjectProperty .
+
+pqv:P569 a owl:ObjectProperty .
+
+pqv:P570 a owl:ObjectProperty .
+
+pqv:P580 a owl:ObjectProperty .
+
+pqv:P582 a owl:ObjectProperty .
+
+pqv:P651 a owl:ObjectProperty .
+
+pqv:P735 a owl:ObjectProperty .
+
+pr:P1038 a owl:ObjectProperty .
+
+pr:P1039 a owl:ObjectProperty .
+
+pr:P106 a owl:ObjectProperty .
+
+pr:P1365 a owl:ObjectProperty .
+
+pr:P1366 a owl:ObjectProperty .
+
+pr:P19 a owl:ObjectProperty .
+
+pr:P20 a owl:ObjectProperty .
+
+pr:P21 a owl:ObjectProperty .
+
+pr:P22 a owl:ObjectProperty .
+
+pr:P25 a owl:ObjectProperty .
+
+pr:P26 a owl:ObjectProperty .
+
+pr:P2600 a owl:DatatypeProperty .
+
+pr:P31 a owl:ObjectProperty .
+
+pr:P3373 a owl:ObjectProperty .
+
+pr:P39 a owl:ObjectProperty .
+
+pr:P410 a owl:ObjectProperty .
+
+pr:P569 a owl:DatatypeProperty .
+
+pr:P570 a owl:DatatypeProperty .
+
+pr:P580 a owl:DatatypeProperty .
+
+pr:P582 a owl:DatatypeProperty .
+
+pr:P651 a owl:DatatypeProperty .
+
+pr:P735 a owl:ObjectProperty .
+
+prn:P2600 a owl:ObjectProperty .
+
+prn:P651 a owl:ObjectProperty .
+
+prv:P1038 a owl:ObjectProperty .
+
+prv:P1039 a owl:ObjectProperty .
+
+prv:P106 a owl:ObjectProperty .
+
+prv:P1365 a owl:ObjectProperty .
+
+prv:P1366 a owl:ObjectProperty .
+
+prv:P19 a owl:ObjectProperty .
+
+prv:P20 a owl:ObjectProperty .
+
+prv:P21 a owl:ObjectProperty .
+
+prv:P22 a owl:ObjectProperty .
+
+prv:P25 a owl:ObjectProperty .
+
+prv:P26 a owl:ObjectProperty .
+
+prv:P2600 a owl:ObjectProperty .
+
+prv:P31 a owl:ObjectProperty .
+
+prv:P3373 a owl:ObjectProperty .
+
+prv:P39 a owl:ObjectProperty .
+
+prv:P410 a owl:ObjectProperty .
+
+prv:P569 a owl:ObjectProperty .
+
+prv:P570 a owl:ObjectProperty .
+
+prv:P580 a owl:ObjectProperty .
+
+prv:P582 a owl:ObjectProperty .
+
+prv:P651 a owl:ObjectProperty .
+
+prv:P735 a owl:ObjectProperty .
+
+ps:P1038 a owl:ObjectProperty .
+
+ps:P1039 a owl:ObjectProperty .
+
+ps:P106 a owl:ObjectProperty .
+
+ps:P1365 a owl:ObjectProperty .
+
+ps:P1366 a owl:ObjectProperty .
+
+ps:P19 a owl:ObjectProperty .
+
+ps:P20 a owl:ObjectProperty .
+
+ps:P21 a owl:ObjectProperty .
+
+ps:P22 a owl:ObjectProperty .
+
+ps:P25 a owl:ObjectProperty .
+
+ps:P26 a owl:ObjectProperty .
+
+ps:P2600 a owl:DatatypeProperty .
+
+ps:P31 a owl:ObjectProperty .
+
+ps:P3373 a owl:ObjectProperty .
+
+ps:P39 a owl:ObjectProperty .
+
+ps:P410 a owl:ObjectProperty .
+
+ps:P569 a owl:DatatypeProperty .
+
+ps:P570 a owl:DatatypeProperty .
+
+ps:P580 a owl:DatatypeProperty .
+
+ps:P582 a owl:DatatypeProperty .
+
+ps:P651 a owl:DatatypeProperty .
+
+ps:P735 a owl:ObjectProperty .
+
+psn:P2600 a owl:ObjectProperty .
+
+psn:P651 a owl:ObjectProperty .
+
+psv:P1038 a owl:ObjectProperty .
+
+psv:P1039 a owl:ObjectProperty .
+
+psv:P106 a owl:ObjectProperty .
+
+psv:P1365 a owl:ObjectProperty .
+
+psv:P1366 a owl:ObjectProperty .
+
+psv:P19 a owl:ObjectProperty .
+
+psv:P20 a owl:ObjectProperty .
+
+psv:P21 a owl:ObjectProperty .
+
+psv:P22 a owl:ObjectProperty .
+
+psv:P25 a owl:ObjectProperty .
+
+psv:P26 a owl:ObjectProperty .
+
+psv:P2600 a owl:ObjectProperty .
+
+psv:P31 a owl:ObjectProperty .
+
+psv:P3373 a owl:ObjectProperty .
+
+psv:P39 a owl:ObjectProperty .
+
+psv:P410 a owl:ObjectProperty .
+
+psv:P569 a owl:ObjectProperty .
+
+psv:P570 a owl:ObjectProperty .
+
+psv:P580 a owl:ObjectProperty .
+
+psv:P582 a owl:ObjectProperty .
+
+psv:P651 a owl:ObjectProperty .
+
+psv:P735 a owl:ObjectProperty .
+
+v:08cc9a28614bdc0a9072819a8930cc05 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 9 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1734-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+v:490056b6ea8ee77b17f590411cc6f789 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 11 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1702-12-13T00:00:00+00:00"^^xsd:dateTime .
+
+v:6fa8d6e73b2129620c5ae85d562c86e7 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 9 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1728-01-01T00:00:00+00:00"^^xsd:dateTime .
+
+v:91ee2fa81e5f200c1dbee5563db03430 a wikibase:TimeValue ;
+    wikibase:timeCalendarModel wd:Q1985727 ;
+    wikibase:timePrecision 11 ;
+    wikibase:timeTimezone 0 ;
+    wikibase:timeValue "1734-02-01T00:00:00+00:00"^^xsd:dateTime .
+
+<https://fr.wikipedia.org/> wikibase:wikiGroup "wikipedia" .
+
+wd:Q104177085 a wikibase:Item ;
+    rdfs:label "Carel Emilius Henry de Cheusses"@en,
+        "Carel Emilius Henry de Cheusses"@fr,
+        "Carel Emilius Henry de Cheusses"@nl ;
+    schema1:name "Carel Emilius Henry de Cheusses"@en,
+        "Carel Emilius Henry de Cheusses"@fr,
+        "Carel Emilius Henry de Cheusses"@nl ;
+    skos:altLabel "Charles Emilius Henry de Cheusses"@fr ;
+    skos:prefLabel "Carel Emilius Henry de Cheusses"@en,
+        "Carel Emilius Henry de Cheusses"@fr,
+        "Carel Emilius Henry de Cheusses"@nl ;
+    p:P1038 s:Q104177085-2343592b-4484-89b8-7b53-b51ec637fd29,
+        s:Q104177085-2c434a9a-4eaa-2bd0-0020-d42a7e0e85fa ;
+    p:P106 s:Q104177085-3e0508df-4eb8-a8e9-4f19-20965b6b27d1,
+        s:Q104177085-e6030e46-4068-203d-be93-47eb027667da ;
+    p:P19 s:Q104177085-21a8a98b-4062-07b6-a413-565330ff67c3 ;
+    p:P20 s:Q104177085-d202153c-40d5-2e1e-7666-c8e71c1f97c4 ;
+    p:P21 s:Q104177085-34d29cf4-4b9c-4da7-359d-5892078043d5 ;
+    p:P22 s:Q104177085-663e47bb-4d5c-1b27-adb2-d7cd46dcfee7 ;
+    p:P25 s:Q104177085-9bbf5668-420b-9618-3f37-e0ccfc44828b ;
+    p:P26 s:Q104177085-69600546-4b1b-3e3e-38ff-dd2b014b8e88 ;
+    p:P2600 s:Q104177085-914ABE44-E55F-438A-9E68-32652D86DBB8 ;
+    p:P31 s:Q104177085-1b3ce92d-4dec-f6db-a794-8ac4310470e9 ;
+    p:P3373 s:Q104177085-a93cc41f-4573-f628-227d-f17764a93d31,
+        s:Q104177085-d2803cbb-4b2a-fe47-8e1a-2ce782447a89 ;
+    p:P39 s:Q104177085-a24b268d-4477-f329-96f7-d31ea09d96a7 ;
+    p:P410 s:Q104177085-83c6bd96-493c-0df4-8488-0be25b229b32 ;
+    p:P569 s:Q104177085-5a5f5d8c-43ec-377b-4927-f4d522aec62a ;
+    p:P570 s:Q104177085-05e3ada7-4030-b6e6-afa4-5982d370556b ;
+    p:P651 s:Q104177085-fabcebd6-46fb-0b05-46fe-417c48c22d3c ;
+    p:P735 s:Q104177085-3253995c-4619-e5f8-a86a-3fd6615e923d ;
+    wdt:P1038 wd:Q172965,
+        wd:Q3159095 ;
+    wdt:P106 wd:Q17765219,
+        wd:Q47064 ;
+    wdt:P19 wd:Q1748 ;
+    wdt:P20 wd:Q3001 ;
+    wdt:P21 wd:Q6581097 ;
+    wdt:P22 wd:Q12316527 ;
+    wdt:P25 wd:Q107904269 ;
+    wdt:P26 wd:Q2358795 ;
+    wdt:P2600 "6000000013638647976" ;
+    wdt:P31 wd:Q5 ;
+    wdt:P3373 wd:Q12313105,
+        wd:Q2642703 ;
+    wdt:P39 wd:Q21517401 ;
+    wdt:P410 wd:Q19100 ;
+    wdt:P569 "1702-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    wdt:P570 "1734-02-01T00:00:00+00:00"^^xsd:dateTime ;
+    wdt:P651 "65937055" ;
+    wdt:P735 wd:Q18670193 .
+
+wd:Q107904269 a wikibase:Item ;
+    rdfs:label "Henriette Lucretia van Aerssen"@en ;
+    schema1:name "Henriette Lucretia van Aerssen"@en ;
+    skos:prefLabel "Henriette Lucretia van Aerssen"@en .
+
+wd:Q12313105 a wikibase:Item ;
+    rdfs:label "Frédéric de Cheusses"@en ;
+    schema1:name "Frédéric de Cheusses"@en ;
+    skos:prefLabel "Frédéric de Cheusses"@en .
+
+wd:Q12316527 a wikibase:Item ;
+    rdfs:label "Vincent Gédéon Henry de Cheusses"@en ;
+    schema1:name "Vincent Gédéon Henry de Cheusses"@en ;
+    skos:prefLabel "Vincent Gédéon Henry de Cheusses"@en .
+
+wd:Q172965 a wikibase:Item ;
+    rdfs:label "Cornelis van Aerssen van Sommelsdijck"@en ;
+    schema1:description "First governor of Suriname (1637-1688)"@en ;
+    schema1:name "Cornelis van Aerssen van Sommelsdijck"@en ;
+    skos:prefLabel "Cornelis van Aerssen van Sommelsdijck"@en .
+
+wd:Q1748 a wikibase:Item ;
+    rdfs:label "Copenhagen"@en ;
+    schema1:description "capital city of Denmark"@en ;
+    schema1:name "Copenhagen"@en ;
+    skos:prefLabel "Copenhagen"@en .
+
+wd:Q17765219 a wikibase:Item ;
+    rdfs:label "colonial administrator"@en ;
+    schema1:description "person who participates in administrating a colony"@en ;
+    schema1:name "colonial administrator"@en ;
+    skos:prefLabel "colonial administrator"@en .
+
+wd:Q18670193 a wikibase:Item ;
+    rdfs:label "Carel"@en ;
+    schema1:description "male given name"@en ;
+    schema1:name "Carel"@en ;
+    skos:prefLabel "Carel"@en .
+
+wd:Q19100 a wikibase:Item ;
+    rdfs:label "captain"@en ;
+    schema1:description "commissioned officer rank of army, marine corps and air forces - NATO rank code of OF-2."@en ;
+    schema1:name "captain"@en ;
+    skos:prefLabel "captain"@en .
+
+wd:Q21517401 a wikibase:Item ;
+    rdfs:label "Governor-General of Suriname"@en ;
+    schema1:description "highest administrative office in Surinam between 1722 et 1956"@en ;
+    schema1:name "Governor-General of Suriname"@en ;
+    skos:prefLabel "Governor-General of Suriname"@en .
+
+wd:Q2358795 a wikibase:Item ;
+    rdfs:label "Charlotta Elisabeth van der Lith"@en ;
+    schema1:description "Surinamese plantation owner"@en ;
+    schema1:name "Charlotta Elisabeth van der Lith"@en ;
+    skos:prefLabel "Charlotta Elisabeth van der Lith"@en .
+
+wd:Q3001 a wikibase:Item ;
+    rdfs:label "Paramaribo"@en ;
+    schema1:description "capital of Suriname"@en ;
+    schema1:name "Paramaribo"@en ;
+    skos:prefLabel "Paramaribo"@en .
+
+wd:Q3159095 a wikibase:Item ;
+    rdfs:label "Jacques Henri de Cheusse"@en ;
+    schema1:name "Jacques Henri de Cheusse"@en ;
+    skos:prefLabel "Jacques Henri de Cheusse"@en .
+
+wd:Q47064 a wikibase:Item ;
+    rdfs:label "military personnel"@en ;
+    schema1:description "one who serves as part of an organized armed military force"@en ;
+    schema1:name "military personnel"@en ;
+    skos:prefLabel "military personnel"@en .
+
+wd:Q5 a wikibase:Item ;
+    rdfs:label "human"@en ;
+    schema1:description "common name of Homo sapiens, unique extant species of the genus Homo"@en ;
+    schema1:name "human"@en ;
+    skos:prefLabel "human"@en .
+
+wd:Q6581097 a wikibase:Item ;
+    rdfs:label "male"@en ;
+    schema1:description "to be used in \"sex or gender\" (P21) to indicate that the human subject is a male"@en ;
+    schema1:name "male"@en ;
+    skos:prefLabel "male"@en .
+
+wd:Q9238344 a wikibase:Item ;
+    rdfs:label "grandfather"@en ;
+    schema1:description "male grandparent"@en ;
+    schema1:name "grandfather"@en ;
+    skos:prefLabel "grandfather"@en .
+
+wdt:P1038 a owl:ObjectProperty .
+
+wdt:P1039 a owl:ObjectProperty .
+
+wdt:P106 a owl:ObjectProperty .
+
+wdt:P1365 a owl:ObjectProperty .
+
+wdt:P1366 a owl:ObjectProperty .
+
+wdt:P19 a owl:ObjectProperty .
+
+wdt:P20 a owl:ObjectProperty .
+
+wdt:P21 a owl:ObjectProperty .
+
+wdt:P22 a owl:ObjectProperty .
+
+wdt:P25 a owl:ObjectProperty .
+
+wdt:P26 a owl:ObjectProperty .
+
+wdt:P2600 a owl:DatatypeProperty .
+
+wdt:P31 a owl:ObjectProperty .
+
+wdt:P3373 a owl:ObjectProperty .
+
+wdt:P39 a owl:ObjectProperty .
+
+wdt:P410 a owl:ObjectProperty .
+
+wdt:P569 a owl:DatatypeProperty .
+
+wdt:P570 a owl:DatatypeProperty .
+
+wdt:P580 a owl:DatatypeProperty .
+
+wdt:P582 a owl:DatatypeProperty .
+
+wdt:P651 a owl:DatatypeProperty .
+
+wdt:P735 a owl:ObjectProperty .
+
+wd:Q2642703 a wikibase:Item ;
+    rdfs:label "Jacob Alexander Henry de Cheusses"@en ;
+    schema1:description "Governor-General of Surinam"@en ;
+    schema1:name "Jacob Alexander Henry de Cheusses"@en ;
+    skos:prefLabel "Jacob Alexander Henry de Cheusses"@en .
+

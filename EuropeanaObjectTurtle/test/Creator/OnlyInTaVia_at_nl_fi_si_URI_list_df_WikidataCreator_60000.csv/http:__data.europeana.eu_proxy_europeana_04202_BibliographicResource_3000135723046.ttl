@@ -1,0 +1,159 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000146516>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9945"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "196"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135723046/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135723046>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/77958> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1741" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135723046> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723046>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000146517> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000146516> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000146516> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://sws.geonames.org/2735029/>
+	a               edm:Place ;
+	skos:prefLabel  "Romãe", "ROMAE" ;
+	wgs84_pos:lat   "41.76199" ;
+	wgs84_pos:long  "-8.78941" .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135723046>
+	a                    ore:Proxy ;
+	dc:creator           "Andrea Pozzo" ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "000190110" ;
+	dc:language          "it", "la" ;
+	dc:publisher         "Joannis Zempel" ;
+	dc:rights            "Rights Reserved - Free Access" ;
+	dc:subject           "Perspective, Early works to 1800" ;
+	dc:title             "Perspectiva pictorum et architectorum Andreae Putei .." ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Prospettiva de' pittori, e architetti .." ;
+	dcterms:extent       "2 v.: ill." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued       "1741" ;
+	dcterms:spatial      <http://sws.geonames.org/2735029/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723046> .
+
+<http://lib.ugent.be/europeana/900000146516>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14732"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723046#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:12.799Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723046> .
+
+<http://lib.ugent.be/europeana/900000146517>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135723046/manifest> ;
+	ebucore:fileByteSize    "14732"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723046>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/77958>
+	a                    edm:Agent ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500028698>, <http://id.worldcat.org/fast/85497>, <http://data.cervantesvirtual.com/person/24477>, <http://data.bibliotheken.nl/id/thes/p070967067>, <http://www.idref.fr/035769041/id>, <http://data.bnf.fr/ark:/12148/cb13335288q>, <http://id.loc.gov/authorities/names/n82006092>, <http://viaf.org/viaf/59230796>, <http://openlibrary.org/works/OL337096A>, <https://livedata.bibsys.no/authority/3072354>, <https://g.co/kg/m/088x45>, <http://d-nb.info/gnd/118741691>, <http://datos.bne.es/resource/XX1238117>, <http://dbpedia.org/resource/Andrea_Pozzo>, <https://www.freebase.com/m/088x45>, <http://www.wikidata.org/entity/Q380103> ;
+	rdaGr2:dateOfBirth   "1642-11-30" ;
+	rdaGr2:dateOfDeath   "1709-08-31" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Andrea Del Pozzo"@it, "Andrea del Pozzo"@en, "Pozzo Andrea"@sl, "Андреа дель Поццо"@ru, "Поццо, Андреа дель"@ru, "Pozzo Andrea dal"@en, "Cavalieri Andrea Pozzi"@en, "Padre Andreas"@en, "Cavalieri Pozzi"@en, "Андреа Поццо"@ru, "Поццо Андреа дель"@ru, "A. Pozzi"@en, "Padre Andreas Puteus"@en, "Padre Pozzo"@en, "Padre Poudzy"@en, "Andrea Puteus"@en, "Andrea Puteus"@cs, "Andreas Puteus"@en, "Puteus"@sv, "Padre Pozzi"@en, "André Pozzi"@en, "Andrea dal pozzo"@en, "Andrea Pozzi"@it, "Andrea Pozzi"@cs, "Andrea Pozzi"@en, "P. Pozzi Gesuita"@en, "Andrea Dal Pozzo"@it, "Le Pere del Pozzo"@en, "Andreas de Puteo"@cs, "Andrea Putens"@en, "Pozzo"@sv ;
+	skos:note            "Peintre italien"@fr, "Italský barokní malíř"@cs, "Italienischer Maler und Architekt (1642–1709)"@de, "Итальянский художник"@ru, "Italiaans kunstschilder (1642-1709)"@nl, "Architetto e pittore italiano"@it, "Pictor italian"@ro, "Painter of the Late Baroque (1642-1709)"@en ;
+	skos:prefLabel       "Andrea Pozzo"@et, "Andrea Pozzo"@cs, "Andrea Pozzo"@sk, "Andrea Pozzo"@sl, "Andrea Pozzo"@ro, "Andrea Pozzo"@da, "Andrea Pozzo"@ca, "Andrea Pozzo"@nl, "Andrea Pozzo"@hr, "Andrea Pozzo"@de, "Andrea Pozzo"@sv, "Andrea Pozzo"@fi, "Andrea Pozzo"@pt, "Andrea Pozzo"@lt, "Andrea Pozzo"@en, "Andrea Pozzo"@it, "Andrea Pozzo"@fr, "Andrea Pozzo"@hu, "Andrea Pozzo"@es, "Андреа Поцо"@bg, "Поццо, Андреа"@ru, "Andrea del Pozzo"@pl .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135723046>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:12:02.319Z" ;
+	dcterms:modified          "2015-12-04T14:02:42.421Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135723046> ;
+	edm:completeness          "6" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135723046> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000146516&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723046#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:12.799Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723046> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

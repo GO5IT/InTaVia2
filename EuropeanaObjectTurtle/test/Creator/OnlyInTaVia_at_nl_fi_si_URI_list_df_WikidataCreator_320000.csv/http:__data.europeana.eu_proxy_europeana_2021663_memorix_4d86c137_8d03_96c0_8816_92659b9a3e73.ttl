@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/4d86c137-8d03-96c0-8816-92659b9a3e73> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/89834aa2-dba6-cff6-ac16-50745fb40cfb.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/89834aa2-dba6-cff6-ac16-50745fb40cfb.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> .
+
+<http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:46.960Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:16:43.228Z" ;
+	dcterms:modified          "2015-03-26T15:16:43.228Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73#contentTier>, <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F89834aa2-dba6-cff6-ac16-50745fb40cfb.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/4d86c137-8d03-96c0-8816-92659b9a3e73>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16713"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73>
+	a                   ore:Proxy ;
+	dc:creator          "Jode, Gerard de (1508-1591), toegeschreven aan"@nl, "Collaert, Hans (I) (1525-1580)"@nl ;
+	dc:date             "1547-00-00/1591-00-00" ;
+	dc:description      "Venus en Cupido of Aphrodite, staand in een landschap met op de achtergrond een boerderij. <br> Een prent van de zevendelige, ongenummerde prentenserie getiteld\u000A          <i>Pictura Poesis</i> met klassieke goden en mythologische figuren die verband houden met het mythologische verhaal over het 'Oordeel van Paris'. <br> Gravure\u000A          toegeschreven aan Gerard de Jode naar een ontwerptekening van Hans Collaert (I); gesigneerd rechts midden onder HC (ineen)."@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53008369" ;
+	dc:language         "Dutch" ;
+	dc:publisher        "Jode, Gerard de (1508-1591)" ;
+	dc:title            "Venus en Cupido of Aphrodite, staand in een landschap met op de achtergrond een boerderij. <br> Een prent van de zevendelige, ongenummerde prentenserie getiteld\u000A          <i>Pictura Poesis</i> met klassieke goden en mythologische figuren die verband houden met het mythologische verhaal over het 'Oordeel van Paris'. <br> Gravure\u000A          toegeschreven aan Gerard de Jode naar een ontwerptekening van Hans Collaert (I); gesigneerd rechts midden onder HC (ineen)."@nl, "NL-HlmNHA_1477_53008369"@nl, "Voorhelm Schneevoogt NL-HlmNHA_1477_53008369"@nl ;
+	dc:type             "Historieprenten, tekeningen en foto's"@nl, "Grafiek Drukwerk"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:46.960Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73> .
+
+<https://images.memorix.nl/ranh/thumb/640x480/89834aa2-dba6-cff6-ac16-50745fb40cfb.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_4d86c137_8d03_96c0_8816_92659b9a3e73/manifest> ;
+	ebucore:fileByteSize    "61121"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "353"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .

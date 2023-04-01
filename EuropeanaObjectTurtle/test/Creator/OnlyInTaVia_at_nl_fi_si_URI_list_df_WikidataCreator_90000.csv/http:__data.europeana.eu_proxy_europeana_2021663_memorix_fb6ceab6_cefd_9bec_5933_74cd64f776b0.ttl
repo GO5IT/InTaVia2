@@ -1,0 +1,105 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/fb6ceab6-cefd-9bec-5933-74cd64f776b0> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/56105b7c-9c15-b79e-5acb-fe7736e53641.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/56105b7c-9c15-b79e-5acb-fe7736e53641.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://images.memorix.nl/ranh/thumb/640x480/56105b7c-9c15-b79e-5acb-fe7736e53641.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0/manifest> ;
+	ebucore:fileByteSize    "45835"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "460"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:36:19.015Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:42:21.805Z" ;
+	dcterms:modified          "2015-03-26T15:42:21.805Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F56105b7c-9c15-b79e-5acb-fe7736e53641.jpg&type=IMAGE> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/fb6ceab6-cefd-9bec-5933-74cd64f776b0>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16591"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0>
+	a                   ore:Proxy ;
+	dc:creator          "Panderen, Egbert van (1580-1637)"@nl, "Spranger, Bartholomeus (1546-1611)"@nl ;
+	dc:date             "1600-00-00/1637-00-00" ;
+	dc:description      "De serie compleet in de collectie, zie: NL-HlmNHA_1477_53009494 t/m NL-HlmNHA_1477_53009496"@nl, "Venus. <br> Op een wolkendek staat Pallas Athene in wapenrusting, blazend op een bazuin. Naast haar de slapende Hercules. <br> Prent uit een genummerde,\u000A          driedelige prentenserie met de mythologische godinnen Pallas, Venus, Juno. <br> Gravure door Egbert van Panderen naar ontwerptekening van Bartholomeus Spranger; genummerd\u000A          '2'."@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53009495" ;
+	dc:language         "Dutch" ;
+	dc:publisher        "Frederik de Wit (ca. 1631-1706)" ;
+	dc:title            "Venus. <br> Op een wolkendek staat Pallas Athene in wapenrusting, blazend op een bazuin. Naast haar de slapende Hercules. <br> Prent uit een genummerde, driedelige\u000A          prentenserie met de mythologische godinnen Pallas, Venus, Juno. <br> Gravure door Egbert van Panderen naar ontwerptekening van Bartholomeus Spranger; genummerd '2'."@nl, "Voorhelm Schneevoogt NL-HlmNHA_1477_53009495"@nl, "NL-HlmNHA_1477_53009495"@nl ;
+	dc:type             "Historieprenten, tekeningen en foto's"@nl, "Grafiek Drukwerk"@nl ;
+	dcterms:issued      "1651-00-00<br>1706-00-00 ca." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> .
+
+<http://data.europeana.eu/item/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:36:19.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_fb6ceab6_cefd_9bec_5933_74cd64f776b0> .

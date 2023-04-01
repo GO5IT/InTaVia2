@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2023859/10500_10551_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/10500_10551_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Orbán, Balázs (author)"@hu, "Róth, András Lajos (electronic version made by)"@hu ;
+	dc:description      "Subject date: 1875-1878"@hu ;
+	dc:format           "PDF" ;
+	dc:identifier       "URL http://nbn-resolving.de/?urn:nbn:hu-104803 [Metadata]", "MEK azonosító MEK-10551 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "Orbán Balázs: Orbán Balázs országgyűlési beszédei az 1878-1881-ki országgyűlésen [http://mek.oszk.hu/07500/07577/]"@hu, "Orbán Balázs országgyűlési beszédei 1871. november 7-től 1872. ápril 16-ig [http://mek.oszk.hu/07500/07508/]"@hu, "Orbán Balázs emléke [http://mek.oszk.hu/07700/07734/]"@hu, "Ki volt Orbán Balázs? [http://mek.oszk.hu/07400/07466/]"@hu, "Orbán Balázs: Orbán Balázs országgyűlési beszédei 1872. nov. 29-től 1875. május 15-ig [http://mek.oszk.hu/10300/10347/]"@hu ;
+	dc:source           "Róth András Lajostól."@hu, "National Széchényi Library - Hungarian Electronic Library"@hu, "Haáz Rezső Múzeum Tudományos Könyvtár"@hu ;
+	dc:subject          "országgyűlési képviselő"@hu, "Orbán Balázs (1829-1890)"@hu, "Erdély"@hu, "országgyűlési beszéd"@hu, "Social Sciences"@hu, "politikatörténet"@hu, "Politics, government"@hu ;
+	dc:title            "Orbán Balázs országgyűlési beszédei 1875. aug. 28-tól 1878. június 30-ig: 3. füzet"@hu ;
+	dc:type             "speeches"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/10500_10551_borito_jpg> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/10500_10551_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/10500_10551_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/10500_10551_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:10.540Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/10500_10551_borito_jpg> .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/provider/2023859/10500_10551_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/10500/10551> ;
+	edm:isShownBy      <http://mek.oszk.hu/10500/10551/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/10500/10551/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/10500_10551_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<http://mek.oszk.hu/10500/10551/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/10500_10551_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "9735"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "162"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFB6C1"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://mek.oszk.hu/10500/10551>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "19030"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2023859/10500_10551_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:10.539Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/10500_10551_borito_jpg> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/10500_10551_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:50:06.452Z" ;
+	dcterms:modified          "2015-09-14T11:23:46.175Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg#metadataTier>, <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/10500_10551_borito_jpg> ;
+	edm:completeness          "8" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/10500_10551_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F10500%2F10551%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .

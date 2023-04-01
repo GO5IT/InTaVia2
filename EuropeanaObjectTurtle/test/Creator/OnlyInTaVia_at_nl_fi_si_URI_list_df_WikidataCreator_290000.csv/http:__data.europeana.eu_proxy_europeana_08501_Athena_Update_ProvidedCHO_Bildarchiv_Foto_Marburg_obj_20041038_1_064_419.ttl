@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocab.getty.edu/aat/300400898>
+	a               skos:Concept ;
+	skos:altLabel   "sculpture group"@en, "groups, sculpture"@en, "beeldengroep"@nl ;
+	skos:broader    <http://vocab.getty.edu/aat/300047090> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:note       "Twee of meer beeldhouwwerken die gemaakt zijn om samen te worden getoond."@nl, "Two or more sculptures that are designed to be displayed together."@en ;
+	skos:prefLabel  "sculpture groups"@en, "beeldengroepen"@nl .
+
+<http://data.europeana.eu/aggregation/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj20041038> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/be00053b08> ;
+	edm:object         <http://www.bildindex.de/bilder/d/be00053b08> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://www.bildindex.de/document/obj20041038>
+	a  edm:WebResource .
+
+<http://www.bildindex.de/bilder/d/be00053b08>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3/manifest> ;
+	ebucore:fileByteSize    "241029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3>
+	a                   ore:Proxy ;
+	dc:creator          "Godecharle, Gilles Lambert (Herstellung), 1750-1835 (Bildhauer)" ;
+	dc:subject          "(Nächsten)liebe, Caritas (Ripa: Carità) als eine der drei theologischen Tugenden"@de, "Skulptur"@de ;
+	dc:title            "Caritas"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300400898> ;
+	dcterms:created     "1765-1835 (Herstellung)"@zxx ;
+	dcterms:spatial     "Brüssel (Standort)"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> .
+
+<https://iiif.europeana.eu/presentation/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:44:50.846216Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> .
+
+<http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T12:44:50.845850Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://data.europeana.eu/proxy/europeana/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T11:26:04.729Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3#contentTier>, <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Fbe00053b08&type=IMAGE> .
+
+<http://data.europeana.eu/item/199/item_Z7Z4UOWMQPC5IDQN4JQ6CPPHYCFPQFE3>
+	a  edm:ProvidedCHO .

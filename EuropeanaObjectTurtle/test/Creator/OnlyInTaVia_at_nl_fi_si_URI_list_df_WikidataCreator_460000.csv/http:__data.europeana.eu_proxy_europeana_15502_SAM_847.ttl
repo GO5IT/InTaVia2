@@ -1,0 +1,139 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/15502/SAM_847>
+	a                   ore:Proxy ;
+	dc:creator          <http://d-nb.info/130075248> ;
+	dc:date             "Anfang des 19. Jahrhunderts" ;
+	dc:description      "Juli 2021 - Daten nach Texteingabe migriert"@de ;
+	dc:identifier       "SAM_847" ;
+	dc:language         "de" ;
+	dc:publisher        "Kunsthistorisches Museum Wien, Sammlung alter Musikinstrumente" ;
+	dc:rights           "CC BY-NC-SA 4.0"@de ;
+	dc:subject          "composer"@en, "Komponist"@de ;
+	dc:title            "Der junge Schubert"@de ;
+	dc:type             "Gemälde"@de ;
+	dcterms:created     "Anfang des 19. Jahrhunderts" ;
+	dcterms:extent      "833 × 700 mm"@de ;
+	dcterms:isPartOf    "Sammlung alter Musikinstrumente"@de ;
+	dcterms:spatial     "Österreich (?)"@de ;
+	dcterms:temporal    "temporal#270582965814" ;
+	edm:europeanaProxy  "false" ;
+	edm:isRelatedTo     "Gemälde"@de ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/SAM_847> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15502/SAM_847> .
+
+<http://data.europeana.eu/proxy/europeana/15502/SAM_847>
+	a                   ore:Proxy ;
+	dc:identifier       "SAM_847" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15502/SAM_847> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15502/SAM_847> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15502/SAM_847> .
+
+<http://imageapi.khm.at/images/85535/SAM_847.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15502/SAM_847/manifest> ;
+	ebucore:fileByteSize    "319392"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1332"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E9967A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DAA520"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4B5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://d-nb.info/130075248>
+	a                               edm:Agent ;
+	dc:date                         "o. Dat." ;
+	dc:identifier                   "http://d-nb.info/130075248" ;
+	foaf:name                       "Josef Abel"@de ;
+	rdaGr2:biographicalInformation  "1764 Aschach / Oberösterreich - 1818 Wien"@de ;
+	rdaGr2:professionOrOccupation   "Künstler/in" ;
+	skos:prefLabel                  "Josef Abel (Künstler/in)" .
+
+<https://iiif.europeana.eu/presentation/15502/SAM_847/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/15502/SAM_847>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/15502/SAM_847>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15502/SAM_847> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507755> ;
+	edm:isShownAt      <http://www.khm.at/de/objektdb/detail/85535/> ;
+	edm:isShownBy      <http://imageapi.khm.at/images/85535/SAM_847.jpg> ;
+	edm:object         <http://imageapi.khm.at/images/85535/SAM_847.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<file:///usr/local/tomcat/webapps/temporal#270582965814>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  "Sammlung alter Musikinstrumente"@de ;
+	edm:begin         "1800" ;
+	edm:end           "1820" ;
+	skos:prefLabel    "1800-1820" .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270582965814>
+	a                       edm:WebResource ;
+	dc:description          "Juli 2021 - Daten nach Texteingabe migriert"@de ;
+	dc:rights               "CC BY-NC-SA 4.0"@de ;
+	dcterms:isPartOf        "Sammlung alter Musikinstrumente"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=270582965814> ;
+	edm:rights              <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/organization/1482250000004507755>
+	a               foaf:Organization ;
+	skos:prefLabel  "Fine Arts Museum Vienna"@en, "Kunsthistorisches Museum Wien"@de .
+
+<http://data.europeana.eu/item/15502/SAM_847#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:38:29.055265Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier3> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/SAM_847> .
+
+<http://www.khm.at/de/objektdb/detail/85535/>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/15502/SAM_847#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-10-25T07:38:29.055295Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15502/SAM_847> .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .
+
+<http://data.europeana.eu/aggregation/europeana/15502/SAM_847>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-07-05T17:45:23.885Z" ;
+	dcterms:modified          "2022-10-25T07:07:10.458Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15502/SAM_847#metadataTier>, <http://data.europeana.eu/item/15502/SAM_847#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15502/SAM_847> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15502_Ag_AT_Kulturpool_Khm" ;
+	edm:landingPage           <https://www.europeana.eu/item/15502/SAM_847> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimageapi.khm.at%2Fimages%2F85535%2FSAM_847.jpg&type=IMAGE> .

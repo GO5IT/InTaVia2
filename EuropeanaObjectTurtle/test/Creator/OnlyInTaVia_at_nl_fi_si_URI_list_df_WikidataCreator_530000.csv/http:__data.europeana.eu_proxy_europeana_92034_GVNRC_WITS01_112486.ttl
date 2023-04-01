@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112486>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:112486> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112486&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_112486>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2346>, <http://data.europeana.eu/concept/2323>, <http://data.europeana.eu/concept/1906> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112486> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112486>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:07:00.257Z" ;
+	dcterms:modified          "2018-04-05T18:11:19.239Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_112486> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A112486%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112486#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:08.313Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112486> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112486#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:08.313Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112486> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112486>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:112486>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50114"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/2323>
+	a                skos:Concept ;
+	skos:altLabel    "Anhänger für Ohrring"@de ;
+	skos:broader     <http://data.europeana.eu/concept/2322> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q29583208>, <http://thesaurus.europeanafashion.eu/thesaurus/10634> ;
+	skos:note        "Ear ornament with one or more pendant attachments"@en ;
+	skos:prefLabel   "Ohrringanhänger"@de, "Örhängen"@sv, "Oorhanger"@nl, "Pendiente"@es, "Pendants d'oreille"@fr, "Κρεμαστό σκουλαρίκι"@el, "Pendenti per orecchie"@it, "Ear pendant"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_112486>
+	a                   ore:Proxy ;
+	dc:contributor      "Bauer, Marius" ;
+	dc:creator          "Bauer, Marius" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112486", "WITS01:112486" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:112486], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "leunend"@nl, "jonge vrouw"@nl, "oorhanger"@nl, "rugfiguur"@nl, "figuurvoorstelling"@nl, "muur"@nl, "naakt"@nl, "ten voeten uit"@nl ;
+	dc:title            "Staand naakt" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1882-1932" ;
+	dcterms:extent      "47 x 27 cm" ;
+	dcterms:isPartOf    "WITS01", "Willem Witsen: Tachtiger in brief en beeld", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "olieverf", "text/xml", "doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112486> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112486> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112486&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "38618"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "248"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/2346>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q29527347>, <http://thesaurus.europeanafashion.eu/thesaurus/10902>, <http://vocab.getty.edu/aat/300189808> ;
+	skos:note        "Objeto tridimensional o bidimensional trabajado usualmente en piedra o barro, de medianas dimensiones que representa a personajes con característica humanas"@es, "Representation of humans, animals, or mythical beasts, in any medium"@en, "Représentation d'êtres vivants (animaux et humains) ou de créatures mythiques"@fr, "Darstellung eines Menschen, Tieres oder einer mythologischen Gestalt in einem Medium"@de ;
+	skos:prefLabel   "Fíor"@ga, "Représentation figurée"@fr, "Figure"@en, "Figura"@cs, "Figura"@es, "Figura"@it, "Φιγούρα"@el, "Figuurvoorstelling"@nl, "Фигурка"@ru, "Figureta"@ca, "Figuur"@et, "Figur"@da, "Figur"@sv, "Figur"@de .
+
+<http://data.europeana.eu/concept/1906>
+	a                skos:Concept ;
+	skos:exactMatch  <https://g.co/kg/m/09qqq>, <http://id.ndl.go.jp/auth/ndlna/00564360>, <https://www.freebase.com/m/09qqq>, <http://id.loc.gov/authorities/names/sh85144957>, <http://www.geonames.org/ontology#S.WALL>, <http://babelnet.org/rdf/s00080386n>, <http://www.wikidata.org/entity/Q42948>, <http://datos.bne.es/resource/XX4596786>, <https://d-nb.info/gnd/4169136-2>, <http://vocab.getty.edu/aat/300002469>, <http://purl.org/bncf/tid/17313>, <http://www.yso.fi/onto/yso/p5941>, <http://data.bnf.fr/ark:/12148/cb11977744j> ;
+	skos:note        "Вертикальная плоскость для разделения пространства"@ru, "Muuraamalla tehty seinämä"@fi, "Vertikāla struktūra, kas ierobežo teritoriju vai zemi, kā arī dažreiz veic aizsardzības funkcijas"@lv, "Vertical structure, usually solid, that defines and sometimes protects an area"@en, "Tipo di struttura architettonica"@it, "Bauteil bzw. Bauwerk"@de, "Vertikální struktura, obvykle pevná, která definuje a někdy chrání oblast"@cs, "Struchtúr ingearach a shainíonn limistéar"@ga, "Estructura vertical y sólida que separa dos espacios"@es, "Vertikalt byggnadsverk, ofta fast, som definierar och ibland skyddar ett område"@sv, "Plocha múru ohraničujúca priestor"@sk, "Navpična gradbena konstrukcija, ki opredeljuje območje, nosi breme ali nudi zavetje ali varnost."@sl, "Vertikal bygningsstruktur"@da, "Budowla stworzona w celu ograniczenia dostępu do jakiegoś miejsca lub wyznaczenia granic danego terenu"@pl, "Estructura vertical i sòlida que separa dos espais"@ca, "Structure verticale séparant deux espaces"@fr, "Bouwsel bedoeld als omheining, verdedigingsmuur, ommuring"@nl, "Építészet, térelválasztó elem"@hu ;
+	skos:prefLabel   "Müür"@et, "Balla"@ga, "Mūris"@lv, "Muur"@nl, "Стена"@ru, "Стена"@bg, "Mauer"@de, "Wall"@en, "Muro"@pt, "Muro"@it, "Paret"@ca, "Mur"@fr, "Mur"@sv, "Mur"@pl, "Mur"@da, "Pared"@es, "Τοίχος"@el, "Fal"@hu, "Zid"@hr, "Zid"@sl, "Zid"@ro, "Muuri"@fi, "Stena"@sk, "Siena"@lt, "Zeď"@cs, "Pareta"@eu .

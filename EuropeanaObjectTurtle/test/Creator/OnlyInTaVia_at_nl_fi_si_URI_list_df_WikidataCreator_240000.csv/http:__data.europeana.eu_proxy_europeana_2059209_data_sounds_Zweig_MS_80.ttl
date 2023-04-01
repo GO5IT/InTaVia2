@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_80>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_80/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS80.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059209/data_sounds_Zweig_MS_80/manifest> ;
+	ebucore:fileByteSize    "400145"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "793"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1063"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_80>
+	a                  ore:Aggregation ;
+	dc:rights          "Public Domain" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <http://www.bl.uk/manuscripts/Viewer.aspx?ref=Zweig_MS_80> ;
+	edm:isShownBy      <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS80.jpg> ;
+	edm:object         <http://sounds.bl.uk/resources/europeana/thumbnails/ZweigMS80.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:35:11.932Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_80> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:35:11.931Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_80> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_Zweig_MS_80>
+	a                   ore:Proxy ;
+	dc:contributor      "Schubert, Franz Peter, 1797-1828, composer", "Assmayr, Ignaz, 1790-1862, organist and composer" ;
+	dc:description      "Autograph. Written on recto and verso of a single leaf, as follows: f. 1r. Evangelium Johannis 6, vers. 55-58 (text in German from St. John’s Gospel in Luther’s translation), for voice with figured bass accompaniment; [1818]. Bars 1-33 only. Written in ink, on systems of two staves. Headed ‘Evangelium Joh. 6. K.’. Above the heading, on the top stave of the page, are eight cancelled bars of an unidentified piece, written without text in two parts on a single stave. Schubert has written an additional stave freehand at the foot of the page to carry the accompaniment to the last line. The text, an extract from the teaching of Jesus in the synagogue at Capernaum, has introductory words which do not appear in the Gospel. f. 1v. Dance, headed ‘Deutscher von Franz Schubert M[anu] p[ropr]ia in März 818 [line above]’. Written in ink on systems of two staves; ‘Forte= / Piano’ written against the first system. Opens with a single crotchet rather than the three quavers of the published version (see Brown, ‘The Dance-music Manuscripts’, pp. 292ff). Two systems only; the remainder of the page carries a humorous dedication to Ignaz Assmayer, in Germanand Latin , beginning ‘Hier hast du diesen Deutschen, Mein allerliebster Asma’r’ and signed ‘Francesco Seraphico vulgo Schubert’."@en ;
+	dc:identifier       "Zweig_MS_80" ;
+	dc:language         "German" ;
+	dc:relation         "Zweig MS 80" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://dbpedia.org/page/Musical_notation> ;
+	dc:title            "Franz Schubert: Dance (‘Deutscher’) in A flat for piano (D 365, no. 2), with the beginning of Evangelium Johannis 6 (D 607)" ;
+	dcterms:created     "Mar 1818" ;
+	dcterms:extent      "1 volume (1 folio)" ;
+	dcterms:isPartOf    <http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Zweig_MS_80> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_Zweig_MS_80> .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_Zweig_MS_80>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/Zweig_MS_80" ;
+	dc:language         "deu" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_80> .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_Zweig_MS_80>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T08:06:12.444Z" ;
+	dcterms:modified          "2020-05-01T15:33:14.380Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80#metadataTier>, <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_Zweig_MS_80> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_Zweig_MS_80> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsounds.bl.uk%2Fresources%2Feuropeana%2Fthumbnails%2FZweigMS80.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .

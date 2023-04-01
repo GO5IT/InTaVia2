@@ -1,0 +1,166 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/15508/HO2006_163>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-08-01T11:42:07.584Z" ;
+	dcterms:modified          "2022-09-28T12:10:21.928Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/15508/HO2006_163#metadataTier>, <http://data.europeana.eu/item/15508/HO2006_163#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/15508/HO2006_163> ;
+	edm:completeness          "6" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "15508_Ag_AT_Kulturpool_albertina" ;
+	edm:landingPage           <https://www.europeana.eu/item/15508/HO2006_163> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsammlungenonline.albertina.at%2Fcc%2Fimageproxy.ashx%3Fserver%3Dlocalhost%26port%3D15001%26filename%3Dimages%2FHO2006_163.jpg%26cache%3Dyes%26maxwidth%3D400&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/15508/HO2006_163/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<file:///usr/local/tomcat/webapps/#Albrecht_Dürer_Umkreis>
+	a                               edm:Agent ;
+	dc:date                         "1515" ;
+	foaf:name                       "Albrecht Dürer"@de ;
+	rdaGr2:biographicalInformation  "Nürnberg 1471 - 1528 Nürnberg"@de ;
+	rdaGr2:professionOrOccupation   "Umkreis" ;
+	skos:prefLabel                  "Albrecht Dürer (Umkreis)" .
+
+<http://data.europeana.eu/proxy/provider/15508/HO2006_163>
+	a                   ore:Proxy ;
+	dc:coverage         "Deutschland" ;
+	dc:creator          <file:///usr/local/tomcat/webapps/#Albrecht_Altdorfer_Künstler_in>, <file:///usr/local/tomcat/webapps/#Albrecht_Dürer_Umkreis>, <file:///usr/local/tomcat/webapps/#Hieronymus_Andreae_Formschneider_in> ;
+	dc:date             "1515" ;
+	dc:identifier       "HO2006/163" ;
+	dc:language         "de" ;
+	dc:publisher        "Albertina, Wien, Österreich"@de ;
+	dc:rights           "Public Domain Mark 1.0"@de ;
+	dc:title            "Die \u0022Ehrenpforte\u0022 Kaiser Maximilians I.; F' - Turmszene Nr. 1 und Kuppel"@de ;
+	dc:type             "Holzstock"@de ;
+	dcterms:created     "1515" ;
+	dcterms:extent      "17,3 x 27 x 2,4 cm"@de ;
+	dcterms:isPartOf    "Graphische Sammlung"@de ;
+	dcterms:medium      "Holzstock (Birne)"@de ;
+	dcterms:spatial     "Deutschland"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/HO2006_163> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/15508/HO2006_163> .
+
+<http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4296240703>
+	a                       edm:WebResource ;
+	dc:rights               "Public Domain Mark 1.0"@de ;
+	dcterms:isPartOf        "Graphische Sammlung"@de ;
+	dcterms:isReferencedBy  <http://www.kulturpool.at/plugins/kulturpool/showitem.action?kupoContext=default&itemId=4296240703> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/15508/HO2006_163#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T12:54:21.076825Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/HO2006_163> .
+
+<http://data.europeana.eu/proxy/europeana/15508/HO2006_163>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/80> ;
+	dc:identifier       "HO2006/163" ;
+	dc:language         "deu" ;
+	dcterms:spatial     <http://data.europeana.eu/place/80> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1515" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/15508/HO2006_163> ;
+	ore:proxyFor        <http://data.europeana.eu/item/15508/HO2006_163> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/15508/HO2006_163> .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/HO2006_163.jpg&cache=yes&maxwidth=400>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "87205"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "618"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/15508/HO2006_163#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-09-28T12:54:21.076798Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/15508/HO2006_163> .
+
+<file:///usr/local/tomcat/webapps/#Albrecht_Altdorfer_Künstler_in>
+	a                               edm:Agent ;
+	dc:date                         "um 1513" ;
+	foaf:name                       "Albrecht Altdorfer"@de ;
+	rdaGr2:biographicalInformation  "Deutschland, 1480 - 1538"@de ;
+	rdaGr2:professionOrOccupation   "Künstler_in" ;
+	skos:prefLabel                  "Albrecht Altdorfer (Künstler_in)" .
+
+<http://data.europeana.eu/place/80>
+	a               edm:Place ;
+	owl:sameAs      <http://id.nlm.nih.gov/mesh/D005858>, <http://datos.bne.es/resource/XX450924>, <https://sws.geonames.org/2921044/>, <http://id.worldcat.org/fast/1210272>, <http://id.ndl.go.jp/auth/ndlna/00561571>, <http://babelnet.org/rdf/s00026684n>, <http://data.bnf.fr/ark:/12148/cb12205186t>, <https://g.co/kg/m/0345h>, <http://zbw.eu/stw/descriptor/18012-3>, <http://data.cervantesvirtual.com/person/32785>, <http://id.loc.gov/authorities/names/n80125931>, <http://dbpedia.org/resource/Germany>, <http://vocab.getty.edu/tgn/7000084>, <http://www.idref.fr/030685435/id>, <http://vocabularies.unesco.org/thesaurus/concept904>, <http://data.bnf.fr/ark:/12148/cb11930867z>, <http://www.wikidata.org/entity/Q183>, <http://data.bnf.fr/ark:/12148/cb152996644>, <http://www.yso.fi/onto/yso/p105087>, <http://www.yso.fi/onto/ysa/Y105087>, <http://id.nlm.nih.gov/mesh/Z01.542.315>, <https://d-nb.info/gnd/4011882-4>, <https://www.freebase.com/m/0345h>, <http://viaf.org/viaf/189116956> ;
+	skos:altLabel   "La République fédérale d’Allemagne"@fr, "Дойчланд"@ru, "República Federal de Alemania"@es, "Saksan liittotasavalta"@fi, "ФРГ"@bg, "ФРГ"@ru, "RFG"@ro, "Bundesrepublik Deutschland"@pl, "République fédérale d'Allemagne"@fr, "Bundesrepublik Deutschland"@fr, "Bundesrepublik Deutschland"@it, "Bundesrepublik Deutschland"@en, "Bundesrepublik Deutschland"@fi, "Bundesrepublik Deutschland"@ru, "Bundesrepublik Deutschland"@de, "Republica Federală Germania"@ro, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el, "Német Szövetségi Köztársaság"@hu, "Federal Republic of Germany"@en, "République fédérale allemande"@fr, "GER"@fr, "GER"@it, "GER"@en, "GER"@de, "GFR"@en, "Федерална република Германия"@bg, "Spolková republika Německo"@cs, "DEU"@nl, "SLV"@et, "DEU"@it, "DEU"@de, "Repubblika Federali tal-Ġermanja"@mt, "BR Deutschland"@pl, "Deutschland"@pl, "Deutschland"@fr, "BR Deutschland"@fr, "Deutschland"@it, "Deutschland"@en, "Deutschland"@ru, "BR Deutschland"@it, "BR Deutschland"@en, "BR Deutschland"@de, "Bondsrepubliek Duitsland"@nl, "RFA"@fr, "Repubblica Federale di Germania"@it, "Saksamaa Liitvabariik"@et, "Republica Federal de Alemania"@es, "R. F. A."@fr, "All."@fr, "DE"@nl, "DE"@fr, "DE"@en, "NSR"@cs, "Федеративная Республика Германия"@ru, "Förbundsrepubliken Tyskland"@sv, "SRN"@cs, "Bondsrepubliek"@nl, "BRD"@pl, "Nemecká spolková republika"@sk, "FRG"@de, "BRD"@cs, "BRD"@fr, "BRD"@it, "BRD"@en, "BRD"@de, "de"@fr, "de"@it, "de"@en, "de"@de ;
+	skos:note       "Država v Evropi"@sl, "Państwo w Europie Środkowej"@pl, "Държава в Западна Европа"@bg, "Liittovaltio Keski-Euroopassa"@fi, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Land in West- en Centraal-Europa"@nl, "Stát ve střední Evropě"@cs, "Pays d'Europe"@fr, "Förbundsrepublik i Centraleuropa"@sv, "Bundesstaat in Mitteleuropa"@de, "Europako erdialdeko herrialdea"@eu, "Stato dell'Europa, membro dell'Unione Europea"@it, "Tír i lár na hEorpa"@ga, "País del centre d'Europa"@ca, "Valsts Eiropā"@lv, "Država u srednjoj Europi"@hr, "Государство в Центральной Европе"@ru, "Šalis centrinėje Europoje"@lt, "Țară din Europa Centrală de Vest"@ro, "Ομοσπονδιακή δημοκρατία στην κεντρική Ευρώπη"@el, "País de Europa"@es, "Pajjiż fl-Ewropa Ċentrali"@mt, "Forbundsrepublik i Centraleuropa"@da, "Štát v strednej Európe"@sk, "Riik Kesk-Euroopas"@et, "País da Europa Central"@pt ;
+	skos:prefLabel  "Tyskland"@sv, "Tyskland"@da, "Alemania"@es, "Alemania"@eu, "Vokietija"@lt, "Alemanya"@ca, "Duitsland"@nl, "Germany"@en, "Německo"@cs, "Alemanha"@pt, "Ġermanja"@mt, "Niemcy"@pl, "Германия"@ru, "Германия"@bg, "Nemecko"@sk, "Saksa"@fi, "Saksamaa"@et, "Vācija"@lv, "Γερμανία"@el, "Németország"@hu, "Njemačka"@hr, "Germania"@it, "Germania"@ro, "Deutschland"@de, "Nemčija"@sl, "An Ghearmáin"@ga, "Allemagne"@fr ;
+	wgs84_pos:lat   "51.0" ;
+	wgs84_pos:long  "10.0" .
+
+<file:///usr/local/tomcat/webapps/#Hieronymus_Andreae_Formschneider_in>
+	a                               edm:Agent ;
+	dc:date                         "nach 1538" ;
+	foaf:name                       "Hieronymus Andreae"@de ;
+	rdaGr2:biographicalInformation  "Bad Mergentheim (vor 1504) - 1556 Nürnberg"@de ;
+	rdaGr2:professionOrOccupation   "Formschneider_in" ;
+	skos:prefLabel                  "Hieronymus Andreae (Formschneider_in)" .
+
+<http://data.europeana.eu/item/15508/HO2006_163>
+	a  edm:ProvidedCHO .
+
+<https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[HO2006/163]&showtype=record>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "311824"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/aggregation/provider/15508/HO2006_163>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/15508/HO2006_163> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004477257> ;
+	edm:isShownAt      <https://sammlungenonline.albertina.at/?query=search=/record/objectnumbersearch=[HO2006/163]&showtype=record> ;
+	edm:isShownBy      <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/HO2006_163.jpg&cache=yes> ;
+	edm:object         <https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/HO2006_163.jpg&cache=yes&maxwidth=400> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004507745> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004477257>
+	a               foaf:Organization ;
+	skos:prefLabel  "Albertina"@en, "Albertina"@de .
+
+<https://sammlungenonline.albertina.at/cc/imageproxy.ashx?server=localhost&port=15001&filename=images/HO2006_163.jpg&cache=yes>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/15508/HO2006_163/manifest> ;
+	ebucore:fileByteSize    "325393"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "776"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004507745>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kulturpool"@en, "Kulturpool"@de .

@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://partage.vocnet.org/part00062>
+	a  skos:Concept .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=7847&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/310> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=7847&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847/manifest> ;
+	ebucore:fileByteSize    "83394"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "475"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:20:43.319Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847>
+	a                   ore:Proxy ;
+	dc:creator          "Ville Vallgren"@sv ;
+	dc:description      " Signerad: Vallgren 1892 "@sv ;
+	dc:identifier       "7847", "(Inv. Nr.: NMK 137/1972)" ;
+	dc:title            "Vas"@sv ;
+	dc:type             "Metall (Konsthtv, konstind, ind.design)"@sv, <http://partage.vocnet.org/part00062>, "metallarbeten"@sv ;
+	dcterms:created     "Sign. 1892" ;
+	dcterms:extent      "Mått 20 x 14 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:20:43.318Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> .
+
+<http://data.europeana.eu/agent/310>
+	a                    edm:Agent ;
+	owl:sameAs           <http://openlibrary.org/works/OL551538A>, <http://www.idref.fr/079151604/id>, <https://www.freebase.com/m/0dnj2f>, <http://d-nb.info/gnd/124219403>, <https://g.co/kg/m/0dnj2f>, <http://id.worldcat.org/fast/1594592>, <http://viaf.org/viaf/17149106254168492089>, <http://vocab.getty.edu/ulan/500027613>, <http://www.wikidata.org/entity/Q3177095>, <http://data.bnf.fr/ark:/12148/cb14569243t>, <http://dbpedia.org/resource/Ville_Vallgren>, <http://id.loc.gov/authorities/names/n2004013894> ;
+	rdaGr2:dateOfBirth   "1855-12-15" ;
+	rdaGr2:dateOfDeath   "1940-10-13" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/88333> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/88008> ;
+	skos:altLabel        "Villé Vallgren"@en, "Villé Vallgren"@nl, "Carl Wilhelm Vallgren"@de, "Carl Wilhelm Vallgren"@sv, "Carl Wilhelm Vallgren"@fi, "Carl Wilhelm Vallgren"@en, "Carl Wilhelm Vallgren"@et, "Вилле Вальгрен"@ru, "V. Vallgren"@sv, "V. Vallgren"@fi, "V. Vallgren"@en, "Carl Wilhelm Wallgren"@en, "Carl Wilhelm Wallgren"@et, "C. W. Vallgren"@sv, "C. W. Vallgren"@fi, "C. W. Vallgren"@en ;
+	skos:note            "Sculptor francez"@ro, "Sculpteur"@fr, "Finländsk skulptör"@sv, "Escultor francès"@ca, "Soome skulptor"@et, "Scultore finlandese"@it, "Suomalainen kuvanveistäjä"@fi, "Fins beeldhouwer (1855-1940)"@nl, "Dealbhóir Fionlannach"@ga, "Escultor francés"@es, "Finnish sculptor (1855-1940)"@en, "Финский скульптор"@ru, "Finnischer Bildhauer"@de ;
+	skos:prefLabel       "Ville Vallgren"@es, "Ville Vallgren"@de, "Ville Vallgren"@sv, "Ville Vallgren"@fi, "Ville Vallgren"@pt, "Ville Vallgren"@en, "Ville Vallgren"@it, "Ville Vallgren"@fr, "Ville Vallgren"@et, "Ville Vallgren"@sl, "Ville Vallgren"@ga, "Ville Vallgren"@da, "Ville Vallgren"@ca, "Ville Vallgren"@nl, "Вальгрен, Вилле"@ru .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-01-19T15:16:45.658Z" ;
+	dcterms:modified          "2017-02-21T15:27:48.078Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> ;
+	edm:completeness          "5" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D7847%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_7847> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=7847&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=7847&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=7847&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .

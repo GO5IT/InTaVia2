@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/157049> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=70092&viewType=detailView&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092/manifest> ;
+	ebucore:fileByteSize    "85338"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "417"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:24.769Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> .
+
+<https://iiif.europeana.eu/presentation/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001746004> ;
+	edm:isShownAt      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=70092&viewType=detailView> ;
+	edm:isShownBy      <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=70092&viewType=detailView&resolution=superImageResolution> ;
+	edm:object         <http://emp-web-22.zetcom.ch/eMuseumPlus?service=ImageAsset&module=collection&objectId=70092&viewType=detailView&resolution=superImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T04:21:24.770Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> .
+
+<http://partage.vocnet.org/part00047>
+	a               skos:Concept ;
+	skos:altLabel   "Handzeichnung"@de, "rajzok"@hu, "dibuixos (obres visuals)"@ca, "dibujos (obras visuales)"@es, "rysunki"@pl, "teckningar"@sv, "desenhos"@pt, "disegno (obra visiva)"@it, "tegninger"@no, "crteži"@hr, "dessins (oeuvres visuelles)"@fr, "drawing (visual work)"@en, "tekening (visueel werk)"@nl, "kresby"@cs ;
+	skos:broader    <http://partage.vocnet.org/>, <http://partage.vocnet.org/part01377>, <http://partage.vocnet.org/part00039> ;
+	skos:narrower   <http://partage.vocnet.org/part00560>, <http://partage.vocnet.org/part01284>, <http://partage.vocnet.org/part01330>, <http://partage.vocnet.org/part00948>, <http://partage.vocnet.org/part00415> ;
+	skos:prefLabel  "crtež"@hr, "drawings (visual works)"@en, "desenho"@pt, "tekeningen"@nl, "dibuix (obra visual)"@ca, "piirustukset"@fi, "risbe"@sl, "kresba"@cs, "Zeichnung (visuelles Werk)"@de, "tegning (verk)"@no, "rajz"@hu, "disegni"@it, "rysunek"@pl, "teckning"@sv, "dibujo (obra visual)"@es, "dessin (oeuvre visuelle)"@fr .
+
+<http://data.europeana.eu/organization/1482250000001746004>
+	a               foaf:Organization ;
+	skos:prefLabel  "Nationalmuseum Sweden"@en, "Nationalmuseet Sweden"@sv .
+
+<http://data.europeana.eu/agent/157049>
+	a                    edm:Agent ;
+	owl:sameAs           <http://dbpedia.org/resource/Constantin_Guys>, <http://www.idref.fr/027299341/id>, <http://libris.kb.se/resource/auth/233714>, <http://data.bibliotheken.nl/id/thes/p06854622X>, <http://data.cervantesvirtual.com/person/43609>, <http://id.worldcat.org/fast/68941>, <http://www.wikidata.org/entity/Q662943>, <http://id.loc.gov/authorities/names/n81024543>, <http://viaf.org/viaf/55463100>, <http://openlibrary.org/works/OL141769A>, <http://vocab.getty.edu/ulan/500002003>, <http://data.bnf.fr/ark:/12148/cb11937164p>, <http://datos.bne.es/resource/XX1124549>, <https://g.co/kg/m/07pm5_>, <https://libris.kb.se/xv8bd34g372lhfw>, <http://d-nb.info/gnd/118843834>, <http://nlg.okfn.gr/resource/authority/record133841>, <https://www.freebase.com/m/07pm5_> ;
+	rdaGr2:dateOfBirth   "1802-12-03" ;
+	rdaGr2:dateOfDeath   "1892-03-13" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40240> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/41488> ;
+	skos:altLabel        "C. guys"@en, "Const. Guys"@en, "Гис, Константен"@ru, "Constantin guys"@en, "Constantin Ernest Adolphe Hyacinthe Guys"@cs, "Constantin Ernest Adolphe Hyacinthe Guys"@en, "Ernst-Adolphe-Hyacinthe-Constantin Guys"@en, "Ernest Adolphe Hyacinthe Constantin Guys"@de, "Ernest Adolphe Hyacinthe Constantin Guys"@en, "Konstantin guys"@en, "Constantin Guys de Sainte-Hélène"@fr, "Ernestus Adolphus Hyacinthus Constantinus Guys"@cs, "Ernestus Adolphus Hyacinthus Constantinus Guys"@en ;
+	skos:note            "Peintre français"@fr, "Niederländisch-französischer Maler und Zeichner"@de, "Французский художник"@ru, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et, "Pintor neerlandés"@es, "Incisore olandese"@it, "Pintor neerlandès"@ca, "Dutch painter (1802-1892)"@en, "Nederlands kunstschilder (1802-1892)"@nl ;
+	skos:prefLabel       "Constantin Guys"@hu, "Constantin Guys"@de, "Constantin Guys"@sv, "Constantin Guys"@fi, "Constantin Guys"@pt, "Constantin Guys"@en, "Constantin Guys"@it, "Constantin Guys"@fr, "Constantin Guys"@es, "Constantin Guys"@cs, "Constantin Guys"@sk, "Constantin Guys"@sl, "Constantin Guys"@pl, "Constantin Guys"@da, "Constantin Guys"@ca, "Constantin Guys"@nl, "Константен Гис"@ru .
+
+<http://partage.vocnet.org/part00881>
+	a               skos:Concept ;
+	skos:prefLabel  "crtanje"@hr, "drawing (image-making)"@en, "desenhar"@pt, "teckning (bildskapande)"@sv, "piirustus"@fi, "Zeichnen (künstlerische Technik)"@de, "tegning (skaping av bilde)"@no .
+
+<http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092>
+	a  edm:ProvidedCHO .
+
+<http://emp-web-22.zetcom.ch/eMuseumPlus?service=ExternalInterface&module=collection&objectId=70092&viewType=detailView>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/proxy/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092>
+	a                   ore:Proxy ;
+	dc:creator          "Constantin Guys"@sv ;
+	dc:description      "    "@sv ;
+	dc:format           <http://partage.vocnet.org/part00881>, "teckning (bildskapande)", "Svartkrita, pensel och bläck, lavering, på papper" ;
+	dc:identifier       "(Inv. Nr.: NMH 32/1916)", "70092" ;
+	dc:title            "Parisiska"@sv ;
+	dc:type             "Frihandsteckningar (Teckningar)"@sv, <http://partage.vocnet.org/part00047>, "teckningar"@sv ;
+	dcterms:extent      "Passepartout 55 x 42 cm", "Mått 26,5 x 18,5 cm" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> .
+
+<http://data.europeana.eu/aggregation/europeana/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-17T13:43:46.695Z" ;
+	dcterms:modified          "2017-02-21T15:27:39.616Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092#metadataTier>, <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> ;
+	edm:completeness          "5" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2048005_Ag_EU_AthenaPlus_SwedenNationalMuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048005/Athena_Plus_ProvidedCHO_Nationalmuseum__Sweden_70092> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femp-web-22.zetcom.ch%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D70092%26viewType%3DdetailView%26resolution%3DsuperImageResolution&type=IMAGE> .

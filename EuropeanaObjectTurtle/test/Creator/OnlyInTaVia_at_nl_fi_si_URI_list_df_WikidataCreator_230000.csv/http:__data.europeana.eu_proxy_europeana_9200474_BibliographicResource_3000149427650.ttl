@@ -1,0 +1,157 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://search.rsl.ru/api/description/01004465938/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "65703"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149427650>
+	a                    ore:Proxy ;
+	dc:contributor       "Philipp Jarnach", "Ферруччо Бенвенуто Бузони" ;
+	dc:creator           "Ferruccio Busoni" ;
+	dc:description       "[Клавир с пением]", "Worte und Musik von Ferruccio Busoni ; Klavierauszug mit Text von Philipp Jarnach" ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "004465938" ;
+	dc:language          "de" ;
+	dc:publisher         "Breitkopf & Härtel" ;
+	dc:title             "Turandot eine chinesische Fabel nach Gozzi in 2 Akten" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Турандот" ;
+	dcterms:extent       "149 с." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued       "1918", "cop. 1918" ;
+	dcterms:spatial      <http://id.loc.gov/vocabulary/countries/ru>, <http://sws.geonames.org/2879139/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427650> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149427650>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/147817>, <http://data.europeana.eu/agent/159865> ;
+	dc:creator          <http://data.europeana.eu/agent/147817> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1918" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427650> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427650>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:01.823Z" ;
+	dcterms:modified          "2016-03-24T08:15:37.019Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650> ;
+	edm:completeness          "8" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149427650> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004465938%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/159865>
+	a                   edm:Agent ;
+	edm:hasMet          <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/agent/163538> ;
+	owl:sameAs          <http://id.loc.gov/authorities/names/n88037546>, <https://www.freebase.com/m/09b17g>, <http://dbpedia.org/resource/Philipp_Jarnach>, <http://viaf.org/viaf/276152>, <http://datos.bne.es/resource/XX4726267>, <http://www.wikidata.org/entity/Q650161>, <http://www.idref.fr/162197950/id>, <http://d-nb.info/gnd/11928586X>, <http://data.bnf.fr/ark:/12148/cb148076233>, <http://data.bibliotheken.nl/id/thes/p14098285X>, <https://g.co/kg/m/09b17g>, <http://id.worldcat.org/fast/229323> ;
+	rdaGr2:dateOfBirth  "1892-07-26" ;
+	rdaGr2:dateOfDeath  "1982-12-17" ;
+	skos:altLabel       "Philippe Raphaël Jarnach"@fr, "Philipp Raphael Jarnach"@de, "Филип Ярнах"@ru, "Филипп Ярнах"@ru, "Ярнах"@ru, "Ярнах Филипп"@ru ;
+	skos:note           "Compozitor german"@ro, "Compositore tedesco"@it, "Cumadóir Gearmánach"@ga, "Saksamaa helilooja"@et, "German composer (1892-1982)"@en, "Compositor alemán"@es, "Duits componist (1892-1982)"@nl, "Professor académico alemão"@pt, "Tysk professor"@sv, "Tysk professor"@da, "Compositor alemany"@ca, "Deutscher Komponist"@de, "Γερμανός συνθέτης"@el, "Compositeur allemand"@fr ;
+	skos:prefLabel      "Philipp Jarnach"@fr, "Philipp Jarnach"@de, "Philipp Jarnach"@fi, "Philipp Jarnach"@sv, "Philipp Jarnach"@pt, "Philipp Jarnach"@en, "Philipp Jarnach"@it, "Philipp Jarnach"@hu, "Philipp Jarnach"@es, "Philipp Jarnach"@sl, "Philipp Jarnach"@pl, "Philipp Jarnach"@da, "Philipp Jarnach"@nl, "Philipp Jarnach"@ca, "Ярнах, Филипп"@ru, "Φίλιπ Γιάρναχ"@el .
+
+<http://sws.geonames.org/2879139/>
+	a               edm:Place ;
+	skos:prefLabel  "Leipzig (Herstellung)" .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:04.737Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427650> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:04.737Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427650> .
+
+<http://data.europeana.eu/agent/147817>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://libris.kb.se/resource/auth/43893>, <http://id.ndl.go.jp/auth/ndlna/00620437>, <http://www.wikidata.org/entity/Q219551>, <http://data.bibliotheken.nl/id/thes/p068598920>, <https://www.freebase.com/m/01q7q95>, <http://lod.nl.go.kr/resource/KAC199604062>, <http://openlibrary.org/works/OL80334A>, <http://nlg.okfn.gr/resource/authority/record194143>, <http://dbpedia.org/resource/Ferruccio_Busoni>, <https://g.co/kg/m/01q7q95>, <http://data.carnegiehall.org/names/1343>, <http://d-nb.info/gnd/118518011>, <https://livedata.bibsys.no/authority/90248525>, <http://id.worldcat.org/fast/44836>, <http://datos.bne.es/resource/XX869778>, <http://data.cervantesvirtual.com/person/43412>, <http://id.loc.gov/authorities/names/n79124601>, <http://data.bnf.fr/ark:/12148/cb13892013n>, <https://libris.kb.se/khwzspv342f7s3z>, <http://viaf.org/viaf/44484509>, <http://www.idref.fr/030133394/id> ;
+	rdaGr2:dateOfBirth   "1866-04-01" ;
+	rdaGr2:dateOfDeath   "1924-07-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/147017> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Dante Michelangelo Benvenuto Ferruccio Busoni"@ca, "Ferrucio Busoni"@ca, "Dante Michelangelo Benvenuto Ferruccio Busoni"@nl, "Dante Michelangelo Benvenuto Ferruccio Busoni"@da, "Dante Michelangelo Benvenuto Ferruccio Busoni"@ro, "Dante Michelangelo Benvenuto Ferruccio Busoni"@pl, "Dante Michelangelo Benvenuto Ferruccio Busoni"@es, "Ferrucio Busoni"@es, "Dante Michelangelo Benvenuto Ferruccio Busoni"@hu, "Dante Michelangelo Benvenuto Ferruccio Busoni"@fr, "Ferrucio Busoni"@fr, "Dante Michelangelo Benvenuto Ferruccio Busoni"@it, "Dante Michelangelo Benvenuto Ferruccio Busoni"@de, "Dante Michelangelo Benvenuto Ferruccio Busoni"@sv, "Dante Michelangelo Benvenuto Ferruccio Busoni"@fi, "Dante Michelangelo Benvenuto Ferruccio Busoni"@ru, "Ferrucio Busoni"@pt, "Dante Michelangelo Benvenuto Ferruccio Busoni"@pt, "Dante Michelangelo Benvenuto Ferruccio Busoni"@en, "Ferruccio Busoni"@hu, "Ferruccio Busoni"@ru, "Ferruccio Dante Michelangiolo Benvenuto Busoni"@cs, "Ferruccio Dante Michelangiolo Benvenuto Busoni"@en, "Данте Микеланджело Бенвенуто Ферруччо Бузони"@ru, "Dante Michaelangelo Benvenuto Ferruccio Busoni"@sl, "Dante Michaelangelo Benvenuto Ferruccio Busoni"@pt, "Ferruccio Dante Michelangelo Benvenuto Busoni"@da, "Ferruccio Benvenuto Busoni"@es, "Ferruccio Dante Michelangelo Benvenuto Busoni"@en, "Ferruccio Benvenuto Busoni"@de, "Бузони Ферруччо"@ru, "Busoni"@ca, "Busoni"@sl, "Busoni"@fr, "Busoni"@en, "Busoni"@sv, "Busoni"@fi, "Busoni"@pt, "Ферруччо Бенвенуто Бузони"@ru, "Бузони Ферруччо Бенвенуто"@ru, "Бузони Ф."@ru, "Бузони, Ферруччо Бенвенуто"@ru ;
+	skos:note            "Pianista, professor i director d'orquestra"@ca, "Italian composer, pianist, conductor, editor, writer, and piano teacher (1866-1924)"@en, "Italiaans componist (1866-1924)"@nl, "Német zeneszerző, zongorista, zenetudós és karmester"@hu, "Compositor y músico Italia"@es, "Ιταλός συνθέτης, πιανίστας, διευθυντής ορχήστρας, συγγραφέας και καθηγητής πιάνου"@el, "Italienischer Pianist, Komponist, Dirigent und Musiklehrer"@de, "Compositeur, pianiste, professeur et chef d'orchestre italien"@fr, "Italský hudební skladatel"@cs, "Italiensk tonsättare och pianist"@sv, "Pianista, compositore e direttore d'orchestra italiano"@it, "Italialainen säveltäjä"@fi, "Włoski kompozytor i pianista"@pl ;
+	skos:prefLabel       "Ferruccio Busoni"@de, "Ferruccio Busoni"@fi, "Ferruccio Busoni"@sv, "Ferruccio Busoni"@pt, "Ferruccio Busoni"@lt, "Ferruccio Busoni"@en, "Ferruccio Busoni"@it, "Ferruccio Busoni"@fr, "Ferruccio Busoni"@es, "Ferruccio Busoni"@et, "Ferruccio Busoni"@cs, "Ferruccio Busoni"@sl, "Ferruccio Busoni"@pl, "Ferruccio Busoni"@da, "Ferruccio Busoni"@ca, "Ferruccio Busoni"@nl, "Ferruccio Busoni"@hr, "Ферруччо Бузони"@ru, "Ferruccio Benvenuto Busoni"@hu, "Φερούτσιο Μπουζόνι"@el .
+
+<http://dlib.rsl.ru/viewer/01004465938#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427650>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427650> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004465938#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004465938/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .

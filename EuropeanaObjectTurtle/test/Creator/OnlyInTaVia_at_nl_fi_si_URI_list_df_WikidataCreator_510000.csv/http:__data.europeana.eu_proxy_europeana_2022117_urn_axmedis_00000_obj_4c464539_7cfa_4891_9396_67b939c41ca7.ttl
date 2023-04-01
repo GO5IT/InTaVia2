@@ -1,0 +1,90 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7>
+	a                   ore:Proxy ;
+	dc:contributor      "Beethoven, Ludwig van (Compositore)", "Végh Quartet (Orchestra)" ;
+	dc:creator          "Beethoven, Ludwig van" ;
+	dc:date             "1952 (recording)" ;
+	dc:description      "Beethoven, Ludwig van da “Quartetto d'archi in Do diesis minore, Op. 131”, registrazione in studio, analogica, Janzer, Georges, Viola,Szabo, Paul, Violoncello,Végh Sandor, Violino,Zoldy Sandor, Violino"@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/b/beethoven/> ;
+	dc:subject          "Chamber music"@it ;
+	dc:title            "Quartetto d'archi in Do diesis minore op. 131 - V. Presto"@it ;
+	dcterms:extent      "00:06:38.6" ;
+	dcterms:isPartOf    "Quartetto d'archi in Do diesis minore, Op. 131"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:14.140Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7#metadataTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:4c464539-7cfa-4891-9396-67b939c41ca7>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:05:14.139Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_4c464539_7cfa_4891_9396_67b939c41ca7> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:4c464539-7cfa-4891-9396-67b939c41ca7> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .

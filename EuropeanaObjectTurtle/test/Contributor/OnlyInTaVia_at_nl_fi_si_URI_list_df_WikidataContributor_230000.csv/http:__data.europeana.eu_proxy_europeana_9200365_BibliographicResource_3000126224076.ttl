@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k859253s/manifest> ;
+	ebucore:fileByteSize    "58654"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "734"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k859253s>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:30:35.132Z" ;
+	dcterms:modified          "2018-07-23T15:29:31.779Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k859253s> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k859253s.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859253s>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k859253s> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k859253s.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:12.803Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859253s> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:12.802Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859253s> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k859253s>
+	a                   ore:Proxy ;
+	dc:contributor      "Jonas, Gustav Maria. Auteur du texte", "Richling, Joseph. Auteur ou responsable intellectuel", "Krüger, Adolph. Auteur du texte", "Banck, Carl (1809-1889). Auteur du texte", "Flad, Anton. Auteur du texte", "Proch, Heinrich (1809-1878). Auteur ou responsable intellectuel", "Slama, Anton. Auteur du texte", "Saemann, Carl Heinrich. Auteur du texte", "Matthisson, Friedrich von (1761-1831). Auteur du texte", "Rossi, Henriette. Auteur du texte", "Muesmann, Carl. Auteur du texte", "Lersch, Laurenz. Auteur du texte", "Bas, Edouard. Auteur du texte", "Bergt, August. Auteur du texte", "Geissler, Carl (1802-1869). Auteur du texte", "Lingck, Freiherr Johannes von. Auteur du texte", "Steglitz, H.. 070", "Berg, Konrad-Mathias (1785-1852). Auteur ou responsable intellectuel", "Arndt. Auteur du texte", "Weller, Gustav. Auteur du texte", "Vesque von Püttlingen, Johann (1803-1883). Auteur ou responsable intellectuel", "Castelli, Ignaz Franz (1781-1862). Auteur du texte", "Kartscher, Moritz. Auteur du texte", "Lʹvov, Aleksej Fedorovič (1798-1870). Auteur ou responsable intellectuel", "Heydebrand, E. v.. Auteur du texte", "Beckmann, L. C.. Auteur du texte", "Hermstedt, J. S.. Auteur du texte", "Byron, George Gordon Byron (1788-1824 ; baron). Auteur du texte", "Rinck, Johann Christian Heinrich (1770-1846). Auteur ou responsable intellectuel", "Kummer, Friedrich August (1797-1879). Auteur ou responsable intellectuel", "Sechter, Simon (1788-1867). Auteur du texte", "Vogl, J. N.. Auteur ou responsable intellectuel", "Chelard, Hippolyte-André-Baptiste (1789-1861). Auteur ou responsable intellectuel", "Rousseau, J. B.. Auteur du texte", "Theile, Ad. G.. Auteur du texte", "Bäse, Emilie. Auteur du texte", "Gosser, J. E.. Auteur du texte", "Lannoy, Eduard Freiherr von. Auteur du texte", "Eccard, Adolph Wilhelm. Auteur du texte", "Schwenke, Johann Friedrich. Auteur du texte", "Wallerstein, Anton (1813-1892). Auteur du texte", "Pezold, G. F.. Auteur du texte", "Göphardt, Adolph v.. Auteur du texte", "Kocher, Conrad (1786-1872). Auteur du texte", "Hasenbalg, J. Fr.. Auteur du texte", "Henkel, M.. Auteur du texte", "Sternau, C. O. (1820-1862). Auteur du texte", "Lobe, Johann Christian (1797-1881). Auteur du texte", "Sonderhausen, Carl. Auteur du texte", "Silcher, Friedrich (1789-1860). Arrangeur", "Ahout, Willibrordus Theodulus. Auteur du texte", "Ney, Joseph-Napoléon (1803-1857). Auteur ou responsable intellectuel", "Kochański, Paweł (1887-1934). Auteur ou responsable intellectuel", "Marx, Pauline. Auteur du texte", "Kneisel, C. M.. Auteur du texte", "Bäse, Fr.. Auteur du texte", "Banck, Otto Alex. Auteur du texte", "Le Sueur, Jean-François (1760-1837). Auteur ou responsable intellectuel", "Shelley, Percy Bysshe (1792-1822). Auteur du texte", "Sappho (0612?-0557? av. J.-C.). Auteur du texte", "Schechner-Waagen, Nannette. Auteur du texte", "Kayserling, Herrmann von. Auteur du texte", "Joukowski, Vassili. Auteur du texte", "Schilling, Gustav (1805-1880). Préfacier", "Gedenkbuch, Ein. Auteur ou responsable intellectuel", "Alster, A.. Auteur du texte", "Schröder-Devrient, Wilhelmine (1804-1860). Auteur du texte", "Moeser, Auguste. Auteur du texte", "Baermann, Heinrich (1784-1847). Auteur du texte", "Friedlowsky, Joseph. Auteur du texte", "Dingelstaedt, Jenny. Auteur du texte", "Schirgen, Georg. Auteur du texte", "Düringsfeld, Ida von. Auteur du texte", "Bogner, Ferdinand. Auteur du texte", "Mangold, W.. Auteur ou responsable intellectuel", "Lenau, Nikolaus (1802-1850). Auteur du texte", "Eisenhofer, Franz Xaver (1783-1858). Auteur du texte", "Schmidt, Friedrich. Auteur du texte", "Chamisso, Adelbert von (1781-1838). Auteur ou responsable intellectuel", "Hering, Carl Gottlieb (1766-1853). Auteur ou responsable intellectuel", "Dingelstedt, Franz (1814-1881). Auteur du texte", "Goethe, Johann Wolfgang von (1749-1832). Auteur du texte", "Anschütz, Johann Andreas (1772-1856). Auteur ou responsable intellectuel", "Gathy, August (1800-1858). Auteur du texte", "Anacker, August Ferdinand (1790-1854). Auteur ou responsable intellectuel", "Strauss, Jos.. Auteur du texte", "Wihl, Ludwig. Auteur du texte", "Hugo, Victor (1802-1885). Auteur du texte", "Nordmann. Auteur du texte", "Oldenburg, Ferd. Aug.. Auteur du texte", "Theuss, Theodor. Auteur du texte", "Müller, Elise. Auteur du texte", "Schefer, Leopold (1784-1862). Auteur du texte", "Seidl, Johann Gabriel (1804-1875). Auteur du texte", "Geissler, A.. Auteur ou responsable intellectuel", "Kuipers, Laurentius. Auteur du texte", "Späth, André. Auteur du texte", "Fuchs, Aloys (1799-1853). Éditeur scientifique", "Braun, F.. Auteur du texte", "Reiniger, Emil. Auteur du texte", "Hackel, Anton. Auteur du texte", "Kahlert, August. Auteur du texte", "Dotzauer, Justus Johann Friedrich (1783-1860). Auteur du texte", "Schariczet, Georg. Auteur du texte", "Moeser, Carl. Éditeur scientifique" ;
+	dc:creator          "Gollmick, Karl (1796-1866). Compositeur", "Spontini, Gaspare (1774-1851). Compositeur", "Berlin, Antoine. Compositeur", "Barnbeck, Fr.. Compositeur", "Körner, Gotthilf Wilhelm (1809-1865). Compositeur", "Ulrich, E. M.. Compositeur", "Hoven, J.. Compositeur", "Morgenroth, Franz. Compositeur", "Neukomm, Sigismund (1778-1858). Compositeur", "Hering, C. E.. Compositeur", "Schmidt, J. P.. Compositeur", "Le Sueur, Jean-François (1760-1837). Compositeur", "Roch, Heinrich. Compositeur", "Böhm, Joseph (1795-1876). Compositeur", "Henselt, Adolf (1814-1889). Compositeur", "Kücken, Friedrich Wilhelm (1810-1882). Compositeur", "Hering, M. C. G.. Compositeur", "Benedict, Julius (1804-1885). Compositeur", "Vieuxtemps, Henry (1820-1881). Compositeur", "Häser, Wilhelm. Compositeur", "Liszt, Franz (1811-1886). Compositeur", "Mendel, J.. Compositeur", "Fischer, A. J.. Compositeur", "Wahle, Franz. Compositeur", "Horsley, Charles Edward. Compositeur", "Fürstenau, Anton Bernhard (1792-1852). Compositeur", "Salzmann, Carl Gottfried. Compositeur", "Siewert, Heinrich. Compositeur", "Henning, J. W.. Compositeur", "Hüttenbrenner, Anselm (1794-1868). Compositeur", "Czerny, Carl (1791-1857). Compositeur", "Rungenhagen, Friedrich. Compositeur", "Milanollo, Maria (1832-1848). Compositeur", "Krocker, J. W.. Compositeur", "Kühmstedt, Friedrich (1809-1858). Compositeur", "Wiss, H. B.. Compositeur", "Onslow, George (1784-1853). Compositeur", "Gabrielski, W.. Compositeur", "Anaker, A. F.. Compositeur", "Gyrowetz, Adalbert (1763-1850). Compositeur", "Geissler, Carl (1802-1869). Compositeur", "Abenheim, Joseph. Compositeur", "Nohr, Friedrich. Compositeur", "Drobisch, C. L.. Compositeur", "Häser, August Ferdinand. Compositeur", "Elwart, Antoine (1808-1877). Compositeur", "Markull, W.. Compositeur", "Héquet, Gustave (1803-1865). Compositeur", "Schlösser, Louis. Compositeur", "Hahn, Bernhard. Compositeur", "Dont, Jakob (1815-1888). Compositeur", "Mozart, Wolfgang Amadeus (1756-1791). Compositeur", "Anschuez, J. A.. Compositeur", "Höpner, Christian Gottlieb. Compositeur", "Berg, Conrad. Compositeur", "Kommer, F. A.. Compositeur", "Mayseder, Joseph (1789-1863). Compositeur", "Walter, August. Compositeur", "Adam, Adolphe (1803-1856). Compositeur", "Hoppe, J. G.. Compositeur", "Taylor, Edward. Compositeur", "Halévy, Fromental (1799-1862). Compositeur", "Farrenc, Victorine. Compositeur", "Kreutzer, Léon (1817-1868). Compositeur", "Farrenc, Louise (1804-1875). Compositeur", "Haslinger, Carl. Compositeur", "Küffner, Joseph (1776-1856). Compositeur", "Milster, Ag. Fd. Compositeur", "Kretschmar, Friedr. Wilh.. Compositeur", "Goldschmidt, Sigmund. Compositeur", "Kastner, Jean-Georges (1810-1867). Compositeur", "Roeckel, Edouard. Compositeur", "Lange, C. A.. Compositeur", "Romberg, Cyprian (1807-1865). Compositeur", "Pollmann, August. Compositeur", "Richling, I.. Compositeur", "Haslinger, Tobias. Compositeur", "Beethoven, Ludwig van (1770-1827). Compositeur", "Reinhold, H. R.. Compositeur", "Franco-Mendès, Jacques (1812-1889). Compositeur", "Reissiger, Carl Gottlieb (1798-1859). Compositeur", "Schneider, Friedrich (1786-1853). Compositeur", "Rinck, Johann Christian Heinrich (1770-1846). Compositeur", "Kuhe, Wilhelm (1823-1912). Compositeur", "Meyerbeer, Giacomo (1791-1864). Compositeur", "Lʹvov, Aleksej Fedorovič (1798-1870). Compositeur", "Schnyder von Wartensee, Xaver (1786-1868). Compositeur", "Ney, Joseph-Napoléon (1803-1857). Compositeur", "Kocher, Conrad (1786-1872). Compositeur", "Pott, August. Compositeur", "Drieberg, Fr. v.. Compositeur", "Otto, Julius. Compositeur", "Bach, August Wilhelm. Compositeur", "Guhr, Charles. Compositeur", "Milanollo, Teresa (1827-1904). Compositeur", "Müller, Fried.. Compositeur", "Reichardt, G.. Compositeur", "Wiegand, J.. Compositeur", "Chelard, A. H.. Compositeur", "Belcke, Fr.. Compositeur", "Sponholtz, A. H.. Compositeur", "Lipiński, Karol (1790-1861). Compositeur", "Koehler, Ernst. Compositeur", "Pitsch, Karel František (1786-1858). Compositeur", "Raff, Joachim (1822-1882). Compositeur", "Franz, Stefan. Compositeur", "Macfarren, G. A.. Compositeur", "Saint-Lubin, Léon de (1805-1850). Compositeur", "Feierlich, Mangold W.. Compositeur", "Schnabel, Carl. Compositeur" ;
+	dc:description      "[Mélanges. Beethoven, Ludwig van]", "Titre uniforme : Le Sueur, Jean-François (1760-1837). Compositeur. [La mort d'Adam]" ;
+	dc:format           "Nombre total de vues :  348", "In-4°, XVI-312 p., bandeaux ornés" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k859253s" ;
+	dc:language         "fre" ;
+	dc:publisher        "Hallberger'sche Verlagshandlung (Stuttgart)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb42840853r" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VM7-2138" ;
+	dc:subject          "Motets -- 19e siècle"@fre ;
+	dc:title            "Beethoven-Album. Ein Gedenkbuch dankbarer' Liebe und Verehrung für den grossen Todten" ;
+	dc:type             "Genre musical : motet" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k859253s> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k859253s.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5674"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "192"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "126"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k859253s>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k859253s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k859253s> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k859253s/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k859253s/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k859253s>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "359166"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

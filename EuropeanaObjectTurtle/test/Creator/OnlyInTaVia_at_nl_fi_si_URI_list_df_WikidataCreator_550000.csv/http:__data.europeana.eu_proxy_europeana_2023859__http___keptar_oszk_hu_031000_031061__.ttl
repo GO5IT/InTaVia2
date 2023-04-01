@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031000_031061__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:45:10.702Z" ;
+	dcterms:modified          "2015-09-14T11:47:55.291Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F031000%2F031061%2Fvende1_07_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:41.308Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031000_031061__> .
+
+<http://keptar.oszk.hu/031000/031061/vende1_07_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5611"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/031000/031061>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031000_031061__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:41.308Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031000_031061__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031000_031061__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/031000/031061> ;
+	edm:object         <http://keptar.oszk.hu/031000/031061/vende1_07_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_031000_031061__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031000_031061__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_031000_031061__>
+	a                    ore:Proxy ;
+	dc:creator           "Róth,  András Lajos (digitized By)"@hu, "Than ,  Mór  (painter)"@hu ;
+	dc:description       "A húnok költészetére vonatkozólag igen becses adatokat tartott fenn Priscus bizanczi rhétor, a ki nagy történeti művének egy helyén ezt irja: \u0022Estére kelve fáklyákat gyújtottak s két barbar (hún) lépett be Attelászszal szembe és annak győzelmeit és hadi erényeit énekelve, önkészítette dalokat mondott. A vendégek szemeiket rájuk függesztették és némelyek a költeményben gyönyörködének, mások a csatákra visszaemlékezve, gondolatokba mélyedének\u0022. Ezt a jelenetet tünteti fel képünk. Lépcsőzetes trónon, komoly, elmélyedt tekintettel ül Attila. Jobbján legkedvesebb fia Ernák, előrehajolva figyel az énekre; mellette az énekesek lelkesítő dalának varázsától felhevült hún ifjak, az asztal előtt, a múlt dicső emlékeibe merült öregek. Balról, a kép oldalán a görög követség ül. A háttér menyezetes fülkéiben Attila nejei látatók. - A képet Than Mór festette, (szül. 1828. Ó-Becsén, meghalt 1899.) Eredetije a budapesti Vigadó falfesténye."@hu ;
+	dc:format            "JPEG képállomány \u000A         2024x1590 \u000A         300 \u000A         szürke \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/031000/031061   [Metadata]" ;
+	dc:relation          "Vende Ernő: A magyar irodalomtörténet képekben [ http://mek.oszk.hu/09800/09807/]"@hu, "Szent László megszabadítja az elrablott magyar leányt (A Thuróczi-krónika 1488-iki augsburgi kiadásának czimképe.) [ http://keptar.oszk.hu/031000/031059]"@hu ;
+	dc:source            "OSZK MEK"@hu ;
+	dc:subject           "magyar történelem"@hu, "History, local history"@hu, "Attila (Hun Birodalom: király) (406-453)"@hu, "History of literature, literary studies"@hu, "hunok"@hu, "honfoglalás előtti kor"@hu ;
+	dc:title             "Attila lakomája"@hu ;
+	dc:type              "painting"@hu ;
+	dcterms:alternative  "Than Mór festménye a fővárosi Vigadóban"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031000_031061__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031000_031061__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031000_031061__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

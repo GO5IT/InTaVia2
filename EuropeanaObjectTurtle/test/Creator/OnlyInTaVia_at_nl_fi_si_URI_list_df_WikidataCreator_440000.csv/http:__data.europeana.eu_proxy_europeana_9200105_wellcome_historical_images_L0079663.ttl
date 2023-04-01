@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200579/tfwvvykc>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200579/tfwvvykc> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:isShownAt      <https://wellcomecollection.org/works/tfwvvykc> ;
+	edm:isShownBy      <https://iiif.wellcomecollection.org/image/L0079663.jpg/full/512,/0/default.jpg> ;
+	edm:object         <https://iiif.wellcomecollection.org/image/L0079663.jpg/full/500,/0/default.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000044932001> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<https://iiif.europeana.eu/presentation/9200579/tfwvvykc/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000044932001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Wellcome Collection"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200579/tfwvvykc>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-09T11:31:57.959Z" ;
+	dcterms:modified          "2019-06-09T11:31:57.959Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200579/tfwvvykc#metadataTier>, <http://data.europeana.eu/item/9200579/tfwvvykc#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200579/tfwvvykc> ;
+	edm:completeness          "7" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200579_Ag_UK_WellcomeCollection_IIIF" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200579/tfwvvykc> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FL0079663.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/9200579/tfwvvykc#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:22:26.387Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/tfwvvykc> .
+
+<http://data.europeana.eu/item/9200579/tfwvvykc>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200579/tfwvvykc>
+	a                   ore:Proxy ;
+	dc:description      "Plate 190. A face in profile with visible blood vessels."@en ;
+	dc:identifier       "b1280535", "tfwvvykc", "L0079663" ;
+	dc:rights           "Credit: Wellcome Collection" ;
+	dc:source           "L0079663" ;
+	dc:subject          "Profile"@en, "Moustache"@en, "Face"@en, "Man"@en, "Blood vessel"@en ;
+	dc:title            "A face in profile with visible blood vessels." ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/tfwvvykc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200579/tfwvvykc> .
+
+<https://iiif.wellcomecollection.org/image/L0079663.jpg/full/500,/0/default.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "77712"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "789"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "500"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAFAD2"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.wellcomecollection.org/image/L0079663.jpg>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level1.json> .
+
+<http://data.europeana.eu/item/9200579/tfwvvykc#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:22:26.387Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200579/tfwvvykc> .
+
+<https://wellcomecollection.org/works/tfwvvykc>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "264409"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.wellcomecollection.org/image/L0079663.jpg/full/512,/0/default.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200579/tfwvvykc/manifest> ;
+	ebucore:fileByteSize    "80932"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "808"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAFAD2"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	svcs:has_service        <https://iiif.wellcomecollection.org/image/L0079663.jpg> .
+
+<http://data.europeana.eu/proxy/europeana/9200579/tfwvvykc>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200579/tfwvvykc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200579/tfwvvykc> .

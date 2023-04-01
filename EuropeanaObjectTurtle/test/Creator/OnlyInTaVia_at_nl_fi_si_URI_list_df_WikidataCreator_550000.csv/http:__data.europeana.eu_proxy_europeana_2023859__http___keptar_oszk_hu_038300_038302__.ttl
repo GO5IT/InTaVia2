@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:44.767Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038302__> .
+
+<http://keptar.oszk.hu/038300/038302>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038302__/manifest> ;
+	ebucore:fileByteSize    "111"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/plain" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:44.767Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038302__> .
+
+<http://keptar.oszk.hu/038300/038302/1898_Oldal_066_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17497"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038302__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038302__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038302> ;
+	edm:object         <http://keptar.oszk.hu/038300/038302/1898_Oldal_066_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038302__>
+	a                   ore:Proxy ;
+	dc:creator          "Barabás ,  Miklós  (painter)"@hu ;
+	dc:description      "Barabás Miklós a 19. század első felének egyik legjelentősebb művésze, akit a klasszicizáló romantika stílusában készült portréi és életképei tettek rendkívül népszerűvé. Bár életművének jelentős részét arcképei teszik ki, Barabásnak igen fontos szerepe volt a népi életkép műfajának hazai elterjesztésében is. Barabás 1855-ben kapott megbízást a Pesti Műegylettől egy sokalakos népi életkép megfestésére. A témát ő választotta ki, választásában szerepet játszott, hogy a lakodalom ábrázolása népszerű volt a magyar festészetben, így Sterio Károly és Jankó János is festett hasonló jeleneteket. A meny megérkezése című kép előképének Ferdinand Waldmüller Perchtoldsdorfi lakodalom című festménye tekinthető. A Barabás-kép kompozíciós elrendezése, akárcsak Waldmülleré, színpadszerű. A színpadképi hatást fokozza a mozdulatok merevsége, a táncmozdulat ügyetlensége, a felfogásban megnyilvánuló naivitás. A nemzeti színek megjelenítése jelentősen növelte a kép népszerűségét. A nemzeti színek a kép bal szélén táncoló vőfély ruhájára kitűzött bokrétán és a kezében tartott boton lévő szalagokon, valamint a menyasszony és a mellette álló vőlegény ruházatán tűnnek fel. A képnek minden esetlensége dacára is nagy volt a sikere, amint ezt a Charpentier által készített litográfia és a későbbi ajándék műlap is bizonyítja, amely jelentősen megnövelte a Műegylet részvényeseinek számát. (Forrás: Magyar Nemzeti Galéria)"@hu ;
+	dc:format           "JPEG képállomány \u000A         2288x1672 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/038300/038302   [Metadata]" ;
+	dc:relation         "Wikipédia: Barabás Miklós [ http://hu.wikipedia.org/wiki/Barab%C3%A1s_Mikl%C3%B3s]"@hu, "Barabás Miklós: A meny megérkezése [ http://www.berze-nagy.sulinet.hu/stilus/klasszicizmus/meny.htm]"@hu, "Barabás Miklós: A menyasszony megérkezése [ http://www.mng.hu/kiallitasok/allando/176/675]"@hu, "Wikipédia: A menyasszony megérkezése [ http://hu.wikipedia.org/wiki/F%C3%A1jl:Barabas,_Miklos_-_The_Arrival_of_the_Daughter-in-law_%281856%29.jpg]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "Fine arts, visual arts"@hu, "biedermeier"@hu, "lakodalmi szokás"@hu, "népviselet"@hu, "csoport"@hu, "életkép"@hu ;
+	dc:title            "A meny megérkezése"@hu ;
+	dc:type             "esemény"@hu, "újságrészlet"@hu, "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038302__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038302__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/3129> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038302__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038302__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:43.419Z" ;
+	dcterms:modified          "2015-09-14T11:54:04.626Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038302%2F1898_Oldal_066_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/3129>
+	a                skos:Concept ;
+	skos:altLabel    "Team"@cs, "Team"@sv, "Team"@da, "Equip multidisciplinar"@ca, "Joukkue"@fi, "Teamfähigkeit"@de, "Equipe"@fr ;
+	skos:exactMatch  <https://www.freebase.com/m/011l78>, <http://data.bnf.fr/ark:/12148/cb11961098w>, <http://id.loc.gov/authorities/names/sh85148150>, <http://dewey.info/class/658.4022/>, <http://d-nb.info/gnd/4124562-3>, <http://vocab.getty.edu/aat/300248011>, <http://www.wikidata.org/entity/Q327245>, <https://g.co/kg/m/011l78> ;
+	skos:note        "Skupina sdílející společný cíl"@cs, "Grupo de personas unidas con un objetivo común"@es, "Группа людей, объединённая общей целью"@ru, "Group linked in a common purpose"@en, "Grupa dążąca do osiągnięcia wspólnego celu"@pl, "Grup format per diferents persones amb un objectiu comú"@ca, "Groupe organisé autour d'un objectif commun"@fr, "Meghatározott céllal, előre megszervezett emberek összessége"@hu, "Zusammenschluss von mehreren Personen zur Lösung einer bestimmten Aufgabe oder zur Erreichung eines bestimmten Zieles"@de, "Grupa ar kopīgu mērķi"@lv, "Grúpa daoine a bhfuil sprioc i gcoitinne acu"@ga ;
+	skos:prefLabel   "Equipa"@pt, "Equipo"@es, "Tim"@hr, "Meeskond"@et, "Foireann"@ga, "Ομάδα"@el, "Csoport"@hu, "Team"@de, "Team"@en, "Team"@nl, "Тим"@bg, "Equip"@ca, "Arbetslag"@sv, "Ekipa"@sl, "Tím"@sk, "Komanda"@lt, "Komanda"@lv, "Tiimi"@fi, "Echipă"@ro, "Squadra"@it, "Équipe"@fr, "Команда"@ru, "Hold"@da, "Zespół"@pl, "Tým"@cs .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038302__>
+	a  edm:ProvidedCHO .

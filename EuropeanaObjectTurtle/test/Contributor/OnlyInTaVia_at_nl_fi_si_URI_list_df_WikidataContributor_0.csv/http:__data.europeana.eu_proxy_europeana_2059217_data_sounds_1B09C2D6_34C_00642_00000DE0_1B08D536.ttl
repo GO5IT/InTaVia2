@@ -1,0 +1,106 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:50:15.617487Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/1B09C2D6-34C-00642-00000DE0-1B08D536> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/soundgenres/soundgenres/Spoken_word_recordings/Spoken_word_performance_recordings>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Recordings of spoken word performances, for example readings of poems."@en ;
+	skos:prefLabel  "Grabaciones sonoras de las interpretaciones de las palabras habladas"@es, "Nagrania dźwiękowe z występów wypowiadanych słów"@pl, "Enregistrements sonores des performances des mots parlés"@fr, "Registrazioni sonore di spettacoli di parole parlate"@it, "Spoken word performance recordings"@en, "Tonaufnahmen von Aufführungen von gesprochenen Worten"@de .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:50:15.617101Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> .
+
+<http://www.mediathek.at/atom/1B09C2D6-34C-00642-00000DE0-1B08D536>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536>
+	a                   ore:Proxy ;
+	dc:contributor      "Hitler, Adolf [Redner/in]" ;
+	dc:coverage         "Bundesland / Wien20. Jahrhundert - 30er JahreWien, Heldenplatz, Nationalbibliothek [Ortsbezug]" ;
+	dc:date             "1938.03.15" ;
+	dc:format           "Tonband auf Kern (AEG), Mp3-Audiodatei" ;
+	dc:identifier       "1B09C2D6-34C-00642-00000DE0-1B08D536" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/soundgenres/Spoken_word_recordings/Spoken_word_performance_recordings>, "Parteien - historisch / NSDAP"@de, "Reden und Ansprachen"@de, "Politik Österreich"@de, "Propaganda"@de, "Faschismus und Nationalsozialismus"@de, "Radiosendung-Mitschnitt"@de ;
+	dc:title            "Adolf Hitler auf dem Heldenplatz am 15. März 1938"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.oesterreich-am-wort.at/sammlung/idn/107/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/1B09C2D6-34C-00642-00000DE0-1B08D536" ;
+	dc:language         "deu" ;
+	dc:subject          <http://data.europeana.eu/concept/133> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-22T10:17:09.731Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536#contentTier>, <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_1B09C2D6_34C_00642_00000DE0_1B08D536> ;
+	edm:language              "de" .
+
+<http://data.europeana.eu/concept/133>
+	a                skos:Concept ;
+	skos:altLabel    "Propoganda"@lv ;
+	skos:exactMatch  <http://d-nb.info/gnd/4076374-2>, <http://vocab.getty.edu/aat/300055539>, <http://purl.org/bncf/tid/7772>, <http://www.yso.fi/onto/yso/p5617>, <http://id.loc.gov/authorities/names/sh85107443>, <http://www.wikidata.org/entity/Q7281>, <http://id.ndl.go.jp/auth/ndlna/01178425>, <http://dewey.info/class/303.375/>, <http://vocabularies.unesco.org/thesaurus/concept5753>, <https://www.freebase.com/m/05s0v>, <https://g.co/kg/m/05s0v>, <http://id.nlm.nih.gov/mesh/D011406>, <http://data.bnf.fr/ark:/12148/cb135492000> ;
+	skos:note        "Forme intentionnelle et systématique de persuasion"@fr, "Form of communication intended to sway the audience through presenting only one side of the argument"@en, "Informació presentada i difosa amb el fi de donar suport una determinada agenda o promocionar un producte."@ca, "Subjektive oplysninger"@da, "Aatteen tai opin järjestelmällistä levitystä mielipiteen muokkaamiseksi"@fi, "Forma komunikace představující pouze jednu stranu argumentu"@cs, "Vorm van communicatie bedoeld om het publiek te beïnvloeden door slechts één kant van het argument te presenteren"@nl, "Manipulation von Vorstellungen und Haltungen zu politischen Zwecken"@de, "Patiesas vai maldīgas informācijas izplatīšana lielam cilvēku skaitam vēlamā efekta panākšanai"@lv, "Forma de comunicación dirigida a influir en la actitud de un colectivo hacia algo o alguien"@es, "Attività di disseminazione di idee e informazioni con lo scopo di indurre a specifiche attitudini e azioni"@it, "Форма коммуникации, представляющая только одну сторону аргумента"@ru ;
+	skos:prefLabel   "Propaganda"@lv, "Propaganda"@hr, "Propaganda"@it, "Propaganda"@hu, "Propaganda"@es, "Propaganda"@et, "Propaganda"@cs, "Propaganda"@sk, "Propaganda"@sl, "Propaganda"@pl, "Propaganda"@da, "Propaganda"@nl, "Propaganda"@ca, "Пропаганда"@bg, "Пропаганда"@ru, "Propagandă"@ro, "Προπαγάνδα"@el, "Propagande"@fr, "Propaganda"@lt, "Propaganda"@de, "Propaganda"@sv, "Propaganda"@fi, "Propaganda"@pt, "Propaganda"@en .

@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:05.678Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057462097> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:05.677Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057462097> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057462097&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5359"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "102"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057462097>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:057462097> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057462097&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/concept/1891>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/862139>, <https://www.freebase.com/m/021yby>, <http://babelnet.org/rdf/s00019329n>, <http://g.co/kg/g/113qbc1zb>, <http://www.yso.fi/onto/yso/p21466>, <https://schema.org/CityHall>, <https://g.co/kg/m/021yby>, <http://iconclass.org/44B233>, <http://id.loc.gov/authorities/names/sh85026266>, <http://www.wikidata.org/entity/Q25550691>, <http://vocab.getty.edu/aat/300122210> ;
+	skos:note        "Bâtiment servant de siège à un gouvernement local"@fr, "Budynek użyteczności publicznej, zwykle tradycyjna siedziba samorządowych władz miejskich"@pl, "Administrationsbygning for byen, kommunen eller en anden form for kommune"@da, "Sitz der Kommunalverwaltung"@de, "Chief administrative building of a municipality"@en, "Το κύριο διοικητικό κτίριο ενός δήμου"@el, "Települések központi kormányzati épülete a világ bármely pontján"@hu, "Здание городского управления"@ru, "Veřejná budova obce nebo města, obvykle správní sídlo"@cs, "Sede administrativa principal de un gobierno local (genérico)"@es, "Verejná budova obce alebo mesta, zvyčajne správne sídlo"@sk, "Edificio sede dell'amministrazione locale"@it, "Administrativ huvudbyggnad i en kommun"@sv, "Edifício sede de um município"@pt ;
+	skos:prefLabel   "Hôtel de ville"@fr, "Városháza"@hu, "Kunnantalo"@fi, "Gemeindehaus"@de, "Kommunhus"@sv, "Udaletxe"@eu, "Seu del govern local"@ca, "Mestna hiša"@sl, "Δημαρχείο"@el, "Rådhus"@da, "Primărie"@ro, "Gemeentehuis"@nl, "Halla baile"@ga, "Obecný dom"@sk, "Pilsētas dome"@lv, "Town hall"@en, "Ratusz"@pl, "Casa consistorial"@es, "Vallamaja"@et, "Дом общины"@ru, "Câmara municipal"@pt, "Obecní dům"@cs, "Palazzo comunale"@it .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:057462097>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50792"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_057462097>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:06:38.387Z" ;
+	dcterms:modified          "2018-04-05T17:24:57.264Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_057462097> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A057462097%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_057462097>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/35760> ;
+	dc:creator          <http://data.europeana.eu/agent/35760> ;
+	dc:subject          <http://data.europeana.eu/concept/1891> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_057462097> .
+
+<http://data.europeana.eu/agent/35760>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/154174> ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500002589>, <http://d-nb.info/gnd/121453790>, <http://openlibrary.org/works/OL152657A>, <http://id.worldcat.org/fast/192270>, <http://id.loc.gov/authorities/names/n86091417>, <https://www.freebase.com/m/0by02rp>, <http://viaf.org/viaf/54420363>, <http://dbpedia.org/resource/Johannes_Bosboom>, <http://www.wikidata.org/entity/Q1697296>, <http://data.bibliotheken.nl/id/thes/p069877939>, <http://data.bnf.fr/ark:/12148/cb149701914>, <https://g.co/kg/m/0by02rp>, <http://www.idref.fr/197331580/id> ;
+	rdaGr2:dateOfBirth   "1817-02-18" ;
+	rdaGr2:dateOfDeath   "1891-09-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40360> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40360> ;
+	skos:altLabel        "Bosboom"@en, "Johannes bosboom"@fr, "Jan. bosboom"@en, "Bosboom, Johannes"@sv, "Bosboom jan"@en, "Jan boosboom"@en, "J. Bosboom"@en, "J. Bosboom"@nl, "Jan bosboom"@en, "Bosboom j."@en, "Босбом, Йоханнес"@ru, "Jan Bosboom"@en ;
+	skos:note            "Pictor olandez"@ro, "Peintre néerlandais"@fr, "Niederländischer Maler"@de, "Pintor neerlandès"@ca, "Pintor neerlandés"@es, "Pintor neerlandês"@pt, "Nizozemský malíř"@cs, "Hollandi maalikunstnik"@et, "Pittore neerlandese"@it, "Dutch painter (1817-1891)"@en, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel       "Johannes Bosboom"@sk, "Johannes Bosboom"@sl, "Johannes Bosboom"@ga, "Johannes Bosboom"@pl, "Johannes Bosboom"@ro, "Johannes Bosboom"@da, "Johannes Bosboom"@ca, "Johannes Bosboom"@nl, "Йоханнес Босбом"@ru, "Johannes Bosboom"@es, "Johannes Bosboom"@de, "Johannes Bosboom"@fi, "Johannes Bosboom"@sv, "Johannes Bosboom"@pt, "Johannes Bosboom"@en, "Johannes Bosboom"@it, "Johannes Bosboom"@fr, "Johannes Bosboom"@et, "Johannes Bosboom"@cs .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_057462097>
+	a                   ore:Proxy ;
+	dc:contributor      "Johannes Bosboom" ;
+	dc:creator          "Johannes Bosboom" ;
+	dc:description      "Vindplaats: Verzameling Rudolf J. Kijzer; W.S. Unger: Cat. v.d. hist. top. Atlas v.h. Zeeuws Gen., dl. II, nr. 414", "Uitgave der Vereniging tot bevordering van beeldende Kunsten" ;
+	dc:format           "gravure (helio)" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:057462097" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[057462097], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "rechtszitting ((semi-)realistisch)"@nl, "Middelburg"@nl, "Justitia (staand, weegschaal, zwaard) (Rechtssymbool)"@nl, "rechtszaal"@nl, "gemeentehuis"@nl ;
+	dc:title            "Vierschaar van het stadhuis van Middelburg" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "18XX" ;
+	dcterms:extent      "16 × 21 cm" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_057462097> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_057462097> .

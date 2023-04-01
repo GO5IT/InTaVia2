@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/f1> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52502921q>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:36:59.681Z" ;
+	dcterms:modified          "2018-07-23T15:36:50.718Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b52502921q> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b52502921q.thumbnail.jpg&type=TEXT> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52502921q>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "197587"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52502921q/manifest> ;
+	ebucore:fileByteSize    "57889"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "352"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52502921q/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:08.519Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52502921q> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:08.519Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52502921q> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b52502921q>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1608" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52502921q> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b52502921q>
+	a                   ore:Proxy ;
+	dc:creator          "Le Jeune, Claude (1530?-1600). Compositeur" ;
+	dc:date             "1608" ;
+	dc:description      "Titre uniforme : Le Jeune, Claude (1530?-1600). Compositeur. [Airs. Voix (3 à 6). Livre 2]", "Comprend : [I] - Tel qu'aigle suis tro-hardi (à 3 et 5 v.) - [II] - Ie me plaignois à tou-propos (à 3 et 5 v.) - [III] - Trinke, trink, trink, pon pokras (à 3 et 5 v.) - [IV] - Vivre tout honteux, soucieux (à 3 et 5 v.) - [V] - Sui ton erre (coeur bizerre) (à 3 et 5 v.) - [VI] - Comme le foenix ja mort (à 3 et 5 v.) - [VII] - A l'ayde, helas, amis (à 3 et 5 v.) - [VIII] - Puis que tu es jeune d'ans (à 3 et 5 v.) - [IX] - Pour vous (nimfe) ne cesser (à 3 et 5 v.) - [X] - Le bandoulier va du passant (à 3 et 5 v.) - [XI] - Muze, ressen-toy d'un fat (à 4 et 6 v.) - [XII] - Qui onc l'amour noma (à 4 v.) - [XIII] - La belle fleur qui videt ayme (à 3 et 5 v.) - [XIV] - Patourelles joliettes (à 3 et 5 v.) - [XV] - Onque ne fut si farouche (à 3 et 5 v.) - [XVI] - Pourquoy m'as tu quité (à 3 et 5 v.) - [XVII] - L'un se repaist du violet (à 3 et 5 v.) - [XVIII] - Si d'une petite oeillade (à 3 et 5 v.) - [XIX] - Tout autant de regards (à 3 v.) - [XX] - Dedans le noeu suis-je areté (à 3 et 5 v.) - [XXI] - Lors que le noeu se brisera (à 3 et 5 v.) - [XXII] - A la fraischeur, je voudrois (à 4 v.) - [XXIII] - S'il s'estoit entre les fleurs (à 4 et 5 v.) - [XXIV] - Ce n'est que beau, que bon (à 4 et 5 v.) - [XXV] - D'un sort du ciel aresté (à 3 et 5 v.) - [XXVI] - Si folie estoit douleur (à 3 et 5 v.) - [XXVII] - Les boeufs qui le soc tireront (à 3 et 5 v.) - [XXVIII] - Nimfe, je suis le Fénis (à 3 et 5 v.) - [XXIX] - D'un coeur fier le refus amer (à 3 et 5 v.) - [XXX] - Qu'il n'aille plus se montrant (à 3 et 5 v.) - [XXXI] - Trèbien, tu peux me laisser (à 3 et 5 v.) - [XXXII] - Maitresse, i' faut bien un jour (à 4 v.) - [XXXIII] - Ah ! tu me fais de dezir (à 4 et 6 v.) - [XXXIIV] - Tros Anchisiade facilis (à 4 v.) - [XXXIIV] - In puteum facili descensu (IIa pars) - [XXXV] - O mon amour, tou mon heur (à 3 et 5 v.) - [XXXVI] - Lors que mourois de t'aymer (à 3 et 5 v.) - [XXXVII] - Ces amoureux n'ont que douleurs (à 3 et 5 v.) - [XXXVIII] - Su' la coline me proumenois (à 3 et 5 v.) - [XXXIX] - Ie ne say qui te tient (à 3 et 5 v.) - [XL] - O qu'il est heureux (à 3 et 5 v.) - [XLI] - Belle vien tost de queque espoir (à 3 et 5 v.) - [XLII] - O chaus soupirs (à 3 et 5 v.) - [XLIII] - Prens de moy quelque pitié (à 3 et 5 v.) - [XLIV] - Bien que soit la lanqueur (à 4 v.) - [XLV] - Belle vien tost de quelque espoir (à 4 et 6 v.) - [XLVI] - Doucette, doux sucre fin (à 4 et 5 v.) - [XLVII] - Mon coeur, que d'ennuis (à 4 et 5 v.) - [XLVIII] - O mon amour, tu t'en fuis (à 3 et 5 v.) - [XLIX] - Puis que d'icy je m'en vais (Response ; à 3 et 5 v.) - [L] - O beaux yeux, le miroir (à 3 et 5 v.) - [LI] - O traitresse qui fus (à 4 et 5 v.) - [LII] - O doux et beaux yeux (à 3 et 5 v.) - [LIII] - Doucette, doux sucre fin (à 3 et 5 v.) - [LIV] - Vers qui me puis-je adresser (à 3, 4, 5 et 6 v.) - [LV] - Donque tu vas te mourant (à 4 v.) - [LVI] - Le bel honeur (à 4 et 6 v.) - [LVII] - Las ! je me plains (à 4 et 6 v.) - [LVIII] - Muserum dulces modules (à 5 v.) - [LIX] - Qu'est devenu ce bel oeil (à 3 v.)", "Présentation musicale : [Parties]", "Appartient à l’ensemble documentaire : RISMImp" ;
+	dc:format           "5 parties ; 9 x 13 cm", "Nombre total de vues :  152" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b52502921q" ;
+	dc:language         "fre" ;
+	dc:publisher        "A Paris : par Pierre Ballard, 1608" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb161809814", "Notice d'ensemble : http://catalogue.bnf.fr/ark:/12148/cb39788322j", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb39788322j" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VMF-73 (5)" ;
+	dc:title            "Second livre des airs à III. IIII. V. et VI. parties de Cl. Le Jeune. Compositeur de la Musique de la Chambre du Roy" ;
+	dc:type             "Genre musical : air" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52502921q> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52502921q.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "10296"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "186"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52502921q>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52502921q> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b52502921q> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b52502921q.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52502921q/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .

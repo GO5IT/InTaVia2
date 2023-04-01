@@ -1,0 +1,117 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0586983>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1618>, <http://data.europeana.eu/concept/235> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2003" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0586983> .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0586983>
+	a                    ore:Proxy ;
+	dc:contributor       "Quatuor Borodine" ;
+	dc:creator           "Quatuor Borodine", "Beethoven, Ludwig van" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0586983" ;
+	dc:publisher         "Paris Cité de la musique 2003" ;
+	dc:subject           "MUSIQUE DE CHAMBRE", "MUSIQUE ROMANTIQUE", "MUSIQUE CLASSIQUE", "19 EME SIECLE", "QUATUOR A CORDES", "ALLEMAGNE", "18 EME SIECLE" ;
+	dc:title             "Virtuosités I. Quatuors et cordes. Ludwig van Beethoven" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le vendredi 14 novembre 2003 (21h, salle des concerts)" ;
+	dcterms:extent       "1h 20 min" ;
+	dcterms:hasPart      "Quatuor à cordes no 4, op. 18 : Menuetto (allegretto) (rappel) / Ludwig van Beethoven ; Quatuor Borodine ; Ruben Aharonian, violon ; Andrei Abramenkov, violon ; Igor Naidin, alto ; Valentin Berlinsky, violoncelle. - Cité de la musique, 2003", "Quatuor à cordes no 6 en si bémol majeur, op. 18 no 6 / Ludwig van Beethoven ; Quatuor Borodine ; Ruben Aharonian, violon ; Andrei Abramenkov, violon ; Igor Naidin, alto ; Valentin Berlinsky, violoncelle. - Cité de la musique, 2003", "Quatuor à cordes no 2 en sol majeur, op. 18 no 2 / Ludwig van Beethoven ; Quatuor Borodine ; Ruben Aharonian, violon ; Andrei Abramenkov, violon ; Igor Naidin, alto ; Valentin Berlinsky, violoncelle. - Cité de la musique, 2003", "Quatuor à cordes no 16 en fa majeur, op. 135 / Ludwig van Beethoven ; Quatuor Borodine ; Ruben Aharonian, violon ; Andrei Abramenkov, violon ; Igor Naidin, alto ; Valentin Berlinsky, violoncelle. - Cité de la musique, 2003" ;
+	dcterms:issued       "2003" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0586983> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:26.702Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0586983> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0586983>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0586983>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0586983> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0586983>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:37.897Z" ;
+	dcterms:modified          "2014-06-27T11:27:37.897Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983#metadataTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:26.703Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0586983> .
+
+<http://data.europeana.eu/concept/1618>
+	a                skos:Concept ;
+	skos:altLabel    "Músico de Cámara"@es, "Musico de Cámara"@es, "Komorni ansambel"@sl, "Muzică de cameră"@ro, "Música de camara"@es, "Kamarakoncert"@hu, "Orquestra de câmera"@pt, "Músico de Camara"@es, "Musico de Camara"@es, "Kammarmusiker"@sv, "Hudba komorní"@cs, "Musica de cámara"@es, "Música de câmera"@pt, "Musica de camara"@es, "Kamariorkesterimusiikki"@fi, "Kammarstycke"@sv, "Musiche da camera"@it, "Kammerkonzert"@de, "Komorna zasedba"@sl ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://d-nb.info/gnd/4136998-1>, <http://www.yso.fi/onto/yso/p14380>, <http://www.wikidata.org/entity/Q189201>, <https://g.co/kg/m/0l8gh>, <http://data.bnf.fr/ark:/12148/cb12010572w>, <http://dewey.info/class/785/>, <http://purl.org/bncf/tid/2209>, <http://id.loc.gov/authorities/names/sh85022422>, <http://id.loc.gov/authorities/genreForms/gf2014026704>, <https://www.freebase.com/m/0l8gh>, <http://dewey.info/class/783.1/> ;
+	skos:note        "Társas muzsikálás"@hu, "Instrumentālu vai vokālu skaņdarbu kopums nelielam izpildītāju sastāvam"@lv, "Género de música clásica compuesta para un pequeño grupo de instrumentos"@es, "Muzyka przeznaczona na niewielkie zespoły instrumentalistów"@pl, "Gènere de música clàssica composada per a un petit grup d'instruments"@ca, "Form of classical music composed for a small group of instruments"@en, "Form klassischer Musik, die für eine kleine Gruppe von Instrumenten komponiert wurde"@de, "Genre musical composé pour un petit ensemble de cordes, bois, cuivres ou percussions"@fr, "Музыка, исполняемая небольшим коллективом музыкантов или вокалистов"@ru, "Taidemusiikin tyylilaji"@fi ;
+	skos:prefLabel   "Kammermusik"@da, "Kammermusik"@de, "Chamber music"@en, "Musique de chambre"@fr, "Kamarazene"@hu, "Ceol aireagail"@ga, "Música de cambra"@ca, "Muzică de cameră"@ro, "Kamermuziek"@nl, "Kamermūzika"@lv, "Kammarmusik"@sv, "Musica da camera"@mt, "Musica da camera"@it, "Komorna glazba"@hr, "Komorní hudba"@cs, "Música de cámara"@es, "Kammermuusika"@et, "Muzyka kameralna"@pl, "Kamerinė muzika"@lt, "Kamarimusiikki"@fi, "Камерна музика"@bg, "Камерная музыка"@ru, "Música de câmara"@pt, "Komorna glasba"@sl, "Komorná hudba"@sk, "Μουσική δωματίου"@el .
+
+<http://data.europeana.eu/concept/235>
+	a                skos:Concept ;
+	skos:altLabel    "Vážná hudba"@cs, "Музыкальная классика"@ru, "Δυτικοευρωπαϊκή μουσική"@el, "Zachodnia muzyka klasyczna"@pl, "Δυτική μουσική"@el, "Taidemusiikki"@fi, "Klassinen musiikki"@fi, "Classique"@fr, "Western art music"@en, "Западная классическая музыка"@ru, "Ευρωπαϊκή μουσική"@el, "Seriös musik"@sv, "Western classical music"@en, "Classical music"@en, "European classical music"@en, "Konstmusik"@sv, "Muzică cultă"@ro ;
+	skos:exactMatch  <http://dewey.info/class/781.68/>, <http://www.yso.fi/onto/yso/p18434>, <http://www.wikidata.org/entity/Q9730>, <http://service.ddex.net/dd/DD-AVS-001/dd/ddex_ClassicalMusic>, <https://g.co/kg/m/0ggq0m>, <https://www.freebase.com/m/0ggq0m>, <http://d-nb.info/gnd/4164043-3>, <http://cv.iptc.org/newscodes/subjectcode/01011001>, <http://vocabularies.unesco.org/thesaurus/concept5394>, <http://cv.iptc.org/newscodes/mediatopic/20000022> ;
+	skos:note        "Gènere musical"@ca, "Nurt muzyki poważnej"@pl, "Hudební žánr"@cs, "Broad tradition of Western art music"@en, "Ευρεία παράδοση της μουσικής της δυτικής τέχνης"@el, "Nombre habitual de la música culta, académica y docta"@es, "Muziekstijl"@nl, "Gênero musical"@pt, "Musica colta occidentale"@it, "Образцовые музыкальные произведения, золотой фонд мировой музыкальной культуры"@ru, "Genre musical"@fr, "Zusammenfassender Begriff für die europäische Musiktradition der Kunstmusik"@de, "Monimuotoinen ja epäyhtenäinen länsimaisen musiikin perinne"@fi ;
+	skos:prefLabel   "Musica classica"@it, "Musique classique"@fr, "Klasična glasba"@sl, "Mużika klassika"@mt, "Música clássica"@pt, "Κλασική μουσική"@el, "Klasická hudba"@sk, "Klasická hudba"@cs, "Классическая музыка"@ru, "Klassieke muziek"@nl, "Länsimainen taidemusiikki"@fi, "Klasszikus zene"@hu, "Klasikinė muzika"@lt, "Klassische Musik"@de, "Muzică clasică"@ro, "Klassisk musik"@da, "Klassisk musik"@sv, "Música clàssica"@ca, "Klasiskā mūzika"@lv, "Western classical music"@en, "Muzyka klasyczna"@pl, "Класическа музика"@bg, "Ceol clasaiceach"@ga, "Klassikaline muusika"@et, "Música clásica"@es, "Klasična glazba"@hr .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0586983>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

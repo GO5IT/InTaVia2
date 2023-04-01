@@ -1,0 +1,139 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723946>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000208341> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000208341> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135723946>
+	a                   ore:Proxy ;
+	dc:contributor      "F. Barnard" ;
+	dc:creator          "Charles Dickens" ;
+	dc:description      "With 59 illustrations by F. Barnard.", "The works of Charles Dickens. Household edition" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000312542" ;
+	dc:language         "en" ;
+	dc:publisher        "Chapman and Hall" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:title            "The life and adventures of Martin Chuzzlewit" ;
+	dc:type             "Analitic serial"@en ;
+	dcterms:extent      "VI, 423 p. : ill. ; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1872" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/uk>, <http://sws.geonames.org/2643743/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723946> .
+
+<http://lib.ugent.be/europeana/900000208341>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14674"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723946#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:00.119Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723946> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135723946>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/59904> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1872" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135723946> .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000208341>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5327"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "172"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://sws.geonames.org/2643743/>
+	a               edm:Place ;
+	skos:prefLabel  "London (Herstellung)" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135723946>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:13:23.103Z" ;
+	dcterms:modified          "2015-12-04T14:03:03.775Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135723946> ;
+	edm:completeness          "8" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135723946> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000208341&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/59904>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/24733> ;
+	owl:sameAs           <http://www.idref.fr/026831198/id>, <http://id.ndl.go.jp/auth/ndlna/00437850>, <http://viaf.org/viaf/91912703>, <http://openlibrary.org/works/OL24638A>, <http://id.loc.gov/authorities/names/no2012115982>, <http://data.bibliotheken.nl/id/thes/p068342853>, <http://kulturarvsdata.se/LSH/agents/6216>, <https://libris.kb.se/42gjjgtn110l7gz>, <https://livedata.bibsys.no/authority/90051428>, <http://www.wikidata.org/entity/Q5686>, <http://nlg.okfn.gr/resource/authority/record60575>, <http://id.loc.gov/authorities/names/n78087607>, <http://viaf.org/viaf/88666393>, <http://data.carnegiehall.org/names/1023074>, <http://lod.nl.go.kr/resource/KAC199607080>, <http://d-nb.info/gnd/118525239>, <http://data.cervantesvirtual.com/person/1351>, <https://g.co/kg/m/01v9724>, <https://www.freebase.com/m/01v9724>, <http://id.worldcat.org/fast/28294>, <http://vocab.getty.edu/ulan/500106117>, <http://libris.kb.se/resource/auth/183770>, <http://datos.bne.es/resource/XX1633131>, <http://dbpedia.org/resource/Charles_Dickens>, <http://data.bnf.fr/ark:/12148/cb119001186> ;
+	rdaGr2:dateOfBirth   "1812-02-07" ;
+	rdaGr2:dateOfDeath   "1870-06-09" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/176909> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/184948> ;
+	skos:altLabel        "Диккенс Чарльз"@ru, "Dickens"@en, "Τσαρλς Ντίκενς"@el, "Charles Dickens"@pl, "Carlo Dickens"@it, "Charles Dickens"@lv, "C.Dickens"@it, "C.Dickens"@en, "C.Dickens"@de, "C.Dickens"@ru, "C.Dickens"@bg, "Dickens, Charles"@fr, "Charles John Huffam Dickens"@nl, "Charles John Huffam Dickens"@ro, "Charles John Huffam Dickens"@da, "Charles John Huffam Dickens"@pl, "Charles John Huffam Dickens"@sk, "Charles John Huffam Dickens"@cs, "Charles John Huffam Dickens"@et, "Charles John Huffam Dickens"@es, "Charles John Huffam Dickens"@hu, "Charles John Huffam Dickens"@fr, "Charles John Huffam Dickens"@it, "Charles John Huffam Dickens"@de, "Charles John Huffam Dickens"@sv, "Charles John Huffam Dickens"@fi, "Charles John Huffam Dickens"@pt, "Charles John Huffam Dickens"@en, "Чарльз Джон Хаффем Диккенс"@ru, "Boz"@pl, "Boz"@fr, "Boz"@en, "Boz"@de ;
+	skos:note            "Englantilainen kirjailija"@fi, "Английский писатель"@ru, "Engelse schrijver en sociale criticus"@nl, "Angielski powieściopisarz"@pl, "Angol író"@hu, "Escritor inglés (1812-1870)"@es, "Englischer Schriftsteller"@de, "English writer and social critic (1812–1870)"@en, "Anglický spisovateľ"@sk, "Άγγλος μυθιστοριογράφος"@el, "Английски писател"@bg, "Engelsk författare och samhällskritiker"@sv, "Angleški pisatelj"@sl, "Engelsk forfatter (1812-1870)"@da, "Scrittore, giornalista e reporter di viaggio britannico"@it, "Escritor britânico"@pt, "Anglický spisovatel"@cs, "Scriitor englez"@ro, "Romancier, dramaturge et journaliste anglais"@fr, "Escriptor anglès"@ca ;
+	skos:prefLabel       "Čārlzs Dikenss"@lv, "Κάρολος Ντίκενς"@el, "Karol Dickens"@pl, "Чарлз Дикенс"@bg, "Charles Dickens"@fi, "Charles Dickens"@pt, "Charles Dickens"@lt, "Charles Dickens"@hr, "Charles Dickens"@hu, "Charles Dickens"@sk, "Charles Dickens"@sl, "Charles Dickens"@ga, "Charles Dickens"@ca, "Charles Dickens"@sv, "Charles Dickens"@mt, "Charles Dickens"@en, "Charles Dickens"@it, "Charles Dickens"@es, "Charles Dickens"@et, "Charles Dickens"@cs, "Charles Dickens"@ro, "Charles Dickens"@da, "Charles Dickens"@nl, "Charles Dickens"@fr, "Charles Dickens"@de, "Чарльз Диккенс"@ru .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723946>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135723946#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:27:00.119Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135723946> .

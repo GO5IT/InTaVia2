@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:23:22.312Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200440/BibliographicResource_3000127179733> .
+
+<https://iiif.europeana.eu/presentation/9200440/BibliographicResource_3000127179733/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200440/BibliographicResource_3000127179733>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502070> ;
+	edm:hasView        <http://dizbi.hazu.hr/?object=view&id=14368> ;
+	edm:isShownAt      <http://dizbi.hazu.hr/?object=detail&id=14368> ;
+	edm:object         <http://dizbi.hazu.hr/api/?semantic=resource&id=14368> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200440/BibliographicResource_3000127179733>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-21T11:26:47.946Z" ;
+	dcterms:modified          "2015-09-21T11:26:47.946Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733#metadataTier>, <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733> ;
+	edm:completeness          "5" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "9200440_Ag_EU_TEL_a1167q_eCloud_Croatia" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200440/BibliographicResource_3000127179733> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdizbi.hazu.hr%2Fapi%2F%3Fsemantic%3Dresource%26id%3D14368&type=TEXT> .
+
+<http://data.europeana.eu/proxy/provider/9200440/BibliographicResource_3000127179733>
+	a                   ore:Proxy ;
+	dc:contributor      "Mandrović, Adam", "Demeter, Dimitrija" ;
+	dc:creator          "Schauffert, Hyppolit August" ;
+	dc:identifier       "14368" ;
+	dc:language         "hr" ;
+	dc:subject          "kazališna cedulja", "Dramska književnost" ;
+	dc:title            "Šah kralju" ;
+	dcterms:created     "1887-03-30" ;
+	dcterms:isPartOf    "Kazališne cedulje", <http://data.theeuropeanlibrary.org/Collection/a1167q> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200440/BibliographicResource_3000127179733> .
+
+<http://dizbi.hazu.hr/?object=view&id=14368>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200440/BibliographicResource_3000127179733/manifest> ;
+	ebucore:fileByteSize    "11437"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200440/BibliographicResource_3000127179733>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200440/BibliographicResource_3000127179733> .
+
+<http://dizbi.hazu.hr/api/?semantic=resource&id=14368>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "28526"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "212"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://dizbi.hazu.hr/?object=detail&id=14368>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "10733"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:23:22.311Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200440/BibliographicResource_3000127179733> .
+
+<http://data.europeana.eu/item/9200440/BibliographicResource_3000127179733>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004502070>
+	a               foaf:Organization ;
+	skos:prefLabel  "Croatian Academy of Sciences and Arts"@en .

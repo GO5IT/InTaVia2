@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012711>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012711>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-02T08:58:19.896Z" ;
+	dcterms:modified          "2019-04-02T08:58:19.896Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711#metadataTier>, <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92060_Ag_EU_TEL_a0478_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92060/BibliographicResource_1000126012711> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F%2FBA%2F919%2FB11473238T11473242.jpg&type=IMAGE> .
+
+<https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012711/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/919/B11473238T11473242.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2417"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "94"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012711>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=11473238> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv//BA/919/B11473238T11473243.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv//BA/919/B11473238T11473242.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92060/BibliographicResource_1000126012711>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2952> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012711> .
+
+<http://data.europeana.eu/concept/2952>
+	a                skos:Concept ;
+	skos:altLabel    "Lithografin"@de, "Litografa"@es, "Steendrukker"@nl, "Lithograph"@de, "Litógrafa"@es, "Lithographin"@de, "Litografo"@es, "Kamenotiskař"@cs, "Kivipiirtäjä"@fi ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300025175>, <http://d-nb.info/gnd/4398813-1>, <http://iconclass.org/48C5313>, <http://g.co/kg/g/1234yxh3>, <http://www.wikidata.org/entity/Q16947657>, <http://id.loc.gov/authorities/names/sh85077596> ;
+	skos:note        "Osoba zajmująca się litografią"@pl, "Person der arbejder med litografi"@da, "Oseba, ki se ukvarja z litografijo"@sl, "Person who primarily uses lithography for making prints"@en, "Persona que s'especialitza en la litografia"@ca, "Osoba, která primárně používá litografii pro výrobu tisků"@cs, "Personne qui imprime ou reproduit par le procédé de la lithographie"@fr, "In der Lithografie, im Flachdruckverfahren, ausgebildeter Drucker oder Künstler"@de, "Τεχνίτης που εργάζεται στον κλάδο της λιθογραφίας"@el, "Persona que se especializa en la litografía"@es, "Professione"@it ;
+	skos:prefLabel   "Λιθογράφος"@el, "Литограф"@ru, "Lithographe"@fr, "Liteagrafaí"@ga, "Litografi"@fi, "Litógrafo"@pt, "Litógrafo"@es, "Litograf"@sv, "Litograf"@cs, "Litograf"@sl, "Litograf"@pl, "Litograf"@ro, "Lithograf"@de, "Litograf"@da, "Lithograaf"@nl, "Lithographer"@en, "Litográfus"@hu, "Litògraf"@ca, "Litografo"@it, "Litografu"@mt, "Litograaf"@et .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012711#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:09:50.586Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012711> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=11473238>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/919/B11473238T11473243.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012711/manifest> ;
+	ebucore:fileByteSize    "10353"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "282"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92060/BibliographicResource_1000126012711>
+	a                   ore:Proxy ;
+	dc:creator          "Kriehuber, Josef" ;
+	dc:description      "Kniestück sitzend, halb rechts; dunkle Krawatte, dunkle zugeknöpfte Weste mit Uhrkette, offener dunkler Rock; rechter Unterarm auf Stuhllehne gestützt. \u000ALithographie von Josef Kriehuber, auf China."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv//BA/919/B11473238T11473243.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Painter (artist)"@en, "Kultur"@de, "Maler (Künstler)"@de, "Culture"@en, "Lithograph"@de ;
+	dc:title            "Bildnis eines unbekannten Herrn"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0478> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012711> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012711> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012711#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:09:50.586Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012711> .

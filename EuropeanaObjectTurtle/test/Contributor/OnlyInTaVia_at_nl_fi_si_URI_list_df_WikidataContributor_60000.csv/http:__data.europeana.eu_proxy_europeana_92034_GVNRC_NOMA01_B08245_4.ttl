@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_B08245_4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:06:30.288Z" ;
+	dcterms:modified          "2018-04-05T17:33:03.759Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANOMA01%3AB08245-4%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:B08245-4&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "33820"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "261"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NOMA01_B08245_4>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2714> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1776" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_B08245_4> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_B08245_4>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NOMA01:B08245-4> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:B08245-4&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NOMA01_B08245_4>
+	a                   ore:Proxy ;
+	dc:contributor      "Francq van Berkhey, Johannes le", "Buijs, Cornelis", "Brouwer, Cornelis" ;
+	dc:creator          "Francq van Berkhey, Johannes le" ;
+	dc:description      "Plaat IV uit: Natuurlijke historie van Holland : derde deel : eerste stuk / J. le Franq van Berkhey. - Amsterdam : [s.n.], 1776", "Boven: de adel en de koopmansstand in het begin en midden van de zeventiende eeuw, 1 edelman, 2 koopmansvrouw, 3 dame. Midden: de adel in de tweede helft van de zeventiende en de achttiende eeuw, 4 een staatsman, 5 een dame, 6 een burgervrouw. Onder: De burgerdracht van Noord-Holland in het midden der zeventiende eeuw." ;
+	dc:format           "gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:B08245-4" ;
+	dc:rights           "For more information: Nederlands Openluchtmuseum"@en, "Nederlands Openluchtmuseum", "Voor meer informatie: Nederlands Openluchtmuseum"@nl ;
+	dc:source           "[B08245-4], Streekdrachten in Nederland, Nederlands Openluchtmuseum" ;
+	dc:subject          "vrouwenkleding"@nl, "modedracht"@nl, "Alkmaar"@nl, "mannenkleding"@nl, "Noord-Nederland"@nl, "Noord-Holland"@nl, "Alkmaar (gemeente)"@nl, "Zaandam (gemeente)"@nl, "polders ten noorden van  Amsterdam"@nl, "streekdracht"@nl, "boekillustratie"@nl, "Noord Kennemerland"@nl, "Zaanstreek"@nl, "Zaandam"@nl, "Noordwest-Nederland"@nl, "Zaankant"@nl ;
+	dc:title            "De kleding van Holland, Plaat IV, de zeventiende en achttiende eeuw" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1776" ;
+	dcterms:extent      "hoogte: 20 cm; breedte: 12 cm" ;
+	dcterms:isPartOf    "NOMA01:SERIE_B08245", "Streekdrachten in Nederland", "GVN", "1", "NOMA01" ;
+	dcterms:medium      "image/jpeg", "materiaal geheel: papier (vezelprodukt)" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_B08245_4> .
+
+<http://data.europeana.eu/concept/2714>
+	a                skos:Concept ;
+	skos:altLabel    "Frauenkleider"@de, "Sieviešu tērps"@lv, "Dameskleding"@nl, "Женский гардероб"@ru, "Sieviešu garderobe"@lv, "Women's costume"@en ;
+	skos:exactMatch  <http://zbw.eu/stw/descriptor/14902-4>, <http://www.wikidata.org/entity/Q4179400>, <http://g.co/kg/g/121zjpzw>, <http://thesaurus.europeanafashion.eu/thesaurus/10434> ;
+	skos:note        "Kleidung welche primär von Frauen und Mädchen getragen wird"@de, "Odzież noszona przez kobiety i dziewczęta"@pl, "Clothing worn primarily by women and girls"@en ;
+	skos:prefLabel   "Sieviešu apģērbs"@lv, "Vêtement féminin"@fr, "Женская одежда"@ru, "Indumentaria femenina"@es, "Damkläder"@sv, "Frauenkleidung"@de, "Vrouwenkleding"@nl, "Women's clothing"@en, "Odzież damska"@pl .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:34.798Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_B08245_4> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NOMA01:B08245-4>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "52474"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_B08245_4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:34.797Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_B08245_4> .

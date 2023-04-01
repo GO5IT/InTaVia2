@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/agent/39336>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/55977> ;
+	owl:sameAs           <http://www.wikidata.org/entity/Q2997482>, <http://dbpedia.org/resource/Cornelis_Cels>, <http://vocab.getty.edu/ulan/500029882>, <https://g.co/kg/m/0fqp_bh>, <http://viaf.org/viaf/95866005>, <http://data.bibliotheken.nl/id/thes/p07051951X>, <https://www.freebase.com/m/0fqp_bh> ;
+	rdaGr2:dateOfBirth   "1778-06-10" ;
+	rdaGr2:dateOfDeath   "1859-03-03" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202802> ;
+	skos:altLabel        "Cels"@en, "C. Cels"@en, "Corneille Cels"@en ;
+	skos:note            "Pittore belga"@it, "Pintor belga"@es, "Pintor belga"@ca, "Péintéir"@ga, "Pintor belga"@pt, "Peintre belge"@fr, "Belgisch kunstschilder (1778-1859)"@nl, "Painter (1778-1859)"@en ;
+	skos:prefLabel       "Cornelis Cels"@nl, "Cornelis Cels"@ca, "Cornelis Cels"@da, "Cornelis Cels"@ro, "Cornelis Cels"@ga, "Cornelis Cels"@de, "Cornelis Cels"@sl, "Cornelis Cels"@es, "Cornelis Cels"@fr, "Cornelis Cels"@it, "Cornelis Cels"@en, "Cornelis Cels"@pt, "Cornelis Cels"@sv, "Cornelis Cels"@fi .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_65_4>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-65-4> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-65-4&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_65_4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:51.979Z" ;
+	dcterms:modified          "2018-04-05T16:44:58.120Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-65-4%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_65_4>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/39336> ;
+	dc:creator          <http://data.europeana.eu/agent/39336> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1829" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_65_4> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-65-4>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49418"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:18.985Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_65_4> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_65_4>
+	a                   ore:Proxy ;
+	dc:contributor      "Cornelis Cels" ;
+	dc:creator          "Cornelis Cels" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-65-4", "OS-65-4" ;
+	dc:rights           "voor informatie: Frans Hals Museum"@nl, "for information contact: Frans Hals Museum"@en, "Frans Hals Museum" ;
+	dc:source           "OS-65-4 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "Portret van Jan Daniël Musquetier"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1829" ;
+	dcterms:extent      "67 x 57 cm" ;
+	dcterms:isPartOf    "FHM01", "Kunstwerken uit het Frans Hals Museum", "GVN" ;
+	dcterms:medium      "geschilderd", "doek ; olieverf", "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_65_4> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-65-4&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "20574"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "185"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_65_4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:18.985Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_65_4> .

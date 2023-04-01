@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8800974z>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:05.739Z" ;
+	dcterms:modified          "2018-03-26T12:25:59.737Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8800974z> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8800974z.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:18.326Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800974z> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800974z>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8800974z> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8800974z.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8800974z>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "239706"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8800974z/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8800974z>
+	a                   ore:Proxy ;
+	dc:creator          "Prokofʹev, Sergej Sergeevič (1891-1953). Auteur ou responsable intellectuel", "Paganini, Niccolò (1782-1840). Auteur ou responsable intellectuel", "Tortelier, Paul (1914-1990). Auteur ou responsable intellectuel", "De Giardini, Félice. Auteur ou responsable intellectuel", "Chopin, Frédéric (1810-1849). Auteur ou responsable intellectuel", "Frescobaldi, Girolamo (1583-1643). Auteur ou responsable intellectuel", "Kûi, Cezar´ Antonovič (1835-1918). Auteur ou responsable intellectuel", "Dvořák, Antonín (1841-1904). Auteur ou responsable intellectuel", "Schumann, Robert (1810-1856). Auteur ou responsable intellectuel", "Ravel, Maurice (1875-1937). Auteur ou responsable intellectuel", "Sarasate, Pablo de (1844-1908). Auteur ou responsable intellectuel", "Tortelier, Paul (1914-1990). Violoncelle", "Couperin, François (1668-1733). Auteur ou responsable intellectuel", "Newark, John. Piano", "Popper, David (1843-1913). Auteur ou responsable intellectuel" ;
+	dc:date             "1959" ;
+	dc:description      "Titre uniforme : [Sonates. Violon, orchestre. MS 66. Do majeur]. Adapt.", "BnF-Partenariats, Collection sonore - Believe", "Comprend : MOUVEMENT PERPETUEL / Niccolo PAGANINI - trans. Julius KLENGEL - REVERIE, OP. 15, N °7 / Robert SCHUMANN - MARCHE, OP. 65 (extrait de \u0022Musique pour enfants\u0022) / Serge PROKOFIEV (arrtPaul TORTELIER, d'après la transcription de G. PIATIGORSKY) - GRANADINA / Joaquin NIN - TAMBORINO / Felice de GIARDINI - TOCCATA / Girolamo FRESCOBALDI, arrt Gaspar CASSADO - RONDO : op. 94 / Anton DVORAK - ZAPATEADO, op. 23 / Pablo de Sarazate - GAVOTTE, op. 16 / David POPPER - PIECE EN FORME DE HABANERA / Maurice RAVEL - CONCERT A DEUX VIOLONCELLES / François COUPERIN - PRELUDE, Op. 28, N °4 / Frédéric CHOPIN - DUOS POUR DEUX VIOLONCELLES / Paul TORTELIER - ORIENTALE, Op. 50, N °9 (extrait de \u0022Kaléidoscope\u0022) / César CUI - TOCCATA (Caprice N °3) / Paul TORTELIER", "Titre uniforme : [Träumerei. Op. 15, no 7]", "Titre uniforme : [Vocalise-étude en forme de habanera. O 51]. Arr.", "Titre uniforme : [Zapateado]" ;
+	dc:format           "disque microsillon"@fre, "multipart/mixed", "disc"@eng, "1 disque : 33 t ; 30 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8800974z", "Numéro commercial : La voix de son maître FALP599" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb38061458c"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-4748" ;
+	dc:title            "PIECES POUR VIOLONCELLE / Paul TORTELIER, violoncelle - Maud TORTELIER, 2ème violoncelle - John NEWARK, piano" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800974z> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8800974z.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4262"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8800974z>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1959" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8800974z> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8800974z#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:18.326Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8800974z> .

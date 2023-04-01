@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88136173>
+	a                   ore:Proxy ;
+	dc:creator          "Drigo, Riccardo (1846-1930). Auteur ou responsable intellectuel", "Karas, Anton (1906-1985). Auteur ou responsable intellectuel", "Legrand, Michel (1932-....). Direction d'orchestre", "Strauss, Johann (1825-1899). Auteur ou responsable intellectuel", "Lehár, Franz (1870-1948). Auteur ou responsable intellectuel", "Sieczynski, Rudolf (1879-1952). Auteur ou responsable intellectuel" ;
+	dc:date             "1956" ;
+	dc:description      "Titre uniforme : [Wien, du Stadt meiner Träume]", "Titre uniforme : [Arlekinada]. Adapt.", "BnF-Partenariats, Collection sonore - Believe", "Comprend : VIENNE, O VILLE EXQUISE / Rudolf SIECZYNSKI - LEGENDES DE LA FORET VIENNOISE / Johann STRAUSS - CHANSON DE VILYA : de \u0022La Veuve Joyeuse\u0022 / Franz LEHAR - VALSE DE L'EMPEREUR / Johann STRAUSS - LES MILLIONS D'ARLEQUIN / Richard DRIGO - HEURE EXQUISE : extrait de \u0022La Veuve Joyeuse\u0022 / Franz LEHAR - THE CAFE MOZART WALTZ : extrait du film \u0022Le Troisième Homme\u0022 / Anton KARAS - LE BEAU DANUBE BLEU / Johann STRAUSS - PIZZICATO POLKA / Johann et Josef STRAUSS - CAPRICE VIENNOIS / Fritz KREISLER - LE VIEUX REFRAIN / Fritz KREISLER - LA VIE D'ARTISTE / Johann STRAUSS - THE HARRY LIME THEME : du film \u0022Le Troisième Homme\u0022 / Anton KARAS - VIENNE, O VILLE EXQUISE / Rudolf SIECZYNSKI", "Titre uniforme : [Kaiser-Walzer. RV 437]", "Titre uniforme : [Geschichten aus dem Wienerwald. RV 325]", "Titre uniforme : [Die lustige Witwe]. Extr. arr." ;
+	dc:format           "disque microsillon"@fre, "disc"@eng, "1 disque : 33 t ; 30 cm", "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Philips B07093L", "http://gallica.bnf.fr/ark:/12148/bpt6k88136173" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37972523v"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe" ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-9831" ;
+	dc:title            "WEEK-END A VIENNE / Michel LEGRAND et sa grande Formation" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88136173> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88136173.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3516"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88136173>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "224198"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88136173>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88136173> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88136173.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.451Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88136173> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88136173/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88136173>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1956" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88136173> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88136173>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:55:07.997Z" ;
+	dcterms:modified          "2018-03-26T12:30:45.353Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88136173> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88136173.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88136173#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:04:31.453Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88136173> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

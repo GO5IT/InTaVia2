@@ -1,0 +1,140 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000000338795>
+	a               foaf:Organization ;
+	skos:prefLabel  "Рейксмюсеум"@ru, "Държавен музей (Амстердам)"@bg, "Rijksmuseum"@ca, "Rijksmuseum"@nl, "Rijksmuseum"@da, "Ρέικσμουζεουμ"@el, "Rijksmuseum"@ro, "Rijksmuseum"@pl, "Rijksmuseum"@sk, "Rijksmuseum"@cs, "Rijksmuseum"@et, "Rijksmuseum"@es, "Rijksmuseum"@hu, "Rijksmuseum"@fr, "Rijksmuseum"@it, "Rijksmuseum"@de, "Rijksmuseum"@en, "Rijksmuseum"@pt, "Rijksmuseum"@fi, "Rijksmuseum"@sv, "Državni muzej u Amsterdamu"@hr, "Valstybinis muziejus"@lt, "Ard-mhúsaem na hÍsiltíre"@ga .
+
+<http://data.europeana.eu/place/40837>
+	a               edm:Place ;
+	owl:sameAs      <https://sws.geonames.org/2757345/>, <http://www.wikidata.org/entity/Q33432813> ;
+	skos:altLabel   "Delft (plaats)"@nl ;
+	skos:note       "Stadt in den Niederlanden"@de, "Plaats in Zuid-Holland, Nederland"@nl, "Ciutat dels Països Baixos"@ca, "City in Zuid-Holland, the Netherlands"@en ;
+	skos:prefLabel  "Delft"@en, "Delft"@pt, "Delft"@sv, "Delft"@de, "Delft"@da, "Delft"@nl, "Delft"@es, "Delft"@ca, "Delft"@fr, "Delft"@it ;
+	wgs84_pos:lat   "52.00667" ;
+	wgs84_pos:long  "4.35556" .
+
+<http://data.europeana.eu/item/90402/BK_NM_12400_50#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:11:09.622Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/BK_NM_12400_50> .
+
+<http://data.europeana.eu/item/90402/BK_NM_12400_50#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T18:11:09.623Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/90402/BK_NM_12400_50> .
+
+<https://iiif.europeana.eu/presentation/90402/BK_NM_12400_50/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.123933>
+	a               edm:Agent ;
+	skos:prefLabel  "Het Jonge Moriaanshooft"@nl, "Het Jonge Moriaanshooft"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<urn:rijksmuseum:people:RM0001.PEOPLE.83611>
+	a                              edm:Agent ;
+	edm:end                        "1739" ;
+	rdaGr2:gender                  "male" ;
+	rdaGr2:professionOrOccupation  "plateelbakker"@nl ;
+	skos:prefLabel                 "Verhagen, Johannes"@nl, "Verhagen, Johannes"@en .
+
+<http://hdl.handle.net/10934/RM0001.COLLECT.14376>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "58226"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/90402/BK_NM_12400_50>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/90402/BK_NM_12400_50> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:isShownAt      <http://hdl.handle.net/10934/RM0001.COLLECT.14376> ;
+	edm:isShownBy      <https://lh4.ggpht.com/h7TxzjbG84_2bva9XVxBvsTN_hJFOsLb-Jf_EPHpOnNFOE55gQ9Wr5n2CtjxKn2Est22i0CtPaaCnN2ye7CPyG__PHST=s0> ;
+	edm:object         <https://lh4.ggpht.com/h7TxzjbG84_2bva9XVxBvsTN_hJFOsLb-Jf_EPHpOnNFOE55gQ9Wr5n2CtjxKn2Est22i0CtPaaCnN2ye7CPyG__PHST=s0> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000338795> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/90402/BK_NM_12400_50>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:52:02.617Z" ;
+	dcterms:modified          "2018-03-17T13:08:53.663Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/90402/BK_NM_12400_50#metadataTier>, <http://data.europeana.eu/item/90402/BK_NM_12400_50#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/90402/BK_NM_12400_50> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "90402_M_NL_Rijksmuseum" ;
+	edm:landingPage           <https://www.europeana.eu/item/90402/BK_NM_12400_50> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Flh4.ggpht.com%2Fh7TxzjbG84_2bva9XVxBvsTN_hJFOsLb-Jf_EPHpOnNFOE55gQ9Wr5n2CtjxKn2Est22i0CtPaaCnN2ye7CPyG__PHST%3Ds0&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<https://lh4.ggpht.com/h7TxzjbG84_2bva9XVxBvsTN_hJFOsLb-Jf_EPHpOnNFOE55gQ9Wr5n2CtjxKn2Est22i0CtPaaCnN2ye7CPyG__PHST=s0>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dc:rights               "Publiek Domein"@nl, "Public Domain"@en ;
+	dcterms:created         "2013" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/90402/BK_NM_12400_50/manifest> ;
+	ebucore:fileByteSize    "926222"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "3000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "3000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#778899"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/90402/BK_NM_12400_50>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/40837> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1729" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/BK_NM_12400_50> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/90402/BK_NM_12400_50> .
+
+<http://data.europeana.eu/proxy/provider/90402/BK_NM_12400_50>
+	a                   ore:Proxy ;
+	dc:contributor      "Goltzius, Hendrick"@nl ;
+	dc:coverage         "tweede kwart 18e eeuw"@nl, "second quarter 18th century"@en ;
+	dc:description      "Schotel van faïence, beschilderd in blauw met vijftien scènes uit het leven van Christus. Midden op het plat Christus voor Kajafas."@nl ;
+	dc:format           "faience"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.3945" ;
+	dc:identifier       "BK-NM-12400-50", "http://hdl.handle.net/10934/RM0001.COLLECT.14376" ;
+	dc:language         "nl" ;
+	dc:publisher        "Rijksmuseum" ;
+	dc:rights           "Public Domain", "Publiek Domein" ;
+	dc:subject          <http://iconclass.org/73D32> ;
+	dc:title            "Schotel, beschilderd met vijftien scènes uit het leven van Christus"@nl ;
+	dc:type             "schotel"@nl, "urn:rijksmuseum:thesaurus:RM0001.THESAU.118" ;
+	dcterms:created     "1729" ;
+	dcterms:extent      "diameter 40.5 cm"@en, "diameter 40,5 cm"@nl ;
+	dcterms:isPartOf    "collectie: Nederlands tinglazuur aardewerk" ;
+	dcterms:medium      "Gift of the heirs of J.F. Loudon, The Hague"@en, "Schenking van de erven van de heer J.F. Loudon, Den Haag"@nl ;
+	dcterms:spatial     "urn:rijksmuseum:thesaurus:RM0001.THESAU.3537", "Delft" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/90402/BK_NM_12400_50> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/90402/BK_NM_12400_50> .
+
+<http://data.europeana.eu/item/90402/BK_NM_12400_50>
+	a  edm:ProvidedCHO .

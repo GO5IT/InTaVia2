@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015123>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:08:06.992Z" ;
+	dcterms:modified          "2014-05-27T13:08:06.992Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123#metadataTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000015123> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1053371&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015123>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053371> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1053371> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:14.350Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015123> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1053371>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "27774"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "320"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/59704>
+	a                           edm:Agent ;
+	owl:sameAs                  <https://g.co/kg/m/01p49dx>, <http://www.wikidata.org/entity/Q5265778>, <http://dbpedia.org/resource/Detonautas_Roque_Clube>, <https://www.freebase.com/m/01p49dx> ;
+	rdaGr2:dateOfEstablishment  "1997-01-01" ;
+	skos:altLabel               "Predefinição:Detonautas"@pt, "Detonautas roque clube"@pt, "Fábio Brásil"@pt, "Fabio Brasil"@en, "Detonautas"@pt, "Philippe"@pt, "Fábio Brasil"@en, "Fábio Brasil"@pt ;
+	skos:note                   "Brazilian rock band"@en, "Muziekgroep uit Brazilië"@nl, "Banda de rock brasileira"@pt, "Gruppo musicale brasiliano"@it, "Brasilianische Band"@de ;
+	skos:prefLabel              "Detonautas Roque Clube"@fi, "Detonautas Roque Clube"@nl, "Detonautas Roque Clube"@es, "Detonautas Roque Clube"@da, "Detonautas Roque Clube"@fr, "Detonautas Roque Clube"@it, "Detonautas Roque Clube"@en, "Detonautas Roque Clube"@pt, "Detonautas Roque Clube"@sv .
+
+<http://data.europeana.eu/agent/147010>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/148401>, <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/216> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/147011> ;
+	owl:sameAs           <http://ta.sandrart.net/-person-81>, <http://id.worldcat.org/fast/16660>, <http://kulturarvsdata.se/LSH/agents/9418>, <http://d-nb.info/gnd/118531557>, <http://id.loc.gov/authorities/names/n50048855>, <http://viaf.org/viaf/54156267>, <http://www.idref.fr/027321770/id>, <http://dbpedia.org/resource/Jan_van_Eyck>, <http://www.wikidata.org/entity/Q102272>, <http://data.bibliotheken.nl/id/thes/p068923570>, <https://www.freebase.com/m/0ck2w>, <https://libris.kb.se/pm147x67237v2gs>, <https://livedata.bibsys.no/authority/90088257>, <http://libris.kb.se/resource/auth/289777>, <http://openlibrary.org/works/OL389098A>, <http://id.ndl.go.jp/auth/ndlna/00439114>, <http://lod.nl.go.kr/resource/KAC200902080>, <http://vocab.getty.edu/ulan/500116209>, <http://datos.bne.es/resource/XX873756>, <http://viaf.org/viaf/96542881>, <https://g.co/kg/m/0ck2w>, <http://nlg.okfn.gr/resource/authority/record195086>, <http://data.bnf.fr/ark:/12148/cb119389315> ;
+	rdaGr2:dateOfBirth   "1390-01-01" ;
+	rdaGr2:dateOfDeath   "1441-07-18" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/202806> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/203160> ;
+	skos:altLabel        "Van Eyk"@en, "Jan. Van Eyck"@en, "J. Vanheyck"@en, "J.V. Eyck"@en, "Jean Van Eyck de Bruges"@en, "Gio. Vannuch"@en, "J. Van Eick"@en, "J. Van Eck"@en, "Ян ван Айк"@bg, "Van. Eyck"@en, "Jan Eyck"@en, "Van Ecke"@en, "Van Heyck"@en, "Jean Van Eyck"@en, "Jan van Eyk"@nl, "The inventor of Painting in Oil John van Eyck"@en, "John van Eick"@en, "Eyck, Jan van"@sv, "Эйк, Ян"@ru, "Jan van Eikas"@lt, "Jean van Eyk"@en, "John van Eycke"@en, "Ян Ван Эйк"@ru, "John of Brughes"@en, "Van Eyck"@ca, "Van Eyck"@ro, "Van Eyck"@it, "Van Eyck"@en, "Van Eyck"@pt, "Jean Van Dyck"@en, "J. V. Eycke"@en, "Eick"@da, "Johann van Eyk"@en, "J. de Bruge"@en, "Jean Van Eycke"@en, "Eyck"@en, "J. Van Eyck"@en, "Johannes Van Eyck"@en, "Eick"@sv, "Janas van Eikas"@lt, "I. V. Eyk"@en, "V. Eyck"@en, "Ян Эйк"@ru, "A. V. Eyck"@en, "J. van Eyck"@nl, "Jan van Eick"@da, "Jvan Eyck"@en, "John van Eyck"@en, "Jan van Eijck"@nl, "Jean Van Eck"@en, "John van Eck"@en, "Jean Eyck"@en, "Gebroeders Van Eyck"@nl, "Jean van Eick"@en, "John of Bruges"@en, "Dit de Bruges Jean Van-Eyck"@en, "Jan Van Eycke"@en, "Эйк Ян ван"@ru, "Johannes van Eyck"@nl, "Johannes van Eyck"@ca, "Johannes van Eyck"@en, "Jan Van Eyck"@nl, "Jan Van Eyck"@en, "Jan van Eyck"@ru, "Johnab. Eyck"@en, "Van Eycèe"@en, "Van Eyke"@en, "Jobnob. Eyck"@en, "Vannuch"@en, "J. v. Eyck"@en, "Jean Van Eych"@en, "Jean van Eyck"@nl, "Jean van Eyck"@en, "J. Van Eyk"@en, "Van Eycke"@en, "Ван Эйк, Ян"@ru, "Ян ван Эйк"@ru, "A. VAN EYCK"@en, "Vaneyquen"@en, "Van Eijck"@en, "Van Eick"@en ;
+	skos:note            "Flámsky maliar (1390-1441)"@sk, "Peintre flamand"@fr, "Kunstschilder uit de Zuidelijke Nederlanden (1390-1441)"@nl, "Flemish painter (c.1390-1441)"@en, "Φλαμανδός ζωγράφος της Αναγέννησης"@el, "Pintor flamengo"@pt, "Pintor flamenco"@es, "Flāmu gleznotājs"@lv, "Pintor primitiu flamenc"@ca, "Vlámský malíř"@cs, "Pittore fiammingo"@it, "Malarz niderlandzki"@pl, "Flämischer Maler des Spätmittelalters"@de, "Фламандски художник"@bg, "Flamand festő"@hu ;
+	skos:prefLabel       "Γιαν βαν Άικ"@el, "Ян ван Ейк"@bg, "Jan van Eyck"@it, "Jan van Eyck"@fr, "Jan van Eyck"@hu, "Jan van Eyck"@es, "Jan van Eyck"@cs, "Jan van Eyck"@sk, "Jan van Eyck"@sl, "Jan van Eyck"@ga, "Jan van Eyck"@pl, "Jan van Eyck"@ro, "Jan van Eyck"@da, "Jan van Eyck"@nl, "Jan van Eyck"@ca, "Jan van Eyck"@sv, "Jan van Eyck"@fi, "Jan van Eyck"@pt, "Jan van Eyck"@lt, "Jan van Eyck"@en, "Jan van Eyck"@de, "Jan van Eyck"@hr, "Эйк, Ян ван"@ru, "Jans van Eiks"@lv .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1053371>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000015123>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/59704>, <http://data.europeana.eu/agent/147010> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000015123> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:50:14.349Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015123> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000015123>
+	a                   ore:Proxy ;
+	dc:contributor      "Richard Collin", "Jan van Eyck", "Philippe", "Pieter de Bailliu" ;
+	dc:date             "16--?", "s.d." ;
+	dc:identifier       "008384789" ;
+	dc:language         "fr" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Philippe I" ;
+	dc:type             "Analitic monographic"@en, "Still image"@en ;
+	dcterms:extent      "voorstelling met opschrift: 169 x 117 mm", "plaatrand: 175 x 119 mm.", "Black-and-white ;", "voorstelling: 148 x 117 mm" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036>, <http://data.theeuropeanlibrary.org/BibliographicResource/null> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000015123> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000015123> .

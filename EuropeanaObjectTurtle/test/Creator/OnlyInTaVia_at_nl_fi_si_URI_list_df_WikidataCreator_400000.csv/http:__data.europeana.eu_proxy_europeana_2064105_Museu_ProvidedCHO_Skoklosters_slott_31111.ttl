@@ -1,0 +1,184 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/place/164263>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/107> ;
+	owl:sameAs        <http://www.wikidata.org/entity/Q35395400>, <https://sws.geonames.org/9049836/> ;
+	skos:note         "Islet in Norway"@en, "Eiland in Norwegen"@de ;
+	skos:prefLabel    "Holland"@en ;
+	wgs84_pos:lat     "58.86223" ;
+	wgs84_pos:long    "9.48085" .
+
+<http://sws.geonames.org/2661886/>
+	a               edm:Place ;
+	skos:prefLabel  "Kingdom of Sweden (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-06-30T14:19:30.641Z" ;
+	dcterms:modified          "2019-11-15T07:11:48.622Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111#metadataTier>, <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> ;
+	edm:completeness          "10" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2064105_Royal_Armoury_Skokloster_Hallwyl" ;
+	edm:landingPage           <https://www.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femuseumplus.lsh.se%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D31111%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=31111&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:37:26.810Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> .
+
+<http://data.europeana.eu/proxy/europeana/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Skoklosters slott/31111" ;
+	dc:type             <http://data.europeana.eu/concept/222> ;
+	dcterms:spatial     <http://data.europeana.eu/place/107>, <http://data.europeana.eu/place/164263> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> .
+
+<https://commons.wikimedia.org/wiki/File:Tavla_på_staffli_-_Skoklosters_slott_-_5204.tif>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004514638> ;
+	edm:hasView        <ftp://ftp.emuseumplus.lsh.se/web/hires/M_A/M_A02000-02999/M_A02500-02599/LN_A02598_002598.jpg>, <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=31111&resolution=superImageResolution>, <ftp://ftp.emuseumplus.lsh.se/web/hires/M_T/M_T10000-10999/M_T10400-10499/sm_t10417.jpg> ;
+	edm:isShownAt      <http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=31111&viewType=detailView> ;
+	edm:isShownBy      <ftp://ftp.emuseumplus.lsh.se/web/hires/M_DIG/M_DIG3000-3999/M_DIG3500-3599/sm_dig3536.jpg> ;
+	edm:object         <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=31111&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/place/107>
+	a               edm:Place ;
+	owl:sameAs      <http://zbw.eu/stw/descriptor/16985-6>, <http://data.bnf.fr/ark:/12148/cb11865124d>, <http://dbpedia.org/resource/Norway>, <http://id.nlm.nih.gov/mesh/D009664>, <http://babelnet.org/rdf/s00049178n>, <http://www.idref.fr/026396009/id>, <https://www.freebase.com/m/05b4w>, <http://www.wikidata.org/entity/Q20>, <http://viaf.org/viaf/155855229>, <https://livedata.bibsys.no/authority/90052905>, <http://datos.bne.es/resource/XX451946>, <http://id.ndl.go.jp/auth/ndlna/00568689>, <https://sws.geonames.org/3144096/>, <http://id.worldcat.org/fast/1204556>, <http://www.yso.fi/onto/ysa/Y94309>, <http://vocabularies.unesco.org/thesaurus/concept14609>, <http://id.loc.gov/authorities/names/n79021528>, <https://g.co/kg/m/05b4w>, <https://d-nb.info/gnd/4042640-3>, <http://www.yso.fi/onto/yso/p94309>, <http://vocab.getty.edu/tgn/1000088> ;
+	skos:altLabel   "Königreich Norwegen"@de, "Norra Kuningriik"@et, "Кралство Норвегия"@bg, "Noreg"@it, "Noreg"@ru, "Noreg"@fi, "Norvég Királyság"@hu, "Королевство Норвегия"@ru, "Regne de Noruega"@ca, "Nerigos"@ca, "no"@hr, "Regno di Norvegia"@it, "Kongeriget Norge"@da, "Norv."@fr, "Royaume de Norvège"@fr, "NO"@nl, "Nórske kráľovstvo"@sk, "NO"@es, "NO"@fr, "NO"@hr, "NO"@en, "Norway"@ru, "Norge"@ru, "Norge"@fi, "NOR"@nl, "Kongeriket Norge"@it, "Kongeriket Norge"@ru, "NOR"@es, "NOR"@fr, "NOR"@hr, "NOR"@en, "Norvègia"@ca, "Norveško kraljevstvo"@hr, "Reino de Noruega"@es, "Kongeriket Noreg"@it, "Renju tan-Norveġja"@mt, "Kongeriket Noreg"@ru, "Le Royaume de Norvège"@fr, "Regatul Norvegiei"@ro, "Kingdom of Norway"@en, "Βασίλειο της Νορβηγίας"@el ;
+	skos:note       "Tír in iarthuaisceart na hEorpa"@ga, "Stat în Europa de Nord"@ro, "Država v Evropi"@sl, "Stát v severní Evropě"@cs, "País del norte de Europa"@es, "Państwo w Europie Północnej"@pl, "Land i Nordeuropa"@da, "Država u sjevernoj Europi"@hr, "Държава в Северна Европа"@bg, "Valtio Pohjois-Euroopassa"@fi, "País d'Europa"@ca, "Štát v severnej Európe"@sk, "Pays d'Europe du Nord et de la Scandinavie"@fr, "Stato dell'Europa settentrionale"@it, "Põhja-Euroopa kuningriik"@et, "Land in Noord-Europa"@nl, "País no norte da Europa"@pt, "Suverēna valsts Ziemeļeiropā"@lv, "Konstitutionell monarki i Nordeuropa"@sv, "Country in northern Europe"@en, "Государство в Северной Европе"@ru, "Pajjiż fit-Tramuntana tal-Ewropa"@mt, "Staat in Nordeuropa"@de, "Χώρα της βόρειας Ευρώπης"@el, "Állam Észak-Európában"@hu ;
+	skos:prefLabel  "Norvège"@fr, "Norwegen"@de, "Norja"@fi, "Norvegija"@lt, "Νορβηγία"@el, "Norsko"@cs, "Norvegia"@it, "Norvegia"@eu, "Norvegia"@ro, "Noruega"@pt, "Noruega"@ca, "Noruega"@es, "Norra"@et, "Norveġja"@mt, "Norge"@da, "Norge"@sv, "Norwegia"@pl, "Norvégia"@hu, "Норвегия"@ru, "Норвегия"@bg, "Norway"@en, "Norvēģija"@lv, "Noorwegen"@nl, "Norveška"@hr, "Norveška"@sl, "An Iorua"@ga, "Nórsko"@sk ;
+	wgs84_pos:lat   "65.0" ;
+	wgs84_pos:long  "11.0" .
+
+<http://data.europeana.eu/organization/1482250000004514638>
+	a               foaf:Organization ;
+	skos:prefLabel  "Skokloster Castle"@en .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=31111&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111/manifest> ;
+	ebucore:fileByteSize    "329130"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "681"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:37:26.810Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> .
+
+<https://commons.wikimedia.org/wiki/File:Måleri,_landskapsbild,_vinterlandskap._Jan_Steen_-_Skoklosters_slott_-_88965.tif>
+	a  edm:WebResource .
+
+<ftp://ftp.emuseumplus.lsh.se/web/hires/M_T/M_T10000-10999/M_T10400-10499/sm_t10417.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111/manifest> .
+
+<https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<ftp://ftp.emuseumplus.lsh.se/web/hires/M_A/M_A02000-02999/M_A02500-02599/LN_A02598_002598.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111/manifest> .
+
+<http://vocab.getty.edu/aat/300033618>
+	a          skos:Concept ;
+	skos:note  "Úsese para obras únicas en que las imágenes son formadas principalmente por la aplicación directa de pigmentos suspendidos en aceite, agua, yema de huevo, cera fundida u otro líquido, dispuesto en masas de color, sobre una superficie generalmente bidimensional."@es, "Beeldende werken waarin de voorstelling hoofdzakelijk wordt gevormd door het direct aanbrengen van pigment, in de vorm van kleurmassa's, op een over het algemeen tweedimensionaal vlak."@nl, "Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."@en, "Obras únicas nas quais as imagens são formadas principalmente pela aplicação direta de pigmentos suspensos em óleo, água, gema de ovo, cera fundida ou outro líquido, dispostos em massas de cor, sobre uma superfície geralmente bidimensional."@pt, "Individuelles Werk, bei dem die Darstellungen hauptsächlich durch das direkte Auftragen von Farbstoffen gebildet werden, die in Öl, Wasser, Eigelb, geschmolzenem Wachs oder anderer Flüssigkeit aufgelöst sind und bei dem die Farbmasse auf eine meist zweidimensionale Oberfläche aufgetragen wird."@de .
+
+<http://sws.geonames.org/8133351/>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://sws.geonames.org/2661886/> ;
+	skos:altLabel     "Schloss Skokloster"@de, "Skoklosterin linna"@fi, "Castello di Skokloster"@it, "斯庫克洛斯特城堡"@zh, "Château de Skokloster"@fr, "Castelo Skokloster"@pt, "Skoklosters slott"@sv, "Skoklosters slot"@da, "Skokloster Castle"@en, "Skoklosteri loss"@et ;
+	skos:prefLabel    "Skokloster Castle" ;
+	wgs84_pos:lat     "59.70892" ;
+	wgs84_pos:long    "17.58721" .
+
+<https://commons.wikimedia.org/wiki/File:Oljemålning_på_pannå._Holländskt_vinterlandskap_med_släd-_och_skridskoåkande_människor_-_Livrustkammaren_-_68745.tif>
+	a  edm:WebResource .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=31111&resolution=highImageResolution>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "54937"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "272"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<ftp://ftp.emuseumplus.lsh.se/web/hires/M_DIG/M_DIG3000-3999/M_DIG3500-3599/sm_dig3536.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111/manifest> .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://data.europeana.eu/proxy/provider/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111>
+	a                    ore:Proxy ;
+	dc:contributor       "Harald Appelbom (Förmedlare)"@sv, "Carl Gustaf Wrangel (Tidigare ägare)"@sv ;
+	dc:creator           "Jan Havicksz Steen (Tillverkare, , )"@sv ;
+	dc:description       "Holländskt landskap. Vinterbild med släd- och skridskoåkande människor. Oljemålning på pannå. Mörkbrun profilerad ram, listens bredd 108 mm. Signerad med ihopskrivet JS på kälke till vänster.\u000A\u000AInköpt av ministerpresidenten i Haag, Harald Appelblom, på tavelauktion i Haag 3 juli 1651 för Carl Gustaf Wrangels räkning.\u000A\u000AWinter scene is one of the earliest known paintings by Steen. With its diagonal composition and silhouetted figures on the ice one can clearly see his early inspirations from paintings such as Isaac van Ostades Winter from 1645. Here, as often seen in other works by Steen and his contemporarys, the activites are being watched by a well dressed couple who occupies a central position in the composition.\u000AThe painting was bought on behalf of Carl Gustaf Wrangel by the Swedish ambassador Harald Appelbom at an auction in The Hauge on 3 July 1651. During that same auction Appelbom also bought three other paintings by Jan Steen for Wrangel described as \u0022A rich mans kitchen\u0022, \u0022A poor mans kitchen\u0022 and \u0022Hagar\u0022. The first and the second most likely corresponds with the paintings \u0022The fat Kitchen\u0022 (now in private collection) and \u0022The lean Kitchen\u0022 (now in the National Gallery of Canada, Ottawa). The third one however is more difficult to trace, it is possible that it is the same painting as the one now entitled \u0022Hagar in the desert\u0022."@sv ;
+	dc:identifier        "31111", "(Inv. nr. 10032)" ;
+	dc:relation          <https://commons.wikimedia.org/wiki/File:Oljemålning_på_pannå._Holländskt_vinterlandskap_med_släd-_och_skridskoåkande_människor_-_Livrustkammaren_-_68745.tif>, <https://commons.wikimedia.org/wiki/File:Tavla_på_staffli_-_Skoklosters_slott_-_5204.tif>, <https://commons.wikimedia.org/wiki/File:Måleri,_landskapsbild,_vinterlandskap._Jan_Steen_-_Skoklosters_slott_-_88965.tif> ;
+	dc:subject           "Landskapsmåleri (Konst och konsthantverk, Måleri)"@sv ;
+	dc:title             "Oljemålning på pannå. Holländskt vinterlandskap med släd- och skridskoåkande människor."@sv ;
+	dc:type              "Oljemålning"@sv, <http://vocab.getty.edu/aat/300033618>, "Landskap"@sv, "Landskapsbild, vinter"@sv ;
+	dcterms:created      "1650 cirka" ;
+	dcterms:extent       "Bredd: 960 mm", "Höjd: 660 mm" ;
+	dcterms:spatial      "Holland" ;
+	edm:currentLocation  <http://sws.geonames.org/8133351/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Skoklosters_slott_31111> .
+
+<http://data.europeana.eu/concept/222>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/47> ;
+	skos:exactMatch  <https://g.co/kg/m/05nmd>, <http://id.ndl.go.jp/auth/ndlna/00560048>, <http://vocab.getty.edu/aat/300178684>, <http://purl.org/bncf/tid/27936>, <https://www.freebase.com/m/05nmd>, <https://d-nb.info/gnd/4043238-5>, <http://babelnet.org/rdf/s00058757n>, <http://www.wikidata.org/entity/Q174705>, <http://www.yso.fi/onto/yso/p571> ;
+	skos:note        "Technique artistique fondée sur l'utilisation de la peinture à l'huile"@fr, "Konstnärlig målning med oljefärg"@sv, "Technik der künstlerischen Malerei mit Ölfarben"@de, "Kunstnerisk process med oliefarver"@da, "Maalaustekniikka"@fi, "Живописная техника"@ru, "Technika malarska"@pl, "Tecnica pittorica che utilizza pigmenti in polvere mescolati con oli essiccanti"@it, "Técnica de pintura artística"@pt, "Η διαδικασία της ζωγραφικής με χρωστικές ουσίες ανακατεμένες με στεγνωτικό λάδι"@el, "Process of painting with pigments that are bound with a medium of drying oil"@en, "Tècnica pictòrica que utilitza pintura a l'oli"@ca, "Técnica pictórica"@es ;
+	skos:prefLabel   "Péintéireacht ola"@ga, "Oliemaling"@da, "Eļļas glezniecība"@lv, "Olio-pintura"@eu, "Olejomalba"@cs, "Pintura a l'oli"@ca, "Oljemåleri"@sv, "Маслена живопис"@bg, "Schilderen met olieverf"@nl, "Ελαιογραφία"@el, "Peinture à l'huile"@fr, "Pintura al óleo"@es, "Olajfestés"@hu, "Malarstwo olejne"@pl, "Pictură în ulei"@ro, "Oljno slikarstvo"@sl, "Oil painting"@en, "Õlimaal"@et, "Pittura a olio"@it, "Aliejinė tapyba"@lt, "Масляная живопись"@ru, "Öljymaalaus"@fi, "Óleo sobre tela"@pt, "Ölmalerei"@de .

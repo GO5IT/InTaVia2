@@ -1,0 +1,152 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2048128/56652>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-03-15T17:30:10.353Z" ;
+	dcterms:modified          "2023-01-11T13:40:17.552Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048128/56652#contentTier>, <http://data.europeana.eu/item/2048128/56652#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048128/56652> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2048128_Ag_HU_MaNDA_OAI" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048128/56652> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fmandadb.hu%2Fmandadb%2Fwebimage%2F5%2F0%2F0%2F0%2F4%2Fwimage%2F55643.jpg&type=IMAGE> .
+
+<https://mandadb.hu/common/file-servlet/document/89953/default/doc_url/55643.jpg>
+	a                       edm:WebResource ;
+	dc:description          "Nyitott kerítésajtón át egy földművesférfi és fiúcska lép ki, előttük az előtérben egy tehén és vörösesbarnás- színű borjúja legel, ezek mögött kissé jobbra egy férfi tartja kötélen az állatokat. Háttérben erkélyes tiroli faház látszik. Előtte facsoport, mögötte lilás hegyek kis felhőkkel. Valószínű másolat egy nagyobb festményről. Jelezve jobbra lent pirossal: Rippl 1883."@hu ;
+	dc:format               "jpg" ;
+	dc:rights               "Rippl-Rónai Megyei Hatókörű Városi Múzeum", "CC BY", "research permit needed"@hu, "Kutatási engedéllyel hozzáférhető"@hu ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048128/56652/manifest> ;
+	ebucore:fileByteSize    "66233"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "650"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2E8B57"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6495ED"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#ADD8E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2048128/56652>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/54303> ;
+	dc:date             <file:///usr/local/tomcat/webapps/#1883-01-01> ;
+	dc:identifier       "56652" ;
+	dc:language         "zxx" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2048128/56652> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048128/56652> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048128/56652> .
+
+<file:///usr/local/tomcat/webapps/#1883-01-01>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://data.europeana.eu/timespan/19> ;
+	edm:begin         "1883-01-01" ;
+	edm:end           "1883-01-31" ;
+	skos:prefLabel    "1883-01-01"@zxx .
+
+<http://data.europeana.eu/organization/1482250000004513327>
+	a               foaf:Organization ;
+	skos:prefLabel  "Rippl-Rónai Megyei Hatókörű Városi Múzeum - Kaposvár"@hu, "Rippl-Rónai Municipal Museum with County Scope - Kaposvár"@en .
+
+<http://data.europeana.eu/agent/54303>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/109>, <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://viaf.org/viaf/76324975>, <http://id.loc.gov/authorities/names/n84069601>, <http://data.bnf.fr/ark:/12148/cb11962695r>, <https://www.freebase.com/m/0405tj8>, <http://d-nb.info/gnd/118601210>, <https://g.co/kg/m/0405tj8>, <http://vocab.getty.edu/ulan/500009950>, <http://openlibrary.org/works/OL9063817A>, <http://www.idref.fr/027626725/id>, <http://openlibrary.org/works/OL272887A>, <http://dbpedia.org/resource/J%C3%B3zsef_Rippl-R%C3%B3nai>, <http://id.worldcat.org/fast/130249>, <http://nlg.okfn.gr/resource/authority/record98876>, <http://data.bibliotheken.nl/id/thes/p068507801>, <http://www.wikidata.org/entity/Q569369> ;
+	rdaGr2:dateOfBirth   "1861-05-23" ;
+	rdaGr2:dateOfDeath   "1927-11-25" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/153740> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/153740> ;
+	skos:altLabel        "Rippl József"@hu, "József Rippl Rónai"@cs, "Josef Ripple-Ronai"@en, "Josef Ripple-Ronai"@nl, "József Rippl-Rónai"@hu, "Jozsef Rippl- Ronai"@en, "Jozsef Rippl-Rónai"@en, "Jozsef Rippl-Ronai"@nl, "József Rippl- Rónai"@en, "Jozsef Rippl-Ronai"@en, "Jozsef Rippl-Ronai"@hu, "Jozsef Rippl-Ronai"@es, "Йожеф Рипль-Ронаи"@ru ;
+	skos:note            "Ealaíontóir Ungárach"@ga, "Artiste hongrois"@fr, "Magyar festő- és grafikusművész"@hu, "Pictor maghiar"@ro, "Hongaars kunstschilder"@nl, "Pittore ungherese"@it, "Hungarian artist (1861-1927)"@en, "Ungari kunstnik"@et, "Artista húngaro"@es, "Artista hongarès"@ca, "Венгерский художник"@ru, "Ungarischer Maler"@de ;
+	skos:prefLabel       "Рипль-Ронаи, Йожеф"@ru, "Rippl-Rónai József"@hu, "József Rippl-Rónai"@pt, "József Rippl-Rónai"@en, "József Rippl-Rónai"@it, "József Rippl-Rónai"@fr, "József Rippl-Rónai"@et, "József Rippl-Rónai"@cs, "József Rippl-Rónai"@sk, "József Rippl-Rónai"@sl, "József Rippl-Rónai"@ga, "József Rippl-Rónai"@pl, "József Rippl-Rónai"@da, "József Rippl-Rónai"@ro, "József Rippl-Rónai"@ca, "József Rippl-Rónai"@nl, "József Rippl-Rónai"@es, "József Rippl-Rónai"@de, "József Rippl-Rónai"@sv .
+
+<https://iiif.europeana.eu/presentation/2048128/56652/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2048128/56652#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-01-11T18:28:38.209884Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048128/56652> .
+
+<http://data.europeana.eu/organization/1482250000003772998>
+	a               foaf:Organization ;
+	skos:prefLabel  "Forum Hungaricum Non-profit Ltd."@en .
+
+<https://mandadb.hu/tetel/56652/Falusi_jelenet>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/timespan/19>
+	a               edm:TimeSpan ;
+	edm:begin       "1801-01-01" ;
+	edm:end         "1900-01-01" ;
+	owl:sameAs      <http://datos.bne.es/resource/XX4343988>, <https://g.co/kg/m/08b3m>, <http://dbpedia.org/resource/19th_century>, <http://babelnet.org/rdf/s02210346n>, <http://id.loc.gov/authorities/names/sh85091984>, <http://id.nlm.nih.gov/mesh/D049672>, <http://id.loc.gov/authorities/names/sh2002012475>, <https://www.freebase.com/m/08b3m>, <http://vocab.getty.edu/aat/300404513>, <http://www.wikidata.org/entity/Q6955> ;
+	skos:altLabel   "XIXe siècle"@fr, "1800-talet (sekel)"@sv, "19esimo secolo"@it, "Diciannovesimo secolo"@it, "XIX"@ca, "Secolo XIX"@it, "Nineteenth century"@en, "19. century"@en, "19:e seklet"@sv, "XIX Secolo"@it, "19. siglo"@es, "19° secolo"@it, "19e siècle"@fr, "XIX Century"@en, "Segle 19"@ca, "19th-century"@en, "19:e århundradet"@sv, "19 век"@ru, "Segle dinou"@ca, "Ottocento"@it, "'800"@it, "1800-tallet"@da, "1800-tal"@sv, "1800-talet (århundrade)"@sv ;
+	skos:prefLabel  "19. století"@cs, "Século XIX"@pt, "19. század"@hu, "19ος αιώνας"@el, "19. sajand"@et, "Segle XIX"@ca, "XIX secolo"@it, "19ú haois"@ga, "19. Jahrhundert"@de, "XIXᵉ siècle"@fr, "19. gadsimts"@lv, "19. århundrede"@da, "Siglo XIX"@es, "XIX wiek"@pl, "XIX век"@ru, "XIX amžius"@lt, "19. storočie"@sk, "19. stoljeće"@hr, "19th century"@en, "Secolul al XIX-lea"@ro, "19 век"@bg, "XIX. mendea"@eu, "19. stoletje"@sl, "19e eeuw"@nl, "1800-luku"@fi, "1800-talet"@sv .
+
+<http://data.europeana.eu/item/2048128/56652>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2048128/56652>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048128/56652> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004513327> ;
+	edm:isShownAt      <https://mandadb.hu/tetel/56652/Falusi_jelenet> ;
+	edm:isShownBy      <https://mandadb.hu/common/file-servlet/document/89953/default/doc_url/55643.jpg> ;
+	edm:object         <https://mandadb.hu/mandadb/webimage/5/0/0/0/4/wimage/55643.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000003772998> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://data.europeana.eu/proxy/provider/2048128/56652>
+	a                   ore:Proxy ;
+	dc:creator          "Rippl-Rónai József" ;
+	dc:date             "1883-01-01" ;
+	dc:description      "Nyitott kerítésajtón át egy földművesférfi és fiúcska lép ki, előttük az előtérben egy tehén és vörösesbarnás- színű borjúja legel, ezek mögött kissé jobbra egy férfi tartja kötélen az állatokat. Háttérben erkélyes tiroli faház látszik. Előtte facsoport, mögötte lilás hegyek kis felhőkkel. Valószínű másolat egy nagyobb festményről. Jelezve jobbra lent pirossal: Rippl 1883."@hu ;
+	dc:identifier       "Inventory number 55.643." ;
+	dc:language         "ZXX" ;
+	dc:rights           "Kutatási engedéllyel hozzáférhető"@hu, "research permit needed"@en, "CC BY", "Rippl-Rónai Megyei Hatókörű Városi Múzeum" ;
+	dc:source           "Rippl-Rónai Megyei Hatókörű Városi Múzeum", "Képzőművészeti Gyűjtemény" ;
+	dc:subject          "olajfestmény"@hu, "kép"@hu ;
+	dc:title            "Falusi jelenet"@hu ;
+	dc:type             "kép" ;
+	dcterms:medium      "vászon"@hu, <http://vocab.getty.edu/aat/300014078> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048128/56652> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048128/56652> .
+
+<http://data.europeana.eu/item/2048128/56652#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2023-01-11T18:28:38.209897Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048128/56652> .
+
+<https://mandadb.hu/mandadb/webimage/5/0/0/0/4/wimage/55643.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "66233"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "650"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "701"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#483D8B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2E8B57"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#ADD8E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#6495ED"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

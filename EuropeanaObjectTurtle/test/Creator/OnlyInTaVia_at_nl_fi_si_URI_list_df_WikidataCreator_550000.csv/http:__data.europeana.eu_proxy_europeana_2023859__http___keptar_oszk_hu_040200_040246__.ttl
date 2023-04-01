@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040200_040246__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/040200/040246/1899_Oldal_264_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "15390"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:20.185Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040246__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:20.185Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040246__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040246__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/040200/040246> ;
+	edm:object         <http://keptar.oszk.hu/040200/040246/1899_Oldal_264_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_040200_040246__>
+	a                    ore:Proxy ;
+	dc:creator           "Tyroler ,  ( metsző )"@hu, "Barabás ,  Miklós  ( rajzoló )"@hu ;
+	dc:description       "Petőfi Sándor magyar költő, forradalmár, nemzeti hős, a magyar költészet egyik legismertebb és legkiemelkedőbb alakja. Több mint ezer verset írt, rövid élete alatt. (Forrás: Wikipédia)"@hu ;
+	dc:format            "JPEG képállomány \u000A         657x793 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/040200/040246   [Metadata]" ;
+	dc:relation          "Ernszt Lajos magyar történeti képgyűjteményéből : Petőfi Sándor. Barabás Miklós 1846-iki rajza [ http://keptar.oszk.hu/039300/039379]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "kézjegy"@hu, "személyt ábrázoló kép"@hu, "grafika"@hu, "Petőfi Sándor (1823-1849)"@hu, "1848/49-es forradalom és szabadságharc"@hu, "forradalmár"@hu, "szignó"@hu, "History, local history"@hu, "metszetkép"@hu, "Fine arts, visual arts"@hu, "History of literature, literary studies"@hu, "portré"@hu, "költő"@hu ;
+	dc:title             "Petőfi Sándor"@hu ;
+	dc:type              "újságrészlet"@hu, "portrait"@hu, "metszet"@hu, "graphics"@hu ;
+	dcterms:alternative  "Tyroler metszete Barabás Miklós 1846-iki rajza után"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_040200_040246__> .
+
+<http://keptar.oszk.hu/040200/040246>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_040200_040246__/manifest> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040200_040246__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:05:05.723Z" ;
+	dcterms:modified          "2015-09-14T11:55:35.163Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__> ;
+	edm:completeness          "9" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F040200%2F040246%2F1899_Oldal_264_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/concept/2954>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2966> ;
+	skos:exactMatch  <https://d-nb.info/gnd/4168391-2>, <http://datos.bne.es/resource/XX533423>, <http://www.wikidata.org/entity/Q49757>, <http://babelnet.org/rdf/s00063196n>, <https://d-nb.info/gnd/4436441-6>, <http://id.ndl.go.jp/auth/ndlna/00571341>, <http://vocab.getty.edu/aat/300025513>, <https://www.freebase.com/m/05z96>, <https://g.co/kg/m/05z96>, <http://vocabularies.unesco.org/thesaurus/concept15267>, <http://data.bnf.fr/ark:/12148/cb11933176q>, <https://d-nb.info/gnd/4246394-4>, <http://purl.org/bncf/tid/5113>, <http://dbpedia.org/ontology/Poet>, <http://id.loc.gov/authorities/names/sh85103733>, <http://www.yso.fi/onto/yso/p3490> ;
+	skos:note        "Artiste disant ou écrivant de la poésie"@fr, "Foglalkozás"@hu, "Pisatelj, ki piše pesmi"@sl, "Forfatter af poesi"@da, "Schriftsteller, der Gedichte schreibt"@de, "Person who writes poetry"@en, "Poesia idazten duena"@eu, "Person som skriver poesi"@sv, "Osoba tworząca i publikująca poezję"@pl, "Literát tvořící verše"@cs, "Persona que escribe poesía"@es, "Pessoa que escreve poesia"@pt, "Umelec pracujúci so slovom, ktorý tvorí básne"@sk, "Scrittore di poesie"@it, "Persoană care scrie și publică poezii"@ro, "Човек, който пише поезия"@bg, "Человек, пишущий стихи"@ru, "Persona, kas raksta dzeju"@lv, "Schrijver van poëzie"@nl, "Luova ja taiteellinen kirjailija, joka kirjoittaa runoja"@fi, "Πρόσωπο που γράφει ποίηση"@el, "Osoba koja piše poeziju"@hr, "Duine a scríobhann filíocht"@ga, "Xi ħadd li jikteb il-poeżiji"@mt, "Persona que escriu poesia"@ca, "Inimene, kes kirjutab ja avaldab luulet"@et ;
+	skos:prefLabel   "Poète ou poétesse"@fr, "Digter"@da, "Básník"@cs, "Básnik"@sk, "Költő"@hu, "Ποιητής"@el, "Dichter"@de, "Dichter"@nl, "Luuletaja"@et, "Pjesnik"@hr, "File"@ga, "Poeta"@pt, "Poeta"@ca, "Poeta"@mt, "Poeta"@it, "Poeta"@es, "Poeta"@eu, "Poeta"@pl, "Poetas"@lt, "Поет"@bg, "Pesnik"@sl, "Poet"@sv, "Poet"@en, "Poet"@ro, "Dzejnieks"@lv, "Поэт"@ru, "Runoilija"@fi .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_040200_040246__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2954>, <http://data.europeana.eu/concept/106> ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_040200_040246__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_040200_040246__>
+	a  edm:ProvidedCHO .

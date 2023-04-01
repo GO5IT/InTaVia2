@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/3077916/>
+	a               edm:Place ;
+	skos:altLabel   "Europa &gt; Centraal-Europa &gt; Tsjechië &gt; Zuid-Bohemen (regio) &gt; Ceské Budejovice" ;
+	skos:prefLabel  "Ceské Budejovice" .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/901/B9994910T9994915.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012335/manifest> ;
+	ebucore:fileByteSize    "24690"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "264"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92060/BibliographicResource_1000126012335>
+	a                   ore:Proxy ;
+	dc:creator          "Charlemont, Hugo" ;
+	dc:description      "L.&C. Hardtmuth'sche Bleistiftfabrik:  zwei Arbeitsvorgänge mit Frauenarbeit.\u000AXylographie nach monogrammierter Federzeichnung von\u000AHugo Charlemont."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv//BA/901/B9994910T9994915.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Working world"@en, "Tschechien"@de, "Arbeitswelt"@de, "Czech Republic"@en ;
+	dc:title            "Budweis"@de ;
+	dcterms:created     "1900" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0478> ;
+	dcterms:spatial     <http://sws.geonames.org/3077916/>, <http://sws.geonames.org/3077311/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012335> .
+
+<https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126012335/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012335>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-02T08:58:18.792Z" ;
+	dcterms:modified          "2019-04-02T08:58:18.792Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335#metadataTier>, <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335> ;
+	edm:completeness          "8" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92060_Ag_EU_TEL_a0478_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92060/BibliographicResource_1000126012335> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F%2FBA%2F901%2FB9994910T9994914.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012335>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/92060/BibliographicResource_1000126012335>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1900" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126012335> .
+
+<http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012335>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92060/BibliographicResource_1000126012335> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=9994910> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv//BA/901/B9994910T9994915.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv//BA/901/B9994910T9994914.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012335#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:11:41.719Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012335> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=9994910>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126012335#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:11:41.719Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126012335> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/901/B9994910T9994914.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3588"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "88"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://sws.geonames.org/3077311/>
+	a               edm:Place ;
+	skos:prefLabel  "Czech Republic" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

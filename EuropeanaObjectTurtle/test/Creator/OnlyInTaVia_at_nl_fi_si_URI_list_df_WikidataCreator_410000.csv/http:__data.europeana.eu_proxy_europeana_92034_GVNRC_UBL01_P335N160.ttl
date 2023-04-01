@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P335N160>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:59:16.161Z" ;
+	dcterms:modified          "2018-04-05T18:03:59.621Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P335N160> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP335N160%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:12:59.234Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N160> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N160&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3461"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "99"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P335N160>
+	a                   ore:Proxy ;
+	dc:contributor      "Van de Velde, Jan", "Velde, Jan van de", "Wit, Frederik de" ;
+	dc:creator          "Velde, Jan van de" ;
+	dc:description      "Gezicht op het kasteel Teylingen, links de ronde burcht, rechts een vierkant gebouw dat toegang geeft tot de voorburcht, op de voorgrond één zittende en twee staande personen; \u00221\u0022; Behoort tot een reeks van 6 prenten, voor het eerst in 1616 door Robert de Baudous, later ca. 1680 door Frederik de Wit uitgegeven: 1) Teijlinghen 2) Egmont op de Hoeff 3) T'clooster tot Rijnsburch 4) T'huijs te Cleef bij Haerlem 5) Weerdenburch 6) Rossum. Alle aanwezig." ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N160" ;
+	dc:rights           "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl, "Universiteitsbibliotheek Leiden", "For more information: Universiteitsbibliotheek Leiden"@en ;
+	dc:source           "[P335N160], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "Teijlinghen" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1616" ;
+	dcterms:extent      "12,6 × 21,2 cm" ;
+	dcterms:isPartOf    "Topografie van Nederland", "UBL01", "GVN" ;
+	dcterms:medium      "ets/kopergravure", "image/jpeg" ;
+	dcterms:spatial     "Voorhout" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N160> .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P335N160>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48935"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N160>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P335N160> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P335N160&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P335N160>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1616" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P335N160> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P335N160#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:12:59.235Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P335N160> .

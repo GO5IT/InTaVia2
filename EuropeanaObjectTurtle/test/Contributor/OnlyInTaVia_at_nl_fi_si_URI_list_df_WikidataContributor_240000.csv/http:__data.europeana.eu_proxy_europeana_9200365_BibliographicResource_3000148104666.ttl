@@ -1,0 +1,133 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1167913z>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k1167913z> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k1167913z.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1167913z/manifest> ;
+	ebucore:fileByteSize    "97528"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "748"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/f1> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.490Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1167913z> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1167913z>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:20:37.734Z" ;
+	dcterms:modified          "2018-07-23T15:14:14.461Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k1167913z> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k1167913z.thumbnail.jpg&type=TEXT> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1167913z.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9121"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "187"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.491Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1167913z> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k1167913z>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1630" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k1167913z> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k1167913z>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "200583"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k1167913z/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1167913z/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k1167913z>
+	a                   ore:Proxy ;
+	dc:contributor      "Mucci, Vincenzo. Auteur du texte", "Romoli, Quintilio. Auteur du texte", "Castello, Nicolo. Auteur du texte", "Tasse, Le (1544-1595). Auteur du texte", "Guglia, Francesco. Auteur du texte" ;
+	dc:creator          "Caroso, Fabritio (1527?-16..). Compositeur" ;
+	dc:date             "1630" ;
+	dc:description      "Comprend : Au 2° 5° fol limin - Balletto Celeste Giglio (à 2 v. avec acc.t en tablature de luth. en partition) - P. 95 - Balletto Nuova regina (à 2 v. avec acc.t en tablature de luth. en partition) - P. 100 - Cascarda Alta regina (à 2 v. avec acc.t en tablature de luth. en partition) - P. 108 - Pavaniglia Amorosina Grimana (à 2 v. avec acc.t en tablature de luth. en partition) - P. 116 - Balletto Laura suave (à 2 v. avec acc.t en tablature de luth. en partition) - P. 126 - Balletto Alta Gonzaga (à 2 v. avec acc.t en tablature de luth. en partition) - P. 135 - Balletto Passo e mezzo (à 2 v. avec acc.t en tablature de luth. en partition) - P. 143 - Balletto Barriera (à 2 v. avec acc.t en tablature de luth. en partition) - P. 153 - Spagnoletta nuova al modo di madriglia (en tablature de luth) - P. 159 - Balletto Gagliarda di Spagna (en tablature de luth) - P. 165 - Balletto Bassa et alta (en tablature de luth) - P. 175 - Balletto Altezza d'amore (en tablature de luth) - P. 181 - Balletto Coppia Colonna (en tablature de luth) - P. 187 - Balletto Rosa Felice (en tablature de luth) - P. 198 - Cascarda Doria Colonna (en tablature de luth) - P. 203 - Balletto Alta Colonna (en tablature de luth) - P. 208 - Cascarda Allegrezza d'amore (en tablature de luth) - P. 218 - Balletto Amor Costante (en tablature de luth) - P. 219 - Balletto Forza d'amore (en tablature de luth) - P. 225 - Balletto Bassa honorata (en tablature de luth) - P. 232 - Balletto Cesarina (en tablature de luth) - P. 239 - Balletto Bellezze d'Olimpia (en tablature de luth) - P. 244 - Contrapasso nuovo (en tablature de luth) - P. 248 - Cascarda Specchio d'amore (en tablature de luth) - P. 253 - Balletto Contentezza d'amore (en tablature de luth) - P. 259 - Balletto Bassa Savella (en tablature de luth) - P. 263 - Balletto Conto dell' orco nuovo (en tablature de luth) - P. 270 - Balletto Furioso all'Italiana (en tablature de luth) - P. 275 - Cascarda Ghirlanda d'amore (en tablature de luth) - P. 292 - Balletto Nido d'amore (en tablature de luth) - P. 300 - Balletto Alta Vittoria (en tablature de luth) - P. 317 - Ballo del Fiore (en tablature de luth) - P. 324 - Balletto Tordiglione (en tablature de luth) - P. 328 - Balletto Vero amore (en tablature de luth) - P. 331 - Cascarda Ninfa Leggiadra (en tablature de luth) - P. 335 - Ballo detto il Piantone (en tablature de luth) - P. 340 - Balletto Cortesia (en tablature de luth) - P. 345 - Balletto Pungente dardo (en tablature de luth) - P. 350 - Cascarda Rara beltà (en tablature de luth) - P. 354 - Cascarda Amor prudente (en tablature de luth) - P. 357 - Cascarda Donna Leggiadra (en tablature de luth) - P. 361 - Balletto Selva amorosa (en tablature de luth) - P. 367 - Cascarda Fulgenti rai (en tablature de luth) - P. 370 - Cascarda Alta Cardana (en tablature de luth)" ;
+	dc:format           "Nombre total de vues :  403", "In-4°., 10 ff. limin., 370 p., titre dans un cadre orné, initiales ornées" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k1167913z" ;
+	dc:language         "fre" ;
+	dc:publisher        "appresso Guglielmo Facciotti (In Roma)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb428931825" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Ancien fonds du Conservatoire, RES-238" ;
+	dc:subject          "Musique de danse -- 17e siècle"@fre ;
+	dc:title            "Raccolta di varij Balli, fatti in occorenze di nozze, e festini da nobili cavalieri, e dame di diverse nationi. Nuovamente ritrovati negli scritti del Sig. Fabritio Caroso,... Data alle stampe da Gio Dim, arricchito di bellissime figure in rame. Con aggiunta del basso e soprano della musica et intavolatura di liuto à ciascun ballo" ;
+	dc:type             "Genre musical : danse" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k1167913z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k1167913z> .

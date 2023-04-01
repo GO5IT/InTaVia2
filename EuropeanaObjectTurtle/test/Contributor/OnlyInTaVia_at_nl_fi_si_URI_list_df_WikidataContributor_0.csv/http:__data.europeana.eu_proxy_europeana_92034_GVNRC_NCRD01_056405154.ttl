@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_056405154>
+	a                   ore:Proxy ;
+	dc:contributor      "Michael Knobbaert, St Peter by 't Profetenhuys der Societeyt Jesu", "Abraham van Diepenbeeck" ;
+	dc:creator          "Michael Knobbaert, St Peter by 't Profetenhuys der Societeyt Jesu" ;
+	dc:description      "Uit: Costumen van het Graefschap Vlaenderen...", "Tekst: 't ghebruyck gheeft seden aen wet en reden; Spits recht; Rauwe Wet; Duyster en swaer word licht en claer; t ghebruyck beset en recht en wet" ;
+	dc:format           "gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:056405154" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[056405154], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Vlaanderen"@nl, "Justitia (staand, zwaard) (Rechtssymbool)"@nl, "wetgeving"@nl, "Wet"@nl, "rechtsspreekwoord"@nl ;
+	dc:title            "Justitia en Lex" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1674" ;
+	dcterms:isPartOf    "NCRD01", "GVN", "NCRD" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_056405154> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:33.990Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_056405154> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_056405154>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:04:33.717Z" ;
+	dcterms:modified          "2018-04-05T17:24:39.642Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_056405154> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A056405154%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:056405154>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48947"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_056405154>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/153278> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1674" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_056405154> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:056405154&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6191"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "99"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/agent/153278>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/113189> ;
+	owl:sameAs                     <https://g.co/kg/m/059dgv>, <http://ta.sandrart.net/-person-2806>, <http://www.idref.fr/147107504/id>, <http://data.bnf.fr/ark:/12148/cb14802084f>, <http://vocab.getty.edu/ulan/500024425>, <http://id.loc.gov/authorities/names/n82059515>, <https://www.freebase.com/m/059dgv>, <http://viaf.org/viaf/24866132>, <http://d-nb.info/gnd/12214516X>, <http://www.wikidata.org/entity/Q330854>, <http://id.worldcat.org/fast/91495>, <http://dbpedia.org/resource/Abraham_van_Diepenbeeck>, <http://datos.bne.es/resource/XX907310> ;
+	rdaGr2:dateOfBirth             "1596-05-09" ;
+	rdaGr2:dateOfDeath             "1675-09-01" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40358> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/203279> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Diepenback"@en, "Abraham van diepenbeeke"@en, "Dicpinbekc"@en, "Abraham Jansz. van Diepenbach"@en, "Piepenbeck"@en, "Diepembek"@en, "Abraham Dieppenbeck"@en, "Diepenbéke"@en, "Abraham Jansz. van Dussenbeck"@en, "Dietenbeck"@en, "Abr. Diebenbeck"@en, "Abramo van Diepenbecck"@nl, "Abraham van Diepenbeeck"@da, "Abraham Jansz. van Diepenbecke"@en, "Abramo van Diepenbecck"@en, "Abraham Jansz. van Dehenbach"@en, "Abraham Van Diepenbeeck"@cs, "Dehenbach"@en, "Abraham Van Diepenbeeck"@en, "Abr. Diepenbeek"@en, "Diepembech"@en, "Abraham Van Diepembeke"@en, "Abrah. v. Diepenbek"@en, "Depenbeke"@en, "Abr. Diöbenbeck"@en, "Abraham Van Diepenbeek"@en, "Diepinbiek"@en, "Abraham van Diepenbeek"@nl, "Abraham van Diepenbeek"@fr, "Abraham van Diepenbeek"@sv, "Abraham van Diepenbeek"@en, "Abraham Jansz. Van Diepenbeeck"@en, "Abraham van Diepenbeke"@cs, "Abraham van Diepenbeke"@en, "Абрахам ван Дипенбек"@ru, "Abraham v. Diepenboeck"@en, "Abraham Jansz. van Depenbeke"@en, "A. Diepembek"@en, "Van Diepenbeek"@en, "Abraham Jansz. van Dipembeck"@en, "Depenbech"@en, "A. van diepenbeeck"@en, "A. Diepenbeck"@en, "Abraham Jansz. van Diepenback"@en, "Abraham Jansz. van Diepeubeck"@en, "Abraham Jansz. van Dippenbeck"@en, "A. Van Diebenbeek"@en, "Diefenbeck"@en, "Diepenbeék"@en, "Diépernbeke"@en, "Abraham diepenbeeck"@en, "A. Diepenbeeck"@en, "Abaham Diepenbeck"@en, "Abraham Jansz. van Diepinbiek"@en, "Abraham à Diepenbeke"@en, "Ab. Diepenbeck"@en, "Abraham von Diepenbeck"@cs, "Abraham von Diepenbeck"@en, "Abrah. v. diepenbeeck"@en, "Abraham Jansz. van Depenbech"@en, "Dipenbeek"@en, "Abrah. Van Diepenbeeck"@en, "Diepinbeek"@en, "Dipembeck"@en, "A. Van Diepenbeke"@en, "Abraham Jansz. van Diepenbeke"@en, "Diepenbek"@en, "Abraham Diepenbeèk"@en, "Diebenböck"@en, "Diepenbecke"@en, "Abraham Diepenpeck"@en, "Scolare del Vandich Diepenbech"@en, "Diepenbeek, Abraham van"@sv, "Abr. van Diepenbeek"@en, "Abraham Diepenbek"@en, "Abraham van Diepenbecke"@nl, "Abraham van Diepenbecke"@en, "A. Dipenbeck"@en, "Abr. Diepenbeck"@en, "Dieppenbeck"@en, "Дипенбек, Абрахам ван"@ru, "Abraham Jansz van Diepenbeeck"@en, "Abraham van Diepenbek"@en, "Dieppenbek"@en, "Diepenbeke"@en, "Abraham Van Diapenbeck"@en, "Diepinbeck"@en, "Abraham van Diependael"@cs, "Dieppenbeek"@en, "Abraham Jansz. van Dieppenbeck"@en, "A. van Diepenbeek"@en, "Diepeubeck"@en, "Abraham Jansz. van Diepenbeek"@en, "Abraham van Diepenbeck"@fr, "Abraham van Diepenbeck"@en, "Abraham Jansz. van Depenbeck"@en, "Dibenbeck"@en, "Deepenbech"@en, "Abraham Jansz. van Deepenbech"@en, "Abramo van Diepenbeke"@nl, "Piepenbeek"@en, "Abramo van Diepenbeke"@en, "A. Diepenpeck"@en, "Abraham van Diepembeck"@en, "Abraham Jansz. van Diepenbek"@en, "Абрахам Ван Дипенбек"@ru, "Dippenbeck"@en, "Abraham Van Diepenbéke"@en, "Abraham v. diepenbeeck"@en, "Diepembeck"@en, "Abraham van Diepenboeck"@en, "Diespinbek"@en, "Diepembec"@en, "Dussenbeck"@en, "Diepenbroek"@en, "Diepenbach"@en, "Dipenbeck"@en, "Diepenbeck"@en, "Diepenbeeck"@de, "Diepenbeeck"@en, "Abraham Vandiepenbeeck"@en, "Die-Pin-Bec"@en, "Dupenback"@en, "Diebenbeck"@en, "A. v. diepenbeeck"@en, "Abraham Diepenbeck"@en, "Dicpenbeeck"@en, "Diépenbeck"@en, "Diepenbeek"@en, "Abrahamus a Dipenbeke"@cs, "Abraham van Dieppenbeck"@en, "Abraham Dieppenbaeck"@en, "Depenbeck"@en, "Abram van Diependael"@sv, "A. Dieppenbaeck"@en, "Deepenbeck"@en, "A. Diepenbeek"@en, "Dicpenbeck"@en, "Abraham Jansz. van Dupenbeck"@en, "A. Diepenbeke"@en, "Abraham Jansz. van Diepenbeeck"@nl, "Abraham Diepenbeeke"@en, "Abraham Jansz. van Diepenbeeck"@en, "Abraham Diepenbeeke"@de, "Abraham Diepenbeke"@en, "Diépembeck"@en, "Abraham Jansz. van Dupenback"@en, "Dupenbeck"@en, "Ab. Diepenbeek"@en, "Abraham von Diepenbeek"@sv, "Van Diepenbeeck"@es, "Van Diepenbeeck"@en, "Abraham Jansz. van Diepenbeck"@en, "Dippenback"@en, "Abraham Van Diépenbeck"@en, "Diepenbech"@en, "Diepembeke"@en ;
+	skos:note                      "Peintre néerlandais"@fr, "Péintéir"@ga, "Painter (1596-1675)"@en, "Pintor i il·lustrador flamenc"@ca, "Pittore"@it, "Flamandzki malarz"@pl, "Фламандский художник и график"@ru, "Niederländischer Maler"@de, "Ολλανδός ζωγράφος, σχεδιαστής και χαράκτης"@el, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel                 "Abraham Jansz. van Diepenbeeck"@da, "Abraham Jansz. van Diepenbeeck"@sk, "Abraham Jansz. van Diepenbeeck"@cs, "Abraham van Diepenbeke"@hu, "Abraham van Diepenbeeck"@ga, "Abraham van Diepenbeeck"@sl, "Abraham van Diepenbeeck"@es, "Abraham van Diepenbeeck"@it, "Abraham van Diepenbeeck"@en, "Abraham van Diepenbeeck"@pt, "Abraham van Diepenbeeck"@sv, "Abraham van Diepenbeeck"@fi, "Abraham van Diepenbeeck"@de, "Abraham van Diepenbeeck"@fr, "Abraham van Diepenbeeck"@nl, "Abraham van Diepenbeeck"@ca, "Abraham van Diepenbeeck"@ro, "Abraham van Diepenbeeck"@pl, "Ван Дипенбек, Абрахам"@ru, "Άμπραχαμ φαν Ντιέπενμπεϊκ"@el .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_056405154>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:056405154> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:056405154&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_056405154#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:06:33.990Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_056405154> .

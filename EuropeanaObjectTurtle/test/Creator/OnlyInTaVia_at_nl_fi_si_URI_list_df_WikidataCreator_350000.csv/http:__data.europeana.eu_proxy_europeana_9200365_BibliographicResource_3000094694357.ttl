@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:59.899Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53054902f> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53054902f>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:25.231Z" ;
+	dcterms:modified          "2018-07-23T15:37:18.835Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b53054902f> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b53054902f.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53054902f/manifest> ;
+	ebucore:fileByteSize    "30128"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "717"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2E8B57"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#3CB371"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53054902f.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4440"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "179"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#3CB371"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2E8B57"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b53054902f/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53054902f>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b53054902f> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b53054902f.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b53054902f>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "198520"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b53054902f>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b53054902f> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b53054902f/f1> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b53054902f>
+	a                   ore:Proxy ;
+	dc:contributor      "Dupont (copiste). Copiste" ;
+	dc:creator          "Du Mont, Henry (1610-1684). Compositeur" ;
+	dc:date             "1690-1710" ;
+	dc:description      "Appartient à l’ensemble documentaire : RISMMss", "Appartient à l’ensemble documentaire : Brossard1", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [Mater Jerusalem. Voix (6), choeur à 5 voix, orchestre]", "Présentation musicale : [Partition]", "Comprend : Motet // O Flos Convalium de m.r Dumont. ; Mater Jerusalem de mons.r Dumont ; Dum esset rex de m.r Dumont", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [O flos convallium. Voix (5), choeur à 5 voix, orchestre]", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [Motets (3). Voix (5 ou 6), choeur à 5 voix, orchestre]", "Titre uniforme : Du Mont, Henry (1610-1684). Compositeur. [Dum esset rex. Voix (5), choeur à 5 voix, orchestre]", "Titre propre pris au dos.. - Contient trois motets : 1. f. 1-19v \u0022Motet // O Flos Convalium de m.r Dumont\u0022 pour 5 voix (Sol 2, Ut 3, Ut 4 (2), Fa 4), choeur à 5 voix (mêmes tessitures) et orchestre à 5 parties (Sol 1 (2), Ut 1, Ut 3, Fa 4) (inc. : O flos convallium, o rosa mistica) ; 2. f. 21-32v \u0022Mater Jerusalem de mons.r Dumont\u0022 pour 6 voix (Sol 2, Ut 1, Ut 3, Ut 4, Fa 3 (2)), choeur à 5 voix (Sol 2, Ut 3, Ut 4 (2), Fa 4) et orchestre à 5 parties (Sol 1 (2), Ut 1, Ut 3, Fa 4) (inc. : Mater Jerusalem Civitas sancta Dei) ; 3. f. 33-53 \u0022Dum esset rex de m.r Dumont\u0022 pour 5 voix (Sol 2, Ut 3, Ut 4 (2), Fa 4), choeur à 5 voix (mêmes tessitures) et orchestre à 4 parties (Sol 1, Ut 1, Ut 3, Fa 4) (inc. : Dum esset rex in accubitu suo).. - Texte disposé sous la seule partie de basse du petit choeur, avec indications fragmentaires de texte aux autres voix en cas de décalage.. - Chiffrages occasionnels sur la partie de basse instrumentale.. - Même copiste que Rés. Vma. ms. 572 (3).. - Les f. 20-20v et 53v sont vides.. - Fait partie de la collection Sébastien de Brossard." ;
+	dc:format           "1 partition (53 f.) ; 38 x 26 cm.", "Nombre total de vues :  115" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b53054902f" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14792635k", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb39604722v" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VMA MS-572 (4)" ;
+	dc:subject          "Motets -- Partitions"@fre ;
+	dc:title            "Mo // tet" ;
+	dc:type             "manuscript music"@eng, "musique manuscrite"@fre, "Genre musical : motet" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53054902f> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b53054902f#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:59.899Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b53054902f> .

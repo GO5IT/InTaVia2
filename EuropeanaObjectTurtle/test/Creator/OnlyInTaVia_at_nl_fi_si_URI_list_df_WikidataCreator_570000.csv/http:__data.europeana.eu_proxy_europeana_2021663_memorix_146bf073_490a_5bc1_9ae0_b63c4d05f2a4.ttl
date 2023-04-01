@@ -1,0 +1,105 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/146bf073-490a-5bc1-9ae0-b63c4d05f2a4> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/c1086255-c5bc-2194-e811-f7536deeda83.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/c1086255-c5bc-2194-e811-f7536deeda83.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:32.920Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> .
+
+<http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4>
+	a  edm:ProvidedCHO .
+
+<https://images.memorix.nl/ranh/thumb/640x480/c1086255-c5bc-2194-e811-f7536deeda83.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4/manifest> ;
+	ebucore:fileByteSize    "52760"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "345"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T13:48:55.746Z" ;
+	dcterms:modified          "2015-03-26T13:48:55.746Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2Fc1086255-c5bc-2194-e811-f7536deeda83.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:32.920Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4>
+	a                   ore:Proxy ;
+	dc:creator          "Panderen, Egbert van (1580-1637)"@nl, "Veen, Otto van (1556-1629)"@nl ;
+	dc:date             "1610-00-00/1610-00-00" ;
+	dc:description      "Thomas van Aquino bekeert twee Joodse rabbijnen. <br> Thomas van Aquino zit aan een tafel en is in gesprek met twee Joodse rabbijnen. Op de achtergrond een tuin en een\u000A          kapel waarin Thomas van Aquino twee mannen doopt. <br> Twintigste prent uit een genummerde serie van 30 prenten die het levensverhaal van Thomas van Aquino verbeelden. <br>\u000A          Gravure door Egbert van Panderen naar ontwerptekening van Otto van Veen; met Latijns onderschrift; gesigneerd; linksonder genummerd '20'"@nl, "De serie compleet in de collectie, zie:<br> NL-HlmNHA_1477_53009464 t/m<br> NL-HlmNHA_1477_53009493"@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53009483" ;
+	dc:language         "Dutch" ;
+	dc:publisher        "Veen, Otto van (1556-1629)" ;
+	dc:title            "Voorhelm Schneevoogt NL-HlmNHA_1477_53009483"@nl, "Thomas van Aquino bekeert twee Joodse rabbijnen. <br> Thomas van Aquino zit aan een tafel en is in gesprek met twee Joodse rabbijnen. Op de achtergrond een tuin en een kapel\u000A          waarin Thomas van Aquino twee mannen doopt. <br> Twintigste prent uit een genummerde serie van 30 prenten die het levensverhaal van Thomas van Aquino verbeelden. <br> Gravure\u000A          door Egbert van Panderen naar ontwerptekening van Otto van Veen; met Latijns onderschrift; gesigneerd; linksonder genummerd '20'"@nl, "NL-HlmNHA_1477_53009483"@nl ;
+	dc:type             "Grafiek Drukwerk"@nl, "Historieprenten, tekeningen en foto's"@nl ;
+	dcterms:issued      "1610-00-00" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_146bf073_490a_5bc1_9ae0_b63c4d05f2a4> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/146bf073-490a-5bc1-9ae0-b63c4d05f2a4>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16739"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

@@ -1,0 +1,130 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/place/40837>
+	a               edm:Place ;
+	owl:sameAs      <https://sws.geonames.org/2757345/>, <http://www.wikidata.org/entity/Q33432813> ;
+	skos:altLabel   "Delft (plaats)"@nl ;
+	skos:note       "Stadt in den Niederlanden"@de, "Plaats in Zuid-Holland, Nederland"@nl, "Ciutat dels Països Baixos"@ca, "City in Zuid-Holland, the Netherlands"@en ;
+	skos:prefLabel  "Delft"@en, "Delft"@pt, "Delft"@sv, "Delft"@de, "Delft"@da, "Delft"@nl, "Delft"@es, "Delft"@ca, "Delft"@fr, "Delft"@it ;
+	wgs84_pos:lat   "52.00667" ;
+	wgs84_pos:long  "4.35556" .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P303_1N013>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:57:13.228Z" ;
+	dcterms:modified          "2018-04-05T18:02:14.216Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AUBL01%3AP303-1N013%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:57.434Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P303_1N013> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_UBL01_P303_1N013>
+	a                   ore:Proxy ;
+	dcterms:created     <http://data.europeana.eu/timespan/19> ;
+	dcterms:medium      <http://data.europeana.eu/concept/35> ;
+	dcterms:spatial     <http://data.europeana.eu/place/40837> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_UBL01_P303_1N013> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P303-1N013&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "2913"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "108"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P303_1N013>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/UBL01:P303-1N013> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P303-1N013&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/concept/35>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4127900-1>, <https://www.freebase.com/m/02csf>, <http://www.wikidata.org/entity/Q93184>, <http://vocab.getty.edu/aat/300033973>, <http://id.loc.gov/authorities/names/sh85039408>, <http://vocabularies.unesco.org/thesaurus/concept4716>, <http://id.nlm.nih.gov/mesh/D020472>, <http://id.ndl.go.jp/auth/ndlna/00561487>, <http://www.yso.fi/onto/yso/p22465>, <https://g.co/kg/m/02csf>, <http://thesaurus.europeanafashion.eu/thesaurus/10307>, <http://babelnet.org/rdf/s00028639n>, <http://cv.iptc.org/newscodes/mediatopic/20000034>, <http://data.bnf.fr/ark:/12148/cb119362234>, <https://schema.org/Drawing>, <http://purl.org/bncf/tid/1062> ;
+	skos:note        "Umělecké dílo"@cs, "Obra de arte visual em meio bidimensional"@pt, "Saothar ealaíne"@ga, "Typ av tvådimensionell bildkonst"@sv, "Kuvataiteen teos"@fi, "Kompozycja linii wykonana w dwóch wymiarach"@pl, "Lavoro artistico bidimensionale"@it, "Arte visual en dos dimensiones"@es, "Visual artwork in two-dimensional medium"@en, "Изображение на плоскости, созданное средствами графики"@ru, "Obra d'art en un medi bidimensional"@ca, "Bildmotiv in vereinfachender Weise mit Linien und Strichen dargestellt"@de, "Type af to-dimensionelle billedkunst"@da, "Surface portant une représentation faite à l’aide d'un matériel d'écriture"@fr ;
+	skos:prefLabel   "Zīmējums"@lv, "Рисунка"@bg, "Risba"@sl, "Joonistus"@et, "Piirustus"@fi, "Rajz"@hu, "Líníocht"@ga, "Tekening"@nl, "Desenho"@pt, "Dessin"@fr, "Dibuix"@ca, "Σχέδιο"@el, "Piešimas"@lt, "Crtež"@hr, "Tegning"@da, "Desen"@ro, "Dibujo"@es, "Zeichnung"@de, "Kresba"@sk, "Kresba"@cs, "Рисунок"@ru, "Teckning"@sv, "Rysunek"@pl, "Marrazki"@eu, "Drawing"@en, "Disegno"@it .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_UBL01_P303_1N013>
+	a                   ore:Proxy ;
+	dc:contributor      "Goltzius,  Hendrick (1558-1617)", "L.,  P." ;
+	dc:creator          "L.,  P." ;
+	dc:description      "Annotatie verso Bodel Nijenhuis: \u0022... Gevolgd naar een plaatje der 16e E.\u0022; Mogelijk naar Hendrik Goltzius." ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:UBL01:P303-1N013" ;
+	dc:rights           "Voor meer informatie: Universiteitsbibliotheek Leiden"@nl, "For more information: Universiteitsbibliotheek Leiden"@en, "Universiteitsbibliotheek Leiden" ;
+	dc:source           "[P303_1N013], Topografie van Nederland, Universiteitsbibliotheek Leiden" ;
+	dc:title            "Mausoleum van Willem de 1e Prins van Oranje, op het choor in de Nieuwe Kerk in welkers plaats daarna de fraaye marmore tombe is opgerecht" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "19e eeuw" ;
+	dcterms:extent      "29,7 × 21,2 cm" ;
+	dcterms:isPartOf    "Topografie van Nederland", "GVN", "UBL01" ;
+	dcterms:medium      "tekening", "image/jpeg" ;
+	dcterms:spatial     "Delft" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P303_1N013> .
+
+<http://data.europeana.eu/timespan/19>
+	a               edm:TimeSpan ;
+	edm:begin       "1801-01-01" ;
+	edm:end         "1900-01-01" ;
+	owl:sameAs      <http://datos.bne.es/resource/XX4343988>, <https://g.co/kg/m/08b3m>, <http://dbpedia.org/resource/19th_century>, <http://babelnet.org/rdf/s02210346n>, <http://id.loc.gov/authorities/names/sh85091984>, <http://id.nlm.nih.gov/mesh/D049672>, <http://id.loc.gov/authorities/names/sh2002012475>, <https://www.freebase.com/m/08b3m>, <http://vocab.getty.edu/aat/300404513>, <http://www.wikidata.org/entity/Q6955> ;
+	skos:altLabel   "XIXe siècle"@fr, "1800-talet (sekel)"@sv, "19esimo secolo"@it, "Diciannovesimo secolo"@it, "XIX"@ca, "Secolo XIX"@it, "Nineteenth century"@en, "19. century"@en, "19:e seklet"@sv, "XIX Secolo"@it, "19. siglo"@es, "19° secolo"@it, "19e siècle"@fr, "XIX Century"@en, "Segle 19"@ca, "19th-century"@en, "19:e århundradet"@sv, "19 век"@ru, "Segle dinou"@ca, "Ottocento"@it, "'800"@it, "1800-tallet"@da, "1800-tal"@sv, "1800-talet (århundrade)"@sv ;
+	skos:prefLabel  "19. století"@cs, "Século XIX"@pt, "19. század"@hu, "19ος αιώνας"@el, "19. sajand"@et, "Segle XIX"@ca, "XIX secolo"@it, "19ú haois"@ga, "19. Jahrhundert"@de, "XIXᵉ siècle"@fr, "19. gadsimts"@lv, "19. århundrede"@da, "Siglo XIX"@es, "XIX wiek"@pl, "XIX век"@ru, "XIX amžius"@lt, "19. storočie"@sk, "19. stoljeće"@hr, "19th century"@en, "Secolul al XIX-lea"@ro, "19 век"@bg, "XIX. mendea"@eu, "19. stoletje"@sl, "19e eeuw"@nl, "1800-luku"@fi, "1800-talet"@sv .
+
+<http://www.geheugenvannederland.nl/?/en/items/UBL01:P303-1N013>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48618"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_UBL01_P303_1N013#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:57.434Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_UBL01_P303_1N013> .

@@ -1,0 +1,146 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92027/BibliographicResource_1000125590367>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/73>, <http://data.europeana.eu/place/83190> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1820" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125590367> .
+
+<http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125590367>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10334903> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/10334903.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/10334903.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/Preview/10334903.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125590367/manifest> ;
+	ebucore:fileByteSize    "429802"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "547"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0E68C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F4A460"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10334903>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125590367#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:51:14.014Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125590367> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92027/BibliographicResource_1000125590367>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-12T16:22:24.834Z" ;
+	dcterms:modified          "2015-06-15T12:27:40.043Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367#metadataTier>, <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367> ;
+	edm:completeness          "9" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92027_Ag_EU_TEL_a0429E.xml" ;
+	edm:landingPage           <https://www.europeana.eu/item/92027/BibliographicResource_1000125590367> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F10334903.jpg&type=IMAGE> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125590367>
+	a  edm:ProvidedCHO .
+
+<http://www.bildarchivaustria.at/Thumbnail/10334903.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92027/BibliographicResource_1000125590367/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92027/BibliographicResource_1000125590367#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:51:14.013Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125590367> .
+
+<http://data.europeana.eu/place/73>
+	a               edm:Place ;
+	owl:sameAs      <http://data.bnf.fr/ark:/12148/cb152383744>, <http://babelnet.org/rdf/s00007266n>, <https://g.co/kg/m/0h7x>, <http://zbw.eu/stw/descriptor/16950-4>, <http://vocab.getty.edu/tgn/1000062>, <http://id.ndl.go.jp/auth/ndlna/00568970>, <http://www.wikidata.org/entity/Q40>, <http://id.nlm.nih.gov/mesh/Z01.542.088>, <http://vocabularies.unesco.org/thesaurus/concept890>, <http://www.idref.fr/026359863/id>, <http://id.loc.gov/authorities/names/n79040121>, <https://www.freebase.com/m/0h7x>, <http://id.nlm.nih.gov/mesh/D001317>, <http://data.bnf.fr/ark:/12148/cb11862316m>, <http://www.yso.fi/onto/ysa/Y105294>, <http://datos.bne.es/resource/XX450936>, <http://dbpedia.org/resource/Austria>, <https://sws.geonames.org/2782113/>, <http://viaf.org/viaf/148842731>, <http://www.yso.fi/onto/yso/p105294>, <https://d-nb.info/gnd/4043271-3>, <http://id.worldcat.org/fast/1204901> ;
+	skos:altLabel   "La République d’Autriche"@fr, "Segona República d'Àustria"@ca, "Република Австрия"@bg, "República de Austria"@es, "Republic of Austria"@en, "Österreich"@hr, "Österreich"@en, "República da Áustria"@pt, "Österreich"@sv, "Österreich"@ru, "Δημοκρατία της Αυστρίας"@el, "Republika Austrija"@hr, "Republiek Oostenrijk"@nl, "República Federal d'Àustria"@ca, "Aut."@fr, "Autr."@fr, "Австрийская Республика"@ru, "Republica de Austria"@es, "Ostalriche"@ca, "Republik Österreich"@es, "Republik Österreich"@en, "Republik Österreich"@de, "Austria Vabariik"@et, "Itävallan tasavalta"@fi, "Repubblika tal-Awstrija"@mt, "RÖ"@es, "RÖ"@de, "Rakúska republika"@sk, "AUT"@nl, "AUT"@es, "AUT"@fr, "AUT"@en, "AUT"@de, "Республика Австрия"@ru, "República d'Àustria"@ca, "Austria"@ca, "Republika Austrii"@pl, "AT"@nl, "AT"@es, "AT"@fr, "AT"@en, "AT"@de ;
+	skos:note       "Pajjiż fl-Ewropa Ċentrali"@mt, "Stato dell'Europa centrale, membro dell'Unione europea"@it, "Государство в Западной Европе"@ru, "Država u srednjoj Europi"@hr, "Stat în Europa Centrală"@ro, "Staat in Mitteleuropa"@de, "Riik Kesk-Euroopas"@et, "Štát v strednej Európe"@sk, "Państwo w Europie"@pl, "Valsts Centrāleiropā"@lv, "Et land i Centraleuropa"@da, "Valtio Keski-Euroopassa"@fi, "Förbundsrepublik i Centraleuropa"@sv, "Χώρα της κεντρικής Ευρώπης"@el, "Land in Europa"@nl, "Pays d'Europe centrale"@fr, "Estat sense litoral a l'Europa Central"@ca, "Država v Evropi"@sl, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Stát ve střední Evropě"@cs, "País localizado na Europa Central"@pt, "Държава в Централна Европа"@bg, "País de Europa"@es ;
+	skos:prefLabel  "Austrija"@hr, "Austrija"@lt, "Austrija"@lv, "Rakúsko"@sk, "Avstrija"@sl, "Àustria"@ca, "Autriche"@fr, "Itävalta"@fi, "Austria"@en, "Austria"@it, "Austria"@es, "Austria"@et, "Austria"@eu, "Austria"@pl, "Austria"@ro, "Østrig"@da, "Awstrija"@mt, "Rakousko"@cs, "Österrike"@sv, "An Ostair"@ga, "Австрия"@ru, "Австрия"@bg, "Oostenrijk"@nl, "Áustria"@pt, "Αυστρία"@el, "Österreich"@de, "Ausztria"@hu ;
+	wgs84_pos:lat   "48.0" ;
+	wgs84_pos:long  "14.0" .
+
+<http://data.europeana.eu/proxy/provider/92027/BibliographicResource_1000125590367>
+	a                   ore:Proxy ;
+	dc:creator          "Wiesner, Conrad", "Klein, Johann Adam", "Viehbeck, Karl Ludwig Friedrich" ;
+	dc:description      "Radierung mit topografischen Angaben von Johann Adam Klein und Konrad Wiesner nach Zeichnung von Karl Ludwig Viehbeck."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/10334903.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Austrian Monarchy"@de, "Paintings"@de ;
+	dc:title            "Der Pass Fernstein bei Nassereith"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:created     "1820" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0429> ;
+	dcterms:spatial     "Nassereith", "Fernstein" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92027/BibliographicResource_1000125590367> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92027/BibliographicResource_1000125590367> .
+
+<http://data.europeana.eu/place/83190>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/place/73> ;
+	owl:sameAs        <http://www.wikidata.org/entity/Q21881898>, <https://sws.geonames.org/2770927/> ;
+	skos:prefLabel    "Nassereith"@en, "Nassereith"@sv ;
+	wgs84_pos:alt     "913.0" ;
+	wgs84_pos:lat     "47.3324" ;
+	wgs84_pos:long    "10.81707" .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

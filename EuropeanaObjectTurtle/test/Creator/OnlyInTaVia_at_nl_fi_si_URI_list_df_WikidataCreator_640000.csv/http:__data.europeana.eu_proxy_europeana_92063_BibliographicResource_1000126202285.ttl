@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_1000126202285>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-13T07:38:10.144Z" ;
+	dcterms:modified          "2015-06-15T12:01:38.352Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285#metadataTier>, <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285> ;
+	edm:completeness          "8" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92063_Ag_EU_TEL_a0481_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92063/BibliographicResource_1000126202285> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F%2FBA%2F904%2FB10176254T10176258.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_1000126202285#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:54.439Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_1000126202285> .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_1000126202285>
+	a  edm:ProvidedCHO .
+
+<http://sws.geonames.org/2782113/>
+	a               edm:Place ;
+	skos:prefLabel  "Republic of Austria (Herstellung)" .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/904/B10176254T10176258.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3130"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "97"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10176254>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_1000126202285>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=10176254> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv//BA/904/B10176254T10176259.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv//BA/904/B10176254T10176258.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/904/B10176254T10176259.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92063/BibliographicResource_1000126202285/manifest> ;
+	ebucore:fileByteSize    "15768"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "293"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "384"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92063/BibliographicResource_1000126202285>
+	a                   ore:Proxy ;
+	dc:creator          "Sandmann, Franz Josef", "Alt, Rudolf von" ;
+	dc:description      "Fassade über die Währingerstraße schräg von rechts. Zeichnung von Rudolf von Alt, lithografiert von Josef Sandmann, farbig."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv//BA/904/B10176254T10176259.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Bezirke"@de, "Views of Vienna"@en, "Alsergrund"@de, "Districts"@en, "Wienansichten"@de ;
+	dc:title            "Wien 9, Josephinum"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:created     "1850" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0481> ;
+	dcterms:spatial     <http://sws.geonames.org/2782113/>, <http://sws.geonames.org/2761369/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_1000126202285> .
+
+<http://data.europeana.eu/proxy/europeana/92063/BibliographicResource_1000126202285>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1850" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_1000126202285> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_1000126202285> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://sws.geonames.org/2761369/>
+	a               edm:Place ;
+	skos:prefLabel  "Vienna (Herstellung)" .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_1000126202285#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:54.438Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_1000126202285> .
+
+<https://iiif.europeana.eu/presentation/92063/BibliographicResource_1000126202285/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

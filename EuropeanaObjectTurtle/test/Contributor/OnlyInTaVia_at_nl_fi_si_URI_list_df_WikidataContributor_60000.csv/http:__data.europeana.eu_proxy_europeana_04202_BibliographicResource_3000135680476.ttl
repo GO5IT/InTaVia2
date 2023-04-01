@@ -1,0 +1,167 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135680476>
+	a  edm:ProvidedCHO .
+
+<https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135680476/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000018286>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1269"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135680476>
+	a                   ore:Proxy ;
+	dc:contributor      "Christoffel Plantijn", "Dirck Volckertszoon Coornhert" ;
+	dc:creator          "Hendrik Laurensz Spieghel" ;
+	dc:description      "Voorw. van Dirck Volckertz. Coornhert", "Drukkersmerk op titelbl." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000220239" ;
+	dc:language         "nl" ;
+	dc:publisher        "by Christoffel Pantyn" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:subject          "Dutch language, Grammar -- Early works to 1800" ;
+	dc:title            "Twe-spraack vande Nederduitsche letterkunst, ofte Vant spellen ende eygenscap des Nederduitschen taals, uytghegheven by de Kamer in liefd bloeyende, t' Amstelredam" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "112 p., A-H8 ; 8°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1584" ;
+	dcterms:spatial     "Tot Leyden" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135680476> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135680476#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:13.298Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135680476> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://lib.ugent.be/europeana/900000018286>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "15127"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/171633>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://data.cervantesvirtual.com/person/65149>, <http://data.cervantesvirtual.com/person/70510>, <http://libris.kb.se/resource/auth/224025>, <http://id.ndl.go.jp/auth/ndlna/01002231>, <http://datos.bne.es/resource/XX1715120>, <http://d-nb.info/gnd/118741004>, <http://www.idref.fr/03447675X/id>, <https://www.freebase.com/m/07d_nv>, <http://viaf.org/viaf/120696841>, <http://openlibrary.org/works/OL1422484A>, <http://id.worldcat.org/fast/1841693>, <http://www.wikidata.org/entity/Q380360>, <http://datos.bne.es/resource/XX1085772>, <http://data.bibliotheken.nl/id/thes/p068911416>, <http://dbpedia.org/resource/Christophe_Plantin>, <urn:uuid:b630dffd-92f5-486c-8eb7-98781347c12a>, <https://g.co/kg/m/07d_nv>, <http://data.bnf.fr/ark:/12148/cb12522917d>, <http://id.loc.gov/authorities/names/n50019905>, <https://libris.kb.se/zw9cfrdh2nzkdvj>, <http://nlg.okfn.gr/resource/authority/record253455> ;
+	rdaGr2:dateOfBirth             "1520-05-01" ;
+	rdaGr2:dateOfDeath             "1589-07-01" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/41786> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/203279> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2955>, <http://data.europeana.eu/concept/2954> ;
+	skos:altLabel                  "Christopher Plantin"@cs, "Plantino"@es, "Christophe Plantin"@es, "Christophe Plantin"@nl, "Christophorus Plantinus"@es, "Christophorus Plantinus"@cs, "Plantijn"@es, "Plantijn"@de, "Christophel Plantijn"@cs, "Кристоф Плантен"@ru, "Christophorus Plantinus (la)"@ca, "Christoffel Plantijn (nl"@ca, "Kristof Plantin"@cs, "Cristobal Plantino"@es, "Cristobal Plantino"@en, "Cristóbal Plantino (es)"@ca, "Officina Plantiniana"@pl, "Plantin"@de, "Christoffel Plantijn"@es, "Christoffel Plantijn"@da, "Christoffel Plantijn"@en, "Christoffel Plantijn"@it, "Christoffel Plantijn"@pl, "Plantinus"@es, "Krzysztof Plantin"@cs, "Plantin of Antwerp"@cs, "Christofori Plantini"@cs, "Christoph Plantin"@da, "Christoph Plantin"@fr, "Christoph Plantin"@de, "Христофор Плантен"@ru, "Christopher Plantyn"@cs, "Kristoforo Plantin"@cs, "Cristóbal Plantino"@cs, "Cristóbal Plantino"@en ;
+	skos:note                      "Bogtrykker og bogbinder"@da, "Tipografo fiammingo"@it, "Γάλλος ουμανιστής, τυπογράφος και εκδότης"@el, "French humanist, publisher and printer (c.1520–1589)"@en, "Uitgever, drukker en boekbinder"@nl, "Drukarz belgijski"@pl, "Impressor i editor francès establert a Anvers"@ca, "Éditeur, imprimeur et relieur"@fr, "Herausgeber, Drucker und Buchbinder"@de ;
+	skos:prefLabel                 "Christophe Plantin"@cs, "Christophe Plantin"@sl, "Christophe Plantin"@pl, "Christophe Plantin"@da, "Christophe Plantin"@ca, "Christoffel Plantin"@hu, "Плантен, Христофор"@ru, "Cristóbal Plantino"@es, "Κριστόφ Πλαντέν"@el, "Кристоф Плантен"@bg, "Christoffel Plantijn"@de, "Christoffel Plantijn"@nl, "Christophe Plantin"@it, "Christophe Plantin"@fi, "Christophe Plantin"@sv, "Christophe Plantin"@pt, "Christophe Plantin"@en, "Christophe Plantin"@fr .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135680476#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:24:13.299Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135680476> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://lib.ugent.be/europeana/900000021880>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/04202/BibliographicResource_3000135680476/manifest> ;
+	ebucore:fileByteSize    "15127"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135680476>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:hasView        <http://lib.ugent.be/europeana/900000021880> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000018286> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000018286> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135680476>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/76823>, <http://data.europeana.eu/agent/171633> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1584" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135680476> .
+
+<http://data.europeana.eu/agent/76823>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bnf.fr/ark:/12148/cb11897597t>, <http://dbpedia.org/resource/Dirck_Coornhert>, <http://data.bibliotheken.nl/id/thes/p069029911>, <http://datos.bne.es/resource/XX1398008>, <https://www.freebase.com/m/07srbp>, <http://libris.kb.se/resource/auth/200514>, <https://libris.kb.se/86lnp6ks50jlx45>, <http://viaf.org/viaf/62346432>, <https://livedata.bibsys.no/authority/90699680>, <http://www.idref.fr/026798220/id>, <http://openlibrary.org/works/OL965991A>, <http://www.wikidata.org/entity/Q765465>, <http://ta.sandrart.net/-person-1442>, <https://g.co/kg/m/07srbp>, <urn:uuid:69fdc591-fbf4-41ab-a56e-e243ee071789>, <http://id.loc.gov/authorities/names/n85310127>, <http://vocab.getty.edu/ulan/500030183>, <http://id.worldcat.org/fast/172808>, <http://d-nb.info/gnd/118874195> ;
+	rdaGr2:dateOfBirth   "1522-01-01" ;
+	rdaGr2:dateOfDeath   "1590-10-29" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40731> ;
+	skos:altLabel        "Dirk Volkertsz Coornhert"@nl, "D.Vz. Coornhert"@nl, "D.Vz. Coornhert"@en, "Dirks Volkertsz Coornhaert"@en, "Корнхерт Дирк Волкертсзон"@ru, "Dirck Volkertsz."@nl, "Дирк Волькертсен Коорнгерт"@ru, "Dirck Volckertsz Coornhert"@en, "Dirck Volckertsz. Cuerenhert"@nl, "Dirck Volckertsz. Cuerenhert"@en, "Dirck Volkertsz Cuerenhert"@en, "Dirck Volkertsz. Cuerenhert"@en, "Dirck Volckertszoon Coornhert"@es, "Dirck Volckertszoon Coornhert"@nl, "Dirck Volckertszoon Coornhert"@de, "Коорнгерт Дирк Волькертсен"@ru, "Dirks Volkertsz Coornhert"@en, "Volckertszoon Coornhert"@sv, "Theodore Cornhert"@en, "Dirck Volkertszoon Coornhert"@pl, "Dirck Volckertsz. Coornhert"@nl, "Dirck Volckertsz. Coornhert"@en, "Dirck Coornhert"@es, "Dirck Coornhert"@de, "Dirck Coornhert"@sv, "Coornhert"@de, "Dirk Volkertsz. Coornhert"@en, "Коорнгерт Д."@ru, "Коорнгерт, Дирк"@ru, "Dirck Volkertsz. Coornhert"@nl, "Dirck Volkertsz. Coornhert"@pl, "Dirck Volkertsz. Coornhert"@en, "Cornaristas"@es, "Коорнгерт Д. В."@ru, "Коорнгерт"@ru, "Dirks Volkertsz Cuerenhert"@en, "Дирк Коорнгерт"@ru, "Dirck Volkertsz Coornhert"@en, "Ντιρκ Φόλκερτσσον Κούρνερτ"@el ;
+	skos:note            "Écrivain et graveur néerlandais"@fr, "Humanista, escritor y grabador neerlandés"@es, "Nederlands politicus"@nl, "Ολλανδός ποιητής, φιλόσοφος και πολιτικός"@el, "Dutch writer, philosopher, translator, politician and theologian (1522-1590)"@en, "Niederländischer Dichter, Gelehrter und Politiker"@de, "Scrittore e teologo olandese"@it ;
+	skos:prefLabel       "Dirck Volckertsz Coornhert"@es, "Dirck Volckertszoon Coornhert"@en, "Dirck Volckertszoon Coornhert"@it, "Dirck Volckertszoon Coornhert"@sv, "Dirck Volckertszoon Coornhert"@hu, "Dirck Volckertszoon Coornhert"@sl, "Dirck Volckertszoon Coornhert"@pl, "Dirck Volckertszoon Coornhert"@ro, "Коорнгерт, Дирк Волькертсен"@ru, "Dirck Volkertszoon Coornhert"@fr, "Dirck Volkertszoon Coornhert"@de, "Dirck Volkertszoon Coornhert"@fi, "Dirck Volkertszoon Coornhert"@nl, "Dirck Volkertsz. Coornhert"@pt, "Dirck Volkertsz. Coornhert"@da, "Dirck Volckertsz. Coornhert"@ca, "Ντιρκ Κούρνερτ"@el .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135680476>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T06:07:20.909Z" ;
+	dcterms:modified          "2015-12-04T13:45:24.327Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135680476> ;
+	edm:completeness          "10" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135680476> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000018286&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .

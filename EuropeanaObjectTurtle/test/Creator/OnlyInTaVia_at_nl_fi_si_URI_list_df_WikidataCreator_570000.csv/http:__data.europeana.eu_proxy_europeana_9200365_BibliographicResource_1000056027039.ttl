@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k103658m/manifest> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k103658m>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "226155"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k103658m>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k103658m> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k103658m.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k103658m>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:16:09.495Z" ;
+	dcterms:modified          "2018-07-23T15:11:38.213Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k103658m> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k103658m.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:07:58.001Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k103658m> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k103658m/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k103658m>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1690" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k103658m> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k103658m/f1> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k103658m.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "8619"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "181"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:07:58.001Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k103658m> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k103658m>
+	a                   ore:Proxy ;
+	dc:contributor      "Philidor, André (1652?-1730). Éditeur scientifique. Copiste", "Lavallez, Monsieur de (16..?-16.. ; compositeur). Auteur ou responsable intellectuel" ;
+	dc:creator          "Le Page, Monsieur (16..?-16.. ; compositeur). Compositeur", "Janequin, Clément (1485?-1558). Compositeur", "Grigny, Monsieur de (16..-16.. ; compositeur). Compositeur", "Constantin, Louis (1585-1657). Compositeur", "Dumanoir, Guillaume (1615-1697). Compositeur", "La Pierre, Monsieur de (16..-16..? ; composit). Compositeur", "Belleville, Jacques de (15..?-164.?). Compositeur", "Lassus, Roland de (1532-1594). Compositeur", "Saint-Amant, Monsieur de (16..?-16.. ; compositeur). Compositeur", "Verpré, Monsieur de (15..?-16.. ; compositeur). Compositeur", "Mazuel, Michel (1603-1676). Compositeur", "Chancy, François de (1600?-1656). Compositeur", "La Voix, Monsieur de (16..?-16.. ; compositeur). Compositeur", "Verdier, Robert (15..?-16.. ; compositeur). Compositeur", "Couperin, Louis (1626?-1661). Compositeur", "Lazarin (16..?-1653). Compositeur" ;
+	dc:date             "1690" ;
+	dc:description      "Appartient à l’ensemble documentaire : Philidor0", "Appartient à l’ensemble documentaire : RISM2", "Titre uniforme : Grigny, Monsieur de (16..-16.. ; compositeur). Compositeur. [Suite. Cromornes (4) (1660)]", "Contient aussi \u0022La bataille [de Marignan]\u0022 de Janequin ; \u0022Concert donné à Louis 13 par les 24 Viollons et les 12 Grand hautbois de plusieurs Airs choisy de Differans ballets\u0022 ;  \u0022Recueil de Charivaris de Mr Dumanoir 1648\u0022 ; \u0022Suitte fait pour Mr le Conte Darcour fait par Mr de Grignis pour les Cromornes Lan 1660\u0022 ; \u0022Concert des grand hautbois pour les Chevaliez fait par Henry 3\u0022 ; \u0022Ballet à Cheval fait pour le grand Carouselle fait à la Place Royal pour le Mariage de Louis 13 Joué par les Grand hautbois\u0022 ; ainsi que des pièces de Mr de Saint-Amant, Robert Verdier, Louis Constantin, François de Chancy, Mr de La Voix, Michel Mazuel, Louis Couperin, Mr de Lavallez, Roland de Lassus, Mr de La Pierre, Mr Le Page, Jacques de Belleville, Mr Lazarin, Mr de Verpré. - Orchestre : Sol 1, Ut 1, Ut 2, Ut 3, Fa 4 ; orchestre réduit pour certaines pièces : Sol 1, Fa 4. - Aux f. 2-3, table", "Appartient à l’ensemble documentaire : RISMMss", "Titre uniforme : Janequin, Clément (1485?-1558). Compositeur. [Escoutez tous gentilz. Voix (4)]. Arr. pour 3 voix (2 dessus et basse) et basse continue", "Titre uniforme : Dumanoir, Guillaume (1615-1697). Compositeur. [Charivaris. Orchestre]", "Appartient à l’ensemble documentaire : ChArdenn1", "Présentation musicale : [Partition]", "Comprend : La bataille de Jannequin ; Recueil de charivaris de Mr Dumanoir en 1648 ; Suitte fait pour Mr le Conte Darcour fait par Mr de Grignis pour les Cromornes Lan 1660" ;
+	dc:format           "1 partition ([3] f.-16-XXXII-126 p.) ; 43,5 x 29,5 cm", "Nombre total de vues :  180" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k103658m" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb39747596k" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Centre technique du livre, RES-F-494" ;
+	dc:subject          "Musique de danse -- 17e siècle -- Partitions"@fre, "Chansons polyphoniques françaises -- 16e siècle -- Partitions"@fre, "Musique de danse -- 16e siècle -- Partitions"@fre ;
+	dc:title            "Recüeil // de // Plusieurs vieux Airs faits aux // Sacres, Couronnements, Mariages et autres // Solennitez faits sous les Regnes // de // François 1er, henry 3, henry 4 et // Louis 13 // avec plusieurs concerts faits pour leurs divertissement // Recueillis par Philidor l'Aisné en 1690" ;
+	dc:type             "Genre musical : divers", "manuscript music"@eng, "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k103658m> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k103658m>
+	a  edm:ProvidedCHO .

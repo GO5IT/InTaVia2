@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_021100_021193__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_021100_021193__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/021100/021193> ;
+	edm:object         <http://keptar.oszk.hu/021100/021193/farkasreti_telcs_e_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/021100/021193/farkasreti_telcs_e_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6946"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/concept/1851>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p8507>, <http://purl.org/bncf/tid/849>, <https://d-nb.info/gnd/4018537-0>, <http://www.yso.fi/onto/ysa/Y95306>, <https://g.co/kg/m/0h36z>, <http://datos.bne.es/resource/XX525519>, <http://dbpedia.org/ontology/Cemetery>, <http://id.worldcat.org/fast/850521>, <http://vocab.getty.edu/aat/300266755>, <http://www.geonames.org/ontology#S.CMTY>, <http://id.nlm.nih.gov/mesh/D055699>, <http://www.wikidata.org/entity/Q39614>, <http://id.loc.gov/authorities/names/sh85021756>, <http://id.nlm.nih.gov/mesh/I01.076.201.450.550.150.500>, <http://data.bnf.fr/ark:/12148/cb11938920h>, <http://id.nlm.nih.gov/mesh/J03.150>, <https://schema.org/Cemetery>, <https://www.freebase.com/m/0h36z>, <http://babelnet.org/rdf/s00013984n>, <http://id.ndl.go.jp/auth/ndlna/00560906> ;
+	skos:note        "Lloc on es sepulten els difunts"@ca, "Local de enterro"@pt, "Lieu où l'on enterre les morts"@fr, "Groepering van graven"@nl, "Luogo di sepoltura dei defunti"@it, "Място, където се полагат тленните останки или пепел след кремация на починалите"@bg, "Áit adhlactha"@ga, "Bestattungsort verstorbener Menschen oder Tiere"@de, "Plats för begravning för många döda personer; område med många gravar"@sv, "Místo k uložení zemřelých osob nebo zvířat"@cs, "Miesto určené na pochovávanie mŕtvych"@sk, "Sted for begravelse"@da, "Kraj za pokop mrtvih"@sl, "Место погребения умерших"@ru, "Obszar, gdzie umieszcza się na stałe zwłoki lub prochy"@pl, "Vainajien hautaamista varten historiallisella ajalla suunnitelmallisesti perustettu ja merkitty alue"@fi, "Place of burial"@en, "Τόπος ταφής"@el, "Lugar donde se depositan los restos mortales o cadáveres de los difuntos"@es, "Vieta mirušo apbedīšanai"@lv, "Mjesto ukopa tijela preminulih ljudi"@hr ;
+	skos:prefLabel   "Cmentarz"@pl, "Cimetière"@fr, "Гробище"@bg, "Reilig"@ga, "Cemitério"@pt, "Begraafplaats"@nl, "Кладбище"@ru, "Hautausmaa"@fi, "Kalmistu"@et, "Gravplads"@da, "Begravningsplats"@sv, "Temető"@hu, "Cintorín"@sk, "Cimitir"@ro, "Friedhof"@de, "Hřbitov"@cs, "Hilerri"@eu, "Κοιμητήριο"@el, "Cementerio"@es, "Groblje"@hr, "Cemetery"@en, "Cimitero"@it, "Pokopališče"@sl, "Cementiri"@ca, "Kapinės"@lt, "Kapsēta"@lv .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_021100_021193__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:30:59.614Z" ;
+	dcterms:modified          "2015-09-14T11:39:46.341Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F021100%2F021193%2Ffarkasreti_telcs_e_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_021100_021193__>
+	a                   ore:Proxy ;
+	dc:creator          "Telcs,  Ede ( szobrász)"@hu, "Varga ,  József  (photographer)"@hu ;
+	dc:description      "Telcs Ede, (eredetileg Teltsch, néha helytelenül Telsch) magyar szobrász &#8211; éremművész. Már szabadkai gimnazista korában elhatározta, hogy festő lesz. A négy gimnázium elvégzése után apja Budapestre vitte Maász Kálmánhoz szobrászinasnak, aki egy sírkőtelepen volt eladó. Vasadi Ferenc iparrajziskolájába, az épületszobrász-tanulókkal együtt járt. 15 évesen azonban abbahagyva épületszobrászi tanulmányát, hazament Szabadkára. 1888-ban Bécsbe hajózott és bejelentkezett Edmund von Hoffmann szobrász műtermébe, aki felismerte tehetségét. Később Edmund Hellmer felvette a 16 éves fiút az Akadémiára. Két évi tanulás után az akadémiától 90 forintos ösztöndíjat kapott. S ugyanekkor egy budapesti szabadkőműves-páholy havi 50 forint támogatást biztosított számára, (később őt is felvették tagnak). Gaspar Clemens von Zumbuschnak, a bécsi szobrászok fejedelmének mesteriskolájában tanult tovább. Eduard Teltsch még elsőévesként elnyerte a mesteriskola 300 forintos legnagyobb díját a Die zwei Durstigen című mitológiai szoborcsoportjával. Mesterének biztatására ezt beküldte az 1893. évi bécsi nemzetközi kiállításra, majd Antwerpenbe is, ahol ezüstérmet nyert vele. Ugyanezen alkotásával - a Két bornemissza címet adva művének - Budapesten, a Magyar Képzőművészek Társulatának 1893/94. évi tárlatán debütált, majd nagyméretű Góliát című szobra is megjelent az 1894/95. évi tárlaton. Művészi karrierje itthon ezzel elkezdődött. A négyéves akadémia és a hároméves mesteriskola sikeres elvégzése után befejezte bécsi tanulmányait. 23 évesen Budapesten telepedett le, de előbb egy velencei utazást tett. Zala György epreskerti műtermében jelentkezett Hellmer ajánlólevelével. Zala felvéve, rögtön megbízta munkával. 1895. október 1-jén - bevonult \u0022önkéntes éveit\u0022 leszolgálni az 1-es gyalogezredhez. Tartalékos hadapródjelölt őrmesterként szerelt le. Közben a millenniumi kiállításon szerepelt művei közül a Két bornemiszát 600 forintért megvette Ferenc József, akivel személyesen is találkozhatott. Az állam pedig Góliát című szobrát vásárolta meg 800 forintért. A millenniumi kiállításon műveiért kapott pénzen műtermet bérelhetett a Munkácsy utca 14. számú házban. Két évvel a tiszti iskola befejezése után bevonult nyári kéthónapos gyakorlatra a szabadkai 6-os honvéd gyalogezredhez. Itt ismerkedett meg Gerőfi Annával, egy téglagyár igazgatójának lányával. 1900 tavaszán összeházasodtak. Lakásuk a Szondy utca 80. szám alatt volt. Első gyermekük, Sári 1901-ben, a második, Máté 1902-ben, a harmadik Pál 1903-ban született. Felesége vesetuberkulózisban megbetegedett és 1910. február 10-én meghalt. Gyermekei gondozását tanítványa, Mansfeld Nóra vette át, ő pedig egy Drezda melletti szanatóriumban pihente ki a tragédiát. Telcs 1911. március 2-án feleségül vette Nórát. Budára költöztek a Mészáros utca 34. számú házba. Két fiúgyermekük született, 1911-ben Péter és 1914-ben Ádám. Az első világháború kitörésekor a 42 éves művésznek nem kellett bevonulnia. Beteg lett, 1917 végén meghűlt, kórházba került. Kosztolányi Dezső már nekrológját is megfogalmazta. A háború után családjával együtt 1920-ban Hollandiába költözött. Ott egy barátja ezüstműves gyárának művészeti vezetője lett. Két év után hazajött. Második feleségétől elválva, Glückstahl Irént vette feleségül 1924 szeptemberében. Új műterme és lakása az Alkotás utca 41. szám alatt készült el. A német megszállás után viselte a sárga csillagot, de mentesítő iratot kapott, lakásán maradhatott. Budapest ostroma előtt átköltöztek Pestre, felesége anyjának lakásába, amely egy úgynevezett svéd védett ház volt. Amikor a harcok befejeződtek, visszaköltöztek Budára, és helyreállították a műtermet. Telcs Ede az ostrom után megmaradt szobrait, plakettjeit, festményeit, fényképeit és egyéb dokumentumait szülővárosának, Bajának ajándékozta. Jól ismerte Bécset, bejárta egész Olaszországot, húsznál több alkalommal járt Itáliában, két évig élt Hollandiában. Ismerte Franciaország és Németország múzeumait. Első munkái magyar típusú zsánerfigurák, életképek és portrék voltak. Architektonikus műveket, díszítő szobrokat mintázott nagyobb középületekre, a plasztikai díszítésekben is nagy szerepe volt. (Adria Biztosító, Gresham-palota, Gellért fürdő, Hitelbank-palota, Igazságügyi Palota, Széchenyi fürdő, Zeneakadémia.) Monumentális emlékszobrai, a budapesti Vörömarty-szoborcsoport (Kallós Edével közös alkotása), a millenniumi emlékmű két királyszobra: Szent László és III. Károly (ez utóbbit háborús sérülése miatt kicserélték), Alpár Ignác szobra a Városligetben, továbbá Kecskeméten a Kossuth-szobor. Telepesen a Szilágyi Dezső emlékszobor, valamint Jászkiséren a hősi emlékmű. Sok szoborpályázaton (Erzsébet királyné, Kossuth-mauzóleum, Vörösmarty, Madách-emlékmű) vett részt, és díjakat nyert. A legtöbb energiáját az Erzsébet királyné szobrára kiírt pályázatokra fordította. Szép síremlékeket készített, így Munkácsy Mihályét, Barabás Miklósét, a Hubay-családét. Az érmészet és plakettművészet egész életén át foglalkoztatta. Úttörő szerepe volt a magyar éremművészet megteremtésében, egész érmésznemzedéket nevelt fel. Felsorolni sem lehet számos plakettjének, érmének címét: Andrássy, Beöthy, Falk, Görgey, Sonnenthal, Popper, Puccini, Thaly, Trefort. Elkészítette Kiss József és Prielle Kornélia mellszobrait, a Megyünk Hollandiába című művét, az Aranyborjú elnevezésű márványcsoportját, Bálvány című Buddha-szobrát, a Toronyépítő című művét. Hattyúdala az Assisi Szent Ferencről készült galambot simogató szobor, amellyel az emberszeretetre, az emberi méltóság tiszteletére figyelmeztetett. (Forrás: Wikipédia)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1600x1200 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/021100/021193   [Metadata]" ;
+	dc:relation         "Tar István [ http://keptar.oszk.hu/021100/021192]"@hu ;
+	dc:source           "Dr. Varga József honlapja"@hu ;
+	dc:subject          "síremlék"@hu, "szobor"@hu, "Fine arts, visual arts"@hu, "temető"@hu, "Telcs Ede (1872-1948)"@hu, "Family, human relations"@hu ;
+	dc:title            "Telcs Ede"@hu ;
+	dc:type             "photograph"@hu, "statue"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_021100_021193__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:00.066Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_021100_021193__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:00.066Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_021100_021193__> .
+
+<http://keptar.oszk.hu/021100/021193>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_021100_021193__/manifest> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_021100_021193__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1851> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_021100_021193__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_021100_021193__>
+	a  edm:ProvidedCHO .

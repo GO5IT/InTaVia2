@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200365/BibliographicResource_1000055934948>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1665" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200365/BibliographicResource_1000055934948> .
+
+<http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T11:57:44.374Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200365/BibliographicResource_1000055934948> .
+
+<http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T11:57:44.374Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200365/BibliographicResource_1000055934948> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/ark:/12148/cb343488023/date>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "218845"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/9200365/BibliographicResource_1000055934948>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:hasView        <http://gallica.bnf.fr/ark:/12148/cb343488023/date/f1.zoom> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/cb343488023/date> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/cb343488023/date.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/cb343488023/date/f1.zoom>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200365/BibliographicResource_1000055934948/manifest> ;
+	ebucore:fileByteSize    "218881"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/cb343488023/date.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3825"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "57"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "556"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/9200365/BibliographicResource_1000055934948>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-09-26T01:32:21.982Z" ;
+	dcterms:modified          "2018-06-25T16:10:25.887Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948#metadataTier>, <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200365_Ag_EU_TEL_a0142_Gallica" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200365/BibliographicResource_1000055934948> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fcb343488023%2Fdate.thumbnail.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200365/BibliographicResource_1000055934948>
+	a                   ore:Proxy ;
+	dc:contributor      "La Roque, Jean-Paul de (16..-1691). Directeur de publication", "Delisle, Léopold (1826-1910). Directeur de publication", "Daunou, Pierre-Claude-François (1761-1840). Directeur de publication", "Cousin, Louis (1627-1707). Directeur de publication", "Giraud, Charles (1802-1881). Directeur de publication", "Sallo, Denis de (1626-1669). Directeur de publication", "Gallois, Jean (1632-1704). Directeur de publication", "Lebrun, Pierre (1785-1873). Directeur de publication" ;
+	dc:creator          "Académie des inscriptions et belles-lettres (France). Auteur du texte" ;
+	dc:date             "1665" ;
+	dc:description      "Périodicité : Hebdomadaire (irrégulier) (1665-1723) ; mensuel (1724-1792) ; trimestriel (-1991) ; semestriel (1992-)", "Variante(s) de titre : Journal des savans", "Appartient à l’ensemble documentaire : FranceJp0", "Variante(s) de titre : Journal des savants", "Etat de collection : 1665-1941" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/cb343488023/date" ;
+	dc:language         "fr", "français" ;
+	dc:publisher        "Jean Cusson (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb343488023" ;
+	dc:source           "Bibliothèque nationale de France" ;
+	dc:title            "Le Journal des sçavans" ;
+	dc:type             "printed serial"@en, "texte"@fr, "text"@en, "publication en série imprimée"@fr ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0142> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200365/BibliographicResource_1000055934948> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200365/BibliographicResource_1000055934948> .
+
+<https://iiif.europeana.eu/presentation/9200365/BibliographicResource_1000055934948/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

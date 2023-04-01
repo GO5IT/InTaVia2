@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://semium.org/time/18xx_3_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/18xx_2_half> ;
+	edm:begin         "Wed Jan 01 01:00:00 CET 1851" ;
+	edm:end           "Fri Dec 31 01:00:00 CET 1875" ;
+	skos:prefLabel    "3e quart 19e siècle"@fr, "3 quarter of the 19th century"@en, "3-я четверть 19-го века"@ru .
+
+<http://data.europeana.eu/item/0940434/_nnnbWpZ#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:51:37.852Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940434/_nnnbWpZ> .
+
+<http://data.europeana.eu/proxy/europeana/0940434/_nnnbWpZ>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1850" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940434/_nnnbWpZ> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940434/_nnnbWpZ> .
+
+<https://iiif.europeana.eu/presentation/0940434/_nnnbWpZ/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<file:///usr/local/tomcat/webapps/#locationOf:nnnbWpZ_FBC>
+	a               edm:Place ;
+	skos:prefLabel  "Biblioteka Uniwersytetu Kazimierza Wielkiego w Bydgoszczy"@pl .
+
+<http://data.europeana.eu/aggregation/provider/0940434/_nnnbWpZ>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940434/_nnnbWpZ> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507726> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:kpbc.umk.pl:18075> ;
+	edm:isShownBy      <http://kpbc.umk.pl/Content/18075/E_12385.djvu> ;
+	edm:object         <http://kpbc.umk.pl/Content/18075/E_12385.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/0940434/_nnnbWpZ>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/proxy/provider/0940434/_nnnbWpZ>
+	a                    ore:Proxy ;
+	dc:creator           "Scheffer, Ary (1795-1858)"@pl, "Fajans, Maksymilian (1827-1890)"@pl ;
+	dc:date              "1850"@pl ;
+	dc:description       "22x17,5"@pl, "litografia"@pl ;
+	dc:format            "image/vnd.djvu"@pl ;
+	dc:publisher         "Imp. Lemercier"@pl ;
+	dc:rights            <http://kpbc.umk.pl/dlibra/text?id=polityka#pd>, "Domena publiczna (Public domain)"@pl, "Dla wszystkich bez ograniczeń"@pl ;
+	dc:title             "Fr. Chopin (portret-popiersie en troin quarts z facsimile podpisu)"@pl ;
+	dc:type              "grafika"@pl ;
+	edm:currentLocation  "_FBC" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/0940434/_nnnbWpZ> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/0940434/_nnnbWpZ> .
+
+<http://fbc.pionier.net.pl/id/oai:kpbc.umk.pl:18075>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/0940434/_nnnbWpZ#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:51:37.852Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940434/_nnnbWpZ> .
+
+<http://kpbc.umk.pl/Content/18075/E_12385.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940434/_nnnbWpZ/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/0940434/_nnnbWpZ>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-26T16:44:22.090Z" ;
+	dcterms:modified          "2017-11-26T16:44:22.090Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940434/_nnnbWpZ#contentTier>, <http://data.europeana.eu/item/0940434/_nnnbWpZ#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940434/_nnnbWpZ> ;
+	edm:completeness          "6" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940434_Ag_PL_kpbc.umk.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940434/_nnnbWpZ> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkpbc.umk.pl%2FContent%2F18075%2FE_12385.djvu&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000004507726>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kujawsko-Pomorska Biblioteka Cyfrowa"@pl, "Kuyavian-Pomeranian Digital Library"@en .

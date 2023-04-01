@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:11.906Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0905636> .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0905636>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/235> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "2009" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0905636> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0905636>
+	a                  ore:Aggregation ;
+	dc:rights          "Audio excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0905636> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0905636>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:29:21.338Z" ;
+	dcterms:modified          "2014-06-27T11:29:21.338Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636#contentTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0905636>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0905636>
+	a                    ore:Proxy ;
+	dc:contributor       "Gardiner, Sir John Eliot", "London Symphony Orchestra" ;
+	dc:creator           "Beethoven, Ludwig van" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0905636" ;
+	dc:publisher         "Paris Cité de la musique 2009" ;
+	dc:subject           "19 EME SIECLE", "MUSIQUE CLASSIQUE", "MUSIQUE SYMPHONIQUE", "ORCHESTRE" ;
+	dc:title             "London Symphony Orchestra - Sir John Eliot Gardiner" ;
+	dc:type              "sound recording-musical" ;
+	dcterms:alternative  "concert enregistré à la Salle Pleyel le mardi 10 février 2009 (20h)" ;
+	dcterms:extent       "1h 21 min 10 sec" ;
+	dcterms:hasPart      "Symphonie n°7 / Ludwig van Beethoven ; London Symphony Orchestra ; Sir John Eliot Gardiner, direction. - Cité de la musique, 2009", "Symphonie n°4 / Ludwig van Beethoven ; London Symphony Orchestra ; Sir John Eliot Gardiner, direction. - Cité de la musique, 2009", "Ouverture \u0022Namensfeier\u0022 / Ludwig van Beethoven ; London Symphony Orchestra ; Sir John Eliot Gardiner, direction. - Cité de la musique, 2009" ;
+	dcterms:issued       "2009" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "SOUND" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0905636> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0905636#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:11.905Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0905636> .
+
+<http://data.europeana.eu/concept/235>
+	a                skos:Concept ;
+	skos:altLabel    "Vážná hudba"@cs, "Музыкальная классика"@ru, "Δυτικοευρωπαϊκή μουσική"@el, "Zachodnia muzyka klasyczna"@pl, "Δυτική μουσική"@el, "Taidemusiikki"@fi, "Klassinen musiikki"@fi, "Classique"@fr, "Western art music"@en, "Западная классическая музыка"@ru, "Ευρωπαϊκή μουσική"@el, "Seriös musik"@sv, "Western classical music"@en, "Classical music"@en, "European classical music"@en, "Konstmusik"@sv, "Muzică cultă"@ro ;
+	skos:exactMatch  <http://dewey.info/class/781.68/>, <http://www.yso.fi/onto/yso/p18434>, <http://www.wikidata.org/entity/Q9730>, <http://service.ddex.net/dd/DD-AVS-001/dd/ddex_ClassicalMusic>, <https://g.co/kg/m/0ggq0m>, <https://www.freebase.com/m/0ggq0m>, <http://d-nb.info/gnd/4164043-3>, <http://cv.iptc.org/newscodes/subjectcode/01011001>, <http://vocabularies.unesco.org/thesaurus/concept5394>, <http://cv.iptc.org/newscodes/mediatopic/20000022> ;
+	skos:note        "Gènere musical"@ca, "Nurt muzyki poważnej"@pl, "Hudební žánr"@cs, "Broad tradition of Western art music"@en, "Ευρεία παράδοση της μουσικής της δυτικής τέχνης"@el, "Nombre habitual de la música culta, académica y docta"@es, "Muziekstijl"@nl, "Gênero musical"@pt, "Musica colta occidentale"@it, "Образцовые музыкальные произведения, золотой фонд мировой музыкальной культуры"@ru, "Genre musical"@fr, "Zusammenfassender Begriff für die europäische Musiktradition der Kunstmusik"@de, "Monimuotoinen ja epäyhtenäinen länsimaisen musiikin perinne"@fi ;
+	skos:prefLabel   "Musica classica"@it, "Musique classique"@fr, "Klasična glasba"@sl, "Mużika klassika"@mt, "Música clássica"@pt, "Κλασική μουσική"@el, "Klasická hudba"@sk, "Klasická hudba"@cs, "Классическая музыка"@ru, "Klassieke muziek"@nl, "Länsimainen taidemusiikki"@fi, "Klasszikus zene"@hu, "Klasikinė muzika"@lt, "Klassische Musik"@de, "Muzică clasică"@ro, "Klassisk musik"@da, "Klassisk musik"@sv, "Música clàssica"@ca, "Klasiskā mūzika"@lv, "Western classical music"@en, "Muzyka klasyczna"@pl, "Класическа музика"@bg, "Ceol clasaiceach"@ga, "Klassikaline muusika"@et, "Música clásica"@es, "Klasična glazba"@hr .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

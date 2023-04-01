@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:08.328Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351594> .
+
+<http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3021>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "69677"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "420"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200246/BibliographicResource_3000051351594>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351594> .
+
+<http://data.europeana.eu/proxy/provider/9200246/BibliographicResource_3000051351594>
+	a                   ore:Proxy ;
+	dc:contributor      "Visscher, Claes Jansz." ;
+	dc:description      "Oost boven", "Origineel is Blad 42 in atlas factice", "Jaar: 2009;; Opdrachtgever: Universiteitsbibliotheek Vrĳe Universiteit, Amsterdam;; Uitvoering: Pictura, Heiloo;; Locatie origineel: NL, Universiteitsbibliotheek Vrĳe Universiteit, XL.05243.- bl. 42;; Fysieke gegevens: tiff-bestand;; Gedigitaliseerd: december 2009" ;
+	dc:format           "1 kaart, gedigitaliseerd : kopergravure ; 47 x 54 cm" ;
+	dc:identifier       "http://imagebase.ubvu.vu.nl/getobj.php?ppn=330047949" ;
+	dc:language         "ned" ;
+	dc:publisher        "Amsterdam : C.J. Visscher excudebat" ;
+	dc:subject          "Land van Waas", "80.4.210.410", "Zeeland", "80.4.220.120 Land van Waas", "81.273.5" ;
+	dc:title            "Niewe kaerte van t Landt van Waes ende Hulster Ambacht, vertoonende oock de stroomen van de Ooster ende Wester Schelde / uyt verscheyden stucken bĳ een gebracht door Claes Jansz. Visscher" ;
+	dc:type             "Cartografisch document" ;
+	dcterms:extent      "ca. 1:100.000" ;
+	dcterms:isPartOf    "Beeldbank cartografisch materiaal", <http://data.theeuropeanlibrary.org/Collection/a1154> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351594> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004517529>
+	a               foaf:Organization ;
+	skos:prefLabel  "VU University Amsterdam Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351594>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517529> ;
+	edm:hasView        <http://imagebase.ubvu.vu.nl/getobj.php?ppn=330047949> ;
+	edm:isShownAt      <http://imagebase.ubvu.vu.nl/u?/krt,3021> ;
+	edm:object         <http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=krt/3021> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:08.328Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200246/BibliographicResource_3000051351594> .
+
+<http://imagebase.ubvu.vu.nl/u?/krt,3021>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200246/BibliographicResource_3000051351594>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-02T13:31:18.313Z" ;
+	dcterms:modified          "2015-09-14T13:14:13.797Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594#contentTier>, <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200246/BibliographicResource_3000051351594> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200246_Ag_EU_TEL_a1154_Amsterdam_UV_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200246/BibliographicResource_3000051351594> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimagebase.ubvu.vu.nl%2Fvu%2FgetThumb.php%3Fid%3Dkrt%2F3021&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://imagebase.ubvu.vu.nl/getobj.php?ppn=330047949>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351594/manifest> ;
+	edm:rights              <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<https://iiif.europeana.eu/presentation/9200246/BibliographicResource_3000051351594/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

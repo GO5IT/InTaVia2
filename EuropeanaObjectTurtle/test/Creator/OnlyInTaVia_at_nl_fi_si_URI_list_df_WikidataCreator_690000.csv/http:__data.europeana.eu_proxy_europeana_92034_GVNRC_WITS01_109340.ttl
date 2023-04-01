@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_109340>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:38.294Z" ;
+	dcterms:modified          "2018-04-05T18:10:50.970Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_109340> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A109340%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/concept/33>
+	a                skos:Concept ;
+	skos:altLabel    "Vaatetus"@fi, "Vestir"@es, "Φορεσιά"@el, "Asuste"@fi, "Îmbrăcăminte"@ro, "Dress"@en, "Traje tipico"@es, "Vestire"@it, "Éide"@ga, "Traje típico"@es, "Puku"@fi, "Wardrobe"@en, "Vaate"@fi ;
+	skos:exactMatch  <https://g.co/kg/m/0250x>, <http://iconclass.org/41D>, <http://id.ndl.go.jp/auth/ndlna/00563650>, <http://id.ndl.go.jp/auth/ndlna/00563639>, <https://www.freebase.com/m/0250x>, <http://vocab.getty.edu/aat/300178802>, <http://www.wikidata.org/entity/Q9053464>, <http://dewey.info/class/391/>, <http://thesaurus.europeanafashion.eu/thesaurus/10616> ;
+	skos:note        "Wardrobe and dress in general"@en, "Ilbies u aċċessorji li jintlibsu flimkien"@mt, "Conjunt de roba i accessoris fets per ésser duts a la vegada"@ca, "Vaatetus ja asu yleensä"@fi, "Одежда или отличительный стиль в одежде"@ru, "Garderob och dräkt i allmänhet"@sv, "Ensemble de vêtements et d'accessoires faits pour être portés ensemble"@fr, "Garderobe und Tracht im Allgemeinen"@de, "Ropa y accesorios concebidos para ser usados en conjunto y en un contexto particular"@es, "Obiect sau stil de vestimentație"@ro ;
+	skos:prefLabel   "Kostīms"@lv, "Oblačilo"@sl, "Dräkt"@sv, "Kostiumas"@lt, "Costume"@en, "Costume"@it, "Costume"@fr, "Ενδυμασία"@el, "Носия"@bg, "Asu"@fi, "Vestit"@ca, "Kostium"@pl, "Feisteas"@ga, "Traje"@pt, "Traje"@es, "Kostuum"@nl, "Kostim"@hr, "Костюм"@ru, "Kostume"@da, "Kostüm"@de, "Kostum"@mt, "Kostüüm"@et, "Costum"@ro .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_109340>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1718>, <http://data.europeana.eu/concept/33> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1915", "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_109340> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109340>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:109340> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109340&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_109340>
+	a                   ore:Proxy ;
+	dc:contributor      "Schwartze, Thérèse" ;
+	dc:creator          "Schwartze, Thérèse" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:109340", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109340" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:109340], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "familieportret"@nl, "schilderij"@nl, "schouw"@nl, "hond"@nl, "kostuum"@nl, "groepsportret"@nl, "vaderlandse geschiedenis"@nl ;
+	dc:title            "Portret van koningin Wilhelmina, prins Hendrik en prinses Juliana" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1915" ;
+	dcterms:extent      "239 x 262 cm" ;
+	dcterms:isPartOf    "GVN", "Willem Witsen: Tachtiger in brief en beeld", "WITS01" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "olieverf", "doek", "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_109340> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109340> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:109340>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50595"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109340>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109340#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:29.200Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109340> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:109340&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "39411"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "109"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_109340#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:29.199Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_109340> .
+
+<http://data.europeana.eu/concept/1718>
+	a                skos:Concept ;
+	skos:altLabel    "Portrait collectif"@fr, "Gruppbild"@sv, "Ritratto collettivo"@it, "Retrato de grupo"@es, "Retrato colectivo"@es, "Collective portrait"@en ;
+	skos:broader     <http://data.europeana.eu/concept/106> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q1551015>, <http://vocab.getty.edu/aat/300124525>, <http://g.co/kg/g/1215v7f5>, <http://d-nb.info/gnd/4158436-3> ;
+	skos:note        "Portræt af mere end en person"@da, "Portrait de plus d'une personne"@fr, "Darstellung mehrerer Menschen, die als Familie, als Standespersonen oder durch ihre Beschäftigung miteinander verbunden sind."@de, "Portret więcej niż jednej osoby"@pl, "Portret van verscheidene personen tegelijk"@nl, "Portrait of more than one person"@en ;
+	skos:prefLabel   "Groepsportret"@nl, "Portret grupowy"@pl, "Portrait de groupe"@fr, "Retrat grupal"@ca, "Retrato de grupo"@pt, "Skupinový portrét"@cs, "Ritratto di gruppo"@it, "Retrato grupal"@es, "Gruppenporträt"@de, "Групповой портрет"@ru, "Gruppeportræt"@da, "Group portrait"@en, "Ryhmämuotokuva"@fi, "Grupporträtt"@sv .

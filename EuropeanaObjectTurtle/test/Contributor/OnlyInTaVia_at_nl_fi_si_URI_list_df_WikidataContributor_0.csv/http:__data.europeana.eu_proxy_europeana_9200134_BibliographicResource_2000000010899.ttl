@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:43.660Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010899> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000010899>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150233> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000010899> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000010899>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T13:01:43.970Z" ;
+	dcterms:modified          "2014-05-27T13:01:43.970Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899#contentTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000010899> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1080108&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1080108>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17405"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "262"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000010899>
+	a                   ore:Proxy ;
+	dc:contributor      "Adriaen Van Ostade" ;
+	dc:date             "s.d.", "16--? - 17--?" ;
+	dc:identifier       "008378796" ;
+	dc:language         "la" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Adriani van Ostade" ;
+	dc:type             "Monograph"@en, "Still image"@en ;
+	dcterms:extent      "Black-and-white ;", "plaatrand: 229 x 173 mm.", "voorstelling met opschrift: 228 x 172 mm", "voorstelling: 213 x 172 mm" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010899> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/agent/150233>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/60436> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/150552> ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500021654>, <http://www.wikidata.org/entity/Q352438>, <http://kulturarvsdata.se/LSH/agents/22431>, <http://data.bibliotheken.nl/id/thes/p068713401>, <http://dbpedia.org/resource/Adriaen_van_Ostade>, <http://id.worldcat.org/fast/93205>, <http://data.bnf.fr/ark:/12148/cb135243897>, <http://viaf.org/viaf/24760273>, <http://d-nb.info/gnd/118590421>, <http://openlibrary.org/works/OL643552A>, <https://www.freebase.com/m/0395px>, <http://id.loc.gov/authorities/names/n82074193>, <http://www.idref.fr/067026516/id>, <http://datos.bne.es/resource/XX1058652>, <https://g.co/kg/m/0395px> ;
+	rdaGr2:dateOfBirth   "1610-12-10" ;
+	rdaGr2:dateOfDeath   "1685-01-01" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40710> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "Ostade adriaen van"@en, "Adrian van Ostade"@it, "Adrian v. Ostade"@en, "Adrian van Ostade"@sv, "Adrian van Ostade"@en, "Adriaen Jansz. van Ostade"@nl, "Adriaen Jansz. van Ostade"@en, "A. van Oostaade"@en, "A. v. Oostade"@en, "A. Osatde"@en, "Adriaen Jansz Van Ostade"@es, "Adriaen Jansz Van Ostade"@nl, "Adriaen Jansz Van Ostade"@ca, "Adriaen Jansz Van Ostade"@fr, "Adrien Van-Ostadens"@en, "Adriaen Jansz Van Ostade"@en, "Adriaen von Ostade"@en, "Adriaen Jansz Van Ostade"@sl, "A. V Ostaade"@en, "Adriaen, van Ostade"@en, "Adriaen Hendricx"@es, "A. V. Ostaade"@en, "Adriaen Hendricx"@fr, "A. Van-Ostade"@en, "Adrien Ostade"@en, "Adrien v. Ostade"@en, "A. v. Oostaade"@en, "Adriane Van Ostad"@en, "Adrien Van-Ostade"@en, "A. Ostade"@en, "Adriaen van Ossade"@en, "Ariaen van Ostade"@en, "A. Ostaade"@en, "Ad. Van Ostade"@en, "Adr. v. Ostade"@en, "A von Ostade"@en, "A:v:oostade"@en, "Adr. van Oostaade"@en, "A. van Ostade"@nl, "Ostade, Adriaen van"@sv, "A. van Ostade"@en, "A. Van Ostad"@en, "Adriaen ostade"@en, "A. J. Ostade"@en, "Адриан Остаде"@ru, "Van ostade a."@en, "Von alten Ostade"@en, "Adriaen van ostade"@en, "Adriaan v. Oostade"@en, "Adrien Vanostade"@en, "Genre d'Adrien Van Ostade"@en, "Adriaen Jansz van Ostade"@en, "Ostade Adrian"@en, "Ad. van Oostaade"@en, "A: Ostade"@en, "A. van Oostade"@en, "Adr. J. van Ostade"@en, "A. v. ostade"@en, "Adriano van Ostade"@en, "Ariaen van Oostaden"@en, "Adr. Van Ostade"@en, "Остаде Адриан ван"@ru, "A Ostade"@en, "Adriaen van Oostade"@en, "Adr. Ostade"@en, "Adriaen Jansz Ostade"@en, "Adriaan van Ostade"@en, "A. von Ostade"@en, "Ad. V. Ostade"@en, "Adrian Van Ostade"@en, "A. v Oostade"@en, "Ad. Van-Ostade"@en, "Van ostade adrien"@en, "Остаде, Адриан"@ru, "Adrien van Ostade"@fr, "Adrien van Ostade"@en, "Ad. V... Ostade"@en, "Adr. v Ostade"@en, "Адриан ван Остаде"@ru, "Adrian ostade"@en, "Adrian von Ostade"@en, "Adriaen Van Ostade"@en, "Adriaen Ostade"@en, "Adriaan Ostade"@en, "A van Ostade"@en, "Adr. v Oostaade"@en, "Adriaen Jansz. Van Ostade"@en, "Άντριεν βαν Οστάντε"@el, "Adriaan Oostade"@en, "A.-V. Ostade"@en, "Adrian Ostade"@en, "A.V. Ostade"@en, "A. v Oostaade"@en, "A. v Ostade"@en, "Adrian Ostada"@en, "Adriaan v. ostade"@en, "Adr. van Ostaade"@en, "Ad. Ostade"@en, "A. Ostaden"@en, "Adrianen van Ostade"@en ;
+	skos:note            "Nederlands kunstschilder"@nl, "Pintor neerlandés"@es, "Niederländischer Maler"@de, "Dutch Golden Age painter (1610-1685)"@en, "Peintre néerlandais"@fr, "Nizozemský malíř a rytec"@cs, "Pittore olandese"@it ;
+	skos:prefLabel       "Адриан ван Остаде"@bg, "Αντριάν βαν Οστάντε"@el, "Adriaen van Ostade"@en, "Adriaen van Ostade"@de, "Adriaen van Ostade"@fi, "Adriaen van Ostade"@sv, "Adriaen van Ostade"@pt, "Adriaen van Ostade"@lt, "Adriaen van Ostade"@it, "Adriaen van Ostade"@fr, "Adriaen van Ostade"@hu, "Adriaen van Ostade"@es, "Adriaen van Ostade"@et, "Adriaen van Ostade"@cs, "Adriaen van Ostade"@sk, "Adriaen van Ostade"@sl, "Adriaen van Ostade"@ga, "Adriaen van Ostade"@pl, "Adriaen van Ostade"@ro, "Adriaen van Ostade"@da, "Adriaen van Ostade"@ca, "Adriaen van Ostade"@nl, "Остаде, Адриан ван"@ru .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:43.659Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010899> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1080108>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000010899>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1080108> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1080108> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000010899>
+	a  edm:ProvidedCHO .

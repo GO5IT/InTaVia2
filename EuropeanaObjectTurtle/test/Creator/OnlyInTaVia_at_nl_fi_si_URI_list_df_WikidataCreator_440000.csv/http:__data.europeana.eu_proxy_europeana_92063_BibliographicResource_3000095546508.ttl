@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92063/BibliographicResource_3000095546508>
+	a                   ore:Proxy ;
+	dc:creator          "Krafft, Johann Peter" ;
+	dc:description      "Rückkehr Kaiser Franz II. (I.) nach Wien im Jahre 1809: Einfahrt in den Schweizerhof der Burg. Enkaustisches Wandgemälde im Mittelsaal des Reichskanzleitraktes der Wiener Hofburg. 1833. Ausschnitt: Eckfiguren links vorne."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Bildarchiv//BA/946/B13162802T13162807.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Innere Stadt"@de, "Districts"@en, "Bezirke"@de ;
+	dc:title            "Wien 1, Hofburg"@de ;
+	dcterms:created     "1809" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0481> ;
+	dcterms:spatial     <http://sws.geonames.org/2782113/>, <http://sws.geonames.org/2761369/> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546508> .
+
+<https://iiif.europeana.eu/presentation/92063/BibliographicResource_3000095546508/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://sws.geonames.org/2782113/>
+	a               edm:Place ;
+	skos:prefLabel  "Republic of Austria (Herstellung)" .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546508#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:53.504Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546508> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/946/B13162802T13162806.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/92063/BibliographicResource_3000095546508>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1809" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_3000095546508> .
+
+<http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546508>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=13162802> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Bildarchiv//BA/946/B13162802T13162807.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Bildarchiv//BA/946/B13162802T13162806.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/Bildarchiv//BA/946/B13162802T13162807.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92063/BibliographicResource_3000095546508/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92063/BibliographicResource_3000095546508>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-05-13T07:43:16.723Z" ;
+	dcterms:modified          "2015-06-15T12:14:47.809Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508#metadataTier>, <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92063/BibliographicResource_3000095546508> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92063_Ag_EU_TEL_a0481_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92063/BibliographicResource_3000095546508> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FBildarchiv%2F%2FBA%2F946%2FB13162802T13162806.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546508>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92063/BibliographicResource_3000095546508#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:49:53.505Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92063/BibliographicResource_3000095546508> .
+
+<http://sws.geonames.org/2761369/>
+	a               edm:Place ;
+	skos:prefLabel  "Vienna (Herstellung)" .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=13162802>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

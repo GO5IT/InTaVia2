@@ -1,0 +1,113 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_SAB01_214>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_SAB01_214> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/SAB01:214> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:SAB01:175B70&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_SAB01_214>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:35:25.136Z" ;
+	dcterms:modified          "2018-04-05T17:44:29.613Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_SAB01_214#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_SAB01_214#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_SAB01_214> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_SAB01_214> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ASAB01%3A175B70%26role%3Dthumbnail&type=TEXT> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_SAB01_214>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1909" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_SAB01_214> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_SAB01_214> .
+
+<http://www.geheugenvannederland.nl/?/en/items/SAB01:214>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "230099"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_SAB01_214#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:10:34.552Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SAB01_214> .
+
+<http://data.europeana.eu/item/92034/GVNRC_SAB01_214#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:10:34.552Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SAB01_214> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:SAB01:175B70&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16787"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "220"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_SAB01_214>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_SAB01_214>
+	a                   ore:Proxy ;
+	dc:contributor      "Hilarius Wzn., W.", "Sluijters, Jan", "Gras, H." ;
+	dc:creator          "Gras, H." ;
+	dc:description      "Oorspronkelijke band, rug en hoeken iets beschadigd. Binnenwerk vergeeld, enkele vlekjes.", "Met 3 p. uitgeversreclame", "pagina's: VIII, 213 p", "illustratie: zw. tek" ;
+	dc:format           "kinderboek" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:SAB01:175B70", "175B70" ;
+	dc:language         "nl" ;
+	dc:rights           "voor informatie: Stadsarchief en Athenaeumbibliotheek Deventer"@nl, "Stadsarchief en Athenaeumbibliotheek Deventer", "for information contact Stadsarchief en Athenaeumbibliotheek Deventer"@en ;
+	dc:source           "175B70 (kinderboek), Overijsselse oude kinderboeken en centsprenten, Stadsarchief en Athenaeumbibliotheek Deventer" ;
+	dc:subject          "Dorpsverhalen"@nl ;
+	dc:title            "Met z'n beiden" ;
+	dc:type             "Text" ;
+	dcterms:created     "1909" ;
+	dcterms:extent      "24 cm" ;
+	dcterms:isPartOf    "Overijsselse oude kinderboeken en centsprenten", "GVN", "SAB01" ;
+	dcterms:issued      "24-01-2006" ;
+	dcterms:medium      "text/xml" ;
+	dcterms:spatial     "Almelo" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_SAB01_214> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SAB01_214> .

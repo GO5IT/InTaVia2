@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:01.008Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019900_019968__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019900_019968__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/019900/019968> ;
+	edm:object         <http://keptar.oszk.hu/019900/019968/kerepesi_barabas_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/concept/1851>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p8507>, <http://purl.org/bncf/tid/849>, <https://d-nb.info/gnd/4018537-0>, <http://www.yso.fi/onto/ysa/Y95306>, <https://g.co/kg/m/0h36z>, <http://datos.bne.es/resource/XX525519>, <http://dbpedia.org/ontology/Cemetery>, <http://id.worldcat.org/fast/850521>, <http://vocab.getty.edu/aat/300266755>, <http://www.geonames.org/ontology#S.CMTY>, <http://id.nlm.nih.gov/mesh/D055699>, <http://www.wikidata.org/entity/Q39614>, <http://id.loc.gov/authorities/names/sh85021756>, <http://id.nlm.nih.gov/mesh/I01.076.201.450.550.150.500>, <http://data.bnf.fr/ark:/12148/cb11938920h>, <http://id.nlm.nih.gov/mesh/J03.150>, <https://schema.org/Cemetery>, <https://www.freebase.com/m/0h36z>, <http://babelnet.org/rdf/s00013984n>, <http://id.ndl.go.jp/auth/ndlna/00560906> ;
+	skos:note        "Lloc on es sepulten els difunts"@ca, "Local de enterro"@pt, "Lieu où l'on enterre les morts"@fr, "Groepering van graven"@nl, "Luogo di sepoltura dei defunti"@it, "Място, където се полагат тленните останки или пепел след кремация на починалите"@bg, "Áit adhlactha"@ga, "Bestattungsort verstorbener Menschen oder Tiere"@de, "Plats för begravning för många döda personer; område med många gravar"@sv, "Místo k uložení zemřelých osob nebo zvířat"@cs, "Miesto určené na pochovávanie mŕtvych"@sk, "Sted for begravelse"@da, "Kraj za pokop mrtvih"@sl, "Место погребения умерших"@ru, "Obszar, gdzie umieszcza się na stałe zwłoki lub prochy"@pl, "Vainajien hautaamista varten historiallisella ajalla suunnitelmallisesti perustettu ja merkitty alue"@fi, "Place of burial"@en, "Τόπος ταφής"@el, "Lugar donde se depositan los restos mortales o cadáveres de los difuntos"@es, "Vieta mirušo apbedīšanai"@lv, "Mjesto ukopa tijela preminulih ljudi"@hr ;
+	skos:prefLabel   "Cmentarz"@pl, "Cimetière"@fr, "Гробище"@bg, "Reilig"@ga, "Cemitério"@pt, "Begraafplaats"@nl, "Кладбище"@ru, "Hautausmaa"@fi, "Kalmistu"@et, "Gravplads"@da, "Begravningsplats"@sv, "Temető"@hu, "Cintorín"@sk, "Cimitir"@ro, "Friedhof"@de, "Hřbitov"@cs, "Hilerri"@eu, "Κοιμητήριο"@el, "Cementerio"@es, "Groblje"@hr, "Cemetery"@en, "Cimitero"@it, "Pokopališče"@sl, "Cementiri"@ca, "Kapinės"@lt, "Kapsēta"@lv .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_019900_019968__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/1851> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_019900_019968__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_019900_019968__>
+	a                   ore:Proxy ;
+	dc:creator          "Varga ,  József  (photographer)"@hu, "Telcs,  Ede ( szobrász)"@hu ;
+	dc:description      "Barabás Miklós festő, az MTA l. tagja (1836). A nagyenyedi kollégiumban tanult, egészen fiatalon kezdett arcképfestéssel foglalkozni. 1829-ben kijutott Bécsbe, ahol rövid ideig J. Ender növendéke volt. 1830-ban Kolozsvárra visszatérve, Barra Gábortól a litográfia technikáját sajátította el, melyet magas művészi színvonalon egész életén át művelt. 1831-től két esztendőt Bukarestben töltött, ahol keresett arcképfestő lett. 1834-35-i itáliai tanulmányútja igen termékeny hatással volt művészetére. W. L. Leitch angol festőtől a vízfestés technikáját s egy merőben újfajta természetábrázolást vett át. Velencében lemásolta Veronese Európa elrablása c. képét, s e műve 1835-ben Pesten nagy sikert aratott. Ettől kezdve kisebb megszakításokkal mindvégig Pesten élt. Jelentős része volt abban, hogy Pest művészi központtá vált. Ő volt az első művészetéből megélni tudó festőnk, amit főként az tett lehetővé, hogy az arckép minden műfaját és technikáját kiválóan művelte. Szinte minden kiemelkedő kortársát megfestette, Széchenyi Istvánt, Kossuthot, Petőfit, Bemet stb. Jellemábrázoló készséget tükröző remekművei közül is kiemelkedik Liszt Ferenc és Bittó Istvánné (1874) arcképe. Igazán nagyot e műfajban alkotott. Aprólékosan megmunkált olajfestményeit, rajzait, akverelljeit gondos elmélyülés, finom színezés jellemzi. Csoportképeiben (Bencsikné családjával, 1840; A művész három leánykája, 1849) kompozíció és rajzbeli fogyatékosságok mutatkoznak. Vásárra induló oláh család (MNG) c. életképe minden festői szépsége mellett is kissé merev maradt. Tájképakvarelljei az alföldi táj szépségének megkapó ábrázolását adják (Alföldi táj gémeskúttal stb.). Biedermeier hangulatot árasztó életképei közül kiemelkedik a többször is megfestett Galambposta (1840). Az abszolutizmus idején anyagi nehézségekkel küzdött, átmenetileg fényképezéssel, majd oltárképfestéssel foglalkozott. 1859-ben kiharcolta a Képzőművészeti Társulat megteremtését, melynek 1862-től haláláig igazgató elnöke volt. 1867-ben Pest városának képviselője. Önéletrajza életének és működésének, valamint kora társadalmi és művelődési viszonyainak eleven dokumentuma. Műveiből 1948-ban emlékkiállítást rendeztek. (Forrás: Magyar Életrajzi Lexikon)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1200x1600 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/019900/019968   [Metadata]" ;
+	dc:relation         "Barcsay Jenő [ http://keptar.oszk.hu/019900/019965]"@hu ;
+	dc:source           "Dr. Varga József honlapja"@hu ;
+	dc:subject          "síremlék"@hu, "szobor"@hu, "temető"@hu, "Family, human relations"@hu, "Barabás Miklós (1810-1898)"@hu, "Fine arts, visual arts"@hu, "sírfelirat"@hu ;
+	dc:title            "Barabás Miklós"@hu ;
+	dc:type             "statue"@hu, "photograph"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019900_019968__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_019900_019968__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:28:56.590Z" ;
+	dcterms:modified          "2015-09-14T11:38:43.490Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F019900%2F019968%2Fkerepesi_barabas_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/019900/019968/kerepesi_barabas_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5656"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/019900/019968>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_019900_019968__/manifest> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_019900_019968__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_019900_019968__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:01.008Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_019900_019968__> .

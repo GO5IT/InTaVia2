@@ -1,0 +1,136 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://sws.geonames.org/10280347/>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://sws.geonames.org/2661886/> ;
+	skos:altLabel     "La Real Armería"@es, "Die Königliche Rüstkammer"@de, "Livrustkammaren"@sv, "L'Armeria Reale"@it, "L'Armurerie royale"@fr, "Королевской Оружейной палаты"@ru ;
+	skos:prefLabel    "The Royal Armoury" ;
+	wgs84_pos:lat     "59.32648" ;
+	wgs84_pos:long    "18.0729" .
+
+<http://sws.geonames.org/2661886/>
+	a               edm:Place ;
+	skos:prefLabel  "Kingdom of Sweden (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_40092>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-06-30T14:08:18.739Z" ;
+	dcterms:modified          "2019-11-15T07:11:48.622Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092#contentTier>, <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> ;
+	edm:completeness          "10" ;
+	edm:country               "Sweden" ;
+	edm:datasetName           "2064105_Royal_Armoury_Skokloster_Hallwyl" ;
+	edm:landingPage           <https://www.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> ;
+	edm:language              "sv" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Femuseumplus.lsh.se%2FeMuseumPlus%3Fservice%3DImageAsset%26module%3Dcollection%26objectId%3D40092%26resolution%3DhighImageResolution&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_40092>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/Museu/ProvidedCHO/Livrustkammaren/40092" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=40092&resolution=superImageResolution>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_40092/manifest> ;
+	ebucore:fileByteSize    "89624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "530"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "721"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_40092>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004509050> ;
+	edm:isShownAt      <http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=40092&viewType=detailView> ;
+	edm:isShownBy      <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=40092&resolution=superImageResolution> ;
+	edm:object         <http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=40092&resolution=highImageResolution> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671142> ;
+	edm:rights         <http://creativecommons.org/licenses/by-sa/3.0/> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&amp;module=collection&amp;objectId=40092&amp;viewType=detailView>
+	a  edm:WebResource .
+
+<https://iiif.europeana.eu/presentation/2064105/Museu_ProvidedCHO_Livrustkammaren_40092/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ExternalInterface&module=collection&objectId=40092&viewType=detailView>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/organization/1482250000004509050>
+	a               foaf:Organization ;
+	skos:prefLabel  "Оружейная палата"@ru, "Kongelig Rustkammer"@da, "Real Armería de Suecia"@es, "Livrustkammaren"@pl, "Livrustkammaren"@sl, "Livrustkammaren"@hu, "Livrustkammaren"@it, "Livrustkammaren"@lt, "Livrustkammaren"@pt, "Livrustkammaren"@sv, "Koninklijk Wapenkamer van Zweden"@nl, "Königliche Rüstkammer"@de, "Cabinet royal des armes"@fr, "Kuninkaallinen asevarasto"@fi, "The Royal Armoury"@en .
+
+<http://data.europeana.eu/proxy/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_40092>
+	a                    ore:Proxy ;
+	dc:contributor       "Karl XI av Sverige (Tidigare ägare)"@sv, "Ludvig XIV av Frankrike (Tidigare ägare)"@sv ;
+	dc:creator           "I Des Granges (Tillverkare, , )"@sv ;
+	dc:description       "Pistolparet hör till sadeln nr 6 i den stora gåvan från Ludvig XIV till Karl XI 1673. sadeln skänktes mellan 1679 och 1686 till generalmajoren, greve Axel Wachtmeister av Mälsåker (1643-1699).\u000A\u000ARund pipa av stål med ringvulst runt mynningen. Lopp med 12 räfflor, plana bommar. Pipa, låsbleck och avtryckarbleck i ett stycke. Kammaren är åttsidig, men fasen på undersidan har fasade kanter, så att tre smalare faser bildas. Den kantiga delen har förgylld dekor med två rankbårder, på ovansidan det svenska trekronorsvapnet och troféer mellan fruktknippen. I övergången till den runda delen en kantig hålkäl, små blad och pärlstav med var fjärde pärla som en större oval. Något framför denna en ring med mjuk s-profil. Mot kolven vidgas pipan till ett kantigt bräm med pärlstav, var tredje pärla oval. På kammarens h. sida är fängpannan fäst med två skruvar, graverad mask och rankor på gaveln.Välvt batteri med klump på gåsbuken, liten ås därovanför. Pipan är avskruvbar mellan pärlstaven och kammardelen med förgylld ornering. Den lösa pipdelen är 222 mm lång och har invändiga gängor.\u000A\u000APå h. sida ansluter till pipan ett välvt, rundat låsbleck med graverade rankor och signering på slöja: \u0022DES GRANGES APARIS\u0022. S-formig hane med två små flikar och graverade slingor. Lös överkäke. Själva låskonstruktionen är placerad inne i kolven i jämhöjd med och bakom låsblecket. Avtryckarblecket utgör en förlängning av pipans nedre fas och är ett långt, böjt bleck, som avslutas strax framför kolvkappan. I spetsen ett skruvhål. Lång, böjd slagfjäder med uppåtvänd krok, fäst vid avtryckarblecket på vilken också avtryckarfjädern skruvas fast nedanför slagfjädern. Avtryckarens inre ände stöter direkt mot nöten. På nöten ett X.\u000A\u000AFransk kolv av trä med från sidan tillplattad kolvkula. Inläggningar av silvertråd i slingor och punkter. På kolvryggen tre kungakronor och C i dubbelmonogram. Kolvkappa av stål, rik dekor av graverat, påslaget guld, punkter och kantlinjer, korta flikar. På mitten svenska riksvapnet med krona och två lejon, därunder C i dubbelmonogram, allt omramat av krans. Nedtill text: \u0022uirtus +uim\u0022. upptill \u0022uincit\u0022. På h. sida rankor och figur hållande ett ovalt porträtt, på v sida en romersk krigare mellan rankor och två djurhuvuden. På vardera sidan av kolven ett avlångt beslag av blånerat stål med dekor av guld, det vänstra har en enkel flätbård och spetsen är inlaxad i pipans kant. Det högra, kortare beslaget är signerat: \u0022Des Granges AParis\u0022. Svansskruvbladet är ett dekorativt beslag i bladform, fastskruvat inifrån och med troféer i guld. Spetsen är inlaxad i pipans kant, något skadad. Kolvkappan kan avlägsnas sedan sprinten (med droppkontur) genom flikarna slagits ut. Skruven i mitten håller avtryckarbleckets spets. En längre skruv t. v. är fastskruvad i v. sidbeslagets häfte. En smal sprint på h. sida håller h. sidobeslag. Flikarnas ändar med sina häfte lyfts ur kolven, varefter pipan kan dras bort.\u000ASkålformig varbygel av fransk typ med graverad, förgylld mask, på huvudet en fruktkorg. Kort, främre arm med förgyllda blad och bladspets. Lång bakre arm med liten knopp i vardera änden, den bakre med förgyllda blad. Varbygeln fästs med stift genom främre stolpen och häfte under pipan, samt genom att en krok på bakre armen hakas i ett urtag i avtryckarblecket.\u000A\u000AVirtus Vim Vincit, Uirtus Uim Uincit\u000AVIRTUS FUNERI, SUPERSTES (Tapperhet, Du må vara förmer än döden)"@sv ;
+	dc:identifier        "(Inv. nr. 3539)", "40092" ;
+	dc:subject           "Pistoler (Vapen, Eldhandvapen)"@sv ;
+	dc:title             "Flintlåspistol, terzerol av Des Granges, Paris, 1660-tal. Ur den franska gåvan 1673."@sv ;
+	dc:type              "flintlåspistol"@sv, "Flintlåspistol"@sv, <http://vocab.getty.edu/aat/300036926> ;
+	dcterms:created      "1660-tal" ;
+	dcterms:extent       "räfflor: 12", "Längd: 428 mm", "Vikt: 839 g", "kaliber: 11 mm", "Längd: pipa 283 mm" ;
+	edm:currentLocation  <http://sws.geonames.org/10280347/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> .
+
+<http://emuseumplus.lsh.se/eMuseumPlus?service=ImageAsset&module=collection&objectId=40092&resolution=highImageResolution>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "30234"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "294"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F0FFF0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:29:24.728Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> .
+
+<http://data.europeana.eu/organization/1482250000004671142>
+	a               foaf:Organization ;
+	skos:prefLabel  "MUSEU"@en .
+
+<http://vocab.getty.edu/aat/300036926>
+	a          skos:Concept ;
+	skos:note  "Middelen of mechanismen die worden gebruikt voor de verdediging of aanval in gevechten, bij het jagen of in oorlog."@nl, "Implementos o mecanismos usados para defensa o ataque en combates, cacerías, o la guerra."@es, "Implements or mechanisms used for defense or attack in combat, hunting, or war."@en, "在戰鬥、狩獵或戰爭中，用於防衛或攻擊的工具或機械裝置。"@zh-hant, "Gerät oder Mechanismus, genutzt für Verteidigung oder Angriff im Kampf, bei der Jagd oder im Krieg."@de .
+
+<http://data.europeana.eu/item/2064105/Museu_ProvidedCHO_Livrustkammaren_40092#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-11-15T07:29:24.729Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2064105/Museu_ProvidedCHO_Livrustkammaren_40092> .

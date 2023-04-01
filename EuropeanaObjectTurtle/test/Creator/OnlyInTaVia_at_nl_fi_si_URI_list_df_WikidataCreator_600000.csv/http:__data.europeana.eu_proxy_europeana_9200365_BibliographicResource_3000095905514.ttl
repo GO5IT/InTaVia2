@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801007r>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "280248"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:25.754Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801007r> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801007r>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:06.456Z" ;
+	dcterms:modified          "2018-03-26T12:26:02.499Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r#metadataTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801007r> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801007r.thumbnail.jpg&type=SOUND> .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801007r/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801007r>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801007r> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801007r.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:25.752Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801007r> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801007r>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1960" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801007r> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801007r>
+	a                   ore:Proxy ;
+	dc:creator          "Blondeau. Auteur ou responsable intellectuel", "Scotto, Vincent (1876-1952). Auteur ou responsable intellectuel", "Jacques-Charles (1882-1971). Auteur ou responsable intellectuel", "Monréal, Hector (1839-1910). Auteur ou responsable intellectuel", "Marchetti, Fermo Dante (1876-1940). Auteur ou responsable intellectuel", "Boyer, Lucien (1876-1942). Auteur ou responsable intellectuel", "Xanrof, Léon (1867-1953). Auteur ou responsable intellectuel", "Christiné, Henri (1867-1941). Auteur ou responsable intellectuel", "Glanzberg, Norbert (1910-2001). Auteur ou responsable intellectuel", "Yresne, Max d' (18..?-1964). Auteur ou responsable intellectuel", "Faye, F.. Auteur ou responsable intellectuel", "Renard, Noël. Auteur ou responsable intellectuel", "Magne, Michel (1930-1984). Direction d'orchestre", "Krier, Georges (1872-1946). Auteur ou responsable intellectuel", "Lemarque, Francis (1917-2002). Auteur ou responsable intellectuel", "Durand, Paul (1907-1977). Auteur ou responsable intellectuel", "Féraudy, Maurice de (1859-1932). Auteur ou responsable intellectuel", "Boyer, Jean (1901-1965). Auteur ou responsable intellectuel", "Bayle, Pierre (1896-1952). Auteur du texte", "Chatau, Henri (18..-1933). Auteur ou responsable intellectuel", "Contet, Henri (1904-1998). Auteur ou responsable intellectuel", "Borel-Clerc (1879-1959). Auteur ou responsable intellectuel", "Koger, Géo (1895-1975). Auteur du texte", "Guilbert, Yvette (1865-1944). Auteur ou responsable intellectuel", "Erwin, Ralph (1896-1943). Auteur ou responsable intellectuel", "Claret, Gaston (1901-1961). Compositeur", "Poterat, Louis (1901-1982). Auteur ou responsable intellectuel", "Willemetz, Albert (1887-1964). Auteur ou responsable intellectuel", "Villard, Georges (18..-1927). Auteur ou responsable intellectuel", "Hess, Johnny (1915-1983). Auteur ou responsable intellectuel", "Yvain, Maurice (1891-1965). Auteur ou responsable intellectuel" ;
+	dc:date             "1960" ;
+	dc:description      "Titre uniforme : [La java bleue]", "Titre uniforme : [Frou-frou]", "Titre uniforme : [Mon Paris]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [A Paris]", "Titre uniforme : [Mon homme]", "Comprend : EPOQUE 1900 - SOUS LES PONTS DE PARIS : valse / J. RODOR - V. SCOTTO - LA VALSE BRUNE / G. VILLARD - G. KRIER - FASCINATION : valse / M. de FERAUDY. F.D. MARCHETTI - FROU-FROU : valse / MONREAL - BLONDEAU - H. CHATAU - MADAME ARTHUR : valse / Y. GUILBERT - F. FAYE - LE FIACRE / L. XANROF - EPOQUE 1955 - MADEMOISELLE DE PARIS : valse / H. CONTET - P. DURAND - L'AME DES POETES : valse / Ch. TRENET - A Paris : valse / F. LEMARQUE - PADAM-PADAM : valse / H. CONTET - N. GLANZBERG - EPOQUE 1925 - VALENTINE : fox-marche / A. WILLEMETZ - H. CHRISTINE - MON PARIS : fox-marche / L. BOYER - J. BOYER - V. SCOTTO - TU VERRAS MONTMARTRE : fox marche / L. BOYER - Ch. BOREL-CLERC - PARLEZ-MOI D'AMOUR : valse lente / Jean LENOIR - SI PETITE : valse lente / G. CLARET - P. BAYLE - MON HOMME : slow-fox / JACQUES-CHARLES - A. WILLEMETZ - M. YVAIN - EPOQUE 1930 - C'EST LUI QUE MON COEUR A CHOISI : valse / R. ASSO - M. d'YRESNE - UN AIR D'ACCORDEON : valse / H. CONTET - P. DURAND - VOUS QUI PASSEZ SANS ME VOIR : slow-fox / Ch. TRENET - J. HESS - LA JAVA BLEUE : valse / G. KOGER - N. RENARD - V. SCOTTO - SUR LES QUAIS DU VIEUX PARIS : valse / L. POTERAT - R. ERWIN", "Contient une table des matières", "Titre uniforme : [Fascination]", "Titre uniforme : [Le fiacre]", "Titre uniforme : [La Valse brune]", "Titre uniforme : [Vous qui passez sans me voir]" ;
+	dc:format           "1 disque : 33 t, stéréo ; 30 cm", "disque microsillon"@fre, "multipart/mixed", "disc"@eng, "Nombre total de vues :  25" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8801007r", "Numéro commercial : Paris  363002" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14717241z"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb147204969"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb379503253"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138656300"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138632908"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13864285x"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13864746d"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13873206r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13872236f"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb138664880"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14791191f"@fr ;
+	dc:rights           "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre, "restricted use"@eng ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-5775" ;
+	dc:title            "PARIS / Michel MAGNE et son Grand Orchestre à cordes" ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801007r> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801007r> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801007r.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4127"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D8BFD8"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

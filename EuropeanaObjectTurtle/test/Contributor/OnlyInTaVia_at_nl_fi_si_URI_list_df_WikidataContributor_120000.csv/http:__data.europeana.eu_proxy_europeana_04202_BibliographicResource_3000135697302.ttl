@@ -1,0 +1,158 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135697302>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000145707> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000145707> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://lib.ugent.be/europeana/900000145707>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "15264"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135697302>
+	a                   ore:Proxy ;
+	dc:contributor      "Jacob Houbraken", "Petrus Burmannus" ;
+	dc:creator          "Jacques Philippe d'Orville" ;
+	dc:description      "Gravures van J. Houbraken" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000037824" ;
+	dc:language         "la" ;
+	dc:publisher        "Apud Gerardum Tielenburg" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:subject          "Sicily (Italy), Antiquities", "Numismatics, Italy -- Sicily", "Inscriptions, Latin, Italy -- Sicily", "Inscriptions, Greek, Italy -- Sicily" ;
+	dc:title            "Jacobi Philippi d'Orville Sicula, quibus Siciliae veteris rudera, additis antiquitatum tabulis, illustrantur Edidit, et commentarium ad numismata sicula orationem in auctoris obitum, et praefationem adjecit Petrus Burmannus Secundus" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "2 v. : ill. ; 2°." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1764" ;
+	dcterms:spatial     "Amstelaedami," ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135697302> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135697302>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150554>, <http://data.europeana.eu/agent/168861> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1764" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135697302> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/150554>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/107395>, <http://data.europeana.eu/agent/39935> ;
+	owl:sameAs           <https://g.co/kg/m/03hgjl>, <http://id.loc.gov/authorities/names/no2005063124>, <http://data.bnf.fr/ark:/12148/cb14969447f>, <http://vocab.getty.edu/ulan/500007033>, <http://viaf.org/viaf/7659158>, <http://www.idref.fr/069290784/id>, <https://www.freebase.com/m/03hgjl>, <http://www.wikidata.org/entity/Q1375551>, <http://d-nb.info/gnd/122076354>, <http://data.bibliotheken.nl/id/thes/p070090114>, <http://dbpedia.org/resource/Jacobus_Houbraken>, <http://openlibrary.org/works/OL2238981A>, <http://kulturarvsdata.se/LSH/agents/14335>, <http://id.worldcat.org/fast/1617031> ;
+	rdaGr2:dateOfBirth   "1698-01-01" ;
+	rdaGr2:dateOfDeath   "1780-11-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40802> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "J. Houbraken"@en, "J. Houbraken"@nl, "Jacob Houbraken"@cs, "Jacob Houbraken"@en, "Jacob Houbraken"@fr, "Houbraken"@sv, "Jakobus Houbraken"@de, "Jakobus Houbraken"@en, "Якоб Хоубракен"@ru, "Jacobus Houbraken"@nl ;
+	skos:note            "Grabador neerlandés"@es, "Incisore olandese"@it, "Graveur néerlandais"@fr, "Nizozemský rytec"@cs, "Nederlands graveur (1698-1780)"@nl, "Niederländischer Kupferstecher"@de, "Dutch engraver"@en ;
+	skos:prefLabel       "Jacobus Houbraken"@es, "Jacobus Houbraken"@de, "Jacobus Houbraken"@pt, "Jacobus Houbraken"@en, "Jacobus Houbraken"@it, "Jacobus Houbraken"@fr, "Jacobus Houbraken"@cs, "Jacobus Houbraken"@sl, "Jacobus Houbraken"@ca, "Jakob Houbraken"@sv, "Хоубракен, Якоб"@ru, "Γιάκομπους Χαουμπράκεν"@el, "Jacob Houbraken"@da, "Jacob Houbraken"@nl .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135697302#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:28:04.283Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135697302> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135697302>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T06:33:09.534Z" ;
+	dcterms:modified          "2015-12-04T13:52:10.278Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302#metadataTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135697302> ;
+	edm:completeness          "10" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135697302> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000145707&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135697302>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135697302#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:28:04.283Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135697302> .
+
+<http://data.europeana.eu/agent/168861>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://nlg.okfn.gr/resource/authority/record139491>, <http://data.bnf.fr/ark:/12148/cb12115306x>, <http://www.wikidata.org/entity/Q1346758>, <http://viaf.org/viaf/49257108>, <http://www.idref.fr/029550580/id>, <http://d-nb.info/gnd/117174556>, <https://g.co/kg/m/019_09>, <https://libris.kb.se/wt79b6jf0x1h4tj>, <http://dbpedia.org/resource/Pieter_Burman_the_Younger>, <http://id.worldcat.org/fast/448852>, <http://data.bibliotheken.nl/id/thes/p069889538>, <https://www.freebase.com/m/019_09>, <http://libris.kb.se/resource/auth/209803>, <http://openlibrary.org/works/OL6137396A>, <http://id.loc.gov/authorities/names/nr00016218> ;
+	rdaGr2:dateOfBirth             "1713-10-23" ;
+	rdaGr2:dateOfDeath             "1778-06-24" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40212> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Pieter Burmann"@es, "Petrus Burmannus Secundus"@nl, "Petrus Burmannus"@en, "Petrus Burmannus"@nl, "Pieter Burman d.y."@sv, "Pieter Burman Junior"@nl, "P. Burmannus"@en, "P. Burmannus"@nl, "Pieter Burman"@de, "Pieter Burman"@sv, "Pieter Burman"@en ;
+	skos:note                      "Académico neerlandés"@es, "Filologo olandese"@it, "Niederländischer Philologe (1713-1778)"@de, "Dutch lawyer and philologist (1713-1778)"@en, "Nederlands taalkundige (1713-1778)"@nl ;
+	skos:prefLabel                 "Pieter Burman den yngre"@sv, "Pieter Burman Junior"@da, "Pieter Burmann le Jeune"@fr, "Pieter Burman"@nl, "Pieter Burman il Giovane"@it, "Pieter Burman der Jüngere"@de, "Pieter Burman the Younger"@en, "Pieter Burman the Younger"@sl, "Pieter Burmann segundo"@es .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000145707>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1269"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "170"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

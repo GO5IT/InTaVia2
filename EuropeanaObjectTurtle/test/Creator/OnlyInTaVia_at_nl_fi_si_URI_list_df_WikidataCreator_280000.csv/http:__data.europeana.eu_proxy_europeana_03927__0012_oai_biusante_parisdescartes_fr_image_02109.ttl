@@ -1,0 +1,134 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_02109>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-09-28T14:53:23.982Z" ;
+	dcterms:modified          "2017-03-24T16:08:49.228Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109#contentTier>, <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "03927_Ag_BANQUEIMAGEPORTRAIT_IMAGE" ;
+	edm:landingPage           <https://www.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.biusante.parisdescartes.fr%2Fimages%2Fbanque%2Fpt%2F02109.jpg&type=IMAGE> .
+
+<http://semium.org/time/16xx_2_half>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://data.europeana.eu/timespan/17> ;
+	edm:begin         "Sun Jan 01 01:00:00 CET 1651" ;
+	edm:end           "Sat Dec 31 01:00:00 CET 1701" ;
+	skos:prefLabel    "17e (fin)"@fr, "Second half of the 17th century"@en, "Вторая половина 17-го века"@ru .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_02109>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1698" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:21:32.606Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/organization/1482250000004500704>
+	a               foaf:Organization ;
+	skos:prefLabel  "Interuniversity Health Library"@en .
+
+<http://semium.org/time/1698>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/16xx_4_quarter> ;
+	edm:begin         "Wed Jan 01 01:00:00 CET 1698" ;
+	edm:end           "Wed Dec 31 01:00:00 CET 1698" ;
+	skos:prefLabel    "1698" .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:21:32.606Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> .
+
+<http://semium.org/time/16xx_4_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/16xx_2_half> ;
+	edm:begin         "Wed Jan 01 01:00:00 CET 1676" ;
+	edm:end           "Fri Dec 31 01:00:00 CET 1700" ;
+	skos:prefLabel    "4e quart 17e siècle"@fr, "4 quarter of the 17th century"@en, "4-я четверть 17-го века"@ru .
+
+<http://data.europeana.eu/proxy/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_02109>
+	a                   ore:Proxy ;
+	dc:creator          "Van Gunst (Graveur)"@fr, "Lairesse, Gérard de (Dessinateur)"@fr ;
+	dc:date             "1698"@fr ;
+	dc:description      "Référence de l'image dans la banque d'images : 02109. - Nombre d'images dans le lot : 1 . - 390 x 300 mm . - Gravure - Burin . - Il s'agit ici du plus fameux cas de plagiat connu en médecine. Cowper acheta des plaques de cuivre des gravures que Van Gunst avait réalisées pour G. Bidloo d'après les lavis de G. de Lairesse. Pour le frontispice, Cowper couvrit le nom de Bidloo avec le sien.\u000AC'est une scène allégorique. La Vérité qu'entoure la trompette de la Renommée, est assise sur un tombeau (la Mort), le couteau d'anatomiste dans une main, un livre ouvert (le Savoir) dans l'autre. Le Temps, vieillard ailé tenant un sablier, est l'allié de la mort , destinée de toute vie humaine. En bas à droite, des angelots anatomistes jouent avec un crâne humain. . - Image en niveaux de gris"@fr ;
+	dc:identifier       "0012/oai:biusante.parisdescartes.fr:image_02109" ;
+	dc:relation         <http://collections.culture.fr> ;
+	dc:rights           "Licence ouverte. - BIU Santé"@fr ;
+	dc:title            "[Frontispice]"@fr ;
+	dc:type             "frontispice"@fr ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> .
+
+<http://www.biusante.parisdescartes.fr/histmed/image?02109>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "37020"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://www.biusante.parisdescartes.fr/images/banque/pt/02109.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "18585"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "86"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_02109>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_02109> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500704> ;
+	edm:isShownAt      <http://www.biusante.parisdescartes.fr/histmed/image?02109> ;
+	edm:object         <http://www.biusante.parisdescartes.fr/images/banque/pt/02109.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671141> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671141>
+	a               foaf:Organization ;
+	skos:prefLabel  "Moteur Collections"@fr, "Moteur Collections"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

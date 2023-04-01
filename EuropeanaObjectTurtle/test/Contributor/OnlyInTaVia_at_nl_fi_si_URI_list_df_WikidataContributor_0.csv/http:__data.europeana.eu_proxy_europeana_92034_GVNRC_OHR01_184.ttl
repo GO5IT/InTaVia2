@@ -1,0 +1,105 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/OHR01:184>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48451"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0184&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "16865"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "125"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_184#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:16.982Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_184> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_OHR01_184>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_OHR01_184> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_OHR01_184> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_184>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_OHR01_184> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/OHR01:184> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0184&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_OHR01_184>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:21:55.405Z" ;
+	dcterms:modified          "2018-04-05T17:35:10.869Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_OHR01_184#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_OHR01_184#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_OHR01_184> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_OHR01_184> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AOHR01%3A0184%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_184>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92034/GVNRC_OHR01_184#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:09:16.982Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_184> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_OHR01_184>
+	a                   ore:Proxy ;
+	dc:contributor      "Storck, Abraham" ;
+	dc:description      "Galjoot", "Op het schilderij staat de scheepvaart voor de ingang van een Nederlandse haven afgebeeld. Aan de pier met lichtbaken wordt een klein schip afgetuigd. Links vaart een galjoot, daarachter is een Nederlands koopvaardijschip zichtbaar. Meer naar de achtergrond zijn enkele andere schepen zichtbaar, waaronder een fluit.", "Licentie tot: 2009", "Fluitschip" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:OHR01:0184" ;
+	dc:rights           "National Gallery of Ireland; For information contact Koninklijke Bibliotheek"@en, "Koninklijke Bibliotheek", "National Gallery of Ireland; Voor informatie: Koninklijke Bibliotheek"@nl ;
+	dc:source           "184 (schilderij), De Nederlandse Oostzeehandel in de periode 1600-1850, National Gallery of Ireland, Dublin/ Ierland" ;
+	dc:subject          "Schepen"@nl ;
+	dc:title            "Scheepvaart" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "Tweede helft 17e eeuw" ;
+	dcterms:extent      "75 x 89 cm" ;
+	dcterms:isPartOf    "OHR01", "Directie der Oostersche Handel en Reederijen", "GVN" ;
+	dcterms:issued      "13-10-2003" ;
+	dcterms:medium      "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_OHR01_184> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_OHR01_184> .

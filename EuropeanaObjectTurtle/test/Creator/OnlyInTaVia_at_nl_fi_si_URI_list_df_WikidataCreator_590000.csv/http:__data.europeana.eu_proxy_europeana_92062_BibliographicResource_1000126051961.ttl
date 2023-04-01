@@ -1,0 +1,141 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildarchivaustria.at/Thumbnail/4143908.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92062/BibliographicResource_1000126051961>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/213> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1638" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126051961> .
+
+<http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126051961>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4143908> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/4143908.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Preview/4143908.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/92062/BibliographicResource_1000126051961>
+	a                   ore:Proxy ;
+	dc:creator          "Pontius, Paulus", "Rubens, Peter Paul" ;
+	dc:date             "1638" ;
+	dc:description      "Stecher: Pontius, Paulus\u000AZeichner: Rubens, Peter Paul"@de ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/4143908.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:subject          "Kaiser"@de, "Emperor"@en, "Römisches Reich"@de, "Rome"@en, "Rom"@de, "Porträt"@de, "Portrait"@en ;
+	dc:title            "Nero, römischer Kaiser"@de ;
+	dc:type             "Druckgrafik" ;
+	dcterms:hasFormat   "image/jpeg" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0480> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126051961> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=4143908>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126051961#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:52:33.526Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126051961> .
+
+<http://www.bildarchivaustria.at/Preview/4143908.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126051961/manifest> ;
+	ebucore:fileByteSize    "1475346"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "1060"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<https://iiif.europeana.eu/presentation/92062/BibliographicResource_1000126051961/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/concept/213>
+	a                skos:Concept ;
+	skos:altLabel    "Roman antiquity"@en, "Roma antică"@ro, "Antiikin Rooma"@fi, "Altes Rom"@de, "Romarriket"@sv, "Roma"@es, "Antický Řím"@cs, "Roma antica"@it, "Antica Roma"@it, "Estado romano"@es, "Classical Rome"@en, "Cultura romana"@it, "Antika Rom"@sv, "Antikens Rom"@sv, "Antiquité romaine"@fr ;
+	skos:exactMatch  <http://d-nb.info/gnd/4076778-4>, <http://id.worldcat.org/fast/1204885>, <http://www.idref.fr/027243001/id>, <http://id.worldcat.org/fast/1754964>, <http://data.bnf.fr/ark:/12148/cb119328036>, <https://libris.kb.se/dbqsrrsx1l8h7mq>, <http://www.wikidata.org/entity/Q1747689>, <http://vocab.getty.edu/aat/300020533>, <http://id.loc.gov/authorities/names/n79039816>, <https://www.freebase.com/m/02l341>, <http://uri.gbv.de/terminology/bk/15.28>, <http://id.nlm.nih.gov/mesh/I01.076.201.450.226.800.500>, <http://www.yso.fi/onto/ysa/Y105081>, <http://vocab.getty.edu/tgn/7594740>, <http://viaf.org/viaf/145348938>, <https://g.co/kg/m/02l341>, <http://viaf.org/viaf/244992873>, <http://nomisma.org/id/rome>, <http://datos.bne.es/resource/XX450599>, <http://www.yso.fi/onto/yso/p105081>, <http://id.ndl.go.jp/auth/ndlna/00569665>, <http://id.nlm.nih.gov/mesh/D018644> ;
+	skos:note        "Rond 8e eeuw v.Chr. ontstane stadstaat in Latium, die het Middellandse Zeegebied zou gaan domineren"@nl, "Ancien État"@fr, "Цивилизация Древнего мира"@ru, "Entidad política unitaria surgida de la expansión de la ciudad de Roma"@es, "Civilització sorgida a la Península Itàlica a partir del segle VIII aC"@ca, "Kulturell och politisk enhet som utgick från Rom 753 f.Kr.–476 e.Kr."@sv, "Historischer Staat"@de, "Tradičné slovenské označenie štátneho útvaru"@sk, "Starověká civilizace vzešlá z města Říma"@cs, "Oraș-stat"@ro, "Αυτοκρατορία κατά την ύστερη αρχαιότητα"@el, "Civilizācija Itālijas un Vidusjūras reģionā senajos laikos"@lv, "Antiikin aikainen imperiumi"@fi, "Apie Senovės Romą"@lt, "Cywilizacja starożytna"@pl, "Civiltà dell'evo antico incentrata sulla città di Roma e da lì diffusasi in Italia e nel Mediterraneo (VIII secolo a.C.-V secolo d.C.)"@it, "Civilização itálica que surgiu no século VIII a.c"@pt, "Civilizazzjoni li bdiet tikber fil-peninsula Taljana mit-8 seklu QK"@mt, "Civilisation that began growing on the Italian Peninsula from 8th century BC"@en ;
+	skos:prefLabel   "Oude Rome"@nl, "Antigua Roma"@es, "Antički Rim"@hr, "Romerska riket"@sv, "Ancient Rome"@en, "Древний Рим"@ru, "Rooman valtakunta"@fi, "Древен Рим"@bg, "An tSean-Róimh"@ga, "Ókori Róma"@hu, "Ruma Antika"@mt, "Αρχαία Ρώμη"@el, "Senovės Roma"@lt, "Roma Antică"@ro, "Römisches Reich"@de, "Starożytny Rzym"@pl, "Civiltà romana"@it, "Rooma riik"@et, "Senā Roma"@lv, "Staroveký Rím"@sk, "Antiga Roma"@ca, "Antikkens Rom"@da, "Starorimska civilizacija"@sl, "Rome antique"@fr, "Starověký Řím"@cs, "Roma Antiga"@pt ;
+	skos:related     <http://data.europeana.eu/place/152485> .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126051961>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/92062/BibliographicResource_1000126051961#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T21:52:33.527Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92062/BibliographicResource_1000126051961> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92062/BibliographicResource_1000126051961>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-10-04T17:54:30.297Z" ;
+	dcterms:modified          "2015-03-26T18:06:21.004Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961#contentTier>, <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92062/BibliographicResource_1000126051961> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92062_Ag_EU_TEL_a0480_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92062/BibliographicResource_1000126051961> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FPreview%2F4143908.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .

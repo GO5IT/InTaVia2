@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000366931> ;
+	edm:isShownAt      <http://balat.kikirpa.be/object/103473> ;
+	edm:isShownBy      <http://balat.kikirpa.be/image/thumbnail/B044300.jpg> ;
+	edm:object         <http://balat.kikirpa.be/image/thumbnail/B044300.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://balat.kikirpa.be/image/thumbnail/B044300.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261/manifest> ;
+	ebucore:fileByteSize    "137448"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "651"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://balat.kikirpa.be/object/103473>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "23685"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000000366931>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijk Instituut voor het Kunstpatrimonium"@nl, "Royal Institute for Cultural Heritage"@en .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:02:49.200Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> .
+
+<http://data.europeana.eu/proxy/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261>
+	a                   ore:Proxy ;
+	dc:creator          "Susenier, Abraham"@nl ;
+	dc:date             "geboren 1620/1664" ;
+	dc:format           "geschilderd" ;
+	dc:identifier       "AP_10102261", "[KIK-IRPA n° 103473]" ;
+	dc:rights           "© KIK-IRPA, Brussels (Belgium)" ;
+	dc:subject          "[inv. n° 1905 D]"@nl, "citroen"@nl, "schaal[voedsel]"@nl, "druiventros"@nl, "object"@nl, "drinkglas"@nl, "stilleven met vruchten"@nl ;
+	dc:title            "Stilleven met citroen"@nl ;
+	dc:type             "schilderij"@nl, "Schilderij[categorie]"@nl ;
+	dcterms:extent      "breedte: 43.5 cm", "hoogte: 32.5 cm" ;
+	dcterms:medium      "paneel[drager]"@nl, "olieverf"@nl ;
+	dcterms:provenance  "Object: Museum voor Schone Kunsten, Gent. ", "Photo: Royal Institute for Cultural Heritage (KIK-IRPA), Brussels (Belgium)" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:02:49.200Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> .
+
+<http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> .
+
+<http://data.europeana.eu/aggregation/europeana/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-13T21:04:16.717Z" ;
+	dcterms:modified          "2016-01-14T13:03:36.318Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261#contentTier>, <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "2048001_Ag_EU_AthenaPlus_KIK-IRPA" ;
+	edm:isShownBy             <http://balat.kikirpa.be/image/thumbnail/B044300.jpg> ;
+	edm:landingPage           <https://www.europeana.eu/item/2048001/Athena_Plus_ProvidedCHO_KIK_IRPA__Brussels__Belgium__AP_10102261> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbalat.kikirpa.be%2Fimage%2Fthumbnail%2FB044300.jpg&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://balat.kikirpa.be/timthumb.php?src=http://balat.kikirpa.be/image/thumbnail/B044300.jpg&q=75&w=250>
+	a  edm:WebResource .

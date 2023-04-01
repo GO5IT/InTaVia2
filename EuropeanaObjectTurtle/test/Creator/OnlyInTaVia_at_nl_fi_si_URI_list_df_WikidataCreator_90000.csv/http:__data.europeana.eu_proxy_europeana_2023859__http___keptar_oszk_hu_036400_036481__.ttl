@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://keptar.oszk.hu/036400/036481>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036400_036481__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036400_036481__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/036400/036481> ;
+	edm:object         <http://keptar.oszk.hu/036400/036481/1895_Oldal_094_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:02.723Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036400_036481__> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_036400_036481__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/227> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036400_036481__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:51:02.723Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036400_036481__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_036400_036481__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:56:29.332Z" ;
+	dcterms:modified          "2015-09-14T11:52:27.082Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F036400%2F036481%2F1895_Oldal_094_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/concept/227>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q134194>, <http://vocab.getty.edu/aat/300053357>, <http://id.ndl.go.jp/auth/ndlna/00563760>, <https://www.freebase.com/m/02_3k>, <https://g.co/kg/m/02_3k>, <http://www.yso.fi/onto/yso/p1483>, <https://d-nb.info/gnd/4071463-9>, <http://babelnet.org/rdf/s00036480n>, <http://purl.org/bncf/tid/15765> ;
+	skos:note        "Seinamaali tehnika"@et, "Tecnica pittorica"@it, "Maalaustekniikka"@fi, "Technika nástennej maľby zhotovovaná na vlhkej omietke"@sk, "Técnica pictórica de pintura mural"@es, "Tehnică de pictură murală"@ro, "Muralmålning på färsk, ännu fuktig kalkputs"@sv, "Technique particulière de peinture murale dont la réalisation s'opère sur un enduit, avant qu'il ne soit sec"@fr, "Schildertechniek"@nl, "Technique of mural painting executed upon freshly laid lime plaster"@en, "Wandmalereitechnik insbesondere auf frischem Kalkputz"@de, "Malingsteknik"@da, "Technika malarska"@pl, "Tècnica pictòrica de pintura mural"@ca ;
+	skos:prefLabel   "Freska"@hr, "Freska"@sk, "Freska"@sl, "Freska"@cs, "Fresko"@de, "Fresko"@et, "Fresko"@eu, "Fresko"@da, "Al fresco"@sv, "Fresco painting"@en, "Fresco"@pt, "Fresco"@es, "Pintura al fresc"@ca, "Freskomaalaus"@fi, "Fresk"@pl, "Affresco"@it, "Frescoschildertechniek"@nl, "Frescă"@ro, "Стенопис"@bg, "Freascó"@ga, "Νωπογραφία"@el, "Freskó"@hu, "Фреска"@ru, "Fresque"@fr, "Freska"@lt, "Freska"@lv .
+
+<http://keptar.oszk.hu/036400/036481/1895_Oldal_094_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "12913"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_036400_036481__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_036400_036481__>
+	a                    ore:Proxy ;
+	dc:creator           "Székely ,  Bertalan  (painter)"@hu ;
+	dc:description       "I. András, más néven Endre (1013 - 1060. december 5. előtt) Árpád-házi magyar király 1046-1060 között. Uralkodása alatt többször került szembe a Német-római Birodalommal, trónjától végül öccse, Béla fosztotta meg. (Forrás: Wikipédia) Képek a magyar történetből. A közelgő ezredévi ünnepélyre több magyar történeti munka van készülőben. Történetiróinkat buzgó kiadók segítik munkájokban, hogy a ritka ünnepélyre Magyarország történelmének leirását diszes kiállításban s a megkapóbb jeleneteknek, az első sorokban küzdő nagy férfiaknak s a fenmaradt emlékeknek rajzaival érdekesbítve adhassák a közönség kezébe. Különösen két vállalat keltett méltó figyelmet. Az egyiket több kiváló magyar történettudós irja s az Athenaeum társaság adja ki; ez tíz kötetre van tervezve. A másikat a Lampel Róbert (Wodianer F. és fiai) könyvkereskedése adja ki, s Baróti Lajos, e buzgó írónk rendezi sajtó alá s részben ő maga irja, (például az első kötetet, a mely Magyarország történelmét az Árpád-ház kihalásáig adja, egészen ő maga irja nagy gonddal és a legjobb források felhasználásával), részben Szalay Józsefnek, e korán elhunyt jeles történettudósunknak az Akadémiától is kitüntetett művét adja, itt-ott kiegészítve, három kötetben. A jelen alkalommal a Szalay-Baróti-féle vállalat illusztrácziói közül mutatunk be néhányat, a melyek részben már megjelentek, részben még a mű későbbi folyamában látnak világot. Baróti Lajos ízléssel és műérzékkel válogatta össze ez illusztrácziókat, a melyek száma az egész műben közel hatszázra rúg. Álljanak itt mutatványul a következők: ... I. Endre megkoronázása, Székely Bertalannak a pécsi székesegyházban levő falfestménye után; az eredeti az úgy nevezett Mór-kápolnában látható. Ez a Mór pécsi püspök egyike volt ama három püspöknek, a kik a Péter elűzetésekor és Endre bejövetelekor támadt forradalomban nem vesztették el életüket. Lehet, hogy épen ez a Mór püspök tette a szent koronát I. Endre fejére 1046-ban. ... (Forrás: Vasárnapi Ujság, 1895. márczius 24.)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1455x785 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/036400/036481   [Metadata]" ;
+	dc:relation          "Székely Bertalan: I. Endre koronázása [ http://keptar.oszk.hu/005600/005682]"@hu, "Wikipédia: Székely Bertalan: I. András magyar király koronázása [ http://hu.wikipedia.org/w/index.php?title=F%C3%A1jl:Szekely_B_I_Andras_koronazas.jpg&filetimestamp=20090723211000]"@hu, "Wikipédia: I. András magyar király [ http://hu.wikipedia.org/wiki/I._Endre]"@hu, "Vizkelety Béla: I. Endre [ http://keptar.oszk.hu/028700/028751]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "Endre (Magyarország: király), I. (1013-1060)"@hu, "freskó"@hu, "Fine arts, visual arts"@hu, "History, local history"@hu, "király"@hu, "reprodukció"@hu, "falfestmény"@hu, "koronázás"@hu, "uralkodó"@hu ;
+	dc:title             "I. Endre megkoronázása"@hu ;
+	dc:type              "újságrészlet"@hu, "photograph"@hu, "painting"@hu, "esemény"@hu ;
+	dcterms:alternative  "Képek a magyar történetből"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_036400_036481__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_036400_036481__> .

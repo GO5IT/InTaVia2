@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=11474018>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.bildarchivaustria.at/Preview/11474018.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126003373/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126003373#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:11:03.308Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126003373> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<https://iiif.europeana.eu/presentation/92060/BibliographicResource_1000126003373/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/92060/BibliographicResource_1000126003373>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126003373> .
+
+<http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126003373>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000338827> ;
+	edm:isShownAt      <http://www.bildarchivaustria.at/TELRequest.aspx?p_ImageID=11474018> ;
+	edm:isShownBy      <http://www.bildarchivaustria.at/Preview/11474018.jpg> ;
+	edm:object         <http://www.bildarchivaustria.at/Thumbnail/11474018.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://data.europeana.eu/aggregation/europeana/92060/BibliographicResource_1000126003373>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-02T08:54:28.803Z" ;
+	dcterms:modified          "2019-04-02T08:54:28.803Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373#contentTier>, <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373> ;
+	edm:completeness          "10" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "92060_Ag_EU_TEL_a0478_Austria" ;
+	edm:landingPage           <https://www.europeana.eu/item/92060/BibliographicResource_1000126003373> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildarchivaustria.at%2FThumbnail%2F11474018.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/proxy/provider/92060/BibliographicResource_1000126003373>
+	a                   ore:Proxy ;
+	dc:creator          "Gause, Wilhelm" ;
+	dc:description      "Erzherzog Thronfolger Franz Ferdinand hält am 60. Jahrestag der Thronbesteigung vor dem im Ecksalon des Alexander-Appartements der Hofburg versammelten Mitgliedern des Erzhauses die Huldigungsansprache an \u000Aden Kaiser."@de ;
+	dc:format           "image/jpeg" ;
+	dc:identifier       "http://www.bildarchivaustria.at/Preview/11474018.jpg" ;
+	dc:rights           "ÖNB" ;
+	dc:source           "Osterreichische Nationalbibliothek" ;
+	dc:subject          "Thronfolger"@de, "Jubiläum"@de, "Homage"@en, "Thronbesteigung"@de, "Huldigung"@de ;
+	dc:title            "Franz Joseph I., Kaiser von Österreich"@de ;
+	dc:type             "Druck" ;
+	dcterms:created     "1908-12-02" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0478> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92060/BibliographicResource_1000126003373> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126003373> .
+
+<http://data.europeana.eu/organization/1482250000000338827>
+	a               foaf:Organization ;
+	skos:prefLabel  "Austrian National Library"@en, "Österreichische Nationalbibliothek"@de .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126003373#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:11:03.309Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92060/BibliographicResource_1000126003373> .
+
+<http://www.bildarchivaustria.at/Thumbnail/11474018.jpg>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92060/BibliographicResource_1000126003373>
+	a  edm:ProvidedCHO .

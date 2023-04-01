@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> .
+
+<http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:33:12.140Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/29d6ffdb-0a60-4495-3e11-6decbef5fd1b> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/11290820-fcfe-7454-f3aa-f9a492c0ee0e.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/11290820-fcfe-7454-f3aa-f9a492c0ee0e.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:33:12.140Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/29d6ffdb-0a60-4495-3e11-6decbef5fd1b>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16494"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b>
+	a                   ore:Proxy ;
+	dc:creator          "Matham, Theodor (1605/1606-1676)"@nl, "Mijtens, Johannes (1614-1670)"@nl ;
+	dc:date             "1649-00-00/1676-00-00" ;
+	dc:description      "Portret van Wolfert van Brederode op jonge leeftijd. <br> Linksonder een hand met een zwaard omgeven door vlammen en rechtsonder de kop van een zwijn. <br>\u000A          Gravure door Theodor Matham naar ontwerptekening van Johannes Mijtens; gesigneerd."@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53010676" ;
+	dc:language         "Dutch" ;
+	dc:title            "Portret van Wolfert van Brederode op jonge leeftijd. <br> Linksonder een hand met een zwaard omgeven door vlammen en rechtsonder de kop van een zwijn. <br> Gravure\u000A          door Theodor Matham naar ontwerptekening van Johannes Mijtens; gesigneerd."@nl, "NL-HlmNHA_1477_53010676"@nl, "Voorhelm Schneevoogt NL-HlmNHA_1477_53010676"@nl ;
+	dc:type             "Portretten"@nl, "Grafiek Drukwerk"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T14:52:28.012Z" ;
+	dcterms:modified          "2015-03-26T14:52:28.012Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b#contentTier>, <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F11290820-fcfe-7454-f3aa-f9a492c0ee0e.jpg&type=IMAGE> .
+
+<https://images.memorix.nl/ranh/thumb/640x480/11290820-fcfe-7454-f3aa-f9a492c0ee0e.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b/manifest> ;
+	ebucore:fileByteSize    "36228"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "364"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<http://data.europeana.eu/item/2021663/memorix_29d6ffdb_0a60_4495_3e11_6decbef5fd1b>
+	a  edm:ProvidedCHO .

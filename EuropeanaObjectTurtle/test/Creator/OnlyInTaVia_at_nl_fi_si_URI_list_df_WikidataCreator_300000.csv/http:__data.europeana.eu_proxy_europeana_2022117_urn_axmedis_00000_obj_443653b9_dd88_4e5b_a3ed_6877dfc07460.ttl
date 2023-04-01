@@ -1,0 +1,99 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671101>
+	a               foaf:Organization ;
+	skos:prefLabel  "ECLAP, e-library for Performing Arts"@en .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:06:31.272Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> .
+
+<http://data.europeana.eu/organization/1482250000004507819>
+	a               foaf:Organization ;
+	skos:prefLabel  "Liber Liber, Rome, Italy"@en .
+
+<http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507819> ;
+	edm:isShownAt      <http://www.eclap.eu/europeana/urn:axmedis:00000:obj:443653b9-dd88-4e5b-a3ed-6877dfc07460> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671101> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/provider/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460>
+	a                   ore:Proxy ;
+	dc:contributor      "Tajo, Italo (Basso; Banco, generale dell'esercito del re Duncano)", "Veneziani, Vittore (Maestro del coro)", "Verdi, Giuseppe (Compositore)", "Piave, Francesco Maria (Autore del libretto)", "Mascherini, Enzo (Baritono; Macbeth, generale dell'esercito del re Duncano)", "Vercelli, Angela (Mezzosoprano; Dama di Lady Macbeth)", "Vinco, Ivo (Basso; Araldo)", "Della Pergola, Luciano (Tenore; Malcolm, figlio di Duncano)", "Coro del Teatro alla Scala (Coro)", "Callas, Maria (Soprano; Lady Macbeth, moglie di Macbeth)", "Caselli, Dario (Basso; Medico)", "Orchestra del Teatro alla Scala (Orchestra)", "Maffei, Andrea (Autore del libretto)", "Penno, Gino (Tenore; Macduff, nobile scozzese, signore di Fiff)", "Tommasini, Mario (Basso; Sicario)", "Barbesi, Attilio (Basso; Un domestico di Macbeth)", "de Sabata, Victor (Direttore)" ;
+	dc:creator          "Verdi, Giuseppe" ;
+	dc:date             "1952 (recording)" ;
+	dc:description      "Verdi, Giuseppe da “Macbeth”, Orchestra del Teatro alla Scala, registrazione dal vivo, analogica, Registrazione dal vivo: Milano, Teatro alla Scala, 12 luglio 1952\u000AFonte letteraria: Macbeth di William Shakespeare\u000AEpoca di composizione: 1847\u000APrima rappresentazione: Firenze, Teatro della Pergola, 14 marzo 1847"@it ;
+	dc:publisher        "EMI Classics"@it ;
+	dc:rights           "Liber Liber, alcuni diritti riservati"@it ;
+	dc:source           <http://www.liberliber.it/musica/v/verdi/> ;
+	dc:subject          "Opera"@it ;
+	dc:title            "Macbeth - 03. Giorno non vidi mai sì fiero e bello"@it ;
+	dcterms:extent      "00:03:20.4" ;
+	dcterms:isPartOf    "Macbeth"@it ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/247>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/235> ;
+	skos:exactMatch  <http://purl.org/bncf/tid/1946>, <http://id.loc.gov/authorities/names/gf2014026976>, <https://d-nb.info/gnd/4043582-9>, <http://cv.iptc.org/newscodes/mediatopic/20000028>, <https://www.freebase.com/m/05lls>, <http://babelnet.org/rdf/s00059107n>, <http://id.loc.gov/authorities/names/sh85094900>, <http://id.ndl.go.jp/auth/ndlna/00564452>, <http://vocab.getty.edu/aat/300054147>, <http://www.wikidata.org/entity/Q1344>, <http://vocabularies.unesco.org/thesaurus/concept5396>, <http://id.loc.gov/authorities/genreForms/gf2014026976>, <http://iconclass.org/48C862>, <http://data.bnf.fr/ark:/12148/cb119367643>, <https://g.co/kg/m/05lls>, <http://dbpedia.org/ontology/Opera> ;
+	skos:note        "Gen muzical si teatral"@ro, "Género de música teatral"@es, "Form av musikteater"@sv, "Gênero artístico teatral"@pt, "Näyttämötaidemuoto"@fi, "Gènere de música teatral"@ca, "Musisk sceneværk"@da, "Artform combining sung text and musical score in a theatrical setting"@en, "Musikalische Gattung des Theaters"@de, "Muziek"@nl, "Sceniczne dzieło muzyczne wokalno-instrumentalne"@pl, "Genere teatrale e musicale in cui l'azione scenica è abbinata alla musica, al balletto e al canto"@it, "Жанр музыкально-драматического искусства"@ru, "Hudebně dramatická forma"@cs, "Muusikaline lavateos"@et, "Vokális-hangszeres drámai színpadi műfaj"@hu, "Μουσική σύνθεση που περιλαμβάνει συγχρόνως και σκηνική δράση"@el, "Hudobno-dramatický žáner"@sk, "Genre musical, théâtre chanté"@fr ;
+	skos:prefLabel   "Ooppera"@fi, "Ooper"@et, "Opera"@lt, "Opera"@lv, "Opera"@hr, "Opera"@hu, "Opera"@sk, "Opera"@sl, "Opera"@sv, "Opera"@en, "Opera"@it, "Opera"@eu, "Opera"@cs, "Opera"@pl, "Opera"@da, "Opera"@nl, "Όπερα"@el, "Опера"@ru, "Опера"@bg, "Opéra"@fr, "Òpera"@ca, "Operă"@ro, "Oper"@de, "Opra"@mt, "Ceoldráma"@ga, "Ópera"@pt, "Ópera"@es .
+
+<http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460>
+	a                         edm:EuropeanaAggregation ;
+	dc:creator                "Europeana" ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460#metadataTier>, <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> ;
+	edm:completeness          "0" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2022117_Ag_EU_ECLAP_LIBERLIBER" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> ;
+	edm:language              "it" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/3.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/247> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> .
+
+<http://data.europeana.eu/item/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:06:31.271Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022117/urn_axmedis_00000_obj_443653b9_dd88_4e5b_a3ed_6877dfc07460> .
+
+<http://www.eclap.eu/europeana/urn:axmedis:00000:obj:443653b9-dd88-4e5b-a3ed-6877dfc07460>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/3.0/> .

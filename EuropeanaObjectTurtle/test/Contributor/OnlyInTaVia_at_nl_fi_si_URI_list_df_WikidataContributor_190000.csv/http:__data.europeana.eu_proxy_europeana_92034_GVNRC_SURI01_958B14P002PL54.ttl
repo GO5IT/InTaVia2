@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_SURI01_958B14P002PL54>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:50:46.231Z" ;
+	dcterms:modified          "2018-04-05T17:57:55.878Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ASURI01%3A958B14P002PL54%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_SURI01_958B14P002PL54>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/SURI01:958B14P002PL54> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:SURI01:958B14P002PL54&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:44.830Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SURI01_958B14P002PL54> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_SURI01_958B14P002PL54>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/158857> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1719" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_SURI01_958B14P002PL54> .
+
+<http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54>
+	a  edm:ProvidedCHO .
+
+<http://www.geheugenvannederland.nl/?/en/items/SURI01:958B14P002PL54>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "47985"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:13:44.830Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SURI01_958B14P002PL54> .
+
+<http://data.europeana.eu/agent/158857>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://data.bibliotheken.nl/id/thes/p068634560>, <https://libris.kb.se/31fhjv4m1x2hz4j>, <http://datos.bne.es/resource/XX1300627>, <http://www.idref.fr/032431546/id>, <http://ta.sandrart.net/-person-2990>, <http://libris.kb.se/resource/auth/195769>, <http://dbpedia.org/resource/Maria_Sibylla_Merian>, <http://id.ndl.go.jp/auth/ndlna/00869582>, <http://id.loc.gov/authorities/names/n80115855>, <http://lod.nl.go.kr/resource/KAC2018O9857>, <http://d-nb.info/gnd/118581082>, <http://viaf.org/viaf/106967757>, <http://openlibrary.org/works/OL35271A>, <http://vocab.getty.edu/ulan/500009826>, <http://www.wikidata.org/entity/Q62530>, <http://id.worldcat.org/fast/60440>, <https://livedata.bibsys.no/authority/97040075>, <https://g.co/kg/m/08rgpj>, <https://www.freebase.com/m/08rgpj>, <http://data.bnf.fr/ark:/12148/cb11915660s> ;
+	rdaGr2:dateOfBirth             "1647-04-02" ;
+	rdaGr2:dateOfDeath             "1717-01-13" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/2139> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/147> ;
+	skos:altLabel                  "S. Merian"@en, "Мериан Мария Сибилла"@ru, "Sibilla Merian"@en, "Maria S. Merian"@en, "Maria Sibylla Merian Graf"@en, "Мария Мериан"@ru, "Maria Sibylla Merian Graff"@en, "Madame Merian"@en, "Maria Sybilla"@en, "Syb Merian"@en, "Maria Sibylla Graffin"@en, "Maria Merian"@et, "M.S. Marian"@en, "Maria Merian"@sv, "Maria Sibylla Graff"@cs, "Maria Sibylla Graff"@en, "Sibylle Merian"@en, "Sybella Marian"@en, "Мериан, Мария"@ru, "M. S. Gräffin"@en, "M. S. Gräffin"@cs, "Anna Maria Sibylla Merian"@et, "Anna Maria Sibylla Merian"@nl, "Anna Maria Sibylla Merian"@pl, "Anna Maria Sibylla Merian"@de, "Anna Maria Sibylla Merian"@fi, "Maria Sibylla Gräffin"@en, "Die Jungfer Merianin"@en, "Maria Sibylla Marian"@en, "Graff Merian"@en, "Мария Сибилла Мериан"@ru, "Merian"@en, "Sibylle merian"@en, "Maria Sybilla Merian"@en, "Maria Sybilla Merian"@de, "Sybille Merian"@en, "Sybilla Merian"@en, "Marii︠a︡ Sibilla Merian"@en, "Merian, Maria Sibylla"@sv, "Sibylla Merian"@en ;
+	skos:note                      "Német természetkutató, tudományos illusztrátor"@hu, "Niemiecka przyrodniczka i artystka-malarka uznawana za wczesną entomolożkę"@pl, "Saksa loodusteadlane ja illustraator"@et, "Naturalista e pittrice tedesca"@it, "Naturaliste et artiste-peintre allemande"@fr, "Duitse kunstenares en entomologe (1647-1717)"@nl, "Naturforscherin und Künstlerin des 17. und frühen 18. Jahrhunderts"@de, "Německá a švýcarská malířka a entomoložka"@cs, "Scientific illustrator and naturalist (1647-1717)"@en, "Naturalista, exploradora i pintora"@ca ;
+	skos:prefLabel                 "Maria Sibylla Merian"@it, "Maria Sibylla Merian"@de, "Maria Sibylla Merian"@sv, "Maria Sibylla Merian"@fi, "Maria Sibylla Merian"@pt, "Maria Sibylla Merian"@en, "Maria Sibylla Merian"@hu, "Maria Sibylla Merian"@es, "Maria Sibylla Merian"@et, "Maria Sibylla Merian"@sl, "Maria Sibylla Merian"@pl, "Maria Sibylla Merian"@ro, "Maria Sibylla Merian"@da, "Maria Sibylla Merian"@ca, "Maria Sibylla Merian"@nl, "Maria Sibylla Merianová"@cs, "Maria Sibylla Merianová"@sk, "Μαρία Σιβύλλα Μεριάν"@el, "Мария Сибила Мериан"@bg, "Мериан, Мария Сибилла"@ru, "Anna Maria Sibylla Merian"@fr .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_SURI01_958B14P002PL54>
+	a                   ore:Proxy ;
+	dc:contributor      "Mulder, Joseph", "Merian, Maria Sibylla" ;
+	dc:description      "Bron: Maria Sibylla Merian, Over de voortteeling ... visschen.  Amsterdam : Johannes Oosterwijk, 1719.", "Een Heliconia-soort, in Suriname palulu genoemd. Deze plant groeit in het bos op vochtige plaatsen. De bladeren zijn hard en groen als riet en de bloemen zijn rood en dik. Op de plant insecten in verschillende stadia van ontwikkeling: rups, pop en vlinder, en een wesp." ;
+	dc:identifier       "UBM: 958 B 14 plaat 54", "http://resolver.kb.nl/resolve?urn=urn:gvn:SURI01:958B14P002PL54" ;
+	dc:rights           "Universiteit van Amsterdam" ;
+	dc:source           "UBM: 958 B 14 plaat 54 ( Gravure ), Surinamica, Universiteit van Amsterdam, Amsterdam" ;
+	dc:subject          "Plaatwerken (vorm)"@nl, "Flora"@nl, "Suriname"@nl, "Insecten"@nl ;
+	dc:title            "\u0022Ballia\u0022" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1719" ;
+	dcterms:isPartOf    "SURI01", "SURI01:877", "Surinamica", "GVN" ;
+	dcterms:issued      "29-08-2005" ;
+	dcterms:medium      "image/jpg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_SURI01_958B14P002PL54> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_SURI01_958B14P002PL54> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:SURI01:958B14P002PL54&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22628"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "209"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550082258/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550082258>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:05.007Z" ;
+	dcterms:modified          "2018-07-23T15:37:58.553Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550082258> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550082258.thumbnail.jpg&type=TEXT> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258>
+	a  edm:ProvidedCHO .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550082258/manifest> ;
+	ebucore:fileByteSize    "51029"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "682"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550082258>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "228043"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:10.142Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550082258> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550082258>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550082258> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550082258/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550082258.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:10.142Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550082258> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550082258>
+	a                   ore:Proxy ;
+	dc:contributor      "Del Carretto, Galeotto (....-1531). Auteur du texte", "Ciminelli, Serafino (1466-1500). Auteur du texte", "Lodovico Milanese. Copiste", "Politien, Ange (1454-1494). Auteur du texte", "Stanga. Auteur du texte", "Japart, Jean. Compositeur présumé", "Sasso, P.. Auteur du texte" ;
+	dc:creator          "Josquin Des Prés (145.-1521). Compositeur", "Cara, Marco (1465?-1525?). Compositeur", "Lurano, Filippo de (1470?-152.?). Compositeur", "Congiet, Petrus. Compositeur présumé", "Hayne van Ghizeghem (1445?-14..). Compositeur", "Tromboncino, Bartolomeo (1470-1535?). Compositeur", "Gerardus (Frater). Compositeur", "Giliardi, Arnolfo. Compositeur", "Plice, Johannes. Compositeur", "Touront, Johannes. Compositeur", "Fogliano, Giacomo (1468-1548). Compositeur", "Caron, Firminus. Compositeur", "G. L.. Compositeur", "Agricola, Alexander (1446?-1506). Compositeur", "Isaac, Heinrich (1450?-1517). Compositeur", "L. C.. Compositeur" ;
+	dc:date             "1502" ;
+	dc:description      "Titre uniforme : Josquin Des Prés (145.-1521). Compositeur. [In te, domine, speravi. Voix (4)]", "Notation blanche, initiales ornées rouges et bleues. - Les pièces sans indication de genre dans le dépouillement sont des frottole. - Au f° 124r : \u0022Finis laus deo 26 octobris 1502\u0022. - Les 8 premiers f. et le f. 99 mq.. - Foliotation en partie ajoutée. - Reliure contemporaine veau estampé, bouillons, dos restauré", "Titre uniforme : Agricola, Alexander (1446?-1506). Compositeur. [Si dedero]" ;
+	dc:format           "Nombre total de vues :  248", "F. 9-125 (sig. T8 - p8) ; 24 x 17 cm" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550082258" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43363855v" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VM7-676" ;
+	dc:subject          "Laude -- 16e siècle"@fre, "Frottole (musique) -- 16e siècle"@fre, "Motets -- 16e siècle"@fre ;
+	dc:title            "[Frottole, laude et motets de différents auteurs]" ;
+	dc:type             "manuscript music"@eng, "Genre musical : motet", "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550082258> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550082258.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7115"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "188"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550082258>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1502" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550082258> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550082258> .

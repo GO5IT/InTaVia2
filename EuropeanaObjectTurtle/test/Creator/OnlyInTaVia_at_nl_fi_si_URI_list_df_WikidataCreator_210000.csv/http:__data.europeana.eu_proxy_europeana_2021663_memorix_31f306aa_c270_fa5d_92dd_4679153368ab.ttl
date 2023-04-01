@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://images.memorix.nl/ranh/thumb/640x480/ff5dc1bd-3800-634c-416a-35903de7e538.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab/manifest> ;
+	ebucore:fileByteSize    "71136"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "418"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "640"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> .
+
+<http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:32.073Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> .
+
+<http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:32:32.073Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T14:54:41.069Z" ;
+	dcterms:modified          "2015-03-26T14:54:41.069Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab#contentTier>, <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2Fff5dc1bd-3800-634c-416a-35903de7e538.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/31f306aa-c270-fa5d-92dd-4679153368ab> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/ff5dc1bd-3800-634c-416a-35903de7e538.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/ff5dc1bd-3800-634c-416a-35903de7e538.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab>
+	a                   ore:Proxy ;
+	dc:coverage         "Nederland"@nl, "Noord-Holland"@nl ;
+	dc:creator          "Velde, Esaias van de (1587-1630)"@nl, "Velde, Jan van de (II) (1593-1641)"@nl ;
+	dc:description      "Figuren bij ronde toren aan een haven en eenstda aan de horizon. <br>"@nl, "nr. 5 uit een onbekende serie.<br> r.o. genummerd 5.<br> Onbekend is of de afbeelding van of naar Jan of Esaias van de Velde is.<br> De serie is niet\u000A          beschreven in de Hollstein."@nl ;
+	dc:identifier       "NL-HlmNHA_53012253" ;
+	dc:language         "Dutch" ;
+	dc:title            "NL-HlmNHA_53012253"@nl, "Voorhelm Schneevoogt NL-HlmNHA_53012253"@nl, "Figuren bij ronde toren aan een haven en eenstda aan de horizon. <br>"@nl ;
+	dc:type             "Topografische prenten, tekeningen en foto's"@nl, "Grafiek Drukwerk"@nl ;
+	dcterms:spatial     "Nederland", "Noord-Holland" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_31f306aa_c270_fa5d_92dd_4679153368ab> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/31f306aa-c270-fa5d-92dd-4679153368ab>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16309"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .

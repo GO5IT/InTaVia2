@@ -1,0 +1,165 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/2063618/FI_280_001/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://kokoelmat.fng.fi/app?si=http%3A%2F%2Fkansallisgalleria.fi%2FE42_Object_Identifier%2FA_I_42&lang=en>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "21201"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/2063618/FI_280_001>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2063618/FI_280_001> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001351017> ;
+	edm:isShownAt      <http://kokoelmat.fng.fi/app?si=http%3A%2F%2Fkansallisgalleria.fi%2FE42_Object_Identifier%2FA_I_42&lang=en> ;
+	edm:isShownBy      <https://www.dropbox.com/s/n1fdf4hicismw6w/FIN_Kreeta%20Haapasalo%20soittaa%20kannelta%20talonpoikaistuvassaa0047101.jpg?raw=1> ;
+	edm:object         <https://www.dropbox.com/s/n1fdf4hicismw6w/FIN_Kreeta%20Haapasalo%20soittaa%20kannelta%20talonpoikaistuvassaa0047101.jpg?raw=1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671105> ;
+	edm:rights         <http://creativecommons.org/licenses/by/4.0/> .
+
+<http://viaf.org/viaf/40801461>
+	a                   edm:Agent ;
+	owl:sameAs          <http://isni.org/isni/0000000066346486>, <http://id.loc.gov/authorities/names/n85069539>, <http://dbpedia.org/resource/Robert_Wilhelm_Ekman>, <http://www.wikidata.org/entity/Q938282>, <http://vocab.getty.edu/ulan/500031170-agent>, <http://libris.kb.se/resource/auth/185828> ;
+	rdaGr2:dateOfBirth  "1808-08-13" ;
+	rdaGr2:dateOfDeath  "1873-02-19" ;
+	skos:prefLabel      "Robert Wilhelm Ekman"@nl-NL, "Robert Wilhelm Ekman"@it-VA, "Robert Wilhelm Ekman"@no-NO, "Robert Wilhelm Ekman"@sv-SE, "Robert Wilhelm Ekman"@en-US .
+
+<http://vocab.getty.edu/aat/300033638>
+	a               skos:Concept ;
+	skos:prefLabel  "<pinturas por forma>"@es, "<schilderingen naar vorm>"@nl, "<peintures selon la forme>"@fr, "<paintings by form>"@en, "<Gemälde nach Form>"@de .
+
+<http://vocab.getty.edu/aat/300056557>
+	a               skos:Concept ;
+	skos:altLabel   "romantic (form of expression)"@en ;
+	skos:broader    <http://vocab.getty.edu/aat/300163706> ;
+	skos:note       "http://vocab.getty.edu/aat/rev/5001490999" ;
+	skos:prefLabel  "romanticismo"@es, "romanticisme"@nl, "romanticism (form of expression)"@en ;
+	skos:related    <http://vocab.getty.edu/aat/300172863> .
+
+<http://data.europeana.eu/proxy/europeana/2063618/FI_280_001>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/14212> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1868" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2063618/FI_280_001> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2063618/FI_280_001> .
+
+<http://data.europeana.eu/aggregation/europeana/2063618/FI_280_001>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-10T16:11:10.361Z" ;
+	dcterms:modified          "2018-01-19T13:37:48.807Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2063618/FI_280_001#contentTier>, <http://data.europeana.eu/item/2063618/FI_280_001#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2063618/FI_280_001> ;
+	edm:completeness          "10" ;
+	edm:country               "Finland" ;
+	edm:datasetName           "2063618_EU_280_Finland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2063618/FI_280_001> ;
+	edm:language              "fi" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fn1fdf4hicismw6w%2FFIN_Kreeta%2520Haapasalo%2520soittaa%2520kannelta%2520talonpoikaistuvassaa0047101.jpg%3Fraw%3D1&type=IMAGE> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://sws.geonames.org/6956564/>
+	a               edm:Place ;
+	skos:altLabel   "Атэнеум"@be, "Ateneum konstmuseum"@da, "Ateneum konstmuseum"@nb, "Ateneum konstmuseum"@sv, "Ateneum konstmuseum"@nn, "Ateneum konstmuseum"@is, "Musée Ateneum"@fr, "Ատենեում"@hy, "أتينيوم"@ar, "Ateneumin taidemuseo"@fi, "アテネウム美術館"@ja, "Атенеум"@uk, "Атенеум"@ru, "阿黛濃美術館"@zh ;
+	skos:note       "http://en.wikipedia.org/wiki/Ateneum" ;
+	skos:prefLabel  "Ateneum" ;
+	wgs84_pos:lat   "60.17" ;
+	wgs84_pos:long  "24.9442" .
+
+<http://data.europeana.eu/agent/14212>
+	a                    edm:Agent ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p069626200>, <http://vocab.getty.edu/ulan/500031170>, <http://dbpedia.org/resource/Robert_Wilhelm_Ekman>, <http://id.worldcat.org/fast/156832>, <http://libris.kb.se/resource/auth/185828>, <http://id.loc.gov/authorities/names/n85069539>, <https://libris.kb.se/qn2444q82lb3jt5>, <http://viaf.org/viaf/40801461>, <https://www.freebase.com/m/02z5s0s>, <http://www.wikidata.org/entity/Q938282>, <https://g.co/kg/m/02z5s0s> ;
+	rdaGr2:dateOfBirth   "1808-08-13" ;
+	rdaGr2:dateOfDeath   "1873-02-19" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/86198> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/86241> ;
+	skos:altLabel        "R. W. Ekman"@de, "R. W. Ekman"@sv, "R. W. Ekman"@fi, "R. W. Ekman"@en, "Роберт Вильгельм Экман"@ru, "R.W. Ekman"@fi, "Robert Ekman"@de, "Robert Ekman"@sv, "Robert Ekman"@fi, "Robert Ekman"@en, "Robert Wilhelm"@fi, "R. Ekman"@de, "R. Ekman"@sv, "R. Ekman"@fi, "R. Ekman"@en, "R.W.Ekman"@fi ;
+	skos:note            "Suomalainen kuvataiteilija"@fi, "Pictor finlandez"@ro, "Fins kunstschilder (1808-1873)"@nl, "Peintre finlandais"@fr, "Fiński malarz"@pl, "Pintor finlandès"@ca, "Finnish painter (1808–1873)"@en, "Finländsk konstnär"@sv, "Finnischer Maler"@de, "Pintor finlandés"@es, "Soome maalikunstnik"@et, "Péintéir Fionlannach"@ga ;
+	skos:prefLabel       "Ρομπερτ Βίλχελμ Έκμαν"@el, "Robert Wilhelm Ekman"@pt, "Robert Wilhelm Ekman"@en, "Robert Wilhelm Ekman"@it, "Robert Wilhelm Ekman"@fr, "Robert Wilhelm Ekman"@de, "Robert Ekman"@ga, "Robert Wilhelm Ekman"@sv, "Robert Wilhelm Ekman"@fi, "Robert Wilhelm Ekman"@es, "Robert Wilhelm Ekman"@sl, "Robert Wilhelm Ekman"@pl, "Robert Wilhelm Ekman"@ro, "Robert Wilhelm Ekman"@da, "Robert Wilhelm Ekman"@ca, "Robert Wilhelm Ekman"@nl, "Экман, Роберт Вильгельм"@ru .
+
+<http://vocab.getty.edu/aat/300033799>
+	a               skos:Concept ;
+	skos:altLabel   "pintura al óleo (obra visual)"@es, "oils (visual works)"@en, "olieverfschildering"@nl, "huiles (œuvres visuelles)"@fr, "peinture à l'huile (œuvres visuelles)"@fr, "Ölmalerei"@de, "paintings, oil (visual works)"@en, "oil painting (visual work)"@en, "huile (œuvres visuelles)"@fr ;
+	skos:broader    <http://vocab.getty.edu/aat/300033618> ;
+	skos:note       "Künstlerische Arbeit unter Verwendung von Ölfarben."@de, "Trabalhos criativos por meio de pinturas a óleo"@pt, "Obras creativas con pintura al óleo como medio."@es, "Schilderingen in olieverf."@nl, "Creative works in the medium of oil paint."@en ;
+	skos:prefLabel  "pinturas al óleo (obra visual)"@es, "oil paintings (visual works)"@en, "olieverfschilderingen"@nl, "pintura a óleo"@pt, "Ölgemälde"@de, "peintures à l'huile (œuvres visuelles)"@fr .
+
+<http://data.europeana.eu/organization/1482250000004671105>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana 280"@en .
+
+<http://data.europeana.eu/organization/1482250000001351017>
+	a               foaf:Organization ;
+	skos:prefLabel  "Finnish National Gallery"@en .
+
+<http://data.europeana.eu/item/2063618/FI_280_001#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.148Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063618/FI_280_001> .
+
+<http://data.europeana.eu/item/2063618/FI_280_001>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <http://www.wikidata.org/entity/Q11872962> .
+
+<http://data.europeana.eu/proxy/provider/2063618/FI_280_001>
+	a                    ore:Proxy ;
+	dc:creator           <http://viaf.org/viaf/40801461> ;
+	dc:description       "Kuusi henkilöä talonpoikaistuvassa, penkillä istuva nainen soittaa kanteletta ja muut kuuntelevat."@fi, "Six persons in a farmhouse, a woman sitting on a bench is playing the Kantele and others are listening."@en ;
+	dc:language          "English", "Suomi" ;
+	dc:relation          <http://www.wikidata.org/entity/Q11872962> ;
+	dc:subject           <http://vocab.getty.edu/aat/300056557> ;
+	dc:title             "Kreeta Haapasalo Playing the Kantele in a Peasant Cottage"@en, "Kreeta Haapasalo soittaa kannelta talonpoikaistuvassa"@fi ;
+	dc:type              <http://vocab.getty.edu/aat/300033638>, <http://vocab.getty.edu/aat/300005574> ;
+	dcterms:created      "1868" ;
+	dcterms:extent       "75 cm x 105 cm" ;
+	dcterms:medium       <http://vocab.getty.edu/aat/300033799> ;
+	dcterms:provenance   "purchase 1869"@en ;
+	edm:currentLocation  <http://sws.geonames.org/6956564/> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2063618/FI_280_001> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2063618/FI_280_001> .
+
+<https://www.dropbox.com/s/n1fdf4hicismw6w/FIN_Kreeta%20Haapasalo%20soittaa%20kannelta%20talonpoikaistuvassaa0047101.jpg?raw=1>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2063618/FI_280_001/manifest> ;
+	ebucore:fileByteSize    "11094792"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "3189"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "4508"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2063618/FI_280_001#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T10:03:48.149Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierC> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2063618/FI_280_001> .
+
+<http://vocab.getty.edu/aat/300005574>
+	a               skos:Concept ;
+	skos:prefLabel  "Masos, masies, etc." .

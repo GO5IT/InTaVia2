@@ -1,0 +1,144 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:59.859Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428038> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428038>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004465986#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004465986/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428038>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:08.608Z" ;
+	dcterms:modified          "2016-03-24T08:15:46.362Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038> ;
+	edm:completeness          "7" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149428038> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004465986%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149428038>
+	a                    ore:Proxy ;
+	dc:creator           "Franz von Suppé" ;
+	dc:description       "[Партитура]", "von Franz von Suppé" ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "004465986" ;
+	dc:language          "de" ;
+	dc:publisher         "Siegel" ;
+	dc:title             "Ouverture zur Oper \u0022Pique dame\u0022 für Orchester" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Пиковая дама. Увертюра" ;
+	dcterms:extent       "55 с." ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued       "1869" ;
+	dcterms:spatial      <http://sws.geonames.org/2879139/>, <http://id.loc.gov/vocabulary/countries/ru> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428038> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://sws.geonames.org/2879139/>
+	a               edm:Place ;
+	skos:prefLabel  "Leipzig (Herstellung)" .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://data.europeana.eu/agent/52794>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/155823>, <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <https://www.freebase.com/m/021g_h>, <http://dbpedia.org/resource/Franz_von_Supp%C3%A9>, <https://libris.kb.se/dbqsv5qx4dtw86b>, <http://data.carnegiehall.org/names/1009366>, <http://id.worldcat.org/fast/75929>, <http://id.ndl.go.jp/auth/ndlna/01017244>, <http://lod.nl.go.kr/resource/KAC199626856>, <http://datos.bne.es/resource/XX1071255>, <http://nlg.okfn.gr/resource/authority/record234406>, <http://www.wikidata.org/entity/Q310431>, <http://www.idref.fr/080530540/id>, <http://d-nb.info/gnd/118757873>, <http://openlibrary.org/works/OL632106A>, <http://viaf.org/viaf/24788570>, <http://data.bnf.fr/ark:/12148/cb139001879>, <http://id.loc.gov/authorities/names/n81079027>, <https://livedata.bibsys.no/authority/90395959>, <https://g.co/kg/m/021g_h>, <http://data.bibliotheken.nl/id/thes/p070807957>, <http://libris.kb.se/resource/auth/223048> ;
+	rdaGr2:dateOfBirth   "1819-04-18" ;
+	rdaGr2:dateOfDeath   "1895-05-21" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/80422> ;
+	skos:altLabel        "Зуппе Франц фон"@ru, "Franz von Suppe"@ca, "Franz von Suppe"@nl, "Franz von Suppe"@ro, "Franz von Suppe"@pl, "Franz von Suppe"@es, "Franz von Suppe"@fr, "Franz von Suppe"@de, "Franz von Suppe"@fi, "Franz von Suppe"@en, "Franz Suppe"@pl, "Franz Suppe"@sl, "Suppé"@nl, "Suppé"@ro, "Suppé"@es, "Francesco Ezechiele Ermenegildo Cavaliere Suppè-Demelli"@fr, "Suppé"@de, "Francesco Ezechiele Ermenegildo Cavaliere Suppè-Demelli"@de, "Suppè"@de, "Francesco Suppé-Demelli"@es, "Зуппе"@ru, "Francesco Suppé Demelli"@es, "Francesco Ezechiele Ermenegildo Cavaliere Suppé Demelli"@cs, "Suppe, Franz von"@sv, "Franz von Suppé"@de, "Franz Von Suppé"@cs, "Von Suppé"@ca, "Von Suppé"@nl, "Franz Suppé"@pl, "François de Suppe"@fr, "Francesco Suppe-Demelli"@es, "Франц Зуппе"@ru, "Francesco Ezechiele Ermenegildo Cavaliere Suppe-Demelli"@sl, "Von Suppe"@nl, "Von Suppe"@de, "Francesco Ezechiele Ermenegildo Suppé-Demelli"@cs, "Suppe Franz"@pl, "Francesco de Suppé"@it, "Suppé Franz"@pl, "Фон Зуппе, Франц"@ru, "Francesco Suppe Demelli"@es, "Зуппе, Франц"@ru, "Demelli, Francesco Ezechiele Ermenegildo Cavaliere Suppé,"@it, "Suppe"@nl, "Suppe"@es ;
+	skos:note            "Austrian composer and conductor (1819-1895)"@en, "Compositore austriaco"@it, "Rakouský dirigent, hudební skladatel a šlechtic"@cs, "Österrikisk tonsättare"@sv, "Австрийски композитор"@bg, "Österreichischer Operettenkomponist (1819-1895)"@de, "Австрийский композитор и дирижёр"@ru, "Osztrák zeneszerző"@hu, "Compositor austrohúngaro"@es, "Componist uit Oostenrijk (1819-1895)"@nl ;
+	skos:prefLabel       "Φραντς φον Σουπέ"@el, "Franz von Suppé"@hr, "Franz von Suppé"@fi, "Franz von Suppé"@sv, "Franz von Suppé"@pt, "Franz von Suppé"@en, "Franz von Suppé"@it, "Franz von Suppé"@fr, "Franz von Suppé"@hu, "Franz von Suppé"@es, "Franz von Suppé"@et, "Franz von Suppé"@cs, "Franz von Suppé"@sk, "Franz von Suppé"@pl, "Franz von Suppé"@da, "Franz von Suppé"@ro, "Franz von Suppé"@ca, "Franz von Suppé"@nl, "Франц фон Зуппе"@ru, "Franz von Suppè"@de, "Франц фон Супе"@bg, "Franz von Suppe"@sl .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://search.rsl.ru/api/description/01004465986/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "101107"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:59.859Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149428038> .
+
+<http://dlib.rsl.ru/viewer/01004465986#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149428038>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/52794> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1869" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149428038> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149428038> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

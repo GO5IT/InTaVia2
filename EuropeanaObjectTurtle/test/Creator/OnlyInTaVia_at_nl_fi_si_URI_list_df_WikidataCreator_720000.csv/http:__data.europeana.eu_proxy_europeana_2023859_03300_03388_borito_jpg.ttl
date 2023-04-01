@@ -1,0 +1,108 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/03300_03388_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:40:15.353Z" ;
+	dcterms:modified          "2015-09-14T11:19:35.164Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg#metadataTier>, <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg> ;
+	edm:completeness          "5" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/03300_03388_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F03300%2F03388%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://mek.oszk.hu/03300/03388>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "17602"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://mek.oszk.hu/03300/03388/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/03300_03388_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "7706"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2023859/03300_03388_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/03300_03388_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/03300_03388_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:09.381Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/03300_03388_borito_jpg> .
+
+<http://data.europeana.eu/item/2023859/03300_03388_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:09.381Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/03300_03388_borito_jpg> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/03300_03388_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/03300_03388_borito_jpg> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/03300_03388_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/03300/03388> ;
+	edm:isShownBy      <http://mek.oszk.hu/03300/03388/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/03300/03388/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/03300_03388_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Vergilius Maro, Publius (author)"@hu, "Lakatos, István (translator)"@hu, "Parai, Sándor (digital editing made by)"@hu, "Bodor, Tibor (reader)"@hu, "Trencsényi-Waldapfel, Imre (foreword written by)"@hu ;
+	dc:format           "MP3" ;
+	dc:identifier       "URL http://nbn-resolving.de/?urn:nbn:hu-5710 [Metadata]", "MEK azonosító MEK-03388 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "Világirodalmi arcképcsarnok : Publius Vergilius Maro [http://mek.oszk.hu/01300/01391/html/vilag015.htm]"@hu, "Publius Vergilius Maro: Vergilius összes művei [http://mek.oszk.hu/06500/06540/]"@hu ;
+	dc:source           "National Széchényi Library - Hungarian Electronic Library"@hu, "Készült az ISZT támogatásával."@hu, "Magyar Vakok és Gyengénlátók Országos Szövetsége"@hu, "Parai Sándortól."@hu ;
+	dc:subject          "Culture, Arts, Literature"@hu, "Literature, fiction, folktales"@hu, "Religion, church"@hu, "ókori latin irodalom"@hu, "eposz"@hu, "hangoskönyv"@hu ;
+	dc:title            "Aeneis: MVGYOSZ hangoskönyvek"@hu ;
+	dc:type             "epic poem"@hu, "sound recording"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/03300_03388_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/03300_03388_borito_jpg> .

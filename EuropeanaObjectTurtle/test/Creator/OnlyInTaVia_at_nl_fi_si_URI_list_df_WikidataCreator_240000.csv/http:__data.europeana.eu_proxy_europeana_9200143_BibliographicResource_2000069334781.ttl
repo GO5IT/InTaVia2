@@ -1,0 +1,155 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://purl.ox.ac.uk/uuid/bb5ff193991848cf80f3fce7576a4700>
+	a                      edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize   "2274252"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType    "application/pdf" ;
+	edm:rights             <http://rightsstatements.org/vocab/InC/1.0/> ;
+	edm:spatialResolution  "150"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://data.europeana.eu/proxy/provider/9200143/BibliographicResource_2000069334781>
+	a                    ore:Proxy ;
+	dc:contributor       "Pauline Ida Marie Olga Henriette Catharina", "Joseph Viktor von Scheffel", "Carl August" ;
+	dc:creator           "Franz Liszt" ;
+	dc:date              "1873" ;
+	dc:description       "\u0022Weimar. -- Hof-Buchdruckerei\u0022--p. [1] at end and on back cover.", "von Victor Scheffel.", "Work commissioned for, and performed at festivities in honor of the marriage of Hereditary Grand Duke Carl August and Hereditary Grand Duchess Pauline of Sachsen-Weimar in Weimar in 1873.", "Music by Liszt--preface, p. [2]." ;
+	dc:format            "Printed"@en ;
+	dc:identifier        "013153013" ;
+	dc:language          "de" ;
+	dc:publisher         "Hermann Böhlau" ;
+	dc:subject           "Dramatic music, Librettos." ;
+	dc:title             "Der Brautwillkomm auf Wartburg lyrisches Festspiel" ;
+	dc:type              "Monograph"@en ;
+	dcterms:alternative  "Brautwillkomm auf Wartburg" ;
+	dcterms:extent       "27 cm.", "[2], [12], [1] p. ;" ;
+	dcterms:isPartOf     <http://data.theeuropeanlibrary.org/Collection/a1007>, "Lachmund, Carl V. Carl V. Lachmund collection." ;
+	dcterms:spatial      <http://sws.geonames.org/2812482/>, <http://id.loc.gov/vocabulary/countries/gw> ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "TEXT" ;
+	ore:proxyFor         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069334781> .
+
+<http://data.europeana.eu/organization/1482250000001710325>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bodleian Libraries, University of Oxford"@en .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:48:15.130Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069334781> .
+
+<http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069334781>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-03T22:36:01.215Z" ;
+	dcterms:modified          "2014-06-05T16:22:44.572Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781#contentTier>, <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781> ;
+	edm:completeness          "0" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "9200143_Ag_EU_TEL_a1007_E.Libraries_Oxford" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200143/BibliographicResource_2000069334781> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fpurl.ox.ac.uk%2Fuuid%2Fbb5ff193991848cf80f3fce7576a4700&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200143/BibliographicResource_2000069334781>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/171262> ;
+	dc:creator          <http://data.europeana.eu/agent/147131> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1873" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200143/BibliographicResource_2000069334781> .
+
+<http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013153013&indx=1&recIds=oxfaleph013153013>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/agent/171262>
+	a                              edm:Agent ;
+	owl:sameAs                     <https://www.freebase.com/m/04nlk0>, <http://id.worldcat.org/fast/99877>, <http://data.bnf.fr/ark:/12148/cb12393565h>, <https://g.co/kg/m/04nlk0>, <http://id.loc.gov/authorities/names/n82132725>, <http://www.idref.fr/027609235/id>, <http://data.carnegiehall.org/names/1020718>, <http://openlibrary.org/works/OL1831091A>, <http://dbpedia.org/resource/Joseph_Victor_von_Scheffel>, <https://libris.kb.se/31fhkvlm0kxjgj3>, <http://data.cervantesvirtual.com/person/1788>, <http://www.wikidata.org/entity/Q9082>, <https://livedata.bibsys.no/authority/90174390>, <http://viaf.org/viaf/19761512>, <http://id.ndl.go.jp/auth/ndlna/00550196>, <http://libris.kb.se/resource/auth/223189>, <http://vocab.getty.edu/ulan/500086790>, <http://datos.bne.es/resource/XX851786>, <http://d-nb.info/gnd/118606832>, <http://nlg.okfn.gr/resource/authority/record126113>, <http://data.bibliotheken.nl/id/thes/p068788681> ;
+	rdaGr2:dateOfBirth             "1826-02-16" ;
+	rdaGr2:dateOfDeath             "1886-04-09" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/1634> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/1634> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2954>, <http://data.europeana.eu/concept/2966> ;
+	skos:altLabel                  "Scheffel, Joseph Victor von"@sv, "Joseph Viktor Von Scheffel"@en, "Hans Kaiser"@ro, "Joseph Victor Scheffel"@de, "Joseph Victor Scheffel"@it, "Joseph Victor Scheffel"@ro, "Йозеф Виктор фон Шеффель"@ru, "Scheffel"@it, "Scheffel"@ro, "Josef Victor von Scheffel"@cs, "Josef Victor Scheffel"@cs, "Joseph Viktor von Scheffel"@cs, "Joseph Viktor von Scheffel"@en, "Joseph Viktor von Scheffel"@it, "Joseph Viktor von Scheffel"@da, "Josef Viktor von Scheffel"@cs ;
+	skos:note                      "File agus úrscéalaí Gearmánach"@ga, "Deutscher Schriftsteller"@de, "Poeta y novelista alemán"@es, "Tysk skribent og poet"@da, "Niemiecki pisarz i poeta"@pl, "German poet and novelist"@en, "Scrittore e poeta tedesco"@it, "Poète et romancier allemand"@fr, "Duits schrijver"@nl ;
+	skos:prefLabel                 "Josef Viktor Scheffel"@cs, "Шеффель, Йозеф Виктор фон"@ru, "Joseph Victor von Scheffel"@hu, "Joseph Victor von Scheffel"@de, "Joseph Victor von Scheffel"@fi, "Joseph Victor von Scheffel"@sv, "Joseph Victor von Scheffel"@pt, "Joseph Victor von Scheffel"@en, "Joseph Victor von Scheffel"@it, "Joseph Victor von Scheffel"@fr, "Joseph Victor von Scheffel"@es, "Joseph Victor von Scheffel"@sl, "Joseph Victor von Scheffel"@da, "Joseph Victor von Scheffel"@ro, "Joseph Victor von Scheffel"@ca, "Joseph Victor von Scheffel"@nl, "Joseph Viktor von Scheffel"@pl .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T20:48:15.129Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069334781> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/147131>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/147549>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/agent/151619>, <http://data.europeana.eu/agent/146764>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/agent/156172> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/53157> ;
+	owl:sameAs                     <http://nlg.okfn.gr/resource/authority/record211970>, <http://id.ndl.go.jp/auth/ndlna/00523887>, <http://id.worldcat.org/fast/1672750>, <http://nlg.okfn.gr/resource/authority/record71395>, <http://data.bnf.fr/ark:/12148/cb139773750>, <http://lod.nl.go.kr/resource/KAC199616810>, <http://id.worldcat.org/fast/39270>, <http://data.cervantesvirtual.com/person/54769>, <http://vocab.getty.edu/ulan/500330920>, <http://data.cervantesvirtual.com/person/1684>, <http://openlibrary.org/works/OL403805A>, <http://dbpedia.org/resource/Franz_Liszt>, <http://www.wikidata.org/entity/Q41309>, <http://data.carnegiehall.org/names/1001205>, <http://libris.kb.se/resource/auth/208502>, <http://www.idref.fr/026991535/id>, <https://libris.kb.se/jgvxzrq25hj3qsq>, <https://www.freebase.com/m/0hqgp>, <http://datos.bne.es/resource/XX963604>, <http://d-nb.info/gnd/118573527>, <http://viaf.org/viaf/64199483>, <https://livedata.bibsys.no/authority/90066794>, <http://id.loc.gov/authorities/names/n79079048>, <https://g.co/kg/m/0hqgp>, <http://data.bibliotheken.nl/id/thes/p068284764> ;
+	rdaGr2:dateOfBirth             "1811-10-22" ;
+	rdaGr2:dateOfDeath             "1886-07-31" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/82344> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/2625> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/62> ;
+	skos:altLabel                  "Лист, Ференц"@ru, "Frans Liszt"@nl, "Frans Liszt"@fr, "Φέρεντς Λιστ"@el, "Francesco Liszt"@en, "Franz Liszt"@pl, "Franz Liszt"@cs, "Franz Liszt"@et, "Franz Liszt"@hu, "Franz Liszt"@lv, "Franz Liszt"@lt, "Лист Ференц"@ru, "Liszt Ferencz"@en, "Franz von Liszt"@en, "Франц Лист"@ru, "Лист, Франц"@ru, "Franciszek Liszt"@pl, "Franciszek Liszt"@en, "F. Lists"@en, "Abbé Franz Liszt"@en, "Liszt-Brugnoli"@en, "Ferenc Liszt"@ca, "Ferenc Liszt"@sl, "Ferenc Liszt"@sk, "Ferenc Liszt"@es, "Ferenc Liszt"@hu, "Ferenc Liszt"@fr, "Ferenc Liszt"@it, "Ferenc Liszt"@en, "Ferenc Liszt"@de, "Ferenc Liszt"@sv, "Ferenc Liszt"@pt, "Ferenç Liszt"@es, "F. Liszt"@en, "Ferencz Liszt"@es, "Ferencz Liszt"@en, "Franz List"@sk, "Franz List"@en, "Franz List"@de, "Franz Ritter von Liszt"@es, "Franz Ritter von Liszt"@de, "Franciscus Liszt"@sk, "Лист Франц фон"@ru, "Liszt Ferenc"@ro, "Liszt Ferenc"@fr, "Liszt Ferenc"@lv, "Liszt Ferenc"@pt, "Franciscus List"@en, "Francs Lists"@lv, "List Ferens"@it, "František List"@sk, "Ferenc List"@hu, "Ferenc List"@en, "Ferenc List"@de, "Franz Von Liszt"@en, "Francisco Liszt"@es, "Ferenc liszt"@nl, "François Liszt"@fr, "François Liszt"@en, "Frant︠s︡ List"@en ;
+	skos:note                      "Ungersk kompositör"@sv, "Østrig-ungarsk komponist, pianist og dirigent"@da, "Венгро-немецкий композитор, пианист-виртуоз, педагог, дирижёр, публицист"@ru, "Compositor y pianista austro-húngaro"@es, "Compositor e maestro húngaro do século XIX"@pt, "Kompozytor i pianista węgierski"@pl, "Ούγγρος ρομαντικός συνθέτης και πιανίστας"@el, "Ungarischer Komponist und Pianist der Romantik"@de, "Hungarian romantic composer and virtuoso pianist"@en, "Uhorský hudobný skladateľ a klavírny virtuóz"@sk, "Compositor i pianista hongarès"@ca, "Compositore, pianista e direttore d'orchestra ungherese"@it, "Унгарски композитор"@bg, "Magyar zongorista, zeneszerző, karmester"@hu, "Unkarilainen säveltäjä ja pianovirtuoosi"@fi, "Maďarský skladatel a klavírní virtuóz"@cs, "Compositeur et pianiste hongrois"@fr, "Hongaars componist en pianist"@nl ;
+	skos:prefLabel                 "Franz Liszt"@pt, "Franz Liszt"@hr, "Franz Liszt"@sk, "Franz Liszt"@sl, "Franz Liszt"@ga, "Franz Liszt"@ca, "Franz Liszt"@sv, "Franz Liszt"@en, "Franz Liszt"@it, "Franz Liszt"@es, "Franz Liszt"@ro, "Franz Liszt"@da, "Franz Liszt"@nl, "Liszt Ferenc"@hu, "Φραντς Λιστ"@el, "Ferenc Liszt"@et, "Ferenc Liszt"@cs, "Ferenc Liszt"@pl, "Ференц Лист"@ru, "Ferencs Lists"@lv, "Ferencas Listas"@lt, "Франц Лист"@bg, "Franz Liszt"@fr, "Franz Liszt"@de, "Franz Liszt"@fi .
+
+<http://data.europeana.eu/aggregation/provider/9200143/BibliographicResource_2000069334781>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200143/BibliographicResource_2000069334781> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710325> ;
+	edm:isShownAt      <http://solo.bodleian.ox.ac.uk/primo_library/libweb/action/display.do?tabs=detailsTab&ct=display&fn=search&doc=oxfaleph013153013&indx=1&recIds=oxfaleph013153013> ;
+	edm:isShownBy      <http://purl.ox.ac.uk/uuid/bb5ff193991848cf80f3fce7576a4700> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

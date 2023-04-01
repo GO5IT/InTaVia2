@@ -1,0 +1,143 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135722786#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:42.817Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135722786> .
+
+<http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135722786>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-23T07:11:38.459Z" ;
+	dcterms:modified          "2015-12-04T14:02:33.464Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786#contentTier>, <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786> ;
+	edm:completeness          "8" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "04202_L_BE_UniLibGent_googlebooks" ;
+	edm:landingPage           <https://www.europeana.eu/item/04202/BibliographicResource_3000135722786> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbks1.books.google.be%2Fbooks%3Fvid%3DGENT%26printsec%3Dtitlepage%26img%3D1%26zoom%3D1%26vid%3DGENT900000038166&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135722786>
+	a  edm:ProvidedCHO .
+
+<http://lib.ugent.be/europeana/900000038166>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14728"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000010864296>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universiteitsbibliotheek Gent"@nl, "Ghent University Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/04202/BibliographicResource_3000135722786>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/145559> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1682" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/04202/BibliographicResource_3000135722786> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/04202/BibliographicResource_3000135722786#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:26:42.817Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135722786> .
+
+<http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135722786>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000010864296> ;
+	edm:isShownAt      <http://lib.ugent.be/europeana/900000038166> ;
+	edm:object         <http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000038166> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/04202/BibliographicResource_3000135722786>
+	a                   ore:Proxy ;
+	dc:creator          "Pierre Bayle" ;
+	dc:description      "BN. IX, column 144", "Actual place of publication from: Weller, E.C. Die falschen und fingierten Druckorte, v. 2, p. 34.", "Signatures: *⁸ A-O¹² P² (G5 signed G4)." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "000015924" ;
+	dc:language         "fr" ;
+	dc:publisher        "Chez Pierre Le Blancq" ;
+	dc:rights           "Rights Reserved - Free Access" ;
+	dc:subject          "Calvinism, Early works to 1800.", "Louis Maimbourg" ;
+	dc:title            "Critique générale de l'histoire du calvinisme de Mr. Maimbourg" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "339, [1] p. ; ; 14 cm. (12mo)." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1113> ;
+	dcterms:issued      "1682" ;
+	dcterms:spatial     "A Ville-Franche [i.e. Amsterdam]" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/04202/BibliographicResource_3000135722786> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/04202/BibliographicResource_3000135722786> .
+
+<http://data.europeana.eu/agent/145559>
+	a                    edm:Agent ;
+	owl:sameAs           <http://d-nb.info/gnd/11850777X>, <http://data.cervantesvirtual.com/person/8319>, <https://libris.kb.se/khwzzmp30rc406t>, <http://libris.kb.se/resource/auth/176943>, <http://viaf.org/viaf/61554695>, <https://www.freebase.com/m/01stjn>, <http://id.loc.gov/authorities/names/n50005530>, <http://dbpedia.org/resource/Pierre_Bayle>, <http://id.ndl.go.jp/auth/ndlna/00432593>, <http://data.bnf.fr/ark:/12148/cb119867257>, <http://datos.bne.es/resource/XX897532>, <https://livedata.bibsys.no/authority/90052303>, <https://g.co/kg/m/01stjn>, <http://openlibrary.org/works/OL129133A>, <http://www.idref.fr/027931161/id>, <http://www.wikidata.org/entity/Q214816>, <http://id.worldcat.org/fast/1369>, <urn:uuid:69457caf-f368-44e6-9fd0-ccb72419c489>, <http://data.bibliotheken.nl/id/thes/p068931212>, <http://nlg.okfn.gr/resource/authority/record152648> ;
+	rdaGr2:dateOfBirth   "1647-11-18" ;
+	rdaGr2:dateOfDeath   "1706-12-28" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/64707> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40387> ;
+	skos:altLabel        "Pietro Bayle"@pl, "Petrus Balius"@de, "Petrus Baelius"@de, "Petrus Baelius"@fr, "Petrus Baylius"@de, "Bayle"@sv, "Monsieur C. L. A. A. P. D. P."@en, "Peter Bayle"@de, "Peter Bayle"@en, "Peter Bayle"@pl, "C L A A P D P"@en, "Piotr Bayle"@pl, "Бейль Пьер"@ru ;
+	skos:note            "French philosopher and writer"@en, "Französischer Philosoph und Schriftsteller"@de, "Francia filozófus, valláskritikus"@hu, "Ranskalainen skeptikkofilosofi ja kirjailija"@fi, "Francouzský spisovatel a filozof"@cs, "Bayle, Pierre, 1647-1706"@sl, "Filósofo y escritor francés de la Ilustración"@es, "Philosophe et écrivain français"@fr, "Filosofo, scrittore e enciclopedista francese"@it, "Francuski filozof i pisarz"@pl, "Frans filosoof"@nl ;
+	skos:prefLabel       "Пиер Бейл"@bg, "Пьер Бейль"@ru, "Πιέρ Μπαιλ"@el, "Pierre Bayle"@en, "Pierre Bayle"@de, "Pierre Bayle"@fi, "Pierre Bayle"@sv, "Pierre Bayle"@pt, "Pierre Bayle"@hr, "Pierre Bayle"@it, "Pierre Bayle"@fr, "Pierre Bayle"@hu, "Pierre Bayle"@es, "Pierre Bayle"@et, "Pierre Bayle"@cs, "Pierre Bayle"@sk, "Pierre Bayle"@sl, "Pierre Bayle"@pl, "Pierre Bayle"@da, "Pierre Bayle"@ro, "Pierre Bayle"@ca, "Pierre Bayle"@nl, "Pjeras Beilis"@lt .
+
+<http://bks1.books.google.be/books?vid=GENT&printsec=titlepage&img=1&zoom=1&vid=GENT900000038166>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "9350"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "222"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

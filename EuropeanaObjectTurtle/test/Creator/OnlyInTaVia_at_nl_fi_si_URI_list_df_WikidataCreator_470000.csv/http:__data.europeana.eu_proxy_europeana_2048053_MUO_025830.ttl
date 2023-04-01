@@ -1,0 +1,134 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2048053/MUO_025830>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-11-03T10:55:03.598Z" ;
+	dcterms:modified          "2015-11-03T10:55:03.598Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2048053/MUO_025830#metadataTier>, <http://data.europeana.eu/item/2048053/MUO_025830#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2048053/MUO_025830> ;
+	edm:completeness          "5" ;
+	edm:country               "Croatia" ;
+	edm:datasetName           "2048053_Ag_EU_AthenaPlus_MUO-Arch" ;
+	edm:landingPage           <https://www.europeana.eu/item/2048053/MUO_025830> ;
+	edm:language              "hr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fathena.muo.hr%2Fapi%2F%3Fsemantic%3Drepresentation%26id%3D23762&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2048053/MUO_025830#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:49:27.935Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_025830> .
+
+<http://data.europeana.eu/item/2048053/MUO_025830#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:49:27.935Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2048053/MUO_025830> .
+
+<http://athena.muo.hr/api/?semantic=representation&id=23762>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2048053/MUO_025830/manifest> ;
+	ebucore:fileByteSize    "11962"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "218"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2048053/MUO_025830/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2048053/MUO_025830>
+	a                   ore:Proxy ;
+	dc:creator          "Breydel, Karel" ;
+	dc:date             "1710" ;
+	dc:format           "93 x 127 cm", "image/jpg" ;
+	dc:identifier       "MUO_025830" ;
+	dc:title            "Bitka" ;
+	dc:type             "IMAGE" ;
+	dcterms:isPartOf    "Paintings" ;
+	dcterms:medium      "ulje na platnu" ;
+	dcterms:spatial     "Belgija" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_025830> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2048053/MUO_025830> .
+
+<http://data.europeana.eu/aggregation/provider/2048053/MUO_025830>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzej za umjetnost i obrt, Zagreb" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2048053/MUO_025830> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510560> ;
+	edm:isShownAt      <http://athena.muo.hr/?object=detail&id=23762> ;
+	edm:isShownBy      <http://athena.muo.hr/api/?semantic=representation&id=23762> ;
+	edm:object         <http://athena.muo.hr/api/?semantic=representation&id=23762> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671081> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004510560>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzej za umjetnost i obrt. Zagreb"@fr, "Muzej za umjetnost i obrt"@hr, "Museum of Arts and Crafts, Zagreb"@en, "Konst- och hantverksmuseet"@sv .
+
+<http://data.europeana.eu/item/2048053/MUO_025830>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/place/75>
+	a                 edm:Place ;
+	dcterms:isPartOf  <http://data.europeana.eu/agent/174116> ;
+	owl:sameAs        <http://id.ndl.go.jp/auth/ndlna/00560624>, <http://www.yso.fi/onto/yso/p105206>, <https://d-nb.info/gnd/4005406-8>, <http://www.wikidata.org/entity/Q31>, <http://viaf.org/viaf/144248059>, <http://data.bnf.fr/ark:/12148/cb15238382r>, <http://id.worldcat.org/fast/1210278>, <https://www.freebase.com/m/0154j>, <http://id.nlm.nih.gov/mesh/D001530>, <https://libris.kb.se/xv8b9nqg4r1hd2b>, <http://id.loc.gov/authorities/names/n80126041>, <https://g.co/kg/m/0154j>, <http://www.idref.fr/026360608/id>, <http://libris.kb.se/resource/auth/140654>, <http://dbpedia.org/resource/Belgium>, <http://vocabularies.unesco.org/thesaurus/concept893>, <http://babelnet.org/rdf/s00009714n>, <http://vocab.getty.edu/tgn/1000063>, <https://livedata.bibsys.no/authority/90066653>, <http://zbw.eu/stw/descriptor/17201-5>, <https://sws.geonames.org/2802361/>, <http://www.yso.fi/onto/ysa/Y105206>, <http://nlg.okfn.gr/resource/authority/record2020> ;
+	skos:altLabel     "Belgian kuningaskunta"@fi, "Кралство Белгия"@bg, "België"@ca, "België"@da, "België"@en, "Reino de Belgica"@es, "Estat belga"@ca, "Kingdom of Belgium"@en, "Bélgica"@ca, "Reino de Bélgica"@es, "Renju tal-Belġju"@mt, "BEL"@nl, "BEL"@en, "BEL"@de, "Belg."@fr, "Belgenland"@nl, "Królestwo Belgii"@pl, "Regno del Belgio"@it, "Königreich Belgien"@en, "Königreich Belgien"@de, "Regne de Bèlgica"@ca, "Королевство Бельгия"@ru, "Belgické kráľovstvo"@sk, "Belgie"@nl, "Belgien"@en, "Belgique"@da, "Belgique"@en, "Belgique"@ru, "Belgica"@es, "Koninkrijk België"@nl, "Koninkrijk België"@da, "Koninkrijk België"@en, "BE"@nl, "Royaume de Belgique"@da, "BE"@es, "BE"@fr, "Royaume de Belgique"@fr, "BE"@en, "BE"@de, "Royaume de Belgique"@en, "Kraljevina Belgija"@hr, "be"@nl, "Βασίλειο του Βελγίου"@el, "Kongeriget Belgien"@da, "be"@fr, "be"@en ;
+	skos:note         "Государство в Западной Европе"@ru, "País d'Europa"@ca, "Държава в Западна Европа"@bg, "Stát v Evropě"@cs, "Χώρα της δυτικής Ευρώπης"@el, "Stato dell'Europa occidentale, membro dell'Unione europea"@it, "País de Europa occidental"@es, "Država u zapadnoj Europi"@hr, "État d'Europe occidentale"@fr, "Állam Nyugat-Európában"@hu, "Konstitutionell monarki i Västeuropa"@sv, "Pajjiż fl-Ewropa tal-Punent"@mt, "Stat în Europa de Vest"@ro, "Federale staat in West-Europa"@nl, "Štát v Europe"@sk, "Et land i Europa"@da, "Państwo w Europie"@pl, "País da Europa"@pt, "Föderaler Staat in Westeuropa"@de, "Valsts Eiropā"@lv, "Valtio Länsi-Euroopassa"@fi, "Country in western Europe"@en ;
+	skos:prefLabel    "Belgicko"@sk, "Bélgica"@pt, "Bélgica"@es, "Beļģija"@lv, "Bèlgica"@ca, "Belgie"@cs, "Belgium"@hu, "Belgium"@en, "Belgien"@de, "Belgien"@sv, "Belgien"@da, "België"@nl, "Белгия"@bg, "Belgika"@eu, "Belgija"@hr, "Belgia"@fi, "An Bheilg"@ga, "Belgia"@et, "Belgia"@pl, "Belgia"@ro, "Belgija"@lt, "Belgija"@sl, "Belġju"@mt, "Βέλγιο"@el, "Belgio"@it, "Belgique"@fr, "Бельгия"@ru ;
+	wgs84_pos:lat     "50.64111" ;
+	wgs84_pos:long    "4.6680555" .
+
+<http://data.europeana.eu/proxy/europeana/2048053/MUO_025830>
+	a                   ore:Proxy ;
+	dcterms:spatial     <http://data.europeana.eu/place/75> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1710" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2048053/MUO_025830> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2048053/MUO_025830> .
+
+<http://athena.muo.hr/?object=detail&id=23762>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "12214"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004671081>
+	a               foaf:Organization ;
+	skos:prefLabel  "AthenaPlus"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

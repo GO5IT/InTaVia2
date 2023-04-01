@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241444>
+	a                  ore:Aggregation ;
+	dc:rights          "Video excerpt" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:isShownAt      <http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0241444> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000341067> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444>
+	a  edm:ProvidedCHO .
+
+<http://mediatheque.cite-musique.fr/masc/?URL=play.asp?ID=0241444>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0241444>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-27T11:27:42.106Z" ;
+	dcterms:modified          "2014-06-27T11:27:42.106Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444#metadataTier>, <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444> ;
+	edm:completeness          "0" ;
+	edm:country               "France" ;
+	edm:datasetName           "03707_M_FR_CiteMusique_CO" ;
+	edm:landingPage           <https://www.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444> ;
+	edm:language              "fr" ;
+	edm:rights                <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:18.929Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241444> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/proxy/europeana/03707/masc__URL_play_asp_ID_0241444>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/237> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "VIDEO" ;
+	edm:year            "1996" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03707/masc__URL_play_asp_ID_0241444> .
+
+<http://data.europeana.eu/organization/1482250000000341067>
+	a               foaf:Organization ;
+	skos:prefLabel  "Philharmonie de Paris - Cité de la musique"@fr, "Philharmonie de Paris"@en .
+
+<http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:52:18.928Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241444> .
+
+<http://data.europeana.eu/concept/237>
+	a                skos:Concept ;
+	skos:altLabel    "Symphonie"@de, "Sinfonia"@es, "Symfonieën"@nl, "Symphonies"@en, "Symphonies"@fr ;
+	skos:exactMatch  <http://www.yso.fi/onto/yso/p10247>, <http://vocab.getty.edu/aat/300400547>, <http://id.loc.gov/authorities/names/sh85131473>, <http://d-nb.info/gnd/4055087-4>, <http://purl.org/bncf/tid/2333>, <http://babelnet.org/rdf/s00075673n>, <https://www.freebase.com/m/0c0xr>, <http://id.loc.gov/authorities/genreForms/gf2014027121>, <http://www.wikidata.org/entity/Q9734>, <http://data.bnf.fr/ark:/12148/cb12144214n>, <https://g.co/kg/m/0c0xr>, <http://id.ndl.go.jp/auth/ndlna/00566494> ;
+	skos:note        "Музыкальное произведение для оркестра"@ru, "Brano orchestrale composto di più movimenti"@it, "Stort upplagt musikverk för symfoniorkester"@sv, "Wielka forma muzyczna"@pl, "Rozsáhlá skladba pro orchestr"@cs, "Uitgebreide muziekcompositie"@nl, "Composició orquestral dividida en moviments"@ca, "Mehrsätzige Instrumentalwerke ohne Solisten, auch mit Singstimmen"@de, "Stort musikværk for symfoniorkester"@da, "Extended musical composition"@en, "Composición orquestal dividida en movimientos"@es, "Forma de composição musical"@pt, "Composition musicale classique"@fr ;
+	skos:prefLabel   "Sinfonija"@mt, "Symfoni"@sv, "Symfoni"@da, "Συμφωνία"@el, "Sinfonie"@de, "Sümfoonia"@et, "Szimfónia"@hu, "Simfonie"@ro, "Sinfonia"@pt, "Sinfonia"@fi, "Sinfonia"@it, "Symphonie"@fr, "Symphony"@en, "Simfonija"@lt, "Simfonija"@lv, "Simfonija"@hr, "Simfonija"@sl, "Simfonia"@ca, "Symfonie"@cs, "Symfonie"@nl, "Симфония"@ru, "Симфония"@bg, "Sinfonía"@es, "Symfónia"@sk, "Siansa"@ga, "Symfonia"@pl .
+
+<http://data.europeana.eu/proxy/provider/03707/masc__URL_play_asp_ID_0241444>
+	a                    ore:Proxy ;
+	dc:contributor       "Chamber Orchestra of Europe", "Harnoncourt, Nikolaus" ;
+	dc:creator           "Beethoven, Ludwig van", "Jomy, Alain" ;
+	dc:identifier        "http://mediatheque.cite-musique.fr/masc/?url=displayNotice.asp?ID=0241444" ;
+	dc:publisher         "Paris Cité de la musique 1996" ;
+	dc:subject           "19 EME SIECLE", "SYMPHONIE" ;
+	dc:title             "L'âge classique. Ludwig van Beethoven" ;
+	dc:type              "moving image" ;
+	dcterms:alternative  "concert enregistré à la Cité de la musique le 12 novembre 1996" ;
+	dcterms:extent       "1 h 20 min 55" ;
+	dcterms:hasPart      "Symphonie n°2 en ré majeur , op36 / Ludwig van Beethoven, comp. - Cité de la musique, 1996", "Symphonie n°7 en la majeur , op92 / Ludwig van Beethoven, comp. - Cité de la musique, 1996" ;
+	dcterms:issued       "1996" ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "VIDEO" ;
+	ore:proxyFor         <http://data.europeana.eu/item/03707/masc__URL_play_asp_ID_0241444> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/03707/masc__URL_play_asp_ID_0241444> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

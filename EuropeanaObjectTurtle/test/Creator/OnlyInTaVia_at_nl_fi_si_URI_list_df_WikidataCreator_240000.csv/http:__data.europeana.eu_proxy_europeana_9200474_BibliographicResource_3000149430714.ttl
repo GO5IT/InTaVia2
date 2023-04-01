@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:04.491Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149430714> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149430714>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/147131> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149430714> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149430714>
+	a                   ore:Proxy ;
+	dc:creator          "Ференц Лист" ;
+	dc:description      "Franz Liszt ; fur das Pianoforte zu 2 Handen ubertragen von August Stradal", "Имеется электронная копия" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "004469044" ;
+	dc:language         "de" ;
+	dc:publisher        "Kahnt" ;
+	dc:title            "Die drei Zigeuner fur das Pianoforte zu 2 Handen" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "9 с." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued      "?" ;
+	dcterms:spatial     <http://id.loc.gov/vocabulary/countries/ru> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149430714> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149430714>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:18:10.015Z" ;
+	dcterms:modified          "2016-03-24T08:16:42.431Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714> ;
+	edm:completeness          "8" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149430714> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004469044%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://dlib.rsl.ru/viewer/01004469044#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/147131>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/147549>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/agent/151619>, <http://data.europeana.eu/agent/146764>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/agent/156172> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/53157> ;
+	owl:sameAs                     <http://nlg.okfn.gr/resource/authority/record211970>, <http://id.ndl.go.jp/auth/ndlna/00523887>, <http://id.worldcat.org/fast/1672750>, <http://nlg.okfn.gr/resource/authority/record71395>, <http://data.bnf.fr/ark:/12148/cb139773750>, <http://lod.nl.go.kr/resource/KAC199616810>, <http://id.worldcat.org/fast/39270>, <http://data.cervantesvirtual.com/person/54769>, <http://vocab.getty.edu/ulan/500330920>, <http://data.cervantesvirtual.com/person/1684>, <http://openlibrary.org/works/OL403805A>, <http://dbpedia.org/resource/Franz_Liszt>, <http://www.wikidata.org/entity/Q41309>, <http://data.carnegiehall.org/names/1001205>, <http://libris.kb.se/resource/auth/208502>, <http://www.idref.fr/026991535/id>, <https://libris.kb.se/jgvxzrq25hj3qsq>, <https://www.freebase.com/m/0hqgp>, <http://datos.bne.es/resource/XX963604>, <http://d-nb.info/gnd/118573527>, <http://viaf.org/viaf/64199483>, <https://livedata.bibsys.no/authority/90066794>, <http://id.loc.gov/authorities/names/n79079048>, <https://g.co/kg/m/0hqgp>, <http://data.bibliotheken.nl/id/thes/p068284764> ;
+	rdaGr2:dateOfBirth             "1811-10-22" ;
+	rdaGr2:dateOfDeath             "1886-07-31" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/82344> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/2625> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/62> ;
+	skos:altLabel                  "Лист, Ференц"@ru, "Frans Liszt"@nl, "Frans Liszt"@fr, "Φέρεντς Λιστ"@el, "Francesco Liszt"@en, "Franz Liszt"@pl, "Franz Liszt"@cs, "Franz Liszt"@et, "Franz Liszt"@hu, "Franz Liszt"@lv, "Franz Liszt"@lt, "Лист Ференц"@ru, "Liszt Ferencz"@en, "Franz von Liszt"@en, "Франц Лист"@ru, "Лист, Франц"@ru, "Franciszek Liszt"@pl, "Franciszek Liszt"@en, "F. Lists"@en, "Abbé Franz Liszt"@en, "Liszt-Brugnoli"@en, "Ferenc Liszt"@ca, "Ferenc Liszt"@sl, "Ferenc Liszt"@sk, "Ferenc Liszt"@es, "Ferenc Liszt"@hu, "Ferenc Liszt"@fr, "Ferenc Liszt"@it, "Ferenc Liszt"@en, "Ferenc Liszt"@de, "Ferenc Liszt"@sv, "Ferenc Liszt"@pt, "Ferenç Liszt"@es, "F. Liszt"@en, "Ferencz Liszt"@es, "Ferencz Liszt"@en, "Franz List"@sk, "Franz List"@en, "Franz List"@de, "Franz Ritter von Liszt"@es, "Franz Ritter von Liszt"@de, "Franciscus Liszt"@sk, "Лист Франц фон"@ru, "Liszt Ferenc"@ro, "Liszt Ferenc"@fr, "Liszt Ferenc"@lv, "Liszt Ferenc"@pt, "Franciscus List"@en, "Francs Lists"@lv, "List Ferens"@it, "František List"@sk, "Ferenc List"@hu, "Ferenc List"@en, "Ferenc List"@de, "Franz Von Liszt"@en, "Francisco Liszt"@es, "Ferenc liszt"@nl, "François Liszt"@fr, "François Liszt"@en, "Frant︠s︡ List"@en ;
+	skos:note                      "Ungersk kompositör"@sv, "Østrig-ungarsk komponist, pianist og dirigent"@da, "Венгро-немецкий композитор, пианист-виртуоз, педагог, дирижёр, публицист"@ru, "Compositor y pianista austro-húngaro"@es, "Compositor e maestro húngaro do século XIX"@pt, "Kompozytor i pianista węgierski"@pl, "Ούγγρος ρομαντικός συνθέτης και πιανίστας"@el, "Ungarischer Komponist und Pianist der Romantik"@de, "Hungarian romantic composer and virtuoso pianist"@en, "Uhorský hudobný skladateľ a klavírny virtuóz"@sk, "Compositor i pianista hongarès"@ca, "Compositore, pianista e direttore d'orchestra ungherese"@it, "Унгарски композитор"@bg, "Magyar zongorista, zeneszerző, karmester"@hu, "Unkarilainen säveltäjä ja pianovirtuoosi"@fi, "Maďarský skladatel a klavírní virtuóz"@cs, "Compositeur et pianiste hongrois"@fr, "Hongaars componist en pianist"@nl ;
+	skos:prefLabel                 "Franz Liszt"@pt, "Franz Liszt"@hr, "Franz Liszt"@sk, "Franz Liszt"@sl, "Franz Liszt"@ga, "Franz Liszt"@ca, "Franz Liszt"@sv, "Franz Liszt"@en, "Franz Liszt"@it, "Franz Liszt"@es, "Franz Liszt"@ro, "Franz Liszt"@da, "Franz Liszt"@nl, "Liszt Ferenc"@hu, "Φραντς Λιστ"@el, "Ferenc Liszt"@et, "Ferenc Liszt"@cs, "Ferenc Liszt"@pl, "Ференц Лист"@ru, "Ferencs Lists"@lv, "Ferencas Listas"@lt, "Франц Лист"@bg, "Franz Liszt"@fr, "Franz Liszt"@de, "Franz Liszt"@fi .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714>
+	a  edm:ProvidedCHO .
+
+<http://search.rsl.ru/api/description/01004469044/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "198230"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1018"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "794"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149430714>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004469044#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004469044/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149430714#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:04.490Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149430714> .

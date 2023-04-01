@@ -1,0 +1,142 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://mek.oszk.hu/03300/03323/mp3/>
+	a                       edm:FullTextResource, edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/92006/BibliographicResource_1000095228624/manifest> ;
+	ebucore:fileByteSize    "9209"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "text/html" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228624>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/03300/03323> ;
+	edm:isShownBy      <http://mek.oszk.hu/03300/03323/mp3/> ;
+	edm:object         <http://mek.oszk.hu/03300/03323/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/92006/BibliographicResource_1000095228624>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/59904> ;
+	dc:type             <http://data.europeana.eu/concept/2842> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92006/BibliographicResource_1000095228624> .
+
+<http://data.europeana.eu/organization/1482250000000365285>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Széchényi Library of Hungary"@en .
+
+<http://mek.oszk.hu/03300/03323/borito.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5633"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD5C5C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228624>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92006/BibliographicResource_1000095228624>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-06-30T09:35:51.878Z" ;
+	dcterms:modified          "2017-07-31T07:23:07.932Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624#metadataTier>, <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "92006_Ag_EU_TEL_a0107_TEL_OSZK_HEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92006/BibliographicResource_1000095228624> ;
+	edm:language              "hu" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F03300%2F03323%2Fborito.jpg&type=SOUND> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228624#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:03:31.810Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228624> .
+
+<http://data.europeana.eu/concept/2842>
+	a                skos:Concept ;
+	skos:altLabel    "Romancé"@fr, "Novels"@en, "Genre romanesque"@fr, "Romanesque"@fr ;
+	skos:exactMatch  <https://g.co/kg/m/05hgj>, <http://id.loc.gov/authorities/genreForms/gf2015026020>, <http://purl.org/bncf/tid/3572>, <http://babelnet.org/rdf/s00058201n>, <http://id.worldcat.org/fast/1921742>, <http://www.wikidata.org/entity/Q8261>, <https://www.freebase.com/m/05hgj>, <http://vocabularies.unesco.org/thesaurus/concept10809>, <http://d-nb.info/gnd/4050479-7>, <http://vocab.getty.edu/aat/300202580>, <http://data.bnf.fr/ark:/12148/cb11940505s>, <http://dbpedia.org/ontology/Novel> ;
+	skos:note        "Laaja proosamuotoinen, sepitteellinen kirjallinen teos"@fi, "Gènere literari"@ca, "Литературный жанр"@ru, "Literair genre"@nl, "Langform der schriftlich fixierten Erzählung"@de, "Genre littéraire caractérisé essentiellement par une narration fictionnelle"@fr, "Oblika literarnega besedila"@sl, "Gatunek literatury pięknej, utwór narracyjny"@pl, "Obra literaria en prosa"@es, "Irodalmi műfaj"@hu, "Prozas žanrs"@lv, "Neveršovaný epický literárny žáner"@sk, "Prozaický epický literární žánr"@cs, "Narrative text, normally of a substantial length and in the form of prose describing a fictional and sequential story"@en, "Litterær genre, lang skønlitterær form"@da, "Specie literară"@ro, "Längre berättande text, vanligtvis prosa bestående av en sammanhängande fiktiv berättelse"@sv, "Genere della narrativa in prosa"@it, "Gênero literário"@pt, "Ilukirjandusliku proosa suurvorm"@et, "Είδος μακρυσκελούς πεζής εξιστόρησης που περιγράφει μυθοπλασία σε μορφή διαδοχικής ιστορίας"@el ;
+	skos:prefLabel   "Roman"@de, "Roman"@hr, "Roman"@fr, "Roman"@sl, "Roman"@sv, "Roman"@ro, "Roman"@da, "Roman"@nl, "Romaani"@fi, "Powieść"@pl, "Romāns"@lv, "Μυθιστόρημα"@el, "Romanas"@lt, "Rumanz"@mt, "Román"@sk, "Román"@cs, "Úrscéal"@ga, "Regény"@hu, "Novel·la"@ca, "Romanzo"@it, "Novela"@es, "Novel"@en, "Romaan"@et, "Роман"@bg, "Роман"@ru, "Romance"@pt .
+
+<http://mek.oszk.hu/03300/03323>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "17251"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<https://iiif.europeana.eu/presentation/92006/BibliographicResource_1000095228624/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://data.europeana.eu/agent/59904>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/24733> ;
+	owl:sameAs           <http://www.idref.fr/026831198/id>, <http://id.ndl.go.jp/auth/ndlna/00437850>, <http://viaf.org/viaf/91912703>, <http://openlibrary.org/works/OL24638A>, <http://id.loc.gov/authorities/names/no2012115982>, <http://data.bibliotheken.nl/id/thes/p068342853>, <http://kulturarvsdata.se/LSH/agents/6216>, <https://libris.kb.se/42gjjgtn110l7gz>, <https://livedata.bibsys.no/authority/90051428>, <http://www.wikidata.org/entity/Q5686>, <http://nlg.okfn.gr/resource/authority/record60575>, <http://id.loc.gov/authorities/names/n78087607>, <http://viaf.org/viaf/88666393>, <http://data.carnegiehall.org/names/1023074>, <http://lod.nl.go.kr/resource/KAC199607080>, <http://d-nb.info/gnd/118525239>, <http://data.cervantesvirtual.com/person/1351>, <https://g.co/kg/m/01v9724>, <https://www.freebase.com/m/01v9724>, <http://id.worldcat.org/fast/28294>, <http://vocab.getty.edu/ulan/500106117>, <http://libris.kb.se/resource/auth/183770>, <http://datos.bne.es/resource/XX1633131>, <http://dbpedia.org/resource/Charles_Dickens>, <http://data.bnf.fr/ark:/12148/cb119001186> ;
+	rdaGr2:dateOfBirth   "1812-02-07" ;
+	rdaGr2:dateOfDeath   "1870-06-09" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/176909> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/184948> ;
+	skos:altLabel        "Диккенс Чарльз"@ru, "Dickens"@en, "Τσαρλς Ντίκενς"@el, "Charles Dickens"@pl, "Carlo Dickens"@it, "Charles Dickens"@lv, "C.Dickens"@it, "C.Dickens"@en, "C.Dickens"@de, "C.Dickens"@ru, "C.Dickens"@bg, "Dickens, Charles"@fr, "Charles John Huffam Dickens"@nl, "Charles John Huffam Dickens"@ro, "Charles John Huffam Dickens"@da, "Charles John Huffam Dickens"@pl, "Charles John Huffam Dickens"@sk, "Charles John Huffam Dickens"@cs, "Charles John Huffam Dickens"@et, "Charles John Huffam Dickens"@es, "Charles John Huffam Dickens"@hu, "Charles John Huffam Dickens"@fr, "Charles John Huffam Dickens"@it, "Charles John Huffam Dickens"@de, "Charles John Huffam Dickens"@sv, "Charles John Huffam Dickens"@fi, "Charles John Huffam Dickens"@pt, "Charles John Huffam Dickens"@en, "Чарльз Джон Хаффем Диккенс"@ru, "Boz"@pl, "Boz"@fr, "Boz"@en, "Boz"@de ;
+	skos:note            "Englantilainen kirjailija"@fi, "Английский писатель"@ru, "Engelse schrijver en sociale criticus"@nl, "Angielski powieściopisarz"@pl, "Angol író"@hu, "Escritor inglés (1812-1870)"@es, "Englischer Schriftsteller"@de, "English writer and social critic (1812–1870)"@en, "Anglický spisovateľ"@sk, "Άγγλος μυθιστοριογράφος"@el, "Английски писател"@bg, "Engelsk författare och samhällskritiker"@sv, "Angleški pisatelj"@sl, "Engelsk forfatter (1812-1870)"@da, "Scrittore, giornalista e reporter di viaggio britannico"@it, "Escritor britânico"@pt, "Anglický spisovatel"@cs, "Scriitor englez"@ro, "Romancier, dramaturge et journaliste anglais"@fr, "Escriptor anglès"@ca ;
+	skos:prefLabel       "Čārlzs Dikenss"@lv, "Κάρολος Ντίκενς"@el, "Karol Dickens"@pl, "Чарлз Дикенс"@bg, "Charles Dickens"@fi, "Charles Dickens"@pt, "Charles Dickens"@lt, "Charles Dickens"@hr, "Charles Dickens"@hu, "Charles Dickens"@sk, "Charles Dickens"@sl, "Charles Dickens"@ga, "Charles Dickens"@ca, "Charles Dickens"@sv, "Charles Dickens"@mt, "Charles Dickens"@en, "Charles Dickens"@it, "Charles Dickens"@es, "Charles Dickens"@et, "Charles Dickens"@cs, "Charles Dickens"@ro, "Charles Dickens"@da, "Charles Dickens"@nl, "Charles Dickens"@fr, "Charles Dickens"@de, "Чарльз Диккенс"@ru .
+
+<http://data.europeana.eu/proxy/provider/92006/BibliographicResource_1000095228624>
+	a                   ore:Proxy ;
+	dc:contributor      "Tamás Amaryllis", "Sükösd Mihály", "Drótos László", "Parai Sándor", "Góczán Andrea", "Hevesi Sándor" ;
+	dc:creator          "Charles Dickens" ;
+	dc:description      "Fülszöveg Dickens óriási sikereinek sorozatát a Pickwick Klub vezeti be. A könyv, mint Dickens az 1847-es olcsó kiadásához fűzött előszavában írja, kiadói ajánlatra jött létre. Adva volt egy divatos rajzoló, bizonyos Seymour, akinek humoros karcaihoz Dickenst bízták meg \u0022kísérőszöveg\u0022 írásával. A kiadó elképzelése szerint valamiféle Nimród-klub tagjairól kellett volna szólni a folytatásos elbeszéléseknek, vadászattal, horgászattal és mindenféle vicces ügyetlenkedéssel. A történet folytatása azonban némileg rácáfolt a kiadó eredeti szándékára: amint a népszerűség az újfajta pikareszk regény első számait szárnyrakapta, Dickens már nem középosztálybeli urak mulatságait írja, és Pickwick úr vezetőszerepe átcsúszik Sam Weller, az inas kezébe. Sam Weller alakjával az angol nép lép be a történetbe. Hiába inas, szerepéhez a történet folyamán egyre inkább az urak asszisztálnak inas módjára. Dickens közönsége, az egyszerű angol emberek kapkodták a folyóiratban megjelenő regény folytatásait: téli éjjeleken, magas hóban kutyagoltak ki a városszélre, a postakocsi elé, hogy a következő regényfolytatáshoz hamarább hozzájuthassanak, és a haldokló betegek azért imádkoztak, hogy még megérhessék a Pickwick következő számát.", "Tartalom ◊ I. KÖTET ◊ Első fejezet ◊ A pickwickisták ◊ Második fejezet ◊ Az utazás első napja és az első este kalandjai; továbbá a kalandok következményei ◊ Harmadik fejezet ◊ Egy új ismerős. A vándorszínész elbeszélése. Kellemetlen fordulat és egy kínos ◊ találkozás ◊ Negyedik fejezet ◊ Táborozás és hadgyakorlat. Újabb ismerősök. Meghívást kapnak vidékre ◊ Ötödik fejezet ◊ Egy rövid fejezet, amely egyebek közt arról szól, hogy Pickwick úr miként vállalkozott ◊ egy kocsi hajtására, Winkle úr pedig lovaglásra; s hogyan ütött ki ez a vállalkozásuk ◊ Hatodik fejezet ◊ Régimódi kártyaparti. A lelkész versei. A fegyenc hazatérésének története ◊ Hetedik fejezet ◊ Winkle úr ahelyett, hogy a galambra célozna és a varjút lőné le, varjúra lő ◊ és a galambot sebzi meg. A Dingley Dell Krikett Klub All-Muggleton ellen játszik, ◊ All-Muggleton viszont Dingley Dell költségére vacsorázik; s egyéb érdekes és ◊ tanulságos dolgok ◊ Nyolcadik fejezet ◊ amely azt példázza, hogy az igaz szerelem nem megy olyan simán, mint a gőzvasút ◊ Kilencedik fejezet ◊ Felfedezik a szökést, és üldözni kezdik a szökevényeket ◊ Tizedik fejezet ◊ mely eloszlat minden kétséget (ha ugyan fennforgott ilyen kétség) Jingle úr ◊ jellemének önzetlenségét illetően ◊ Tizenegyedik fejezet ◊ melyben szó van egy másik utazásról és egy régiségtani fölfedezésről, s amely ◊ hírül adja Pickwick úr elhatározását, hogy részt vesz egy képviselő-választáson; ◊ továbbá közli az öreg lelkész kéziratát ◊ Tizenkettedik fejezet ◊ mely leírja Pickwick úrnak egy nagyon nevezetes lépését; amely lépés nem csupán ◊ az ő életében, de egyúttal ebben a történetben is korszakot alkot ◊ Tizenharmadik fejezet ◊ Egy kis beszámoló Eatanswillről és az odavaló pártok küzdelmeiről; meg egy képviselő-választásról ◊ ebben az ősi, hűséges és hazafias kerületben ◊ Tizennegyedik fejezet ◊ mely röviden leírja a Pávában összegyűlt társaságot, és közli a vigéc elbeszélését ◊ Tizenötödik fejezet ◊ amely leírja két jeles egyéniség hű képmását; továbbá egy nagy villásreggeli ◊ az ő portájukon; s ez a nagy reggeli alkalmat nyújt egy régi ismeretség felújítására ◊ és egy új fejezet megkezdésére ◊ Tizenhatodik fejezet ◊ melyben annyi minden történik, hogy pár szóval el sem lehet mondani ◊ Tizenhetedik fejezet ◊ mely azt igazolja, hogy a meghűlés bizonyos esetekben a találékony elmét fokozott ◊ tevékenységre ösztönzi ◊ Tizennyolcadik fejezet ◊ amely kétféle dolgot bizonyít röviden - először a sírógörcs hatalmát, másodszor ◊ pedig a látszat bizonyító erejét ◊ Tizenkilencedik fejezet ◊ Egy kellemes nap, amely kellemetlenül végződik ◊ Huszadik fejezet ◊ amelyből kitűnik, hogy Dodson és Fogg urak mennyire értik a hivatásukat, írnokaik ◊ mennyire kedvelik a szórakozást; továbbá, hogy milyen megható találkozás folyt ◊ le Weller úr és rég nem látott apja közt; végül, hogy milyen jeles emberek gyűltek ◊ össze a Szarkában, és hogy milyen remek fejezet lesz a következő ◊ Huszonegyedik fejezet ◊ melyben az öreg Jack Bamber nekiiramodik kedvenc témájának és elmeséli egy furcsa ◊ ügyfél történetét ◊ Huszonkettedik fejezet ◊ Pickwick úr Ipswichbe utazik, ahol regényes kalandba keveredik egy javakorabeli ◊ hölggyel, aki sárga papírtekercset visel a hajában ◊ Huszonharmadik fejezet ◊ melyben Samuel Weller kezd nekigyürkőzni, hogy Trotter úrral szemben lerója ◊ régi tartozását ◊ Huszonnegyedik fejezet ◊ amelyben Peter Magnus urat gyötörni kezdi a féltékenység, a javakorabeli hölgyet ◊ pedig a félelem, s ez a pickwickistákat a törvény karmai közé juttatja ◊ Huszonötödik fejezet ◊ mely egyéb mulatságos dolgok közt elmondja, hogy milyen méltányos és pártatlan ◊ volt Nupkins úr; hogyan dobta vissza Samuel Weller Job Trotter toll-labdáját ◊ ugyanolyan erővel, mint ahogy hozzávágták; s azonfelül még egy dolgot, mely ◊ megtalálható lesz a kellő helyen ◊ Huszonhatodik fejezet ◊ mely röviden beszámol a Bardell kontra Pickwick pör további fejleményeiről ◊ Huszonhetedik fejezet ◊ Samuel Weller elzarándokol Dorkingba és találkozik a mostohaanyjával ◊ Huszonnyolcadik fejezet ◊ amely egy vidám karácsonyi fejezet, s egy lakodalomról szól, azonfelül egyéb ◊ mulatságokról, amelyeket a mai romlott időkben már nem tartanak meg olyan lelkiismeretesen, ◊ bár a maguk nemében éppen olyan dicséretes szokások, mint maga a házasodás ◊ Huszonkilencedik fejezet ◊ A sírásó története, akit elvittek a rosszlelkek ◊ II. KÖTET ◊ Harmincadik fejezet ◊ Hogyan ismerkedtek meg és miképp barátkoztak össze a pickwickisták két derék ◊ fiatalemberrel, akik tudományos pályán működnek; hogyan szórakoztak a jégen; ◊ s miként végződött a látogatásuk ◊ Harmincegyedik fejezet ◊ melyben nem esik szó egyébről, mint a törvényről és különböző kiváló jogtudósokról ◊ Harminckettedik fejezet ◊ mely az udvari tudósításoknál is sokkal részletesebben számol be egy legénylakomáról, ◊ Bob Sawyer úr lakásán, a Borough-ban ◊ Harmincharmadik fejezet ◊ Idősb Weller úr kritikai véleményt mond az irodalmi stílusról, és fiának, Samuelnek ◊ segítségével egy kis elégtételt szerez magának a vörös orrú tisztelendő úrral ◊ szemben ◊ Harmincnegyedik fejezet ◊ mely kizárólag a nevezetes Bardell kontra Pickwick pör kimerítő és hű leírásával ◊ foglalkozik ◊ Harmincötödik fejezet ◊ melyben Pickwick úr legokosabbnak véli, ha elutaznak Bathba, minélfogva el is ◊ utaznak ◊ Harminchatodik fejezet ◊ mely főképpen Bladud herceg legendájának egy hiteles változatáról szól, továbbá ◊ egy roppant különös balesetről, amely Winkle úrral történt ◊ Harminchetedik fejezet ◊ mely becsülettel kimagyarázza Weller úr távollétét egy estély leírásával, amelyre ◊ hivatalos volt, s ahol meg is jelent; elmondja továbbá, hogy Pickwick úr milyen ◊ fontos és kényes természetű titkos küldetéssel bízta meg ◊ Harmincnyolcadik fejezet ◊ amelyből megtudjuk, hogy Winkle úr milyen szépen került csöbörből vödörbe ◊ Harminckilencedik fejezet ◊ Samuel Weller urat szerelmi postával bízzák meg s ő el is jár küldetésében; ◊ hogy milyen sikerrel, az hamarosan kiderül majd ◊ Negyvenedik fejezet ◊ mely Pickwick urat az élet nagy drámájának egy új és nem érdektelen színterére ◊ vezeti el ◊ Negyvenegyedik fejezet ◊ Mi történt Pickwick úrral a Fleet-börtönben, milyen foglyokkal találkozott és ◊ hogyan töltötte az éjszakát ◊ Negyvenkettedik fejezet ◊ amely az előbbi fejezethez hasonlóan igazolja azt a régi közmondást, hogy balsorsában ◊ furcsa lakótársakkal ismerkedik meg az ember. Egyúttal egy rendkívüli és meglepő ◊ kijelentést is tartalmaz, melyet Pickwick úr tett Weller úrnak ◊ Negyvenharmadik fejezet ◊ melyből megtudjuk, hogy került Samuel Weller úr csávába ◊ Negyvennegyedik fejezet ◊ amely a Fleet-börtönben lefolyt különböző kisebbrendű eseményekről szól, valamint ◊ Winkle úr rejtélyes viselkedéséről; továbbá elmondja, hogy miként szabadult ◊ ki végül a Kancellária foglya ◊ Negyvenötödik fejezet ◊ amely leírja, hogy Samuel Weller úr miképpen lett tanúja egy megható családi ◊ jelenetnek. Pickwick úr egy körutazást tesz a kis világban, ahol lakik, és elhatározza, ◊ hogy a jövőben olyan ritkán fog belevegyülni, amennyire csak lehetséges ◊ Negyvenhatodik fejezet ◊ mely beszámol egy gyengéd és megható, de azért némiképpen mulatságos jelenetről, ◊ melynek Dodson és Fogg urak voltak a szerzői és végrehajtói ◊ Negyvenhetedik fejezet ◊ mely főképp üzleti ügyeknek van szentelve, s azt bizonyítja, hogy itt e földön ◊ a haszon Dodson és Fogg uraké. Winkle úr furcsa körülmények között ismét előkerül, ◊ Pickwick úr jó szíve pedig erősebbnek bizonyul, mint a makacssága ◊ Negyvennyolcadik fejezet ◊ amely beszámol arról, miként igyekezett Pickwick úr Samuel Weller segítségével ◊ Benjamin Allen szívét meglágyítani és Robert Sawyer haragját lecsillapítani ◊ Negyvenkilencedik fejezet ◊ A vigéc nagybátyjának a története ◊ Ötvenedik fejezet ◊ Hogyan járt el Pickwick úr a küldetésében, s miként kapott mindjárt az elején ◊ egy váratlan segítőtársat ◊ Ötvenegyedik fejezet ◊ amelyben Pickwick úr találkozik egy régi ismerősével, s az olvasó ennek a szerencsés ◊ véletlennek köszönheti az alább következő érdekfeszítő részleteket, amelyek ◊ két tekintélyes és hatalmas közéleti férfiúról szólnak ◊ Ötvenkettedik fejezet ◊ mely előadja, hogy milyen komoly fordulat állt be a Weller családban, továbbá ◊ beszámol a vörös orrú Stiggins úr korai bukásáról ◊ Ötvenharmadik fejezet ◊ Jingle úr és Job Trotter búcsúlátogatása; továbbá egy dolgos nap a Gray's Inn ◊ Square-en; végül pedig kopogtatnak Perkerék ajtaján ◊ Ötvennegyedik fejezet ◊ amely néhány adattal szolgál a szörnyű dörömbölésre és egyebekre vonatkozólag; ◊ továbbá bizonyos érdekes felvilágosításokkal Snodgrass úrról és egy fiatal hölgyről; ◊ amely felvilágosítások éppenséggel nem közömbösek történetünk szempontjából ◊ Ötvenötödik fejezet ◊ Solomon Pell úr egy kocsisokból összeválogatott bizottság segédletével eligazítja ◊ idősb Weller úr ügyeit ◊ Ötvenhatodik fejezet ◊ Pickwick úr fontos tanácskozást tart Samuel Wellerrel, akinek szülőatyja is ◊ jelen van. Váratlanul betoppan egy dohányszín ruhás öregúr ◊ Ötvenhetedik fejezet ◊ amelyben a Pickwick Klub végleg feloszlik, és a történet mindenkinek a megelégedésére ◊ véget ér" ;
+	dc:format           "MP3", "40 kbs, 37:57 h" ;
+	dc:identifier       "http://mek.oszk.hu/03300/03323" ;
+	dc:language         "en", "hu" ;
+	dc:relation         "Világirodalmi arcképcsarnok : Charles Dickens (http://mek.oszk.hu/01300/01391/html/vilag107.htm)", "Charles Dickens: A Pickwick Klub (http://mek.oszk.hu/02400/02479/)" ;
+	dc:source           "Magyar Vakok és Gyengénlátók Országos Szövetsége (PARTNER0035)" ;
+	dc:subject          "hangoskönyv", "angol irodalom", "19. sz." ;
+	dc:title            "Pickwick Klub", "2898.", "A Pickwick Klub", "Magyar Vakok és Gyengénlátók Országos Szövetségének hangoskönyvtára", "MVGYOSZ hangoskönyvek" ;
+	dc:type             "regény", "Text"@en, "hangfelvétel", "Sound recording"@en ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a0107> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92006/BibliographicResource_1000095228624> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228624> .
+
+<http://data.europeana.eu/item/92006/BibliographicResource_1000095228624#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:03:31.810Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92006/BibliographicResource_1000095228624> .

@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.bl.uk/manuscripts/Viewer.aspx?ref=R.M.20.f.4>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "application/xhtml+xml" .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_R_M_20_f_4>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T07:53:47.599Z" ;
+	dcterms:modified          "2020-05-01T15:33:14.380Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4#contentTier>, <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_R_M_20_f_4> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsounds.bl.uk%2Fresources%2Feuropeana%2Fthumbnails%2FRM20f4.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<https://iiif.europeana.eu/presentation/2059209/data_sounds_R_M_20_f_4/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:20:38.701Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_R_M_20_f_4> .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_R_M_20_f_4>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/R.M.20.f.4" ;
+	dc:language         "eng" ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1739" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_R_M_20_f_4> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2020-05-01T16:20:38.701Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_R_M_20_f_4> .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_R_M_20_f_4>
+	a                   ore:Proxy ;
+	dc:contributor      "Dryden, John, 1631-1700, poet and dramatist", "Handel, George Frideric, 1685-1759, composer" ;
+	dc:description      "Autograph. f. 1. ‘Ouverture to the Song for St Cecilia’s Day by Mr Dryden. 1687.’ ‘begun Sept. 15, 1739. [Here is the astrological symbol for Saturday]. f. 3v. The Allegro is followed by a Minuet (a version of which is printed in Walsh Book I. of ‘Handel’s Favourite Minuets’ ( circa 1755), p. 56): this is crossed out in pencil, and followed by the Minuet in H-G., p. 6. f. 4. ‘From Harmony’ (and elsewhere in the Tenor solos): ‘Mr Beard’. f. 13. ‘What passion cannot Music’ (and elsewhere in the Soprano solos); ‘Sra Francesina’. f. 25. ‘The soft complaining flute’. ‘E sordini’ (H-G., p. 39) is not in the MS. f. 26v. ‘Sharp violins proclaim’. Written in the Tenor clef, with Beard’s name against it. There seems to be no reason for allotting it (as in H-G., p. 43) to Tenor or Soprano. f. 34v. ‘The dead shall live’. The passage in dotted brackets in H-G., pp. 63-71, is in the MS. f. 42. ‘Fine. G. F. Handel Septembr 24. 1739. [Here is the astrological symbol for Monday]’"@en ;
+	dc:identifier       "R.M.20.f.4" ;
+	dc:language         "English" ;
+	dc:relation         "R.M.20.f.4" ;
+	dc:subject          <http://dbpedia.org/page/Musical_notation>, <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music> ;
+	dc:title            "George Frideric Handel: Ode for St. Cecilia’s Day (text by John Dryden), HWV 76" ;
+	dcterms:created     "1739" ;
+	dcterms:extent      "1 volume (42 folios)" ;
+	dcterms:isPartOf    <http://www.bl.uk/manuscripts/FullDisplay.aspx?index=10&ref=R.M.20.f.4> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_R_M_20_f_4> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://sounds.bl.uk/resources/europeana/thumbnails/RM20f4.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2059209/data_sounds_R_M_20_f_4/manifest> ;
+	ebucore:fileByteSize    "376666"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "781"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "951"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_R_M_20_f_4>
+	a                  ore:Aggregation ;
+	dc:rights          "Public Domain" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_R_M_20_f_4> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <http://www.bl.uk/manuscripts/Viewer.aspx?ref=R.M.20.f.4> ;
+	edm:isShownBy      <http://sounds.bl.uk/resources/europeana/thumbnails/RM20f4.jpg> ;
+	edm:object         <http://sounds.bl.uk/resources/europeana/thumbnails/RM20f4.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .

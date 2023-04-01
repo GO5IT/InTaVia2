@@ -1,0 +1,126 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550079835>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550079835> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550079835>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "402401"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835>
+	a  edm:ProvidedCHO .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550079835/manifest> ;
+	ebucore:fileByteSize    "66942"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "758"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550079835>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550079835> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550079835.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:03.300Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550079835> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:09:03.299Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550079835> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550079835>
+	a                   ore:Proxy ;
+	dc:contributor      "Couperin, Louis (1626?-1661). Compositeur présumé" ;
+	dc:creator          "Du Mont, Henry (1610-1684). Compositeur", "Richard, Étienne (1621?-1669). Compositeur", "Lebègue, Nicolas (1631?-1702). Compositeur", "Champion de Chambonnières, Jacques (1601?-1672?). Compositeur présumé", "Champion de Chambonnières, Jacques (1601?-1672?). Compositeur", "Pinel, Germain (16..-1661). Compositeur", "Rossi, Luigi (1597?-1653). Compositeur", "Gaultier, Ennemond (1575?-1651). Compositeur", "Froberger, Johann Jacob (1616-1667). Compositeur", "Monnard. Compositeur", "Lorenzino (155.-1590). Compositeur", "La Barre, Joseph de (1633-1678). Compositeur présumé", "La Barre, Joseph de (1633-1678). Compositeur", "Vincent (16..?-16.. ; luthiste). Compositeur", "Anglebert, Jean-Henri d' (1628-1691). Compositeur", "Mesangeau, René (15..-1638?). Compositeur", "Hardel, Jacques (1643-1678). Compositeur", "Couperin, Louis (1626?-1661). Compositeur" ;
+	dc:date             "1658-1701" ;
+	dc:description      "Les titres ou parties de titres entre crochets dans le dépouillement sont surchargés dans le manuscrit. - Par suite d'une erreur de reliure, on trouve à la fin de ce 1er volume la 2de partie, foliotée 33 à 62, d'un 3e volume de pièces de clavecin, dont le début se trouve à la fin du 2d volume. - Foliotation continue ajoutée :  f. 1-69 = 1re partie ; f. 70-99 = 3e partie, f. 33-62-[2] f.. - Les fol. 68 v°-[69] v° de la 1re partie et les fol. 62 v°-64 v° de la 3e partie sont inutilisés. - Les f. 46-47 de la 3e partie manquent", "Titre uniforme : [Manuscrits. Paris. Bibliothèque nationale de France. Rés. Vm7 674-675]" ;
+	dc:format           "99 f. ; 38,5 x 25 cm", "Nombre total de vues :  211" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550079835" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14807919p", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43363852t" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, RES VM7-674" ;
+	dc:subject          "Clavecin, Musique de -- 17e siècle"@fre ;
+	dc:title            "[Pièces de clavecin de différents auteurs. Volume 1]" ;
+	dc:type             "Genre musical : divers", "manuscript music"@eng, "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550079835> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/f1> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550079835.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6997"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "189"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550079835>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:38:01.304Z" ;
+	dcterms:modified          "2018-07-23T15:37:59.016Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550079835> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550079835> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550079835.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550079835/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550079835/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .

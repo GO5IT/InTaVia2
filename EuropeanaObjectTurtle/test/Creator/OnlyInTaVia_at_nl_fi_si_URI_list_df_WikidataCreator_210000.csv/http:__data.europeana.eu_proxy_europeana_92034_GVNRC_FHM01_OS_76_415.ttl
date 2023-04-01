@@ -1,0 +1,122 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_FHM01_OS_76_415>
+	a                   ore:Proxy ;
+	dc:contributor      "Esaias van de Velde" ;
+	dc:creator          "Esaias van de Velde" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "OS-76-415", "http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-76-415" ;
+	dc:rights           "Frans Hals Museum", "for information contact: Frans Hals Museum"@en, "voor informatie: Frans Hals Museum"@nl ;
+	dc:source           "OS-76-415 (schilderij), Kunstwerken uit het Frans Hals Museum, Haarlem" ;
+	dc:title            "The Garden Party"@en, "Buitenpartij"@nl ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1619" ;
+	dcterms:extent      "paneel: 34 x 51,5 cm" ;
+	dcterms:isPartOf    "Kunstwerken uit het Frans Hals Museum", "FHM01", "GVN" ;
+	dcterms:medium      "image/jpg", "olieverf op paneel" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_76_415> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_FHM01_OS_76_415>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/157395> ;
+	dc:creator          <http://data.europeana.eu/agent/157395> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1619" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_76_415> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:30.282Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_76_415> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:00:30.283Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_76_415> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_FHM01_OS_76_415>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-76-415> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-76-415&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_FHM01_OS_76_415>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T21:08:52.822Z" ;
+	dcterms:modified          "2018-04-05T16:44:59.410Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_FHM01_OS_76_415> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AFHM01%3AOS-76-415%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/agent/157395>
+	a                    edm:Agent ;
+	owl:sameAs           <http://id.worldcat.org/fast/139984>, <http://id.loc.gov/authorities/names/n84218225>, <http://dbpedia.org/resource/Esaias_van_de_Velde>, <http://data.bnf.fr/ark:/12148/cb14966552k>, <https://www.freebase.com/m/07xpxd>, <http://datos.bne.es/resource/XX1507186>, <http://vocab.getty.edu/ulan/500016084>, <https://g.co/kg/m/07xpxd>, <http://data.bibliotheken.nl/id/thes/p070116539>, <http://data.bnf.fr/ark:/12148/cb11975153c>, <http://kulturarvsdata.se/LSH/agents/29539>, <http://www.wikidata.org/entity/Q467361>, <http://d-nb.info/gnd/120640945>, <http://ta.sandrart.net/-person-2637>, <http://viaf.org/viaf/37752819> ;
+	rdaGr2:dateOfBirth   "1587-05-17" ;
+	rdaGr2:dateOfDeath   "1630-11-18" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40360> ;
+	skos:altLabel        "Esijas van velde"@en, "Esijas van de Velde"@en, "Ez. Vandevelde"@en, "Isaac van der Velden"@en, "Isaias von der Velden"@en, "Es. v. der Velden"@en, "Jsajas van de Velde"@en, "Esyas van de Velde"@en, "Isias vande Velde"@en, "E. von der Velde"@en, "Isaïe vanden Welde"@en, "Esias Vandeveldt"@en, "E. van de Velde"@nl, "E. van de Velde"@en, "Вельде Эсайас ван де"@ru, "Велде, Эсайас ван де"@ru, "Esaias Van den Velde"@en, "Esaias v.d. Velden"@en, "Esaias von der Velden"@en, "E. Vandeveldt"@en, "E. Vandervelde"@en, "Es. V. de Velde"@en, "Jesaias vande Velde"@en, "Es. Van Velde"@en, "Esaias vande Velde"@en, "Elias von der Velden"@en, "Ysaye Van Develde"@en, "Isaias vande Velde"@en, "Isaie - Vande Velde"@en, "Isaac Vandevelde"@en, "E. Van de Velde"@en, "Esaias van der Velden"@en, "Esais Van de Velde"@en, "Esaie Vandesvelde"@en, "Esias van Velden"@en, "Essaias Vanderelde"@en, "Esaie Van de Velde"@en, "Isaye Vanden Welde"@en, "Esias van der Velden"@en, "Esaias Van De Velde"@en, "Esaias van de Velde"@fr, "E. v. d. Velden"@en, "Esaijas v. d. velde"@en, "E.v.d. Velden"@en, "Esaias Vande Velde"@en, "Ez. V. Velde"@en, "Ezias V. de Velde"@en, "Isaie Van-De-Velde"@en, "Esaias V. de Velde"@en, "Isaje vande Velde"@en, "Esais Vandevelde"@en, "Isaie Vanden Velden"@en, "E. Vandevelde"@en, "E.v.d. Velden besten Zeit"@en, "Esaias van de Velde the Elder"@en, "Esaias van den Velden"@en, "Ezais van de Velde"@en, "Ysaye Van de Velde"@en, "Esa. Vandervelde"@en, "Esaias, Holl. Vandevelde"@en, "E. Vanderveldt"@en, "Jesias van de Velde"@en, "Isaias van de Velde"@en, "Elias v. d. Velde"@en, "Esaias v. d. Velden"@en, "Esaias van de Velde I"@fr, "Esaias van de Velde I"@en, "Isaïe Van den Velde"@en, "Esayas van de Velde"@en, "Esaias Vandeveldt"@en, "Esaias Vandevelde"@en, "Essaias van der Velde"@en, "Esaias Van De I Velde"@en, "Esysas van de Velde"@en, "Esaias v. d. Velde"@en, "E. Vandenveldt"@en, "Jesias vander Velde"@en, "Isaac VAn den Welde"@en, "Esaias I van de Velde"@fr, "Esaias I van de Velde"@en, "Isaïe Vandevelde"@en, "Esaijas van de velde"@en, "Isaië Vanden Velde"@en, "Essaias v.d. Velde"@en, "Εσάιας φαν ντεν Φέλντε"@el, "Isaie Van de Velde"@en, "Esaias van den Velde"@nl, "Esaias van den Velde"@en, "Is. Van de Veld"@en, "Josias van der Velde"@nl, "Josias van der Velde"@en, "Esaias van der velde"@en, "Isaye Vandevelde"@en, "Jesajas von der Velden"@en, "Is. Van den Velde"@en, "Isaï Vandevelde"@en, "Esias van de Velde"@en, "E. V. Velde"@en, "Van der, esajas velde"@en, "Esayes van de Velde"@en, "Esaye Vanden Velden"@en, "Elias van de Velde"@en, "Esias van der Velde"@en, "E. v. d. Velde"@en, "Esaye Vandevelde"@en, "I. van der Velde"@en, "Essayes Vanderveltden"@en, "Esaias van der Welde"@en, "Esaïas van de Velden"@en, "E. van Velde"@en, "Esaias vanden Velde"@en, "E. van de velde"@en, "Esaias van der Velde"@nl, "Esaias van der Velde"@en, "E. van de Velden"@en, "Isaac Vanden-veld"@en, "Ysack van Velde"@en, "Esajas v. d. velde"@en, "Elias vande Velde"@en, "Isaie Vanden Welde"@en, "Esaie Vande Velde"@en, "Esajas van der Velden"@en, "Esaias Vandervelde"@en, "Isaias van Velde"@en, "E. Vande Velde"@en, "Jesaias van dr Velde"@en, "Es. v. Velde"@en, "Isaias van der Velde"@en, "Esaias van de, I Velde"@en, "E. van der Velden"@en, "Esias Vandevelde"@en, "Esyns vande Velde"@en, "E. V. de Velde"@en, "E. vande Velden"@en, "Is. Vandevelden"@en, "Isaias van den Velde"@en, "Esayas vander Velden"@en, "Isaiah Vandeveld"@en, "Velde"@en, "E.v.d. Felden"@en, "Esias V.D. Velde"@en, "Ezias vande Velde"@en, "Osias van der Velde"@nl, "Efaye Vandevelde"@en, "E. van der Velde"@en, "Elias V. de Velde"@en, "Osias van der Velde"@en, "E. von der Velden"@en, "Isaias v. d. Felden"@en, "Esajas van de Velde"@en, "Es. v. d. Velden"@en, "E van de Velde"@en ;
+	skos:note            "Pintor neerlandès"@ca, "Dutch landscape painter (1587-1630)"@en, "Nizozemský malíř - krajinář"@cs, "Pintor neerlandés"@es, "Hollandi maalikunstnik"@et, "Holländischer Maler, Zeichner und Radierer"@de, "Pictor olandez"@ro, "Nederländsk konstnär"@sv, "Pittore e incisore olandese"@it, "Ολλανδός ζωγράφος"@el, "Peintre néerlandais"@fr, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel       "Esaias van den Velde"@sk, "Esaias van de, I Velde"@da, "Эсайас ван де Вельде"@ru, "Εσάιας φαν ντε Φέλντε"@el, "Esaias Van de Velde l'Ancien"@fr, "Esaias van de Velde"@nl, "Esaias van de Velde"@ca, "Esaias van de Velde"@pl, "Esaias van de Velde"@sl, "Esaias van de Velde"@cs, "Esaias van de Velde"@es, "Esaias van de Velde"@de, "Esaias van de Velde"@it, "Esaias van de Velde"@en, "Esaias van de Velde"@lt, "Esaias van de Velde"@pt, "Esaias van de Velde"@sv .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:FHM01:OS-76-415&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "20149"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "103"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://www.geheugenvannederland.nl/?/en/items/FHM01:OS-76-415>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48835"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

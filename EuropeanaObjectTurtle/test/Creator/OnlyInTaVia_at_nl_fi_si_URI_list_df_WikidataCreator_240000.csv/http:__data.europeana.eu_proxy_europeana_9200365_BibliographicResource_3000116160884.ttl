@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803328k.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3935"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803328k>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8803328k> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8803328k.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8803328k>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803328k> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8803328k>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:52:04.424Z" ;
+	dcterms:modified          "2018-03-26T12:26:56.864Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8803328k> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8803328k.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8803328k/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8803328k>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "249310"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8803328k>
+	a                   ore:Proxy ;
+	dc:creator          "Verdi, Giuseppe (1813-1901). Auteur ou responsable intellectuel", "Berlioz, Hector (1803-1869). Auteur ou responsable intellectuel", "Liszt, Franz (1811-1886). Auteur ou responsable intellectuel", "Los Angeles Philharmonic orchestra. Interprète", "Paganini, Niccolò (1782-1840). Auteur ou responsable intellectuel", "Wagner, Richard (1813-1883). Auteur ou responsable intellectuel", "Stoloff, Morris (1898-1980). Direction d'orchestre", "Mendelssohn Bartholdy, Felix (1809-1847). Auteur ou responsable intellectuel", "Händel, Georg Friedrich (1685-1759). Auteur ou responsable intellectuel", "Bolet, Jorge (1914-1990). Piano" ;
+	dc:date             "1961" ;
+	dc:description      "Titre uniforme : [Serse. HWV 40. Ombra mai fu]", "Titre uniforme : [Concertos. Piano, orchestre. No 1. LW H4. Mi bémol majeur]", "Titre uniforme : [La campanella. LW A52, no 3]", "Contient une table des matières", "Titre uniforme : [Fantasie über ungarische Volksmelodien. LW H12]", "Titre uniforme : [Tannhäuser. WWV 70 (1845)]. Extrait", "Titre uniforme : [O lieb, so lang du lieben kannst. Piano. LW A103, no 3]", "Titre uniforme : [Rondo capriccioso. Piano. MWV U 67. Mi majeur]", "Comprend : RACKOCZY MARCH / Hector BERLIOZ - Consolation en ré bémol / Franz LISZT - LA CAMPANELLA / PAGANINI et Franz LISZT - Fantaisie sur : Rigoletto / Giuseppe VERDI - LARGO : de \u0022Xerxès\u0022 / HAENDEL - Les préludes / Franz LISZT - RONDO CAPRICCIOSO / MENDELSSOHN - PILGRIM'S CHORUS : de \u0022Tannhauser\u0022 / Richard WAGNER - LIEBESTRAUM : N °3 / Franz LISZT - Concerto n °I en mi bémol : et \u0022fantaisie hongroise\u0022 / Franz LISZT - UN SOSPIRO / Franz LISZT", "Titre uniforme : [Les préludes. Orchestre. LW G3]", "Titre uniforme : [La damnation de Faust. H 111]. Extrait", "Titre uniforme : [Un sospiro. LW A118, no 3]", "BnF-Partenariats, Collection sonore - Believe", "Titre uniforme : [Consolations. Piano. LW A111]. Extrait" ;
+	dc:format           "multipart/mixed", "1 disque : 33 t ; 30 cm", "Nombre total de vues :  15" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k8803328k", "Numéro commercial : Colpix  CPS506" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918239v"@fr, "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37820002t"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14800022d"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13908492n"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139182673"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb139136926"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb147859050"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13920776q"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14823834r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918508d"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918230r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13976948h"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-10536" ;
+	dc:title            "Le Bal des adieux : \u0022Song Without End\u0022 - Bande originale du film / l'orchestre Philharmonique de Los Angeles dir. Morris STOLOFF ; avec Jorge BOLET, piano - et Choeur" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803328k> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:45.720Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803328k> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8803328k#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:05:45.719Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8803328k> .

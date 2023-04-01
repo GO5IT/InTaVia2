@@ -1,0 +1,127 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112902>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:112902> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112902&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112902&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "43711"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "126"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_112902>
+	a                   ore:Proxy ;
+	dc:contributor      "Bauer, Marius" ;
+	dc:creator          "Bauer, Marius" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "WITS01:112902", "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:112902" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en, "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl ;
+	dc:source           "[WITS01:112902], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "tulband"@nl, "hoed"@nl, "zittend"@nl, "genrevoorstelling"@nl, "baard"@nl, "groep"@nl, "oosterling"@nl ;
+	dc:title            "Bijeenkomst" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1882-1932" ;
+	dcterms:extent      "65,5 x 75 cm" ;
+	dcterms:isPartOf    "GVN", "WITS01", "Willem Witsen: Tachtiger in brief en beeld" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml", "olieverf", "doek" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112902> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112902#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:37.806Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112902> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_112902>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2679>, <http://data.europeana.eu/concept/2388> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112902> .
+
+<http://data.europeana.eu/concept/2679>
+	a                skos:Concept ;
+	skos:altLabel    "Τουρμπάν"@el, "Tulbend"@de, "Dastaar"@nl, "Чалма"@ru, "Чалма"@bg, "Turban (huvudbonad)"@sv, "Dastar"@nl ;
+	skos:broader     <http://data.europeana.eu/concept/2397> ;
+	skos:exactMatch  <http://iconclass.org/41D221(TURBAN)>, <https://www.freebase.com/m/01pbfj>, <http://thesaurus.europeanafashion.eu/thesaurus/10216>, <http://vocab.getty.edu/aat/300046127>, <http://www.wikidata.org/entity/Q2460567>, <https://g.co/kg/m/01pbfj> ;
+	skos:note        "Couvre-chef"@fr, "Λωρίδα λεπτού υφάσματος που φορείται στο κεφάλι"@el, "Prenda de vestir"@es, "Päähine"@fi, "Headwear"@en, "Vīriešu un sieviešu galvassega no viegla, bieza zīda auduma, kas vairākkārtīgi apsieta ap galvu, nosedzot matus"@lv, "Fejfedő"@hu, "Kopfbedeckung vorislamischen Ursprungs"@de, "Pokrývka hlavy"@cs, "Hoofddeksel"@nl, "Muslims Emamah"@da ;
+	skos:prefLabel   "Turbaani"@fi, "Tulband"@nl, "Τουρμπάνι"@el, "Turbāns"@lv, "Turban"@de, "Turban"@sv, "Turban"@en, "Turban"@hr, "Turban"@fr, "Turban"@et, "Turban"@cs, "Turban"@sl, "Turban"@pl, "Turban"@ro, "Turban"@da, "Тюрбан"@ru, "Turbán"@hu, "Тюрбан"@bg, "Turbant"@ca, "Turbante"@pt, "Turbante"@it, "Turbante"@es .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112902#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:14:37.807Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_112902> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_112902>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/2388>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2397> ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300046106>, <https://d-nb.info/gnd/4160830-6>, <https://www.freebase.com/m/02dl1y>, <http://iconclass.org/41D221%28HAT%29>, <https://g.co/kg/m/02dl1y>, <http://data.bnf.fr/ark:/12148/cb11935470z>, <http://id.loc.gov/authorities/names/sh85059282>, <http://id.ndl.go.jp/auth/ndlna/00560885>, <http://purl.org/bncf/tid/16579>, <http://babelnet.org/rdf/s00017718n>, <http://www.wikidata.org/entity/Q80151>, <http://thesaurus.europeanafashion.eu/thesaurus/10200> ;
+	skos:note        "Peça de roba que es col·loca al cap"@ca, "Головной убор из тульи и полей"@ru, "Prenda de vestir que se coloca en la cabeza; generalmente consta de un ala alrededor de la copa"@es, "Päähine"@fi, "Tvarovaná pokrývka hlavy"@cs, "Huvudbonad"@sv, "Kopfbedeckung"@de, "Shaped head covering, having a brim and a crown, or one of these"@en, "Pokrývka hlavy, vyrobená z plste, súkna, kože, látky alebo slamy rozmanitého tvaru"@sk, "Peça do vestuário que serve para proteger e/ou cobrir a cabeça"@pt, "Couvre-chef, devenu un accessoire de mode que l'on porte sur la tête"@fr, "Type hoofddeksel"@nl, "Copricapo"@it, "Hovedbeklædning"@da, "Liik peakatteid"@et, "Nakrycie głowy, zazwyczaj składające się z główki i ronda"@pl ;
+	skos:prefLabel   "Kapelusz"@pl, "Sombrero"@es, "Pălărie"@ro, "Hat"@en, "Hat"@da, "Cepure"@lv, "Klobúk"@sk, "Καπέλο"@el, "Skrybėlė"@lt, "Barret"@ca, "Kapela"@eu, "Hata"@ga, "Шляпа"@ru, "Hattu"@fi, "Klobouk"@cs, "Hatt"@sv, "Hut"@de, "Hoed"@nl, "Chapeau"@fr, "Chapéu"@pt, "Cappello"@it, "Kalap"@hu, "Kübar"@et, "Šešir"@hr, "Klobuk"@sl, "Шапка"@bg .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_112902>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:07:02.262Z" ;
+	dcterms:modified          "2018-04-05T18:11:22.021Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_112902> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_112902> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A112902%26role%3Dthumbnail&type=IMAGE> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:112902>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "50349"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .

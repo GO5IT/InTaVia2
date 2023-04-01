@@ -1,0 +1,171 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149426769>
+	a                   ore:Proxy ;
+	dc:contributor      "Ферруччо Бенвенуто Бузони", "Вольфганг Амадей Моцарт" ;
+	dc:creator          "Ференц Лист" ;
+	dc:description      "Имеется электронная копия", "Ф. Лист; по почти законченной ориг. рукописи доп. Ф. Бузони" ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "004465150" ;
+	dc:language         "ru" ;
+	dc:publisher        "Искусство" ;
+	dc:title            "Фантазия на две темы из оперы Моцарта \u0022Свадьба Фигаро\u0022 для фортепиано" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "31 с." ;
+	dcterms:hasPart     "Вольфганг Амадей Моцарт: Свадьба Фигаро" ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued      "1939" ;
+	dcterms:spatial     "Москва; Ленинград", <http://id.loc.gov/vocabulary/countries/ru> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149426769> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149426769>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/146951>, <http://data.europeana.eu/agent/147817> ;
+	dc:creator          <http://data.europeana.eu/agent/147131> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1939" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149426769> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:25.985Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149426769> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149426769>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004465150#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004465150/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:25.985Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149426769> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/147131>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/147549>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/agent/151619>, <http://data.europeana.eu/agent/146764>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/agent/156172> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/53157> ;
+	owl:sameAs                     <http://nlg.okfn.gr/resource/authority/record211970>, <http://id.ndl.go.jp/auth/ndlna/00523887>, <http://id.worldcat.org/fast/1672750>, <http://nlg.okfn.gr/resource/authority/record71395>, <http://data.bnf.fr/ark:/12148/cb139773750>, <http://lod.nl.go.kr/resource/KAC199616810>, <http://id.worldcat.org/fast/39270>, <http://data.cervantesvirtual.com/person/54769>, <http://vocab.getty.edu/ulan/500330920>, <http://data.cervantesvirtual.com/person/1684>, <http://openlibrary.org/works/OL403805A>, <http://dbpedia.org/resource/Franz_Liszt>, <http://www.wikidata.org/entity/Q41309>, <http://data.carnegiehall.org/names/1001205>, <http://libris.kb.se/resource/auth/208502>, <http://www.idref.fr/026991535/id>, <https://libris.kb.se/jgvxzrq25hj3qsq>, <https://www.freebase.com/m/0hqgp>, <http://datos.bne.es/resource/XX963604>, <http://d-nb.info/gnd/118573527>, <http://viaf.org/viaf/64199483>, <https://livedata.bibsys.no/authority/90066794>, <http://id.loc.gov/authorities/names/n79079048>, <https://g.co/kg/m/0hqgp>, <http://data.bibliotheken.nl/id/thes/p068284764> ;
+	rdaGr2:dateOfBirth             "1811-10-22" ;
+	rdaGr2:dateOfDeath             "1886-07-31" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/82344> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/2625> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/62> ;
+	skos:altLabel                  "Лист, Ференц"@ru, "Frans Liszt"@nl, "Frans Liszt"@fr, "Φέρεντς Λιστ"@el, "Francesco Liszt"@en, "Franz Liszt"@pl, "Franz Liszt"@cs, "Franz Liszt"@et, "Franz Liszt"@hu, "Franz Liszt"@lv, "Franz Liszt"@lt, "Лист Ференц"@ru, "Liszt Ferencz"@en, "Franz von Liszt"@en, "Франц Лист"@ru, "Лист, Франц"@ru, "Franciszek Liszt"@pl, "Franciszek Liszt"@en, "F. Lists"@en, "Abbé Franz Liszt"@en, "Liszt-Brugnoli"@en, "Ferenc Liszt"@ca, "Ferenc Liszt"@sl, "Ferenc Liszt"@sk, "Ferenc Liszt"@es, "Ferenc Liszt"@hu, "Ferenc Liszt"@fr, "Ferenc Liszt"@it, "Ferenc Liszt"@en, "Ferenc Liszt"@de, "Ferenc Liszt"@sv, "Ferenc Liszt"@pt, "Ferenç Liszt"@es, "F. Liszt"@en, "Ferencz Liszt"@es, "Ferencz Liszt"@en, "Franz List"@sk, "Franz List"@en, "Franz List"@de, "Franz Ritter von Liszt"@es, "Franz Ritter von Liszt"@de, "Franciscus Liszt"@sk, "Лист Франц фон"@ru, "Liszt Ferenc"@ro, "Liszt Ferenc"@fr, "Liszt Ferenc"@lv, "Liszt Ferenc"@pt, "Franciscus List"@en, "Francs Lists"@lv, "List Ferens"@it, "František List"@sk, "Ferenc List"@hu, "Ferenc List"@en, "Ferenc List"@de, "Franz Von Liszt"@en, "Francisco Liszt"@es, "Ferenc liszt"@nl, "François Liszt"@fr, "François Liszt"@en, "Frant︠s︡ List"@en ;
+	skos:note                      "Ungersk kompositör"@sv, "Østrig-ungarsk komponist, pianist og dirigent"@da, "Венгро-немецкий композитор, пианист-виртуоз, педагог, дирижёр, публицист"@ru, "Compositor y pianista austro-húngaro"@es, "Compositor e maestro húngaro do século XIX"@pt, "Kompozytor i pianista węgierski"@pl, "Ούγγρος ρομαντικός συνθέτης και πιανίστας"@el, "Ungarischer Komponist und Pianist der Romantik"@de, "Hungarian romantic composer and virtuoso pianist"@en, "Uhorský hudobný skladateľ a klavírny virtuóz"@sk, "Compositor i pianista hongarès"@ca, "Compositore, pianista e direttore d'orchestra ungherese"@it, "Унгарски композитор"@bg, "Magyar zongorista, zeneszerző, karmester"@hu, "Unkarilainen säveltäjä ja pianovirtuoosi"@fi, "Maďarský skladatel a klavírní virtuóz"@cs, "Compositeur et pianiste hongrois"@fr, "Hongaars componist en pianist"@nl ;
+	skos:prefLabel                 "Franz Liszt"@pt, "Franz Liszt"@hr, "Franz Liszt"@sk, "Franz Liszt"@sl, "Franz Liszt"@ga, "Franz Liszt"@ca, "Franz Liszt"@sv, "Franz Liszt"@en, "Franz Liszt"@it, "Franz Liszt"@es, "Franz Liszt"@ro, "Franz Liszt"@da, "Franz Liszt"@nl, "Liszt Ferenc"@hu, "Φραντς Λιστ"@el, "Ferenc Liszt"@et, "Ferenc Liszt"@cs, "Ferenc Liszt"@pl, "Ференц Лист"@ru, "Ferencs Lists"@lv, "Ferencas Listas"@lt, "Франц Лист"@bg, "Franz Liszt"@fr, "Franz Liszt"@de, "Franz Liszt"@fi .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149426769>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:16:46.964Z" ;
+	dcterms:modified          "2016-03-24T08:15:14.452Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149426769> ;
+	edm:completeness          "5" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149426769> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004465150%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/146951>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/148476>, <http://data.europeana.eu/agent/147904>, <http://data.europeana.eu/agent/148131>, <http://data.europeana.eu/agent/147150> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/153838>, <http://data.europeana.eu/agent/59294>, <http://data.europeana.eu/agent/147150>, <http://data.europeana.eu/agent/151048> ;
+	owl:sameAs                     <http://data.bnf.fr/ark:/12148/cb14027233b>, <http://nlg.okfn.gr/resource/authority/record65627>, <http://open.salzburgerland.com/en/entity/wolfgang_amadeus_mozart>, <http://datos.bne.es/resource/XX1147441>, <http://id.loc.gov/authorities/names/n80022788>, <http://data.carnegiehall.org/names/1006075>, <http://www.idref.fr/028266358/id>, <http://viaf.org/viaf/32197206>, <https://libris.kb.se/mkz12t351kx8pb4>, <http://dbpedia.org/resource/Wolfgang_Amadeus_Mozart>, <http://id.ndl.go.jp/auth/ndlna/00450717>, <http://libris.kb.se/resource/auth/207845>, <http://www.wikidata.org/entity/Q254>, <https://www.freebase.com/m/082db>, <http://data.cervantesvirtual.com/person/54979>, <https://g.co/kg/m/082db>, <http://data.bibliotheken.nl/id/thes/p068948727>, <https://livedata.bibsys.no/authority/90059613>, <http://data.cervantesvirtual.com/person/9852>, <http://vocab.getty.edu/ulan/500339585>, <http://lod.nl.go.kr/resource/KAC199619526>, <http://d-nb.info/gnd/118584596>, <http://id.worldcat.org/fast/50702>, <http://openlibrary.org/works/OL5017833A> ;
+	rdaGr2:dateOfBirth             "1756-01-27" ;
+	rdaGr2:dateOfDeath             "1791-12-05" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/80586> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/80422> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/236>, <http://data.europeana.eu/concept/1618>, <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/concept/1553>, <http://data.europeana.eu/concept/237> ;
+	skos:altLabel                  "Wolfi Mozart"@pl, "Амадей Моцарт"@ru, "Моцарт"@ru, "Моцарт"@bg, "Joannes Chrysostomus Wolfgangus Theophilus Mozart"@pl, "Joannes Chrysostomus Wolfgangus Theophilus Mozart"@it, "Johann Chrysostomos Wolfgang Gottlieb Mozart"@en, "Mozhate"@en, "V. A. Mocartas"@en, "Joannes Chrysostomus Wolfgangus Theophilus Mozart"@de, "Joannes Chrysostomus Wolfgangus Theophilus Mozart"@fi, "Wolfgang Amadeusz Mozart"@pl, "Joannes Chrysostomus Wolfgangus Amadeus Mozart"@en, "Моцарт, Вольфганг Амадей"@ru, "Wolfgang Amadè Mozart"@en, "Wolfgang Amadé Mozart"@pl, "W. A. Mozart"@en, "W. A. Mozart"@de, "Wolfgang Amadé Mozart"@de, "W. A. Mozart"@sv, "W. A. Mozart"@fi, "Wolferl Mozart"@pl, "Wolfgango Amadeo Mozart"@en, "Joannes Chrysostomus Wolfgangus Theophilus Amadeus Mozart"@en, "Wolfgang Amadeus Chrysostom Mozart"@en, "Wolfgang Gottlieb Mozart"@pl, "Wolfgang Gottlieb Mozart"@en, "Johannes Chrysostomus Wolfgangus Theophilus Mozart"@cs, "Johannes Chrysostomus Wolfgangus Theophilus Mozart"@es, "Johannes Chrysostomus Wolfgangus Theophilus Mozart"@sv, "Вольфганг Моцарт"@ru, "Amadeo Mozart"@pl, "Wolfgangerl Mozart"@pl, "Volphnkank Amedaios Motsart"@en, "Apollo Mozzart"@en, "Johann Chrysostom Wolfgang Amadeus Mozart"@en, "Johannes Chrisostomus Wolfgangus Theophilus Mozart"@en, "Mozart"@ca, "Mozart"@da, "Mozart"@es, "Mozart"@fr, "Mozart"@it, "Mozart"@en, "Mozart"@de ;
+	skos:note                      "Compositore, pianista, organista e violinista austriaco"@it, "Австрийский композитор, скрипач, пианист, органист-виртуоз"@ru, "Østrigsk komponist"@da, "Compositor austríac"@ca, "Kompozitorius"@lt, "Австрийски композитор"@bg, "Rakúsky klasicistický hudobný skladateľ"@sk, "Compositor austríaco (1756-1791)"@es, "Austria helilooja"@et, "Compositor austríaco"@pt, "Musiker und Komponist der Wiener Klassik"@de, "Austriacki kompozytor"@pl, "Austrian composer of the Classical period"@en, "Österrikisk tonsättare och musiker"@sv, "Compozitor austriac"@ro, "Oostenrijks componist"@nl, "Itävaltalainen säveltäjä"@fi, "Αυστριακός συνθέτης κλασικής μουσικής"@el, "Osztrák klasszicista zeneszerző"@hu, "Compositeur, pianiste, violoniste, organiste et chef d'orchestre autrichien"@fr, "Rakouský hudební skladatel"@cs ;
+	skos:prefLabel                 "Wolfgang Amadeus Mozart"@fr, "Wolfgang Amadeus Mozart"@de, "Wolfgang Amadeus Mozart"@fi, "Wolfgang Amadeus Mozart"@pt, "Wolfgang Amadeus Mozart"@hr, "Wolfgang Amadeus Mozart"@hu, "Wolfgang Amadeus Mozart"@sk, "Wolfgang Amadeus Mozart"@sl, "Wolfgang Amadeus Mozart"@ga, "Wolfgang Amadeus Mozart"@ca, "Волфганг Амадеус Моцарт"@bg, "Wolfgang Amadeus Mozart"@sv, "Wolfgang Amadeus Mozart"@mt, "Wolfgang Amadeus Mozart"@en, "Wolfgang Amadeus Mozart"@it, "Wolfgang Amadeus Mozart"@es, "Wolfgang Amadeus Mozart"@et, "Wolfgang Amadeus Mozart"@cs, "Wolfgang Amadeus Mozart"@pl, "Wolfgang Amadeus Mozart"@ro, "Wolfgang Amadeus Mozart"@da, "Wolfgang Amadeus Mozart"@nl, "Βόλφγκανγκ Αμαντέους Μότσαρτ"@el, "Volfgangs Amadejs Mocarts"@lv, "Volfgangas Amadėjus Mocartas"@lt, "Вольфганг Амадей Моцарт"@ru .
+
+<http://data.europeana.eu/agent/147817>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://libris.kb.se/resource/auth/43893>, <http://id.ndl.go.jp/auth/ndlna/00620437>, <http://www.wikidata.org/entity/Q219551>, <http://data.bibliotheken.nl/id/thes/p068598920>, <https://www.freebase.com/m/01q7q95>, <http://lod.nl.go.kr/resource/KAC199604062>, <http://openlibrary.org/works/OL80334A>, <http://nlg.okfn.gr/resource/authority/record194143>, <http://dbpedia.org/resource/Ferruccio_Busoni>, <https://g.co/kg/m/01q7q95>, <http://data.carnegiehall.org/names/1343>, <http://d-nb.info/gnd/118518011>, <https://livedata.bibsys.no/authority/90248525>, <http://id.worldcat.org/fast/44836>, <http://datos.bne.es/resource/XX869778>, <http://data.cervantesvirtual.com/person/43412>, <http://id.loc.gov/authorities/names/n79124601>, <http://data.bnf.fr/ark:/12148/cb13892013n>, <https://libris.kb.se/khwzspv342f7s3z>, <http://viaf.org/viaf/44484509>, <http://www.idref.fr/030133394/id> ;
+	rdaGr2:dateOfBirth   "1866-04-01" ;
+	rdaGr2:dateOfDeath   "1924-07-27" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/147017> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/3567> ;
+	skos:altLabel        "Dante Michelangelo Benvenuto Ferruccio Busoni"@ca, "Ferrucio Busoni"@ca, "Dante Michelangelo Benvenuto Ferruccio Busoni"@nl, "Dante Michelangelo Benvenuto Ferruccio Busoni"@da, "Dante Michelangelo Benvenuto Ferruccio Busoni"@ro, "Dante Michelangelo Benvenuto Ferruccio Busoni"@pl, "Dante Michelangelo Benvenuto Ferruccio Busoni"@es, "Ferrucio Busoni"@es, "Dante Michelangelo Benvenuto Ferruccio Busoni"@hu, "Dante Michelangelo Benvenuto Ferruccio Busoni"@fr, "Ferrucio Busoni"@fr, "Dante Michelangelo Benvenuto Ferruccio Busoni"@it, "Dante Michelangelo Benvenuto Ferruccio Busoni"@de, "Dante Michelangelo Benvenuto Ferruccio Busoni"@sv, "Dante Michelangelo Benvenuto Ferruccio Busoni"@fi, "Dante Michelangelo Benvenuto Ferruccio Busoni"@ru, "Ferrucio Busoni"@pt, "Dante Michelangelo Benvenuto Ferruccio Busoni"@pt, "Dante Michelangelo Benvenuto Ferruccio Busoni"@en, "Ferruccio Busoni"@hu, "Ferruccio Busoni"@ru, "Ferruccio Dante Michelangiolo Benvenuto Busoni"@cs, "Ferruccio Dante Michelangiolo Benvenuto Busoni"@en, "Данте Микеланджело Бенвенуто Ферруччо Бузони"@ru, "Dante Michaelangelo Benvenuto Ferruccio Busoni"@sl, "Dante Michaelangelo Benvenuto Ferruccio Busoni"@pt, "Ferruccio Dante Michelangelo Benvenuto Busoni"@da, "Ferruccio Benvenuto Busoni"@es, "Ferruccio Dante Michelangelo Benvenuto Busoni"@en, "Ferruccio Benvenuto Busoni"@de, "Бузони Ферруччо"@ru, "Busoni"@ca, "Busoni"@sl, "Busoni"@fr, "Busoni"@en, "Busoni"@sv, "Busoni"@fi, "Busoni"@pt, "Ферруччо Бенвенуто Бузони"@ru, "Бузони Ферруччо Бенвенуто"@ru, "Бузони Ф."@ru, "Бузони, Ферруччо Бенвенуто"@ru ;
+	skos:note            "Pianista, professor i director d'orquestra"@ca, "Italian composer, pianist, conductor, editor, writer, and piano teacher (1866-1924)"@en, "Italiaans componist (1866-1924)"@nl, "Német zeneszerző, zongorista, zenetudós és karmester"@hu, "Compositor y músico Italia"@es, "Ιταλός συνθέτης, πιανίστας, διευθυντής ορχήστρας, συγγραφέας και καθηγητής πιάνου"@el, "Italienischer Pianist, Komponist, Dirigent und Musiklehrer"@de, "Compositeur, pianiste, professeur et chef d'orchestre italien"@fr, "Italský hudební skladatel"@cs, "Italiensk tonsättare och pianist"@sv, "Pianista, compositore e direttore d'orchestra italiano"@it, "Italialainen säveltäjä"@fi, "Włoski kompozytor i pianista"@pl ;
+	skos:prefLabel       "Ferruccio Busoni"@de, "Ferruccio Busoni"@fi, "Ferruccio Busoni"@sv, "Ferruccio Busoni"@pt, "Ferruccio Busoni"@lt, "Ferruccio Busoni"@en, "Ferruccio Busoni"@it, "Ferruccio Busoni"@fr, "Ferruccio Busoni"@es, "Ferruccio Busoni"@et, "Ferruccio Busoni"@cs, "Ferruccio Busoni"@sl, "Ferruccio Busoni"@pl, "Ferruccio Busoni"@da, "Ferruccio Busoni"@ca, "Ferruccio Busoni"@nl, "Ferruccio Busoni"@hr, "Ферруччо Бузони"@ru, "Ferruccio Benvenuto Busoni"@hu, "Φερούτσιο Μπουζόνι"@el .
+
+<http://search.rsl.ru/api/description/01004465150/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "13827"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://dlib.rsl.ru/viewer/01004465150#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

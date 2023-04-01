@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k3102285/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k3102285>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k3102285> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k3102285.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k3102285>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "210341"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/f1> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_bpt6k3102285>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1847" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k3102285> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_bpt6k3102285>
+	a                   ore:Proxy ;
+	dc:contributor      "Corneille. Auteur du texte", "Fontanes. Auteur du texte", "Gilbert. Auteur du texte", "Delille. Auteur du texte", "Racine, Jean (1639-1699). Auteur du texte" ;
+	dc:creator          "Deffès, Louis (1819-1900). Compositeur", "Gilbert, Alphonse. Compositeur. Auteur du texte", "Nicou-Choron, Stéphane-Louis (1809-1886). Compositeur", "Leprevost, Alexandre. Compositeur", "Tariot, Jules. Compositeur", "Ermel. Compositeur", "Carulli, Gustave (1801-1876). Compositeur", "Walckiers, Eugène (1793-1866). Compositeur", "Chollet, Auguste (18..-18..? ; compositeur). Compositeur", "Duvernoy, Henri (1820-1906). Compositeur", "Somma, Luigi. Compositeur" ;
+	dc:date             "1847" ;
+	dc:description      "Comprend : L'Eternel est son nom, paroles de Racine ; O mon Dieu, si ton bon plaisir, paroles de Corneille ; Dans sa demeure inébranlable, choeur..., paroles de Delille ; Un plein repos favorise vos voeux, choeur à 4 voix, paroles de Racine ; Dans sa demeure inébranlable, choeur pour 4 voix d'hommes ; Source ineffable de lumière, paroles de Racine. Choeur religieux avec solo ; Au banquet de la vie, choeur à 4 voix égales, paroles de Gilbert, musique de M. A. Gilbert ; O moment solennel, paroles de Fontanes ; Quel bruit s'est élevé... choeur, paroles de Gilbert ; J'ai révélé mon coeur, choeur à 4 voix, paroles de Gilbert ; Qui donc m'a donné la naissance, choeur à 4 voix, paroles de Mme Jules Mallet ; Un ange au radieux visage, choeur à 4 voix paroles de Reboul ; O moment solennel choeur à 3 voix égales... , paroles de Fontanes ; Qui donc m'a donné la naissance, paroles de Mme Jules Mallet, choeur à 4 voix ; Chantons l'auteur de la Lumière, paroles de Racine, choeur à 4 voix", "Titre uniforme : Nicou-Choron, Stéphane-Louis (1809-1886). Compositeur. [Qui donc m'a donné la naissance]", "Titre uniforme : Nicou-Choron, Stéphane-Louis (1809-1886). Compositeur. [Un ange au radieux visage]" ;
+	dc:format           "Nombre total de vues :  155", "In-8°" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/bpt6k3102285" ;
+	dc:language         "fre" ;
+	dc:publisher        "P. Dupont (Paris)" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb43362810n" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, VM7-2496" ;
+	dc:title            "Université de france. Commission des chants religieux, usuels et historiques, à l'usage des orphéons et des Ecoles primaires. Concours musical. Recueil des Compositions couronnées" ;
+	dc:type             "Genre musical : divers" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k3102285> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:17.558Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k3102285> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k3102285.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5334"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "192"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "114"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:17.559Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_bpt6k3102285> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3102285/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_bpt6k3102285/manifest> ;
+	ebucore:fileByteSize    "72418"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "789"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_bpt6k3102285>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:21:39.537Z" ;
+	dcterms:modified          "2018-07-23T15:18:27.792Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_bpt6k3102285> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_bpt6k3102285> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k3102285.thumbnail.jpg&type=TEXT> .

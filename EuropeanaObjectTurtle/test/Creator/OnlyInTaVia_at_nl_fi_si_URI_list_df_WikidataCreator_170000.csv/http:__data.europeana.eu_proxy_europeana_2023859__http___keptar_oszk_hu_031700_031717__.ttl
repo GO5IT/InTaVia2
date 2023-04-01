@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031700_031717__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:47:12.253Z" ;
+	dcterms:modified          "2015-09-14T11:48:22.690Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__#metadataTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F031700%2F031717%2Fvende2_40_b_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:20.016Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031700_031717__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:20.016Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031700_031717__> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_031700_031717__>
+	a                    ore:Proxy ;
+	dc:creator           "Kallós ,  Ede  ( szobrász )"@hu, "Róth,  András Lajos (digitized By)"@hu ;
+	dc:description       "KOSSUTNAK a vidéki városokban több szobra van. Egyike a legsikerültebbeknek az, a melyet 1903. márczius 22-én lepleztek Hódmezővásárhe]y legszebb terén, a Kossuth-téren. Kossuth 3.20 méter magas bronzból öntött alakja bal kezét mellére téve, jobbját ökölbe szorítva áll, a mint szavával felrázza a népet, arczán a hazafi erélye és a lelkesedés elszántsága ömlik el."@hu ;
+	dc:format            "JPEG képállomány \u000A         777x1591 \u000A         300 \u000A         szürke \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/031700/031717   [Metadata]" ;
+	dc:relation          "Kossuth Lajos arczképe 1841-ből [ http://keptar.oszk.hu/031700/031713]"@hu, "Vende Ernő: A magyar irodalomtörténet képekben [ http://mek.oszk.hu/09800/09807/]"@hu ;
+	dc:source            "OSZK MEK"@hu ;
+	dc:subject           "1848/49-es forradalom és szabadságharc"@hu, "Kossuth Lajos (1802-1894)"@hu, "Kallós Ede (1866-1950)"@hu, "politikus"@hu, "History of literature, literary studies"@hu, "miniszter"@hu, "History, local history"@hu, "Politics, government"@hu, "kormány"@hu, "parlament"@hu, "szobor"@hu ;
+	dc:title             "Kossuth Lajos szobra Hódmezővásárhelyen"@hu ;
+	dc:type              "statue"@hu ;
+	dcterms:alternative  "A szobor Kallós Ede alkotása"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031700_031717__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_031700_031717__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_031700_031717__> .
+
+<http://keptar.oszk.hu/031700/031717>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031700_031717__/manifest> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_031700_031717__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/031700/031717> ;
+	edm:object         <http://keptar.oszk.hu/031700/031717/vende2_40_b_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_031700_031717__>
+	a  edm:ProvidedCHO .
+
+<http://keptar.oszk.hu/031700/031717/vende2_40_b_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3775"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_031700_031717__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:35:08.837Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> .
+
+<http://data.europeana.eu/aggregation/provider/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000362053> ;
+	edm:isShownAt      <http://www.beeldbank.noord-hollandsarchief.nl/memorix/7fc7e49a-2109-004b-c0a2-bee230c1a5cc> ;
+	edm:isShownBy      <https://images.memorix.nl/ranh/thumb/640x480/072b59c6-d485-05a7-ea1f-b2db6d898a8e.jpg> ;
+	edm:object         <https://images.memorix.nl/ranh/thumb/640x480/072b59c6-d485-05a7-ea1f-b2db6d898a8e.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> .
+
+<http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T23:35:08.838Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> .
+
+<http://data.europeana.eu/aggregation/europeana/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-03-26T15:25:59.232Z" ;
+	dcterms:modified          "2015-03-26T15:25:59.232Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc#metadataTier>, <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021663_Ag_NL_DigitaleCollectie_noordholland" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fimages.memorix.nl%2Franh%2Fthumb%2F640x480%2F072b59c6-d485-05a7-ea1f-b2db6d898a8e.jpg&type=IMAGE> .
+
+<http://www.beeldbank.noord-hollandsarchief.nl/memorix/7fc7e49a-2109-004b-c0a2-bee230c1a5cc>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "16451"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://data.europeana.eu/proxy/provider/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc>
+	a                   ore:Proxy ;
+	dc:creator          "Bray, Dirck de (1625/1645-1694)"@nl ;
+	dc:date             "1655-00-00/1694-00-00" ;
+	dc:description      "Dit exemplaar was in bezit van van Vis Blokhuysen. Volgens hem is de signatuur door Dirck de Bray zelf aangebracht: <i>......ni marque mais le nom de la main du maître\u000A          à la mine de plomb, dans le coin droit sur mon exemplaire.</i>"@nl, "Een wapenschild met in het veld boven drie kruisen en onder een roos, gedekt door helm, naar links, met dekkleed. Op de helm een hand met roos. <br> Houtsnede;\u000A          linksonder gesigneerd in potlood."@nl ;
+	dc:identifier       "NL-HlmNHA_1477_53010259" ;
+	dc:language         "Dutch" ;
+	dc:title            "Voorhelm Schneevoogt NL-HlmNHA_1477_53010259"@nl, "Een wapenschild met in het veld boven drie kruisen en onder een roos, gedekt door helm, naar links, met dekkleed. Op de helm een hand met roos. <br> Houtsnede; linksonder\u000A          gesigneerd in potlood."@nl, "NL-HlmNHA_1477_53010259"@nl ;
+	dc:type             "Grafiek Drukwerk"@nl, "Historieprenten, tekeningen en foto's"@nl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc> .
+
+<https://iiif.europeana.eu/presentation/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000000362053>
+	a               foaf:Organization ;
+	skos:prefLabel  "Arxius Noord Holland"@ca, "Noord-Hollands Archief"@nl, "Noord-Hollands Archief"@it, "Archives of North Holland"@en, "Noord-Hollands Archief"@de .
+
+<https://images.memorix.nl/ranh/thumb/640x480/072b59c6-d485-05a7-ea1f-b2db6d898a8e.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc/manifest> ;
+	ebucore:fileByteSize    "84902"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "480"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "634"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/2021663/memorix_7fc7e49a_2109_004b_c0a2_bee230c1a5cc>
+	a  edm:ProvidedCHO .

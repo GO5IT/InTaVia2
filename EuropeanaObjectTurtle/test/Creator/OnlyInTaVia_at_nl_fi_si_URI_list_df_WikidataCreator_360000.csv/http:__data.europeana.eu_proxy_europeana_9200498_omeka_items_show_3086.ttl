@@ -1,0 +1,136 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004502037>
+	a               foaf:Organization ;
+	skos:prefLabel  "Occitan Media Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200498/omeka_items_show_3086>
+	a                   ore:Proxy ;
+	dc:coverage         <http://data.europeana.eu/place/87> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1907" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200498/omeka_items_show_3086> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200498/omeka_items_show_3086> .
+
+<http://data.europeana.eu/item/9200498/omeka_items_show_3086#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:50:37.993Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200498/omeka_items_show_3086> .
+
+<http://data.europeana.eu/item/9200498/omeka_items_show_3086>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200498/omeka_items_show_3086#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:50:37.992Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200498/omeka_items_show_3086> .
+
+<http://data.europeana.eu/aggregation/provider/9200498/omeka_items_show_3086>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200498/omeka_items_show_3086> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502037> ;
+	edm:hasView        <http://occitanica.eu/omeka/files/original/2a14451bd8ea5a5050ef1733187f8254.jpg> ;
+	edm:isShownAt      <http://www.occitanica.eu/omeka/items/show/3086> ;
+	edm:object         <http://occitanica.eu/omeka/files/original/2a14451bd8ea5a5050ef1733187f8254.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<https://iiif.europeana.eu/presentation/9200498/omeka_items_show_3086/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://occitanica.eu/omeka/files/original/2a14451bd8ea5a5050ef1733187f8254.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200498/omeka_items_show_3086/manifest> ;
+	ebucore:fileByteSize    "137423"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "334"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "landscape" ;
+	ebucore:width           "488"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DEB887"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/place/87>
+	a               edm:Place ;
+	owl:sameAs      <http://zbw.eu/stw/descriptor/17184-0>, <https://sws.geonames.org/390903/>, <https://libris.kb.se/75kml65r2vq53rp>, <http://pleiades.stoa.org/places/1001896/rdf>, <http://uri.gbv.de/terminology/bk/15.69>, <http://id.worldcat.org/fast/1208380>, <http://dbpedia.org/resource/Greece>, <http://id.nlm.nih.gov/mesh/D006115>, <http://www.idref.fr/026488523/id>, <http://viaf.org/viaf/131265011>, <http://id.ndl.go.jp/auth/ndlna/00562473>, <http://www.yso.fi/onto/ysa/Y105037>, <https://g.co/kg/m/035qy>, <http://data.bnf.fr/ark:/12148/cb118727476>, <http://www.wikidata.org/entity/Q41>, <http://vocabularies.unesco.org/thesaurus/concept907>, <http://vocab.getty.edu/tgn/1000074>, <http://www.yso.fi/onto/yso/p105037>, <http://id.loc.gov/authorities/names/n80046090>, <http://babelnet.org/rdf/s00030401n>, <https://www.freebase.com/m/035qy>, <http://nlg.okfn.gr/resource/authority/record4335>, <https://d-nb.info/gnd/4022047-3> ;
+	skos:altLabel   "Hellada"@pl, "Hellenska republiken"@sv, "République hellénique"@fr, "GR"@nl, "GR"@fr, "GR"@de, "Ellada"@en, "República Helénica"@es, "Hélade"@es, "Helleenien tasavalta"@fi, "Ελληνική Δημοκρατία"@el, "Эллада"@ru, "Republika Grecka"@pl, "GRE"@en, "Gr"@en, "República Hel·lènica"@ca, "Hellenische Republik"@de, "GRC"@nl, "GRC"@de, "Δημοκρατία της Ελλάδος"@el, "Repubblica Ellenica"@it, "Republika Grčka"@hr, "Ελλάς"@el, "Kreikan tasavalta"@fi, "Греческая Республика"@ru, "Grécka republika"@sk, "Hellas"@en, "Hellas"@fi, "Hellas"@de, "Hellas"@sv, "Greek Republic"@en, "Δημοκρατία της Ελλάδας"@el, "Република Гърция"@bg, "Republica Helenica"@es, "Greek"@en, "Republiken Grekland"@sv, "Repubblika Ellenika"@mt, "Hellás"@ca, "Hellás"@es, "Hellenic Republic"@en, "el"@en, "Elláda"@ca ;
+	skos:note       "País na Europa"@pt, "Valtio Etelä-Euroopassa"@fi, "Pajjiż fl-Ewropa tax-Xlokk"@mt, "Country in Southeast Europe"@en, "Χώρα στη νοτιοανατολική Ευρώπη"@el, "Държава в Южна Европа"@bg, "Stat în Europa de Sud"@ro, "Štát v južnej Európe"@sk, "Pays d'Europe"@fr, "Staat in Südosteuropa"@de, "Estado del Mediterráneo y miembro de la Unión Europea"@es, "Państwo w Europie Południowej"@pl, "País del sud-est d'Europa"@ca, "Tír in oirdheisceart na hEorpa"@ga, "Valsts Dienvideiropā"@lv, "Страна в Южной Европе"@ru, "Stát v jižní Evropě"@cs, "Država u jugoistočnoj Europi"@hr, "Republik i Sydeuropa"@sv, "Állam Délkelet-Európában"@hu, "Stato dell'Europa meridionale, membro dell'Unione europea"@it, "Land in Europa"@nl ;
+	skos:prefLabel  "Grèce"@fr, "Grecia"@it, "Kreeka"@et, "Grecia"@es, "Grecia"@ro, "Griechenland"@de, "Řecko"@cs, "Grecja"@pl, "Graikija"@lt, "Grécko"@sk, "Grčka"@hr, "Grezia"@eu, "An Ghréig"@ga, "Griekenland"@nl, "Grècia"@ca, "Greece"@en, "Görögország"@hu, "Greċja"@mt, "Grekland"@sv, "Grieķija"@lv, "Греция"@ru, "Grécia"@pt, "Grækenland"@da, "Ελλάδα"@el, "Гърция"@bg, "Kreikka"@fi, "Grčija"@sl ;
+	wgs84_pos:lat   "38.5" ;
+	wgs84_pos:long  "23.0" .
+
+<http://www.occitanica.eu/omeka/items/show/3086>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "104156"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/europeana/9200498/omeka_items_show_3086>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-14T14:27:52.371Z" ;
+	dcterms:modified          "2016-09-19T09:37:06.987Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200498/omeka_items_show_3086#contentTier>, <http://data.europeana.eu/item/9200498/omeka_items_show_3086#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200498/omeka_items_show_3086> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200498_Ag_BnF_occitanica" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200498/omeka_items_show_3086> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Foccitanica.eu%2Fomeka%2Ffiles%2Foriginal%2F2a14451bd8ea5a5050ef1733187f8254.jpg&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200498/omeka_items_show_3086>
+	a                   ore:Proxy ;
+	dc:coverage         "Grèce" ;
+	dc:creator          "Riéu, Charles (1846-1924), trad.", "Homère (08..?-08..? av. J.-C.)" ;
+	dc:date             "1907" ;
+	dc:description      "Charles Riéu a décidé de traduire l'Odyssée d'Homère en provençal suite à une suggestion d'Auzias Rougier. Pour mener à bien cette entreprise qui a duré plus d’un an, il a bénéficié, entre autres, des conseils de Frédéric Mistral et de Joseph Bourrilly. Dans la préface de cette traduction de l'Odyssée d'Homère, Charles Riéu - qui était coutumier de la traduction de grands classiques de la littérature - ne se définit pas comme un spécialiste du grec ancien, par rapport aux traducteurs qui l'ont précédé dans cette expérience en d'autres langues. Avant de commencer ce travail, il semble d'ailleurs avoir d'abord lu la traduction française de l'Odyssée réalisée par Leconte de Lisle." ;
+	dc:format           "application/pdf", "1 vol. (372 p) ; 19 cm" ;
+	dc:identifier       "FRB340325101_CAB-1065", "http://www.occitanica.eu/omeka/items/show/3086" ;
+	dc:language         "oci" ;
+	dc:publisher        "P. Ruat (Marseille)", "Herbin (Montluçon)" ;
+	dc:relation         <http://www.sudoc.fr/005974771> ;
+	dc:rights           "domeni public"@oci, "public domain"@eng, "domaine public"@fre ;
+	dc:source           "CIRDÒC - Mediatèca occitana, CAB 1065" ;
+	dc:subject          "Épopées antiques", "Odyssée" ;
+	dc:title            "L'oudissèio d'Oumèro / revirado au prouvençau pèr Charloun Riéu"@fre ;
+	dc:type             "Monographie imprimée", "Text" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200498/omeka_items_show_3086> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200498/omeka_items_show_3086> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

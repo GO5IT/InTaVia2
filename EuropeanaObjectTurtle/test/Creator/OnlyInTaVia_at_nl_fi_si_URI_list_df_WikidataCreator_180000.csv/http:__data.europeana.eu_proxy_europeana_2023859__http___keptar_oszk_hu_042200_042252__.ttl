@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:40.537Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_042200_042252__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_042200_042252__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/042200/042252> ;
+	edm:object         <http://keptar.oszk.hu/042200/042252/officialillustra00hung_0100_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_042200_042252__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_042200_042252__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_042200_042252__> .
+
+<http://keptar.oszk.hu/042200/042252/officialillustra00hung_0100_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "5134"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:40.537Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_042200_042252__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_042200_042252__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:10:10.618Z" ;
+	dcterms:modified          "2015-09-14T11:56:52.860Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F042200%2F042252%2Fofficialillustra00hung_0100_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/042200/042252>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_042200_042252__/manifest> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_042200_042252__>
+	a                    ore:Proxy ;
+	dc:creator           "Telcs ,  Ede  ( szobrász )"@hu ;
+	dc:description       "Eredeti terracotta. Telcs Ede (1872-1948) szobrász. Bécsben végezte tanulmányait K. Zumbusch mellett. Kezdetben jellegzetes m. típusokat bemutató életképekkel szerepelt kiállításokon, majd architektonikus műveket, díszítőszobrokat mintázott (Zeneakadémia) és síremlékeket (Munkácsy, Barabás ) készített. Emlékművei közül kiválik a kecskeméti Kossuth-szobor, a telepesi Szilágyi Dezső-emlék, a Kallós Edével közösen készített bp.-i Vörösmarty-szobor (1908), Alpár Ignác szobra a Városligetben (1931), a Millenniumi emlékművön Szent László és III. Károly szobra (III. Károly szobrát kicserélték). 1928-ban gyűjteményes kiállítást rendezett az Ernst Múz.-ban. Számos plakettet is készített. Több hazai és nemzetközi kitüntetés birtokosa. Marcsa, Kis szégyenlős, Góliát c. műveit az MNG őrzi. Emlékkiállítása 1963-ban volt az MNG-ben. (Forrás: Magyar Életrajzi Lexikon)"@hu ;
+	dc:format            "JPEG képállomány \u000A         2288x3823 \u000A         fekete-fehér \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/042200/042252   [Metadata]" ;
+	dc:relation          "Damkó József: Nemzetes asszony [ http://keptar.oszk.hu/042200/042247]"@hu ;
+	dc:source            "OSZK MEK"@hu, "Internet Archive"@hu ;
+	dc:subject           "Ethnography, anthropology"@hu, "Fine arts, visual arts"@hu, "nő"@hu, "szobor"@hu, "emberábrázolás"@hu, "képzőművészeti alkotás"@hu ;
+	dc:title             "Kati néni"@hu ;
+	dc:type              "statue"@hu ;
+	dcterms:alternative  "Aunt Kate"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_042200_042252__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_042200_042252__> .

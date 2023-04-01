@@ -1,0 +1,102 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://imagebase.ubvu.vu.nl/getobj.php?ppn=322487668>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:06.209Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352758> .
+
+<http://data.europeana.eu/aggregation/europeana/9200249/BibliographicResource_3000051352758>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-04-02T13:32:34.259Z" ;
+	dcterms:modified          "2016-02-12T08:41:12.735Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758#metadataTier>, <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "9200249_Ag_EU_TEL_a1155_Amsterdam_UV_eCloud" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200249/BibliographicResource_3000051352758> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fimagebase.ubvu.vu.nl%2Fvu%2FgetThumb.php%3Fid%3Dprt%2F2291&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352758>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517529> ;
+	edm:isShownAt      <http://imagebase.ubvu.vu.nl/getobj.php?ppn=322487668> ;
+	edm:object         <http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=prt/2291> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:53:06.210Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352758> .
+
+<http://imagebase.ubvu.vu.nl/vu/getThumb.php?id=prt/2291>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "22862"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "599"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "455"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#EEE8AA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/9200249/BibliographicResource_3000051352758>
+	a                   ore:Proxy ;
+	dc:contributor      "Hodges, Charles Howard (Illustrator)" ;
+	dc:description      "Met 2 regelig onderschrift en handtekening J. Clarisse;; Ill.techniek: lithografie", "Jaar: 2009;; Opdrachtgever: Universiteitsbibliotheek Vrije Universiteit, Amsterdam;; Uitvoering: Karmac Microfilm Systems, Lelystad;; Locatie origineel: NL, Universiteitsbibliotheek Vrije Universiteit, PORTRET 2 CLA 004;; Fysieke gegevens: tiff-bestand;; Gedigitaliseerd: september 2009" ;
+	dc:format           "gedigitaliseerd portret ; 46x34 cm" ;
+	dc:identifier       "http://imagebase.ubvu.vu.nl/getobj.php?ppn=322487668" ;
+	dc:language         "ned" ;
+	dc:publisher        "Leiden : L. Springer" ;
+	dc:subject          "Johannes Clarisse 1770-1846 / Clarisse, Johannes", "1800-1850" ;
+	dc:title            "Johannes Clarisse (1770-1846)" ;
+	dc:type             "Afbeelding" ;
+	dcterms:isPartOf    "Beeldbank portretten", <http://data.theeuropeanlibrary.org/Collection/a1155> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200249/BibliographicResource_3000051352758> .
+
+<http://data.europeana.eu/proxy/europeana/9200249/BibliographicResource_3000051352758>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200249/BibliographicResource_3000051352758> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200249/BibliographicResource_3000051352758> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/organization/1482250000004517529>
+	a               foaf:Organization ;
+	skos:prefLabel  "VU University Amsterdam Library"@en .

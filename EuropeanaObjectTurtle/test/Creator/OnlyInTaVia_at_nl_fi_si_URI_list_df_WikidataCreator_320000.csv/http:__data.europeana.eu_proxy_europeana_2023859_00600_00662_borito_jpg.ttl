@@ -1,0 +1,109 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/00600_00662_borito_jpg>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T15:29:19.369Z" ;
+	dcterms:modified          "2015-09-14T11:17:56.111Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg#metadataTier>, <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg> ;
+	edm:completeness          "6" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/00600_00662_borito_jpg> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fmek.oszk.hu%2F00600%2F00662%2Fborito.jpg&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/00600_00662_borito_jpg#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:54.971Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/00600_00662_borito_jpg> .
+
+<http://mek.oszk.hu/00600/00662/borito.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/00600_00662_borito_jpg/manifest> ;
+	ebucore:fileByteSize    "3829"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "160"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "120"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF6347"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2691E"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FF4500"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/2023859/00600_00662_borito_jpg#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:54.971Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/00600_00662_borito_jpg> .
+
+<https://iiif.europeana.eu/presentation/2023859/00600_00662_borito_jpg/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/organization/1482250000007002200>
+	a               foaf:Organization ;
+	skos:prefLabel  "Országos Széchényi Könyvtár"@hu, "National Széchényi Library of Hungary"@en .
+
+<http://mek.oszk.hu/00600/00662>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "18431"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/00600_00662_borito_jpg>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/provider/2023859/00600_00662_borito_jpg>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000007002200> ;
+	edm:isShownAt      <http://mek.oszk.hu/00600/00662> ;
+	edm:isShownBy      <http://mek.oszk.hu/00600/00662/borito.jpg> ;
+	edm:object         <http://mek.oszk.hu/00600/00662/borito.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/00600_00662_borito_jpg>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/00600_00662_borito_jpg> .
+
+<http://data.europeana.eu/proxy/provider/2023859/00600_00662_borito_jpg>
+	a                   ore:Proxy ;
+	dc:creator          "Szabolcsi, József (digital editing made by)"@hu, "Ollé, Krisztián (digital editing made by)"@hu, "Drótos, László (electronic version made by)"@hu, "Gárdonyi, Géza (author)"@hu, "Kiss, András (digital editing made by)"@hu ;
+	dc:description      "Subject date: 19-20. sz."@hu ;
+	dc:format           "XML", "EPUB", "LIT", "PRC", "WORD 6.0", "PDF", "HTML", "TXT", "PV", "RTF" ;
+	dc:identifier       "MEK azonosító MEK-00662 [Metadata]", "URL http://nbn-resolving.de/?urn:nbn:hu-2661 [Metadata]" ;
+	dc:language         "hun"@hu ;
+	dc:relation         "Gárdonyi Géza: A láthatatlan ember [Rovásírással] [http://mek.oszk.hu/04100/04133/]"@hu, "Gárdonyi Géza: A láthatatlan ember [Dante, 1941] [http://mek.oszk.hu/09000/09081/]"@hu, "Gárdonyi Géza: Láthatatlan ember [Hangoskönyv] [http://mek.oszk.hu/11200/11242/]"@hu, "Gárdonyi Géza: Isten rabjai [http://mek.oszk.hu/00600/00661/]"@hu, "Gárdonyi Géza: Zéta [http://mek.oszk.hu/09100/09113/]"@hu, "Gárdonyi Géza: Hosszúhajú veszedelem [http://mek.oszk.hu/00600/00658/]"@hu, "Gárdonyi Géza: A láthatatlan ember [Magyar regényírók képes kiadása] [http://mek.oszk.hu/07700/07763/]"@hu, "A magyar irodalom arcképcsarnoka : Gárdonyi Géza [http://mek.oszk.hu/01100/01149/html/gardonyi.htm]"@hu ;
+	dc:source           "National Széchényi Library - Hungarian Electronic Library"@hu ;
+	dc:subject          "Culture, Arts, Literature"@hu, "magyar irodalom"@hu, "Literature, fiction, folktales"@hu ;
+	dc:title            "A láthatatlan ember: Történelmi regény"@hu ;
+	dc:type             "novel"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/00600_00662_borito_jpg> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/00600_00662_borito_jpg> .

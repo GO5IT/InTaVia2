@@ -1,0 +1,116 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88068391>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:53:35.175Z" ;
+	dcterms:modified          "2018-03-26T12:28:20.500Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k88068391> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k88068391.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88068391>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k88068391> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k88068391.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:30.085Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88068391> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88068391>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "253556"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k88068391>
+	a                   ore:Proxy ;
+	dc:creator          "Ulyate, Llyod (1927-2004). Trombone", "Pope, Gordon. Hautbois", "Decker, James (1921-2013). Cor", "Schaeffer, Ralph. Violon", "Craft, Robert (1923-2015). Direction d'orchestre", "Stein, Leonard (1916-2004). Piano", "Raimondi, Hugo. Clarinette", "Hollywood Studio orchestra. Interprète", "Remsen, Lester. Trompette", "Webern, Anton (1883-1945). Compositeur", "Figelski, Cecil. Alto (instrument)" ;
+	dc:date             "1961" ;
+	dc:description      "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Variations. Orchestre. Op. 30]", "Comprend : Pasacaglia op. 1 / Webern, comp. ; Hollywood Studio orchestra ; Robert Craft, dir. ; Six pieces for large orchestra op. 6 / Webern, comp. ; Hollywood Studio orchestra ; Robert Craft, dir. ; Five pieces for orchestra op. 10 / Webern, comp. ; un ensemble ; Robert Craft, dir. ; Symphony op. 21 / Webern, comp. ; Hollywood Studio orchestra ; Robert Craft, dir. ; Concerto op. 24 / Webern, conp. ; Arthur Gleghorn, fl. ; Gordon Pope, htb ; Hugo Raimondi, clar.... [et al.] ; Variations for orchestra op. 30 / Webern, comp. ; Hollywood Studio orchestra ; Robert Craft, dir. ; Orchestration of J. S. Bach \u0022Ricercar\u0022 / Webern, comp. ; Hollywood Studio orchestra ; Robert Craft, dir.", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Concertos. Orchestre de chambre. Op. 24]", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Passacailles. Orchestre. Op. 1]", "Contient une table des matières", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Orchestrations. Bach, Johann Sebastian. Musikalisches Opfer. BWV 1079. Ricercar a 6. Orchestre]", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Fünf Stücke für Orchester. Op. 10]", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Symphonies. Op. 21]", "Titre uniforme : Webern, Anton (1883-1945). Compositeur. [Sechs Stücke. Orchestre. Op. 6]", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "multipart/mixed", "1 disque : 33 t ; 30 cm", "disc"@eng, "disque microsillon"@fre, "Nombre total de vues :  23" ;
+	dc:identifier       "Numéro commercial : Philips  A01337 L", "http://gallica.bnf.fr/ark:/12148/bpt6k88068391" ;
+	dc:language         "Sans contenu linguistique" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37971990v"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-11394" ;
+	dc:subject          "musique instrumentale orchestrale", "musique contemporaine (depuis 1945)" ;
+	dc:title            "Passacaglia op. 1 ; Six pièces op. 6 / Anton Webern, comp. ; un Orchestre des studios de Hollywood ; Robert Craft, dir.. 5 pièces op. 10... [etc.] / Anton Webern, comp. ; un Ensemble de solistes ; Robert Craft, dir." ;
+	dc:type             "document sonore"@fre, "sound"@eng ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88068391> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k88068391>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k88068391> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k88068391/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k88068391.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3798"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k88068391#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:30.086Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k88068391> .

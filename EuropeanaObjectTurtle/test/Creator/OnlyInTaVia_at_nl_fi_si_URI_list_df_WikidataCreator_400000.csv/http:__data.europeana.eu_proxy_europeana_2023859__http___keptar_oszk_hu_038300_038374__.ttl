@@ -1,0 +1,104 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038374__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038374> ;
+	edm:object         <http://keptar.oszk.hu/038300/038374/1898_Oldal_096_a_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:49.671Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038374__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:49.671Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038374__> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://keptar.oszk.hu/038300/038374>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038374__/manifest> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038374__>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038374__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038374__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T17:00:06.908Z" ;
+	dcterms:modified          "2015-09-14T11:54:07.802Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038374%2F1898_Oldal_096_a_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038374__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://keptar.oszk.hu/038300/038374/1898_Oldal_096_a_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "15053"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038374__>
+	a                    ore:Proxy ;
+	dc:creator           "Styka ,  Jan  (painter)"@hu, "Vágó ,  Pál  (painter)"@hu, "Weinwurm ,  Antal  (photographer)"@hu, "Spányi ,  Béla  (painter)"@hu ;
+	dc:description       "Bem és Petőfi. Az új körkép. Jan Styka hálás a kitüntető érdeklődésért, melyben Kosciuszkóját két évvel ez előtt a magyar fővárosban részesítették. A nagyhatású lengyel körkép után magyar körképet festett, melynek tárgya szabadságharczunk egyik legfényesebb eseménye: Nagy-Szeben ostroma. A jeles képírót két indító ok vezérelte tárgyának megválasztásában. Nagy-Szeben ostroma tagadhatatlanul egyik legemlékezetesebb fegyverténye a magyar szabadságharcznak, aztán a függetlenségért folytatott küzdelmek egyik legnagyobb alakjának: Bem tábornoknak nevével áll szoros kapcsolatban, kit a lengyel nemzet büszkén vall magáénak. Jan Stykában, ki nemcsak jeles művész, hanem egyuttal igaz hazafi is, ekként a magyar nemzet iránt érzett meleg rokonszenv s az élénk hazafias érzés egyesült, hogy a legújabb körképet necsak érdekes látványossággá, hanem egyuttal értékes és tanulságos művészi alkotássá is tegye. Styka azok közé a művészek közé tartozik, a kik valósággal beleélik magokat tárgyukba, s addig nem fognak az alkotás nagy munkájához, mig minden legkisebb részletet gonddal és szeretettel át nem tanulmányoztak. A lengyel művész egész kis könyvtárt olvasott össze a magyar szabadságharczra vonatkozó munkákból; múzeumokban, ereklyetárakban fölkutatta az egykorú öltözékeket, fegyverzeteket; meghallgatta a nagy események még életben levő tanuit s kétszer is ellátogatott a helyszinére, hogy ottan gondos tanulmányokat tegyen, részletekre is kiterjeszkedő vázlatokat készítsen. Mikor aztán mindezekkel készen volt, munkatársaiul fölszólitotta az élénk előadásban jártas Margitay Tihamért, a ki azonban közbejött betegsége miatt rövid idő múlva kénytelen volt abbahagyni a munkát, továbbá a geniális Vágó Pált s újabb tájképfestészünk egyik mesterét: Spányi Bélát, hogy velük együtt megalkossa a nagymérvü körképet: Szeben ostromát. Styka egy évnél tovább valóságos kétlaki életet folytatott. Alig pihent meg lembergi otthonában, fiatal neje és gyermekei körében, már ismét Szebenben, Brassóban vagy Budapesten találtuk, mert nyugtalan természete és művészi ambicziója nem engedte, hogy mindaddig egy helyben maradjon, mig nagy föladatának minden részlete tisztán nem állott szemei előtt. Eleinte az volt a terve, hogy Budapesten fogja festeni a képet; de aztán családi körülményei miatt abban állapodott meg magyar barátaival, hogy ezek menjenek ő hozzá Lembergbe s ott dolgozzanak. Hónapokon át vidáman, lelkesedéssel folyt a munka, s hogy ez a körkép az igazi inspiráczió alkotása: meglátszik az óriási vászon minden kis foltján. Styka, Vágó és Spányi egész lelküket adták oda, hogy a hazafias lelkesedés tüzét sugárzó, maradandó értékkel bíró művet teremthessenek. Napokig gyönyörködtem a lelkes munkában, s most, midőn itt Budapesten újra előttem áll a nagy alkotás, újra fölelevenülnek lelkemben a Lembergben támadt érzelmek. Bem és Petőfi nem egyszerű, pillanatnyi hatásra számított panoráma, hanem egyike a legszebb modern históriai festményeknek. A körkép késő délutáni világításban mutatja az oroszok által elfoglalt s Bem ostromló csapatjai által körülvett Nagy-Szebent. A város német stylben épített házai és tornyai a füstfelhővel borított vöröses ég hátteréből bontakoznak ki. Egyes helyeken már pusztít a magyar bombák által élesztett tűz, s füstje sűrű fátyolként borúl a látóhatárt szegélyező magas hegyekre. A legélénkebb összeütközés szintere a alatt látható kőhíd, melyen az orosz katonasággal a Bem által annyira kedvelt székely fiúk már véres tusára keltek. Roszúl ruházott, fegyverben szükölködő csapat ez, de minden egyes tagja oroszlánként küzd, s hogy a küzdelem vége csak diadal lehet: azt a derék fiúk arczáról és lelkes mozdulatairól egyaránt leolvashatjuk. Az összegabalyodás annyira természetes, hogy a fegyverek csattogását és a hangok zürzavarát is hallani véljük Bem táborkarával a hídhoz vezető országútról nézi az elkeseredett küzdelmet. Szürke katona-köpenyben, lován előre hajolva gyönyörködik az ő &#171;kedves gyermekeinek&#187; vitézségében. Mellette a parancsaira várakozó trombitás, háta mögött pedig, az ütközet lefolyásába egészen elmerülve, táborkari főnöke, Czetz János ezredes áll. A nagy bravourral festett csoportban, a két főalakon kivűl még Zubrzyczki kapitányon, b. Keményen, Dobay őrnagyon és Bem hadseregének fáradhatatlan futárján, gr. Teleki Sándoron akad meg a tekintetünk. A táborkar mögött különböző fegyverzetü tisztek állanak, köztük egy uhlanus is fehér-vörös zászlócskájával. Még az isten szolgájának sem szabad hiányoznia: a megsebzett katona mellett ott ül egy parasztszekéren, s nagy érdeklődéssel nézi a véres küzdelmet. Föl van jegyezve, hogy a bátor tábori papot Erdősy Rafaelnek hitták. A háttérben még egy másik zöldre festett kocsi is látható: a Bem kocsija, mely őt hosszabb utain mindig kisérte. A kocsis népies öltözetében élénken válik ki a katonák csoportjából. A táborkartól balra a szabadságharcz Tyrt&#230;usát: Petőfi Sándort látjuk fehér lovon. A költő előre lovagolt, hogy gr. Bethlent s a vörös sapkásokat üdvözölje, kiket már régóta és türelmetlenül vár az ostromló had. A költő tekintetéből lelkesedés sugárzik, a mint tollas kalapját az érkezők üdvözlésére megemeli. Petőfi ebben a pillanatban nem az ábrándos költő hanem a világszabadság lelkes dalnoka és apostola. Bem környezete mögött hosszú vonalban az élelmet szállító szekerek sorakoznak. Az első szekér mellett egy öreg székely áll, imádkozásba mélyedve. Szemeit a hídra függeszti, talán épen fiát keresve, ki szintén ott van a bátor fölkelők között. A szekér mögött csoportosulnak a foglyok is, a kik fölött huszárok és honvédek vegyest őrködnek. Kiválik közülök egy dragonyos tiszt, ki látható érdeklődéssel nézi az ütközet lefolyását. Egy orosz tiszt, különböző hadtestekhez tartozó sebesültek s a ravasz arczú hivatalszolga egészítik ki a csoportozatot. Nehány lépéssel távolabb pipájára gyujtó csikóst, majd czigányokat látunk, kik szintén megjelentek, hogy tüzes zenéjökkel a harczosok lelkesedését éleszszék. Előttük, szemeit Petőfin legeltetve, egy szép fiatal czigányleány lépdel. A festői csoportozatra utolsó sugarait löveli a lemenő nap. A síkság és a távoli hegyek már a félhomály borongásában látszanak. Itt-ott azonban még kivehetők a huszárezredek, a mint az ostromlók segítségére sietnek. A körkép másik oldalán, melyet a Krumbach folyócska választ el a nézőktől szintén elkeseredett a küzdelem. Itt egy honvéd-hadosztály lepte meg és verte ki pozicziójából az ellenséges gyalogságot. Vezetőjük Dzwonkowsky, a vitéz őrnagy. Az orosz üteg már felhagyott a tüzeléssel s az a veszély fenyegeti, hogy a villámgyorsasággal közelgő magyar huszárok elérik és körülövezik. Az orosz katonaság futásnak eredt, a legények fejöket vesztve keresnek menedéket. A gróf Bethlen vezetése alatt érkező vörössapkásoknak már könnyü dolguk lesz a szétszórt és eszeveszetten futó kozákokkal. Ezt a mozgalmas jelenetet meglepő igazsággal és költőiséggel festette meg Vágó Pál. Az érdemes művész tehetsége rég óta nem nyilatkozott meg annyi tűzzel és erővel, mint ezen a hatalmas csataképen. Az élet lüktetését érezzük mindenütt; a festett kép nem egy helyen a valóság teljes hatását gyakorolja reánk. S hogy a csalódás teljes legyen: Spányi Béla költői kedélyének teljes mélységét művészetének egész hatalmával tudta éreztetni a tájképrészletek megfestésében. A távol ködében kéklő hegyek, a lemenő nap sugaraitól megaranyozott kopár sikság, az ostromlott városból fölemelkedő füstgomolylyal összekeveredett fellegek, az itt-ott hólepel alatt pihenő szántóföld, s a helylyel-közzel még jégburok alatt folydogáló víz, mind arra szolgálnak, hogy hangulatunkat emeljék és ámuló szemeink előtt a való látszatát idézzék föl. A hatalmas csataképhez szebb keret alig képzelhető, mint a Spányi Béla által festett tájkép. Nézem, nézem a remek csataképet s nem győzök eltelni szemlélésével. Nem tudom, mit csodáljak inkább, Bemet-e, a magyar szabadságharcz legendai hősét, ki csak akkor érezte jól magát, ha a csaták tüzében foroghatott; vagy azokat a névtelen félisteneket, kik minden félelem nélkül, vidáman rohantak a legnagyobb veszedelmekbe, mert ott élt szivük mélyén a kötelességérzet s a hazának szent szeretete. (Szana Tamás.) (Forrás: Vasárnapi Ujság, 1898. márczius 13.) A Tarnówi Körzeti Múzeum keresi a magyar szabadságharc ötvenedik évfordulóján, 1898-ban Budapesten kiállított Bem-Petőfi Körkép / Erdélyi Panoráma fennmaradt darabjait. Az ópusztaszeri Feszty-körképhez hasonló óriási (120 méter hosszú, 15 méter magas) festményt az idő folyamán több, önálló motívumokon alapuló kisebb képre vágták. A tarnówi múzeumnak évtizedeken át tartó kutatómunkája során mostanra a körkép 24 részletét sikerült fellelnie, s 10 részlettel rendelkezik saját gyűjteményében. Ezekből látható most egy szép válogatás a Budapesti Történeti Múzeum &#8222;Ilyen tavasz csak egy volt életemben&#8221; c. kiállítás különlegességeként. Bízunk benne, hogy a festmények budapesti bemutatásának hírére Magyarországon is felbukkannak a panoráma további, elveszettnek hitt részei. A Lengyel Intézet honlapján (www.lengyelintezet.hu) megtekinthetők az eddig megtalált festményrészletek, illetve a teljes panoráma korabeli fotófelvétele, ami megkönnyítit az elveszett részek azonosítását. Az Erdélyi Panoráma az 1849. március 11-én vívott nagyszebeni csatát ábrázolja, ahol Bem József lengyel tábornok vezetésével a magyar honvédsereg fényes győzelmet aratott az egyesült osztrák és orosz haderő felett. A hatalmas méretű vásznat lengyel és magyar festők készítették 1897-ben a magyar kormány felkérésére a lengyel Jan Styka vezetésével, olyan neves magyar művészek közreműködésével, mint Vágó Pál, a csatajelenetek kitűnő festője, Spányi Béla, a neves tájképfestő és Margitay Tihamér. ... (Forrás: polinst.hu)"@hu ;
+	dc:format            "JPEG képállomány \u000A         1593x1157 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier        "DKA-ID  http://keptar.oszk.hu/038300/038374   [Metadata]" ;
+	dc:relation          "A Bem-Petőfi Körkép (1898) részletei [ http://polinst.hu/en/node/7979]"@hu, "A Bem-Petőfi Körkép (1898) egy részlete [ http://polinst.hu/regi/hu/polinst.hu/pliki/erdelyi_panorama_teljes_04.JPG]"@hu, "Wikipédia: Bem József [ http://hu.wikipedia.org/wiki/Bem_J%C3%B3zsef]"@hu, "Wikipedia: Transylvania Panorama [ http://en.wikipedia.org/wiki/Transylvania_Panorama]"@hu ;
+	dc:source            "OSZK EPA"@hu ;
+	dc:subject           "1848/49-es forradalom és szabadságharc"@hu, "csatakép"@hu, "Fine arts, visual arts"@hu, "vezérkar"@hu, "History, local history"@hu, "katonatiszt"@hu, "Bem József (1794-1850)"@hu, "csoportkép"@hu ;
+	dc:title             "Bem táborkarával"@hu ;
+	dc:type              "újságrészlet"@hu, "photograph"@hu, "painting"@hu ;
+	dcterms:alternative  "A \u0022Bem és Petőfi\u0022 czímű új körképből"@hu ;
+	edm:europeanaProxy   "false" ;
+	edm:type             "IMAGE" ;
+	ore:proxyFor         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038374__> ;
+	ore:proxyIn          <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038374__> .

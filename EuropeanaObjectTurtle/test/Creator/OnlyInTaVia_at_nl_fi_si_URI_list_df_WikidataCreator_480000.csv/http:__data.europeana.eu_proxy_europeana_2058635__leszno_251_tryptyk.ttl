@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/2058635/_leszno_251_tryptyk>
+	a                  ore:Aggregation ;
+	dc:rights          "Muzeum Okręgowe w Lesznie" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004510573> ;
+	edm:isShownAt      <http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/251/tryptyk.html> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671137> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004510573>
+	a               foaf:Organization ;
+	skos:prefLabel  "Muzeum Okręgowe w Lesznie"@pl, "District Museum in Leszno"@en .
+
+<http://data.europeana.eu/proxy/europeana/2058635/_leszno_251_tryptyk>
+	a                   ore:Proxy ;
+	dc:creator          <http://data.europeana.eu/agent/47434> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1912" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2058635/_leszno_251_tryptyk> .
+
+<http://data.europeana.eu/agent/47434>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/106> ;
+	owl:sameAs           <http://vocab.getty.edu/ulan/500120462>, <http://viaf.org/viaf/40595099>, <https://www.freebase.com/m/0jk_fc9>, <http://www.idref.fr/156000830/id>, <http://id.worldcat.org/fast/375928>, <http://www.wikidata.org/entity/Q554266>, <http://datos.bne.es/resource/XX1376208>, <https://g.co/kg/m/0jk_fc9>, <http://dbpedia.org/resource/Kazimierz_Sichulski>, <http://id.loc.gov/authorities/names/nr96018642>, <http://d-nb.info/gnd/135612411> ;
+	rdaGr2:dateOfBirth   "1879-01-17" ;
+	rdaGr2:dateOfDeath   "1942-11-06" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/15754> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/15754> ;
+	skos:altLabel        "Casimir Sichulski"@en, "Sichulski"@de ;
+	skos:note            "Pintor polaco"@es, "Pools kunstschilder (1879-1942)"@nl, "Poola maalikunstnik"@et, "Polish painter (1879-1942)"@en, "Pictor polonez"@ro, "Peintre polonais"@fr, "Polnischer Maler und Zeichner"@de, "Pintor polonès"@ca, "Péintéir Polannach"@ga, "Polski malarz"@pl ;
+	skos:prefLabel       "Kazimierz Sichulski"@es, "Kazimierz Sichulski"@de, "Kazimierz Sichulski"@sv, "Kazimierz Sichulski"@pt, "Kazimierz Sichulski"@en, "Kazimierz Sichulski"@it, "Kazimierz Sichulski"@fr, "Kazimierz Sichulski"@sl, "Kazimierz Sichulski"@ga, "Kazimierz Sichulski"@pl, "Kazimierz Sichulski"@da, "Kazimierz Sichulski"@ca, "Kazimierz Sichulski"@nl, "Καζίμιες Σιχούλσκι"@el, "Сихульский, Казимир"@ru .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/2058635/_leszno_251_tryptyk>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2058635/_leszno_251_tryptyk>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-15T15:42:49.538Z" ;
+	dcterms:modified          "2016-02-22T14:36:34.203Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk#metadataTier>, <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk> ;
+	edm:completeness          "0" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "2058635_Ag_EU_LoCloud_PSNC" ;
+	edm:landingPage           <https://www.europeana.eu/item/2058635/_leszno_251_tryptyk> ;
+	edm:language              "pl" .
+
+<http://muzeumleszno.pl/imuzeum/collection/externalLink/oai/251/tryptyk.html>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "46744"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671137>
+	a               foaf:Organization ;
+	skos:prefLabel  "LoCloud"@en .
+
+<http://data.europeana.eu/item/2058635/_leszno_251_tryptyk#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:17.443Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_251_tryptyk> .
+
+<http://data.europeana.eu/item/2058635/_leszno_251_tryptyk#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T02:46:17.442Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2058635/_leszno_251_tryptyk> .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/provider/2058635/_leszno_251_tryptyk>
+	a                   ore:Proxy ;
+	dc:coverage         "1912,             Polska (51.610298, 16.962908)," ;
+	dc:creator          "Kazimierz Sichulski" ;
+	dc:date             "1912" ;
+	dc:description      "Sichulski uległ fascynacji Huculszczyzną, kiedy to na przełomie 1904 - 1905 odbył wspólnie z Władysławem Jarockim i Fryderykiem Pautschem podróż na obecne pogranicze ukraińsko-rumuńsko-węgierskie." ;
+	dc:language         "pl" ;
+	dc:rights           "Muzeum Okręgowe w Lesznie" ;
+	dc:subject          "Autor: Kazimierz Sichulski;  Państwo: Polska;  Czas powstania: 1912;  Technika/materiał: pastel, tektura;  Temat: adoracja Chrystusa;  Przedstawione postaci: Hucułka, Chrystus Wymiary: wys. 116 cm, szer. 234 cm;  Numer inwentarza: ML295" ;
+	dc:title            "Tryptyk" ;
+	dc:type             "tematyka religijna", "obraz" ;
+	dcterms:spatial     "Polska (51.610298, 16.962908)," ;
+	dcterms:temporal    "1912" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2058635/_leszno_251_tryptyk> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2058635/_leszno_251_tryptyk> .

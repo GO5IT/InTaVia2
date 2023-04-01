@@ -1,0 +1,103 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://dokbase.digicult-museen.net/eingabe/bilder/data/mitte/18/1988-81.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "12317"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "226"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#B8860B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DAA520"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81>
+	a  edm:ProvidedCHO .
+
+<http://www.museen-nord.de/Objekt/DE-MUS-076017/lido/1988-81>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "15363"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2023865/Objekt_DE_MUS_076017_lido_1988_81>
+	a                   ore:Proxy ;
+	dc:contributor      "Hoover, Nan (Künstler)", "Electronic Arts Intermix (Hersteller)" ;
+	dc:date             "1985/1986 []"@de ;
+	dc:description      "Aufbewahrung/Standort: Kunsthalle zu Kiel Kiel"@de ;
+	dc:identifier       "Inventarnummer 1988-81"@de ;
+	dc:source           "digiCULT-Verbund eG"@de ;
+	dc:subject          "Natura"@de ;
+	dc:title            "Flora"@de ;
+	dc:type             "Neue Medien / Video"@de, "Video"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023865/Objekt_DE_MUS_076017_lido_1988_81> .
+
+<http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:14:59.451Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023865/Objekt_DE_MUS_076017_lido_1988_81> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023865/Objekt_DE_MUS_076017_lido_1988_81>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-18T08:21:23.605Z" ;
+	dcterms:modified          "2016-07-29T11:08:26.836Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81#metadataTier>, <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81> ;
+	edm:completeness          "6" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "2023865_AG-EU_LinkedHeritage_DigiCult_eG" ;
+	edm:isShownBy             <http://dokbase.digicult-museen.net/eingabe/bilder/data/mitte/18/1988-81.jpg> ;
+	edm:landingPage           <https://www.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdokbase.digicult-museen.net%2Feingabe%2Fbilder%2Fdata%2Fmitte%2F18%2F1988-81.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> ;
+	ore:aggregates            <http://www.museen-nord.de/Objekt/DE-MUS-076017/lido/1988-81> .
+
+<http://data.europeana.eu/organization/1482250000004507753>
+	a               foaf:Organization ;
+	skos:prefLabel  "Kunsthalle zu Kiel"@nl, "Kunsthalle. Kiel, Allemagne"@fr, "Galleria d'arte di Kiel"@it, "Kunsthalle Kiel"@en, "Кунстхалле, Киль"@ru, "Kunsthalle Kiel"@sv, "Kunsthalle zu Kiel"@de .
+
+<http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:14:59.450Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023865/Objekt_DE_MUS_076017_lido_1988_81> .
+
+<http://data.europeana.eu/proxy/europeana/2023865/Objekt_DE_MUS_076017_lido_1988_81>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023865/Objekt_DE_MUS_076017_lido_1988_81> .
+
+<http://data.europeana.eu/aggregation/provider/2023865/Objekt_DE_MUS_076017_lido_1988_81>
+	a                  ore:Aggregation ;
+	dc:rights          "Kunsthalle zu Kiel [digitales Bild]", "Hoover, Nan" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023865/Objekt_DE_MUS_076017_lido_1988_81> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004507753> ;
+	edm:isShownAt      <http://www.museen-nord.de/Objekt/DE-MUS-076017/lido/1988-81> ;
+	edm:object         <http://dokbase.digicult-museen.net/eingabe/bilder/data/mitte/18/1988-81.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

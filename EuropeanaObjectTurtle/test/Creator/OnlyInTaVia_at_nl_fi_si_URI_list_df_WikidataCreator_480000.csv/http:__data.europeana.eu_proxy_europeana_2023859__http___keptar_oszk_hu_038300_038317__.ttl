@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_038300_038317__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/227> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038317__> .
+
+<http://keptar.oszk.hu/038300/038317>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038317__/manifest> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:45.776Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038317__> .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038317__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/038300/038317> ;
+	edm:object         <http://keptar.oszk.hu/038300/038317/1898_Oldal_074_c_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://keptar.oszk.hu/038300/038317/1898_Oldal_074_c_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "11993"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_038300_038317__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_038300_038317__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:59:44.020Z" ;
+	dcterms:modified          "2015-09-14T11:54:05.224Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F038300%2F038317%2F1898_Oldal_074_c_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_038300_038317__>
+	a                   ore:Proxy ;
+	dc:creator          "Lotz ,  Károly  (painter)"@hu ;
+	dc:description      "Első nagy történelmi falképsorozata, egyszersmind első állami megbízatása a Nemzeti Múzeumban még a Rahl-iskola stílusában készült. Than Mórral dolgozták fel, frízszerű folyamatossággal, a magyarok történetét a bécsi Arzenál közvetlen tapasztalatai, valamint a berlini Neues Museum és a müncheni Neue Pinakothek W. von Kaulbach-freskóinak példája nyomán. Az első nagy rész Lotz Károlyé. Szoborszerű alakok, reliefszerű, tömör csoportfűzés, a drapériák szobrászi hangsúlyozása, öblös formák, mély és súlyos színek jellemzik az 1868-ban bemutatott és magyarázott, az 1873-as bécsi világkiállításon is szerepelt kartonok feldolgozásait (1876). A múzeum funkciójának akkori értelmezése (a nemzet történetének múzeuma) szerint a nemzet történelmét állítják elénk képekben \u0022Attilától, isten ostorától kezdve Deák Ferencig, a béke apostoláig\u0022, illusztratív bevezetőként a gyűjtemények tárgyi anyagához. Céljuk azonban \u0022különösen a magyar szellemi műveltség régibb vagy újabb látható nyomait és műveit gyűjteni, fenntartani, s általuk a jelenlegi s későbbi nemzedékek további képzésére hatni\u0022, ami ugyancsak a múzeum funkciójával egyezett. Pozitivista és romantikus történelemszemlélet keveredik a képsorban (A hunok kijövetele Ázsiából, A magyarok az őshazában hallgatják a táltos regéit Attila birodalmáról, A magyarok indulása az új hazába, A magyarok megérkezése az új hazába, Az ősök vérszerződése, Az alpári csata, Árpád a legyőzött fejedelmek hódolatát fogadja, Ősmagyarok áldozása, A kereszténység első hirdetése), melyben az életképszerűtől a csataképig és művelődéstörténeti képig különböző kompozíciós típusok tanulságait használta fel a festő. Már a kiegyezés után Eötvös József, Kaulbach barátja újította fel a Nemzeti Múzeum kifestésének gondolatát, \u0022a történet szellemét és irányeszméit\u0022 kifejező falképek igényét. Az eszmeiség sűrítést kívánt, így allegorikus alakok jelképezik a helyszíneket (Ázsia, Duna, Tisza), a különböző ősi foglalkozásokat. Ezzel összhangban az előcsarnok kupoláján már önálló allegorikus kompozíciók jelenítik meg a magyar történelem vezéreszméit. Stilárisan közel állnak e műhöz a Markó utcai gimnázium dísztermének vászonra festett falképei (Homéroszt ünnepli a görög nemzet, Hektor búcsúzik feleségétől, 1876), az allegóriák önállósulása felé pedig az Egyetemi Könyvtár I. emeleti olvasótermének művészeteket és művészeti ágakat megszemélyesítő alakjai (1876). Történelmi falképein Lotz a historizáló akadémizmus képviselőjének mutatkozik. A korképek az épület rendeltetésének s a kor eszmeiségének megfelelően a magyar művelődéstörténet nagy időszakait reprezentálják, jeles személyek felvonultatásával, csoportosításával. ... (Forrás: mmi.elte.hu/szabadbolcseszet)"@hu ;
+	dc:format           "JPEG képállomány \u000A         798x359 \u000A         200 \u000A         szürke \u000A         24 \u000A         erősen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/038300/038317   [Metadata]" ;
+	dc:relation         "Lotz Károly: Szent István, Kálmán és Nagy Lajos kora [ http://keptar.oszk.hu/025800/025863]"@hu, "Basics Beatrix: A múzeum falképei [ http://mek.oszk.hu/04100/04108/html/szuletes.htm#1]"@hu, "Lotz Károly [ http://mmi.elte.hu/szabadbolcseszet/index.php?option=com_tanelem&id_tanelem=678&tip=0]"@hu, "Wikipédia: Lotz Károly [ http://hu.wikipedia.org/wiki/Lotz_K%C3%A1roly]"@hu ;
+	dc:source           "OSZK EPA"@hu ;
+	dc:subject          "allegorikus ábrázolás"@hu, "Fine arts, visual arts"@hu, "freskó"@hu, "történelmi személy"@hu, "falfestmény"@hu, "historizmus"@hu, "történelmi festmény"@hu, "történelmi korszak"@hu, "uralkodó"@hu ;
+	dc:title            "Árpád a legyőzött fejedelmek hódolatát fogadja"@hu ;
+	dc:type             "újságrészlet"@hu, "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038317__> .
+
+<http://data.europeana.eu/concept/227>
+	a                skos:Concept ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q134194>, <http://vocab.getty.edu/aat/300053357>, <http://id.ndl.go.jp/auth/ndlna/00563760>, <https://www.freebase.com/m/02_3k>, <https://g.co/kg/m/02_3k>, <http://www.yso.fi/onto/yso/p1483>, <https://d-nb.info/gnd/4071463-9>, <http://babelnet.org/rdf/s00036480n>, <http://purl.org/bncf/tid/15765> ;
+	skos:note        "Seinamaali tehnika"@et, "Tecnica pittorica"@it, "Maalaustekniikka"@fi, "Technika nástennej maľby zhotovovaná na vlhkej omietke"@sk, "Técnica pictórica de pintura mural"@es, "Tehnică de pictură murală"@ro, "Muralmålning på färsk, ännu fuktig kalkputs"@sv, "Technique particulière de peinture murale dont la réalisation s'opère sur un enduit, avant qu'il ne soit sec"@fr, "Schildertechniek"@nl, "Technique of mural painting executed upon freshly laid lime plaster"@en, "Wandmalereitechnik insbesondere auf frischem Kalkputz"@de, "Malingsteknik"@da, "Technika malarska"@pl, "Tècnica pictòrica de pintura mural"@ca ;
+	skos:prefLabel   "Freska"@hr, "Freska"@sk, "Freska"@sl, "Freska"@cs, "Fresko"@de, "Fresko"@et, "Fresko"@eu, "Fresko"@da, "Al fresco"@sv, "Fresco painting"@en, "Fresco"@pt, "Fresco"@es, "Pintura al fresc"@ca, "Freskomaalaus"@fi, "Fresk"@pl, "Affresco"@it, "Frescoschildertechniek"@nl, "Frescă"@ro, "Стенопис"@bg, "Freascó"@ga, "Νωπογραφία"@el, "Freskó"@hu, "Фреска"@ru, "Fresque"@fr, "Freska"@lt, "Freska"@lv .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_038300_038317__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:45.776Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_038300_038317__> .

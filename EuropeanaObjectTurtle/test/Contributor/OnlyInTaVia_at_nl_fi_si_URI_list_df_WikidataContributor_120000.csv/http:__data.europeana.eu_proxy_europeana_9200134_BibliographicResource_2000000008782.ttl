@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004516221>
+	a               foaf:Organization ;
+	skos:prefLabel  "University of Leuven"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008782>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004516221> ;
+	edm:isShownAt      <http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1067263> ;
+	edm:object         <http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1067263> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200134/BibliographicResource_2000000008782>
+	a                   ore:Proxy ;
+	dc:contributor      "Leonardus Temminck", "Jan Kobell", "Cornelis de Gijselaar" ;
+	dc:date             "s.d.", "17--? - 18--?" ;
+	dc:identifier       "008322483" ;
+	dc:language         "la" ;
+	dc:subject          "Portretten", "Portraits" ;
+	dc:title            "Mr. Cornelis de Gyselaar" ;
+	dc:type             "Still image"@en, "Monograph"@en ;
+	dcterms:extent      "voorstelling met opschrift: 96 x 73 mm", "Black-and-white ;", "voorstelling: 78 x 64 mm", "plaatrand: 167 x 145 mm." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1036> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008782> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/agent/41665>
+	a                    edm:Agent ;
+	edm:isRelatedTo      <http://data.europeana.eu/agent/41663> ;
+	owl:sameAs           <http://d-nb.info/gnd/136090516>, <https://www.freebase.com/m/0glqmzl>, <http://data.bibliotheken.nl/id/thes/p317541528>, <http://www.wikidata.org/entity/Q2536034>, <https://g.co/kg/m/0glqmzl>, <http://dbpedia.org/resource/Jan_Kobell>, <http://viaf.org/viaf/80493934>, <http://vocab.getty.edu/ulan/500011340> ;
+	rdaGr2:dateOfBirth   "1779-01-01" ;
+	rdaGr2:dateOfDeath   "1814-09-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/40838> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40964> ;
+	skos:altLabel        "Jan Kobell II"@nl, "Jan Kobell the Elder"@en, "Johann Kobell"@en, "Johannes Kobell"@en, "Jan Baptist Kobell II"@en, "Jan (II) Kobell"@en, "Jan II Kobell"@en, "Jan Kobell (II)"@nl, "Jan Kobell (II)"@en, "Jan kobell der altere"@en, "Jan, II Kobell"@en, "Baptist Kobell"@en, "Jan Baptist Kobell (II)"@nl, "Jan Baptist Kobell"@nl, "Jan Baptist Kobell (II)"@en, "J: Kobell"@en, "Jan Baptist Kobell"@en, "Feu Kobel"@en, "Johan Kobell II"@en, "Cobel"@en, "Jean Kobell"@en, "Johannes II Kobell"@en, "Johannes Baptist Kobell"@en, "Jan kobell"@en, "J. H. Kobell"@en, "Cobell"@en, "Peintre hollandais Feu Kobel"@en, "Jan kobell d. ae."@en, "Feu Kobell"@en, "Jan de Kobell"@en, "Jan Kobell"@en, "Kobell"@en, "Jan kobell d. a."@en, "Jan Kobell d. Ae."@en, "J. kobell"@en, "Jan, the younger Kobell"@en, "Jan kobell d.a."@en, "Jan Baptist, II Kobell"@en, "Jan Kobell (II) (Baptist)"@nl, "J. Kobell"@en ;
+	skos:note            "Hollandi maalikunstnik"@et, "Pintor neerlandês"@pt, "Peintre néerlandais"@fr, "Pictor olandez"@ro, "Dutch painter (1779-1814)"@en, "Nederlands kunstschilder (1779-1814)"@nl, "Pintor neerlandés"@es, "Pintor neerlandès"@ca, "Pittore neerlandese"@it ;
+	skos:prefLabel       "Jan Kobell II"@sl, "Jan Kobell II"@en, "Jan Kobell"@sv, "Jan Kobell"@fr, "Jan Kobell"@ca, "Jan Kobell"@nl, "Jan Kobell"@es, "Jan Kobell"@da, "Jan Kobell"@de, "Кобел, Ян II"@ru, "Johannes Baptist Kobell"@it, "Jan, II Kobell"@pt .
+
+<http://resolver.lias.be/get_pid?view&usagetype=VIEW_MAIN,VIEW&pid=1067263>
+	a           edm:WebResource ;
+	edm:rights  <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:25.641Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008782> .
+
+<http://resolver.lias.be/get_pid?stream&usagetype=THUMBNAIL&pid=1067263>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7471"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "226"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5DC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000008782>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-05-27T12:53:59.097Z" ;
+	dcterms:modified          "2014-05-27T12:53:59.097Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782#metadataTier>, <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782> ;
+	edm:completeness          "5" ;
+	edm:country               "Belgium" ;
+	edm:datasetName           "9200134_Ag_EU_TEL_UniversityofLeuven" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200134/BibliographicResource_2000000008782> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.lias.be%2Fget_pid%3Fstream%26usagetype%3DTHUMBNAIL%26pid%3D1067263&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:51:25.641Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200134/BibliographicResource_2000000008782> .
+
+<http://data.europeana.eu/proxy/europeana/9200134/BibliographicResource_2000000008782>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/41665> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200134/BibliographicResource_2000000008782> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200134/BibliographicResource_2000000008782> .

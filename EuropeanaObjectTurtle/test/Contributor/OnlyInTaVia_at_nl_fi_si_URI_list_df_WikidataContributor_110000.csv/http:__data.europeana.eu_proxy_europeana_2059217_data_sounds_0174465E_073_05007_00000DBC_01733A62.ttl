@@ -1,0 +1,111 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/0174465E-073-05007-00000DBC-01733A62" ;
+	dc:language         "deu" ;
+	dcterms:spatial     <http://data.europeana.eu/place/73> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1912" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62>
+	a  edm:ProvidedCHO .
+
+<http://www.mediathek.at/atom/0174465E-073-05007-00000DBC-01733A62>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62>
+	a                   ore:Proxy ;
+	dc:contributor      "Odeon [Label]", "Bosetti, Hermine [Sopran]" ;
+	dc:coverage         "20. Jahrhundert - 10er Jahre" ;
+	dc:creator          "Beethoven, Ludwig van [Komponist/in]" ;
+	dc:date             "1912" ;
+	dc:format           "Schallplatte, Schellack, Mp3-Audiodatei" ;
+	dc:identifier       "0174465E-073-05007-00000DBC-01733A62" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          "Vokalmusik - Oper"@de, <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, "Publizierte und vervielfältigte Aufnahme"@de, "Musik ; E-Musik"@de ;
+	dc:title            "O wär ich schon mit dir vereint"@de, "Fidelio"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.mediathek.at/virtuelles-museum/mahler> ;
+	dcterms:spatial     "Österreich"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:47:07.159601Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T13:58:10.166Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62#contentTier>, <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> ;
+	edm:language              "de" .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/0174465E-073-05007-00000DBC-01733A62> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/place/73>
+	a               edm:Place ;
+	owl:sameAs      <http://data.bnf.fr/ark:/12148/cb152383744>, <http://babelnet.org/rdf/s00007266n>, <https://g.co/kg/m/0h7x>, <http://zbw.eu/stw/descriptor/16950-4>, <http://vocab.getty.edu/tgn/1000062>, <http://id.ndl.go.jp/auth/ndlna/00568970>, <http://www.wikidata.org/entity/Q40>, <http://id.nlm.nih.gov/mesh/Z01.542.088>, <http://vocabularies.unesco.org/thesaurus/concept890>, <http://www.idref.fr/026359863/id>, <http://id.loc.gov/authorities/names/n79040121>, <https://www.freebase.com/m/0h7x>, <http://id.nlm.nih.gov/mesh/D001317>, <http://data.bnf.fr/ark:/12148/cb11862316m>, <http://www.yso.fi/onto/ysa/Y105294>, <http://datos.bne.es/resource/XX450936>, <http://dbpedia.org/resource/Austria>, <https://sws.geonames.org/2782113/>, <http://viaf.org/viaf/148842731>, <http://www.yso.fi/onto/yso/p105294>, <https://d-nb.info/gnd/4043271-3>, <http://id.worldcat.org/fast/1204901> ;
+	skos:altLabel   "La République d’Autriche"@fr, "Segona República d'Àustria"@ca, "Република Австрия"@bg, "República de Austria"@es, "Republic of Austria"@en, "Österreich"@hr, "Österreich"@en, "República da Áustria"@pt, "Österreich"@sv, "Österreich"@ru, "Δημοκρατία της Αυστρίας"@el, "Republika Austrija"@hr, "Republiek Oostenrijk"@nl, "República Federal d'Àustria"@ca, "Aut."@fr, "Autr."@fr, "Австрийская Республика"@ru, "Republica de Austria"@es, "Ostalriche"@ca, "Republik Österreich"@es, "Republik Österreich"@en, "Republik Österreich"@de, "Austria Vabariik"@et, "Itävallan tasavalta"@fi, "Repubblika tal-Awstrija"@mt, "RÖ"@es, "RÖ"@de, "Rakúska republika"@sk, "AUT"@nl, "AUT"@es, "AUT"@fr, "AUT"@en, "AUT"@de, "Республика Австрия"@ru, "República d'Àustria"@ca, "Austria"@ca, "Republika Austrii"@pl, "AT"@nl, "AT"@es, "AT"@fr, "AT"@en, "AT"@de ;
+	skos:note       "Pajjiż fl-Ewropa Ċentrali"@mt, "Stato dell'Europa centrale, membro dell'Unione europea"@it, "Государство в Западной Европе"@ru, "Država u srednjoj Europi"@hr, "Stat în Europa Centrală"@ro, "Staat in Mitteleuropa"@de, "Riik Kesk-Euroopas"@et, "Štát v strednej Európe"@sk, "Państwo w Europie"@pl, "Valsts Centrāleiropā"@lv, "Et land i Centraleuropa"@da, "Valtio Keski-Euroopassa"@fi, "Förbundsrepublik i Centraleuropa"@sv, "Χώρα της κεντρικής Ευρώπης"@el, "Land in Europa"@nl, "Pays d'Europe centrale"@fr, "Estat sense litoral a l'Europa Central"@ca, "Država v Evropi"@sl, "Country in Central Europe"@en, "Állam Közép-Európában"@hu, "Stát ve střední Evropě"@cs, "País localizado na Europa Central"@pt, "Държава в Централна Европа"@bg, "País de Europa"@es ;
+	skos:prefLabel  "Austrija"@hr, "Austrija"@lt, "Austrija"@lv, "Rakúsko"@sk, "Avstrija"@sl, "Àustria"@ca, "Autriche"@fr, "Itävalta"@fi, "Austria"@en, "Austria"@it, "Austria"@es, "Austria"@et, "Austria"@eu, "Austria"@pl, "Austria"@ro, "Østrig"@da, "Awstrija"@mt, "Rakousko"@cs, "Österrike"@sv, "An Ostair"@ga, "Австрия"@ru, "Австрия"@bg, "Oostenrijk"@nl, "Áustria"@pt, "Αυστρία"@el, "Österreich"@de, "Ausztria"@hu ;
+	wgs84_pos:lat   "48.0" ;
+	wgs84_pos:long  "14.0" .
+
+<http://data.europeana.eu/item/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:47:07.159022Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_0174465E_073_05007_00000DBC_01733A62> .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Western classical or art music of any type, sacred or secular, for voices and/or instruments."@en ;
+	skos:prefLabel  "Música clásica occidental"@es, "Zachodnia muzyka klasyczna"@pl, "Musique classique occidentale"@fr, "Musica classica occidentale"@it, "Western classical music"@en, "Westliche klassische Musik"@de .

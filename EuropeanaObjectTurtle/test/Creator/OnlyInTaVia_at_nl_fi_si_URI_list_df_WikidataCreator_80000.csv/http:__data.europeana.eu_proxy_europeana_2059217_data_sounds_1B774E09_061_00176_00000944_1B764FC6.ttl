@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:43:42.426488Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> .
+
+<http://data.europeana.eu/proxy/provider/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6>
+	a                   ore:Proxy ;
+	dc:contributor      "Schnitzler, Heinrich [Rezitator/in]", "Österreichische Gesellschaft für Literatur [Veranstalter]" ;
+	dc:coverage         "Bundesland / Wien20. Jahrhundert - 70er JahreWien, Edmund-Weiß-Gasse [Ortsbezug]" ;
+	dc:creator          "Schnitzler, Arthur [Text]" ;
+	dc:date             "1975.10.28" ;
+	dc:format           "Tonband auf Kern (AEG), Mp3-Audiodatei" ;
+	dc:identifier       "1B774E09-061-00176-00000944-1B764FC6" ;
+	dc:language         "Deutsch" ;
+	dc:publisher        "Österreichische Mediathek" ;
+	dc:subject          "Lesung"@de, "Psychologie"@de, "Kultur"@de, "Medizin"@de, "Rückblick"@de, "Literatur"@de, "Porträt"@de, <http://data.europeana.eu/concept/soundgenres/Radio_programmes>, "Kulturveranstaltung"@de, "Unveröffentlichte Eigenaufnahme der Österreichischen Mediathek"@de ;
+	dc:title            "Arthur Schnitzlers tiefenpsychologisch geprägte Beobachtungsgabe"@de ;
+	dc:type             "audio" ;
+	dcterms:isPartOf    <http://www.oesterreich-am-wort.at/sammlung/idn/238/> ;
+	dcterms:spatial     "Wien"@de, "Edmund-Weiß-Gasse [Ortsbezug]"@de ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> .
+
+<http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-22T10:17:15.317Z" ;
+	dcterms:modified          "2022-06-11T16:36:38.665Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6#metadataTier>, <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> ;
+	edm:completeness          "0" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "2059217_Ag_EU_eSOUNDS_1009_AustrianMediathek" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> ;
+	edm:language              "de" .
+
+<http://www.mediathek.at/atom/1B774E09-061-00176-00000944-1B764FC6>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/soundgenres/Radio_programmes>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1726254>, <http://id.loc.gov/authorities/genreForms/gf2011026506> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note        "Recordings made for radio broadcast."@en ;
+	skos:prefLabel   "Programmi radiofonici"@it, "Programy radiowe"@pl, "Programas de radio"@es, "Radiosendungen"@de, "Émissions de radio"@fr, "Radio programmes"@en .
+
+<http://data.europeana.eu/concept/154>
+	a                skos:Concept ;
+	skos:exactMatch  <http://uri.gbv.de/terminology/bk/44>, <http://purl.org/bncf/tid/770>, <http://id.nlm.nih.gov/mesh/D008511>, <http://www.wikidata.org/entity/Q11190>, <http://id.ndl.go.jp/auth/ndlna/00563899>, <http://id.loc.gov/authorities/names/sh85083064>, <http://iconclass.org/49G>, <https://d-nb.info/gnd/4038243-6>, <http://id.nlm.nih.gov/mesh/H02.403>, <http://www.yso.fi/onto/yso/p469>, <https://www.freebase.com/m/04sh3>, <http://data.bnf.fr/ark:/12148/cb119832928>, <http://babelnet.org/rdf/s00054133n>, <https://g.co/kg/m/04sh3> ;
+	skos:note        "Videnskaben og praksis afsat til at forebygge, diagnosticere og behandle sygdomme, og for at bevare menneskers sundhed og for at undgå døden"@da, "Tudományág"@hu, "Domeniul de studiu pentru diagnosticarea, tratarea și prevenirea bolilor"@ro, "Scienza che si occupa della salute delle persone"@it, "Den vetenskap och praktik som ägnar sig åt att förhindra, diagnostisera och behandla sjukdomar, samt att upprätthålla mänsklig hälsa och att undvika död"@sv, "Nauka empiryczna o diagnozowaniu, leczeniu i zapobieganiu chorobom"@pl, "Επιστήμη και τέχνη που ασχολείται με την έρευνα και την εφαρμογή μεθόδων και τεχνικών για την πρόληψη, τη διάγνωση και τη θεραπεία των ασθενειών του ανθρώπου"@el, "Field of study for diagnosing, treating and preventing disease"@en, "Znanost o sprječavanju, otkrivanju i liječenju bolesti"@hr, "Lehre der Vorbeugung, Erkennung und Behandlung von Krankheiten"@de, "Область деятельности и знаний о лечении болезней"@ru, "Estudio de la vida, la salud, las enfermedades y la muerte del ser humano"@es, "Tieteen ja terveydenhuollon ala, joka tutkii ja hoitaa ihmisen terveysongelmia"@fi, "Science et pratique étudiant l'organisation du corps humain, son fonctionnement normal et cherchant à soigner et prévenir ses pathologies"@fr, "Veda, ktorá sa zaoberá rozpoznávaním, liečením a prevenciou chorôb"@sk, "Wetenschap die zich bezighoudt met voorkomen, diagnosticeren en behandelen van ziekten"@nl, "Наука за диагностициране, лечение и предотвратяване на болести и наранявания"@bg, "Camp d'estudi per diagnosticar, tractar i prevenir la malaltia"@ca, "Ciência que busca a prevenção e cura de enfermidades"@pt, "Věda, zabývající se diagnostikou, léčením a prevencí vzniku nemocí"@cs ;
+	skos:prefLabel   "Mediċina"@mt, "Lægevidenskab"@da, "Orvostudomány"@hu, "Médecine"@fr, "Medizin"@de, "Medicină"@ro, "Lääketiede"@fi, "Ιατρική"@el, "Медицина"@ru, "Медицина"@bg, "Geneeskunde"@nl, "Lékařství"@cs, "Medycyna"@pl, "Meditsiin"@et, "Míochaine"@ga, "Medicína"@sk, "Medicine"@en, "Medicinsk vetenskap"@sv, "Medicīna"@lv, "Medicina"@hr, "Medicina"@pt, "Medicina"@lt, "Medicina"@sl, "Medicina"@ca, "Medicina"@it, "Medicina"@es, "Medikuntza"@eu .
+
+<http://data.europeana.eu/concept/131>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00571100>, <http://iconclass.org/49G71>, <http://id.nlm.nih.gov/mesh/Q000523>, <https://www.freebase.com/m/05qfh>, <http://lod.nl.go.kr/resource/KSH1998004916>, <http://www.wikidata.org/entity/Q9418>, <http://www.yso.fi/onto/yso/p1632>, <http://d-nb.info/gnd/4047704-6>, <http://vocabularies.unesco.org/thesaurus/concept392>, <http://id.nlm.nih.gov/mesh/D011584>, <http://cv.iptc.org/newscodes/mediatopic/20000753>, <https://g.co/kg/m/05qfh>, <http://uri.gbv.de/terminology/bk/77>, <http://id.nlm.nih.gov/mesh/F04.096.628>, <http://vocab.getty.edu/aat/300054446>, <http://dewey.info/class/150/>, <http://babelnet.org/rdf/s00065026n>, <http://purl.org/bncf/tid/1982>, <http://data.bnf.fr/ark:/12148/cb119408497>, <https://d-nb.info/gnd/4047704-6>, <http://datos.bne.es/resource/XX524579>, <http://id.loc.gov/authorities/names/sh85108459>, <http://www.yso.fi/onto/ysa/Y98257> ;
+	skos:note        "Estudo das funções e do comportamento da mente humana"@pt, "Scienza che studia i comportamenti e i processi cognitivi, emotivi e sociali consci ed inconsci degli individui"@it, "Ακαδημαϊκή και εφαρμοσμένη επιστήμη που ασχολείται με την επιστημονική μελέτη της σκέψης και των συμπεριφορών ανθρώπων"@el, "Tieteenala, joka tutkii ihmisen mieltä, käyttäytymistä ja näiden terapiaa"@fi, "Videnskaben om adfærd, tanker og følelser"@da, "Empirische Wissenschaft vom Erleben und Verhalten"@de, "Vetenskap om beteenden, tankar och känslor"@sv, "Studie van het gedrag en het mentaal functioneren"@nl, "Ciència que estudia la conducta dels individus"@ca, "Ciencia que estudia las funciones mentales y de comportamiento"@es, "Garīgo funkciju un uzvedības izpēte"@lv, "Nauka badająca mechanizmy rządzące psychiką"@pl, "Study of mental functions and behaviours"@en, "Étude scientifique des faits psychiques et des comportements"@fr, "Veda študujúca kognitívne procesy a afektívne stavy"@sk, "Scientific study of the way the human mind works and how it influences behaviour, or the influence of a particular person's character on their behaviour"@en, "Наука, изучающая психику и психическую деятельность человека и групп людей"@ru ;
+	skos:prefLabel   "Psykologi"@sv, "Psykologi"@da, "Psicología"@es, "Psykologia"@fi, "Psikologia"@eu, "Ψυχολογία"@el, "Psychologia"@pl, "Psychológia"@sk, "Psiholoģija"@lv, "Psicologia"@pt, "Psychology"@en, "Psicologia"@ca, "Psicologia"@it, "Pszichológia"@hu, "Psihologija"@hr, "Psihologija"@sl, "Psühholoogia"@et, "Psychologie"@fr, "Psychologie"@de, "Psychologie"@cs, "Psychologie"@nl, "Síceolaíocht"@ga, "Psichologija"@lt, "Психология"@bg, "Психология"@ru, "Psikoloġija"@mt, "Psihologie"@ro .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-06-11T16:43:42.425980Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> .
+
+<http://data.europeana.eu/proxy/europeana/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/1B774E09-061-00176-00000944-1B764FC6" ;
+	dc:language         "deu" ;
+	dc:subject          <http://data.europeana.eu/concept/154>, <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/131> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/organization/1482250000004511970>
+	a               foaf:Organization ;
+	skos:prefLabel  "Oostenrijkse mediatheek"@nl, "Médiathèque autrichienne"@fr, "Mediateca austriaca"@it, "Austrian Media Library"@en, "Österreichische Mediathek"@de .
+
+<http://data.europeana.eu/aggregation/provider/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059217/data_sounds_1B774E09_061_00176_00000944_1B764FC6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004511970> ;
+	edm:isShownAt      <http://www.mediathek.at/atom/1B774E09-061-00176-00000944-1B764FC6> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .

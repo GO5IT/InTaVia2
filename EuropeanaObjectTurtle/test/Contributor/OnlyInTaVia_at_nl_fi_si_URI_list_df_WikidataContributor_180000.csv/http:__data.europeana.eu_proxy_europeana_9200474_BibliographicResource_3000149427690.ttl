@@ -1,0 +1,186 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/9200474/BibliographicResource_3000149427690>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/149333>, <http://data.europeana.eu/agent/146848>, <http://data.europeana.eu/agent/146826>, <http://data.europeana.eu/agent/146880> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1906" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427690> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:10.621Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427690> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:52:10.619Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427690> .
+
+<http://sws.geonames.org/2950159/>
+	a               edm:Place ;
+	skos:prefLabel  "Berlin (Herstellung)" .
+
+<http://data.europeana.eu/aggregation/europeana/9200474/BibliographicResource_3000149427690>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-02-26T12:17:02.512Z" ;
+	dcterms:modified          "2016-03-24T08:15:37.598Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690#metadataTier>, <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690> ;
+	edm:completeness          "7" ;
+	edm:country               "Russia" ;
+	edm:datasetName           "9200474_Ag_TEL_a1410_RussianStateLibrary" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200474/BibliographicResource_3000149427690> ;
+	edm:language              "ru" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsearch.rsl.ru%2Fapi%2Fdescription%2F01004465956%2Fpage%2F1&type=TEXT> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://search.rsl.ru/api/description/01004465956/page/1>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "94092"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1056"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "792"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5FFFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F8F8FF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/proxy/provider/9200474/BibliographicResource_3000149427690>
+	a                        ore:Proxy ;
+	dc:contributor           "Willy Burmester", "Jacques van Lier", "Joseph Haydn", "Georg Friedrich Händel", "Johann Sebastian Bach", "Ludwig van Beethoven" ;
+	dc:description           "bearb. von Willy Burmester u. Jacques van Lier" ;
+	dc:format                "Printed"@en ;
+	dc:identifier            "004465956" ;
+	dc:language              "de" ;
+	dc:publisher             "Schlesinger" ;
+	dc:title                 "Stücke alter Meister - Bd. 2 :: № 7-12" ;
+	dc:type                  "Monograph"@en ;
+	dcterms:alternative      "Selected pieces of old masters : für Violoncell und Klavier", "Пьесы старых мастеров", "Selected pieces of old masters" ;
+	dcterms:extent           "15, 8 с." ;
+	dcterms:isPartOf         <http://data.theeuropeanlibrary.org/Collection/a1410> ;
+	dcterms:issued           "1906" ;
+	dcterms:spatial          <http://id.loc.gov/vocabulary/countries/ru>, <http://sws.geonames.org/2950159/> ;
+	dcterms:tableOfContents  "Menuett ; Menuett /; L. van Beethoven.; Arioso /; G. F. Händel.; Gavotte ; Air /; J. S. Bach.; Menuett /; Joseph Haydn" ;
+	edm:europeanaProxy       "false" ;
+	edm:type                 "TEXT" ;
+	ore:proxyFor             <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690> ;
+	ore:proxyIn              <http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427690> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/agent/146826>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/agent/149431>, <http://data.europeana.eu/concept/236>, <http://data.europeana.eu/concept/258>, <http://data.europeana.eu/concept/1645> ;
+	edm:isRelatedTo      <http://data.europeana.eu/place/92>, <http://data.europeana.eu/agent/146998>, <http://data.europeana.eu/agent/146767>, <http://data.europeana.eu/agent/48284>, <http://data.europeana.eu/place/85>, <http://data.europeana.eu/place/178373>, <http://data.europeana.eu/place/80>, <http://data.europeana.eu/agent/146830>, <http://data.europeana.eu/agent/146997> ;
+	owl:sameAs           <http://datos.bne.es/resource/XX4681923>, <http://dbpedia.org/resource/George_Frideric_Handel>, <http://id.ndl.go.jp/auth/ndlna/00442362>, <http://data.cervantesvirtual.com/person/54920>, <http://data.bnf.fr/ark:/12148/cb139873218>, <https://www.freebase.com/m/03bxh>, <http://www.idref.fr/027271706/id>, <http://id.worldcat.org/fast/45463>, <http://datos.bne.es/resource/XX1108806>, <http://data.carnegiehall.org/names/1004515>, <http://id.loc.gov/authorities/names/n79129204>, <http://vocab.getty.edu/ulan/500449411>, <https://libris.kb.se/31fhj8wm55gk2h8>, <http://lod.nl.go.kr/resource/KAC199611188>, <http://data.bibliotheken.nl/id/thes/p068387032>, <http://viaf.org/viaf/8931159248059304870007>, <http://viaf.org/viaf/5126950>, <http://viaf.org/viaf/3719159248224904870006>, <http://www.wikidata.org/entity/Q7302>, <http://libris.kb.se/resource/auth/206359>, <http://d-nb.info/gnd/118544489>, <https://livedata.bibsys.no/authority/90051292>, <http://openlibrary.org/works/OL601846A>, <https://g.co/kg/m/03bxh>, <http://nlg.okfn.gr/resource/authority/record71409> ;
+	rdaGr2:dateOfBirth   "1685-03-05" ;
+	rdaGr2:dateOfDeath   "1759-04-14" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/1903> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/177208> ;
+	skos:altLabel        "Γκέοργκ Φρίντριχ Χέντελ"@el, "G. F. Händel"@en, "G. F. Händel"@de, "G. F. Händel"@sv, "G. F. Händel"@fi, "Haendel"@es, "Haendel"@fr, "Georg Friedrich Händel"@fr, "Georg Friedrich Händel"@en, "George Frideric"@en, "G. F. Handel"@en, "George Frederick Handel"@en, "Handel"@en, "George Frideric Handel"@cs, "George Frideric Handel"@de, "George Frideric Handel"@sv, "George Frideric Handel"@fi, "Georg Friedrich Handel"@nl, "Georg Friedrich Haendel"@cs, "Jerzy Fryderyk Handel"@pl, "Händel"@es, "Händel"@en, "Γεώργιος Φρειδερίκος Χαίντελ"@el, "Гендель, Георг Фридрих"@ru ;
+	skos:note            "Compositor del barroc britànic d'origen alemany"@ca, "Γερμανός συνθέτης της μπαρόκ περιόδου"@el, "Deutsch-britischer Komponist des Barocks (1685–1759)"@de, "Nemecký hudobný skladateľ"@sk, "Saksa helilooja"@et, "Německý, později britský barokní hudební skladatel"@cs, "Compositor inglés de origen alemán (1685-1759)"@es, "Saksalais-brittiläinen barokkisäveltäjä"@fi, "Compositor alemão (1685–1759)"@pt, "Немецкий и английский композитор эпохи барокко"@ru, "Niemiecki kompozytor i organista"@pl, "German-British Baroque composer (1685–1759)"@en, "Compositeur allemand puis britannique"@fr, "Compositore tedesco naturalizzato inglese"@it, "Német származású barokk zeneszerző"@hu, "Tysk-engelsk barocktonsättare"@sv, "Componist"@nl, "Tysk komponist"@da, "Германски композитор"@bg ;
+	skos:prefLabel       "Georg Friedrich Händel"@lt, "Georg Friedrich Händel"@hr, "Georg Friedrich Händel"@de, "Georg Friedrich Händel"@fi, "Georg Friedrich Händel"@pt, "Georg Friedrich Händel"@hu, "Георг Фридрих Гендель"@ru, "Georg Friedrich Händel"@sk, "Georg Friedrich Händel"@sl, "Georg Friedrich Händel"@ga, "Georg Friedrich Händel"@ca, "Georg Friedrich Händel"@sv, "Georg Friedrich Händel"@it, "Georg Friedrich Händel"@es, "Georg Friedrich Händel"@et, "Georg Friedrich Händel"@cs, "Georg Friedrich Händel"@pl, "Georg Friedrich Händel"@ro, "Georg Friedrich Händel"@da, "Георг Фридрих Хендел"@bg, "George Frideric Handel"@en, "George Frideric Handel"@nl, "Georgs Frīdrihs Hendelis"@lv, "Georg Friedrich Haendel"@fr, "Γκέοργκ Φρίντριχ Χαίντελ"@el .
+
+<http://data.europeana.eu/agent/146848>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/149003>, <http://data.europeana.eu/concept/235> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/59294>, <http://data.europeana.eu/agent/147517> ;
+	owl:sameAs                     <http://data.bibliotheken.nl/id/thes/p069612250>, <http://nlg.okfn.gr/resource/authority/record71396>, <http://www.wikidata.org/entity/Q7349>, <http://dbpedia.org/resource/Joseph_Haydn>, <http://viaf.org/viaf/95146280>, <http://datos.bne.es/resource/XX838634>, <https://livedata.bibsys.no/authority/90062900>, <http://libris.kb.se/resource/auth/206792>, <http://www.idref.fr/030260868/id>, <http://data.cervantesvirtual.com/person/69648>, <https://libris.kb.se/jgvxzpt252ss4ws>, <https://g.co/kg/m/043d4>, <http://id.ndl.go.jp/auth/ndlna/00551751>, <http://data.bnf.fr/ark:/12148/cb13895053m>, <https://www.freebase.com/m/043d4>, <http://data.carnegiehall.org/names/1003781>, <http://d-nb.info/gnd/118547356>, <http://lod.nl.go.kr/resource/KAC199611851>, <http://id.loc.gov/authorities/names/n79091193>, <http://id.worldcat.org/fast/40899>, <http://openlibrary.org/works/OL561133A>, <http://vocab.getty.edu/ulan/500330864> ;
+	rdaGr2:dateOfBirth             "1732-03-31" ;
+	rdaGr2:dateOfDeath             "1809-05-31" ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/80422> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/238>, <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/concept/247> ;
+	skos:altLabel                  "Гайдн"@ru, "Joseph Haydn"@it, "Γιόζεφ Χάιντν"@el, "Franciscus Joseph Haydn"@en, "Франц Йозеф Гайдн"@ru, "Franciscus Josephus Haydn"@en, "Φραντς Γιόζεφ Χάυντν"@el, "Γιόζεφ Χάυδν"@el, "Franz Joseph Haydn"@da, "Franz Joseph Haydn"@sk, "Franz Joseph Haydn"@cs, "Franz Joseph Haydn"@et, "Franz Joseph Haydn"@es, "Franz Joseph Haydn"@hu, "Franz Joseph Haydn"@fr, "Franz Joseph Haydn"@de, "Franz Joseph Haydn"@fi, "Franz Joseph Haydn"@en, "Haydn"@mt, "Haydn"@en, "Φραγκίσκος Ιωσήφ Χάυδν"@el, "Josef Haydn"@cs ;
+	skos:note                      "Osztrák zeneszerző"@hu, "Österreicher Komponist der Wiener Klassik"@de, "Austrijski kompozitor"@hr, "Österrikisk tonsättare"@sv, "Oostenrijks componist"@nl, "Itävaltalainen säveltäjä"@fi, "Austria helilooja"@et, "Cumadóir Ostarach"@ga, "Austrian composer"@en, "Compozitor austriac"@ro, "Compositore austriaco"@it, "Austriacki kompozytor"@pl, "Compositor austríac"@ca, "Австрийски композитор"@bg, "Compositor austríaco"@pt, "Rakúsky hudobný skladateľ"@sk, "Rakouský hudební skladatel"@cs, "Compositeur autrichien"@fr, "Αυστριακός συνθέτης"@el, "Compositor austríaco (1732-1809)"@es, "Østrigsk komponist"@da, "Композитор, венский классик"@ru ;
+	skos:prefLabel                 "Jozefs Haidns"@lv, "Γιόζεφ Χάυντν"@el, "Franz Joseph Haydn"@lt, "Franz Joseph Haydn"@ga, "Franz Joseph Haydn"@it, "Йозеф Гайдн"@ru, "Joseph Haydn"@fr, "Joseph Haydn"@de, "Joseph Haydn"@fi, "Joseph Haydn"@pt, "Joseph Haydn"@hr, "Joseph Haydn"@hu, "Joseph Haydn"@sk, "Joseph Haydn"@sl, "Joseph Haydn"@ca, "Joseph Haydn"@sv, "Joseph Haydn"@mt, "Joseph Haydn"@en, "Joseph Haydn"@es, "Joseph Haydn"@et, "Joseph Haydn"@cs, "Joseph Haydn"@pl, "Joseph Haydn"@ro, "Joseph Haydn"@da, "Joseph Haydn"@nl, "Йозеф Хайдн"@bg .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/organization/1482250000000588085>
+	a               foaf:Organization ;
+	skos:prefLabel  "Venemaa Riiklik Raamatukogu"@et, "Venäjän valtionkirjasto"@fi, "Oroszországi Állami Könyvtár"@hu, "Руска държавна библиотека"@bg, "Российская государственная библиотека"@ru, "Ruská státní knihovna"@cs, "Ruska državna knjižnica"@sl, "Ruska državna knjižnica"@hr, "Ρωσική Κρατική Βιβλιοθήκη"@el, "Russische Staatsbibliothek"@de, "bibliothèque d'État de Russie"@fr, "Det russiske statsbibliotek"@da, "Russische Staatsbibliotheek"@nl, "Russian State Library"@en, "Rosyjska Biblioteka Państwowa"@pl, "Biblioteca di stato russa"@it, "Biblioteca del Estado Ruso"@es, "Biblioteca do Estado Russo"@pt, "Biblioteca Estatal de Rússia"@ca, "Ryska statsbiblioteket"@sv .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200474/BibliographicResource_3000149427690>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000588085> ;
+	edm:isShownAt      <http://dlib.rsl.ru/viewer/01004465956#?page=1> ;
+	edm:object         <http://search.rsl.ru/api/description/01004465956/page/1> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/agent/149333>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/148353> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p161356990>, <https://libris.kb.se/pm135xm72rtshxm>, <http://viaf.org/viaf/32767043>, <http://data.carnegiehall.org/names/17561>, <http://kulturarvsdata.se/LSH/agents/58847>, <https://g.co/kg/m/02lxtf>, <https://www.freebase.com/m/02lxtf>, <http://id.loc.gov/authorities/names/no99008034>, <http://libris.kb.se/resource/auth/235267>, <http://d-nb.info/gnd/117174793>, <https://livedata.bibsys.no/authority/3115924>, <http://data.bnf.fr/ark:/12148/cb13987356x>, <http://dbpedia.org/resource/Willy_Burmester>, <http://www.wikidata.org/entity/Q76249>, <http://id.worldcat.org/fast/428982>, <http://openlibrary.org/works/OL2004637A> ;
+	rdaGr2:dateOfBirth   "1869-03-16" ;
+	rdaGr2:dateOfDeath   "1933-01-16" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/1894> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/1894> ;
+	skos:altLabel        "Burmester"@sv, "Бурместер Вилли"@ru, "Carl Adolph Wilhelm Burmester"@de, "Willy Burmeister"@en ;
+	skos:note            "Dédicataire des 4 sonates pour violon seul de Max Reger"@fr, "Deutscher Violinist"@de, "Músico alemán"@es, "Немецкий скрипач"@ru, "Ceoltóir Gearmánach"@ga, "Saksamaa muusik"@et, "German musician"@en, "Muzician german"@ro, "Músic alemany (violinista)"@ca, "Duits violist (1869-1933)"@nl ;
+	skos:prefLabel       "Willy Burmester"@es, "Willy Burmester"@de, "Willy Burmester"@fi, "Willy Burmester"@sv, "Willy Burmester"@pt, "Willy Burmester"@en, "Willy Burmester"@it, "Willy Burmester"@fr, "Willy Burmester"@sl, "Willy Burmester"@pl, "Willy Burmester"@da, "Willy Burmester"@ca, "Willy Burmester"@nl, "Вилли Бурместер"@ru .
+
+<http://dlib.rsl.ru/viewer/01004465956#?page=1>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/9200474/BibliographicResource_3000149427690>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/agent/146880>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/146848>, <http://data.europeana.eu/agent/24055>, <http://data.europeana.eu/agent/146764>, <http://data.europeana.eu/agent/162617>, <http://data.europeana.eu/agent/147055>, <http://data.europeana.eu/agent/146846> ;
+	edm:isRelatedTo                <http://data.europeana.eu/agent/146951>, <http://data.europeana.eu/agent/59294>, <http://data.europeana.eu/agent/146848> ;
+	owl:sameAs                     <http://kulturarvsdata.se/LSH/agents/2330>, <http://viaf.org/viaf/32182557>, <https://g.co/kg/m/04k15>, <http://d-nb.info/gnd/118508288>, <http://id.ndl.go.jp/auth/ndlna/00432740>, <http://datos.bne.es/resource/XX826607>, <http://id.worldcat.org/fast/42803>, <https://www.freebase.com/m/04k15>, <http://lod.nl.go.kr/resource/KAC199602027>, <http://vocab.getty.edu/ulan/500339269>, <https://libris.kb.se/fcrtthqz07g9rj7>, <http://data.bibliotheken.nl/id/thes/p068716494>, <http://id.loc.gov/authorities/names/n79107741>, <http://data.bnf.fr/ark:/12148/cb138912954>, <http://libris.kb.se/resource/auth/177119>, <http://openlibrary.org/works/OL127077A>, <https://livedata.bibsys.no/authority/90051084>, <http://dbpedia.org/resource/Ludwig_van_Beethoven>, <http://www.idref.fr/026714329/id>, <http://www.wikidata.org/entity/Q255>, <http://data.carnegiehall.org/names/1005833>, <http://nlg.okfn.gr/resource/authority/record62655>, <http://data.cervantesvirtual.com/person/7335> ;
+	rdaGr2:dateOfBirth             "1770-12-16" ;
+	rdaGr2:dateOfDeath             "1827-03-26" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/2528> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/80422> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/237>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/247>, <http://data.europeana.eu/concept/637>, <http://data.europeana.eu/concept/1618> ;
+	skos:altLabel                  "L. van Betkhoven"@en, "Бетховен"@ru, "Бетховен"@bg, "Louis van Beethoven"@en, "Бетховен, Людвиг ван"@ru, "Людвиг Бетховен"@ru, "Ludwik van Beethoven"@en, "Ludvig van Beethoven"@en, "Ljudvig van Betchoven"@cs, "Лудвиг ван Бетовен"@bg, "Бетовен"@bg, "Beethoven"@et, "Beethoven"@ca, "Beethoven"@it, "Beethoven"@de, "Beethoven"@ru, "Beethoven"@sk, "Beethoven"@en, "L. v. Beethoven"@en, "L. Bethovenas"@en, "Ludwig Van Beethoven"@en, "L. van Beethoven"@ca, "L. van Beethoven"@en, "Lodewijk van Beethoven"@hu ;
+	skos:note                      "Tysk tonsättare och pianist"@sv, "Compositor alemão"@pt, "Compositor alemany"@ca, "Nemecký klasicistický a romantický hudobný skladateľ"@sk, "Γερμανός συνθέτης της ρομαντικής περιόδου και πιανίστας"@el, "Германски композитор и пианист"@bg, "Duits componist"@nl, "Выдающийся немецкий композитор, один из трёх венских классиков"@ru, "German composer (1770–1827)"@en, "Deutscher Komponist (1770–1827)"@de, "Saksa klassitsistlik helilooja ja pianist"@et, "Tysk komponist (1770-1827)"@da, "Niemiecki kompozytor"@pl, "Compositor y pianista alemán"@es, "Compositore e pianista tedesco"@it, "Německý hudební skladatel"@cs, "Compositeur classique et romantique allemand"@fr, "Saksalainen säveltäjä"@fi, "Német klasszicista zeneszerző"@hu ;
+	skos:prefLabel                 "Людвиг ван Бетховен"@ru, "Λούντβιχ βαν Μπετόβεν"@el, "Ludvigs van Bēthovens"@lv, "Лудвиг ван Бетховен"@bg, "Ludwig van Beethoven"@fr, "Ludwig van Beethoven"@de, "Ludwig van Beethoven"@fi, "Ludwig van Beethoven"@pt, "Ludwig van Beethoven"@lt, "Ludwig van Beethoven"@hr, "Ludwig van Beethoven"@hu, "Ludwig van Beethoven"@sk, "Ludwig van Beethoven"@sl, "Ludwig van Beethoven"@ga, "Ludwig van Beethoven"@ca, "Ludwig van Beethoven"@sv, "Ludwig van Beethoven"@mt, "Ludwig van Beethoven"@en, "Ludwig van Beethoven"@it, "Ludwig van Beethoven"@es, "Ludwig van Beethoven"@et, "Ludwig van Beethoven"@cs, "Ludwig van Beethoven"@pl, "Ludwig van Beethoven"@ro, "Ludwig van Beethoven"@da, "Ludwig van Beethoven"@nl .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

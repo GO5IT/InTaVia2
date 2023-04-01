@@ -1,0 +1,119 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111896>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_WITS01_111896>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/2477> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "2008" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_111896> .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_WITS01_111896>
+	a                   ore:Proxy ;
+	dc:contributor      "Breitner, George Hendrik" ;
+	dc:creator          "Breitner, George Hendrik" ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111896", "WITS01:111896" ;
+	dc:rights           "Rijksbureau voor Kunsthistorische Documentatie", "Voor meer informatie: Rijksbureau voor Kunsthistorische Documentatie"@nl, "For more information: Rijksbureau voor Kunsthistorische Documentatie"@en ;
+	dc:source           "[WITS01:111896], Willem Witsen: Tachtiger in brief en beeld, Rijksbureau voor Kunsthistorische Documentatie" ;
+	dc:subject          "snor"@nl, "jas met vest"@nl, "kunstenaarsportret"@nl, "stropdas"@nl ;
+	dc:title            "Zelfportret" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1880-1890" ;
+	dcterms:extent      "49,5 x 33 cm" ;
+	dcterms:isPartOf    "Willem Witsen: Tachtiger in brief en beeld", "WITS01", "GVN" ;
+	dcterms:issued      "2008" ;
+	dcterms:medium      "text/xml" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111896> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111896>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/WITS01:111896> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111896&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://www.geheugenvannederland.nl/?/en/items/WITS01:111896>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51933"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111896#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:22.099Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111896> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_WITS01_111896>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T02:06:53.789Z" ;
+	dcterms:modified          "2018-04-05T18:11:12.894Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896#contentTier>, <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_WITS01_111896> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_WITS01_111896> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AWITS01%3A111896%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/concept/2477>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2280>, <http://data.europeana.eu/concept/2478> ;
+	skos:exactMatch  <https://www.freebase.com/m/01rkbr>, <http://id.worldcat.org/fast/1035381>, <http://id.loc.gov/authorities/names/sh85090570>, <http://purl.org/bncf/tid/60407>, <http://data.bnf.fr/ark:/12148/cb11994692t>, <http://babelnet.org/rdf/s00057149n>, <http://thesaurus.europeanafashion.eu/thesaurus/10229>, <http://id.ndl.go.jp/auth/ndlna/00568072>, <https://g.co/kg/m/01rkbr>, <http://www.wikidata.org/entity/Q44416>, <http://www.yso.fi/onto/ysa/Y100897>, <http://www.yso.fi/onto/yso/p20356>, <http://vocab.getty.edu/aat/300210068>, <https://d-nb.info/gnd/4165544-8>, <http://datos.bne.es/resource/XX527840> ;
+	skos:note        "Bande de tissu passée autour du cou, sous le col d'une chemise"@fr, "Ukrasni odjevni predmet"@hr, "Аксессуар для ношения на шее"@ru, "Complement de la camisa"@ca, "Clothing item, traditionally worn by boys and men with dress shirt"@en, "Item de vestuário, tradicionalmente usado por meninos e homens com camisa social"@pt, "Element odzieży noszony na szyi"@pl, "Accessorio di abbigliamento"@it, "Dekoratiivne rõivaese, mida kantakse kaela ümber"@et, "Smalt bånd af stof bundet rundt om flipperne slidt til jakke eller dragt"@da, "Modni dodatek"@sl, "Smalt band av tyg knutet runt skjortkragen som bärs till kavaj eller kostym"@sv, "Modeartikel"@de, "Mode-artikel bij overhemd"@nl, "Část oděvu"@cs, "Complemento de la camisa"@es ;
+	skos:prefLabel   "Cravate"@fr, "Gravata"@pt, "Cravată"@ro, "Cravatta"@it, "Вратовръзка"@bg, "Γραβάτα"@el, "Necktie"@en, "Slips"@sv, "Slips"@da, "Kaklasaite"@lv, "Kaklaraištis"@lt, "Carbhat"@ga, "Gorbata"@eu, "Stropdas"@nl, "Галстук"@ru, "Lips"@et, "Nyakkendő"@hu, "Krawatte"@de, "Krawat"@pl, "Solmio"@fi, "Kravata"@hr, "Kravata"@sk, "Kravata"@sl, "Kravata"@cs, "Corbata"@ca, "Corbata"@es .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:WITS01:111896&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "37873"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "219"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/92034/GVNRC_WITS01_111896#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:15:22.100Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_WITS01_111896> .

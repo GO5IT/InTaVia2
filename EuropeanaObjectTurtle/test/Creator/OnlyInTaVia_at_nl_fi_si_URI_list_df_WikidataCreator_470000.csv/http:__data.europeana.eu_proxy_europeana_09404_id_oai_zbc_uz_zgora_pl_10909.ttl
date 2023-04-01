@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/0940424/_nnhvgtX>
+	a  edm:ProvidedCHO .
+
+<http://zbc.uz.zgora.pl/Content/10909/G-I_538.djvu>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/0940424/_nnhvgtX/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/0940424/_nnhvgtX>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/38> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1880" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhvgtX> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/0940424/_nnhvgtX> .
+
+<http://data.europeana.eu/organization/1482250000004517576>
+	a               foaf:Organization ;
+	skos:prefLabel  "Zielonogórska Biblioteka Cyfrowa"@pl, "Digital Library of Zielona Góra"@en .
+
+<http://semium.org/time/18xx_4_quarter>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/18xx_2_half> ;
+	edm:begin         "Sat Jan 01 01:00:00 CET 1876" ;
+	edm:end           "Mon Dec 31 00:19:32 CET 1900" ;
+	skos:prefLabel    "4e quart 19e siècle"@fr, "4 quarter of the 19th century"@en, "4-я четверть 19-го века"@ru .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/38>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300077808>, <https://www.freebase.com/m/03jsb>, <https://d-nb.info/gnd/4072428-1>, <https://g.co/kg/m/03jsb>, <http://babelnet.org/rdf/s00043773n>, <http://vocabularies.unesco.org/thesaurus/concept300>, <http://www.wikidata.org/entity/Q18336>, <http://purl.org/bncf/tid/13759> ;
+	skos:note        "Ontwikkeling, gebruik, recht, reglementering, samenstelling en beschrijvingen met betrekking tot (het gebruik van) wapens"@nl, "Oppi vaakunoista ja lipuista"@fi, "Profissão, estudo ou arte de criar, conceder e empunhar brasões e decidir sobre questões de patente ou protocolo"@pt, "Veda, ktorá skúma erby"@sk, "Zajmuje się badaniem procesu rozwoju herbów oraz ich znaczeniem w historii"@pl, "Heraldic achievements' design and transmission"@en, "Läran om den typ av märken som kallas vapen och deras historia"@sv, "Историческая дисциплина, занимающаяся изучением гербов, а также традиция и практика их использования"@ru, "Lehre von den Wappen und deren richtiger Gebrauch"@de, "Disciplina che studia gli stemmi"@it, "Ciencia del blasón"@es, "A címerekkel foglalkozó történeti segédtudomány"@hu, "Ciència del blasó"@ca, "Læren om våbenmaleri"@da, "Pomocná věda historická zabývající se znaky"@cs, "Science du blason et des armoiries"@fr ;
+	skos:prefLabel   "Heraldică"@ro, "Héraldique"@fr, "Heràldica"@ca, "Araldica"@it, "Heraldyka"@pl, "Heraldika"@lt, "Heraldika"@lv, "Heraldika"@hr, "Heraldika"@hu, "Heraldika"@sk, "Heraldika"@sl, "Heraldika"@et, "Heraldika"@eu, "Heraldika"@cs, "Araltas"@ga, "Хералдика"@bg, "Геральдика"@ru, "Heraldiikka"@fi, "Εραλδική"@el, "Heraldik"@sv, "Heraldik"@da, "Heraldry"@en, "Heraldiek"@nl, "Heraldik"@de, "Heráldica"@pt, "Heráldica"@es .
+
+<http://data.europeana.eu/aggregation/provider/0940424/_nnhvgtX>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/0940424/_nnhvgtX> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004517576> ;
+	edm:isShownAt      <http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:10909> ;
+	edm:isShownBy      <http://zbc.uz.zgora.pl/Content/10909/G-I_538.djvu> ;
+	edm:object         <http://zbc.uz.zgora.pl/Content/10909/G-I_538.djvu> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671122> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671122>
+	a               foaf:Organization ;
+	skos:prefLabel  "Federacja Bibliotek Cyfrowych"@pl, "Digital Libraries Federation"@en .
+
+<http://data.europeana.eu/item/0940424/_nnhvgtX#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:51:52.482Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhvgtX> .
+
+<http://fbc.pionier.net.pl/id/oai:zbc.uz.zgora.pl:10909>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "23602"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://iiif.europeana.eu/presentation/0940424/_nnhvgtX/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/0940424/_nnhvgtX>
+	a                   ore:Proxy ;
+	dc:creator          "Vogel, A."@pl, "Kossak, Juliusz (1824-1899)"@pl ;
+	dc:date             "1880"@pl ;
+	dc:description      "drzeworyt sztorcowy"@pl ;
+	dc:format           "image/vnd.djvu"@pl ;
+	dc:identifier       "DC-1243"@pl ;
+	dc:rights           "Wojewódzka i Miejska Biblioteka Publiczna w Zielonej Górze"@pl ;
+	dc:subject          "heraldyka"@pl, "Litwa - historia - herb"@pl, "Kossak, Juliusz (1824-1899)"@pl, "Litwa"@pl, "drzeworyt sztorcowy - 19 w."@pl, "grafika - 19 w."@pl, "Vogel, A."@pl, "herb"@pl ;
+	dc:title            "Herb litewski"@pl ;
+	dc:type             "grafika"@pl ;
+	dcterms:extent      "13,0 x 9,0 cm"@pl ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/0940424/_nnhvgtX> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/0940424/_nnhvgtX> .
+
+<http://data.europeana.eu/item/0940424/_nnhvgtX#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:51:52.482Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/0940424/_nnhvgtX> .
+
+<http://data.europeana.eu/aggregation/europeana/0940424/_nnhvgtX>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-11-30T09:05:57.795Z" ;
+	dcterms:modified          "2017-11-30T09:05:57.795Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/0940424/_nnhvgtX#metadataTier>, <http://data.europeana.eu/item/0940424/_nnhvgtX#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/0940424/_nnhvgtX> ;
+	edm:completeness          "5" ;
+	edm:country               "Poland" ;
+	edm:datasetName           "0940424_Ag_PL_zbc.uz.zgora.pl" ;
+	edm:landingPage           <https://www.europeana.eu/item/0940424/_nnhvgtX> ;
+	edm:language              "pl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fzbc.uz.zgora.pl%2FContent%2F10909%2FG-I_538.djvu&type=IMAGE> .

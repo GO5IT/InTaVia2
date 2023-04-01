@@ -1,0 +1,107 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://iiif.europeana.eu/presentation/07101/O_498/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/item/07101/O_498#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:28.256Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_498> .
+
+<http://data.europeana.eu/proxy/europeana/07101/O_498>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/O_498> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/07101/O_498> .
+
+<http://www.webumenia.sk/oai-pmh/getimage/SVK:SNG.O_498>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/item/07101/O_498#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:15:28.256Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier4> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/07101/O_498> .
+
+<http://data.europeana.eu/aggregation/europeana/07101/O_498>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-12-15T10:13:27.096Z" ;
+	dcterms:modified          "2018-03-12T15:43:20.958Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/07101/O_498#metadataTier>, <http://data.europeana.eu/item/07101/O_498#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/07101/O_498> ;
+	edm:completeness          "9" ;
+	edm:country               "Slovakia" ;
+	edm:datasetName           "07101_Ag_SK_EuropeanASNG" ;
+	edm:landingPage           <https://www.europeana.eu/item/07101/O_498> ;
+	edm:language              "sk" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.webumenia.sk%2Fdielo%2FSVK%3ASNG.O_498%2Fstiahnut&type=IMAGE> ;
+	edm:rights                <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/07101/O_498>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/07101/O_498>
+	a                   ore:Proxy ;
+	dc:creator          "Netscher, Caspar" ;
+	dc:date             "1900/1920" ;
+	dc:description      "POZN:\u000A\u000ALIT:\u000ARusina, Ivan. Majstrovské diela nizozemského umenia na Slovensku. Bratislava : SNG, 2006, 183." ;
+	dc:format           "olej"@slk, "oil"@eng ;
+	dc:identifier       "O 498" ;
+	dc:subject          "figurálna kompozícia"@slk, "figurative composition"@eng ;
+	dc:title            "Madam de Montespan hrajúca na harfe", "Madame de Montespan with her Son"@en ;
+	dc:type             "maliarstvo, maľba tabuľová"@slk, "kópia", "Image", "DEF" ;
+	dcterms:extent      "výška 48.6 cm;šírka 36.8 cm" ;
+	dcterms:medium      "wood board"@eng, "tabuľa, drevená"@slk ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/07101/O_498> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/07101/O_498> .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.O_498/stiahnut>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/07101/O_498/manifest> ;
+	ebucore:fileByteSize    "10633965"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "5000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "3755"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://www.webumenia.sk/dielo/SVK:SNG.O_498>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "32534"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/07101/O_498>
+	a                  ore:Aggregation ;
+	dc:rights          "Slovenská národná galéria, SNG" ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/07101/O_498> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:isShownAt      <http://www.webumenia.sk/dielo/SVK:SNG.O_498> ;
+	edm:isShownBy      <http://www.webumenia.sk/dielo/SVK:SNG.O_498/stiahnut> ;
+	edm:object         <http://www.webumenia.sk/dielo/SVK:SNG.O_498/stiahnut> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000000363675> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000363675>
+	a               foaf:Organization ;
+	skos:prefLabel  "Galeria Nacional Eslovaca"@ca, "Galeria Nacional Eslovaca"@pt, "Σλοβακική Εθνική Πινακοθήκη"@el, "Slovenská národní galerie"@cs, "Slovenská Národná Galéria"@nl, "Slovenská národná galéria"@sk, "Slovak national gallery"@en, "Galleria nazionale slovacca"@it, "Slovāku Nacionālā galerija"@lv, "Szlovák Nemzeti Galéria"@hu, "Национална галерия на Словакия"@bg, "Słowacka Galeria Narodowa"@pl, "Slowakische Nationalgalerie"@de, "Словацкая национальная галерея"@ru, "Galerie nationale slovaque"@fr .

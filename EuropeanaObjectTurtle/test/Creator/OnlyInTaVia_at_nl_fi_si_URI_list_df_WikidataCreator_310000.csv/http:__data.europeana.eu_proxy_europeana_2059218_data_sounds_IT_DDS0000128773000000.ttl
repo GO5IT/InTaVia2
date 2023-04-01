@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:12:07.150Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000128773000000> .
+
+<http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000128773000000&teca=ICBSA>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2059218/data_sounds_IT_DDS0000128773000000>
+	a                   ore:Proxy ;
+	dc:contributor      "Musique de la Garde Repubblicaine [interprete]", "Fondo Giuseppe Buonincontro" ;
+	dc:creator          "Verdi, Giuseppe <1813-1901>" ;
+	dc:date             "1891-1921" ;
+	dc:description      "Contenitore originale"@it ;
+	dc:format           "1 cilindro ; 2 1/4 4 in." ;
+	dc:identifier       "IT-DDS0000128773000000" ;
+	dc:publisher        "Paris : Pathe', 19.." ;
+	dc:subject          "March (music)", "opera", <http://dbpedia.org/resource/Concerto>, "Concerto", <http://dbpedia.org/resource/March_(music)>, <http://dbpedia.org/resource/opera>, <http://data.europeana.eu/concept/soundgenres/Music> ;
+	dc:title            "Marche d''Aida : Marche de concert / Verdi ; exécutée par la Musique de la Garde Républicaine" ;
+	dcterms:medium      <http://metadataregistry.org/concept/show/id/535.html> ;
+	dcterms:provenance  "Istituto Centrale per i Beni Sonori ed Audiovisivi" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000128773000000> .
+
+<http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000128773000000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-08T08:48:48.157Z" ;
+	dcterms:modified          "2016-07-08T13:01:12.073Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000#metadataTier>, <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000> ;
+	edm:completeness          "7" ;
+	edm:country               "Italy" ;
+	edm:datasetName           "2059218_Ag_EU_eSOUNDS_1016_ICCU" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000> ;
+	edm:language              "it" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.internetculturale.it%2Fjmms%2Fthumbnail%3Ftype%3Dweb%26id%3Doai%253A192.168.10.31%253A22%253ARM0200%253AIT-DDS0000128773000000%26teca%3DICBSA&type=SOUND> .
+
+<http://data.europeana.eu/organization/1482250000004505022>
+	a               foaf:Organization ;
+	skos:prefLabel  "Internet Culturale"@it, "Internet Culturale"@en .
+
+<http://data.europeana.eu/concept/soundgenres/Music>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.worldcat.org/fast/1423855> ;
+	skos:inScheme    <http://data.europeana.eu/concept/soundgenres> ;
+	skos:narrower    <http://data.europeana.eu/concept/soundgenres/Music/Jazz>, <http://data.europeana.eu/concept/soundgenres/Music/Western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Non-western_classical_music>, <http://data.europeana.eu/concept/soundgenres/Music/Popular_music>, <http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music> ;
+	skos:note        "All types of music."@en ;
+	skos:prefLabel   "Musik"@de, "Musique"@fr, "Muzyka"@pl, "Music"@en, "Música"@es, "Musica"@it .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T03:12:07.150Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000128773000000> .
+
+<http://data.europeana.eu/proxy/europeana/2059218/data_sounds_IT_DDS0000128773000000>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/236> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059218/data_sounds_IT_DDS0000128773000000> .
+
+<http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000128773000000&teca=ICBSA>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "46187"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "198"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "300"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#CD853F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://mint-projects.image.ntua.gr/data/sounds/IT-DDS0000128773000000>
+	a           edm:WebResource ;
+	dc:format   "mp3" ;
+	edm:rights  <https://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/aggregation/provider/2059218/data_sounds_IT_DDS0000128773000000>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004505022> ;
+	edm:isShownAt      <http://www.internetculturale.it/opencms/opencms/it/viewItemMag.jsp?id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000128773000000&teca=ICBSA> ;
+	edm:object         <http://www.internetculturale.it/jmms/thumbnail?type=web&id=oai%3A192.168.10.31%3A22%3ARM0200%3AIT-DDS0000128773000000&teca=ICBSA> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://data.europeana.eu/item/2059218/data_sounds_IT_DDS0000128773000000>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/236>
+	a                skos:Concept ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00021568n>, <http://www.wikidata.org/entity/Q9748>, <http://data.bnf.fr/ark:/12148/cb122405229>, <http://purl.org/bncf/tid/8728>, <http://www.yso.fi/onto/yso/p10246>, <http://id.ndl.go.jp/auth/ndlna/00567288>, <https://g.co/kg/m/0c0y7>, <https://www.freebase.com/m/0c0y7>, <http://id.loc.gov/authorities/genreForms/gf2014026725>, <http://id.loc.gov/authorities/names/sh85029646>, <https://d-nb.info/gnd/4032359-6> ;
+	skos:note        "Musikalisches Werk"@de, "Composizione musicale che prevede uno o più strumenti solisti accompagnati dall'orchestra"@it, "Musical composition usually in three parts"@en, "Forma musical clàssica"@ca, "Kompożizzjoni mużikali s-soltu fi tliet partijiet"@mt, "Soitinsolistille tai -solisteille ja orkesterille sävelletty teos"@fi, "Hudební skladba pro jeden či více sólových nástrojů s doprovodem orchestru, například Čajkovského Koncert pro klavír a orchestr č. 1 b moll"@cs, "Тип музыкального произведения"@ru, "Forme musicale classique"@fr, "Composición musical"@es, "Musikstykke for et soloinstrument med orkester"@da, "Μουσική σύνθεση που συνήθως χωρίζεται σε τρία μέρη"@el, "Kompozycja muzyczna składająca się zazwyczaj z trzech części"@pl, "Ett musikverk för ett (ibland några) soloinstrument och orkester"@sv ;
+	skos:prefLabel   "Concierto"@es, "Konsert"@sv, "Instrumentalkonzert"@de, "Κοντσέρτο"@el, "Koncertas"@lt, "Versenymű"@hu, "Instrumentaalkontsert"@et, "Coinséartó"@ga, "Kunċert"@mt, "Concert"@ro, "Concert"@ca, "Konsertto"@fi, "Concerto"@pt, "Concerto"@en, "Concerto"@it, "Concerto"@fr, "Concerto"@eu, "Concerto"@nl, "Концерт"@ru, "Концерт"@bg, "Koncert"@cs, "Koncert"@sl, "Koncert"@pl, "Koncert"@da .

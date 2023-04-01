@@ -1,0 +1,138 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004502137>
+	a               foaf:Organization ;
+	skos:prefLabel  "Digitale Bibliotheek voor de Nederlandse Letteren"@nl, "Digital Library for Dutch Literature"@en .
+
+<http://data.europeana.eu/aggregation/europeana/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "1970-01-01T00:00:00.000Z" ;
+	dcterms:modified          "1970-01-01T00:00:00.000Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D#metadataTier>, <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> ;
+	edm:completeness          "5" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "2021602_Ag_NL_DigitaleCollectie_DBNL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.dbnl.org%2Ftekst%2F_gid001199501_01%2F_gid001199501_01_tpg.gif&type=TEXT> .
+
+<http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:30.414Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> .
+
+<http://data.europeana.eu/proxy/provider/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D>
+	a                   ore:Proxy ;
+	dc:contributor      "Ent, Anton", "Verbij, Antoine", "Noske, Barbara", "Ekkers, Remco", "Delft, Dirk van", "Verkuijl, Frank", "Hermsen, Joke J.", "Duden, Anne", "Pol, Barber van de", "Balkt, H.H. ter", "Withuis, Jolande", "Muntinga, Eltjo", "Elsaesser, Thomas", "Onetti, Juan Carlos", "Reyniers, Johan", "Meijsing, Doeschka", "Tieges, Wouter Donath", "Boheemen-Saaf, Christel van", "Romijn Meijer, Henk", "Vlek, Joh. R.", "Bonnier, Wieke", "Oosterhoff, Tonnus", "Zizek, Slavoj", "Lernout, Geert", "Vargas Llosa, Mario", "Oort, Dorinde van", "Jaccard, Roland", "Noordervliet, Nelleke", "Kirchhoff, Bodo", "Herring, Phillip", "Leeflang, Thomas", "Steenmeijer, Maarten", "Heerden, Etienne van", "Buuren, Maarten van", "Saris, Frans W.", "Schoot, J.L.J. van", "Duinker, Arjen", "Brouwers, Marja", "Jansma, Esther", "Delden, Maarten van", "Bogaards, Carla", "Arreola, Juan José", "Michel, K.", "Lucebert", "Missinne, Lut", "Bogaert, Paul", "Meister, Marie de", "Denoo, Joris", "Boose, Johan de", "Williams, William Carlos", "Dojcinovic, Predrag", "Weelden, Dirk van", "Kregting, Marc", "Verhelst, Peter", "Frenkel, D.", "Lier, Peter van", "Helsloot, Niels", "Beurskens, Huub", "Beenackers, Ad", "Vogelaar, Jacq Firmin", "Kitaj, R.B.", "Vries, Peter Yvon de", "[tijdschrift] Gids, De", "Reugebrink, Marc", "Dittberner, Hugo", "Grealy, Lucy", "Jagt, Marijn van der", "Meister, Ulrich", "Vertogen, G.", "Ouwens, Kees", "Casimir, H.B.G.", "Drion, H.", "Brassinga, Anneke", "Boven, René J. van", "Halberstadt-Freud, H.C.", "Kampen, N.G. van", "Vroman, Leo", "Schutte, Xandra", "Philipse, Herman", "Pröpper, Henk", "Houte, H.J.", "Lemaire, Ton", "Stevens, Christa", "Siegel, Klaus", "Sanders, Georgine", "Oë, Kenzaburo", "Goudsblom, Johan", "Vintges, Karen", "Dommering, E.J.", "Kappers, Martien", "Portnoy, Ethel", "Staal, Frits", "Heumakers, Arnold", "Hertmans, Stefan", "Quiroga, Horacio", "Cohen, Herman", "Clarín", "Honingh, Chris", "Budé, Frans", "Kesel, Marc de", "Schouwenaar, Margreet", "Vogel, Loden" ;
+	dc:creator          "[tijdschrift] Gids, De" ;
+	dc:date             "2010-12-19" ;
+	dc:identifier       "_gid001199501", "http://www.dbnl.org/titels/titel.php?id=_gid001199501" ;
+	dc:language         "nld" ;
+	dc:rights           "© dbnl" ;
+	dc:title            "De Gids. Jaargang 158" ;
+	dcterms:created     "1995" ;
+	dcterms:issued      "2010-12-19" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> .
+
+<http://data.europeana.eu/agent/75720>
+	a                    edm:Agent ;
+	owl:sameAs           <http://libris.kb.se/resource/auth/289542>, <http://viaf.org/viaf/17218138>, <http://www.wikidata.org/entity/Q312747>, <http://data.cervantesvirtual.com/person/16>, <http://openlibrary.org/works/OL28169A>, <http://id.worldcat.org/fast/13045>, <http://data.bibliotheken.nl/id/thes/p06829591X>, <http://data.bnf.fr/ark:/12148/cb118882762>, <https://g.co/kg/m/079kyr>, <http://datos.bne.es/resource/XX922976>, <https://libris.kb.se/vs69d33d02b5n58>, <http://www.idref.fr/026680068/id>, <http://data.bibliotheken.nl/id/thes/p068295871>, <https://livedata.bibsys.no/authority/90701613>, <http://id.loc.gov/authorities/names/n50038217>, <http://id.ndl.go.jp/auth/ndlna/00464610>, <http://lod.nl.go.kr/resource/KAC201003364>, <http://lod.nl.go.kr/resource/KAC201820207>, <http://d-nb.info/gnd/118884972>, <https://www.freebase.com/m/079kyr>, <http://dbpedia.org/resource/Leopoldo_Alas> ;
+	rdaGr2:dateOfBirth   "1852-04-25" ;
+	rdaGr2:dateOfDeath   "1901-06-13" ;
+	rdaGr2:placeOfBirth  <http://data.europeana.eu/place/203909> ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/209236> ;
+	skos:altLabel        "Leopoldo Alas y Ureña"@pl, "Leopoldo Alas y Ureña"@fr, "Leopoldo Enrique García-las y Ureña"@es, "Λεοπόλντο Γκαρθία-Άλας ι Ουρένια"@el, "Leopoldo Alas «Clarin»"@es, "Clarin"@fr, "Leopoldo Garcia Alas Ureña «Clarin»"@es, "Алас-и-Уренья Леопольдо"@ru, "Leopoldo Garcia-Alas y Ureña"@es, "Clarin Leopoldo Alas"@es, "Leopoldo Enrique García Alas y Ureña"@it, "Leopoldo \u0022Alas\u0022 Clarin"@es, "Leopoldo García-Alas Ureña"@ca, "Leopoldo Garcia Alas y Ureña"@es, "Leopoldo García Alas Urena «Clarín»"@es, "Leopoldo Alas Clarin"@es, "Clarín"@ca, "Clarín"@nl, "Clarín"@cs, "Clarín"@it, "Clarín"@fr, "Leopoldo Clarín"@de, "Leopoldo García-Alas Ureña «Clarín»"@es, "Кларин"@ru, "Leopoldo Alas y Urena"@ro, "Алас-и-Уренья"@ru, "Leopoldo García-Alas y Ureña"@ca, "Leopoldo García-Alas y Ureña"@es, "Leopoldo Garcia Alas Urena"@es, "Leopoldo García-Alas y Ureña"@fr, "Leopoldo Garcia-Alas Ureña «Clarin»"@es, "Leopoldo Alas Clarín"@ca, "Leopoldo Garcia Alas Ureña"@es, "Leopoldo Alas Clarín"@de, "Leopoldo Alas Clarín"@fr, "Leopoldo Garcia-Alas Ureña"@pt, "Leopoldo García-Alas"@ca, "Алас-и-Уренья Л."@ru, "Leopoldo Alas"@ro, "Leopoldo Alas"@pl, "Leopoldo Alas"@es, "Leopoldo Garcia-Alas Urena"@es, "Leopoldo \u0022Alas\u0022 Clarín"@es, "Alas"@sv, "Leopoldo Garcia Alas Urena «Clarin»"@es ;
+	skos:note            "Musulman autor"@en, "Écrivain espagnol"@fr, "Spaans schrijver"@nl, "Συγγραφέας"@el, "Escritor musulman"@es, "Periodista i escriptor musulmane"@ca, "Испанский писатель, литературный критик конца XIX века"@ru, "Spanischer Schriftsteller"@de, "Romanziere, drammaturgo, critico letterario e docente spagnolo"@it ;
+	skos:prefLabel       "Leopoldo Alas «Clarín»"@es, "Leopoldo Alas y Ureña"@ro, "Clarín"@pl, "Leopoldo Alas clurin"@ca, "Κλαρίν"@el, "Леопольдо Алас-и-Уренья"@ru, "Leopoldo Alas"@hr, "Leopoldo Alas"@de, "Leopoldo Alas"@fi, "Leopoldo Alas"@sv, "Leopoldo Alas"@pt, "Leopoldo Alas"@lt, "Leopoldo Alas"@it, "Leopoldo Alas"@fr, "Leopoldo Alas"@hu, "Leopoldo Alas"@et, "Leopoldo Alas"@cs, "Leopoldo Alas"@sk, "Leopoldo Alas"@sl, "Leopoldo Alas"@ga, "Leopoldo Alas"@da, "Leopoldo Alas"@nl, "Leopoldo Alas Clurin"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://www.dbnl.org/titels/titel.php?id=_gid001199501>
+	a  edm:WebResource .
+
+<http://data.europeana.eu/agent/59815>
+	a                              edm:Agent ;
+	edm:hasMet                     <http://data.europeana.eu/agent/22565> ;
+	owl:sameAs                     <http://id.loc.gov/authorities/names/n80008225>, <https://www.freebase.com/m/0bvnt7>, <http://viaf.org/viaf/111637181>, <http://www.wikidata.org/entity/Q689279>, <http://d-nb.info/gnd/118574728>, <http://vocab.getty.edu/ulan/500027027>, <http://openlibrary.org/works/OL5275002A>, <https://g.co/kg/m/0bvnt7>, <http://data.bnf.fr/ark:/12148/cb12172941m>, <https://livedata.bibsys.no/authority/90521021>, <http://id.worldcat.org/fast/1443087>, <http://datos.bne.es/resource/XX1316952>, <http://www.idref.fr/030279453/id>, <http://data.bibliotheken.nl/id/thes/p119659050>, <http://dbpedia.org/resource/Lucebert> ;
+	rdaGr2:dateOfBirth             "1924-09-15" ;
+	rdaGr2:dateOfDeath             "1994-05-10" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40964> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40980> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/76> ;
+	skos:altLabel                  "L. J. Swaanswijk"@en, "L.J. Swaanswijk"@nl, "Lubertus Jacobus Lucebert"@en, "Lubertus Jacobus Swaanswyk"@en, "Lambertus Zwaanswijk"@en, "Lubertus J. Swaanswijk Lucebert"@en, "Lubertus Jacobus Swaanswijk"@de, "Lubertus Jacobus Swaanswijk"@en, "Lubertus Jacobus Swaanswijk"@nl, "Lucebert Van Libertus Jacobus Swaanswijk"@en, "Lucebert van Swaanswijk"@en, "L. G. Swansweijk"@de ;
+	skos:note                      "Dutch painter (1924-1994)"@en, "Nederlands kunstschilder en dichter"@nl, "Niederländischer Maler, Grafiker und Schriftsteller"@de, "Peintre néerlandais"@fr, "Pintor neerlandés"@es, "Pintor neerlandès"@ca, "Pictor olandez"@ro, "Hollandi maalikunstnik"@et ;
+	skos:prefLabel                 "Lucebert"@es, "Lucebert"@de, "Lucebert"@fi, "Lucebert"@sv, "Lucebert"@pt, "Lucebert"@en, "Lucebert"@et, "Lucebert"@sl, "Lucebert"@ga, "Lucebert"@ro, "Lucebert"@da, "Lucebert"@ca, "Lucebert"@nl, "Lucebert"@it, "Lucebert"@fr, "Люсеберт"@ru .
+
+<http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T08:35:30.415Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> .
+
+<http://data.europeana.eu/proxy/europeana/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/59815>, <http://data.europeana.eu/agent/75720> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1995" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> .
+
+<http://data.europeana.eu/aggregation/provider/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502137> ;
+	edm:isShownAt      <http://www.dbnl.org/titels/titel.php?id=_gid001199501> ;
+	edm:object         <http://www.dbnl.org/tekst/_gid001199501_01/_gid001199501_01_tpg.gif> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671093> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004671093>
+	a               foaf:Organization ;
+	skos:prefLabel  "Dutch Collections for Europe"@en .
+
+<http://www.dbnl.org/tekst/_gid001199501_01/_gid001199501_01_tpg.gif>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "143253"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/gif" ;
+	ebucore:height        "600"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "446"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FAEBD7"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5DEB3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAFAD2"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4C4"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFEBCD"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/2021602/8BDD4C35FE8B7ED182F154614D0864711CB9EE5D>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

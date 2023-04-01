@@ -1,0 +1,114 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801305z>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/bpt6k8801305z> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/bpt6k8801305z.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801305z>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-25T13:51:16.322Z" ;
+	dcterms:modified          "2018-03-26T12:26:08.563Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z#contentTier>, <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200516_Ag_BnF_Gallica_typedoc_audio" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200516/ark__12148_bpt6k8801305z> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbpt6k8801305z.thumbnail.jpg&type=SOUND> .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:25.208Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801305z> .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801305z>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "220555"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://gallica.bnf.fr/ark:/12148/bpt6k8801305z.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3931"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://gallica.bnf.fr/iiif/ark:/12148/bpt6k8801305z/f1/full/full/0/native.jpg>
+	a          edm:WebResource ;
+	dc:format  "jpg" .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:03:25.209Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801305z> .
+
+<http://data.europeana.eu/proxy/europeana/9200516/ark__12148_bpt6k8801305z>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	edm:year            "1961" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200516/ark__12148_bpt6k8801305z> .
+
+<http://data.europeana.eu/proxy/provider/9200516/ark__12148_bpt6k8801305z>
+	a                   ore:Proxy ;
+	dc:creator          "Barber, Samuel (1910-1981). Auteur ou responsable intellectuel", "Corelli, Arcangelo (1653-1713). Auteur ou responsable intellectuel", "Grieg, Edvard (1843-1907). Auteur ou responsable intellectuel", "Dragon, Carmen (1914-1984). Direction d'orchestre", "Bolzoni, Giovanni (1841-1919). Auteur ou responsable intellectuel", "Friml, Rudolf (1879-1972). Auteur ou responsable intellectuel", "Elgar, Edward (1857-1934). Auteur ou responsable intellectuel", "Beethoven, Ludwig van (1770-1827). Auteur ou responsable intellectuel", "Čajkovskij, Petr Ilʹič (1840-1893). Auteur ou responsable intellectuel", "Rubinštejn, Anton Grigor´evič (1829-1894). Auteur ou responsable intellectuel" ;
+	dc:date             "1961" ;
+	dc:description      "Contient une table des matières", "Comprend : Noire est la couleur des cheveux de mon amour : traditionnel - Salut d'amour / Elgar - Mélodie en fa / Anton Rubinstein - Gigue / Corelli - Menuet / Bolzoni - L'amour, toujours l'amour / Rudolf Friml - Chant sans paroles / Tchaikovsky - Menuet en sol / Beethoven - Danse d'Anitra / Edvard Grieg - Adagio pour cordes / Barber", "Titre uniforme : [Mélodies. Piano. Op. 3, no 1. Fa majeur]", "Titre uniforme : [Anitras dans. Op. 46, no 3]", "Titre uniforme : [Septuor. Vents (3), cordes (4). Op. 20. Mi bémol majeur]", "BnF-Partenariats, Collection sonore - Believe" ;
+	dc:format           "Nombre total de vues :  14", "1 disque : 33 t ; 30 cm", "disc"@eng, "disque microsillon"@fre, "multipart/mixed" ;
+	dc:identifier       "Numéro commercial : Capitol  P8542", "http://gallica.bnf.fr/ark:/12148/bpt6k8801305z" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb37798344s"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918178g"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb14024035r"@fr, "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13908180t"@fr ;
+	dc:rights           "restricted use"@eng, "conditions spécifiques d'utilisation - BnF-Partenariats, Collection sonore - Believe"@fre ;
+	dc:source           "Bibliothèque nationale de France, département Audiovisuel, B-11375" ;
+	dc:title            "Romantique / le Capitol Symphony Orchestra dir. Carmen Dragon" ;
+	dc:type             "sound"@eng, "document sonore"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200516/ark__12148_bpt6k8801305z> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200516/ark__12148_bpt6k8801305z> .
+
+<http://semium.org/time/19xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Tue Jan 01 00:19:32 CET 1901" ;
+	edm:end           "Sun Dec 31 01:00:00 CET 2000" ;
+	skos:prefLabel    "20-th"@en, "20??", "20th century"@en, "20..", "20й век"@ru, "20e", "20de eeuw"@nl, "20e siècle"@fr, "20th"@en .

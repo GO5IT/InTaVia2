@@ -1,0 +1,110 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000045137015>
+	a               foaf:Organization ;
+	skos:prefLabel  "Magyar Digitális Képkönyvtár"@hu, "Hungarian Digital Image Library"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/concept/35>
+	a                skos:Concept ;
+	skos:exactMatch  <https://d-nb.info/gnd/4127900-1>, <https://www.freebase.com/m/02csf>, <http://www.wikidata.org/entity/Q93184>, <http://vocab.getty.edu/aat/300033973>, <http://id.loc.gov/authorities/names/sh85039408>, <http://vocabularies.unesco.org/thesaurus/concept4716>, <http://id.nlm.nih.gov/mesh/D020472>, <http://id.ndl.go.jp/auth/ndlna/00561487>, <http://www.yso.fi/onto/yso/p22465>, <https://g.co/kg/m/02csf>, <http://thesaurus.europeanafashion.eu/thesaurus/10307>, <http://babelnet.org/rdf/s00028639n>, <http://cv.iptc.org/newscodes/mediatopic/20000034>, <http://data.bnf.fr/ark:/12148/cb119362234>, <https://schema.org/Drawing>, <http://purl.org/bncf/tid/1062> ;
+	skos:note        "Umělecké dílo"@cs, "Obra de arte visual em meio bidimensional"@pt, "Saothar ealaíne"@ga, "Typ av tvådimensionell bildkonst"@sv, "Kuvataiteen teos"@fi, "Kompozycja linii wykonana w dwóch wymiarach"@pl, "Lavoro artistico bidimensionale"@it, "Arte visual en dos dimensiones"@es, "Visual artwork in two-dimensional medium"@en, "Изображение на плоскости, созданное средствами графики"@ru, "Obra d'art en un medi bidimensional"@ca, "Bildmotiv in vereinfachender Weise mit Linien und Strichen dargestellt"@de, "Type af to-dimensionelle billedkunst"@da, "Surface portant une représentation faite à l’aide d'un matériel d'écriture"@fr ;
+	skos:prefLabel   "Zīmējums"@lv, "Рисунка"@bg, "Risba"@sl, "Joonistus"@et, "Piirustus"@fi, "Rajz"@hu, "Líníocht"@ga, "Tekening"@nl, "Desenho"@pt, "Dessin"@fr, "Dibuix"@ca, "Σχέδιο"@el, "Piešimas"@lt, "Crtež"@hr, "Tegning"@da, "Desen"@ro, "Dibujo"@es, "Zeichnung"@de, "Kresba"@sk, "Kresba"@cs, "Рисунок"@ru, "Teckning"@sv, "Rysunek"@pl, "Marrazki"@eu, "Drawing"@en, "Disegno"@it .
+
+<http://keptar.oszk.hu/007900/007936/kepiras_0037_kiskep.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "6288"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007936__>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000045137015> ;
+	edm:isShownBy      <http://keptar.oszk.hu/007900/007936> ;
+	edm:object         <http://keptar.oszk.hu/007900/007936/kepiras_0037_kiskep.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671136> ;
+	edm:rights         <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/2023859/_http___keptar_oszk_hu_007900_007936__>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/35> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007936__> .
+
+<https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007936__/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/2023859/_http___keptar_oszk_hu_007900_007936__>
+	a                   ore:Proxy ;
+	dc:creator          "Liezen-Mayer ,  Sándor  (painter)"@hu ;
+	dc:description      "Illusztráció Schiller Ének a harangról c. verséhez. \u0022Mert ő köszönti az öröm szép Szózatával a gyermeket Legelső útján, amidőn még Az álom karján szendereg, Sötét vagy nyájas sorsa mélyen Rejtve még az idő ölében ; Az anyaszív gondoskodása Vigyáz aranyló hajnalára &#8211; Az évek gyorsan tellenek. Elszakad a fiú a lánytól, Az életbe ront hevesen ; Világot jár, akár a vándor, Úgy tér haza, mint idegen, S ragyogva, mint egy égi drága Képet, úgy látja ott viszont Szemérmes arccal, ifjusága Pompájában a hajadont.\u0022 /Schiller: Ének a harangról részlet/ Az Ének a harangról (Das Lied van der Glocke) Schiller 1799-ben írt, egyik leghíresebb költeménye. A polgári életet mutatja be hatalmasra növesztett képekben. Az utolsó kép a forradalomé, amely széttöri a megszokott életkereteket. A mottó szavait (Hívom az élőket. Elsiratom a halottakat. Szétzúzom a villámokat.) egy 1486-ban készült schaffhauseni harangról vette. A harang neve: Concordia, egyetértés. (Vajda György Mihály jegyzete)"@hu ;
+	dc:format           "JPEG képállomány \u000A         1283x1815 \u000A         300 \u000A         színes \u000A         24 \u000A         közepesen tömörített \u000A  JPEG képállomány" ;
+	dc:identifier       "DKA-ID  http://keptar.oszk.hu/007900/007936   [Metadata]" ;
+	dc:relation         "Liezen-Mayer Sándor arcképe [ http://keptar.oszk.hu/007900/007933]"@hu, "Malonyay Dezső: A magyar képirás úttörői [ http://mek.oszk.hu/06900/06916/pdf/06916.pdf]"@hu ;
+	dc:source           "Internet Archive"@hu, "OSZK MEK"@hu ;
+	dc:subject          "érzelemábrázolás"@hu, "rajz"@hu, "Literature, fiction, folktales"@hu, "találkozás"@hu, "Fine arts, visual arts"@hu, "illusztáció"@hu, "szerelem"@hu ;
+	dc:title            "Schiller-illusztráció"@hu ;
+	dc:type             "painting"@hu ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007936__> .
+
+<http://data.europeana.eu/organization/1482250000004671136>
+	a               foaf:Organization ;
+	skos:prefLabel  "Linked Heritage"@en .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:54.352Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007936__> .
+
+<http://data.europeana.eu/aggregation/europeana/2023859/_http___keptar_oszk_hu_007900_007936__>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2015-09-10T16:08:44.351Z" ;
+	dcterms:modified          "2015-09-14T11:29:49.387Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__#contentTier>, <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__> ;
+	edm:completeness          "10" ;
+	edm:country               "Hungary" ;
+	edm:datasetName           "2023859_AG-EU_LinkedHeritage_NSL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__> ;
+	edm:language              "mul" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fkeptar.oszk.hu%2F007900%2F007936%2Fkepiras_0037_kiskep.jpg&type=IMAGE> ;
+	edm:rights                <http://rightsstatements.org/vocab/CNE/1.0/> .
+
+<http://data.europeana.eu/item/2023859/_http___keptar_oszk_hu_007900_007936__#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T05:50:54.352Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2023859/_http___keptar_oszk_hu_007900_007936__> .
+
+<http://keptar.oszk.hu/007900/007936>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/2023859/_http___keptar_oszk_hu_007900_007936__/manifest> .

@@ -1,0 +1,115 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://cnum.cnam.fr/petit/mini_2_vignette_page_de_titre/8KI6/0001.V.0.gif>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "1996"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/gif" ;
+	ebucore:height        "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/9200503/redir_8KI6>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004502044>
+	a               foaf:Organization ;
+	skos:prefLabel  "National Conservatory of Arts and Crafts"@en .
+
+<http://data.europeana.eu/proxy/europeana/9200503/redir_8KI6>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1786" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200503/redir_8KI6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200503/redir_8KI6> .
+
+<http://data.europeana.eu/aggregation/europeana/9200503/redir_8KI6>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-07-21T10:06:40.285Z" ;
+	dcterms:modified          "2016-09-19T09:14:41.022Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200503/redir_8KI6#metadataTier>, <http://data.europeana.eu/item/9200503/redir_8KI6#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200503/redir_8KI6> ;
+	edm:completeness          "6" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200503_Ag_BnF_cnum.cnam" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200503/redir_8KI6> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fcnum.cnam.fr%2Fpetit%2Fmini_2_vignette_page_de_titre%2F8KI6%2F0001.V.0.gif&type=TEXT> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/provider/9200503/redir_8KI6>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200503/redir_8KI6> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004502044> ;
+	edm:isShownAt      <http://cnum.cnam.fr/redir?8KI6> ;
+	edm:object         <http://cnum.cnam.fr/petit/mini_2_vignette_page_de_titre/8KI6/0001.V.0.gif> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://creativecommons.org/publicdomain/mark/1.0/> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/item/9200503/redir_8KI6#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:14.959Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200503/redir_8KI6> .
+
+<http://data.europeana.eu/item/9200503/redir_8KI6#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T09:54:14.960Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200503/redir_8KI6> .
+
+<http://cnum.cnam.fr/redir?8KI6>
+	a  edm:WebResource .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.europeana.eu/proxy/provider/9200503/redir_8KI6>
+	a                   ore:Proxy ;
+	dc:creator          "La Fosse, Charles de (1636-1716)" ;
+	dc:date             "1786" ;
+	dc:description      "1 vol. ([8]-50.-[4] p.-4 pl. dépl.) : ill. ; in-8" ;
+	dc:identifier       "http://cnum.cnam.fr/redir?8KI6" ;
+	dc:language         "fre" ;
+	dc:publisher        "Paris : Jombert : Dessene ; Nancy : Mathieu, 1786" ;
+	dc:relation         "vignette : http://cnum.cnam.fr/petit/mini_2_vignette_page_de_titre/8KI6/0001.V.0.gif" ;
+	dc:rights           "public domain"@eng ;
+	dc:source           "CNAM-BIB 8 Ki 6 Res" ;
+	dc:subject          "Architecture -- Détails -- Ouvrages avant 1800", "Cheminées -- Conception et construction -- Ouvrages avant 1800", "Cheminées -- Ouvrages avant 1800", "Franklin, Benjamin (1706-1790)" ;
+	dc:title            "Cheminée économique à laquelle on a adapté la mécanique de M. Franklin" ;
+	dc:type             "PMONO", "text" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200503/redir_8KI6> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200503/redir_8KI6> .

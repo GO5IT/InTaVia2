@@ -1,0 +1,131 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/organization/1482250000004671090>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Digital Library"@en, "Deutsche Digitale Bibliothek"@de .
+
+<http://data.europeana.eu/aggregation/europeana/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-04-16T11:44:19.078Z" ;
+	dcterms:modified          "2022-01-31T11:04:15.728Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY#metadataTier>, <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	edm:completeness          "5" ;
+	edm:country               "Germany" ;
+	edm:datasetName           "199_DDB_BildarchivFotoMarburg" ;
+	edm:landingPage           <https://www.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.bildindex.de%2Fbilder%2Fd%2Fmi00581b04&type=IMAGE> .
+
+<http://www.bildindex.de/document/obj00004942>
+	a  edm:WebResource .
+
+<http://www.bildindex.de/bilder/d/mi00581b04>
+	a                       edm:WebResource ;
+	dc:format               "image/jpeg" ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY/manifest> ;
+	ebucore:fileByteSize    "316275"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "1200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "960"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FAF0E6"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFF5EE"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#708090"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFE4E1"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "grayscale" ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY>
+	a                   ore:Proxy ;
+	dc:creator          "Rombouts, Salomon (Herstellung), 1650-1702 (Maler)" ;
+	dc:format           <http://vocab.getty.edu/aat/300014078> ;
+	dc:identifier       "669 (Inventarnummer)" ;
+	dc:subject          "Tafelmalerei"@de, "Park"@de ;
+	dc:title            "Parklandschaft"@de ;
+	dc:type             <http://vocab.getty.edu/aat/300033618> ;
+	dcterms:extent      "Höhe x Breite: 64,5 x 53,6 cm"@zxx ;
+	dcterms:spatial     <http://vocab.getty.edu/tgn/7005293> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> .
+
+<http://data.europeana.eu/concept/1877>
+	a                skos:Concept ;
+	skos:exactMatch  <http://cv.iptc.org/newscodes/mediatopic/20000422>, <https://www.freebase.com/m/0166ls>, <https://id.erfgoed.net/thesauri/erfgoedtypes/337>, <http://www.wikidata.org/entity/Q22698>, <http://www.yso.fi/onto/ysa/Y98299>, <https://schema.org/Park>, <http://id.nlm.nih.gov/mesh/J03.925.680>, <http://iconclass.org/43B42>, <http://purl.obolibrary.org/obo/ENVO_00000562>, <http://vocabularies.unesco.org/thesaurus/concept4252>, <http://www.yso.fi/onto/yso/p3227>, <http://vocab.getty.edu/aat/300254248>, <http://id.nlm.nih.gov/mesh/D000068316>, <http://www.geonames.org/ontology#L.PRK>, <https://g.co/kg/m/0166ls>, <http://id.worldcat.org/fast/1053705>, <http://babelnet.org/rdf/s00060690n>, <https://d-nb.info/gnd/4044673-6>, <http://vocab.getty.edu/aat/300008187>, <http://data.bnf.fr/ark:/12148/cb11933025j>, <http://id.loc.gov/authorities/names/sh85098119>, <http://id.ndl.go.jp/auth/ndlna/00566129> ;
+	skos:note        "Openbare ruimte met een permanente recreatieve functie die meestal wordt gekenmerkt door een natuurlijke, historische of landschappelijk aspect"@nl, "Teritoriu verde sub cerul liber destinat odihnei și recreației"@ro, "Īpaši iekārtota, parasti plaša, dekoratīva atpūtas teritorija, dārzs, arī ar dabiskās ainavas iesaistījumu, apstādījumiem, lielu koku grupām, celiņiem, strūklakām, spēļu laukumiem u. tml."@lv, "Espaço aberto para recreação ou conservação"@pt, "Dio grada ili naselja u kojem se nalazi održavano zelenilo"@hr, "Permanently dedicated recreation area, often open to the public and generally characterized by natural, historic, or landscape features"@en, "Gestaltete größere Grünflächen"@de, "Terreno situado en el interior de una población que se destina a prados, jardines y arbolado"@es, "Virkistyskäyttöön tarkoitettu viheralue"@fi, "Ανοιχτός χώρος διατηρημένος στην φυσική του μορφή"@el, "Area protetta o per ricreazione"@it, "Udržovaná zeleň"@cs, "Espai destinat al lleure o destinat a arbrat i jardins"@ca, "Obszar na otwartej przestrzeni służący rozrywce i odpoczynkowi"@pl, "Anläggning med naturlig eller planterad växtlighet"@sv, "Territoire maintenu dans un état naturel ou seminaturel, à des fins conservatoires ou récréatives"@fr, "Предназначенная для отдыха открытая озеленённая территория"@ru, "Åbent rekreativt område"@da ;
+	skos:prefLabel   "Parco"@it, "Páirc"@ga, "Park"@de, "Park"@hr, "Park"@hu, "Park"@sk, "Park"@sl, "Park"@sv, "Park"@en, "Park"@et, "Park"@cs, "Park"@pl, "Park"@da, "Park"@nl, "Parkas"@lt, "Парк"@ru, "Парк"@bg, "Parque"@pt, "Parque"@es, "Parc"@fr, "Parc"@ca, "Parc"@ro, "Parke"@eu, "Puisto"@fi, "Parks"@lv, "Πάρκο"@el .
+
+<http://data.europeana.eu/aggregation/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000364591> ;
+	edm:isShownAt      <http://www.bildindex.de/document/obj00004942> ;
+	edm:isShownBy      <http://www.bildindex.de/bilder/d/mi00581b04> ;
+	edm:object         <http://www.bildindex.de/bilder/d/mi00581b04> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671090> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://vocab.getty.edu/aat/300033618>
+	a          skos:Concept ;
+	skos:note  "Úsese para obras únicas en que las imágenes son formadas principalmente por la aplicación directa de pigmentos suspendidos en aceite, agua, yema de huevo, cera fundida u otro líquido, dispuesto en masas de color, sobre una superficie generalmente bidimensional."@es, "Beeldende werken waarin de voorstelling hoofdzakelijk wordt gevormd door het direct aanbrengen van pigment, in de vorm van kleurmassa's, op een over het algemeen tweedimensionaal vlak."@nl, "Unique works in which images are formed primarily by the direct application of pigments suspended in oil, water, egg yolk, molten wax, or other liquid, arranged in masses of color, onto a generally two-dimensional surface."@en, "Obras únicas nas quais as imagens são formadas principalmente pela aplicação direta de pigmentos suspensos em óleo, água, gema de ovo, cera fundida ou outro líquido, dispostos em massas de cor, sobre uma superfície geralmente bidimensional."@pt, "Individuelles Werk, bei dem die Darstellungen hauptsächlich durch das direkte Auftragen von Farbstoffen gebildet werden, die in Öl, Wasser, Eigelb, geschmolzenem Wachs oder anderer Flüssigkeit aufgelöst sind und bei dem die Farbmasse auf eine meist zweidimensionale Oberfläche aufgetragen wird."@de .
+
+<https://iiif.europeana.eu/presentation/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/europeana/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY>
+	a                   ore:Proxy ;
+	dc:identifier       "http://www.deutsche-digitale-bibliothek.de/item/D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY" ;
+	dc:subject          <http://data.europeana.eu/concept/1877> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	ore:proxyFor        <http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> .
+
+<http://vocab.getty.edu/tgn/7005293>
+	a               edm:Place ;
+	skos:prefLabel  "Frankfurt am Main" .
+
+<http://vocab.getty.edu/aat/300014078>
+	a               skos:Concept ;
+	skos:altLabel   "doek"@nl, "canvass"@en, "Canvas"@de, "kanvas"@nl, "lona"@es, "lienzo"@es ;
+	skos:broader    <http://vocab.getty.edu/aat/300231565> ;
+	skos:inScheme   <http://vocab.getty.edu/aat/> ;
+	skos:narrower   <http://vocab.getty.edu/aat/300380376>, <http://vocab.getty.edu/aat/300238097>, <http://vocab.getty.edu/aat/300417727>, <http://vocab.getty.edu/aat/300014076>, <http://vocab.getty.edu/aat/300417728>, <http://vocab.getty.edu/aat/300014079> ;
+	skos:note       "Closely woven textile made in various weights, usually of flax, hemp, jute, or cotton, used especially for sails, tarpaulins, awnings, upholstery, bags, and as a support for oil painting."@en, "Úsese para un textil a telar apretado fabricado en diferentes pesos, habitualmente de flax, cáñamo, yute o algodón, utilizado fundamentalmente para confeccionar velas de barco, tela encerada, toldos, tapicería de muebles y como base para la pintura al óleo. Se utiliza también para trama tipo enrejado hecha de material similar, utilizada como base para bordados de aguja."@es, "Dichtgeweven stof in verschillende gewichten; wordt meestal gemaakt van vlas, hennep, jute of katoen en vooral gebruikt voor zeilen, dekkleden en stoffering en als ondergrond voor olieverfschilderijen. Het wordt ook gebruikt voor rasterachtig gaas dat van soortgelijke materialen is gemaakt en wordt gebruikt als ondergrond voor borduurwerk."@nl ;
+	skos:prefLabel  "Leinwand"@de, "canvas (textile material)"@en, "toile (matériau textile)"@fr, "duk"@sv, "lerret"@nb, "lerret"@nn, "canvas"@nl, "tela (material textil)"@es, "tela (materiale tessile)"@it ;
+	skos:related    <http://vocab.getty.edu/aat/300410350> .
+
+<http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T14:41:46.595198Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier2> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> .
+
+<http://data.europeana.eu/organization/1482250000000364591>
+	a               foaf:Organization ;
+	skos:prefLabel  "German Documentation Center for Art History - Marburg Picture Index"@en .
+
+<http://data.europeana.eu/item/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-01-31T14:41:46.595485Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/199/item_D2DYUQINZDB4CKG2G3PLNMVXJ7UPB4QY> .

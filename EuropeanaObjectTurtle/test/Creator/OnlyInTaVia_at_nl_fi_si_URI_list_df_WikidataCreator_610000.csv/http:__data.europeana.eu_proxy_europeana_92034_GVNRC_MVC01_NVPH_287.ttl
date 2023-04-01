@@ -1,0 +1,120 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_MVC01_NVPH_287>
+	a                   ore:Proxy ;
+	dc:format           <http://data.europeana.eu/concept/2535> ;
+	dc:subject          <http://data.europeana.eu/concept/2399> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_NVPH_287> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:42.216Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_287> .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_MVC01_NVPH_287>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-09T22:26:40.783Z" ;
+	dcterms:modified          "2018-04-05T17:11:23.498Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287> ;
+	edm:completeness          "6" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3AMVC01%3ANVPH-287%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-287&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "10204"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "226"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_MVC01_NVPH_287>
+	a                   ore:Proxy ;
+	dc:contributor      "Joh. Enschedé en Zonen", "Koch, Pyke" ;
+	dc:creator          "Koch, Pyke" ;
+	dc:format           "postzegel" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-287" ;
+	dc:rights           "Voor meer informatie: Museum voor Communicatie"@nl, "For more information: Museum voor Communicatie"@en, "Museum voor Communicatie" ;
+	dc:source           "[NVPH-287], Postzegelontwerpen, postzegels en affiches; Museum voor Communicatie" ;
+	dc:subject          "Pallas Athene"@nl, "vrouw"@nl, "helm"@nl, "Utrecht (Stad)"@nl, "Utrecht (provincie)"@nl, "Universiteit Utrecht"@nl ;
+	dc:title            "Postzegel Nederland 1936, Herdenkingspostzegel Rijksuniversiteit Utrecht, Pallas Athene" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "15 mei 1936" ;
+	dcterms:extent      "Beeldvlak: 27 mm × 45 mm; Geheel: 30 mm × 50 mm" ;
+	dcterms:isPartOf    "Postzegelontwerpen, postzegels en affiches", "GVN", "MVC01" ;
+	dcterms:medium      "rasterdiepdruk", "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_287> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_287>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/MVC01:NVPH-287> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:MVC01:NVPH-287&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2535>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2538> ;
+	skos:exactMatch  <https://www.freebase.com/m/068vv>, <http://id.loc.gov/authorities/names/sh85105428>, <http://babelnet.org/rdf/s00063768n>, <https://g.co/kg/m/068vv>, <https://d-nb.info/gnd/4008242-8>, <http://www.wikidata.org/entity/Q37930>, <http://vocab.getty.edu/aat/300037321>, <http://id.ndl.go.jp/auth/ndlna/00574394>, <http://www.yso.fi/onto/yso/p4888>, <http://purl.org/bncf/tid/6569>, <http://data.bnf.fr/ark:/12148/cb119336763>, <http://thesaurus.europeanafashion.eu/thesaurus/10909> ;
+	skos:note        "Comprobante del pago previo de los envíos efectuados por correo en forma de etiqueta"@es, "Пощенски знак"@bg, "Специальный знак почтовой оплаты, выпускаемый и продаваемый национальными почтовыми ведомствами"@ru, "Bestätigung eines postalischen Beförderungsunternehmens über die Zahlung des aufgedruckten Betrages"@de, "Waardepapier voor postverzending"@nl, "Pièce généralement de papier destinée à être collée sur un envoi postal comme preuve du paiement dudit envoi"@fr, "Cenina, která slouží jako doklad o zaplacení poštovního poplatku"@cs, "Carta-valore che serve per l'affrancatura dei servizi di corrispondenza"@it, "Cenina, ktorá slúži ako doklad o zaplatení poštového poplatku"@sk, "Postilähetykseen kiinnitettävä todiste siitä, että lähetyksen postimaksu on maksettu"@fi, "Lille stykke papir med den trykte indhold udgivet af en postvirksomhed der er indsat på en forsendelse og tjener som dokumentation for betaling"@da, "Liten pappersbit med tryckt innehåll utgiven av en postoperatör som klistras på en försändelse och tjänar som bevis på betalning"@sv, "Small piece of paper that is purchased and displayed on an item of mail as evidence of payment of postage"@en ;
+	skos:prefLabel   "Znaczek pocztowy"@pl, "Bolla postali"@mt, "Почтовая марка"@ru, "Postmark"@et, "Sello postal"@es, "Poštovní známka"@cs, "Briefmarke"@de, "Postage stamp"@en, "Francobollo"@it, "Frimärke"@sv, "Pastmarka"@lv, "Selo postal"@pt, "Пощенска марка"@bg, "Stampa poist"@ga, "Zigilu"@eu, "Marcă poștală"@ro, "Postabélyeg"@hu, "Pašto ženklas"@lt, "Poštanska marka"@hr, "Frimærke"@da, "Poštna znamka"@sl, "Poštová známka"@sk, "Γραμματόσημο"@el, "Postimerkki"@fi, "Segell"@ca, "Postzegel"@nl, "Timbre postal"@fr .
+
+<http://data.europeana.eu/concept/2399>
+	a                skos:Concept ;
+	skos:broader     <http://data.europeana.eu/concept/2397> ;
+	skos:exactMatch  <http://babelnet.org/rdf/s00043623n>, <http://thesaurus.europeanafashion.eu/thesaurus/10213>, <http://id.ndl.go.jp/auth/ndlna/00563130>, <http://id.nlm.nih.gov/mesh/D006260>, <https://d-nb.info/gnd/4130510-3>, <http://id.nlm.nih.gov/mesh/J01.637.708.560.750>, <http://id.loc.gov/authorities/names/sh85060069>, <http://iconclass.org/45C221>, <https://g.co/kg/m/0zvk5>, <http://www.yso.fi/onto/ysa/Y104434>, <http://vocab.getty.edu/aat/300203712>, <http://www.yso.fi/onto/yso/p9570>, <http://id.nlm.nih.gov/mesh/E07.700.380>, <http://vocab.getty.edu/aat/300036794>, <http://www.wikidata.org/entity/Q173603>, <https://www.freebase.com/m/0zvk5> ;
+	skos:note        "Schützende Kopfbedeckung"@de, "Equipaggiamento destinato a proteggere la testa"@it, "Prenda protectora usada en la cabeza"@es, "Qualquer tipo de armadura histórica ou moderna usada para proteger a cabeça"@pt, "Équipement de protection individuelle destiné à protéger la tête"@fr, "Rodzaj ochronnego nakrycia głowy"@pl, "Hoofddeksel"@nl, "Any type of historical or modern armor worn to protect the head"@en, "Ochrana hlavy; sportovní náčiní i bojová výzbroj"@cs, "Peça de protecció del cap"@ca, "Huvudbonad för skydd av huvudet"@sv ;
+	skos:prefLabel   "Casco"@it, "Casco"@es, "Hjälm"@sv, "Casc"@ca, "Helmet"@en, "Hjelm"@da, "Cască"@ro, "Каска"@bg, "Каска"@ru, "Casque"@fr, "Sisak"@hu, "Kiiver"@et, "Kaciga"@hr, "Kypärä"@fi, "Šalmas"@lt, "Čelada"@sl, "Přilba"@cs, "Kask"@pl, "Capacete"@pt, "Περικεφαλαία"@el, "Kasko"@eu, "Helm"@de, "Helm"@nl, "Ķivere"@lv, "Clogad"@ga, "Prilba"@sk .
+
+<http://www.geheugenvannederland.nl/?/en/items/MVC01:NVPH-287>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "51258"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/92034/GVNRC_MVC01_NVPH_287#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:03:42.215Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_MVC01_NVPH_287> .

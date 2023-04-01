@@ -1,0 +1,98 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://www.biusante.parisdescartes.fr/images/banque/pt/anmo0320.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "3503"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "78"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#191970"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#800000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/organization/1482250000004500704>
+	a               foaf:Organization ;
+	skos:prefLabel  "Interuniversity Health Library"@en .
+
+<http://data.europeana.eu/proxy/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> .
+
+<http://www.biusante.parisdescartes.fr/histmed/image?anmo0320>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "35239"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000004500704> ;
+	edm:isShownAt      <http://www.biusante.parisdescartes.fr/histmed/image?anmo0320> ;
+	edm:object         <http://www.biusante.parisdescartes.fr/images/banque/pt/anmo0320.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671141> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-09-28T15:01:22.533Z" ;
+	dcterms:modified          "2017-03-24T16:12:43.765Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320#contentTier>, <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> ;
+	edm:completeness          "9" ;
+	edm:country               "France" ;
+	edm:datasetName           "03927_Ag_BANQUEIMAGEPORTRAIT_IMAGE" ;
+	edm:landingPage           <https://www.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fwww.biusante.parisdescartes.fr%2Fimages%2Fbanque%2Fpt%2Fanmo0320.jpg&type=IMAGE> .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:21:18.241Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> .
+
+<http://data.europeana.eu/organization/1482250000004671141>
+	a               foaf:Organization ;
+	skos:prefLabel  "Moteur Collections"@fr, "Moteur Collections"@en .
+
+<http://data.europeana.eu/proxy/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320>
+	a                   ore:Proxy ;
+	dc:creator          "Paling, Isaac (Peintre)"@fr ;
+	dc:description      "Référence de l'image dans la banque d'images : anmo0320. - Nombre d'images dans le lot : 1 . - Peinture - Huile sur toile . - Paling Isaac (1630-1719)"@fr ;
+	dc:identifier       "0012/oai:biusante.parisdescartes.fr:image_anmo0320" ;
+	dc:relation         <http://collections.culture.fr> ;
+	dc:rights           "Ce document est la propriété de l'Académie Nationale de Médecine"@fr ;
+	dc:title            "Savants hollandais en discussion"@fr ;
+	dc:type             "tableau"@fr ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> .
+
+<http://data.europeana.eu/item/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T07:21:18.240Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/03927/_0012_oai_biusante_parisdescartes_fr_image_anmo0320> .

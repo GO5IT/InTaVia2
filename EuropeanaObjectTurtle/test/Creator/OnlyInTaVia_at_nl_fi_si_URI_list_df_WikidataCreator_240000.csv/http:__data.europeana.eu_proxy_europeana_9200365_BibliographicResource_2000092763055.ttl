@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/f1> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b550064650>
+	a                   ore:Proxy ;
+	dc:creator          "Liszt, Franz (1811-1886). Compositeur" ;
+	dc:date             "1881-1882" ;
+	dc:description      "Présentation musicale : [Partition]", "Titre propre pris au départ et à la p. 10 (autographes). - En haut de la p. 1, titre d'une main non identifiée : \u0022Der Kampf ums leben // Le Combat pour la Vie // Listz [sic] Franz ». - Le manuscrit contient les deux derniers des trois mouvements de \u0022Von der Wiege bis zum Grabe\u0022, oeuvre emblématique du style tardif de Liszt et généralement considérée comme le dernier de ses poèmes symphoniques ; la mention \u0022F. Liszt // partie II // du poème symphonique // Du berceau à la tombe\u0022 sur la chemise est erronée, car seule la première partie, \u0022Die Wiege\u0022 manque. - Manuscrit de travail à l'encre noire avec insertions et corrections au crayon bleu et rouge et à l'encre rouge (nombreuses ratures). Au fil du manuscrit, Liszt renvoie à des feuilles de correction qui en forment le dernier bifolio  (f. 11 r°-12 v°). On y lit notamment, de la main de Liszt :  \u0022Correctur Blatt zur Seite 3.\u0022 (f. 11 r°) ; \u0022Ergänzung Blatt zu […] Seite 8\u0022 (f. 12 r°). - Daté d'après Grove 7. - Pagination autographe au crayon bleu de 1 à 18 (= f. 1v° - 9 r°) ; le f. 10, non utilisé, et le dernier bifolio, avec les corrections, ne sont pas paginés. - 1re éd. : Berlin : Bote & Bock, 1883", "Titre uniforme : Liszt, Franz (1811-1886). Compositeur. [Von der Wiege bis zum Grabe. LW G38]. Extrait" ;
+	dc:format           "1 partition (18-[6] p.) ; 35, 5 x 27 cm", "Nombre total de vues :  37" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b550064650" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb13918200t", "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb41481251n" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-179" ;
+	dc:subject          "Poèmes symphoniques -- 19e siècle -- Partitions"@fre ;
+	dc:title            "Der Kampf um's Leben – (Le Combat pour la Vie) ; Zum Grabe : Die Wiege des zukünftigen Lebens (manuscrit autographe)" ;
+	dc:type             "Genre musical : poème symphonique", "manuscript music"@eng, "musique manuscrite"@fre ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550064650> .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b550064650>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550064650> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:32.737Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550064650> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550064650/manifest> ;
+	ebucore:fileByteSize    "43506"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "612"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A52A2A"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:32.737Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550064650> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550064650.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4855"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "167"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b550064650>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:37:48.197Z" ;
+	dcterms:modified          "2018-07-23T15:37:43.878Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650#contentTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b550064650> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b550064650.thumbnail.jpg&type=TEXT> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b550064650/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b550064650>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b550064650> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b550064650> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b550064650.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b550064650>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "191613"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b550064650/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .

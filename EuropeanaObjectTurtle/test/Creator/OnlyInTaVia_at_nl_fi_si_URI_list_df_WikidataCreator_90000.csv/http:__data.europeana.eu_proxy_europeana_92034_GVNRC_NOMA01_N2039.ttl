@@ -1,0 +1,125 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NOMA01_N2039>
+	a                   ore:Proxy ;
+	dc:subject          <http://data.europeana.eu/concept/106>, <http://data.europeana.eu/concept/2714> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1888" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_N2039> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:15.578Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_N2039> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_N2039>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NOMA01:N2039> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:N2039&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:08:15.578Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_N2039> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/concept/2714>
+	a                skos:Concept ;
+	skos:altLabel    "Frauenkleider"@de, "Sieviešu tērps"@lv, "Dameskleding"@nl, "Женский гардероб"@ru, "Sieviešu garderobe"@lv, "Women's costume"@en ;
+	skos:exactMatch  <http://zbw.eu/stw/descriptor/14902-4>, <http://www.wikidata.org/entity/Q4179400>, <http://g.co/kg/g/121zjpzw>, <http://thesaurus.europeanafashion.eu/thesaurus/10434> ;
+	skos:note        "Kleidung welche primär von Frauen und Mädchen getragen wird"@de, "Odzież noszona przez kobiety i dziewczęta"@pl, "Clothing worn primarily by women and girls"@en ;
+	skos:prefLabel   "Sieviešu apģērbs"@lv, "Vêtement féminin"@fr, "Женская одежда"@ru, "Indumentaria femenina"@es, "Damkläder"@sv, "Frauenkleidung"@de, "Vrouwenkleding"@nl, "Women's clothing"@en, "Odzież damska"@pl .
+
+<http://www.geheugenvannederland.nl/?/en/items/NOMA01:N2039>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48909"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/106>
+	a                skos:Concept ;
+	skos:exactMatch  <http://id.ndl.go.jp/auth/ndlna/00572338>, <http://id.nlm.nih.gov/mesh/D019477>, <http://purl.org/bncf/tid/10545>, <http://id.nlm.nih.gov/mesh/D011173>, <http://babelnet.org/rdf/s00063683n>, <http://www.wikidata.org/entity/Q134307>, <https://d-nb.info/gnd/4006627-7>, <https://g.co/kg/m/01dv4h>, <http://id.nlm.nih.gov/mesh/V01.185.843>, <http://data.bnf.fr/ark:/12148/cb11932843f>, <http://id.loc.gov/authorities/names/sh99001681>, <http://id.nlm.nih.gov/mesh/K01.093.742>, <http://vocab.getty.edu/aat/300015637>, <http://id.nlm.nih.gov/mesh/V02.700.600>, <https://www.freebase.com/m/01dv4h> ;
+	skos:note        "Representação artística de uma ou mais pessoas"@pt, "Изображение или описание какого-либо человека либо группы людей"@ru, "Umjetnički prikaz izgleda osobe"@hr, "Umělecká reprezentace jedné nebo více osob"@cs, "Artistic representation of one or more persons"@en, "Henkilöä esittävä taideteos"@fi, "Artistisk representation av en eller flera personer"@sv, "Representación artística de personas"@es, "Gènere artístic amb la representació artística de persones."@ca, "Représentation artistique des personnes"@fr, "Καλλιτεχνική απεικόνιση ενός ή περισσοτέρων προσώπων"@el, "Pertsona baten edo gehiagoren irudikapen artistikoa"@eu, "Künstlerische Abbildung von einer oder mehreren Personen"@de, "Viena vai vairāku cilvēku māksliniecisks attēlojums"@lv, "Rappresentazione artistica delle persone"@it, "Pictiúr de dhuine nó dhaoine"@ga, "Kunstnerisk repræsentation af en person"@da, "Artystyczny wizerunek osoby lub grupy osób"@pl, "Voorstelling van één of meer personen"@nl ;
+	skos:prefLabel   "Ritratt"@mt, "Porträtt"@sv, "Arckép"@hu, "Retrat"@ca, "Retrato"@pt, "Ritratto"@it, "Retrato"@es, "Porträt"@de, "Portree"@et, "Portrait"@fr, "Portrait"@en, "Προσωπογραφία"@el, "Portret"@nl, "Portret"@hr, "Portret"@sl, "Portret"@pl, "Portret"@ro, "Muotokuva"@fi, "Портрет"@ru, "Портрет"@bg, "Portrets"@lv, "Portráid"@ga, "Erretratu"@eu, "Portrét"@sk, "Portrét"@cs, "Portretas"@lt, "Portræt"@da .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NOMA01_N2039>
+	a                   ore:Proxy ;
+	dc:contributor      "Prins, Benjamin" ;
+	dc:creator          "Prins, Benjamin" ;
+	dc:description      "Gretha Prins is als baby afgebeeld ter herinnering aan haar geboorte." ;
+	dc:format           "schilderij" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:N2039" ;
+	dc:rights           "Voor meer informatie: Nederlands Openluchtmuseum"@nl, "For more information: Nederlands Openluchtmuseum"@en, "Nederlands Openluchtmuseum" ;
+	dc:source           "[N.2039], Streekdrachten in Nederland, Nederlands Openluchtmuseum" ;
+	dc:subject          "babykleding"@nl, "vrouwenkleding"@nl, "Noordoost-Nederland"@nl, "streekdracht"@nl, "portret"@nl, "Noord-Nederland"@nl, "Friesland"@nl, "geboorte"@nl ;
+	dc:title            "Moeder met pasgeborene 1888" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1888" ;
+	dcterms:extent      "hoogte: 79.0 cm; breedte: 67 cm; diepte: 4 cm" ;
+	dcterms:isPartOf    "NOMA01", "GVN", "Streekdrachten in Nederland" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NOMA01_N2039> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NOMA01_N2039>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T01:10:29.811Z" ;
+	dcterms:modified          "2018-04-05T17:33:30.498Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NOMA01_N2039> ;
+	edm:completeness          "7" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NOMA01_N2039> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANOMA01%3AN2039%26role%3Dthumbnail&type=IMAGE> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NOMA01:N2039&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "27464"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "178"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A0522D"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .

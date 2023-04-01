@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_152474226>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:152474226> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:152474226&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_152474226>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:14:48.472Z" ;
+	dcterms:modified          "2018-04-05T17:26:09.810Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226> ;
+	edm:completeness          "10" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_152474226> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A152474226%26role%3Dthumbnail&type=IMAGE> .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:47.522Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_152474226> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226>
+	a  edm:ProvidedCHO .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:152474226&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7207"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "116"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_152474226>
+	a                   ore:Proxy ;
+	dc:contributor      "Willem Buytewech" ;
+	dc:creator          "Willem Buytewech" ;
+	dc:description      "FM 1304. Spanje uitgebeeld als vrouw met een luipaard. Litt. : W. Langeveld: Politiek per prent. Amsterdam 1989", "Vindplaats: Haarlem, Gemeentearchief" ;
+	dc:format           "gravure" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:152474226" ;
+	dc:rights           "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum", "Nationaal Gevangenismuseum" ;
+	dc:source           "[152474226], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Hollandse tuin"@nl, "Staten Generael"@nl, "Oranjeboom"@nl, "Nederlandse leeuw"@nl, "Nederlandse maagd"@nl ;
+	dc:title            "Merckt de Wijsheyt vermaert vant Hollantsche huyshouwen en siet des luypaerts aert die niet is te vertrouwen" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "1615" ;
+	dcterms:isPartOf    "NCRD", "GVN", "NCRD01" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_152474226> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:152474226>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "49955"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_152474226>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/85304> ;
+	dc:creator          <http://data.europeana.eu/agent/85304> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	edm:year            "1615" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_152474226> .
+
+<http://data.europeana.eu/agent/85304>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://dbpedia.org/resource/Willem_Pieterszoon_Buytewech>, <http://id.worldcat.org/fast/1810609>, <http://id.loc.gov/authorities/names/n82098374>, <http://www.idref.fr/050553429/id>, <http://viaf.org/viaf/5724760>, <http://data.bibliotheken.nl/id/thes/p070081654>, <http://d-nb.info/gnd/118665693>, <http://vocab.getty.edu/ulan/500032468>, <http://data.bnf.fr/ark:/12148/cb15040270d>, <http://openlibrary.org/works/OL1297300A>, <http://datos.bne.es/resource/XX1214398>, <http://www.wikidata.org/entity/Q767225>, <https://www.freebase.com/m/0d57r8>, <https://g.co/kg/m/0d57r8> ;
+	rdaGr2:dateOfBirth             "1591-01-01" ;
+	rdaGr2:dateOfDeath             "1624-09-23" ;
+	rdaGr2:placeOfBirth            <http://data.europeana.eu/place/40387> ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/40387> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/47> ;
+	skos:altLabel                  "Willem Pietersz. Buytewegh"@nl, "Willem Pietersz. Buytewegh"@en, "Willem Pieterse Buytewech"@nl, "Willem Pieterse Buytewech"@en, "Бёйтевех, Виллем"@ru, "Willem Pieterszoon Buytewech"@it, "Willem buytewech"@en, "Willem Pietersz Buytewech"@en, "Buytendijk"@en, "Buytenwegh"@en, "Willem Buijtewegh"@nl, "Willem Buijtewegh"@en, "W. Pietersz. Buytewech"@nl, "W. Pietersz. Buytewech"@en, "Willem Buytewech"@en, "Willem Buytewech (I)"@nl, "Willem Pietersz. Buijtenwegh"@en, "Willem Buytewech (I)"@en, "Buytewech"@en, "Willhelm Buytenweg"@en, "Willem Buytewech the Elder"@en, "Willem Pieterszon Buytewech"@sv, "Willem Pietersz. Buijtewegh"@nl, "Willem Pietersz. Buijtewegh"@en, "Willem Buijtewegh (1591/92-1624)"@nl, "Willem Buijtewech (1591/92-1624)"@nl, "Willem buytenweg gen. der geestige willem"@en, "Willem Buijtewech (1591/92-1624)"@en, "Willem Buijtewegh (1591/92-1624)"@en, "Buijtenwegh"@en, "Willem Buiteweg"@en, "Willem Buijtenweg"@en, "Willem Buytewegh"@nl, "Willem Buytewegh"@en, "Willem Pietersz. Buijtewech"@nl, "Willem Pietersz. Buijtewech"@en, "Willem Pietersz. Buytewech"@nl, "Willem Pietersz. Buytewech"@en, "W. Buiteweg"@en, "Willem Pietersz Buijtewech"@sv, "Willem Buijtewech"@nl, "Of geestige Willem Buiteweg"@en, "Willem Buijtewech"@en, "Willem Buytewegh (1591/92-1624)"@nl, "Willem Buytewegh (1591/92-1624)"@en, "Geestige Willem"@nl, "Geestige Willem"@it, "Geestige Willem"@en, "Willem Buytewech (1591/92-1624)"@nl, "Willem Buytewech (1591/92-1624)"@en, "Witty Willem"@en ;
+	skos:note                      "Pittore, incisore e disegnatore olandese"@it, "Ολλανδός ζωγράφος, σχεδιαστής και χαράκτης"@el, "Holenderski artysta"@pl, "Painter and engraver from the Northern Netherlands (1591-1624)"@en, "Peintre et graveur néerlandais"@fr, "Niederländischer Maler, Zeichner und Radierer"@de, "Nederlands kunstschilder"@nl ;
+	skos:prefLabel                 "Виллем Бёйтевех"@ru, "Willem Pietersz. Buytewech"@de, "Willem Pietersz. Buytewech"@sv, "Willem Pietersz. Buytewech"@fr, "Willem Pietersz. Buytewech"@ca, "Willem Buytewech"@it, "Willem Buytewech"@da, "Willem Buytewech"@nl, "Willem Buytewech"@pt, "Willem Pietersz Buytewech"@cs, "Willem Pietersz Buytewech"@sk, "Willem Pieterszoon Buytewech"@pl, "Βίλλεμ Πίτερσζον Μπόιτεβεχ"@el, "Willem Pieterszoon Buytewech"@es, "Willem Pieterszoon Buytewech"@en .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_152474226#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:05:47.522Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_152474226> .

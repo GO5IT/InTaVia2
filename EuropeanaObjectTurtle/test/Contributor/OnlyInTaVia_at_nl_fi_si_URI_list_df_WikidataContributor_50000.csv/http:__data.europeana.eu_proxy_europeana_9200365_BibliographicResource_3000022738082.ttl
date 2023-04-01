@@ -1,0 +1,132 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52501825s>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "192988"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/proxy/europeana/9200522/ark__12148_btv1b52501825s>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1849" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52501825s> .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.964Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierA> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52501825s> .
+
+<http://data.europeana.eu/organization/1482250000002112001>
+	a               foaf:Organization ;
+	skos:prefLabel  "Bibliothèque nationale de France"@fr, "National Library of France"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200522/ark__12148_btv1b52501825s>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2016-11-30T09:36:41.089Z" ;
+	dcterms:modified          "2018-07-23T15:36:32.656Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s#metadataTier>, <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s> ;
+	edm:completeness          "10" ;
+	edm:country               "France" ;
+	edm:datasetName           "9200522_Ag_BnF_Gallica_typedoc_partitions" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200522/ark__12148_btv1b52501825s> ;
+	edm:language              "fr" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fgallica.bnf.fr%2Fark%3A%2F12148%2Fbtv1b52501825s.thumbnail.jpg&type=TEXT> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/f1/full/512,/0/native.jpg>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52501825s/manifest> ;
+	ebucore:fileByteSize    "20389"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType     "image/jpeg" ;
+	ebucore:height          "611"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation     "portrait" ;
+	ebucore:width           "512"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor      "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace       "sRGB" .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/f1>
+	a                   svcs:Service ;
+	dcterms:conformsTo  <http://iiif.io/api/image> ;
+	doap:implements     <http://iiif.io/api/image/2/level2.json> .
+
+<http://gallica.bnf.fr/ark:/12148/btv1b52501825s.thumbnail.jpg>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "4361"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "153"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#8FBC8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#808080"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D2B48C"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BC8F8F"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T06:08:27.964Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52501825s> .
+
+<https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/f1/full/full/0/native.jpg>
+	a                       edm:WebResource ;
+	dc:format               "application/pdf" ;
+	dcterms:isReferencedBy  <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/manifest.json> ;
+	svcs:has_service        <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/f1> .
+
+<http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52501825s>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:isShownAt      <http://gallica.bnf.fr/ark:/12148/btv1b52501825s> ;
+	edm:isShownBy      <https://gallica.bnf.fr/iiif/ark:/12148/btv1b52501825s/f1/full/512,/0/native.jpg> ;
+	edm:object         <http://gallica.bnf.fr/ark:/12148/btv1b52501825s.thumbnail.jpg> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000002112001> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-OKLR/1.0/> .
+
+<http://data.europeana.eu/proxy/provider/9200522/ark__12148_btv1b52501825s>
+	a                   ore:Proxy ;
+	dc:contributor      "Joachim, Joseph (1831-1907). Dédicataire", "Hebbel, Friedrich (1813-1863). Auteur du texte. Dédicataire", "Gottschalk, Carl (1802-1882). Copiste" ;
+	dc:creator          "Schumann, Robert (1810-1856). Compositeur" ;
+	dc:date             "1849" ;
+	dc:description      "Titre uniforme : Schumann, Robert (1810-1856). Compositeur. [Nachtlied. Op. 108]", "Autres mentions au titre : \u002296tes Werk\u0022 (sous rature) ; \u0022Zum Abschreiben fertig (sous rature] // D., d. 15/12 50\u0022 ; \u00221ste Aufführung Düsseldorf d. 13. März 1851\u0022 ; Zum Druck // d. 16/3 51\u0022. - Manuscrit autographe à l'encre brune, sauf les parties vocales, copiées à l'encre noire par Carl Gottschalk. - Daté au titre : \u0022Dresden, // in November 1849\u0022 ; daté et signé à la fin : \u0022Dresden, den 11ten Nov. 1849 // R. Schumann\u0022. - Fol. 24 inutilisé. - Manuscrit ayant servi à la gravure. - 1re éd. : Bonn : N. Simrock, 1852", "Présentation musicale : Partitur" ;
+	dc:format           "1 partition (24 f.) ; 31,5 x 26 cm", "Nombre total de vues :  56" ;
+	dc:identifier       "http://gallica.bnf.fr/ark:/12148/btv1b52501825s" ;
+	dc:language         "fre" ;
+	dc:relation         "Notice du catalogue : http://catalogue.bnf.fr/ark:/12148/cb435063361", "Notice d’oeuvre : http://catalogue.bnf.fr/ark:/12148/cb140296348" ;
+	dc:rights           <http://rightsstatements.org/page/NoC-OKLR/1.0/?relatedURL=http://gallica.bnf.fr/html/conditions-dutilisation-des-contenus-de-gallica> ;
+	dc:source           "Bibliothèque nationale de France, département Musique, MS-323" ;
+	dc:subject          "Choeurs profanes (voix mixtes, 8 voix) -- 19e siècle -- Partitions"@fre ;
+	dc:title            "Nachtlied // von // Friedrich Hebbel // für // Chor und Orchester // componirt // und // dem Dichter // gewidmet // von // R. Schumann // Op. 108 (manuscrit en partie autographe)" ;
+	dc:type             "manuscript music"@eng, "musique manuscrite"@fre, "Genre musical : choeur" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200522/ark__12148_btv1b52501825s> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200522/ark__12148_btv1b52501825s> .
+
+<https://iiif.europeana.eu/presentation/9200522/ark__12148_btv1b52501825s/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .

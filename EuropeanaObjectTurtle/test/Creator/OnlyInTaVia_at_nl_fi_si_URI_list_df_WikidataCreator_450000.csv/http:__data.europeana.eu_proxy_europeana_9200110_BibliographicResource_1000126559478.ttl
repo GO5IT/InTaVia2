@@ -1,0 +1,169 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126559478>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000021995423> ;
+	edm:hasView        <http://hdl.handle.net/2027/ucm.5324235501> ;
+	edm:isShownAt      <http://books.google.com/books/ucm?vid=UCM5324235501&printsec=frontcover> ;
+	edm:object         <http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5324235501> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478>
+	a           edm:ProvidedCHO ;
+	owl:sameAs  <file:///usr/local/tomcat/webapps/147884bc-acf2-457d-8252-f200fb0cf5fc> .
+
+<http://books.google.com/books/ucm?vid=UCM5324235501&printsec=frontcover>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "41748"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:46:33.194Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126559478> .
+
+<http://hdl.handle.net/2027/ucm.5324235501>
+	a                       edm:WebResource ;
+	dcterms:isReferencedBy  <https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126559478/manifest> ;
+	edm:rights              <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/concept/2841>
+	a                skos:Concept ;
+	skos:altLabel    "Monografies"@ca, "Monografijos"@lt, "Monografisch"@nl, "Monografieen"@nl, "Monografin"@sv, "Monografie"@it, "Monographie et/ou étude de cas"@fr, "Wykład monograficzny"@pl, "Monografia"@es, "Monographie"@de, "Monografias"@es, "Monografija"@sl, "Treball monogràfic"@ca, "Monografier"@da, "Monografier"@sv, "Monografisk"@da, "Monografieën"@nl, "Monogràfic"@ca ;
+	skos:broader     <http://data.europeana.eu/concept/6> ;
+	skos:exactMatch  <http://www.wikidata.org/entity/Q193495>, <https://www.freebase.com/m/02_xgt>, <http://d-nb.info/gnd/4454906-4>, <https://g.co/kg/m/02_xgt>, <http://vocab.getty.edu/aat/300060417>, <http://vocabularies.unesco.org/thesaurus/concept4227>, <http://id.nlm.nih.gov/mesh/D016467> ;
+	skos:note        "Specialist work of writing on a single subject or an aspect of a subject"@en, "Ammattilaistyöllä tehty tutkimusesitelmä"@fi, "Научный труд в виде книги с углубленным изучением одной темы"@ru, "Étude détaillée sur un sujet précis et limité"@fr, "Skrift som på uttömmande sätt avhandlar ett särskilt föremål eller ämne inom någon vetenskap"@sv, "Ño se"@es, "Publikace komplexně zpracovávající jedno téma"@cs, "Umfassende, in sich vollständige Abhandlung über einen einzelnen Gegenstand"@de, "Praca naukowa"@pl, "Egy-egy szakterületről vagy annak bizonyos aspektusairól szóló szakkönyv"@hu ;
+	skos:prefLabel   "Monografska publikacija"@sl, "Monografía"@es, "Monograph"@en, "Monografija"@lt, "Monografija"@hr, "Monografi"@sv, "Monografi"@da, "Μονογραφία"@el, "Monografie"@nl, "Monografie"@de, "Monografie"@cs, "Monografie"@ro, "Монография"@ru, "Monographie"@fr, "Monográfia"@hu, "Monograafia"@et, "Monografia"@fi, "Monografia"@pt, "Monografia"@it, "Monografia"@sk, "Monografia"@pl, "Monografia"@ca .
+
+<http://data.europeana.eu/proxy/europeana/9200110/BibliographicResource_1000126559478>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/149312> ;
+	dc:creator          <http://data.europeana.eu/agent/171761> ;
+	dc:type             <http://data.europeana.eu/concept/2841> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1853" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126559478> .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/agent/171761>
+	a                              edm:Agent ;
+	owl:sameAs                     <http://id.ndl.go.jp/auth/ndlna/00450138>, <http://www.wikidata.org/entity/Q79759>, <https://g.co/kg/m/0448r>, <http://vocab.getty.edu/ulan/500284151>, <http://kulturarvsdata.se/LSH/agents/50899>, <https://livedata.bibsys.no/authority/90079547>, <http://id.worldcat.org/fast/29106>, <http://data.carnegiehall.org/names/1020385>, <http://www.idref.fr/027030865/id>, <https://www.freebase.com/m/0448r>, <http://data.cervantesvirtual.com/person/13282>, <http://d-nb.info/gnd/118582607>, <http://libris.kb.se/resource/auth/195327>, <https://libris.kb.se/c9prs4ww4s8m22h>, <http://data.bibliotheken.nl/id/thes/p068421443>, <http://nlg.okfn.gr/resource/authority/record64240>, <http://id.loc.gov/authorities/names/n78095532>, <http://datos.bne.es/resource/XX984603>, <http://viaf.org/viaf/17226855>, <http://openlibrary.org/works/OL68333A>, <http://dbpedia.org/resource/John_Milton>, <urn:uuid:fc1002ff-0966-4f9b-9cab-7a7773df72d9>, <http://lod.nl.go.kr/resource/KAC199618965>, <http://data.bnf.fr/ark:/12148/cb119162033> ;
+	rdaGr2:dateOfBirth             "1608-12-09" ;
+	rdaGr2:dateOfDeath             "1674-11-08" ;
+	rdaGr2:placeOfDeath            <http://data.europeana.eu/place/177208> ;
+	rdaGr2:professionOrOccupation  <http://data.europeana.eu/concept/2954> ;
+	skos:altLabel                  "Τζον Μιλτον"@el, "Мильтон Д."@ru, "Мильтон Джон"@ru, "Ιωάννης Μίλτον"@el, "Giovanni Milton"@pl, "Giovanni Milton"@it, "Džon Mil'ton"@cs, "Милтон Джон"@ru, "Miltons"@lv, "Джон Милтон"@ru, "John Milton"@lv, "Joannes Miltonus"@pl, "Joannes Miltonus"@cs, "Gioanni Milton"@pl, "Ιωάννης Μίλτων"@el, "Милтон, Джон"@ru, "Jan Milton"@cs, "J. M."@pl, "Īoann Milʹton"@pl, "Мильтон"@ru, "Milton"@da, "Milton"@sv, "Milton"@lv ;
+	skos:note                      "Anglický spisovatel, básník"@cs, "English epic poet, essayist and civil servant (1608–1674)"@en, "Britisk poet og skribent"@da, "Poeta épico, ensayista y funcionario inglés"@es, "Englischer Dichter und Beamter"@de, "Английски поет и публицист"@bg, "Brits schrijver"@nl, "Poeta i assagista anglès"@ca, "Άγγλος ποιητής"@el, "Poeta e scrittore inglese"@it, "Angielski poeta"@pl, "Poète, essayiste, pamphlétaire et fonctionnaire anglais"@fr, "Brittisk poet och författare"@sv, "Английский поэт, политический деятель, мыслитель"@ru ;
+	skos:prefLabel                 "Τζον Μίλτον"@el, "John Milton"@et, "John Milton"@cs, "John Milton"@pl, "John Milton"@ro, "John Milton"@da, "John Milton"@nl, "John Milton"@fr, "John Milton"@de, "John Milton"@fi, "John Milton"@pt, "John Milton"@hr, "John Milton"@hu, "John Milton"@sk, "John Milton"@sl, "John Milton"@ga, "John Milton"@ca, "John Milton"@sv, "John Milton"@en, "John Milton"@it, "John Milton"@es, "Džonas Miltonas"@lt, "Джон Мильтон"@ru, "Джон Милтън"@bg, "Džons Miltons"@lv .
+
+<https://iiif.europeana.eu/presentation/9200110/BibliographicResource_1000126559478/manifest>
+	a  <http://iiif.io/api/presentation/3#Manifest>, edm:WebResource .
+
+<http://data.europeana.eu/proxy/provider/9200110/BibliographicResource_1000126559478>
+	a                   ore:Proxy ;
+	dc:contributor      "Charpentier", "Jean Baptiste Aimé Sanson de Pongerville", "Gustave Gratiot" ;
+	dc:creator          "John Milton" ;
+	dc:description      "traduit par de Pongerville." ;
+	dc:format           "Printed"@en ;
+	dc:identifier       "147884bc-acf2-457d-8252-f200fb0cf5fc" ;
+	dc:language         "fr" ;
+	dc:publisher        "Charpentier, Libraire-éditeur" ;
+	dc:rights           "The digital images and OCR of this work were produced by Google, Inc. (indicated by a watermark on each page in the digital object). Google requests that the images and OCR not be re-hosted, redistributed or used commercially. More information at source library: http://biblioteca.ucm.es/proyectogoogle"@en ;
+	dc:title            "Le paradis perdu de Milton" ;
+	dc:type             "Monograph"@en ;
+	dcterms:extent      "356 p. ;", "18 cm." ;
+	dcterms:isPartOf    <http://data.theeuropeanlibrary.org/Collection/a1010> ;
+	dcterms:issued      "1853" ;
+	dcterms:spatial     <http://sws.geonames.org/2988507/>, <http://id.loc.gov/vocabulary/countries/fr> ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126559478> .
+
+<http://babel.hathitrust.org/cgi/imgsrv/image?id=ucm.5324235501>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "60689"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "1101"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "680"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:rights            <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-17T00:46:33.193Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200110/BibliographicResource_1000126559478> .
+
+<http://data.europeana.eu/agent/149312>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/58799>, <http://data.europeana.eu/concept/235>, <http://data.europeana.eu/concept/247> ;
+	owl:sameAs           <http://openlibrary.org/works/OL1272366A>, <http://id.worldcat.org/fast/112783>, <http://nlg.okfn.gr/resource/authority/record210851>, <http://viaf.org/viaf/27251362>, <http://www.idref.fr/027685209/id>, <https://g.co/kg/m/02lbsz>, <http://www.wikidata.org/entity/Q311663>, <http://id.ndl.go.jp/auth/ndlna/01033633>, <http://d-nb.info/gnd/118669109>, <http://lod.nl.go.kr/resource/KAC199604863>, <http://data.carnegiehall.org/names/1002760>, <http://data.bibliotheken.nl/id/thes/p071378154>, <http://id.loc.gov/authorities/names/n83066447>, <http://data.bnf.fr/ark:/12148/cb13892401r>, <http://datos.bne.es/resource/XX956923>, <https://www.freebase.com/m/02lbsz>, <http://dbpedia.org/resource/Gustave_Charpentier> ;
+	rdaGr2:dateOfBirth   "1860-06-25" ;
+	rdaGr2:dateOfDeath   "1956-02-18" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/41488> ;
+	skos:altLabel        "Шарпантье Гюстав"@ru, "Gustave Charpentier"@ru, "Charpentier"@sv ;
+	skos:note            "Prantsusmaa helilooja"@et, "Французский композитор"@ru, "Francouzský hudební skladatel"@cs, "Ranskalainen säveltäjä"@fi, "Frans componist (1860-1956)"@nl, "Francuski kompozytor"@pl, "Fransk komponist"@da, "Compositeur français"@fr, "French composer"@en, "Compozitor francez"@ro, "Compositor francès"@ca, "Francia zeneszerző"@hu, "Französischer Komponist"@de, "Compositor francês"@pt, "Kompożitur Franċiż (1860-1956)"@mt, "Cumadóir Francach"@ga, "Compositore francese"@it, "Fransk kompositör"@sv, "Compositor francés"@es ;
+	skos:prefLabel       "Gustave Charpentier"@pl, "Gustave Charpentier"@ro, "Gustave Charpentier"@da, "Gustave Charpentier"@nl, "Gustave Charpentier"@ca, "Gustave Charpentier"@it, "Gustave Charpentier"@de, "Gustave Charpentier"@sv, "Gustave Charpentier"@fi, "Gustave Charpentier"@pt, "Gustave Charpentier"@mt, "Gustave Charpentier"@en, "Gustave Charpentier"@fr, "Gustave Charpentier"@hu, "Gustave Charpentier"@es, "Gustave Charpentier"@cs, "Gustave Charpentier"@sl, "Gistavs Šarpentjē"@lv, "Гюстав Шарпантье"@ru .
+
+<http://data.europeana.eu/aggregation/europeana/9200110/BibliographicResource_1000126559478>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-07-01T09:50:36.139Z" ;
+	dcterms:modified          "2015-02-25T16:13:01.934Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478#metadataTier>, <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200110/BibliographicResource_1000126559478> ;
+	edm:completeness          "6" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "9200110_Ag_EU_TEL_a1010_EuropeanaLibraries" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200110/BibliographicResource_1000126559478> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbabel.hathitrust.org%2Fcgi%2Fimgsrv%2Fimage%3Fid%3Ducm.5324235501&type=TEXT> ;
+	edm:rights                <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://sws.geonames.org/2988507/>
+	a               edm:Place ;
+	skos:prefLabel  "Paris (Herstellung)" .
+
+<http://data.europeana.eu/organization/1482250000021995423>
+	a               foaf:Organization ;
+	skos:prefLabel  "Universidad Complutense de Madrid"@es, "Complutense University of Madrid"@en .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .

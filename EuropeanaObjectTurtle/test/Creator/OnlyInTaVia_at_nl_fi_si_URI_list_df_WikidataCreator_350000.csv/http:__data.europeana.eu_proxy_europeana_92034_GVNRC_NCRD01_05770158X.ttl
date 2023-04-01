@@ -1,0 +1,124 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:18.378Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_05770158X> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T14:07:18.378Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_05770158X> .
+
+<http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:05770158X&role=thumbnail>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7254"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "150"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "108"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary> .
+
+<http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/organization/1482250000001710507>
+	a               foaf:Organization ;
+	skos:prefLabel  "Koninklijke Bibliotheek"@nl, "National Library of the Netherlands"@en .
+
+<http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_05770158X>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000001710507> ;
+	edm:isShownAt      <http://www.geheugenvannederland.nl/?/en/items/NCRD01:05770158X> ;
+	edm:object         <http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:05770158X&role=thumbnail> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://data.europeana.eu/agent/150489>
+	a                    edm:Agent ;
+	edm:hasMet           <http://data.europeana.eu/agent/161720>, <http://data.europeana.eu/agent/163754>, <http://data.europeana.eu/concept/201>, <http://data.europeana.eu/agent/76823> ;
+	owl:sameAs           <http://data.bibliotheken.nl/id/thes/p06889015X>, <https://g.co/kg/m/03fzzx>, <http://d-nb.info/gnd/118540610>, <https://www.freebase.com/m/03fzzx>, <http://vocab.getty.edu/ulan/500023327>, <http://id.worldcat.org/fast/11658>, <http://libris.kb.se/resource/auth/210429>, <http://dbpedia.org/resource/Hendrick_Goltzius>, <http://kulturarvsdata.se/LSH/agents/11592>, <http://www.idref.fr/031506682/id>, <https://libris.kb.se/rp35623943pkf6n>, <http://datos.bne.es/resource/XX895006>, <http://ta.sandrart.net/-person-1004>, <http://data.bnf.fr/ark:/12148/cb122708353>, <http://openlibrary.org/works/OL560560A>, <http://viaf.org/viaf/19737376>, <http://id.loc.gov/authorities/names/n50034471>, <http://www.wikidata.org/entity/Q165367>, <http://datos.bne.es/resource/XX1780987> ;
+	rdaGr2:dateOfBirth   "1558-02-01" ;
+	rdaGr2:dateOfDeath   "1617-01-01" ;
+	rdaGr2:placeOfDeath  <http://data.europeana.eu/place/40710> ;
+	skos:altLabel        "H. Golzius"@en, "Hendrik Goltzius"@nl, "Goltzious"@en, "Golscius"@en, "Heinrich Goltzius"@en, "Gottius"@en, "Golsio"@en, "Henry Goltzius"@en, "Henricus Goltzius"@en, "Henricus Goltzius"@cs, "Henricus Goltzius"@nl, "Enrico Golsio"@en, "Golcius"@en, "Goltzius"@en, "Hinrich Goltzius"@en, "Golzus"@en, "Gholtius"@en, "Hendrik Golzius"@en, "Goltzeus"@en, "H. Goltzins"@en, "Henricus Goltius"@en, "Golsjus"@en, "H. Golsius"@en, "Golshes"@en, "Golsi"@en, "Hendrik van goltzius"@en, "Henri Goltz"@en, "Хендрик Гольциус"@ru, "Hendrick Goltius"@en, "Hendrick Goltius"@nl, "Hendr. Goltzius"@en, "Heinrich Golzius"@en, "Goltzenis"@en, "Henri Goltzius"@en, "Hendrik Gols"@en, "Hendrik Gols"@nl, "H. Gottzius"@en, "Hendricus Goltzius"@en, "Hendricus Goltzius"@nl, "Golz"@en, "Hinr. Golzius"@en, "Hendrik Goltius"@en, "Hendrik Goltius"@nl, "Hendrik Goltz"@en, "Hendrik Goltz"@fr, "Hendrik Goltz"@nl, "Hinrich Golzius"@en, "Henr. Goltzius"@en, "Hendrick Gousius"@en, "Hendrick Goltzius"@en, "Gattius"@en, "H. Goltzius"@en, "H. Goltzius"@nl, "Hendrick Goltzius"@fr, "Hendrick Golcius"@en, "Henrik Goltzius"@en, "Hendrick Golzious"@en, "Heinrick Goltzius"@en, "Heinrick Goltzius"@cs, "Golzius"@en, "Hendrik Goltsius"@en, "Galtius"@en, "Hinr. Goltzius"@en, "Golsus"@en, "Henry Goltius"@en, "Hendrick Goltz"@en, "Hendrick Goltz"@cs, "Hendrick Goltz"@nl, "Hendrick Gols"@en, "Hendrick Gols"@nl, "Guetius"@en, "H. Gotzius"@en, "Goltzio"@en, "Henr. Goltius"@en, "Henrico Goltzius"@en, "Goltius"@en, "Henry Gottius"@en, "Henri Goltius"@en, "Goltizus"@en, "Hendrik Golsius"@en, "Goltino"@en, "Arrigo Golsio"@en, "Golzious"@en, "Golztius"@en, "Gousius"@en, "Hendrick Golzius"@en, "Hendrick Golzius"@nl, "Goltzino"@en, "Goltzino"@cs, "Heinr. Goltzius"@en, "Henrik Golzius"@en, "Henrik Golzius"@nl, "Goltizius"@en, "H. Goltsius"@en, "Hin. Golzius"@en, "Goulchius"@en, "Goetsiers"@en, "Golzes"@en, "Goltsius"@en, "Hendrick Goltsius"@en, "Hendrick Goltino"@en, "Golzi"@en, "Goltzenes"@en, "Alb. Goltzio"@en, "H. Goltius"@en, "Hendrick Golthius"@en, "The Dutch Proteus"@en, "H. Goldius"@en, "Hendrick van Bracht"@en, "Hendrick van Bracht"@nl, "Gendrik Golʹt︠s︡ius"@en, "Goltzer"@en, "Golsius"@en, "Goltio"@en, "Hendrick Golsius"@en, "Colchis"@en ;
+	skos:note            "Németalföldi festő, grafikus, nyomdász"@hu, "Pittore e incisore olandese"@it, "Niederländischer Maler und Kupferstecher"@de, "Peintre et graveur néerlandais"@fr, "Ολλανδός χαράκτης και ζωγράφος"@el, "Nederlands kunstschilder"@nl, "Painter and engraver from the Northern Netherlands (1558-1617)"@en ;
+	skos:prefLabel       "Hendrik Goltzius"@pl, "Hendrik Goltzius"@cs, "Hendrik Goltzius"@hu, "Hendrik Goltzius"@fr, "Hendrik Goltzius"@en, "Hendrik Goltzius"@pt, "Hendrik Goltzius"@fi, "Hendrick Goltzius"@ca, "Hendrick Goltzius"@nl, "Hendrick Goltzius"@da, "Hendrick Goltzius"@sk, "Hendrick Goltzius"@es, "Hendrick Goltzius"@it, "Hendrick Goltzius"@lt, "Hendrick Goltzius"@sv, "Hendrick Goltzius"@de, "Гольциус, Хендрик"@ru, "Χέντρικ Χόλτσιους"@el .
+
+<http://data.europeana.eu/proxy/provider/92034/GVNRC_NCRD01_05770158X>
+	a                   ore:Proxy ;
+	dc:contributor      "Hendrick Goltzius" ;
+	dc:creator          "Hendrick Goltzius" ;
+	dc:description      "Vindplaats: Brussel, Prentenkabinet Koninklijke Bibliotheek", "Litt. : A. Schreiner, H. Bouwmeester, A. van Dooren: In de ban van het recht. Amsterdam 1991" ;
+	dc:format           "prent" ;
+	dc:identifier       "http://resolver.kb.nl/resolve?urn=urn:gvn:NCRD01:05770158X" ;
+	dc:rights           "Nationaal Gevangenismuseum", "Copyright kan per afbeelding variëren, meer specifieke informatie bij het Nationaal Gevangenismuseum" ;
+	dc:source           "[05770158X], NCRD, Nationaal Gevangenismuseum" ;
+	dc:subject          "Salomo's oordeel"@nl, "Justitia (zittend, weegschaal, zwaard) (Rechtssymbool)"@nl ;
+	dc:title            "Justitia en Salomo's oordeel" ;
+	dc:type             "StillImage" ;
+	dcterms:created     "15XX" ;
+	dcterms:isPartOf    "NCRD", "NCRD01", "GVN" ;
+	dcterms:medium      "image/jpeg" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/92034/GVNRC_NCRD01_05770158X> .
+
+<http://data.europeana.eu/concept/2538>
+	a                skos:Concept ;
+	skos:exactMatch  <http://iconclass.org/48C533>, <http://babelnet.org/rdf/s15465928n>, <http://id.loc.gov/authorities/genreForms/gf2017027255>, <http://vocab.getty.edu/aat/300041273>, <http://g.co/kg/g/121sxn6v>, <https://d-nb.info/gnd/4113357-2>, <http://id.loc.gov/ontologies/bibframe/Print>, <http://id.ndl.go.jp/auth/ndlna/00562916>, <http://www.wikidata.org/entity/Q11060274>, <http://thesaurus.europeanafashion.eu/thesaurus/10305>, <http://thesaurus.europeanafashion.eu/thesaurus/10419> ;
+	skos:note        "Operă de artă produsă prin imprimare"@ro, "Edizione"@it, "Kunstværk fremstillet ved en trykkeproces"@da, "Imagem obtida através da impressão de uma matriz artesanal"@pt, "Verk framställt genom tryckning"@sv, "Door middel van een grafisch procedé verkregen papieren afdruk"@nl, "Произведение искусства в виде оттиска на бумаге с печатной формы (матрицы)"@ru, "Œuvre d'art résultant de l’impression d’une gravure sur bois ou sur métal, ou d'un dessin sur pierre"@fr, "Grafisches Druckverfahren und damit produzierte Werke"@de, "Work of art printed from a block or plate"@en, "Taideteos, joka on vedostettu erilaisilta painolevyiltä paperille tai muulle pinnalle"@fi, "Proceso de impresión para obtener un diseño"@es ;
+	skos:prefLabel   "Estampa"@pt, "Estampa"@es, "Estampa"@ca, "Estamps"@lv, "Metszet"@hu, "Druck"@de, "Sztych"@pl, "Tryck"@sv, "Grafiikka"@fi, "Prent"@nl, "Trükipilt"@et, "Печатна графика"@bg, "Tisk"@cs, "Εκτύπωση"@el, "Tryk"@da, "Estampas"@lt, "Stampa"@it, "Prionta"@ga, "Print"@en, "Эстамп"@ru, "Stampă"@ro, "Estampe"@fr ;
+	skos:related     <http://data.europeana.eu/concept/2955> .
+
+<http://www.geheugenvannederland.nl/?/en/items/NCRD01:05770158X>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "48382"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/proxy/europeana/92034/GVNRC_NCRD01_05770158X>
+	a                   ore:Proxy ;
+	dc:contributor      <http://data.europeana.eu/agent/150489> ;
+	dc:creator          <http://data.europeana.eu/agent/150489> ;
+	dc:format           <http://data.europeana.eu/concept/2538> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "IMAGE" ;
+	ore:proxyFor        <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_05770158X> .
+
+<http://data.europeana.eu/aggregation/europeana/92034/GVNRC_NCRD01_05770158X>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2014-01-10T00:06:41.245Z" ;
+	dcterms:modified          "2018-04-05T17:24:57.696Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X#metadataTier>, <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/92034/GVNRC_NCRD01_05770158X> ;
+	edm:completeness          "8" ;
+	edm:country               "Netherlands" ;
+	edm:datasetName           "92034_Ag_EU_TEL" ;
+	edm:landingPage           <https://www.europeana.eu/item/92034/GVNRC_NCRD01_05770158X> ;
+	edm:language              "nl" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fresolver.kb.nl%2Fresolve%3Furn%3Durn%3Agvn%3ANCRD01%3A05770158X%26role%3Dthumbnail&type=IMAGE> .

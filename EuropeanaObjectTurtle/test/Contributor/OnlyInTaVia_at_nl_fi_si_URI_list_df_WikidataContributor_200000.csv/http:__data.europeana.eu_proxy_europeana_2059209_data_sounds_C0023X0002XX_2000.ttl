@@ -1,0 +1,128 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://sounds.bl.uk/World-and-traditional-music/Peter-Cooke-Uganda/025M-C0023X0002XX-2000V0>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "0"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://viaf.org/viaf/326793>
+	a                   edm:Agent ;
+	owl:sameAs          <http://id.loc.gov/authorities/names/nb90051523>, <http://d-nb.info/gnd/1026429579>, <http://data.bibsys.no/data/notrbib/authorityentry/x48967>, <http://data.bnf.fr/ark:/12148/cb15573889p#foaf:Person>, <http://isni.org/isni/0000000078487091> ;
+	rdaGr2:dateOfBirth  "1930" ;
+	skos:prefLabel      "Peter Cooke"@en-US, "Peter Cooke"@nl-NL, "Peter Cooke"@de-DE, "Peter Cooke"@no-NO, "Peter Cooke"@fr-FR, "Peter Cooke"@en-AU .
+
+<http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_C0023X0002XX_2000>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2019-06-18T08:10:11.686Z" ;
+	dcterms:modified          "2022-03-11T11:28:52.536Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000#metadataTier>, <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000#contentTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000> ;
+	edm:completeness          "10" ;
+	edm:country               "United Kingdom" ;
+	edm:datasetName           "2059209_Ag_EU_eSOUNDS_1018_BL" ;
+	edm:landingPage           <https://www.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000> ;
+	edm:language              "en" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fsounds.bl.uk%2Fwaveforms%2FPeter-Cooke-Uganda%2F025A-C0023X0002XX-2000A0.png&type=SOUND> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-03-11T13:27:10.774411Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTierB> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_C0023X0002XX_2000> .
+
+<http://data.europeana.eu/aggregation/provider/2059209/data_sounds_C0023X0002XX_2000>
+	a                  ore:Aggregation ;
+	dc:rights          "The British Library acknowledges the intellectual property rights of those named as contributors and the rights of those not identified. Please refer to the library's legal and ethical usage page: https://sounds.bl.uk/Information/Legal-And-Ethical-Usage"@en ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000905081> ;
+	edm:isShownAt      <https://sounds.bl.uk/World-and-traditional-music/Peter-Cooke-Uganda/025M-C0023X0002XX-2000V0> ;
+	edm:object         <https://sounds.bl.uk/waveforms/Peter-Cooke-Uganda/025A-C0023X0002XX-2000A0.png> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671113> ;
+	edm:rights         <http://rightsstatements.org/vocab/InC/1.0/> .
+
+<http://data.europeana.eu/organization/1482250000000905081>
+	a               foaf:Organization ;
+	skos:prefLabel  "The British Library"@en .
+
+<http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music>
+	a               skos:Concept ;
+	skos:inScheme   <http://data.europeana.eu/concept/soundgenres> ;
+	skos:note       "Traditional and folk music for voices and/or instruments."@en ;
+	skos:prefLabel  "Música tradicional y popular"@es, "Muzyki tradycyjnej i ludowej"@pl, "Musique traditionnelle et folklorique"@fr, "Musica tradizionale e folk"@it, "Traditional and folk music"@en, "Traditionelle und Volksmusik"@de .
+
+<http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000>
+	a  edm:ProvidedCHO .
+
+<https://sounds.bl.uk/waveforms/Peter-Cooke-Uganda/025A-C0023X0002XX-2000A0.png>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "17385"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/png" ;
+	ebucore:height        "222"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "495"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#E6E6FA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#A9A9A9"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" .
+
+<http://data.europeana.eu/proxy/europeana/2059209/data_sounds_C0023X0002XX_2000>
+	a                   ore:Proxy ;
+	dc:identifier       "http://mint-projects.image.ntua.gr/data/sounds/C0023X0002XX-2000" ;
+	dc:language         "eng" ;
+	dcterms:spatial     <http://data.europeana.eu/place/67> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "SOUND" ;
+	ore:lineage         <http://data.europeana.eu/proxy/provider/2059209/data_sounds_C0023X0002XX_2000> ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2059209/data_sounds_C0023X0002XX_2000> .
+
+<http://data.europeana.eu/organization/1482250000004671113>
+	a               foaf:Organization ;
+	skos:prefLabel  "Europeana Sounds"@en .
+
+<http://data.europeana.eu/proxy/provider/2059209/data_sounds_C0023X0002XX_2000>
+	a                   ore:Proxy ;
+	dc:contributor      <http://viaf.org/viaf/326793>, "Unidentified (singers, female and male)"@en, "Lassus, Orlande de, 1532-1594 (composer)"@en, "Cooke, Peter (recordist)"@en, "Cooke, Peter (director)"@en, "Blacking, John (male, speaker)"@en ;
+	dc:date             "1964-12" ;
+	dc:description      "Item note: Motet by Lassus. Performance note: Item directed by Peter Cooke, followed by applause. Performer's note: School choir. Recordist's note: In Peter Cooke's notes, this is on TAPE PC 4 TRACK A item No. 1."@en ;
+	dc:identifier       "C0023X0002XX-2000" ;
+	dc:language         "English" ;
+	dc:relation         "C23/2" ;
+	dc:subject          <http://data.europeana.eu/concept/soundgenres/Music/Traditional_and_folk_music> ;
+	dc:title            "Matona Lovely Maiden"@en ;
+	dcterms:extent      "0:04:36" ;
+	dcterms:isPartOf    "Peter Cooke Uganda Recordings"@en, <https://sounds.bl.uk/World-and-traditional-music/Peter-Cooke-Uganda> ;
+	dcterms:spatial     "Kampala"@en, "School hall"@en, "Uganda"@en, "Makerere College School"@en ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "SOUND" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_C0023X0002XX_2000> .
+
+<http://data.europeana.eu/item/2059209/data_sounds_C0023X0002XX_2000#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2022-03-11T13:27:10.773995Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2059209/data_sounds_C0023X0002XX_2000> .
+
+<http://data.europeana.eu/place/67>
+	a               edm:Place ;
+	owl:sameAs      <https://www.freebase.com/m/07tp2>, <http://www.idref.fr/110755316/id>, <http://www.wikidata.org/entity/Q1036>, <https://d-nb.info/gnd/4061457-8>, <http://www.yso.fi/onto/yso/p106044>, <http://zbw.eu/stw/descriptor/17679-1>, <http://id.nlm.nih.gov/mesh/Z01.058.290.120.880>, <http://id.nlm.nih.gov/mesh/D014454>, <http://id.worldcat.org/fast/1210282>, <http://vocabularies.unesco.org/thesaurus/concept746>, <http://id.ndl.go.jp/auth/ndlna/00573966>, <http://babelnet.org/rdf/s00067237n>, <https://sws.geonames.org/226074/>, <http://www.yso.fi/onto/ysa/Y106044>, <http://vocab.getty.edu/tgn/1000206>, <http://data.bnf.fr/ark:/12148/cb12970430g>, <http://id.loc.gov/authorities/names/n80126332>, <http://viaf.org/viaf/157051895>, <https://g.co/kg/m/07tp2>, <http://dbpedia.org/resource/Uganda> ;
+	skos:altLabel   "ug"@en, "Republic of Uganda"@en, "UGA"@en, "Repubblika tal-Uganda"@mt, "Repubblica dell'Uganda"@it, "Ugandai Köztársaság"@hu, "Ugandan tasavalta"@fi, "Republiken Uganda"@sv, "Republiek Oeganda"@nl, "République d'Ouganda"@fr, "République de l'Ouganda"@fr, "República de Uganda"@es, "Ugandská republika"@sk, "Uganda Vabariik"@et, "República do Uganda"@pt, "Республика Уганда"@ru, "UG"@nl, "UG"@fr, "Republik Uganda"@de, "República d'Uganda"@ca, "The pearl of Africa"@en ;
+	skos:note       "Stato dell'Africa Orientale"@it, "Stat sovran fl-Afrika tal-Lvant"@mt, "Pays d'Afrique équatoriale"@fr, "Țară din Africa de Est"@ro, "Valtio Keski-Afrikassa"@fi, "Land in Afrika"@nl, "Страна в Африке"@ru, "País de África"@es, "País de África"@pt, "Štát v Afrike"@sk, "Staat in Ostafrika"@de, "Country in East-central Africa"@en, "Republik i Östafrika"@sv, "País del centre d'Àfrica"@ca, "Állam Kelet-Afrikában"@hu, "Państwo w Afryce środkowo-wschodniej"@pl, "Държава в Африка"@bg, "Stát v Africe"@cs ;
+	skos:prefLabel  "Уганда"@ru, "Уганда"@bg, "Uganda"@fi, "Uganda"@pt, "Uganda"@lt, "Uganda"@hr, "Uganda"@hu, "Uganda"@sk, "Uganda"@sl, "Uganda"@ga, "Uganda"@ca, "Uganda"@sv, "Uganda"@mt, "Uganda"@en, "Uganda"@it, "Uganda"@es, "Uganda"@et, "Uganda"@eu, "Uganda"@cs, "Uganda"@pl, "Uganda"@ro, "Uganda"@da, "Uganda"@lv, "Uganda"@de, "Ouganda"@fr, "Ουγκάντα"@el, "Oeganda"@nl ;
+	wgs84_pos:lat   "1.28" ;
+	wgs84_pos:long  "32.39" .

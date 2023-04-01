@@ -1,0 +1,123 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/proxy/provider/9200332/ABO__2BZ167224409>
+	a                   ore:Proxy ;
+	dc:creator          "Havercamp, Sigebertus", "Agostini, Leonardus", "Paruta, Filippo", "Goltzius, Hubertus" ;
+	dc:identifier       "http://data.onb.ac.at/ABO/%2BZ167224409" ;
+	dc:language         "rum", "lat" ;
+	dc:publisher        "Petrus Vander Aa" ;
+	dc:subject          "Sizilien"@ger ;
+	dc:title            "Quae complicetitur Commentarios in Numismata Urbium Siciliae a Panormo usque ad Tyndarum (Vol.1)" ;
+	dc:type             "book" ;
+	dcterms:isPartOf    "Sicilia numismatica ; 1", "Sicilia numismatica, nunc primum additis Huberti Goltzii aliorumque Siciliae descriptione, et ... explicationibus, ingenti numero tabula rum .. lovupletata et perpetuo commentaris illustrata studis ... Sigeberti Havercampi. Accedunt ... integrae Georgii Gualtheri Siciliae et adjacentium insularum atque Bruttiorum tabulae antiquae una cum ejusdem ... animadversionibus. Editio plane nova prioribus ... nitidior ac emndatior, ... divisa in III partes (etc.)" ;
+	dcterms:issued      "1724" ;
+	dcterms:spatial     "Leiden" ;
+	edm:europeanaProxy  "false" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200332/ABO__2BZ167224409> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/provider/9200332/ABO__2BZ167224409> .
+
+<http://digital.onb.ac.at/cds/ABO_%2BZ167224409/thumbnail/thumbnail.jpg?w=600&q=80>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "7624"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "portrait" ;
+	ebucore:width         "127"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#FFFFFF"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#D3D3D3"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#F5F5F5"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#FFFAFA"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#DCDCDC"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#C0C0C0"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "grayscale" ;
+	edm:rights            <file:///usr/local/tomcat/webapps/#statementABO/%2BZ167224409> .
+
+<http://data.europeana.eu/organization/1482250000004516062>
+	a               foaf:Organization ;
+	skos:prefLabel  "The European Library"@en .
+
+<http://semium.org/time/AD2xxx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/ChronologicalPeriod> ;
+	skos:prefLabel    "2e millénaire après J.-C."@fr, "Second millenium AD, years 1001-2000"@en, "Second millenium AD"@en .
+
+<http://semium.org/time/17xx>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/AD2xxx> ;
+	edm:begin         "Sat Jan 01 01:00:00 CET 1701" ;
+	edm:end           "Wed Dec 31 01:00:00 CET 1800" ;
+	skos:prefLabel    "18..", "18th"@en, "18de eeuw"@nl, "18??", "18e siècle"@fr, "18-th"@en, "18й век"@ru, "18e", "18th century"@en .
+
+<http://semium.org/time/ChronologicalPeriod>
+	a                 edm:TimeSpan ;
+	dcterms:isPartOf  <http://semium.org/time/Time> ;
+	skos:prefLabel    "Chronological period"@en .
+
+<http://data.europeana.eu/aggregation/europeana/9200332/ABO__2BZ167224409>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2017-06-22T15:57:57.059Z" ;
+	dcterms:modified          "2017-06-22T15:57:57.059Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/9200332/ABO__2BZ167224409#contentTier>, <http://data.europeana.eu/item/9200332/ABO__2BZ167224409#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/9200332/ABO__2BZ167224409> ;
+	edm:completeness          "7" ;
+	edm:country               "Austria" ;
+	edm:datasetName           "9200332_NL_ONB_Austrian_Books_Online" ;
+	edm:landingPage           <https://www.europeana.eu/item/9200332/ABO__2BZ167224409> ;
+	edm:language              "de" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fdigital.onb.ac.at%2Fcds%2FABO_%252BZ167224409%2Fthumbnail%2Fthumbnail.jpg%3Fw%3D600%26q%3D80&type=TEXT> .
+
+<file:///usr/local/tomcat/webapps/#statementABO/%2BZ167224409>
+	a                 cc:License ;
+	cc:deprecatedOn   "2028-03-31" ;
+	odrl:inheritFrom  <http://data.europeana.eu/itemhttp://rightsstatements.org/vocab/NoC\u0020-\u0020NC/1.0/> .
+
+<http://data.europeana.eu/proxy/europeana/9200332/ABO__2BZ167224409>
+	a                   ore:Proxy ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	edm:year            "1724" ;
+	ore:proxyFor        <http://data.europeana.eu/item/9200332/ABO__2BZ167224409> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/9200332/ABO__2BZ167224409> .
+
+<http://data.europeana.eu/aggregation/provider/9200332/ABO__2BZ167224409>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/9200332/ABO__2BZ167224409> ;
+	edm:dataProvider   "Österreichische Nationalbibliothek - Austrian National Library" ;
+	edm:isShownAt      <http://data.onb.ac.at/ABO/%2BZ167224409> ;
+	edm:object         <http://digital.onb.ac.at/cds/ABO_%2BZ167224409/thumbnail/thumbnail.jpg?w=600&q=80> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004516062> ;
+	edm:rights         <http://rightsstatements.org/vocab/NoC-NC/1.0/> .
+
+<http://data.europeana.eu/item/9200332/ABO__2BZ167224409#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T17:51:09.541Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200332/ABO__2BZ167224409> .
+
+<http://data.europeana.eu/item/9200332/ABO__2BZ167224409#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T17:51:09.540Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/9200332/ABO__2BZ167224409> .
+
+<http://data.europeana.eu/item/9200332/ABO__2BZ167224409>
+	a  edm:ProvidedCHO .
+
+<http://semium.org/time/Time>
+	a               edm:TimeSpan ;
+	skos:prefLabel  "Time"@en .
+
+<http://data.onb.ac.at/ABO/%2BZ167224409>
+	a  edm:WebResource .

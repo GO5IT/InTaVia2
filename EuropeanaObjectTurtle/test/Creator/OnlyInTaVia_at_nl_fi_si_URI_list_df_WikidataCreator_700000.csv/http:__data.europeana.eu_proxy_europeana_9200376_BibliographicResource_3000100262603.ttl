@@ -1,0 +1,112 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdaGr2: <http://rdvocab.info/ElementsGr2/> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405#metadataTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:22.534Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/metadataTier0> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000100405> .
+
+<http://data.europeana.eu/proxy/europeana/2022717/bnesearch_detalle_bdh0000100405>
+	a                   ore:Proxy ;
+	dc:type             <http://data.europeana.eu/concept/17> ;
+	edm:europeanaProxy  "true" ;
+	edm:type            "TEXT" ;
+	ore:proxyFor        <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405> ;
+	ore:proxyIn         <http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000100405> .
+
+<http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000100405>
+	a                  ore:Aggregation ;
+	edm:aggregatedCHO  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405> ;
+	edm:dataProvider   <http://data.europeana.eu/organization/1482250000000369917> ;
+	edm:isShownAt      <http://bdh-rd.bne.es/viewer.vm?id=0000100405&page=1> ;
+	edm:object         <http://bdh-rd.bne.es/pdf.raw?query=id:0000100405&page=1&jpeg=true> ;
+	edm:provider       <http://data.europeana.eu/organization/1482250000004671126> ;
+	edm:rights         <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405>
+	a  edm:ProvidedCHO .
+
+<http://data.europeana.eu/aggregation/europeana/2022717/bnesearch_detalle_bdh0000100405>
+	a                         edm:EuropeanaAggregation ;
+	dcterms:created           "2018-06-05T13:38:27.397Z" ;
+	dcterms:modified          "2018-06-19T14:52:22.470Z" ;
+	dqv:hasQualityAnnotation  <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405#contentTier>, <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405#metadataTier> ;
+	edm:aggregatedCHO         <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405> ;
+	edm:completeness          "10" ;
+	edm:country               "Spain" ;
+	edm:datasetName           "2022717_Ag_ES_Hispana_Biblioteca_Nacional" ;
+	edm:landingPage           <https://www.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405> ;
+	edm:language              "es" ;
+	edm:preview               <https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fbdh-rd.bne.es%2Fpdf.raw%3Fquery%3Did%3A0000100405%26page%3D1%26jpeg%3Dtrue&type=TEXT> .
+
+<http://data.europeana.eu/proxy/provider/2022717/bnesearch_detalle_bdh0000100405>
+	a                        ore:Proxy ;
+	dc:creator               "Cairasco de Figueroa, Bartolomé", "Tasso, Torquato, 1544-1595" ;
+	dc:date                  "1501-1600" ;
+	dc:description           "Serafín Estébanez Calderón", "Alcance y contenido: En el canto XV se incluyen 48 octavas dedicadas a las Islas Canarias", "Texto con correcciones", "Autógrafo", "Dedicado a don Rodrigo de Castro, arzobispo de Sevilla", "En blanco la h. 297", "Falta texto entre las h. 29-30, 35-36, 116-117, 130-131, 191-192, 220-221 y 282-283", "Foliación antigua en tinta, con salto de la h. 227 a la 229, y foliación moderna en lápiz a partir de la h. 71", "José Miguel de Flores (1714-1790), Secretario de la Real Academia de la Historia", "Sumario: En el canto XV se incluyen 48 octavas dedicadas a las Islas Canarias", "Incompleto", "Tít. en el tejuelo: Gofredo por Cairasco M. S. Original" ;
+	dc:language              "spa" ;
+	dc:title                 "Goffredo Famoso [Manuscrito] :]poema heroyco" ;
+	dc:type                  "Manuscritos" ;
+	dcterms:alternative      "[La Gerusalemme liberata. Español]" ;
+	dcterms:isReferencedBy   "Referencias: Andrés, Gregorio de, La colección de manuscritos del literato Serafín Estébanez Calderón en la Biblioteca Nacional, en Cuadernos para la Investigación de la Literatura Hispánica, n. 14 (1991), p. 97", "Referencias: Millares Carlo, Ensayo de una bio-bibliografía de escritores naturales de las Islas Canarias, Madrid, 1932, p. 142-143, n. VIII" ;
+	dcterms:tableOfContents  "Soneto sobre las h. que faltan en el manuscrito (h. 322)" ;
+	edm:europeanaProxy       "false" ;
+	edm:type                 "TEXT" ;
+	ore:proxyFor             <http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405> ;
+	ore:proxyIn              <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000100405> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000100405>
+	a           edm:WebResource ;
+	edm:rights  <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://bdh-rd.bne.es/viewer.vm?id=0000100405&page=1>
+	a                     edm:FullTextResource, edm:WebResource ;
+	ebucore:fileByteSize  "14158"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "text/html" .
+
+<http://data.europeana.eu/concept/17>
+	a                skos:Concept ;
+	skos:exactMatch  <http://vocab.getty.edu/aat/300028569>, <http://id.nlm.nih.gov/mesh/D008373>, <https://www.freebase.com/m/04vf8>, <http://www.wikidata.org/entity/Q87167>, <http://id.ndl.go.jp/auth/ndlna/00571802>, <https://schema.org/Manuscript>, <http://id.nlm.nih.gov/mesh/L01.178.682.608>, <https://d-nb.info/gnd/4126273-6>, <http://id.nlm.nih.gov/mesh/D020486>, <http://purl.org/bncf/tid/1879>, <http://id.loc.gov/authorities/names/sh85080672>, <https://citationstyles.org/ontology/type/manuscript>, <http://purl.org/coar/resource_type/c_0040>, <http://vocabularies.unesco.org/thesaurus/concept8324>, <https://g.co/kg/m/04vf8>, <http://babelnet.org/rdf/s00044453n>, <http://id.loc.gov/ontologies/bibframe/Manuscript>, <http://id.nlm.nih.gov/mesh/V02.630> ;
+	skos:note        "Handgeschriebener Text"@de, "Ručně psaný dokument"@cs, "Document written by hand"@en, "Написанный от руки текст произведения"@ru, "Handgeschreven tekst"@nl, "Besedilo napisano z roko"@sl, "Documento scritto a mano"@it, "Dokument pisan rukom"@hr, "Ar roku rakstīts dokuments"@lv, "Håndskrevent dokument"@da, "Document escrit a mà"@ca, "Documento escrito a mano sobre un soporte flexible"@es, "Dokument skrivet för hand"@sv, "Document écrit à la main"@fr ;
+	skos:prefLabel   "Handskrift"@sv, "Käsikirjoitus"@fi, "Manoscritto"@it, "Lámhscríbhinn"@ga, "Manuscript"@en, "Manuscript"@nl, "Ръкопис"@bg, "Χειρόγραφο"@el, "Rokopis"@sl, "Рукопись"@ru, "Manuscris"@ro, "Kézirat"@hu, "Rokraksts"@lv, "Manuscrito"@pt, "Manuscrito"@es, "Rukopis"@hr, "Rukopis"@sk, "Rukopis"@cs, "Käsikiri"@et, "Manuskript"@de, "Rankraštis"@lt, "Rękopis"@pl, "Håndskrift"@da, "Manuscrit"@fr, "Manuscrit"@ca, "Eskuizkribu"@eu .
+
+<http://bdh-rd.bne.es/pdf.raw?query=id:0000100405&page=1&jpeg=true>
+	a                     edm:WebResource ;
+	ebucore:fileByteSize  "383234"^^<http://www.w3.org/2001/XMLSchema#long> ;
+	ebucore:hasMimeType   "image/jpeg" ;
+	ebucore:height        "1276"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	ebucore:orientation   "landscape" ;
+	ebucore:width         "2100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+	edm:componentColor    "#2F4F4F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#8B4513"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#000000"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#556B2F"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#696969"^^<http://www.w3.org/2001/XMLSchema#hexBinary>, "#BDB76B"^^<http://www.w3.org/2001/XMLSchema#hexBinary> ;
+	edm:hasColorSpace     "sRGB" ;
+	edm:rights            <http://creativecommons.org/licenses/by-nc-sa/4.0/> .
+
+<http://data.europeana.eu/item/2022717/bnesearch_detalle_bdh0000100405#contentTier>
+	a                dqv:QualityAnnotation ;
+	dcterms:created  "2019-07-16T22:14:22.533Z" ;
+	oa:hasBody       <http://www.europeana.eu/schemas/epf/contentTier1> ;
+	oa:hasTarget     <http://data.europeana.eu/aggregation/provider/2022717/bnesearch_detalle_bdh0000100405> .
+
+<http://data.europeana.eu/organization/1482250000004671126>
+	a               foaf:Organization ;
+	skos:prefLabel  "Hispana"@en .
+
+<http://data.europeana.eu/organization/1482250000000369917>
+	a               foaf:Organization ;
+	skos:prefLabel  "Biblioteca Nacional de España"@es, "National Library of Spain"@en .
